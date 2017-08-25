@@ -12,13 +12,12 @@ def main():
 	scriptPath = os.path.dirname(os.path.realpath(__file__))
 	dataPath = os.path.join(scriptPath, "data")
 	bikeshed.config.quiet = False
-	bikeshed.update.update(path=dataPath)
 	try:
 		with io.open(os.path.join(dataPath, "manifest.txt"), 'r', encoding="utf-8") as fh:
 			_,_,oldManifest = fh.read().partition("\n")
 	except:
 		raise
-	bikeshed.update.createManifest(path=dataPath)
+	bikeshed.update.update(path=dataPath)
 	try:
 		with io.open(os.path.join(dataPath, "manifest.txt"), 'r', encoding="utf-8") as fh:
 			_,_,newManifest = fh.read().partition("\n")
