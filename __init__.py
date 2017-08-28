@@ -17,7 +17,7 @@ def main():
 			_,_,oldManifest = fh.read().partition("\n")
 	except:
 		raise
-	bikeshed.update.update(path=dataPath)
+	bikeshed.update.update(path=dataPath, force=True)
 	try:
 		with io.open(os.path.join(dataPath, "manifest.txt"), 'r', encoding="utf-8") as fh:
 			_,_,newManifest = fh.read().partition("\n")
