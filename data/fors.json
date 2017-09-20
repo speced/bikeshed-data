@@ -1513,6 +1513,7 @@
     "fragmentation break", 
     "text-align", 
     "element-based template.", 
+    "noshade", 
     "d", 
     "eof-in-tag", 
     "push a ruby level", 
@@ -1780,7 +1781,7 @@
     "move", 
     "min-height", 
     "normalize the source densities", 
-    "mouseeventinit", 
+    "slategrey", 
     "attestation statement", 
     "reload override buffer", 
     "DOMTimeStamp", 
@@ -1852,7 +1853,7 @@
     "font-min-size", 
     "create a paintrenderingcontext2d object", 
     "labeled control", 
-    "initial flow", 
+    "execute a script block", 
     "WritableStreamDefaultControllerErrorIfNeeded", 
     "list of elements with qualified name qualifiedname", 
     "owner", 
@@ -1950,7 +1951,7 @@
     "normal!!font-stretch", 
     "gbk", 
     "gatt procedure", 
-    "noshade", 
+    "mouseeventinit", 
     "IterationCompositeOperation", 
     "TimeRanges", 
     "timer nesting level", 
@@ -2361,7 +2362,7 @@
     "bitmap mode", 
     "navigation scope", 
     "valid integer", 
-    "execute a script block", 
+    "initial flow", 
     "display-mode", 
     "advertising event", 
     "clearance.", 
@@ -6310,7 +6311,6 @@
     "repeating-linear-gradient()", 
     "value sanitization algorithm", 
     "compatible units", 
-    "slategrey", 
     "connect-src", 
     "in parallel", 
     "marker positioning reference element", 
@@ -9161,6 +9161,23 @@
   "<ending-shape>": [
     "circle", 
     "ellipse"
+  ], 
+  "<fake-production-placeholder class=production>line-style</fake-production-placeholder>": [
+    "none", 
+    "ridge", 
+    "dotted", 
+    "solid", 
+    "dashed", 
+    "outset", 
+    "inset", 
+    "double", 
+    "hidden", 
+    "groove"
+  ], 
+  "<fake-production-placeholder class=production>line-width</fake-production-placeholder>": [
+    "thick", 
+    "medium", 
+    "thin"
   ], 
   "<flex>": [
     "fr", 
@@ -17295,7 +17312,7 @@
     "oninput", 
     "locationbar", 
     "applicationCache", 
-    "scroll()", 
+    "navigator", 
     "outerWidth", 
     "innerHeight", 
     "onmousemove", 
@@ -17315,7 +17332,6 @@
     "captureEvents()", 
     "name", 
     "scroll(x, y)", 
-    "message", 
     "oncanplaythrough", 
     "onmouseenter", 
     "rejectionhandled", 
@@ -17325,7 +17341,7 @@
     "open(url, target, features)", 
     "onwaiting", 
     "onchange", 
-    "navigator", 
+    "message", 
     "onwheel", 
     "pagehide", 
     "ontimeupdate", 
@@ -17353,6 +17369,7 @@
     "onauxclick", 
     "cancelAnimationFrame()", 
     "onseeked", 
+    "scroll()", 
     "stop()", 
     "load", 
     "outerHeight", 
@@ -17892,13 +17909,52 @@
     "circle state", 
     "alt"
   ], 
+  "background-attachment": [
+    "fixed", 
+    "local", 
+    "scroll"
+  ], 
   "background-clip": [
-    "text"
+    "border-box", 
+    "text", 
+    "content-box", 
+    "padding-box"
+  ], 
+  "background-image": [
+    "none"
   ], 
   "background-image-transform": [
     "rotate", 
     "logical", 
     "physical"
+  ], 
+  "background-origin": [
+    "border-box", 
+    "content-box", 
+    "padding-box"
+  ], 
+  "background-position": [
+    "right", 
+    "center", 
+    "bottom", 
+    "top", 
+    "<length>", 
+    "<percentage>", 
+    "left"
+  ], 
+  "background-repeat": [
+    "repeat", 
+    "space", 
+    "no-repeat", 
+    "repeat-x", 
+    "repeat-y", 
+    "round"
+  ], 
+  "background-size": [
+    "auto", 
+    "<length-percentage>", 
+    "cover", 
+    "contain"
   ], 
   "base": [
     "href", 
@@ -17971,13 +18027,78 @@
     "open", 
     "closed"
   ], 
+  "border": [
+    "none", 
+    "medium", 
+    "ridge", 
+    "dotted", 
+    "solid", 
+    "dashed", 
+    "outset", 
+    "inset", 
+    "thin", 
+    "double", 
+    "hidden", 
+    "groove", 
+    "thick"
+  ], 
+  "border-bottom-style": [
+    "none", 
+    "ridge", 
+    "dotted", 
+    "solid", 
+    "dashed", 
+    "outset", 
+    "inset", 
+    "double", 
+    "hidden", 
+    "groove"
+  ], 
+  "border-bottom-width": [
+    "thick", 
+    "medium", 
+    "thin"
+  ], 
   "border-color": [
     "logical"
+  ], 
+  "border-image-repeat": [
+    "stretch", 
+    "repeat", 
+    "round", 
+    "space"
+  ], 
+  "border-image-slice": [
+    "<number>", 
+    "<percentage>", 
+    "fill"
   ], 
   "border-image-transform": [
     "rotate", 
     "logical", 
     "physical"
+  ], 
+  "border-image-width": [
+    "auto", 
+    "<number>", 
+    "<percentage>"
+  ], 
+  "border-left-style": [
+    "none", 
+    "ridge", 
+    "dotted", 
+    "solid", 
+    "dashed", 
+    "outset", 
+    "inset", 
+    "double", 
+    "hidden", 
+    "groove"
+  ], 
+  "border-left-width": [
+    "thick", 
+    "medium", 
+    "thin"
   ], 
   "border-limit": [
     "right", 
@@ -17987,10 +18108,57 @@
     "sides", 
     "left"
   ], 
+  "border-right-style": [
+    "none", 
+    "ridge", 
+    "dotted", 
+    "solid", 
+    "dashed", 
+    "outset", 
+    "inset", 
+    "double", 
+    "hidden", 
+    "groove"
+  ], 
+  "border-right-width": [
+    "thick", 
+    "medium", 
+    "thin"
+  ], 
   "border-style": [
-    "logical"
+    "none", 
+    "ridge", 
+    "dotted", 
+    "solid", 
+    "dashed", 
+    "outset", 
+    "logical", 
+    "inset", 
+    "double", 
+    "hidden", 
+    "groove"
+  ], 
+  "border-top-style": [
+    "none", 
+    "ridge", 
+    "dotted", 
+    "solid", 
+    "dashed", 
+    "outset", 
+    "inset", 
+    "double", 
+    "hidden", 
+    "groove"
+  ], 
+  "border-top-width": [
+    "thick", 
+    "medium", 
+    "thin"
   ], 
   "border-width": [
+    "thick", 
+    "medium", 
+    "thin", 
     "logical"
   ], 
   "bottom": [
@@ -18007,6 +18175,11 @@
   "box-decoration-break": [
     "clone", 
     "slice"
+  ], 
+  "box-shadow": [
+    "<color>", 
+    "inset", 
+    "none"
   ], 
   "box-sizing": [
     "border-box", 
