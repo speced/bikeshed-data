@@ -42,7 +42,7 @@ def updateDataFiles(path):
 	# First, update the Bikeshed-managed data files
 	# (This updates the manifest file automatically.)
 	bikeshed.config.quiet = False
-	#bikeshed.update.update(path=path, force=True)
+	bikeshed.update.update(path=path, force=True)
 
 	# Then the WPT data files, adding the file to Bikeshed's data folder
 	updateWptDataFiles(dataPath=path)
@@ -51,7 +51,11 @@ def updateDataFiles(path):
 	bikeshed.update.manifest.createManifest(path=path)
 
 def updateWptDataFiles(dataPath):
-	wptPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), "wpt")
+	scriptPath = os.path.dirname(os.path.realpath(__file__))
+	wptPath = os.path.join(scriptPath, "web-platform-tests")
+
+	os.chdir(scriptPath)
+	subprocess.check_call("git submodule update --remote", shell=True)
 	os.chdir(wptPath)
 	subprocess.check_call("wpt manifest", shell=True)
 
@@ -59,6 +63,9 @@ def updateWptDataFiles(dataPath):
 	with io.open(os.path.join(wptPath, "MANIFEST.json"), 'r', encoding="utf-8") as infile:
 		jsonData = json.load(infile)
 		for testType, typePaths in jsonData["items"].items():
+			if testType in ("support", "reftest_node"):
+				# Not tests
+				continue
 			paths.extend(typePaths.keys())
 	with io.open(os.path.join(dataPath, "wpt-tests.txt"), "w", encoding="utf-8") as outfile:
 		for path in sorted(paths):
