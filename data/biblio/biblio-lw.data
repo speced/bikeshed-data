@@ -20245,7 +20245,7 @@ Thomas Köppe
 d:lwg2948
 LWG2948
 
-Ready
+Voting
 2948(i). unique_ptr does not define operator<< for stream output
 https://wg21.link/lwg2948
 
@@ -20281,7 +20281,7 @@ Jens Maurer
 d:lwg2950
 LWG2950
 
-Ready
+Voting
 2950(i). std::byte operations are misspecified
 https://wg21.link/lwg2950
 
@@ -20305,7 +20305,7 @@ Billy Robert O'Neal III
 d:lwg2952
 LWG2952
 
-Ready
+Voting
 2952(i). iterator_traits should work for pointers to cv T
 https://wg21.link/lwg2952
 
@@ -20317,7 +20317,7 @@ Billy Robert O'Neal III
 d:lwg2953
 LWG2953
 
-Ready
+Voting
 2953(i). LWG 2853 should apply to deque::erase too
 https://wg21.link/lwg2953
 
@@ -20461,7 +20461,7 @@ Gašper Ažman
 d:lwg2964
 LWG2964
 
-Ready
+Voting
 2964(i). Apparently redundant requirement for dynamic_pointer_cast
 https://wg21.link/lwg2964
 
@@ -20473,7 +20473,7 @@ Tim Song
 d:lwg2965
 LWG2965
 
-Ready
+Voting
 2965(i). Non-existing path::native_string() in filesystem_error::what() specification
 https://wg21.link/lwg2965
 
@@ -20569,7 +20569,7 @@ Agustín K-ballo Bergé
 d:lwg2972
 LWG2972
 
-Ready
+Voting
 2972(i). What is is_trivially_destructible_v<int>?
 https://wg21.link/lwg2972
 
@@ -20617,7 +20617,7 @@ Casey Carter
 d:lwg2976
 LWG2976
 
-Ready
+Voting
 2976(i). Dangling uses_allocator specialization for packaged_task
 https://wg21.link/lwg2976
 
@@ -20629,7 +20629,7 @@ Tim Song
 d:lwg2977
 LWG2977
 
-Ready
+Voting
 2977(i). unordered_meow::merge() has incorrect Throws: clause
 https://wg21.link/lwg2977
 
@@ -20641,7 +20641,7 @@ Tim Song
 d:lwg2978
 LWG2978
 
-Ready
+Voting
 2978(i). Hash support for pmr::string and friends
 https://wg21.link/lwg2978
 
@@ -20653,7 +20653,7 @@ Tim Song
 d:lwg2979
 LWG2979
 
-Ready
+Voting
 2979(i). aligned_union should require complete object types
 https://wg21.link/lwg2979
 
@@ -20677,7 +20677,7 @@ John A. Pedretti
 d:lwg2980
 LWG2980
 
-Ready
+Voting
 2980(i). Cannot compare_exchange empty pointers
 https://wg21.link/lwg2980
 
@@ -20689,7 +20689,7 @@ Alisdair Meredith
 d:lwg2981
 LWG2981
 
-Ready
+Voting
 2981(i). Remove redundant deduction guides from standard library
 https://wg21.link/lwg2981
 
@@ -20701,7 +20701,7 @@ Mike Spertus
 d:lwg2982
 LWG2982
 
-Ready
+Voting
 2982(i). Making size_type consistent in associative container deduction guides
 https://wg21.link/lwg2982
 
@@ -20773,7 +20773,7 @@ Hubert Tong
 d:lwg2988
 LWG2988
 
-Ready
+Voting
 2988(i). Clause 32 cleanup missed one typename
 https://wg21.link/lwg2988
 
@@ -20845,7 +20845,7 @@ Peter Dimov
 d:lwg2993
 LWG2993
 
-Ready
+Voting
 2993(i). reference_wrapper<T> conversion from T&&
 https://wg21.link/lwg2993
 
@@ -20905,7 +20905,7 @@ Tim Song
 d:lwg2998
 LWG2998
 
-Ready
+Voting
 2998(i). Requirements on function objects passed to {forward_,}list-specific algorithms
 https://wg21.link/lwg2998
 
@@ -20977,7 +20977,7 @@ Pablo Halpern
 d:lwg3001
 LWG3001
 
-Tentatively Ready
+Voting
 3001(i). weak_ptr::element_type needs remove_extent_t
 https://wg21.link/lwg3001
 
@@ -21190,6 +21190,30 @@ https://wg21.link/lwg3017
 
 Jonathan Wakely
 -
+d:lwg3018
+LWG3018
+
+New
+3018(i). shared_ptr of function type
+https://wg21.link/lwg3018
+
+
+
+
+Agustín K-ballo Bergé
+-
+d:lwg3019
+LWG3019
+
+New
+3019(i). Presentation of "program defined classes derived from error_category" [syserr.errcat.derived] unclear and contains mistakes
+https://wg21.link/lwg3019
+
+
+
+
+Thomas Köppe
+-
 d:lwg302
 LWG302
 
@@ -21201,6 +21225,114 @@ https://wg21.link/lwg302
 
 
 Gregory Bumgardner
+-
+d:lwg3020
+LWG3020
+
+Tentatively Ready
+3020(i). [networking.ts] Remove spurious nested value_type buffer sequence requirement
+https://wg21.link/lwg3020
+
+
+
+
+Vinnie Falco
+-
+d:lwg3021
+LWG3021
+
+New
+3021(i). [networking.ts] Relax pointer equivalence requirement for ConstBufferSequence
+https://wg21.link/lwg3021
+
+
+
+
+Vinnie Falco
+-
+d:lwg3022
+LWG3022
+
+New
+3022(i). is_convertible<derived*, base*> may lead to ODR
+https://wg21.link/lwg3022
+
+
+
+
+Alisdair Meredith
+-
+d:lwg3023
+LWG3023
+
+New
+3023(i). Clarify unspecified call wrappers
+https://wg21.link/lwg3023
+
+
+
+
+Detlef Vollmann
+-
+d:lwg3024
+LWG3024
+
+Voting
+3024(i). variant's copies must be deleted instead of disabled via SFINAE
+https://wg21.link/lwg3024
+
+
+
+
+Casey Carter
+-
+d:lwg3025
+LWG3025
+
+New
+3025(i). Map-like container deduction guides should use pair<Key, T>, not pair<const Key, T>
+https://wg21.link/lwg3025
+
+
+
+
+Ville Voutilainen
+-
+d:lwg3026
+LWG3026
+
+Tentatively Ready
+3026(i). filesystem::weakly_canonical still defined in terms of canonical(p, base)
+https://wg21.link/lwg3026
+
+
+
+
+Jonathan Wakely
+-
+d:lwg3027
+LWG3027
+
+New
+3027(i). [networking.ts] DynamicBuffer prepare exception specification
+https://wg21.link/lwg3027
+
+
+
+
+Vinnie Falco
+-
+d:lwg3028
+LWG3028
+
+New
+3028(i). Container requirements tables should distinguish const and non-const variables
+https://wg21.link/lwg3028
+
+
+
+
+Jonathan Wakely
 -
 d:lwg303
 LWG303
