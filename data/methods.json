@@ -1440,6 +1440,54 @@
       "shortname": "encoding"
     }
   }, 
+  "TransformStream()": {
+    "TransformStream(transformer, writableStrategy, readableStrategy)": {
+      "args": [
+        "transformer", 
+        "writableStrategy", 
+        "readableStrategy"
+      ], 
+      "for": [
+        "TransformStream"
+      ], 
+      "shortname": "streams"
+    }
+  }, 
+  "TransformStreamDefaultController()": {
+    "TransformStreamDefaultController(stream)": {
+      "args": [
+        "stream"
+      ], 
+      "for": [
+        "TransformStreamDefaultController"
+      ], 
+      "shortname": "streams"
+    }
+  }, 
+  "TransformStreamDefaultSink()": {
+    "TransformStreamDefaultSink(stream, startPromise)": {
+      "args": [
+        "stream", 
+        "startPromise"
+      ], 
+      "for": [
+        "TransformStreamDefaultSink"
+      ], 
+      "shortname": "streams"
+    }
+  }, 
+  "TransformStreamDefaultSource()": {
+    "TransformStreamDefaultSource(stream, startPromise)": {
+      "args": [
+        "stream", 
+        "startPromise"
+      ], 
+      "for": [
+        "TransformStreamDefaultSource"
+      ], 
+      "shortname": "streams"
+    }
+  }, 
   "TransitionEvent()": {
     "TransitionEvent(type, transitionEventInitDict)": {
       "args": [
@@ -1780,6 +1828,16 @@
         "PasswordCredential"
       ], 
       "shortname": "credential-management"
+    }, 
+    "[[Create]](origin, options)": {
+      "args": [
+        "origin", 
+        "options"
+      ], 
+      "for": [
+        "PublicKeyCredential"
+      ], 
+      "shortname": "webauthn"
     }
   }, 
   "[[DiscoverFromExternalSource]]()": {
@@ -1792,6 +1850,16 @@
         "Credential"
       ], 
       "shortname": "credential-management"
+    }, 
+    "[[DiscoverFromExternalSource]](origin, options)": {
+      "args": [
+        "origin", 
+        "options"
+      ], 
+      "for": [
+        "PublicKeyCredential"
+      ], 
+      "shortname": "webauthn"
     }
   }, 
   "[[Store]]()": {
@@ -1812,11 +1880,12 @@
     "abort()": {
       "args": [], 
       "for": [
-        "AbortController", 
         "XMLHttpRequest", 
         "IDBTransaction", 
-        "ApplicationCache", 
-        "FileReader"
+        "FileReader", 
+        "TransformStreamDefaultSink", 
+        "AbortController", 
+        "ApplicationCache"
       ], 
       "shortname": "dom"
     }, 
@@ -2485,6 +2554,7 @@
         "reason"
       ], 
       "for": [
+        "TransformStreamDefaultSource", 
         "ReadableStreamBYOBReader", 
         "ReadableStream", 
         "ReadableStreamDefaultReader"
@@ -2738,6 +2808,7 @@
     "close()": {
       "args": [], 
       "for": [
+        "TransformStreamDefaultSink", 
         "WebSocket", 
         "DedicatedWorkerGlobalScope", 
         "MessagePort", 
@@ -4116,7 +4187,8 @@
       ], 
       "for": [
         "ReadableStreamDefaultController", 
-        "ReadableByteStreamController"
+        "ReadableByteStreamController", 
+        "TransformStreamDefaultController"
       ], 
       "shortname": "streams"
     }
@@ -4157,6 +4229,15 @@
         "ReadableStreamDefaultController", 
         "WritableStreamDefaultController", 
         "ReadableByteStreamController"
+      ], 
+      "shortname": "streams"
+    }, 
+    "error(reason)": {
+      "args": [
+        "reason"
+      ], 
+      "for": [
+        "TransformStreamDefaultController"
       ], 
       "shortname": "streams"
     }
@@ -4331,7 +4412,15 @@
       "args": [], 
       "for": [
         "Window", 
-        "WindowClient", 
+        "WindowClient"
+      ], 
+      "shortname": "html"
+    }, 
+    "focus(options)": {
+      "args": [
+        "options"
+      ], 
+      "for": [
         "HTMLElement"
       ], 
       "shortname": "html"
@@ -5985,6 +6074,15 @@
       "shortname": "dom"
     }
   }, 
+  "isUserVerifyingPlatformAuthenticatorAvailable()": {
+    "isUserVerifyingPlatformAuthenticatorAvailable()": {
+      "args": [], 
+      "for": [
+        "PublicKeyCredential"
+      ], 
+      "shortname": "webauthn"
+    }
+  }, 
   "isochronousTransferIn()": {
     "isochronousTransferIn(endpointNumber, packetLengths)": {
       "args": [
@@ -7122,6 +7220,15 @@
         "CSS"
       ], 
       "shortname": "css-typed-om"
+    }
+  }, 
+  "pull()": {
+    "pull()": {
+      "args": [], 
+      "for": [
+        "TransformStreamDefaultSource"
+      ], 
+      "shortname": "streams"
     }
   }, 
   "pushState()": {
@@ -9645,6 +9752,8 @@
     "start()": {
       "args": [], 
       "for": [
+        "TransformStreamDefaultSink", 
+        "TransformStreamDefaultSource", 
         "MessagePort", 
         "Sensor", 
         "HTMLMarqueeElement"
@@ -9928,7 +10037,8 @@
     "terminate()": {
       "args": [], 
       "for": [
-        "Worker"
+        "Worker", 
+        "TransformStreamDefaultController"
       ], 
       "shortname": "html"
     }
@@ -10585,6 +10695,7 @@
         "chunk"
       ], 
       "for": [
+        "TransformStreamDefaultSink", 
         "WritableStreamDefaultWriter"
       ], 
       "shortname": "streams"
