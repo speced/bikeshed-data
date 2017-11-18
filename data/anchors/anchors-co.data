@@ -334,10 +334,10 @@ css-scrollbars-1
 css-scrollbars
 1
 current
-https://drafts.csswg.org/css-scrollbars-1/#valdef-scrollbar-3dlight-color-color
+https://drafts.csswg.org/css-scrollbars-1/#valdef-scrollbar-base-color-color
 1
 1
-scrollbar-3dlight-color
+scrollbar-base-color
 -
 <color>
 type
@@ -445,7 +445,7 @@ css-fonts-3
 css-fonts
 3
 current
-https://drafts.csswg.org/css-fonts-3/#common-lig-values
+https://drafts.csswg.org/css-fonts-3/#typedef-common-lig-values
 1
 1
 -
@@ -648,7 +648,7 @@ css-fonts-3
 css-fonts
 3
 current
-https://drafts.csswg.org/css-fonts-3/#contextual-alt-values
+https://drafts.csswg.org/css-fonts-3/#typedef-contextual-alt-values
 1
 1
 -
@@ -1436,32 +1436,10 @@ service-workers-2
 service-workers
 2
 current
-https://w3c.github.io/ServiceWorker/#dom-installevent-installevent
-1
-1
-InstallEvent
--
-Constructor
-constructor
-service-workers-2
-service-workers
-2
-current
 https://w3c.github.io/ServiceWorker/#dom-fetchevent-fetchevent
 1
 1
 FetchEvent
--
-Constructor
-constructor
-service-workers-2
-service-workers
-2
-current
-https://w3c.github.io/ServiceWorker/#dom-foreignfetchevent-foreignfetchevent
-1
-1
-ForeignFetchEvent
 -
 Constructor
 constructor
@@ -1801,6 +1779,17 @@ FederatedCredential
 -
 [[CollectFromCredentialStore]](options)
 method
+webauthn-1
+webauthn
+1
+current
+https://w3c.github.io/webauthn/#dom-publickeycredential-collectfromcredentialstore-slot
+1
+1
+PublicKeyCredential
+-
+[[CollectFromCredentialStore]](options, sameOriginWithAncestors)
+method
 credential-management-1
 credential-management
 1
@@ -1810,7 +1799,7 @@ https://w3c.github.io/webappsec-credential-management/#dom-credential-collectfro
 1
 Credential
 -
-[[CollectFromCredentialStore]](options)
+[[CollectFromCredentialStore]](options, sameOriginWithAncestors)
 method
 credential-management-1
 credential-management
@@ -1821,7 +1810,7 @@ https://w3c.github.io/webappsec-credential-management/#dom-passwordcredential-co
 1
 PasswordCredential
 -
-[[CollectFromCredentialStore]](options)
+[[CollectFromCredentialStore]](options, sameOriginWithAncestors)
 method
 credential-management-1
 credential-management
@@ -1831,17 +1820,6 @@ https://w3c.github.io/webappsec-credential-management/#dom-federatedcredential-c
 1
 1
 FederatedCredential
--
-[[CollectFromCredentialStore]](options)
-method
-webauthn-1
-webauthn
-1
-current
-https://w3c.github.io/webauthn/#dom-publickeycredential-collectfromcredentialstore-slot
-1
-1
-PublicKeyCredential
 -
 [[context]]
 attribute
@@ -4322,14 +4300,15 @@ https://www.w3.org/TR/css-fonts-3/#common-ligatures
 1
 -
 common-ligatures
-dfn
+value
 css-fonts-3
 css-fonts
 3
 current
-https://drafts.csswg.org/css-fonts-3/#common-ligatures
-
+https://drafts.csswg.org/css-fonts-3/#valdef-font-variant-ligatures-common-lig-values-common-ligatures
 1
+1
+font-variant-ligatures <common-lig-values>
 -
 commonAncestorContainer
 attribute
@@ -5541,14 +5520,15 @@ https://www.w3.org/TR/css-fonts-3/#condensed
 1
 -
 condensed
-dfn
+value
 css-fonts-3
 css-fonts
 3
 current
-https://drafts.csswg.org/css-fonts-3/#condensed
-
+https://drafts.csswg.org/css-fonts-3/#valdef-font-stretch-condensed
 1
+1
+font-stretch
 -
 condition
 argument
@@ -8899,14 +8879,15 @@ https://www.w3.org/TR/css-fonts-3/#contextual
 1
 -
 contextual
-dfn
+value
 css-fonts-3
 css-fonts
 3
 current
-https://drafts.csswg.org/css-fonts-3/#contextual
-
+https://drafts.csswg.org/css-fonts-3/#valdef-font-variant-ligatures-contextual-alt-values-contextual
 1
+1
+font-variant-ligatures <contextual-alt-values>
 -
 contextual reference element set
 dfn

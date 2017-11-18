@@ -950,18 +950,6 @@
       "shortname": "css-font-loading"
     }
   }, 
-  "ForeignFetchEvent()": {
-    "ForeignFetchEvent(type, eventInitDict)": {
-      "args": [
-        "type", 
-        "eventInitDict"
-      ], 
-      "for": [
-        "ForeignFetchEvent"
-      ], 
-      "shortname": "service-workers"
-    }
-  }, 
   "FormData()": {
     "FormData(form)": {
       "args": [
@@ -1038,27 +1026,6 @@
         "InputEvent"
       ], 
       "shortname": "ui-events"
-    }
-  }, 
-  "InstallEvent()": {
-    "InstallEvent(type)": {
-      "args": [
-        "type"
-      ], 
-      "for": [
-        "InstallEvent"
-      ], 
-      "shortname": "service-workers"
-    }, 
-    "InstallEvent(type, eventInitDict)": {
-      "args": [
-        "type", 
-        "eventInitDict"
-      ], 
-      "for": [
-        "InstallEvent"
-      ], 
-      "shortname": "service-workers"
     }
   }, 
   "IsSearchProviderInstalled()": {
@@ -1814,6 +1781,18 @@
         "PasswordCredential"
       ], 
       "shortname": "credential-management"
+    }, 
+    "[[CollectFromCredentialStore]](options, sameOriginWithAncestors)": {
+      "args": [
+        "options", 
+        "sameOriginWithAncestors"
+      ], 
+      "for": [
+        "Credential", 
+        "FederatedCredential", 
+        "PasswordCredential"
+      ], 
+      "shortname": "credential-management"
     }
   }, 
   "[[Create]]()": {
@@ -1823,6 +1802,18 @@
       ], 
       "for": [
         "PublicKeyCredential", 
+        "Credential", 
+        "FederatedCredential", 
+        "PasswordCredential"
+      ], 
+      "shortname": "credential-management"
+    }, 
+    "[[Create]](options, sameOriginWithAncestors)": {
+      "args": [
+        "options", 
+        "sameOriginWithAncestors"
+      ], 
+      "for": [
         "Credential", 
         "FederatedCredential", 
         "PasswordCredential"
@@ -1851,6 +1842,16 @@
       ], 
       "shortname": "credential-management"
     }, 
+    "[[DiscoverFromExternalSource]](options, sameOriginWithAncestors)": {
+      "args": [
+        "options", 
+        "sameOriginWithAncestors"
+      ], 
+      "for": [
+        "Credential"
+      ], 
+      "shortname": "credential-management"
+    }, 
     "[[DiscoverFromExternalSource]](origin, options)": {
       "args": [
         "origin", 
@@ -1869,6 +1870,18 @@
       ], 
       "for": [
         "PublicKeyCredential", 
+        "Credential", 
+        "FederatedCredential", 
+        "PasswordCredential"
+      ], 
+      "shortname": "credential-management"
+    }, 
+    "[[Store]](credential, sameOriginWithAncestors)": {
+      "args": [
+        "credential", 
+        "sameOriginWithAncestors"
+      ], 
+      "for": [
         "Credential", 
         "FederatedCredential", 
         "PasswordCredential"
@@ -7581,17 +7594,6 @@
       "shortname": "worklets"
     }
   }, 
-  "registerForeignFetch()": {
-    "registerForeignFetch(options)": {
-      "args": [
-        "options"
-      ], 
-      "for": [
-        "InstallEvent"
-      ], 
-      "shortname": "service-workers"
-    }
-  }, 
   "registerLayout()": {
     "registerLayout(name, layoutCtor)": {
       "args": [
@@ -8114,7 +8116,6 @@
         "r"
       ], 
       "for": [
-        "ForeignFetchEvent", 
         "FetchEvent"
       ], 
       "shortname": "service-workers"
@@ -9105,9 +9106,10 @@
     "set()": {
       "args": [], 
       "for": [
-        "NamedFlowMap"
+        "NamedFlowMap", 
+        "CSSFontFeatureValuesMap"
       ], 
-      "shortname": "css-regions"
+      "shortname": "css-fonts"
     }, 
     "set(flowName, flowValue)": {
       "args": [
@@ -10160,13 +10162,9 @@
     "toJSON()": {
       "args": [], 
       "for": [
-        "URL", 
-        "DOMMatrixReadOnly", 
-        "DOMRectReadOnly", 
-        "DOMPointReadOnly", 
-        "DOMQuad"
+        "URL"
       ], 
-      "shortname": "geometry"
+      "shortname": "url"
     }
   }, 
   "toMatrix()": {
