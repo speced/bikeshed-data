@@ -89,6 +89,46 @@ https://w3c.github.io/webappsec-credential-management/#abstract-opdef-create-a-p
 1
 1
 -
+CreateReadableByteStream
+abstract-op
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#create-readable-byte-stream
+1
+1
+-
+CreateReadableStream
+abstract-op
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#create-readable-stream
+1
+1
+-
+CreateTransformStream
+abstract-op
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#create-transform-stream
+1
+1
+-
+CreateWritableStream
+abstract-op
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#create-writable-stream
+1
+1
+-
 Credential
 interface
 credential-management-1
@@ -326,7 +366,7 @@ https://w3c.github.io/webappsec-credential-management/#dom-federatedcredential-c
 1
 FederatedCredential
 -
-[[Create]](origin, options)
+[[Create]](origin, options, sameOriginWithAncestors)
 method
 webauthn-1
 webauthn
@@ -1885,10 +1925,10 @@ webauthn-1
 webauthn
 1
 current
-https://w3c.github.io/webauthn/#dom-publickeycredential-store-credential-credential
+https://w3c.github.io/webauthn/#dom-publickeycredential-store-credential-sameoriginwithancestors-credential
 1
 1
-PublicKeyCredential/[[Store]](credential)
+PublicKeyCredential/[[Store]](credential, sameOriginWithAncestors)
 -
 credential chooser
 dfn

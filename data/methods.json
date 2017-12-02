@@ -1202,12 +1202,8 @@
     }
   }, 
   "ReadableByteStreamController()": {
-    "ReadableByteStreamController(stream, underlyingByteSource, highWaterMark)": {
-      "args": [
-        "stream", 
-        "underlyingByteSource", 
-        "highWaterMark"
-      ], 
+    "ReadableByteStreamController()": {
+      "args": [], 
       "for": [
         "ReadableByteStreamController"
       ], 
@@ -1250,13 +1246,8 @@
     }
   }, 
   "ReadableStreamDefaultController()": {
-    "ReadableStreamDefaultController(stream, underlyingSource, size, highWaterMark)": {
-      "args": [
-        "stream", 
-        "underlyingSource", 
-        "size", 
-        "highWaterMark"
-      ], 
+    "ReadableStreamDefaultController()": {
+      "args": [], 
       "for": [
         "ReadableStreamDefaultController"
       ], 
@@ -1421,36 +1412,10 @@
     }
   }, 
   "TransformStreamDefaultController()": {
-    "TransformStreamDefaultController(stream)": {
-      "args": [
-        "stream"
-      ], 
+    "TransformStreamDefaultController()": {
+      "args": [], 
       "for": [
         "TransformStreamDefaultController"
-      ], 
-      "shortname": "streams"
-    }
-  }, 
-  "TransformStreamDefaultSink()": {
-    "TransformStreamDefaultSink(stream, startPromise)": {
-      "args": [
-        "stream", 
-        "startPromise"
-      ], 
-      "for": [
-        "TransformStreamDefaultSink"
-      ], 
-      "shortname": "streams"
-    }
-  }, 
-  "TransformStreamDefaultSource()": {
-    "TransformStreamDefaultSource(stream, startPromise)": {
-      "args": [
-        "stream", 
-        "startPromise"
-      ], 
-      "for": [
-        "TransformStreamDefaultSource"
       ], 
       "shortname": "streams"
     }
@@ -1736,13 +1701,8 @@
     }
   }, 
   "WritableStreamDefaultController()": {
-    "WritableStreamDefaultController(stream, underlyingSink, size, highWaterMark)": {
-      "args": [
-        "stream", 
-        "underlyingSink", 
-        "size", 
-        "highWaterMark"
-      ], 
+    "WritableStreamDefaultController()": {
+      "args": [], 
       "for": [
         "WritableStreamDefaultController"
       ], 
@@ -1775,7 +1735,6 @@
         "options"
       ], 
       "for": [
-        "PublicKeyCredential", 
         "Credential", 
         "FederatedCredential", 
         "PasswordCredential"
@@ -1793,6 +1752,17 @@
         "PasswordCredential"
       ], 
       "shortname": "credential-management"
+    }, 
+    "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)": {
+      "args": [
+        "origin", 
+        "options", 
+        "sameOriginWithAncestors"
+      ], 
+      "for": [
+        "PublicKeyCredential"
+      ], 
+      "shortname": "webauthn"
     }
   }, 
   "[[Create]]()": {
@@ -1820,10 +1790,11 @@
       ], 
       "shortname": "credential-management"
     }, 
-    "[[Create]](origin, options)": {
+    "[[Create]](origin, options, sameOriginWithAncestors)": {
       "args": [
         "origin", 
-        "options"
+        "options", 
+        "sameOriginWithAncestors"
       ], 
       "for": [
         "PublicKeyCredential"
@@ -1851,16 +1822,6 @@
         "Credential"
       ], 
       "shortname": "credential-management"
-    }, 
-    "[[DiscoverFromExternalSource]](origin, options)": {
-      "args": [
-        "origin", 
-        "options"
-      ], 
-      "for": [
-        "PublicKeyCredential"
-      ], 
-      "shortname": "webauthn"
     }
   }, 
   "[[Store]]()": {
@@ -1869,7 +1830,6 @@
         "credential"
       ], 
       "for": [
-        "PublicKeyCredential", 
         "Credential", 
         "FederatedCredential", 
         "PasswordCredential"
@@ -1882,6 +1842,7 @@
         "sameOriginWithAncestors"
       ], 
       "for": [
+        "PublicKeyCredential", 
         "Credential", 
         "FederatedCredential", 
         "PasswordCredential"
@@ -1893,12 +1854,11 @@
     "abort()": {
       "args": [], 
       "for": [
+        "AbortController", 
         "XMLHttpRequest", 
         "IDBTransaction", 
-        "FileReader", 
-        "TransformStreamDefaultSink", 
-        "AbortController", 
-        "ApplicationCache"
+        "ApplicationCache", 
+        "FileReader"
       ], 
       "shortname": "dom"
     }, 
@@ -2567,7 +2527,6 @@
         "reason"
       ], 
       "for": [
-        "TransformStreamDefaultSource", 
         "ReadableStreamBYOBReader", 
         "ReadableStream", 
         "ReadableStreamDefaultReader"
@@ -2821,7 +2780,6 @@
     "close()": {
       "args": [], 
       "for": [
-        "TransformStreamDefaultSink", 
         "WebSocket", 
         "DedicatedWorkerGlobalScope", 
         "MessagePort", 
@@ -7235,15 +7193,6 @@
       "shortname": "css-typed-om"
     }
   }, 
-  "pull()": {
-    "pull()": {
-      "args": [], 
-      "for": [
-        "TransformStreamDefaultSource"
-      ], 
-      "shortname": "streams"
-    }
-  }, 
   "pushState()": {
     "pushState(data, title)": {
       "args": [
@@ -9754,8 +9703,6 @@
     "start()": {
       "args": [], 
       "for": [
-        "TransformStreamDefaultSink", 
-        "TransformStreamDefaultSource", 
         "MessagePort", 
         "Sensor", 
         "HTMLMarqueeElement"
@@ -10693,7 +10640,6 @@
         "chunk"
       ], 
       "for": [
-        "TransformStreamDefaultSink", 
         "WritableStreamDefaultWriter"
       ], 
       "shortname": "streams"
