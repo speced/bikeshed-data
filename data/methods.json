@@ -889,16 +889,6 @@
       ], 
       "shortname": "css-font-loading"
     }, 
-    "FontFace(family, source)": {
-      "args": [
-        "family", 
-        "source"
-      ], 
-      "for": [
-        "FontFace"
-      ], 
-      "shortname": "css-font-loading"
-    }, 
     "FontFace(family, source, descriptors)": {
       "args": [
         "family", 
@@ -912,13 +902,6 @@
     }
   }, 
   "FontFaceSet()": {
-    "FontFaceSet()": {
-      "args": [], 
-      "for": [
-        "FontFaceSet"
-      ], 
-      "shortname": "css-font-loading"
-    }, 
     "FontFaceSet(initialFaces)": {
       "args": [
         "initialFaces"
@@ -1190,6 +1173,17 @@
         "ProgressEvent"
       ], 
       "shortname": "xhr"
+    }
+  }, 
+  "Q()": {
+    "Q(value)": {
+      "args": [
+        "value"
+      ], 
+      "for": [
+        "CSS"
+      ], 
+      "shortname": "css-typed-om"
     }
   }, 
   "Range()": {
@@ -1771,7 +1765,6 @@
         "options"
       ], 
       "for": [
-        "PublicKeyCredential", 
         "Credential", 
         "FederatedCredential", 
         "PasswordCredential"
@@ -1808,7 +1801,6 @@
         "options"
       ], 
       "for": [
-        "PublicKeyCredential", 
         "Credential"
       ], 
       "shortname": "credential-management"
@@ -1822,6 +1814,17 @@
         "Credential"
       ], 
       "shortname": "credential-management"
+    }, 
+    "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)": {
+      "args": [
+        "origin", 
+        "options", 
+        "sameOriginWithAncestors"
+      ], 
+      "for": [
+        "PublicKeyCredential"
+      ], 
+      "shortname": "webauthn"
     }
   }, 
   "[[Store]]()": {
@@ -2349,6 +2352,15 @@
       ], 
       "for": [
         "Location"
+      ], 
+      "shortname": "html"
+    }
+  }, 
+  "assignedElements()": {
+    "assignedElements()": {
+      "args": [], 
+      "for": [
+        "HTMLSlotElement"
       ], 
       "shortname": "html"
     }
@@ -5995,15 +6007,6 @@
       "shortname": "dom"
     }
   }, 
-  "isPlatformAuthenticatorAvailable()": {
-    "isPlatformAuthenticatorAvailable()": {
-      "args": [], 
-      "for": [
-        "PublicKeyCredential"
-      ], 
-      "shortname": "webauthn"
-    }
-  }, 
   "isPointInPath()": {
     "isPointInPath()": {
       "args": [], 
@@ -9476,6 +9479,19 @@
         "Range"
       ], 
       "shortname": "dom"
+    }
+  }, 
+  "setStdDeviation()": {
+    "setStdDeviation(stdDeviationX, stdDeviationY)": {
+      "args": [
+        "stdDeviationX", 
+        "stdDeviationY"
+      ], 
+      "for": [
+        "SVGFEGaussianBlurElement", 
+        "SVGFEDropShadowElement"
+      ], 
+      "shortname": "filter-effects"
     }
   }, 
   "setTimeout()": {
