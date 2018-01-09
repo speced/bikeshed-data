@@ -59,7 +59,7 @@
     "block-level", 
     "paint image definition", 
     "<east-asian-width-values>", 
-    "javascript execution context", 
+    "generating a new blob url", 
     "client extension input", 
     "installation failed", 
     "FederatedCredentialRequestOptions", 
@@ -221,7 +221,6 @@
     "fill()", 
     "resulting url string", 
     ":default", 
-    "origin of a blob url", 
     "lavender", 
     "should plugin element be blocked a priori by content security policy?:", 
     "tel-local", 
@@ -377,6 +376,7 @@
     "scope to registration map", 
     "<transform-list>", 
     "application cache group", 
+    "javascript execution context", 
     "suffering from a pattern mismatch", 
     "border-image-outset", 
     "opaque-host parser", 
@@ -724,6 +724,7 @@
     "OffscreenRenderingContext", 
     "in effect", 
     "SVGPaint", 
+    "object url", 
     "ruby-text-group", 
     "scroll to the fragment", 
     "mask-border-outset", 
@@ -893,7 +894,6 @@
     "thead", 
     "passive scanning", 
     "<feature-index>", 
-    "serialization of a blob url", 
     "float block formatting context", 
     "first cross-axis baseline set", 
     "child text content change steps", 
@@ -2116,7 +2116,7 @@
     "text/livescript", 
     "no-discretionary-ligatures", 
     "system font fallback", 
-    "password", 
+    "height", 
     "desc", 
     "scroll container", 
     "resource selection algorithm", 
@@ -2532,7 +2532,7 @@
     "clamp a grid area", 
     "beforeinput", 
     "unset.", 
-    "unknown-named-character-reference", 
+    "includes credentials", 
     "intrinsic width", 
     "default iterator object", 
     "\"strict-origin-when-cross-origin\"", 
@@ -2575,7 +2575,6 @@
     "float-offset", 
     "not origin-clean", 
     "mediumorchid", 
-    "blob url's origin", 
     "DOMRectReadOnly", 
     "missing-whitespace-before-doctype-name", 
     "content security policy syntax", 
@@ -3727,7 +3726,7 @@
     "firing a synthetic mouse event named e", 
     "starts with an identifier", 
     "table caption box", 
-    "process request end-of-body", 
+    "password", 
     "import conditions", 
     "nth()", 
     "beginPath()", 
@@ -4283,6 +4282,7 @@
     "euc-kr", 
     "get the object", 
     "start register", 
+    "process request end-of-body", 
     "permission revocation algorithm", 
     "border-inline-width", 
     "immediately", 
@@ -4748,7 +4748,7 @@
     "encoding determination", 
     "namedflows", 
     "product id", 
-    "height", 
+    "generate a new blob url", 
     ":nth-last-child()", 
     "paint name to paint image definition map", 
     "eventinit", 
@@ -5368,7 +5368,7 @@
     "mark", 
     "mask-border-slice", 
     "list of scripts that will execute in order as soon as possible", 
-    "fill painting area", 
+    "ideographs", 
     "content-disposition", 
     "hyphenate-limit-last", 
     "webusb platform capability descriptor", 
@@ -5511,7 +5511,7 @@
     "named property deleters", 
     "`refresh`", 
     "keyword-source", 
-    "ideographs", 
+    "fill painting area", 
     "LayoutEdges", 
     "embed", 
     "USB", 
@@ -5962,7 +5962,6 @@
     "null-character-reference", 
     "upgrade an element", 
     "push source", 
-    "dereference", 
     "ElementTimeControl", 
     "organization-unit", 
     "baseline-sharing group", 
@@ -6396,7 +6395,7 @@
     "pcenchar", 
     "html fragment parsing algorithm", 
     "enqueuejob(queuename, job, arguments)", 
-    "includes credentials", 
+    "unknown-named-character-reference", 
     "whitespace byte", 
     "cc-family-name", 
     "font type", 
@@ -6876,6 +6875,7 @@
     "<image-list>", 
     "rawtext end tag name state", 
     "color-adjust", 
+    "blob url entry", 
     "source text module record", 
     "internal module script graph fetching procedure", 
     "rules for parsing a hash-name reference", 
@@ -12322,8 +12322,8 @@
   "DOMRect/DOMRect(x, y, width, height)": [
     "y", 
     "width", 
-    "height", 
-    "x"
+    "x", 
+    "height"
   ], 
   "DOMRect/fromRect()": [
     "other"
@@ -12334,8 +12334,8 @@
   "DOMRectInit": [
     "y", 
     "width", 
-    "height", 
-    "x"
+    "x", 
+    "height"
   ], 
   "DOMRectList": [
     "item(index)", 
@@ -12375,14 +12375,14 @@
   "DOMRectReadOnly/DOMRectReadOnly()": [
     "y", 
     "width", 
-    "height", 
-    "x"
+    "x", 
+    "height"
   ], 
   "DOMRectReadOnly/DOMRectReadOnly(x, y, width, height)": [
     "y", 
     "width", 
-    "height", 
-    "x"
+    "x", 
+    "height"
   ], 
   "DOMRectReadOnly/fromRect()": [
     "other"
@@ -13538,7 +13538,7 @@
   "FontMetrics": [
     "boundingBoxAscent", 
     "emHeightDescent", 
-    "boundingBoxRight", 
+    "emHeightAscent", 
     "fontBoundingBoxDescent", 
     "advances", 
     "boundingBoxDescent", 
@@ -13548,7 +13548,7 @@
     "width", 
     "boundingBoxLeft", 
     "fontBoundingBoxAscent", 
-    "emHeightAscent", 
+    "boundingBoxRight", 
     "baselines"
   ], 
   "ForEachCallback": [
@@ -15704,10 +15704,10 @@
   ], 
   "OffscreenCanvas": [
     "width", 
-    "height", 
+    "getContext(contextId, arguments...)", 
     "convertToBlob()", 
     "transferToImageBitmap()", 
-    "getContext(contextId, arguments...)"
+    "height"
   ], 
   "OrientationLockType": [
     "apply an orientation lock", 
@@ -15764,13 +15764,13 @@
   ], 
   "PasswordCredential": [
     "[[CollectFromCredentialStore]](options)", 
-    "PasswordCredential(form)", 
+    "password", 
     "[[Create]](options)", 
     "PasswordCredential(data)", 
     "[[Store]](credential, sameOriginWithAncestors)", 
     "[[CollectFromCredentialStore]](options, sameOriginWithAncestors)", 
     "[[Create]](options, sameOriginWithAncestors)", 
-    "password", 
+    "PasswordCredential(form)", 
     "[[Store]](credential)"
   ], 
   "PasswordCredential/PasswordCredential(data)": [
@@ -16517,17 +16517,17 @@
   "SVGFilterPrimitiveStandardAttributes": [
     "y", 
     "width", 
-    "height", 
+    "x", 
     "result", 
-    "x"
+    "height"
   ], 
   "SVGMaskElement": [
-    "maskUnits", 
+    "maskContentUnits", 
     "height", 
     "width", 
     "y", 
     "x", 
-    "maskContentUnits"
+    "maskUnits"
   ], 
   "Screen": [
     "pixelDepth", 
@@ -18257,16 +18257,26 @@
   "blob": [
     "type"
   ], 
+  "blob URL": [
+    "resolve", 
+    "resolving the origin", 
+    "resolve the origin"
+  ], 
+  "blob URL entry": [
+    "environment", 
+    "object"
+  ], 
   "blob url": [
     "lifetime", 
     "lifetime stipulation"
   ], 
   "blob url store": [
     "add an entry to the blob url store", 
-    "add an entry", 
+    "remove an entry", 
     "add the entry to the blob url store", 
     "add the entry", 
-    "remove an entry", 
+    "adding an entry to the blob url store", 
+    "add an entry", 
     "remove an entry from the blob url store", 
     "remove the entry from the blob url store", 
     "remove the entry"
@@ -19334,13 +19344,13 @@
     "primitiveunits", 
     "sepia()", 
     "blur()", 
-    "opacity()", 
+    "grayscale()", 
     "height", 
     "drop-shadow()", 
     "width", 
     "brightness()", 
     "result", 
-    "grayscale()", 
+    "opacity()", 
     "y", 
     "x", 
     "hue-rotate()", 
@@ -19660,8 +19670,8 @@
   "foreignObject": [
     "y", 
     "width", 
-    "height", 
-    "x"
+    "x", 
+    "height"
   ], 
   "form": [
     "autocomplete", 
@@ -21583,11 +21593,11 @@
     "local url flag"
   ], 
   "use": [
-    "height", 
+    "y", 
     "width", 
     "xlink:href", 
-    "y", 
-    "x"
+    "x", 
+    "height"
   ], 
   "user-select": [
     "auto", 
