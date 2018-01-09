@@ -2293,16 +2293,17 @@
     }
   }, 
   "arc()": {
-    "arc(x, y, radius, startAngle, endAngle, anticlockwise)": {
+    "arc(x, y, radius, startAngle, endAngle)": {
       "args": [
         "x", 
         "y", 
         "radius", 
         "startAngle", 
-        "endAngle", 
-        "anticlockwise"
+        "endAngle"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2317,7 +2318,9 @@
         "radiusY", 
         "rotation"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2376,7 +2379,9 @@
       "args": [
         "data"
       ], 
-      "for": [], 
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2423,7 +2428,9 @@
   "beginPath()": {
     "beginPath()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasDrawPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2437,7 +2444,9 @@
         "x", 
         "y"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2500,7 +2509,9 @@
       "args": [
         "data"
       ], 
-      "for": [], 
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2684,7 +2695,9 @@
   "clearInterval()": {
     "clearInterval()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2696,14 +2709,18 @@
         "w", 
         "h"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasRect"
+      ], 
       "shortname": "html"
     }
   }, 
   "clearTimeout()": {
     "clearTimeout()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2719,7 +2736,9 @@
   "clip()": {
     "clip()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasDrawPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2803,7 +2822,9 @@
   "closePath()": {
     "closePath()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -2913,8 +2934,10 @@
     }
   }, 
   "confirm()": {
-    "confirm()": {
-      "args": [], 
+    "confirm(message)": {
+      "args": [
+        "message"
+      ], 
       "for": [
         "Window"
       ], 
@@ -3347,14 +3370,18 @@
   "createImageBitmap()": {
     "createImageBitmap()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ], 
       "shortname": "html"
     }
   }, 
   "createImageData()": {
     "createImageData()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasImageData"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -3389,7 +3416,9 @@
         "x1", 
         "y1"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasFillStrokeStyles"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -3463,7 +3492,9 @@
         "image", 
         "repetition"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasFillStrokeStyles"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -3489,7 +3520,9 @@
         "y1", 
         "r1"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasFillStrokeStyles"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -4002,7 +4035,41 @@
       "args": [
         "element"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasUserInterface"
+      ], 
+      "shortname": "html"
+    }
+  }, 
+  "drawImage()": {
+    "drawImage(image, dx, dy, dw, dh)": {
+      "args": [
+        "image", 
+        "dx", 
+        "dy", 
+        "dw", 
+        "dh"
+      ], 
+      "for": [
+        "CanvasDrawImage"
+      ], 
+      "shortname": "html"
+    }, 
+    "drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)": {
+      "args": [
+        "image", 
+        "sx", 
+        "sy", 
+        "sw", 
+        "sh", 
+        "dx", 
+        "dy", 
+        "dw", 
+        "dh"
+      ], 
+      "for": [
+        "CanvasDrawImage"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -4031,7 +4098,7 @@
     }
   }, 
   "ellipse()": {
-    "ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise)": {
+    "ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle)": {
       "args": [
         "x", 
         "y", 
@@ -4039,10 +4106,11 @@
         "radiusY", 
         "rotation", 
         "startAngle", 
-        "endAngle", 
-        "anticlockwise"
+        "endAngle"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -4239,7 +4307,9 @@
   "fill()": {
     "fill()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasDrawPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -4251,14 +4321,18 @@
         "w", 
         "h"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasRect"
+      ], 
       "shortname": "html"
     }
   }, 
   "fillText()": {
     "fillText()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasText"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -4321,7 +4395,15 @@
       "args": [], 
       "for": [
         "Window", 
-        "WindowClient", 
+        "WindowClient"
+      ], 
+      "shortname": "html"
+    }, 
+    "focus(options)": {
+      "args": [
+        "options"
+      ], 
+      "for": [
         "HTMLElement"
       ], 
       "shortname": "html"
@@ -5029,7 +5111,9 @@
         "sw", 
         "sh"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasImageData"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -5090,7 +5174,9 @@
   "getLineDash()": {
     "getLineDash()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasPathDrawingStyles"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -5366,7 +5452,9 @@
   "getTransform()": {
     "getTransform()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasTransform"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -5922,7 +6010,9 @@
   "isPointInPath()": {
     "isPointInPath()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasDrawPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -5941,7 +6031,9 @@
   "isPointInStroke()": {
     "isPointInStroke()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasDrawPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -6129,7 +6221,9 @@
         "x", 
         "y"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -6353,7 +6447,9 @@
   "measureText()": {
     "measureText()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasText"
+      ], 
       "shortname": "html"
     }, 
     "measureText(text, styleMap)": {
@@ -6408,7 +6504,8 @@
         "y"
       ], 
       "for": [
-        "Window"
+        "Window", 
+        "CanvasPath"
       ], 
       "shortname": "cssom-view"
     }
@@ -6707,25 +6804,6 @@
       ], 
       "shortname": "indexeddb"
     }, 
-    "open(url)": {
-      "args": [
-        "url"
-      ], 
-      "for": [
-        "Window"
-      ], 
-      "shortname": "html"
-    }, 
-    "open(url, target)": {
-      "args": [
-        "url", 
-        "target"
-      ], 
-      "for": [
-        "Window"
-      ], 
-      "shortname": "html"
-    }, 
     "open(url, target, features)": {
       "args": [
         "url", 
@@ -6988,10 +7066,11 @@
       ], 
       "shortname": "html"
     }, 
-    "postMessage(message, targetOrigin)": {
+    "postMessage(message, targetOrigin, transfer)": {
       "args": [
         "message", 
-        "targetOrigin"
+        "targetOrigin", 
+        "transfer"
       ], 
       "for": [
         "Window"
@@ -7095,16 +7174,10 @@
     }
   }, 
   "prompt()": {
-    "prompt()": {
-      "args": [], 
-      "for": [
-        "Window"
-      ], 
-      "shortname": "html"
-    }, 
-    "prompt(message)": {
+    "prompt(message, default)": {
       "args": [
-        "message"
+        "message", 
+        "default"
       ], 
       "for": [
         "Window"
@@ -7169,7 +7242,9 @@
   "putImageData()": {
     "putImageData()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasImageData"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -7203,7 +7278,9 @@
         "x", 
         "y"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -7400,7 +7477,9 @@
         "w", 
         "h"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -7514,7 +7593,9 @@
   "registerProtocolHandler()": {
     "registerProtocolHandler()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "NavigatorContentUtils"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -7884,14 +7965,18 @@
   "resetClip()": {
     "resetClip()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasDrawPath"
+      ], 
       "shortname": "html"
     }
   }, 
   "resetTransform()": {
     "resetTransform()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasTransform"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -8002,7 +8087,9 @@
   "restore()": {
     "restore()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasState"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -8050,7 +8137,8 @@
         "angle"
       ], 
       "for": [
-        "DOMMatrixReadOnly"
+        "DOMMatrixReadOnly", 
+        "CanvasTransform"
       ], 
       "shortname": "geometry"
     }, 
@@ -8325,7 +8413,9 @@
   "save()": {
     "save()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasState"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -8430,7 +8520,9 @@
         "x", 
         "y"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasTransform"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -8844,7 +8936,9 @@
   "scrollPathIntoView()": {
     "scrollPathIntoView()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasUserInterface"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -9190,7 +9284,9 @@
   "setInterval()": {
     "setInterval()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -9220,7 +9316,9 @@
   "setLineDash()": {
     "setLineDash()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasPathDrawingStyles"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -9399,7 +9497,9 @@
   "setTimeout()": {
     "setTimeout()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -9739,7 +9839,9 @@
   "stroke()": {
     "stroke()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasDrawPath"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -9751,14 +9853,18 @@
         "w", 
         "h"
       ], 
-      "for": [], 
+      "for": [
+        "CanvasRect"
+      ], 
       "shortname": "html"
     }
   }, 
   "strokeText()": {
     "strokeText()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "CanvasText"
+      ], 
       "shortname": "html"
     }
   }, 
@@ -10154,6 +10260,22 @@
       "shortname": "html"
     }
   }, 
+  "transform()": {
+    "transform(a, b, c, d, e, f)": {
+      "args": [
+        "a", 
+        "b", 
+        "c", 
+        "d", 
+        "e", 
+        "f"
+      ], 
+      "for": [
+        "CanvasTransform"
+      ], 
+      "shortname": "html"
+    }
+  }, 
   "transformPoint()": {
     "transformPoint()": {
       "args": [], 
@@ -10223,6 +10345,16 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "translate(x, y)": {
+      "args": [
+        "x", 
+        "y"
+      ], 
+      "for": [
+        "CanvasTransform"
+      ], 
+      "shortname": "html"
     }
   }, 
   "translateSelf()": {
@@ -10307,7 +10439,9 @@
   "unregisterProtocolHandler()": {
     "unregisterProtocolHandler()": {
       "args": [], 
-      "for": [], 
+      "for": [
+        "NavigatorContentUtils"
+      ], 
       "shortname": "html"
     }
   }, 
