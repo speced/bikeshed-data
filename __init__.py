@@ -51,13 +51,22 @@ def updateDataFiles(path):
 	bikeshed.update.manifest.createManifest(path=path)
 
 def updateWptDataFiles(dataPath):
+	return # no-op for now until WPT is fixed
 	scriptPath = os.path.dirname(os.path.realpath(__file__))
 	wptPath = os.path.join(scriptPath, "web-platform-tests")
 
 	os.chdir(scriptPath)
-	subprocess.check_call("git submodule update --remote", shell=True)
+	try:
+		subprocess.check_call("git submodule update --remote", shell=True)
+	except Exception as e:
+		print e
+		return
 	os.chdir(wptPath)
-	subprocess.check_call("wpt manifest", shell=True)
+	try:
+		subprocess.check_call("wpt manifest", shell=True)
+	except Exception as e:
+		print e
+		return
 
 	paths = []
 	with io.open(os.path.join(wptPath, "MANIFEST.json"), 'r', encoding="utf-8") as infile:
