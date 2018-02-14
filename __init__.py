@@ -45,10 +45,10 @@ def updateDataFiles(path):
 	bikeshed.update.update(path=path, force=True)
 
 	# Then the WPT data files, adding the file to Bikeshed's data folder
-	updateWptDataFiles(dataPath=path)
+	#updateWptDataFiles(dataPath=path)
 
 	# And now manually update the Bikeshed manifest again.
-	bikeshed.update.manifest.createManifest(path=path)
+	#bikeshed.update.manifest.createManifest(path=path)
 
 def updateWptDataFiles(dataPath):
 	return # no-op for now until WPT is fixed
