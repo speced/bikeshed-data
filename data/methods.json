@@ -1275,10 +1275,10 @@
     }
   }, 
   "ReadableStream()": {
-    "ReadableStream(underlyingSource, queuingStrategy)": {
+    "ReadableStream(underlyingSource, strategy)": {
       "args": [
         "underlyingSource", 
-        "queuingStrategy"
+        "strategy"
       ], 
       "for": [
         "ReadableStream"
@@ -1753,10 +1753,10 @@
     }
   }, 
   "WritableStream()": {
-    "WritableStream(underlyingSink, queuingStrategy)": {
+    "WritableStream(underlyingSink, strategy)": {
       "args": [
         "underlyingSink", 
-        "queuingStrategy"
+        "strategy"
       ], 
       "for": [
         "WritableStream"
@@ -1963,8 +1963,9 @@
         "reason"
       ], 
       "for": [
-        "WritableStreamDefaultWriter", 
-        "WritableStream"
+        "underlying sink", 
+        "WritableStream", 
+        "WritableStreamDefaultWriter"
       ], 
       "shortname": "streams"
     }
@@ -2632,6 +2633,7 @@
       "for": [
         "ReadableStreamBYOBReader", 
         "ReadableStream", 
+        "underlying source", 
         "ReadableStreamDefaultReader"
       ], 
       "shortname": "streams"
@@ -2896,6 +2898,7 @@
         "SharedWorkerGlobalScope", 
         "HTMLDialogElement", 
         "IDBDatabase", 
+        "underlying sink", 
         "ReadableByteStreamController", 
         "USBDevice"
       ], 
@@ -4482,6 +4485,17 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }
+  }, 
+  "flush()": {
+    "flush(controller)": {
+      "args": [
+        "controller"
+      ], 
+      "for": [
+        "transformer"
+      ], 
+      "shortname": "streams"
     }
   }, 
   "focus()": {
@@ -7292,6 +7306,17 @@
       "shortname": "css-typed-om"
     }
   }, 
+  "pull()": {
+    "pull(controller)": {
+      "args": [
+        "controller"
+      ], 
+      "for": [
+        "underlying source"
+      ], 
+      "shortname": "streams"
+    }
+  }, 
   "pushState()": {
     "pushState(data, title)": {
       "args": [
@@ -9683,7 +9708,8 @@
         "chunk"
       ], 
       "for": [
-        "ByteLengthQueuingStrategy"
+        "ByteLengthQueuingStrategy", 
+        "queuing strategy"
       ], 
       "shortname": "streams"
     }
@@ -9841,6 +9867,17 @@
         "HTMLMarqueeElement"
       ], 
       "shortname": "generic-sensor"
+    }, 
+    "start(controller)": {
+      "args": [
+        "controller"
+      ], 
+      "for": [
+        "transformer", 
+        "underlying source", 
+        "underlying sink"
+      ], 
+      "shortname": "streams"
     }, 
     "start(index)": {
       "args": [
@@ -10392,6 +10429,16 @@
         "CanvasTransform"
       ], 
       "shortname": "html"
+    }, 
+    "transform(chunk, controller)": {
+      "args": [
+        "chunk", 
+        "controller"
+      ], 
+      "for": [
+        "transformer"
+      ], 
+      "shortname": "streams"
     }
   }, 
   "transformPoint()": {
@@ -10799,6 +10846,15 @@
       ], 
       "for": [
         "WritableStreamDefaultWriter"
+      ], 
+      "shortname": "streams"
+    }, 
+    "write(controller)": {
+      "args": [
+        "controller"
+      ], 
+      "for": [
+        "underlying sink"
       ], 
       "shortname": "streams"
     }
