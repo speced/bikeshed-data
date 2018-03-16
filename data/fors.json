@@ -3247,6 +3247,7 @@
     "equivalent", 
     "sectioning roots", 
     "the event handler processing algorithm", 
+    "ComputedEffectTiming", 
     "media timeline", 
     "throw", 
     "src", 
@@ -3390,6 +3391,7 @@
     "fragmentation context", 
     "tuple origin", 
     "html integration point", 
+    "OptionalEffectTiming", 
     "paint function", 
     "onaddtrack", 
     "comment start state", 
@@ -4325,6 +4327,7 @@
     "page", 
     "serialize a css declaration block", 
     "unexpected-question-mark-instead-of-tag-name", 
+    "AnimationEffect", 
     "valid month string", 
     "initial-width", 
     "recognized key usage values", 
@@ -4973,7 +4976,7 @@
     "complex aspect ratio", 
     "animatable", 
     "attached", 
-    "HTMLMarqueeElement", 
+    "EffectTiming", 
     "font-kerning", 
     "m12 element", 
     "AnimationPlaybackEvent", 
@@ -6405,6 +6408,7 @@
     "focus update steps", 
     "switch the fontfaceset to loading", 
     "extract any vcard data represented by those nodes", 
+    "update the timing properties of an animation effect", 
     "computed value", 
     "generate a key", 
     "ruby container box", 
@@ -8743,6 +8747,7 @@
     "parse a jwk", 
     "SVGViewSpec", 
     "a priori authenticated url", 
+    "HTMLMarqueeElement", 
     "database access task source", 
     "lower open flag", 
     "shape-rendering", 
@@ -9721,6 +9726,15 @@
   ], 
   "Animation/updatePlaybackRate(playbackRate)": [
     "playbackRate"
+  ], 
+  "AnimationEffect": [
+    "getTiming()", 
+    "updateTiming()", 
+    "getComputedTiming()", 
+    "updateTiming(timing)"
+  ], 
+  "AnimationEffect/updateTiming(timing)": [
+    "timing"
   ], 
   "AnimationEffectReadOnly": [
     "timing", 
@@ -11509,6 +11523,13 @@
   "CompositionEventInit": [
     "data"
   ], 
+  "ComputedEffectTiming": [
+    "endTime", 
+    "progress", 
+    "activeDuration", 
+    "currentIteration", 
+    "localTime"
+  ], 
   "ComputedTimingProperties": [
     "endTime", 
     "progress", 
@@ -13030,6 +13051,16 @@
   ], 
   "ECMAScript global environment": [
     "exposes"
+  ], 
+  "EffectTiming": [
+    "endDelay", 
+    "direction", 
+    "iterationStart", 
+    "delay", 
+    "iterations", 
+    "duration", 
+    "easing", 
+    "fill"
   ], 
   "Element": [
     "setIdAttributeNode()", 
@@ -15315,13 +15346,14 @@
   ], 
   "KeyframeEffect": [
     "void setKeyframes(object? keyframes)", 
-    "iterationComposite", 
+    "getKeyframes()", 
     "target", 
     "composite", 
     "spacing", 
     "setKeyframes(keyframes)", 
     "KeyframeEffect(target, keyframes, options)", 
-    "KeyframeEffect(source)"
+    "KeyframeEffect(source)", 
+    "iterationComposite"
   ], 
   "KeyframeEffect/KeyframeEffect(source)": [
     "source"
@@ -15944,6 +15976,16 @@
     "getContext(contextId)", 
     "transferToImageBitmap()", 
     "height"
+  ], 
+  "OptionalEffectTiming": [
+    "endDelay", 
+    "direction", 
+    "iterationStart", 
+    "delay", 
+    "iterations", 
+    "duration", 
+    "easing", 
+    "fill"
   ], 
   "OrientationLockType": [
     "apply an orientation lock", 

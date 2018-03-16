@@ -5034,7 +5034,8 @@
     "getComputedTiming()": {
       "args": [], 
       "for": [
-        "AnimationEffectReadOnly"
+        "AnimationEffectReadOnly", 
+        "AnimationEffect"
       ], 
       "shortname": "web-animations"
     }
@@ -5275,6 +5276,7 @@
     "getKeyframes()": {
       "args": [], 
       "for": [
+        "KeyframeEffect", 
         "KeyframeEffectReadOnly"
       ], 
       "shortname": "web-animations"
@@ -5545,6 +5547,15 @@
         "SyncManager"
       ], 
       "shortname": "web-background-sync"
+    }
+  }, 
+  "getTiming()": {
+    "getTiming()": {
+      "args": [], 
+      "for": [
+        "AnimationEffect"
+      ], 
+      "shortname": "web-animations"
     }
   }, 
   "getTrackById()": {
@@ -10684,6 +10695,24 @@
       ], 
       "for": [
         "Animation"
+      ], 
+      "shortname": "web-animations"
+    }
+  }, 
+  "updateTiming()": {
+    "updateTiming()": {
+      "args": [], 
+      "for": [
+        "AnimationEffect"
+      ], 
+      "shortname": "web-animations"
+    }, 
+    "updateTiming(timing)": {
+      "args": [
+        "timing"
+      ], 
+      "for": [
+        "AnimationEffect"
       ], 
       "shortname": "web-animations"
     }
