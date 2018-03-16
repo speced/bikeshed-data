@@ -1531,6 +1531,7 @@
     "clean up after running a callback", 
     "the \"in caption\" insertion mode", 
     "ruby container", 
+    "AbstractRange", 
     "location", 
     "justify-content", 
     "normal flow", 
@@ -1833,7 +1834,6 @@
     "remove an attribute", 
     "current url", 
     "stalled", 
-    "extract a range", 
     "loadedmetadata", 
     "optionality list", 
     "available block space", 
@@ -2842,6 +2842,7 @@
     "reify as a cssstylevalue", 
     "become browsing-context connected", 
     "a new promise", 
+    "StaticRange", 
     "push a ruby annotation", 
     "installability signal", 
     "derivekey", 
@@ -4098,7 +4099,6 @@
     "BinaryType", 
     "frames()", 
     "column header", 
-    "clone the contents of a range", 
     "tree-abiding pseudo-element", 
     "border-left-width", 
     "grid-column-end", 
@@ -8560,7 +8560,6 @@
     "pixel-column", 
     "supported physical transports", 
     "cursive", 
-    "range insert", 
     "SVGColorProfileRule", 
     "convert a non-negative integer i to an octet string of length n", 
     "fire a progress event named e", 
@@ -8648,6 +8647,7 @@
     "whitesmoke", 
     "invalid_character_err", 
     "no-common-ligatures", 
+    "inner event creation steps", 
     "timeline offset", 
     "contact", 
     "animation interpolation", 
@@ -8686,6 +8686,7 @@
     "BluetoothDevice", 
     "text-emphasis-color", 
     "words", 
+    "live ranges", 
     "border area", 
     "sizes attribute", 
     "apply spacing to a series of keyframes", 
@@ -9656,6 +9657,13 @@
     "aborted", 
     "follow", 
     "aborted flag"
+  ], 
+  "AbstractRange": [
+    "collapsed", 
+    "endOffset", 
+    "endContainer", 
+    "startOffset", 
+    "startContainer"
   ], 
   "AbstractWorker": [
     "error"
@@ -16204,54 +16212,35 @@
   "Range": [
     "compareBoundaryPoints(how, sourceRange)", 
     "getBoundingClientRect()", 
-    "startOffset", 
     "insertNode(node)", 
     "selectNodeContents(node)", 
     "set the start", 
     "cloneRange()", 
     "deleteContents()", 
     "detach()", 
-    "select", 
-    "before", 
-    "partially contained", 
-    "endContainer", 
+    "commonAncestorContainer", 
     "Range()", 
     "setEnd(node, offset)", 
     "isPointInRange(node, offset)", 
-    "start", 
-    "contained", 
-    "commonAncestorContainer", 
-    "start node", 
     "setStartAfter(node)", 
     "extractContents()", 
-    "startContainer", 
+    "cloneContents()", 
     "START_TO_END", 
-    "endOffset", 
-    "collapsed", 
-    "after", 
     "surroundContents(newParent)", 
     "collapse()", 
     "selectNode(node)", 
     "END_TO_START", 
     "stringification behavior", 
-    "end offset", 
     "collapse(toStart)", 
-    "start offset", 
     "comparePoint(node, offset)", 
     "setStart(node, offset)", 
-    "cloneContents()", 
-    "end", 
     "intersectsNode(node)", 
     "setEndBefore(node)", 
     "set the end", 
     "START_TO_START", 
-    "equal", 
     "END_TO_END", 
     "setStartBefore(node)", 
-    "position", 
     "setEndAfter(node)", 
-    "root", 
-    "end node", 
     "getClientRects()"
   ], 
   "Range/collapse()": [
@@ -18755,7 +18744,12 @@
     "<percentage>"
   ], 
   "boundary point": [
-    "offset"
+    "node", 
+    "after", 
+    "equal", 
+    "offset", 
+    "position", 
+    "before"
   ], 
   "box-decoration-break": [
     "clone", 
@@ -20341,6 +20335,15 @@
     "none", 
     "<string>"
   ], 
+  "live range": [
+    "insert", 
+    "cloning the contents", 
+    "clone the contents", 
+    "root", 
+    "partially contained", 
+    "contained", 
+    "extract"
+  ], 
   "logical-page": [
     "verso", 
     "recto"
@@ -20872,6 +20875,16 @@
     "<position>", 
     "gradient center", 
     "<size>"
+  ], 
+  "range": [
+    "end", 
+    "collapsed", 
+    "start", 
+    "end offset", 
+    "start offset", 
+    "start node", 
+    "end node", 
+    "select"
   ], 
   "rect": [
     "rx", 
