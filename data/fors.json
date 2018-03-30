@@ -117,6 +117,7 @@
     "asynchronous read method", 
     "flex factor sum", 
     "onpaste", 
+    "get a layout child", 
     "USBConnectionEventInit", 
     "hotpink", 
     "access-control-max-age", 
@@ -1522,6 +1523,7 @@
     "nickname", 
     "stack", 
     "an unstyled document view", 
+    "pseudo-classes", 
     "add map elements from an iterable", 
     "surrogate", 
     "box-sizing", 
@@ -4862,6 +4864,7 @@
     "PublicKeyCredentialRpEntity", 
     "font-variation-settings", 
     "PublicKeyCredentialDescriptor", 
+    "update a layout child style", 
     "text-emphasis:filled", 
     "browsing context scope origin", 
     "function object", 
@@ -7030,7 +7033,7 @@
     "page float", 
     "CloseEventInit", 
     "filter primitive tree", 
-    "pseudo-classes", 
+    "change the encoding", 
     "radio", 
     "ordinaryisextensible", 
     "fetch a classic worker-imported script", 
@@ -7646,7 +7649,6 @@
     "FrameType", 
     "type of the content", 
     "border-block-start", 
-    "change the encoding", 
     "legacy platform object", 
     "region", 
     "hash-expression", 
@@ -15274,6 +15276,9 @@
     "maxContentSize", 
     "minContentSize"
   ], 
+  "IntrinsicSizesRequest": [
+    "[[layoutChild]]"
+  ], 
   "IntrinsicSizesResultOptions": [
     "maxContentSize", 
     "minContentSize"
@@ -15376,11 +15381,11 @@
     "options"
   ], 
   "LayoutChild": [
-    "layoutNextFragment", 
+    "[[box]]", 
+    "layoutNextFragment(constraints, breakToken)", 
     "styleMap", 
-    "intrinsicSizes", 
     "intrinsicSizes()", 
-    "layoutNextFragment(constraints, breakToken)"
+    "[[styleMap]]"
   ], 
   "LayoutChild/layoutNextFragment(constraints, breakToken)": [
     "breakToken", 
@@ -15435,6 +15440,11 @@
     "breakToken", 
     "inlineOffset", 
     "data"
+  ], 
+  "LayoutFragmentRequest": [
+    "[[layoutChild]]", 
+    "[[layoutConstraints]]", 
+    "[[breakToken]]"
   ], 
   "LayoutOptions": [
     "childDisplay", 
@@ -18338,10 +18348,10 @@
     "last", 
     "baseline", 
     "normal", 
-    "stretch", 
+    "flex-start", 
     "first baseline", 
     "center", 
-    "flex-start", 
+    "stretch", 
     "space-around", 
     "space-evenly", 
     "flex-end", 
@@ -18353,10 +18363,10 @@
     "last", 
     "baseline", 
     "flex-end", 
-    "stretch", 
+    "flex-start", 
     "first baseline", 
     "center", 
-    "flex-start", 
+    "stretch", 
     "auto", 
     "participates in baseline alignment", 
     "first"
@@ -18367,10 +18377,10 @@
     "baseline", 
     "flex-end", 
     "normal", 
-    "stretch", 
+    "flex-start", 
     "first baseline", 
     "center", 
-    "flex-start", 
+    "stretch", 
     "auto", 
     "participates in baseline alignment", 
     "first"
@@ -18778,6 +18788,9 @@
     "offset", 
     "position", 
     "before"
+  ], 
+  "box": [
+    "[[layoutChildMap]]"
   ], 
   "box-decoration-break": [
     "clone", 
@@ -20227,8 +20240,8 @@
     "<number>", 
     "center", 
     "normal", 
-    "stretch", 
     "flex-start", 
+    "stretch", 
     "space-around", 
     "space-evenly", 
     "flex-end", 
