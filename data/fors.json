@@ -1572,6 +1572,7 @@
     "collect Credentials from the credential store", 
     "compare media queries", 
     "process a keyframe-like object", 
+    "appid", 
     "named grid area", 
     "limit number of delivered readings", 
     "br", 
@@ -4142,7 +4143,6 @@
     "allow-popups", 
     "block-level elements", 
     "violation", 
-    "override charset", 
     "tabular container", 
     "clear the stack back to a table row context", 
     "grid-auto-columns", 
@@ -6151,7 +6151,6 @@
     "HTMLImageElement", 
     "override url", 
     "paint definition", 
-    "response charset", 
     "the \"after after body\" insertion mode", 
     "HTMLSlotElement", 
     "authenticator data for the attestation", 
@@ -11332,6 +11331,8 @@
   ], 
   "Client": [
     "service worker client", 
+    "reserved", 
+    "reserved state", 
     "url", 
     "postMessage(message)", 
     "postMessage(message, transfer)", 
@@ -11348,7 +11349,8 @@
   ], 
   "ClientQueryOptions": [
     "type", 
-    "includeUncontrolled"
+    "includeUncontrolled", 
+    "includeReserved"
   ], 
   "ClientType": [
     "\"worker\"", 
@@ -13380,6 +13382,7 @@
     "respond-with error flag", 
     "respond-with entered flag", 
     "request", 
+    "reservedClientId", 
     "FetchEvent(type, eventInitDict)", 
     "potential response", 
     "clientId", 
@@ -13398,11 +13401,12 @@
     "r"
   ], 
   "FetchEventInit": [
-    "clientId", 
-    "targetClientId", 
+    "reservedClientId", 
     "request", 
+    "clientId", 
     "preloadResponse", 
-    "resultingClientId"
+    "resultingClientId", 
+    "targetClientId"
   ], 
   "File": [
     "lastModified", 
@@ -13682,6 +13686,7 @@
     "getAll(name)", 
     "append(name, blobValue)", 
     "delete(name)", 
+    "entry list", 
     "set(name, blobValue, filename)", 
     "entry", 
     "entries", 
@@ -17982,6 +17987,7 @@
     "port"
   ], 
   "WorkerNavigator": [
+    "usb", 
     "serviceWorker", 
     "permissions"
   ], 
@@ -20994,7 +21000,9 @@
     "state", 
     "global object", 
     "script url", 
+    "imported scripts updated flag", 
     "registration", 
+    "id", 
     "set of event types to handle", 
     "type", 
     "containing service worker registration", 
@@ -21279,6 +21287,7 @@
   ], 
   "text-decoration-width": [
     "auto", 
+    "from-font", 
     "<length>"
   ], 
   "text-indent": [
@@ -21369,6 +21378,7 @@
   ], 
   "text-underline-offset": [
     "auto", 
+    "from-font", 
     "<length>"
   ], 
   "text-underline-position": [
