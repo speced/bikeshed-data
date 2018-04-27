@@ -4,6 +4,7 @@
 from __future__ import division, unicode_literals
 
 import bikeshed
+import datetime
 import io
 import json
 import os
@@ -13,12 +14,14 @@ def main():
 	updateAndCommit()
 
 def updateAndCommit():
+	print datetime.datetime.utcnow()
+
 	scriptPath = os.path.dirname(os.path.realpath(__file__))
 	dataPath = os.path.join(scriptPath, "data")
 
 	try:
 		with io.open(os.path.join(dataPath, "manifest.txt"), 'r', encoding="utf-8") as fh:
-			_,_,oldManifest = fh.read().partition("\n")
+			oldDate,_,oldManifest = fh.read().partition("\n")
 	except:
 		raise
 
@@ -31,12 +34,13 @@ def updateAndCommit():
 		raise
 	if oldManifest == newManifest:
 		# No change
+		print "Manifest is unchanged since {0}, nothing to be committed".format(oldDate)
 		return
 
 	os.chdir(scriptPath)
-	subprocess.check_call("git add data", shell=True)
-	subprocess.check_call("git commit -m 'update data'", shell=True)
-	subprocess.check_call("git push", shell=True)
+	print subprocess.check_output("git add data", shell=True)
+	print subprocess.check_output("git commit -m 'update data'", shell=True)
+	print subprocess.check_output("git push", shell=True)
 
 def updateDataFiles(path):
 	# First, update the Bikeshed-managed data files
