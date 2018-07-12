@@ -859,7 +859,7 @@
     "current": {
       "number": "3.10.5.2", 
       "spec": "Streams", 
-      "text": "[[PullSteps]]()", 
+      "text": "[[PullSteps]]( forAuthorCode )", 
       "url": "https://streams.spec.whatwg.org/#rbs-controller-private-pull"
     }
   }, 
@@ -987,7 +987,7 @@
     "current": {
       "number": "3.12.17", 
       "spec": "Streams", 
-      "text": "ReadableByteStreamControllerPullInto ( controller, view ) nothrow", 
+      "text": "ReadableByteStreamControllerPullInto ( controller, view, forAuthorCode ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-pull-into"
     }
   }, 
@@ -1051,7 +1051,7 @@
     "current": {
       "number": "3.4.1", 
       "spec": "Streams", 
-      "text": "ReadableStreamAddReadIntoRequest ( stream ) nothrow", 
+      "text": "ReadableStreamAddReadIntoRequest ( stream, forAuthorCode ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-add-read-into-request"
     }
   }, 
@@ -1059,7 +1059,7 @@
     "current": {
       "number": "3.4.2", 
       "spec": "Streams", 
-      "text": "ReadableStreamAddReadRequest ( stream ) nothrow", 
+      "text": "ReadableStreamAddReadRequest ( stream, forAuthorCode ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-add-read-request"
     }
   }, 
@@ -1067,7 +1067,7 @@
     "current": {
       "number": "3.7.6", 
       "spec": "Streams", 
-      "text": "ReadableStreamBYOBReaderRead ( reader, view ) nothrow", 
+      "text": "ReadableStreamBYOBReaderRead ( reader, view [, forAuthorCode ] ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-byob-reader-read"
     }
   }, 
@@ -1085,6 +1085,14 @@
       "spec": "Streams", 
       "text": "ReadableStreamClose ( stream ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-close"
+    }
+  }, 
+  "#readable-stream-create-read-result": {
+    "current": {
+      "number": "3.4.5", 
+      "spec": "Streams", 
+      "text": "ReadableStreamCreateReadResult ( value, done, forAuthorCode ) nothrow", 
+      "url": "https://streams.spec.whatwg.org/#readable-stream-create-read-result"
     }
   }, 
   "#readable-stream-default-controller-call-pull-if-needed": {
@@ -1147,13 +1155,13 @@
     "current": {
       "number": "3.7.7", 
       "spec": "Streams", 
-      "text": "ReadableStreamDefaultReaderRead ( reader ) nothrow", 
+      "text": "ReadableStreamDefaultReaderRead ( reader [, forAuthorCode ] ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-default-reader-read"
     }
   }, 
   "#readable-stream-error": {
     "current": {
-      "number": "3.4.5", 
+      "number": "3.4.6", 
       "spec": "Streams", 
       "text": "ReadableStreamError ( stream, e ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-error"
@@ -1161,7 +1169,7 @@
   }, 
   "#readable-stream-fulfill-read-into-request": {
     "current": {
-      "number": "3.4.6", 
+      "number": "3.4.7", 
       "spec": "Streams", 
       "text": "ReadableStreamFulfillReadIntoRequest ( stream, chunk, done ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-fulfill-read-into-request"
@@ -1169,7 +1177,7 @@
   }, 
   "#readable-stream-fulfill-read-request": {
     "current": {
-      "number": "3.4.7", 
+      "number": "3.4.8", 
       "spec": "Streams", 
       "text": "ReadableStreamFulfillReadRequest ( stream, chunk, done ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-fulfill-read-request"
@@ -1177,7 +1185,7 @@
   }, 
   "#readable-stream-get-num-read-into-requests": {
     "current": {
-      "number": "3.4.8", 
+      "number": "3.4.9", 
       "spec": "Streams", 
       "text": "ReadableStreamGetNumReadIntoRequests ( stream ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-get-num-read-into-requests"
@@ -1185,7 +1193,7 @@
   }, 
   "#readable-stream-get-num-read-requests": {
     "current": {
-      "number": "3.4.9", 
+      "number": "3.4.10", 
       "spec": "Streams", 
       "text": "ReadableStreamGetNumReadRequests ( stream ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-get-num-read-requests"
@@ -1193,7 +1201,7 @@
   }, 
   "#readable-stream-has-byob-reader": {
     "current": {
-      "number": "3.4.10", 
+      "number": "3.4.11", 
       "spec": "Streams", 
       "text": "ReadableStreamHasBYOBReader ( stream ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-has-byob-reader"
@@ -1201,7 +1209,7 @@
   }, 
   "#readable-stream-has-default-reader": {
     "current": {
-      "number": "3.4.11", 
+      "number": "3.4.12", 
       "spec": "Streams", 
       "text": "ReadableStreamHasDefaultReader ( stream ) nothrow", 
       "url": "https://streams.spec.whatwg.org/#readable-stream-has-default-reader"
@@ -1467,7 +1475,7 @@
     "current": {
       "number": "3.8.5.2", 
       "spec": "Streams", 
-      "text": "[[PullSteps]]()", 
+      "text": "[[PullSteps]]( forAuthorCode )", 
       "url": "https://streams.spec.whatwg.org/#rs-default-controller-private-pull"
     }
   }, 
