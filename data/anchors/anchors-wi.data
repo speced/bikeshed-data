@@ -50,36 +50,6 @@ https://w3c.github.io/ServiceWorker/#windowclient
 1
 1
 -
-WindowEventHandlers
-interface
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers
-1
-1
--
-WindowLocalStorage
-interface
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/webstorage.html#windowlocalstorage
-1
-1
--
-WindowOrWorkerGlobalScope
-interface
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope
-1
-1
--
 WindowProxy
 interface
 html
@@ -87,16 +57,6 @@ html
 1
 snapshot
 https://html.spec.whatwg.org/multipage/window-object.html#windowproxy
-1
-1
--
-WindowSessionStorage
-interface
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/webstorage.html#windowsessionstorage
 1
 1
 -
@@ -635,7 +595,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-width
 1
 1
-HTMLImageElement
+img
 -
 width
 element-attr
@@ -656,7 +616,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-dim-width
 1
 1
-HTMLVideoElement
+dim
 -
 width
 attribute
@@ -667,7 +627,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/input.html#dom-input-width
 1
 1
-HTMLInputElement
+input
 -
 width
 attribute
@@ -678,7 +638,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-width
 1
 1
-ImageData
+textmetrics
 -
 width
 attribute
@@ -689,7 +649,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedata-width
 1
 1
-ImageData
+imagedata
 -
 width
 attribute
@@ -700,7 +660,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-width
 1
 1
-OffscreenCanvas
+offscreencanvas
 -
 width
 element-attr
@@ -721,7 +681,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-width
 1
 1
-HTMLCanvasElement
+canvas
 -
 width
 attribute
@@ -732,7 +692,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagebitmap-width
 1
 1
-ImageBitmap
+imagebitmap
 -
 width
 element-attr
@@ -793,7 +753,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-marquee-width
 1
 1
-HTMLMarqueeElement
+marquee
 -
 width
 attribute
@@ -804,7 +764,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-col-width
 1
 1
-HTMLTableColElement
+col
 -
 width
 attribute
@@ -815,7 +775,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-hr-width
 1
 1
-HTMLHRElement
+hr
 -
 width
 attribute
@@ -826,7 +786,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-pre-width
 1
 1
-HTMLPreElement
+pre
 -
 width
 attribute
@@ -837,7 +797,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-table-width
 1
 1
-HTMLTableElement
+table
 -
 width
 attribute
@@ -848,7 +808,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-tdth-width
 1
 1
-HTMLTableCellElement
+tdth
 -
 width
 descriptor
@@ -1103,7 +1063,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-willvalidate
 1
 1
-HTMLFieldSetElement
+cva
 -
 willful violation
 dfn
@@ -1206,7 +1166,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/window-object.html#dom-window
 1
 1
-Window
 -
 window
 dfn
@@ -1271,6 +1230,16 @@ https://html.spec.whatwg.org/multipage/window-object.html#window-open-steps
 
 1
 -
+windoweventhandlers
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers
+
+1
+-
 windowframe
 dfn
 css-color-3
@@ -1311,6 +1280,16 @@ https://drafts.csswg.org/css-color-4/#windowframe
 
 1
 -
+windowlocalstorage
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/webstorage.html#windowlocalstorage
+
+1
+-
 windoworworkerglobalscope
 dfn
 hr-time-2
@@ -1318,6 +1297,16 @@ hr-time
 2
 snapshot
 https://www.w3.org/TR/hr-time/#dom-windoworworkerglobalscope
+
+1
+-
+windoworworkerglobalscope
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope
 
 1
 -
@@ -1521,6 +1510,16 @@ https://html.spec.whatwg.org/multipage/parsing.html#windows-874
 
 1
 -
+windowsessionstorage
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/webstorage.html#windowsessionstorage
+
+1
+-
 windowtext
 dfn
 css-color-3
@@ -1562,7 +1561,7 @@ https://drafts.csswg.org/css-color-4/#windowtext
 1
 -
 withCredentials
-dict-member
+attribute
 html
 html
 1
@@ -1570,10 +1569,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-withcredentials
 1
 1
-EventSourceInit
+eventsource
 -
 withCredentials
-dict-member
+attribute
 html
 html
 1
@@ -1581,7 +1580,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsourceinit-withcredentials
 1
 1
-EventSourceInit
+eventsourceinit
 -
 withCredentials
 attribute

@@ -94,26 +94,6 @@ https://drafts.csswg.org/css-values-4/#typedef-position
 1
 1
 -
-PopStateEvent
-interface
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/browsing-the-web.html#popstateevent
-1
-1
--
-PopStateEventInit
-dictionary
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/browsing-the-web.html#popstateeventinit
-1
-1
--
 point
 argument
 cssom-view-1
@@ -751,6 +731,26 @@ https://html.spec.whatwg.org/multipage/indices.html#event-popstate
 1
 Window
 -
+popstateevent
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/browsing-the-web.html#popstateevent
+
+1
+-
+popstateeventinit
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/browsing-the-web.html#popstateeventinit
+
+1
+-
 populate the bluetooth cache
 dfn
 web-bluetooth-1
@@ -822,7 +822,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/history.html#dom-location-port
 1
 1
-Location
+location
 -
 port
 attribute
@@ -833,7 +833,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-sharedworker-port
 1
 1
-SharedWorker
+sharedworker
 -
 port
 attribute
@@ -844,7 +844,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-workerlocation-port
 1
 1
-WorkerLocation
+workerlocation
 -
 port
 dfn
@@ -937,7 +937,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messagechannel-port1
 1
 1
-MessageChannel
+messagechannel
 -
 port2
 attribute
@@ -948,7 +948,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messagechannel-port2
 1
 1
-MessageChannel
+messagechannel
 -
 portrait
 value
@@ -1081,7 +1081,7 @@ https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-secon
 orientationlocktype
 -
 ports
-dict-member
+attribute
 html
 html
 1
@@ -1089,7 +1089,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-ports
 1
 1
-MessageEventInit
+messageevent
 -
 ports
 attribute
@@ -1235,7 +1235,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-progress-position
 1
 1
-HTMLProgressElement
+progress
 -
 position
 dfn
@@ -1501,7 +1501,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-dedicatedworkerglobalscope-postmessage
 1
 1
-DedicatedWorkerGlobalScope
 -
 postMessage()
 method
@@ -1512,18 +1511,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-worker-postmessage
 1
 1
-Worker
--
-postMessage(message)
-method
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-postmessage
-1
-1
-MessagePort
 -
 postMessage(message)
 method
@@ -1534,7 +1521,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-broadcastchannel-postmessage
 1
 1
-BroadcastChannel
 -
 postMessage(message)
 method
@@ -1567,7 +1553,16 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage
 1
 1
-Window
+-
+postMessage(message, transfer)
+method
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-postmessage
+1
+1
 -
 postMessage(message, transfer)
 method
@@ -1662,7 +1657,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-video-poster
 1
 1
-HTMLVideoElement
+video
 -
 poster frame
 dfn

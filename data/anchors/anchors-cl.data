@@ -105,7 +105,7 @@ https://drafts.fxtf.org/css-masking-1/#typedef-clip-source
 1
 -
 CLOSED
-const
+interface
 html
 html
 1
@@ -113,10 +113,9 @@ snapshot
 https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-closed
 1
 1
-EventSource
 -
 CLOSED
-const
+interface
 html
 html
 1
@@ -124,10 +123,9 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-closed
 1
 1
-WebSocket
 -
 CLOSING
-const
+interface
 html
 html
 1
@@ -135,7 +133,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-closing
 1
 1
-WebSocket
 -
 Clamp
 extended-attribute
@@ -224,26 +221,6 @@ service-workers
 2
 current
 https://w3c.github.io/ServiceWorker/#clients
-1
-1
--
-CloseEvent
-interface
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/web-sockets.html#closeevent
-1
-1
--
-CloseEventInit
-dictionary
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/web-sockets.html#closeeventinit
 1
 1
 -
@@ -779,7 +756,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-br-clear
 1
 1
-HTMLBRElement
+br
 -
 clear an object store
 dfn
@@ -926,7 +903,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-clear
 1
 1
-DataTransferItemList
 -
 clear()
 method
@@ -937,7 +913,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-clear
 1
 1
-Storage
 -
 clear()
 method
@@ -948,7 +923,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-document-clear
 1
 1
-Document
 -
 clear()
 method
@@ -980,7 +954,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-cleardata
 1
 1
-DataTransfer
 -
 clearHalt
 method
@@ -1013,7 +986,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-clearinterval
 1
 1
-WindowOrWorkerGlobalScope
 -
 clearRect(x, y, w, h)
 method
@@ -1024,7 +996,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-clearrect
 1
 1
-CanvasRect
 -
 clearTimeout()
 method
@@ -1035,7 +1006,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-cleartimeout
 1
 1
-WindowOrWorkerGlobalScope
 -
 clearance.
 dfn
@@ -1106,7 +1076,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/interaction.html#dom-click
 1
 1
-HTMLElement
 -
 client
 dfn
@@ -1931,7 +1900,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-clip
 1
 1
-CanvasDrawPath
 -
 clip-path
 property
@@ -2468,7 +2436,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-close
 1
 1
-HTMLDialogElement
 -
 close()
 method
@@ -2479,7 +2446,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/window-object.html#dom-window-close
 1
 1
-Window
 -
 close()
 method
@@ -2490,7 +2456,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-document-close
 1
 1
-Window
 -
 close()
 method
@@ -2501,7 +2466,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagebitmap-close
 1
 1
-ImageBitmap
 -
 close()
 method
@@ -2512,18 +2476,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-close
 1
 1
-EventSource
--
-close()
-method
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-close
-1
-1
-WebSocket
 -
 close()
 method
@@ -2534,7 +2486,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-close
 1
 1
-MessagePort
 -
 close()
 method
@@ -2545,7 +2496,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-broadcastchannel-close
 1
 1
-BroadcastChannel
 -
 close()
 method
@@ -2556,7 +2506,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-dedicatedworkerglobalscope-close
 1
 1
-DedicatedWorkerGlobalScope
 -
 close()
 method
@@ -2567,7 +2516,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-sharedworkerglobalscope-close
 1
 1
-SharedWorkerGlobalScope
 -
 close()
 method
@@ -2635,7 +2583,7 @@ https://wicg.github.io/webusb/#dom-usbdevice-close
 1
 USBDevice
 -
-close(code)
+close(code, reason)
 method
 html
 html
@@ -2644,7 +2592,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-close
 1
 1
-WebSocket
 -
 close-quote
 value
@@ -2701,7 +2648,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-closepath
 1
 1
-CanvasPath
 -
 closed
 value
@@ -2744,7 +2690,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/window-object.html#dom-window-closed
 1
 1
-Window
+window
 -
 closed
 dfn
@@ -2828,6 +2774,26 @@ dom
 snapshot
 https://dom.spec.whatwg.org/#concept-closed-shadow-hidden
 1
+1
+-
+closeevent
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/web-sockets.html#closeevent
+
+1
+-
+closeeventinit
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/web-sockets.html#closeeventinit
+
 1
 -
 closest(selectors)

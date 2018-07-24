@@ -63,7 +63,7 @@ https://drafts.csswg.org/selectors-4/#local-link-pseudo
 1
 -
 LOADED
-const
+interface
 html
 html
 1
@@ -71,7 +71,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-track-loaded
 1
 1
-HTMLTrackElement
 -
 LOADING
 const
@@ -85,7 +84,7 @@ https://w3c.github.io/FileAPI/#dfn-loading
 FileReader
 -
 LOADING
-const
+interface
 html
 html
 1
@@ -93,7 +92,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-track-loading
 1
 1
-HTMLTrackElement
 -
 LOADING
 const
@@ -105,16 +103,6 @@ https://xhr.spec.whatwg.org/#dom-xmlhttprequest-loading
 1
 1
 XMLHttpRequest
--
-Location
-interface
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/history.html#location
-1
-1
 -
 Logger
 abstract-op
@@ -288,7 +276,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-load
 1
 1
-HTMLMediaElement
 -
 load(font)
 method
@@ -973,7 +960,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage
 1
 1
-WindowLocalStorage
 -
 localTime
 dict-member
@@ -1098,7 +1084,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/history.html#dom-document-location
 1
 1
-Window
+document
 -
 location
 attribute
@@ -1109,7 +1095,16 @@ snapshot
 https://html.spec.whatwg.org/multipage/history.html#dom-location
 1
 1
-Window
+-
+location
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/history.html#location
+
+1
 -
 location
 attribute
@@ -1120,7 +1115,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-location
 1
 1
-WorkerGlobalScope
+workerglobalscope
 -
 location
 attribute
@@ -1194,7 +1189,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/window-object.html#dom-window-locationbar
 1
 1
-Window
+window
 -
 lock
 dfn
@@ -1567,7 +1562,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-frame-longdesc
 1
 1
-HTMLFrameElement
+frame
 -
 longDesc
 attribute
@@ -1578,7 +1573,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-iframe-longdesc
 1
 1
-HTMLIFrameElement
+iframe
 -
 longDesc
 attribute
@@ -1589,7 +1584,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-img-longdesc
 1
 1
-HTMLImageElement
+img
 -
 longdesc
 element-attr
@@ -1765,7 +1760,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-loop
 1
 1
-HTMLMediaElement
+media
 -
 loop
 element-attr
@@ -1787,7 +1782,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-marquee-loop
 1
 1
-HTMLMarqueeElement
+marquee
 -
 loose
 value
@@ -1851,7 +1846,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-meter-low
 1
 1
-HTMLMeterElement
+meter
 -
 low
 attribute
@@ -1862,7 +1857,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-imagesmoothingquality-low
 1
 1
-HTMLMeterElement
+context-2d-imagesmoothingquality
 -
 low
 attribute
@@ -1873,7 +1868,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-resizequality-low
 1
 1
-HTMLMeterElement
+resizequality
 -
 low
 value
@@ -2301,5 +2296,5 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-img-lowsrc
 1
 1
-HTMLImageElement
+img
 -

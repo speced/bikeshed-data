@@ -223,16 +223,6 @@ https://w3c.github.io/webappsec-csp/#dictdef-securitypolicyviolationeventinit
 1
 1
 -
-SelectionMode
-enum
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#selectionmode
-1
-1
--
 Sensor
 interface
 generic-sensor-1
@@ -690,7 +680,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/history.html#dom-location-search
 1
 1
-Location
+location
 -
 search
 attribute
@@ -701,7 +691,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-workerlocation-search
 1
 1
-WorkerLocation
+workerlocation
 -
 search
 attribute
@@ -857,7 +847,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/tables.html#dom-tr-sectionrowindex
 1
 1
-HTMLTableRowElement
+tr
 -
 sectioning content
 dfn
@@ -1004,7 +994,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-seekable
 1
 1
-HTMLMediaElement
+media
 -
 seeked
 dfn
@@ -1025,7 +1015,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-seeking
 1
 1
-HTMLMediaElement
+media
 -
 seeking
 dfn
@@ -1143,7 +1133,7 @@ https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
 1
 -
 select
-method
+attribute
 html
 html
 1
@@ -1151,7 +1141,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-selectionmode-select
 1
 1
-HTMLTextAreaElement
+selectionmode
 -
 select
 event
@@ -1223,7 +1213,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-select
 1
 1
-HTMLTextAreaElement
 -
 selectAlternateInterface
 method
@@ -1311,7 +1300,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-selected
 1
 1
-HTMLOptionElement
+option
 -
 selected coordinate
 dfn
@@ -1342,7 +1331,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-htmloptionscollection-selectedindex
 1
 1
-HTMLOptionsCollection
+htmloptionscollection
 -
 selectedIndex
 attribute
@@ -1353,7 +1342,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-selectedindex
 1
 1
-HTMLSelectElement
+select
 -
 selectedOptions
 attribute
@@ -1364,7 +1353,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-selectedoptions
 1
 1
-HTMLSelectElement
+select
 -
 selectedness
 dfn
@@ -1435,7 +1424,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectiondirection
 1
 1
-HTMLTextAreaElement
+textarea/input
 -
 selectionEnd
 attribute
@@ -1446,7 +1435,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionend
 1
 1
-HTMLTextAreaElement
+textarea/input
 -
 selectionStart
 attribute
@@ -1457,7 +1446,17 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionstart
 1
 1
-HTMLTextAreaElement
+textarea/input
+-
+selectionmode
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#selectionmode
+
+1
 -
 selector
 dfn
@@ -1680,7 +1679,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/window-object.html#dom-self
 1
 1
-Window
 -
 self
 attribute
@@ -1691,7 +1689,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-self
 1
 1
-WorkerGlobalScope
+workerglobalscope
 -
 self
 dfn
@@ -1980,7 +1978,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-send
 1
 1
-WebSocket
 -
 sensor feature names
 dfn
@@ -4214,7 +4211,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/webstorage.html#dom-sessionstorage
 1
 1
-WindowSessionStorage
 -
 set
 dfn
@@ -5288,7 +5284,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity
 1
 1
-HTMLFieldSetElement
 -
 setData(format, data)
 method
@@ -5299,7 +5294,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-setdata
 1
 1
-DataTransfer
 -
 setDragImage(element, x, y)
 method
@@ -5310,7 +5304,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-setdragimage
 1
 1
-DataTransfer
 -
 setEnd(node, offset)
 method
@@ -5398,7 +5391,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval
 1
 1
-WindowOrWorkerGlobalScope
 -
 setItem(key, value)
 method
@@ -5409,7 +5401,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-setitem
 1
 1
-Storage
 -
 setKeyframes(keyframes)
 method
@@ -5442,7 +5433,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash
 1
 1
-CanvasPathDrawingStyles
 -
 setMatrixValue()
 method
@@ -5552,7 +5542,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext
 1
 1
-HTMLTextAreaElement
 -
 setRequestHeader(name, value)
 method
@@ -5565,7 +5554,7 @@ https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader
 1
 XMLHttpRequest
 -
-setSelectionRange(start, end)
+setSelectionRange(start, end, direction)
 method
 html
 html
@@ -5574,7 +5563,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setselectionrange
 1
 1
-HTMLTextAreaElement
 -
 setStart(node, offset)
 method
@@ -5618,29 +5606,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout
 1
 1
-WindowOrWorkerGlobalScope
--
-setTransform()
-method
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform-matrix
-1
-1
-CanvasPattern
--
-setTransform()
-method
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/canvas.html#dom-canvaspattern-settransform
-1
-1
-CanvasPattern
 -
 setTransform(a, b, c, d, e, f)
 method
@@ -5651,7 +5616,26 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform
 1
 1
-CanvasPattern
+-
+setTransform(transform)
+method
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform-matrix
+1
+1
+-
+setTransform(transform)
+method
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/canvas.html#dom-canvaspattern-settransform
+1
+1
 -
 setUserData()
 method
