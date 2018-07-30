@@ -850,7 +850,7 @@ https://dom.spec.whatwg.org/#dom-node-comment_node
 Node
 -
 CONNECTING
-interface
+const
 html
 html
 1
@@ -858,9 +858,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-connecting
 1
 1
+EventSource
 -
 CONNECTING
-interface
+const
 html
 html
 1
@@ -868,6 +869,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-connecting
 1
 1
+WebSocket
 -
 COSEAlgorithmIdentifier
 typedef
@@ -928,6 +930,16 @@ webauthn
 1
 current
 https://w3c.github.io/webauthn/#dictdef-collectedclientdata
+1
+1
+-
+ColorSpaceConversion
+enum
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#colorspaceconversion
 1
 1
 -
@@ -1860,10 +1872,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-mediaerror-code
 1
 1
-mediaerror
+MediaError
 -
 code
-attribute
+dict-member
 html
 html
 1
@@ -1871,7 +1883,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeevent-code
 1
 1
-closeevent
+CloseEventInit
 -
 code
 element-attr
@@ -1892,7 +1904,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-object-code
 1
 1
-object
+HTMLObjectElement
 -
 code
 attribute
@@ -2006,7 +2018,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-object-codebase
 1
 1
-object
+HTMLObjectElement
 -
 codeType
 attribute
@@ -2017,7 +2029,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-object-codetype
 1
 1
-object
+HTMLObjectElement
 -
 codebase
 element-attr
@@ -2102,7 +2114,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/tables.html#dom-tdth-colspan
 1
 1
-tdth
+HTMLTableCellElement
 -
 colgroup
 element
@@ -2574,7 +2586,7 @@ https://drafts.csswg.org/cssom-1/#medialist-collection-of-media-queries
 MediaList
 -
 colno
-attribute
+dict-member
 html
 html
 1
@@ -2582,7 +2594,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/webappapis.html#dom-errorevent-colno
 1
 1
-errorevent
+ErrorEventInit
 -
 color
 value
@@ -2738,7 +2750,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-font-color
 1
 1
-font
+HTMLFontElement
 -
 color
 attribute
@@ -2749,7 +2761,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-hr-color
 1
 1
-hr
+HTMLHRElement
 -
 color
 descriptor
@@ -3217,7 +3229,7 @@ https://drafts.csswg.org/cssom-view-1/#dom-screen-colordepth
 Screen
 -
 colorSpaceConversion
-attribute
+dict-member
 html
 html
 1
@@ -3225,17 +3237,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagebitmapoptions-colorspaceconversion
 1
 1
-imagebitmapoptions
--
-colorspaceconversion
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#colorspaceconversion
-
-1
+ImageBitmapOptions
 -
 cols
 element-attr
@@ -3257,7 +3259,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-cols
 1
 1
-textarea
+HTMLTextAreaElement
 -
 cols
 attribute
@@ -3268,7 +3270,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-frameset-cols
 1
 1
-frameset
+HTMLFrameSetElement
 -
 colspan
 element-attr
@@ -4398,7 +4400,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-dir-compact
 1
 1
-dir
+HTMLDirectoryElement
 -
 compact
 attribute
@@ -4409,7 +4411,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-dl-compact
 1
 1
-dl
+HTMLDListElement
 -
 compact
 attribute
@@ -4420,7 +4422,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-menu-compact
 1
 1
-menu
+HTMLMenuElement
 -
 compact
 attribute
@@ -4431,7 +4433,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-ol-compact
 1
 1
-ol
+HTMLOListElement
 -
 compact
 attribute
@@ -4442,7 +4444,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-ul-compact
 1
 1
-ul
+HTMLUListElement
 -
 compare media queries
 dfn
@@ -4609,7 +4611,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-complete
 1
 1
-img
+HTMLImageElement
 -
 completed transition
 dfn
@@ -5748,6 +5750,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-confirm
 1
 1
+Window
 -
 conformance::authoring tool
 dfn
@@ -7381,6 +7384,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-domstringlist-contains
 1
 1
+DOMStringList
 -
 contains(token)
 method
@@ -7567,7 +7571,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/semantics.html#dom-meta-content
 1
 1
-meta
+HTMLMetaElement
 -
 content
 attribute
@@ -7578,7 +7582,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/scripting.html#dom-template-content
 1
 1
-template
+HTMLTemplateElement
 -
 content
 dict-member
@@ -8522,7 +8526,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-contentdocument
 1
 1
-iframe
+HTMLIFrameElement
 -
 contentDocument
 attribute
@@ -8533,7 +8537,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-object-contentdocument
 1
 1
-object
+HTMLObjectElement
 -
 contentDocument
 attribute
@@ -8544,7 +8548,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-frame-contentdocument
 1
 1
-frame
+HTMLFrameElement
 -
 contentEditable
 attribute
@@ -8609,7 +8613,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-contentwindow
 1
 1
-iframe
+HTMLIFrameElement
 -
 contentWindow
 attribute
@@ -8620,7 +8624,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-object-contentwindow
 1
 1
-object
+HTMLObjectElement
 -
 contentWindow
 attribute
@@ -8631,7 +8635,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-frame-contentwindow
 1
 1
-frame
+HTMLFrameElement
 -
 contenteditable
 element-attr
@@ -9156,7 +9160,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/forms.html#dom-label-control
 1
 1
-label
+HTMLLabelElement
 -
 control
 dfn
@@ -9347,7 +9351,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-controls
 1
 1
-media
+HTMLMediaElement
 -
 convert
 dfn
@@ -9642,7 +9646,7 @@ https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertrectfromnode
 1
 GeometryUtils
 -
-convertToBlob(options)
+convertToBlob()
 method
 html
 html
@@ -9651,6 +9655,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-converttoblob
 1
 1
+OffscreenCanvas
 -
 converted to an ecmascript value
 dfn
@@ -9812,7 +9817,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/dom.html#dom-document-cookie
 1
 1
-document
+Document
 -
 cookie-averse document object
 dfn
@@ -9843,7 +9848,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-cookieenabled
 1
 1
-navigator
+NavigatorCookies
 -
 coordinated self-alignment preference
 dfn
@@ -9885,7 +9890,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-coords
 1
 1
-area
+HTMLAreaElement
 -
 coords
 element-attr
@@ -9906,7 +9911,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-a-coords
 1
 1
-a
+HTMLAnchorElement
 -
 copy
 value

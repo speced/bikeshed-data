@@ -174,6 +174,26 @@ https://drafts.csswg.org/css-transforms-1/#typedef-transform-list
 1
 1
 -
+TrackEvent
+interface
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/media.html#trackevent
+1
+1
+-
+TrackEventInit
+dictionary
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/media.html#trackeventinit
+1
+1
+-
 TransactionInactiveError
 exception
 webidl
@@ -498,7 +518,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-track-track
 1
 1
-track
+HTMLTrackElement
 -
 track
 attribute
@@ -509,10 +529,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-track
 1
 1
-texttrackcue
+TextTrackCue
 -
 track
-attribute
+dict-member
 html
 html
 1
@@ -520,7 +540,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-trackevent-track
 1
 1
-trackevent
+TrackEventInit
 -
 track label
 dfn
@@ -613,26 +633,6 @@ html
 1
 snapshot
 https://html.spec.whatwg.org/multipage/media.html#track-url
-
-1
--
-trackevent
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/media.html#trackevent
-
-1
--
-trackeventinit
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/media.html#trackeventinit
 
 1
 -
@@ -1019,6 +1019,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-transfercontroltooffscreen
 1
 1
+HTMLCanvasElement
 -
 transferFromImageBitmap(imageBitmap)
 method
@@ -1029,6 +1030,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-imagebitmaprenderingcontext-transferfromimagebitmap
 1
 1
+ImageBitmapRenderingContext
 -
 transferIn
 method
@@ -1083,6 +1085,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-transfertoimagebitmap
 1
 1
+OffscreenCanvas
 -
 transferable objects
 dfn
@@ -1224,6 +1227,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-transform
 1
 1
+CanvasTransform
 -
 transform(chunk, controller)
 method
@@ -1890,6 +1894,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/dom.html#dom-translate
 1
 1
+HTMLElement
 -
 translate()
 value
@@ -1988,6 +1993,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-translate
 1
 1
+CanvasTransform
 -
 translate-enabled
 dfn
@@ -2676,7 +2682,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-marquee-truespeed
 1
 1
-marquee
+HTMLMarqueeElement
 -
 truespeed
 element-attr

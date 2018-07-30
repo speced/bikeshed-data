@@ -107,6 +107,16 @@ https://dom.spec.whatwg.org/#dom-node-processing_instruction_node
 1
 Node
 -
+PremultiplyAlpha
+enum
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#premultiplyalpha
+1
+1
+-
 Prevent Silent Access
 abstract-op
 credential-management-1
@@ -256,6 +266,26 @@ streams
 1
 current
 https://streams.spec.whatwg.org/#promise-call
+1
+1
+-
+PromiseRejectionEvent
+interface
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectionevent
+1
+1
+-
+PromiseRejectionEventInit
+dictionary
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectioneventinit
 1
 1
 -
@@ -963,7 +993,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-preload
 1
 1
-media
+HTMLMediaElement
 -
 preloadResponse
 attribute
@@ -1019,7 +1049,7 @@ https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-premu
 premultiplyalpha
 -
 premultiplyAlpha
-attribute
+dict-member
 html
 html
 1
@@ -1027,17 +1057,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagebitmapoptions-premultiplyalpha
 1
 1
-imagebitmapoptions
--
-premultiplyalpha
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#premultiplyalpha
-
-1
+ImageBitmapOptions
 -
 prepare a script
 dfn
@@ -1557,7 +1577,7 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#dom-event-preventdefa
 1
 -
 preventScroll
-attribute
+dict-member
 html
 html
 1
@@ -1565,7 +1585,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/interaction.html#dom-focusoptions-preventscroll
 1
 1
-focusoptions
+FocusOptions
 -
 preventSilentAccess()
 method
@@ -1995,6 +2015,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-print
 1
 1
+Window
 -
 printable area
 dfn
@@ -2753,7 +2774,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-product
 1
 1
-navigator
+NavigatorID
 -
 product id
 dfn
@@ -2848,7 +2869,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-productsub
 1
 1
-navigator
+NavigatorID
 -
 profile
 element-attr
@@ -3094,7 +3115,7 @@ https://drafts.csswg.org/cssom-1/#prolog
 1
 -
 promise
-attribute
+dict-member
 html
 html
 1
@@ -3102,7 +3123,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/webappapis.html#dom-promiserejectionevent-promise
 1
 1
-promiserejectionevent
+PromiseRejectionEventInit
 -
 promise type
 dfn
@@ -3132,26 +3153,6 @@ promises-guide
 snapshot
 https://www.w3.org/2001/tag/doc/promises-guide/#promise-calling
 1
-1
--
-promiserejectionevent
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectionevent
-
-1
--
-promiserejectioneventinit
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectioneventinit
-
 1
 -
 prompt
@@ -3205,6 +3206,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-prompt
 1
 1
+Window
 -
 prompting the user to choose
 dfn
@@ -4006,7 +4008,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/history.html#dom-location-protocol
 1
 1
-location
+Location
 -
 protocol
 attribute
@@ -4017,7 +4019,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-protocol
 1
 1
-websocket
+WebSocket
 -
 protocol
 attribute
@@ -4028,7 +4030,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-workerlocation-protocol
 1
 1
-workerlocation
+WorkerLocation
 -
 protocol
 attribute

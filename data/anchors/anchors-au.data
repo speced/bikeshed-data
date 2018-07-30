@@ -116,7 +116,7 @@ https://drafts.csswg.org/css-grid-1/#typedef-auto-track-list
 1
 -
 Audio(src)
-interface
+constructor
 html
 html
 1
@@ -124,9 +124,20 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-audio
 1
 1
+HTMLAudioElement
+-
+AudioTrack
+interface
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/media.html#audiotrack
+1
+1
 -
 AudioTrack.enabled
-interface
+attribute
 html
 html
 1
@@ -134,9 +145,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-audiotrack-enabled
 1
 1
+AudioTrack
 -
 AudioTrack.id
-interface
+attribute
 html
 html
 1
@@ -144,9 +156,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-audiotrack-id
 1
 1
+AudioTrack
 -
 AudioTrack.kind
-interface
+attribute
 html
 html
 1
@@ -154,9 +167,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-audiotrack-kind
 1
 1
+AudioTrack
 -
 AudioTrack.label
-interface
+attribute
 html
 html
 1
@@ -164,9 +178,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-audiotrack-label
 1
 1
+AudioTrack
 -
 AudioTrack.language
-interface
+attribute
 html
 html
 1
@@ -174,9 +189,20 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-audiotrack-language
 1
 1
+AudioTrack
+-
+AudioTrackList
+interface
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/media.html#audiotracklist
+1
+1
 -
 AudioTrackList.getTrackById(id)
-interface
+method
 html
 html
 1
@@ -184,9 +210,10 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-audiotracklist-gettrackbyid
 1
 1
+AudioTrackList
 -
 AudioTrackList.length
-interface
+attribute
 html
 html
 1
@@ -194,6 +221,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-audiotracklist-length
 1
 1
+AudioTrackList
 -
 AuthenticationExtensionsAuthenticatorInputs
 typedef
@@ -476,27 +504,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-audiotracks
 1
 1
-media
--
-audiotrack
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/media.html#audiotrack
-
-1
--
-audiotracklist
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/media.html#audiotracklist
-
-1
+HTMLMediaElement
 -
 augmented grid
 dfn
@@ -2900,6 +2908,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/interaction.html#dom-autocapitalize
 1
 1
+HTMLElement
 -
 autocapitalize-inheriting elements
 dfn
@@ -2931,7 +2940,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/forms.html#dom-form-autocomplete
 1
 1
-form
+HTMLFormElement
 -
 autocomplete
 element-attr
@@ -2952,7 +2961,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-autocomplete
 1
 1
-fe
+HTMLTextAreaElement
 -
 autofill anchor mantle
 dfn
@@ -3053,7 +3062,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-autofocus
 1
 1
-fe
+HTMLTextAreaElement
 -
 automated install prompt
 dfn
@@ -3265,7 +3274,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-autoplay
 1
 1
-media
+HTMLMediaElement
 -
 auxclick
 dfn
