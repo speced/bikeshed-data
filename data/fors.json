@@ -508,6 +508,7 @@
     "AnimationPlaybackEvent", 
     "AnimationPlaybackEventInit", 
     "AnimationTimeline", 
+    "AnimationWorkletGlobalScope", 
     "ApplicationCache", 
     "ArrayBuffer", 
     "ArrayBufferView", 
@@ -1522,7 +1523,9 @@
     "WorkerOptions", 
     "WorkerType", 
     "Worklet", 
+    "WorkletAnimation", 
     "WorkletGlobalScope", 
+    "WorkletGroupEffect", 
     "WorkletOptions", 
     "WritableStream", 
     "WritableStreamAbort", 
@@ -1822,9 +1825,11 @@
     "anchor point", 
     "anchor unit", 
     "animatable", 
+    "animate function", 
     "animation", 
     "animation accumulation", 
     "animation addition", 
+    "animation animator name", 
     "animation class", 
     "animation direction", 
     "animation effect", 
@@ -1837,10 +1842,12 @@
     "animation playback events", 
     "animation playback rate", 
     "animation property name to idl attribute name", 
+    "animation requested flag", 
     "animation start time", 
     "animation time to origin-relative time", 
     "animation time to timeline time", 
     "animation type", 
+    "animation worklet", 
     "animation-composition", 
     "animation-delay", 
     "animation-direction", 
@@ -1856,6 +1863,16 @@
     "animationevent()", 
     "animationiteration", 
     "animationstart", 
+    "animator attached timelines", 
+    "animator current time", 
+    "animator definition", 
+    "animator effect", 
+    "animator instance", 
+    "animator instance set", 
+    "animator name", 
+    "animator name to animator definition map", 
+    "animator serialized options", 
+    "animator timeline", 
     "anniversary", 
     "annotated task read operation", 
     "annotated types", 
@@ -1977,6 +1994,7 @@
     "assigned access key", 
     "assigned media provider object", 
     "assigned nodes", 
+    "associate animator instance of worklet animation", 
     "associated", 
     "associated animation of an animation effect", 
     "associated css style sheet", 
@@ -2614,6 +2632,7 @@
     "clamp()", 
     "clamped to the range", 
     "class", 
+    "class constructor", 
     "class selector", 
     "class string", 
     "classes", 
@@ -3020,6 +3039,7 @@
     "create a module script", 
     "create a named constructor", 
     "create a named properties object", 
+    "create a new animator instance", 
     "create a new browsing context", 
     "create a new counter", 
     "create a new javascript realm", 
@@ -3377,6 +3397,7 @@
     "designmode", 
     "desired size to fill a stream's internal queue", 
     "destination", 
+    "destroy function", 
     "detach", 
     "detacharraybuffer", 
     "detached", 
@@ -3437,6 +3458,7 @@
     "disabled fieldset", 
     "disabled flag", 
     "disabled state", 
+    "disassociate animator instance of worklet animation", 
     "disc", 
     "discard a document", 
     "disconnect", 
@@ -4204,6 +4226,8 @@
     "frame border color", 
     "frame-ancestors", 
     "frame-ancestors directive", 
+    "frame-current", 
+    "frame-requested", 
     "frame-src", 
     "frameElement", 
     "frameborder", 
@@ -5603,6 +5627,7 @@
     "microtask task source", 
     "midnightblue", 
     "midpoint-on-the-path", 
+    "migrate an animator instance", 
     "mime type", 
     "mime type record", 
     "mime type sniffing algorithm", 
@@ -6866,6 +6891,7 @@
     "remove a css rule", 
     "remove a css style sheet", 
     "remove all event listeners", 
+    "remove an animator instance", 
     "remove an attribute", 
     "remove an attribute by name", 
     "remove an attribute by namespace and local name", 
@@ -7102,6 +7128,7 @@
     "run a module script", 
     "run a worker", 
     "run an upgrade transaction", 
+    "run animators", 
     "run job", 
     "run service worker", 
     "run the animation frame callbacks", 
@@ -7396,6 +7423,7 @@
     "serialized csp list", 
     "serialized directive", 
     "serialized feature policy", 
+    "serialized options", 
     "serialized source list", 
     "serialized state", 
     "serialized value", 
@@ -7444,6 +7472,7 @@
     "set an attribute value", 
     "set an existing attribute value", 
     "set an imagebitmaprenderingcontext's output bitmap", 
+    "set animator instance of worklet animation", 
     "set bitmap dimensions", 
     "set entries", 
     "set of comma-separated tokens", 
@@ -8783,6 +8812,7 @@
     "workerglobalscope object", 
     "workertype", 
     "worklet agent", 
+    "worklet animation", 
     "worklet global scope", 
     "worklet global scope execution environment", 
     "worklet global scope type", 
@@ -9656,6 +9686,7 @@
   "AnimationEffect": [
     "getComputedTiming()", 
     "getTiming()", 
+    "localTime", 
     "updateTiming()", 
     "updateTiming(timing)"
   ], 
@@ -9740,6 +9771,15 @@
   ], 
   "AnimationTimeline": [
     "currentTime"
+  ], 
+  "AnimationWorkletGlobalScope": [
+    "registerAnimator", 
+    "registerAnimator(name, animatorCtor)", 
+    "registerAnimator(name, animatorCtorValue)"
+  ], 
+  "AnimationWorkletGlobalScope/registerAnimator(name, animatorCtor)": [
+    "animatorCtor", 
+    "name"
   ], 
   "ApplicationCache": [
     "CHECKING", 
@@ -10169,6 +10209,7 @@
     "Hz(value)", 
     "Q", 
     "Q(value)", 
+    "animationWorklet", 
     "anonymous", 
     "anonymous box", 
     "at-rule", 
@@ -18017,10 +18058,24 @@
   "Worklet/import(moduleURL)": [
     "moduleURL"
   ], 
+  "WorkletAnimation": [
+    "WorkletAnimation(animatorName, effects, timeline, options)", 
+    "animatorName"
+  ], 
+  "WorkletAnimation/WorkletAnimation(animatorName, effects, timeline, options)": [
+    "animatorName", 
+    "effects", 
+    "options", 
+    "timeline"
+  ], 
   "WorkletGlobalScope": [
     "console", 
     "module map", 
     "owner document"
+  ], 
+  "WorkletGroupEffect": [
+    "getChildren", 
+    "getChildren()"
   ], 
   "WorkletOptions": [
     "credentials"
