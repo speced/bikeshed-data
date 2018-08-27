@@ -1868,10 +1868,10 @@
         "sameOriginWithAncestors"
       ], 
       "for": [
+        "PublicKeyCredential", 
         "Credential", 
         "FederatedCredential", 
-        "PasswordCredential", 
-        "PublicKeyCredential"
+        "PasswordCredential"
       ], 
       "shortname": "credential-management"
     }
@@ -1904,10 +1904,10 @@
       "args": [], 
       "for": [
         "AbortController", 
-        "ApplicationCache", 
-        "FileReader", 
+        "XMLHttpRequest", 
         "IDBTransaction", 
-        "XMLHttpRequest"
+        "ApplicationCache", 
+        "FileReader"
       ], 
       "shortname": "dom"
     }, 
@@ -1916,9 +1916,9 @@
         "reason"
       ], 
       "for": [
+        "underlying sink", 
         "WritableStream", 
-        "WritableStreamDefaultWriter", 
-        "underlying sink"
+        "WritableStreamDefaultWriter"
       ], 
       "shortname": "streams"
     }
@@ -1938,8 +1938,8 @@
     "add()": {
       "args": [], 
       "for": [
-        "DOMTokenList", 
         "DataTransferItemList", 
+        "DOMTokenList", 
         "HTMLSelectElement"
       ], 
       "shortname": "dom"
@@ -2268,8 +2268,8 @@
         "value"
       ], 
       "for": [
-        "FormData", 
         "Headers", 
+        "FormData", 
         "URLSearchParams"
       ], 
       "shortname": "fetch"
@@ -2519,8 +2519,8 @@
     "blur()": {
       "args": [], 
       "for": [
-        "HTMLElement", 
-        "Window"
+        "Window", 
+        "HTMLElement"
       ], 
       "shortname": "html"
     }
@@ -2595,21 +2595,12 @@
         "reason"
       ], 
       "for": [
-        "ReadableStream", 
         "ReadableStreamBYOBReader", 
-        "ReadableStreamDefaultReader", 
-        "underlying source"
+        "ReadableStream", 
+        "underlying source", 
+        "ReadableStreamDefaultReader"
       ], 
       "shortname": "streams"
-    }
-  }, 
-  "cancelAnimationFrame()": {
-    "cancelAnimationFrame()": {
-      "args": [], 
-      "for": [
-        "Window"
-      ], 
-      "shortname": "html"
     }
   }, 
   "canonicalUUID()": {
@@ -2627,8 +2618,8 @@
     "captureEvents()": {
       "args": [], 
       "for": [
-        "Document", 
-        "Window"
+        "Window", 
+        "Document"
       ], 
       "shortname": "html"
     }
@@ -2688,8 +2679,8 @@
     "checkValidity()": {
       "args": [], 
       "for": [
-        "HTMLFieldSetElement", 
-        "HTMLFormElement"
+        "HTMLFormElement", 
+        "HTMLFieldSetElement"
       ], 
       "shortname": "html"
     }
@@ -2718,13 +2709,13 @@
     "clear()": {
       "args": [], 
       "for": [
+        "console", 
+        "StylePropertyMap", 
+        "Storage", 
+        "FontFaceSet", 
         "DataTransferItemList", 
         "Document", 
-        "FontFaceSet", 
-        "IDBObjectStore", 
-        "Storage", 
-        "StylePropertyMap", 
-        "console"
+        "IDBObjectStore"
       ], 
       "shortname": "console"
     }
@@ -2850,21 +2841,21 @@
     "close()": {
       "args": [], 
       "for": [
-        "BroadcastChannel", 
+        "WebSocket", 
         "DedicatedWorkerGlobalScope", 
+        "MessagePort", 
+        "ReadableStreamDefaultController", 
+        "ImageBitmap", 
+        "Window", 
         "EventSource", 
+        "WritableStreamDefaultWriter", 
+        "BroadcastChannel", 
+        "SharedWorkerGlobalScope", 
         "HTMLDialogElement", 
         "IDBDatabase", 
-        "ImageBitmap", 
-        "MessagePort", 
+        "underlying sink", 
         "ReadableByteStreamController", 
-        "ReadableStreamDefaultController", 
-        "SharedWorkerGlobalScope", 
-        "USBDevice", 
-        "WebSocket", 
-        "Window", 
-        "WritableStreamDefaultWriter", 
-        "underlying sink"
+        "USBDevice"
       ], 
       "shortname": "html"
     }, 
@@ -3187,8 +3178,8 @@
       "args": [], 
       "for": [
         "IDBIndex", 
-        "IDBObjectStore", 
-        "console"
+        "console", 
+        "IDBObjectStore"
       ], 
       "shortname": "console"
     }, 
@@ -3699,8 +3690,8 @@
     "decode()": {
       "args": [], 
       "for": [
-        "HTMLImageElement", 
-        "TextDecoder"
+        "TextDecoder", 
+        "HTMLImageElement"
       ], 
       "shortname": "encoding"
     }, 
@@ -3788,8 +3779,8 @@
         "name"
       ], 
       "for": [
-        "FormData", 
         "Headers", 
+        "FormData", 
         "URLSearchParams"
       ], 
       "shortname": "fetch"
@@ -3923,8 +3914,8 @@
         "index"
       ], 
       "for": [
-        "HTMLTableElement", 
-        "HTMLTableSectionElement"
+        "HTMLTableSectionElement", 
+        "HTMLTableElement"
       ], 
       "shortname": "html"
     }
@@ -3979,8 +3970,8 @@
     "detach()": {
       "args": [], 
       "for": [
-        "NodeIterator", 
-        "Range"
+        "Range", 
+        "NodeIterator"
       ], 
       "shortname": "dom"
     }
@@ -4030,9 +4021,9 @@
     "disconnect()": {
       "args": [], 
       "for": [
-        "BluetoothRemoteGATTServer", 
+        "ReportingObserver", 
         "MutationObserver", 
-        "ReportingObserver"
+        "BluetoothRemoteGATTServer"
       ], 
       "shortname": "dom"
     }
@@ -4249,8 +4240,8 @@
         "chunk"
       ], 
       "for": [
-        "ReadableByteStreamController", 
         "ReadableStreamDefaultController", 
+        "ReadableByteStreamController", 
         "TransformStreamDefaultController"
       ], 
       "shortname": "streams"
@@ -4289,9 +4280,9 @@
         "e"
       ], 
       "for": [
-        "ReadableByteStreamController", 
         "ReadableStreamDefaultController", 
-        "WritableStreamDefaultController"
+        "WritableStreamDefaultController", 
+        "ReadableByteStreamController"
       ], 
       "shortname": "streams"
     }, 
@@ -4485,9 +4476,9 @@
     "focus()": {
       "args": [], 
       "for": [
-        "HTMLOrSVGElement", 
         "Window", 
-        "WindowClient"
+        "WindowClient", 
+        "HTMLOrSVGElement"
       ], 
       "shortname": "html"
     }
@@ -4527,8 +4518,8 @@
         "array32"
       ], 
       "for": [
-        "DOMMatrix", 
-        "DOMMatrixReadOnly"
+        "DOMMatrixReadOnly", 
+        "DOMMatrix"
       ], 
       "shortname": "geometry"
     }
@@ -4539,8 +4530,8 @@
         "array64"
       ], 
       "for": [
-        "DOMMatrix", 
-        "DOMMatrixReadOnly"
+        "DOMMatrixReadOnly", 
+        "DOMMatrix"
       ], 
       "shortname": "geometry"
     }
@@ -4549,8 +4540,8 @@
     "fromMatrix()": {
       "args": [], 
       "for": [
-        "DOMMatrix", 
-        "DOMMatrixReadOnly"
+        "DOMMatrixReadOnly", 
+        "DOMMatrix"
       ], 
       "shortname": "geometry"
     }
@@ -4559,8 +4550,8 @@
     "fromPoint()": {
       "args": [], 
       "for": [
-        "DOMPoint", 
-        "DOMPointReadOnly"
+        "DOMPointReadOnly", 
+        "DOMPoint"
       ], 
       "shortname": "geometry"
     }, 
@@ -4569,8 +4560,8 @@
         "other"
       ], 
       "for": [
-        "DOMPoint", 
-        "DOMPointReadOnly"
+        "DOMPointReadOnly", 
+        "DOMPoint"
       ], 
       "shortname": "geometry"
     }
@@ -4588,9 +4579,9 @@
     "fromRect()": {
       "args": [], 
       "for": [
-        "DOMQuad", 
         "DOMRect", 
-        "DOMRectReadOnly"
+        "DOMRectReadOnly", 
+        "DOMQuad"
       ], 
       "shortname": "geometry"
     }
@@ -4627,10 +4618,10 @@
         "name"
       ], 
       "for": [
-        "CustomElementRegistry", 
-        "FormData", 
         "Headers", 
-        "URLSearchParams"
+        "FormData", 
+        "URLSearchParams", 
+        "CustomElementRegistry"
       ], 
       "shortname": "fetch"
     }, 
@@ -4648,8 +4639,8 @@
         "property"
       ], 
       "for": [
-        "StylePropertyMap", 
-        "StylePropertyMapReadOnly"
+        "StylePropertyMapReadOnly", 
+        "StylePropertyMap"
       ], 
       "shortname": "css-typed-om"
     }, 
@@ -4688,8 +4679,8 @@
         "property"
       ], 
       "for": [
-        "StylePropertyMap", 
-        "StylePropertyMapReadOnly"
+        "StylePropertyMapReadOnly", 
+        "StylePropertyMap"
       ], 
       "shortname": "css-typed-om"
     }, 
@@ -4871,8 +4862,8 @@
     "getBoundingClientRect()": {
       "args": [], 
       "for": [
-        "Element", 
-        "Range"
+        "Range", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }
@@ -4977,8 +4968,8 @@
     "getClientRects()": {
       "args": [], 
       "for": [
-        "Element", 
-        "Range"
+        "Range", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }
@@ -5008,8 +4999,8 @@
     "getComputedTiming()": {
       "args": [], 
       "for": [
-        "AnimationEffect", 
-        "AnimationEffectReadOnly"
+        "AnimationEffectReadOnly", 
+        "AnimationEffect"
       ], 
       "shortname": "web-animations"
     }
@@ -5029,8 +5020,8 @@
         "contextId"
       ], 
       "for": [
-        "HTMLCanvasElement", 
-        "OffscreenCanvas"
+        "OffscreenCanvas", 
+        "HTMLCanvasElement"
       ], 
       "shortname": "html"
     }
@@ -5170,8 +5161,8 @@
     "getFeature()": {
       "args": [], 
       "for": [
-        "DOMImplementation", 
-        "Node"
+        "Node", 
+        "DOMImplementation"
       ], 
       "shortname": "dom"
     }
@@ -5660,8 +5651,8 @@
         "name"
       ], 
       "for": [
-        "FormData", 
         "Headers", 
+        "FormData", 
         "URLSearchParams"
       ], 
       "shortname": "fetch"
@@ -5671,8 +5662,8 @@
         "property"
       ], 
       "for": [
-        "StylePropertyMap", 
-        "StylePropertyMapReadOnly"
+        "StylePropertyMapReadOnly", 
+        "StylePropertyMap"
       ], 
       "shortname": "css-typed-om"
     }
@@ -5704,8 +5695,8 @@
     "hasAttributes()": {
       "args": [], 
       "for": [
-        "Element", 
-        "Node"
+        "Node", 
+        "Element"
       ], 
       "shortname": "dom"
     }
@@ -6003,8 +5994,8 @@
     "insertRow()": {
       "args": [], 
       "for": [
-        "HTMLTableElement", 
-        "HTMLTableSectionElement"
+        "HTMLTableSectionElement", 
+        "HTMLTableElement"
       ], 
       "shortname": "html"
     }
@@ -6172,8 +6163,8 @@
       "args": [], 
       "for": [
         "DOMRectList", 
-        "HTMLAllCollection", 
-        "Plugin"
+        "Plugin", 
+        "HTMLAllCollection"
       ], 
       "shortname": "geometry"
     }, 
@@ -6182,19 +6173,19 @@
         "index"
       ], 
       "for": [
+        "NodeList", 
         "CSSPseudoElementList", 
-        "CSSRuleList", 
+        "DOMTokenList", 
+        "StyleSheetList", 
+        "NamedNodeMap", 
+        "HTMLSelectElement", 
+        "FileList", 
         "CSSStyleDeclaration", 
         "DOMRectList", 
-        "DOMStringList", 
-        "DOMTokenList", 
-        "FileList", 
-        "HTMLCollection", 
-        "HTMLSelectElement", 
+        "CSSRuleList", 
         "MediaList", 
-        "NamedNodeMap", 
-        "NodeList", 
-        "StyleSheetList"
+        "DOMStringList", 
+        "HTMLCollection"
       ], 
       "shortname": "css-pseudo"
     }
@@ -6234,8 +6225,8 @@
     "keys()": {
       "args": [], 
       "for": [
-        "Cache", 
-        "CacheStorage"
+        "CacheStorage", 
+        "Cache"
       ], 
       "shortname": "service-workers"
     }, 
@@ -6316,9 +6307,9 @@
     "load()": {
       "args": [], 
       "for": [
+        "HTMLMediaElement", 
         "FontFace", 
-        "FontFaceSet", 
-        "HTMLMediaElement"
+        "FontFaceSet"
       ], 
       "shortname": "css-font-loading"
     }, 
@@ -6412,8 +6403,8 @@
         "request"
       ], 
       "for": [
-        "Cache", 
-        "CacheStorage"
+        "CacheStorage", 
+        "Cache"
       ], 
       "shortname": "service-workers"
     }, 
@@ -6423,8 +6414,8 @@
         "options"
       ], 
       "for": [
-        "Cache", 
-        "CacheStorage"
+        "CacheStorage", 
+        "Cache"
       ], 
       "shortname": "service-workers"
     }
@@ -6589,8 +6580,8 @@
         "y"
       ], 
       "for": [
-        "CanvasPath", 
-        "Window"
+        "Window", 
+        "CanvasPath"
       ], 
       "shortname": "cssom-view"
     }
@@ -6676,9 +6667,9 @@
       ], 
       "for": [
         "HTMLAllCollection", 
+        "HTMLSelectElement", 
         "HTMLCollection", 
-        "HTMLFormControlsCollection", 
-        "HTMLSelectElement"
+        "HTMLFormControlsCollection"
       ], 
       "shortname": "dom"
     }
@@ -6712,8 +6703,8 @@
     "nextNode()": {
       "args": [], 
       "for": [
-        "NodeIterator", 
-        "TreeWalker"
+        "TreeWalker", 
+        "NodeIterator"
       ], 
       "shortname": "dom"
     }
@@ -6810,8 +6801,8 @@
     "open()": {
       "args": [], 
       "for": [
-        "USBDevice", 
-        "Window"
+        "Window", 
+        "USBDevice"
       ], 
       "shortname": "html"
     }, 
@@ -7136,8 +7127,8 @@
     "postMessage()": {
       "args": [], 
       "for": [
-        "DedicatedWorkerGlobalScope", 
-        "Worker"
+        "Worker", 
+        "DedicatedWorkerGlobalScope"
       ], 
       "shortname": "html"
     }, 
@@ -7146,9 +7137,9 @@
         "message"
       ], 
       "for": [
-        "BroadcastChannel", 
         "Client", 
-        "MessagePort"
+        "MessagePort", 
+        "BroadcastChannel"
       ], 
       "shortname": "html"
     }, 
@@ -7235,8 +7226,8 @@
     "previousNode()": {
       "args": [], 
       "for": [
-        "NodeIterator", 
-        "TreeWalker"
+        "TreeWalker", 
+        "NodeIterator"
       ], 
       "shortname": "dom"
     }
@@ -7722,8 +7713,8 @@
     "releaseEvents()": {
       "args": [], 
       "for": [
-        "Document", 
-        "Window"
+        "Window", 
+        "Document"
       ], 
       "shortname": "html"
     }
@@ -7774,10 +7765,10 @@
     "remove()": {
       "args": [], 
       "for": [
-        "ChildNode", 
-        "DOMTokenList", 
         "DataTransferItemList", 
-        "HTMLSelectElement"
+        "DOMTokenList", 
+        "HTMLSelectElement", 
+        "ChildNode"
       ], 
       "shortname": "dom"
     }, 
@@ -8035,8 +8026,8 @@
     "reportValidity()": {
       "args": [], 
       "for": [
-        "HTMLFieldSetElement", 
-        "HTMLFormElement"
+        "HTMLFormElement", 
+        "HTMLFieldSetElement"
       ], 
       "shortname": "html"
     }
@@ -8053,10 +8044,12 @@
     }
   }, 
   "requestAnimationFrame()": {
-    "requestAnimationFrame()": {
-      "args": [], 
+    "requestAnimationFrame(callback)": {
+      "args": [
+        "callback"
+      ], 
       "for": [
-        "Window"
+        "AnimationFrameProvider"
       ], 
       "shortname": "html"
     }
@@ -8067,8 +8060,8 @@
         "options"
       ], 
       "for": [
-        "Bluetooth", 
-        "USB"
+        "USB", 
+        "Bluetooth"
       ], 
       "shortname": "web-bluetooth"
     }
@@ -8222,8 +8215,8 @@
         "angle"
       ], 
       "for": [
-        "CanvasTransform", 
-        "DOMMatrixReadOnly"
+        "DOMMatrixReadOnly", 
+        "CanvasTransform"
       ], 
       "shortname": "geometry"
     }, 
@@ -8942,8 +8935,8 @@
     "scroll()": {
       "args": [], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }, 
@@ -8952,8 +8945,8 @@
         "options"
       ], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }, 
@@ -8963,8 +8956,8 @@
         "y"
       ], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }
@@ -8973,8 +8966,8 @@
     "scrollBy()": {
       "args": [], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }, 
@@ -8983,8 +8976,8 @@
         "options"
       ], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }, 
@@ -8994,8 +8987,8 @@
         "y"
       ], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }
@@ -9031,8 +9024,8 @@
     "scrollTo()": {
       "args": [], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }, 
@@ -9041,8 +9034,8 @@
         "options"
       ], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }, 
@@ -9052,8 +9045,8 @@
         "y"
       ], 
       "for": [
-        "Element", 
-        "Window"
+        "Window", 
+        "Element"
       ], 
       "shortname": "cssom-view"
     }
@@ -9194,8 +9187,8 @@
         "value"
       ], 
       "for": [
-        "FormData", 
         "Headers", 
+        "FormData", 
         "URLSearchParams"
       ], 
       "shortname": "fetch"
@@ -9573,8 +9566,8 @@
         "stdDeviationY"
       ], 
       "for": [
-        "SVGFEDropShadowElement", 
-        "SVGFEGaussianBlurElement"
+        "SVGFEGaussianBlurElement", 
+        "SVGFEDropShadowElement"
       ], 
       "shortname": "filter-effects"
     }
@@ -9805,9 +9798,9 @@
     "start()": {
       "args": [], 
       "for": [
-        "HTMLMarqueeElement", 
         "MessagePort", 
-        "Sensor"
+        "Sensor", 
+        "HTMLMarqueeElement"
       ], 
       "shortname": "generic-sensor"
     }, 
@@ -9817,8 +9810,8 @@
       ], 
       "for": [
         "transformer", 
-        "underlying sink", 
-        "underlying source"
+        "underlying source", 
+        "underlying sink"
       ], 
       "shortname": "streams"
     }, 
@@ -9872,9 +9865,9 @@
     "stop()": {
       "args": [], 
       "for": [
-        "HTMLMarqueeElement", 
+        "Window", 
         "Sensor", 
-        "Window"
+        "HTMLMarqueeElement"
       ], 
       "shortname": "generic-sensor"
     }
@@ -10081,8 +10074,8 @@
     "takeRecords()": {
       "args": [], 
       "for": [
-        "MutationObserver", 
-        "ReportingObserver"
+        "ReportingObserver", 
+        "MutationObserver"
       ], 
       "shortname": "dom"
     }
@@ -10100,8 +10093,8 @@
     "terminate()": {
       "args": [], 
       "for": [
-        "TransformStreamDefaultController", 
-        "Worker"
+        "Worker", 
+        "TransformStreamDefaultController"
       ], 
       "shortname": "html"
     }
@@ -10235,11 +10228,11 @@
     "toJSON()": {
       "args": [], 
       "for": [
+        "URL", 
         "DOMMatrixReadOnly", 
-        "DOMPointReadOnly", 
-        "DOMQuad", 
         "DOMRectReadOnly", 
-        "URL"
+        "DOMPointReadOnly", 
+        "DOMQuad"
       ], 
       "shortname": "geometry"
     }
