@@ -210,6 +210,7 @@
     "event type", 
     "authorization gesture", 
     "fallback entries", 
+    "GenericTransformStream", 
     "border-block-start-style", 
     "service", 
     "CanvasShadowStyles", 
@@ -316,6 +317,7 @@
     "get a copy of the bytes held by the buffer source", 
     "isstructurallyvalidlanguagetag", 
     "<calc-sum>", 
+    "flush and enqueue", 
     "irk", 
     "HTMLOutputElement", 
     "iterator prototype object", 
@@ -958,6 +960,7 @@
     "relying party", 
     "start with a windows drive letter", 
     "online safelist wildcard flag", 
+    "loadstart", 
     "generator", 
     "long attribute values", 
     "url parser", 
@@ -978,7 +981,6 @@
     "user interaction", 
     "before doctype system identifier state", 
     "USBRecipient", 
-    "fully clipped", 
     "enqueue an element on the appropriate element queue", 
     "horizontal block flow", 
     "script data double escape start state", 
@@ -1179,6 +1181,7 @@
     "invalid selector", 
     "get a reference to the buffer source", 
     "the special value *", 
+    "convert code unit to scalar value", 
     "writable side", 
     "USBIsochronousInTransferResult", 
     ":blank", 
@@ -1445,6 +1448,7 @@
     "detaching from a media element", 
     "outerHTML", 
     "has a style sheet that is blocking scripts", 
+    "TextDecoderStream", 
     "multipart/x-mixed-replace", 
     "ChildDisplayType", 
     "external file reference", 
@@ -1487,7 +1491,7 @@
     "update animations and send events", 
     "target effect", 
     "disabled state", 
-    "completed transition", 
+    "fully clipped", 
     "<hash-token>", 
     "pixel density descriptor", 
     "max inner width", 
@@ -1561,7 +1565,6 @@
     "<font-format>", 
     "compare media queries", 
     "process a keyframe-like object", 
-    "newline", 
     "grid row line", 
     "named grid area", 
     "limit number of delivered readings", 
@@ -1622,6 +1625,7 @@
     "the range", 
     "work", 
     "split a string input on ascii whitespace", 
+    "TextDecoderCommon", 
     "submittable elements", 
     "flow-relative direction", 
     "address-level1", 
@@ -2391,6 +2395,7 @@
     "ReadableByteStreamControllerFillHeadPullIntoDescriptor", 
     "fragment box", 
     "grapheme cluster", 
+    "TextEncoderCommon", 
     "ignore higher-layer caching", 
     "organization-title", 
     "HTMLLegendElement", 
@@ -2454,7 +2459,7 @@
     "unwrapkey", 
     "NonDocumentTypeChildNode", 
     "animator name", 
-    "ending edges", 
+    "jis04", 
     "access-control-request-method", 
     "run a classic script", 
     "inclusion criteria", 
@@ -3729,7 +3734,7 @@
     "utf-8 lower boundary", 
     "database", 
     "user-verifying roaming authenticator", 
-    "loadstart", 
+    "special keyword", 
     "cross-axis", 
     "processing blob parts", 
     "<explicit-track-list>", 
@@ -4695,7 +4700,7 @@
     "apply the percent hint", 
     "line-breaking-process", 
     "scrolling area", 
-    "special keyword", 
+    "newline", 
     "obtain unicode", 
     "ReadableByteStreamControllerGetDesiredSize", 
     "min height", 
@@ -5744,7 +5749,7 @@
     "detach", 
     "own autocapitalization hint", 
     "NodeFilter", 
-    "CSSTransformValue", 
+    "completed transition", 
     "wrap-through", 
     "darkviolet", 
     "2d", 
@@ -5765,6 +5770,7 @@
     "silently set the animation playback rate", 
     "min-content width", 
     "utf-8 upper boundary", 
+    "encode and flush", 
     "hsts-safe origin", 
     "distance computation", 
     "isolated sequence", 
@@ -6633,6 +6639,7 @@
     "named property setter", 
     "<dimension>", 
     "pause-before", 
+    "TextEncoderStream", 
     "renderer", 
     "spatial sensor", 
     "fire a success event", 
@@ -7150,6 +7157,7 @@
     "append (for set)", 
     "broadcaster", 
     "abort fetch", 
+    "encode and enqueue a chunk", 
     "serialize a media query", 
     "StorageManager", 
     "ExtendableEvent", 
@@ -7691,6 +7699,7 @@
     "HTMLHtmlElement", 
     "globalcompositeoperation", 
     "touch point", 
+    "CSSTransformValue", 
     "cc-number", 
     "pre-insert", 
     "TransformStreamDefaultControllerEnqueue", 
@@ -7833,7 +7842,7 @@
     "designmode", 
     "affected by a base url change", 
     "animation frame callback identifier", 
-    "jis04", 
+    "ending edges", 
     "component value", 
     "lightgoldenrodyellow", 
     "image data", 
@@ -8533,6 +8542,7 @@
     "text/ecmascript", 
     "well-known symbols", 
     "related", 
+    "decode and enqueue a chunk", 
     "HTMLObjectElement", 
     "HTMLMeterElement", 
     "KeyframeEffect", 
@@ -13838,6 +13848,11 @@
     "message", 
     "group"
   ], 
+  "GenericTransformStream": [
+    "writable", 
+    "readable", 
+    "transform"
+  ], 
   "GeometryUtils": [
     "getBoxQuads(options)", 
     "convertPointFromNode(point, from)", 
@@ -16038,9 +16053,9 @@
     "\"clipboard\"", 
     "\"device-info\"", 
     "\"push\"", 
-    "\"camera\"", 
+    "\"geolocation\"", 
     "\"microphone\"", 
-    "\"geolocation\""
+    "\"camera\""
   ], 
   "PermissionSetParameters": [
     "descriptor", 
@@ -17152,20 +17167,11 @@
     "stream"
   ], 
   "TextDecoder": [
+    "TextDecoder(label, options)", 
+    "decoder", 
     "do not flush flag", 
     "stream", 
-    "encoding", 
-    "ignoreBOM", 
-    "decoder", 
-    "bom seen flag", 
-    "decode(input, options)", 
-    "ignore bom flag", 
-    "decode(input)", 
-    "error mode", 
-    "TextDecoder(label, options)", 
-    "fatal", 
-    "serialize stream", 
-    "decode()"
+    "decode(input, options)"
   ], 
   "TextDecoder/TextDecoder(label, options)": [
     "options", 
@@ -17183,22 +17189,46 @@
     "input", 
     "options"
   ], 
+  "TextDecoderCommon": [
+    "encoding", 
+    "ignoreBOM", 
+    "bom seen flag", 
+    "ignore bom flag", 
+    "error mode", 
+    "fatal", 
+    "serialize stream"
+  ], 
   "TextDecoderOptions": [
     "ignoreBOM", 
     "fatal"
   ], 
+  "TextDecoderStream": [
+    "TextDecoderStream(label, options)", 
+    "stream", 
+    "decoder"
+  ], 
+  "TextDecoderStream/TextDecoderStream(label, options)": [
+    "options", 
+    "label"
+  ], 
   "TextEncoder": [
-    "encoder", 
     "TextEncoder()", 
-    "encode()", 
     "encode(input)", 
-    "encoding"
+    "encoder"
   ], 
   "TextEncoder/encode()": [
     "input"
   ], 
   "TextEncoder/encode(input)": [
     "input"
+  ], 
+  "TextEncoderCommon": [
+    "encoding"
+  ], 
+  "TextEncoderStream": [
+    "pending high surrogate", 
+    "TextEncoderStream()", 
+    "encoder"
   ], 
   "TextMetrics": [
     "emHeightDescent", 
@@ -20216,19 +20246,19 @@
   ], 
   "link": [
     "x-ua-compatible state", 
+    "charset", 
     "set-cookie state", 
     "crossorigin", 
     "title", 
     "color", 
     "media", 
-    "charset", 
+    "sizes", 
     "default style state", 
     "referrerpolicy", 
     "encoding declaration state", 
     "as", 
     "href", 
     "hreflang", 
-    "sizes", 
     "rel", 
     "type", 
     "content language state", 

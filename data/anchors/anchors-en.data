@@ -323,16 +323,25 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#encode
 
 1
 -
-encode()
-method
+encode and enqueue a chunk
+dfn
 encoding-1
 encoding
 1
 current
-https://encoding.spec.whatwg.org/#dom-textencoder-encode
+https://encoding.spec.whatwg.org/#encode-and-enqueue-a-chunk
+
 1
+-
+encode and flush
+dfn
+encoding-1
+encoding
 1
-TextEncoder
+current
+https://encoding.spec.whatwg.org/#encode-and-flush
+
+1
 -
 encode(input)
 method
@@ -366,6 +375,17 @@ https://encoding.spec.whatwg.org/#textencoder-encoder
 1
 TextEncoder
 -
+encoder
+dfn
+encoding-1
+encoding
+1
+current
+https://encoding.spec.whatwg.org/#textencoderstream-encoder
+
+1
+TextEncoderStream
+-
 encoding
 dfn
 dom
@@ -396,7 +416,7 @@ current
 https://encoding.spec.whatwg.org/#dom-textdecoder-encoding
 1
 1
-TextDecoder
+TextDecoderCommon
 -
 encoding
 dfn
@@ -407,7 +427,7 @@ current
 https://encoding.spec.whatwg.org/#textdecoder-encoding
 
 1
-TextDecoder
+TextDecoderCommon
 -
 encoding
 attribute
@@ -418,7 +438,7 @@ current
 https://encoding.spec.whatwg.org/#dom-textencoder-encoding
 1
 1
-TextEncoder
+TextEncoderCommon
 -
 encoding
 argument
