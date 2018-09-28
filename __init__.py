@@ -37,14 +37,24 @@ def updateAndCommit():
 		print "Manifest is unchanged since {0}, nothing to be committed".format(oldDate)
 		return
 
+	diffFiles = diffManifest(oldManifest, newManifest)
+
 	os.chdir(scriptPath)
 	print subprocess.check_output("git add data", shell=True)
-	print subprocess.check_output("git commit -m 'update data'", shell=True)
+	print subprocess.check_output("git commit -m 'update {0} files: {1}'".format(len(diffFiles), ", ".join(diffFiles)), shell=True)
 	print subprocess.check_output("git push", shell=True)
 
 def updateDataFiles(path):
 	bikeshed.config.quiet = False
 	bikeshed.update.update(path=path, force=True)
+
+def diffManifest(old, new):
+	oldLines = set(old.split("\n"))
+	newLines = set(new.split("\n"))
+	diffLines = oldLines ^ newLines
+	diffFiles = set(line.partition(" ")[2] for line in diffLines)
+	return sorted(diffFiles)
+
 
 
 
