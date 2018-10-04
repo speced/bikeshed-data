@@ -1,4 +1,4 @@
-sha: a13506a26c944343ab0c51f6c13d8489b1df53d9
+sha: edee96b6462be67473a6263f7afca11607aac50f
 manual 2dcontext/conformance-requirements/2d.coordinatespace-manual.html
 manual 2dcontext/drawing-paths-to-the-canvas/canvas_focus_drawFocusIfNeeded_AAPI_001-manual.html
 manual 2dcontext/drawing-text-to-the-canvas/2d.text.draw.fill.basic-manual.html
@@ -15375,6 +15375,7 @@ reftest css/css-writing-modes/writing-mode-vertical-rl-002.xht
 reftest css/css-writing-modes/writing-mode-vertical-rl-003.htm
 reftest css/cssom-view/cssom-getBoundingClientRect-vertical-rl.html
 reftest css/cssom-view/getClientRects-inline.html
+reftest css/cssom-view/offsetTopLeftInline.html
 reftest css/cssom-view/scrollTop-display-change.html
 reftest css/cssom-view/scrollingElement-quirks-dynamic-001.html
 reftest css/cssom-view/scrollingElement-quirks-dynamic-002.html
@@ -18917,6 +18918,7 @@ testharness async-local-storage/non-secure-context-script-element.tentative.html
 testharness async-local-storage/storage-smoke-test.tentative.https.html
 testharness audio-output/idlharness.window.js
 testharness audio-output/setSinkId.https.html
+testharness background-fetch/abort.https.window.js
 testharness background-fetch/content-security-policy.https.window.js
 testharness background-fetch/fetch.https.window.js
 testharness background-fetch/get-ids.https.window.js
@@ -19338,12 +19340,14 @@ testharness content-security-policy/nonce-hiding/script-nonces-hidden-meta.tenta
 testharness content-security-policy/nonce-hiding/script-nonces-hidden.tentative.html
 testharness content-security-policy/nonce-hiding/svgscript-nonces-hidden-meta.tentative.sub.html
 testharness content-security-policy/nonce-hiding/svgscript-nonces-hidden.tentative.html
-testharness content-security-policy/object-src/object-src-2_1.html
-testharness content-security-policy/object-src/object-src-2_2.html
-testharness content-security-policy/object-src/object-src-no-url-allowed.sub.html
-testharness content-security-policy/object-src/object-src-no-url-blocked.sub.html
-testharness content-security-policy/object-src/object-src-url-allowed.sub.html
-testharness content-security-policy/object-src/object-src-url-blocked.sub.html
+testharness content-security-policy/object-src/object-src-no-url-allowed.html
+testharness content-security-policy/object-src/object-src-no-url-blocked.html
+testharness content-security-policy/object-src/object-src-url-allowed.html
+testharness content-security-policy/object-src/object-src-url-blocked.html
+testharness content-security-policy/object-src/object-src-url-embed-allowed.html
+testharness content-security-policy/object-src/object-src-url-embed-blocked.html
+testharness content-security-policy/object-src/object-src-url-redirect-allowed.html
+testharness content-security-policy/object-src/object-src-url-redirect-blocked.sub.html
 testharness content-security-policy/plugin-types/plugintypes-mismatched-data.sub.html
 testharness content-security-policy/plugin-types/plugintypes-mismatched-url.sub.html
 testharness content-security-policy/plugin-types/plugintypes-notype-data.sub.html
@@ -21442,6 +21446,12 @@ testharness css/cssom-view/elementsFromPoint-svg-text.html
 testharness css/cssom-view/elementsFromPoint-svg.html
 testharness css/cssom-view/elementsFromPoint-table.html
 testharness css/cssom-view/elementsFromPoint.html
+testharness css/cssom-view/getClientRects-br-htb-ltr.html
+testharness css/cssom-view/getClientRects-br-htb-rtl.html
+testharness css/cssom-view/getClientRects-br-vlr-ltr.html
+testharness css/cssom-view/getClientRects-br-vlr-rtl.html
+testharness css/cssom-view/getClientRects-br-vrl-ltr.html
+testharness css/cssom-view/getClientRects-br-vrl-rtl.html
 testharness css/cssom-view/historical.html
 testharness css/cssom-view/htmlelement-offset-width-001.html
 testharness css/cssom-view/interfaces.html
@@ -29573,6 +29583,7 @@ testharness trusted-types/Location-replace.tentative.html
 testharness trusted-types/Range-createContextualFragment.tentative.html
 testharness trusted-types/TrustedTypePolicyFactory-createPolicy-createXYZTests.tentative.html
 testharness trusted-types/TrustedTypePolicyFactory-createPolicy-cspTests-noNamesGiven.tentative.html
+testharness trusted-types/TrustedTypePolicyFactory-createPolicy-cspTests-wildcard.tentative.html
 testharness trusted-types/TrustedTypePolicyFactory-createPolicy-cspTests.tentative.html
 testharness trusted-types/TrustedTypePolicyFactory-createPolicy-exposedTests.tentative.html
 testharness trusted-types/TrustedTypePolicyFactory-createPolicy-nameTests.tentative.html
