@@ -5591,13 +5591,6 @@
       "shortname": "dom"
     }
   }, 
-  "getUserMedia()": {
-    "getUserMedia()": {
-      "args": [], 
-      "for": [], 
-      "shortname": "html"
-    }
-  }, 
   "getWriter()": {
     "getWriter()": {
       "args": [], 
@@ -7192,14 +7185,6 @@
     }
   }, 
   "postMessage()": {
-    "postMessage()": {
-      "args": [], 
-      "for": [
-        "DedicatedWorkerGlobalScope", 
-        "Worker"
-      ], 
-      "shortname": "html"
-    }, 
     "postMessage(message)": {
       "args": [
         "message"
@@ -7207,7 +7192,21 @@
       "for": [
         "BroadcastChannel", 
         "Client", 
+        "DedicatedWorkerGlobalScope", 
         "MessagePort"
+      ], 
+      "shortname": "html"
+    }, 
+    "postMessage(message, options)": {
+      "args": [
+        "message", 
+        "options"
+      ], 
+      "for": [
+        "DedicatedWorkerGlobalScope", 
+        "MessagePort", 
+        "Window", 
+        "Worker"
       ], 
       "shortname": "html"
     }, 
@@ -7229,9 +7228,10 @@
       ], 
       "for": [
         "Client", 
-        "ServiceWorker"
+        "ServiceWorker", 
+        "Worker"
       ], 
-      "shortname": "service-workers"
+      "shortname": "html"
     }
   }, 
   "preMultiplySelf()": {
