@@ -63,7 +63,6 @@
     "::shadow", 
     "::slotted()", 
     "::spelling-error", 
-    "::theme()", 
     ":active", 
     ":any-link", 
     ":blank", 
@@ -1008,6 +1007,7 @@
     "IsWritableStreamDefaultWriter", 
     "IsWritableStreamLocked", 
     "IterationCompositeOperation", 
+    "KeyboardEvent", 
     "KeyboardEventInit", 
     "KeyframeAnimationOptions", 
     "KeyframeEffect", 
@@ -1463,6 +1463,8 @@
     "TypeError", 
     "TypeInfo", 
     "TypeMismatchError", 
+    "UIEvent", 
+    "UIEventInit", 
     "URIError", 
     "URL", 
     "URLMismatchError", 
@@ -2925,7 +2927,6 @@
     "content security policy object", 
     "content security policy state", 
     "content security policy syntax", 
-    "content size", 
     "content size suggestion", 
     "content type", 
     "content width", 
@@ -3020,6 +3021,7 @@
     "cors-safelisted request-header", 
     "cors-safelisted response-header name", 
     "cors-same-origin", 
+    "cors-unsafe request-header byte", 
     "cors-unsafe request-header names", 
     "count map", 
     "count the records in a range", 
@@ -7207,6 +7209,7 @@
     "ry", 
     "s", 
     "saddlebrown", 
+    "safe zone", 
     "safelisted schemes", 
     "safely upgradable requests", 
     "salmon", 
@@ -7597,7 +7600,6 @@
     "shadow-including preorder, depth-first traversal", 
     "shadow-including root", 
     "shadow-including tree order", 
-    "shadow-part pseudo-elements", 
     "shadowroot", 
     "shadows", 
     "shadows are only drawn if", 
@@ -8363,7 +8365,6 @@
     "transfer steps", 
     "transfer-receiving steps", 
     "transferable objects", 
-    "transferred size", 
     "transferred size suggestion", 
     "transform", 
     "transform a point with a matrix", 
@@ -8492,7 +8493,6 @@
     "unicase", 
     "unicode category", 
     "unicode character categories", 
-    "unicode code point", 
     "unicode east asian width", 
     "unicode general category", 
     "unicode script", 
@@ -8878,6 +8878,8 @@
     "windows-874", 
     "windowtext", 
     "within scope", 
+    "within scope of a manifest", 
+    "within-scope-manifest", 
     "word separator", 
     "word-break", 
     "word-separator character", 
@@ -11446,9 +11448,11 @@
     "replace"
   ], 
   "CompositionEvent": [
+    "CompositionEvent(type)", 
     "CompositionEvent(type, eventInitDict)", 
     "Constructor", 
-    "data"
+    "data", 
+    "initCompositionEvent()"
   ], 
   "CompositionEvent/CompositionEvent(type, eventInitDict)": [
     "eventInitDict", 
@@ -13034,6 +13038,7 @@
     "namespaceURI", 
     "onfullscreenchange", 
     "onfullscreenerror", 
+    "part", 
     "prefix", 
     "qualified name", 
     "removeAttribute(qualifiedName)", 
@@ -13592,6 +13597,7 @@
   ], 
   "FocusEvent": [
     "Constructor", 
+    "FocusEvent(type)", 
     "FocusEvent(type, eventInitDict)", 
     "relatedTarget"
   ], 
@@ -15223,15 +15229,18 @@
     "any", 
     "any purpose", 
     "badge", 
+    "badge maskable", 
     "badge purpose", 
     "icon", 
     "icon purposes", 
+    "maskable", 
     "processing the purpose member of an image", 
     "processing the src member of an image", 
     "processing the type member of an image"
   ], 
   "InputEvent": [
     "Constructor", 
+    "InputEvent(type)", 
     "InputEvent(type, eventInitDict)", 
     "data", 
     "isComposing"
@@ -15274,19 +15283,21 @@
     "convert", 
     "length"
   ], 
+  "KeyboardEveng": [
+    "initKeyboardEvent()"
+  ], 
   "KeyboardEvent": [
     "Constructor", 
     "DOM_KEY_LOCATION_LEFT", 
     "DOM_KEY_LOCATION_NUMPAD", 
     "DOM_KEY_LOCATION_RIGHT", 
     "DOM_KEY_LOCATION_STANDARD", 
-    "KeyboardEvent", 
+    "KeyboardEvent(type)", 
     "KeyboardEvent(type, eventInitDict)", 
     "altKey", 
     "charCode", 
     "code", 
     "ctrlKey", 
-    "getModifierState", 
     "getModifierState(keyArg)", 
     "isComposing", 
     "key", 
@@ -15294,8 +15305,7 @@
     "location", 
     "metaKey", 
     "repeat", 
-    "shiftKey", 
-    "which"
+    "shiftKey"
   ], 
   "KeyboardEvent/KeyboardEvent(type, eventInitDict)": [
     "eventInitDict", 
@@ -15305,9 +15315,11 @@
     "keyArg"
   ], 
   "KeyboardEventInit": [
+    "charcode", 
     "code", 
     "isComposing", 
     "key", 
+    "keycode", 
     "location", 
     "repeat"
   ], 
@@ -15549,6 +15561,7 @@
   ], 
   "MouseEvent": [
     "Constructor", 
+    "MouseEvent(type)", 
     "MouseEvent(type, eventInitDict)", 
     "altKey", 
     "button", 
@@ -15556,8 +15569,8 @@
     "clientX", 
     "clientY", 
     "ctrlKey", 
-    "getModifierState", 
     "getModifierState(keyArg)", 
+    "initMouseEvent()", 
     "metaKey", 
     "offsetX", 
     "offsetY", 
@@ -15592,6 +15605,17 @@
   "MutationCallback": [
     "mutations", 
     "observer"
+  ], 
+  "MutationEvent": [
+    "ADDITION", 
+    "MODIFICATION", 
+    "REMOVAL", 
+    "attrchange", 
+    "attrname", 
+    "initMutationEvent()", 
+    "newvalue", 
+    "prevvalue", 
+    "relatednode"
   ], 
   "MutationObserver": [
     "MutationObserver(callback)", 
@@ -17408,19 +17432,21 @@
   ], 
   "UIEvent": [
     "Constructor", 
-    "UIEvent", 
+    "UIEvent(type)", 
     "UIEvent(type, eventInitDict)", 
     "detail", 
-    "view"
+    "initUIEvent()", 
+    "view", 
+    "which"
   ], 
   "UIEvent/UIEvent(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
   "UIEventInit": [
-    "UIEventInit", 
     "detail", 
-    "view"
+    "view", 
+    "which"
   ], 
   "URL": [
     "URL(url, base)", 
@@ -17869,11 +17895,13 @@
     "DOM_DELTA_LINE", 
     "DOM_DELTA_PAGE", 
     "DOM_DELTA_PIXEL", 
+    "WheelEvent(type)", 
     "WheelEvent(type, eventInitDict)", 
     "deltaMode", 
     "deltaX", 
     "deltaY", 
-    "deltaZ"
+    "deltaZ", 
+    "initWheelEvent()"
   ], 
   "WheelEvent/WheelEvent(type, eventInitDict)": [
     "eventInitDict", 
@@ -20019,8 +20047,7 @@
   ], 
   "html-global": [
     "exportparts", 
-    "part", 
-    "theme"
+    "part"
   ], 
   "htmlsvg-global": [
     "nonce"
@@ -21368,9 +21395,7 @@
     "union"
   ], 
   "shadow root": [
-    "computed shadow theme map", 
-    "part element map", 
-    "partial shadow theme map"
+    "part element map"
   ], 
   "shape-image-threshold": [
     "<number>"
@@ -22047,7 +22072,9 @@
   "window": [
     "customElements", 
     "onappinstalled", 
-    "onbeforeinstallprompt"
+    "onbeforeinstallprompt", 
+    "window.onappinstalled", 
+    "window.onbeforeinstallprompt"
   ], 
   "windoworworkerglobalscope": [
     "performance"
