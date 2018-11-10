@@ -402,6 +402,7 @@
     "<source-size-list>", 
     "<source-size-value>", 
     "<source-size>", 
+    "<source-type>", 
     "<specific-voice>", 
     "<speech-rate>", 
     "<step-position>", 
@@ -2517,6 +2518,7 @@
     "boundary default action", 
     "boundary point", 
     "bounding box", 
+    "bounding client rect", 
     "box alignment properties", 
     "box fragment", 
     "box-corner", 
@@ -3904,6 +3906,7 @@
     "evaluate a key path on a value", 
     "evaluate media queries and report changes", 
     "evaluating a selector", 
+    "evenodd", 
     "event", 
     "event attribute", 
     "event constructing steps", 
@@ -5632,7 +5635,9 @@
     "mask", 
     "mask border image", 
     "mask border image area", 
+    "mask box image area", 
     "mask image", 
+    "mask images", 
     "mask layer image", 
     "mask painting area", 
     "mask positioning area", 
@@ -5643,6 +5648,12 @@
     "mask-border-slice", 
     "mask-border-source", 
     "mask-border-width", 
+    "mask-box", 
+    "mask-box-outset", 
+    "mask-box-repeat", 
+    "mask-box-slice", 
+    "mask-box-source", 
+    "mask-box-width", 
     "mask-clip", 
     "mask-composite", 
     "mask-image", 
@@ -5651,6 +5662,7 @@
     "mask-position", 
     "mask-repeat", 
     "mask-size", 
+    "mask-source-type", 
     "mask-type", 
     "master entries", 
     "match", 
@@ -6057,6 +6069,7 @@
     "none!!font-size-adjust", 
     "none!!font-variant", 
     "none!!font-variant-ligatures", 
+    "nonzero", 
     "normal", 
     "normal alignment", 
     "normal elements", 
@@ -16767,10 +16780,6 @@
     "\"opaque\"", 
     "\"opaqueredirect\""
   ], 
-  "SVGClipPathElement": [
-    "clipPathUnits", 
-    "transform"
-  ], 
   "SVGComponentTransferFunctionElement": [
     "SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE", 
     "SVG_FECOMPONENTTRANSFER_TYPE_GAMMA", 
@@ -16977,14 +16986,6 @@
   "SVGFilterPrimitiveStandardAttributes": [
     "height", 
     "result", 
-    "width", 
-    "x", 
-    "y"
-  ], 
-  "SVGMaskElement": [
-    "height", 
-    "maskContentUnits", 
-    "maskUnits", 
     "width", 
     "x", 
     "y"
@@ -19088,14 +19089,10 @@
     "endpoint-groups", 
     "origin"
   ], 
-  "clip": [
-    "<bottom>", 
-    "<left>", 
-    "<right>", 
-    "<top>", 
-    "rect()"
-  ], 
   "clip-path": [
+    "<basic-shape>", 
+    "<shape-box>", 
+    "bounding-box", 
     "fill-box", 
     "stroke-box", 
     "view-box"
@@ -20800,11 +20797,11 @@
   "mask-mode": [
     "alpha", 
     "auto", 
-    "luminance", 
-    "match-source"
+    "luminance"
   ], 
   "mask-origin": [
     "border-box", 
+    "bounding-box", 
     "content-box", 
     "fill-box", 
     "margin-box", 
@@ -20812,8 +20809,13 @@
     "stroke-box", 
     "view-box"
   ], 
+  "mask-source-type": [
+    "alpha", 
+    "luminance"
+  ], 
   "mask-type": [
     "alpha", 
+    "auto", 
     "luminance"
   ], 
   "maskContentUnits": [
