@@ -322,10 +322,14 @@ geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonlyscale-scale
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself-scale-originx-originy-originz-scale
 1
 1
-DOMMatrixReadOnly/scale()
+DOMMatrix/scale3dSelf(scale, originX, originY, originZ)
+DOMMatrix/scale3dSelf(scale, originX, originY)
+DOMMatrix/scale3dSelf(scale, originX)
+DOMMatrix/scale3dSelf(scale)
+DOMMatrix/scale3dSelf()
 -
 scale
 argument
@@ -333,32 +337,14 @@ geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonlyscale3d-scale
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-scale
 1
 1
+DOMMatrixReadOnly/scale3d(scale, originX, originY, originZ)
+DOMMatrixReadOnly/scale3d(scale, originX, originY)
+DOMMatrixReadOnly/scale3d(scale, originX)
+DOMMatrixReadOnly/scale3d(scale)
 DOMMatrixReadOnly/scale3d()
--
-scale
-argument
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixscale3dby-scale
-1
-1
-DOMMatrix/scale3dBy()
--
-scale
-argument
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixscaleby-scale
-1
-1
-DOMMatrix/scaleBy()
 -
 scale
 element-attr
@@ -426,17 +412,6 @@ https://www.w3.org/TR/geometry-1/#dom-dommatrixreadonly-scale
 1
 DOMMatrixReadOnly
 -
-scale(scale)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale
-1
-1
-DOMMatrixReadOnly
--
 scale(scale, originX)
 method
 geometry-1
@@ -448,7 +423,62 @@ https://www.w3.org/TR/geometry-1/#dom-dommatrixreadonly-scale
 1
 DOMMatrixReadOnly
 -
-scale(scale, originX)
+scale(scaleX)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale
+1
+1
+DOMMatrixReadOnly
+-
+scale(scaleX, scaleY)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale
+1
+1
+DOMMatrixReadOnly
+-
+scale(scaleX, scaleY, scaleZ)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale
+1
+1
+DOMMatrixReadOnly
+-
+scale(scaleX, scaleY, scaleZ, originX)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale
+1
+1
+DOMMatrixReadOnly
+-
+scale(scaleX, scaleY, scaleZ, originX, originY)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale
+1
+1
+DOMMatrixReadOnly
+-
+scale(scaleX, scaleY, scaleZ, originX, originY, originZ)
 method
 geometry-1
 geometry
@@ -590,35 +620,24 @@ https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale3d
 1
 DOMMatrixReadOnly
 -
-scale3dBy(scale)
+scale3d(scale, originX, originY, originZ)
 method
 geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dby
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale3d
 1
 1
-DOMMatrix
+DOMMatrixReadOnly
 -
-scale3dBy(scale, originX)
+scale3dSelf()
 method
 geometry-1
 geometry
 1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dby
-1
-1
-DOMMatrix
--
-scale3dBy(scale, originX, originY)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dby
+snapshot
+https://www.w3.org/TR/geometry-1/#dom-dommatrix-scale3dself
 1
 1
 DOMMatrix
@@ -628,8 +647,8 @@ method
 geometry-1
 geometry
 1
-snapshot
-https://www.w3.org/TR/geometry-1/#dom-dommatrix-scale3dself
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself
 1
 1
 DOMMatrix
@@ -645,6 +664,17 @@ https://www.w3.org/TR/geometry-1/#dom-dommatrix-scale3dself
 1
 DOMMatrix
 -
+scale3dSelf(scale)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself
+1
+1
+DOMMatrix
+-
 scale3dSelf(scale, originX)
 method
 geometry-1
@@ -652,6 +682,17 @@ geometry
 1
 snapshot
 https://www.w3.org/TR/geometry-1/#dom-dommatrix-scale3dself
+1
+1
+DOMMatrix
+-
+scale3dSelf(scale, originX)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself
 1
 1
 DOMMatrix
@@ -667,35 +708,24 @@ https://www.w3.org/TR/geometry-1/#dom-dommatrix-scale3dself
 1
 DOMMatrix
 -
-scale3dby()
+scale3dSelf(scale, originX, originY)
 method
 geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dby
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself
 1
 1
 DOMMatrix
 -
-scaleBy(scale)
+scale3dSelf(scale, originX, originY, originZ)
 method
 geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleby
-1
-1
-DOMMatrix
--
-scaleBy(scale, originX)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleby
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself
 1
 1
 DOMMatrix
@@ -722,17 +752,6 @@ https://www.w3.org/TR/geometry-1/#dom-dommatrixreadonly-scalenonuniform
 1
 DOMMatrixReadOnly
 -
-scaleNonUniform(scaleX)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scalenonuniform
-1
-1
-DOMMatrixReadOnly
--
 scaleNonUniform(scaleX, scaleY)
 method
 geometry-1
@@ -740,17 +759,6 @@ geometry
 1
 snapshot
 https://www.w3.org/TR/geometry-1/#dom-dommatrixreadonly-scalenonuniform
-1
-1
-DOMMatrixReadOnly
--
-scaleNonUniform(scaleX, scaleY)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scalenonuniform
 1
 1
 DOMMatrixReadOnly
@@ -766,40 +774,7 @@ https://www.w3.org/TR/geometry-1/#dom-dommatrixreadonly-scalenonuniform
 1
 DOMMatrixReadOnly
 -
-scaleNonUniform(scaleX, scaleY, scaleZ)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scalenonuniform
-1
-1
-DOMMatrixReadOnly
--
 scaleNonUniform(scaleX, scaleY, scaleZ, originX)
-method
-geometry-1
-geometry
-1
-snapshot
-https://www.w3.org/TR/geometry-1/#dom-dommatrixreadonly-scalenonuniform
-1
-1
-DOMMatrixReadOnly
--
-scaleNonUniform(scaleX, scaleY, scaleZ, originX)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scalenonuniform
-1
-1
-DOMMatrixReadOnly
--
-scaleNonUniform(scaleX, scaleY, scaleZ, originX, originY)
 method
 geometry-1
 geometry
@@ -815,66 +790,11 @@ method
 geometry-1
 geometry
 1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scalenonuniform
+snapshot
+https://www.w3.org/TR/geometry-1/#dom-dommatrixreadonly-scalenonuniform
 1
 1
 DOMMatrixReadOnly
--
-scaleNonUniformBy(scaleX)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scalenonuniformby
-1
-1
-DOMMatrix
--
-scaleNonUniformBy(scaleX, scaleY)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scalenonuniformby
-1
-1
-DOMMatrix
--
-scaleNonUniformBy(scaleX, scaleY, scaleZ)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scalenonuniformby
-1
-1
-DOMMatrix
--
-scaleNonUniformBy(scaleX, scaleY, scaleZ, originX)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scalenonuniformby
-1
-1
-DOMMatrix
--
-scaleNonUniformBy(scaleX, scaleY, scaleZ, originX, originY)
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scalenonuniformby
-1
-1
-DOMMatrix
 -
 scaleNonUniformSelf()
 method
@@ -953,6 +873,17 @@ https://www.w3.org/TR/geometry-1/#dom-dommatrix-scaleself
 1
 DOMMatrix
 -
+scaleSelf()
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself
+1
+1
+DOMMatrix
+-
 scaleSelf(scale)
 method
 geometry-1
@@ -971,6 +902,72 @@ geometry
 1
 snapshot
 https://www.w3.org/TR/geometry-1/#dom-dommatrix-scaleself
+1
+1
+DOMMatrix
+-
+scaleSelf(scaleX)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself
+1
+1
+DOMMatrix
+-
+scaleSelf(scaleX, scaleY)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself
+1
+1
+DOMMatrix
+-
+scaleSelf(scaleX, scaleY, scaleZ)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself
+1
+1
+DOMMatrix
+-
+scaleSelf(scaleX, scaleY, scaleZ, originX)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself
+1
+1
+DOMMatrix
+-
+scaleSelf(scaleX, scaleY, scaleZ, originX, originY)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself
+1
+1
+DOMMatrix
+-
+scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)
+method
+geometry-1
+geometry
+1
+current
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself
 1
 1
 DOMMatrix
@@ -1003,10 +1000,16 @@ geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonlyscalenonuniform-scalex
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scalex
 1
 1
-DOMMatrixReadOnly/scaleNonUniform()
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)
+DOMMatrix/scaleSelf(scaleX, scaleY)
+DOMMatrix/scaleSelf(scaleX)
+DOMMatrix/scaleSelf()
 -
 scaleX
 argument
@@ -1014,10 +1017,16 @@ geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixscalenonuniformby-scalex
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scalex
 1
 1
-DOMMatrix/scaleNonUniformBy()
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)
+DOMMatrixReadOnly/scale(scaleX, scaleY)
+DOMMatrixReadOnly/scale(scaleX)
+DOMMatrixReadOnly/scale()
 -
 scaleY
 argument
@@ -1047,10 +1056,16 @@ geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonlyscalenonuniform-scaley
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scaley
 1
 1
-DOMMatrixReadOnly/scaleNonUniform()
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)
+DOMMatrix/scaleSelf(scaleX, scaleY)
+DOMMatrix/scaleSelf(scaleX)
+DOMMatrix/scaleSelf()
 -
 scaleY
 argument
@@ -1058,10 +1073,16 @@ geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixscalenonuniformby-scaley
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scaley
 1
 1
-DOMMatrix/scaleNonUniformBy()
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)
+DOMMatrixReadOnly/scale(scaleX, scaleY)
+DOMMatrixReadOnly/scale(scaleX)
+DOMMatrixReadOnly/scale()
 -
 scaleZ
 argument
@@ -1091,10 +1112,16 @@ geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonlyscalenonuniform-scalez
+https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scalez
 1
 1
-DOMMatrixReadOnly/scaleNonUniform()
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)
+DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)
+DOMMatrix/scaleSelf(scaleX, scaleY)
+DOMMatrix/scaleSelf(scaleX)
+DOMMatrix/scaleSelf()
 -
 scaleZ
 argument
@@ -1102,21 +1129,16 @@ geometry-1
 geometry
 1
 current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixscalenonuniformby-scalez
+https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scalez
 1
 1
-DOMMatrix/scaleNonUniformBy()
--
-scaleby()
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleby
-1
-1
-DOMMatrix
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)
+DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)
+DOMMatrixReadOnly/scale(scaleX, scaleY)
+DOMMatrixReadOnly/scale(scaleX)
+DOMMatrixReadOnly/scale()
 -
 scaled flex shrink factor
 dfn
@@ -1157,28 +1179,6 @@ current
 https://drafts.fxtf.org/fill-stroke-3/#scaled-viewport-size
 
 1
--
-scalenonuniform()
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scalenonuniform
-1
-1
-DOMMatrixReadOnly
--
-scalenonuniformby()
-method
-geometry-1
-geometry
-1
-current
-https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scalenonuniformby
-1
-1
-DOMMatrix
 -
 scalex()
 value
@@ -2110,6 +2110,17 @@ compositing
 1
 snapshot
 https://www.w3.org/TR/compositing-1/#valdef-blend-mode-screen
+1
+1
+<blend-mode>
+-
+screen
+value
+compositing-1
+compositing
+1
+current
+https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-screen
 1
 1
 <blend-mode>

@@ -570,11 +570,29 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
+    }, 
+    "DOMMatrix(init)": {
+      "args": [
+        "init"
+      ], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "DOMMatrixReadOnly()": {
     "DOMMatrixReadOnly()": {
       "args": [], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "DOMMatrixReadOnly(init)": {
+      "args": [
+        "init"
+      ], 
       "for": [
         "DOMMatrixReadOnly"
       ], 
@@ -597,11 +615,35 @@
         "DOMPoint"
       ], 
       "shortname": "geometry"
+    }, 
+    "DOMPoint(x, y, z, w)": {
+      "args": [
+        "x", 
+        "y", 
+        "z", 
+        "w"
+      ], 
+      "for": [
+        "DOMPoint"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "DOMPointReadOnly()": {
     "DOMPointReadOnly()": {
       "args": [], 
+      "for": [
+        "DOMPointReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "DOMPointReadOnly(x, y, z, w)": {
+      "args": [
+        "x", 
+        "y", 
+        "z", 
+        "w"
+      ], 
       "for": [
         "DOMPointReadOnly"
       ], 
@@ -615,11 +657,35 @@
         "DOMQuad"
       ], 
       "shortname": "geometry"
+    }, 
+    "DOMQuad(p1, p2, p3, p4)": {
+      "args": [
+        "p1", 
+        "p2", 
+        "p3", 
+        "p4"
+      ], 
+      "for": [
+        "DOMQuad"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "DOMRect()": {
     "DOMRect()": {
       "args": [], 
+      "for": [
+        "DOMRect"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "DOMRect(x, y, width, height)": {
+      "args": [
+        "x", 
+        "y", 
+        "width", 
+        "height"
+      ], 
       "for": [
         "DOMRect"
       ], 
@@ -631,6 +697,18 @@
       "args": [], 
       "for": [
         "DOMRect"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "DOMRectReadOnly(x, y, width, height)": {
+      "args": [
+        "x", 
+        "y", 
+        "width", 
+        "height"
+      ], 
+      "for": [
+        "DOMRectReadOnly"
       ], 
       "shortname": "geometry"
     }
@@ -4034,15 +4112,6 @@
       "shortname": "dom"
     }
   }, 
-  "determinant()": {
-    "determinant()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
   "dir()": {
     "dir(item)": {
       "args": [
@@ -4134,42 +4203,6 @@
       ], 
       "for": [], 
       "shortname": "html"
-    }
-  }, 
-  "dommatrix()": {
-    "dommatrix()": {
-      "args": [], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "dompoint()": {
-    "dompoint()": {
-      "args": [], 
-      "for": [
-        "DOMPoint"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "domquad()": {
-    "domquad()": {
-      "args": [], 
-      "for": [
-        "DOMQuad"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "domrect()": {
-    "domrect()": {
-      "args": [], 
-      "for": [
-        "DOMRect"
-      ], 
-      "shortname": "geometry"
     }
   }, 
   "dpcm()": {
@@ -4551,24 +4584,6 @@
       "shortname": "geometry"
     }
   }, 
-  "flipx()": {
-    "flipx()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "flipy()": {
-    "flipy()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
   "flush()": {
     "flush(controller)": {
       "args": [
@@ -4618,6 +4633,80 @@
         "CSS"
       ], 
       "shortname": "css-typed-om"
+    }
+  }, 
+  "fromFloat32Array()": {
+    "fromFloat32Array(array32)": {
+      "args": [
+        "array32"
+      ], 
+      "for": [
+        "DOMMatrix", 
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }
+  }, 
+  "fromFloat64Array()": {
+    "fromFloat64Array(array64)": {
+      "args": [
+        "array64"
+      ], 
+      "for": [
+        "DOMMatrix", 
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }
+  }, 
+  "fromMatrix()": {
+    "fromMatrix()": {
+      "args": [], 
+      "for": [
+        "DOMMatrix", 
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }
+  }, 
+  "fromPoint()": {
+    "fromPoint()": {
+      "args": [], 
+      "for": [
+        "DOMPoint", 
+        "DOMPointReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "fromPoint(other)": {
+      "args": [
+        "other"
+      ], 
+      "for": [
+        "DOMPoint", 
+        "DOMPointReadOnly"
+      ], 
+      "shortname": "geometry"
+    }
+  }, 
+  "fromQuad()": {
+    "fromQuad()": {
+      "args": [], 
+      "for": [
+        "DOMQuad"
+      ], 
+      "shortname": "geometry"
+    }
+  }, 
+  "fromRect()": {
+    "fromRect()": {
+      "args": [], 
+      "for": [
+        "DOMQuad", 
+        "DOMRect", 
+        "DOMRectReadOnly"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "get()": {
@@ -4900,6 +4989,15 @@
         "Range"
       ], 
       "shortname": "cssom-view"
+    }
+  }, 
+  "getBounds()": {
+    "getBounds()": {
+      "args": [], 
+      "for": [
+        "DOMQuad"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "getBoxQuads()": {
@@ -6131,29 +6229,11 @@
       "shortname": "geometry"
     }
   }, 
-  "invert()": {
-    "invert()": {
-      "args": [], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
   "invertSelf()": {
     "invertSelf()": {
       "args": [], 
       "for": [
         "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "is2d()": {
-    "is2d()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
     }
@@ -6282,6 +6362,7 @@
         "CSSPseudoElementList", 
         "CSSRuleList", 
         "CSSStyleDeclaration", 
+        "DOMRectList", 
         "DOMStringList", 
         "DOMTokenList", 
         "FileList", 
@@ -6592,6 +6673,15 @@
         "DOMPointReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "matrixTransform(matrix)": {
+      "args": [
+        "matrix"
+      ], 
+      "for": [
+        "DOMPointReadOnly"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "max()": {
@@ -6711,6 +6801,15 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "multiply(other)": {
+      "args": [
+        "other"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "multiplySelf()": {
@@ -6720,11 +6819,11 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "multiplyby()": {
-    "multiplyby()": {
-      "args": [], 
+    }, 
+    "multiplySelf(other)": {
+      "args": [
+        "other"
+      ], 
       "for": [
         "DOMMatrix"
       ], 
@@ -7268,11 +7367,11 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "premultiplyby()": {
-    "premultiplyby()": {
-      "args": [], 
+    }, 
+    "preMultiplySelf(other)": {
+      "args": [
+        "other"
+      ], 
       "for": [
         "DOMMatrix"
       ], 
@@ -8333,11 +8432,83 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "rotate(rotX)": {
+      "args": [
+        "rotX"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotate(rotX, rotY)": {
+      "args": [
+        "rotX", 
+        "rotY"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotate(rotX, rotY, rotZ)": {
+      "args": [
+        "rotX", 
+        "rotY", 
+        "rotZ"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "rotateAxisAngle()": {
     "rotateAxisAngle()": {
       "args": [], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateAxisAngle(x)": {
+      "args": [
+        "x"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateAxisAngle(x, y)": {
+      "args": [
+        "x", 
+        "y"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateAxisAngle(x, y, z)": {
+      "args": [
+        "x", 
+        "y", 
+        "z"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateAxisAngle(x, y, z, angle)": {
+      "args": [
+        "x", 
+        "y", 
+        "z", 
+        "angle"
+      ], 
       "for": [
         "DOMMatrixReadOnly"
       ], 
@@ -8351,22 +8522,43 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "rotateBy()": {
-    "rotateBy(angle)": {
+    }, 
+    "rotateAxisAngleSelf(x)": {
       "args": [
-        "angle"
+        "x"
       ], 
       "for": [
         "DOMMatrix"
       ], 
       "shortname": "geometry"
     }, 
-    "rotateBy(angle, originX)": {
+    "rotateAxisAngleSelf(x, y)": {
       "args": [
-        "angle", 
-        "originX"
+        "x", 
+        "y"
+      ], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateAxisAngleSelf(x, y, z)": {
+      "args": [
+        "x", 
+        "y", 
+        "z"
+      ], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateAxisAngleSelf(x, y, z, angle)": {
+      "args": [
+        "x", 
+        "y", 
+        "z", 
+        "angle"
       ], 
       "for": [
         "DOMMatrix"
@@ -8381,11 +8573,49 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "rotateFromVector(x)": {
+      "args": [
+        "x"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateFromVector(x, y)": {
+      "args": [
+        "x", 
+        "y"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "rotateFromVectorSelf()": {
     "rotateFromVectorSelf()": {
       "args": [], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateFromVectorSelf(x)": {
+      "args": [
+        "x"
+      ], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "rotateFromVectorSelf(x, y)": {
+      "args": [
+        "x", 
+        "y"
+      ], 
       "for": [
         "DOMMatrix"
       ], 
@@ -8418,47 +8648,32 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "rotateaxisangle()": {
-    "rotateaxisangle()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
+    }, 
+    "rotateSelf(rotX)": {
+      "args": [
+        "rotX"
       ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "rotateaxisangleby()": {
-    "rotateaxisangleby()": {
-      "args": [], 
       "for": [
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "rotateby()": {
-    "rotateby()": {
-      "args": [], 
+    }, 
+    "rotateSelf(rotX, rotY)": {
+      "args": [
+        "rotX", 
+        "rotY"
+      ], 
       "for": [
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "rotatefromvector()": {
-    "rotatefromvector()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
+    }, 
+    "rotateSelf(rotX, rotY, rotZ)": {
+      "args": [
+        "rotX", 
+        "rotY", 
+        "rotZ"
       ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "rotatefromvectorby()": {
-    "rotatefromvectorby()": {
-      "args": [], 
       "for": [
         "DOMMatrix"
       ], 
@@ -8506,6 +8721,75 @@
       "args": [
         "scale", 
         "originX"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scale(scaleX)": {
+      "args": [
+        "scaleX"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scale(scaleX, scaleY)": {
+      "args": [
+        "scaleX", 
+        "scaleY"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scale(scaleX, scaleY, scaleZ)": {
+      "args": [
+        "scaleX", 
+        "scaleY", 
+        "scaleZ"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scale(scaleX, scaleY, scaleZ, originX)": {
+      "args": [
+        "scaleX", 
+        "scaleY", 
+        "scaleZ", 
+        "originX"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scale(scaleX, scaleY, scaleZ, originX, originY)": {
+      "args": [
+        "scaleX", 
+        "scaleY", 
+        "scaleZ", 
+        "originX", 
+        "originY"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scale(scaleX, scaleY, scaleZ, originX, originY, originZ)": {
+      "args": [
+        "scaleX", 
+        "scaleY", 
+        "scaleZ", 
+        "originX", 
+        "originY", 
+        "originZ"
       ], 
       "for": [
         "DOMMatrixReadOnly"
@@ -8560,36 +8844,16 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "scale3dBy()": {
-    "scale3dBy(scale)": {
-      "args": [
-        "scale"
-      ], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
     }, 
-    "scale3dBy(scale, originX)": {
-      "args": [
-        "scale", 
-        "originX"
-      ], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }, 
-    "scale3dBy(scale, originX, originY)": {
+    "scale3d(scale, originX, originY, originZ)": {
       "args": [
         "scale", 
         "originX", 
-        "originY"
+        "originY", 
+        "originZ"
       ], 
       "for": [
-        "DOMMatrix"
+        "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
     }
@@ -8631,31 +8895,13 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "scale3dby()": {
-    "scale3dby()": {
-      "args": [], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "scaleBy()": {
-    "scaleBy(scale)": {
-      "args": [
-        "scale"
-      ], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
     }, 
-    "scaleBy(scale, originX)": {
+    "scale3dSelf(scale, originX, originY, originZ)": {
       "args": [
         "scale", 
-        "originX"
+        "originX", 
+        "originY", 
+        "originZ"
       ], 
       "for": [
         "DOMMatrix"
@@ -8723,63 +8969,6 @@
       ], 
       "for": [
         "DOMMatrixReadOnly"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "scaleNonUniformBy()": {
-    "scaleNonUniformBy(scaleX)": {
-      "args": [
-        "scaleX"
-      ], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }, 
-    "scaleNonUniformBy(scaleX, scaleY)": {
-      "args": [
-        "scaleX", 
-        "scaleY"
-      ], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }, 
-    "scaleNonUniformBy(scaleX, scaleY, scaleZ)": {
-      "args": [
-        "scaleX", 
-        "scaleY", 
-        "scaleZ"
-      ], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }, 
-    "scaleNonUniformBy(scaleX, scaleY, scaleZ, originX)": {
-      "args": [
-        "scaleX", 
-        "scaleY", 
-        "scaleZ", 
-        "originX"
-      ], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }, 
-    "scaleNonUniformBy(scaleX, scaleY, scaleZ, originX, originY)": {
-      "args": [
-        "scaleX", 
-        "scaleY", 
-        "scaleZ", 
-        "originX", 
-        "originY"
-      ], 
-      "for": [
-        "DOMMatrix"
       ], 
       "shortname": "geometry"
     }
@@ -8874,29 +9063,71 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "scaleby()": {
-    "scaleby()": {
-      "args": [], 
+    }, 
+    "scaleSelf(scaleX)": {
+      "args": [
+        "scaleX"
+      ], 
       "for": [
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "scalenonuniform()": {
-    "scalenonuniform()": {
-      "args": [], 
+    }, 
+    "scaleSelf(scaleX, scaleY)": {
+      "args": [
+        "scaleX", 
+        "scaleY"
+      ], 
       "for": [
-        "DOMMatrixReadOnly"
+        "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "scalenonuniformby()": {
-    "scalenonuniformby()": {
-      "args": [], 
+    }, 
+    "scaleSelf(scaleX, scaleY, scaleZ)": {
+      "args": [
+        "scaleX", 
+        "scaleY", 
+        "scaleZ"
+      ], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scaleSelf(scaleX, scaleY, scaleZ, originX)": {
+      "args": [
+        "scaleX", 
+        "scaleY", 
+        "scaleZ", 
+        "originX"
+      ], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scaleSelf(scaleX, scaleY, scaleZ, originX, originY)": {
+      "args": [
+        "scaleX", 
+        "scaleY", 
+        "scaleZ", 
+        "originX", 
+        "originY"
+      ], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)": {
+      "args": [
+        "scaleX", 
+        "scaleY", 
+        "scaleZ", 
+        "originX", 
+        "originY", 
+        "originZ"
+      ], 
       "for": [
         "DOMMatrix"
       ], 
@@ -9379,6 +9610,15 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
+    }, 
+    "setMatrixValue(transformList)": {
+      "args": [
+        "transformList"
+      ], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "setNamedItem()": {
@@ -9620,11 +9860,29 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "skewX(sx)": {
+      "args": [
+        "sx"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "skewXSelf()": {
     "skewXSelf()": {
       "args": [], 
+      "for": [
+        "DOMMatrix"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "skewXSelf(sx)": {
+      "args": [
+        "sx"
+      ], 
       "for": [
         "DOMMatrix"
       ], 
@@ -9638,6 +9896,15 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "skewY(sy)": {
+      "args": [
+        "sy"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "skewYSelf()": {
@@ -9647,38 +9914,11 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "skewx()": {
-    "skewx()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
+    }, 
+    "skewYSelf(sy)": {
+      "args": [
+        "sy"
       ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "skewxby()": {
-    "skewxby()": {
-      "args": [], 
-      "for": [
-        "DOMMatrix"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "skewy()": {
-    "skewy()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "skewyby()": {
-    "skewyby()": {
-      "args": [], 
       "for": [
         "DOMMatrix"
       ], 
@@ -10191,9 +10431,13 @@
     "toJSON()": {
       "args": [], 
       "for": [
+        "DOMMatrixReadOnly", 
+        "DOMPointReadOnly", 
+        "DOMQuad", 
+        "DOMRectReadOnly", 
         "URL"
       ], 
-      "shortname": "url"
+      "shortname": "geometry"
     }
   }, 
   "toMatrix()": {
@@ -10215,24 +10459,6 @@
         "CSSNumericValue"
       ], 
       "shortname": "css-typed-om"
-    }
-  }, 
-  "tofloat32array()": {
-    "tofloat32array()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
-      ], 
-      "shortname": "geometry"
-    }
-  }, 
-  "tofloat64array()": {
-    "tofloat64array()": {
-      "args": [], 
-      "for": [
-        "DOMMatrixReadOnly"
-      ], 
-      "shortname": "geometry"
     }
   }, 
   "toggle()": {
@@ -10395,6 +10621,15 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "transformPoint(point)": {
+      "args": [
+        "point"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
     }
   }, 
   "transformToDocument()": {
@@ -10411,18 +10646,18 @@
       "shortname": "html"
     }
   }, 
-  "transformpoint()": {
-    "transformpoint()": {
+  "translate()": {
+    "translate()": {
       "args": [], 
       "for": [
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "translate()": {
-    "translate()": {
-      "args": [], 
+    }, 
+    "translate(tx)": {
+      "args": [
+        "tx"
+      ], 
       "for": [
         "DOMMatrixReadOnly"
       ], 
@@ -10432,6 +10667,17 @@
       "args": [
         "tx", 
         "ty"
+      ], 
+      "for": [
+        "DOMMatrixReadOnly"
+      ], 
+      "shortname": "geometry"
+    }, 
+    "translate(tx, ty, tz)": {
+      "args": [
+        "tx", 
+        "ty", 
+        "tz"
       ], 
       "for": [
         "DOMMatrixReadOnly"
@@ -10449,21 +10695,18 @@
       "shortname": "html"
     }
   }, 
-  "translateBy()": {
-    "translateBy(tx, ty)": {
-      "args": [
-        "tx", 
-        "ty"
-      ], 
+  "translateSelf()": {
+    "translateSelf()": {
+      "args": [], 
       "for": [
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "translateSelf()": {
-    "translateSelf()": {
-      "args": [], 
+    }, 
+    "translateSelf(tx)": {
+      "args": [
+        "tx"
+      ], 
       "for": [
         "DOMMatrix"
       ], 
@@ -10478,11 +10721,13 @@
         "DOMMatrix"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "translateby()": {
-    "translateby()": {
-      "args": [], 
+    }, 
+    "translateSelf(tx, ty, tz)": {
+      "args": [
+        "tx", 
+        "ty", 
+        "tz"
+      ], 
       "for": [
         "DOMMatrix"
       ], 

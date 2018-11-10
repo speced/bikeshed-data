@@ -20,7 +20,6 @@
     "'@supports' rule", 
     "'name'", 
     "'none'", 
-    "'normal' blend mode", 
     "'rendering-intent'", 
     "'report-sample'", 
     "'self'", 
@@ -49,6 +48,7 @@
     "3d transformed element", 
     "3rd <length>", 
     "4th <length>", 
+    "4x4 abstract matrix", 
     "::after", 
     "::attr()", 
     "::backdrop", 
@@ -401,7 +401,6 @@
     "<source-size-list>", 
     "<source-size-value>", 
     "<source-size>", 
-    "<source-type>", 
     "<specific-voice>", 
     "<speech-rate>", 
     "<step-position>", 
@@ -727,12 +726,15 @@
     "DOMImplementationSource", 
     "DOMLocator", 
     "DOMMatrix", 
+    "DOMMatrix2DInit", 
+    "DOMMatrixInit", 
     "DOMMatrixReadOnly", 
     "DOMObject", 
     "DOMPoint", 
     "DOMPointInit", 
     "DOMPointReadOnly", 
     "DOMQuad", 
+    "DOMQuadInit", 
     "DOMRect", 
     "DOMRectInit", 
     "DOMRectList", 
@@ -1580,6 +1582,7 @@
     "VideoTrack", 
     "VideoTrackList", 
     "VoidFunction", 
+    "WebKitCSSMatrix", 
     "WebSocket", 
     "WebSocket(url, protocols)", 
     "WheelEvent", 
@@ -2513,7 +2516,6 @@
     "boundary default action", 
     "boundary point", 
     "bounding box", 
-    "bounding client rect", 
     "box alignment properties", 
     "box fragment", 
     "box-corner", 
@@ -3116,6 +3118,8 @@
     "country-name", 
     "cover constraint", 
     "crash reports", 
+    "create a 2d matrix", 
+    "create a 3d matrix", 
     "create a bluetoothcharacteristicproperties instance from the characteristic", 
     "create a bluetoothremotegattcharacteristic representing", 
     "create a bluetoothremotegattdescriptor representing", 
@@ -3127,6 +3131,16 @@
     "create a date object", 
     "create a dommatrix from a 2d dictionary", 
     "create a dommatrix from a dictionary", 
+    "create a dommatrix from the 2d dictionary", 
+    "create a dommatrix from the dictionary", 
+    "create a dommatrixreadonly from the 2d dictionary", 
+    "create a dommatrixreadonly from the dictionary", 
+    "create a dompoint from the dictionary", 
+    "create a dompointreadonly from the dictionary", 
+    "create a domquad from the domquadinit dictionary", 
+    "create a domquad from the domrectinit dictionary", 
+    "create a domrect from the dictionary", 
+    "create a domrectreadonly from the dictionary", 
     "create a frozen array", 
     "create a layout api context", 
     "create a layout constraints object", 
@@ -3889,7 +3903,6 @@
     "evaluate a key path on a value", 
     "evaluate media queries and report changes", 
     "evaluating a selector", 
-    "evenodd", 
     "event", 
     "event attribute", 
     "event constructing steps", 
@@ -5618,9 +5631,7 @@
     "mask", 
     "mask border image", 
     "mask border image area", 
-    "mask box image area", 
     "mask image", 
-    "mask images", 
     "mask layer image", 
     "mask painting area", 
     "mask positioning area", 
@@ -5631,12 +5642,6 @@
     "mask-border-slice", 
     "mask-border-source", 
     "mask-border-width", 
-    "mask-box", 
-    "mask-box-outset", 
-    "mask-box-repeat", 
-    "mask-box-slice", 
-    "mask-box-source", 
-    "mask-box-width", 
     "mask-clip", 
     "mask-composite", 
     "mask-image", 
@@ -5645,7 +5650,6 @@
     "mask-position", 
     "mask-repeat", 
     "mask-size", 
-    "mask-source-type", 
     "mask-type", 
     "master entries", 
     "match", 
@@ -6052,7 +6056,6 @@
     "none!!font-size-adjust", 
     "none!!font-variant", 
     "none!!font-variant-ligatures", 
-    "nonzero", 
     "normal", 
     "normal alignment", 
     "normal elements", 
@@ -6479,6 +6482,7 @@
     "parse a serialized content security policy", 
     "parse a sizes attribute", 
     "parse a srcset attribute", 
+    "parse a string into an abstract matrix", 
     "parse a stylesheet", 
     "parse a subjectpublickeyinfo", 
     "parse a time component", 
@@ -8112,7 +8116,6 @@
     "svg:transform", 
     "svgelement", 
     "svgimageelement", 
-    "svgmatrix", 
     "svgscriptelement", 
     "svgsvgelement", 
     "sweetheart", 
@@ -8469,6 +8472,7 @@
     "transferable objects", 
     "transferred size suggestion", 
     "transform", 
+    "transform a point with a matrix", 
     "transform stream", 
     "transform-box", 
     "transform-origin", 
@@ -11767,66 +11771,17 @@
   ], 
   "DOMMatrix": [
     "DOMMatrix()", 
-    "dommatrix()", 
-    "invert()", 
-    "invertSelf()", 
-    "multiplySelf()", 
-    "multiplyby()", 
-    "preMultiplySelf()", 
-    "premultiplyby()", 
-    "rotateAxisAngleSelf()", 
-    "rotateBy(angle)", 
-    "rotateBy(angle, originX)", 
-    "rotateFromVectorSelf()", 
-    "rotateSelf()", 
-    "rotateSelf(angle)", 
-    "rotateSelf(angle, originX)", 
-    "rotateaxisangleby()", 
-    "rotateby()", 
-    "rotatefromvectorby()", 
-    "scale3dBy(scale)", 
-    "scale3dBy(scale, originX)", 
-    "scale3dBy(scale, originX, originY)", 
-    "scale3dSelf()", 
-    "scale3dSelf(scale)", 
-    "scale3dSelf(scale, originX)", 
-    "scale3dSelf(scale, originX, originY)", 
-    "scale3dby()", 
-    "scaleBy(scale)", 
-    "scaleBy(scale, originX)", 
-    "scaleNonUniformBy(scaleX)", 
-    "scaleNonUniformBy(scaleX, scaleY)", 
-    "scaleNonUniformBy(scaleX, scaleY, scaleZ)", 
-    "scaleNonUniformBy(scaleX, scaleY, scaleZ, originX)", 
-    "scaleNonUniformBy(scaleX, scaleY, scaleZ, originX, originY)", 
-    "scaleNonUniformSelf()", 
-    "scaleNonUniformSelf(scaleX)", 
-    "scaleNonUniformSelf(scaleX, scaleY)", 
-    "scaleNonUniformSelf(scaleX, scaleY, scaleZ)", 
-    "scaleNonUniformSelf(scaleX, scaleY, scaleZ, originX)", 
-    "scaleNonUniformSelf(scaleX, scaleY, scaleZ, originX, originY)", 
-    "scaleSelf()", 
-    "scaleSelf(scale)", 
-    "scaleSelf(scale, originX)", 
-    "scaleby()", 
-    "scalenonuniformby()", 
-    "setMatrixValue()", 
-    "skewXSelf()", 
-    "skewYSelf()", 
-    "skewxby()", 
-    "skewyby()", 
-    "translateBy(tx, ty)", 
-    "translateSelf()", 
-    "translateSelf(tx, ty)", 
-    "translateby()"
-  ], 
-  "DOMMatrix DOMMatrixReadOnly": [
+    "DOMMatrix(init)", 
     "a", 
     "b", 
     "c", 
     "d", 
     "e", 
     "f", 
+    "fromFloat32Array(array32)", 
+    "fromFloat64Array(array64)", 
+    "fromMatrix()", 
+    "invertSelf()", 
     "m11", 
     "m12", 
     "m13", 
@@ -11842,7 +11797,55 @@
     "m41", 
     "m42", 
     "m43", 
-    "m44"
+    "m44", 
+    "multiplySelf()", 
+    "multiplySelf(other)", 
+    "preMultiplySelf()", 
+    "preMultiplySelf(other)", 
+    "rotateAxisAngleSelf()", 
+    "rotateAxisAngleSelf(x)", 
+    "rotateAxisAngleSelf(x, y)", 
+    "rotateAxisAngleSelf(x, y, z)", 
+    "rotateAxisAngleSelf(x, y, z, angle)", 
+    "rotateFromVectorSelf()", 
+    "rotateFromVectorSelf(x)", 
+    "rotateFromVectorSelf(x, y)", 
+    "rotateSelf()", 
+    "rotateSelf(angle)", 
+    "rotateSelf(angle, originX)", 
+    "rotateSelf(rotX)", 
+    "rotateSelf(rotX, rotY)", 
+    "rotateSelf(rotX, rotY, rotZ)", 
+    "scale3dSelf()", 
+    "scale3dSelf(scale)", 
+    "scale3dSelf(scale, originX)", 
+    "scale3dSelf(scale, originX, originY)", 
+    "scale3dSelf(scale, originX, originY, originZ)", 
+    "scaleNonUniformSelf()", 
+    "scaleNonUniformSelf(scaleX)", 
+    "scaleNonUniformSelf(scaleX, scaleY)", 
+    "scaleNonUniformSelf(scaleX, scaleY, scaleZ)", 
+    "scaleNonUniformSelf(scaleX, scaleY, scaleZ, originX)", 
+    "scaleNonUniformSelf(scaleX, scaleY, scaleZ, originX, originY)", 
+    "scaleSelf()", 
+    "scaleSelf(scale)", 
+    "scaleSelf(scale, originX)", 
+    "scaleSelf(scaleX)", 
+    "scaleSelf(scaleX, scaleY)", 
+    "scaleSelf(scaleX, scaleY, scaleZ)", 
+    "scaleSelf(scaleX, scaleY, scaleZ, originX)", 
+    "scaleSelf(scaleX, scaleY, scaleZ, originX, originY)", 
+    "scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)", 
+    "setMatrixValue()", 
+    "setMatrixValue(transformList)", 
+    "skewXSelf()", 
+    "skewXSelf(sx)", 
+    "skewYSelf()", 
+    "skewYSelf(sy)", 
+    "translateSelf()", 
+    "translateSelf(tx)", 
+    "translateSelf(tx, ty)", 
+    "translateSelf(tx, ty, tz)"
   ], 
   "DOMMatrix/DOMMatrix()": [
     "array32", 
@@ -11851,23 +11854,32 @@
     "other", 
     "transformList"
   ], 
-  "DOMMatrix/multiplyBy()": [
+  "DOMMatrix/DOMMatrix(init)": [
+    "init"
+  ], 
+  "DOMMatrix/fromFloat32Array(array32)": [
+    "array32"
+  ], 
+  "DOMMatrix/fromFloat64Array(array64)": [
+    "array64"
+  ], 
+  "DOMMatrix/fromMatrix()": [
+    "other"
+  ], 
+  "DOMMatrix/fromMatrix(other)": [
     "other"
   ], 
   "DOMMatrix/multiplySelf()": [
     "other"
   ], 
-  "DOMMatrix/preMultiplyBy()": [
+  "DOMMatrix/multiplySelf(other)": [
     "other"
   ], 
   "DOMMatrix/preMultiplySelf()": [
     "other"
   ], 
-  "DOMMatrix/rotateAxisAngleBy()": [
-    "angle", 
-    "x", 
-    "y", 
-    "z"
+  "DOMMatrix/preMultiplySelf(other)": [
+    "other"
   ], 
   "DOMMatrix/rotateAxisAngleSelf()": [
     "angle", 
@@ -11875,29 +11887,64 @@
     "y", 
     "z"
   ], 
-  "DOMMatrix/rotateBy()": [
+  "DOMMatrix/rotateAxisAngleSelf(x)": [
     "angle", 
-    "originX", 
-    "originY"
+    "x", 
+    "y", 
+    "z"
   ], 
-  "DOMMatrix/rotateFromVectorBy()": [
+  "DOMMatrix/rotateAxisAngleSelf(x, y)": [
+    "angle", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMMatrix/rotateAxisAngleSelf(x, y, z)": [
+    "angle", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMMatrix/rotateAxisAngleSelf(x, y, z, angle)": [
+    "angle", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMMatrix/rotateFromVectorSelf()": [
     "x", 
     "y"
   ], 
-  "DOMMatrix/rotateFromVectorSelf()": [
+  "DOMMatrix/rotateFromVectorSelf(x)": [
+    "x", 
+    "y"
+  ], 
+  "DOMMatrix/rotateFromVectorSelf(x, y)": [
     "x", 
     "y"
   ], 
   "DOMMatrix/rotateSelf()": [
     "angle", 
     "originX", 
-    "originY"
-  ], 
-  "DOMMatrix/scale3dBy()": [
-    "originX", 
     "originY", 
-    "originZ", 
-    "scale"
+    "rotX", 
+    "rotY", 
+    "rotZ"
+  ], 
+  "DOMMatrix/rotateSelf(rotX)": [
+    "rotX", 
+    "rotY", 
+    "rotZ"
+  ], 
+  "DOMMatrix/rotateSelf(rotX, rotY)": [
+    "rotX", 
+    "rotY", 
+    "rotZ"
+  ], 
+  "DOMMatrix/rotateSelf(rotX, rotY, rotZ)": [
+    "rotX", 
+    "rotY", 
+    "rotZ"
   ], 
   "DOMMatrix/scale3dSelf()": [
     "originX", 
@@ -11905,18 +11952,29 @@
     "originZ", 
     "scale"
   ], 
-  "DOMMatrix/scaleBy()": [
-    "originX", 
-    "originY", 
-    "scale"
-  ], 
-  "DOMMatrix/scaleNonUniformBy()": [
+  "DOMMatrix/scale3dSelf(scale)": [
     "originX", 
     "originY", 
     "originZ", 
-    "scaleX", 
-    "scaleY", 
-    "scaleZ"
+    "scale"
+  ], 
+  "DOMMatrix/scale3dSelf(scale, originX)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scale"
+  ], 
+  "DOMMatrix/scale3dSelf(scale, originX, originY)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scale"
+  ], 
+  "DOMMatrix/scale3dSelf(scale, originX, originY, originZ)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scale"
   ], 
   "DOMMatrix/scaleNonUniformSelf()": [
     "originX", 
@@ -11929,81 +11987,212 @@
   "DOMMatrix/scaleSelf()": [
     "originX", 
     "originY", 
-    "scale"
+    "originZ", 
+    "scale", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrix/scaleSelf(scaleX)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrix/scaleSelf(scaleX, scaleY)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
   ], 
   "DOMMatrix/setMatrixValue()": [
     "transformList"
   ], 
-  "DOMMatrix/skewXBy()": [
-    "sx"
+  "DOMMatrix/setMatrixValue(transformList)": [
+    "transformList"
   ], 
   "DOMMatrix/skewXSelf()": [
     "sx"
   ], 
-  "DOMMatrix/skewYBy()": [
-    "sy"
+  "DOMMatrix/skewXSelf(sx)": [
+    "sx"
   ], 
   "DOMMatrix/skewYSelf()": [
     "sy"
   ], 
-  "DOMMatrix/translateBy()": [
-    "tx", 
-    "ty", 
-    "tz"
+  "DOMMatrix/skewYSelf(sy)": [
+    "sy"
   ], 
   "DOMMatrix/translateSelf()": [
     "tx", 
     "ty", 
     "tz"
   ], 
+  "DOMMatrix/translateSelf(tx)": [
+    "tx", 
+    "ty", 
+    "tz"
+  ], 
+  "DOMMatrix/translateSelf(tx, ty)": [
+    "tx", 
+    "ty", 
+    "tz"
+  ], 
+  "DOMMatrix/translateSelf(tx, ty, tz)": [
+    "tx", 
+    "ty", 
+    "tz"
+  ], 
+  "DOMMatrix2DInit": [
+    "a", 
+    "b", 
+    "c", 
+    "d", 
+    "e", 
+    "f", 
+    "m11", 
+    "m12", 
+    "m21", 
+    "m22", 
+    "m41", 
+    "m42"
+  ], 
+  "DOMMatrixInit": [
+    "is2D", 
+    "m13", 
+    "m14", 
+    "m23", 
+    "m24", 
+    "m31", 
+    "m32", 
+    "m33", 
+    "m34", 
+    "m43", 
+    "m44"
+  ], 
   "DOMMatrixReadOnly": [
     "DOMMatrixReadOnly()", 
+    "DOMMatrixReadOnly(init)", 
     "DOMMatrixReadOnly(sequence<unrestricted double> numberSequence)", 
-    "determinant()", 
+    "a", 
+    "b", 
+    "c", 
+    "d", 
+    "e", 
+    "f", 
     "flipX()", 
     "flipY()", 
-    "flipx()", 
-    "flipy()", 
+    "fromFloat32Array(array32)", 
+    "fromFloat64Array(array64)", 
+    "fromMatrix()", 
     "inverse()", 
     "is2D", 
     "is2d", 
-    "is2d()", 
     "isIdentity", 
+    "m11", 
+    "m12", 
+    "m13", 
+    "m14", 
+    "m21", 
+    "m22", 
+    "m23", 
+    "m24", 
+    "m31", 
+    "m32", 
+    "m33", 
+    "m34", 
+    "m41", 
+    "m42", 
+    "m43", 
+    "m44", 
     "multiply()", 
+    "multiply(other)", 
     "rotate()", 
     "rotate(angle)", 
     "rotate(angle, originX)", 
+    "rotate(rotX)", 
+    "rotate(rotX, rotY)", 
+    "rotate(rotX, rotY, rotZ)", 
     "rotateAxisAngle()", 
+    "rotateAxisAngle(x)", 
+    "rotateAxisAngle(x, y)", 
+    "rotateAxisAngle(x, y, z)", 
+    "rotateAxisAngle(x, y, z, angle)", 
     "rotateFromVector()", 
-    "rotateaxisangle()", 
-    "rotatefromvector()", 
+    "rotateFromVector(x)", 
+    "rotateFromVector(x, y)", 
     "scale()", 
     "scale(scale)", 
     "scale(scale, originX)", 
+    "scale(scaleX)", 
+    "scale(scaleX, scaleY)", 
+    "scale(scaleX, scaleY, scaleZ)", 
+    "scale(scaleX, scaleY, scaleZ, originX)", 
+    "scale(scaleX, scaleY, scaleZ, originX, originY)", 
+    "scale(scaleX, scaleY, scaleZ, originX, originY, originZ)", 
     "scale3d()", 
     "scale3d(scale)", 
     "scale3d(scale, originX)", 
     "scale3d(scale, originX, originY)", 
+    "scale3d(scale, originX, originY, originZ)", 
     "scaleNonUniform()", 
     "scaleNonUniform(scaleX)", 
     "scaleNonUniform(scaleX, scaleY)", 
     "scaleNonUniform(scaleX, scaleY, scaleZ)", 
     "scaleNonUniform(scaleX, scaleY, scaleZ, originX)", 
     "scaleNonUniform(scaleX, scaleY, scaleZ, originX, originY)", 
-    "scalenonuniform()", 
     "skewX()", 
+    "skewX(sx)", 
     "skewY()", 
-    "skewx()", 
-    "skewy()", 
+    "skewY(sy)", 
+    "stringification behavior", 
     "stringifier()", 
     "toFloat32Array()", 
     "toFloat64Array()", 
-    "tofloat32array()", 
-    "tofloat64array()", 
+    "toJSON", 
+    "toJSON()", 
     "transformPoint()", 
-    "transformpoint()", 
+    "transformPoint(point)", 
     "translate()", 
-    "translate(tx, ty)"
+    "translate(tx)", 
+    "translate(tx, ty)", 
+    "translate(tx, ty, tz)"
   ], 
   "DOMMatrixReadOnly DOMMatrix": [
     "a", 
@@ -12032,15 +12221,75 @@
   "DOMMatrixReadOnly/DOMMatrixReadOnly()": [
     "numberSequence"
   ], 
+  "DOMMatrixReadOnly/DOMMatrixReadOnly(init)": [
+    "init"
+  ], 
+  "DOMMatrixReadOnly/fromFloat32Array(array32)": [
+    "array32"
+  ], 
+  "DOMMatrixReadOnly/fromFloat64Array(array64)": [
+    "array64"
+  ], 
+  "DOMMatrixReadOnly/fromMatrix()": [
+    "other"
+  ], 
+  "DOMMatrixReadOnly/fromMatrix(other)": [
+    "other"
+  ], 
   "DOMMatrixReadOnly/multiply()": [
+    "other"
+  ], 
+  "DOMMatrixReadOnly/multiply(other)": [
     "other"
   ], 
   "DOMMatrixReadOnly/rotate()": [
     "angle", 
     "originX", 
-    "originY"
+    "originY", 
+    "rotX", 
+    "rotY", 
+    "rotZ"
+  ], 
+  "DOMMatrixReadOnly/rotate(rotX)": [
+    "rotX", 
+    "rotY", 
+    "rotZ"
+  ], 
+  "DOMMatrixReadOnly/rotate(rotX, rotY)": [
+    "rotX", 
+    "rotY", 
+    "rotZ"
+  ], 
+  "DOMMatrixReadOnly/rotate(rotX, rotY, rotZ)": [
+    "rotX", 
+    "rotY", 
+    "rotZ"
   ], 
   "DOMMatrixReadOnly/rotateAxisAngle()": [
+    "angle", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMMatrixReadOnly/rotateAxisAngle(x)": [
+    "angle", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMMatrixReadOnly/rotateAxisAngle(x, y)": [
+    "angle", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMMatrixReadOnly/rotateAxisAngle(x, y, z)": [
+    "angle", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMMatrixReadOnly/rotateAxisAngle(x, y, z, angle)": [
     "angle", 
     "x", 
     "y", 
@@ -12050,12 +12299,96 @@
     "x", 
     "y"
   ], 
+  "DOMMatrixReadOnly/rotateFromVector(x)": [
+    "x", 
+    "y"
+  ], 
+  "DOMMatrixReadOnly/rotateFromVector(x, y)": [
+    "x", 
+    "y"
+  ], 
   "DOMMatrixReadOnly/scale()": [
     "originX", 
     "originY", 
-    "scale"
+    "originZ", 
+    "scale", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrixReadOnly/scale(scaleX)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrixReadOnly/scale(scaleX, scaleY)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
+  ], 
+  "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scaleX", 
+    "scaleY", 
+    "scaleZ"
   ], 
   "DOMMatrixReadOnly/scale3d()": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scale"
+  ], 
+  "DOMMatrixReadOnly/scale3d(scale)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scale"
+  ], 
+  "DOMMatrixReadOnly/scale3d(scale, originX)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scale"
+  ], 
+  "DOMMatrixReadOnly/scale3d(scale, originX, originY)": [
+    "originX", 
+    "originY", 
+    "originZ", 
+    "scale"
+  ], 
+  "DOMMatrixReadOnly/scale3d(scale, originX, originY, originZ)": [
     "originX", 
     "originY", 
     "originZ", 
@@ -12072,10 +12405,19 @@
   "DOMMatrixReadOnly/skewX()": [
     "sx"
   ], 
+  "DOMMatrixReadOnly/skewX(sx)": [
+    "sx"
+  ], 
   "DOMMatrixReadOnly/skewY()": [
     "sy"
   ], 
+  "DOMMatrixReadOnly/skewY(sy)": [
+    "sy"
+  ], 
   "DOMMatrixReadOnly/transformPoint()": [
+    "point"
+  ], 
+  "DOMMatrixReadOnly/transformPoint(point)": [
     "point"
   ], 
   "DOMMatrixReadOnly/translate()": [
@@ -12083,9 +12425,30 @@
     "ty", 
     "tz"
   ], 
+  "DOMMatrixReadOnly/translate(tx)": [
+    "tx", 
+    "ty", 
+    "tz"
+  ], 
+  "DOMMatrixReadOnly/translate(tx, ty)": [
+    "tx", 
+    "ty", 
+    "tz"
+  ], 
+  "DOMMatrixReadOnly/translate(tx, ty, tz)": [
+    "tx", 
+    "ty", 
+    "tz"
+  ], 
   "DOMPoint": [
     "DOMPoint()", 
-    "dompoint()"
+    "DOMPoint(x, y, z, w)", 
+    "fromPoint()", 
+    "fromPoint(other)", 
+    "w", 
+    "x", 
+    "y", 
+    "z"
   ], 
   "DOMPoint/DOMPoint()": [
     "point", 
@@ -12093,6 +12456,18 @@
     "x", 
     "y", 
     "z"
+  ], 
+  "DOMPoint/DOMPoint(x, y, z, w)": [
+    "w", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMPoint/fromPoint()": [
+    "other"
+  ], 
+  "DOMPoint/fromPoint(other)": [
+    "other"
   ], 
   "DOMPointInit": [
     "w", 
@@ -12102,7 +12477,17 @@
   ], 
   "DOMPointReadOnly": [
     "DOMPointReadOnly()", 
-    "matrixTransform()"
+    "DOMPointReadOnly(x, y, z, w)", 
+    "fromPoint()", 
+    "fromPoint(other)", 
+    "matrixTransform()", 
+    "matrixTransform(matrix)", 
+    "toJSON", 
+    "toJSON()", 
+    "w", 
+    "x", 
+    "y", 
+    "z"
   ], 
   "DOMPointReadOnly DOMPoint": [
     "w", 
@@ -12116,17 +12501,37 @@
     "y", 
     "z"
   ], 
+  "DOMPointReadOnly/DOMPointReadOnly(x, y, z, w)": [
+    "w", 
+    "x", 
+    "y", 
+    "z"
+  ], 
+  "DOMPointReadOnly/fromPoint()": [
+    "other"
+  ], 
+  "DOMPointReadOnly/fromPoint(other)": [
+    "other"
+  ], 
   "DOMPointReadOnly/matrixTransform()": [
+    "matrix"
+  ], 
+  "DOMPointReadOnly/matrixTransform(matrix)": [
     "matrix"
   ], 
   "DOMQuad": [
     "DOMQuad()", 
+    "DOMQuad(p1, p2, p3, p4)", 
     "bounds", 
-    "domquad()", 
+    "fromQuad()", 
+    "fromRect()", 
+    "getBounds()", 
     "p1", 
     "p2", 
     "p3", 
-    "p4"
+    "p4", 
+    "toJSON", 
+    "toJSON()"
   ], 
   "DOMQuad/DOMQuad()": [
     "p1", 
@@ -12135,16 +12540,51 @@
     "p4", 
     "rect"
   ], 
+  "DOMQuad/DOMQuad(p1, p2, p3, p4)": [
+    "p1", 
+    "p2", 
+    "p3", 
+    "p4"
+  ], 
+  "DOMQuad/fromQuad()": [
+    "other"
+  ], 
+  "DOMQuad/fromQuad(other)": [
+    "other"
+  ], 
+  "DOMQuad/fromRect()": [
+    "other"
+  ], 
+  "DOMQuad/fromRect(other)": [
+    "other"
+  ], 
+  "DOMQuadInit": [
+    "p1", 
+    "p2", 
+    "p3", 
+    "p4"
+  ], 
   "DOMRect": [
     "DOMRect()", 
+    "DOMRect(x, y, width, height)", 
     "DOMRectReadOnly()", 
-    "domrect()"
-  ], 
-  "DOMRect/DOMRect()": [
+    "fromRect()", 
     "height", 
     "width", 
     "x", 
     "y"
+  ], 
+  "DOMRect/DOMRect(x, y, width, height)": [
+    "height", 
+    "width", 
+    "x", 
+    "y"
+  ], 
+  "DOMRect/fromRect()": [
+    "other"
+  ], 
+  "DOMRect/fromRect(other)": [
+    "other"
   ], 
   "DOMRectInit": [
     "height", 
@@ -12154,10 +12594,28 @@
   ], 
   "DOMRectList": [
     "item()", 
+    "item(index)", 
     "length"
   ], 
   "DOMRectList/item()": [
     "index"
+  ], 
+  "DOMRectList/item(index)": [
+    "index"
+  ], 
+  "DOMRectReadOnly": [
+    "DOMRectReadOnly(x, y, width, height)", 
+    "bottom", 
+    "fromRect()", 
+    "height", 
+    "left", 
+    "right", 
+    "toJSON", 
+    "toJSON()", 
+    "top", 
+    "width", 
+    "x", 
+    "y"
   ], 
   "DOMRectReadOnly DOMRect": [
     "bottom", 
@@ -12174,6 +12632,18 @@
     "width", 
     "x", 
     "y"
+  ], 
+  "DOMRectReadOnly/DOMRectReadOnly(x, y, width, height)": [
+    "height", 
+    "width", 
+    "x", 
+    "y"
+  ], 
+  "DOMRectReadOnly/fromRect()": [
+    "other"
+  ], 
+  "DOMRectReadOnly/fromRect(other)": [
+    "other"
   ], 
   "DOMStringList": [
     "contains(string)", 
@@ -16296,6 +16766,10 @@
     "\"opaque\"", 
     "\"opaqueredirect\""
   ], 
+  "SVGClipPathElement": [
+    "clipPathUnits", 
+    "transform"
+  ], 
   "SVGComponentTransferFunctionElement": [
     "SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE", 
     "SVG_FECOMPONENTTRANSFER_TYPE_GAMMA", 
@@ -16502,6 +16976,14 @@
   "SVGFilterPrimitiveStandardAttributes": [
     "height", 
     "result", 
+    "width", 
+    "x", 
+    "y"
+  ], 
+  "SVGMaskElement": [
+    "height", 
+    "maskContentUnits", 
+    "maskUnits", 
     "width", 
     "x", 
     "y"
@@ -18605,10 +19087,14 @@
     "endpoint-groups", 
     "origin"
   ], 
+  "clip": [
+    "<bottom>", 
+    "<left>", 
+    "<right>", 
+    "<top>", 
+    "rect()"
+  ], 
   "clip-path": [
-    "<basic-shape>", 
-    "<shape-box>", 
-    "bounding-box", 
     "fill-box", 
     "stroke-box", 
     "view-box"
@@ -20313,11 +20799,11 @@
   "mask-mode": [
     "alpha", 
     "auto", 
-    "luminance"
+    "luminance", 
+    "match-source"
   ], 
   "mask-origin": [
     "border-box", 
-    "bounding-box", 
     "content-box", 
     "fill-box", 
     "margin-box", 
@@ -20325,13 +20811,8 @@
     "stroke-box", 
     "view-box"
   ], 
-  "mask-source-type": [
-    "alpha", 
-    "luminance"
-  ], 
   "mask-type": [
     "alpha", 
-    "auto", 
     "luminance"
   ], 
   "maskContentUnits": [
@@ -20349,6 +20830,7 @@
     "simplify the expression"
   ], 
   "matrix": [
+    "is 2d", 
     "m11 element", 
     "m12 element", 
     "m13 element", 
@@ -20364,7 +20846,12 @@
     "m41 element", 
     "m42 element", 
     "m43 element", 
-    "m44 element"
+    "m44 element", 
+    "multiply", 
+    "post-multiply", 
+    "pre-multiply", 
+    "validate and fixup", 
+    "validate and fixup (2d)"
   ], 
   "max-height": [
     "<length-percentage>", 
@@ -20748,6 +21235,12 @@
   "quadlirateral": [
     "associated bounding rectangle"
   ], 
+  "quadrilateral": [
+    "point 1", 
+    "point 2", 
+    "point 3", 
+    "point 4"
+  ], 
   "queue": [
     "clone", 
     "contain", 
@@ -20796,10 +21289,8 @@
     "y"
   ], 
   "rectangle": [
-    "height", 
     "height dimension", 
     "origin", 
-    "width", 
     "width dimension", 
     "x coordinate", 
     "y coordinate"
