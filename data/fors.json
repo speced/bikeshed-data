@@ -1250,6 +1250,9 @@
     "ResizeObserver", 
     "ResizeObserverCallback", 
     "ResizeObserverEntry", 
+    "ResizeObserverOptions", 
+    "ResizeObserverSize", 
+    "ResizeObserverSizeOptions", 
     "ResizeQuality", 
     "Response", 
     "ResponseInit", 
@@ -3825,7 +3828,6 @@
     "endpoint descriptor", 
     "endpoint group", 
     "endpoint-on-the-path", 
-    "enforce", 
     "enforce the policy", 
     "enforced", 
     "enqueue", 
@@ -9031,6 +9033,7 @@
     "write long characteristic descriptors", 
     "writer", 
     "writing mode", 
+    "writing system", 
     "writing-mode", 
     "wrong_document_err", 
     "wrongdocumenterror", 
@@ -16706,22 +16709,25 @@
     "target"
   ], 
   "ResizeObserver": [
-    "Constructor", 
     "ResizeObserver(callback)", 
-    "ResizeObserver(callback, layoutBox)", 
     "activeTargets", 
     "callback", 
     "disconnect()", 
     "observationTargets", 
     "observe(target)", 
+    "observe(target, options)", 
     "skippedTargets", 
     "unobserve(target)"
   ], 
-  "ResizeObserver/ResizeObserver(callback, layoutBox)": [
-    "callback", 
-    "layoutBox"
+  "ResizeObserver/ResizeObserver(callback)": [
+    "callback"
   ], 
   "ResizeObserver/observe(target)": [
+    "options", 
+    "target"
+  ], 
+  "ResizeObserver/observe(target, options)": [
+    "options", 
     "target"
   ], 
   "ResizeObserver/unobserve(target)": [
@@ -16733,11 +16739,24 @@
   ], 
   "ResizeObserverEntry": [
     "ResizeObserverEntry(target)", 
+    "boxSize", 
     "contentRect", 
     "target"
   ], 
   "ResizeObserverEntry/ResizeObserverEntry(target)": [
     "target"
+  ], 
+  "ResizeObserverOptions": [
+    "size"
+  ], 
+  "ResizeObserverSize": [
+    "blockSize", 
+    "inlineSize"
+  ], 
+  "ResizeObserverSizeOptions": [
+    "\"border-box\"", 
+    "\"content-box\"", 
+    "\"scroll-box\""
   ], 
   "Response": [
     "Response(body, init)", 
@@ -22468,6 +22487,13 @@
     "sideways-rl", 
     "vertical-lr", 
     "vertical-rl"
+  ], 
+  "writing-system": [
+    "chinese", 
+    "japanese", 
+    "known", 
+    "korean", 
+    "unknown"
   ], 
   "z-index": [
     "<integer>", 
