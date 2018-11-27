@@ -1,4 +1,4 @@
-sha: 75b92bf3d1791dc0e47cd8a716a135e98d2d2937
+sha: 54aa4d1e272558eaa65eaaa094c038fa4702331f
 manual 2dcontext/conformance-requirements/2d.coordinatespace-manual.html
 manual 2dcontext/drawing-paths-to-the-canvas/canvas_focus_drawFocusIfNeeded_AAPI_001-manual.html
 manual 2dcontext/drawing-text-to-the-canvas/2d.text.draw.fill.basic-manual.html
@@ -2300,7 +2300,6 @@ manual pointerevents/pointerevent_pointerleave_descendants-manual.html
 manual pointerevents/pointerevent_pointerleave_does_not_bubble-manual.html
 manual pointerevents/pointerevent_pointerleave_pen-manual.html
 manual pointerevents/pointerevent_pointermove-manual.html
-manual pointerevents/pointerevent_pointermove_isprimary_same_as_pointerdown-manual.html
 manual pointerevents/pointerevent_pointermove_on_chorded_mouse_button-manual.html
 manual pointerevents/pointerevent_pointerout_after_pointercancel_touch-manual.html
 manual pointerevents/pointerevent_pointerout_pen-manual.html
@@ -2925,7 +2924,6 @@ manual uievents/interface/dblclick-event-manual.htm
 manual uievents/keyboard/key-101en-us-manual.html
 manual uievents/keyboard/key-102fr-fr-manual.html
 manual uievents/mouse/layout_change_should_fire_mouseover-manual.html
-manual uievents/mouse/mouse_buttons_back_forward-manual.html
 manual uievents/mouse/mouseevent_move_button-manual.html
 manual uievents/order-of-events/focus-events/focus-contained-manual.html
 manual uievents/order-of-events/focus-events/focus-manual.html
@@ -19525,7 +19523,6 @@ testharness content-security-policy/img-src/img-src-wildcard-allowed.html
 testharness content-security-policy/img-src/report-blocked-data-uri.sub.html
 testharness content-security-policy/inheritance/blob-url-in-child-frame-self-navigate-inherits.sub.html
 testharness content-security-policy/inheritance/blob-url-in-main-window-self-navigate-inherits.sub.html
-testharness content-security-policy/inheritance/blob-url-self-navigate-inherits.sub.html
 testharness content-security-policy/inheritance/iframe.html
 testharness content-security-policy/inheritance/inherited-csp-list-modifications-are-local.html
 testharness content-security-policy/inheritance/sandboxed-blob-scheme.html
@@ -27682,10 +27679,15 @@ testharness pointerevents/extension/idlharness.window.js
 testharness pointerevents/extension/pointerevent_constructor.html
 testharness pointerevents/extension/pointerevent_touch-action-verification.html
 testharness pointerevents/idlharness.window.js
+testharness pointerevents/pointerevent_capture_mouse.html
 testharness pointerevents/pointerevent_constructor.html
 testharness pointerevents/pointerevent_on_event_handlers.html
+testharness pointerevents/pointerevent_pointermove.html
+testharness pointerevents/pointerevent_pointermove_isprimary_same_as_pointerdown.html
+testharness pointerevents/pointerevent_pointermove_on_chorded_mouse_button.html
 testharness pointerevents/pointerevent_root_computed_style.html
 testharness pointerevents/pointerevent_root_hit_test.html
+testharness pointerevents/pointerevent_setpointercapture_inactive_button_mouse.html
 testharness pointerevents/pointerevent_touch-action-illegal.html
 testharness pointerevents/pointerevent_touch-action-verification.html
 testharness pointerlock/constructor.html
@@ -27693,6 +27695,7 @@ testharness pointerlock/interfaces.window.js
 testharness preload/avoid-delaying-onload-link-preload.html
 testharness preload/delaying-onload-link-preload-after-discovery.html
 testharness preload/download-resources.html
+testharness preload/dynamic-adding-preload-imagesrcset.tentative.html
 testharness preload/dynamic-adding-preload-nonce.html
 testharness preload/dynamic-adding-preload.html
 testharness preload/link-header-on-subresource.html
@@ -30138,6 +30141,7 @@ testharness uievents/legacy-domevents-tests/approved/stopImmediatePropagation.ef
 testharness uievents/legacy-domevents-tests/approved/stopPropagation.deferred.effect.html
 testharness uievents/legacy-domevents-tests/submissions/Microsoft/converted/EventListener.dispatch.new.event.html
 testharness uievents/legacy/Event-subclasses-init.html
+testharness uievents/mouse/mouse_buttons_back_forward.html
 testharness uievents/order-of-events/focus-events/focus-automated-blink-webkit.html
 testharness uievents/order-of-events/mouse-events/click-cancel.html
 testharness upgrade-insecure-requests/iframe-redirect-upgrade.https.html
