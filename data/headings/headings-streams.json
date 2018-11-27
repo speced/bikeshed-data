@@ -1231,6 +1231,14 @@
       "url": "https://streams.spec.whatwg.org/#readable-stream-has-default-reader"
     }
   }, 
+  "#readable-stream-pipe-to": {
+    "current": {
+      "number": "3.3.10", 
+      "spec": "Streams", 
+      "text": "ReadableStreamPipeTo ( source, dest, preventClose, preventAbort, preventCancel, signal ) nothrow", 
+      "url": "https://streams.spec.whatwg.org/#readable-stream-pipe-to"
+    }
+  }, 
   "#readable-stream-reader-generic-cancel": {
     "current": {
       "number": "3.7.3", 
@@ -1547,7 +1555,7 @@
     "current": {
       "number": "3.2.5.4", 
       "spec": "Streams", 
-      "text": "pipeThrough({ writable, readable }, options)", 
+      "text": "pipeThrough({ writable, readable }, { preventClose, preventAbort, preventCancel, signal } = {})", 
       "url": "https://streams.spec.whatwg.org/#rs-pipe-through"
     }
   }, 
