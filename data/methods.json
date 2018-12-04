@@ -1920,18 +1920,6 @@
       ], 
       "shortname": "credential-management"
     }, 
-    "[[CollectFromCredentialStore]](options, sameOriginWithAncestors)": {
-      "args": [
-        "options", 
-        "sameOriginWithAncestors"
-      ], 
-      "for": [
-        "Credential", 
-        "FederatedCredential", 
-        "PasswordCredential"
-      ], 
-      "shortname": "credential-management"
-    }, 
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)": {
       "args": [
         "origin", 
@@ -1939,27 +1927,18 @@
         "sameOriginWithAncestors"
       ], 
       "for": [
+        "Credential", 
+        "FederatedCredential", 
+        "PasswordCredential", 
         "PublicKeyCredential"
       ], 
-      "shortname": "webauthn"
+      "shortname": "credential-management"
     }
   }, 
   "[[Create]]()": {
     "[[Create]](options)": {
       "args": [
         "options"
-      ], 
-      "for": [
-        "Credential", 
-        "FederatedCredential", 
-        "PasswordCredential"
-      ], 
-      "shortname": "credential-management"
-    }, 
-    "[[Create]](options, sameOriginWithAncestors)": {
-      "args": [
-        "options", 
-        "sameOriginWithAncestors"
       ], 
       "for": [
         "Credential", 
@@ -1975,25 +1954,18 @@
         "sameOriginWithAncestors"
       ], 
       "for": [
+        "Credential", 
+        "FederatedCredential", 
+        "PasswordCredential", 
         "PublicKeyCredential"
       ], 
-      "shortname": "webauthn"
+      "shortname": "credential-management"
     }
   }, 
   "[[DiscoverFromExternalSource]]()": {
     "[[DiscoverFromExternalSource]](options)": {
       "args": [
         "options"
-      ], 
-      "for": [
-        "Credential"
-      ], 
-      "shortname": "credential-management"
-    }, 
-    "[[DiscoverFromExternalSource]](options, sameOriginWithAncestors)": {
-      "args": [
-        "options", 
-        "sameOriginWithAncestors"
       ], 
       "for": [
         "Credential"
@@ -2007,9 +1979,10 @@
         "sameOriginWithAncestors"
       ], 
       "for": [
+        "Credential", 
         "PublicKeyCredential"
       ], 
-      "shortname": "webauthn"
+      "shortname": "credential-management"
     }
   }, 
   "[[Store]]()": {
