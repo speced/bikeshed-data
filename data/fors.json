@@ -1250,11 +1250,11 @@
     "ResetQueue", 
     "ResizeObservation", 
     "ResizeObserver", 
+    "ResizeObserverBoxOptions", 
     "ResizeObserverCallback", 
     "ResizeObserverEntry", 
     "ResizeObserverOptions", 
     "ResizeObserverSize", 
-    "ResizeObserverSizeOptions", 
     "ResizeQuality", 
     "Response", 
     "ResponseInit", 
@@ -2596,6 +2596,7 @@
     "cadetblue", 
     "calc()", 
     "calcmode", 
+    "calculate box size", 
     "calculate depth for node", 
     "calibration", 
     "call", 
@@ -16651,10 +16652,13 @@
     "\"manual\""
   ], 
   "ResizeObservation": [
+    "Constructor", 
     "ResizeObservation(target)", 
-    "broadcastHeight", 
-    "broadcastWidth", 
+    "ResizeObservation(target, options)", 
+    "computeSize(size)", 
     "isActive()", 
+    "lastReportedSize", 
+    "observedBox", 
     "target"
   ], 
   "ResizeObservation/ResizeObservation(target)": [
@@ -16685,6 +16689,11 @@
   "ResizeObserver/unobserve(target)": [
     "target"
   ], 
+  "ResizeObserverBoxOptions": [
+    "\"border-box\"", 
+    "\"content-box\"", 
+    "\"scroll-box\""
+  ], 
   "ResizeObserverCallback": [
     "entries", 
     "observer"
@@ -16701,16 +16710,11 @@
     "target"
   ], 
   "ResizeObserverOptions": [
-    "size"
+    "box"
   ], 
   "ResizeObserverSize": [
     "blockSize", 
     "inlineSize"
-  ], 
-  "ResizeObserverSizeOptions": [
-    "\"border-box\"", 
-    "\"content-box\"", 
-    "\"scroll-box\""
   ], 
   "Response": [
     "Response(body, init)", 
