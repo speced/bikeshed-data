@@ -803,6 +803,7 @@
     "ExtendableMessageEventInit", 
     "External", 
     "FakeWorkletGlobalScope", 
+    "FeaturePolicy", 
     "FeaturePolicyViolationReportBody", 
     "FederatedCredential", 
     "FederatedCredentialInit", 
@@ -1132,7 +1133,6 @@
     "PlaybackDirection", 
     "Plugin", 
     "PluginArray", 
-    "Policy", 
     "PopStateEvent", 
     "PopStateEventInit", 
     "PostMessageOptions", 
@@ -12747,6 +12747,7 @@
     "encoding", 
     "exitFullscreen()", 
     "feature policy", 
+    "featurePolicy", 
     "fgColor", 
     "forms", 
     "fullscreen", 
@@ -12843,7 +12844,6 @@
     "onwheel", 
     "origin", 
     "plugins", 
-    "policy", 
     "policy object", 
     "queryCommandEnabled()", 
     "queryCommandIndeterm()", 
@@ -13484,6 +13484,28 @@
   "FakeWorkletGlobalScope/registerAnArbitaryClass(type, classConstructor)": [
     "classConstructor", 
     "type"
+  ], 
+  "FeaturePolicy": [
+    "allowedFeatures", 
+    "allowedFeatures()", 
+    "allowsFeature", 
+    "allowsFeature(feature)", 
+    "allowsFeature(feature, origin)", 
+    "features", 
+    "features()", 
+    "getAllowlistForFeature", 
+    "getAllowlistForFeature(feature)"
+  ], 
+  "FeaturePolicy/allowsFeature(feature)": [
+    "feature", 
+    "origin"
+  ], 
+  "FeaturePolicy/allowsFeature(feature, origin)": [
+    "feature", 
+    "origin"
+  ], 
+  "FeaturePolicy/getAllowlistForFeature(feature)": [
+    "feature"
   ], 
   "FeaturePolicyViolationReportBody": [
     "columnNumber", 
@@ -14335,12 +14357,12 @@
     "allowPaymentRequest", 
     "contentDocument", 
     "contentWindow", 
+    "featurePolicy", 
     "frameBorder", 
     "longDesc", 
     "marginHeight", 
     "marginWidth", 
     "name", 
-    "policy", 
     "referrerPolicy", 
     "sandbox", 
     "scrolling", 
@@ -16216,26 +16238,6 @@
   ], 
   "PluginArray": [
     "refresh()"
-  ], 
-  "Policy": [
-    "allowedFeatures", 
-    "allowedFeatures()", 
-    "allowsFeature", 
-    "allowsFeature(feature)", 
-    "allowsFeature(feature, origin)", 
-    "getAllowlistForFeature", 
-    "getAllowlistForFeature(feature)"
-  ], 
-  "Policy/allowsFeature(feature)": [
-    "feature", 
-    "origin"
-  ], 
-  "Policy/allowsFeature(feature, origin)": [
-    "feature", 
-    "origin"
-  ], 
-  "Policy/getAllowlistForFeature(feature)": [
-    "feature"
   ], 
   "PopStateEventInit": [
     "state"
