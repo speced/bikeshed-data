@@ -485,8 +485,10 @@
     "AbortController", 
     "AbortError", 
     "AbortSignal", 
+    "AbsoluteOrientationReadingValues", 
     "AbstractRange", 
     "AbstractWorker", 
+    "AccelerometerReadingValues", 
     "AcquireReadableStreamBYOBReader", 
     "AcquireReadableStreamDefaultReader", 
     "AcquireWritableStreamDefaultWriter", 
@@ -494,6 +496,7 @@
     "AllowShared", 
     "AllowedBluetoothDevice", 
     "AllowedUSBDevice", 
+    "AmbientLightReadingValues", 
     "Animatable", 
     "Animation", 
     "AnimationEffect", 
@@ -852,12 +855,15 @@
     "FunctionStringCallback", 
     "GenerateTestReportParameters", 
     "GenericTransformStream", 
+    "GeolocationReadingValues", 
     "GeometryNode", 
     "GeometryUtils", 
     "GetRootNodeOptions", 
     "GetSVGDocument", 
     "Global", 
     "GlobalEventHandlers", 
+    "GravityReadingValues", 
+    "GyroscopeReadingValues", 
     "HTMLAllCollection", 
     "HTMLAnchorElement", 
     "HTMLAreaElement", 
@@ -1036,9 +1042,11 @@
     "LegacyWindowAlias", 
     "LenientSetter", 
     "LenientThis", 
+    "LinearAccelerationReadingValues", 
     "LinkStyle", 
     "Location", 
     "Logger", 
+    "MagnetometerReadingValues", 
     "MakeSizeAlgorithmFromSizeFunction", 
     "MediaError", 
     "MediaList", 
@@ -1055,6 +1063,10 @@
     "MidiPermissionDescriptor", 
     "MimeType", 
     "MimeTypeArray", 
+    "MockSensor", 
+    "MockSensorConfiguration", 
+    "MockSensorReadingValues", 
+    "MockSensorType", 
     "MouseEvent", 
     "MouseEventInit", 
     "MultiCacheQueryOptions", 
@@ -1153,6 +1165,7 @@
     "PromiseRejectionEvent", 
     "PromiseRejectionEventInit", 
     "PropertyDescriptor", 
+    "ProximityReadingValues", 
     "PublicKeyCredential", 
     "PublicKeyCredentialCreationOptions", 
     "PublicKeyCredentialDescriptor", 
@@ -1231,6 +1244,7 @@
     "ReferrerPolicy", 
     "Region", 
     "RegistrationOptions", 
+    "RelativeOrientationReadingValues", 
     "RenderingContext", 
     "Replaceable", 
     "Report", 
@@ -1577,6 +1591,7 @@
     "Uint32Array", 
     "Uint8Array", 
     "Uint8ClampedArray", 
+    "UncalibratedMagnetometerReadingValues", 
     "Unforgeable", 
     "UnknownError", 
     "Unscopable", 
@@ -2963,6 +2978,7 @@
     "connect-src", 
     "connected", 
     "connection", 
+    "connection flag", 
     "connection-checking wrapper", 
     "consecutive", 
     "consequential interfaces", 
@@ -3202,6 +3218,7 @@
     "create an underlying value", 
     "create client", 
     "create job", 
+    "create mock sensor", 
     "create window client", 
     "createDocument()", 
     "createElement()", 
@@ -3515,6 +3532,7 @@
     "delete", 
     "delete a database", 
     "delete an existing named property", 
+    "delete mock sensor", 
     "delete records from an object store", 
     "delete the selection", 
     "deleter", 
@@ -4500,6 +4518,7 @@
     "get an encoding", 
     "get an output encoding", 
     "get frame type", 
+    "get mock sensor", 
     "get newest worker", 
     "get registration", 
     "get the \"all\"-indexed element", 
@@ -5898,6 +5917,11 @@
     "mixed content", 
     "mobile", 
     "moccasin", 
+    "mock sensor", 
+    "mock sensor already created", 
+    "mock sensor reading", 
+    "mock sensor reading values", 
+    "mock sensor type", 
     "mode", 
     "modifier key", 
     "module", 
@@ -6045,6 +6069,7 @@
     "no cors", 
     "no pending font loads", 
     "no scheme state", 
+    "no such mock sensor", 
     "no-close-quote", 
     "no-common-ligatures", 
     "no-contextual", 
@@ -7641,6 +7666,7 @@
     "serialized csp list", 
     "serialized directive", 
     "serialized feature policy", 
+    "serialized mock sensor", 
     "serialized options", 
     "serialized source list", 
     "serialized state", 
@@ -8709,6 +8735,7 @@
     "update animations and send events", 
     "update href", 
     "update latest reading", 
+    "update mock sensor reading", 
     "update registration state", 
     "update service worker extended events set", 
     "update status", 
@@ -9861,6 +9888,9 @@
     "remove", 
     "signal abort"
   ], 
+  "AbsoluteOrientationReadingValues": [
+    "quaternion"
+  ], 
   "AbstractRange": [
     "collapsed", 
     "endContainer", 
@@ -9870,6 +9900,11 @@
   ], 
   "AbstractWorker": [
     "error"
+  ], 
+  "AccelerometerReadingValues": [
+    "x", 
+    "y", 
+    "z"
   ], 
   "AddEventListenerOptions": [
     "once", 
@@ -9886,6 +9921,9 @@
     "productId", 
     "serialNumber", 
     "vendorId"
+  ], 
+  "AmbientLightReadingValues": [
+    "illuminance"
   ], 
   "Animatable": [
     "animate(keyframes, options)", 
@@ -13969,6 +14007,15 @@
     "transform", 
     "writable"
   ], 
+  "GeolocationReadingValues": [
+    "accuracy", 
+    "altitude", 
+    "altitudeAccuracy", 
+    "heading", 
+    "latitude", 
+    "longitude", 
+    "speed"
+  ], 
   "GeometryUtils": [
     "convertPointFromNode(point, from)", 
     "convertPointFromNode(point, from, options)", 
@@ -14084,6 +14131,11 @@
     "onvolumechange", 
     "onwaiting", 
     "onwheel"
+  ], 
+  "GyroscopeReadingValues": [
+    "x", 
+    "y", 
+    "z"
   ], 
   "HTMLAllCollection": [
     "item()", 
@@ -15572,6 +15624,11 @@
     "subtype", 
     "type"
   ], 
+  "MagnetometerReadingValues": [
+    "x", 
+    "y", 
+    "z"
+  ], 
   "MediaError": [
     "MEDIA_ERR_ABORTED", 
     "MEDIA_ERR_DECODE", 
@@ -15659,6 +15716,30 @@
     "enabledPlugin", 
     "suffixes", 
     "type"
+  ], 
+  "MockSensor": [
+    "maxSamplingFrequency", 
+    "minSamplingFrequency", 
+    "requestedSamplingFrequency"
+  ], 
+  "MockSensorConfiguration": [
+    "connected", 
+    "maxSamplingFrequency", 
+    "minSamplingFrequency", 
+    "mockSensorType"
+  ], 
+  "MockSensorType": [
+    "\"absolute-orientation\"", 
+    "\"accelerometer\"", 
+    "\"ambient-light\"", 
+    "\"geolocation\"", 
+    "\"gravity\"", 
+    "\"gyroscope\"", 
+    "\"linear-acceleration\"", 
+    "\"magnetometer\"", 
+    "\"proximity\"", 
+    "\"relative-orientation\"", 
+    "\"uncalibrated-magnetometer\""
   ], 
   "MouseEvent": [
     "Constructor", 
@@ -16290,6 +16371,11 @@
     "initialValue", 
     "name", 
     "syntax"
+  ], 
+  "ProximityReadingValues": [
+    "distance", 
+    "max", 
+    "near"
   ], 
   "PublicKeyCredential": [
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)", 
@@ -17939,6 +18025,14 @@
     "\"babble\"", 
     "\"ok\"", 
     "\"stall\""
+  ], 
+  "UncalibratedMagnetometerReadingValues": [
+    "x", 
+    "xBias", 
+    "y", 
+    "yBias", 
+    "z", 
+    "zBias"
   ], 
   "UserVerificationRequirement": [
     "discouraged", 
