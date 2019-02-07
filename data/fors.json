@@ -1008,6 +1008,7 @@
     "IsNonNegativeNumber", 
     "IsReadableByteStreamController", 
     "IsReadableStream", 
+    "IsReadableStreamAsyncIterator", 
     "IsReadableStreamBYOBReader", 
     "IsReadableStreamBYOBRequest", 
     "IsReadableStreamDefaultController", 
@@ -1208,6 +1209,7 @@
     "ReadableStream", 
     "ReadableStreamAddReadIntoRequest", 
     "ReadableStreamAddReadRequest", 
+    "ReadableStreamAsyncIteratorPrototype", 
     "ReadableStreamBYOBReader", 
     "ReadableStreamBYOBReaderRead", 
     "ReadableStreamBYOBRequest", 
@@ -16583,6 +16585,7 @@
   ], 
   "ReadableStream": [
     "ReadableStream(underlyingSource, strategy)", 
+    "[@@asyncIterator]({ preventCancel } = {})", 
     "cancel", 
     "cancel(reason)", 
     "close", 
@@ -16595,6 +16598,7 @@
     "error", 
     "errored", 
     "get a reader", 
+    "getIterator({ preventCancel } = {})", 
     "getReader({ mode } = {})", 
     "locked", 
     "need more data", 
@@ -16605,6 +16609,10 @@
     "readable", 
     "tee", 
     "tee()"
+  ], 
+  "ReadableStreamAsyncIteratorPrototype": [
+    "next()", 
+    "return(value)"
   ], 
   "ReadableStreamBYOBReader": [
     "ReadableStreamBYOBReader(stream)", 
