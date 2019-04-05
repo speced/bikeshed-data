@@ -219,6 +219,7 @@
     "<counter-style-name>", 
     "<counter-style>", 
     "<counter-suffix>", 
+    "<cubic-bezier-easing-function>", 
     "<cubic-bezier-timing-function>", 
     "<custom-arg>", 
     "<custom-ident>", 
@@ -241,6 +242,7 @@
     "<display-legacy>", 
     "<display-listitem>", 
     "<display-outside>", 
+    "<easing-function>", 
     "<east-asian-variant-values>", 
     "<east-asian-width-values>", 
     "<eof-token>", 
@@ -407,6 +409,7 @@
     "<source-size>", 
     "<specific-voice>", 
     "<speech-rate>", 
+    "<step-easing-function>", 
     "<step-position>", 
     "<step-timing-function>", 
     "<string-token>", 
@@ -829,7 +832,7 @@
     "FocusEventInit", 
     "FocusOptions", 
     "FocusableAreaSearchMode", 
-    "FocusableAreasOptions", 
+    "FocusableAreasOption", 
     "Font", 
     "FontFace", 
     "FontFaceDescriptors", 
@@ -1739,6 +1742,8 @@
     "absolute url", 
     "absolute-url string", 
     "absolute-url-with-fragment string", 
+    "absolutely positioned", 
+    "absolutely positioned box", 
     "absolutely positioned element", 
     "absolutize a relative selector", 
     "absolutize a relative selector list", 
@@ -2115,7 +2120,6 @@
     "associated document", 
     "associated element", 
     "associated inert template document", 
-    "associated marker", 
     "associated node", 
     "associated offscreencanvas object", 
     "associated realm", 
@@ -2626,7 +2630,6 @@
     "calcmode", 
     "calculate box size", 
     "calculate depth for node", 
-    "calculating the distance", 
     "calibration", 
     "call", 
     "call a user object's operation", 
@@ -3336,6 +3339,7 @@
     "cssmediarule", 
     "cssstyledeclaration", 
     "csssupportsrule", 
+    "cubic bézier easing function", 
     "cubic bézier timing function", 
     "cue", 
     "cue-after", 
@@ -3802,6 +3806,7 @@
     "earliest possible position", 
     "earliest possible position when the script started", 
     "early error", 
+    "easing function", 
     "east asian width property", 
     "ecdaa", 
     "ecdaa-issuer public key", 
@@ -4204,6 +4209,7 @@
     "find the matching font faces", 
     "find the non-container graphics elements", 
     "find the reporting frequency of a sensor object", 
+    "find the shortest distance", 
     "find the typographic character for a character", 
     "finding a slot", 
     "finding flattened slotables", 
@@ -5182,7 +5188,6 @@
     "interpreter", 
     "interrupt transfers", 
     "intersect the viewport", 
-    "intersecting area", 
     "interval end", 
     "interval start", 
     "intervention reports", 
@@ -5525,6 +5530,7 @@
     "line-sizing", 
     "line-snap", 
     "line-under", 
+    "linear easing function", 
     "linear timing function", 
     "linear-gradient()", 
     "linear-light srgb", 
@@ -5721,9 +5727,12 @@
     "mark", 
     "mark paint timing", 
     "marker", 
+    "marker box", 
+    "marker image", 
     "marker positioning edge", 
     "marker positioning reference element", 
     "marker properties", 
+    "marker string", 
     "marker-end", 
     "marker-mid", 
     "marker-side", 
@@ -6478,7 +6487,6 @@
     "overflow-wrap", 
     "overflow-x", 
     "overflow-y", 
-    "overlapping area", 
     "overlay scrollbars", 
     "overload resolution algorithm", 
     "overloaded", 
@@ -8000,13 +8008,11 @@
     "spanning annotation", 
     "spanning element", 
     "spatial navigation", 
-    "spatial navigation container", 
     "spatial navigation containers", 
-    "spatial navigation focus container", 
-    "spatial navigation focus containers", 
     "spatial navigation starting point", 
     "spatial navigation steps", 
     "spatial sensor", 
+    "spatial-navigation-action", 
     "spatial-navigation-contain", 
     "spatialnavigation", 
     "speak", 
@@ -8100,6 +8106,7 @@
     "status stage", 
     "steelblue", 
     "step base", 
+    "step easing function", 
     "step position", 
     "step scale factor", 
     "step timing function", 
@@ -8611,7 +8618,6 @@
     "titling-caps", 
     "tmbl", 
     "to", 
-    "to calculate the distance", 
     "to idl dictionary value", 
     "toboolean", 
     "toggle", 
@@ -8803,6 +8809,7 @@
     "universal syntax descriptor", 
     "unix epoch", 
     "unknown", 
+    "unknown -webkit- pseudo-elements", 
     "unknown-named-character-reference", 
     "unknownerror", 
     "unload", 
@@ -9542,6 +9549,13 @@
     "trad-chinese-formal", 
     "trad-chinese-informal"
   ], 
+  "<cubic-bezier-easing-function>": [
+    "cubic-bezier()", 
+    "ease", 
+    "ease-in", 
+    "ease-in-out", 
+    "ease-out"
+  ], 
   "<cubic-bezier-timing-function>": [
     "cubic-bezier()", 
     "ease", 
@@ -9714,6 +9728,11 @@
     "farthest-corner", 
     "farthest-side", 
     "sides"
+  ], 
+  "<step-easing-function>": [
+    "step-end", 
+    "step-start", 
+    "steps()"
   ], 
   "<step-timing-function>": [
     "step-end", 
@@ -13209,9 +13228,7 @@
     "custom element definition", 
     "custom element state", 
     "defined", 
-    "focusableAreas", 
     "focusableAreas()", 
-    "focusableAreas(arg)", 
     "getAttribute(qualifiedName)", 
     "getAttributeNS(namespace, localName)", 
     "getAttributeNames()", 
@@ -13224,7 +13241,6 @@
     "getElementsByTagNameNS(namespace, localName)", 
     "getFragmentInformation", 
     "getFragmentInformation(filter)", 
-    "getSpatialNavigationContainer", 
     "getSpatialNavigationContainer()", 
     "hasAttribute(qualifiedName)", 
     "hasAttributeNS(namespace, localName)", 
@@ -13280,8 +13296,7 @@
     "shadow root", 
     "shadowRoot", 
     "slot", 
-    "spatialNavigationSearch", 
-    "spatialNavigationSearch(arg)", 
+    "spatialNavigationSearch(options)", 
     "tagName", 
     "toggleAttribute(qualifiedName)", 
     "toggleAttribute(qualifiedName, force)", 
@@ -13294,10 +13309,10 @@
     "selectors"
   ], 
   "Element/focusableAreas()": [
-    "arg"
+    "option"
   ], 
-  "Element/focusableAreas(arg)": [
-    "arg"
+  "Element/focusableAreas(option)": [
+    "option"
   ], 
   "Element/getAttribute(qualifiedName)": [
     "qualifiedName"
@@ -13414,8 +13429,8 @@
   "Element/setAttributeNodeNS(attr)": [
     "attr"
   ], 
-  "Element/spatialNavigationSearch(arg)": [
-    "arg"
+  "Element/spatialNavigationSearch(options)": [
+    "options"
   ], 
   "Element/toggleAttribute(qualifiedName)": [
     "force", 
@@ -13859,7 +13874,7 @@
     "\"all\"", 
     "\"visible\""
   ], 
-  "FocusableAreasOptions": [
+  "FocusableAreasOption": [
     "mode"
   ], 
   "Font": [
@@ -18294,7 +18309,6 @@
     "moveBy(x, y)", 
     "moveTo(x, y)", 
     "name", 
-    "navigate", 
     "navigate(dir)", 
     "navigator", 
     "offline", 
@@ -19642,13 +19656,26 @@
     "round", 
     "scoop"
   ], 
+  "counter()": [
+    "list-item"
+  ], 
+  "counter-increment": [
+    "list-item"
+  ], 
   "counter-reset": [
     "<custom-ident> <integer>?", 
+    "list-item", 
     "none"
+  ], 
+  "counter-set": [
+    "list-item"
   ], 
   "counter-set counter-increment": [
     "<custom-ident> <integer>?", 
     "none"
+  ], 
+  "counters()": [
+    "list-item"
   ], 
   "credential": [
     "effective"
@@ -19673,6 +19700,13 @@
   ], 
   "cssstyledeclaration": [
     "cssText"
+  ], 
+  "cubic-bezier-easing-function": [
+    "cubic-bezier()", 
+    "ease", 
+    "ease-in", 
+    "ease-in-out", 
+    "ease-out"
   ], 
   "cubic-bezier-timing-function": [
     "cubic-bezier()", 
@@ -19882,6 +19916,9 @@
     "middle", 
     "text-bottom", 
     "text-top"
+  ], 
+  "easing-function": [
+    "linear"
   ], 
   "edgeMode": [
     "duplicate", 
@@ -21088,7 +21125,9 @@
   ], 
   "marker-side": [
     "list-container", 
-    "list-item"
+    "list-item", 
+    "match-parent", 
+    "match-self"
   ], 
   "marquee": [
     "alternate", 
@@ -22048,6 +22087,11 @@
   "source list": [
     "allows all inline behavior"
   ], 
+  "spatial-navigation-action": [
+    "auto", 
+    "focus", 
+    "scroll"
+  ], 
   "spatial-navigation-contain": [
     "auto", 
     "contain"
@@ -22063,6 +22107,11 @@
     "pop", 
     "push", 
     "size"
+  ], 
+  "step-easing-function": [
+    "step-end", 
+    "step-start", 
+    "steps()"
   ], 
   "step-timing-function": [
     "step-end", 
