@@ -2160,6 +2160,19 @@
       "shortname": "html"
     }
   }, 
+  "addRule()": {
+    "addRule(selector, block, optionalIndex)": {
+      "args": [
+        "selector", 
+        "block", 
+        "optionalIndex"
+      ], 
+      "for": [
+        "CSSStyleSheet"
+      ], 
+      "shortname": "cssom"
+    }
+  }, 
   "addTextTrack()": {
     "addTextTrack(kind)": {
       "args": [
@@ -2976,6 +2989,15 @@
         "IDBTransaction"
       ], 
       "shortname": "indexeddb"
+    }
+  }, 
+  "commitStyles()": {
+    "commitStyles()": {
+      "args": [], 
+      "for": [
+        "Animation"
+      ], 
+      "shortname": "web-animations"
     }
   }, 
   "compareBoundaryPoints()": {
@@ -4820,6 +4842,15 @@
       "for": [
         "Animatable", 
         "Document"
+      ], 
+      "shortname": "web-animations"
+    }, 
+    "getAnimations(options)": {
+      "args": [
+        "options"
+      ], 
+      "for": [
+        "Animatable"
       ], 
       "shortname": "web-animations"
     }
@@ -7219,6 +7250,7 @@
     "persist()": {
       "args": [], 
       "for": [
+        "Animation", 
         "StorageManager"
       ], 
       "shortname": "storage"
@@ -8085,6 +8117,24 @@
       ], 
       "for": [
         "CSSStyleDeclaration"
+      ], 
+      "shortname": "cssom"
+    }
+  }, 
+  "removeRule()": {
+    "removeRule()": {
+      "args": [], 
+      "for": [
+        "CSSStyleSheet"
+      ], 
+      "shortname": "cssom"
+    }, 
+    "removeRule(index)": {
+      "args": [
+        "index"
+      ], 
+      "for": [
+        "CSSStyleSheet"
       ], 
       "shortname": "cssom"
     }

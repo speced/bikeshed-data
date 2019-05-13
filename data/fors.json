@@ -509,6 +509,7 @@
     "AnimationPlayState", 
     "AnimationPlaybackEvent", 
     "AnimationPlaybackEventInit", 
+    "AnimationReplaceState", 
     "AnimationTimeline", 
     "AnimationWorkletGlobalScope", 
     "AnimatorInstanceConstructor", 
@@ -714,6 +715,7 @@
     "CredentialCreationOptions", 
     "CredentialData", 
     "CredentialMediationRequirement", 
+    "CredentialPropertiesOutput", 
     "CredentialRequestOptions", 
     "CredentialUserData", 
     "CredentialsContainer", 
@@ -861,6 +863,7 @@
     "GenericTransformStream", 
     "GeometryNode", 
     "GeometryUtils", 
+    "GetAnimationsOptions", 
     "GetRootNodeOptions", 
     "GetSVGDocument", 
     "Global", 
@@ -1263,6 +1266,7 @@
     "RequestMode", 
     "RequestRedirect", 
     "ResetQueue", 
+    "ResidentKeyRequirement", 
     "ResizeObservation", 
     "ResizeObserver", 
     "ResizeObserverBoxOptions", 
@@ -1790,6 +1794,7 @@
     "active phase", 
     "active range", 
     "active reader", 
+    "active replace state", 
     "active sandboxing flag set", 
     "active script", 
     "active shadow tree", 
@@ -2846,6 +2851,8 @@
     "code", 
     "code point", 
     "code unit", 
+    "code unit less than", 
+    "code unit prefix", 
     "code units", 
     "codebase", 
     "codetype", 
@@ -2927,6 +2934,7 @@
     "commentary", 
     "comments", 
     "commit a transaction", 
+    "commit computed styles", 
     "commit()", 
     "common-ligatures", 
     "compact", 
@@ -3105,6 +3113,7 @@
     "control-character-reference", 
     "convert a cssunitvalue", 
     "convert a domstring to a sequence of unicode scalar values", 
+    "convert a json-derived javascript value to an infra value", 
     "convert a key to a value", 
     "convert a list of dimensions to a list of pixel values", 
     "convert a non-negative integer i to an octet string of length n", 
@@ -3124,6 +3133,7 @@
     "converted to serialized values", 
     "converting", 
     "converting a character width to pixels", 
+    "converting a json-derived javascript value to an infra value", 
     "converting line endings to native", 
     "converting nodes into a node", 
     "converting to a sequence of unicode scalar values", 
@@ -3267,6 +3277,7 @@
     "credential id", 
     "credential key pair", 
     "credential private key", 
+    "credential properties", 
     "credential public key", 
     "credential source", 
     "credential storage modality", 
@@ -3276,6 +3287,7 @@
     "credentialpublickey", 
     "credentials", 
     "credentials mode", 
+    "credprops", 
     "crimson", 
     "critical subresources", 
     "crop bitmap data to the source rectangle with formatting", 
@@ -3834,6 +3846,7 @@
     "effective media volume", 
     "effective overload set", 
     "effective playback rate", 
+    "effective resident key requirement for credential creation", 
     "effective user verification requirement for assertion", 
     "effective user verification requirement for credential creation", 
     "elapsed time", 
@@ -5175,6 +5188,7 @@
     "internal key modifier state", 
     "internal module script graph fetching procedure", 
     "internal pause steps", 
+    "internal play steps", 
     "internal queues", 
     "internal raw uncompiled handler", 
     "internal response", 
@@ -5995,6 +6009,7 @@
     "monolithic", 
     "monospace", 
     "monotonic clock", 
+    "monotonically increasing timeline", 
     "month", 
     "month state (type=month)", 
     "mousedown", 
@@ -6189,6 +6204,7 @@
     "non-printable code point", 
     "non-rendered element", 
     "non-replaced", 
+    "non-resident credential", 
     "non-secure contexts", 
     "non-subresource request", 
     "non-void-html-element-start-tag-with-trailing-solidus", 
@@ -6645,6 +6661,7 @@
     "parse error", 
     "parse errors", 
     "parse json from bytes", 
+    "parse json into infra values", 
     "parsed according to a particular css grammar", 
     "parsemodule", 
     "parser inserted flag", 
@@ -6733,6 +6750,7 @@
     "permission state", 
     "permission state constraints", 
     "permission task source", 
+    "persisted replace state", 
     "persistent bucket", 
     "persistent connections", 
     "persistent css style sheet", 
@@ -7171,6 +7189,7 @@
     "release a write lock", 
     "relevant", 
     "relevant agent", 
+    "relevant animation", 
     "relevant application cache", 
     "relevant child nodes", 
     "relevant document", 
@@ -7201,7 +7220,10 @@
     "remove an attribute by name", 
     "remove an attribute by namespace and local name", 
     "remove an event listener", 
+    "remove event", 
+    "remove replaced animations", 
     "removed from a document", 
+    "removed replace state", 
     "removetrack", 
     "removing an entry", 
     "removing steps", 
@@ -7224,6 +7246,8 @@
     "replace all", 
     "replace an attribute", 
     "replace data", 
+    "replace state", 
+    "replaceable animation", 
     "replaced", 
     "replaced element", 
     "replacement", 
@@ -7297,6 +7321,7 @@
     "resident", 
     "resident credential", 
     "resident credential capable", 
+    "resident key credential property", 
     "resize", 
     "resolvable private address resolution procedure", 
     "resolve", 
@@ -7785,6 +7810,7 @@
     "server", 
     "server-sent events", 
     "server-side credential storage modality", 
+    "server-side-resident public key credential source", 
     "servers", 
     "service", 
     "service changed", 
@@ -8090,6 +8116,7 @@
     "starting point", 
     "starting value", 
     "startpoint-on-the-path", 
+    "starts with", 
     "starts with a number", 
     "starts with a valid escape", 
     "starts with a windows drive letter", 
@@ -10041,15 +10068,20 @@
   ], 
   "Animatable": [
     "animate(keyframes, options)", 
-    "getAnimations()"
+    "getAnimations()", 
+    "getAnimations(options)"
   ], 
   "Animatable/animate(keyframes, options)": [
     "keyframes", 
     "options"
   ], 
+  "Animatable/getAnimations(options)": [
+    "options"
+  ], 
   "Animation": [
     "Animation(effect, timeline)", 
     "cancel()", 
+    "commitStyles()", 
     "currentTime", 
     "effect", 
     "finish()", 
@@ -10057,12 +10089,15 @@
     "id", 
     "oncancel", 
     "onfinish", 
+    "onremove", 
     "pause()", 
     "pending", 
+    "persist()", 
     "play()", 
     "playState", 
     "playbackRate", 
     "ready", 
+    "replaceState", 
     "reverse()", 
     "startTime", 
     "timeline", 
@@ -10123,6 +10158,11 @@
   "AnimationPlaybackEventInit": [
     "currentTime", 
     "timelineTime"
+  ], 
+  "AnimationReplaceState": [
+    "\"active\"", 
+    "\"persisted\"", 
+    "\"removed\""
   ], 
   "AnimationTimeline": [
     "currentTime"
@@ -10190,6 +10230,7 @@
   "AuthenticationExtensionsClientInputs": [
     "appid", 
     "authnSel", 
+    "credProps", 
     "exts", 
     "loc", 
     "txAuthGeneric", 
@@ -10200,6 +10241,7 @@
   "AuthenticationExtensionsClientOutputs": [
     "appid", 
     "authnSel", 
+    "credProps", 
     "exts", 
     "loc", 
     "txAuthGeneric", 
@@ -10228,6 +10270,7 @@
   "AuthenticatorSelectionCriteria": [
     "authenticatorAttachment", 
     "requireResidentKey", 
+    "residentKey", 
     "userVerification"
   ], 
   "AuthenticatorTransport": [
@@ -11331,6 +11374,7 @@
     "styleMap"
   ], 
   "CSSStyleSheet": [
+    "addRule(selector, block, optionalIndex)", 
     "alternate flag", 
     "css rules", 
     "cssRules", 
@@ -11346,8 +11390,31 @@
     "ownerRule", 
     "parent css style sheet", 
     "referrer policy", 
+    "removeRule()", 
+    "removeRule(index)", 
+    "rules", 
     "title", 
     "type"
+  ], 
+  "CSSStyleSheet/addRule()": [
+    "index", 
+    "selector", 
+    "style"
+  ], 
+  "CSSStyleSheet/addRule(selector)": [
+    "index", 
+    "selector", 
+    "style"
+  ], 
+  "CSSStyleSheet/addRule(selector, style)": [
+    "index", 
+    "selector", 
+    "style"
+  ], 
+  "CSSStyleSheet/addRule(selector, style, index)": [
+    "index", 
+    "selector", 
+    "style"
   ], 
   "CSSStyleSheet/deleteRule(index)": [
     "index"
@@ -11359,6 +11426,12 @@
   "CSSStyleSheet/insertRule(rule, index)": [
     "index", 
     "rule"
+  ], 
+  "CSSStyleSheet/removeRule()": [
+    "index"
+  ], 
+  "CSSStyleSheet/removeRule(index)": [
+    "index"
   ], 
   "CSSStyleValue": [
     "[[associatedProperty]]", 
@@ -11831,6 +11904,9 @@
   "CrashReportBody": [
     "reason"
   ], 
+  "CreateCred-AuthnrSuccess": [
+    "indicates success"
+  ], 
   "Credential": [
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)", 
     "[[Create]](origin, options, sameOriginWithAncestors)", 
@@ -11864,6 +11940,9 @@
     "optional", 
     "required", 
     "silent"
+  ], 
+  "CredentialPropertiesOutput": [
+    "rk"
   ], 
   "CredentialRequestOptions": [
     "federated", 
@@ -14201,6 +14280,9 @@
   ], 
   "GeometryUtils/getBoxQuads(options)": [
     "options"
+  ], 
+  "GetAnimationsOptions": [
+    "subtree"
   ], 
   "GetRootNodeOptions": [
     "composed"
@@ -16888,6 +16970,11 @@
     "\"error\"", 
     "\"follow\"", 
     "\"manual\""
+  ], 
+  "ResidentKeyRequirement": [
+    "discouraged", 
+    "preferred", 
+    "required"
   ], 
   "ResizeObservation": [
     "Constructor", 
@@ -21062,7 +21149,13 @@
     "prepend", 
     "remove", 
     "replace", 
-    "size"
+    "size", 
+    "sort", 
+    "sort in ascending order", 
+    "sort in descending order", 
+    "sorting", 
+    "sorting in ascending order", 
+    "sorting in descending order"
   ], 
   "list-style-image": [
     "<image>", 
@@ -21117,6 +21210,12 @@
     "set", 
     "set the value", 
     "size", 
+    "sort", 
+    "sort in ascending order", 
+    "sort in descending order", 
+    "sorting", 
+    "sorting in ascending order", 
+    "sorting in descending order", 
     "value"
   ], 
   "margin": [
@@ -21635,7 +21734,13 @@
     "is empty", 
     "is not empty", 
     "item", 
-    "size"
+    "size", 
+    "sort", 
+    "sort in ascending order", 
+    "sort in descending order", 
+    "sorting", 
+    "sorting in ascending order", 
+    "sorting in descending order"
   ], 
   "queuing strategy": [
     "highwatermark", 
@@ -22052,6 +22157,12 @@
     "replace", 
     "replacing", 
     "size", 
+    "sort", 
+    "sort in ascending order", 
+    "sort in descending order", 
+    "sorting", 
+    "sorting in ascending order", 
+    "sorting in descending order", 
     "subset", 
     "superset", 
     "to", 
@@ -22120,7 +22231,13 @@
     "item", 
     "pop", 
     "push", 
-    "size"
+    "size", 
+    "sort", 
+    "sort in ascending order", 
+    "sort in descending order", 
+    "sorting", 
+    "sorting in ascending order", 
+    "sorting in descending order"
   ], 
   "step-easing-function": [
     "step-end", 
