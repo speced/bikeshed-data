@@ -1,4 +1,4 @@
-sha: 512a587ab7eef3cfe1d3ebee1a672ce108bd7975
+sha: 48af14aaebdbcaf90bc21d07965f7c16661f8d90
 manual 2dcontext/conformance-requirements/2d.coordinatespace-manual.html
 manual 2dcontext/drawing-paths-to-the-canvas/canvas_focus_drawFocusIfNeeded_AAPI_001-manual.html
 manual 2dcontext/drawing-text-to-the-canvas/2d.text.draw.fill.basic-manual.html
@@ -2395,6 +2395,7 @@ manual payment-request/payment-response/retry-method-manual.https.html
 manual payment-request/payment-response/retry-method-warnings-manual.https.html
 manual payment-request/payment-response/shippingAddress-attribute-manual.https.html
 manual payment-request/payment-response/shippingOption-attribute-manual.https.html
+manual payment-request/rejects_if_not_active-manual.https.html
 manual payment-request/shipping-address-changed-manual.https.html
 manual payment-request/show-method-optional-promise-rejects-manual.https.html
 manual payment-request/show-method-optional-promise-resolves-manual.https.html
@@ -12473,6 +12474,8 @@ reftest css/css-masking/mask-svg-content/mask-type-002.svg
 reftest css/css-masking/mask-svg-content/mask-type-003.svg
 reftest css/css-masking/test-mask.html
 reftest css/css-multicol/column-count-used-001.html
+reftest css/css-multicol/columnfill-auto-max-height-001.html
+reftest css/css-multicol/columnfill-auto-max-height-002.html
 reftest css/css-multicol/float-and-block.html
 reftest css/css-multicol/float-with-line-after-spanner.html
 reftest css/css-multicol/inline-block-and-column-span-all.html
@@ -13894,6 +13897,7 @@ reftest css/css-text/text-transform/text-transform-upperlower-040.html
 reftest css/css-text/text-transform/text-transform-upperlower-041.html
 reftest css/css-text/text-transform/text-transform-upperlower-042.html
 reftest css/css-text/text-transform/text-transform-upperlower-043.html
+reftest css/css-text/text-transform/text-transform-upperlower-044.html
 reftest css/css-text/text-transform/text-transform-upperlower-101.html
 reftest css/css-text/text-transform/text-transform-upperlower-102.html
 reftest css/css-text/text-transform/text-transform-upperlower-103.html
@@ -16039,6 +16043,7 @@ reftest css/css-writing-modes/percent-padding-vlr-007.xht
 reftest css/css-writing-modes/percent-padding-vrl-002.xht
 reftest css/css-writing-modes/percent-padding-vrl-004.xht
 reftest css/css-writing-modes/percent-padding-vrl-006.xht
+reftest css/css-writing-modes/percentage-padding-in-shrink-to-fit.html
 reftest css/css-writing-modes/relpos-inline-overflowing-block-vrl.html
 reftest css/css-writing-modes/row-progression-slr-023.xht
 reftest css/css-writing-modes/row-progression-slr-029.xht
@@ -18196,7 +18201,6 @@ reftest html/semantics/document-metadata/the-link-element/stylesheet-with-base.h
 reftest html/semantics/document-metadata/the-style-element/html_style_in_comment.xhtml
 reftest html/semantics/embedded-content/media-elements/track/track-element/track-cue-rendering-after-controls-added.html
 reftest html/semantics/embedded-content/media-elements/track/track-element/track-cue-rendering-after-controls-removed.html
-reftest html/semantics/embedded-content/media-elements/track/track-element/track-cue-rendering-empty-cue.html
 reftest html/semantics/embedded-content/media-elements/track/track-element/track-cue-rendering-line-doesnt-fit.html
 reftest html/semantics/embedded-content/media-elements/track/track-element/track-cue-rendering-transformed-video.html
 reftest html/semantics/embedded-content/media-elements/track/track-element/track-webvtt-non-snap-to-lines.html
@@ -20142,12 +20146,14 @@ testharness bluetooth/characteristic/readValue/service-is-removed.https.html
 testharness bluetooth/characteristic/service-same-from-2-characteristics.https.html
 testharness bluetooth/characteristic/service-same-object.https.html
 testharness bluetooth/characteristic/startNotifications/gen-characteristic-is-removed.https.html
+testharness bluetooth/characteristic/writeValue/buffer-is-detached.https.html
 testharness bluetooth/characteristic/writeValue/characteristic-is-removed.https.html
 testharness bluetooth/characteristic/writeValue/gen-characteristic-is-removed.https.html
 testharness bluetooth/characteristic/writeValue/service-is-removed.https.html
 testharness bluetooth/characteristic/writeValue/write-succeeds.https.html
 testharness bluetooth/descriptor/readValue/gen-service-is-removed.https.html
 testharness bluetooth/descriptor/readValue/read-succeeds.https.html
+testharness bluetooth/descriptor/writeValue/buffer-is-detached.https.html
 testharness bluetooth/descriptor/writeValue/gen-service-is-removed.https.html
 testharness bluetooth/device/gattserverdisconnected-event/disconnected.https.html
 testharness bluetooth/device/gattserverdisconnected-event/disconnected_gc.https.html
@@ -21045,17 +21051,24 @@ testharness css/css-backgrounds/background-size-001.html
 testharness css/css-backgrounds/border-image-repeat_repeatnegx_none_50px.html
 testharness css/css-backgrounds/border-image-slice-shorthand-reset.html
 testharness css/css-backgrounds/inheritance.html
+testharness css/css-backgrounds/parsing/background-attachment-computed.html
 testharness css/css-backgrounds/parsing/background-attachment-invalid.html
 testharness css/css-backgrounds/parsing/background-attachment-valid.html
+testharness css/css-backgrounds/parsing/background-clip-computed.html
 testharness css/css-backgrounds/parsing/background-clip-invalid.html
 testharness css/css-backgrounds/parsing/background-clip-valid.html
+testharness css/css-backgrounds/parsing/background-color-computed.html
 testharness css/css-backgrounds/parsing/background-color-invalid.html
 testharness css/css-backgrounds/parsing/background-color-valid.html
+testharness css/css-backgrounds/parsing/background-computed.html
+testharness css/css-backgrounds/parsing/background-image-computed.html
 testharness css/css-backgrounds/parsing/background-image-invalid.html
 testharness css/css-backgrounds/parsing/background-image-valid.html
 testharness css/css-backgrounds/parsing/background-invalid.html
+testharness css/css-backgrounds/parsing/background-origin-computed.html
 testharness css/css-backgrounds/parsing/background-origin-invalid.html
 testharness css/css-backgrounds/parsing/background-origin-valid.html
+testharness css/css-backgrounds/parsing/background-position-computed.html
 testharness css/css-backgrounds/parsing/background-position-invalid.html
 testharness css/css-backgrounds/parsing/background-position-valid.html
 testharness css/css-backgrounds/parsing/background-position-x-computed.html
@@ -21064,8 +21077,10 @@ testharness css/css-backgrounds/parsing/background-position-x-valid.html
 testharness css/css-backgrounds/parsing/background-position-y-computed.html
 testharness css/css-backgrounds/parsing/background-position-y-invalid.html
 testharness css/css-backgrounds/parsing/background-position-y-valid.html
+testharness css/css-backgrounds/parsing/background-repeat-computed.html
 testharness css/css-backgrounds/parsing/background-repeat-invalid.html
 testharness css/css-backgrounds/parsing/background-repeat-valid.html
+testharness css/css-backgrounds/parsing/background-size-computed.html
 testharness css/css-backgrounds/parsing/background-size-invalid.html
 testharness css/css-backgrounds/parsing/background-size-valid.html
 testharness css/css-backgrounds/parsing/background-valid.html
@@ -21726,6 +21741,15 @@ testharness css/css-logical/logicalprops-inline-size.html
 testharness css/css-logical/logicalprops-quirklength.html
 testharness css/css-logical/parsing/block-size-invalid.html
 testharness css/css-logical/parsing/block-size-valid.html
+testharness css/css-logical/parsing/border-block-color-computed.html
+testharness css/css-logical/parsing/border-block-color-invalid.html
+testharness css/css-logical/parsing/border-block-color-valid.html
+testharness css/css-logical/parsing/border-block-style-computed.html
+testharness css/css-logical/parsing/border-block-style-invalid.html
+testharness css/css-logical/parsing/border-block-style-valid.html
+testharness css/css-logical/parsing/border-block-width-computed.html
+testharness css/css-logical/parsing/border-block-width-invalid.html
+testharness css/css-logical/parsing/border-block-width-valid.html
 testharness css/css-logical/parsing/inline-size-invalid.html
 testharness css/css-logical/parsing/inline-size-valid.html
 testharness css/css-logical/parsing/inset-block-inline-computed.html
@@ -25532,6 +25556,7 @@ testharness html/semantics/embedded-content/media-elements/track/track-element/t
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-cue-negative-timestamp-events.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-cue-negative-timestamp.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-cue-order.html
+testharness html/semantics/embedded-content/media-elements/track/track-element/track-cue-rendering-empty-cue.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-cues-cuechange.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-cues-enter-exit.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-cues-missed.html
@@ -25564,6 +25589,7 @@ testharness html/semantics/embedded-content/media-elements/track/track-element/t
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-remove-track-inband.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-remove-track.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-selection-metadata.html
+testharness html/semantics/embedded-content/media-elements/track/track-element/track-selection-task-order.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-text-track-cue-list.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-texttracks.html
 testharness html/semantics/embedded-content/media-elements/track/track-element/track-webvtt-align-positioning.html
@@ -29405,7 +29431,6 @@ testharness payment-request/payment-request-shippingType-attribute.https.html
 testharness payment-request/payment-request-show-method.https.html
 testharness payment-request/payment-response/onpayerdetailchange-attribute.https.html
 testharness payment-request/rejects_if_not_active.https.html
-testharness payment-request/rejects_if_not_active_manual.https.html
 testharness performance-timeline/case-sensitivity.any.js
 testharness performance-timeline/get-invalid-entries.html
 testharness performance-timeline/idlharness.any.js
@@ -29511,6 +29536,7 @@ testharness portals/htmlportalelement-event-handler-content-attributes.html
 testharness portals/portal-activate-data.html
 testharness portals/portal-activate-event-constructor.html
 testharness portals/portal-activate-event.html
+testharness portals/portal-non-http-navigation.html
 testharness portals/portal-onload-event.html
 testharness portals/portals-activate-inside-iframe.html
 testharness portals/portals-activate-inside-portal.html
@@ -29605,6 +29631,7 @@ testharness referrer-policy/css-integration/svg/internal-stylesheet.html
 testharness referrer-policy/css-integration/svg/presentation-attribute.html
 testharness referrer-policy/css-integration/svg/processing-instruction.html
 testharness referrer-policy/generic/iframe-inheritance.html
+testharness referrer-policy/generic/iframe-src-change.html
 testharness referrer-policy/generic/link-rel-prefetch.html
 testharness referrer-policy/generic/multiple-headers-and-values.html
 testharness referrer-policy/generic/multiple-headers-combined.html
@@ -32267,10 +32294,10 @@ testharness wake-lock/wakelock-enabled-by-feature-policy-attribute-redirect-on-l
 testharness wake-lock/wakelock-enabled-by-feature-policy-attribute.https.sub.html
 testharness wake-lock/wakelock-enabled-by-feature-policy.https.sub.html
 testharness wake-lock/wakelock-enabled-on-self-origin-by-feature-policy.https.sub.html
-testharness wake-lock/wakelock-insecure-context.html
-testharness wake-lock/wakelock-state-is-global.https.html
+testharness wake-lock/wakelock-insecure-context.any.js
+testharness wake-lock/wakelock-screen-type-on-worker.https.worker.js
 testharness wake-lock/wakelock-supported-by-feature-policy.html
-testharness wake-lock/wakelock-type.https.html
+testharness wake-lock/wakelock-type.https.any.js
 testharness wasm/create_multiple_memory.worker.js
 testharness wasm/jsapi/constructor/compile.any.js
 testharness wasm/jsapi/constructor/instantiate-bad-imports.any.js
