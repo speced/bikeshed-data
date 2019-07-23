@@ -476,6 +476,7 @@
     "@media", 
     "@nest", 
     "@page", 
+    "@property", 
     "@region", 
     "@right-bottom", 
     "@right-middle", 
@@ -625,6 +626,7 @@
     "CSSPageRule", 
     "CSSPerspective", 
     "CSSPositionValue", 
+    "CSSPropertyRule", 
     "CSSPseudoElement", 
     "CSSRotate", 
     "CSSRule", 
@@ -1189,6 +1191,7 @@
     "PromiseRejectionEvent", 
     "PromiseRejectionEventInit", 
     "PromptResponseObject", 
+    "PropertyDefinition", 
     "PropertyDescriptor", 
     "PublicKeyCredential", 
     "PublicKeyCredentialCreationOptions", 
@@ -3089,7 +3092,7 @@
     "consume a simple block", 
     "consume a string token", 
     "consume a syntax component", 
-    "consume a syntax descriptor", 
+    "consume a syntax definition", 
     "consume a token", 
     "consume a url token", 
     "consume an at-rule", 
@@ -8576,7 +8579,7 @@
     "synchronous section", 
     "syntax component", 
     "syntax component name", 
-    "syntax descriptor", 
+    "syntax definition", 
     "syntax string", 
     "syntax_err", 
     "syntaxerror", 
@@ -9067,7 +9070,7 @@
     "union type", 
     "unique identifier (id)", 
     "universal selector", 
-    "universal syntax descriptor", 
+    "universal syntax definition", 
     "unix epoch", 
     "unknown", 
     "unknown -webkit- pseudo-elements", 
@@ -10243,6 +10246,11 @@
     "landscape", 
     "portrait"
   ], 
+  "@property": [
+    "inherits", 
+    "initial-value", 
+    "syntax"
+  ], 
   "@viewport": [
     "height", 
     "max-height", 
@@ -10936,7 +10944,9 @@
     "qualified rule", 
     "rad", 
     "rad(value)", 
+    "registerProperty(PropertyDefinition definition)", 
     "registerProperty(PropertyDescriptor descriptor)", 
+    "registerProperty(definition)", 
     "registerProperty(descriptor)", 
     "reification", 
     "reify", 
@@ -11055,6 +11065,9 @@
   ], 
   "CSS/rad(value)": [
     "value"
+  ], 
+  "CSS/registerProperty(definition)": [
+    "definition"
   ], 
   "CSS/registerProperty(descriptor)": [
     "descriptor"
@@ -11455,6 +11468,12 @@
     "x", 
     "y"
   ], 
+  "CSSPropertyRule": [
+    "inherits", 
+    "initialValue", 
+    "name", 
+    "syntax"
+  ], 
   "CSSPseudoElement": [
     "element", 
     "type"
@@ -11489,6 +11508,7 @@
     "MEDIA_RULE", 
     "NAMESPACE_RULE", 
     "PAGE_RULE", 
+    "PROPERTY_RULE", 
     "STYLE_RULE", 
     "SUPPORTS_RULE", 
     "VIEWPORT_RULE", 
@@ -16810,6 +16830,12 @@
   "PromiseRejectionEventInit": [
     "promise", 
     "reason"
+  ], 
+  "PropertyDefinition": [
+    "inherits", 
+    "initialValue", 
+    "name", 
+    "syntax"
   ], 
   "PropertyDescriptor": [
     "inherits", 
