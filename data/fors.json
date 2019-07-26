@@ -3151,7 +3151,6 @@
     "content-security-policy-report-only", 
     "content-type", 
     "content-type metadata", 
-    "contentEditable", 
     "contenteditable", 
     "contents", 
     "contents of an arraybuffer", 
@@ -4021,7 +4020,6 @@
     "ensurecspdoesnotblockstringcompilation(callerrealm, calleerealm, source)", 
     "entangle", 
     "enter", 
-    "enterKeyHint", 
     "enterkeyhint", 
     "entries", 
     "entry", 
@@ -5239,7 +5237,6 @@
     "input method editor", 
     "input progress value", 
     "input stream", 
-    "inputMode", 
     "inputmode", 
     "ins", 
     "insecure requests policy", 
@@ -8603,7 +8600,6 @@
     "tab", 
     "tab stop", 
     "tab-size", 
-    "tabIndex", 
     "tabindex", 
     "tabindex focus flag", 
     "table", 
@@ -11892,6 +11888,10 @@
   "CacheStorage/open(cacheName)": [
     "cacheName"
   ], 
+  "CanvasCompositing": [
+    "globalAlpha", 
+    "globalCompositeOperation"
+  ], 
   "CanvasDrawImage": [
     "drawImage", 
     "drawImage(image, dx, dy, dw, dh)", 
@@ -11908,7 +11908,12 @@
   "CanvasFillStrokeStyles": [
     "createLinearGradient(x0, y0, x1, y1)", 
     "createPattern(image, repetition)", 
-    "createRadialGradient(x0, y0, r0, x1, y1, r1)"
+    "createRadialGradient(x0, y0, r0, x1, y1, r1)", 
+    "fillStyle", 
+    "strokeStyle"
+  ], 
+  "CanvasFilters": [
+    "filter"
   ], 
   "CanvasGradient": [
     "addColorStop(offset, color)"
@@ -11917,6 +11922,10 @@
     "createImageData()", 
     "getImageData(sx, sy, sw, sh)", 
     "putImageData()"
+  ], 
+  "CanvasImageSmoothing": [
+    "imageSmoothingEnabled", 
+    "imageSmoothingQuality"
   ], 
   "CanvasPath": [
     "arc(x, y, radius, startAngle, endAngle)", 
@@ -11931,6 +11940,11 @@
   ], 
   "CanvasPathDrawingStyles": [
     "getLineDash()", 
+    "lineCap", 
+    "lineDashOffset", 
+    "lineJoin", 
+    "lineWidth", 
+    "miterLimit", 
     "setLineDash()"
   ], 
   "CanvasPattern": [
@@ -11950,6 +11964,12 @@
     "alpha", 
     "desynchronized"
   ], 
+  "CanvasShadowStyles": [
+    "shadowBlur", 
+    "shadowColor", 
+    "shadowOffsetX", 
+    "shadowOffsetY"
+  ], 
   "CanvasState": [
     "restore()", 
     "save()"
@@ -11958,6 +11978,12 @@
     "fillText()", 
     "measureText()", 
     "strokeText()"
+  ], 
+  "CanvasTextDrawingStyles": [
+    "direction", 
+    "font", 
+    "textAlign", 
+    "textBaseline"
   ], 
   "CanvasTransform": [
     "getTransform()", 
@@ -13797,6 +13823,9 @@
     "style"
   ], 
   "ElementContentEditable": [
+    "contentEditable", 
+    "enterKeyHint", 
+    "inputMode", 
     "isContentEditable"
   ], 
   "ElementCreationOptions": [
@@ -14897,8 +14926,17 @@
     "version"
   ], 
   "HTMLHyperlinkElementUtils": [
+    "hash", 
+    "host", 
+    "hostname", 
     "href", 
-    "origin"
+    "origin", 
+    "password", 
+    "pathname", 
+    "port", 
+    "protocol", 
+    "search", 
+    "username"
   ], 
   "HTMLIFrameElement": [
     "align", 
@@ -15147,7 +15185,8 @@
     "[[CryptographicNonce]]", 
     "dataset", 
     "focus()", 
-    "nonce"
+    "nonce", 
+    "tabIndex"
   ], 
   "HTMLOutputElement": [
     "defaultValue", 
@@ -15320,9 +15359,6 @@
     "type", 
     "value", 
     "wrap"
-  ], 
-  "HTMLTextAreaElement/setSelectionRange(start, end, direction)": [
-    "direction"
   ], 
   "HTMLTimeElement": [
     "dateTime"
@@ -19951,27 +19987,6 @@
     "marker", 
     "text"
   ], 
-  "context-2d": [
-    "fillStyle", 
-    "filter", 
-    "font", 
-    "globalAlpha", 
-    "globalCompositeOperation", 
-    "imageSmoothingEnabled", 
-    "imageSmoothingQuality", 
-    "lineCap", 
-    "lineDashOffset", 
-    "lineJoin", 
-    "lineWidth", 
-    "miterLimit", 
-    "shadowBlur", 
-    "shadowColor", 
-    "shadowOffsetX", 
-    "shadowOffsetY", 
-    "strokeStyle", 
-    "textAlign", 
-    "textBaseline"
-  ], 
   "context-2d-direction": [
     "inherit", 
     "ltr", 
@@ -21006,17 +21021,6 @@
   ], 
   "htmlsvg-global": [
     "nonce"
-  ], 
-  "hyperlink": [
-    "hash", 
-    "host", 
-    "hostname", 
-    "password", 
-    "pathname", 
-    "port", 
-    "protocol", 
-    "search", 
-    "username"
   ], 
   "hyphenate-character": [
     "<string>", 
