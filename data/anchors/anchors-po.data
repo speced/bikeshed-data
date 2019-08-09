@@ -134,16 +134,6 @@ https://html.spec.whatwg.org/multipage/browsing-the-web.html#popstateeventinit
 1
 1
 -
-PostMessageOptions
-dictionary
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/web-messaging.html#postmessageoptions
-1
-1
--
 point
 argument
 cssom-view-1
@@ -1742,32 +1732,10 @@ html
 html
 1
 snapshot
-https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-postmessage-options
-1
-1
-MessagePort
--
-postMessage(message)
-method
-html
-html
-1
-snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-broadcastchannel-postmessage
 1
 1
 BroadcastChannel
--
-postMessage(message)
-method
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/workers.html#dom-dedicatedworkerglobalscope-postmessage-options
-1
-1
-DedicatedWorkerGlobalScope
 -
 postMessage(message)
 method
@@ -1800,7 +1768,27 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage-options
 1
 1
-Window
+-
+postMessage(message, options)
+method
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-postmessage-options
+1
+1
+-
+postMessage(message, options)
+method
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/workers.html#dom-dedicatedworkerglobalscope-postmessage-options
+1
+1
+BroadcastChannel
 -
 postMessage(message, options)
 method
@@ -1811,7 +1799,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-worker-postmessage-options
 1
 1
-Worker
+BroadcastChannel
 -
 postMessage(message, options)
 method
@@ -1844,7 +1832,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage
 1
 1
-Window
 -
 postMessage(message, transfer)
 method
@@ -1855,7 +1842,6 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-postmessage
 1
 1
-MessagePort
 -
 postMessage(message, transfer)
 method
@@ -1866,7 +1852,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-dedicatedworkerglobalscope-postmessage
 1
 1
-DedicatedWorkerGlobalScope
+BroadcastChannel
 -
 postMessage(message, transfer)
 method
@@ -1877,7 +1863,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-worker-postmessage
 1
 1
-Worker
+BroadcastChannel
 -
 postMessage(message, transfer)
 method
