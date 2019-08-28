@@ -1,0 +1,19 @@
+on:
+  schedule:
+    - cron: '37 * * * *'
+  push:
+    branches:
+    - master
+name: update
+jobs:
+  crawl:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+    - name: setup python
+      uses: actions/setup-python@master
+      with:
+        python-version: 2.x
+    - name: update
+      run: python __init__.py
