@@ -17,3 +17,16 @@ However, if this project stops updating for some reason
 feel free to file an issue,
 as the updater process may have fallen over
 and be in need of manual restarting.
+
+## Running Manually
+
+Normally this project is updated automatically several times a day.
+However, if the update process falls over,
+it can be run manually.
+To do so, install [Bikeshed](https://github.com/tabatkins/bikeshed) normally,
+then clone this repository
+and run `python __init__.py` in the folder.
+
+This will invoke `git` on your system,
+so it'll only work if you have commit rights to this project;
+contact me if it's necessary for me to grant that to you.
