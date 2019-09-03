@@ -1,4 +1,4 @@
-sha: 9d89fa83724d2dd6a1cd82975934ff55b8770b42
+sha: adab23aed9f6f1d112a86a51d5aee6132fe813da
 manual 2dcontext/conformance-requirements/2d.coordinatespace-manual.html
 manual 2dcontext/drawing-paths-to-the-canvas/canvas_focus_drawFocusIfNeeded_AAPI_001-manual.html
 manual 2dcontext/drawing-text-to-the-canvas/2d.text.draw.fill.basic-manual.html
@@ -2425,7 +2425,6 @@ manual payment-request/updateWith-method-pmi-handling-manual.https.html
 manual payment-request/user-abort-algorithm-manual.https.html
 manual payment-request/user-accepts-payment-request-algo-manual.https.html
 manual pointerevents/compat/pointerevent_touch-action_two-finger_interaction-manual.html
-manual pointerevents/extension/pointerevent_coalesced_events_attributes-manual.html
 manual pointerevents/extension/pointerevent_getPredictedEvents_when_pointerlocked-manual.html
 manual pointerevents/extension/pointerevent_pointerrawupdate_in_pointerlock-manual.html
 manual pointerevents/extension/pointerevent_predicted_events_attributes-manual.html
@@ -12003,6 +12002,7 @@ reftest css/css-grid/abspos/positioned-grid-items-015.html
 reftest css/css-grid/abspos/positioned-grid-items-016.html
 reftest css/css-grid/abspos/positioned-grid-items-017.html
 reftest css/css-grid/abspos/positioned-grid-items-sizing-001.html
+reftest css/css-grid/alignment/grid-block-axis-alignment-auto-margins-008.html
 reftest css/css-grid/alignment/grid-content-distribution-001.html
 reftest css/css-grid/alignment/grid-content-distribution-002.html
 reftest css/css-grid/alignment/grid-content-distribution-003.html
@@ -12065,6 +12065,7 @@ reftest css/css-grid/alignment/grid-gutters-010.html
 reftest css/css-grid/alignment/grid-gutters-011.html
 reftest css/css-grid/alignment/grid-gutters-012.html
 reftest css/css-grid/alignment/grid-gutters-013.html
+reftest css/css-grid/alignment/grid-inline-axis-alignment-auto-margins-008.html
 reftest css/css-grid/alignment/grid-self-alignment-stretch-input-range.html
 reftest css/css-grid/alignment/self-baseline/grid-self-baseline-changes-grid-area-size-001.html
 reftest css/css-grid/alignment/self-baseline/grid-self-baseline-changes-grid-area-size-002.html
@@ -12798,6 +12799,7 @@ reftest css/css-multicol/multicol-width-negative-001.xht
 reftest css/css-multicol/multicol-width-small-001.xht
 reftest css/css-multicol/multicol-zero-height-001.xht
 reftest css/css-multicol/orthogonal-writing-mode-shrink-to-fit.html
+reftest css/css-multicol/with-custom-layout-on-same-element.https.html
 reftest css/css-multicol/zero-column-width-layout.html
 reftest css/css-namespaces/prefix-001.xml
 reftest css/css-namespaces/prefix-002.xml
@@ -13284,6 +13286,7 @@ reftest css/css-ruby/block-ruby-004.html
 reftest css/css-ruby/block-ruby-005.html
 reftest css/css-ruby/root-block-ruby.xhtml
 reftest css/css-ruby/root-ruby.xhtml
+reftest css/css-ruby/ruby-base-different-size.html
 reftest css/css-ruby/ruby-layout-internal-boxes.html
 reftest css/css-scoping/css-scoping-shadow-assigned-node-with-before-after.html
 reftest css/css-scoping/css-scoping-shadow-assigned-node-with-rules.html
@@ -21340,6 +21343,7 @@ testharness css/CSS2/floats/zero-space-between-floats-003.html
 testharness css/CSS2/floats/zero-space-between-floats-004.html
 testharness css/CSS2/linebox/inline-children-root-linebox-crash-001.html
 testharness css/CSS2/linebox/inline-negative-margin-001.html
+testharness css/CSS2/linebox/video-needs-layout-crash.html
 testharness css/CSS2/normal-flow/auto-margins-root-element.html
 testharness css/CSS2/normal-flow/containing-block-percent-margin-bottom.html
 testharness css/CSS2/normal-flow/containing-block-percent-margin-left.html
@@ -21501,6 +21505,7 @@ testharness css/css-animations/event-order.tentative.html
 testharness css/css-animations/historical.html
 testharness css/css-animations/idlharness.html
 testharness css/css-animations/inheritance.html
+testharness css/css-animations/keyframes-remove-documentElement-crash.html
 testharness css/css-animations/parsing/animation-delay-computed.html
 testharness css/css-animations/parsing/animation-delay-invalid.html
 testharness css/css-animations/parsing/animation-delay-valid.html
@@ -22057,6 +22062,13 @@ testharness css/css-grid/alignment/grid-alignment-style-changes-005.html
 testharness css/css-grid/alignment/grid-alignment-style-changes-006.html
 testharness css/css-grid/alignment/grid-alignment-style-changes-007.html
 testharness css/css-grid/alignment/grid-alignment-style-changes-008.html
+testharness css/css-grid/alignment/grid-block-axis-alignment-auto-margins-001.html
+testharness css/css-grid/alignment/grid-block-axis-alignment-auto-margins-002.html
+testharness css/css-grid/alignment/grid-block-axis-alignment-auto-margins-003.html
+testharness css/css-grid/alignment/grid-block-axis-alignment-auto-margins-004.html
+testharness css/css-grid/alignment/grid-block-axis-alignment-auto-margins-005.html
+testharness css/css-grid/alignment/grid-block-axis-alignment-auto-margins-006.html
+testharness css/css-grid/alignment/grid-block-axis-alignment-auto-margins-007.html
 testharness css/css-grid/alignment/grid-column-axis-alignment-positioned-items-001.html
 testharness css/css-grid/alignment/grid-column-axis-alignment-positioned-items-002.html
 testharness css/css-grid/alignment/grid-column-axis-alignment-positioned-items-003.html
@@ -22084,6 +22096,13 @@ testharness css/css-grid/alignment/grid-container-baseline-001.html
 testharness css/css-grid/alignment/grid-content-alignment-second-pass-001.html
 testharness css/css-grid/alignment/grid-content-alignment-second-pass-002.html
 testharness css/css-grid/alignment/grid-fit-content-tracks-dont-stretch-001.html
+testharness css/css-grid/alignment/grid-inline-axis-alignment-auto-margins-001.html
+testharness css/css-grid/alignment/grid-inline-axis-alignment-auto-margins-002.html
+testharness css/css-grid/alignment/grid-inline-axis-alignment-auto-margins-003.html
+testharness css/css-grid/alignment/grid-inline-axis-alignment-auto-margins-004.html
+testharness css/css-grid/alignment/grid-inline-axis-alignment-auto-margins-005.html
+testharness css/css-grid/alignment/grid-inline-axis-alignment-auto-margins-006.html
+testharness css/css-grid/alignment/grid-inline-axis-alignment-auto-margins-007.html
 testharness css/css-grid/alignment/grid-row-axis-alignment-positioned-items-001.html
 testharness css/css-grid/alignment/grid-row-axis-alignment-positioned-items-002.html
 testharness css/css-grid/alignment/grid-row-axis-alignment-positioned-items-003.html
@@ -22333,6 +22352,7 @@ testharness css/css-lists/list-and-margin-collapse-001.html
 testharness css/css-lists/list-and-margin-collapse-002.html
 testharness css/css-lists/list-and-writing-mode-001.html
 testharness css/css-lists/nested-list-with-list-style-type-none.html
+testharness css/css-lists/parsing/content-invalid.html
 testharness css/css-lists/parsing/counter-increment-invalid.html
 testharness css/css-lists/parsing/counter-increment-valid.html
 testharness css/css-lists/parsing/counter-reset-invalid.html
@@ -22484,6 +22504,7 @@ testharness css/css-multicol/parsing/column-width-invalid.html
 testharness css/css-multicol/parsing/column-width-valid.html
 testharness css/css-multicol/parsing/columns-invalid.html
 testharness css/css-multicol/parsing/columns-valid.html
+testharness css/css-multicol/with-custom-layout-on-same-element-crash.https.html
 testharness css/css-multicol/zero-column-width-computed-style.html
 testharness css/css-overflow/inheritance.html
 testharness css/css-overflow/logical-overflow-001.html
@@ -23263,6 +23284,7 @@ testharness css/css-text/inheritance.html
 testharness css/css-text/overflow-wrap/overflow-wrap-anywhere-span-002.html
 testharness css/css-text/overflow-wrap/overflow-wrap-break-word-long-crash.html
 testharness css/css-text/overflow-wrap/overflow-wrap-break-word-span-002.html
+testharness css/css-text/overflow-wrap/overflow-wrap-break-word-white-space-crash.html
 testharness css/css-text/overflow-wrap/word-wrap-alias.html
 testharness css/css-text/parsing/hanging-punctuation-invalid.html
 testharness css/css-text/parsing/hanging-punctuation-valid.html
@@ -26823,6 +26845,7 @@ testharness html/semantics/forms/autofocus/first-when-later.html
 testharness html/semantics/forms/autofocus/first.html
 testharness html/semantics/forms/autofocus/no-cross-origin-autofocus.html
 testharness html/semantics/forms/autofocus/not-on-first-task.html
+testharness html/semantics/forms/autofocus/supported-elements.html
 testharness html/semantics/forms/constraints/form-validation-checkValidity.html
 testharness html/semantics/forms/constraints/form-validation-reportValidity.html
 testharness html/semantics/forms/constraints/form-validation-validate.html
@@ -27854,6 +27877,7 @@ testharness infrastructure/assumptions/non-secure-context.any.js
 testharness infrastructure/browsers/firefox/prefs.html
 testharness infrastructure/expected-fail/failing-test.html
 testharness infrastructure/expected-fail/timeout.html
+testharness infrastructure/expected-fail/uncaught-exception.html
 testharness infrastructure/server/context.any.js
 testharness infrastructure/server/order-of-metas.any.js
 testharness infrastructure/server/order-of-metas.window.js
@@ -30499,6 +30523,7 @@ testharness picture-in-picture/request-picture-in-picture-twice.html
 testharness picture-in-picture/request-picture-in-picture.html
 testharness picture-in-picture/shadow-dom.html
 testharness pointerevents/extension/idlharness.window.js
+testharness pointerevents/extension/pointerevent_coalesced_events_attributes.html
 testharness pointerevents/extension/pointerevent_constructor.html
 testharness pointerevents/extension/pointerevent_getCoalescedEvents_when_pointerlocked.html
 testharness pointerevents/extension/pointerevent_pointerrawupdate.html
@@ -32413,6 +32438,7 @@ testharness screen-orientation/lock-unlock-check.html
 testharness screen-orientation/onchange-event-subframe.html
 testharness screen-orientation/onchange-event.html
 testharness screen-orientation/orientation-reading.html
+testharness screen_enumeration/requestDisplays.tentative.https.any.js
 testharness scroll-animations/constructor-no-document.html
 testharness scroll-animations/constructor.html
 testharness scroll-animations/current-time-nan.html
@@ -33304,6 +33330,7 @@ testharness svg/shapes/line-pathLength.svg
 testharness svg/shapes/rx-ry-not-inherited.svg
 testharness svg/shapes/scripted/disabled-shapes-not-hit.svg
 testharness svg/struct/UnknownElement/interface.svg
+testharness svg/struct/scripted/autofocus-attribute.svg
 testharness svg/styling/required-properties.svg
 testharness svg/svg-in-svg/svg-in-svg-circular-filter-reference-crash.html
 testharness svg/text/inheritance.svg
