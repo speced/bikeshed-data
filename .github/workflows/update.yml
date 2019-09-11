@@ -1,0 +1,33 @@
+on:
+  schedule:
+    - cron: '37 * * * *'
+name: update
+jobs:
+  update:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+      with:
+        fetch-depth: 1
+    - name: checkout bikeshed
+      uses: actions/checkout@master
+      with:
+        repository: tabatkins/bikeshed
+        ref: master
+        fetch-depth: 1
+        path: bikeshed
+    - name: setup python
+      uses: actions/setup-python@master
+      with:
+        python-version: 2.x
+    - name: install bikeshed
+      run: pip install --editable ../bikeshed
+    - name: git config
+      run: |
+        git config user.name "bikeshed-bot"
+        git config user.email "<>"
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git checkout master
+    - name: update
+      run: python __init__.py
