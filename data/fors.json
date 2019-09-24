@@ -3857,7 +3857,6 @@
     "descriptor_declaration", 
     "descriptors", 
     "deserialization steps", 
-    "deserializedport", 
     "designmode", 
     "desired size to fill a stream's internal queue", 
     "destination", 
@@ -6596,7 +6595,6 @@
     "node tree", 
     "nodeiterator pre-removing steps", 
     "nodelist", 
-    "nodereference", 
     "nodes", 
     "noembed", 
     "noframes", 
@@ -7151,6 +7149,7 @@
     "pending pause task", 
     "pending play task", 
     "pending playback rate", 
+    "pending processor construction data", 
     "pending request", 
     "pending scroll event targets", 
     "pending table character tokens", 
@@ -13153,7 +13152,10 @@
     "Comment(data)", 
     "substring data"
   ], 
-  "Comment/Comment(data)": [
+  "Comment/constructor()": [
+    "data"
+  ], 
+  "Comment/constructor(data)": [
     "data"
   ], 
   "CompositeOperation": [
@@ -13316,16 +13318,22 @@
     "whenDefined(name)"
   ], 
   "CustomEvent": [
-    "Constructor", 
     "CustomEvent(type)", 
     "CustomEvent(type, eventInitDict)", 
+    "constructor", 
+    "constructor(type)", 
+    "constructor(type, eventInitDict)", 
     "detail", 
     "initCustomEvent(type)", 
     "initCustomEvent(type, bubbles)", 
     "initCustomEvent(type, bubbles, cancelable)", 
     "initCustomEvent(type, bubbles, cancelable, detail)"
   ], 
-  "CustomEvent/CustomEvent(type, eventInitDict)": [
+  "CustomEvent/constructor(type)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "CustomEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -15139,7 +15147,6 @@
     "AT_TARGET", 
     "BUBBLING_PHASE", 
     "CAPTURING_PHASE", 
-    "Constructor", 
     "Event(type)", 
     "Event(type, eventInitDict)", 
     "NONE", 
@@ -15151,6 +15158,8 @@
     "composed flag", 
     "composedPath()", 
     "constructor", 
+    "constructor(type)", 
+    "constructor(type, eventInitDict)", 
     "currentTarget", 
     "defaultPrevented", 
     "dispatch flag", 
@@ -15178,7 +15187,11 @@
     "touch target list", 
     "type"
   ], 
-  "Event/Event(type, eventInitDict)": [
+  "Event/constructor(type)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "Event/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -15722,9 +15735,6 @@
     "set(name, blobValue, filename)", 
     "set(name, value)"
   ], 
-  "FormData/FormData(form)": [
-    "form"
-  ], 
   "FormData/append(name, blobValue)": [
     "blobValue", 
     "filename", 
@@ -15738,6 +15748,12 @@
   "FormData/append(name, value)": [
     "name", 
     "value"
+  ], 
+  "FormData/constructor()": [
+    "form"
+  ], 
+  "FormData/constructor(form)": [
+    "form"
   ], 
   "FormData/delete(name)": [
     "name"
@@ -16722,12 +16738,15 @@
     "remove privileged no-cors request headers", 
     "set(name, value)"
   ], 
-  "Headers/Headers(init)": [
-    "init"
-  ], 
   "Headers/append(name, value)": [
     "name", 
     "value"
+  ], 
+  "Headers/constructor()": [
+    "init"
+  ], 
+  "Headers/constructor(init)": [
+    "init"
   ], 
   "Headers/delete(name)": [
     "name"
@@ -17163,9 +17182,20 @@
     "\"versionchange\""
   ], 
   "IDBVersionChangeEvent": [
-    "eventInitDict", 
+    "IDBVersionChangeEvent(type)", 
+    "IDBVersionChangeEvent(type, eventInitDict)", 
+    "constructor", 
+    "constructor(type)", 
+    "constructor(type, eventInitDict)", 
     "newVersion", 
-    "oldVersion", 
+    "oldVersion"
+  ], 
+  "IDBVersionChangeEvent/constructor(type)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "IDBVersionChangeEvent/constructor(type, eventInitDict)": [
+    "eventInitDict", 
     "type"
   ], 
   "IDBVersionChangeEventInit": [
@@ -17855,7 +17885,7 @@
     "record queue", 
     "takeRecords()"
   ], 
-  "MutationObserver/MutationObserver(callback)": [
+  "MutationObserver/constructor(callback)": [
     "callback"
   ], 
   "MutationObserver/observe(target)": [
@@ -18565,14 +18595,20 @@
     "target"
   ], 
   "ProgressEvent": [
-    "Constructor", 
     "ProgressEvent(type)", 
     "ProgressEvent(type, eventInitDict)", 
+    "constructor", 
+    "constructor(type)", 
+    "constructor(type, eventInitDict)", 
     "lengthComputable", 
     "loaded", 
     "total"
   ], 
-  "ProgressEvent/ProgressEvent(type, eventInitDict)": [
+  "ProgressEvent/constructor(type)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "ProgressEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -18981,7 +19017,11 @@
     "signal", 
     "url"
   ], 
-  "Request/Request(input, init)": [
+  "Request/constructor(input)": [
+    "init", 
+    "input"
+  ], 
+  "Request/constructor(input, init)": [
     "init", 
     "input"
   ], 
@@ -19132,7 +19172,15 @@
     "type", 
     "url"
   ], 
-  "Response/Response(body, init)": [
+  "Response/constructor()": [
+    "body", 
+    "init"
+  ], 
+  "Response/constructor(body)": [
+    "body", 
+    "init"
+  ], 
+  "Response/constructor(body, init)": [
     "body", 
     "init"
   ], 
@@ -19702,7 +19750,7 @@
   "StaticRange": [
     "StaticRange(init)"
   ], 
-  "StaticRange/StaticRange(init)": [
+  "StaticRange/constructor(init)": [
     "init"
   ], 
   "StaticRangeInit": [
@@ -19846,7 +19894,10 @@
     "substring data", 
     "wholeText"
   ], 
-  "Text/Text(data)": [
+  "Text/constructor()": [
+    "data"
+  ], 
+  "Text/constructor(data)": [
     "data"
   ], 
   "Text/splitText(offset)": [
@@ -19862,7 +19913,15 @@
     "do not flush flag", 
     "stream"
   ], 
-  "TextDecoder/TextDecoder(label, options)": [
+  "TextDecoder/constructor()": [
+    "label", 
+    "options"
+  ], 
+  "TextDecoder/constructor(label)": [
+    "label", 
+    "options"
+  ], 
+  "TextDecoder/constructor(label, options)": [
     "label", 
     "options"
   ], 
@@ -19896,7 +19955,15 @@
     "decoder", 
     "stream"
   ], 
-  "TextDecoderStream/TextDecoderStream(label, options)": [
+  "TextDecoderStream/constructor()": [
+    "label", 
+    "options"
+  ], 
+  "TextDecoderStream/constructor(label)": [
+    "label", 
+    "options"
+  ], 
+  "TextDecoderStream/constructor(label, options)": [
     "label", 
     "options"
   ], 
@@ -20072,7 +20139,11 @@
     "url", 
     "username"
   ], 
-  "URL/URL(url, base)": [
+  "URL/constructor(url)": [
+    "base", 
+    "url"
+  ], 
+  "URL/constructor(url, base)": [
     "base", 
     "url"
   ], 
@@ -20097,12 +20168,15 @@
     "update steps", 
     "url object"
   ], 
-  "URLSearchParams/URLSearchParams(init)": [
-    "init"
-  ], 
   "URLSearchParams/append(name, value)": [
     "name", 
     "value"
+  ], 
+  "URLSearchParams/constructor()": [
+    "init"
+  ], 
+  "URLSearchParams/constructor(init)": [
+    "init"
   ], 
   "URLSearchParams/delete(name)": [
     "name"
@@ -21035,8 +21109,9 @@
     "\"text\""
   ], 
   "XPathEvaluator": [
-    "Constructor", 
-    "XPathEvaluator()"
+    "XPathEvaluator()", 
+    "constructor", 
+    "constructor()"
   ], 
   "XPathEvaluatorBase": [
     "createExpression", 
@@ -24174,6 +24249,10 @@
   "pattern": [
     "xlink:href", 
     "xlink:title"
+  ], 
+  "pending processor construction data": [
+    "node reference", 
+    "transferred port"
   ], 
   "pending tasks struct": [
     "counter"
