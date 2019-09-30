@@ -10651,6 +10651,10 @@
     "context", 
     "options"
   ], 
+  "AnalyserNode/constructor(context, options)": [
+    "context", 
+    "options"
+  ], 
   "AnalyserNode/getByteFrequencyData()": [
     "array"
   ], 
@@ -10860,6 +10864,9 @@
   "AudioBuffer/AudioBuffer(options)": [
     "options"
   ], 
+  "AudioBuffer/constructor(options)": [
+    "options"
+  ], 
   "AudioBuffer/copyFromChannel()": [
     "bufferOffset", 
     "channelNumber", 
@@ -10916,9 +10923,13 @@
     "sampleRate"
   ], 
   "AudioBufferSourceNode": [
+    "AudioBufferSourceNode(context)", 
     "AudioBufferSourceNode(context, options)", 
     "[[buffer set]]", 
     "buffer", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "detune", 
     "loop", 
     "loopEnd", 
@@ -10934,6 +10945,13 @@
     "options"
   ], 
   "AudioBufferSourceNode/AudioBufferSourceNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "AudioBufferSourceNode/constructor": [
+    "AudioBufferSourceNode(context, options)"
+  ], 
+  "AudioBufferSourceNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -10968,6 +10986,9 @@
     "contextOptions"
   ], 
   "AudioContext/AudioContext(contextOptions)": [
+    "contextOptions"
+  ], 
+  "AudioContext/constructor(contextOptions)": [
     "contextOptions"
   ], 
   "AudioContext/createMediaElementSource()": [
@@ -11188,11 +11209,17 @@
   "AudioProcessingEvent": [
     "AudioProcessingEvent(type, eventInitDict)", 
     "Constructor", 
+    "constructor", 
+    "constructor(type, eventInitDict)", 
     "inputBuffer", 
     "outputBuffer", 
     "playbackTime"
   ], 
   "AudioProcessingEvent/AudioProcessingEvent(type, eventInitDict)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "AudioProcessingEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -11255,6 +11282,11 @@
     "name", 
     "options"
   ], 
+  "AudioWorkletNode/constructor(context, name, options)": [
+    "context", 
+    "name", 
+    "options"
+  ], 
   "AudioWorkletNodeOptions": [
     "numberOfInputs", 
     "numberOfOutputs", 
@@ -11275,6 +11307,12 @@
     "options"
   ], 
   "AudioWorkletProcessor/AudioWorkletProcessor(options)": [
+    "options"
+  ], 
+  "AudioWorkletProcessor/constructor()": [
+    "options"
+  ], 
+  "AudioWorkletProcessor/constructor(options)": [
     "options"
   ], 
   "AudioWorkletProcessor/process(inputs, outputs, parameters))": [
@@ -11490,8 +11528,12 @@
     "returnValue"
   ], 
   "BiquadFilterNode": [
+    "BiquadFilterNode(context)", 
     "BiquadFilterNode(context, options)", 
     "Q", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "detune", 
     "frequency", 
     "gain", 
@@ -11503,6 +11545,10 @@
     "options"
   ], 
   "BiquadFilterNode/BiquadFilterNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "BiquadFilterNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -12994,7 +13040,11 @@
     "speakers"
   ], 
   "ChannelMergerNode": [
-    "ChannelMergerNode(context, options)"
+    "ChannelMergerNode(context)", 
+    "ChannelMergerNode(context, options)", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)"
   ], 
   "ChannelMergerNode/ChannelMergerNode()": [
     "context", 
@@ -13004,17 +13054,35 @@
     "context", 
     "options"
   ], 
+  "ChannelMergerNode/constructor": [
+    "ChannelMergerNode(context, options)"
+  ], 
+  "ChannelMergerNode/constructor(context, options)": [
+    "context", 
+    "options"
+  ], 
   "ChannelMergerOptions": [
     "numberOfInputs"
   ], 
   "ChannelSplitterNode": [
-    "ChannelSplitterNode(context, options)"
+    "ChannelSplitterNode(context)", 
+    "ChannelSplitterNode(context, options)", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)"
   ], 
   "ChannelSplitterNode/ChannelSplitterNode()": [
     "context", 
     "options"
   ], 
   "ChannelSplitterNode/ChannelSplitterNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "ChannelSplitterNode/constructor()": [
+    "ChannelSplitterNode(context, options)"
+  ], 
+  "ChannelSplitterNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -13192,7 +13260,11 @@
     "progress"
   ], 
   "ConstantSourceNode": [
+    "ConstantSourceNode(context)", 
     "ConstantSourceNode(context, options)", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "offset"
   ], 
   "ConstantSourceNode/ConstantSourceNode()": [
@@ -13200,6 +13272,13 @@
     "options"
   ], 
   "ConstantSourceNode/ConstantSourceNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "ConstantSourceNode/constructor()": [
+    "ConstantSourceNode(context, options)"
+  ], 
+  "ConstantSourceNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -13218,10 +13297,14 @@
     "toBox"
   ], 
   "ConvolverNode": [
+    "ConvolverNode(context)", 
     "ConvolverNode(context, options)", 
     "[[buffer set]]", 
     "buffer", 
     "buffer attribute", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "normalize"
   ], 
   "ConvolverNode/ConvolverNode()": [
@@ -13229,6 +13312,13 @@
     "options"
   ], 
   "ConvolverNode/ConvolverNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "ConvolverNode/constructor()": [
+    "ConvolverNode(context, options)"
+  ], 
+  "ConvolverNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -14470,7 +14560,11 @@
     "postMessage(message, transfer)"
   ], 
   "DelayNode": [
+    "DelayNode(context)", 
     "DelayNode(context, options)", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "delayTime"
   ], 
   "DelayNode/DelayNode()": [
@@ -14478,6 +14572,13 @@
     "options"
   ], 
   "DelayNode/DelayNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "DelayNode/constructor()": [
+    "DelayNode(context, options)"
+  ], 
+  "DelayNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -14839,11 +14940,15 @@
     "dataTransfer"
   ], 
   "DynamicsCompressorNode": [
+    "DynamicsCompressorNode(context)", 
     "DynamicsCompressorNode(context, options)", 
     "[[compressor gain]]", 
     "[[detector average]]", 
     "[[internal reduction]]", 
     "attack", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "knee", 
     "ratio", 
     "reduction", 
@@ -14855,6 +14960,13 @@
     "options"
   ], 
   "DynamicsCompressorNode/DynamicsCompressorNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "DynamicsCompressorNode/constructor()": [
+    "DynamicsCompressorNode(context, options)"
+  ], 
+  "DynamicsCompressorNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -15845,7 +15957,11 @@
     "arguments"
   ], 
   "GainNode": [
+    "GainNode(context)", 
     "GainNode(context, options)", 
+    "constructor", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "gain"
   ], 
   "GainNode/GainNode()": [
@@ -15853,6 +15969,13 @@
     "options"
   ], 
   "GainNode/GainNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "GainNode/constructor()": [
+    "GainNode(context, options)"
+  ], 
+  "GainNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -17219,6 +17342,8 @@
   ], 
   "IIRFilterNode": [
     "IIRFilterNode(context, options)", 
+    "constructor", 
+    "constructor(context, options)", 
     "getFrequencyResponse(frequencyHz, magResponse, phaseResponse)"
   ], 
   "IIRFilterNode/IIRFilterNode()": [
@@ -17226,6 +17351,13 @@
     "options"
   ], 
   "IIRFilterNode/IIRFilterNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "IIRFilterNode/constructor()": [
+    "IIRFilterNode(context, options)"
+  ], 
+  "IIRFilterNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -17650,6 +17782,10 @@
     "context", 
     "options"
   ], 
+  "MediaElementAudioSourceNode/constructor(context, options)": [
+    "context", 
+    "options"
+  ], 
   "MediaElementAudioSourceOptions": [
     "mediaElement"
   ], 
@@ -17730,6 +17866,10 @@
     "context", 
     "options"
   ], 
+  "MediaStreamAudioDestinationNode/constructor(context, options)": [
+    "context", 
+    "options"
+  ], 
   "MediaStreamAudioSourceNode": [
     "MediaStreamAudioSourceNode(context, options)", 
     "[[input track]]", 
@@ -17740,6 +17880,10 @@
     "options"
   ], 
   "MediaStreamAudioSourceNode/MediaStreamAudioSourceNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "MediaStreamAudioSourceNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -17760,6 +17904,10 @@
     "options"
   ], 
   "MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "MediaStreamTrackAudioSourceNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -18254,9 +18402,15 @@
   "OfflineAudioCompletionEvent": [
     "Constructor", 
     "OfflineAudioCompletionEvent(type, eventInitDict)", 
+    "constructor", 
+    "constructor(type, eventInitDict)", 
     "renderedBuffer"
   ], 
   "OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "OfflineAudioCompletionEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -18278,6 +18432,14 @@
     "contextOptions"
   ], 
   "OfflineAudioContext/OfflineAudioContext(numberOfChannels, length, sampleRate)": [
+    "length", 
+    "numberOfChannels", 
+    "sampleRate"
+  ], 
+  "OfflineAudioContext/constructor(contextOptions)": [
+    "contextOptions"
+  ], 
+  "OfflineAudioContext/constructor(numberOfChannels, length, sampleRate)": [
     "length", 
     "numberOfChannels", 
     "sampleRate"
@@ -18343,6 +18505,10 @@
     "options"
   ], 
   "OscillatorNode/OscillatorNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "OscillatorNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -18416,6 +18582,10 @@
     "options"
   ], 
   "PannerNode/PannerNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "PannerNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -18518,6 +18688,10 @@
     "options"
   ], 
   "PeriodicWave/PeriodicWave(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "PeriodicWave/constructor(context, options)": [
     "context", 
     "options"
   ], 
@@ -19783,6 +19957,10 @@
     "context", 
     "options"
   ], 
+  "StereoPannerNode/constructor(context, options)": [
+    "context", 
+    "options"
+  ], 
   "StereoPannerOptions": [
     "pan"
   ], 
@@ -20552,6 +20730,10 @@
     "options"
   ], 
   "WaveShaperNode/WaveShaperNode(context, options)": [
+    "context", 
+    "options"
+  ], 
+  "WaveShaperNode/constructor(context, options)": [
     "context", 
     "options"
   ], 
