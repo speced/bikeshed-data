@@ -11645,7 +11645,7 @@
     "txPower", 
     "uuids"
   ], 
-  "BluetoothAdvertisingEvent/BluetoothAdvertisingEvent(type, init)": [
+  "BluetoothAdvertisingEvent/constructor(type, init)": [
     "init", 
     "type"
   ], 
@@ -20396,36 +20396,39 @@
     "options"
   ], 
   "USBAlternateInterface": [
-    "Constructor", 
     "USBAlternateInterface(deviceInterface, alternateSetting)", 
     "alternateSetting", 
+    "constructor", 
+    "constructor(deviceInterface, alternateSetting)", 
     "endpoints", 
     "interfaceClass", 
     "interfaceName", 
     "interfaceProtocol", 
     "interfaceSubclass"
   ], 
-  "USBAlternateInterface/USBAlternateInterface(deviceInterface, alternateSetting)": [
+  "USBAlternateInterface/constructor(deviceInterface, alternateSetting)": [
     "alternateSetting", 
     "deviceInterface"
   ], 
   "USBConfiguration": [
-    "Constructor", 
     "USBConfiguration(device, configurationValue)", 
     "configurationName", 
     "configurationValue", 
+    "constructor", 
+    "constructor(device, configurationValue)", 
     "interfaces"
   ], 
-  "USBConfiguration/USBConfiguration(device, configurationValue)": [
+  "USBConfiguration/constructor(device, configurationValue)": [
     "configurationValue", 
     "device"
   ], 
   "USBConnectionEvent": [
-    "Constructor", 
     "USBConnectionEvent(type, eventInitDict)", 
+    "constructor", 
+    "constructor(type, eventInitDict)", 
     "device"
   ], 
-  "USBConnectionEvent/USBConnectionEvent(type, eventInitDict)": [
+  "USBConnectionEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -20549,14 +20552,15 @@
     "\"out\""
   ], 
   "USBEndpoint": [
-    "Constructor", 
     "USBEndpoint(alternate, endpointNumber, direction)", 
+    "constructor", 
+    "constructor(alternate, endpointNumber, direction)", 
     "direction", 
     "endpointNumber", 
     "packetSize", 
     "type"
   ], 
-  "USBEndpoint/USBEndpoint(alternate, endpointNumber, direction)": [
+  "USBEndpoint/constructor(alternate, endpointNumber, direction)": [
     "alternate", 
     "direction", 
     "endpointNumber"
@@ -20567,77 +20571,109 @@
     "\"isochronous\""
   ], 
   "USBInTransferResult": [
-    "Constructor", 
     "USBInTransferResult(status)", 
     "USBInTransferResult(status, data)", 
+    "constructor", 
+    "constructor(status)", 
+    "constructor(status, data)", 
     "data", 
     "status"
   ], 
-  "USBInTransferResult/USBInTransferResult(status, data)": [
+  "USBInTransferResult/constructor(status)": [
+    "data", 
+    "status"
+  ], 
+  "USBInTransferResult/constructor(status, data)": [
     "data", 
     "status"
   ], 
   "USBInterface": [
-    "Constructor", 
     "USBInterface(configuration, interfaceNumber)", 
     "alternate", 
     "alternates", 
     "claimed", 
+    "constructor", 
+    "constructor(configuration, interfaceNumber)", 
     "interfaceNumber"
   ], 
-  "USBInterface/USBInterface(configuration, interfaceNumber)": [
+  "USBInterface/constructor(configuration, interfaceNumber)": [
     "configuration", 
     "interfaceNumber"
   ], 
   "USBIsochronousInTransferPacket": [
-    "Constructor", 
     "USBIsochronousInTransferPacket(status)", 
     "USBIsochronousInTransferPacket(status, data)", 
+    "constructor", 
+    "constructor(status)", 
+    "constructor(status, data)", 
     "data", 
     "status"
   ], 
-  "USBIsochronousInTransferPacket/USBIsochronousInTransferPacket(status, data)": [
+  "USBIsochronousInTransferPacket/constructor(status)": [
+    "data", 
+    "status"
+  ], 
+  "USBIsochronousInTransferPacket/constructor(status, data)": [
     "data", 
     "status"
   ], 
   "USBIsochronousInTransferResult": [
-    "Constructor", 
     "USBIsochronousInTransferResult(packets)", 
     "USBIsochronousInTransferResult(packets, data)", 
+    "constructor", 
+    "constructor(packets)", 
+    "constructor(packets, data)", 
     "data", 
     "packets"
   ], 
-  "USBIsochronousInTransferResult/USBIsochronousInTransferResult(packets, data)": [
+  "USBIsochronousInTransferResult/constructor(packets)": [
+    "data", 
+    "packets"
+  ], 
+  "USBIsochronousInTransferResult/constructor(packets, data)": [
     "data", 
     "packets"
   ], 
   "USBIsochronousOutTransferPacket": [
-    "Constructor", 
     "USBIsochronousOutTransferPacket(status)", 
     "USBIsochronousOutTransferPacket(status, bytesWritten)", 
     "bytesWritten", 
+    "constructor", 
+    "constructor(status)", 
+    "constructor(status, bytesWritten)", 
     "status"
   ], 
-  "USBIsochronousOutTransferPacket/USBIsochronousOutTransferPacket(status, bytesWritten)": [
+  "USBIsochronousOutTransferPacket/constructor(status)": [
+    "bytesWritten", 
+    "status"
+  ], 
+  "USBIsochronousOutTransferPacket/constructor(status, bytesWritten)": [
     "bytesWritten", 
     "status"
   ], 
   "USBIsochronousOutTransferResult": [
-    "Constructor", 
     "USBIsochronousOutTransferResult(packets)", 
+    "constructor", 
+    "constructor(packets)", 
     "packets"
   ], 
-  "USBIsochronousOutTransferResult/USBIsochronousOutTransferResult(packets)": [
+  "USBIsochronousOutTransferResult/constructor(packets)": [
     "packets"
   ], 
   "USBOutTransferResult": [
-    "Constructor", 
     "USBOutTransferResult(status)", 
     "USBOutTransferResult(status, bytesWritten)", 
     "bytesWritten", 
+    "constructor", 
+    "constructor(status)", 
+    "constructor(status, bytesWritten)", 
     "status"
   ], 
-  "USBOutTransferResult/USBOutTransferResult(status, bytesWritten)": [
+  "USBOutTransferResult/constructor(status)": [
+    "bytesWritten", 
+    "status"
+  ], 
+  "USBOutTransferResult/constructor(status, bytesWritten)": [
     "bytesWritten", 
     "status"
   ], 
@@ -20685,12 +20721,18 @@
     "valueMissing"
   ], 
   "ValueEvent": [
-    "Constructor", 
     "ValueEvent(type)", 
     "ValueEvent(type, initDict)", 
+    "constructor", 
+    "constructor(type)", 
+    "constructor(type, initDict)", 
     "value"
   ], 
-  "ValueEvent/ValueEvent(type, initDict)": [
+  "ValueEvent/constructor(type)": [
+    "initDict", 
+    "type"
+  ], 
+  "ValueEvent/constructor(type, initDict)": [
     "initDict", 
     "type"
   ], 

@@ -3773,6 +3773,27 @@
       ], 
       "shortname": "appmanifest"
     }, 
+    "constructor(alternate, endpointNumber, direction)": {
+      "args": [
+        "alternate", 
+        "endpointNumber", 
+        "direction"
+      ], 
+      "for": [
+        "USBEndpoint"
+      ], 
+      "shortname": "webusb"
+    }, 
+    "constructor(configuration, interfaceNumber)": {
+      "args": [
+        "configuration", 
+        "interfaceNumber"
+      ], 
+      "for": [
+        "USBInterface"
+      ], 
+      "shortname": "webusb"
+    }, 
     "constructor(context)": {
       "args": [
         "context"
@@ -3809,6 +3830,80 @@
       ], 
       "shortname": "webaudio"
     }, 
+    "constructor(device, configurationValue)": {
+      "args": [
+        "device", 
+        "configurationValue"
+      ], 
+      "for": [
+        "USBConfiguration"
+      ], 
+      "shortname": "webusb"
+    }, 
+    "constructor(deviceInterface, alternateSetting)": {
+      "args": [
+        "deviceInterface", 
+        "alternateSetting"
+      ], 
+      "for": [
+        "USBAlternateInterface"
+      ], 
+      "shortname": "webusb"
+    }, 
+    "constructor(packets)": {
+      "args": [
+        "packets"
+      ], 
+      "for": [
+        "USBIsochronousInTransferResult", 
+        "USBIsochronousOutTransferResult"
+      ], 
+      "shortname": "webusb"
+    }, 
+    "constructor(packets, data)": {
+      "args": [
+        "packets", 
+        "data"
+      ], 
+      "for": [
+        "USBIsochronousInTransferResult"
+      ], 
+      "shortname": "webusb"
+    }, 
+    "constructor(status)": {
+      "args": [
+        "status"
+      ], 
+      "for": [
+        "USBInTransferResult", 
+        "USBIsochronousInTransferPacket", 
+        "USBIsochronousOutTransferPacket", 
+        "USBOutTransferResult"
+      ], 
+      "shortname": "webusb"
+    }, 
+    "constructor(status, bytesWritten)": {
+      "args": [
+        "status", 
+        "bytesWritten"
+      ], 
+      "for": [
+        "USBIsochronousOutTransferPacket", 
+        "USBOutTransferResult"
+      ], 
+      "shortname": "webusb"
+    }, 
+    "constructor(status, data)": {
+      "args": [
+        "status", 
+        "data"
+      ], 
+      "for": [
+        "USBInTransferResult", 
+        "USBIsochronousInTransferPacket"
+      ], 
+      "shortname": "webusb"
+    }, 
     "constructor(type)": {
       "args": [
         "type"
@@ -3817,7 +3912,8 @@
         "CustomEvent", 
         "Event", 
         "IDBVersionChangeEvent", 
-        "ProgressEvent"
+        "ProgressEvent", 
+        "ValueEvent"
       ], 
       "shortname": "dom"
     }, 
@@ -3842,9 +3938,20 @@
         "Event", 
         "IDBVersionChangeEvent", 
         "OfflineAudioCompletionEvent", 
-        "ProgressEvent"
+        "ProgressEvent", 
+        "USBConnectionEvent"
       ], 
       "shortname": "dom"
+    }, 
+    "constructor(type, initDict)": {
+      "args": [
+        "type", 
+        "initDict"
+      ], 
+      "for": [
+        "ValueEvent"
+      ], 
+      "shortname": "web-bluetooth"
     }
   }, 
   "contains()": {
