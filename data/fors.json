@@ -10686,6 +10686,7 @@
     "smoothingTimeConstant"
   ], 
   "Animatable": [
+    "animate(keyframes)", 
     "animate(keyframes, options)", 
     "getAnimations()", 
     "getAnimations(options)"
@@ -10699,6 +10700,8 @@
   ], 
   "Animation": [
     "Animation (effect, timeline)", 
+    "Animation()", 
+    "Animation(effect)", 
     "Animation(effect, timeline)", 
     "cancel()", 
     "commitStyles()", 
@@ -10766,6 +10769,7 @@
     "\"running\""
   ], 
   "AnimationPlaybackEvent": [
+    "AnimationPlaybackEvent(type)", 
     "AnimationPlaybackEvent(type, eventInitDict)", 
     "currentTime", 
     "timelineTime"
@@ -12311,7 +12315,9 @@
     "arg"
   ], 
   "CSSMathMax": [
+    "CSSMathMax()", 
     "CSSMathMax(...args)", 
+    "CSSMathMax(args)", 
     "operator", 
     "values"
   ], 
@@ -12319,7 +12325,9 @@
     "args"
   ], 
   "CSSMathMin": [
+    "CSSMathMin()", 
     "CSSMathMin(...args)", 
+    "CSSMathMin(args)", 
     "operator", 
     "values"
   ], 
@@ -12350,7 +12358,9 @@
     "sum"
   ], 
   "CSSMathProduct": [
+    "CSSMathProduct()", 
     "CSSMathProduct(...args)", 
+    "CSSMathProduct(args)", 
     "operator", 
     "values"
   ], 
@@ -12358,7 +12368,9 @@
     "args"
   ], 
   "CSSMathSum": [
+    "CSSMathSum()", 
     "CSSMathSum(...args)", 
+    "CSSMathSum(args)", 
     "operator", 
     "values"
   ], 
@@ -12369,6 +12381,7 @@
     "operator"
   ], 
   "CSSMatrixComponent": [
+    "CSSMatrixComponent(matrix)", 
     "CSSMatrixComponent(matrix, options)", 
     "matrix"
   ], 
@@ -12422,23 +12435,32 @@
   ], 
   "CSSNumericValue": [
     "add two types", 
+    "add()", 
     "add(...values)", 
     "base type", 
     "create a type", 
     "creating a type", 
+    "div()", 
     "div(...values)", 
+    "equals()", 
+    "equals(...value)", 
     "equals(...values)", 
     "invert a type", 
     "match", 
+    "max()", 
     "max(...values)", 
+    "min()", 
     "min(...values)", 
+    "mul()", 
     "mul(...values)", 
     "multiply two types", 
     "parse(cssText)", 
     "percent hint", 
+    "sub()", 
     "sub(...values)", 
     "sum value", 
     "to(unit)", 
+    "toSum()", 
     "toSum(...units)", 
     "type", 
     "type()"
@@ -12555,6 +12577,7 @@
     "index"
   ], 
   "CSSScale": [
+    "CSSScale(x, y)", 
     "CSSScale(x, y, z)", 
     "x", 
     "y", 
@@ -12655,7 +12678,11 @@
     "styleMap"
   ], 
   "CSSStyleSheet": [
+    "addRule()", 
+    "addRule(selector)", 
     "addRule(selector, block, optionalIndex)", 
+    "addRule(selector, style)", 
+    "addRule(selector, style, index)", 
     "alternate flag", 
     "css rules", 
     "cssRules", 
@@ -12773,6 +12800,7 @@
     "transitionValue"
   ], 
   "CSSTranslate": [
+    "CSSTranslate(x, y)", 
     "CSSTranslate(x, y, z)", 
     "x", 
     "y", 
@@ -12809,6 +12837,7 @@
     "val"
   ], 
   "CSSVariableReferenceValue": [
+    "CSSVariableReferenceValue(variable)", 
     "CSSVariableReferenceValue(variable, fallback)", 
     "fallback", 
     "variable"
@@ -13228,11 +13257,18 @@
     "data"
   ], 
   "CompositeOperation": [
+    "\"accumulate\"", 
+    "\"add\"", 
+    "\"replace\"", 
     "accumulate", 
     "add", 
     "replace"
   ], 
   "CompositeOperationOrAuto": [
+    "\"accumulate\"", 
+    "\"add\"", 
+    "\"auto\"", 
+    "\"replace\"", 
     "accumulate", 
     "add", 
     "auto", 
@@ -13529,16 +13565,20 @@
     "title"
   ], 
   "DOMMatrix": [
+    "DOMMatrix()", 
     "DOMMatrix(init)", 
     "a", 
     "b", 
     "c", 
+    "constructor()", 
+    "constructor(init)", 
     "d", 
     "e", 
     "f", 
     "fromFloat32Array(array32)", 
     "fromFloat64Array(array64)", 
     "fromMatrix()", 
+    "fromMatrix(other)", 
     "invertSelf()", 
     "m11", 
     "m12", 
@@ -13838,10 +13878,13 @@
     "m44"
   ], 
   "DOMMatrixReadOnly": [
+    "DOMMatrixReadOnly()", 
     "DOMMatrixReadOnly(init)", 
     "a", 
     "b", 
     "c", 
+    "constructor()", 
+    "constructor(init)", 
     "d", 
     "e", 
     "f", 
@@ -13850,6 +13893,7 @@
     "fromFloat32Array(array32)", 
     "fromFloat64Array(array64)", 
     "fromMatrix()", 
+    "fromMatrix(other)", 
     "inverse()", 
     "is2D", 
     "isIdentity", 
@@ -13903,6 +13947,7 @@
     "skewY()", 
     "skewY(sy)", 
     "stringification behavior", 
+    "stringificationbehavior", 
     "toFloat32Array()", 
     "toFloat64Array()", 
     "toJSON", 
@@ -14140,7 +14185,16 @@
     "tz"
   ], 
   "DOMPoint": [
+    "DOMPoint()", 
+    "DOMPoint(x)", 
+    "DOMPoint(x, y)", 
+    "DOMPoint(x, y, z)", 
     "DOMPoint(x, y, z, w)", 
+    "constructor()", 
+    "constructor(x)", 
+    "constructor(x, y)", 
+    "constructor(x, y, z)", 
+    "constructor(x, y, z, w)", 
     "fromPoint()", 
     "fromPoint(other)", 
     "w", 
@@ -14197,7 +14251,16 @@
     "z"
   ], 
   "DOMPointReadOnly": [
+    "DOMPointReadOnly()", 
+    "DOMPointReadOnly(x)", 
+    "DOMPointReadOnly(x, y)", 
+    "DOMPointReadOnly(x, y, z)", 
     "DOMPointReadOnly(x, y, z, w)", 
+    "constructor()", 
+    "constructor(x)", 
+    "constructor(x, y)", 
+    "constructor(x, y, z)", 
+    "constructor(x, y, z, w)", 
     "fromPoint()", 
     "fromPoint(other)", 
     "matrixTransform()", 
@@ -14258,9 +14321,20 @@
     "matrix"
   ], 
   "DOMQuad": [
+    "DOMQuad()", 
+    "DOMQuad(p1)", 
+    "DOMQuad(p1, p2)", 
+    "DOMQuad(p1, p2, p3)", 
     "DOMQuad(p1, p2, p3, p4)", 
+    "constructor()", 
+    "constructor(p1)", 
+    "constructor(p1, p2)", 
+    "constructor(p1, p2, p3)", 
+    "constructor(p1, p2, p3, p4)", 
     "fromQuad()", 
+    "fromQuad(other)", 
     "fromRect()", 
+    "fromRect(other)", 
     "getBounds()", 
     "p1", 
     "p2", 
@@ -14324,8 +14398,18 @@
     "p4"
   ], 
   "DOMRect": [
+    "DOMRect()", 
+    "DOMRect(x)", 
+    "DOMRect(x, y)", 
+    "DOMRect(x, y, width)", 
     "DOMRect(x, y, width, height)", 
+    "constructor()", 
+    "constructor(x)", 
+    "constructor(x, y)", 
+    "constructor(x, y, width)", 
+    "constructor(x, y, width, height)", 
     "fromRect()", 
+    "fromRect(other)", 
     "height", 
     "width", 
     "x", 
@@ -14387,9 +14471,19 @@
     "index"
   ], 
   "DOMRectReadOnly": [
+    "DOMRectReadOnly()", 
+    "DOMRectReadOnly(x)", 
+    "DOMRectReadOnly(x, y)", 
+    "DOMRectReadOnly(x, y, width)", 
     "DOMRectReadOnly(x, y, width, height)", 
     "bottom", 
+    "constructor()", 
+    "constructor(x)", 
+    "constructor(x, y)", 
+    "constructor(x, y, width)", 
+    "constructor(x, y, width, height)", 
     "fromRect()", 
+    "fromRect(other)", 
     "height", 
     "left", 
     "right", 
@@ -14918,6 +15012,7 @@
   ], 
   "DocumentTimeline": [
     "DocumentTimeline (options)", 
+    "DocumentTimeline()", 
     "DocumentTimeline(options)"
   ], 
   "DocumentTimeline/DocumentTimeline(options)": [
@@ -17610,6 +17705,7 @@
     "KeyframeEffect (source)", 
     "KeyframeEffect (target, keyframes, options)", 
     "KeyframeEffect(source)", 
+    "KeyframeEffect(target, keyframes)", 
     "KeyframeEffect(target, keyframes, options)", 
     "composite", 
     "getKeyframes()", 
@@ -19671,6 +19767,7 @@
     "behavior"
   ], 
   "ScrollTimeline": [
+    "ScrollTimeline()", 
     "ScrollTimeline(options)", 
     "endScrollOffset", 
     "fill", 
@@ -19997,12 +20094,14 @@
   ], 
   "StylePropertyMap": [
     "[[declarations]]", 
+    "append(property)", 
     "append(property, ...values)", 
     "clear()", 
     "delete(property)", 
     "get(property)", 
     "getAll(property)", 
     "has(property)", 
+    "set(property)", 
     "set(property, ...values)", 
     "size"
   ], 
@@ -20264,6 +20363,7 @@
     "terminate()"
   ], 
   "TransitionEvent": [
+    "TransitionEvent(type)", 
     "TransitionEvent(type, transitionEventInitDict)", 
     "elapsedTime", 
     "propertyName", 
