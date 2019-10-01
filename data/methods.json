@@ -4225,6 +4225,7 @@
     "constructor()": {
       "args": [], 
       "for": [
+        "Animation", 
         "BeforeInstallPromptEvent", 
         "DOMMatrix", 
         "DOMMatrixReadOnly", 
@@ -4233,6 +4234,7 @@
         "DOMQuad", 
         "DOMRect", 
         "DOMRectReadOnly", 
+        "DocumentTimeline", 
         "JsonLdProcessor", 
         "RdfDataset", 
         "RdfGraph", 
@@ -4361,6 +4363,25 @@
       ], 
       "shortname": "webusb"
     }, 
+    "constructor(effect)": {
+      "args": [
+        "effect"
+      ], 
+      "for": [
+        "Animation"
+      ], 
+      "shortname": "web-animations"
+    }, 
+    "constructor(effect, timeline)": {
+      "args": [
+        "effect", 
+        "timeline"
+      ], 
+      "for": [
+        "Animation"
+      ], 
+      "shortname": "web-animations"
+    }, 
     "constructor(init)": {
       "args": [
         "init"
@@ -4370,6 +4391,15 @@
         "DOMMatrixReadOnly"
       ], 
       "shortname": "geometry"
+    }, 
+    "constructor(options)": {
+      "args": [
+        "options"
+      ], 
+      "for": [
+        "DocumentTimeline"
+      ], 
+      "shortname": "web-animations"
     }, 
     "constructor(p1)": {
       "args": [
@@ -4433,6 +4463,15 @@
       ], 
       "shortname": "webusb"
     }, 
+    "constructor(source)": {
+      "args": [
+        "source"
+      ], 
+      "for": [
+        "KeyframeEffect"
+      ], 
+      "shortname": "web-animations"
+    }, 
     "constructor(status)": {
       "args": [
         "status"
@@ -4467,16 +4506,39 @@
       ], 
       "shortname": "webusb"
     }, 
+    "constructor(target, keyframes)": {
+      "args": [
+        "target", 
+        "keyframes"
+      ], 
+      "for": [
+        "KeyframeEffect"
+      ], 
+      "shortname": "web-animations"
+    }, 
+    "constructor(target, keyframes, options)": {
+      "args": [
+        "target", 
+        "keyframes", 
+        "options"
+      ], 
+      "for": [
+        "KeyframeEffect"
+      ], 
+      "shortname": "web-animations"
+    }, 
     "constructor(type)": {
       "args": [
         "type"
       ], 
       "for": [
         "AnimationEvent", 
+        "AnimationPlaybackEvent", 
         "CustomEvent", 
         "Event", 
         "IDBVersionChangeEvent", 
         "ProgressEvent", 
+        "TransitionEvent", 
         "ValueEvent"
       ], 
       "shortname": "css-animations"
@@ -4507,6 +4569,7 @@
         "eventInitDict"
       ], 
       "for": [
+        "AnimationPlaybackEvent", 
         "AudioProcessingEvent", 
         "CustomEvent", 
         "Event", 
@@ -4526,6 +4589,16 @@
         "ValueEvent"
       ], 
       "shortname": "web-bluetooth"
+    }, 
+    "constructor(type, transitionEventInitDict)": {
+      "args": [
+        "type", 
+        "transitionEventInitDict"
+      ], 
+      "for": [
+        "TransitionEvent"
+      ], 
+      "shortname": "css-transitions"
     }, 
     "constructor(x)": {
       "args": [
