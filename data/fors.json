@@ -15592,14 +15592,23 @@
     "ExtendableEvent(type, eventInitDict)", 
     "active", 
     "add lifetime promise", 
-    "eventInitDict", 
+    "constructor", 
+    "constructor(type)", 
+    "constructor(type, eventInitDict)", 
     "extend lifetime promises", 
     "pending promises count", 
     "timed out flag", 
-    "type", 
     "waitUntil(f)"
   ], 
   "ExtendableEvent/ExtendableEvent(type, eventInitDict)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "ExtendableEvent/constructor(type)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "ExtendableEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -15610,15 +15619,24 @@
     "Constructor", 
     "ExtendableMessageEvent(type)", 
     "ExtendableMessageEvent(type, eventInitDict)", 
+    "constructor", 
+    "constructor(type)", 
+    "constructor(type, eventInitDict)", 
     "data", 
-    "eventInitDict", 
     "lastEventId", 
     "origin", 
     "ports", 
-    "source", 
-    "type"
+    "source"
   ], 
   "ExtendableMessageEvent/ExtendableMessageEvent(type, eventInitDict)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "ExtendableMessageEvent/constructor(type)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "ExtendableMessageEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -15709,7 +15727,8 @@
     "Constructor", 
     "FetchEvent(type, eventInitDict)", 
     "clientId", 
-    "eventInitDict", 
+    "constructor", 
+    "constructor(type, eventInitDict)", 
     "potential response", 
     "preloadResponse", 
     "replacesClientId", 
@@ -15718,10 +15737,13 @@
     "respond-with error flag", 
     "respondWith(r)", 
     "resultingClientId", 
-    "type", 
     "wait to respond flag"
   ], 
   "FetchEvent/FetchEvent(type, eventInitDict)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "FetchEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
@@ -19974,6 +19996,7 @@
   ], 
   "ServiceWorker": [
     "onstatechange", 
+    "postMessage(message)", 
     "postMessage(message, options)", 
     "postMessage(message, transfer)", 
     "scriptURL", 
