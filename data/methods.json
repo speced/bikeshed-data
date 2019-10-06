@@ -1521,6 +1521,13 @@
     }
   }, 
   "Headers()": {
+    "Headers()": {
+      "args": [], 
+      "for": [
+        "Headers"
+      ], 
+      "shortname": "fetch"
+    }, 
     "Headers(init)": {
       "args": [
         "init"
@@ -2163,6 +2170,15 @@
     }
   }, 
   "Request()": {
+    "Request(input)": {
+      "args": [
+        "input"
+      ], 
+      "for": [
+        "Request"
+      ], 
+      "shortname": "fetch"
+    }, 
     "Request(input, init)": {
       "args": [
         "input", 
@@ -2218,6 +2234,22 @@
     }
   }, 
   "Response()": {
+    "Response()": {
+      "args": [], 
+      "for": [
+        "Response"
+      ], 
+      "shortname": "fetch"
+    }, 
+    "Response(body)": {
+      "args": [
+        "body"
+      ], 
+      "for": [
+        "Response"
+      ], 
+      "shortname": "fetch"
+    }, 
     "Response(body, init)": {
       "args": [
         "body", 
@@ -4235,11 +4267,13 @@
         "DOMRect", 
         "DOMRectReadOnly", 
         "DocumentTimeline", 
+        "Headers", 
         "JsonLdProcessor", 
         "RdfDataset", 
         "RdfGraph", 
         "RdfLiteral", 
         "RdfTriple", 
+        "Response", 
         "XPathEvaluator"
       ], 
       "shortname": "appmanifest"
@@ -4296,6 +4330,25 @@
         "WorkletAnimation"
       ], 
       "shortname": "css-animationworklet"
+    }, 
+    "constructor(body)": {
+      "args": [
+        "body"
+      ], 
+      "for": [
+        "Response"
+      ], 
+      "shortname": "fetch"
+    }, 
+    "constructor(body, init)": {
+      "args": [
+        "body", 
+        "init"
+      ], 
+      "for": [
+        "Response"
+      ], 
+      "shortname": "fetch"
     }, 
     "constructor(configuration, interfaceNumber)": {
       "args": [
@@ -4388,9 +4441,29 @@
       ], 
       "for": [
         "DOMMatrix", 
-        "DOMMatrixReadOnly"
+        "DOMMatrixReadOnly", 
+        "Headers"
       ], 
-      "shortname": "geometry"
+      "shortname": "fetch"
+    }, 
+    "constructor(input)": {
+      "args": [
+        "input"
+      ], 
+      "for": [
+        "Request"
+      ], 
+      "shortname": "fetch"
+    }, 
+    "constructor(input, init)": {
+      "args": [
+        "input", 
+        "init"
+      ], 
+      "for": [
+        "Request"
+      ], 
+      "shortname": "fetch"
     }, 
     "constructor(options)": {
       "args": [
@@ -10439,6 +10512,15 @@
     }
   }, 
   "redirect()": {
+    "redirect(url)": {
+      "args": [
+        "url"
+      ], 
+      "for": [
+        "Response"
+      ], 
+      "shortname": "fetch"
+    }, 
     "redirect(url, status)": {
       "args": [
         "url", 
