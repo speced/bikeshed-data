@@ -2841,6 +2841,126 @@
       "shortname": "dom"
     }
   }, 
+  "XRInputSourceEvent()": {
+    "XRInputSourceEvent(type, eventInitDict)": {
+      "args": [
+        "type", 
+        "eventInitDict"
+      ], 
+      "for": [
+        "XRInputSourceEvent"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "XRInputSourcesChangeEvent()": {
+    "XRInputSourcesChangeEvent(type, eventInitDict)": {
+      "args": [
+        "type", 
+        "eventInitDict"
+      ], 
+      "for": [
+        "XRInputSourcesChangeEvent"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "XRRay()": {
+    "XRRay(origin, direction)": {
+      "args": [
+        "origin", 
+        "direction"
+      ], 
+      "for": [
+        "XRRay"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "XRRay(transform)": {
+      "args": [
+        "transform"
+      ], 
+      "for": [
+        "XRRay"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "XRReferenceSpaceEvent()": {
+    "XRReferenceSpaceEvent(type, eventInitDict)": {
+      "args": [
+        "type", 
+        "eventInitDict"
+      ], 
+      "for": [
+        "XRReferenceSpaceEvent"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "XRRigidTransform()": {
+    "XRRigidTransform()": {
+      "args": [], 
+      "for": [
+        "XRRigidTransform"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "XRRigidTransform(position)": {
+      "args": [
+        "position"
+      ], 
+      "for": [
+        "XRRigidTransform"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "XRRigidTransform(position, orientation)": {
+      "args": [
+        "position", 
+        "orientation"
+      ], 
+      "for": [
+        "XRRigidTransform"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "XRSessionEvent()": {
+    "XRSessionEvent(type, eventInitDict)": {
+      "args": [
+        "type", 
+        "eventInitDict"
+      ], 
+      "for": [
+        "XRSessionEvent"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "XRWebGLLayer()": {
+    "XRWebGLLayer(session, context)": {
+      "args": [
+        "session", 
+        "context"
+      ], 
+      "for": [
+        "XRWebGLLayer"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "XRWebGLLayer(session, context, layerInit)": {
+      "args": [
+        "session", 
+        "context", 
+        "layerInit"
+      ], 
+      "for": [
+        "XRWebGLLayer"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
   "[[CollectFromCredentialStore]]()": {
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)": {
       "args": [
@@ -3727,6 +3847,17 @@
       "shortname": "webaudio"
     }
   }, 
+  "cancelAnimationFrame()": {
+    "cancelAnimationFrame(handle)": {
+      "args": [
+        "handle"
+      ], 
+      "for": [
+        "XRSession"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
   "cancelScheduledValues()": {
     "cancelScheduledValues(cancelTime)": {
       "args": [
@@ -4274,7 +4405,8 @@
         "RdfLiteral", 
         "RdfTriple", 
         "Response", 
-        "XPathEvaluator"
+        "XPathEvaluator", 
+        "XRRigidTransform"
       ], 
       "shortname": "appmanifest"
     }, 
@@ -4536,6 +4668,46 @@
       ], 
       "shortname": "webusb"
     }, 
+    "constructor(position)": {
+      "args": [
+        "position"
+      ], 
+      "for": [
+        "XRRigidTransform"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "constructor(position, orientation)": {
+      "args": [
+        "position", 
+        "orientation"
+      ], 
+      "for": [
+        "XRRigidTransform"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "constructor(session, context)": {
+      "args": [
+        "session", 
+        "context"
+      ], 
+      "for": [
+        "XRWebGLLayer"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "constructor(session, context, layerInit)": {
+      "args": [
+        "session", 
+        "context", 
+        "layerInit"
+      ], 
+      "for": [
+        "XRWebGLLayer"
+      ], 
+      "shortname": "webxr"
+    }, 
     "constructor(source)": {
       "args": [
         "source"
@@ -4654,7 +4826,11 @@
         "IDBVersionChangeEvent", 
         "OfflineAudioCompletionEvent", 
         "ProgressEvent", 
-        "USBConnectionEvent"
+        "USBConnectionEvent", 
+        "XRInputSourceEvent", 
+        "XRInputSourcesChangeEvent", 
+        "XRReferenceSpaceEvent", 
+        "XRSessionEvent"
       ], 
       "shortname": "dom"
     }, 
@@ -6417,6 +6593,13 @@
     }
   }, 
   "end()": {
+    "end()": {
+      "args": [], 
+      "for": [
+        "XRSession"
+      ], 
+      "shortname": "webxr"
+    }, 
     "end(index)": {
       "args": [
         "index"
@@ -7685,6 +7868,15 @@
       "shortname": "web-bluetooth"
     }
   }, 
+  "getInputSources()": {
+    "getInputSources()": {
+      "args": [], 
+      "for": [
+        "XRSession"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
   "getItem()": {
     "getItem(key)": {
       "args": [
@@ -7772,6 +7964,28 @@
       "shortname": "dom"
     }
   }, 
+  "getNativeFramebufferScaleFactor()": {
+    "getNativeFramebufferScaleFactor(session)": {
+      "args": [
+        "session"
+      ], 
+      "for": [
+        "XRWebGLLayer"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "getOffsetReferenceSpace()": {
+    "getOffsetReferenceSpace(originOffset)": {
+      "args": [
+        "originOffset"
+      ], 
+      "for": [
+        "XRReferenceSpace"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
   "getOutputTimestamp()": {
     "getOutputTimestamp()": {
       "args": [], 
@@ -7779,6 +7993,28 @@
         "AudioContext"
       ], 
       "shortname": "webaudio"
+    }
+  }, 
+  "getPose()": {
+    "getPose(sourceSpace, destinationSpace)": {
+      "args": [
+        "sourceSpace", 
+        "destinationSpace"
+      ], 
+      "for": [
+        "XRFrame"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "getPose(space, baseSpace)": {
+      "args": [
+        "space", 
+        "baseSpace"
+      ], 
+      "for": [
+        "XRFrame"
+      ], 
+      "shortname": "webxr"
     }
   }, 
   "getPrimaryService()": {
@@ -8037,6 +8273,28 @@
         "Node"
       ], 
       "shortname": "dom"
+    }
+  }, 
+  "getViewerPose()": {
+    "getViewerPose(referenceSpace)": {
+      "args": [
+        "referenceSpace"
+      ], 
+      "for": [
+        "XRFrame"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "getViewport()": {
+    "getViewport(view)": {
+      "args": [
+        "view"
+      ], 
+      "for": [
+        "XRWebGLLayer"
+      ], 
+      "shortname": "webxr"
     }
   }, 
   "getWriter()": {
@@ -8771,6 +9029,17 @@
       "shortname": "dom"
     }
   }, 
+  "isSessionSupported()": {
+    "isSessionSupported(mode)": {
+      "args": [
+        "mode"
+      ], 
+      "for": [
+        "XR"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
   "isUserVerifyingPlatformAuthenticatorAvailable()": {
     "isUserVerifyingPlatformAuthenticatorAvailable()": {
       "args": [], 
@@ -9061,6 +9330,15 @@
         "IDBKeyRange"
       ], 
       "shortname": "indexeddb"
+    }
+  }, 
+  "makeXRCompatible()": {
+    "makeXRCompatible()": {
+      "args": [], 
+      "for": [
+        "WebGLRenderingContextBase"
+      ], 
+      "shortname": "webxr"
     }
   }, 
   "match()": {
@@ -11045,7 +11323,8 @@
         "callback"
       ], 
       "for": [
-        "AnimationFrameProvider"
+        "AnimationFrameProvider", 
+        "XRSession"
       ], 
       "shortname": "html"
     }
@@ -11080,6 +11359,47 @@
       "shortname": "fullscreen"
     }
   }, 
+  "requestReferenceSpace()": {
+    "requestReferenceSpace(options)": {
+      "args": [
+        "options"
+      ], 
+      "for": [
+        "XRSession"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "requestReferenceSpace(type)": {
+      "args": [
+        "type"
+      ], 
+      "for": [
+        "XRSession"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
+  "requestSession()": {
+    "requestSession(mode)": {
+      "args": [
+        "mode"
+      ], 
+      "for": [
+        "XR"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "requestSession(mode, options)": {
+      "args": [
+        "mode", 
+        "options"
+      ], 
+      "for": [
+        "XR"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
   "requestSubmit()": {
     "requestSubmit()": {
       "args": [], 
@@ -11087,6 +11407,26 @@
         "HTMLFormElement"
       ], 
       "shortname": "html"
+    }
+  }, 
+  "requestViewportScaling()": {
+    "requestViewportScaling(scaleFactor)": {
+      "args": [
+        "scaleFactor"
+      ], 
+      "for": [
+        "XRWebGLLayer"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "requestViewportScaling(viewportScaleFactor)": {
+      "args": [
+        "viewportScaleFactor"
+      ], 
+      "for": [
+        "XRWebGLLayer"
+      ], 
+      "shortname": "webxr"
     }
   }, 
   "reset()": {
@@ -13094,6 +13434,17 @@
       "shortname": "dom"
     }
   }, 
+  "supportsSession()": {
+    "supportsSession(mode)": {
+      "args": [
+        "mode"
+      ], 
+      "for": [
+        "XR"
+      ], 
+      "shortname": "webxr"
+    }
+  }, 
   "surroundContents()": {
     "surroundContents(newParent)": {
       "args": [
@@ -13781,6 +14132,33 @@
         "Animation"
       ], 
       "shortname": "web-animations"
+    }
+  }, 
+  "updateRenderState()": {
+    "updateRenderState()": {
+      "args": [], 
+      "for": [
+        "XRSession"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "updateRenderState(newState)": {
+      "args": [
+        "newState"
+      ], 
+      "for": [
+        "XRSession"
+      ], 
+      "shortname": "webxr"
+    }, 
+    "updateRenderState(state)": {
+      "args": [
+        "state"
+      ], 
+      "for": [
+        "XRSession"
+      ], 
+      "shortname": "webxr"
     }
   }, 
   "updateTiming()": {
