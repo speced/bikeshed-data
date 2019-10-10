@@ -1363,18 +1363,18 @@ dfn
 webxr-1
 webxr
 1
-current
-https://immersive-web.github.io/webxr/#select-an-immersive-xr-device
+snapshot
+https://www.w3.org/TR/webxr/#select-an-immersive-xr-device
 
 1
 -
-select an xr device
+select an immersive xr device
 dfn
 webxr-1
 webxr
 1
-snapshot
-https://www.w3.org/TR/webxr/#select-an-xr-device
+current
+https://immersive-web.github.io/webxr/#select-an-immersive-xr-device
 
 1
 -
@@ -2277,6 +2277,16 @@ https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-send
 1
 1
 WebSocket
+-
+sensitive information
+dfn
+webxr-1
+webxr
+1
+snapshot
+https://www.w3.org/TR/webxr/#sensitive-information
+
+1
 -
 sensitive information
 dfn
@@ -4598,10 +4608,11 @@ webxr-1
 webxr
 1
 snapshot
-https://www.w3.org/TR/webxr/#dom-xrwebgllayer-getnativeframebufferscalefactor-session-session
+https://www.w3.org/TR/webxr/#dom-xrwebgllayer-constructor-session-context-layerinit-session
 1
 1
-XRWebGLLayer/getNativeFramebufferScaleFactor(session)
+XRWebGLLayer/constructor(session, context, layerInit)
+XRWebGLLayer/constructor(session, context)
 -
 session
 argument
@@ -4609,10 +4620,10 @@ webxr-1
 webxr
 1
 snapshot
-https://www.w3.org/TR/webxr/#dom-xrwebgllayer-xrwebgllayer-session-context-layerinit-session
+https://www.w3.org/TR/webxr/#dom-xrwebgllayer-getnativeframebufferscalefactor-session-session
 1
 1
-XRWebGLLayer/XRWebGLLayer(session, context, layerInit)
+XRWebGLLayer/getNativeFramebufferScaleFactor(session)
 -
 session
 dfn
@@ -4620,10 +4631,10 @@ webxr-1
 webxr
 1
 snapshot
-https://www.w3.org/TR/webxr/#xrpresentationcontext-session
+https://www.w3.org/TR/webxr/#xrwebgllayer-session
 
 1
-XRPresentationContext
+XRWebGLLayer
 -
 session
 attribute
@@ -4646,6 +4657,28 @@ https://www.w3.org/TR/webxr/#dom-xrsessioneventinit-session
 1
 1
 XRSessionEventInit
+-
+session
+attribute
+webxr-1
+webxr
+1
+snapshot
+https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-session
+1
+1
+XRInputSourcesChangeEvent
+-
+session
+dict-member
+webxr-1
+webxr
+1
+snapshot
+https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeeventinit-session
+1
+1
+XRInputSourcesChangeEventInit
 -
 session
 attribute
