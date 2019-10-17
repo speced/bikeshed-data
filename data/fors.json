@@ -822,7 +822,9 @@
     "DataTransferItemList", 
     "DataView", 
     "DeadFragmentInformation", 
+    "DecodeErrorCallback", 
     "DecodeErrorCallback()", 
+    "DecodeSuccessCallback", 
     "DecodeSuccessCallback()", 
     "DedicatedWorkerGlobalScope", 
     "Default", 
@@ -10754,7 +10756,10 @@
     "vendorId"
   ], 
   "AnalyserNode": [
+    "AnalyserNode(context)", 
     "AnalyserNode(context, options)", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "fftSize", 
     "frequencyBinCount", 
     "getByteFrequencyData(array)", 
@@ -11011,6 +11016,7 @@
     "[[length]]", 
     "[[number of channels]]", 
     "[[sample rate]]", 
+    "constructor(options)", 
     "copyFromChannel(destination, channelNumber)", 
     "copyFromChannel(destination, channelNumber, bufferOffset)", 
     "copyFromChannel(destination, channelNumber, startInChannel)", 
@@ -11134,10 +11140,13 @@
     "playbackRate"
   ], 
   "AudioContext": [
+    "AudioContext()", 
     "AudioContext(contextOptions)", 
     "[[suspended by user]]", 
     "baseLatency", 
     "close()", 
+    "constructor()", 
+    "constructor(contextOptions)", 
     "createMediaElementSource(mediaElement)", 
     "createMediaStreamDestination()", 
     "createMediaStreamSource(mediaStream)", 
@@ -11175,6 +11184,9 @@
     "mediaStreamTrack"
   ], 
   "AudioContextLatencyCategory": [
+    "\"balanced\"", 
+    "\"interactive\"", 
+    "\"playback\"", 
     "balanced", 
     "interactive", 
     "playback"
@@ -11184,6 +11196,9 @@
     "sampleRate"
   ], 
   "AudioContextState": [
+    "\"closed\"", 
+    "\"running\"", 
+    "\"suspended\"", 
     "closed", 
     "running", 
     "suspended"
@@ -11432,7 +11447,10 @@
     "processorCtor"
   ], 
   "AudioWorkletNode": [
+    "AudioWorkletNode(context, name)", 
     "AudioWorkletNode(context, name, options)", 
+    "constructor(context, name)", 
+    "constructor(context, name, options)", 
     "onprocessorerror", 
     "parameters", 
     "port"
@@ -11465,6 +11483,8 @@
     "[[callable process]]", 
     "[[node reference]]", 
     "active processing conditions", 
+    "constructor()", 
+    "constructor(options)", 
     "port", 
     "process(inputs, outputs, parameters)"
   ], 
@@ -11550,6 +11570,8 @@
     "usb"
   ], 
   "AutomationRate": [
+    "\"a-rate\"", 
+    "\"k-rate\"", 
     "a-rate", 
     "k-rate"
   ], 
@@ -11742,6 +11764,14 @@
     "type"
   ], 
   "BiquadFilterType": [
+    "\"allpass\"", 
+    "\"bandpass\"", 
+    "\"highpass\"", 
+    "\"highshelf\"", 
+    "\"lowpass\"", 
+    "\"lowshelf\"", 
+    "\"notch\"", 
+    "\"peaking\"", 
     "allpass", 
     "bandpass", 
     "highpass", 
@@ -13228,11 +13258,16 @@
     "offsetNode"
   ], 
   "ChannelCountMode": [
+    "\"clamped-max\"", 
+    "\"explicit\"", 
+    "\"max\"", 
     "clamped-max", 
     "explicit", 
     "max"
   ], 
   "ChannelInterpretation": [
+    "\"discrete\"", 
+    "\"speakers\"", 
     "discrete", 
     "speakers"
   ], 
@@ -13535,7 +13570,9 @@
     "size()"
   ], 
   "CrashReportBody": [
-    "reason"
+    "reason", 
+    "toJSON", 
+    "toJSON()"
   ], 
   "Credential": [
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)", 
@@ -14863,7 +14900,9 @@
     "linenumber", 
     "message", 
     "sourceFile", 
-    "sourcefile"
+    "sourcefile", 
+    "toJSON", 
+    "toJSON()"
   ], 
   "DevicePermissionDescriptor": [
     "deviceId"
@@ -14881,6 +14920,9 @@
     "standalone"
   ], 
   "DistanceModelType": [
+    "\"exponential\"", 
+    "\"inverse\"", 
+    "\"linear\"", 
     "exponential", 
     "inverse", 
     "linear"
@@ -17754,7 +17796,9 @@
     "linenumber", 
     "message", 
     "sourceFile", 
-    "sourcefile"
+    "sourcefile", 
+    "toJSON", 
+    "toJSON()"
   ], 
   "IntrinsicSizes": [
     "[[intrinsicSizesRequest]]", 
@@ -18100,6 +18144,7 @@
   ], 
   "MediaElementAudioSourceNode": [
     "MediaElementAudioSourceNode(context, options)", 
+    "constructor(context, options)", 
     "mediaElement"
   ], 
   "MediaElementAudioSourceNode/MediaElementAudioSourceNode()": [
@@ -18191,7 +18236,10 @@
     "removeTrack"
   ], 
   "MediaStreamAudioDestinationNode": [
+    "MediaStreamAudioDestinationNode(context)", 
     "MediaStreamAudioDestinationNode(context, options)", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "stream"
   ], 
   "MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode()": [
@@ -18209,6 +18257,7 @@
   "MediaStreamAudioSourceNode": [
     "MediaStreamAudioSourceNode(context, options)", 
     "[[input track]]", 
+    "constructor(context, options)", 
     "mediaStream"
   ], 
   "MediaStreamAudioSourceNode/MediaStreamAudioSourceNode()": [
@@ -18233,7 +18282,8 @@
     "readyState"
   ], 
   "MediaStreamTrackAudioSourceNode": [
-    "MediaStreamTrackAudioSourceNode(context, options)"
+    "MediaStreamTrackAudioSourceNode(context, options)", 
+    "constructor(context, options)"
   ], 
   "MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode()": [
     "context", 
@@ -18759,6 +18809,8 @@
     "OfflineAudioContext(numberOfChannels, length, sampleRate)", 
     "[[rendered buffer]]", 
     "[[rendering started]]", 
+    "constructor(contextOptions)", 
+    "constructor(numberOfChannels, length, sampleRate)", 
     "length", 
     "oncomplete", 
     "resume()", 
@@ -18831,7 +18883,10 @@
     "screen orientation values table"
   ], 
   "OscillatorNode": [
+    "OscillatorNode(context)", 
     "OscillatorNode(context, options)", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "detune", 
     "frequency", 
     "setPeriodicWave(periodicWave)", 
@@ -18862,6 +18917,11 @@
     "type"
   ], 
   "OscillatorType": [
+    "\"custom\"", 
+    "\"sawtooth\"", 
+    "\"sine\"", 
+    "\"square\"", 
+    "\"triangle\"", 
     "custom", 
     "sawtooth", 
     "sine", 
@@ -18869,6 +18929,9 @@
     "triangle"
   ], 
   "OverSampleType": [
+    "\"2x\"", 
+    "\"4x\"", 
+    "\"none\"", 
     "2x", 
     "4x", 
     "none"
@@ -18896,10 +18959,13 @@
     "paintCtor"
   ], 
   "PannerNode": [
+    "PannerNode(context)", 
     "PannerNode(context, options)", 
     "coneInnerAngle", 
     "coneOuterAngle", 
     "coneOuterGain", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "distanceModel", 
     "maxDistance", 
     "orientationX", 
@@ -18963,6 +19029,8 @@
     "rolloffFactor"
   ], 
   "PanningModelType": [
+    "\"HRTF\"", 
+    "\"equalpower\"", 
     "HRTF", 
     "equalpower"
   ], 
@@ -19027,11 +19095,14 @@
     "toJSON()"
   ], 
   "PeriodicWave": [
+    "PeriodicWave(context)", 
     "PeriodicWave(context, options)", 
     "[[associated context]]", 
     "[[imag]]", 
     "[[normalize]]", 
-    "[[real]]"
+    "[[real]]", 
+    "constructor(context)", 
+    "constructor(context, options)"
   ], 
   "PeriodicWave/PeriodicWave()": [
     "context", 
@@ -19496,8 +19567,14 @@
   ], 
   "Report": [
     "body", 
+    "toJSON", 
+    "toJSON()", 
     "type", 
     "url"
+  ], 
+  "ReportBody": [
+    "toJSON", 
+    "toJSON()"
   ], 
   "ReportTo": [
     "endpoints", 
@@ -20317,7 +20394,10 @@
     "startOffset"
   ], 
   "StereoPannerNode": [
+    "StereoPannerNode(context)", 
     "StereoPannerNode(context, options)", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "pan"
   ], 
   "StereoPannerNode/StereoPannerNode()": [
@@ -21166,8 +21246,11 @@
     "VideoTrackList.selectedIndex"
   ], 
   "WaveShaperNode": [
+    "WaveShaperNode(context)", 
     "WaveShaperNode(context, options)", 
     "[[curve set]]", 
+    "constructor(context)", 
+    "constructor(context, options)", 
     "curve", 
     "oversample"
   ], 

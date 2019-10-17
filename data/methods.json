@@ -18,6 +18,15 @@
     }
   }, 
   "AnalyserNode()": {
+    "AnalyserNode(context)": {
+      "args": [
+        "context"
+      ], 
+      "for": [
+        "AnalyserNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "AnalyserNode(context, options)": {
       "args": [
         "context", 
@@ -156,6 +165,13 @@
     }
   }, 
   "AudioContext()": {
+    "AudioContext()": {
+      "args": [], 
+      "for": [
+        "AudioContext"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "AudioContext(contextOptions)": {
       "args": [
         "contextOptions"
@@ -190,6 +206,16 @@
     }
   }, 
   "AudioWorkletNode()": {
+    "AudioWorkletNode(context, name)": {
+      "args": [
+        "context", 
+        "name"
+      ], 
+      "for": [
+        "AudioWorkletNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "AudioWorkletNode(context, name, options)": {
       "args": [
         "context", 
@@ -1822,6 +1848,15 @@
     }
   }, 
   "MediaStreamAudioDestinationNode()": {
+    "MediaStreamAudioDestinationNode(context)": {
+      "args": [
+        "context"
+      ], 
+      "for": [
+        "MediaStreamAudioDestinationNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "MediaStreamAudioDestinationNode(context, options)": {
       "args": [
         "context", 
@@ -1959,6 +1994,15 @@
     }
   }, 
   "OscillatorNode()": {
+    "OscillatorNode(context)": {
+      "args": [
+        "context"
+      ], 
+      "for": [
+        "OscillatorNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "OscillatorNode(context, options)": {
       "args": [
         "context", 
@@ -1971,6 +2015,15 @@
     }
   }, 
   "PannerNode()": {
+    "PannerNode(context)": {
+      "args": [
+        "context"
+      ], 
+      "for": [
+        "PannerNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "PannerNode(context, options)": {
       "args": [
         "context", 
@@ -2021,6 +2074,15 @@
     }
   }, 
   "PeriodicWave()": {
+    "PeriodicWave(context)": {
+      "args": [
+        "context"
+      ], 
+      "for": [
+        "PeriodicWave"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "PeriodicWave(context, options)": {
       "args": [
         "context", 
@@ -2385,6 +2447,15 @@
     }
   }, 
   "StereoPannerNode()": {
+    "StereoPannerNode(context)": {
+      "args": [
+        "context"
+      ], 
+      "for": [
+        "StereoPannerNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "StereoPannerNode(context, options)": {
       "args": [
         "context", 
@@ -2790,6 +2861,15 @@
     }
   }, 
   "WaveShaperNode()": {
+    "WaveShaperNode(context)": {
+      "args": [
+        "context"
+      ], 
+      "for": [
+        "WaveShaperNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "WaveShaperNode(context, options)": {
       "args": [
         "context", 
@@ -4452,6 +4532,8 @@
       "args": [], 
       "for": [
         "Animation", 
+        "AudioContext", 
+        "AudioWorkletProcessor", 
         "BeforeInstallPromptEvent", 
         "DOMException", 
         "DOMMatrix", 
@@ -4584,24 +4666,7 @@
         "context"
       ], 
       "for": [
-        "AudioBufferSourceNode", 
-        "BiquadFilterNode", 
-        "ChannelMergerNode", 
-        "ChannelSplitterNode", 
-        "ConstantSourceNode", 
-        "ConvolverNode", 
-        "DelayNode", 
-        "DynamicsCompressorNode", 
-        "GainNode"
-      ], 
-      "shortname": "webaudio"
-    }, 
-    "constructor(context, options)": {
-      "args": [
-        "context", 
-        "options"
-      ], 
-      "for": [
+        "AnalyserNode", 
         "AudioBufferSourceNode", 
         "BiquadFilterNode", 
         "ChannelMergerNode", 
@@ -4611,7 +4676,72 @@
         "DelayNode", 
         "DynamicsCompressorNode", 
         "GainNode", 
-        "IIRFilterNode"
+        "MediaStreamAudioDestinationNode", 
+        "OscillatorNode", 
+        "PannerNode", 
+        "PeriodicWave", 
+        "StereoPannerNode", 
+        "WaveShaperNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
+    "constructor(context, name)": {
+      "args": [
+        "context", 
+        "name"
+      ], 
+      "for": [
+        "AudioWorkletNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
+    "constructor(context, name, options)": {
+      "args": [
+        "context", 
+        "name", 
+        "options"
+      ], 
+      "for": [
+        "AudioWorkletNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
+    "constructor(context, options)": {
+      "args": [
+        "context", 
+        "options"
+      ], 
+      "for": [
+        "AnalyserNode", 
+        "AudioBufferSourceNode", 
+        "BiquadFilterNode", 
+        "ChannelMergerNode", 
+        "ChannelSplitterNode", 
+        "ConstantSourceNode", 
+        "ConvolverNode", 
+        "DelayNode", 
+        "DynamicsCompressorNode", 
+        "GainNode", 
+        "IIRFilterNode", 
+        "MediaElementAudioSourceNode", 
+        "MediaStreamAudioDestinationNode", 
+        "MediaStreamAudioSourceNode", 
+        "MediaStreamTrackAudioSourceNode", 
+        "OscillatorNode", 
+        "PannerNode", 
+        "PeriodicWave", 
+        "StereoPannerNode", 
+        "WaveShaperNode"
+      ], 
+      "shortname": "webaudio"
+    }, 
+    "constructor(contextOptions)": {
+      "args": [
+        "contextOptions"
+      ], 
+      "for": [
+        "AudioContext", 
+        "OfflineAudioContext"
       ], 
       "shortname": "webaudio"
     }, 
@@ -4724,11 +4854,24 @@
       ], 
       "shortname": "webidl"
     }, 
+    "constructor(numberOfChannels, length, sampleRate)": {
+      "args": [
+        "numberOfChannels", 
+        "length", 
+        "sampleRate"
+      ], 
+      "for": [
+        "OfflineAudioContext"
+      ], 
+      "shortname": "webaudio"
+    }, 
     "constructor(options)": {
       "args": [
         "options"
       ], 
       "for": [
+        "AudioBuffer", 
+        "AudioWorkletProcessor", 
         "DocumentTimeline"
       ], 
       "shortname": "web-animations"
@@ -13755,11 +13898,16 @@
     "toJSON()": {
       "args": [], 
       "for": [
+        "CrashReportBody", 
         "DOMMatrixReadOnly", 
         "DOMPointReadOnly", 
         "DOMQuad", 
         "DOMRectReadOnly", 
+        "DeprecationReportBody", 
+        "InterventionReportBody", 
         "Performance", 
+        "Report", 
+        "ReportBody", 
         "URL"
       ], 
       "shortname": "geometry"
