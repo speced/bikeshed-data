@@ -2180,15 +2180,6 @@
       "shortname": "json-ld11-api"
     }
   }, 
-  "RdfTriple.constructor()": {
-    "RdfTriple.constructor()": {
-      "args": [], 
-      "for": [
-        "RdfTriple"
-      ], 
-      "shortname": "json-ld11-api"
-    }
-  }, 
   "ReadableByteStreamController()": {
     "ReadableByteStreamController()": {
       "args": [], 
@@ -2629,6 +2620,15 @@
     }
   }, 
   "URL()": {
+    "URL(url)": {
+      "args": [
+        "url"
+      ], 
+      "for": [
+        "URL"
+      ], 
+      "shortname": "url"
+    }, 
     "URL(url, base)": {
       "args": [
         "url", 
@@ -2641,6 +2641,13 @@
     }
   }, 
   "URLSearchParams()": {
+    "URLSearchParams()": {
+      "args": [], 
+      "for": [
+        "URLSearchParams"
+      ], 
+      "shortname": "url"
+    }, 
     "URLSearchParams(init)": {
       "args": [
         "init"
@@ -4549,12 +4556,12 @@
         "RdfDataset", 
         "RdfGraph", 
         "RdfLiteral", 
-        "RdfTriple", 
         "Response", 
         "TextDecoder", 
         "TextDecoderStream", 
         "TextEncoder", 
         "TextEncoderStream", 
+        "URLSearchParams", 
         "XPathEvaluator", 
         "XRRigidTransform"
       ], 
@@ -4791,7 +4798,8 @@
       "for": [
         "DOMMatrix", 
         "DOMMatrixReadOnly", 
-        "Headers"
+        "Headers", 
+        "URLSearchParams"
       ], 
       "shortname": "fetch"
     }, 
@@ -5123,6 +5131,25 @@
         "TransitionEvent"
       ], 
       "shortname": "css-transitions"
+    }, 
+    "constructor(url)": {
+      "args": [
+        "url"
+      ], 
+      "for": [
+        "URL"
+      ], 
+      "shortname": "url"
+    }, 
+    "constructor(url, base)": {
+      "args": [
+        "url", 
+        "base"
+      ], 
+      "for": [
+        "URL"
+      ], 
+      "shortname": "url"
     }, 
     "constructor(x)": {
       "args": [
@@ -7439,15 +7466,6 @@
         "DOMRectReadOnly"
       ], 
       "shortname": "geometry"
-    }
-  }, 
-  "fromrdf()": {
-    "fromrdf()": {
-      "args": [], 
-      "for": [
-        "JsonLdProcessor"
-      ], 
-      "shortname": "json-ld11-api"
     }
   }, 
   "get()": {
@@ -13999,15 +14017,6 @@
         "mediadeviceinfo"
       ], 
       "shortname": "mediacapture-streams"
-    }
-  }, 
-  "tordf()": {
-    "tordf()": {
-      "args": [], 
-      "for": [
-        "JsonLdProcessor"
-      ], 
-      "shortname": "json-ld11-api"
     }
   }, 
   "trace()": {
