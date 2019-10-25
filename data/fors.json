@@ -6935,7 +6935,6 @@
     "organization-title", 
     "organization-unit", 
     "orientationlocktype", 
-    "orientationtype", 
     "origin", 
     "origin time", 
     "origin-clean", 
@@ -8148,7 +8147,6 @@
     "screen", 
     "screen concept", 
     "screen reader", 
-    "screenorientation", 
     "script", 
     "script data double escape end state", 
     "script data double escape start state", 
@@ -13586,6 +13584,9 @@
     "id"
   ], 
   "CredentialMediationRequirement": [
+    "\"optional\"", 
+    "\"required\"", 
+    "\"silent\"", 
     "optional", 
     "required", 
     "silent"
@@ -15843,11 +15844,15 @@
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)", 
     "[[Create]](origin, options, sameOriginWithAncestors)", 
     "[[Store]](credential, sameOriginWithAncestors)", 
+    "constructor(data)", 
     "federated", 
     "protocol", 
     "provider"
   ], 
   "FederatedCredential/FederatedCredential(data)": [
+    "data"
+  ], 
+  "FederatedCredential/constructor(data)": [
     "data"
   ], 
   "FederatedCredentialInit": [
@@ -18845,6 +18850,7 @@
     "iterations"
   ], 
   "OrientationLockType": [
+    "OrientationLockType", 
     "any", 
     "landscape", 
     "landscape-primary", 
@@ -18857,6 +18863,7 @@
     "pre-lock conditions"
   ], 
   "OrientationType": [
+    "OrientationType", 
     "current orientation angle", 
     "current orientation type", 
     "landscape-primary", 
@@ -19047,12 +19054,20 @@
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)", 
     "[[Create]](origin, options, sameOriginWithAncestors)", 
     "[[Store]](credential, sameOriginWithAncestors)", 
+    "constructor(data)", 
+    "constructor(form)", 
     "password"
   ], 
   "PasswordCredential/PasswordCredential(data)": [
     "data"
   ], 
   "PasswordCredential/PasswordCredential(form)": [
+    "form"
+  ], 
+  "PasswordCredential/constructor(data)": [
+    "data"
+  ], 
+  "PasswordCredential/constructor(form)": [
     "form"
   ], 
   "PasswordCredentialData": [
@@ -20039,9 +20054,11 @@
     "height", 
     "orientation", 
     "pixelDepth", 
+    "screen", 
     "width"
   ], 
   "ScreenOrientation": [
+    "ScreenOrientation", 
     "ScreenOrientation.angle", 
     "ScreenOrientation.lock", 
     "ScreenOrientation.lock()", 
