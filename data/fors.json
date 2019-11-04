@@ -10712,6 +10712,7 @@
   "AbortController": [
     "AbortController()", 
     "abort()", 
+    "constructor()", 
     "signal"
   ], 
   "AbortSignal": [
@@ -13358,11 +13359,14 @@
     "normal"
   ], 
   "ChildNode": [
+    "after()", 
     "after(...nodes)", 
     "after(nodes)", 
+    "before()", 
     "before(...nodes)", 
     "before(nodes)", 
     "remove()", 
+    "replaceWith()", 
     "replaceWith(...nodes)", 
     "replaceWith(nodes)"
   ], 
@@ -13442,7 +13446,10 @@
     "type"
   ], 
   "Comment": [
+    "Comment()", 
     "Comment(data)", 
+    "constructor()", 
+    "constructor(data)", 
     "substring data"
   ], 
   "Comment/constructor()": [
@@ -14758,11 +14765,13 @@
   ], 
   "DOMTokenList": [
     "add()", 
+    "add(...tokens)", 
     "add(tokens)", 
     "contains(token)", 
     "item(index)", 
     "length", 
     "remove()", 
+    "remove(...tokens)", 
     "remove(tokens)", 
     "replace(token, newToken)", 
     "serialize steps", 
@@ -14941,6 +14950,7 @@
     "charset", 
     "clear()", 
     "compatMode", 
+    "constructor()", 
     "content type", 
     "contentType", 
     "cookie", 
@@ -14950,16 +14960,20 @@
     "createComment(data)", 
     "createDocumentFragment()", 
     "createElement(localName)", 
+    "createElement(localName, options)", 
     "createElementNS(namespace, qualifiedName)", 
+    "createElementNS(namespace, qualifiedName, options)", 
     "createEntityReference()", 
     "createEvent(interface)", 
     "createNodeIterator(root)", 
     "createNodeIterator(root, whatToShow)", 
+    "createNodeIterator(root, whatToShow, filter)", 
     "createProcessingInstruction(target, data)", 
     "createRange()", 
     "createTextNode(data)", 
     "createTreeWalker(root)", 
     "createTreeWalker(root, whatToShow)", 
+    "createTreeWalker(root, whatToShow, filter)", 
     "csp list", 
     "currentScript", 
     "defaultView", 
@@ -14991,6 +15005,7 @@
     "images", 
     "implementation", 
     "importNode(node)", 
+    "importNode(node, deep)", 
     "inputEncoding", 
     "lastModified", 
     "layoutNow", 
@@ -15211,6 +15226,7 @@
   ], 
   "DocumentFragment": [
     "DocumentFragment()", 
+    "constructor()", 
     "host"
   ], 
   "DocumentOrShadowRoot": [
@@ -15707,6 +15723,7 @@
     "activation behavior", 
     "addEventListener(type, callback)", 
     "addEventListener(type, callback, options)", 
+    "constructor()", 
     "dispatchEvent(event)", 
     "event listener list", 
     "legacy-canceled-activation behavior", 
@@ -18425,6 +18442,7 @@
   "MutationObserver": [
     "MutationObserver(callback)", 
     "callback", 
+    "constructor(callback)", 
     "disconnect()", 
     "node list", 
     "observe(target)", 
@@ -19039,12 +19057,14 @@
     "equalpower"
   ], 
   "ParentNode": [
+    "append()", 
     "append(...nodes)", 
     "append(nodes)", 
     "childElementCount", 
     "children", 
     "firstElementChild", 
     "lastElementChild", 
+    "prepend()", 
     "prepend(...nodes)", 
     "prepend(nodes)", 
     "querySelector(selectors)", 
@@ -19343,6 +19363,7 @@
     "commonAncestorContainer", 
     "compareBoundaryPoints(how, sourceRange)", 
     "comparePoint(node, offset)", 
+    "constructor()", 
     "deleteContents()", 
     "detach()", 
     "extractContents()", 
@@ -19361,7 +19382,7 @@
     "setStart(node, offset)", 
     "setStartAfter(node)", 
     "setStartBefore(node)", 
-    "stringification behavior", 
+    "stringificationbehavior", 
     "surroundContents(newParent)"
   ], 
   "Range/collapse()": [
@@ -20384,7 +20405,8 @@
     "inside"
   ], 
   "StaticRange": [
-    "StaticRange(init)"
+    "StaticRange(init)", 
+    "constructor(init)"
   ], 
   "StaticRange/constructor(init)": [
     "init"
@@ -20535,7 +20557,10 @@
     "ResolveExport"
   ], 
   "Text": [
+    "Text()", 
     "Text(data)", 
+    "constructor()", 
+    "constructor(data)", 
     "isElementContentWhitespace", 
     "replaceWholeText()", 
     "splitText(offset)", 

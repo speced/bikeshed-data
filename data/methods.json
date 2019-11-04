@@ -807,6 +807,13 @@
     }
   }, 
   "Comment()": {
+    "Comment()": {
+      "args": [], 
+      "for": [
+        "Comment"
+      ], 
+      "shortname": "dom"
+    }, 
     "Comment(data)": {
       "args": [
         "data"
@@ -2471,6 +2478,13 @@
     }
   }, 
   "Text()": {
+    "Text()": {
+      "args": [], 
+      "for": [
+        "Text"
+      ], 
+      "shortname": "dom"
+    }, 
     "Text(data)": {
       "args": [
         "data"
@@ -3223,6 +3237,15 @@
       ], 
       "shortname": "css-typed-om"
     }, 
+    "add(...tokens)": {
+      "args": [
+        "...tokens"
+      ], 
+      "for": [
+        "DOMTokenList"
+      ], 
+      "shortname": "dom"
+    }, 
     "add(...values)": {
       "args": [
         "...values"
@@ -3506,6 +3529,13 @@
     }
   }, 
   "after()": {
+    "after()": {
+      "args": [], 
+      "for": [
+        "ChildNode"
+      ], 
+      "shortname": "dom"
+    }, 
     "after(...nodes)": {
       "args": [
         "...nodes"
@@ -3588,6 +3618,13 @@
     }
   }, 
   "append()": {
+    "append()": {
+      "args": [], 
+      "for": [
+        "ParentNode"
+      ], 
+      "shortname": "dom"
+    }, 
     "append(...nodes)": {
       "args": [
         "...nodes"
@@ -3845,6 +3882,13 @@
     }
   }, 
   "before()": {
+    "before()": {
+      "args": [], 
+      "for": [
+        "ChildNode"
+      ], 
+      "shortname": "dom"
+    }, 
     "before(...nodes)": {
       "args": [
         "...nodes"
@@ -4539,10 +4583,12 @@
     "constructor()": {
       "args": [], 
       "for": [
+        "AbortController", 
         "Animation", 
         "AudioContext", 
         "AudioWorkletProcessor", 
         "BeforeInstallPromptEvent", 
+        "Comment", 
         "DOMException", 
         "DOMMatrix", 
         "DOMMatrixReadOnly", 
@@ -4551,13 +4597,18 @@
         "DOMQuad", 
         "DOMRect", 
         "DOMRectReadOnly", 
+        "Document", 
+        "DocumentFragment", 
         "DocumentTimeline", 
+        "EventTarget", 
         "Headers", 
         "JsonLdProcessor", 
+        "Range", 
         "RdfDataset", 
         "RdfGraph", 
         "RdfLiteral", 
         "Response", 
+        "Text", 
         "TextDecoder", 
         "TextDecoderStream", 
         "TextEncoder", 
@@ -4645,9 +4696,10 @@
         "callback"
       ], 
       "for": [
+        "MutationObserver", 
         "ReportingObserver"
       ], 
-      "shortname": "reporting"
+      "shortname": "dom"
     }, 
     "constructor(callback, options)": {
       "args": [
@@ -4758,8 +4810,10 @@
         "data"
       ], 
       "for": [
+        "Comment", 
         "FederatedCredential", 
-        "PasswordCredential"
+        "PasswordCredential", 
+        "Text"
       ], 
       "shortname": "credential-management"
     }, 
@@ -4819,9 +4873,10 @@
         "DOMMatrix", 
         "DOMMatrixReadOnly", 
         "Headers", 
+        "StaticRange", 
         "URLSearchParams"
       ], 
-      "shortname": "fetch"
+      "shortname": "dom"
     }, 
     "constructor(input)": {
       "args": [
@@ -5800,6 +5855,16 @@
         "Document"
       ], 
       "shortname": "dom"
+    }, 
+    "createElement(localName, options)": {
+      "args": [
+        "localName", 
+        "options"
+      ], 
+      "for": [
+        "Document"
+      ], 
+      "shortname": "dom"
     }
   }, 
   "createElementNS()": {
@@ -5812,6 +5877,17 @@
       "args": [
         "namespace", 
         "qualifiedName"
+      ], 
+      "for": [
+        "Document"
+      ], 
+      "shortname": "dom"
+    }, 
+    "createElementNS(namespace, qualifiedName, options)": {
+      "args": [
+        "namespace", 
+        "qualifiedName", 
+        "options"
       ], 
       "for": [
         "Document"
@@ -6023,6 +6099,17 @@
       "args": [
         "root", 
         "whatToShow"
+      ], 
+      "for": [
+        "Document"
+      ], 
+      "shortname": "dom"
+    }, 
+    "createNodeIterator(root, whatToShow, filter)": {
+      "args": [
+        "root", 
+        "whatToShow", 
+        "filter"
       ], 
       "for": [
         "Document"
@@ -6252,6 +6339,17 @@
       "args": [
         "root", 
         "whatToShow"
+      ], 
+      "for": [
+        "Document"
+      ], 
+      "shortname": "dom"
+    }, 
+    "createTreeWalker(root, whatToShow, filter)": {
+      "args": [
+        "root", 
+        "whatToShow", 
+        "filter"
       ], 
       "for": [
         "Document"
@@ -8935,6 +9033,16 @@
         "Document"
       ], 
       "shortname": "dom"
+    }, 
+    "importNode(node, deep)": {
+      "args": [
+        "node", 
+        "deep"
+      ], 
+      "for": [
+        "Document"
+      ], 
+      "shortname": "dom"
     }
   }, 
   "importScripts()": {
@@ -10682,6 +10790,13 @@
     }
   }, 
   "prepend()": {
+    "prepend()": {
+      "args": [], 
+      "for": [
+        "ParentNode"
+      ], 
+      "shortname": "dom"
+    }, 
     "prepend(...nodes)": {
       "args": [
         "...nodes"
@@ -11320,6 +11435,15 @@
       ], 
       "shortname": "dom"
     }, 
+    "remove(...tokens)": {
+      "args": [
+        "...tokens"
+      ], 
+      "for": [
+        "DOMTokenList"
+      ], 
+      "shortname": "dom"
+    }, 
     "remove(index)": {
       "args": [
         "index"
@@ -11587,6 +11711,13 @@
     }
   }, 
   "replaceWith()": {
+    "replaceWith()": {
+      "args": [], 
+      "for": [
+        "ChildNode"
+      ], 
+      "shortname": "dom"
+    }, 
     "replaceWith(...nodes)": {
       "args": [
         "...nodes"
