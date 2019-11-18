@@ -1,4 +1,4 @@
-sha: bddf074a0c1b8d10c5d6e4b3d151e1612178f7a2
+sha: 36362f1a77faf18831c8b596e7b5bee081629817
 manual 2dcontext/conformance-requirements/2d.coordinatespace-manual.html
 manual 2dcontext/drawing-paths-to-the-canvas/canvas_focus_drawFocusIfNeeded_AAPI_001-manual.html
 manual 2dcontext/drawing-text-to-the-canvas/2d.text.draw.fill.basic-manual.html
@@ -2417,9 +2417,6 @@ manual payment-request/show-method-postmessage-manual.https.html
 manual payment-request/updateWith-method-pmi-handling-manual.https.html
 manual payment-request/user-abort-algorithm-manual.https.html
 manual payment-request/user-accepts-payment-request-algo-manual.https.html
-manual pointerevents/extension/pointerevent_getPredictedEvents_when_pointerlocked-manual.html
-manual pointerevents/extension/pointerevent_pointerrawupdate_in_pointerlock-manual.html
-manual pointerevents/extension/pointerevent_predicted_events_attributes-manual.html
 manual pointerevents/html/pointerevent_drag_interaction-manual.html
 manual pointerevents/pointerevent_capture_suppressing_mouse-manual.html
 manual pointerevents/pointerevent_element_haspointercapture_release_pending_capture-manual.html
@@ -2427,11 +2424,14 @@ manual pointerevents/pointerevent_fractional_coordinates-manual.html
 manual pointerevents/pointerevent_multiple_primary_pointers_boundary_events-manual.html
 manual pointerevents/pointerevent_pointerId_scope-manual.html
 manual pointerevents/pointerevent_pointerleave_pen-manual.html
+manual pointerevents/pointerevent_predicted_events_attributes-manual.html
 manual pointerevents/pointerevent_releasepointercapture_release_right_after_capture-manual.html
 manual pointerevents/pointerevent_setpointercapture_override_pending_capture_element-manual.html
 manual pointerevents/pointerevent_setpointercapture_to_same_element_twice-manual.html
 manual pointerevents/pointerevent_touch-action-mouse-manual.html
 manual pointerevents/pointerevent_touch-action-rotated-divs_touch-manual.html
+manual pointerevents/pointerlock/pointerevent_getPredictedEvents_when_pointerlocked-manual.html
+manual pointerevents/pointerlock/pointerevent_pointerrawupdate_in_pointerlock-manual.html
 manual pointerlock/movementX_Y_no-jumps-manual.html
 manual pointerlock/pointerlock_basic-manual.html
 manual pointerlock/pointerlock_fullscreen-manual.html
@@ -30933,17 +30933,8 @@ testharness picture-in-picture/picture-in-picture-window.html
 testharness picture-in-picture/request-picture-in-picture-twice.html
 testharness picture-in-picture/request-picture-in-picture.html
 testharness picture-in-picture/shadow-dom.html
+testharness pointerevents/compat/pointerevent_touch-action-verification.html
 testharness pointerevents/compat/pointerevent_touch-action_two-finger_interaction.html
-testharness pointerevents/extension/idlharness.window.js
-testharness pointerevents/extension/pointerevent_coalesced_events_attributes.html
-testharness pointerevents/extension/pointerevent_constructor.html
-testharness pointerevents/extension/pointerevent_getCoalescedEvents_when_pointerlocked.html
-testharness pointerevents/extension/pointerevent_pointerrawupdate.html
-testharness pointerevents/extension/pointerevent_touch-action-pan-down-css_touch.html
-testharness pointerevents/extension/pointerevent_touch-action-pan-left-css_touch.html
-testharness pointerevents/extension/pointerevent_touch-action-pan-right-css_touch.html
-testharness pointerevents/extension/pointerevent_touch-action-pan-up-css_touch.html
-testharness pointerevents/extension/pointerevent_touch-action-verification.html
 testharness pointerevents/idlharness.window.js
 testharness pointerevents/inheritance.html
 testharness pointerevents/parsing/touch-action-computed.html
@@ -30956,6 +30947,7 @@ testharness pointerevents/pointerevent_boundary_events_in_capturing.html
 testharness pointerevents/pointerevent_capture_mouse.html
 testharness pointerevents/pointerevent_change-touch-action-onpointerdown_touch.html
 testharness pointerevents/pointerevent_click_during_capture.html
+testharness pointerevents/pointerevent_coalesced_events_attributes.html
 testharness pointerevents/pointerevent_constructor.html
 testharness pointerevents/pointerevent_disabled_form_control.html
 testharness pointerevents/pointerevent_element_haspointercapture.html
@@ -30976,6 +30968,7 @@ testharness pointerevents/pointerevent_pointermove_on_chorded_mouse_button.html
 testharness pointerevents/pointerevent_pointerout_after_pointercancel_touch.html
 testharness pointerevents/pointerevent_pointerout_pen.html
 testharness pointerevents/pointerevent_pointerout_received_once.html
+testharness pointerevents/pointerevent_pointerrawupdate.html
 testharness pointerevents/pointerevent_releasepointercapture_events_to_original_target.html
 testharness pointerevents/pointerevent_releasepointercapture_invalid_pointerid.html
 testharness pointerevents/pointerevent_releasepointercapture_onpointercancel_touch.html
@@ -31001,6 +30994,10 @@ testharness pointerevents/pointerevent_touch-action-inherit_highest-parent-none_
 testharness pointerevents/pointerevent_touch-action-inherit_parent-none_touch.html
 testharness pointerevents/pointerevent_touch-action-keyboard.html
 testharness pointerevents/pointerevent_touch-action-none-css_touch.html
+testharness pointerevents/pointerevent_touch-action-pan-down-css_touch.html
+testharness pointerevents/pointerevent_touch-action-pan-left-css_touch.html
+testharness pointerevents/pointerevent_touch-action-pan-right-css_touch.html
+testharness pointerevents/pointerevent_touch-action-pan-up-css_touch.html
 testharness pointerevents/pointerevent_touch-action-pan-x-css_touch.html
 testharness pointerevents/pointerevent_touch-action-pan-x-pan-y-pan-y_touch.html
 testharness pointerevents/pointerevent_touch-action-pan-x-pan-y_touch.html
@@ -31010,6 +31007,7 @@ testharness pointerevents/pointerevent_touch-action-svg-none-test_touch.html
 testharness pointerevents/pointerevent_touch-action-table-none-test_touch.html
 testharness pointerevents/pointerevent_touch-action-verification.html
 testharness pointerevents/pointerlock/pointerevent_coordinates_when_locked.html
+testharness pointerevents/pointerlock/pointerevent_getCoalescedEvents_when_pointerlocked.html
 testharness pointerevents/pointerlock/pointerevent_movementxy.html
 testharness pointerevents/pointerlock/pointerevent_movementxy_with_pointerlock.html
 testharness pointerevents/pointerlock/pointerevent_pointerlock_after_pointercapture.html
@@ -34618,6 +34616,7 @@ testharness trusted-types/GlobalEventHandlers-onclick.tentative.html
 testharness trusted-types/HTMLElement-generic.tentative.html
 testharness trusted-types/Node-multiple-arguments.tentative.html
 testharness trusted-types/Range-createContextualFragment.tentative.html
+testharness trusted-types/TrustedType-AttributeNodes.tentative.html
 testharness trusted-types/TrustedTypePolicy-CSP-no-name.tentative.html
 testharness trusted-types/TrustedTypePolicy-CSP-wildcard.tentative.html
 testharness trusted-types/TrustedTypePolicy-CSP.tentative.html
