@@ -22,7 +22,7 @@ jobs:
       with:
         python-version: 2.x
     - name: install bikeshed
-      run: pip install --editable ../bikeshed
+      run: pip install --editable $GITHUB_WORKSPACE/bikeshed
     - name: git config
       run: |
         git config user.name "bikeshed-bot"
