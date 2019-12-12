@@ -504,6 +504,8 @@
     "AcquireReadableStreamDefaultReader", 
     "AcquireWritableStreamDefaultWriter", 
     "AddEventListenerOptions", 
+    "AddressErrors", 
+    "AddressInit", 
     "AllowShared", 
     "AllowedBluetoothDevice", 
     "AllowedUSBDevice", 
@@ -1181,6 +1183,8 @@
     "MediaTrackConstraints", 
     "MediaTrackSettings", 
     "MediaTrackSupportedConstraints", 
+    "MerchantValidationEvent", 
+    "MerchantValidationEventInit", 
     "MessageChannel", 
     "MessageChannel()", 
     "MessageEvent", 
@@ -1277,6 +1281,26 @@
     "PasswordCredentialInit", 
     "Path2D", 
     "Path2D(path)", 
+    "PayerErrors", 
+    "PaymentAddress", 
+    "PaymentComplete", 
+    "PaymentCurrencyAmount", 
+    "PaymentDetailsBase", 
+    "PaymentDetailsInit", 
+    "PaymentDetailsModifier", 
+    "PaymentDetailsUpdate", 
+    "PaymentItem", 
+    "PaymentMethodChangeEvent", 
+    "PaymentMethodChangeEventInit", 
+    "PaymentMethodData", 
+    "PaymentOptions", 
+    "PaymentRequest", 
+    "PaymentRequestUpdateEvent", 
+    "PaymentRequestUpdateEventInit", 
+    "PaymentResponse", 
+    "PaymentShippingOption", 
+    "PaymentShippingType", 
+    "PaymentValidationErrors", 
     "PeekQueueValue", 
     "Performance", 
     "PeriodicWave", 
@@ -2112,7 +2136,6 @@
     "address-line3", 
     "addressable character", 
     "addresserrors", 
-    "addressinit", 
     "addtrack", 
     "adjoining", 
     "adjust foreign attributes", 
@@ -2203,7 +2226,6 @@
     "allowed value step", 
     "allowlist", 
     "allowlists", 
-    "allowpaymentrequest", 
     "allowtransparency", 
     "alpha", 
     "alpha channel", 
@@ -3525,7 +3547,6 @@
     "converting", 
     "converting a character width to pixels", 
     "converting a json-derived javascript value to an infra value", 
-    "converting an ecmascript value to a dictionary", 
     "converting line endings to native", 
     "converting nodes into a node", 
     "converting to a sequence of unicode scalar values", 
@@ -5906,7 +5927,6 @@
     "isstructurallyvalidlanguagetag", 
     "issue a developer warning", 
     "issuer identification numbers", 
-    "istrusted", 
     "it is appropriate to resolve percentage heights on direct children of a table-cell", 
     "italic", 
     "item", 
@@ -6532,8 +6552,6 @@
     "menutext", 
     "merchant validation", 
     "merchantvalidation", 
-    "merchantvalidationevent", 
-    "merchantvalidationeventinit", 
     "message", 
     "message port post message steps", 
     "messageevent", 
@@ -7400,7 +7418,6 @@
     "paused play state", 
     "payer detail changed algorithm", 
     "payerdetailchange", 
-    "payererrors", 
     "payment", 
     "payment card industry data security standard compliance", 
     "payment handler", 
@@ -7410,26 +7427,12 @@
     "payment method provider", 
     "payment-feature", 
     "paymentaddress", 
-    "paymentcomplete", 
-    "paymentcurrencyamount", 
-    "paymentdetailsbase", 
-    "paymentdetailsinit", 
     "paymentdetailsmodifier", 
-    "paymentdetailsupdate", 
-    "paymentitem", 
     "paymentmethodchange", 
     "paymentmethodchangeevent", 
-    "paymentmethodchangeeventinit", 
     "paymentmethoddata", 
-    "paymentoptions", 
     "paymentrequest", 
     "paymentrequest updated algorithm", 
-    "paymentrequestupdateevent", 
-    "paymentrequestupdateeventinit", 
-    "paymentresponse", 
-    "paymentshippingoption", 
-    "paymentshippingtype", 
-    "paymentvalidationerrors", 
     "pbkdf2params", 
     "pc", 
     "pcenchar", 
@@ -7724,7 +7727,6 @@
     "proleptic gregorian calendar", 
     "proleptic-gregorian date", 
     "prolog", 
-    "promise", 
     "promise type", 
     "prompt the user to choose", 
     "prompt to unload", 
@@ -11121,6 +11123,30 @@
   "AddEventListenerOptions": [
     "once", 
     "passive"
+  ], 
+  "AddressErrors": [
+    "addressLine", 
+    "city", 
+    "country", 
+    "dependentLocality", 
+    "organization", 
+    "phone", 
+    "postalCode", 
+    "recipient", 
+    "region", 
+    "sortingCode"
+  ], 
+  "AddressInit": [
+    "addressLine", 
+    "city", 
+    "country", 
+    "dependentLocality", 
+    "organization", 
+    "phone", 
+    "postalCode", 
+    "recipient", 
+    "region", 
+    "sortingCode"
   ], 
   "AllowedBluetoothDevice": [
     "[[device]]", 
@@ -18727,9 +18753,25 @@
     "live"
   ], 
   "MerchantValidationEvent": [
+    "MerchantValidationEvent.complete", 
+    "MerchantValidationEvent.complete()", 
+    "MerchantValidationEvent.constructor", 
+    "MerchantValidationEvent.constructor()", 
+    "MerchantValidationEvent.methodName", 
+    "MerchantValidationEvent.validationURL", 
+    "complete", 
+    "complete()", 
+    "constructor", 
+    "constructor()", 
     "mechvalidation.waitforupdate", 
     "merchantvalidationevent constructor", 
-    "merchantvalidationevent.merchantvalidationevent()"
+    "merchantvalidationevent.merchantvalidationevent()", 
+    "methodName", 
+    "validationURL"
+  ], 
+  "MerchantValidationEventInit": [
+    "methodName", 
+    "validationURL"
   ], 
   "MessageChannel": [
     "port1", 
@@ -19525,9 +19567,24 @@
     "addPath(b, transform)"
   ], 
   "PayerErrors": [
-    "payer details"
+    "email", 
+    "name", 
+    "payer details", 
+    "phone"
   ], 
   "PaymentAddress": [
+    "PaymentAddress.addressLine", 
+    "PaymentAddress.city", 
+    "PaymentAddress.country", 
+    "PaymentAddress.dependentLocality", 
+    "PaymentAddress.organization", 
+    "PaymentAddress.phone", 
+    "PaymentAddress.postalCode", 
+    "PaymentAddress.recipient", 
+    "PaymentAddress.region", 
+    "PaymentAddress.sortingCode", 
+    "PaymentAddress.toJSON", 
+    "PaymentAddress.toJSON()", 
     "[[addressline]]", 
     "[[city]]", 
     "[[country]]", 
@@ -19538,18 +19595,105 @@
     "[[recipient]]", 
     "[[region]]", 
     "[[sortingcode]]", 
-    "internal slots", 
+    "addressLine", 
+    "city", 
+    "country", 
+    "dependentLocality", 
     "internally construct a paymentaddress", 
+    "organization", 
     "paymentaddress slots", 
-    "paymentaddress.paymentaddress()"
+    "paymentaddress.paymentaddress()", 
+    "phone", 
+    "postalCode", 
+    "recipient", 
+    "region", 
+    "sortingCode", 
+    "toJSON", 
+    "toJSON()"
+  ], 
+  "PaymentComplete": [
+    "fail", 
+    "success", 
+    "unknown"
   ], 
   "PaymentCurrencyAmount": [
     "check and canonicalize amount", 
     "check and canonicalize total amount", 
+    "currency", 
     "javascript string", 
-    "valid decimal monetary value"
+    "valid decimal monetary value", 
+    "value"
+  ], 
+  "PaymentDetailsBase": [
+    "displayItems", 
+    "modifiers", 
+    "shippingOptions"
+  ], 
+  "PaymentDetailsInit": [
+    "id", 
+    "total"
+  ], 
+  "PaymentDetailsModifier": [
+    "additionalDisplayItems", 
+    "data", 
+    "supportedMethods", 
+    "total"
+  ], 
+  "PaymentDetailsUpdate": [
+    "error", 
+    "payerErrors", 
+    "paymentMethodErrors", 
+    "shippingAddressErrors", 
+    "total"
+  ], 
+  "PaymentItem": [
+    "amount", 
+    "label", 
+    "pending"
+  ], 
+  "PaymentMethodChangeEvent": [
+    "PaymentMethodChangeEvent.constructor", 
+    "PaymentMethodChangeEvent.constructor()", 
+    "PaymentMethodChangeEvent.methodDetails", 
+    "PaymentMethodChangeEvent.methodName", 
+    "constructor", 
+    "constructor()", 
+    "methodDetails", 
+    "methodName"
+  ], 
+  "PaymentMethodChangeEventInit": [
+    "methodDetails", 
+    "methodName"
+  ], 
+  "PaymentMethodData": [
+    "data", 
+    "supportedMethods"
+  ], 
+  "PaymentOptions": [
+    "requestBillingAddress", 
+    "requestPayerEmail", 
+    "requestPayerName", 
+    "requestPayerPhone", 
+    "requestShipping", 
+    "shippingType"
   ], 
   "PaymentRequest": [
+    "PaymentRequest.abort", 
+    "PaymentRequest.abort()", 
+    "PaymentRequest.canMakePayment", 
+    "PaymentRequest.canMakePayment()", 
+    "PaymentRequest.constructor", 
+    "PaymentRequest.constructor()", 
+    "PaymentRequest.id", 
+    "PaymentRequest.onmerchantvalidation", 
+    "PaymentRequest.onpaymentmethodchange", 
+    "PaymentRequest.onshippingaddresschange", 
+    "PaymentRequest.onshippingoptionchange", 
+    "PaymentRequest.shippingAddress", 
+    "PaymentRequest.shippingOption", 
+    "PaymentRequest.shippingType", 
+    "PaymentRequest.show", 
+    "PaymentRequest.show()", 
     "[[acceptpromise]]", 
     "[[details]]", 
     "[[options]]", 
@@ -19558,24 +19702,97 @@
     "[[serializedmodifierdata]]", 
     "[[state]]", 
     "[[updating]]", 
+    "abort", 
+    "abort()", 
+    "canMakePayment", 
+    "canMakePayment()", 
     "closed", 
+    "constructor", 
+    "constructor()", 
     "created", 
+    "id", 
     "interactive", 
+    "onmerchantvalidation", 
+    "onpaymentmethodchange", 
+    "onshippingaddresschange", 
+    "onshippingoptionchange", 
     "payment request is showing", 
     "payment-relevant browsing context", 
     "paymentrequest(methoddata, details, options)", 
     "paymentrequest.paymentrequest()", 
+    "shippingAddress", 
+    "shippingOption", 
+    "shippingType", 
+    "show", 
+    "show()", 
     "state"
   ], 
   "PaymentRequestUpdateEvent": [
+    "Constructor", 
+    "PaymentRequestUpdateEvent.PaymentRequestUpdateEvent()", 
+    "PaymentRequestUpdateEvent.constructor", 
+    "PaymentRequestUpdateEvent.constructor()", 
+    "PaymentRequestUpdateEvent.updateWith", 
+    "PaymentRequestUpdateEvent.updateWith()", 
     "[[waitforupdate]]", 
     "constructor", 
-    "paymentrequestupdateevent.paymentrequestupdateevent()"
+    "constructor()", 
+    "updateWith", 
+    "updateWith()", 
+    "updateWith(detailsPromise)"
   ], 
   "PaymentResponse": [
+    "PaymentResponse.complete", 
+    "PaymentResponse.complete()", 
+    "PaymentResponse.details", 
+    "PaymentResponse.methodName", 
+    "PaymentResponse.onpayerdetailchange", 
+    "PaymentResponse.payerEmail", 
+    "PaymentResponse.payerName", 
+    "PaymentResponse.payerPhone", 
+    "PaymentResponse.requestId", 
+    "PaymentResponse.retry", 
+    "PaymentResponse.retry()", 
+    "PaymentResponse.shippingAddress", 
+    "PaymentResponse.shippingOption", 
+    "PaymentResponse.toJSON", 
+    "PaymentResponse.toJSON()", 
     "[[complete]]", 
     "[[request]]", 
-    "[[retrypromise]]"
+    "[[retrypromise]]", 
+    "complete", 
+    "complete()", 
+    "complete(result)", 
+    "details", 
+    "methodName", 
+    "onpayerdetailchange", 
+    "payerEmail", 
+    "payerName", 
+    "payerPhone", 
+    "requestId", 
+    "retry", 
+    "retry()", 
+    "shippingAddress", 
+    "shippingOption", 
+    "toJSON", 
+    "toJSON()"
+  ], 
+  "PaymentShippingOption": [
+    "amount", 
+    "id", 
+    "label", 
+    "selected"
+  ], 
+  "PaymentShippingType": [
+    "delivery", 
+    "pickup", 
+    "shipping"
+  ], 
+  "PaymentValidationErrors": [
+    "error", 
+    "payer", 
+    "paymentMethod", 
+    "shippingAddress"
   ], 
   "Performance": [
     "Performance.now", 
@@ -20304,8 +20521,6 @@
     "response", 
     "status", 
     "statusText", 
-    "trailer", 
-    "trailer promise", 
     "type", 
     "url"
   ], 
@@ -22860,30 +23075,6 @@
   ], 
   "abbr": [
     "title"
-  ], 
-  "addresserrors": [
-    "addressline", 
-    "city", 
-    "country", 
-    "dependentlocality", 
-    "organization", 
-    "phone", 
-    "postalcode", 
-    "recipient", 
-    "region", 
-    "sortingcode"
-  ], 
-  "addressinit": [
-    "addressline", 
-    "city", 
-    "country", 
-    "dependentlocality", 
-    "organization", 
-    "phone", 
-    "postalcode", 
-    "recipient", 
-    "region", 
-    "sortingcode"
   ], 
   "align-content": [
     "baseline", 
@@ -25687,20 +25878,6 @@
     "sampleSize", 
     "width"
   ], 
-  "merchantvalidationevent": [
-    "complete", 
-    "complete()", 
-    "merchantvalidationevent.complete", 
-    "merchantvalidationevent.complete()", 
-    "merchantvalidationevent.methodname", 
-    "merchantvalidationevent.validationurl", 
-    "methodname", 
-    "validationurl"
-  ], 
-  "merchantvalidationeventinit": [
-    "methodname", 
-    "validationurl"
-  ], 
   "meta": [
     "content", 
     "http-equiv"
@@ -25958,182 +26135,6 @@
   "pattern": [
     "xlink:href", 
     "xlink:title"
-  ], 
-  "payererrors": [
-    "email", 
-    "name", 
-    "phone"
-  ], 
-  "paymentaddress": [
-    "addressline", 
-    "city", 
-    "country", 
-    "dependentlocality", 
-    "organization", 
-    "paymentaddress.addressline", 
-    "paymentaddress.city", 
-    "paymentaddress.country", 
-    "paymentaddress.dependentlocality", 
-    "paymentaddress.organization", 
-    "paymentaddress.phone", 
-    "paymentaddress.postalcode", 
-    "paymentaddress.recipient", 
-    "paymentaddress.region", 
-    "paymentaddress.sortingcode", 
-    "paymentaddress.tojson", 
-    "paymentaddress.tojson()", 
-    "phone", 
-    "postalcode", 
-    "recipient", 
-    "region", 
-    "sortingcode", 
-    "tojson", 
-    "tojson()"
-  ], 
-  "paymentcomplete": [
-    "fail", 
-    "success", 
-    "unknown"
-  ], 
-  "paymentcurrencyamount": [
-    "currency", 
-    "value"
-  ], 
-  "paymentdetailsbase": [
-    "displayitems", 
-    "modifiers", 
-    "shippingoptions"
-  ], 
-  "paymentdetailsinit": [
-    "id", 
-    "total"
-  ], 
-  "paymentdetailsmodifier": [
-    "additionaldisplayitems", 
-    "data", 
-    "supportedmethods", 
-    "total"
-  ], 
-  "paymentdetailsupdate": [
-    "error", 
-    "payererrors", 
-    "paymentmethoderrors", 
-    "shippingaddresserrors", 
-    "total"
-  ], 
-  "paymentitem": [
-    "amount", 
-    "label", 
-    "pending"
-  ], 
-  "paymentmethodchangeevent": [
-    "methoddetails", 
-    "methodname", 
-    "paymentmethodchangeevent.methoddetails", 
-    "paymentmethodchangeevent.methodname"
-  ], 
-  "paymentmethodchangeeventinit": [
-    "methoddetails", 
-    "methodname"
-  ], 
-  "paymentmethoddata": [
-    "data", 
-    "supportedmethods"
-  ], 
-  "paymentoptions": [
-    "requestbillingaddress", 
-    "requestpayeremail", 
-    "requestpayername", 
-    "requestpayerphone", 
-    "requestshipping", 
-    "shippingtype"
-  ], 
-  "paymentrequest": [
-    "abort", 
-    "abort()", 
-    "canmakepayment", 
-    "canmakepayment()", 
-    "id", 
-    "onmerchantvalidation", 
-    "onpaymentmethodchange", 
-    "onshippingaddresschange", 
-    "onshippingoptionchange", 
-    "paymentrequest.abort", 
-    "paymentrequest.abort()", 
-    "paymentrequest.canmakepayment", 
-    "paymentrequest.canmakepayment()", 
-    "paymentrequest.id", 
-    "paymentrequest.onmerchantvalidation", 
-    "paymentrequest.onpaymentmethodchange", 
-    "paymentrequest.onshippingaddresschange", 
-    "paymentrequest.onshippingoptionchange", 
-    "paymentrequest.shippingaddress", 
-    "paymentrequest.shippingoption", 
-    "paymentrequest.shippingtype", 
-    "paymentrequest.show", 
-    "paymentrequest.show()", 
-    "shippingaddress", 
-    "shippingoption", 
-    "shippingtype", 
-    "show", 
-    "show()"
-  ], 
-  "paymentrequestupdateevent": [
-    "paymentrequestupdateevent.updatewith", 
-    "paymentrequestupdateevent.updatewith()", 
-    "updatewith", 
-    "updatewith()", 
-    "updatewith(detailspromise)"
-  ], 
-  "paymentresponse": [
-    "complete", 
-    "complete()", 
-    "complete(result)", 
-    "details", 
-    "methodname", 
-    "onpayerdetailchange", 
-    "payeremail", 
-    "payername", 
-    "payerphone", 
-    "paymentresponse.complete", 
-    "paymentresponse.complete()", 
-    "paymentresponse.details", 
-    "paymentresponse.methodname", 
-    "paymentresponse.onpayerdetailchange", 
-    "paymentresponse.payeremail", 
-    "paymentresponse.payername", 
-    "paymentresponse.payerphone", 
-    "paymentresponse.requestid", 
-    "paymentresponse.retry", 
-    "paymentresponse.retry()", 
-    "paymentresponse.shippingaddress", 
-    "paymentresponse.shippingoption", 
-    "paymentresponse.tojson", 
-    "paymentresponse.tojson()", 
-    "requestid", 
-    "retry", 
-    "retry()", 
-    "shippingaddress", 
-    "shippingoption", 
-    "tojson", 
-    "tojson()"
-  ], 
-  "paymentshippingoption": [
-    "amount", 
-    "id", 
-    "label", 
-    "selected"
-  ], 
-  "paymentshippingtype": [
-    "delivery", 
-    "pickup", 
-    "shipping"
-  ], 
-  "paymentvalidationerrors": [
-    "error", 
-    "payer", 
-    "paymentmethod", 
-    "shippingaddress"
   ], 
   "pending processor construction data": [
     "node reference", 
@@ -26404,8 +26405,6 @@
     "status", 
     "status message", 
     "timing allow passed flag", 
-    "trailer", 
-    "trailer failed flag", 
     "type", 
     "url", 
     "url list"
