@@ -1587,29 +1587,33 @@
       "shortname": "fetch"
     }
   }, 
-  "HighlightRangeGroup()": {
-    "HighlightRangeGroup()": {
-      "args": [], 
+  "Highlight()": {
+    "Highlight(CSSOMString name, optional sequence initialRanges = [])": {
+      "args": [
+        "CSSOMString name", 
+        "optional sequence initialRanges = []"
+      ], 
       "for": [
-        "HighlightRangeGroup"
+        "Highlight"
       ], 
       "shortname": "css-highlight-api"
     }, 
-    "HighlightRangeGroup(initialRanges)": {
+    "Highlight(name)": {
       "args": [
+        "name"
+      ], 
+      "for": [
+        "Highlight"
+      ], 
+      "shortname": "css-highlight-api"
+    }, 
+    "Highlight(name, initialRanges)": {
+      "args": [
+        "name", 
         "initialRanges"
       ], 
       "for": [
-        "HighlightRangeGroup"
-      ], 
-      "shortname": "css-highlight-api"
-    }, 
-    "HighlightRangeGroup(optionalsequenceinitialRanges=[])": {
-      "args": [
-        "optionalsequenceinitialRanges=[]"
-      ], 
-      "for": [
-        "HighlightRangeGroup"
+        "Highlight"
       ], 
       "shortname": "css-highlight-api"
     }
@@ -3947,6 +3951,15 @@
       ], 
       "shortname": "css-typed-om"
     }, 
+    "add(Highlight value)": {
+      "args": [
+        "Highlight value"
+      ], 
+      "for": [
+        "HighlightsRegister"
+      ], 
+      "shortname": "css-highlight-api"
+    }, 
     "add(element)": {
       "args": [
         "element"
@@ -3988,9 +4001,10 @@
         "value"
       ], 
       "for": [
+        "HighlightsRegister", 
         "IDBObjectStore"
       ], 
-      "shortname": "indexeddb"
+      "shortname": "css-highlight-api"
     }, 
     "add(value, key)": {
       "args": [
@@ -5376,7 +5390,6 @@
         "DocumentTimeline", 
         "EventTarget", 
         "Headers", 
-        "HighlightRangeGroup", 
         "JsonLdProcessor", 
         "MerchantValidationEvent", 
         "PaymentMethodChangeEvent", 
@@ -5667,15 +5680,6 @@
       ], 
       "shortname": "dom"
     }, 
-    "constructor(initialRanges)": {
-      "args": [
-        "initialRanges"
-      ], 
-      "for": [
-        "HighlightRangeGroup"
-      ], 
-      "shortname": "css-highlight-api"
-    }, 
     "constructor(input)": {
       "args": [
         "input"
@@ -5734,6 +5738,25 @@
         "DOMException"
       ], 
       "shortname": "webidl"
+    }, 
+    "constructor(name)": {
+      "args": [
+        "name"
+      ], 
+      "for": [
+        "Highlight"
+      ], 
+      "shortname": "css-highlight-api"
+    }, 
+    "constructor(name, initialRanges)": {
+      "args": [
+        "name", 
+        "initialRanges"
+      ], 
+      "for": [
+        "Highlight"
+      ], 
+      "shortname": "css-highlight-api"
     }, 
     "constructor(numberOfChannels, length, sampleRate)": {
       "args": [
@@ -13884,16 +13907,6 @@
       ], 
       "shortname": "css-regions"
     }, 
-    "set(CSSOMString key, HighlightRangeGroup value)": {
-      "args": [
-        "CSSOMString key", 
-        "HighlightRangeGroup value"
-      ], 
-      "for": [
-        "HighlightsMap"
-      ], 
-      "shortname": "css-highlight-api"
-    }, 
     "set(featureValueName, values)": {
       "args": [
         "featureValueName", 
@@ -13913,16 +13926,6 @@
         "NamedFlowMap"
       ], 
       "shortname": "css-regions"
-    }, 
-    "set(key, value)": {
-      "args": [
-        "key", 
-        "value"
-      ], 
-      "for": [
-        "HighlightsMap"
-      ], 
-      "shortname": "css-highlight-api"
     }, 
     "set(name, blobValue)": {
       "args": [

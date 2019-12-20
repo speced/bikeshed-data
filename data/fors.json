@@ -1046,8 +1046,8 @@
     "Headers", 
     "HeadersInit", 
     "HierarchyRequestError", 
-    "HighlightRangeGroup", 
-    "HighlightsMap", 
+    "Highlight", 
+    "HighlightsRegister", 
     "History", 
     "IDBCursor", 
     "IDBCursorDirection", 
@@ -5400,8 +5400,7 @@
     "highlight", 
     "highlight overlay", 
     "highlight pseudo-element", 
-    "highlight range group", 
-    "highlights map", 
+    "highlights register", 
     "highlighttext", 
     "historical-ligatures", 
     "history traversal task source", 
@@ -17709,27 +17708,30 @@
     "name", 
     "value"
   ], 
-  "HighlightRangeGroup": [
-    "HighlightRangeGroup()", 
-    "HighlightRangeGroup(initialRanges)", 
-    "HighlightRangeGroup(optionalsequenceinitialRanges=[])", 
-    "constructor()", 
-    "constructor(initialRanges)", 
+  "Highlight": [
+    "Highlight(CSSOMString name, optional sequence initialRanges = [])", 
+    "Highlight(name)", 
+    "Highlight(name, initialRanges)", 
+    "constructor", 
+    "constructor(name)", 
+    "constructor(name, initialRanges)", 
+    "name", 
     "priority", 
     "style"
   ], 
-  "HighlightRangeGroup/constructor()": [
-    "initialRanges"
+  "Highlight/constructor(name)": [
+    "initialRanges", 
+    "name"
   ], 
-  "HighlightRangeGroup/constructor(initialRanges)": [
-    "initialRanges"
+  "Highlight/constructor(name, initialRanges)": [
+    "initialRanges", 
+    "name"
   ], 
-  "HighlightsMap": [
-    "set(CSSOMString key, HighlightRangeGroup value)", 
-    "set(key, value)"
+  "HighlightsRegister": [
+    "add(Highlight value)", 
+    "add(value)"
   ], 
-  "HighlightsMap/set(key, value)": [
-    "key", 
+  "HighlightsRegister/add(value)": [
     "value"
   ], 
   "History": [
