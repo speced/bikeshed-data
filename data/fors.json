@@ -194,9 +194,6 @@
     "<border-width>", 
     "<bottom>", 
     "<box>", 
-    "<calc-number-product>", 
-    "<calc-number-sum>", 
-    "<calc-number-value>", 
     "<calc-product>", 
     "<calc-sum>", 
     "<calc-value>", 
@@ -226,6 +223,7 @@
     "<content-distribution>", 
     "<content-position>", 
     "<contextual-alt-values>", 
+    "<coord-box>", 
     "<counter-name>", 
     "<counter-style-name>", 
     "<counter-style>", 
@@ -306,6 +304,7 @@
     "<keyframe-block>", 
     "<keyframe-selector>", 
     "<keyframes-name>", 
+    "<layout-box>", 
     "<leader-type>", 
     "<left>", 
     "<length-percentage>", 
@@ -354,7 +353,6 @@
     "<ndashdigit-ident>", 
     "<ns-prefix>", 
     "<number-optional-number>", 
-    "<number-percentage>", 
     "<number-token>", 
     "<number>", 
     "<numeric-figure-values>", 
@@ -365,6 +363,7 @@
     "<padding-width>", 
     "<page-selector-list>", 
     "<page-selector>", 
+    "<paint-box>", 
     "<paint>", 
     "<percentage-token>", 
     "<percentage>", 
@@ -450,6 +449,7 @@
     "<url-token>", 
     "<url>", 
     "<viewport-length>", 
+    "<visual-box>", 
     "<whitespace-token>", 
     "<wq-name>", 
     "<zero>", 
@@ -7590,7 +7590,6 @@
     "physical right", 
     "physical top", 
     "physical unit", 
-    "physical units", 
     "pick an encoding for a form", 
     "picked", 
     "picture", 
@@ -8222,7 +8221,6 @@
     "resolve the requested features", 
     "resolved", 
     "resolved descendant node", 
-    "resolved type", 
     "resolved value", 
     "resolved value special case property", 
     "resolved value special case property like color", 
@@ -9583,7 +9581,6 @@
     "textcontent", 
     "textpath", 
     "textphone", 
-    "textual data types", 
     "tfoot", 
     "th", 
     "the \"after after body\" insertion mode", 
@@ -10458,6 +10455,15 @@
     "screen", 
     "soft-light"
   ], 
+  "<box>": [
+    "border-box", 
+    "content-box", 
+    "fill-box", 
+    "margin-box", 
+    "padding-box", 
+    "stroke-box", 
+    "view-box"
+  ], 
   "<color>": [
     "aliceblue", 
     "antiquewhite", 
@@ -10766,6 +10772,15 @@
     "ui-sans-serif", 
     "ui-serif"
   ], 
+  "<geometry-box>": [
+    "border-box", 
+    "content-box", 
+    "fill-box", 
+    "margin-box", 
+    "padding-box", 
+    "stroke-box", 
+    "view-box"
+  ], 
   "<grid-line>": [
     "<custom-ident>", 
     "<integer> && <custom-ident>?", 
@@ -10784,7 +10799,6 @@
     "lh", 
     "mm", 
     "pc", 
-    "pixel unit", 
     "pt", 
     "px", 
     "q", 
@@ -10857,8 +10871,11 @@
   "<shape-box>": [
     "border-box", 
     "content-box", 
+    "fill-box", 
     "margin-box", 
-    "padding-box"
+    "padding-box", 
+    "stroke-box", 
+    "view-box"
   ], 
   "<size>": [
     "<length-percentage>{2}", 
@@ -28114,6 +28131,7 @@
   ], 
   "text-spacing": [
     "allow-end", 
+    "auto", 
     "ideograph-alpha", 
     "ideograph-numeric", 
     "no-compress", 
