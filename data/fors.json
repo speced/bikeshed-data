@@ -1067,7 +1067,9 @@
     "IDBRequest", 
     "IDBRequestReadyState", 
     "IDBTransaction", 
+    "IDBTransactionDurability", 
     "IDBTransactionMode", 
+    "IDBTransactionOptions", 
     "IDBVersionChangeEvent", 
     "IDBVersionChangeEventInit", 
     "IIRFilterNode", 
@@ -2265,7 +2267,6 @@
     "address-line2", 
     "address-line3", 
     "addressable character", 
-    "addresserrors", 
     "addtrack", 
     "adjoining", 
     "adjust foreign attributes", 
@@ -6694,7 +6695,6 @@
     "meter", 
     "method", 
     "method cache entry match", 
-    "methoddetails", 
     "methods", 
     "mftn", 
     "microdata", 
@@ -7561,11 +7561,7 @@
     "payment method identifier", 
     "payment method provider", 
     "payment-feature", 
-    "paymentaddress", 
-    "paymentdetailsmodifier", 
     "paymentmethodchange", 
-    "paymentmethodchangeevent", 
-    "paymentmethoddata", 
     "paymentrequest", 
     "paymentrequest updated algorithm", 
     "pbkdf2params", 
@@ -17853,6 +17849,7 @@
     "onversionchange", 
     "transaction(storeNames)", 
     "transaction(storeNames, mode)", 
+    "transaction(storeNames, mode, options)", 
     "version"
   ], 
   "IDBDatabase/createObjectStore(name)": [
@@ -17868,10 +17865,17 @@
   ], 
   "IDBDatabase/transaction(storeNames)": [
     "mode", 
+    "options", 
     "storeNames"
   ], 
   "IDBDatabase/transaction(storeNames, mode)": [
     "mode", 
+    "options", 
+    "storeNames"
+  ], 
+  "IDBDatabase/transaction(storeNames, mode, options)": [
+    "mode", 
+    "options", 
     "storeNames"
   ], 
   "IDBDatabaseInfo": [
@@ -18195,6 +18199,7 @@
     "abort()", 
     "commit()", 
     "db", 
+    "durability", 
     "error", 
     "mode", 
     "objectStore(name)", 
@@ -18206,10 +18211,18 @@
   "IDBTransaction/objectStore(name)": [
     "name"
   ], 
+  "IDBTransactionDurability": [
+    "\"default\"", 
+    "\"relaxed\"", 
+    "\"strict\""
+  ], 
   "IDBTransactionMode": [
     "\"readonly\"", 
     "\"readwrite\"", 
     "\"versionchange\""
+  ], 
+  "IDBTransactionOptions": [
+    "durability"
   ], 
   "IDBVersionChangeEvent": [
     "IDBVersionChangeEvent(type)", 
@@ -28468,6 +28481,7 @@
     "complete", 
     "connection", 
     "created", 
+    "durability hint", 
     "error", 
     "finished", 
     "inactive", 
