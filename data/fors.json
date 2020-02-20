@@ -16622,6 +16622,8 @@
     "[[Data]]", 
     "[[FontStatusPromise]]", 
     "[[Urls]]", 
+    "constructor(family, source)", 
+    "constructor(family, source, descriptors)", 
     "display", 
     "family", 
     "featureSettings", 
@@ -16640,7 +16642,12 @@
     "family", 
     "source"
   ], 
-  "FontFace/FontFace(family, source, descriptors)": [
+  "FontFace/constructor(family, source)": [
+    "descriptors", 
+    "family", 
+    "source"
+  ], 
+  "FontFace/constructor(family, source, descriptors)": [
     "descriptors", 
     "family", 
     "source"
@@ -16674,6 +16681,7 @@
     "check(font)", 
     "check(font, text)", 
     "clear()", 
+    "constructor(initialFaces)", 
     "delete(font)", 
     "iteration order", 
     "load", 
@@ -16693,9 +16701,6 @@
     "status", 
     "stuck on the environment"
   ], 
-  "FontFaceSet/FontFaceSet(initialFaces)": [
-    "initialFaces"
-  ], 
   "FontFaceSet/add(font)": [
     "font"
   ], 
@@ -16706,6 +16711,9 @@
   "FontFaceSet/check(font, text)": [
     "font", 
     "text"
+  ], 
+  "FontFaceSet/constructor(initialFaces)": [
+    "initialFaces"
   ], 
   "FontFaceSet/delete(font)": [
     "font"
@@ -16719,12 +16727,18 @@
     "text"
   ], 
   "FontFaceSetLoadEvent": [
-    "Constructor", 
     "FontFaceSetLoadEvent(type)", 
     "FontFaceSetLoadEvent(type, eventInitDict)", 
+    "constructor", 
+    "constructor(type)", 
+    "constructor(type, eventInitDict)", 
     "fontfaces"
   ], 
-  "FontFaceSetLoadEvent/FontFaceSetLoadEvent(type, eventInitDict)": [
+  "FontFaceSetLoadEvent/constructor(type)": [
+    "eventInitDict", 
+    "type"
+  ], 
+  "FontFaceSetLoadEvent/constructor(type, eventInitDict)": [
     "eventInitDict", 
     "type"
   ], 
