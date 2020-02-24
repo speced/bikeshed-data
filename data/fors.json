@@ -2015,6 +2015,8 @@
     "XRInputSourceEventInit", 
     "XRInputSourcesChangeEvent", 
     "XRInputSourcesChangeEventInit", 
+    "XRPermissionDescriptor", 
+    "XRPermissionStatus", 
     "XRPose", 
     "XRReferenceSpace", 
     "XRReferenceSpaceEvent", 
@@ -7138,6 +7140,7 @@
     "obtain a similar-origin window agent", 
     "obtain a websocket connection", 
     "obtain an agent cluster key", 
+    "obtain the current device", 
     "obtain their numeric values", 
     "obtain unicode", 
     "obtaining a manifest", 
@@ -8245,6 +8248,7 @@
     "request sensor access", 
     "request the \"bluetooth\" permission", 
     "request the \"usb\" permission", 
+    "request the xr permission", 
     "request url", 
     "request-body-header name", 
     "requestFullscreen()", 
@@ -16467,6 +16471,7 @@
     "clientId", 
     "constructor", 
     "constructor(type, eventInitDict)", 
+    "handled", 
     "potential response", 
     "preloadResponse", 
     "replacesClientId", 
@@ -16486,6 +16491,7 @@
   ], 
   "FetchEventInit": [
     "clientId", 
+    "handled", 
     "preloadResponse", 
     "replacesClientId", 
     "request", 
@@ -20113,7 +20119,8 @@
     "\"persistent-storage\"", 
     "\"push\"", 
     "\"speaker\"", 
-    "\"usb\""
+    "\"usb\"", 
+    "\"xr\""
   ], 
   "PermissionSetParameters": [
     "descriptor", 
@@ -24116,6 +24123,9 @@
     "requestSession(mode)", 
     "requestSession(mode, options)"
   ], 
+  "XR device": [
+    "list of enabled features"
+  ], 
   "XR/isSessionSupported(mode)": [
     "mode"
   ], 
@@ -24218,6 +24228,14 @@
     "added", 
     "removed", 
     "session"
+  ], 
+  "XRPermissionDescriptor": [
+    "mode", 
+    "optionalFeatures", 
+    "requiredFeatures"
+  ], 
+  "XRPermissionStatus": [
+    "granted"
   ], 
   "XRPose": [
     "computed offset", 
