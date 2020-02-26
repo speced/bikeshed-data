@@ -3648,18 +3648,6 @@ https://w3c.github.io/webauthn/#dom-tokenbinding-status
 TokenBinding
 -
 status
-argument
-webusb-1
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbintransferresult-constructor-status-data-status
-1
-1
-USBInTransferResult/constructor(status, data)
-USBInTransferResult/constructor(status)
--
-status
 attribute
 webusb-1
 webusb
@@ -3676,11 +3664,13 @@ webusb-1
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-constructor-status-data-status
+https://wicg.github.io/webusb/#dom-usbintransferresult-usbintransferresult-status-data-status
 1
 1
-USBIsochronousInTransferPacket/constructor(status, data)
-USBIsochronousInTransferPacket/constructor(status)
+USBInTransferResult/USBInTransferResult(status, data)
+USBInTransferResult/constructor(status, data)
+USBInTransferResult/USBInTransferResult(status)
+USBInTransferResult/constructor(status)
 -
 status
 attribute
@@ -3699,11 +3689,13 @@ webusb-1
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-constructor-status-byteswritten-status
+https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket-status-data-status
 1
 1
-USBIsochronousOutTransferPacket/constructor(status, bytesWritten)
-USBIsochronousOutTransferPacket/constructor(status)
+USBIsochronousInTransferPacket/USBIsochronousInTransferPacket(status, data)
+USBIsochronousInTransferPacket/constructor(status, data)
+USBIsochronousInTransferPacket/USBIsochronousInTransferPacket(status)
+USBIsochronousInTransferPacket/constructor(status)
 -
 status
 attribute
@@ -3722,11 +3714,13 @@ webusb-1
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbouttransferresult-constructor-status-byteswritten-status
+https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket-status-byteswritten-status
 1
 1
-USBOutTransferResult/constructor(status, bytesWritten)
-USBOutTransferResult/constructor(status)
+USBIsochronousOutTransferPacket/USBIsochronousOutTransferPacket(status, bytesWritten)
+USBIsochronousOutTransferPacket/constructor(status, bytesWritten)
+USBIsochronousOutTransferPacket/USBIsochronousOutTransferPacket(status)
+USBIsochronousOutTransferPacket/constructor(status)
 -
 status
 attribute
@@ -3738,6 +3732,20 @@ https://wicg.github.io/webusb/#dom-usbouttransferresult-status
 1
 1
 USBOutTransferResult
+-
+status
+argument
+webusb-1
+webusb
+1
+current
+https://wicg.github.io/webusb/#dom-usbouttransferresult-usbouttransferresult-status-byteswritten-status
+1
+1
+USBOutTransferResult/USBOutTransferResult(status, bytesWritten)
+USBOutTransferResult/constructor(status, bytesWritten)
+USBOutTransferResult/USBOutTransferResult(status)
+USBOutTransferResult/constructor(status)
 -
 status
 attribute
