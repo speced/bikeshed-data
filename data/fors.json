@@ -2347,6 +2347,7 @@
     "all", 
     "all-petite-caps", 
     "all-small-caps", 
+    "allow-downloads", 
     "allow-forms", 
     "allow-list", 
     "allow-list-value", 
@@ -2362,6 +2363,7 @@
     "allow-top-navigation-by-user-activation", 
     "allowed in non-secure contexts", 
     "allowed in the body", 
+    "allowed to download", 
     "allowed to navigate", 
     "allowed to play", 
     "allowed to resize and move", 
@@ -4773,7 +4775,6 @@
     "fail the websocket connection", 
     "failed", 
     "failed to load", 
-    "failover class", 
     "failure reason", 
     "failure sampling rate", 
     "failure_fraction", 
@@ -5235,6 +5236,7 @@
     "generate a key", 
     "generate a network error report", 
     "generate a new blob url", 
+    "generate a report", 
     "generate all implied end tags thoroughly", 
     "generate baselines", 
     "generate implied end tags", 
@@ -8266,10 +8268,10 @@
     "report-uri directive", 
     "report_to", 
     "reported mime types", 
-    "reporting cache", 
     "reporting frequency", 
     "reporting group", 
     "reporting observer", 
+    "reporting-endpoints", 
     "reports", 
     "represent", 
     "representation", 
@@ -8558,6 +8560,7 @@
     "sandboxed automatic features browsing context flag", 
     "sandboxed auxiliary navigation browsing context flag", 
     "sandboxed document.domain browsing context flag", 
+    "sandboxed downloads browsing context flag", 
     "sandboxed forms browsing context flag", 
     "sandboxed modals flag", 
     "sandboxed navigation browsing context flag", 
@@ -8808,6 +8811,7 @@
     "serialize a cssvariablereferencevalue", 
     "serialize a group of selectors", 
     "serialize a list of css page selectors", 
+    "serialize a list of reports to json", 
     "serialize a local", 
     "serialize a math function", 
     "serialize a max() value", 
@@ -22014,15 +22018,6 @@
     "toJSON", 
     "toJSON()"
   ], 
-  "ReportTo": [
-    "endpoints", 
-    "group", 
-    "include_subdomains", 
-    "max_age", 
-    "priority", 
-    "url", 
-    "weight"
-  ], 
   "ReportingObserver": [
     "ReportingObserver(callback)", 
     "ReportingObserver(callback, options)", 
@@ -22034,6 +22029,14 @@
     "options", 
     "report queue", 
     "takeRecords()"
+  ], 
+  "ReportingObserver/ReportingObserver(callback)": [
+    "callback", 
+    "options"
+  ], 
+  "ReportingObserver/ReportingObserver(callback, options)": [
+    "callback", 
+    "options"
   ], 
   "ReportingObserver/constructor(callback)": [
     "callback", 
@@ -25623,10 +25626,6 @@
     "right", 
     "top"
   ], 
-  "client": [
-    "endpoint-groups", 
-    "origin"
-  ], 
   "clip": [
     "<bottom>", 
     "<left>", 
@@ -26217,8 +26216,10 @@
     "table-row-group"
   ], 
   "document": [
+    "endpoints", 
     "hidden", 
-    "onvisibilitychange"
+    "onvisibilitychange", 
+    "reports"
   ], 
   "document animator definition": [
     "stateful flag"
@@ -26285,19 +26286,8 @@
   ], 
   "endpoint": [
     "failures", 
-    "pending", 
-    "priority", 
-    "retry_after", 
-    "url", 
-    "weight"
-  ], 
-  "endpoint group": [
-    "creation", 
-    "endpoints", 
-    "expired", 
     "name", 
-    "subdomains", 
-    "ttl"
+    "url"
   ], 
   "env()": [
     "safe-area-inset-bottom", 
@@ -28284,7 +28274,7 @@
   "report": [
     "attempts", 
     "body", 
-    "group", 
+    "destination", 
     "timestamp", 
     "type", 
     "url", 
@@ -29129,6 +29119,8 @@
     "inactive", 
     "lifetime", 
     "mode", 
+    "overlap", 
+    "overlapping scope", 
     "read-only transaction", 
     "read/write transaction", 
     "request list", 
