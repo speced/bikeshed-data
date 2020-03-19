@@ -1,4 +1,4 @@
-sha: 167c85fa084db1759d05bd6f3155728df516895c
+sha: 264448ff722c6195ac892c8323d503fee2add1ee
 manual 2dcontext/conformance-requirements/2d.coordinatespace-manual.html
 manual 2dcontext/drawing-paths-to-the-canvas/canvas_focus_drawFocusIfNeeded_AAPI_001-manual.html
 manual 2dcontext/drawing-text-to-the-canvas/2d.text.draw.fill.basic-manual.html
@@ -19064,6 +19064,7 @@ reftest svg/extensibility/foreignObject/foreign-object-margin-collapsing.html
 reftest svg/extensibility/foreignObject/foreign-object-paints-before-rect.html
 reftest svg/extensibility/foreignObject/foreign-object-scale-scroll.html
 reftest svg/extensibility/foreignObject/foreign-object-size.html
+reftest svg/extensibility/foreignObject/foreign-object-with-position-under-clip-path.html
 reftest svg/extensibility/foreignObject/masked.html
 reftest svg/extensibility/foreignObject/position-svg-root-in-foreign-object.html
 reftest svg/extensibility/foreignObject/stacking-context.html
@@ -24617,6 +24618,7 @@ testharness css/css-variables/variable-transitions-transition-property-all-befor
 testharness css/css-variables/variable-transitions-transition-property-variable-before-value.html
 testharness css/css-variables/variable-transitions-value-before-transition-property-all.html
 testharness css/css-variables/variable-transitions-value-before-transition-property-variable.html
+testharness css/css-variables/variables-substitute-guaranteed-invalid.html
 testharness css/css-variables/vars-border-shorthand-serialize.html
 testharness css/css-will-change/inheritance.html
 testharness css/css-will-change/parsing/will-change-computed.html
@@ -25751,6 +25753,7 @@ testharness encoding/api-invalid-label.any.js
 testharness encoding/api-replacement-encodings.any.js
 testharness encoding/api-surrogates-utf8.any.js
 testharness encoding/big5-encoder.html
+testharness encoding/bom-handling.html
 testharness encoding/encodeInto.any.js
 testharness encoding/gb18030-encoder.html
 testharness encoding/gbk-encoder.html
@@ -29032,7 +29035,8 @@ testharness largest-contentful-paint/image-TAO.sub.html
 testharness largest-contentful-paint/image-inside-svg.html
 testharness largest-contentful-paint/image-not-fully-visible.html
 testharness largest-contentful-paint/image-src-change.html
-testharness largest-contentful-paint/invisible-images-composited.html
+testharness largest-contentful-paint/invisible-images-composited-1.html
+testharness largest-contentful-paint/invisible-images-composited-2.html
 testharness largest-contentful-paint/invisible-images.html
 testharness largest-contentful-paint/larger-image.html
 testharness largest-contentful-paint/larger-text.html
@@ -31393,10 +31397,14 @@ testharness pointerevents/pointerevent_constructor.html
 testharness pointerevents/pointerevent_disabled_form_control.html
 testharness pointerevents/pointerevent_element_haspointercapture.html
 testharness pointerevents/pointerevent_lostpointercapture_for_disconnected_node.html
+testharness pointerevents/pointerevent_lostpointercapture_for_disconnected_node_in_shadow_dom.html
+testharness pointerevents/pointerevent_lostpointercapture_for_disconnected_shadow_host.html
 testharness pointerevents/pointerevent_lostpointercapture_is_first.html
 testharness pointerevents/pointerevent_mouse_capture_change_hover.html
 testharness pointerevents/pointerevent_on_event_handlers.html
 testharness pointerevents/pointerevent_pointercancel_touch.html
+testharness pointerevents/pointerevent_pointercapture-in-custom-element.html
+testharness pointerevents/pointerevent_pointercapture-in-shadow-dom.html
 testharness pointerevents/pointerevent_pointercapture-not-lost-in-chorded-buttons.html
 testharness pointerevents/pointerevent_pointercapture_in_frame.html
 testharness pointerevents/pointerevent_pointerenter_does_not_bubble.html
