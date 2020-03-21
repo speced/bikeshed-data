@@ -18,6 +18,7 @@
     "%evalerrorprototype%",
     "%functionprototype%",
     "%jsonparse%",
+    "%objectprototype%",
     "%objproto_valueof%",
     "%rangeerrorprototype%",
     "%referenceerrorprototype%",
@@ -836,7 +837,6 @@
     "DOMStringSizeError",
     "DOMTimeStamp",
     "DOMTokenList",
-    "DOMTokenList.value",
     "DOMUserData",
     "DataCloneError",
     "DataError",
@@ -978,9 +978,6 @@
     "HTMLButtonElement",
     "HTMLCanvasElement",
     "HTMLCollection",
-    "HTMLCollection.item()",
-    "HTMLCollection.length",
-    "HTMLCollection.namedItem()",
     "HTMLConstructor",
     "HTMLDListElement",
     "HTMLDataElement",
@@ -1346,9 +1343,6 @@
     "Printer",
     "ProcessingInstruction",
     "ProgressEvent",
-    "ProgressEvent.lengthComputable",
-    "ProgressEvent.loaded",
-    "ProgressEvent.total",
     "ProgressEventInit",
     "Promise",
     "Promise<T>",
@@ -1930,6 +1924,7 @@
     "VideoTrack",
     "VideoTrackList",
     "VoidFunction",
+    "WatchAdvertisementsOptions",
     "WaveShaperNode",
     "WaveShaperOptions",
     "WebAppManifest",
@@ -2000,7 +1995,6 @@
     "WrongDocumentError",
     "XMLDocument",
     "XMLHttpRequest",
-    "XMLHttpRequest.responseXML",
     "XMLHttpRequestEventTarget",
     "XMLHttpRequestResponseType",
     "XMLHttpRequestUpload",
@@ -2155,6 +2149,7 @@
     "abort fetch",
     "abort the image request",
     "abort the update",
+    "abort watchadvertisements",
     "abort when",
     "abort_err",
     "aborted network error",
@@ -3184,6 +3179,7 @@
     "cannot navigate",
     "cannot-be-a-base-url flag",
     "cannot-be-a-base-url path state",
+    "canonical keyword",
     "canonical lexical form",
     "canonical unit",
     "canonicalizelanguagetag",
@@ -5684,6 +5680,7 @@
     "immediately",
     "immersive session",
     "immersive session request is allowed",
+    "immutable prototype exotic object",
     "implements",
     "implements statement",
     "implicit consent",
@@ -6119,6 +6116,7 @@
     "italic",
     "item",
     "item types",
+    "item()",
     "itemid",
     "itemref",
     "itemscope",
@@ -6933,6 +6931,7 @@
     "named property setters",
     "named property visibility algorithm",
     "named string",
+    "namedItem()",
     "namedconstructor identifier",
     "namedcurve",
     "namedflows",
@@ -8967,6 +8966,7 @@
     "set-mode",
     "set-site",
     "set-user",
+    "setAttribute()",
     "setimmutableprototype",
     "setlike",
     "setlike declaration",
@@ -12060,15 +12060,7 @@
     "performanceTime"
   ],
   "AudioTrack": [
-    "AudioTrack.enabled",
-    "AudioTrack.id",
-    "AudioTrack.kind",
-    "AudioTrack.label",
-    "AudioTrack.language"
-  ],
-  "AudioTrackList": [
-    "AudioTrackList.getTrackById(id)",
-    "AudioTrackList.length"
+    "enabled"
   ],
   "AudioWorkletGlobalScope": [
     "currentFrame",
@@ -12547,14 +12539,21 @@
     "[[context]]",
     "[[gatt]]",
     "[[representedDevice]]",
+    "[[watchAdvertisementsState]]",
     "advertisementreceived",
     "gatt",
     "gattserverdisconnected",
     "id",
     "name",
-    "unwatchAdvertisements()",
     "watchAdvertisements()",
+    "watchAdvertisements(options)",
     "watchingAdvertisements"
+  ],
+  "BluetoothDevice/watchAdvertisements()": [
+    "options"
+  ],
+  "BluetoothDevice/watchAdvertisements(options)": [
+    "options"
   ],
   "BluetoothDeviceEventHandlers": [
     "onadvertisementreceived",
@@ -23827,16 +23826,19 @@
     "none"
   ],
   "VideoTrack": [
-    "VideoTrack.id",
-    "VideoTrack.kind",
-    "VideoTrack.label",
-    "VideoTrack.language",
-    "VideoTrack.selected"
+    "id",
+    "kind",
+    "label",
+    "language",
+    "selected"
   ],
   "VideoTrackList": [
-    "VideoTrackList.getTrackById(id)",
-    "VideoTrackList.length",
-    "VideoTrackList.selectedIndex"
+    "getTrackById(id)",
+    "length",
+    "selectedIndex"
+  ],
+  "WatchAdvertisementsOptions": [
+    "signal"
   ],
   "WaveShaperNode": [
     "WaveShaperNode(context)",
@@ -26288,6 +26290,9 @@
     "text-bottom",
     "text-top"
   ],
+  "domtokenlist": [
+    "value"
+  ],
   "doublerange": [
     "max",
     "min"
@@ -27007,6 +27012,9 @@
   "html-global": [
     "exportparts",
     "part"
+  ],
+  "htmlcollection": [
+    "length"
   ],
   "htmlsvg-global": [
     "nonce"
@@ -28219,6 +28227,11 @@
   "progress": [
     "max",
     "value"
+  ],
+  "progressevent": [
+    "lengthComputable",
+    "loaded",
+    "total"
   ],
   "promise": [
     "react",
@@ -29553,6 +29566,9 @@
     "known",
     "korean",
     "unknown"
+  ],
+  "xmlhttprequest": [
+    "responseXML"
   ],
   "z-index": [
     "<integer>",

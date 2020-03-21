@@ -194,17 +194,6 @@
       "shortname": "webaudio"
     }
   },
-  "AudioTrackList.getTrackById()": {
-    "AudioTrackList.getTrackById(id)": {
-      "args": [
-        "id"
-      ],
-      "for": [
-        "AudioTrackList"
-      ],
-      "shortname": "html"
-    }
-  },
   "AudioWorkletNode()": {
     "AudioWorkletNode(context, name)": {
       "args": [
@@ -3391,17 +3380,6 @@
         "ValueEvent"
       ],
       "shortname": "web-bluetooth"
-    }
-  },
-  "VideoTrackList.getTrackById()": {
-    "VideoTrackList.getTrackById(id)": {
-      "args": [
-        "id"
-      ],
-      "for": [
-        "VideoTrackList"
-      ],
-      "shortname": "html"
     }
   },
   "WaveShaperNode()": {
@@ -9726,7 +9704,8 @@
         "id"
       ],
       "for": [
-        "TextTrackList"
+        "TextTrackList",
+        "VideoTrackList"
       ],
       "shortname": "html"
     }
@@ -14051,6 +14030,11 @@
     }
   },
   "setAttribute()": {
+    "setAttribute()": {
+      "args": [],
+      "for": [],
+      "shortname": "html"
+    },
     "setAttribute(qualifiedName, value)": {
       "args": [
         "qualifiedName",
@@ -15829,15 +15813,6 @@
       "shortname": "html"
     }
   },
-  "unwatchAdvertisements()": {
-    "unwatchAdvertisements()": {
-      "args": [],
-      "for": [
-        "BluetoothDevice"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "update()": {
     "update()": {
       "args": [],
@@ -16072,6 +16047,15 @@
   "watchAdvertisements()": {
     "watchAdvertisements()": {
       "args": [],
+      "for": [
+        "BluetoothDevice"
+      ],
+      "shortname": "web-bluetooth"
+    },
+    "watchAdvertisements(options)": {
+      "args": [
+        "options"
+      ],
       "for": [
         "BluetoothDevice"
       ],
