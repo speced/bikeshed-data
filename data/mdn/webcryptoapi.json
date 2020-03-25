@@ -64,7 +64,7 @@
             "filename": "api/Crypto.json",
             "name": "subtle",
             "slug": "API/Crypto/subtle",
-            "summary": "The Crypto.subtle read-only property returns a SubtleCrypto object allowing to perform cryptographical operations.",
+            "summary": "The Crypto.subtle read-only property returns a SubtleCrypto which can then be used to perform low-level cryptographic operations.",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -212,7 +212,7 @@
             "filename": "api/CryptoKey.json",
             "name": "algorithm",
             "slug": "API/CryptoKey/algorithm",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key.",
+            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -264,7 +264,7 @@
             "filename": "api/CryptoKey.json",
             "name": "extractable",
             "slug": "API/CryptoKey/extractable",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key.",
+            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -316,7 +316,7 @@
             "filename": "api/CryptoKey.json",
             "name": "type",
             "slug": "API/CryptoKey/type",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key.",
+            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -368,7 +368,7 @@
             "filename": "api/CryptoKey.json",
             "name": "usages",
             "slug": "API/CryptoKey/usages",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key.",
+            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -420,7 +420,7 @@
             "filename": "api/CryptoKey.json",
             "name": "CryptoKey",
             "slug": "API/CryptoKey",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key.",
+            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -1518,7 +1518,7 @@
             "filename": "api/SubtleCrypto.json",
             "name": "SubtleCrypto",
             "slug": "API/SubtleCrypto",
-            "summary": "The SubtleCrypto interface of the Web Crypto API provides a number of low-level cryptographic functions. It is accessed via the Crypto.subtle properties available in a window context (via Window.crypto).",
+            "summary": "The SubtleCrypto interface of the Web Crypto API provides a number of low-level cryptographic functions. Access to the features of SubtleCrypto is obtained through the subtle property of the Crypto object you get from Window.crypto.",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -1612,7 +1612,7 @@
             "filename": "api/Window.json",
             "name": "crypto",
             "slug": "API/Window/crypto",
-            "summary": "The Window.crypto property returns the Crypto object associated to the global object. This object allows web pages access to certain cryptographic related services.",
+            "summary": "The read-only Window.crypto property returns the Crypto object associated to the global object. This object allows web pages access to certain cryptographic related services.",
             "support": {
                 "chrome": {
                     "version_added": "37"
