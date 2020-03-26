@@ -78,9 +78,16 @@
                 "webview_android": {
                     "version_added": "54"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": false,
+                        "notes": "Instead of ignoring the <code>-webkit-text-size-adjust</code> property, a bug prevents desktop Chrome users from zooming in or out. The bug was fixed after Chrome 26."
+                    }
+                ]
             },
             "title": "text-size-adjust"
         }

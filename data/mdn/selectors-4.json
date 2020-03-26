@@ -281,9 +281,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": ":any-link"
         }
@@ -748,9 +754,15 @@
                         "notes": "<code>&gt;&gt;&gt;</code> is aliased to this selector <a href='https://developers.google.com/web/updates/2017/06/chrome-60-deprecations#make_shadow-piercing_descendant_combinator_behave_like_descendent_combinator'>since its use as the 'shadow-piercing descendant combinator' was deprecated</a>."
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "<code>&gt;&gt;&gt;</code> is aliased to this selector <a href='https://developers.google.com/web/updates/2017/06/chrome-60-deprecations#make_shadow-piercing_descendant_combinator_behave_like_descendent_combinator'>since its use as the 'shadow-piercing descendant combinator' was deprecated</a>."
+                    }
+                ]
             },
             "title": "Descendant combinator"
         }
@@ -1177,7 +1189,14 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "name": "#enable-experimental-web-platform-features",
+                            "type": "preference",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": ":focus-visible"
@@ -1405,7 +1424,8 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/669058'>bug 669058</a>"
                 }
             },
             "title": ":has()"
@@ -1580,7 +1600,8 @@
                     "notes": "Before version 52, <code>:in-range</code> matched disabled and read-only inputs (see <a href='https://crbug.com/602568'>Chromium bug 602568</a>). In version 52, it was changed to only match enabled read-write inputs."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 52, <code>:in-range</code> matched disabled and read-only inputs (see <a href='https://crbug.com/602568'>Chromium bug 602568</a>). In Chrome 52, it was changed to only match enabled read-write inputs."
                 }
             },
             "title": ":in-range"
@@ -1932,9 +1953,37 @@
                     "alternative_name": ":-webkit-any()",
                     "notes": "Doesn't support combinators."
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features",
+                                "value_to_set": "enabled"
+                            }
+                        ],
+                        "notes": "Combinators in the selector list argument may not match correctly (see <a href='https://crbug.com/842157'>bug 842157</a>)."
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "71",
+                        "alternative_name": ":matches()",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features",
+                                "value_to_set": "enabled"
+                            }
+                        ],
+                        "notes": "Combinators in the selector list argument may not match correctly (see <a href='https://crbug.com/842157'>bug 842157</a>)."
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": ":-webkit-any()",
+                        "notes": "Doesn't support combinators."
+                    }
+                ]
             },
             "title": ":is() (:matches(), :any())"
         }

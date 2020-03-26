@@ -102,7 +102,9 @@
                     "prefix": "-webkit-"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "prefix": "-webkit-"
                 }
             },
             "title": "appearance (-moz-appearance, -webkit-appearance)"
@@ -230,9 +232,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "user-select"
         }

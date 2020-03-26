@@ -497,9 +497,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": ":after",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "::after (:after)"
         }
@@ -617,9 +623,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": ":before",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "::before (:before)"
         }
@@ -738,9 +750,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": ":first-letter",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "::first-letter (:first-letter)"
         }
@@ -875,9 +893,17 @@
                         "notes": "Before WebView 62, the <a href='https://developer.mozilla.org/docs/Web/CSS/text-transform'><code>text-transform</code></a> property does not work on <code>::first-line</code> pseudo-elements. See <a href='https://crbug.com/129669'>Chromium bug 129669</a>."
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Before Chrome 62, the <a href='https://developer.mozilla.org/docs/Web/CSS/text-transform'><code>text-transform</code></a> property does not work on <code>::first-line</code> pseudo-elements. See <a href='https://crbug.com/129669'>Chromium bug 129669</a>."
+                    },
+                    {
+                        "alternative_name": ":first-line",
+                        "version_added": "79",
+                        "notes": "Before Chrome 62, the <a href='https://developer.mozilla.org/docs/Web/CSS/text-transform'><code>text-transform</code></a> property does not work on <code>::first-line</code> pseudo-elements. See <a href='https://crbug.com/129669'>Chromium bug 129669</a>."
+                    }
+                ]
             },
             "title": "::first-line (:first-line)"
         }
@@ -993,7 +1019,13 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "80"
+                    "version_added": "80",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "Enable experimental Web Platform features"
+                        }
+                    ]
                 }
             },
             "title": "::marker"
@@ -1107,9 +1139,15 @@
                         "version_added": "2"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-input-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "::placeholder"
         }

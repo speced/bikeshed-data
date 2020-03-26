@@ -5517,7 +5517,8 @@
                     "notes": "The <code>text-transform</code> property does not work for <code>::first-line</code> pseudo-elements (nor for the one-colon syntax). See <a href='https://crbug.com/129669'>Chromium bug 129669</a>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "The <code>text-transform</code> property does not work for <code>::first-line</code> pseudo-elements (nor for the one-colon syntax). See <a href='https://crbug.com/129669'>Chromium bug 129669</a>."
                 }
             },
             "title": "text-transform"
@@ -6360,9 +6361,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": ":after",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "::after (:after)"
         },
@@ -6478,9 +6485,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": ":before",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "::before (:before)"
         }
@@ -6722,9 +6735,15 @@
                         "notes": "<code>&gt;&gt;&gt;</code> is aliased to this selector <a href='https://developers.google.com/web/updates/2017/06/chrome-60-deprecations#make_shadow-piercing_descendant_combinator_behave_like_descendent_combinator'>since its use as the 'shadow-piercing descendant combinator' was deprecated</a>."
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "<code>&gt;&gt;&gt;</code> is aliased to this selector <a href='https://developers.google.com/web/updates/2017/06/chrome-60-deprecations#make_shadow-piercing_descendant_combinator_behave_like_descendent_combinator'>since its use as the 'shadow-piercing descendant combinator' was deprecated</a>."
+                    }
+                ]
             },
             "title": "Descendant combinator"
         }
@@ -6902,9 +6921,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": ":first-letter",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "::first-letter (:first-letter)"
         }
@@ -7039,9 +7064,17 @@
                         "notes": "Before WebView 62, the <a href='https://developer.mozilla.org/docs/Web/CSS/text-transform'><code>text-transform</code></a> property does not work on <code>::first-line</code> pseudo-elements. See <a href='https://crbug.com/129669'>Chromium bug 129669</a>."
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Before Chrome 62, the <a href='https://developer.mozilla.org/docs/Web/CSS/text-transform'><code>text-transform</code></a> property does not work on <code>::first-line</code> pseudo-elements. See <a href='https://crbug.com/129669'>Chromium bug 129669</a>."
+                    },
+                    {
+                        "alternative_name": ":first-line",
+                        "version_added": "79",
+                        "notes": "Before Chrome 62, the <a href='https://developer.mozilla.org/docs/Web/CSS/text-transform'><code>text-transform</code></a> property does not work on <code>::first-line</code> pseudo-elements. See <a href='https://crbug.com/129669'>Chromium bug 129669</a>."
+                    }
+                ]
             },
             "title": "::first-line (:first-line)"
         }

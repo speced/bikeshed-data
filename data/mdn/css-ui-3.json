@@ -139,9 +139,16 @@
                         "version_added": "2"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "<code>box-sizing</code> is not respected when the height is calculated from <a href='https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle'><code>window.getComputedStyle()</code></a>."
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "box-sizing"
         }

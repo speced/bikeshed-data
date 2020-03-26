@@ -320,7 +320,8 @@
                     "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 }
             },
             "title": "MediaDeviceInfo.deviceId"
@@ -382,7 +383,8 @@
                     "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 }
             },
             "title": "MediaDeviceInfo.groupId"
@@ -442,7 +444,8 @@
                     "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 }
             },
             "title": "MediaDeviceInfo.kind"
@@ -502,7 +505,8 @@
                     "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 }
             },
             "title": "MediaDeviceInfo.label"
@@ -562,7 +566,8 @@
                     "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "For earlier versions, this interface is available through the <a href='https://github.com/webrtc/adapter'>adapter.js</a> polyfill"
                 }
             },
             "title": "MediaDeviceInfo"
@@ -874,9 +879,23 @@
                 "webview_android": {
                     "version_added": "53"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "52",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform features",
+                                "value_to_set": "Enabled"
+                            }
+                        ],
+                        "notes": "Older versions of Chrome implement <code>navigator.webkitGetUserMedia</code>, a prefixed form of the legacy <a href='https://developer.mozilla.org/docs/Web/API/Navigator/getUserMedia'><code>navigator.getUserMedia</code></a> API."
+                    }
+                ]
             },
             "title": "MediaDevices.getUserMedia()"
         }
@@ -1661,7 +1680,8 @@
                     "version_removed": "54"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "version_removed": "54"
                 }
             },
             "title": "MediaStream.id"

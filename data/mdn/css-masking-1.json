@@ -206,9 +206,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "clip-path"
         },
@@ -343,6 +349,7 @@
                     "version_added": "2"
                 },
                 "edge_blink": {
+                    "prefix": "-webkit-",
                     "version_added": "79"
                 }
             },
@@ -404,7 +411,8 @@
                     "notes": "See also <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-composite'><code>-webkit-mask-composite</code></a> for a similar non-standard property that uses different keywords."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See also <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-composite'><code>-webkit-mask-composite</code></a> for a similar non-standard property that uses different keywords."
                 }
             },
             "title": "mask-composite"
@@ -470,7 +478,9 @@
                     "notes": "Initially, Android supported only <code>-webkit-</code> prefixed values for gradients (such as <code>-webkit-linear-gradient()</code>). Later, support for unprefixed values was added."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "prefix": "-webkit-",
+                    "version_added": "79",
+                    "notes": "From version 8, Chrome added support for gradient values. Initially, Chrome supported only <code>-webkit-</code> prefixed values for gradients (such as <code>-webkit-linear-gradient()</code>). Later, support for unprefixed values was added."
                 }
             },
             "title": "mask-image"
@@ -618,7 +628,9 @@
                     "notes": "The <code>margin-box</code> value is unsupported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "prefix": "-webkit-",
+                    "version_added": "79",
+                    "notes": "The <code>margin-box</code> value is unsupported."
                 }
             },
             "title": "mask-origin"
@@ -705,6 +717,7 @@
                     "version_added": "2"
                 },
                 "edge_blink": {
+                    "prefix": "-webkit-",
                     "version_added": "79"
                 }
             },
@@ -792,6 +805,7 @@
                     "version_added": "2"
                 },
                 "edge_blink": {
+                    "prefix": "-webkit-",
                     "version_added": "79"
                 }
             },
@@ -879,6 +893,7 @@
                     "version_added": "4.4"
                 },
                 "edge_blink": {
+                    "prefix": "-webkit-",
                     "version_added": "79"
                 }
             },
@@ -1086,9 +1101,18 @@
                         "notes": "The prefixed property can be used with SVG and HTML with a slightly different syntax, which allows setting the non-standard <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-attachment'><code>-webkit-mask-attachment</code></a> property."
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "While the property is recognized, values applied to it don't have any effect."
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79",
+                        "notes": "The prefixed property can be used with SVG and HTML with a slightly different syntax, which allows setting the non-standard <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-attachment'><code>-webkit-mask-attachment</code></a> property."
+                    }
+                ]
             },
             "title": "mask"
         },

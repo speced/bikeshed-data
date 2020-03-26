@@ -528,9 +528,15 @@
                 "webview_android": {
                     "version_added": "4.4"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "font-feature-settings"
         }
@@ -615,6 +621,7 @@
                     "version_added": "37"
                 },
                 "edge_blink": {
+                    "prefix": "-webkit-",
                     "version_added": "79"
                 }
             },
@@ -703,7 +710,13 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "Enable experimental Web Platform features"
+                        }
+                    ]
                 }
             },
             "title": "font-size-adjust"
@@ -868,7 +881,8 @@
                     "notes": "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
                 }
             },
             "title": "font-stretch"
@@ -1366,9 +1380,15 @@
                         "version_added": "4.4"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "font-variant-ligatures"
         }

@@ -1677,9 +1677,16 @@
                         "version_added": "4.4"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79",
+                        "notes": "In Chrome 18 to 19, the <code>saturate()</code> function only takes integers instead of decimal or percentage values. From Chrome 20, this bug is fixed."
+                    }
+                ]
             },
             "title": "filter"
         },

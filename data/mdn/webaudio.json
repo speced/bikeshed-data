@@ -656,7 +656,8 @@
                     "notes": "The <code>context</code> parameter was supported up until version 57, but has now been removed."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "The <code>context</code> parameter was supported up until version 57, but has now been removed."
                 }
             },
             "title": "AudioBuffer()"
@@ -1154,7 +1155,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before version 59, the default values were not supported."
                 }
             },
             "title": "AudioBufferSourceNode.AudioBufferSourceNode()"
@@ -1861,7 +1863,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "version_removed": "57"
                 }
             },
             "title": "AudioBufferSourceNode.start()"
@@ -1929,7 +1932,11 @@
                     "version_added": "55"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": [
+                        "Each tab is limited to 6 audio contexts in Chrome; attempting to create more will throw a <code>DOMException</code>. For details see <a href='https://developer.mozilla.org/docs/Web/API/AudioContext/AudioContext#Per-tab_audio_context_limitation_in_Chrome'>Per-tab audio context limitation in Chrome</a>.",
+                        "If <code>latencyHint</code> isn't valid, Chrome throws a <code>TypeError</code> exception. See <a href='https://developer.mozilla.org/docs/Web/API/AudioContext/AudioContext#Non-standard_exceptions_in_Chrome'>Non-standard exceptions in Chrome</a> for details."
+                    ]
                 }
             },
             "title": "AudioContext()"
@@ -2123,7 +2130,10 @@
                     "notes": "Available as a part of <code>BaseAudioContext</code>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "version_removed": "56",
+                    "prefix": "webkit",
+                    "notes": "Available as a part of <code>BaseAudioContext</code>."
                 }
             },
             "title": "BaseAudioContext.createConstantSource()"
@@ -2703,9 +2713,16 @@
                 "webview_android": {
                     "version_added": true
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "57",
+                        "prefix": "webkit"
+                    }
+                ]
             },
             "title": "AudioContext"
         }
@@ -4224,9 +4241,16 @@
                         "alternative_name": "cancelValuesAndHoldAtTime()"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "56",
+                        "alternative_name": "cancelValuesAndHoldAtTime()"
+                    }
+                ]
             },
             "title": "AudioParam.cancelAndHoldAtTime()"
         }
@@ -5279,9 +5303,16 @@
                         "alternative_name": "AudioSourceNode"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "58",
+                        "alternative_name": "AudioSourceNode"
+                    }
+                ]
             },
             "title": "AudioScheduledSourceNode"
         }
@@ -5986,7 +6017,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createAnalyser()"
@@ -6056,7 +6088,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createBiquadFilter()"
@@ -6126,7 +6159,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createBuffer()"
@@ -6196,7 +6230,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createBufferSource()"
@@ -6266,7 +6301,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createChannelMerger()"
@@ -6336,7 +6372,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createChannelSplitter()"
@@ -6406,7 +6443,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createConvolver()"
@@ -6476,7 +6514,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createDelay()"
@@ -6546,7 +6585,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createDynamicsCompressor()"
@@ -6616,7 +6656,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createGain()"
@@ -6742,7 +6783,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createOscillator()"
@@ -6812,7 +6854,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createPanner()"
@@ -6920,9 +6963,19 @@
                         "prefix": "webkit"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Default values supported"
+                    },
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "prefix": "webkit"
+                    }
+                ]
             },
             "title": "BaseAudioContext.createPeriodicWave()"
         }
@@ -6991,7 +7044,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createScriptProcessor()"
@@ -7117,7 +7171,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.createWaveShaper()"
@@ -7187,7 +7242,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.currentTime"
@@ -7257,7 +7313,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.decodeAudioData()"
@@ -7327,7 +7384,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.destination"
@@ -7395,7 +7453,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.listener"
@@ -7521,7 +7580,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "prefix": "webkit"
                 }
             },
             "title": "BaseAudioContext.sampleRate"
@@ -7704,7 +7764,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "BiquadFilterNode()"
@@ -8309,7 +8370,8 @@
                     "notes": "Starting in version 56, <code>channelCountMode</code> is set to <code>explicit</code> and <code>channelCount</code> is fixed to the number of outputs, as per the latest spec."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Starting in Chrome 56, <code>channelCountMode</code> is set to <code>explicit</code> and <code>channelCount</code> is fixed to the number of outputs, as per the latest spec."
                 }
             },
             "title": "ChannelSplitterNode"
@@ -8753,7 +8815,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before version 59, the default values were not supported."
                 }
             },
             "title": "DelayNode()"
@@ -8921,7 +8984,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "DynamicsCompressorNode()"
@@ -9198,7 +9262,8 @@
                     "notes": "Before version 52, this was an <code>AudioParam.</code>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before version 52, this was an <code>AudioParam.</code>."
                 }
             },
             "title": "DynamicsCompressorNode.reduction"
@@ -9366,7 +9431,8 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "GainNode()"
@@ -9534,7 +9600,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before version 59, the default values were not supported."
                 }
             },
             "title": "IIRFilterNode()"
@@ -9646,7 +9713,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "MediaElementAudioSourceNode()"
@@ -9812,7 +9880,8 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "MediaStreamAudioDestinationNode.MediaStreamAudioDestinationNode()"
@@ -9978,7 +10047,8 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "MediaStreamAudioSourceNode()"
@@ -10469,7 +10539,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "OfflineAudioCompletionEvent.OfflineAudioCompletionEvent()"
@@ -10690,7 +10761,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "OfflineAudioContext.OfflineAudioContext()"
@@ -11073,7 +11145,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "OscillatorNode.OscillatorNode()"
@@ -11406,7 +11479,8 @@
                     "notes": "Before version 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "PannerNode.PannerNode()"
@@ -12393,7 +12467,8 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "PeriodicWave.PeriodicWave()"
@@ -12504,7 +12579,8 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "StereoPannerNode.StereoPannerNode()"
@@ -12670,7 +12746,8 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
             "title": "WaveShaperNode.WaveShaperNode()"

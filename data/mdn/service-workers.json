@@ -55,7 +55,8 @@
                     "notes": "Requires HTTPS from version 46."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Requires HTTPS from version 46."
                 }
             },
             "title": "Cache.add()"
@@ -117,7 +118,8 @@
                     "notes": "Requires HTTPS."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Requires HTTPS."
                 }
             },
             "title": "Cache.addAll()"
@@ -404,7 +406,8 @@
                     "notes": "Requires HTTPS from version 46."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Requires HTTPS from version 46."
                 }
             },
             "title": "Cache.put()"
@@ -466,7 +469,8 @@
                     "notes": "From 40 to 42, this was only available on service workers."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "From 40 to 42, this was only available on service workers."
                 }
             },
             "title": "Cache"
@@ -731,9 +735,16 @@
                         "notes": "The options parameter only supports <code>ignoreSearch</code>, and <code>cacheName</code>."
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The options parameter only supports <code>ignoreSearch</code>, and <code>cacheName</code>."
+                    }
+                ]
             },
             "title": "CacheStorage.match()"
         }
@@ -860,7 +871,11 @@
                     ]
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": [
+                        "Accessible from <code>Window</code> from version 43.",
+                        "Accessible from <code>WorkerGlobalScope</code> from version 43."
+                    ]
                 }
             },
             "title": "CacheStorage"
@@ -1370,7 +1385,8 @@
                     "notes": "<code>Client</code> objects returned in most recent focus order."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "<code>Client</code> objects returned in most recent focus order."
                 }
             },
             "title": "Clients.matchAll()"
@@ -1472,9 +1488,23 @@
                         "notes": "URLs may open inside an existing browsing context provided by a standalone web app"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "Can only open URLs on the same origin."
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "Can open any URL. "
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "URLs may open inside an existing browsing context provided by a standalone web app"
+                    }
+                ]
             },
             "title": "Clients.openWindow()"
         }
@@ -2510,7 +2540,8 @@
                     "notes": "NetworkError thrown if request mode is same-origin and response type is cors (see <a href='https://bugzil.la/1222008'>bug 1222008</a>). This is being worked on - see <a href='https://www.chromestatus.com/feature/5694278818856960'>https://www.chromestatus.com/feature/5694278818856960</a>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "NetworkError thrown if request mode is same-origin and response type is cors (see <a href='https://bugzil.la/1222008'>bug 1222008</a>). This is being worked on - see <a href='https://www.chromestatus.com/feature/5694278818856960'>https://www.chromestatus.com/feature/5694278818856960</a>."
                 }
             },
             "title": "FetchEvent.respondWith()"
@@ -4427,7 +4458,11 @@
                     ]
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": [
+                        "Starting with Chrome 46, update() returns a promise that resolves with 'undefined' if the operation completed successfully or there was no update, and rejects if update failed. If the new worker ran but installation failed, the promise still resolves. Formerly, it raised an exception.",
+                        "Before Chrome 48, this method always bypassed the browser cache. Starting with Chrome 48, it only bypasses the cache when the previous service worker check was more than twenty-four hours ago."
+                    ]
                 }
             },
             "title": "ServiceWorkerRegistration.update()"

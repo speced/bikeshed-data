@@ -4604,9 +4604,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "clip-path"
         },
@@ -4888,9 +4894,18 @@
                         "notes": "The prefixed property can be used with SVG and HTML with a slightly different syntax, which allows setting the non-standard <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-attachment'><code>-webkit-mask-attachment</code></a> property."
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "While the property is recognized, values applied to it don't have any effect."
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79",
+                        "notes": "The prefixed property can be used with SVG and HTML with a slightly different syntax, which allows setting the non-standard <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-attachment'><code>-webkit-mask-attachment</code></a> property."
+                    }
+                ]
             },
             "title": "mask"
         },
@@ -5111,7 +5126,11 @@
                     "notes": "From version 3 to 4.3, there is a serious bug where <code>text-rendering: optimizeLegibility</code> causes custom web fonts to not render. This was fixed in version 4.4."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": [
+                        "This property is only supported on Windows and Linux.",
+                        "Initial versions had bugs on Windows and Linux that broke <a href='https://crbug.com/114719'>font substitition</a>, <a href='https://crbug.com/51973'>small-caps</a>, <a href='https://crbug.com/55458'>letter-spacing</a> or caused <a href='https://crbug.com/149548'>text to overlap</a>."
+                    ]
                 }
             },
             "title": "text-rendering"

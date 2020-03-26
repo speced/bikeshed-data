@@ -399,9 +399,17 @@
                 "webview_android": {
                     "version_added": "38"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Does not accept parameters. Supports only <code>utf-8</code> encoding."
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "53",
+                        "notes": "Throws <code>RangeError</code> exception for unknown encoding types."
+                    }
+                ]
             },
             "title": "TextEncoder()"
         }

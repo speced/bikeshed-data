@@ -1868,7 +1868,11 @@
                     ]
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": [
+                        "The spec requires that the passed <code>supportedConfigurations</code> option contain at least one of <code>audioCapabilities</code> or <code>videoCapabilities</code>, and that said parameters include a codec string.",
+                        "The function does not exist in insecure contexts. This was not enforced until Chrome 58."
+                    ]
                 }
             },
             "title": "Navigator.requestMediaKeySystemAccess()"

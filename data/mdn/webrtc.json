@@ -755,7 +755,8 @@
                     "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
                 }
             },
             "title": "RTCDataChannel: bufferedamountlow event"
@@ -1354,7 +1355,8 @@
                     "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
                 }
             },
             "title": "RTCDataChannel.onbufferedamountlow"
@@ -3374,7 +3376,8 @@
                     "notes": "An <code>RTCIceCandidate</code> object's <code>type</code> is not maintained by this browser."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "An <code>RTCIceCandidate</code> object's <code>type</code> is not maintained by this browser."
                 }
             },
             "title": "RTCIceCandidateType"
@@ -4758,7 +4761,8 @@
                     "notes": "Before Chrome 63 the default value for the <code>RTCConfiguration.rtcpMuxPolicy</code> parameter was <code>&quot;negotiate&quot;</code>"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 63 the default value for the <code>RTCConfiguration.rtcpMuxPolicy</code> parameter was <code>&quot;negotiate&quot;</code>"
                 }
             },
             "title": "RTCPeerConnection()"
@@ -4854,9 +4858,15 @@
                         "version_added": true
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Promise-based version."
+                    },
+                    {
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "RTCPeerConnection.addIceCandidate()"
         }
@@ -5275,9 +5285,15 @@
                         "version_added": true
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Promise-based version."
+                    },
+                    {
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "RTCPeerConnection.createAnswer()"
         }
@@ -5439,9 +5455,15 @@
                         "version_added": true
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Promise-based version."
+                    },
+                    {
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "RTCPeerConnection.createOffer()"
         }
@@ -5960,9 +5982,19 @@
                         "version_added": true
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Promise resolves with <code>RTCStatsReport</code>."
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "Promise-based version."
+                    },
+                    {
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "RTCPeerConnection.getStats()"
         }
@@ -7458,9 +7490,15 @@
                         "version_added": true
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Promise-based version."
+                    },
+                    {
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "RTCPeerConnection.setLocalDescription()"
         }
@@ -7551,9 +7589,15 @@
                         "version_added": true
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Promise-based version."
+                    },
+                    {
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "RTCPeerConnection.setRemoteDescription()"
         }
@@ -8005,9 +8049,16 @@
                         "version_added": "56"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": false
-                }
+                "edge_blink": [
+                    {
+                        "alternative_name": "RTCIceCandidateEvent",
+                        "version_added": false,
+                        "version_removed": "56"
+                    },
+                    {
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "RTCPeerConnectionIceEvent"
         }

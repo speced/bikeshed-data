@@ -1387,7 +1387,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "This API was previously available on the <a href='https://developer.mozilla.org/docs/Web/API/Node'><code>Node</code></a> API."
                 }
             },
             "title": "Attr.localName"
@@ -1439,7 +1440,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "This API was previously available on the <a href='https://developer.mozilla.org/docs/Web/API/Node'><code>Node</code></a> API."
                 }
             },
             "title": "Attr.namespaceURI"
@@ -1491,7 +1493,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "This API was previously available on the <a href='https://developer.mozilla.org/docs/Web/API/Node'><code>Node</code></a> API."
                 }
             },
             "title": "Attr.prefix"
@@ -1552,7 +1555,8 @@
                     "notes": "As of Chrome 45, this property no longer inherits from Node."
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": true,
+                    "notes": "As of Chrome 45, this property no longer inherits from Node."
                 }
             },
             "title": "Attr"
@@ -3137,7 +3141,8 @@
                     "notes": "Before Chrome 50, this property was part of the deprecated child <code>DOMSettableTokenList</code> interface."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 50, this property was part of the deprecated child <code>DOMSettableTokenList</code> interface."
                 }
             },
             "title": "DOMTokenList.value"
@@ -3470,9 +3475,20 @@
                         "version_added": true
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "charset",
+                        "version_added": "79",
+                        "notes": "<code>charset</code> alias was made read-only in Chrome 45."
+                    },
+                    {
+                        "alternative_name": "inputEncoding",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "Document.characterSet"
         }
@@ -6012,7 +6028,8 @@
                     "notes": "Initially, this method was returning a <code>NodeList</code>; it was then changed to reflect the spec change."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Initially, this method was returning a <code>NodeList</code>; it was then changed to reflect the spec change."
                 }
             },
             "title": "Element.getElementsByTagName()"
@@ -6078,7 +6095,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Initially, this method was returning a <code>NodeList</code>; it was then changed to reflect the spec change."
                 }
             },
             "title": "Element.getElementsByTagNameNS()"
@@ -6472,7 +6490,8 @@
                     "notes": "This API was previously available on the <code>Node</code> API."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 }
             },
             "title": "Element.localName"
@@ -6610,9 +6629,15 @@
                         "alternative_name": "webkitMatchesSelector"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "webkitMatchesSelector"
+                    }
+                ]
             },
             "title": "Element.matches()"
         }
@@ -6672,7 +6697,8 @@
                     "notes": "This API was previously available on the <code>Node</code> API."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 }
             },
             "title": "Element.namespaceURI"
@@ -6732,7 +6758,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 }
             },
             "title": "Element.prefix"
@@ -7760,7 +7787,8 @@
                     "notes": "Starting with Chrome 58 and Opera 45, setting this property to false does nothing, as per <a href='https://github.com/whatwg/dom/issues/211'>spec discussion</a>."
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": true,
+                    "notes": "Starting with Chrome 58 and Opera 45, setting this property to false does nothing, as per <a href='https://github.com/whatwg/dom/issues/211'>spec discussion</a>."
                 }
             },
             "title": "Event.cancelBubble"
@@ -7911,9 +7939,16 @@
                         "alternative_name": "deepPath"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "53",
+                        "alternative_name": "deepPath"
+                    }
+                ]
             },
             "title": "Event.composedPath()"
         }
@@ -8147,7 +8182,8 @@
                     "notes": "Starting with version 53, untrusted events do not invoke the default action."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Starting with Chrome 53 and Opera 40, untrusted events do not invoke the default action."
                 }
             },
             "title": "Event.isTrusted"
@@ -8431,7 +8467,8 @@
                     "notes": "Starting with version 49, this property returns <a href='https://developer.mozilla.org/docs/Web/API/DOMHighResTimeStamp'><code>DOMHighResTimeStamp</code></a> instead of <a href='https://developer.mozilla.org/docs/Web/API/DOMTimeStamp'><code>DOMTimeStamp</code></a>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Starting with Chrome 49, Firefox 54 and Opera 36, this property returns <a href='https://developer.mozilla.org/docs/Web/API/DOMHighResTimeStamp'><code>DOMHighResTimeStamp</code></a> instead of <a href='https://developer.mozilla.org/docs/Web/API/DOMTimeStamp'><code>DOMTimeStamp</code></a>."
                 }
             },
             "title": "Event.timeStamp"
@@ -8772,7 +8809,8 @@
                     "notes": "Before Chrome 49, the <code>type</code> and <code>listener</code> parameters were optional."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 49, the <code>type</code> and <code>listener</code> parameters were optional."
                 }
             },
             "title": "EventTarget.addEventListener()"
@@ -9219,9 +9257,16 @@
                         "prefix": "WebKit"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "26",
+                        "prefix": "WebKit"
+                    }
+                ]
             },
             "title": "MutationObserver.MutationObserver()"
         }
@@ -9481,9 +9526,16 @@
                         "prefix": "WebKit"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "26",
+                        "prefix": "WebKit"
+                    }
+                ]
             },
             "title": "MutationObserver"
         }
@@ -9569,9 +9621,16 @@
                         "version_removed": "1.5"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "26"
+                    }
+                ]
             },
             "title": "MutationObserverInit.attributeFilter"
         }
@@ -9658,9 +9717,16 @@
                         "version_removed": "1.5"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "26"
+                    }
+                ]
             },
             "title": "MutationObserverInit.attributeOldValue"
         }
@@ -9747,9 +9813,16 @@
                         "version_removed": "1.5"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "26"
+                    }
+                ]
             },
             "title": "MutationObserverInit.attributes"
         }
@@ -9836,9 +9909,16 @@
                         "version_removed": "1.5"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "26"
+                    }
+                ]
             },
             "title": "MutationObserverInit.characterData"
         }
@@ -9925,9 +10005,16 @@
                         "version_removed": "1.5"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "26"
+                    }
+                ]
             },
             "title": "MutationObserverInit.characterDataOldValue"
         }
@@ -10012,9 +10099,16 @@
                         "version_removed": "1.5"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "26"
+                    }
+                ]
             },
             "title": "MutationObserverInit.childList"
         }
@@ -10099,9 +10193,16 @@
                         "version_removed": "1.5"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "26"
+                    }
+                ]
             },
             "title": "MutationObserverInit.subtree"
         }
@@ -10186,9 +10287,16 @@
                         "version_removed": "1.5"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "26"
+                    }
+                ]
             },
             "title": "MutationObserverInit"
         }
@@ -11949,7 +12057,8 @@
                     "notes": "WebKit and old versions of Blink incorrectly do not make <code>Node</code> inherit from <code>EventTarget</code>."
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": true,
+                    "notes": "WebKit and old versions of Blink incorrectly do not make <code>Node</code> inherit from <code>EventTarget</code>."
                 }
             },
             "title": "Node"
@@ -13775,7 +13884,8 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": true,
+                    "notes": "Since April 2014 this method is a <a href='https://src.chromium.org/viewvc/blink?revision=173010&view=revision'>no-op in Chrome</a>."
                 }
             },
             "title": "Range.detach()"
@@ -15352,7 +15462,8 @@
                     "notes": "Before version 4.4, the <code>offset</code> argument was optional."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 30, the <code>offset</code> argument was optional."
                 }
             },
             "title": "Text.splitText()"

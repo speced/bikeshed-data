@@ -58,7 +58,8 @@
                     "notes": "Some versions support only experimental gradients prefixed with <code>-webkit</code>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Some versions support only experimental gradients prefixed with <code>-webkit</code>."
                 }
             },
             "title": "<gradient>"
@@ -202,6 +203,7 @@
                     "version_added": "4.4"
                 },
                 "edge_blink": {
+                    "prefix": "-webkit-",
                     "version_added": "79"
                 }
             },
@@ -265,6 +267,7 @@
                     "version_added": "4.4"
                 },
                 "edge_blink": {
+                    "prefix": "-webkit-",
                     "version_added": "79"
                 }
             },
@@ -547,7 +550,9 @@
                     "notes": "Supports the original dual-image with percentage implementation only."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "prefix": "-webkit-",
+                    "version_added": "79",
+                    "notes": "Supports the original dual-image with percentage implementation only."
                 }
             },
             "title": "cross-fade()"
@@ -729,9 +734,20 @@
                 "webview_android": {
                     "version_added": "69"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Enable Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "conic-gradient()"
         }
@@ -907,9 +923,15 @@
                         "version_added": "37"
                     }
                 ],
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "linear-gradient()"
         }
@@ -1005,9 +1027,20 @@
                 "webview_android": {
                     "version_added": "69"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Enable Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "repeating-conic-gradient()"
         }

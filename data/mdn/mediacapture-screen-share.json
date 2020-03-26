@@ -69,9 +69,23 @@
                     "version_added": false,
                     "notes": "API is available, but will always fail with <code>NotAllowedError</code>."
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "72",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform features",
+                                "value_to_set": "Enabled"
+                            }
+                        ],
+                        "notes": "Available as a member of <code>Navigator</code> instead of <code>MediaDevices</code> in Chrome 70 and 71."
+                    }
+                ]
             },
             "title": "MediaDevices.getDisplayMedia()"
         }
