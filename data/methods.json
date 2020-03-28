@@ -256,6 +256,34 @@
       "shortname": "webaudio"
     }
   },
+  "Blob()": {
+    "Blob()": {
+      "args": [],
+      "for": [
+        "Blob"
+      ],
+      "shortname": "fileapi"
+    },
+    "Blob(blobParts)": {
+      "args": [
+        "blobParts"
+      ],
+      "for": [
+        "Blob"
+      ],
+      "shortname": "fileapi"
+    },
+    "Blob(blobParts, options)": {
+      "args": [
+        "blobParts",
+        "options"
+      ],
+      "for": [
+        "Blob"
+      ],
+      "shortname": "fileapi"
+    }
+  },
   "BluetoothAdvertisingEvent()": {
     "BluetoothAdvertisingEvent(type, init)": {
       "args": [
@@ -1326,11 +1354,43 @@
       "shortname": "service-workers"
     }
   },
+  "File()": {
+    "File(fileBits, fileName)": {
+      "args": [
+        "fileBits",
+        "fileName"
+      ],
+      "for": [
+        "File"
+      ],
+      "shortname": "fileapi"
+    },
+    "File(fileBits, fileName, options)": {
+      "args": [
+        "fileBits",
+        "fileName",
+        "options"
+      ],
+      "for": [
+        "File"
+      ],
+      "shortname": "fileapi"
+    }
+  },
   "FileReader()": {
     "FileReader()": {
       "args": [],
       "for": [
         "FileReader"
+      ],
+      "shortname": "fileapi"
+    }
+  },
+  "FileReaderSync()": {
+    "FileReaderSync()": {
+      "args": [],
+      "for": [
+        "FileReaderSync"
       ],
       "shortname": "fileapi"
     }
@@ -5231,6 +5291,7 @@
         "AudioContext",
         "AudioWorkletProcessor",
         "BeforeInstallPromptEvent",
+        "Blob",
         "Comment",
         "DOMException",
         "DOMMatrix",
@@ -5244,6 +5305,8 @@
         "DocumentFragment",
         "DocumentTimeline",
         "EventTarget",
+        "FileReader",
+        "FileReaderSync",
         "FormData",
         "Headers",
         "JsonLdProcessor",
@@ -5334,6 +5397,25 @@
         "WorkletAnimation"
       ],
       "shortname": "css-animationworklet"
+    },
+    "constructor(blobParts)": {
+      "args": [
+        "blobParts"
+      ],
+      "for": [
+        "Blob"
+      ],
+      "shortname": "fileapi"
+    },
+    "constructor(blobParts, options)": {
+      "args": [
+        "blobParts",
+        "options"
+      ],
+      "for": [
+        "Blob"
+      ],
+      "shortname": "fileapi"
     },
     "constructor(body)": {
       "args": [
@@ -5540,6 +5622,27 @@
         "FontFace"
       ],
       "shortname": "css-font-loading"
+    },
+    "constructor(fileBits, fileName)": {
+      "args": [
+        "fileBits",
+        "fileName"
+      ],
+      "for": [
+        "File"
+      ],
+      "shortname": "fileapi"
+    },
+    "constructor(fileBits, fileName, options)": {
+      "args": [
+        "fileBits",
+        "fileName",
+        "options"
+      ],
+      "for": [
+        "File"
+      ],
+      "shortname": "fileapi"
     },
     "constructor(form)": {
       "args": [
@@ -14761,6 +14864,36 @@
   "slice()": {
     "slice()": {
       "args": [],
+      "for": [
+        "Blob"
+      ],
+      "shortname": "fileapi"
+    },
+    "slice(start)": {
+      "args": [
+        "start"
+      ],
+      "for": [
+        "Blob"
+      ],
+      "shortname": "fileapi"
+    },
+    "slice(start, end)": {
+      "args": [
+        "start",
+        "end"
+      ],
+      "for": [
+        "Blob"
+      ],
+      "shortname": "fileapi"
+    },
+    "slice(start, end, contentType)": {
+      "args": [
+        "start",
+        "end",
+        "contentType"
+      ],
       "for": [
         "Blob"
       ],
