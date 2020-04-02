@@ -1416,6 +1416,59 @@
             "title": "RTCDataChannel.onclose"
         }
     ],
+    "dom-rtcdatachannel-onclosing": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "onclosing",
+            "slug": "API/RTCDataChannel/onclosing",
+            "summary": "The RTCDataChannel.onclosing property is an EventHandler which specifies a function to be called by the browser when the closing event is received by the RTCDataChannel. This is a simple Event which indicates that the data channel is being closed, that is, RTCDataChannel transitions to \"closing\" state. For example, after RTCDataChannel.close() was called but the underlying data transport might not have been closed yet.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "68"
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": "81"
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "RTCDataChannel.onclosing"
+        }
+    ],
     "dom-rtcdatachannel-onerror": [
         {
             "engines": [
@@ -7436,7 +7489,8 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": "22"
+                    "version_added": "22",
+                    "notes": "Firefox does not support descriptions of type <code>pranswer</code>."
                 },
                 "firefox_android": {
                     "version_added": "44"
@@ -7839,10 +7893,10 @@
                     }
                 ],
                 "safari": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "samsunginternet_android": [
                     {
@@ -7855,7 +7909,7 @@
                     }
                 ],
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8393,6 +8447,7 @@
     "dom-rtcrtpencodingparameters-scaleresolutiondownby": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/RTCRtpEncodingParameters.json",
@@ -8401,10 +8456,10 @@
             "summary": "The RTCRtpEncodingParameters dictionary's scaleResolutionDownBy property can be used to specify a factor by which to reduce the size of a video track during encoding.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "74"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "74"
                 },
                 "edge": {
                     "version_added": false
@@ -8434,10 +8489,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "74"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpEncodingParameters.scaleResolutionDownBy"
@@ -9424,6 +9479,7 @@
     "dom-rtcrtptransceiver-currentdirection": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/RTCRtpTransceiver.json",
@@ -9432,10 +9488,10 @@
             "summary": "The read-only RTCRtpTransceiver property currentDirection is a string which indicates the current directionality of the transceiver.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": false
@@ -9465,10 +9521,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpTransceiver.currentDirection"
@@ -9477,6 +9533,7 @@
     "dom-rtcrtptransceiver-direction": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -9486,10 +9543,10 @@
             "summary": "The RTCRtpTransceiver property direction is a string which indicates the transceiver's preferred directionality.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": false
@@ -9519,10 +9576,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpTransceiver.direction"
@@ -9531,6 +9588,7 @@
     "dom-rtptransceiver-mid": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -9540,10 +9598,10 @@
             "summary": "The read-only RTCRtpTransceiver interface's mid property specifies the negotiated media ID (mid) which the local and remote peers have agreed upon to uniquely identify the stream's pairing of sender and receiver.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": false
@@ -9573,10 +9631,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpTransceiver.mid"
@@ -9585,6 +9643,7 @@
     "dom-rtcrtptransceiver-receiver": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -9594,10 +9653,10 @@
             "summary": "The read-only  receiver property of WebRTC's RTCRtpTransceiver interface indicates the RTCRtpReceiver responsible for receiving and decoding incoming media data for the transceiver's stream.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": false
@@ -9627,10 +9686,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpTransceiver.receiver"
@@ -9639,6 +9698,7 @@
     "dom-rtcrtptransceiver-sender": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -9648,10 +9708,10 @@
             "summary": "The read-only  sender property of WebRTC's RTCRtpTransceiver interface indicates the RTCRtpSender responsible for encoding and sending outgoing media data for the transceiver's stream.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": false
@@ -9681,10 +9741,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpTransceiver.sender"
@@ -9798,6 +9858,7 @@
     "rtcrtptransceiver-interface": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -9807,13 +9868,13 @@
             "summary": "The WebRTC interface RTCRtpTransceiver describes a permanent pairing of an RTCRtpSender and an RTCRtpReceiver, along with some shared state.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "18"
                 },
                 "firefox": {
                     "version_added": "59"
@@ -9840,10 +9901,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpTransceiver"
@@ -9861,10 +9922,10 @@
             "summary": "The RTCRtpTransceiverDirection type is an enumerated set of strings which are used to describe the directionality of a RTCRtpTransceiver instance.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": "18"
@@ -9894,10 +9955,10 @@
                     "version_added": true
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "69"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpTransceiverDirection"
@@ -9915,10 +9976,10 @@
             "summary": "The RTCRtpTransceiverInit dictionary is used when calling the WebRTC function RTCPeerConnection.addTransceiver() to provide configuration options for the new transceiver.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": "18"
@@ -9948,10 +10009,10 @@
                     "version_added": true
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "69"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCRtpTransceiverInit"
@@ -10520,10 +10581,10 @@
             "summary": "The WebRTC API interface RTCTrackEvent's read-only transceiver property indicates the RTCRtpTransceiver affiliated with the event's track.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": "18"
@@ -10553,7 +10614,7 @@
                     "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "69"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -10791,10 +10852,10 @@
             "summary": "The RTCTrackEventInit dictionary's transceiver property specifies the RTCRtpTransceiver associated with the track event.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "69"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "69"
                 },
                 "edge": {
                     "version_added": "18"
@@ -10824,7 +10885,7 @@
                     "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "69"
                 },
                 "edge_blink": {
                     "version_added": "79"

@@ -1087,7 +1087,7 @@
             "summary": "The MediaStream() constructor returns a newly-created MediaStream, which serves as a collection of media tracks, each represented by a MediaStreamTrack object.",
             "support": {
                 "chrome": {
-                    "version_added": "19"
+                    "version_added": "21"
                 },
                 "chrome_android": {
                     "version_added": "25"
@@ -1807,14 +1807,26 @@
             "slug": "API/MediaStream",
             "summary": "The MediaStream interface represents a stream of media content. A stream consists of several tracks such as video or audio tracks. Each track is specified as an instance of MediaStreamTrack.",
             "support": {
-                "chrome": {
-                    "version_added": "14"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
+                "chrome": [
+                    {
+                        "version_added": "55"
+                    },
+                    {
+                        "version_added": "21",
+                        "prefix": "webkit"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "55"
+                    },
+                    {
+                        "version_added": "25",
+                        "prefix": "webkit"
+                    }
+                ],
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "15"
@@ -1825,27 +1837,57 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "15",
+                        "prefix": "webkit"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "14",
+                        "prefix": "webkit"
+                    }
+                ],
                 "safari": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "11"
                 },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "6.0"
+                    },
+                    {
+                        "version_added": "1.5",
+                        "prefix": "webkit"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "55"
+                    },
+                    {
+                        "version_added": "37",
+                        "prefix": "webkit"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "prefix": "webkit"
+                    }
+                ]
             },
             "title": "MediaStream"
         }
@@ -3012,13 +3054,13 @@
             "summary": "The MediaStreamTrack interface represents a single media track within a stream; typically, these are audio or video tracks, but other track types may exist as well.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "29"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "29"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "22"
@@ -3030,25 +3072,25 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "16"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "16"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "MediaStreamTrack"

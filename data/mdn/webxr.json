@@ -2121,34 +2121,20 @@
     ],
     "xrsystem-interface": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/XRSystem.json",
             "name": "XRSystem",
             "slug": "API/XRSystem",
             "summary": "The WebXR Device API interface XRSystem provides methods which let you get access to an XRSession object representing a WebXR session. With that XRSession in hand, you can use it to interact with the Augmented Reality (AR) or Virtual Reality (VR) device.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "alternative_name": "XR",
-                        "version_added": "79",
-                        "version_removed": "82"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "alternative_name": "XR",
-                        "version_added": "79",
-                        "version_removed": "82"
-                    }
-                ],
+                "chrome": {
+                    "alternative_name": "XR",
+                    "version_added": "79"
+                },
+                "chrome_android": {
+                    "alternative_name": "XR",
+                    "version_added": "79"
+                },
                 "edge": {
                     "version_added": false
                 },
@@ -2179,16 +2165,10 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "alternative_name": "XR",
-                        "version_added": false,
-                        "version_removed": "82"
-                    }
-                ]
+                "edge_blink": {
+                    "alternative_name": "XR",
+                    "version_added": "79"
+                }
             },
             "title": "XRSystem"
         }
@@ -3096,17 +3076,19 @@
     ],
     "feature-policy": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "http/headers/feature-policy.json",
             "name": "xr-spatial-tracking",
             "slug": "HTTP/Headers/Feature-Policy/xr-spatial-tracking",
             "summary": "The HTTP Feature-Policy header xr-spatial-tracking directive controls whether the current document is allowed to use the WebXR Device API. This policy controls whether navigator.xr.requestSession() can return XRSession that requires spatial tracking and whether user agent can indicate support for sessions supporting spatial tracking via navigator.xr.isSessionSupported() and devicechange event on navigator.xr object.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "edge": {
                     "version_added": false
@@ -3121,7 +3103,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "66"
                 },
                 "opera_android": {
                     "version_added": false
@@ -3139,7 +3121,7 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "Feature-Policy: xr-spatial-tracking"

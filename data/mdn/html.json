@@ -8220,43 +8220,43 @@
             "summary": "The DataTransfer.setData() method sets the drag operation's drag data to the specified data and type. If data for the given type does not exist, it is added at the end of the drag data store, such that the last item in the types list will be the new type. If data for the given type already exists, the existing data is replaced in the same position. That is, the order of the types list is not changed when replacing data of the same type.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "10"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "10"
                 },
                 "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
                     "version_added": false
                 },
+                "opera": {
+                    "version_added": "12"
+                },
+                "opera_android": {
+                    "version_added": "12"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "DataTransfer.setData()"
@@ -8389,10 +8389,10 @@
             "summary": "The DataTransfer object is used to hold the data that is being dragged during a drag and drop operation. It may hold one or more data items, each of one or more data types. For more information about drag and drop, see HTML Drag and Drop API.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "3"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -8402,7 +8402,8 @@
                     "notes": "As of Firefox 52, the <a href='https://developer.mozilla.org/docs/Web/API/DataTransfer/types'><code>DataTransfer.types</code></a> property returns a frozen array of <a href='https://developer.mozilla.org/docs/Web/API/DOMString'><code>DOMString</code></a>s as per spec, rather than a <a href='https://developer.mozilla.org/docs/Web/API/DOMStringList'><code>DOMStringList</code></a>."
                 },
                 "firefox_android": {
-                    "version_added": "52"
+                    "version_added": "4",
+                    "notes": "As of Firefox 52, the <a href='https://developer.mozilla.org/docs/Web/API/DataTransfer/types'><code>DataTransfer.types</code></a> property returns a frozen array of <a href='https://developer.mozilla.org/docs/Web/API/DOMString'><code>DOMString</code></a>s as per spec, rather than a <a href='https://developer.mozilla.org/docs/Web/API/DOMStringList'><code>DOMStringList</code></a>."
                 },
                 "ie": {
                     "version_added": "10"
@@ -8411,19 +8412,19 @@
                     "version_added": "12"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12"
                 },
                 "safari": {
                     "version_added": "3.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -9832,7 +9833,7 @@
                 "firefox": {
                     "version_added": "3.5",
                     "partial_implementation": true,
-                    "notes": "Firefox doesn't set the mouse coordinates during the drag event.  See <a href='https://bugzil.la/505521'>bug 505521</a>."
+                    "notes": "Firefox doesn't set the mouse coordinates during the drag event. See <a href='https://bugzil.la/505521'>bug 505521</a>."
                 },
                 "firefox_android": {
                     "version_added": false
@@ -9888,7 +9889,7 @@
                     "version_added": "3.5",
                     "partial_implementation": true,
                     "notes": [
-                        "Firefox doesn't set the mouse coordinates during the drag event.  See <a href='https://bugzil.la/505521'>bug 505521</a>.",
+                        "Firefox doesn't set the mouse coordinates during the drag event. See <a href='https://bugzil.la/505521'>bug 505521</a>.",
                         "In Firefox, <code>dragend</code> is not dispatched if the source node is moved or removed during the drag (e.g. on <code>drop</code> or <code>dragover</code>). See <a href='https://bugzil.la/460801'>bug 460801</a> for details."
                     ]
                 },
@@ -10751,40 +10752,43 @@
             "summary": "The Location interface represents the location (URL) of the object it is linked to. Changes done on it are reflected on the object it relates to. Both the Document and Window interface have such a linked Location, accessible via Document.location and Window.location respectively.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Location"
@@ -11597,7 +11601,7 @@
             "summary": "The DragEvent interface is a DOM event that represents a drag and drop interaction. The user initiates a drag by placing a pointer device (such as a mouse) on the touch surface and then dragging the pointer to a new location (such as another DOM element). Applications are free to interpret a drag and drop interaction in an application-specific way.",
             "support": {
                 "chrome": {
-                    "version_added": "46"
+                    "version_added": "3"
                 },
                 "chrome_android": {
                     "version_added": false
@@ -11609,13 +11613,13 @@
                     "version_added": "3.5"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
                     "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12"
                 },
                 "opera_android": {
                     "version_added": false
@@ -12471,43 +12475,43 @@
             "summary": "An object of this type is returned by the files property of the HTML <input> element; this lets you access the list of files selected with the <input type=\"file\"> element. It's also used for a list of files dropped into web content when using the drag and drop API; see the DataTransfer object for details on this usage.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
                     "version_added": "18"
                 },
+                "edge": {
+                    "version_added": "12"
+                },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "11.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "11.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "FileList"
@@ -12955,43 +12959,43 @@
             "summary": "The onchange property of the GlobalEventHandlers mixin is an EventHandler for processing change events.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "GlobalEventHandlers.onchange"
@@ -13010,43 +13014,43 @@
             "summary": "The onclick property of the GlobalEventHandlers mixin is the EventHandler for processing click events on a given element.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "GlobalEventHandlers.onclick"
@@ -13887,7 +13891,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/GlobalEventHandlers.json",
             "name": "onerror",
@@ -13895,43 +13900,43 @@
             "summary": "The onerror property of the GlobalEventHandlers mixin is an EventHandler that processes error events.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "10"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "11.6"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "12"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "GlobalEventHandlers.onerror"
@@ -14383,43 +14388,43 @@
             "summary": "The onload property of the GlobalEventHandlers mixin is an EventHandler that processes load events on a Window, XMLHttpRequest, <img> element, etc.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "GlobalEventHandlers.onload"
@@ -15431,19 +15436,19 @@
             "summary": "The GlobalEventHandlers mixin describes the event handlers common to several interfaces like HTMLElement, Document, or Window.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
                     "version_added": true
@@ -15461,13 +15466,13 @@
                     "version_added": true
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "GlobalEventHandlers"
@@ -15926,10 +15931,10 @@
             "summary": "The HTMLAudioElement interface provides access to the properties of <audio> elements, as well as methods to manipulate them.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -15944,25 +15949,25 @@
                     "version_added": "9"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "10.5"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "3.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "HTMLAudioElement"
@@ -17966,7 +17971,7 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "blur",
-            "slug": "API/HTMLElement/blur",
+            "slug": "API/HTMLOrForeignElement/blur",
             "summary": "The HTMLElement.blur() method removes keyboard focus from the current element.",
             "support": {
                 "chrome": {
@@ -18076,7 +18081,7 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "dataset",
-            "slug": "API/HTMLElement/dataset",
+            "slug": "API/HTMLOrForeignElement/dataset",
             "summary": "The dataset read-only property of the HTMLOrForeignElement interface provides read/write access to all the custom data attributes (data-*) set on the element.",
             "support": {
                 "chrome": {
@@ -18129,7 +18134,7 @@
             ],
             "filename": "api/SVGElement.json",
             "name": "dataset",
-            "slug": "API/SVGElement/dataset",
+            "slug": "API/HTMLOrForeignElement/dataset",
             "summary": "The dataset read-only property of the HTMLOrForeignElement interface provides read/write access to all the custom data attributes (data-*) set on the element.",
             "support": {
                 "chrome": {
@@ -18239,7 +18244,7 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "focus",
-            "slug": "API/HTMLElement/focus",
+            "slug": "API/HTMLOrForeignElement/focus",
             "summary": "The HTMLElement.focus() method sets focus on the specified element, if it can be focused. The focused element is the element which will receive keyboard and similar events by default.",
             "support": {
                 "chrome": {
@@ -18510,11 +18515,12 @@
     "attr-nonce": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/HTMLElement.json",
             "name": "nonce",
-            "slug": "API/HTMLElement/nonce",
+            "slug": "API/HTMLOrForeignElement/nonce",
             "summary": "The nonce property of the HTMLOrForeignElement interface returns the cryptographic number used once that is used by Content Security Policy to determine whether a given fetch will be allowed to proceed.",
             "support": {
                 "chrome": {
@@ -18527,7 +18533,7 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "75"
                 },
                 "firefox_android": {
                     "version_added": false
@@ -18569,7 +18575,7 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "tabIndex",
-            "slug": "API/HTMLElement/tabIndex",
+            "slug": "API/HTMLOrForeignElement/tabIndex",
             "summary": "The tabIndex property of the HTMLOrForeignElement interface represents the tab order of the current element.",
             "support": {
                 "chrome": {
@@ -20185,59 +20191,6 @@
                 }
             },
             "title": "HTMLHyperlinkElementUtils.hash"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Location.json",
-            "name": "hash",
-            "slug": "API/Location/hash",
-            "summary": "The HTMLHyperlinkElementUtils.hash property returns a USVString containing a '#' followed by the fragment identifier of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": true
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.hash"
         }
     ],
     "dom-hyperlink-host": [
@@ -20300,59 +20253,6 @@
                 "edge_blink": {
                     "version_added": true,
                     "notes": "Starting in Chrome 52, this property was moved to <a href='https://developer.mozilla.org/docs/Web/API/URL'>URL</a>"
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.host"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Location.json",
-            "name": "host",
-            "slug": "API/Location/host",
-            "summary": "The HTMLHyperlinkElementUtils.host property is a USVString containing the host, that is the hostname, and then, if the port of the URL is nonempty, a ':', and the port of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": true
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
                 }
             },
             "title": "HTMLHyperlinkElementUtils.host"
@@ -20420,59 +20320,6 @@
                 }
             },
             "title": "HTMLHyperlinkElementUtils.hostname"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Location.json",
-            "name": "hostname",
-            "slug": "API/Location/hostname",
-            "summary": "The HTMLHyperlinkElementUtils.hostname property is a USVString containing the domain of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": true
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.hostname"
         }
     ],
     "dom-hyperlink-href": [
@@ -20534,59 +20381,6 @@
                 "edge_blink": {
                     "version_added": true,
                     "notes": "Starting in Chrome 52, this property was moved to <a href='https://developer.mozilla.org/docs/Web/API/URL'>URL</a>"
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.href"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Location.json",
-            "name": "href",
-            "slug": "API/Location/href",
-            "summary": "The HTMLHyperlinkElementUtils.href property is a stringifier that returns a USVString containing the whole URL, and allows the href to be updated.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": true
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
                 }
             },
             "title": "HTMLHyperlinkElementUtils.href"
@@ -20660,63 +20454,6 @@
                 }
             },
             "title": "HTMLHyperlinkElementUtils.origin"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Location.json",
-            "name": "origin",
-            "slug": "API/Location/origin",
-            "summary": "The HTMLHyperlinkElementUtils.origin read-only property is a USVString containing the Unicode serialization of the origin of the represented URL",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "26",
-                    "notes": "Before Firefox 49, results for URL using the blob scheme incorrectly returned null."
-                },
-                "firefox_android": {
-                    "version_added": "26",
-                    "notes": "Before Firefox 49, results for URL using the blob scheme incorrectly returned null."
-                },
-                "ie": {
-                    "version_added": "11",
-                    "notes": "Intranet sites are set to Compatibility View, which will emulate IE7 and omit <code>window.location.origin</code>."
-                },
-                "opera": {
-                    "version_added": "10"
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": true,
-                    "notes": "According to <a href='https://developer.apple.com/documentation/webkitjs/location/1631059-origin'>Apple's documentation</a>, <code>window.location.origin</code> is supported since Safari 10 (both desktop and mobile), but the feature seems to be present in some older versions as well. Because of this, the exact versions supporting this feature cannot be determined reliably."
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.origin"
         }
     ],
     "dom-hyperlink-password": [
@@ -20778,58 +20515,6 @@
                 "edge_blink": {
                     "version_added": true,
                     "notes": "Starting in Chrome 52, this property was moved to <a href='https://developer.mozilla.org/docs/Web/API/URL'>URL</a>"
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.password"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Location.json",
-            "name": "password",
-            "slug": "API/Location/password",
-            "summary": "The HTMLHyperlinkElementUtils.password property is a USVString containing the password specified before the domain name.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "26"
-                },
-                "firefox_android": {
-                    "version_added": "26"
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
                 }
             },
             "title": "HTMLHyperlinkElementUtils.password"
@@ -20903,62 +20588,6 @@
                 }
             },
             "title": "HTMLHyperlinkElementUtils.pathname"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Location.json",
-            "name": "pathname",
-            "slug": "API/Location/pathname",
-            "summary": "The HTMLHyperlinkElementUtils.pathname property is a USVString containing an initial '/' followed by the path of the URL (or the empty string if there is no path).",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22",
-                    "notes": "Before Firefox 53, the <code>pathname</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>pathname</code> would return \"/x?a=true&b=false\" rather than \"/x\"."
-                },
-                "firefox_android": {
-                    "version_added": "22",
-                    "notes": "Before Firefox 53, the <code>pathname</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>pathname</code> would return \"/x?a=true&b=false\" rather than \"/x\"."
-                },
-                "ie": {
-                    "version_added": true,
-                    "notes": "Internet Explorer does not provide the leading slash character in the <code>pathname</code> (<code>docs/Web/API/Location</code> instead of <code>/docs/Web/API/Location</code>)."
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.pathname"
         }
     ],
     "dom-hyperlink-port": [
@@ -21023,59 +20652,6 @@
                 }
             },
             "title": "HTMLHyperlinkElementUtils.port"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Location.json",
-            "name": "port",
-            "slug": "API/Location/port",
-            "summary": "The HTMLHyperlinkElementUtils.port property is a USVString containing the port number of the URL. If the URL does not contain an explicit port number, it will be set to ''.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": true
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.port"
         }
     ],
     "dom-hyperlink-protocol": [
@@ -21137,59 +20713,6 @@
                 "edge_blink": {
                     "version_added": true,
                     "notes": "Starting in Chrome 52, this property was moved to <a href='https://developer.mozilla.org/docs/Web/API/URL'>URL</a>"
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.protocol"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Location.json",
-            "name": "protocol",
-            "slug": "API/Location/protocol",
-            "summary": "The HTMLHyperlinkElementUtils.protocol property is a USVString representing the protocol scheme of the URL, including the final ':'.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": true
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
                 }
             },
             "title": "HTMLHyperlinkElementUtils.protocol"
@@ -21263,37 +20786,39 @@
                 }
             },
             "title": "HTMLHyperlinkElementUtils.search"
-        },
+        }
+    ],
+    "api-for-a-and-area-elements:dom-hyperlink-href": [
         {
             "engines": [
                 "blink",
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/Location.json",
-            "name": "search",
-            "slug": "API/Location/search",
-            "summary": "The HTMLHyperlinkElementUtils.search property is a search string, also called a query string, that is USVString containing a '?' followed by the parameters of the URL.",
+            "filename": "api/HTMLHyperlinkElementUtils.json",
+            "name": "toString",
+            "slug": "API/HTMLHyperlinkElementUtils/toString",
+            "summary": "The HTMLHyperlinkElementUtils.toString() stringifier method returns a USVString containing the whole URL. It is a read-only version of HTMLHyperlinkElementUtils.href.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "52"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": "18"
                 },
                 "firefox": {
                     "version_added": "22",
-                    "notes": "Before Firefox 53, the <code>search</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false,  <code>search</code> would return \"\", rather than \"?a=true&b=false\"."
+                    "notes": "From Firefox 22 to Firefox 44, this property was on the <code>URLUtils</code> mixin. It has been moved either on the <code>HTMLHyperlinkElementUtils</code> mixin, or directly on the interface."
                 },
                 "firefox_android": {
                     "version_added": "22",
-                    "notes": "Before Firefox 53, the <code>search</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false,  <code>search</code> would return \"\", rather than \"?a=true&b=false\"."
+                    "notes": "From Firefox 22 to Firefox 44, this property was on the <code>URLUtils</code> mixin. It has been moved either on the <code>HTMLHyperlinkElementUtils</code> mixin, or directly on the interface."
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": true
@@ -21308,16 +20833,16 @@
                     "version_added": true
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "52"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
-            "title": "HTMLHyperlinkElementUtils.search"
+            "title": "HTMLHyperlinkElementUtils.toString()"
         }
     ],
     "dom-hyperlink-username": [
@@ -21379,58 +20904,6 @@
                 "edge_blink": {
                     "version_added": true,
                     "notes": "Starting in Chrome 52, this property was moved to <a href='https://developer.mozilla.org/docs/Web/API/URL'>URL</a>"
-                }
-            },
-            "title": "HTMLHyperlinkElementUtils.username"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Location.json",
-            "name": "username",
-            "slug": "API/Location/username",
-            "summary": "The HTMLHyperlinkElementUtils.username property is a USVString containing the username specified before the domain name.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "26"
-                },
-                "firefox_android": {
-                    "version_added": "26"
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
                 }
             },
             "title": "HTMLHyperlinkElementUtils.username"
@@ -32184,17 +31657,18 @@
                     "version_added": "5"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "4",
-                    "notes": "In Firefox 2 through 5, the passed object is serialized using JSON. Starting in Firefox 6, the object is serialized using <a href='https://developer.mozilla.org/docs/DOM/The_structured_clone_algorithm'>the structured clone algorithm</a>. This allows a wider variety of objects to be safely passed."
+                    "notes": "Until Firefox 5, the passed object is serialized using JSON. Starting in Firefox 6, the object is serialized using <a href='https://developer.mozilla.org/docs/DOM/The_structured_clone_algorithm'>the structured clone algorithm</a>. This allows a wider variety of objects to be safely passed."
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4",
+                    "notes": "Until Firefox 5, the passed object is serialized using JSON. Starting in Firefox 6, the object is serialized using <a href='https://developer.mozilla.org/docs/DOM/The_structured_clone_algorithm'>the structured clone algorithm</a>. This allows a wider variety of objects to be safely passed."
                 },
                 "ie": {
                     "version_added": "10"
@@ -32203,7 +31677,7 @@
                     "version_added": "11.5"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "11.5"
                 },
                 "safari": {
                     "version_added": "5"
@@ -32212,10 +31686,10 @@
                     "version_added": "4.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -32240,17 +31714,18 @@
                     "version_added": "5"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "4",
-                    "notes": "In Firefox 2 through 5, the passed object is serialized using JSON. Starting in Firefox 6, the object is serialized using <a href='https://developer.mozilla.org/docs/DOM/The_structured_clone_algorithm'>the structured clone algorithm</a>. This allows a wider variety of objects to be safely passed."
+                    "notes": "Until Firefox 5, the passed object is serialized using JSON. Starting in Firefox 6, the object is serialized using <a href='https://developer.mozilla.org/docs/DOM/The_structured_clone_algorithm'>the structured clone algorithm</a>. This allows a wider variety of objects to be safely passed."
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4",
+                    "notes": "Until Firefox 5, the passed object is serialized using JSON. Starting in Firefox 6, the object is serialized using <a href='https://developer.mozilla.org/docs/DOM/The_structured_clone_algorithm'>the structured clone algorithm</a>. This allows a wider variety of objects to be safely passed."
                 },
                 "ie": {
                     "version_added": "10"
@@ -32259,7 +31734,7 @@
                     "version_added": "11.5"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "11.5"
                 },
                 "safari": {
                     "version_added": "5"
@@ -32268,10 +31743,10 @@
                     "version_added": "4.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -32348,43 +31823,43 @@
             "summary": "The History interface allows manipulation of the browser session history, that is the pages visited in the tab or frame that the current page is loaded in.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
                     "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "History"
@@ -33016,7 +32491,7 @@
                     "version_added": "4"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -33043,10 +32518,10 @@
                     "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -33068,6 +32543,61 @@
             "summary": "The Location.assign() method causes the window to load and display the document at the URL specified.",
             "support": {
                 "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Location.assign()"
+        }
+    ],
+    "dom-location-hash": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "hash",
+            "slug": "API/Location/hash",
+            "summary": "The hash property of the Location interface returns a USVString containing a '#' followed by the fragment identifier of the URL.",
+            "support": {
+                "chrome": {
                     "version_added": true
                 },
                 "chrome_android": {
@@ -33077,10 +32607,10 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": true
@@ -33107,10 +32637,10 @@
                     "version_added": true
                 }
             },
-            "title": "Location.assign()"
+            "title": "Location: hash"
         }
     ],
-    "dom-location-reload": [
+    "dom-location-host": [
         {
             "engines": [
                 "blink",
@@ -33118,9 +32648,9 @@
                 "webkit"
             ],
             "filename": "api/Location.json",
-            "name": "reload",
-            "slug": "API/Location/reload",
-            "summary": "The Location.reload() method reloads the current URL, like the Refresh button.",
+            "name": "host",
+            "slug": "API/Location/host",
+            "summary": "The host property of the Location interface is a USVString containing the host, that is the hostname, and then, if the port of the URL is nonempty, a ':', and the port of the URL.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -33132,14 +32662,13 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
-                    "version_added": true,
-                    "notes": "If a page added to <em>Trusted Sites</em> contains a cross-origin iframe, then calling <code>reload()</code> from within the iframe reloads the trusted page (in other words, the top page reloads, not the iframe)."
+                    "version_added": true
                 },
                 "opera": {
                     "version_added": true
@@ -33161,6 +32690,399 @@
                 },
                 "edge_blink": {
                     "version_added": true
+                }
+            },
+            "title": "Location: host"
+        }
+    ],
+    "dom-location-hostname": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "hostname",
+            "slug": "API/Location/hostname",
+            "summary": "The hostname property of the Location interface is a USVString containing the domain of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Location: hostname"
+        }
+    ],
+    "dom-location-href": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "href",
+            "slug": "API/Location/href",
+            "summary": "The href property of the Location interface is a stringifier that returns a USVString containing the whole URL, and allows the href to be updated.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Location: href"
+        }
+    ],
+    "dom-location-origin": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "origin",
+            "slug": "API/Location/origin",
+            "summary": "The origin read-only property of the Location interface is a USVString containing the Unicode serialization of the origin of the represented URL",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "26",
+                    "notes": "Before Firefox 49, results for URL using the blob scheme incorrectly returned null."
+                },
+                "firefox_android": {
+                    "version_added": "26",
+                    "notes": "Before Firefox 49, results for URL using the blob scheme incorrectly returned null."
+                },
+                "ie": {
+                    "version_added": "11",
+                    "notes": "Intranet sites are set to Compatibility View, which will emulate IE7 and omit <code>window.location.origin</code>."
+                },
+                "opera": {
+                    "version_added": "10"
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": true,
+                    "notes": "According to <a href='https://developer.apple.com/documentation/webkitjs/location/1631059-origin'>Apple's documentation</a>, <code>window.location.origin</code> is supported since Safari 10 (both desktop and mobile), but the feature seems to be present in some older versions as well. Because of this, the exact versions supporting this feature cannot be determined reliably."
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Location: origin"
+        }
+    ],
+    "dom-location-pathname": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "pathname",
+            "slug": "API/Location/pathname",
+            "summary": "The pathname property of the Location interface is a USVString containing an initial '/' followed by the path of the URL (or the empty string if there is no path).",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22",
+                    "notes": "Before Firefox 53, the <code>pathname</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>pathname</code> would return \"/x?a=true&b=false\" rather than \"/x\"."
+                },
+                "firefox_android": {
+                    "version_added": "22",
+                    "notes": "Before Firefox 53, the <code>pathname</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>pathname</code> would return \"/x?a=true&b=false\" rather than \"/x\"."
+                },
+                "ie": {
+                    "version_added": true,
+                    "notes": "Internet Explorer does not provide the leading slash character in the <code>pathname</code> (<code>docs/Web/API/Location</code> instead of <code>/docs/Web/API/Location</code>)."
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Location: pathname"
+        }
+    ],
+    "dom-location-port": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "port",
+            "slug": "API/Location/port",
+            "summary": "The port property of the Location interface is a USVString containing the port number of the URL. If the URL does not contain an explicit port number, it will be set to ''.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Location: port"
+        }
+    ],
+    "dom-location-protocol": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "protocol",
+            "slug": "API/Location/protocol",
+            "summary": "The protocol property of the Location interface is a USVString representing the protocol scheme of the URL, including the final ':'.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Location: protocol"
+        }
+    ],
+    "dom-location-reload": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "reload",
+            "slug": "API/Location/reload",
+            "summary": "The Location.reload() method reloads the current URL, like the Refresh button.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5",
+                    "notes": "If a page added to <em>Trusted Sites</em> contains a cross-origin iframe, then calling <code>reload()</code> from within the iframe reloads the trusted page (in other words, the top page reloads, not the iframe)."
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
                 }
             },
             "title": "Location.reload()"
@@ -33179,6 +33101,61 @@
             "summary": "The Location.replace() method replaces the current resource with the one at the provided URL. The difference from the assign() method is that after using replace() the current page will not be saved in session History, meaning the user won't be able to use the back button to navigate to it.",
             "support": {
                 "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Location.replace()"
+        }
+    ],
+    "dom-location-search": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "search",
+            "slug": "API/Location/search",
+            "summary": "The search property of the Location interface is a search string, also called a query string; that is, a USVString containing a '?' followed by the parameters of the URL.",
+            "support": {
+                "chrome": {
                     "version_added": true
                 },
                 "chrome_android": {
@@ -33188,10 +33165,12 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22",
+                    "notes": "Before Firefox 53, the <code>search</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>search</code> would return \"\", rather than \"?a=true&b=false\"."
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22",
+                    "notes": "Before Firefox 53, the <code>search</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>search</code> would return \"\", rather than \"?a=true&b=false\"."
                 },
                 "ie": {
                     "version_added": true
@@ -33218,7 +33197,62 @@
                     "version_added": true
                 }
             },
-            "title": "Location.replace()"
+            "title": "Location: search"
+        }
+    ],
+    "the-location-interface:dom-location-href": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Location.json",
+            "name": "toString",
+            "slug": "API/Location/toString",
+            "summary": "The toString() stringifier method of the Location interface returns a USVString containing the whole URL. It is a read-only version of Location.href.",
+            "support": {
+                "chrome": {
+                    "version_added": "52"
+                },
+                "chrome_android": {
+                    "version_added": "52"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "11",
+                    "notes": "Intranet sites are set to Compatibility View, which will emulate IE7 and omit <code>window.location.toString</code>."
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "52"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Location: toString"
         }
     ],
     "dom-mediaerror-code": [
@@ -33653,7 +33687,7 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "4"
                 },
                 "safari_ios": {
                     "version_added": "3"
@@ -33708,7 +33742,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "4"
                 },
                 "safari_ios": {
                     "version_added": "3"
@@ -33763,7 +33797,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "4"
                 },
                 "safari_ios": {
                     "version_added": "3"
@@ -33818,7 +33852,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "4"
                 },
                 "safari_ios": {
                     "version_added": "3"
@@ -33873,7 +33907,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "4"
                 },
                 "safari_ios": {
                     "version_added": "3"
@@ -33962,7 +33996,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -33971,28 +34005,28 @@
                     "version_added": "4"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
                     "version_added": "9"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "10.6"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "4"
                 },
                 "safari_ios": {
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -34757,43 +34791,43 @@
             "summary": "The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Navigator"
@@ -35309,26 +35343,20 @@
             "summary": "The NavigatorLanguage.language read-only property returns a string representing the preferred language of the user, usually the language of the browser UI.",
             "support": {
                 "chrome": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "Returns the browser UI language, not the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
                 },
                 "chrome_android": {
-                    "version_added": true,
+                    "version_added": "18",
                     "notes": "Returns the browser UI language, not the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
                 },
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "1",
-                        "notes": "Prior to Firefox 4 this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>."
-                    },
-                    {
-                        "version_added": "5",
-                        "notes": "Starting in Firefox 5.0 this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "1",
+                    "notes": "Prior to Firefox 4, this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>. Starting in Firefox 5, this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
+                },
                 "firefox_android": {
                     "version_added": "4"
                 },
@@ -35337,27 +35365,27 @@
                     "notes": "Closest available (non-standard) properties are <code>userLanguage</code> and <code>browserLanguage</code>."
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true,
+                    "version_added": "1.0",
                     "notes": "Returns the browser UI language, not the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
                 },
                 "webview_android": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "Returns the browser UI language, not the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
                 },
                 "edge_blink": {
-                    "version_added": true,
+                    "version_added": "79",
                     "notes": "Returns the browser UI language, not the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
                 }
             },
@@ -35440,43 +35468,43 @@
             "summary": "NavigatorLanguage contains methods and properties related to the language of the navigator.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "NavigatorLanguage"
@@ -35495,25 +35523,19 @@
             "summary": "Returns the online status of the browser. The property returns a boolean value, with true meaning online and false meaning offline. The property sends updates whenever the browser's ability to connect to the network changes. The update occurs when the user follows links or when a script requests a remote page. For example, the property should return false when users click links soon after they lose internet connection.",
             "support": {
                 "chrome": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "Earlier versions of Chrome incorrectly return true when a tab is first opened, but it starts reporting the correct connectivity status after the first network event. Windows: 11, Mac: 14, Chrome OS: 13, Linux: Always returns <code>true</code>. For history, see <a href='https://crbug.com/7469'>crbug.com/7469</a>."
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "3.5",
-                        "notes": "Since Firefox 4 the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
-                    },
-                    {
-                        "version_added": "4",
-                        "notes": "Since Firefox 41, on OS X and Windows, the returned values follow the actual network connectivity, unless 'Work offline' mode is selected (where it will always return <code>false</code>)."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "3.5",
+                    "notes": "Since Firefox 4 the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity. Since Firefox 41, on OS X and Windows, the returned values follow the actual network connectivity, unless 'Work offline' mode is selected (where it will always return <code>false</code>)."
+                },
                 "firefox_android": {
                     "version_added": "4"
                 },
@@ -35522,27 +35544,28 @@
                     "notes": "in Internet Explorer 8 'online' and 'offline' events are raised on the <code>document.body</code>; under IE 9 they are raised on both <code>document.body</code> and <code>window</code>."
                 },
                 "opera": {
-                    "version_added": false,
-                    "notes": "Since Opera 11.10, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
+                    "version_added": "3",
+                    "notes": "From Opera 11.1 until Opera 12.1, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "10.1",
+                    "notes": "From Opera 11.1 until Opera 12.1, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
                 },
                 "safari": {
                     "version_added": "5"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "4.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "Faulty in a WebView component, see Issue <a href='http://code.google.com/p/android/issues/detail?id=16760'>bug 16760</a>."
                 },
                 "edge_blink": {
-                    "version_added": true,
+                    "version_added": "79",
                     "notes": "Earlier versions of Chrome incorrectly return true when a tab is first opened, but it starts reporting the correct connectivity status after the first network event. Windows: 11, Mac: 14, Chrome OS: 13, Linux: Always returns <code>true</code>. For history, see <a href='https://crbug.com/7469'>crbug.com/7469</a>."
                 }
             },
@@ -35562,43 +35585,43 @@
             "summary": "The NavigatorOnLine interface contains methods and properties related to the connectivity status of the browser.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "3.5"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "8"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "5"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "4.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "NavigatorOnLine"
@@ -37742,7 +37765,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -37907,7 +37930,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -37962,7 +37985,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -38017,7 +38040,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -40970,10 +40993,10 @@
             "summary": "The WebSocket.close() method closes the WebSocket connection or connection attempt, if any. If the connection is already CLOSED, this method does nothing.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -40988,32 +41011,39 @@
                         "notes": "Parameters not supported, see <a href='https://bugzil.la/674716'>bug 674716</a>."
                     }
                 ],
-                "firefox_android": {
-                    "version_added": true
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "8"
+                    },
+                    {
+                        "version_added": "4",
+                        "version_removed": "8",
+                        "notes": "Parameters not supported, see <a href='https://bugzil.la/674716'>bug 674716</a>."
+                    }
+                ],
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "5"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "4.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "WebSocket.close()"
@@ -41362,43 +41392,43 @@
             "summary": "The WebSocket.readyState read-only property returns the current state of the WebSocket connection.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "43"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "43"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "19"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "19"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "43"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "WebSocket.readyState"
@@ -41417,10 +41447,10 @@
             "summary": "The WebSocket.send() method enqueues the specified data to be transmitted to the server over the WebSocket connection, increasing the value of bufferedAmount by the number of bytes needed to contain the data. If the data can't be sent (for example, because it needs to be buffered but the buffer is full), the socket is closed automatically.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -41446,32 +41476,50 @@
                         "notes": "Only parameter of type <code>String</code> supported. Returns <code>boolean</code>."
                     }
                 ],
-                "firefox_android": {
-                    "version_added": true
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "18",
+                        "notes": "See <a href='https://bugzil.la/775368'>bug 775368</a>."
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "18",
+                        "notes": "Only parameter of type <code>ArrayBuffer</code> and <code>String</code> supported."
+                    },
+                    {
+                        "version_added": "8",
+                        "version_removed": "14",
+                        "notes": "Only parameter of type <code>String</code> supported."
+                    },
+                    {
+                        "version_added": "4",
+                        "version_removed": "8",
+                        "notes": "Only parameter of type <code>String</code> supported. Returns <code>boolean</code>."
+                    }
+                ],
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "5"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "4.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "WebSocket.send()"
@@ -41545,10 +41593,10 @@
             "summary": "The WebSocket object provides the API for creating and managing a WebSocket connection to a server, as well as for sending and receiving data on the connection.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -41580,31 +41628,36 @@
                         "version_removed": "14",
                         "prefix": "Moz",
                         "notes": "Message size limited to 16 MB (see <a href='https://bugzil.la/711205'>bug 711205</a>)."
+                    },
+                    {
+                        "version_added": "4",
+                        "version_removed": "6",
+                        "notes": "Message size limited to 16 MB (see <a href='https://bugzil.la/711205'>bug 711205</a>)."
                     }
                 ],
                 "ie": {
-                    "version_added": true
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "5"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "4.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "WebSocket"
@@ -43079,177 +43132,6 @@
                 }
             },
             "title": "Window: online event"
-        }
-    ],
-    "handler-window-onrejectionhandled": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Window.json",
-            "name": "onrejectionhandled",
-            "slug": "API/Window/onrejectionhandled",
-            "summary": "The onrejectionhandled property of the WindowEventHandlers mixin is the EventHandler for processing rejectionhandled events. These events are raised when Promises are rejected.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": {
-                    "version_added": "68",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.promise_rejection_events.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowEventHandlers.onrejectionhandled"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowEventHandlers.json",
-            "name": "onrejectionhandled",
-            "slug": "API/WindowEventHandlers/onrejectionhandled",
-            "summary": "The onrejectionhandled property of the WindowEventHandlers mixin is the EventHandler for processing rejectionhandled events. These events are raised when Promises are rejected.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "55",
-                        "partial_implementation": true,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "This event handler was added in Firefox 55 but was disabled since it wasn't fully implemented. It was fully implemented in Firefox 68 and enabled by default in Firefox 69."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "55",
-                        "partial_implementation": true,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "This event handler was added in Firefox 55 but was disabled since it wasn't fully implemented. It was fully implemented in Firefox 68 but not enabled by default."
-                    }
-                ],
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowEventHandlers.onrejectionhandled"
         }
     ],
     "dom-open": [
@@ -45059,6 +44941,106 @@
                 }
             },
             "title": "WindowEventHandlers.onpopstate"
+        }
+    ],
+    "handler-window-onrejectionhandled": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WindowEventHandlers.json",
+            "name": "onrejectionhandled",
+            "slug": "API/WindowEventHandlers/onrejectionhandled",
+            "summary": "The onrejectionhandled property of the WindowEventHandlers mixin is the EventHandler for processing rejectionhandled events. These events are raised when Promises are rejected.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "69"
+                    },
+                    {
+                        "version_added": "68",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.promise_rejection_events.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "55",
+                        "partial_implementation": true,
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.promise_rejection_events.enabled",
+                                "value_to_set": "true"
+                            }
+                        ],
+                        "notes": "This event handler was added in Firefox 55 but was disabled since it wasn't fully implemented. It was fully implemented in Firefox 68 and enabled by default in Firefox 69."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "68",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.promise_rejection_events.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "55",
+                        "partial_implementation": true,
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.promise_rejection_events.enabled",
+                                "value_to_set": "true"
+                            }
+                        ],
+                        "notes": "This event handler was added in Firefox 55 but was disabled since it wasn't fully implemented. It was fully implemented in Firefox 68 but not enabled by default."
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WindowEventHandlers.onrejectionhandled"
         }
     ],
     "handler-window-onstorage": [
@@ -51455,7 +51437,7 @@
             "filename": "html/elements/input/checkbox.json",
             "name": "input-checkbox",
             "slug": "HTML/Element/input/checkbox",
-            "summary": "<input> elements of type checkbox are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running.  Generally this is a square but it may have rounded corners.  A checkbox allows you to select single values for submission in a form (or not).",
+            "summary": "<input> elements of type checkbox are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally this is a square but it may have rounded corners. A checkbox allows you to select single values for submission in a form (or not).",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -57398,7 +57380,7 @@
             "filename": "html/global_attributes.json",
             "name": "tabindex",
             "slug": "HTML/Global_attributes/tabindex",
-            "summary": "The tabindex global attribute indicates that its element can be focused, and where it participates in sequential keyboard navigation (usually with the Tab key, hence the name).",
+            "summary": "The tabindex global attribute indicates that its element can be focused, and where it participates in sequential keyboard navigation (usually with the Tab key, hence the name).The tabindex global attribute indicates that its element can be focused, and where it participates in sequential keyboard navigation (usually with the Tab key, hence the name).",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -58146,7 +58128,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
