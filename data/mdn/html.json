@@ -9420,7 +9420,7 @@
             "title": "DedicatedWorkerGlobalScope"
         }
     ],
-    "the-end:event-domcontentloaded": [
+    "stop-parsing": [
         {
             "engines": [
                 "blink",
@@ -15558,6 +15558,59 @@
                 "webkit"
             ],
             "filename": "api/HTMLAnchorElement.json",
+            "name": "download",
+            "slug": "API/HTMLAnchorElement/download",
+            "summary": "The HTMLAnchorElement.download property is a DOMString indicating that the linked resource is intended to be downloaded rather than displayed in the browser. The value, if any, specifies the default file name for use in labeling the resource in a local file system. If the name is not a valid file name in the underlying OS, the browser will adjust it.",
+            "support": {
+                "chrome": {
+                    "version_added": "14"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "13"
+                },
+                "firefox": {
+                    "version_added": "20"
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.download"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
             "name": "download",
             "slug": "API/HTMLAnchorElement/download",
             "summary": "The HTMLAnchorElement.download property is a DOMString indicating that the linked resource is intended to be downloaded rather than displayed in the browser. The value, if any, specifies the default file name for use in labeling the resource in a local file system. If the name is not a valid file name in the underlying OS, the browser will adjust it.",
@@ -28497,7 +28550,7 @@
             "title": "HTMLSelectElement.namedItem()"
         }
     ],
-    "the-select-element:htmloptionscollection": [
+    "dom-select-options": [
         {
             "engines": [
                 "blink",
@@ -36618,59 +36671,6 @@
                 }
             },
             "title": "Path2D()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Path2D.json",
-            "name": "Path2D",
-            "slug": "API/Path2D",
-            "summary": "The Path2D interface of the Canvas 2D API is used to declare a path that can then be used on a CanvasRenderingContext2D object. The path methods of the CanvasRenderingContext2D interface are also present on this interface, which gives you the convenience of being able to retain and replay your path whenever desired.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "31"
-                },
-                "firefox_android": {
-                    "version_added": "31"
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "Path2D"
         }
     ],
     "dom-path2d-addpath": [
@@ -36726,6 +36726,61 @@
                 }
             },
             "title": "Path2D.addPath()"
+        }
+    ],
+    "path2d-objects": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Path2D.json",
+            "name": "Path2D",
+            "slug": "API/Path2D",
+            "summary": "The Path2D interface of the Canvas 2D API is used to declare a path that can then be used on a CanvasRenderingContext2D object. The path methods of the CanvasRenderingContext2D interface are also present on this interface, which gives you the convenience of being able to retain and replay your path whenever desired.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Path2D"
         }
     ],
     "dom-plugin": [
@@ -42493,6 +42548,117 @@
                 }
             },
             "title": "Window.customElements"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "Using_custom_elements",
+            "slug": "Web_Components/Using_custom_elements",
+            "summary": "One of the key features of the Web Components standard is the ability to create custom elements that encapsulate your functionality on an HTML page, rather than having to make do with a long, nested batch of elements that together provide a custom page feature. This article introduces the use of the Custom Elements API.",
+            "support": {
+                "chrome": {
+                    "version_added": "54"
+                },
+                "chrome_android": {
+                    "version_added": "54"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.customelements.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "59",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.customelements.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.customelements.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "59",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.customelements.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "41"
+                },
+                "opera_android": {
+                    "version_added": "41"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "54"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Using custom elements"
         }
     ],
     "dom-document-2": [
@@ -42881,7 +43047,7 @@
             "title": "Window.length"
         }
     ],
-    "the-end:event-load": [
+    "delay-the-load-event": [
         {
             "engines": [
                 "blink",
@@ -48688,6 +48854,118 @@
                 }
             },
             "title": ":visited"
+        }
+    ],
+    "link-type-noopener": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/a.json",
+            "name": "noopener",
+            "slug": "HTML/Link_types/noopener",
+            "summary": "The noopener keyword for the rel attribute of the <a>, <area>, and <form> elements instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it — by not setting the Window.opener property on the opened window (it returns null).",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "52",
+                    "notes": "Prior to Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
+                },
+                "firefox_android": {
+                    "version_added": "52",
+                    "notes": "Prior to Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: noopener"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/area.json",
+            "name": "noopener",
+            "slug": "HTML/Link_types/noopener",
+            "summary": "The noopener keyword for the rel attribute of the <a>, <area>, and <form> elements instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it — by not setting the Window.opener property on the opened window (it returns null).",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "52",
+                    "notes": "Prior to Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
+                },
+                "firefox_android": {
+                    "version_added": "52",
+                    "notes": "Prior to Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: noopener"
         }
     ],
     "the-a-element": [
@@ -58170,6 +58448,104 @@
             "title": "HTML attribute: crossorigin"
         }
     ],
+    "crossDocumentMessages": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "postMessage",
+            "slug": "API/Window/postMessage",
+            "summary": "The window.postMessage() method safely enables cross-origin communication between Window objects; e.g., between a page and a pop-up that it spawned, or between a page and an iframe embedded within it.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": [
+                    {
+                        "version_added": "8",
+                        "notes": "Supports sending <code>File</code> and <code>FileList</code> objects between windows. This is only allowed if the recipient's principal is contained within the sender's principal for security reasons."
+                    },
+                    {
+                        "version_added": "6",
+                        "notes": "The <code>message</code> parameter is serialized using the <a href='https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Structured_clone_algorithm'>structured clone algorithm</a>. This means you can pass a broad variety of data objects safely to the destination window without having to serialize them yourself."
+                    },
+                    {
+                        "version_added": "3",
+                        "version_removed": "6",
+                        "notes": "The <code>message</code> parameter must be a string."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "8",
+                        "notes": "Supports sending <code>File</code> and <code>FileList</code> objects between windows. This is only allowed if the recipient's principal is contained within the sender's principal for security reasons."
+                    },
+                    {
+                        "version_added": "6",
+                        "notes": "The <code>message</code> parameter is serialized using the <a href='https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Structured_clone_algorithm'>structured clone algorithm</a>. This means you can pass a broad variety of data objects safely to the destination window without having to serialize them yourself."
+                    },
+                    {
+                        "version_added": "4",
+                        "version_removed": "6",
+                        "notes": "The <code>message</code> parameter must be a string."
+                    }
+                ],
+                "ie": [
+                    {
+                        "version_added": "10",
+                        "notes": "IE10 had an important limitation: see this <a href='https://stackoverflow.com/questions/16226924/is-cross-origin-postmessage-broken-in-ie10'>article</a> for details."
+                    },
+                    {
+                        "version_added": "8",
+                        "version_removed": "10",
+                        "notes": "Support only for <code>&lt;frame&gt;</code> and <code>&lt;iframe&gt;</code>."
+                    }
+                ],
+                "opera": {
+                    "version_added": "9.5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window.postMessage()"
+        }
+    ],
+    "dnd": [
+        {
+            "engines": [],
+            "filename": null,
+            "name": "HTML_Drag_and_Drop_API",
+            "slug": "API/HTML_Drag_and_Drop_API",
+            "summary": "HTML Drag and Drop interfaces enable applications to use drag-and-drop features in browsers.",
+            "support": null,
+            "title": "HTML Drag and Drop API"
+        }
+    ],
     "dom-textarea/input-select": [
         {
             "engines": [],
@@ -58179,6 +58555,61 @@
             "summary": "The HTMLInputElement.select() method selects all the text in a <textarea> element or in an <input> element that includes a text field.",
             "support": null,
             "title": "HTMLInputElement.select()"
+        }
+    ],
+    "drawing-text-to-the-bitmap": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "CanvasRenderingContext2D",
+            "slug": "API/CanvasRenderingContext2D",
+            "summary": "The CanvasRenderingContext2D interface, part of the Canvas API, provides the 2D rendering context for the drawing surface of a <canvas> element. It is used for drawing shapes, text, images, and other objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "9"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "2"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CanvasRenderingContext2D"
         }
     ],
     "event-handler-attributes": [
@@ -58289,6 +58720,118 @@
                 }
             },
             "title": "Server-sent events"
+        }
+    ],
+    "shared-workers-introduction": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": null,
+            "name": "SharedWorker",
+            "slug": "API/SharedWorker",
+            "summary": "The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope, SharedWorkerGlobalScope.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "29"
+                },
+                "firefox_android": {
+                    "version_added": "33"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "10.6"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "5",
+                    "version_removed": "6.1"
+                },
+                "safari_ios": {
+                    "version_added": "5.1",
+                    "version_removed": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SharedWorker"
+        }
+    ],
+    "shared-workers": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": null,
+            "name": "SharedWorker",
+            "slug": "API/SharedWorker",
+            "summary": "The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope, SharedWorkerGlobalScope.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "29"
+                },
+                "firefox_android": {
+                    "version_added": "33"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "10.6"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "5",
+                    "version_removed": "6.1"
+                },
+                "safari_ios": {
+                    "version_added": "5.1",
+                    "version_removed": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SharedWorker"
         }
     ],
     "webstorage": [
