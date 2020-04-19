@@ -32690,6 +32690,60 @@
             "title": "ImageData"
         }
     ],
+    "dom-location-ancestororigins": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/Location.json",
+            "name": "ancestorOrigins",
+            "slug": "API/Location/ancestorOrigins",
+            "summary": "The ancestorOrigins read-only property of the Location interface is a static DOMStringList containing, in reverse order, the origins of all ancestor browsing contexts of the document associated with the given Location object.",
+            "support": {
+                "chrome": {
+                    "version_added": "20"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "6"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Location: ancestorOrigins"
+        }
+    ],
     "dom-location-assign": [
         {
             "engines": [
@@ -44039,7 +44093,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -44053,7 +44108,7 @@
                     "version_added": "49"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "49"
                 },
                 "edge": {
                     "version_added": false
@@ -44087,22 +44142,22 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "36"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "36"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "5.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "49"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -44113,7 +44168,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -44127,10 +44183,10 @@
                     "version_added": "49"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "49"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": [
                     {
@@ -44161,22 +44217,22 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "36"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "36"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "5.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "49"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -48968,6 +49024,118 @@
             "title": "Link types: noopener"
         }
     ],
+    "link-type-noreferrer": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/a.json",
+            "name": "noreferrer",
+            "slug": "HTML/Link_types/noreferrer",
+            "summary": "The noreferrer keyword for the rel attribute of the <a>, <area>, and <form> elements instructs the browser, when navigating to the target resource, to omit the Referer header and otherwise leak no referrer information — and additionally to behave as if the noopener keyword were also specified.",
+            "support": {
+                "chrome": {
+                    "version_added": "16"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "13"
+                },
+                "firefox": {
+                    "version_added": "33"
+                },
+                "firefox_android": {
+                    "version_added": "33"
+                },
+                "ie": {
+                    "version_added": "11",
+                    "partial_implementation": true,
+                    "notes": "Only supported in IE11 in later versions of Windows 10 (creators update). (Per caniuse.com.)"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: noreferrer"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/area.json",
+            "name": "noreferrer",
+            "slug": "HTML/Link_types/noreferrer",
+            "summary": "The noreferrer keyword for the rel attribute of the <a>, <area>, and <form> elements instructs the browser, when navigating to the target resource, to omit the Referer header and otherwise leak no referrer information — and additionally to behave as if the noopener keyword were also specified.",
+            "support": {
+                "chrome": {
+                    "version_added": "16"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "13"
+                },
+                "firefox": {
+                    "version_added": "33"
+                },
+                "firefox_android": {
+                    "version_added": "33"
+                },
+                "ie": {
+                    "version_added": "11",
+                    "partial_implementation": true,
+                    "notes": "Only supported in IE11 in later versions of Windows 10 (creators update). (Per caniuse.com.)"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: noreferrer"
+        }
+    ],
     "the-a-element": [
         {
             "engines": [
@@ -51813,6 +51981,63 @@
             "title": "<iframe>: The Inline Frame element"
         }
     ],
+    "lazy-loading-attributes": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "html/elements/img.json",
+            "name": "loading",
+            "slug": "Performance/Lazy_loading",
+            "summary": "Lazy loading is a strategy to identify resources as non-blocking (non-critical) and load these only when needed. It's a way to shorten the length of the critical rendering path, which translates into reduced page load times.",
+            "support": {
+                "chrome": {
+                    "version_added": "76"
+                },
+                "chrome_android": {
+                    "version_added": "76"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "75"
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1542784'>bug 1542784</a>"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "63"
+                },
+                "opera_android": {
+                    "version_added": "54"
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/196698'>bug 196698</a>"
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/196698'>bug 196698</a>"
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Lazy loading"
+        }
+    ],
     "the-img-element": [
         {
             "engines": [
@@ -53440,6 +53665,546 @@
                 }
             },
             "title": "<li>"
+        }
+    ],
+    "rel-alternate": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "alternate_stylesheet",
+            "slug": "CSS/Alternative_style_sheets",
+            "summary": "Specifying alternative style sheets in a web page provides a way for users to see multiple versions of a page, based on their needs or preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "title": "Alternative style sheets"
+        }
+    ],
+    "link-type-stylesheet": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "alternate_stylesheet",
+            "slug": "CSS/Alternative_style_sheets",
+            "summary": "Specifying alternative style sheets in a web page provides a way for users to see multiple versions of a page, based on their needs or preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "title": "Alternative style sheets"
+        }
+    ],
+    "attr-style-title": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "alternate_stylesheet",
+            "slug": "CSS/Alternative_style_sheets",
+            "summary": "Specifying alternative style sheets in a web page provides a way for users to see multiple versions of a page, based on their needs or preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "title": "Alternative style sheets"
+        }
+    ],
+    "attr-meta-http-equiv-default-style": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "alternate_stylesheet",
+            "slug": "CSS/Alternative_style_sheets",
+            "summary": "Specifying alternative style sheets in a web page provides a way for users to see multiple versions of a page, based on their needs or preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "title": "Alternative style sheets"
+        }
+    ],
+    "link-type-dns-prefetch": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "dns-prefetch",
+            "slug": "HTML/Link_types/dns-prefetch",
+            "summary": "The dns-prefetch keyword for the rel attribute of the <link> element is a hint to browsers that the user is likely to need resources from the target resource's origin, and therefore the browser can likely improve the user experience by preemptively performing DNS resolution for that origin.",
+            "support": {
+                "chrome": {
+                    "version_added": "46"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": "33"
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": "46"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: dns-prefetch"
+        }
+    ],
+    "link-type-modulepreload": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "modulepreload",
+            "slug": "HTML/Link_types/modulepreload",
+            "summary": "The modulepreload keyword for the rel attribute of the <link> element provides a declarative way to preemptively fetch a module script and its dependencies, and store them in the document's module map for later evaluation.",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": {
+                    "version_added": "66"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": "53"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "66"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: modulepreload"
+        }
+    ],
+    "link-type-preconnect": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "preconnect",
+            "slug": "HTML/Link_types/preconnect",
+            "summary": "The preconnect keyword for the rel attribute of the <link> element is a hint to browsers that the user is likely to need resources from the target resource's origin, and therefore the browser can likely improve the user experience by preemptively  initiating a connection to that origin.",
+            "support": {
+                "chrome": {
+                    "version_added": "46"
+                },
+                "chrome_android": {
+                    "version_added": "46"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "39",
+                    "notes": "Before Firefox 41, it doesn't obey the <code>crossorigin</code> attribute."
+                },
+                "firefox_android": {
+                    "version_added": "39",
+                    "notes": "Before Firefox 41, it doesn't obey the <code>crossorigin</code> attribute."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "33"
+                },
+                "opera_android": {
+                    "version_added": "33"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "46"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: preconnect"
+        }
+    ],
+    "link-type-prefetch": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "prefetch",
+            "slug": "HTML/Link_types/prefetch",
+            "summary": "The prefetch keyword for the rel attribute of the <link> element is a hint to browsers that the user is likely to need the target resource for future navigations, and therefore the browser can likely improve the user experience by preemptively fetching and caching the resource.",
+            "support": {
+                "chrome": {
+                    "version_added": "8"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "2"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "11"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: prefetch"
+        }
+    ],
+    "link-type-preload": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "preload",
+            "slug": "HTML/Link_types/preload",
+            "summary": "The preload keyword for the rel attribute of the <link> element indicates the user is highly likely to require the target resource for the current navigation, and therefore the browser must preemptively fetch and cache the resource.",
+            "support": {
+                "chrome": {
+                    "version_added": "50"
+                },
+                "chrome_android": {
+                    "version_added": "50"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "56",
+                    "version_removed": "57",
+                    "notes": "Disabled due to various web compatibility issues (e.g. <a href='https://bugzil.la/1405761'>bug 1405761</a>)."
+                },
+                "firefox_android": {
+                    "version_added": "56",
+                    "version_removed": "57",
+                    "notes": "Disabled due to various web compatibility issues (e.g. <a href='https://bugzil.la/1405761'>bug 1405761</a>)."
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": "37"
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "50"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: preload"
+        }
+    ],
+    "link-type-prerender": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "prerender",
+            "slug": "HTML/Link_types/prerender",
+            "summary": "The prerender keyword for the rel attribute of the <link> element is a hint to browsers that the user might need the target resource for the next navigation, and therefore the browser can likely improve the user experience by preemptively fetching and processing the resource — for example, by fetching its subresources or performing some rendering in the background offscreen.",
+            "support": {
+                "chrome": {
+                    "version_added": "13"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": "11"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Link types: prerender"
         }
     ],
     "the-link-element": [
@@ -56690,6 +57455,104 @@
             "title": "autocapitalize"
         }
     ],
+    "autofilling-form-controls:-the-autocomplete-attribute": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "html/global_attributes.json",
+            "name": "autocomplete",
+            "slug": "HTML/Attributes/autocomplete",
+            "summary": "autocomplete lets web developers specify what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "66",
+                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements."
+                    },
+                    {
+                        "version_added": true,
+                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "66",
+                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements."
+                    },
+                    {
+                        "version_added": true,
+                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element."
+                    }
+                ],
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "qq_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": [
+                    {
+                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
+                        "version_added": "9.0"
+                    },
+                    {
+                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element.",
+                        "version_added": true
+                    }
+                ],
+                "uc_android": {
+                    "version_added": null
+                },
+                "uc_chinese_android": {
+                    "version_added": null
+                },
+                "webview_android": [
+                    {
+                        "version_added": "66",
+                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements."
+                    },
+                    {
+                        "version_added": true,
+                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements."
+                    },
+                    {
+                        "version_added": true,
+                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element."
+                    }
+                ]
+            },
+            "title": "The HTML autocomplete attribute"
+        }
+    ],
     "classes": [
         {
             "engines": [
@@ -58665,6 +59528,68 @@
             "summary": "In HTML, link types indicate the relationship between two documents, in which one links to the other using an <a>, <area>, <form>, or <link> element.",
             "support": null,
             "title": "Link types"
+        }
+    ],
+    "offline": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "Using_the_application_cache",
+            "slug": "HTML/Using_the_application_cache",
+            "summary": "HTML5 provides an application caching mechanism that lets web applications run offline. This Application Cache (AppCache) interface lists resources that browsers should cache to be available offline. Applications that are cached load and work correctly offline, even if users press the Refresh button.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": [
+                    {
+                        "version_added": "3.5"
+                    },
+                    {
+                        "version_added": "3",
+                        "partial_implementation": true,
+                        "notes": "Versions of Firefox prior to 3.5 ignore the <code>NETWORK</code> and <code>FALLBACK</code> sections of the cache manifest file."
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "10.6"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Using the application cache"
         }
     ],
     "pseudo-classes": [
