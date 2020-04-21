@@ -3566,6 +3566,54 @@
       "shortname": "webxr"
     }
   },
+  "XRMediaBinding()": {
+    "XRMediaBinding(session)": {
+      "args": [
+        "session"
+      ],
+      "for": [
+        "XRMediaBinding"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
+  "XRRay()": {
+    "XRRay()": {
+      "args": [],
+      "for": [
+        "XRRay"
+      ],
+      "shortname": "webxr-hit-test"
+    },
+    "XRRay(origin)": {
+      "args": [
+        "origin"
+      ],
+      "for": [
+        "XRRay"
+      ],
+      "shortname": "webxr-hit-test"
+    },
+    "XRRay(origin, direction)": {
+      "args": [
+        "origin",
+        "direction"
+      ],
+      "for": [
+        "XRRay"
+      ],
+      "shortname": "webxr-hit-test"
+    },
+    "XRRay(transform)": {
+      "args": [
+        "transform"
+      ],
+      "for": [
+        "XRRay"
+      ],
+      "shortname": "webxr-hit-test"
+    }
+  },
   "XRReferenceSpaceEvent()": {
     "XRReferenceSpaceEvent(type, eventInitDict)": {
       "args": [
@@ -3616,6 +3664,18 @@
         "XRSessionEvent"
       ],
       "shortname": "webxr"
+    }
+  },
+  "XRWebGLBinding()": {
+    "XRWebGLBinding(session, context)": {
+      "args": [
+        "session",
+        "context"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
     }
   },
   "XRWebGLLayer()": {
@@ -4629,7 +4689,9 @@
     "cancel()": {
       "args": [],
       "for": [
-        "Animation"
+        "Animation",
+        "XRHitTestSource",
+        "XRTransientInputHitTestSource"
       ],
       "shortname": "web-animations"
     },
@@ -5310,6 +5372,7 @@
         "URLSearchParams",
         "XMLHttpRequest",
         "XPathEvaluator",
+        "XRRay",
         "XRRigidTransform"
       ],
       "shortname": "appmanifest"
@@ -5853,6 +5916,25 @@
       ],
       "shortname": "css-layout-api"
     },
+    "constructor(origin)": {
+      "args": [
+        "origin"
+      ],
+      "for": [
+        "XRRay"
+      ],
+      "shortname": "webxr-hit-test"
+    },
+    "constructor(origin, direction)": {
+      "args": [
+        "origin",
+        "direction"
+      ],
+      "for": [
+        "XRRay"
+      ],
+      "shortname": "webxr-hit-test"
+    },
     "constructor(p1)": {
       "args": [
         "p1"
@@ -5934,12 +6016,22 @@
       ],
       "shortname": "webxr"
     },
+    "constructor(session)": {
+      "args": [
+        "session"
+      ],
+      "for": [
+        "XRMediaBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
     "constructor(session, context)": {
       "args": [
         "session",
         "context"
       ],
       "for": [
+        "XRWebGLBinding",
         "XRWebGLLayer"
       ],
       "shortname": "webxr"
@@ -6027,6 +6119,15 @@
         "KeyframeEffect"
       ],
       "shortname": "web-animations"
+    },
+    "constructor(transform)": {
+      "args": [
+        "transform"
+      ],
+      "for": [
+        "XRRay"
+      ],
+      "shortname": "webxr-hit-test"
     },
     "constructor(transforms)": {
       "args": [
@@ -6756,6 +6857,69 @@
       "shortname": "webaudio"
     }
   },
+  "createCubeLayer()": {
+    "createCubeLayer(XRLayerInit init)": {
+      "args": [
+        "XRLayerInit init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createCubeLayer(init)": {
+      "args": [
+        "init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
+  "createCylinderLayer()": {
+    "createCylinderLayer(XRTextureType textureType, XRLayerInit init)": {
+      "args": [
+        "XRTextureType textureType",
+        "XRLayerInit init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createCylinderLayer(textureType, init)": {
+      "args": [
+        "textureType",
+        "init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
+  "createCylinderVideoLayer()": {
+    "createCylinderVideoLayer(video)": {
+      "args": [
+        "video"
+      ],
+      "for": [
+        "XRMediaBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createCylinderVideoLayer(video, init)": {
+      "args": [
+        "video",
+        "init"
+      ],
+      "for": [
+        "XRMediaBinding"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
   "createDataChannel()": {
     "createDataChannel()": {
       "args": [],
@@ -6903,6 +7067,49 @@
         "Document"
       ],
       "shortname": "dom"
+    }
+  },
+  "createEquirectLayer()": {
+    "createEquirectLayer(XRTextureType textureType, XRLayerInit init)": {
+      "args": [
+        "XRTextureType textureType",
+        "XRLayerInit init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createEquirectLayer(textureType, init)": {
+      "args": [
+        "textureType",
+        "init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
+  "createEquirectVideoLayer()": {
+    "createEquirectVideoLayer(video)": {
+      "args": [
+        "video"
+      ],
+      "for": [
+        "XRMediaBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createEquirectVideoLayer(video, init)": {
+      "args": [
+        "video",
+        "init"
+      ],
+      "for": [
+        "XRMediaBinding"
+      ],
+      "shortname": "webxr-layers"
     }
   },
   "createEvent()": {
@@ -7231,6 +7438,80 @@
         "Document"
       ],
       "shortname": "dom"
+    }
+  },
+  "createProjectionLayer()": {
+    "createProjectionLayer(XRTextureType textureType, optional XRProjectionLayerInit init)": {
+      "args": [
+        "XRTextureType textureType",
+        "optional XRProjectionLayerInit init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createProjectionLayer(textureType)": {
+      "args": [
+        "textureType"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createProjectionLayer(textureType, init)": {
+      "args": [
+        "textureType",
+        "init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
+  "createQuadLayer()": {
+    "createQuadLayer(XRTextureType textureType, XRLayerInit init)": {
+      "args": [
+        "XRTextureType textureType",
+        "XRLayerInit init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createQuadLayer(textureType, init)": {
+      "args": [
+        "textureType",
+        "init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
+  "createQuadVideoLayer()": {
+    "createQuadVideoLayer(video)": {
+      "args": [
+        "video"
+      ],
+      "for": [
+        "XRMediaBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createQuadVideoLayer(video, init)": {
+      "args": [
+        "video",
+        "init"
+      ],
+      "for": [
+        "XRMediaBinding"
+      ],
+      "shortname": "webxr-layers"
     }
   },
   "createRadialGradient()": {
@@ -7715,6 +7996,15 @@
         "HTMLTableElement"
       ],
       "shortname": "html"
+    }
+  },
+  "destroy()": {
+    "destroy()": {
+      "args": [],
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "shortname": "webxr-layers"
     }
   },
   "detach()": {
@@ -9437,6 +9727,28 @@
       "shortname": "webaudio"
     }
   },
+  "getHitTestResults()": {
+    "getHitTestResults(hitTestSource)": {
+      "args": [
+        "hitTestSource"
+      ],
+      "for": [
+        "XRFrame"
+      ],
+      "shortname": "webxr-hit-test"
+    }
+  },
+  "getHitTestResultsForTransientInput()": {
+    "getHitTestResultsForTransientInput(hitTestSource)": {
+      "args": [
+        "hitTestSource"
+      ],
+      "for": [
+        "XRFrame"
+      ],
+      "shortname": "webxr-hit-test"
+    }
+  },
   "getImageData()": {
     "getImageData(sx, sy, sw, sh)": {
       "args": [
@@ -9627,6 +9939,15 @@
     }
   },
   "getPose()": {
+    "getPose(baseSpace)": {
+      "args": [
+        "baseSpace"
+      ],
+      "for": [
+        "XRHitTestResult"
+      ],
+      "shortname": "webxr-hit-test"
+    },
     "getPose(space, baseSpace)": {
       "args": [
         "space",
@@ -9913,6 +10234,28 @@
       "shortname": "webrtc"
     }
   },
+  "getSubImage()": {
+    "getSubImage(XRCompositionLayer layer, XRFrame frame)": {
+      "args": [
+        "XRCompositionLayer layer",
+        "XRFrame frame"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "getSubImage(layer, frame)": {
+      "args": [
+        "layer",
+        "frame"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
   "getSynchronizationSources()": {
     "getSynchronizationSources()": {
       "args": [],
@@ -9987,6 +10330,28 @@
         "Node"
       ],
       "shortname": "dom"
+    }
+  },
+  "getViewSubImage()": {
+    "getViewSubImage(XRCompositionLayer layer, XRView view)": {
+      "args": [
+        "XRCompositionLayer layer",
+        "XRView view"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "getViewSubImage(layer, view)": {
+      "args": [
+        "layer",
+        "view"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
     }
   },
   "getViewerPose()": {
@@ -13206,6 +13571,28 @@
         "Element"
       ],
       "shortname": "fullscreen"
+    }
+  },
+  "requestHitTestSource()": {
+    "requestHitTestSource(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "XRSession"
+      ],
+      "shortname": "webxr-hit-test"
+    }
+  },
+  "requestHitTestSourceForTransientInput()": {
+    "requestHitTestSourceForTransientInput(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "XRSession"
+      ],
+      "shortname": "webxr-hit-test"
     }
   },
   "requestReferenceSpace()": {

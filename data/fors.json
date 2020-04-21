@@ -156,6 +156,7 @@
     ":valid",
     ":visited",
     ":where()",
+    ":xr-overlay",
     "<(-token>",
     "<)-token>",
     "<?xml-stylesheet?>",
@@ -2005,11 +2006,22 @@
     "XPathResult",
     "XR",
     "XRBoundedReferenceSpace",
+    "XRCompositionLayer",
+    "XRCubeLayer",
+    "XRCylinderLayer",
+    "XRDOMOverlayInit",
+    "XRDOMOverlayState",
+    "XRDOMOverlayType",
     "XREnvironmentBlendMode",
+    "XREquirectLayer",
     "XREye",
     "XRFrame",
     "XRFrameRequestCallback",
     "XRHandedness",
+    "XRHitTestOptionsInit",
+    "XRHitTestResult",
+    "XRHitTestSource",
+    "XRHitTestTrackableType",
     "XRInputSource",
     "XRInputSourceArray",
     "XRInputSourceEvent",
@@ -2018,9 +2030,18 @@
     "XRInputSourcesChangeEventInit",
     "XRInteractionMode",
     "XRLayer",
+    "XRLayerInit",
+    "XRLayerLayout",
+    "XRMediaBinding",
+    "XRMediaLayerInit",
     "XRPermissionDescriptor",
     "XRPermissionStatus",
     "XRPose",
+    "XRProjectionLayer",
+    "XRProjectionLayerInit",
+    "XRQuadLayer",
+    "XRRay",
+    "XRRayDirectionInit",
     "XRReferenceSpace",
     "XRReferenceSpaceEvent",
     "XRReferenceSpaceEventInit",
@@ -2034,15 +2055,22 @@
     "XRSessionInit",
     "XRSessionMode",
     "XRSpace",
+    "XRSubImage",
     "XRSystem",
     "XRTargetRayMode",
+    "XRTextureType",
+    "XRTransientInputHitTestOptionsInit",
+    "XRTransientInputHitTestResult",
+    "XRTransientInputHitTestSource",
     "XRView",
     "XRViewerPose",
     "XRViewport",
     "XRVisibilityState",
+    "XRWebGLBinding",
     "XRWebGLLayer",
     "XRWebGLLayerInit",
     "XRWebGLRenderingContext",
+    "XRWebGLSubImage",
     "[[CancelSteps]]",
     "[[PullSteps]]",
     "[[associatedmediastreamids]]",
@@ -2359,6 +2387,8 @@
     "all",
     "all-petite-caps",
     "all-small-caps",
+    "allocate color textures",
+    "allocate depth textures",
     "allow-downloads",
     "allow-forms",
     "allow-list",
@@ -2856,6 +2886,7 @@
     "before-active boundary time",
     "before-change style",
     "beforeinput",
+    "beforexrselect",
     "begin",
     "begin offline rendering",
     "beginning edges",
@@ -3173,6 +3204,8 @@
     "can be manually scrolled",
     "can be scrolled manually",
     "can expose sensor readings",
+    "cancel a hit test source",
+    "cancel a hit test source for transient input",
     "cancel a readable stream",
     "cancel an animation",
     "cancel event",
@@ -3446,6 +3479,7 @@
     "color-scheme",
     "color:<color>",
     "colorspace",
+    "colortextures",
     "column",
     "column axis",
     "column box",
@@ -3529,7 +3563,10 @@
     "compound selector",
     "compression curve",
     "computationally independent",
+    "compute all hit test results",
     "compute an mp3 frame size",
+    "compute hit test results",
+    "compute hit test results for transient input",
     "compute missing keyframe offsets",
     "compute the effective overload set",
     "computed <image>",
@@ -3721,6 +3758,7 @@
     "convert a value to a key range",
     "convert a value to a multientry key",
     "convert code unit to scalar value",
+    "convert from native entity type",
     "convert header names to a sorted-lowercase set",
     "convert line endings to native",
     "converted to an ecmascript value",
@@ -3817,6 +3855,10 @@
     "create a domrect from the dictionary",
     "create a domrectreadonly from the dictionary",
     "create a frozen array",
+    "create a hit test result",
+    "create a hit test result for transient input",
+    "create a hit test source",
+    "create a hit test source for transient input",
     "create a layout api context",
     "create a layout constraints object",
     "create a layout fragment",
@@ -4240,6 +4282,7 @@
     "dependent locality",
     "deprecated",
     "deprecates",
+    "depthstenciltextures",
     "dequeue",
     "derivebits",
     "derivekey",
@@ -4274,6 +4317,7 @@
     "determine the device pixel ratio",
     "determine the fallback encoding",
     "determine the intrinsic sizes",
+    "determine the layout attribute",
     "determine the origin",
     "determine the target of an event handler",
     "determine the type of a calculation",
@@ -4361,6 +4405,7 @@
     "display state",
     "display technology",
     "display type",
+    "distance along the ray",
     "distinguishable",
     "distinguishing argument index",
     "distribute extra space",
@@ -5519,6 +5564,7 @@
     "history traversal task source",
     "history-navigation flag",
     "hit test",
+    "hit-test",
     "hit-testing",
     "hkdfparams",
     "hkern",
@@ -5919,16 +5965,12 @@
     "inset",
     "inset properties",
     "inset()",
-    "inset-after",
-    "inset-before",
     "inset-block",
     "inset-block-end",
     "inset-block-start",
-    "inset-end",
     "inset-inline",
     "inset-inline-end",
     "inset-inline-start",
-    "inset-start",
     "inside",
     "inside area",
     "install",
@@ -6436,6 +6478,7 @@
     "list of available images",
     "list of complex selectors",
     "list of compound selectors",
+    "list of currently running animation frame callbacks",
     "list of dragged nodes",
     "list of elements with class names classnames",
     "list of elements with namespace namespace and local name localname",
@@ -6968,6 +7011,10 @@
     "nan-safe maximum",
     "nan-safe minimum",
     "native appearance",
+    "native entity type",
+    "native hit test",
+    "native hit test result",
+    "native hit test results",
     "native webgl framebuffer resolution",
     "natural",
     "natural end-point",
@@ -7215,6 +7262,8 @@
     "obtain a worker/worklet agent",
     "obtain a worklet agent",
     "obtain an agent cluster key",
+    "obtain hit test results",
+    "obtain hit test results for transient input",
     "obtain the current device",
     "obtain their numeric values",
     "obtaining a manifest",
@@ -7433,6 +7482,7 @@
     "overflow-wrap",
     "overflow-x",
     "overflow-y",
+    "overlay element",
     "overlay scrollbars",
     "overload resolution algorithm",
     "overloaded",
@@ -7836,6 +7886,7 @@
     "positioned",
     "positioned box",
     "positioning rectangle",
+    "positioning scheme",
     "positioning schemes",
     "positioning schemes:",
     "possibly appropriate alternatives",
@@ -8336,6 +8387,7 @@
     "request bluetooth devices",
     "request body",
     "request error steps",
+    "request hit test",
     "request matches cached item",
     "request merchant validation algorithm",
     "request method",
@@ -9011,6 +9063,7 @@
     "setters",
     "setting",
     "setting the search origin",
+    "setting the space on a layer",
     "setting the value of an entry",
     "settings section",
     "settled",
@@ -10080,6 +10133,7 @@
     "unoccupied",
     "unordered set of unique space-separated tokens",
     "unprefixed",
+    "unreasonable number of requests",
     "unregister",
     "unresolved",
     "unresolved reference",
@@ -10313,6 +10367,7 @@
     "validate and extract",
     "validate merchant's details algorithm",
     "validate the merchant",
+    "validate the state of the xrwebglsubimage creation function",
     "validation anchor",
     "validation error",
     "validation message",
@@ -17577,6 +17632,7 @@
     "onanimationiteration",
     "onanimationstart",
     "onauxclick",
+    "onbeforexrselect",
     "oncancel",
     "oncanplay",
     "oncanplaythrough",
@@ -25000,6 +25056,42 @@
     "boundsGeometry",
     "native bounds geometry"
   ],
+  "XRCompositionLayer": [
+    "blendTextureSourceAlpha",
+    "chromaticAberrationCorrection",
+    "context",
+    "destroy",
+    "destroy()",
+    "layout",
+    "pixelHeight",
+    "pixelWidth",
+    "session"
+  ],
+  "XRCubeLayer": [
+    "orientation",
+    "space"
+  ],
+  "XRCylinderLayer": [
+    "aspectRatio",
+    "centralAngle",
+    "radius",
+    "space",
+    "transform"
+  ],
+  "XRDOMOverlayInit": [
+    "root"
+  ],
+  "XRDOMOverlayState": [
+    "type"
+  ],
+  "XRDOMOverlayType": [
+    "\"floating\"",
+    "\"head-locked\"",
+    "\"screen\"",
+    "floating",
+    "head-locked",
+    "screen"
+  ],
   "XREnvironmentBlendMode": [
     "\"additive\"",
     "\"alpha-blend\"",
@@ -25007,6 +25099,15 @@
     "additive",
     "alpha-blend",
     "opaque"
+  ],
+  "XREquirectLayer": [
+    "biasX",
+    "biasY",
+    "radius",
+    "referencespace",
+    "scaleX",
+    "scaleY",
+    "transform"
   ],
   "XREye": [
     "\"left\"",
@@ -25018,10 +25119,20 @@
     "animationframe",
     "apply frame updates",
     "apply gamepad frame updates",
+    "getHitTestResults(hitTestSource)",
+    "getHitTestResultsForTransientInput(hitTestSource)",
     "getPose(space, baseSpace)",
     "getViewerPose(referenceSpace)",
+    "map of hit test sources to hit test results",
+    "map of hit test sources to hit test results for transient input",
     "session",
     "time"
+  ],
+  "XRFrame/getHitTestResults(hitTestSource)": [
+    "hitTestSource"
+  ],
+  "XRFrame/getHitTestResultsForTransientInput(hitTestSource)": [
+    "hitTestSource"
   ],
   "XRFrame/getPose(space, baseSpace)": [
     "baseSpace",
@@ -25039,6 +25150,34 @@
     "\"left\"",
     "\"none\"",
     "\"right\""
+  ],
+  "XRHitTestOptionsInit": [
+    "effective entitytypes",
+    "effective offsetray",
+    "entityTypes",
+    "offsetRay",
+    "space"
+  ],
+  "XRHitTestResult": [
+    "frame",
+    "getPose(baseSpace)",
+    "native origin"
+  ],
+  "XRHitTestResult/getPose(baseSpace)": [
+    "baseSpace"
+  ],
+  "XRHitTestSource": [
+    "active",
+    "cancel()",
+    "entity types",
+    "native origin",
+    "offset ray",
+    "session"
+  ],
+  "XRHitTestTrackableType": [
+    "\"mesh\"",
+    "\"plane\"",
+    "\"point\""
   ],
   "XRInputSource": [
     "gamepad",
@@ -25100,6 +25239,72 @@
     "\"screen-space\"",
     "\"world-space\""
   ],
+  "XRLayerInit": [
+    "alpha",
+    "depth",
+    "layout",
+    "pixelHeight",
+    "pixelWidth",
+    "stencil"
+  ],
+  "XRLayerLayout": [
+    "\"mono\"",
+    "\"stereo\"",
+    "\"stereo-left-right\"",
+    "\"stereo-top-bottom\"",
+    "mono",
+    "stereo",
+    "stereo-left-right",
+    "stereo-top-bottom"
+  ],
+  "XRMediaBinding": [
+    "XRMediaBinding(session)",
+    "constructor",
+    "constructor(session)",
+    "createCylinderVideoLayer",
+    "createCylinderVideoLayer(video)",
+    "createCylinderVideoLayer(video, init)",
+    "createEquirectVideoLayer",
+    "createEquirectVideoLayer(video)",
+    "createEquirectVideoLayer(video, init)",
+    "createQuadVideoLayer",
+    "createQuadVideoLayer(video)",
+    "createQuadVideoLayer(video, init)"
+  ],
+  "XRMediaBinding/XRMediaBinding(session)": [
+    "session"
+  ],
+  "XRMediaBinding/constructor(session)": [
+    "session"
+  ],
+  "XRMediaBinding/createCylinderVideoLayer(video)": [
+    "init",
+    "video"
+  ],
+  "XRMediaBinding/createCylinderVideoLayer(video, init)": [
+    "init",
+    "video"
+  ],
+  "XRMediaBinding/createEquirectVideoLayer(video)": [
+    "init",
+    "video"
+  ],
+  "XRMediaBinding/createEquirectVideoLayer(video, init)": [
+    "init",
+    "video"
+  ],
+  "XRMediaBinding/createQuadVideoLayer(video)": [
+    "init",
+    "video"
+  ],
+  "XRMediaBinding/createQuadVideoLayer(video, init)": [
+    "init",
+    "video"
+  ],
+  "XRMediaLayerInit": [
+    "invertStereo",
+    "layout"
+  ],
   "XRPermissionDescriptor": [
     "mode",
     "optionalFeatures",
@@ -25112,6 +25317,71 @@
     "computed offset",
     "emulatedPosition",
     "transform"
+  ],
+  "XRProjectionLayer": [
+    "ignoreDepthValues"
+  ],
+  "XRProjectionLayerInit": [
+    "alpha",
+    "depth",
+    "scaleFactor",
+    "stencil"
+  ],
+  "XRQuadLayer": [
+    "height",
+    "space",
+    "transform",
+    "width"
+  ],
+  "XRRay": [
+    "XRRay()",
+    "XRRay(origin)",
+    "XRRay(origin, direction)",
+    "XRRay(transform)",
+    "constructor()",
+    "constructor(origin)",
+    "constructor(origin, direction)",
+    "constructor(transform)",
+    "direction",
+    "matrix",
+    "obtain the matrix",
+    "origin"
+  ],
+  "XRRay/XRRay()": [
+    "direction",
+    "origin"
+  ],
+  "XRRay/XRRay(origin)": [
+    "direction",
+    "origin"
+  ],
+  "XRRay/XRRay(origin, direction)": [
+    "direction",
+    "origin"
+  ],
+  "XRRay/XRRay(transform)": [
+    "transform"
+  ],
+  "XRRay/constructor()": [
+    "direction",
+    "origin"
+  ],
+  "XRRay/constructor(origin)": [
+    "direction",
+    "origin"
+  ],
+  "XRRay/constructor(origin, direction)": [
+    "direction",
+    "origin"
+  ],
+  "XRRay/constructor(transform)": [
+    "transform"
+  ],
+  "XRRayDirectionInit": [
+    "w",
+    "x",
+    "y",
+    "z"
   ],
   "XRReferenceSpace": [
     "getOffsetReferenceSpace(originOffset)",
@@ -25159,6 +25429,7 @@
     "depthFar",
     "depthNear",
     "inlineVerticalFieldOfView",
+    "layers",
     "output canvas"
   ],
   "XRRenderStateInit": [
@@ -25210,6 +25481,7 @@
     "add input source",
     "cancelAnimationFrame(handle)",
     "change input source",
+    "domOverlayState",
     "end",
     "end()",
     "environmentBlendMode",
@@ -25231,10 +25503,14 @@
     "remove input source",
     "renderState",
     "requestAnimationFrame(callback)",
+    "requestHitTestSource(options)",
+    "requestHitTestSourceForTransientInput(options)",
     "requestReferenceSpace(type)",
     "select",
     "selectend",
     "selectstart",
+    "set of active hit test sources",
+    "set of active hit test sources for transient input",
     "squeeze",
     "squeezeend",
     "squeezestart",
@@ -25252,6 +25528,12 @@
   ],
   "XRSession/requestAnimationFrame(callback)": [
     "callback"
+  ],
+  "XRSession/requestHitTestSource(options)": [
+    "options"
+  ],
+  "XRSession/requestHitTestSourceForTransientInput(options)": [
+    "options"
   ],
   "XRSession/requestReferenceSpace(type)": [
     "type"
@@ -25283,6 +25565,7 @@
     "session"
   ],
   "XRSessionInit": [
+    "domOverlay",
     "optionalFeatures",
     "requiredFeatures"
   ],
@@ -25300,6 +25583,9 @@
     "native origin",
     "origin offset",
     "session"
+  ],
+  "XRSubImage": [
+    "viewport"
   ],
   "XRSystem": [
     "devicechange",
@@ -25328,6 +25614,32 @@
     "screen",
     "tracked-pointer"
   ],
+  "XRTextureType": [
+    "\"texture\"",
+    "\"texture-array\"",
+    "texture",
+    "texture-array"
+  ],
+  "XRTransientInputHitTestOptionsInit": [
+    "effective entitytypes",
+    "effective offsetray",
+    "entityTypes",
+    "offsetRay",
+    "profile"
+  ],
+  "XRTransientInputHitTestResult": [
+    "frame",
+    "inputSource",
+    "results"
+  ],
+  "XRTransientInputHitTestSource": [
+    "active",
+    "cancel()",
+    "entity types",
+    "offset ray",
+    "profile",
+    "session"
+  ],
   "XRView": [
     "eye",
     "frame",
@@ -25353,6 +25665,67 @@
     "hidden",
     "visible",
     "visible-blurred"
+  ],
+  "XRWebGLBinding": [
+    "XRWebGLBinding(session, context)",
+    "constructor(session, context)",
+    "context",
+    "createCubeLayer(XRLayerInit init)",
+    "createCubeLayer(init)",
+    "createCylinderLayer(XRTextureType textureType, XRLayerInit init)",
+    "createCylinderLayer(textureType, init)",
+    "createEquirectLayer(XRTextureType textureType, XRLayerInit init)",
+    "createEquirectLayer(textureType, init)",
+    "createProjectionLayer(XRTextureType textureType, optional XRProjectionLayerInit init)",
+    "createProjectionLayer(textureType)",
+    "createProjectionLayer(textureType, init)",
+    "createQuadLayer(XRTextureType textureType, XRLayerInit init)",
+    "createQuadLayer(textureType, init)",
+    "getSubImage(XRCompositionLayer layer, XRFrame frame)",
+    "getSubImage(layer, frame)",
+    "getViewSubImage(XRCompositionLayer layer, XRView view)",
+    "getViewSubImage(layer, view)",
+    "nativeProjectionScaleFactor",
+    "session"
+  ],
+  "XRWebGLBinding/XRWebGLBinding(session, context)": [
+    "context",
+    "session"
+  ],
+  "XRWebGLBinding/constructor(session, context)": [
+    "context",
+    "session"
+  ],
+  "XRWebGLBinding/createCubeLayer(init)": [
+    "init"
+  ],
+  "XRWebGLBinding/createCylinderLayer(textureType, init)": [
+    "init",
+    "textureType"
+  ],
+  "XRWebGLBinding/createEquirectLayer(textureType, init)": [
+    "init",
+    "textureType"
+  ],
+  "XRWebGLBinding/createProjectionLayer(textureType)": [
+    "init",
+    "textureType"
+  ],
+  "XRWebGLBinding/createProjectionLayer(textureType, init)": [
+    "init",
+    "textureType"
+  ],
+  "XRWebGLBinding/createQuadLayer(textureType, init)": [
+    "init",
+    "textureType"
+  ],
+  "XRWebGLBinding/getSubImage(layer, frame)": [
+    "frame",
+    "layer"
+  ],
+  "XRWebGLBinding/getViewSubImage(layer, view)": [
+    "layer",
+    "view"
   ],
   "XRWebGLLayer": [
     "XRWebGLLayer(session, context)",
@@ -25404,6 +25777,11 @@
     "framebufferScaleFactor",
     "ignoreDepthValues",
     "stencil"
+  ],
+  "XRWebGLSubImage": [
+    "colorTexture",
+    "depthStencilTexture",
+    "imageIndex"
   ],
   "a": [
     "download",
@@ -26938,6 +27316,10 @@
     "stitchtiles",
     "type"
   ],
+  "feature descriptor": [
+    "dom-overlay",
+    "layers"
+  ],
   "fetch": [
     "fetch group",
     "resumed",
@@ -27616,6 +27998,36 @@
     "do not upgrade",
     "upgrade"
   ],
+  "inset": [
+    "<length>",
+    "<percentage>",
+    "auto"
+  ],
+  "inset-block-end": [
+    "<length>",
+    "<percentage>",
+    "auto"
+  ],
+  "inset-block-start": [
+    "<length>",
+    "<percentage>",
+    "auto"
+  ],
+  "inset-inline": [
+    "<length>",
+    "<percentage>",
+    "auto"
+  ],
+  "inset-inline-end inset-block": [
+    "<length>",
+    "<percentage>",
+    "auto"
+  ],
+  "inset-inline-start": [
+    "<length>",
+    "<percentage>",
+    "auto"
+  ],
   "interface": [
     "include",
     "inclusive inherited interfaces",
@@ -27697,6 +28109,10 @@
   ],
   "label": [
     "for"
+  ],
+  "layers": [
+    "initialize the render state",
+    "update the pending layers state"
   ],
   "layout API context": [
     "mode",
@@ -28621,10 +29037,16 @@
   ],
   "position": [
     "absolute",
+    "absolute position",
+    "absolutely position",
     "fixed",
+    "fixed position",
     "relative",
+    "relative position",
+    "relatively position",
     "static",
-    "sticky"
+    "sticky",
+    "sticky position"
   ],
   "premultiplyalpha": [
     "none",
