@@ -3566,6 +3566,18 @@
       "shortname": "webxr"
     }
   },
+  "XRLayerEvent()": {
+    "XRLayerEvent(type, eventInitDict)": {
+      "args": [
+        "type",
+        "eventInitDict"
+      ],
+      "for": [
+        "XRLayerEvent"
+      ],
+      "shortname": "webxr-layers"
+    }
+  },
   "XRMediaBinding()": {
     "XRMediaBinding(XRSession session)": {
       "args": [
@@ -6212,6 +6224,7 @@
         "USBConnectionEvent",
         "XRInputSourceEvent",
         "XRInputSourcesChangeEvent",
+        "XRLayerEvent",
         "XRReferenceSpaceEvent",
         "XRSessionEvent"
       ],
@@ -6867,9 +6880,16 @@
     }
   },
   "createCubeLayer()": {
-    "createCubeLayer(XRLayerInit init)": {
+    "createCubeLayer()": {
+      "args": [],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createCubeLayer(XRCubeLayerInit init)": {
       "args": [
-        "XRLayerInit init"
+        "XRCubeLayerInit init"
       ],
       "for": [
         "XRWebGLBinding"
@@ -6897,10 +6917,19 @@
       ],
       "shortname": "webxr-layers"
     },
-    "createCylinderLayer(XRTextureType textureType, XRLayerInit init)": {
+    "createCylinderLayer(XRTextureType textureType, XRCylinderLayerInit init)": {
       "args": [
         "XRTextureType textureType",
-        "XRLayerInit init"
+        "XRCylinderLayerInit init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createCylinderLayer(textureType)": {
+      "args": [
+        "textureType"
       ],
       "for": [
         "XRWebGLBinding"
@@ -7118,10 +7147,19 @@
       ],
       "shortname": "webxr-layers"
     },
-    "createEquirectLayer(XRTextureType textureType, XRLayerInit init)": {
+    "createEquirectLayer(XRTextureType textureType, XREquirectLayerLayerInit init)": {
       "args": [
         "XRTextureType textureType",
-        "XRLayerInit init"
+        "XREquirectLayerLayerInit init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createEquirectLayer(textureType)": {
+      "args": [
+        "textureType"
       ],
       "for": [
         "XRWebGLBinding"
@@ -7549,10 +7587,19 @@
       ],
       "shortname": "webxr-layers"
     },
-    "createQuadLayer(XRTextureType textureType, XRLayerInit init)": {
+    "createQuadLayer(XRTextureType textureType, XRQuadLayerInit init)": {
       "args": [
         "XRTextureType textureType",
-        "XRLayerInit init"
+        "XRQuadLayerInit init"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "createQuadLayer(textureType)": {
+      "args": [
+        "textureType"
       ],
       "for": [
         "XRWebGLBinding"

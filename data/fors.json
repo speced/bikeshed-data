@@ -2008,12 +2008,15 @@
     "XRBoundedReferenceSpace",
     "XRCompositionLayer",
     "XRCubeLayer",
+    "XRCubeLayerInit",
     "XRCylinderLayer",
+    "XRCylinderLayerInit",
     "XRDOMOverlayInit",
     "XRDOMOverlayState",
     "XRDOMOverlayType",
     "XREnvironmentBlendMode",
     "XREquirectLayer",
+    "XREquirectLayerInit",
     "XREye",
     "XRFrame",
     "XRFrameRequestCallback",
@@ -2030,6 +2033,8 @@
     "XRInputSourcesChangeEventInit",
     "XRInteractionMode",
     "XRLayer",
+    "XRLayerEvent",
+    "XRLayerEventInit",
     "XRLayerInit",
     "XRLayerLayout",
     "XRMediaBinding",
@@ -2040,6 +2045,7 @@
     "XRProjectionLayer",
     "XRProjectionLayerInit",
     "XRQuadLayer",
+    "XRQuadLayerInit",
     "XRRay",
     "XRRayDirectionInit",
     "XRReferenceSpace",
@@ -9902,6 +9908,7 @@
     "the title element",
     "the toolbar barprop object",
     "the typedarray constructors",
+    "the underlying resources of a layer are reallocated",
     "the websocket closing handshake is started",
     "the websocket connection close code",
     "the websocket connection close reason",
@@ -25120,14 +25127,25 @@
     "viewPixelWidth"
   ],
   "XRCubeLayer": [
+    "onredraw",
     "orientation",
     "space"
+  ],
+  "XRCubeLayerInit": [
+    "orientation"
   ],
   "XRCylinderLayer": [
     "aspectRatio",
     "centralAngle",
+    "onredraw",
     "radius",
     "space",
+    "transform"
+  ],
+  "XRCylinderLayerInit": [
+    "aspectRatio",
+    "centralAngle",
+    "radius",
     "transform"
   ],
   "XRDOMOverlayInit": [
@@ -25155,10 +25173,19 @@
   "XREquirectLayer": [
     "biasX",
     "biasY",
+    "onredraw",
     "radius",
     "scaleX",
     "scaleY",
     "space",
+    "transform"
+  ],
+  "XREquirectLayerInit": [
+    "biasX",
+    "biasY",
+    "radius",
+    "scaleX",
+    "scaleY",
     "transform"
   ],
   "XREye": [
@@ -25291,6 +25318,26 @@
     "\"screen-space\"",
     "\"world-space\""
   ],
+  "XRLayer": [
+    "redraw"
+  ],
+  "XRLayerEvent": [
+    "XRLayerEvent(type, eventInitDict)",
+    "constructor",
+    "constructor(type, eventInitDict)",
+    "layer"
+  ],
+  "XRLayerEvent/XRLayerEvent(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "XRLayerEvent/constructor(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "XRLayerEventInit": [
+    "layer"
+  ],
   "XRLayerInit": [
     "alpha",
     "depth",
@@ -25393,7 +25440,13 @@
   ],
   "XRQuadLayer": [
     "height",
+    "onredraw",
     "space",
+    "transform",
+    "width"
+  ],
+  "XRQuadLayerInit": [
+    "height",
     "transform",
     "width"
   ],
@@ -25735,16 +25788,20 @@
     "XRWebGLBinding(session, context)",
     "constructor(session, context)",
     "context",
-    "createCubeLayer(XRLayerInit init)",
+    "createCubeLayer()",
+    "createCubeLayer(XRCubeLayerInit init)",
     "createCubeLayer(init)",
-    "createCylinderLayer(XRTextureType textureType, XRLayerInit init)",
+    "createCylinderLayer(XRTextureType textureType, XRCylinderLayerInit init)",
+    "createCylinderLayer(textureType)",
     "createCylinderLayer(textureType, init)",
-    "createEquirectLayer(XRTextureType textureType, XRLayerInit init)",
+    "createEquirectLayer(XRTextureType textureType, XREquirectLayerLayerInit init)",
+    "createEquirectLayer(textureType)",
     "createEquirectLayer(textureType, init)",
     "createProjectionLayer(XRTextureType textureType, optional XRProjectionLayerInit init)",
     "createProjectionLayer(textureType)",
     "createProjectionLayer(textureType, init)",
-    "createQuadLayer(XRTextureType textureType, XRLayerInit init)",
+    "createQuadLayer(XRTextureType textureType, XRQuadLayerInit init)",
+    "createQuadLayer(textureType)",
     "createQuadLayer(textureType, init)",
     "getSubImage(XRCompositionLayer layer, XRFrame frame)",
     "getSubImage(layer, frame)",
@@ -25761,10 +25818,21 @@
     "context",
     "session"
   ],
+  "XRWebGLBinding/createCubeLayer()": [
+    "init"
+  ],
   "XRWebGLBinding/createCubeLayer(init)": [
     "init"
   ],
+  "XRWebGLBinding/createCylinderLayer(textureType)": [
+    "init",
+    "textureType"
+  ],
   "XRWebGLBinding/createCylinderLayer(textureType, init)": [
+    "init",
+    "textureType"
+  ],
+  "XRWebGLBinding/createEquirectLayer(textureType)": [
     "init",
     "textureType"
   ],
@@ -25777,6 +25845,10 @@
     "textureType"
   ],
   "XRWebGLBinding/createProjectionLayer(textureType, init)": [
+    "init",
+    "textureType"
+  ],
+  "XRWebGLBinding/createQuadLayer(textureType)": [
     "init",
     "textureType"
   ],
