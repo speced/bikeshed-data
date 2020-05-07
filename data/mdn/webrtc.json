@@ -4686,7 +4686,8 @@
     "dom-rtcofferoptions-icerestart": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/RTCOfferOptions.json",
             "name": "iceRestart",
@@ -4703,10 +4704,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "48"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "48"
                 },
                 "ie": {
                     "version_added": false
@@ -6115,7 +6116,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "icecandidate_event",
             "slug": "API/RTCPeerConnection/icecandidate_event",
-            "summary": "An icecandidate event is sent to an RTCPeerConnection  when an RTCIceCandidate has been added to the target as a result of calling RTCPeerConnection.setLocalDescription(). This event handler should transmit the candidate to the remote peer so that the remote peer can add it its set of remote candidates.",
+            "summary": "An icecandidate event is sent to an RTCPeerConnection  when an RTCIceCandidate has been identified and added to the local peer by a call to RTCPeerConnection.setLocalDescription(). The event handler should transmit the candidate to the remote peer over the signaling channel so the remote peer can add it to its set of remote candidates.",
             "support": {
                 "chrome": {
                     "version_added": "24"

@@ -8418,7 +8418,8 @@
                     ]
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": true,
+                    "notes": "As of Opera 12, <code>Text</code> is returned instead of <code>text/plain</code>"
                 },
                 "opera_android": {
                     "version_added": true
@@ -8503,7 +8504,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItem.json",
             "name": "getAsFile",
@@ -8511,10 +8513,10 @@
             "summary": "If the item is a file, the DataTransferItem.getAsFile() method returns the drag data item's File object. If the item is not a file, this method returns null.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "11"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -8535,16 +8537,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8557,7 +8559,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItem.json",
             "name": "getAsString",
@@ -8565,10 +8568,10 @@
             "summary": "The DataTransferItem.getAsString() method invokes the given callback with the drag data item's string data as the argument if the item's kind is a Plain unicode string (i.e. kind is string).",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "11"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -8589,16 +8592,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8611,7 +8614,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItem.json",
             "name": "kind",
@@ -8619,10 +8623,10 @@
             "summary": "The read-only DataTransferItem.kind property returns a DataTransferItem representing the drag data item kind: some text or some file.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "11"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -8643,16 +8647,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8665,7 +8669,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItem.json",
             "name": "type",
@@ -8673,10 +8678,10 @@
             "summary": "The read-only DataTransferItem.type property returns the type (format) of the DataTransferItem object representing the drag data item. The type is a Unicode string generally given by a MIME type, although a MIME type is not required.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "11"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -8697,16 +8702,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8719,7 +8724,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItem.json",
             "name": "DataTransferItem",
@@ -8727,10 +8733,10 @@
             "summary": "The DataTransferItem object represents one drag data item. During a drag operation, each drag event has a dataTransfer property which contains a list of drag data items. Each item in the list is a DataTransferItem object.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "11"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "18"
@@ -8751,16 +8757,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8773,7 +8779,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItemList.json",
             "name": "DataTransferItem",
@@ -8781,10 +8788,10 @@
             "summary": "The DataTransferItem() getter method implements support for accessing items in the DataTransferItemList using array-style syntax (that is DataTransferItem[index]).",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "13"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": false
@@ -8805,16 +8812,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8826,7 +8833,9 @@
     "dom-datatransferitemlist-add": [
         {
             "engines": [
-                "gecko"
+                "blink",
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItemList.json",
             "name": "add",
@@ -8834,10 +8843,10 @@
             "summary": "The DataTransferItemList.add() method creates a new DataTransferItem using the specified data and adds it to the drag data list. The item may be a File or a string of a given type. If the item is successfully added to the list, the newly-created DataTransferItem object is returned.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": false
@@ -8858,19 +8867,19 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "DataTransferItemList.add()"
@@ -8880,7 +8889,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItemList.json",
             "name": "clear",
@@ -8888,10 +8898,10 @@
             "summary": "The DataTransferItemList method clear() removes all DataTransferItem objects from the drag data items list, leaving the list empty.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "13"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -8912,16 +8922,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8934,7 +8944,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItemList.json",
             "name": "length",
@@ -8942,10 +8953,10 @@
             "summary": "The read-only length property of the DataTransferItemList interface returns the number of items currently in the drag item list.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "13"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -8966,16 +8977,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8988,7 +8999,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransferItemList.json",
             "name": "remove",
@@ -8996,10 +9008,10 @@
             "summary": "undefined.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "31"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "31"
                 },
                 "edge": {
                     "version_added": "12"
@@ -9020,16 +9032,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "4.4.3"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -9051,10 +9063,10 @@
             "summary": "The DataTransferItemList object is a list of DataTransferItem objects representing items being dragged. During a drag operation, each DragEvent has a dataTransfer property and that property is a DataTransferItemList.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "13"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "18"
@@ -9075,16 +9087,16 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "11.1"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -9472,7 +9484,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document: DOMContentLoaded event"
+            "title": "Document: DOMContentLoaded event",
+            "caniuse": {
+                "feature": "domcontentloaded",
+                "title": "DOMContentLoaded"
+            }
         }
     ],
     "dom-document-body": [
@@ -9644,7 +9660,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.currentScript"
+            "title": "Document.currentScript",
+            "caniuse": {
+                "feature": "document-currentscript",
+                "title": "document.currentScript"
+            }
         }
     ],
     "dom-document-defaultview": [
@@ -10590,7 +10610,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.head"
+            "title": "Document.head",
+            "caniuse": {
+                "feature": "documenthead",
+                "title": "document.head"
+            }
         }
     ],
     "dom-document-images": [
@@ -11298,7 +11322,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": true
                 },
                 "opera": {
                     "version_added": true
@@ -15765,7 +15789,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLAnchorElement.relList"
+            "title": "HTMLAnchorElement.relList",
+            "caniuse": {
+                "feature": "rellist",
+                "title": "relList (DOMTokenList)"
+            }
         }
     ],
     "htmlanchorelement": [
@@ -18215,7 +18243,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement.contentEditable"
+            "title": "HTMLElement.contentEditable",
+            "caniuse": {
+                "feature": "contenteditable",
+                "title": "contenteditable attribute (basic support)"
+            }
         }
     ],
     "dom-dataset": [
@@ -18543,7 +18575,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement.innerText"
+            "title": "HTMLElement.innerText",
+            "caniuse": {
+                "feature": "innertext",
+                "title": "HTMLElement.innerText"
+            }
         }
     ],
     "event-input-input": [
@@ -18600,7 +18636,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement: input event"
+            "title": "HTMLElement: input event",
+            "caniuse": {
+                "feature": "input-event",
+                "title": "input event"
+            }
         }
     ],
     "dom-iscontenteditable": [
@@ -21269,7 +21309,7 @@
             "filename": "api/HTMLIFrameElement.json",
             "name": "contentWindow",
             "slug": "API/HTMLIFrameElement/contentWindow",
-            "summary": "The contentWindow property returns the Window object of an HTMLIFrameElement. You can use this Window object to access the iframe's document and its internal DOM. This attribute is read-only, but its properties can be manipulated like the global Window object.",
+            "summary": "contentWindow 属性返回当前HTMLIFrameElement的Window对象. 你可以使用这个Window 对象去访问这个iframe的文档和它内部的DOM. 这个是可读属性, 但是它的属性像全局Window 一样是可以操作的.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -22336,7 +22376,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLImageElement.naturalWidth"
+            "title": "HTMLImageElement.naturalWidth",
+            "caniuse": {
+                "feature": "img-naturalwidth-naturalheight",
+                "title": "naturalWidth & naturalHeight image properties"
+            }
         }
     ],
     "dom-img-sizes": [
@@ -22891,7 +22935,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLInputElement.setSelectionRange()"
+            "title": "HTMLInputElement.setSelectionRange()",
+            "caniuse": {
+                "feature": "input-selection",
+                "title": "Selection controls for input & textarea"
+            }
         }
     ],
     "htmlinputelement": [
@@ -31855,7 +31903,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "History.pushState()"
+            "title": "History.pushState()",
+            "caniuse": {
+                "feature": "history",
+                "title": "Session history management"
+            }
         }
     ],
     "dom-history-replacestate": [
@@ -33312,7 +33364,7 @@
             "filename": "api/Location.json",
             "name": "replace",
             "slug": "API/Location/replace",
-            "summary": "The Location.replace() method replaces the current resource with the one at the provided URL. The difference from the assign() method is that after using replace() the current page will not be saved in session History, meaning the user won't be able to use the back button to navigate to it.",
+            "summary": "The replace() method of the Location interface replaces the current resource with the one at the provided URL. The difference from the assign() method is that after using replace() the current page will not be saved in session History, meaning the user won't be able to use the back button to navigate to it.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -34879,7 +34931,11 @@
                     "notes": "Protocol whitelist includes <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>."
                 }
             },
-            "title": "Navigator.registerProtocolHandler()"
+            "title": "Navigator.registerProtocolHandler()",
+            "caniuse": {
+                "feature": "registerprotocolhandler",
+                "title": "Custom protocol handling"
+            }
         }
     ],
     "dom-navigator-vendor": [
@@ -36558,7 +36614,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "OffscreenCanvas"
+            "title": "OffscreenCanvas",
+            "caniuse": {
+                "feature": "offscreencanvas",
+                "title": "OffscreenCanvas"
+            }
         }
     ],
     "dom-pagetransitionevent-persisted": [
@@ -36834,7 +36894,11 @@
                     "version_added": true
                 }
             },
-            "title": "Path2D"
+            "title": "Path2D",
+            "caniuse": {
+                "feature": "path2d",
+                "title": "Path2D"
+            }
         }
     ],
     "dom-plugin": [
@@ -38353,6 +38417,163 @@
             "title": "StorageEvent"
         }
     ],
+    "submitevent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SubmitEvent.json",
+            "name": "SubmitEvent",
+            "slug": "API/SubmitEvent/SubmitEvent",
+            "summary": "The SubmitEvent() constructor creates and returns a new SubmitEvent object, which is used to represent a submit event fired at an HTML form.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": "81"
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "SubmitEvent()"
+        }
+    ],
+    "dom-submitevent-submitter": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SubmitEvent.json",
+            "name": "submitter",
+            "slug": "API/SubmitEvent/submitter",
+            "summary": "The read-only submitter property found on the SubmitEvent interface specifies the submit button or other element that was invoked to cause the form to be submitted.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": "81"
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "SubmitEvent.submitter"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SubmitEvent.json",
+            "name": "SubmitEvent",
+            "slug": "API/SubmitEvent",
+            "summary": "The SubmitEvent interface defines the object used to represent an HTML form's submit event. This event is fired at the <form> when the form's submit action is invoked.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": "81"
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "SubmitEvent"
+        }
+    ],
     "dom-textmetrics-actualboundingboxascent": [
         {
             "engines": [
@@ -39469,6 +39690,62 @@
                 }
             },
             "title": "TextTrack.mode"
+        }
+    ],
+    "texttrack": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "TextTrack",
+            "slug": "API/TextTrack",
+            "summary": "This interface also inherits properties from EventTarget.",
+            "support": {
+                "chrome": {
+                    "version_added": "18"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31",
+                    "notes": "Firefox versions before Firefox 50 didn't display captions when playing media without one or more video tracks being played."
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack"
         }
     ],
     "texttrackcue": [
@@ -43699,7 +43976,11 @@
                     "version_added": null
                 }
             },
-            "title": "Window: pageshow event"
+            "title": "Window: pageshow event",
+            "caniuse": {
+                "feature": "page-transition-events",
+                "title": "PageTransitionEvent"
+            }
         }
     ],
     "dom-parent": [
@@ -44023,7 +44304,11 @@
                     "notes": "Starting with Chrome 46, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
                 }
             },
-            "title": "Window.print()"
+            "title": "Window.print()",
+            "caniuse": {
+                "feature": "beforeafterprint",
+                "title": "Printing Events"
+            }
         }
     ],
     "dom-prompt": [
@@ -44369,7 +44654,11 @@
                     }
                 ]
             },
-            "title": "Window.requestAnimationFrame()"
+            "title": "Window.requestAnimationFrame()",
+            "caniuse": {
+                "feature": "requestanimationframe",
+                "title": "requestAnimationFrame"
+            }
         }
     ],
     "dom-window-scrollbars": [
@@ -46215,7 +46504,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "self.createImageBitmap()"
+            "title": "self.createImageBitmap()",
+            "caniuse": {
+                "feature": "createimagebitmap",
+                "title": "createImageBitmap"
+            }
         }
     ],
     "dom-origin": [
@@ -48628,7 +48921,11 @@
                     "version_added": "79"
                 }
             },
-            "title": ":read-only"
+            "title": ":read-only",
+            "caniuse": {
+                "feature": "css-read-only-write",
+                "title": "CSS :read-only and :read-write selectors"
+            }
         }
     ],
     "selector-read-write": [
@@ -48966,7 +49263,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Link types: noopener"
+            "title": "Link types: noopener",
+            "caniuse": {
+                "feature": "rel-noopener",
+                "title": "rel=noopener"
+            }
         },
         {
             "engines": [
@@ -49021,7 +49322,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Link types: noopener"
+            "title": "Link types: noopener",
+            "caniuse": {
+                "feature": "rel-noopener",
+                "title": "rel=noopener"
+            }
         }
     ],
     "link-type-noreferrer": [
@@ -49078,7 +49383,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Link types: noreferrer"
+            "title": "Link types: noreferrer",
+            "caniuse": {
+                "feature": "rel-noreferrer",
+                "title": "Link type \"noreferrer\""
+            }
         },
         {
             "engines": [
@@ -49133,7 +49442,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Link types: noreferrer"
+            "title": "Link types: noreferrer",
+            "caniuse": {
+                "feature": "rel-noreferrer",
+                "title": "Link type \"noreferrer\""
+            }
         }
     ],
     "the-a-element": [
@@ -49523,7 +49836,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<audio>: The Embed Audio element"
+            "title": "<audio>: The Embed Audio element",
+            "caniuse": {
+                "feature": "audio",
+                "title": "Audio element"
+            }
         }
     ],
     "the-b-element": [
@@ -50030,7 +50347,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<canvas>: The Graphics Canvas element"
+            "title": "<canvas>: The Graphics Canvas element",
+            "caniuse": {
+                "feature": "canvas",
+                "title": "Canvas (basic support)"
+            }
         }
     ],
     "the-caption-element": [
@@ -50416,7 +50737,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<datalist>: The HTML Data List element"
+            "title": "<datalist>: The HTML Data List element",
+            "caniuse": {
+                "feature": "datalist",
+                "title": "Datalist element"
+            }
         }
     ],
     "the-dd-element": [
@@ -50584,7 +50909,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<details>: The Details disclosure element"
+            "title": "<details>: The Details disclosure element",
+            "caniuse": {
+                "feature": "details",
+                "title": "Details & Summary elements"
+            }
         }
     ],
     "the-dfn-element": [
@@ -50712,7 +51041,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<dialog>: The Dialog element"
+            "title": "<dialog>: The Dialog element",
+            "caniuse": {
+                "feature": "dialog",
+                "title": "Dialog element"
+            }
         }
     ],
     "the-div-element": [
@@ -52035,7 +52368,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Lazy loading"
+            "title": "Lazy loading",
+            "caniuse": {
+                "feature": "loading-lazy-attr",
+                "title": "Lazy loading via attribute for images & iframes"
+            }
         }
     ],
     "the-img-element": [
@@ -52256,7 +52593,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<input type=\"color\">"
+            "title": "<input type=\"color\">",
+            "caniuse": {
+                "feature": "input-color",
+                "title": "Color input type"
+            }
         }
     ],
     "date-state-(type=date)": [
@@ -52312,7 +52653,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<input type=\"date\">"
+            "title": "<input type=\"date\">",
+            "caniuse": {
+                "feature": "input-datetime",
+                "title": "Date and time input types"
+            }
         }
     ],
     "local-date-and-time-state-(type=datetime-local)": [
@@ -52770,7 +53115,11 @@
                     "version_added": true
                 }
             },
-            "title": "<input type=\"number\">"
+            "title": "<input type=\"number\">",
+            "caniuse": {
+                "feature": "input-number",
+                "title": "Number input type"
+            }
         }
     ],
     "password-state-(type=password)": [
@@ -52943,7 +53292,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<input type=\"range\">"
+            "title": "<input type=\"range\">",
+            "caniuse": {
+                "feature": "input-range",
+                "title": "Range input type"
+            }
         }
     ],
     "reset-button-state-(type=reset)": [
@@ -53055,7 +53408,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<input type=\"search\">"
+            "title": "<input type=\"search\">",
+            "caniuse": {
+                "feature": "input-search",
+                "title": "Search input type"
+            }
         },
         {
             "engines": [
@@ -53108,7 +53465,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<input type=\"text\">"
+            "title": "<input type=\"text\">",
+            "caniuse": {
+                "feature": "input-search",
+                "title": "Search input type"
+            }
         }
     ],
     "submit-button-state-(type=submit)": [
@@ -53181,10 +53542,11 @@
             "summary": "<input> elements of type tel are used to let the user enter and edit a telephone number. Unlike <input type=\"email\"> and <input type=\"url\"> , the input value is not automatically validated to a particular format before the form can be submitted, because formats for telephone numbers vary so much around the world.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "3",
+                    "notes": "The field type doesn't demonstrate any special behavior."
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -53202,25 +53564,31 @@
                     "version_added": "11"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "4",
+                    "notes": "The field type doesn't demonstrate any special behavior."
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79",
+                    "notes": "The field type doesn't demonstrate any special behavior."
                 }
             },
-            "title": "<input type=\"tel\">"
+            "title": "<input type=\"tel\">",
+            "caniuse": {
+                "feature": "input-email-tel-url",
+                "title": "Email, telephone & URL input types"
+            }
         }
     ],
     "time-state-(type=time)": [
@@ -53983,7 +54351,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Link types: modulepreload"
+            "title": "Link types: modulepreload",
+            "caniuse": {
+                "feature": "link-rel-modulepreload",
+                "title": "Resource Hints: modulepreload"
+            }
         }
     ],
     "link-type-preconnect": [
@@ -54485,6 +54857,142 @@
             "title": "<menu>"
         }
     ],
+    "meta-theme-color": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "partial": [
+                "blink"
+            ],
+            "filename": "html/elements/meta.json",
+            "name": "theme-color",
+            "slug": "HTML/Element/meta/name/theme-color",
+            "summary": "The theme-color value for the name attribute of the <meta> element indicates a suggested color that user agents should use to customize the display of the page or of the surrounding user interface. If specified, the content attribute must contain a valid CSS <color>.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "73",
+                        "partial_implementation": true,
+                        "notes": "Desktop Chrome only uses the color on installed progressive web apps. (Per caniuse.com.)"
+                    },
+                    {
+                        "version_added": "39",
+                        "version_removed": "72",
+                        "partial_implementation": true,
+                        "notes": "Desktop Chrome 39-72 claimed to have support, but did not actually use the color anywhere. Chrome for Android did use the color in the toolbar. (Per caniuse.com.)"
+                    }
+                ],
+                "chrome_android": {
+                    "version_added": "80",
+                    "notes": "Chrome for Android does not use the color on devices with native dark-mode enabled. (Per caniuse.com.)"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.2"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Desktop Chrome only uses the color on installed progressive web apps. (Per caniuse.com.)"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "72",
+                        "partial_implementation": true,
+                        "notes": "Desktop Chrome 39-72 claimed to have support, but did not actually use the color anywhere. Chrome for Android did use the color in the toolbar. (Per caniuse.com.)"
+                    }
+                ]
+            },
+            "title": "theme-color",
+            "caniuse": {
+                "feature": "meta-theme-color",
+                "title": "theme-color Meta Tag"
+            }
+        }
+    ],
+    "standard-metadata-names": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/meta.json",
+            "name": "name",
+            "slug": "HTML/Element/meta/name",
+            "summary": "The <meta> element can be used to provide document metadata in terms of name-value pairs, with the name attribute giving the metadata name, and the content attribute giving the value.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Standard metadata names"
+        }
+    ],
     "the-meta-element": [
         {
             "engines": [
@@ -54592,7 +55100,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<meter>: The HTML Meter element"
+            "title": "<meter>: The HTML Meter element",
+            "caniuse": {
+                "feature": "meter",
+                "title": "meter element"
+            }
         }
     ],
     "the-nav-element": [
@@ -55168,7 +55680,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<picture>: The Picture element"
+            "title": "<picture>: The Picture element",
+            "caniuse": {
+                "feature": "picture",
+                "title": "Picture element"
+            }
         }
     ],
     "the-pre-element": [
@@ -55287,7 +55803,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<progress>: The Progress Indicator element"
+            "title": "<progress>: The Progress Indicator element",
+            "caniuse": {
+                "feature": "progress",
+                "title": "progress element"
+            }
         }
     ],
     "the-q-element": [
@@ -55507,7 +56027,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<ruby>"
+            "title": "<ruby>",
+            "caniuse": {
+                "feature": "ruby",
+                "title": "Ruby annotation"
+            }
         }
     ],
     "the-s-element": [
@@ -56570,7 +57094,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<template>: The Content Template element"
+            "title": "<template>: The Content Template element",
+            "caniuse": {
+                "feature": "template",
+                "title": "HTML templates"
+            }
         }
     ],
     "the-textarea-element": [
@@ -57281,7 +57809,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<video>: The Video Embed element"
+            "title": "<video>: The Video Embed element",
+            "caniuse": {
+                "feature": "video",
+                "title": "Video element"
+            }
         }
     ],
     "the-wbr-element": [
@@ -57337,7 +57869,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "<wbr>"
+            "title": "<wbr>",
+            "caniuse": {
+                "feature": "wbr-element",
+                "title": "wbr (word break opportunity) element"
+            }
         }
     ],
     "the-accesskey-attribute": [
@@ -57469,21 +58005,33 @@
                 "chrome": [
                     {
                         "version_added": "66",
-                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements."
+                        "notes": [
+                            "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
+                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ]
                     },
                     {
                         "version_added": true,
-                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element."
+                        "notes": [
+                            "Originally only supported on the <code>&lt;input&gt;</code> element.",
+                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ]
                     }
                 ],
                 "chrome_android": [
                     {
                         "version_added": "66",
-                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements."
+                        "notes": [
+                            "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
+                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ]
                     },
                     {
                         "version_added": true,
-                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element."
+                        "notes": [
+                            "Originally only supported on the <code>&lt;input&gt;</code> element.",
+                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ]
                     }
                 ],
                 "edge": {
@@ -57515,11 +58063,17 @@
                 },
                 "samsunginternet_android": [
                     {
-                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
+                        "notes": [
+                            "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
+                            "Samsung Internet does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ],
                         "version_added": "9.0"
                     },
                     {
-                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element.",
+                        "notes": [
+                            "Originally only supported on the <code>&lt;input&gt;</code> element.",
+                            "Samsung Internet does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ],
                         "version_added": true
                     }
                 ],
@@ -57532,21 +58086,33 @@
                 "webview_android": [
                     {
                         "version_added": "66",
-                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements."
+                        "notes": [
+                            "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
+                            "WebView does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ]
                     },
                     {
                         "version_added": true,
-                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element."
+                        "notes": [
+                            "Originally only supported on the <code>&lt;input&gt;</code> element.",
+                            "WebView does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ]
                     }
                 ],
                 "edge_blink": [
                     {
                         "version_added": "79",
-                        "notes": "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements."
+                        "notes": [
+                            "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
+                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ]
                     },
                     {
                         "version_added": true,
-                        "notes": "Originally only supported on the <code>&lt;input&gt;</code> element."
+                        "notes": [
+                            "Originally only supported on the <code>&lt;input&gt;</code> element.",
+                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                        ]
                     }
                 ]
             },
@@ -57715,7 +58281,11 @@
                     "version_added": true
                 }
             },
-            "title": "data-*"
+            "title": "data-*",
+            "caniuse": {
+                "feature": "dataset",
+                "title": "dataset & data-* attributes"
+            }
         }
     ],
     "the-dir-attribute": [
@@ -57880,7 +58450,11 @@
                     "version_added": true
                 }
             },
-            "title": "hidden"
+            "title": "hidden",
+            "caniuse": {
+                "feature": "hidden",
+                "title": "hidden attribute"
+            }
         }
     ],
     "hiddenCSS": [
@@ -58060,7 +58634,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "inputmode"
+            "title": "inputmode",
+            "caniuse": {
+                "feature": "input-inputmode",
+                "title": "inputmode attribute"
+            }
         }
     ],
     "attr-is": [
@@ -58670,7 +59248,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "spellcheck"
+            "title": "spellcheck",
+            "caniuse": {
+                "feature": "spellcheck-attribute",
+                "title": "Spellcheck attribute"
+            }
         }
     ],
     "the-style-attribute": [
@@ -58780,7 +59362,11 @@
                     "version_added": true
                 }
             },
-            "title": "tabindex"
+            "title": "tabindex",
+            "caniuse": {
+                "feature": "tabindex-attr",
+                "title": "tabindex global attribute"
+            }
         }
     ],
     "the-title-attribute": [
@@ -58998,6 +59584,9 @@
                 "ie": {
                     "version_added": false
                 },
+                "nodejs": {
+                    "version_added": "10.4.0"
+                },
                 "opera": {
                     "version_added": "51"
                 },
@@ -59126,7 +59715,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Broadcast Channel API"
+            "title": "Broadcast Channel API",
+            "caniuse": {
+                "feature": "broadcastchannel",
+                "title": "BroadcastChannel"
+            }
         }
     ],
     "canvasimagesource": [
@@ -59196,7 +59789,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Channel Messaging API"
+            "title": "Channel Messaging API",
+            "caniuse": {
+                "feature": "channel-messaging",
+                "title": "Channel messaging"
+            }
         },
         {
             "engines": [
@@ -59253,7 +59850,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Using channel messaging"
+            "title": "Using channel messaging",
+            "caniuse": {
+                "feature": "channel-messaging",
+                "title": "Channel messaging"
+            }
         }
     ],
     "cors-settings-attributes": [
@@ -59395,7 +59996,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.postMessage()"
+            "title": "Window.postMessage()",
+            "caniuse": {
+                "feature": "x-doc-messaging",
+                "title": "Cross-document messaging"
+            }
         }
     ],
     "dnd": [
@@ -59406,7 +60011,11 @@
             "slug": "API/HTML_Drag_and_Drop_API",
             "summary": "HTML Drag and Drop interfaces enable applications to use drag-and-drop features in browsers.",
             "support": null,
-            "title": "HTML Drag and Drop API"
+            "title": "HTML Drag and Drop API",
+            "caniuse": {
+                "feature": "dragndrop",
+                "title": "Drag and Drop"
+            }
         }
     ],
     "dom-textarea/input-select": [
@@ -59472,7 +60081,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "CanvasRenderingContext2D"
+            "title": "CanvasRenderingContext2D",
+            "caniuse": {
+                "feature": "canvas-text",
+                "title": "Text API for Canvas"
+            }
         }
     ],
     "event-handler-attributes": [
@@ -59505,7 +60118,11 @@
             "slug": "HTML/Element#Forms",
             "summary": "This page lists all the HTML elements, which are created using tags.",
             "support": null,
-            "title": "HTML elements reference"
+            "title": "HTML elements reference",
+            "caniuse": {
+                "feature": "forms",
+                "title": "HTML5 form features"
+            }
         }
     ],
     "global-attributes": [
@@ -59644,7 +60261,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Using the application cache"
+            "title": "Using the application cache",
+            "caniuse": {
+                "feature": "offline-apps",
+                "title": "Offline web applications"
+            }
         }
     ],
     "pseudo-classes": [
@@ -59710,7 +60331,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Server-sent events"
+            "title": "Server-sent events",
+            "caniuse": {
+                "feature": "eventsource",
+                "title": "Server-sent events"
+            }
         }
     ],
     "shared-workers-introduction": [
@@ -59766,7 +60391,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "SharedWorker"
+            "title": "SharedWorker",
+            "caniuse": {
+                "feature": "sharedworkers",
+                "title": "Shared Web Workers"
+            }
         }
     ],
     "shared-workers": [
@@ -59877,7 +60506,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTML5 Parser"
+            "title": "HTML5 Parser",
+            "caniuse": {
+                "feature": "svg-html5",
+                "title": "Inline SVG in HTML5"
+            }
         }
     ],
     "the-xhtml-syntax": [
@@ -59932,7 +60565,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "XHTML"
+            "title": "XHTML",
+            "caniuse": {
+                "feature": "xhtml",
+                "title": "XHTML served as application/xhtml+xml"
+            }
         }
     ],
     "webstorage": [

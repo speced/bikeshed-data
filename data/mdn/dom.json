@@ -1826,7 +1826,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "ChildNode.remove()"
+            "title": "ChildNode.remove()",
+            "caniuse": {
+                "feature": "childnode-remove",
+                "title": "ChildNode.remove()"
+            }
         }
     ],
     "dom-childnode-replacewith": [
@@ -1936,7 +1940,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "ChildNode"
+            "title": "ChildNode",
+            "caniuse": {
+                "feature": "dom-manip-convenience",
+                "title": "DOM manipulation convenience methods"
+            }
         }
     ],
     "dom-comment-comment": [
@@ -2210,7 +2218,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "CustomEvent"
+            "title": "CustomEvent",
+            "caniuse": {
+                "feature": "customevent",
+                "title": "CustomEvent"
+            }
         }
     ],
     "dom-domimplementation-createdocument": [
@@ -2572,7 +2584,7 @@
                     "version_added": "50"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "32"
@@ -2678,7 +2690,7 @@
                     "version_added": "50"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "32"
@@ -2731,7 +2743,7 @@
                     "version_added": "50"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "32"
@@ -2894,7 +2906,7 @@
                     "version_added": "50"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": true
@@ -3004,7 +3016,7 @@
                     "version_added": "49"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "48"
@@ -3116,7 +3128,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "37",
@@ -4552,7 +4564,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.getElementsByClassName()"
+            "title": "Document.getElementsByClassName()",
+            "caniuse": {
+                "feature": "getelementsbyclassname",
+                "title": "getElementsByClassName"
+            }
         }
     ],
     "dom-document-getelementsbytagname": [
@@ -4827,7 +4843,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.querySelector()"
+            "title": "Document.querySelector()",
+            "caniuse": {
+                "feature": "queryselector",
+                "title": "querySelector/querySelectorAll"
+            }
         }
     ],
     "dom-parentnode-queryselectorall": [
@@ -5524,7 +5544,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.classList"
+            "title": "Element.classList",
+            "caniuse": {
+                "feature": "classlist",
+                "title": "classList (DOMTokenList)"
+            }
         }
     ],
     "dom-element-classname": [
@@ -5634,7 +5658,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.closest()"
+            "title": "Element.closest()",
+            "caniuse": {
+                "feature": "element-closest",
+                "title": "Element.closest()"
+            }
         }
     ],
     "dom-element-getattribute": [
@@ -5650,10 +5678,10 @@
             "summary": "The getAttribute() method of the Element interface returns the value of a specified attribute on the element.",
             "support": {
                 "chrome": {
-                    "version_added": "29"
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "29"
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -5674,16 +5702,16 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "1.3"
                 },
                 "safari_ios": {
-                    "version_added": "6"
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": "2.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -6376,7 +6404,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.insertAdjacentElement()"
+            "title": "Element.insertAdjacentElement()",
+            "caniuse": {
+                "feature": "insert-adjacent",
+                "title": "Element.insertAdjacentElement() & Element.insertAdjacentText()"
+            }
         }
     ],
     "dom-element-insertadjacenttext": [
@@ -6639,7 +6671,11 @@
                     }
                 ]
             },
-            "title": "Element.matches()"
+            "title": "Element.matches()",
+            "caniuse": {
+                "feature": "matchesselector",
+                "title": "matches() DOM method"
+            }
         }
     ],
     "dom-element-namespaceuri": [
@@ -7546,7 +7582,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1.3"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -8812,7 +8848,11 @@
                     "notes": "Before Chrome 49, the <code>type</code> and <code>listener</code> parameters were optional."
                 }
             },
-            "title": "EventTarget.addEventListener()"
+            "title": "EventTarget.addEventListener()",
+            "caniuse": {
+                "feature": "addeventlistener",
+                "title": "EventTarget.addEventListener()"
+            }
         }
     ],
     "dom-eventtarget-dispatchevent": [
@@ -8875,7 +8915,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "EventTarget.dispatchEvent()"
+            "title": "EventTarget.dispatchEvent()",
+            "caniuse": {
+                "feature": "dispatchevent",
+                "title": "EventTarget.dispatchEvent"
+            }
         }
     ],
     "dom-eventtarget-removeeventlistener": [
@@ -9163,7 +9207,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLSlotElement: slotchange event"
+            "title": "HTMLSlotElement: slotchange event",
+            "caniuse": {
+                "feature": "mutationobserver",
+                "title": "Mutation Observer"
+            }
         }
     ],
     "dom-mutationobserver-mutationobserver": [
@@ -10705,7 +10753,11 @@
                     "version_added": true
                 }
             },
-            "title": "Node.compareDocumentPosition()"
+            "title": "Node.compareDocumentPosition()",
+            "caniuse": {
+                "feature": "comparedocumentposition",
+                "title": "Node.compareDocumentPosition()"
+            }
         }
     ],
     "dom-node-contains": [
@@ -11996,7 +12048,11 @@
                     "version_added": "79"
                 }
             },
-            "title": "Node.textContent"
+            "title": "Node.textContent",
+            "caniuse": {
+                "feature": "textcontent",
+                "title": "Node.textContent"
+            }
         }
     ],
     "interface-node": [

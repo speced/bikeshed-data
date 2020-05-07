@@ -4975,12 +4975,13 @@
     "audioworklet": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorklet.json",
             "name": "AudioWorklet",
             "slug": "API/AudioWorklet",
-            "summary": "The AudioWorklet interface of the Web Audio API is used to supply custom audio processing scripts. User-supplied code is run in the AudioWorkletGlobalScope global execution context in a separate Web Audio rendering thread along with other nodes, allowing for zero-latency audio processing.",
+            "summary": "The AudioWorklet interface of the Web Audio API is used to supply custom audio processing scripts that execute in a separate thread to provide very low latency audio processing.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -4992,10 +4993,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5028,7 +5029,8 @@
     "dom-audioworkletglobalscope-registerprocessor": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletGlobalScope.json",
             "name": "registerProcessor",
@@ -5045,10 +5047,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5081,12 +5083,13 @@
     "audioworkletglobalscope": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletGlobalScope.json",
             "name": "AudioWorkletGlobalScope",
             "slug": "API/AudioWorkletGlobalScope",
-            "summary": "The AudioWorkletGlobalScope interface of the Web Audio API represents a global execution context for user-supplied code, which defines custom AudioWorkletProcessor-derived classes. Each BaseAudioContext has a single AudioWorklet available under the audioWorklet property, which runs its code in a single AudioWorkletGlobalScope.",
+            "summary": "The AudioWorkletGlobalScope interface of the Web Audio API represents a global execution context for user-supplied code, which defines custom AudioWorkletProcessor-derived classes.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -5098,10 +5101,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5134,12 +5137,13 @@
     "dom-audioworkletnode-audioworkletnode": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "AudioWorkletNode",
             "slug": "API/AudioWorkletNode/AudioWorkletNode",
-            "summary": "The AudioWorkletNode() constructor creates a new AudioWorkletNode object, which represents an AudioNode with custom audio processing capabilities.",
+            "summary": "The AudioWorkletNode() constructor creates a new AudioWorkletNode object, which represents an AudioNode that uses a JavaScript function to perform custom audio processing.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -5151,10 +5155,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5187,7 +5191,8 @@
     "dom-audioworkletnode-onprocessorerror": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "onprocessorerror",
@@ -5204,10 +5209,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5240,7 +5245,8 @@
     "dom-audioworkletnode-parameters": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "parameters",
@@ -5257,10 +5263,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5293,7 +5299,8 @@
     "dom-audioworkletnode-port": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "port",
@@ -5310,10 +5317,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5346,7 +5353,8 @@
     "audioworkletnode": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "AudioWorkletNode",
@@ -5363,10 +5371,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5399,7 +5407,8 @@
     "dom-audioworkletprocessor-audioworkletprocessor": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletProcessor.json",
             "name": "AudioWorkletProcessor",
@@ -5416,10 +5425,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5452,7 +5461,8 @@
     "dom-audioworkletprocessor-port": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletProcessor.json",
             "name": "port",
@@ -5469,10 +5479,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5505,7 +5515,8 @@
     "audioworkletprocessor": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioWorkletProcessor.json",
             "name": "AudioWorkletProcessor",
@@ -5522,10 +5533,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "76"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
@@ -5590,7 +5601,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": false
@@ -5667,7 +5678,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -5742,7 +5754,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -5817,7 +5830,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -5892,7 +5906,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -5967,7 +5982,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6042,7 +6058,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6062,8 +6079,7 @@
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/BaseAudioContext.json",
             "name": "createConstantSource",
@@ -6095,7 +6111,7 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": false
@@ -6172,7 +6188,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6247,7 +6264,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6322,7 +6340,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6397,7 +6416,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6451,7 +6471,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": false
@@ -6528,7 +6548,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6603,7 +6624,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6696,7 +6718,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": [
                     {
@@ -6800,7 +6823,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6931,7 +6955,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7006,7 +7031,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7081,7 +7107,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7156,7 +7183,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7229,7 +7257,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7250,6 +7279,9 @@
             "engines": [
                 "blink",
                 "gecko"
+            ],
+            "prefixed": [
+                "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
             "name": "onstatechange",
@@ -7283,10 +7315,12 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "9",
+                    "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -7360,7 +7394,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7381,6 +7416,9 @@
             "engines": [
                 "blink",
                 "gecko"
+            ],
+            "prefixed": [
+                "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
             "name": "state",
@@ -7414,10 +7452,12 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "9",
+                    "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -7487,7 +7527,8 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "samsunginternet_android": {
                     "version_added": true

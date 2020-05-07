@@ -1548,7 +1548,7 @@
             "filename": "api/Headers.json",
             "name": "Headers",
             "slug": "API/Headers",
-            "summary": "The Headers interface of the Fetch API allows you to perform various actions on HTTP request and response headers. These actions include retrieving, setting, adding to, and removing. A Headers object has an associated header list, which is initially empty and consists of zero or more name and value pairs.  You can add to this using methods like append() (see Examples.) In all methods of this interface, header names are matched by case-insensitive byte sequence.",
+            "summary": "The Headers interface of the Fetch API allows you to perform various actions on HTTP request and response headers. These actions include retrieving, setting, adding to, and removing headers from the list of the request's headers.",
             "support": {
                 "chrome": [
                     {
@@ -1936,7 +1936,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Request.json",
             "name": "credentials",
@@ -2012,10 +2013,10 @@
                     }
                 ],
                 "safari": {
-                    "version_added": false
+                    "version_added": "10.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -4720,11 +4721,17 @@
             "support": {
                 "chrome": {
                     "version_added": "73",
-                    "notes": "Until version 75, downloads for files with this header would fail in Chrome. See <a href='https://crbug.com/952834'>bug 952834</a>."
+                    "notes": [
+                        "Until version 75, downloads for files with this header would fail in Chrome. See <a href='https://crbug.com/952834'>bug 952834</a>.",
+                        "From version 80, linearized PDFs served inline with this header fail to render properly. See <a href='https://crbug.com/1074261'>bug 1074261</a>."
+                    ]
                 },
                 "chrome_android": {
                     "version_added": "73",
-                    "notes": "Until version 75, downloads for files with this header would fail in Chrome. See <a href='https://crbug.com/952834'>bug 952834</a>."
+                    "notes": [
+                        "Until version 75, downloads for files with this header would fail in Chrome. See <a href='https://crbug.com/952834'>bug 952834</a>.",
+                        "From version 80, linearized PDFs served inline with this header fail to render properly. See <a href='https://crbug.com/1074261'>bug 1074261</a>."
+                    ]
                 },
                 "edge": {
                     "version_added": false
@@ -4767,11 +4774,17 @@
                 },
                 "webview_android": {
                     "version_added": "73",
-                    "notes": "Until version 75, downloads for files with this header would fail in WebView. See <a href='https://crbug.com/952834'>bug 952834</a>."
+                    "notes": [
+                        "Until version 75, downloads for files with this header would fail in WebView. See <a href='https://crbug.com/952834'>bug 952834</a>.",
+                        "From version 80, linearized PDFs served inline with this header fail to render properly. See <a href='https://crbug.com/1074261'>bug 1074261</a>."
+                    ]
                 },
                 "edge_blink": {
                     "version_added": "79",
-                    "notes": "Until version 75, downloads for files with this header would fail in Chrome. See <a href='https://crbug.com/952834'>bug 952834</a>."
+                    "notes": [
+                        "Until version 75, downloads for files with this header would fail in Chrome. See <a href='https://crbug.com/952834'>bug 952834</a>.",
+                        "From version 80, linearized PDFs served inline with this header fail to render properly. See <a href='https://crbug.com/1074261'>bug 1074261</a>."
+                    ]
                 }
             },
             "title": "Cross-Origin-Resource-Policy"
@@ -4874,7 +4887,7 @@
             "filename": "http/headers/x-content-type-options.json",
             "name": "X-Content-Type-Options",
             "slug": "HTTP/Headers/X-Content-Type-Options",
-            "summary": "The X-Content-Type-Options response HTTP header is a marker used by the server to indicate that the MIME types advertised in the Content-Type headers should not be changed and be followed. This allows to opt-out of MIME type sniffing, or, in other words, it is a way to say that the webmasters knew what they were doing.",
+            "summary": "The X-Content-Type-Options response HTTP header is a marker used by the server to indicate that the MIME types advertised in the Content-Type headers should not be changed and be followed. This is a way to opt out of MIME type sniffing, or, in other words, to say that the MIME types are deliberately configured.",
             "support": {
                 "chrome": [
                     {
