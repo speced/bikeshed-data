@@ -498,8 +498,8 @@
     "@right-middle",
     "@right-top",
     "@scope",
+    "@scroll-timeline",
     "@supports",
-    "@timeline",
     "@top-center",
     "@top-left",
     "@top-left-corner",
@@ -1102,6 +1102,12 @@
     "Int32Array",
     "Int8Array",
     "IntegerPart",
+    "IntersectionObserver",
+    "IntersectionObserverCallback",
+    "IntersectionObserverEntry",
+    "IntersectionObserverEntryInit",
+    "IntersectionObserverInit",
+    "IntersectionObserverRegistration",
     "IntrinsicSizes",
     "IntrinsicSizesRequest",
     "IntrinsicSizesResultOptions",
@@ -3587,6 +3593,7 @@
     "compute hit test results for transient input",
     "compute missing keyframe offsets",
     "compute the effective overload set",
+    "compute the intersection",
     "computed <image>",
     "computed color",
     "computed keyframe offset",
@@ -6068,6 +6075,7 @@
     "interpreter",
     "interrupt transfers",
     "intersect the viewport",
+    "intersection observer",
     "interval end",
     "interval start",
     "intra-level white space",
@@ -7243,6 +7251,7 @@
     "notify activated state",
     "notify controller change",
     "notify error",
+    "notify intersection observers",
     "notify mutation observers",
     "notify new reading",
     "notreadableerror",
@@ -7658,6 +7667,7 @@
     "parse a privatekeyinfo",
     "parse a referrer policy from a `referrer-policy` header",
     "parse a relative selector",
+    "parse a root margin",
     "parse a rule",
     "parse a sandboxing directive",
     "parse a selector",
@@ -8052,6 +8062,7 @@
     "processing equivalence",
     "processing imageresource members",
     "processing mode",
+    "processing model",
     "processing modes",
     "processing the backup element queue",
     "processinginstruction",
@@ -8138,6 +8149,8 @@
     "queue a task",
     "queue a tree mutation record",
     "queue an element task",
+    "queue an intersection observer task",
+    "queue an intersectionobserverentry",
     "queuing strategy",
     "quirks mode",
     "quirky color",
@@ -11470,13 +11483,12 @@
     "initial-value",
     "syntax"
   ],
-  "@timeline": [
-    "scroll-end",
-    "scroll-orientation",
-    "scroll-source",
-    "scroll-start",
+  "@scroll-timeline": [
+    "end",
+    "orientation",
     "scroll-time-range",
-    "timeline-type"
+    "source",
+    "start"
   ],
   "@viewport": [
     "height",
@@ -16184,6 +16196,7 @@
     "importNode(node)",
     "importNode(node, deep)",
     "inputEncoding",
+    "intersectionobservertaskqueued",
     "lastModified",
     "layoutNow",
     "layoutNow()",
@@ -16501,6 +16514,7 @@
     "Element.releasePointerCapture()",
     "Element.setPointerCapture",
     "Element.setPointerCapture()",
+    "[[RegisteredIntersectionObservers]]",
     "[[computedStyleMapCache]]",
     "attachShadow(init)",
     "attribute list",
@@ -19165,6 +19179,91 @@
     "data",
     "inputType",
     "isComposing"
+  ],
+  "IntersectionObserver": [
+    "IntersectionObserver(callback)",
+    "IntersectionObserver(callback, options)",
+    "[[ObservationTargets]]",
+    "[[QueuedEntries]]",
+    "[[callback]]",
+    "[[rootMargin]]",
+    "constructor(callback)",
+    "constructor(callback, options)",
+    "disconnect()",
+    "implicit root",
+    "intersection root",
+    "observe(target)",
+    "root",
+    "root intersection rectangle",
+    "rootMargin",
+    "takeRecords()",
+    "target",
+    "thresholds",
+    "unobserve(target)"
+  ],
+  "IntersectionObserver/IntersectionObserver(callback)": [
+    "callback",
+    "options"
+  ],
+  "IntersectionObserver/IntersectionObserver(callback, options)": [
+    "callback",
+    "options"
+  ],
+  "IntersectionObserver/constructor(callback)": [
+    "callback",
+    "options"
+  ],
+  "IntersectionObserver/constructor(callback, options)": [
+    "callback",
+    "options"
+  ],
+  "IntersectionObserver/observe(target)": [
+    "target"
+  ],
+  "IntersectionObserver/unobserve(target)": [
+    "target"
+  ],
+  "IntersectionObserverCallback": [
+    "entries",
+    "observer"
+  ],
+  "IntersectionObserverEntry": [
+    "Constructor",
+    "IntersectionObserverEntry(intersectionObserverEntryInit)",
+    "boundingClientRect",
+    "constructor",
+    "constructor(intersectionObserverEntryInit)",
+    "intersectionRatio",
+    "intersectionRect",
+    "isIntersecting",
+    "rootBounds",
+    "target",
+    "time"
+  ],
+  "IntersectionObserverEntry/IntersectionObserverEntry(intersectionObserverEntryInit)": [
+    "intersectionObserverEntryInit"
+  ],
+  "IntersectionObserverEntry/constructor(intersectionObserverEntryInit)": [
+    "intersectionObserverEntryInit"
+  ],
+  "IntersectionObserverEntryInit": [
+    "boundingClientRect",
+    "intersectionRatio",
+    "intersectionRect",
+    "isIntersecting",
+    "rootBounds",
+    "target",
+    "time"
+  ],
+  "IntersectionObserverInit": [
+    "root",
+    "rootMargin",
+    "threshold"
+  ],
+  "IntersectionObserverRegistration": [
+    "observer",
+    "previousIsIntersecting",
+    "previousThresholdIndex"
   ],
   "IntrinsicSizes": [
     "[[intrinsicSizesRequest]]",
