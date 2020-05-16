@@ -3114,6 +3114,7 @@
     "border-top-width",
     "border-width",
     "bordercolor",
+    "bottle map",
     "bottom",
     "bottommargin",
     "bound credential",
@@ -3154,7 +3155,7 @@
     "browsing-context connected",
     "bubble phase",
     "bubbling phase",
-    "bucket",
+    "bucket map",
     "buffer source types",
     "bufferedamountlow",
     "buffersource",
@@ -3662,6 +3663,7 @@
     "construction stack",
     "constructor operation",
     "constructor operations",
+    "constructor steps",
     "consume a component value",
     "consume a data type name",
     "consume a declaration",
@@ -3819,7 +3821,6 @@
     "cornflowerblue",
     "cornsilk",
     "corresponding animator instance",
-    "corresponding default operation",
     "corresponding effect",
     "corresponding element",
     "corresponding use element",
@@ -3912,6 +3913,7 @@
     "create a permissionstatus",
     "create a potential-cors request",
     "create a reference space",
+    "create a storage bucket",
     "create a sum value",
     "create a type",
     "create a type from a unit map",
@@ -4229,6 +4231,7 @@
     "default iterator object",
     "default language",
     "default maximum",
+    "default method steps",
     "default minimum",
     "default namespace",
     "default object",
@@ -4246,7 +4249,7 @@
     "default step",
     "default step base",
     "default style sheet",
-    "default tojson operation",
+    "default tojson steps",
     "default unforgeable valueof function",
     "default value",
     "default value override",
@@ -5401,7 +5404,6 @@
     "get the parent",
     "get the service worker object",
     "get the service worker registration object",
-    "get the underlying value",
     "get url",
     "get value from latest reading",
     "getBattery()",
@@ -5414,6 +5416,7 @@
     "getprioritizedhashfunction(a, b)",
     "getrandomvalues",
     "getter",
+    "getter steps",
     "getters",
     "getting a promise to wait for all",
     "getting an encoding",
@@ -5543,6 +5546,7 @@
     "has active observations",
     "has an attribute",
     "has been shipped",
+    "has default method steps",
     "has focus steps",
     "has no style sheet that is blocking scripts",
     "has range limitations",
@@ -5562,6 +5566,7 @@
     "have a particular element in table scope",
     "have a periodic domain",
     "have an element target node in a specific scope",
+    "have default method steps",
     "head",
     "head element pointer",
     "header",
@@ -5727,6 +5732,7 @@
     "id map",
     "id selector",
     "ident",
+    "identical to",
     "identifier",
     "identifier code point",
     "identifier of the ecdaa-issuer public key",
@@ -6579,6 +6585,8 @@
     "local name data type",
     "local scheme",
     "local stacking contexts",
+    "local storage",
+    "local storage bucket",
     "local time",
     "local-urls-only flag",
     "locality",
@@ -6864,6 +6872,7 @@
     "meter",
     "method",
     "method cache entry match",
+    "method steps",
     "methods",
     "mftn",
     "microdata",
@@ -7190,7 +7199,6 @@
     "non-interactive",
     "non-local boundary default action",
     "non-negative-number",
-    "non-persistent bucket",
     "non-printable code point",
     "non-rendered element",
     "non-replaced",
@@ -7304,10 +7312,15 @@
     "obsolete",
     "obtain a browsing context agent cluster",
     "obtain a dedicated/shared worker agent",
+    "obtain a local storage bottle map",
+    "obtain a local storage shelf",
     "obtain a physical form",
     "obtain a service worker agent",
+    "obtain a session storage bottle map",
     "obtain a similar-origin window agent",
     "obtain a site",
+    "obtain a storage bottle map",
+    "obtain a storage shelf",
     "obtain a websocket connection",
     "obtain a worker/worklet agent",
     "obtain a worklet agent",
@@ -7813,7 +7826,6 @@
     "permission state constraints",
     "permission task source",
     "persisted replace state",
-    "persistent bucket",
     "persistent connections",
     "persistent css style sheet",
     "perspective",
@@ -8288,6 +8300,7 @@
     "registered observer",
     "registered observer list",
     "registered reporting observer list",
+    "registered storage endpoints",
     "registrable domain",
     "registration",
     "registration ceremony",
@@ -9050,6 +9063,8 @@
     "session history entry",
     "session history event loop",
     "session history traversal queue",
+    "session storage",
+    "session storage bucket",
     "set",
     "set a configuration",
     "set a css declaration",
@@ -9123,6 +9138,7 @@
     "setlike",
     "setlike declaration",
     "setter",
+    "setter steps",
     "setters",
     "setting",
     "setting the search origin",
@@ -9447,10 +9463,18 @@
     "stopped",
     "stopped due to errors",
     "stops parsing",
-    "storage",
+    "storage bottle",
+    "storage bucket",
+    "storage endpoint",
+    "storage identifier",
+    "storage key",
     "storage object initialization steps",
+    "storage proxy map",
     "storage quota",
-    "storage units",
+    "storage shed",
+    "storage shelf",
+    "storage shelves",
+    "storage type",
     "storage usage",
     "store a record into an object store",
     "stored permission",
@@ -12349,6 +12373,12 @@
   "AuthenticatorAttestationResponse": [
     "[[transports]]",
     "attestationObject",
+    "getAuthenticatorData",
+    "getAuthenticatorData()",
+    "getPublicKey",
+    "getPublicKey()",
+    "getPublicKeyAlgorithm",
+    "getPublicKeyAlgorithm()",
     "getTransports",
     "getTransports()"
   ],
@@ -26616,8 +26646,8 @@
     "avoid-page",
     "avoid-region"
   ],
-  "bucket": [
-    "mode"
+  "browsing session": [
+    "storage shed"
   ],
   "button": [
     "button",
@@ -28600,6 +28630,9 @@
     "partially contained",
     "root"
   ],
+  "local storage bucket": [
+    "mode"
+  ],
   "logical-page": [
     "recto",
     "verso"
@@ -29998,6 +30031,17 @@
     "jump-start",
     "start"
   ],
+  "storage bottle": [
+    "map",
+    "proxy map reference set"
+  ],
+  "storage endpoint": [
+    "identifier",
+    "types"
+  ],
+  "storage proxy map": [
+    "backing map"
+  ],
   "stream": [
     "prepended",
     "pushed",
@@ -30610,6 +30654,9 @@
     "xlink:href",
     "xlink:title",
     "y"
+  ],
+  "user agent": [
+    "storage shed"
   ],
   "user-select": [
     "all",
