@@ -5002,7 +5002,7 @@
             "filename": "javascript/builtins/BigInt64Array.json",
             "name": "BigInt64Array",
             "slug": "JavaScript/Reference/Global_Objects/BigInt64Array/BigInt64Array",
-            "summary": "The BigInt64Array() typed array constructor creates an array of 64-bit signed integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0n. Once established, you can reference elements in the array using the object's methods, or by using standard array index syntax (that is, using bracket notation).",
+            "summary": "The BigInt64Array() typed array constructor creates a new BigInt64Array object, which is, an array of 64-bit signed integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0n. Once established, you can reference elements in the array using the object's methods, or by using standard array index syntax (that is, using bracket notation).",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -5057,7 +5057,7 @@
             "filename": "javascript/builtins/BigUint64Array.json",
             "name": "BigUint64Array",
             "slug": "JavaScript/Reference/Global_Objects/BigUint64Array/BigUint64Array",
-            "summary": "The BigUint64Array() typed array constructor creates an array of 64-bit unsigned integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0n. Once established, you can reference elements in the array using the object's methods, or by using standard array index syntax (that is, using bracket notation).",
+            "summary": "The BigUint64Array() typed array constructor creates a new BigUint64Array object, which is, an array of 64-bit unsigned integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0n. Once established, you can reference elements in the array using the object's methods, or by using standard array index syntax (that is, using bracket notation).",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -5113,7 +5113,7 @@
             "filename": "javascript/builtins/Float32Array.json",
             "name": "Float32Array",
             "slug": "JavaScript/Reference/Global_Objects/Float32Array/Float32Array",
-            "summary": "The Float32Array() typed array constructor creates an array of 32-bit floating point numbers (corresponding to the C float data type) in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+            "summary": "The Float32Array() typed array constructor creates a new Float32Array object, which is, an array of 32-bit floating point numbers (corresponding to the C float data type) in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -5169,7 +5169,7 @@
             "filename": "javascript/builtins/Float64Array.json",
             "name": "Float64Array",
             "slug": "JavaScript/Reference/Global_Objects/Float64Array/Float64Array",
-            "summary": "The Float64Array() typed array constructor creates an array of 64-bit floating point numbers (corresponding to the C double data type) in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+            "summary": "The Float64Array() typed array constructor creates a new Float64Array object, which is, an array of 64-bit floating point numbers (corresponding to the C double data type) in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -5393,7 +5393,7 @@
             "filename": "javascript/builtins/Uint16Array.json",
             "name": "Uint16Array",
             "slug": "JavaScript/Reference/Global_Objects/Uint16Array/Uint16Array",
-            "summary": "The Uint16Array() typed array constructor creates an array of 16-bit unsigned integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+            "summary": "The Uint16Array() typed array constructor creates an array of 16-bit unsigned integers in the platform byte order.",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -19204,7 +19204,7 @@
             "filename": "javascript/builtins/Promise.json",
             "name": "all",
             "slug": "JavaScript/Reference/Global_Objects/Promise/all",
-            "summary": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled or when the iterable contains no promises or when the iterable contains promises that have been fulfilled and non-promises that have been returned. It rejects with the reason of the first promise that rejects, or with the error caught by the first argument if that argument has caught an error inside it using try/catch/throw blocks.",
+            "summary": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled, the iterable contains no promises or the iterable contains promises that have been fulfilled and non-promises that have been returned. It rejects with the reason of the first promise that rejects or with the error caught by the first argument, if that argument has caught an error inside it using try/catch/throw blocks.",
             "support": {
                 "chrome": {
                     "version_added": "32"
@@ -26214,7 +26214,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "String",
             "slug": "JavaScript/Reference/Global_Objects/String",
-            "summary": "The String global object is a constructor for strings or a sequence of characters.",
+            "summary": "The String object is used to represent and manipulate a sequence of characters.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -35102,328 +35102,6 @@
             "title": "debugger"
         }
     ],
-    "sec-switch-statement": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "javascript/statements.json",
-            "name": "switch",
-            "slug": "JavaScript/Reference/Statements/default",
-            "summary": "The default keyword can be used in two situations in JavaScript: within a switch statement, or with an export statement.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "nodejs": {
-                    "version_added": "0.1.100"
-                },
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "default"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "javascript/statements.json",
-            "name": "switch",
-            "slug": "JavaScript/Reference/Statements/switch",
-            "summary": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "nodejs": {
-                    "version_added": "0.1.100"
-                },
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "switch"
-        }
-    ],
-    "sec-exports": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "javascript/statements.json",
-            "name": "export",
-            "slug": "JavaScript/Reference/Statements/default",
-            "summary": "The default keyword can be used in two situations in JavaScript: within a switch statement, or with an export statement.",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": {
-                    "version_added": "61"
-                },
-                "edge": {
-                    "version_added": "16"
-                },
-                "firefox": [
-                    {
-                        "version_added": "60"
-                    },
-                    {
-                        "version_added": "54",
-                        "version_removed": "60",
-                        "flags": [
-                            {
-                                "name": "dom.moduleScripts.enabled",
-                                "type": "preference"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "60"
-                    },
-                    {
-                        "version_added": "54",
-                        "version_removed": "60",
-                        "flags": [
-                            {
-                                "name": "dom.moduleScripts.enabled",
-                                "type": "preference"
-                            }
-                        ]
-                    }
-                ],
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": [
-                    {
-                        "version_added": "13.2.0",
-                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
-                    },
-                    {
-                        "version_added": "12.0.0",
-                        "flags": [
-                            {
-                                "name": "--experimental-modules",
-                                "type": "runtime_flag"
-                            }
-                        ],
-                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/docs/latest-v12.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
-                    },
-                    {
-                        "version_added": "8.5.0",
-                        "flags": [
-                            {
-                                "name": "--experimental-modules",
-                                "type": "runtime_flag"
-                            }
-                        ],
-                        "notes": "Module filenames must end with <code>.mjs</code>, not </code>.js</code>. See Node's <a href='https://nodejs.org/docs/latest-v8.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
-                    }
-                ],
-                "opera": {
-                    "version_added": "47"
-                },
-                "opera_android": {
-                    "version_added": "44"
-                },
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "default"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "javascript/statements.json",
-            "name": "export",
-            "slug": "JavaScript/Reference/Statements/export",
-            "summary": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. Bindings that are exported can still be modified locally; when imported, although they can only be read by the importing module the value updates whenever it is updated by the exporting module.",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": {
-                    "version_added": "61"
-                },
-                "edge": {
-                    "version_added": "16"
-                },
-                "firefox": [
-                    {
-                        "version_added": "60"
-                    },
-                    {
-                        "version_added": "54",
-                        "version_removed": "60",
-                        "flags": [
-                            {
-                                "name": "dom.moduleScripts.enabled",
-                                "type": "preference"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "60"
-                    },
-                    {
-                        "version_added": "54",
-                        "version_removed": "60",
-                        "flags": [
-                            {
-                                "name": "dom.moduleScripts.enabled",
-                                "type": "preference"
-                            }
-                        ]
-                    }
-                ],
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": [
-                    {
-                        "version_added": "13.2.0",
-                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
-                    },
-                    {
-                        "version_added": "12.0.0",
-                        "flags": [
-                            {
-                                "name": "--experimental-modules",
-                                "type": "runtime_flag"
-                            }
-                        ],
-                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/docs/latest-v12.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
-                    },
-                    {
-                        "version_added": "8.5.0",
-                        "flags": [
-                            {
-                                "name": "--experimental-modules",
-                                "type": "runtime_flag"
-                            }
-                        ],
-                        "notes": "Module filenames must end with <code>.mjs</code>, not </code>.js</code>. See Node's <a href='https://nodejs.org/docs/latest-v8.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
-                    }
-                ],
-                "opera": {
-                    "version_added": "47"
-                },
-                "opera_android": {
-                    "version_added": "44"
-                },
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "export"
-        }
-    ],
     "sec-do-while-statement": [
         {
             "engines": [
@@ -35538,6 +35216,214 @@
                 }
             },
             "title": "empty"
+        }
+    ],
+    "sec-exports": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/statements.json",
+            "name": "default",
+            "slug": "JavaScript/Reference/Statements/default",
+            "summary": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": {
+                    "version_added": "61"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": [
+                    {
+                        "version_added": "60"
+                    },
+                    {
+                        "version_added": "54",
+                        "version_removed": "60",
+                        "flags": [
+                            {
+                                "name": "dom.moduleScripts.enabled",
+                                "type": "preference"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "60"
+                    },
+                    {
+                        "version_added": "54",
+                        "version_removed": "60",
+                        "flags": [
+                            {
+                                "name": "dom.moduleScripts.enabled",
+                                "type": "preference"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "13.2.0",
+                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    },
+                    {
+                        "version_added": "12.0.0",
+                        "flags": [
+                            {
+                                "name": "--experimental-modules",
+                                "type": "runtime_flag"
+                            }
+                        ],
+                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/docs/latest-v12.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    },
+                    {
+                        "version_added": "8.5.0",
+                        "flags": [
+                            {
+                                "name": "--experimental-modules",
+                                "type": "runtime_flag"
+                            }
+                        ],
+                        "notes": "Module filenames must end with <code>.mjs</code>, not </code>.js</code>. See Node's <a href='https://nodejs.org/docs/latest-v8.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    }
+                ],
+                "opera": {
+                    "version_added": "47"
+                },
+                "opera_android": {
+                    "version_added": "44"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "switch"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/statements.json",
+            "name": "export",
+            "slug": "JavaScript/Reference/Statements/export",
+            "summary": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. Bindings that are exported can still be modified locally; when imported, although they can only be read by the importing module the value updates whenever it is updated by the exporting module.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": {
+                    "version_added": "61"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": [
+                    {
+                        "version_added": "60"
+                    },
+                    {
+                        "version_added": "54",
+                        "version_removed": "60",
+                        "flags": [
+                            {
+                                "name": "dom.moduleScripts.enabled",
+                                "type": "preference"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "60"
+                    },
+                    {
+                        "version_added": "54",
+                        "version_removed": "60",
+                        "flags": [
+                            {
+                                "name": "dom.moduleScripts.enabled",
+                                "type": "preference"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "13.2.0",
+                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    },
+                    {
+                        "version_added": "12.0.0",
+                        "flags": [
+                            {
+                                "name": "--experimental-modules",
+                                "type": "runtime_flag"
+                            }
+                        ],
+                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/docs/latest-v12.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    },
+                    {
+                        "version_added": "8.5.0",
+                        "flags": [
+                            {
+                                "name": "--experimental-modules",
+                                "type": "runtime_flag"
+                            }
+                        ],
+                        "notes": "Module filenames must end with <code>.mjs</code>, not </code>.js</code>. See Node's <a href='https://nodejs.org/docs/latest-v8.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    }
+                ],
+                "opera": {
+                    "version_added": "47"
+                },
+                "opera_android": {
+                    "version_added": "44"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "export"
         }
     ],
     "sec-for-statement": [
@@ -36059,6 +35945,64 @@
                 }
             },
             "title": "return"
+        }
+    ],
+    "sec-switch-statement": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/statements.json",
+            "name": "switch",
+            "slug": "JavaScript/Reference/Statements/switch",
+            "summary": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "switch"
         }
     ],
     "sec-throw-statement": [

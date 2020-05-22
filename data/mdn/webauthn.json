@@ -2039,18 +2039,19 @@
     ],
     "sctn-feature-policy": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "http/headers/feature-policy.json",
             "name": "publickey-credentials-get",
             "slug": "HTTP/Headers/Feature-Policy/publickey-credentials-get",
             "summary": "The HTTP Feature-Policy header publickey-credentials-get directive controls whether the current document is allowed to access Web Authentcation API to create new public-key credentials, i.e, via navigator.credentials.get({publicKey: ..., ...}).",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/993007'>bug </a>."
+                    "version_added": "84"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "84"
                 },
                 "edge": {
                     "version_added": false
@@ -2080,11 +2081,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "84"
                 },
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/993007'>bug </a>."
+                    "version_added": "84"
                 }
             },
             "title": "Feature-Policy: publickey-credentials-get"
