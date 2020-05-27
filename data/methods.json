@@ -78,6 +78,27 @@
       "shortname": "web-animations"
     }
   },
+  "AnimationEvent()": {
+    "AnimationEvent(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "AnimationEvent"
+      ],
+      "shortname": "css-animations"
+    },
+    "AnimationEvent(type, animationEventInitDict)": {
+      "args": [
+        "type",
+        "animationEventInitDict"
+      ],
+      "for": [
+        "AnimationEvent"
+      ],
+      "shortname": "css-animations"
+    }
+  },
   "AnimationPlaybackEvent()": {
     "AnimationPlaybackEvent(type)": {
       "args": [
@@ -1868,6 +1889,27 @@
       "shortname": "dom"
     }
   },
+  "NavigationEvent()": {
+    "NavigationEvent(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "NavigationEvent"
+      ],
+      "shortname": "css-nav"
+    },
+    "NavigationEvent(type, eventInitDict)": {
+      "args": [
+        "type",
+        "eventInitDict"
+      ],
+      "for": [
+        "NavigationEvent"
+      ],
+      "shortname": "css-nav"
+    }
+  },
   "Navigator.share()": {
     "Navigator.share()": {
       "args": [],
@@ -3126,6 +3168,27 @@
       "shortname": "streams"
     }
   },
+  "TransitionEvent()": {
+    "TransitionEvent(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "TransitionEvent"
+      ],
+      "shortname": "css-transitions"
+    },
+    "TransitionEvent(type, transitionEventInitDict)": {
+      "args": [
+        "type",
+        "transitionEventInitDict"
+      ],
+      "for": [
+        "TransitionEvent"
+      ],
+      "shortname": "css-transitions"
+    }
+  },
   "UIEvent()": {
     "UIEvent(type)": {
       "args": [
@@ -4382,6 +4445,17 @@
         "MediaList"
       ],
       "shortname": "cssom"
+    }
+  },
+  "appendRule()": {
+    "appendRule(rule)": {
+      "args": [
+        "rule"
+      ],
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "shortname": "css-animations"
     }
   },
   "applyconstraints()": {
@@ -6141,6 +6215,7 @@
         "type"
       ],
       "for": [
+        "AnimationEvent",
         "AnimationPlaybackEvent",
         "CustomEvent",
         "Event",
@@ -6149,10 +6224,22 @@
         "FontFaceSetLoadEvent",
         "IDBVersionChangeEvent",
         "MediaQueryListEvent",
+        "NavigationEvent",
         "ProgressEvent",
+        "TransitionEvent",
         "ValueEvent"
       ],
-      "shortname": "css-font-loading"
+      "shortname": "css-animations"
+    },
+    "constructor(type, animationEventInitDict)": {
+      "args": [
+        "type",
+        "animationEventInitDict"
+      ],
+      "for": [
+        "AnimationEvent"
+      ],
+      "shortname": "css-animations"
     },
     "constructor(type, errorEventInitDict)": {
       "args": [
@@ -6180,6 +6267,7 @@
         "FontFaceSetLoadEvent",
         "IDBVersionChangeEvent",
         "MediaQueryListEvent",
+        "NavigationEvent",
         "OfflineAudioCompletionEvent",
         "ProgressEvent",
         "USBConnectionEvent",
@@ -6210,6 +6298,16 @@
         "ValueEvent"
       ],
       "shortname": "web-bluetooth"
+    },
+    "constructor(type, transitionEventInitDict)": {
+      "args": [
+        "type",
+        "transitionEventInitDict"
+      ],
+      "for": [
+        "TransitionEvent"
+      ],
+      "shortname": "css-transitions"
     },
     "constructor(url)": {
       "args": [
@@ -7875,9 +7973,10 @@
     "delete()": {
       "args": [],
       "for": [
-        "IDBCursor"
+        "IDBCursor",
+        "NamedFlowMap"
       ],
-      "shortname": "indexeddb"
+      "shortname": "css-regions"
     },
     "delete(cacheName)": {
       "args": [
@@ -7887,6 +7986,15 @@
         "CacheStorage"
       ],
       "shortname": "service-workers"
+    },
+    "delete(flowName)": {
+      "args": [
+        "flowName"
+      ],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
     },
     "delete(font)": {
       "args": [
@@ -8053,6 +8161,15 @@
         "CSSStyleSheet"
       ],
       "shortname": "cssom"
+    },
+    "deleteRule(select)": {
+      "args": [
+        "select"
+      ],
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "shortname": "css-animations"
     }
   },
   "deleteTFoot()": {
@@ -8777,6 +8894,17 @@
       "shortname": "html"
     }
   },
+  "findRule()": {
+    "findRule(select)": {
+      "args": [
+        "select"
+      ],
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "shortname": "css-animations"
+    }
+  },
   "finish()": {
     "finish()": {
       "args": [],
@@ -8872,6 +9000,24 @@
         "WindowClient"
       ],
       "shortname": "html"
+    }
+  },
+  "focusableAreas()": {
+    "focusableAreas()": {
+      "args": [],
+      "for": [
+        "Element"
+      ],
+      "shortname": "css-nav"
+    },
+    "focusableAreas(option)": {
+      "args": [
+        "option"
+      ],
+      "for": [
+        "Element"
+      ],
+      "shortname": "css-nav"
     }
   },
   "formData()": {
@@ -9048,9 +9194,19 @@
     "get()": {
       "args": [],
       "for": [
-        "CredentialsContainer"
+        "CredentialsContainer",
+        "NamedFlowMap"
       ],
       "shortname": "credential-management"
+    },
+    "get(flowName)": {
+      "args": [
+        "flowName"
+      ],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
     },
     "get(id)": {
       "args": [
@@ -9527,6 +9683,15 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "getContent()": {
+    "getContent()": {
+      "args": [],
+      "for": [
+        "NamedFlow"
+      ],
+      "shortname": "css-regions"
     }
   },
   "getContext()": {
@@ -10094,6 +10259,42 @@
       "shortname": "webrtc"
     }
   },
+  "getRegionFlowRanges()": {
+    "getRegionFlowRanges()": {
+      "args": [],
+      "for": [
+        "Region"
+      ],
+      "shortname": "css-regions"
+    }
+  },
+  "getRegions()": {
+    "getRegions()": {
+      "args": [],
+      "for": [
+        "NamedFlow"
+      ],
+      "shortname": "css-regions"
+    }
+  },
+  "getRegionsByContent()": {
+    "getRegionsByContent()": {
+      "args": [],
+      "for": [
+        "NamedFlow"
+      ],
+      "shortname": "css-regions"
+    },
+    "getRegionsByContent(node)": {
+      "args": [
+        "node"
+      ],
+      "for": [
+        "NamedFlow"
+      ],
+      "shortname": "css-regions"
+    }
+  },
   "getRegistration()": {
     "getRegistration()": {
       "args": [],
@@ -10213,6 +10414,15 @@
         "BluetoothUUID"
       ],
       "shortname": "web-bluetooth"
+    }
+  },
+  "getSpatialNavigationContainer()": {
+    "getSpatialNavigationContainer()": {
+      "args": [],
+      "for": [
+        "Element"
+      ],
+      "shortname": "css-nav"
     }
   },
   "getStartDate()": {
@@ -10558,6 +10768,13 @@
     }
   },
   "has()": {
+    "has()": {
+      "args": [],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
+    },
     "has(cacheName)": {
       "args": [
         "cacheName"
@@ -10566,6 +10783,15 @@
         "CacheStorage"
       ],
       "shortname": "service-workers"
+    },
+    "has(flowName)": {
+      "args": [
+        "flowName"
+      ],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
     },
     "has(name)": {
       "args": [
@@ -11932,6 +12158,15 @@
     }
   },
   "navigate()": {
+    "navigate(dir)": {
+      "args": [
+        "dir"
+      ],
+      "for": [
+        "Window"
+      ],
+      "shortname": "css-nav"
+    },
     "navigate(url)": {
       "args": [
         "url"
@@ -14588,6 +14823,13 @@
     }
   },
   "set()": {
+    "set()": {
+      "args": [],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
+    },
     "set(featureValueName, values)": {
       "args": [
         "featureValueName",
@@ -14597,6 +14839,16 @@
         "CSSFontFeatureValuesMap"
       ],
       "shortname": "css-fonts"
+    },
+    "set(flowName, flowValue)": {
+      "args": [
+        "flowName",
+        "flowValue"
+      ],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
     },
     "set(name, blobValue)": {
       "args": [
@@ -15468,6 +15720,36 @@
         "URLSearchParams"
       ],
       "shortname": "url"
+    }
+  },
+  "spatialNavigationSearch()": {
+    "spatialNavigationSearch(dir)": {
+      "args": [
+        "dir"
+      ],
+      "for": [
+        "Element"
+      ],
+      "shortname": "css-nav"
+    },
+    "spatialNavigationSearch(dir, options)": {
+      "args": [
+        "dir",
+        "options"
+      ],
+      "for": [
+        "Element"
+      ],
+      "shortname": "css-nav"
+    },
+    "spatialNavigationSearch(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "Element"
+      ],
+      "shortname": "css-nav"
     }
   },
   "splitText()": {
