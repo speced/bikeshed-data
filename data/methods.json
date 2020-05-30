@@ -3042,6 +3042,18 @@
       "shortname": "webaudio"
     }
   },
+  "SyncEvent()": {
+    "SyncEvent(type, init)": {
+      "args": [
+        "type",
+        "init"
+      ],
+      "for": [
+        "SyncEvent"
+      ],
+      "shortname": "web-background-sync"
+    }
+  },
   "Text()": {
     "Text()": {
       "args": [],
@@ -6273,9 +6285,10 @@
         "init"
       ],
       "for": [
-        "BluetoothAdvertisingEvent"
+        "BluetoothAdvertisingEvent",
+        "SyncEvent"
       ],
-      "shortname": "web-bluetooth"
+      "shortname": "web-background-sync"
     },
     "constructor(type, initDict)": {
       "args": [
@@ -10473,6 +10486,15 @@
       "shortname": "webrtc"
     }
   },
+  "getTags()": {
+    "getTags()": {
+      "args": [],
+      "for": [
+        "SyncManager"
+      ],
+      "shortname": "web-background-sync"
+    }
+  },
   "getTiming()": {
     "getTiming()": {
       "args": [],
@@ -13177,6 +13199,15 @@
         "ServiceWorkerContainer"
       ],
       "shortname": "service-workers"
+    },
+    "register(tag)": {
+      "args": [
+        "tag"
+      ],
+      "for": [
+        "SyncManager"
+      ],
+      "shortname": "web-background-sync"
     }
   },
   "registerAnArbitaryClass()": {
