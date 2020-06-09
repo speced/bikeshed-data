@@ -1689,7 +1689,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "slice",
             "slug": "JavaScript/Reference/Global_Objects/Array/slice",
-            "summary": "The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array. The original array will not be modified.",
+            "summary": "The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -4656,7 +4656,7 @@
             "filename": "javascript/builtins/BigInt.json",
             "name": "BigInt",
             "slug": "JavaScript/Reference/Global_Objects/BigInt/BigInt",
-            "summary": "The BigInt() constructor is used to create BigInt objects.",
+            "summary": "The BigInt() constructor returns a value of type bigint.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -19666,6 +19666,64 @@
             "title": "Promise"
         }
     ],
+    "sec-proxy-constructor": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Proxy.json",
+            "name": "Proxy",
+            "slug": "JavaScript/Reference/Global_Objects/Proxy/Proxy",
+            "summary": "The Proxy() constructor is used to create Proxy objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "18"
+                },
+                "firefox_android": {
+                    "version_added": "18"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "6.0.0"
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": "10"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Proxy() constructor"
+        }
+    ],
     "sec-proxy-object-internal-methods-and-internal-slots-call-thisargument-argumentslist": [
         {
             "engines": [
@@ -34043,6 +34101,180 @@
             "title": "instanceof"
         }
     ],
+    "prod-LogicalANDExpression": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/logical_and.json",
+            "name": "logical_and",
+            "slug": "JavaScript/Reference/Operators/Logical_AND",
+            "summary": "The logical AND (&&) operator (logical conjunction) for a set of operands is true if and only if all of its operands are true. It is typically used with Boolean (logical) values. When it is, it returns a Boolean value. However, the && operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Logical AND"
+        }
+    ],
+    "sec-logical-not-operator": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/logical_not.json",
+            "name": "logical_not",
+            "slug": "JavaScript/Reference/Operators/Logical_NOT",
+            "summary": "The logical NOT (!) operator (logical complement, negation) takes truth to falsity and vice versa. It is typically used with Boolean (logical) values. When used with non-Boolean values, it returns false if its single operand can be converted to true; otherwise, returns true.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Logical NOT"
+        }
+    ],
+    "prod-LogicalORExpression": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/logical_or.json",
+            "name": "logical_or",
+            "slug": "JavaScript/Reference/Operators/Logical_OR",
+            "summary": "The logical OR (||) operator (logical disjunction) for a set of operands is true if and only if one or more of its operands is true It is typically used with Boolean (logical) values. When it is, it returns a Boolean value. However, the || operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Logical OR"
+        }
+    ],
     "sec-new-operator": [
         {
             "engines": [
@@ -35494,7 +35726,7 @@
             "filename": "javascript/statements.json",
             "name": "for_await_of",
             "slug": "JavaScript/Reference/Statements/for-await...of",
-            "summary": "The for await...of statement creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.",
+            "summary": "The for await...of statement creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.Like await operator ,the statement can only be used inside an async function.",
             "support": {
                 "chrome": {
                     "version_added": "63"

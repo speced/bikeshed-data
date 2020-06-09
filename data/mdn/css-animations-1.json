@@ -78,22 +78,22 @@
                     "version_added": "6"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "safari": {
                     "version_added": "9"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -139,22 +139,22 @@
                     "version_added": "10"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "safari": {
                     "version_added": "9"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "9"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "43"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -234,8 +234,9 @@
                         "version_added": "43"
                     },
                     {
-                        "version_added": true,
-                        "prefix": "webkit"
+                        "version_added": "1",
+                        "version_removed": "70",
+                        "prefix": "WebKit"
                     }
                 ],
                 "chrome_android": [
@@ -243,8 +244,9 @@
                         "version_added": "43"
                     },
                     {
-                        "version_added": true,
-                        "prefix": "webkit"
+                        "version_added": "18",
+                        "version_removed": "70",
+                        "prefix": "WebKit"
                     }
                 ],
                 "edge": {
@@ -261,11 +263,16 @@
                 },
                 "opera": [
                     {
-                        "prefix": "webkit",
                         "version_added": "30"
                     },
                     {
-                        "version_added": "12.1"
+                        "prefix": "WebKit",
+                        "version_added": "15",
+                        "version_removed": "57"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "15"
                     },
                     {
                         "prefix": "o",
@@ -274,11 +281,16 @@
                 ],
                 "opera_android": [
                     {
-                        "prefix": "webkit",
                         "version_added": "30"
                     },
                     {
-                        "version_added": "12.1"
+                        "prefix": "WebKit",
+                        "version_added": "14",
+                        "version_removed": "49"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "14"
                     },
                     {
                         "prefix": "o",
@@ -290,7 +302,7 @@
                         "version_added": "9.1"
                     },
                     {
-                        "prefix": "webkit",
+                        "prefix": "WebKit",
                         "version_added": "4"
                     }
                 ],
@@ -299,7 +311,7 @@
                         "version_added": "9.3"
                     },
                     {
-                        "prefix": "webkit",
+                        "prefix": "WebKit",
                         "version_added": "3.2"
                     }
                 ],
@@ -308,21 +320,29 @@
                         "version_added": "4.0"
                     },
                     {
-                        "version_added": true,
-                        "prefix": "webkit"
+                        "prefix": "WebKit",
+                        "version_added": "1.0",
+                        "version_removed": "10.0"
                     }
                 ],
-                "webview_android": {
-                    "version_added": true,
-                    "prefix": "webkit"
-                },
+                "webview_android": [
+                    {
+                        "version_added": "43"
+                    },
+                    {
+                        "version_added": "1",
+                        "version_removed": "70",
+                        "prefix": "WebKit"
+                    }
+                ],
                 "edge_blink": [
                     {
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
-                        "prefix": "webkit"
+                        "version_added": false,
+                        "version_removed": "70",
+                        "prefix": "WebKit"
                     }
                 ]
             },

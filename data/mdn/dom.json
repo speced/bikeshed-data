@@ -1703,7 +1703,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ChildNode.json",
             "name": "after",
@@ -1735,10 +1736,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -1757,7 +1758,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ChildNode.json",
             "name": "before",
@@ -1789,10 +1791,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -9663,7 +9665,7 @@
                 },
                 "ie": {
                     "version_added": "11",
-                    "notes": "Internet Explorer requires <code>attributes: true</code> when using <code>attributeFilter</code>. If <code>attributes: true</code> is not present, Internet Explorer will throw a syntax error."
+                    "notes": "Internet Explorer requires <code>attributes: true</code> when using <code>attributeFilter</code>. If <code>attributes: true</code> is not present, then Internet Explorer throws a syntax error."
                 },
                 "opera": {
                     "version_added": "15"
@@ -10743,7 +10745,7 @@
             "filename": "api/Node.json",
             "name": "compareDocumentPosition",
             "slug": "API/Node/compareDocumentPosition",
-            "summary": "The Node.compareDocumentPosition() method compares the position of the given node against another node in any document.",
+            "summary": "The Node.compareDocumentPosition() method reports the position of the given node relative to another node in any document — not just the given node’s document.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -11439,7 +11441,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "8"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "7"
@@ -11837,7 +11839,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "6"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "7"
@@ -11892,7 +11894,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": true
@@ -16393,19 +16395,36 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/XMLDocument.json",
             "name": "XMLDocument",
             "slug": "API/XMLDocument",
             "summary": "The XMLDocument interface represents an XML document. It inherits from the generic Document and does not add any specific methods or properties to it: nevertheless, several algorithms behave differently with the two types of documents.",
             "support": {
-                "chrome": {
-                    "version_added": "45"
-                },
-                "chrome_android": {
-                    "version_added": "45"
-                },
+                "chrome": [
+                    {
+                        "version_added": "34"
+                    },
+                    {
+                        "version_added": "1",
+                        "version_removed": "34",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "34"
+                    },
+                    {
+                        "version_added": "18",
+                        "version_removed": "34",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ],
                 "edge": {
                     "version_added": "18"
                 },
@@ -16418,27 +16437,83 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "45"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "opera": [
+                    {
+                        "version_added": "21"
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "21",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "21"
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "21",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": "10"
+                    },
+                    {
+                        "version_added": "3",
+                        "version_removed": "10",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "10"
+                    },
+                    {
+                        "version_added": "1",
+                        "version_removed": "10",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": "2.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "version_removed": "2.0",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "37"
+                    },
+                    {
+                        "version_added": "1",
+                        "version_removed": "37",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "34",
+                        "partial_implementation": true,
+                        "notes": "Implemented as an alias for <code>Document</code>."
+                    }
+                ]
             },
             "title": "XMLDocument"
         }
