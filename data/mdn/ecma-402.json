@@ -558,9 +558,16 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": null
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "0.12",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>Collator</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "15"
                 },
@@ -617,7 +624,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": null
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator'>the <code>Collator()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -675,7 +683,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": null
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator'>the <code>Collator()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -732,9 +741,16 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": null
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "0.12",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "15"
                 },
@@ -791,7 +807,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": null
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator'>the <code>Collator()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -848,9 +865,16 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "0.12",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>DateTimeFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "15"
                 },
@@ -907,7 +931,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": null
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -967,7 +992,11 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "8.0.0",
+                    "notes": [
+                        "Before version 12.0.0, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 12.0.0 and later use the specification defined <code>dayPeriod</code>. See <a href='https://crbug.com/865351'>Chromium bug 865351</a>.",
+                        "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
+                    ]
                 },
                 "opera": {
                     "version_added": "44",
@@ -1030,7 +1059,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": null
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -1087,9 +1117,16 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": null
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "0.12",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "15"
                 },
@@ -1146,7 +1183,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -1204,7 +1242,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "7.0.0"
                 },
                 "opera": {
                     "version_added": false
@@ -1262,7 +1300,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>Intl</code> APIs silently fall back to <code>en-US</code>. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                 },
                 "opera": {
                     "version_added": "15"
@@ -1318,9 +1357,16 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": {
-                    "version_added": false
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "12.0.0",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>Locale</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "62"
                 },
@@ -1376,7 +1422,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1433,7 +1480,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1490,7 +1538,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1547,7 +1596,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1604,7 +1654,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1661,7 +1712,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1718,7 +1770,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1775,7 +1828,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1832,7 +1886,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1889,7 +1944,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -1946,7 +2002,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -2003,7 +2060,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -2060,7 +2118,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -2117,7 +2176,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale'>the <code>Locale()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "62"
@@ -2176,9 +2236,16 @@
                     "partial_implementation": true,
                     "notes": "The <code>style</code> option only supports the values <code>'decimal'</code>, <code>'percent'</code>, and <code>'currency'</code>."
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "0.12",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>NumberFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "15"
                 },
@@ -2235,7 +2302,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat'>the <code>NumberFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -2293,7 +2361,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "10.0.0"
+                    "version_added": "10.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat'>the <code>NumberFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "51"
@@ -2351,7 +2420,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat'>the <code>NumberFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -2408,9 +2478,16 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "0.12",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "15"
                 },
@@ -2467,7 +2544,8 @@
                     "version_added": "11"
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat'>the <code>NumberFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "15"
@@ -2523,9 +2601,16 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": {
-                    "version_added": "10.0.0"
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "10.0.0",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>PluralRules</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "50"
                 },
@@ -2585,7 +2670,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "10.0.0"
+                    "version_added": "10.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules'>the <code>PluralRules()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "50"
@@ -2641,9 +2727,16 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": {
-                    "version_added": "12.0.0"
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "12.0.0",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>RelativeTimeFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "58"
                 },
@@ -2699,7 +2792,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "12.0.0"
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat'>the <code>RelativeTimeFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "58"
@@ -2756,7 +2850,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "12.0.0"
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat'>the <code>RelativeTimeFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "58"
@@ -2813,7 +2908,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "12.0.0"
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat'>the <code>RelativeTimeFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "58"
@@ -2869,9 +2965,16 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": {
-                    "version_added": "12.0.0"
-                },
+                "nodejs": [
+                    {
+                        "version_added": "13.0.0"
+                    },
+                    {
+                        "version_added": "12.0.0",
+                        "partial_implementation": true,
+                        "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available for versions prior to 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    }
+                ],
                 "opera": {
                     "version_added": "58"
                 },
@@ -2927,7 +3030,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "12.0.0"
+                    "version_added": "12.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat'>the <code>RelativeTimeFormat()</code> constructor</a> for more details."
                 },
                 "opera": {
                     "version_added": "58"
