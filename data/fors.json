@@ -785,7 +785,6 @@
     "Create a FederatedCredential from FederatedCredentialInit",
     "Create a PasswordCredential from PasswordCredentialData",
     "Create a PasswordCredential from an HTMLFormElement",
-    "CreateAlgorithmFromUnderlyingMethod",
     "CreateReadableByteStream",
     "CreateReadableStream",
     "CreateSyntheticModule",
@@ -908,6 +907,8 @@
     "ExtendableMessageEventInit",
     "External",
     "ExternalApplicationResource",
+    "ExtractHighWaterMark",
+    "ExtractSizeAlgorithm",
     "FakeWorkletGlobalScope",
     "FeaturePolicy",
     "FeaturePolicyViolationReportBody",
@@ -1116,24 +1117,10 @@
     "InvalidModificationError",
     "InvalidNodeTypeError",
     "InvalidStateError",
-    "InvokeOrNoop",
     "Is an environment settings object contextually secure?",
-    "IsFiniteNonNegativeNumber",
     "IsNonNegativeNumber",
-    "IsReadableByteStreamController",
-    "IsReadableStream",
-    "IsReadableStreamAsyncIterator",
-    "IsReadableStreamBYOBReader",
-    "IsReadableStreamBYOBRequest",
-    "IsReadableStreamDefaultController",
-    "IsReadableStreamDefaultReader",
     "IsReadableStreamDisturbed",
     "IsReadableStreamLocked",
-    "IsTransformStream",
-    "IsTransformStreamDefaultController",
-    "IsWritableStream",
-    "IsWritableStreamDefaultController",
-    "IsWritableStreamDefaultWriter",
     "IsWritableStreamLocked",
     "IterationCompositeOperation",
     "JsonLdContext",
@@ -1176,7 +1163,6 @@
     "LoadDocumentOptions",
     "Location",
     "Logger",
-    "MakeSizeAlgorithmFromSizeFunction",
     "MediaDeviceInfo",
     "MediaDeviceKind",
     "MediaDevices",
@@ -1356,7 +1342,6 @@
     "ProgressEventInit",
     "Promise",
     "Promise<T>",
-    "PromiseCall",
     "PromiseRejectionEvent",
     "PromiseRejectionEventInit",
     "PropertyDefinition",
@@ -1371,6 +1356,9 @@
     "PublicKeyCredentialUserEntity",
     "PushPermissionDescriptor",
     "PutForwards",
+    "QueuingStrategy",
+    "QueuingStrategyInit",
+    "QueuingStrategySize",
     "QuotaExceededError",
     "RTCAnswerOptions",
     "RTCAudioHandlerStats",
@@ -1517,12 +1505,12 @@
     "ReadableStream",
     "ReadableStreamAddReadIntoRequest",
     "ReadableStreamAddReadRequest",
-    "ReadableStreamAsyncIteratorPrototype",
     "ReadableStreamBYOBReader",
     "ReadableStreamBYOBReaderRead",
     "ReadableStreamBYOBRequest",
     "ReadableStreamCancel",
     "ReadableStreamClose",
+    "ReadableStreamController",
     "ReadableStreamCreateReadResult",
     "ReadableStreamDefaultController",
     "ReadableStreamDefaultControllerCallPullIfNeeded",
@@ -1541,13 +1529,19 @@
     "ReadableStreamFulfillReadRequest",
     "ReadableStreamGetNumReadIntoRequests",
     "ReadableStreamGetNumReadRequests",
+    "ReadableStreamGetReaderOptions",
     "ReadableStreamHasBYOBReader",
     "ReadableStreamHasDefaultReader",
+    "ReadableStreamIteratorOptions",
     "ReadableStreamPipeTo",
+    "ReadableStreamReader",
     "ReadableStreamReaderGenericCancel",
     "ReadableStreamReaderGenericInitialize",
     "ReadableStreamReaderGenericRelease",
+    "ReadableStreamReaderMode",
     "ReadableStreamTee",
+    "ReadableStreamType",
+    "ReadableWritablePair",
     "ReferenceError",
     "ReferrerPolicy",
     "Region",
@@ -1780,13 +1774,15 @@
     "SetSyntheticModuleExport",
     "SetUpReadableByteStreamController",
     "SetUpReadableByteStreamControllerFromUnderlyingSource",
-    "SetUpReadableStreamBYOBRequest",
+    "SetUpReadableStreamBYOBReader",
     "SetUpReadableStreamDefaultController",
     "SetUpReadableStreamDefaultControllerFromUnderlyingSource",
+    "SetUpReadableStreamDefaultReader",
     "SetUpTransformStreamDefaultController",
     "SetUpTransformStreamDefaultControllerFromTransformer",
     "SetUpWritableStreamDefaultController",
     "SetUpWritableStreamDefaultControllerFromUnderlyingSink",
+    "SetUpWritableStreamDefaultWriter",
     "Settings",
     "ShadowAnimation",
     "ShadowRoot",
@@ -1810,6 +1806,7 @@
     "StorageEventInit",
     "StorageManager",
     "Store a Credential",
+    "StreamPipeOptions",
     "StructuredDeserialize",
     "StructuredDeserializeWithTransfer",
     "StructuredSerialize",
@@ -1870,6 +1867,10 @@
     "TransformStreamError",
     "TransformStreamErrorWritableAndUnblockWrite",
     "TransformStreamSetBackpressure",
+    "Transformer",
+    "TransformerFlushCallback",
+    "TransformerStartCallback",
+    "TransformerTransformCallback",
     "TransitionEvent",
     "TransitionEventInit",
     "TreeWalker",
@@ -1914,13 +1915,21 @@
     "Uint32Array",
     "Uint8Array",
     "Uint8ClampedArray",
+    "UnderlyingSink",
+    "UnderlyingSinkAbortCallback",
+    "UnderlyingSinkCloseCallback",
+    "UnderlyingSinkStartCallback",
+    "UnderlyingSinkWriteCallback",
+    "UnderlyingSource",
+    "UnderlyingSourceCancelCallback",
+    "UnderlyingSourcePullCallback",
+    "UnderlyingSourceStartCallback",
     "UnknownError",
     "Unscopable",
     "UserDataHandler",
     "UserVerificationRequirement",
     "UvmEntries",
     "UvmEntry",
-    "ValidateAndNormalizeHighWaterMark",
     "ValidationError",
     "ValidityState",
     "ValidityStateFlags",
@@ -2085,8 +2094,6 @@
     "XRWebGLLayerInit",
     "XRWebGLRenderingContext",
     "XRWebGLSubImage",
-    "[[CancelSteps]]",
-    "[[PullSteps]]",
     "[[associatedmediastreamids]]",
     "[[associatedremotemediastreams]]",
     "[[bufferedamount]]",
@@ -3178,6 +3185,7 @@
     "by computed value",
     "byob readers",
     "byte",
+    "byte length queuing strategy size function",
     "byte less than",
     "byte pattern",
     "byte sequence",
@@ -3853,6 +3861,7 @@
     "cors-unsafe request-header names",
     "cos()",
     "count map",
+    "count queuing strategy size function",
     "count the records in a range",
     "counter",
     "counter properties",
@@ -5015,6 +5024,7 @@
     "filtered response",
     "final charset",
     "final mime type",
+    "finalize",
     "find a potential indicated element",
     "find a slot",
     "find flattened slottables",
@@ -9238,6 +9248,8 @@
     "showing",
     "shows caching progress",
     "shut down the session",
+    "shutdown",
+    "shutdown with an action",
     "sibling",
     "sienna",
     "sign",
@@ -12935,8 +12947,16 @@
     "postMessage(message)"
   ],
   "ByteLengthQueuingStrategy": [
-    "ByteLengthQueuingStrategy(options)",
-    "size(chunk)"
+    "ByteLengthQueuingStrategy(init)",
+    "constructor(init)",
+    "highWaterMark",
+    "size"
+  ],
+  "ByteLengthQueuingStrategy/ByteLengthQueuingStrategy(init)": [
+    "init"
+  ],
+  "ByteLengthQueuingStrategy/constructor(init)": [
+    "init"
   ],
   "CSPViolationReportBody": [
     "blockedURL",
@@ -14567,8 +14587,16 @@
     "disableNormalization"
   ],
   "CountQueuingStrategy": [
-    "CountQueuingStrategy(options)",
-    "size()"
+    "CountQueuingStrategy(init)",
+    "constructor(init)",
+    "highWaterMark",
+    "size"
+  ],
+  "CountQueuingStrategy/CountQueuingStrategy(init)": [
+    "init"
+  ],
+  "CountQueuingStrategy/constructor(init)": [
+    "init"
   ],
   "Credential": [
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)",
@@ -21053,6 +21081,16 @@
   "PushPermissionDescriptor": [
     "userVisibleOnly"
   ],
+  "QueuingStrategy": [
+    "highWaterMark",
+    "size"
+  ],
+  "QueuingStrategyInit": [
+    "highWaterMark"
+  ],
+  "QueuingStrategySize": [
+    "chunk"
+  ],
   "RTCAudioHandlerStats": [
     "audioLevel",
     "totalAudioEnergy",
@@ -22336,70 +22374,213 @@
     "subject"
   ],
   "ReadableByteStreamController": [
-    "ReadableByteStreamController()",
+    "[[CancelSteps]]",
+    "[[PullSteps]]",
     "byobRequest",
     "close()",
     "desiredSize",
     "enqueue(chunk)",
+    "error()",
     "error(e)"
   ],
+  "ReadableByteStreamController/enqueue(chunk)": [
+    "chunk"
+  ],
+  "ReadableByteStreamController/error()": [
+    "e"
+  ],
+  "ReadableByteStreamController/error(e)": [
+    "e"
+  ],
   "ReadableStream": [
+    "ReadableStream()",
+    "ReadableStream(underlyingSource)",
     "ReadableStream(underlyingSource, strategy)",
-    "[@@asyncIterator]({ preventCancel } = {})",
     "cancel",
+    "cancel()",
     "cancel(reason)",
     "close",
     "closed",
     "construct a fixed readablestream object",
     "construct a readablestream object",
+    "constructor()",
+    "constructor(underlyingSource)",
+    "constructor(underlyingSource, strategy)",
     "disturbed",
     "empty",
     "enqueue",
     "error",
     "errored",
     "get a reader",
-    "getIterator({ preventCancel } = {})",
-    "getReader({ mode } = {})",
+    "getReader()",
+    "getReader(options)",
     "locked",
     "need more data",
+    "options",
+    "pipeThrough(transform)",
     "pipeThrough(transform, options)",
-    "pipeTo(dest, options)",
+    "pipeTo(destination)",
+    "pipeTo(destination, options)",
     "read a chunk",
     "read all bytes",
     "readable",
     "tee",
     "tee()"
   ],
-  "ReadableStreamAsyncIteratorPrototype": [
-    "next()",
-    "return(value)"
+  "ReadableStream async iterator": [
+    "prevent cancel",
+    "reader"
+  ],
+  "ReadableStream/ReadableStream()": [
+    "strategy",
+    "underlyingSource"
+  ],
+  "ReadableStream/ReadableStream(underlyingSource)": [
+    "strategy",
+    "underlyingSource"
+  ],
+  "ReadableStream/ReadableStream(underlyingSource, strategy)": [
+    "strategy",
+    "underlyingSource"
+  ],
+  "ReadableStream/cancel()": [
+    "reason"
+  ],
+  "ReadableStream/cancel(reason)": [
+    "reason"
+  ],
+  "ReadableStream/constructor()": [
+    "strategy",
+    "underlyingSource"
+  ],
+  "ReadableStream/constructor(underlyingSource)": [
+    "strategy",
+    "underlyingSource"
+  ],
+  "ReadableStream/constructor(underlyingSource, strategy)": [
+    "strategy",
+    "underlyingSource"
+  ],
+  "ReadableStream/getReader()": [
+    "options"
+  ],
+  "ReadableStream/getReader(options)": [
+    "options"
+  ],
+  "ReadableStream/pipeThrough(transform)": [
+    "options",
+    "transform"
+  ],
+  "ReadableStream/pipeThrough(transform, options)": [
+    "options",
+    "transform"
+  ],
+  "ReadableStream/pipeTo(destination)": [
+    "destination",
+    "options"
+  ],
+  "ReadableStream/pipeTo(destination, options)": [
+    "destination",
+    "options"
   ],
   "ReadableStreamBYOBReader": [
     "ReadableStreamBYOBReader(stream)",
+    "cancel()",
     "cancel(reason)",
     "closed",
+    "constructor(stream)",
     "read(view)",
     "releaseLock()"
   ],
+  "ReadableStreamBYOBReader/ReadableStreamBYOBReader(stream)": [
+    "stream"
+  ],
+  "ReadableStreamBYOBReader/cancel()": [
+    "reason"
+  ],
+  "ReadableStreamBYOBReader/cancel(reason)": [
+    "reason"
+  ],
+  "ReadableStreamBYOBReader/constructor(stream)": [
+    "stream"
+  ],
+  "ReadableStreamBYOBReader/read(view)": [
+    "view"
+  ],
   "ReadableStreamBYOBRequest": [
-    "ReadableStreamBYOBRequest(controller, view)",
     "respond(bytesWritten)",
     "respondWithNewView(view)",
     "view"
   ],
+  "ReadableStreamBYOBRequest/respond(bytesWritten)": [
+    "bytesWritten"
+  ],
+  "ReadableStreamBYOBRequest/respondWithNewView(view)": [
+    "view"
+  ],
+  "ReadableStreamController": [
+    "[[CancelSteps]]",
+    "[[PullSteps]]"
+  ],
   "ReadableStreamDefaultController": [
-    "ReadableStreamDefaultController()",
+    "[[CancelSteps]]",
+    "[[PullSteps]]",
     "close()",
     "desiredSize",
+    "enqueue()",
     "enqueue(chunk)",
+    "error()",
     "error(e)"
+  ],
+  "ReadableStreamDefaultController/enqueue()": [
+    "chunk"
+  ],
+  "ReadableStreamDefaultController/enqueue(chunk)": [
+    "chunk"
+  ],
+  "ReadableStreamDefaultController/error()": [
+    "e"
+  ],
+  "ReadableStreamDefaultController/error(e)": [
+    "e"
   ],
   "ReadableStreamDefaultReader": [
     "ReadableStreamDefaultReader(stream)",
+    "cancel()",
     "cancel(reason)",
     "closed",
+    "constructor(stream)",
     "read()",
     "releaseLock()"
+  ],
+  "ReadableStreamDefaultReader/ReadableStreamDefaultReader(stream)": [
+    "stream"
+  ],
+  "ReadableStreamDefaultReader/cancel()": [
+    "reason"
+  ],
+  "ReadableStreamDefaultReader/cancel(reason)": [
+    "reason"
+  ],
+  "ReadableStreamDefaultReader/constructor(stream)": [
+    "stream"
+  ],
+  "ReadableStreamGetReaderOptions": [
+    "mode"
+  ],
+  "ReadableStreamIteratorOptions": [
+    "preventCancel"
+  ],
+  "ReadableStreamReaderMode": [
+    "\"byob\""
+  ],
+  "ReadableStreamType": [
+    "\"bytes\"",
+    "bytes"
+  ],
+  "ReadableWritablePair": [
+    "readable",
+    "writable"
   ],
   "Realm": [
     "change",
@@ -23350,6 +23531,12 @@
     "persist()",
     "persisted()"
   ],
+  "StreamPipeOptions": [
+    "preventAbort",
+    "preventCancel",
+    "preventClose",
+    "signal"
+  ],
   "StylePropertyMap": [
     "[[declarations]]",
     "append(property)",
@@ -23678,16 +23865,94 @@
     "track"
   ],
   "TransformStream": [
+    "TransformStream()",
+    "TransformStream(transformer)",
+    "TransformStream(transformer, writableStrategy)",
     "TransformStream(transformer, writableStrategy, readableStrategy)",
+    "constructor()",
+    "constructor(transformer)",
+    "constructor(transformer, writableStrategy)",
+    "constructor(transformer, writableStrategy, readableStrategy)",
     "readable",
     "writable"
   ],
+  "TransformStream/TransformStream()": [
+    "readableStrategy",
+    "transformer",
+    "writableStrategy"
+  ],
+  "TransformStream/TransformStream(transformer)": [
+    "readableStrategy",
+    "transformer",
+    "writableStrategy"
+  ],
+  "TransformStream/TransformStream(transformer, writableStrategy)": [
+    "readableStrategy",
+    "transformer",
+    "writableStrategy"
+  ],
+  "TransformStream/TransformStream(transformer, writableStrategy, readableStrategy)": [
+    "readableStrategy",
+    "transformer",
+    "writableStrategy"
+  ],
+  "TransformStream/constructor()": [
+    "readableStrategy",
+    "transformer",
+    "writableStrategy"
+  ],
+  "TransformStream/constructor(transformer)": [
+    "readableStrategy",
+    "transformer",
+    "writableStrategy"
+  ],
+  "TransformStream/constructor(transformer, writableStrategy)": [
+    "readableStrategy",
+    "transformer",
+    "writableStrategy"
+  ],
+  "TransformStream/constructor(transformer, writableStrategy, readableStrategy)": [
+    "readableStrategy",
+    "transformer",
+    "writableStrategy"
+  ],
   "TransformStreamDefaultController": [
-    "TransformStreamDefaultController()",
     "desiredSize",
+    "enqueue()",
     "enqueue(chunk)",
+    "error()",
+    "error(e)",
     "error(reason)",
     "terminate()"
+  ],
+  "TransformStreamDefaultController/enqueue()": [
+    "chunk"
+  ],
+  "TransformStreamDefaultController/enqueue(chunk)": [
+    "chunk"
+  ],
+  "TransformStreamDefaultController/error()": [
+    "reason"
+  ],
+  "TransformStreamDefaultController/error(reason)": [
+    "reason"
+  ],
+  "Transformer": [
+    "flush",
+    "readableType",
+    "start",
+    "transform",
+    "writableType"
+  ],
+  "TransformerFlushCallback": [
+    "controller"
+  ],
+  "TransformerStartCallback": [
+    "controller"
+  ],
+  "TransformerTransformCallback": [
+    "chunk",
+    "controller"
   ],
   "TransitionEvent": [
     "TransitionEvent(type)",
@@ -24230,6 +24495,39 @@
     "\"babble\"",
     "\"ok\"",
     "\"stall\""
+  ],
+  "UnderlyingSink": [
+    "abort",
+    "close",
+    "start",
+    "type",
+    "write"
+  ],
+  "UnderlyingSinkAbortCallback": [
+    "reason"
+  ],
+  "UnderlyingSinkStartCallback": [
+    "controller"
+  ],
+  "UnderlyingSinkWriteCallback": [
+    "chunk",
+    "controller"
+  ],
+  "UnderlyingSource": [
+    "autoAllocateChunkSize",
+    "cancel",
+    "pull",
+    "start",
+    "type"
+  ],
+  "UnderlyingSourceCancelCallback": [
+    "reason"
+  ],
+  "UnderlyingSourcePullCallback": [
+    "controller"
+  ],
+  "UnderlyingSourceStartCallback": [
+    "controller"
   ],
   "UserVerificationRequirement": [
     "\"discouraged\"",
@@ -24823,25 +25121,94 @@
     "credentials"
   ],
   "WritableStream": [
+    "WritableStream()",
+    "WritableStream(underlyingSink)",
     "WritableStream(underlyingSink, strategy)",
+    "abort()",
     "abort(reason)",
     "close()",
+    "constructor()",
+    "constructor(underlyingSink)",
+    "constructor(underlyingSink, strategy)",
     "getWriter()",
     "locked"
   ],
+  "WritableStream/WritableStream()": [
+    "strategy",
+    "underlyingSink"
+  ],
+  "WritableStream/WritableStream(underlyingSink)": [
+    "strategy",
+    "underlyingSink"
+  ],
+  "WritableStream/WritableStream(underlyingSink, strategy)": [
+    "strategy",
+    "underlyingSink"
+  ],
+  "WritableStream/abort()": [
+    "reason"
+  ],
+  "WritableStream/abort(reason)": [
+    "reason"
+  ],
+  "WritableStream/constructor()": [
+    "strategy",
+    "underlyingSink"
+  ],
+  "WritableStream/constructor(underlyingSink)": [
+    "strategy",
+    "underlyingSink"
+  ],
+  "WritableStream/constructor(underlyingSink, strategy)": [
+    "strategy",
+    "underlyingSink"
+  ],
+  "WritableStreamController": [
+    "[[AbortSteps]]",
+    "[[ErrorSteps]]"
+  ],
   "WritableStreamDefaultController": [
-    "WritableStreamDefaultController()",
+    "[[AbortSteps]]",
+    "[[ErrorSteps]]",
+    "error()",
     "error(e)"
+  ],
+  "WritableStreamDefaultController/error()": [
+    "e"
+  ],
+  "WritableStreamDefaultController/error(e)": [
+    "e"
   ],
   "WritableStreamDefaultWriter": [
     "WritableStreamDefaultWriter(stream)",
+    "abort()",
     "abort(reason)",
     "close()",
     "closed",
+    "constructor(stream)",
     "desiredSize",
     "ready",
     "releaseLock()",
+    "write()",
     "write(chunk)"
+  ],
+  "WritableStreamDefaultWriter/WritableStreamDefaultWriter(stream)": [
+    "stream"
+  ],
+  "WritableStreamDefaultWriter/abort()": [
+    "reason"
+  ],
+  "WritableStreamDefaultWriter/abort(reason)": [
+    "reason"
+  ],
+  "WritableStreamDefaultWriter/constructor(stream)": [
+    "stream"
+  ],
+  "WritableStreamDefaultWriter/write()": [
+    "chunk"
+  ],
+  "WritableStreamDefaultWriter/write(chunk)": [
+    "chunk"
   ],
   "XMLHttpRequest": [
     "DONE",
@@ -29332,10 +29699,6 @@
     "sorting in ascending order",
     "sorting in descending order"
   ],
-  "queuing strategy": [
-    "highwatermark",
-    "size(chunk)"
-  ],
   "quotes": [
     "auto",
     "none"
@@ -30343,11 +30706,6 @@
     "right",
     "top"
   ],
-  "transformer": [
-    "flush(controller)",
-    "start(controller)",
-    "transform(chunk, controller)"
-  ],
   "transient registered observer": [
     "source"
   ],
@@ -30439,19 +30797,6 @@
   "ulongrange": [
     "max",
     "min"
-  ],
-  "underlying sink": [
-    "abort(reason)",
-    "close()",
-    "start(controller)",
-    "write(chunk, controller)"
-  ],
-  "underlying source": [
-    "autoallocatechunksize",
-    "cancel(reason)",
-    "pull(controller)",
-    "start(controller)",
-    "type"
   ],
   "unicode-bidi": [
     "bidi-override",

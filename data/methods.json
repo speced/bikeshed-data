@@ -288,9 +288,9 @@
     }
   },
   "ByteLengthQueuingStrategy()": {
-    "ByteLengthQueuingStrategy(options)": {
+    "ByteLengthQueuingStrategy(init)": {
       "args": [
-        "options"
+        "init"
       ],
       "for": [
         "ByteLengthQueuingStrategy"
@@ -746,9 +746,9 @@
     }
   },
   "CountQueuingStrategy()": {
-    "CountQueuingStrategy(options)": {
+    "CountQueuingStrategy(init)": {
       "args": [
-        "options"
+        "init"
       ],
       "for": [
         "CountQueuingStrategy"
@@ -2775,16 +2775,23 @@
       "shortname": "dom"
     }
   },
-  "ReadableByteStreamController()": {
-    "ReadableByteStreamController()": {
+  "ReadableStream()": {
+    "ReadableStream()": {
       "args": [],
       "for": [
-        "ReadableByteStreamController"
+        "ReadableStream"
       ],
       "shortname": "streams"
-    }
-  },
-  "ReadableStream()": {
+    },
+    "ReadableStream(underlyingSource)": {
+      "args": [
+        "underlyingSource"
+      ],
+      "for": [
+        "ReadableStream"
+      ],
+      "shortname": "streams"
+    },
     "ReadableStream(underlyingSource, strategy)": {
       "args": [
         "underlyingSource",
@@ -2803,27 +2810,6 @@
       ],
       "for": [
         "ReadableStreamBYOBReader"
-      ],
-      "shortname": "streams"
-    }
-  },
-  "ReadableStreamBYOBRequest()": {
-    "ReadableStreamBYOBRequest(controller, view)": {
-      "args": [
-        "controller",
-        "view"
-      ],
-      "for": [
-        "ReadableStreamBYOBRequest"
-      ],
-      "shortname": "streams"
-    }
-  },
-  "ReadableStreamDefaultController()": {
-    "ReadableStreamDefaultController()": {
-      "args": [],
-      "for": [
-        "ReadableStreamDefaultController"
       ],
       "shortname": "streams"
     }
@@ -3129,6 +3115,32 @@
     }
   },
   "TransformStream()": {
+    "TransformStream()": {
+      "args": [],
+      "for": [
+        "TransformStream"
+      ],
+      "shortname": "streams"
+    },
+    "TransformStream(transformer)": {
+      "args": [
+        "transformer"
+      ],
+      "for": [
+        "TransformStream"
+      ],
+      "shortname": "streams"
+    },
+    "TransformStream(transformer, writableStrategy)": {
+      "args": [
+        "transformer",
+        "writableStrategy"
+      ],
+      "for": [
+        "TransformStream"
+      ],
+      "shortname": "streams"
+    },
     "TransformStream(transformer, writableStrategy, readableStrategy)": {
       "args": [
         "transformer",
@@ -3137,15 +3149,6 @@
       ],
       "for": [
         "TransformStream"
-      ],
-      "shortname": "streams"
-    }
-  },
-  "TransformStreamDefaultController()": {
-    "TransformStreamDefaultController()": {
-      "args": [],
-      "for": [
-        "TransformStreamDefaultController"
       ],
       "shortname": "streams"
     }
@@ -3516,6 +3519,22 @@
     }
   },
   "WritableStream()": {
+    "WritableStream()": {
+      "args": [],
+      "for": [
+        "WritableStream"
+      ],
+      "shortname": "streams"
+    },
+    "WritableStream(underlyingSink)": {
+      "args": [
+        "underlyingSink"
+      ],
+      "for": [
+        "WritableStream"
+      ],
+      "shortname": "streams"
+    },
     "WritableStream(underlyingSink, strategy)": {
       "args": [
         "underlyingSink",
@@ -3523,15 +3542,6 @@
       ],
       "for": [
         "WritableStream"
-      ],
-      "shortname": "streams"
-    }
-  },
-  "WritableStreamDefaultController()": {
-    "WritableStreamDefaultController()": {
-      "args": [],
-      "for": [
-        "WritableStreamDefaultController"
       ],
       "shortname": "streams"
     }
@@ -3827,6 +3837,8 @@
         "FileReader",
         "IDBTransaction",
         "PaymentRequest",
+        "WritableStream",
+        "WritableStreamDefaultWriter",
         "XMLHttpRequest"
       ],
       "shortname": "dom"
@@ -3837,8 +3849,7 @@
       ],
       "for": [
         "WritableStream",
-        "WritableStreamDefaultWriter",
-        "underlying sink"
+        "WritableStreamDefaultWriter"
       ],
       "shortname": "streams"
     }
@@ -4734,10 +4745,13 @@
       "args": [],
       "for": [
         "Animation",
+        "ReadableStream",
+        "ReadableStreamBYOBReader",
+        "ReadableStreamDefaultReader",
         "XRHitTestSource",
         "XRTransientInputHitTestSource"
       ],
-      "shortname": "web-animations"
+      "shortname": "streams"
     },
     "cancel(reason)": {
       "args": [
@@ -4746,8 +4760,7 @@
       "for": [
         "ReadableStream",
         "ReadableStreamBYOBReader",
-        "ReadableStreamDefaultReader",
-        "underlying source"
+        "ReadableStreamDefaultReader"
       ],
       "shortname": "streams"
     }
@@ -5042,8 +5055,7 @@
         "WebSocket",
         "Window",
         "WritableStream",
-        "WritableStreamDefaultWriter",
-        "underlying sink"
+        "WritableStreamDefaultWriter"
       ],
       "shortname": "html"
     },
@@ -5404,6 +5416,7 @@
         "RdfGraph",
         "RdfLiteral",
         "RdfTriple",
+        "ReadableStream",
         "RemoteDocument",
         "Response",
         "ScrollTimeline",
@@ -5412,7 +5425,9 @@
         "TextDecoderStream",
         "TextEncoder",
         "TextEncoderStream",
+        "TransformStream",
         "URLSearchParams",
+        "WritableStream",
         "XMLHttpRequest",
         "XPathEvaluator",
         "XRRay",
@@ -5795,6 +5810,8 @@
         "init"
       ],
       "for": [
+        "ByteLengthQueuingStrategy",
+        "CountQueuingStrategy",
         "DOMMatrix",
         "DOMMatrixReadOnly",
         "Headers",
@@ -6144,6 +6161,17 @@
       ],
       "shortname": "webusb"
     },
+    "constructor(stream)": {
+      "args": [
+        "stream"
+      ],
+      "for": [
+        "ReadableStreamBYOBReader",
+        "ReadableStreamDefaultReader",
+        "WritableStreamDefaultWriter"
+      ],
+      "shortname": "streams"
+    },
     "constructor(target)": {
       "args": [
         "target"
@@ -6182,6 +6210,36 @@
         "XRRay"
       ],
       "shortname": "webxr-hit-test"
+    },
+    "constructor(transformer)": {
+      "args": [
+        "transformer"
+      ],
+      "for": [
+        "TransformStream"
+      ],
+      "shortname": "streams"
+    },
+    "constructor(transformer, writableStrategy)": {
+      "args": [
+        "transformer",
+        "writableStrategy"
+      ],
+      "for": [
+        "TransformStream"
+      ],
+      "shortname": "streams"
+    },
+    "constructor(transformer, writableStrategy, readableStrategy)": {
+      "args": [
+        "transformer",
+        "writableStrategy",
+        "readableStrategy"
+      ],
+      "for": [
+        "TransformStream"
+      ],
+      "shortname": "streams"
     },
     "constructor(transforms)": {
       "args": [
@@ -6291,6 +6349,44 @@
         "TransitionEvent"
       ],
       "shortname": "css-transitions"
+    },
+    "constructor(underlyingSink)": {
+      "args": [
+        "underlyingSink"
+      ],
+      "for": [
+        "WritableStream"
+      ],
+      "shortname": "streams"
+    },
+    "constructor(underlyingSink, strategy)": {
+      "args": [
+        "underlyingSink",
+        "strategy"
+      ],
+      "for": [
+        "WritableStream"
+      ],
+      "shortname": "streams"
+    },
+    "constructor(underlyingSource)": {
+      "args": [
+        "underlyingSource"
+      ],
+      "for": [
+        "ReadableStream"
+      ],
+      "shortname": "streams"
+    },
+    "constructor(underlyingSource, strategy)": {
+      "args": [
+        "underlyingSource",
+        "strategy"
+      ],
+      "for": [
+        "ReadableStream"
+      ],
+      "shortname": "streams"
     },
     "constructor(url)": {
       "args": [
@@ -8530,6 +8626,14 @@
     }
   },
   "enqueue()": {
+    "enqueue()": {
+      "args": [],
+      "for": [
+        "ReadableStreamDefaultController",
+        "TransformStreamDefaultController"
+      ],
+      "shortname": "streams"
+    },
     "enqueue(chunk)": {
       "args": [
         "chunk"
@@ -8582,7 +8686,11 @@
     "error()": {
       "args": [],
       "for": [
+        "ReadableByteStreamController",
+        "ReadableStreamDefaultController",
         "Response",
+        "TransformStreamDefaultController",
+        "WritableStreamDefaultController",
         "console"
       ],
       "shortname": "console"
@@ -8603,6 +8711,7 @@
       "for": [
         "ReadableByteStreamController",
         "ReadableStreamDefaultController",
+        "TransformStreamDefaultController",
         "WritableStreamDefaultController"
       ],
       "shortname": "streams"
@@ -8939,17 +9048,6 @@
         "DOMMatrixReadOnly"
       ],
       "shortname": "geometry"
-    }
-  },
-  "flush()": {
-    "flush(controller)": {
-      "args": [
-        "controller"
-      ],
-      "for": [
-        "transformer"
-      ],
-      "shortname": "streams"
     }
   },
   "focus()": {
@@ -9966,17 +10064,6 @@
       "shortname": "html"
     }
   },
-  "getIterator()": {
-    "getIterator({ preventCancel } = {})": {
-      "args": [
-        "{ preventCancel } = {}"
-      ],
-      "for": [
-        "ReadableStream"
-      ],
-      "shortname": "streams"
-    }
-  },
   "getKey()": {
     "getKey(query)": {
       "args": [
@@ -10201,9 +10288,16 @@
     }
   },
   "getReader()": {
-    "getReader({ mode } = {})": {
+    "getReader()": {
+      "args": [],
+      "for": [
+        "ReadableStream"
+      ],
+      "shortname": "streams"
+    },
+    "getReader(options)": {
       "args": [
-        "{ mode } = {}"
+        "options"
       ],
       "for": [
         "ReadableStream"
@@ -12154,15 +12248,6 @@
       "shortname": "html"
     }
   },
-  "next()": {
-    "next()": {
-      "args": [],
-      "for": [
-        "ReadableStreamAsyncIteratorPrototype"
-      ],
-      "shortname": "streams"
-    }
-  },
   "nextNode()": {
     "nextNode()": {
       "args": [],
@@ -12579,6 +12664,15 @@
     }
   },
   "pipeThrough()": {
+    "pipeThrough(transform)": {
+      "args": [
+        "transform"
+      ],
+      "for": [
+        "ReadableStream"
+      ],
+      "shortname": "streams"
+    },
     "pipeThrough(transform, options)": {
       "args": [
         "transform",
@@ -12591,9 +12685,18 @@
     }
   },
   "pipeTo()": {
-    "pipeTo(dest, options)": {
+    "pipeTo(destination)": {
       "args": [
-        "dest",
+        "destination"
+      ],
+      "for": [
+        "ReadableStream"
+      ],
+      "shortname": "streams"
+    },
+    "pipeTo(destination, options)": {
+      "args": [
+        "destination",
         "options"
       ],
       "for": [
@@ -12810,17 +12913,6 @@
         "CSS"
       ],
       "shortname": "css-typed-om"
-    }
-  },
-  "pull()": {
-    "pull(controller)": {
-      "args": [
-        "controller"
-      ],
-      "for": [
-        "underlying source"
-      ],
-      "shortname": "streams"
     }
   },
   "pushState()": {
@@ -13937,17 +14029,6 @@
         "PaymentResponse"
       ],
       "shortname": "payment-request"
-    }
-  },
-  "return()": {
-    "return(value)": {
-      "args": [
-        "value"
-      ],
-      "for": [
-        "ReadableStreamAsyncIteratorPrototype"
-      ],
-      "shortname": "streams"
     }
   },
   "reverse()": {
@@ -15518,25 +15599,6 @@
       "shortname": "html"
     }
   },
-  "size()": {
-    "size()": {
-      "args": [],
-      "for": [
-        "CountQueuingStrategy"
-      ],
-      "shortname": "streams"
-    },
-    "size(chunk)": {
-      "args": [
-        "chunk"
-      ],
-      "for": [
-        "ByteLengthQueuingStrategy",
-        "queuing strategy"
-      ],
-      "shortname": "streams"
-    }
-  },
   "skewX()": {
     "skewX()": {
       "args": [],
@@ -15744,17 +15806,6 @@
         "Sensor"
       ],
       "shortname": "generic-sensor"
-    },
-    "start(controller)": {
-      "args": [
-        "controller"
-      ],
-      "for": [
-        "transformer",
-        "underlying sink",
-        "underlying source"
-      ],
-      "shortname": "streams"
     },
     "start(index)": {
       "args": [
@@ -16514,16 +16565,6 @@
         "CanvasTransform"
       ],
       "shortname": "html"
-    },
-    "transform(chunk, controller)": {
-      "args": [
-        "chunk",
-        "controller"
-      ],
-      "for": [
-        "transformer"
-      ],
-      "shortname": "streams"
     }
   },
   "transformPoint()": {
@@ -16980,22 +17021,19 @@
     }
   },
   "write()": {
+    "write()": {
+      "args": [],
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "shortname": "streams"
+    },
     "write(chunk)": {
       "args": [
         "chunk"
       ],
       "for": [
         "WritableStreamDefaultWriter"
-      ],
-      "shortname": "streams"
-    },
-    "write(chunk, controller)": {
-      "args": [
-        "chunk",
-        "controller"
-      ],
-      "for": [
-        "underlying sink"
       ],
       "shortname": "streams"
     }

@@ -125,9 +125,31 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#ws-class
+https://streams.spec.whatwg.org/#writablestream
 1
 1
+-
+WritableStream()
+constructor
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#ws-constructor
+1
+1
+WritableStream
+-
+WritableStream(underlyingSink)
+constructor
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#ws-constructor
+1
+1
+WritableStream
 -
 WritableStream(underlyingSink, strategy)
 constructor
@@ -196,20 +218,9 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#ws-default-controller-class
+https://streams.spec.whatwg.org/#writablestreamdefaultcontroller
 1
 1
--
-WritableStreamDefaultController()
-constructor
-streams
-streams
-1
-current
-https://streams.spec.whatwg.org/#ws-default-controller-constructor
-1
-1
-WritableStreamDefaultController
 -
 WritableStreamDefaultControllerAdvanceQueueIfNeeded
 abstract-op
@@ -327,7 +338,7 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#default-writer-class
+https://streams.spec.whatwg.org/#writablestreamdefaultwriter
 1
 1
 -
@@ -917,6 +928,17 @@ https://encoding.spec.whatwg.org/#dom-generictransformstream-writable
 GenericTransformStream
 -
 writable
+dict-member
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#dom-readablewritablepair-writable
+1
+1
+ReadableWritablePair
+-
+writable
 attribute
 streams
 streams
@@ -967,6 +989,46 @@ https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicprope
 1
 1
 BluetoothCharacteristicProperties
+-
+writableStrategy
+argument
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#dom-transformstream-transformstream-transformer-writablestrategy-readablestrategy-writablestrategy
+1
+1
+TransformStream/TransformStream(transformer, writableStrategy, readableStrategy)
+TransformStream/constructor(transformer, writableStrategy, readableStrategy)
+TransformStream/TransformStream(transformer, writableStrategy)
+TransformStream/constructor(transformer, writableStrategy)
+TransformStream/TransformStream(transformer)
+TransformStream/constructor(transformer)
+TransformStream/TransformStream()
+TransformStream/constructor()
+-
+writableType
+dict-member
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#dom-transformer-writabletype
+1
+1
+Transformer
+-
+write
+dict-member
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#dom-underlyingsink-write
+1
+1
+UnderlyingSink
 -
 write
 attribute
@@ -1019,7 +1081,7 @@ https://webbluetoothcg.github.io/web-bluetooth/#write-without-response
 
 1
 -
-write(chunk)
+write()
 method
 streams
 streams
@@ -1030,16 +1092,16 @@ https://streams.spec.whatwg.org/#default-writer-write
 1
 WritableStreamDefaultWriter
 -
-write(chunk, controller)
+write(chunk)
 method
 streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#dom-underlying-sink-write
+https://streams.spec.whatwg.org/#default-writer-write
 1
 1
-underlying sink
+WritableStreamDefaultWriter
 -
 writeValue(value)
 method
