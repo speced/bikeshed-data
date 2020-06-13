@@ -44796,7 +44796,90 @@
                     "version_added": "79"
                 }
             },
+            "caniuse": {
+                "feature": "unhandledrejection",
+                "title": "unhandledrejection/rejectionhandled events"
+            },
             "title": "Window: rejectionhandled event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/Window.json",
+            "name": "unhandledrejection_event",
+            "slug": "API/Window/unhandledrejection_event",
+            "summary": "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "69"
+                    },
+                    {
+                        "version_added": "68",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.promise_rejection_events.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.promise_rejection_events.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "caniuse": {
+                "feature": "unhandledrejection",
+                "title": "unhandledrejection/rejectionhandled events"
+            },
+            "title": "Window: unhandledrejection event"
         }
     ],
     "animation-frames": [
@@ -45427,87 +45510,6 @@
                 }
             },
             "title": "Window.top"
-        }
-    ],
-    "event-unhandledrejection": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "api/Window.json",
-            "name": "unhandledrejection_event",
-            "slug": "API/Window/unhandledrejection_event",
-            "summary": "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": {
-                    "version_added": "68",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.promise_rejection_events.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "caniuse": {
-                "feature": "unhandledrejection",
-                "title": "unhandledrejection/rejectionhandled events"
-            },
-            "title": "Window: unhandledrejection event"
         }
     ],
     "dom-window": [
