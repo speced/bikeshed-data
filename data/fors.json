@@ -25700,10 +25700,12 @@
   "XRLayerLayout": [
     "\"default\"",
     "\"mono\"",
+    "\"stereo\"",
     "\"stereo-left-right\"",
     "\"stereo-top-bottom\"",
     "default",
     "mono",
+    "stereo",
     "stereo-left-right",
     "stereo-top-bottom"
   ],
@@ -26153,9 +26155,10 @@
     "createQuadLayer(XRTextureType textureType, XRQuadLayerInit init)",
     "createQuadLayer(textureType)",
     "createQuadLayer(textureType, init)",
-    "getSubImage(XRCompositionLayer layer, XRFrame frame)",
+    "getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\")",
     "getSubImage(layer, frame)",
-    "getViewSubImage(XRCompositionLayer layer, XRView view)",
+    "getSubImage(layer, frame, eye)",
+    "getViewSubImage(XRProjectionLayer layer, XRView view)",
     "getViewSubImage(layer, view)",
     "nativeProjectionScaleFactor",
     "session"
@@ -26207,6 +26210,12 @@
     "textureType"
   ],
   "XRWebGLBinding/getSubImage(layer, frame)": [
+    "eye",
+    "frame",
+    "layer"
+  ],
+  "XRWebGLBinding/getSubImage(layer, frame, eye)": [
+    "eye",
     "frame",
     "layer"
   ],

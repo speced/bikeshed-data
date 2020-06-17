@@ -10510,10 +10510,11 @@
     }
   },
   "getSubImage()": {
-    "getSubImage(XRCompositionLayer layer, XRFrame frame)": {
+    "getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\")": {
       "args": [
         "XRCompositionLayer layer",
-        "XRFrame frame"
+        "XRFrame frame",
+        "optional XREye eye = \"none\""
       ],
       "for": [
         "XRWebGLBinding"
@@ -10524,6 +10525,17 @@
       "args": [
         "layer",
         "frame"
+      ],
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "shortname": "webxr-layers"
+    },
+    "getSubImage(layer, frame, eye)": {
+      "args": [
+        "layer",
+        "frame",
+        "eye"
       ],
       "for": [
         "XRWebGLBinding"
@@ -10608,9 +10620,9 @@
     }
   },
   "getViewSubImage()": {
-    "getViewSubImage(XRCompositionLayer layer, XRView view)": {
+    "getViewSubImage(XRProjectionLayer layer, XRView view)": {
       "args": [
-        "XRCompositionLayer layer",
+        "XRProjectionLayer layer",
         "XRView view"
       ],
       "for": [
