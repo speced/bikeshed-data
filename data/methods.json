@@ -2978,6 +2978,52 @@
       "shortname": "generic-sensor"
     }
   },
+  "StatefulAnimator()": {
+    "StatefulAnimator()": {
+      "args": [],
+      "for": [
+        "StatefulAnimator"
+      ],
+      "shortname": "css-animation-worklet"
+    },
+    "StatefulAnimator(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "StatefulAnimator"
+      ],
+      "shortname": "css-animation-worklet"
+    },
+    "StatefulAnimator(options, state)": {
+      "args": [
+        "options",
+        "state"
+      ],
+      "for": [
+        "StatefulAnimator"
+      ],
+      "shortname": "css-animation-worklet"
+    }
+  },
+  "StatelessAnimator()": {
+    "StatelessAnimator()": {
+      "args": [],
+      "for": [
+        "StatelessAnimator"
+      ],
+      "shortname": "css-animation-worklet"
+    },
+    "StatelessAnimator(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "StatelessAnimator"
+      ],
+      "shortname": "css-animation-worklet"
+    }
+  },
   "StaticRange()": {
     "StaticRange(init)": {
       "args": [
@@ -3475,36 +3521,6 @@
     }
   },
   "WorkletAnimation()": {
-    "WorkletAnimation(animatorName)": {
-      "args": [
-        "animatorName"
-      ],
-      "for": [
-        "WorkletAnimation"
-      ],
-      "shortname": "css-animationworklet"
-    },
-    "WorkletAnimation(animatorName, effects)": {
-      "args": [
-        "animatorName",
-        "effects"
-      ],
-      "for": [
-        "WorkletAnimation"
-      ],
-      "shortname": "css-animationworklet"
-    },
-    "WorkletAnimation(animatorName, effects, timeline)": {
-      "args": [
-        "animatorName",
-        "effects",
-        "timeline"
-      ],
-      "for": [
-        "WorkletAnimation"
-      ],
-      "shortname": "css-animationworklet"
-    },
     "WorkletAnimation(animatorName, effects, timeline, options)": {
       "args": [
         "animatorName",
@@ -3515,7 +3531,7 @@
       "for": [
         "WorkletAnimation"
       ],
-      "shortname": "css-animationworklet"
+      "shortname": "css-animation-worklet"
     }
   },
   "WritableStream()": {
@@ -4270,36 +4286,6 @@
         "Window"
       ],
       "shortname": "html"
-    }
-  },
-  "allowedFeatures()": {
-    "allowedFeatures()": {
-      "args": [],
-      "for": [
-        "FeaturePolicy"
-      ],
-      "shortname": "feature-policy"
-    }
-  },
-  "allowsFeature()": {
-    "allowsFeature(feature)": {
-      "args": [
-        "feature"
-      ],
-      "for": [
-        "FeaturePolicy"
-      ],
-      "shortname": "feature-policy"
-    },
-    "allowsFeature(feature, origin)": {
-      "args": [
-        "feature",
-        "origin"
-      ],
-      "for": [
-        "FeaturePolicy"
-      ],
-      "shortname": "feature-policy"
     }
   },
   "animate()": {
@@ -5466,48 +5452,6 @@
         "CSSRotate"
       ],
       "shortname": "css-typed-om"
-    },
-    "constructor(animatorName)": {
-      "args": [
-        "animatorName"
-      ],
-      "for": [
-        "WorkletAnimation"
-      ],
-      "shortname": "css-animationworklet"
-    },
-    "constructor(animatorName, effects)": {
-      "args": [
-        "animatorName",
-        "effects"
-      ],
-      "for": [
-        "WorkletAnimation"
-      ],
-      "shortname": "css-animationworklet"
-    },
-    "constructor(animatorName, effects, timeline)": {
-      "args": [
-        "animatorName",
-        "effects",
-        "timeline"
-      ],
-      "for": [
-        "WorkletAnimation"
-      ],
-      "shortname": "css-animationworklet"
-    },
-    "constructor(animatorName, effects, timeline, options)": {
-      "args": [
-        "animatorName",
-        "effects",
-        "timeline",
-        "options"
-      ],
-      "for": [
-        "WorkletAnimation"
-      ],
-      "shortname": "css-animationworklet"
     },
     "constructor(arg)": {
       "args": [
@@ -8902,15 +8846,6 @@
       "shortname": "html"
     }
   },
-  "features()": {
-    "features()": {
-      "args": [],
-      "for": [
-        "FeaturePolicy"
-      ],
-      "shortname": "feature-policy"
-    }
-  },
   "fetch()": {
     "fetch(input)": {
       "args": [
@@ -9409,17 +9344,6 @@
       "shortname": "xhr"
     }
   },
-  "getAllowlistForFeature()": {
-    "getAllowlistForFeature(feature)": {
-      "args": [
-        "feature"
-      ],
-      "for": [
-        "FeaturePolicy"
-      ],
-      "shortname": "feature-policy"
-    }
-  },
   "getAnimations()": {
     "getAnimations()": {
       "args": [],
@@ -9664,7 +9588,7 @@
       "for": [
         "WorkletGroupEffect"
       ],
-      "shortname": "css-animationworklet"
+      "shortname": "css-animation-worklet"
     }
   },
   "getClientExtensionResults()": {
@@ -9729,10 +9653,9 @@
     "getComputedTiming()": {
       "args": [],
       "for": [
-        "AnimationEffect",
-        "WorkletAnimationEffect"
+        "AnimationEffect"
       ],
-      "shortname": "css-animationworklet"
+      "shortname": "web-animations"
     }
   },
   "getConfiguration()": {
@@ -10565,10 +10488,9 @@
     "getTiming()": {
       "args": [],
       "for": [
-        "AnimationEffect",
-        "WorkletAnimationEffect"
+        "AnimationEffect"
       ],
-      "shortname": "css-animationworklet"
+      "shortname": "web-animations"
     }
   },
   "getTrackById()": {
@@ -13295,7 +13217,7 @@
       "for": [
         "AnimationWorkletGlobalScope"
       ],
-      "shortname": "css-animationworklet"
+      "shortname": "css-animation-worklet"
     }
   },
   "registerLayout()": {
@@ -15885,6 +15807,15 @@
         "OfflineAudioContext"
       ],
       "shortname": "webaudio"
+    }
+  },
+  "state()": {
+    "state()": {
+      "args": [],
+      "for": [
+        "StatefulAnimator"
+      ],
+      "shortname": "css-animation-worklet"
     }
   },
   "stepDown()": {
