@@ -746,7 +746,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "from",
             "slug": "JavaScript/Reference/Global_Objects/Array/from",
-            "summary": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
+            "summary": "The Array.from() static method creates a new, shallow-copied Array instance from an array-like or iterable object.",
             "support": {
                 "chrome": {
                     "version_added": "45"
@@ -2895,6 +2895,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "78"
+                    },
+                    {
                         "version_added": "57",
                         "flags": [
                             {
@@ -3025,6 +3028,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "78"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -3157,6 +3163,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "78"
+                    },
+                    {
                         "version_added": "57",
                         "flags": [
                             {
@@ -3287,6 +3296,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "78"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -3419,6 +3431,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "78"
+                    },
+                    {
                         "version_added": "57",
                         "flags": [
                             {
@@ -3549,6 +3564,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "78"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -3682,6 +3700,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "78"
+                    },
                     {
                         "version_added": "63",
                         "flags": [
@@ -3869,6 +3890,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "78"
+                    },
+                    {
                         "version_added": "57",
                         "flags": [
                             {
@@ -3999,6 +4023,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "78"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -4131,6 +4158,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "78"
+                    },
+                    {
                         "version_added": "57",
                         "flags": [
                             {
@@ -4261,6 +4291,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "78"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -4419,6 +4452,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "78"
+                    },
+                    {
                         "version_added": "57",
                         "flags": [
                             {
@@ -4549,6 +4585,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "78"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -12623,6 +12662,10 @@
                     "version_added": "79"
                 }
             },
+            "caniuse": {
+                "feature": "json",
+                "title": "JSON parsing"
+            },
             "title": "JSON"
         }
     ],
@@ -12656,9 +12699,20 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "0.12"
+                    },
+                    {
+                        "version_added": "0.10",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
                 "opera": {
                     "version_added": "25"
                 },
@@ -12957,9 +13011,20 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "0.12"
+                    },
+                    {
+                        "version_added": "0.10",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
                 "opera": {
                     "version_added": "25"
                 },
@@ -13015,9 +13080,20 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "0.12"
+                    },
+                    {
+                        "version_added": "0.10",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
                 "opera": {
                     "version_added": "25"
                 },
@@ -13133,9 +13209,20 @@
                     "partial_implementation": true,
                     "notes": "Returns 'undefined' instead of the 'Map' object."
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "0.12"
+                    },
+                    {
+                        "version_added": "0.10",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
                 "opera": {
                     "version_added": "25"
                 },
@@ -13464,7 +13551,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "6.0.0"
                 },
                 "opera": {
                     "version_added": false
@@ -22669,9 +22756,20 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "0.12"
+                    },
+                    {
+                        "version_added": "0.10",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
                 "opera": {
                     "version_added": "25"
                 },
@@ -22729,9 +22827,20 @@
                     "partial_implementation": true,
                     "notes": "Returns 'undefined' instead of the 'Set' object."
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "0.12"
+                    },
+                    {
+                        "version_added": "0.10",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
                 "opera": {
                     "version_added": "25"
                 },
@@ -23030,9 +23139,20 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": true
-                },
+                "nodejs": [
+                    {
+                        "version_added": "0.12"
+                    },
+                    {
+                        "version_added": "0.10",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
                 "opera": {
                     "version_added": "25"
                 },
@@ -23492,7 +23612,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "8.10.0"
                 },
                 "opera": {
                     "version_added": false
@@ -33357,7 +33477,7 @@
             "filename": "javascript/operators/addition.json",
             "name": "addition",
             "slug": "JavaScript/Reference/Operators/Addition",
-            "summary": "The addition operator produces the sum of numeric operands or string concatenation.",
+            "summary": "The addition operator (+) produces the sum of numeric operands or string concatenation.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33402,7 +33522,681 @@
                     "version_added": "79"
                 }
             },
-            "title": "Addition"
+            "title": "Addition (+)"
+        }
+    ],
+    "sec-assignment-operators": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/addition_assignment.json",
+            "name": "addition_assignment",
+            "slug": "JavaScript/Reference/Operators/Addition_assignment",
+            "summary": "The addition assignment operator adds the value of the right operand to a variable and assigns the result to the variable. The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Addition assignment (+=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/assignment.json",
+            "name": "assignment",
+            "slug": "JavaScript/Reference/Operators/Assignment",
+            "summary": "The simple assignment operator is used to assign a value to a variable. The assignment operation evaluates to the assigned value. Chaining the assignment operator is possible in order to assign a single value to multiple variables",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Assignment operator (=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/bitwise_and_assignment.json",
+            "name": "bitwise_and_assignment",
+            "slug": "JavaScript/Reference/Operators/Bitwise_AND_assignment",
+            "summary": "The bitwise AND assignment operator (&=) uses the binary representation of both operands, does a bitwise AND operation on them and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bitwise AND assignment (&=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/bitwise_or_assignment.json",
+            "name": "bitwise_or_assignment",
+            "slug": "JavaScript/Reference/Operators/Bitwise_OR_assignment",
+            "summary": "The bitwise OR assignment operator (|=) uses the binary representation of both operands, does a bitwise OR operation on them and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bitwise OR assignment (|=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/bitwise_xor_assignment.json",
+            "name": "bitwise_xor_assignment",
+            "slug": "JavaScript/Reference/Operators/Bitwise_XOR_assignment",
+            "summary": "The bitwise XOR assignment operator (^=) uses the binary representation of both operands, does a bitwise XOR operation on them and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bitwise XOR assignment (^=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/division_assignment.json",
+            "name": "division_assignment",
+            "slug": "JavaScript/Reference/Operators/Division_assignment",
+            "summary": "The division assignment operator divides a variable by the value of the right operand and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Division assignment (/=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/left_shift_assignment.json",
+            "name": "left_shift_assignment",
+            "slug": "JavaScript/Reference/Operators/Left_shift_assignment",
+            "summary": "The left shift assignment operator (<<=) moves the specified amount of bits to the left and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Left shift assignment (<<=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/multiplication_assignment.json",
+            "name": "multiplication_assignment",
+            "slug": "JavaScript/Reference/Operators/Multiplication_assignment",
+            "summary": "The multiplication assignment operator multiplies a variable by the value of the right operand and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Multiplication assignment (*=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/remainder_assignment.json",
+            "name": "remainder_assignment",
+            "slug": "JavaScript/Reference/Operators/Remainder_assignment",
+            "summary": "The remainder assignment operator divides a variable by the value of the right operand and assigns the remainder to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Remainder assignment (%=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/right_shift_assignment.json",
+            "name": "right_shift_assignment",
+            "slug": "JavaScript/Reference/Operators/Right_shift_assignment",
+            "summary": "The right shift assignment operator (>>=) moves the specified amount of bits to the right and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Right shift assignment (>>=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/subtraction_assignment.json",
+            "name": "substraction_assignment",
+            "slug": "JavaScript/Reference/Operators/Subtraction_assignment",
+            "summary": "The subtraction assignment operator (-=) subtracts the value of the right operand from a variable and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Subtraction assignment (-=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/unsigned_right_shift_assignment.json",
+            "name": "unsigned_right_shift_assignment",
+            "slug": "JavaScript/Reference/Operators/Unsigned_right_shift_assignment",
+            "summary": "The unsigned right shift assignment operator (>>>=) moves the specified amount of bits to the right and assigns the result to the variable.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Unsigned right shift assignment (>>>=)"
         }
     ],
     "sec-async-function-definitions": [
@@ -33620,6 +34414,238 @@
             "title": "async function"
         }
     ],
+    "prod-BitwiseANDExpression": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/bitwise_and.json",
+            "name": "bitwise_and",
+            "slug": "JavaScript/Reference/Operators/Bitwise_AND",
+            "summary": "The bitwise AND operator (&) returns a 1 in each bit position for which the corresponding bits of both operands are 1s.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bitwise AND (&)"
+        }
+    ],
+    "sec-bitwise-not-operator": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/bitwise_not.json",
+            "name": "bitwise_not",
+            "slug": "JavaScript/Reference/Operators/Bitwise_NOT",
+            "summary": "The bitwise NOT operator (~) inverts the bits of its operand.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bitwise NOT (~)"
+        }
+    ],
+    "prod-BitwiseORExpression": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/bitwise_or.json",
+            "name": "bitwise_or",
+            "slug": "JavaScript/Reference/Operators/Bitwise_OR",
+            "summary": "The bitwise OR operator (|) returns a 1 in each bit position for which the corresponding bits of either or both operands are 1s.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bitwise OR (|)"
+        }
+    ],
+    "prod-BitwiseXORExpression": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/bitwise_xor.json",
+            "name": "bitwise_xor",
+            "slug": "JavaScript/Reference/Operators/Bitwise_XOR",
+            "summary": "The bitwise XOR operator (^) returns a 1 in each bit position for which the corresponding bits of either but not both operands are 1s.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bitwise XOR (^)"
+        }
+    ],
     "sec-comma-operator": [
         {
             "engines": [
@@ -33675,7 +34701,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Comma operator"
+            "title": "Comma operator (,)"
         }
     ],
     "sec-conditional-operator": [
@@ -33746,7 +34772,7 @@
             "filename": "javascript/operators/decrement.json",
             "name": "decrement",
             "slug": "JavaScript/Reference/Operators/Decrement",
-            "summary": "The decrement operator decrements (subtracts one from) its operand and returns a value.",
+            "summary": "The decrement operator (--) decrements (subtracts one from) its operand and returns a value.",
             "support": {
                 "chrome": {
                     "version_added": "2"
@@ -33791,7 +34817,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Decrement"
+            "title": "Decrement (--)"
         }
     ],
     "sec-delete-operator": [
@@ -33922,7 +34948,7 @@
             "filename": "javascript/operators/division.json",
             "name": "division",
             "slug": "JavaScript/Reference/Operators/Division",
-            "summary": "The division operator produces the quotient of its operands where the left operand is the dividend and the right operand is the divisor.",
+            "summary": "The division operator (/) produces the quotient of its operands where the left operand is the dividend and the right operand is the divisor.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33967,7 +34993,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Division"
+            "title": "Division (/)"
         },
         {
             "engines": [
@@ -33978,7 +35004,7 @@
             "filename": "javascript/operators/multiplication.json",
             "name": "multiplication",
             "slug": "JavaScript/Reference/Operators/Multiplication",
-            "summary": "The multiplication operator produces the product of the operands.",
+            "summary": "The multiplication operator (*) produces the product of the operands.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -34023,7 +35049,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Multiplication"
+            "title": "Multiplication (*)"
         },
         {
             "engines": [
@@ -34082,6 +35108,232 @@
             "title": "Remainder"
         }
     ],
+    "sec-equality-operators": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/equality.json",
+            "name": "equality",
+            "slug": "JavaScript/Reference/Operators/Equality",
+            "summary": "The equality operator (==) checks whether its two operands are equal, returning a Boolean result. Unlike the strict equality operator, it attempts to convert and compare operands that are of different types.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Equality (==)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/inequality.json",
+            "name": "inequality",
+            "slug": "JavaScript/Reference/Operators/Inequality",
+            "summary": "The inequality operator checks whether its two operands are not equal, returning a Boolean result. Unlike the strict inequality operator, it attempts to convert and compare operands that are of different types.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Inequality"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/strict_equality.json",
+            "name": "strict_equality",
+            "slug": "JavaScript/Reference/Operators/Strict_equality",
+            "summary": "The strict equality operator (===) checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Strict equality (===)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/strict_inequality.json",
+            "name": "strict_inequality",
+            "slug": "JavaScript/Reference/Operators/Strict_inequality",
+            "summary": "The strict inequality operator checks whether its two operands are not equal, returning a Boolean result. Unlike the inequality operator, the strict inequality operator always considers operands of different types to be different.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Strict inequality"
+        }
+    ],
     "sec-exp-operator": [
         {
             "engines": [
@@ -34092,7 +35344,7 @@
             "filename": "javascript/operators/exponentiation.json",
             "name": "exponentiation",
             "slug": "JavaScript/Reference/Operators/Exponentiation",
-            "summary": "The exponentiation operator returns the result of raising the first operand to the power of the second operand.",
+            "summary": "The exponentiation operator (**) returns the result of raising the first operand to the power of the second operand.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -34148,7 +35400,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Exponentiation"
+            "title": "Exponentiation (**)"
         }
     ],
     "sec-generator-function-definitions": [
@@ -34284,17 +35536,17 @@
             "title": "function*"
         }
     ],
-    "sec-grouping-operator": [
+    "sec-relational-operators": [
         {
             "engines": [
                 "blink",
                 "gecko",
                 "webkit"
             ],
-            "filename": "javascript/operators/grouping.json",
-            "name": "grouping",
-            "slug": "JavaScript/Reference/Operators/Grouping",
-            "summary": "The grouping operator ( ) controls the precedence of evaluation in expressions.",
+            "filename": "javascript/operators/greater_than.json",
+            "name": "greater_than",
+            "slug": "JavaScript/Reference/Operators/Greater_than",
+            "summary": "The greater than operator (>) returns true if the left operand is greater than the right operand, and false otherwise.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -34339,10 +35591,64 @@
                     "version_added": "79"
                 }
             },
-            "title": "Grouping operator"
-        }
-    ],
-    "sec-relational-operators": [
+            "title": "Greater than (>)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/greater_than_or_equal.json",
+            "name": "greater_than_or_equal",
+            "slug": "JavaScript/Reference/Operators/Greater_than_or_equal",
+            "summary": "The greater than or equal operator (>=) returns true if the left operand is greater than or equal to the right operand, and false otherwise.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Greater than or equal (>=)"
+        },
         {
             "engines": [
                 "blink",
@@ -34454,6 +35760,176 @@
                 }
             },
             "title": "instanceof"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/less_than.json",
+            "name": "less_than",
+            "slug": "JavaScript/Reference/Operators/Less_than",
+            "summary": "The less than operator (<) returns true if the left operand is less than the right operand, and false otherwise.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Less than (<)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/less_than_or_equal.json",
+            "name": "less_than_or_equal",
+            "slug": "JavaScript/Reference/Operators/Less_than_or_equal",
+            "summary": "The less than or equal operator (<=) returns true if the left operand is less than or equal to the right operand, and false otherwise.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Less than or equal (<=)"
+        }
+    ],
+    "sec-grouping-operator": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/grouping.json",
+            "name": "grouping",
+            "slug": "JavaScript/Reference/Operators/Grouping",
+            "summary": "The grouping operator ( ) controls the precedence of evaluation in expressions.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.1.100"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Grouping operator ( )"
         }
     ],
     "sec-postfix-increment-operator": [
@@ -34640,7 +36116,7 @@
             "filename": "javascript/operators/logical_or.json",
             "name": "logical_or",
             "slug": "JavaScript/Reference/Operators/Logical_OR",
-            "summary": "The logical OR (||) operator (logical disjunction) for a set of operands is true if and only if one or more of its operands is true It is typically used with Boolean (logical) values. When it is, it returns a Boolean value. However, the || operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.",
+            "summary": "The logical OR (||) operator (logical disjunction) for a set of operands is true if and only if one or more of its operands is true. It is typically used with Boolean (logical) values. When it is, it returns a Boolean value. However, the || operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -34685,7 +36161,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Logical OR"
+            "title": "Logical OR (||)"
         }
     ],
     "sec-new-operator": [
@@ -34930,7 +36406,7 @@
             "filename": "javascript/operators/subtraction.json",
             "name": "subtraction",
             "slug": "JavaScript/Reference/Operators/Subtraction",
-            "summary": "The subtraction operator subtracts the two operands, producing their difference.",
+            "summary": "The subtraction operator (-) subtracts the two operands, producing their difference.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -34975,7 +36451,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Subtraction"
+            "title": "Subtraction (-)"
         }
     ],
     "sec-super-keyword": [

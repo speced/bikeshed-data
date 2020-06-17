@@ -112,7 +112,13 @@
     "dom-audiotrack-enabled": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioTrack.json",
             "name": "enabled",
@@ -120,43 +126,92 @@
             "summary": "The AudioTrack property enabled specifies whether or not the described audio track is currently enabled for use. If the track is disabled by setting enabled to false, the track is muted and does not produce audio.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "AudioTrack.enabled"
@@ -165,7 +220,13 @@
     "dom-audiotrack-id": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioTrack.json",
             "name": "id",
@@ -173,43 +234,92 @@
             "summary": "The id property contains a string which uniquely identifies the track represented by the AudioTrack.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "AudioTrack.id"
@@ -218,7 +328,13 @@
     "dom-audiotrack-kind": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioTrack.json",
             "name": "kind",
@@ -226,43 +342,92 @@
             "summary": "The kind property contains a string indicating the category of audio contained in the AudioTrack.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "AudioTrack.kind"
@@ -271,7 +436,13 @@
     "dom-audiotrack-label": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioTrack.json",
             "name": "label",
@@ -279,43 +450,92 @@
             "summary": "The read-only AudioTrack property label returns a string specifying the audio track's human-readable label, if one is available; otherwise, it returns an empty string.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "AudioTrack.label"
@@ -324,7 +544,13 @@
     "dom-audiotrack-language": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioTrack.json",
             "name": "language",
@@ -332,43 +558,92 @@
             "summary": "The read-only AudioTrack property language returns a string identifying the language used in the audio track.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "AudioTrack.language"
@@ -377,7 +652,13 @@
     "audiotrack": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/AudioTrack.json",
             "name": "AudioTrack",
@@ -385,43 +666,92 @@
             "summary": "The AudioTrack interface represents a single audio track from one of the HTML media elements, <audio> or <video>. ",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "AudioTrack"
@@ -21891,7 +22221,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/HTMLImageElement.json",
             "name": "currentSrc",
@@ -21949,10 +22280,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "10.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -33369,10 +33700,10 @@
                     "version_added": true
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": true
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": true
                 },
                 "safari": {
                     "version_added": true
@@ -35532,7 +35863,7 @@
             "title": "navigator.hardwareConcurrency"
         }
     ],
-    "navigator.hardwareconcurrency": [
+    "navigatorconcurrenthardware": [
         {
             "engines": [
                 "blink",
@@ -35582,10 +35913,6 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
-            },
-            "caniuse": {
-                "feature": "hardwareconcurrency",
-                "title": "navigator.hardwareConcurrency"
             },
             "title": "NavigatorConcurrentHardware"
         }
@@ -38837,7 +39164,7 @@
                     "version_added": null
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": null
@@ -38891,7 +39218,7 @@
                     "version_added": null
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": null
@@ -38945,7 +39272,7 @@
                     "version_added": null
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": null
@@ -40970,7 +41297,13 @@
     "dom-videotrack-id": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/VideoTrack.json",
             "name": "id",
@@ -40978,43 +41311,92 @@
             "summary": "The id property contains a string which uniquely identifies the track represented by the VideoTrack.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "VideoTrack.id"
@@ -41023,7 +41405,13 @@
     "dom-videotrack-kind": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/VideoTrack.json",
             "name": "kind",
@@ -41031,43 +41419,92 @@
             "summary": "The kind property contains a string indicating the category of video contained in the VideoTrack.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "VideoTrack.kind"
@@ -41076,7 +41513,13 @@
     "dom-videotrack-label": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/VideoTrack.json",
             "name": "label",
@@ -41084,43 +41527,92 @@
             "summary": "The read-only VideoTrack property label returns a string specifying the video track's human-readable label, if one is available; otherwise, it returns an empty string.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "VideoTrack.label"
@@ -41129,7 +41621,13 @@
     "dom-videotrack-language": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/VideoTrack.json",
             "name": "language",
@@ -41137,43 +41635,92 @@
             "summary": "The read-only VideoTrack property language returns a string identifying the language used in the video track.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "Videotrack.language"
@@ -41182,7 +41729,13 @@
     "dom-videotrack-selected": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/VideoTrack.json",
             "name": "selected",
@@ -41190,43 +41743,92 @@
             "summary": "The VideoTrack property selected controls whether or not a particular video track is active.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "VideoTrack.selected"
@@ -41235,7 +41837,13 @@
     "videotrack": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "api/VideoTrack.json",
             "name": "VideoTrack",
@@ -41243,43 +41851,92 @@
             "summary": "The VideoTrack interface represents a single video track from a <video> element.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "45",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "33",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.track.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "32",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "6.1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "45"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "VideoTrack"
@@ -42551,7 +43208,7 @@
             "title": "WebSocket.url"
         }
     ],
-    "network": [
+    "the-websocket-interface": [
         {
             "engines": [
                 "blink",
@@ -42630,10 +43287,6 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
-            },
-            "caniuse": {
-                "feature": "websockets",
-                "title": "Web Sockets"
             },
             "title": "WebSocket"
         }
@@ -44801,85 +45454,6 @@
                 "title": "unhandledrejection/rejectionhandled events"
             },
             "title": "Window: rejectionhandled event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "api/Window.json",
-            "name": "unhandledrejection_event",
-            "slug": "API/Window/unhandledrejection_event",
-            "summary": "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": {
-                    "version_added": "68",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.promise_rejection_events.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "caniuse": {
-                "feature": "unhandledrejection",
-                "title": "unhandledrejection/rejectionhandled events"
-            },
-            "title": "Window: unhandledrejection event"
         }
     ],
     "animation-frames": [
@@ -45510,6 +46084,83 @@
                 }
             },
             "title": "Window.top"
+        }
+    ],
+    "event-unhandledrejection": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/Window.json",
+            "name": "unhandledrejection_event",
+            "slug": "API/Window/unhandledrejection_event",
+            "summary": "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "69"
+                    },
+                    {
+                        "version_added": "68",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.promise_rejection_events.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.promise_rejection_events.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window: unhandledrejection event"
         }
     ],
     "dom-window": [
