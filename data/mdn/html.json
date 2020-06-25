@@ -11479,11 +11479,17 @@
                 },
                 "ie": [
                     {
+                        "version_added": "11"
+                    },
+                    {
                         "version_added": "9",
+                        "version_removed": "11",
                         "notes": "Internet Explorer 9 and 10 have bugs where the 'interactive' state can be fired too early before the document has finished parsing."
                     },
                     {
                         "version_added": "8",
+                        "version_removed": "9",
+                        "partial_implementation": true,
                         "notes": "Only supports 'complete'."
                     }
                 ],
@@ -35600,7 +35606,7 @@
                     "notes": "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>."
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -35609,7 +35615,7 @@
                     "version_added": "3"
                 },
                 "firefox_android": {
-                    "version_added": "4"
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": null
