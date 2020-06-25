@@ -555,6 +555,10 @@
                     "version_added": "79"
                 }
             },
+            "caniuse": {
+                "feature": "array-find-index",
+                "title": "Array.prototype.findIndex"
+            },
             "title": "Array.prototype.findIndex()"
         }
     ],
@@ -17369,7 +17373,7 @@
             "filename": "javascript/builtins/Number.json",
             "name": "Number",
             "slug": "JavaScript/Reference/Global_Objects/Number",
-            "summary": "The Number JavaScript object is a wrapper object allowing you to work with numerical values. A Number object is created using the Number() constructor. A primitive type object number is created using the Number() function.",
+            "summary": "The Number constructor contains constants and methods for working with numbers. Values of other types can be converted to numbers using the Number() function.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -19291,7 +19295,7 @@
             "filename": "javascript/builtins/Promise.json",
             "name": "all",
             "slug": "JavaScript/Reference/Global_Objects/Promise/all",
-            "summary": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled, the iterable contains no promises or the iterable contains promises that have been fulfilled and non-promises that have been returned. It rejects with the reason of the first promise that rejects or with the error caught by the first argument, if that argument has caught an error inside it using try/catch/throw blocks.",
+            "summary": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled, the iterable contains no promises, or the iterable contains promises that have been fulfilled and non-promises that have been returned. It rejects with the reason of the first promise that rejects or with the error caught by the first argument, if that argument has caught an error inside it using try/catch/throw blocks.",
             "support": {
                 "chrome": {
                     "version_added": "32"
@@ -35060,7 +35064,7 @@
             "filename": "javascript/operators/remainder.json",
             "name": "remainder",
             "slug": "JavaScript/Reference/Operators/Remainder",
-            "summary": "The remainder operator returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.",
+            "summary": "The remainder operator (%) returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -35105,7 +35109,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Remainder"
+            "title": "Remainder (%)"
         }
     ],
     "sec-equality-operators": [
@@ -35174,7 +35178,7 @@
             "filename": "javascript/operators/inequality.json",
             "name": "inequality",
             "slug": "JavaScript/Reference/Operators/Inequality",
-            "summary": "The inequality operator checks whether its two operands are not equal, returning a Boolean result. Unlike the strict inequality operator, it attempts to convert and compare operands that are of different types.",
+            "summary": "The inequality operator (!=) checks whether its two operands are not equal, returning a Boolean result. Unlike the strict inequality operator, it attempts to convert and compare operands that are of different types.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -35219,7 +35223,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Inequality"
+            "title": "Inequality (!=)"
         },
         {
             "engines": [
@@ -35286,7 +35290,7 @@
             "filename": "javascript/operators/strict_inequality.json",
             "name": "strict_inequality",
             "slug": "JavaScript/Reference/Operators/Strict_inequality",
-            "summary": "The strict inequality operator checks whether its two operands are not equal, returning a Boolean result. Unlike the inequality operator, the strict inequality operator always considers operands of different types to be different.",
+            "summary": "The strict inequality operator (!==) checks whether its two operands are not equal, returning a Boolean result. Unlike the inequality operator, the strict inequality operator always considers operands of different types to be different.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -35331,7 +35335,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Strict inequality"
+            "title": "Strict inequality (!==)"
         }
     ],
     "sec-exp-operator": [
@@ -36045,7 +36049,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Logical AND"
+            "title": "Logical AND (&&)"
         }
     ],
     "sec-logical-not-operator": [
@@ -36103,7 +36107,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Logical NOT"
+            "title": "Logical NOT (!)"
         }
     ],
     "prod-LogicalORExpression": [
@@ -36638,7 +36642,7 @@
             "filename": "javascript/operators/unary_negation.json",
             "name": "unary_negation",
             "slug": "JavaScript/Reference/Operators/Unary_negation",
-            "summary": "The unary negation operator precedes its operand and negates it.",
+            "summary": "The unary negation operator (-) precedes its operand and negates it.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -36683,7 +36687,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Unary negation"
+            "title": "Unary negation (-)"
         }
     ],
     "sec-unary-plus-operator": [
