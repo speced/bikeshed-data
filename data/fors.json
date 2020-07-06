@@ -1545,13 +1545,13 @@
     "ReadableStream",
     "ReadableStreamAddReadIntoRequest",
     "ReadableStreamAddReadRequest",
+    "ReadableStreamBYOBReadResult",
     "ReadableStreamBYOBReader",
     "ReadableStreamBYOBReaderRead",
     "ReadableStreamBYOBRequest",
     "ReadableStreamCancel",
     "ReadableStreamClose",
     "ReadableStreamController",
-    "ReadableStreamCreateReadResult",
     "ReadableStreamDefaultController",
     "ReadableStreamDefaultControllerCallPullIfNeeded",
     "ReadableStreamDefaultControllerCanCloseOrEnqueue",
@@ -1562,6 +1562,7 @@
     "ReadableStreamDefaultControllerGetDesiredSize",
     "ReadableStreamDefaultControllerHasBackpressure",
     "ReadableStreamDefaultControllerShouldCallPull",
+    "ReadableStreamDefaultReadResult",
     "ReadableStreamDefaultReader",
     "ReadableStreamDefaultReaderRead",
     "ReadableStreamError",
@@ -8391,7 +8392,9 @@
     "read only",
     "read only arraybuffer",
     "read operation",
+    "read request",
     "read the resource header",
+    "read-into request",
     "read-only mode",
     "read/write mode",
     "readable byte stream",
@@ -19729,7 +19732,6 @@
     "maskable purpose",
     "monochrome",
     "monochrome purpose",
-    "platform",
     "processing manifestimageresource members",
     "processing the purpose member of an image",
     "purpose",
@@ -22715,6 +22717,10 @@
     "destination",
     "options"
   ],
+  "ReadableStreamBYOBReadResult": [
+    "done",
+    "value"
+  ],
   "ReadableStreamBYOBReader": [
     "ReadableStreamBYOBReader(stream)",
     "cancel()",
@@ -22775,6 +22781,10 @@
   ],
   "ReadableStreamDefaultController/error(e)": [
     "e"
+  ],
+  "ReadableStreamDefaultReadResult": [
+    "done",
+    "value"
   ],
   "ReadableStreamDefaultReader": [
     "ReadableStreamDefaultReader(stream)",
@@ -30093,6 +30103,16 @@
     "start",
     "start node",
     "start offset"
+  ],
+  "read request": [
+    "chunk steps",
+    "close steps",
+    "error steps"
+  ],
+  "read-into request": [
+    "chunk steps",
+    "close steps",
+    "error steps"
   ],
   "readable byte stream queue entry": [
     "buffer",
