@@ -320,7 +320,8 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5",
+                    "notes": "In Internet Explorer 11, numbers are rounded to 15 decimal digits. For example, <code>(1000000000000005).toLocaleString('en-US')</code> returns <code>\"1,000,000,000,000,010\"</code>."
                 },
                 "nodejs": {
                     "version_added": "0.1.100"
@@ -2297,7 +2298,8 @@
                     "version_added": "56"
                 },
                 "ie": {
-                    "version_added": "11"
+                    "version_added": "11",
+                    "notes": "In Internet Explorer 11, numbers are rounded to 15 decimal digits. For example, <code>new Intl.NumberFormat('en-US').format(1000000000000005)</code> returns <code>\"1,000,000,000,000,010\"</code>."
                 },
                 "nodejs": {
                     "version_added": "0.12",
@@ -2574,7 +2576,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/intl/PluralRules.json",
             "name": "PluralRules",
@@ -2616,10 +2619,10 @@
                     "version_added": "46"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"
@@ -2642,7 +2645,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/intl/PluralRules.json",
             "name": "PluralRules",
@@ -2678,10 +2682,10 @@
                     "version_added": "46"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"

@@ -1403,7 +1403,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "push",
             "slug": "JavaScript/Reference/Global_Objects/Array/push",
-            "summary": "The push() method adds one or more elements to the end of an array and returns the new length of the array.",
+            "summary": "The push() method adds zero or more elements to the end of an array and returns the new length of the array.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -2174,7 +2174,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Global_Objects/Array/@@iterator",
-            "summary": "The  @@iterator method is part of The iterable protocol, that defines how to synchronously iterate over a sequence of values.",
+            "summary": "The @@iterator method is part of The iterable protocol, that defines how to synchronously iterate over a sequence of values.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -4568,7 +4568,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "Atomics",
             "slug": "JavaScript/Reference/Global_Objects/Atomics",
-            "summary": "The Atomics object provides atomic operations as static methods. They are used with SharedArrayBuffer objects.",
+            "summary": "The Atomics object provides atomic operations as static methods. They are used with SharedArrayBuffer and ArrayBuffer objects.",
             "support": {
                 "chrome": [
                     {
@@ -17159,7 +17159,8 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5",
+                    "notes": "In Internet Explorer 11, numbers are rounded to 15 decimal digits. For example, <code>(1000000000000005).toLocaleString('en-US')</code> returns <code>\"1,000,000,000,000,010\"</code>."
                 },
                 "nodejs": {
                     "version_added": "0.1.100"
@@ -19295,7 +19296,7 @@
             "filename": "javascript/builtins/Promise.json",
             "name": "all",
             "slug": "JavaScript/Reference/Global_Objects/Promise/all",
-            "summary": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled, the iterable contains no promises, or the iterable contains promises that have been fulfilled and non-promises that have been returned. It rejects with the reason of the first promise that rejects or with the error caught by the first argument, if that argument has caught an error inside it using try/catch/throw blocks.",
+            "summary": "The Promise.all() method takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises. This returned promise will resolve when all of the input's promises have resolved, or if the input iterable contains no promises. It rejects immediately upon any of the input promises rejecting or non-promises throwing an error, and will reject with this first rejection message / error.",
             "support": {
                 "chrome": {
                     "version_added": "32"
@@ -23558,6 +23559,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "79"
+                    },
+                    {
                         "version_added": "57",
                         "flags": [
                             {
@@ -23688,6 +23692,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -23820,6 +23827,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "79"
+                    },
+                    {
                         "version_added": "57",
                         "flags": [
                             {
@@ -23950,6 +23960,9 @@
                     "version_added": false
                 },
                 "firefox": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -25484,7 +25497,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "split",
             "slug": "JavaScript/Reference/Global_Objects/String/split",
-            "summary": "The split() method divides a String into an ordered set of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.  ",
+            "summary": "The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.  ",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -26475,7 +26488,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12"
                 },
                 "opera": {
                     "version_added": "25"
@@ -26605,7 +26618,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12"
                 },
                 "opera": {
                     "version_added": "27"
@@ -26848,7 +26861,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12"
                 },
                 "opera": {
                     "version_added": "27"
@@ -27322,7 +27335,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12"
                 },
                 "opera": {
                     "version_added": "25"
@@ -27507,7 +27520,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12"
                 },
                 "opera": {
                     "version_added": "25"
@@ -27623,7 +27636,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": true
+                    "version_added": "0.12"
                 },
                 "opera": {
                     "version_added": "25"
@@ -33261,7 +33274,7 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "2"
+                    "version_added": "1.5"
                 },
                 "firefox_android": {
                     "version_added": "4"
@@ -33373,7 +33386,7 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "2"
+                    "version_added": "1.5"
                 },
                 "firefox_android": {
                     "version_added": "4"
@@ -33539,7 +33552,7 @@
             "filename": "javascript/operators/addition_assignment.json",
             "name": "addition_assignment",
             "slug": "JavaScript/Reference/Operators/Addition_assignment",
-            "summary": "The addition assignment operator adds the value of the right operand to a variable and assigns the result to the variable. The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.",
+            "summary": "The addition assignment operator (+=) adds the value of the right operand to a variable and assigns the result to the variable. The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33595,7 +33608,7 @@
             "filename": "javascript/operators/assignment.json",
             "name": "assignment",
             "slug": "JavaScript/Reference/Operators/Assignment",
-            "summary": "The simple assignment operator is used to assign a value to a variable. The assignment operation evaluates to the assigned value. Chaining the assignment operator is possible in order to assign a single value to multiple variables",
+            "summary": "The simple assignment operator (=) is used to assign a value to a variable. The assignment operation evaluates to the assigned value. Chaining the assignment operator is possible in order to assign a single value to multiple variables",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33640,7 +33653,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Assignment operator (=)"
+            "title": "Assignment (=)"
         },
         {
             "engines": [
@@ -33819,7 +33832,7 @@
             "filename": "javascript/operators/division_assignment.json",
             "name": "division_assignment",
             "slug": "JavaScript/Reference/Operators/Division_assignment",
-            "summary": "The division assignment operator divides a variable by the value of the right operand and assigns the result to the variable.",
+            "summary": "The division assignment operator (/=) divides a variable by the value of the right operand and assigns the result to the variable.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33931,7 +33944,7 @@
             "filename": "javascript/operators/multiplication_assignment.json",
             "name": "multiplication_assignment",
             "slug": "JavaScript/Reference/Operators/Multiplication_assignment",
-            "summary": "The multiplication assignment operator multiplies a variable by the value of the right operand and assigns the result to the variable.",
+            "summary": "The multiplication assignment operator (*=) multiplies a variable by the value of the right operand and assigns the result to the variable.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33987,7 +34000,7 @@
             "filename": "javascript/operators/remainder_assignment.json",
             "name": "remainder_assignment",
             "slug": "JavaScript/Reference/Operators/Remainder_assignment",
-            "summary": "The remainder assignment operator divides a variable by the value of the right operand and assigns the remainder to the variable.",
+            "summary": "The remainder assignment operator (%=) divides a variable by the value of the right operand and assigns the remainder to the variable.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -35946,7 +35959,7 @@
             "filename": "javascript/operators/increment.json",
             "name": "increment",
             "slug": "JavaScript/Reference/Operators/Increment",
-            "summary": "The increment operator increments (adds one to) its operand and returns a value.",
+            "summary": "The increment operator (++) increments (adds one to) its operand and returns a value.",
             "support": {
                 "chrome": {
                     "version_added": "2"
@@ -35991,7 +36004,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Increment"
+            "title": "Increment (++)"
         }
     ],
     "prod-LogicalANDExpression": [

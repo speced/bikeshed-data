@@ -2518,6 +2518,61 @@
             "title": "AudioTrackList"
         }
     ],
+    "the-beforeunloadevent-interface": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/BeforeUnloadEvent.json",
+            "name": "BeforeUnloadEvent",
+            "slug": "API/BeforeUnloadEvent",
+            "summary": "The beforeunload event is fired when the window, the document and its resources are about to be unloaded.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "BeforeUnloadEvent"
+        }
+    ],
     "dom-broadcastchannel": [
         {
             "engines": [
@@ -3637,7 +3692,7 @@
             "filename": "api/CanvasPattern.json",
             "name": "setTransform",
             "slug": "API/CanvasPattern/setTransform",
-            "summary": "The CanvasPattern.setTransform() method uses an SVGMatrix object as the pattern's transformation matrix and invokes it on the pattern.",
+            "summary": "The CanvasPattern.setTransform() method uses an SVGMatrix or DOMMatrix object as the pattern's transformation matrix and invokes it on the pattern.",
             "support": {
                 "chrome": {
                     "version_added": "68"
@@ -20609,7 +20664,7 @@
             "filename": "api/HTMLHeadingElement.json",
             "name": "HTMLHeadingElement",
             "slug": "API/HTMLHeadingElement",
-            "summary": "The HTMLHeadingElement interface represents the different heading elements. It inherits methods and properties from the HTMLElement interface.",
+            "summary": "The HTMLHeadingElement interface represents the different heading elements, <h1> through <h6>. It inherits methods and properties from the HTMLElement interface.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -33520,7 +33575,7 @@
             "filename": "api/Location.json",
             "name": "assign",
             "slug": "API/Location/assign",
-            "summary": "The Location.assign() method causes the window to load and display the document at the URL specified.",
+            "summary": "The Location.assign() method causes the window to load and display the document at the URL specified. After the navigation occurs, the user can navigate back to the page that called Location.assign() by pressing the \"back\" button.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -35603,7 +35658,10 @@
             "support": {
                 "chrome": {
                     "version_added": "13",
-                    "notes": "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>."
+                    "notes": [
+                        "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>.",
+                        "From Chrome 77, the URL parameter only accepts <code>http</code> or <code>https</code> URLs."
+                    ]
                 },
                 "chrome_android": {
                     "version_added": false
@@ -35640,7 +35698,10 @@
                 },
                 "edge_blink": {
                     "version_added": "79",
-                    "notes": "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>."
+                    "notes": [
+                        "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>.",
+                        "From Chrome 77, the URL parameter only accepts <code>http</code> or <code>https</code> URLs."
+                    ]
                 }
             },
             "caniuse": {
@@ -35869,7 +35930,7 @@
             "title": "navigator.hardwareConcurrency"
         }
     ],
-    "navigatorconcurrenthardware": [
+    "navigator.hardwareconcurrency": [
         {
             "engines": [
                 "blink",
@@ -35919,6 +35980,10 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
+            },
+            "caniuse": {
+                "feature": "hardwareconcurrency",
+                "title": "navigator.hardwareConcurrency"
             },
             "title": "NavigatorConcurrentHardware"
         }
@@ -38929,7 +38994,7 @@
             "filename": "api/Storage.json",
             "name": "removeItem",
             "slug": "API/Storage/removeItem",
-            "summary": "The removeItem() method of the Storage interface, when passed a key name, will remove that key from the given Storage object if it exists. If there is no item associated with the given key, this method will do nothing.",
+            "summary": "The removeItem() method of the Storage interface, when passed a key name, will remove that key from the given Storage object if it exists. The Storage interface of the Web Storage API provides access to a particular domain's session or local storage.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -43214,7 +43279,7 @@
             "title": "WebSocket.url"
         }
     ],
-    "the-websocket-interface": [
+    "network": [
         {
             "engines": [
                 "blink",
@@ -43293,6 +43358,10 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
+            },
+            "caniuse": {
+                "feature": "websockets",
+                "title": "Web Sockets"
             },
             "title": "WebSocket"
         }
@@ -45460,6 +45529,85 @@
                 "title": "unhandledrejection/rejectionhandled events"
             },
             "title": "Window: rejectionhandled event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/Window.json",
+            "name": "unhandledrejection_event",
+            "slug": "API/Window/unhandledrejection_event",
+            "summary": "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "69"
+                    },
+                    {
+                        "version_added": "68",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.promise_rejection_events.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.promise_rejection_events.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "caniuse": {
+                "feature": "unhandledrejection",
+                "title": "unhandledrejection/rejectionhandled events"
+            },
+            "title": "Window: unhandledrejection event"
         }
     ],
     "animation-frames": [
@@ -45936,7 +46084,7 @@
             "filename": "api/Window.json",
             "name": "storage_event",
             "slug": "API/Window/storage_event",
-            "summary": "The storage event of the Window interface fires when a storage area (localStorage or sessionStorage) has been modified in the context of another document.",
+            "summary": "The storage event of the Window interface fires when a storage area (localStorage) has been modified in the context of another document.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -46090,83 +46238,6 @@
                 }
             },
             "title": "Window.top"
-        }
-    ],
-    "event-unhandledrejection": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "api/Window.json",
-            "name": "unhandledrejection_event",
-            "slug": "API/Window/unhandledrejection_event",
-            "summary": "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": {
-                    "version_added": "68",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.promise_rejection_events.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Window: unhandledrejection event"
         }
     ],
     "dom-window": [
@@ -47522,6 +47593,62 @@
                 "title": "createImageBitmap"
             },
             "title": "self.createImageBitmap()"
+        }
+    ],
+    "dom-crossoriginisolated": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/WindowOrWorkerGlobalScope.json",
+            "name": "crossOriginIsolated",
+            "slug": "API/WindowOrWorkerGlobalScope/crossOriginIsolated",
+            "summary": "The crossOriginIsolated read-only property of the WindowOrWorkerGlobalScope interface returns a boolean value that indicates whether a SharedArrayBuffer can be sent via a Window.postMessage() call.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "72"
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "WindowOrWorkerGlobalScope.crossOriginIsolated"
         }
     ],
     "dom-origin": [
@@ -53219,7 +53346,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "<i>: the Interesting Text element"
+            "title": "<i>: The Interesting Text element"
         }
     ],
     "the-iframe-element": [
@@ -57122,7 +57249,7 @@
             "filename": "html/elements/script.json",
             "name": "script",
             "slug": "HTML/Element/script",
-            "summary": "The HTML <script> element is used to embed or reference executable code; this is typically used to embed or refer to JavaScript code.",
+            "summary": "The HTML <script> element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -58901,7 +59028,8 @@
     "autocapitalization": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "html/global_attributes.json",
             "name": "autocapitalize",
@@ -58936,10 +59064,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
                     "version_added": null
@@ -61367,7 +61495,7 @@
             "filename": null,
             "name": "script#attr-async",
             "slug": "HTML/Element/script#attr-async",
-            "summary": "The HTML <script> element is used to embed or reference executable code; this is typically used to embed or refer to JavaScript code.",
+            "summary": "The HTML <script> element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -61426,7 +61554,7 @@
             "filename": null,
             "name": "script#attr-defer",
             "slug": "HTML/Element/script#attr-defer",
-            "summary": "The HTML <script> element is used to embed or reference executable code; this is typically used to embed or refer to JavaScript code.",
+            "summary": "The HTML <script> element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.",
             "support": {
                 "chrome": {
                     "version_added": true,
@@ -61494,7 +61622,7 @@
             "filename": null,
             "name": "script#attr-type",
             "slug": "HTML/Element/script#attr-type",
-            "summary": "The HTML <script> element is used to embed or reference executable code; this is typically used to embed or refer to JavaScript code.",
+            "summary": "The HTML <script> element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.",
             "support": {
                 "chrome": {
                     "version_added": "1"

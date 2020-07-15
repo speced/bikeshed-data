@@ -1,26 +1,27 @@
 {
-    "prod-PrivateIdentifier": [
+    "sec-aggregate-error-constructor": [
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
-            "filename": "javascript/classes.json",
-            "name": "private_class_fields",
-            "slug": "JavaScript/Reference/Classes/Class_elements#Private_fields",
-            "summary": "Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
+            "filename": "javascript/builtins/AggregateError.json",
+            "name": "AggregateError",
+            "slug": "JavaScript/Reference/Global_Objects/AggregateError/AggregateError",
+            "summary": "The AggregateError() constructor creates an error for several errors that need to be wrapped in a single error.",
             "support": {
                 "chrome": {
-                    "version_added": "74"
+                    "version_added": "85"
                 },
                 "chrome_android": {
-                    "version_added": "74"
+                    "version_added": "85"
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "firefox_android": {
                     "version_added": false
@@ -29,13 +30,13 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "12.0.0"
+                    "version_added": false
                 },
                 "opera": {
-                    "version_added": "62"
+                    "version_added": false
                 },
                 "opera_android": {
-                    "version_added": "53"
+                    "version_added": false
                 },
                 "safari": {
                     "version_added": "14"
@@ -47,37 +48,38 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "74"
+                    "version_added": "85"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "85"
                 }
             },
-            "title": "Public class fields"
+            "title": "AggregateError() constructor"
         }
     ],
-    "prod-FieldDefinition": [
+    "sec-nativeerror-object-structure": [
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
-            "filename": "javascript/classes.json",
-            "name": "public_class_fields",
-            "slug": "JavaScript/Reference/Classes/Class_elements#Public_fields",
-            "summary": "Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
+            "filename": "javascript/builtins/AggregateError.json",
+            "name": "AggregateError",
+            "slug": "JavaScript/Reference/Global_Objects/AggregateError",
+            "summary": "The AggregateError object represents an error when several errors need to be wrapped in a single error. It is thrown when multiple errors need to be reported by an operation, for example by Promise.any(), when all promises passed to it reject.",
             "support": {
                 "chrome": {
-                    "version_added": "72"
+                    "version_added": "85"
                 },
                 "chrome_android": {
-                    "version_added": "72"
+                    "version_added": "85"
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "69"
+                    "version_added": "79"
                 },
                 "firefox_android": {
                     "version_added": false
@@ -86,53 +88,56 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "12.0.0"
+                    "version_added": false
                 },
                 "opera": {
-                    "version_added": "60"
+                    "version_added": false
                 },
                 "opera_android": {
-                    "version_added": "51"
+                    "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "72"
+                    "version_added": "85"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "85"
                 }
             },
-            "title": "Public class fields"
-        },
+            "title": "AggregateError"
+        }
+    ],
+    "sec-promise.any": [
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
-            "filename": "javascript/classes.json",
-            "name": "static_class_fields",
-            "slug": "JavaScript/Reference/Classes/Class_fields",
-            "summary": "Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
+            "filename": "javascript/builtins/Promise.json",
+            "name": "any",
+            "slug": "JavaScript/Reference/Global_Objects/Promise/any",
+            "summary": "Promise.any() takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfils, returns a single promise that resolves with the value from that promise. If no promises in the iterable fulfil (if all of the given promises are rejected), then the returned promise is rejected with an AggregateError, a new subclass of Error that groups together individual errors. Essentially, this method is the opposite of Promise.all().",
             "support": {
                 "chrome": {
-                    "version_added": "72"
+                    "version_added": "85"
                 },
                 "chrome_android": {
-                    "version_added": "72"
+                    "version_added": "85"
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "75"
+                    "version_added": "79"
                 },
                 "firefox_android": {
                     "version_added": false
@@ -141,31 +146,31 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "12.0.0"
+                    "version_added": false
                 },
                 "opera": {
-                    "version_added": "60"
+                    "version_added": false
                 },
                 "opera_android": {
-                    "version_added": "51"
+                    "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "72"
+                    "version_added": "85"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "85"
                 }
             },
-            "title": "Public class fields"
+            "title": "Promise.any()"
         }
     ]
 }
