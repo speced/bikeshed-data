@@ -2079,6 +2079,7 @@
     "XREye",
     "XRFrame",
     "XRFrameRequestCallback",
+    "XRHand",
     "XRHandedness",
     "XRHitTestOptionsInit",
     "XRHitTestResult",
@@ -2091,6 +2092,8 @@
     "XRInputSourcesChangeEvent",
     "XRInputSourcesChangeEventInit",
     "XRInteractionMode",
+    "XRJointPose",
+    "XRJointSpace",
     "XRLayer",
     "XRLayerEvent",
     "XRLayerEventInit",
@@ -2710,6 +2713,7 @@
     "associated",
     "associated animation of an animation effect",
     "associated baseaudiocontext",
+    "associated bone",
     "associated css style sheet",
     "associated document",
     "associated effect",
@@ -8023,6 +8027,7 @@
     "physical bottom",
     "physical dimensions",
     "physical direction",
+    "physical hand input source",
     "physical left",
     "physical right",
     "physical top",
@@ -9483,6 +9488,8 @@
     "sizes attribute",
     "sizing property",
     "sizing type",
+    "skeleton joint index",
+    "skeleton joints",
     "skip ascii whitespace",
     "skip its contents",
     "skip-when-determining-incumbent counter",
@@ -9854,6 +9861,7 @@
     "supported styling language",
     "supported tokens",
     "supportedalgorithms",
+    "supports hand tracking",
     "supports_condition",
     "supports_condition_in_parens",
     "supports_conjunction",
@@ -25801,6 +25809,7 @@
     "apply gamepad frame updates",
     "getHitTestResults(hitTestSource)",
     "getHitTestResultsForTransientInput(hitTestSource)",
+    "getJointPose(joint, baseSpace)",
     "getPose(space, baseSpace)",
     "getViewerPose(referenceSpace)",
     "map of hit test sources to hit test results",
@@ -25814,6 +25823,10 @@
   "XRFrame/getHitTestResultsForTransientInput(hitTestSource)": [
     "hitTestSource"
   ],
+  "XRFrame/getJointPose(joint, baseSpace)": [
+    "baseSpace",
+    "joint"
+  ],
   "XRFrame/getPose(space, baseSpace)": [
     "baseSpace",
     "space"
@@ -25825,6 +25838,41 @@
     "cancelled",
     "frame",
     "time"
+  ],
+  "XRHand": [
+    "INDEX_METACARPAL",
+    "INDEX_PHALANX_DISTAL",
+    "INDEX_PHALANX_INTERMEDIATE",
+    "INDEX_PHALANX_PROXIMAL",
+    "INDEX_PHALANX_TIP",
+    "LITTLE_METACARPAL",
+    "LITTLE_PHALANX_DISTAL",
+    "LITTLE_PHALANX_INTERMEDIATE",
+    "LITTLE_PHALANX_PROXIMAL",
+    "LITTLE_PHALANX_TIP",
+    "MIDDLE_METACARPAL",
+    "MIDDLE_PHALANX_DISTAL",
+    "MIDDLE_PHALANX_INTERMEDIATE",
+    "MIDDLE_PHALANX_PROXIMAL",
+    "MIDDLE_PHALANX_TIP",
+    "RING_METACARPAL",
+    "RING_PHALANX_DISTAL",
+    "RING_PHALANX_INTERMEDIATE",
+    "RING_PHALANX_PROXIMAL",
+    "RING_PHALANX_TIP",
+    "THUMB_METACARPAL",
+    "THUMB_PHALANX_DISTAL",
+    "THUMB_PHALANX_PROXIMAL",
+    "THUMB_PHALANX_TIP",
+    "WRIST",
+    "input source",
+    "joint",
+    "joint(jointIndex)",
+    "length",
+    "list of joint spaces"
+  ],
+  "XRHand/joint(jointIndex)": [
+    "jointIndex"
   ],
   "XRHandedness": [
     "\"left\"",
@@ -25862,6 +25910,7 @@
   "XRInputSource": [
     "gamepad",
     "gripSpace",
+    "hand",
     "handedness",
     "input profile name",
     "profiles",
@@ -25918,6 +25967,15 @@
   "XRInteractionMode": [
     "\"screen-space\"",
     "\"world-space\""
+  ],
+  "XRJointPose": [
+    "radius"
+  ],
+  "XRJointSpace": [
+    "hand",
+    "joint",
+    "joint index",
+    "joint(jointIndex)"
   ],
   "XRLayer": [
     "redraw"
@@ -28132,6 +28190,7 @@
   ],
   "feature descriptor": [
     "dom-overlay",
+    "hand-tracking",
     "layers"
   ],
   "fetch": [
@@ -30522,6 +30581,9 @@
   ],
   "size-containment": [
     "containing box"
+  ],
+  "skeleton joint": [
+    "radius"
   ],
   "slot": [
     "assigned nodes",
