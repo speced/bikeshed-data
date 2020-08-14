@@ -838,6 +838,7 @@
     "CredentialRequestOptions",
     "CredentialUserData",
     "CredentialsContainer",
+    "CrossRealmTransformSendError",
     "CustomElementConstructor",
     "CustomElementRegistry",
     "CustomEvent",
@@ -1314,6 +1315,8 @@
     "OscillatorType",
     "Otherwise",
     "OverSampleType",
+    "PackAndPostMessage",
+    "PackAndPostMessageHandlingError",
     "PageTransitionEvent",
     "PageTransitionEventInit",
     "PaintRenderingContext2D",
@@ -1567,6 +1570,7 @@
     "ReadableStreamError",
     "ReadableStreamFulfillReadIntoRequest",
     "ReadableStreamFulfillReadRequest",
+    "ReadableStreamGenericReader",
     "ReadableStreamGetNumReadIntoRequests",
     "ReadableStreamGetNumReadRequests",
     "ReadableStreamGetReaderOptions",
@@ -1813,6 +1817,8 @@
     "ServiceWorkerState",
     "ServiceWorkerUpdateViaCache",
     "SetSyntheticModuleExport",
+    "SetUpCrossRealmTransformReadable",
+    "SetUpCrossRealmTransformWritable",
     "SetUpReadableByteStreamController",
     "SetUpReadableByteStreamControllerFromUnderlyingSource",
     "SetUpReadableStreamBYOBReader",
@@ -13211,6 +13217,7 @@
   ],
   "ByteLengthQueuingStrategy": [
     "ByteLengthQueuingStrategy(init)",
+    "[[highwatermark]]",
     "constructor(init)",
     "highWaterMark",
     "size"
@@ -14859,6 +14866,7 @@
   ],
   "CountQueuingStrategy": [
     "CountQueuingStrategy(init)",
+    "[[highwatermark]]",
     "constructor(init)",
     "highWaterMark",
     "size"
@@ -22650,6 +22658,19 @@
   "ReadableByteStreamController": [
     "[[CancelSteps]]",
     "[[PullSteps]]",
+    "[[autoallocatechunksize]]",
+    "[[byobrequest]]",
+    "[[cancelalgorithm]]",
+    "[[closerequested]]",
+    "[[pendingpullintos]]",
+    "[[pullagain]]",
+    "[[pullalgorithm]]",
+    "[[pulling]]",
+    "[[queue]]",
+    "[[queuetotalsize]]",
+    "[[started]]",
+    "[[strategyhwm]]",
+    "[[stream]]",
     "byobRequest",
     "close()",
     "desiredSize",
@@ -22670,6 +22691,11 @@
     "ReadableStream()",
     "ReadableStream(underlyingSource)",
     "ReadableStream(underlyingSource, strategy)",
+    "[[controller]]",
+    "[[disturbed]]",
+    "[[reader]]",
+    "[[state]]",
+    "[[storederror]]",
     "cancel",
     "cancel()",
     "cancel(reason)",
@@ -22763,21 +22789,13 @@
   ],
   "ReadableStreamBYOBReader": [
     "ReadableStreamBYOBReader(stream)",
-    "cancel()",
-    "cancel(reason)",
-    "closed",
+    "[[readintorequests]]",
     "constructor(stream)",
     "read(view)",
     "releaseLock()"
   ],
   "ReadableStreamBYOBReader/ReadableStreamBYOBReader(stream)": [
     "stream"
-  ],
-  "ReadableStreamBYOBReader/cancel()": [
-    "reason"
-  ],
-  "ReadableStreamBYOBReader/cancel(reason)": [
-    "reason"
   ],
   "ReadableStreamBYOBReader/constructor(stream)": [
     "stream"
@@ -22786,6 +22804,8 @@
     "view"
   ],
   "ReadableStreamBYOBRequest": [
+    "[[controller]]",
+    "[[view]]",
     "respond(bytesWritten)",
     "respondWithNewView(view)",
     "view"
@@ -22803,6 +22823,17 @@
   "ReadableStreamDefaultController": [
     "[[CancelSteps]]",
     "[[PullSteps]]",
+    "[[cancelalgorithm]]",
+    "[[closerequested]]",
+    "[[pullagain]]",
+    "[[pullalgorithm]]",
+    "[[pulling]]",
+    "[[queue]]",
+    "[[queuetotalsize]]",
+    "[[started]]",
+    "[[strategyhwm]]",
+    "[[strategysizealgorithm]]",
+    "[[stream]]",
     "close()",
     "desiredSize",
     "enqueue()",
@@ -22828,9 +22859,7 @@
   ],
   "ReadableStreamDefaultReader": [
     "ReadableStreamDefaultReader(stream)",
-    "cancel()",
-    "cancel(reason)",
-    "closed",
+    "[[readrequests]]",
     "constructor(stream)",
     "read()",
     "releaseLock()"
@@ -22838,14 +22867,21 @@
   "ReadableStreamDefaultReader/ReadableStreamDefaultReader(stream)": [
     "stream"
   ],
-  "ReadableStreamDefaultReader/cancel()": [
-    "reason"
-  ],
-  "ReadableStreamDefaultReader/cancel(reason)": [
-    "reason"
-  ],
   "ReadableStreamDefaultReader/constructor(stream)": [
     "stream"
+  ],
+  "ReadableStreamGenericReader": [
+    "[[closedpromise]]",
+    "[[stream]]",
+    "cancel()",
+    "cancel(reason)",
+    "closed"
+  ],
+  "ReadableStreamGenericReader/cancel()": [
+    "reason"
+  ],
+  "ReadableStreamGenericReader/cancel(reason)": [
+    "reason"
   ],
   "ReadableStreamGetReaderOptions": [
     "mode"
@@ -24171,6 +24207,11 @@
     "TransformStream(transformer)",
     "TransformStream(transformer, writableStrategy)",
     "TransformStream(transformer, writableStrategy, readableStrategy)",
+    "[[backpressure]]",
+    "[[backpressurechangepromise]]",
+    "[[controller]]",
+    "[[readable]]",
+    "[[writable]]",
     "constructor()",
     "constructor(transformer)",
     "constructor(transformer, writableStrategy)",
@@ -24219,6 +24260,9 @@
     "writableStrategy"
   ],
   "TransformStreamDefaultController": [
+    "[[flushalgorithm]]",
+    "[[stream]]",
+    "[[transformalgorithm]]",
     "desiredSize",
     "enqueue()",
     "enqueue(chunk)",
@@ -25426,6 +25470,16 @@
     "WritableStream()",
     "WritableStream(underlyingSink)",
     "WritableStream(underlyingSink, strategy)",
+    "[[backpressure]]",
+    "[[closerequest]]",
+    "[[controller]]",
+    "[[inflightcloserequest]]",
+    "[[inflightwriterequest]]",
+    "[[pendingabortrequest]]",
+    "[[state]]",
+    "[[storederror]]",
+    "[[writer]]",
+    "[[writerequests]]",
     "abort()",
     "abort(reason)",
     "close()",
@@ -25472,6 +25526,15 @@
   "WritableStreamDefaultController": [
     "[[AbortSteps]]",
     "[[ErrorSteps]]",
+    "[[abortalgorithm]]",
+    "[[closealgorithm]]",
+    "[[queue]]",
+    "[[queuetotalsize]]",
+    "[[started]]",
+    "[[strategyhwm]]",
+    "[[strategysizealgorithm]]",
+    "[[stream]]",
+    "[[writealgorithm]]",
     "error()",
     "error(e)"
   ],
@@ -25483,6 +25546,9 @@
   ],
   "WritableStreamDefaultWriter": [
     "WritableStreamDefaultWriter(stream)",
+    "[[closedpromise]]",
+    "[[readypromise]]",
+    "[[stream]]",
     "abort()",
     "abort(reason)",
     "close()",
