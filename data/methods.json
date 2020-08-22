@@ -8,15 +8,6 @@
       "shortname": "dom"
     }
   },
-  "AddSearchProvider()": {
-    "AddSearchProvider()": {
-      "args": [],
-      "for": [
-        "External"
-      ],
-      "shortname": "html"
-    }
-  },
   "AnalyserNode()": {
     "AnalyserNode(context)": {
       "args": [
@@ -118,17 +109,6 @@
         "AnimationPlaybackEvent"
       ],
       "shortname": "web-animations"
-    }
-  },
-  "Audio()": {
-    "Audio(src)": {
-      "args": [
-        "src"
-      ],
-      "for": [
-        "HTMLAudioElement"
-      ],
-      "shortname": "html"
     }
   },
   "AudioBuffer()": {
@@ -1585,18 +1565,6 @@
       "shortname": "webaudio"
     }
   },
-  "Image()": {
-    "Image(width, height)": {
-      "args": [
-        "width",
-        "height"
-      ],
-      "for": [
-        "HTMLImageElement"
-      ],
-      "shortname": "html"
-    }
-  },
   "InputEvent()": {
     "InputEvent(type)": {
       "args": [
@@ -1648,15 +1616,6 @@
         "IntersectionObserverEntry"
       ],
       "shortname": "intersection-observer"
-    }
-  },
-  "IsSearchProviderInstalled()": {
-    "IsSearchProviderInstalled()": {
-      "args": [],
-      "for": [
-        "External"
-      ],
-      "shortname": "html"
     }
   },
   "KeyboardEvent()": {
@@ -1933,20 +1892,6 @@
         "OfflineAudioContext"
       ],
       "shortname": "webaudio"
-    }
-  },
-  "Option()": {
-    "Option(text, value, defaultSelected, selected)": {
-      "args": [
-        "text",
-        "value",
-        "defaultSelected",
-        "selected"
-      ],
-      "for": [
-        "HTMLOptionElement"
-      ],
-      "shortname": "html"
     }
   },
   "OscillatorNode()": {
@@ -3879,7 +3824,6 @@
       "args": [],
       "for": [
         "AbortController",
-        "ApplicationCache",
         "FileReader",
         "IDBTransaction",
         "PaymentRequest",
@@ -3917,8 +3861,6 @@
       "for": [
         "CSSNumericValue",
         "DOMTokenList",
-        "DataTransferItemList",
-        "HTMLSelectElement",
         "RdfDataset",
         "RdfGraph"
       ],
@@ -3951,13 +3893,12 @@
       ],
       "shortname": "css-highlight-api"
     },
-    "add(element)": {
+    "add(element, before)": {
       "args": [
-        "element"
+        "element",
+        "before"
       ],
-      "for": [
-        "HTMLOptionsCollection"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "add(font)": {
@@ -4044,9 +3985,7 @@
         "offset",
         "color"
       ],
-      "for": [
-        "CanvasGradient"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4055,9 +3994,7 @@
       "args": [
         "cue"
       ],
-      "for": [
-        "TextTrack"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4154,9 +4091,7 @@
         "b",
         "transform"
       ],
-      "for": [
-        "Path2D"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4211,23 +4146,13 @@
     }
   },
   "addTextTrack()": {
-    "addTextTrack(kind)": {
-      "args": [
-        "kind"
-      ],
-      "for": [
-        "HTMLMediaElement"
-      ],
-      "shortname": "html"
-    },
-    "addTextTrack(kind, label)": {
+    "addTextTrack(kind, label, language)": {
       "args": [
         "kind",
-        "label"
+        "label",
+        "language"
       ],
-      "for": [
-        "HTMLMediaElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4312,9 +4237,7 @@
       "args": [
         "message"
       ],
-      "for": [
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4508,17 +4431,16 @@
     }
   },
   "arc()": {
-    "arc(x, y, radius, startAngle, endAngle)": {
+    "arc(x, y, radius, startAngle, endAngle, anticlockwise)": {
       "args": [
         "x",
         "y",
         "radius",
         "startAngle",
-        "endAngle"
+        "endAngle",
+        "anticlockwise"
       ],
-      "for": [
-        "CanvasPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4531,9 +4453,7 @@
         "y2",
         "radius"
       ],
-      "for": [
-        "CanvasPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4580,27 +4500,25 @@
       "args": [
         "url"
       ],
-      "for": [
-        "Location"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "assignedElements()": {
-    "assignedElements()": {
-      "args": [],
-      "for": [
-        "HTMLSlotElement"
+    "assignedElements(options)": {
+      "args": [
+        "options"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
   "assignedNodes()": {
-    "assignedNodes()": {
-      "args": [],
-      "for": [
-        "HTMLSlotElement"
+    "assignedNodes(options)": {
+      "args": [
+        "options"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4609,18 +4527,14 @@
       "args": [
         "data"
       ],
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "attachInternals()": {
     "attachInternals()": {
       "args": [],
-      "for": [
-        "HTMLElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4643,9 +4557,7 @@
   "back()": {
     "back()": {
       "args": [],
-      "for": [
-        "History"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4679,9 +4591,7 @@
   "beginPath()": {
     "beginPath()": {
       "args": [],
-      "for": [
-        "CanvasDrawPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4695,9 +4605,7 @@
         "x",
         "y"
       ],
-      "for": [
-        "CanvasPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4760,9 +4668,7 @@
       "args": [
         "data"
       ],
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4780,9 +4686,7 @@
       "args": [
         "type"
       ],
-      "for": [
-        "HTMLMediaElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4856,10 +4760,7 @@
   "captureEvents()": {
     "captureEvents()": {
       "args": [],
-      "for": [
-        "Document",
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4917,10 +4818,7 @@
   "checkValidity()": {
     "checkValidity()": {
       "args": [],
-      "for": [
-        "HTMLFieldSetElement",
-        "HTMLFormElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4948,11 +4846,8 @@
     "clear()": {
       "args": [],
       "for": [
-        "DataTransferItemList",
-        "Document",
         "FontFaceSet",
         "IDBObjectStore",
-        "Storage",
         "StylePropertyMap",
         "console"
       ],
@@ -4962,9 +4857,7 @@
   "clearData()": {
     "clearData()": {
       "args": [],
-      "for": [
-        "DataTransfer"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4983,9 +4876,7 @@
   "clearInterval()": {
     "clearInterval()": {
       "args": [],
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -4997,36 +4888,28 @@
         "w",
         "h"
       ],
-      "for": [
-        "CanvasRect"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "clearTimeout()": {
     "clearTimeout()": {
       "args": [],
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "click()": {
     "click()": {
       "args": [],
-      "for": [
-        "HTMLElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "clip()": {
     "clip()": {
       "args": [],
-      "for": [
-        "CanvasDrawPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -5083,42 +4966,30 @@
       "args": [],
       "for": [
         "AudioContext",
-        "BroadcastChannel",
-        "DedicatedWorkerGlobalScope",
-        "EventSource",
-        "HTMLDialogElement",
         "IDBDatabase",
-        "ImageBitmap",
-        "MessagePort",
         "RTCDataChannel",
         "RTCPeerConnection",
         "ReadableByteStreamController",
         "ReadableStreamDefaultController",
-        "SharedWorkerGlobalScope",
         "USBDevice",
-        "WebSocket",
-        "Window",
         "WritableStream",
         "WritableStreamDefaultWriter"
       ],
       "shortname": "html"
     },
-    "close(code)": {
+    "close(code, reason)": {
       "args": [
-        "code"
+        "code",
+        "reason"
       ],
-      "for": [
-        "WebSocket"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "closePath()": {
     "closePath()": {
       "args": [],
-      "for": [
-        "CanvasPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -5308,9 +5179,7 @@
       "args": [
         "message"
       ],
-      "for": [
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -6595,9 +6464,7 @@
       "args": [
         "string"
       ],
-      "for": [
-        "DOMStringList"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "contains(token)": {
@@ -6743,11 +6610,11 @@
     }
   },
   "convertToBlob()": {
-    "convertToBlob()": {
-      "args": [],
-      "for": [
-        "OffscreenCanvas"
+    "convertToBlob(options)": {
+      "args": [
+        "options"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -6958,9 +6825,7 @@
   "createCaption()": {
     "createCaption()": {
       "args": [],
-      "for": [
-        "HTMLTableElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -7379,22 +7244,19 @@
     }
   },
   "createImageBitmap()": {
-    "createImageBitmap(image)": {
+    "createImageBitmap(image, options)": {
       "args": [
-        "image"
+        "image",
+        "options"
       ],
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "createImageData()": {
     "createImageData()": {
       "args": [],
-      "for": [
-        "CanvasImageData"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -7429,9 +7291,7 @@
         "x1",
         "y1"
       ],
-      "for": [
-        "CanvasFillStrokeStyles"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -7594,9 +7454,7 @@
         "image",
         "repetition"
       ],
-      "for": [
-        "CanvasFillStrokeStyles"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -7727,9 +7585,7 @@
         "y1",
         "r1"
       ],
-      "for": [
-        "CanvasFillStrokeStyles"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -7793,27 +7649,21 @@
   "createTBody()": {
     "createTBody()": {
       "args": [],
-      "for": [
-        "HTMLTableElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "createTFoot()": {
     "createTFoot()": {
       "args": [],
-      "for": [
-        "HTMLTableElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "createTHead()": {
     "createTHead()": {
       "args": [],
-      "for": [
-        "HTMLTableElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -7900,7 +7750,6 @@
     "decode()": {
       "args": [],
       "for": [
-        "HTMLImageElement",
         "TextDecoder"
       ],
       "shortname": "encoding"
@@ -7958,14 +7807,13 @@
     }
   },
   "define()": {
-    "define(name, constructor)": {
+    "define(name, constructor, options)": {
       "args": [
         "name",
-        "constructor"
+        "constructor",
+        "options"
       ],
-      "for": [
-        "CustomElementRegistry"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8068,9 +7916,7 @@
   "deleteCaption()": {
     "deleteCaption()": {
       "args": [],
-      "for": [
-        "HTMLTableElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8079,9 +7925,7 @@
       "args": [
         "index"
       ],
-      "for": [
-        "HTMLTableRowElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8155,10 +7999,7 @@
       "args": [
         "index"
       ],
-      "for": [
-        "HTMLTableElement",
-        "HTMLTableSectionElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8186,18 +8027,14 @@
   "deleteTFoot()": {
     "deleteTFoot()": {
       "args": [],
-      "for": [
-        "HTMLTableElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "deleteTHead()": {
     "deleteTHead()": {
       "args": [],
-      "for": [
-        "HTMLTableElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8432,41 +8269,7 @@
       "args": [
         "element"
       ],
-      "for": [
-        "CanvasUserInterface"
-      ],
-      "shortname": "html"
-    }
-  },
-  "drawImage()": {
-    "drawImage(image, dx, dy, dw, dh)": {
-      "args": [
-        "image",
-        "dx",
-        "dy",
-        "dw",
-        "dh"
-      ],
-      "for": [
-        "CanvasDrawImage"
-      ],
-      "shortname": "html"
-    },
-    "drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)": {
-      "args": [
-        "image",
-        "sx",
-        "sy",
-        "sw",
-        "sh",
-        "dx",
-        "dy",
-        "dw",
-        "dh"
-      ],
-      "for": [
-        "CanvasDrawImage"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8495,7 +8298,7 @@
     }
   },
   "ellipse()": {
-    "ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle)": {
+    "ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise)": {
       "args": [
         "x",
         "y",
@@ -8503,11 +8306,10 @@
         "radiusY",
         "rotation",
         "startAngle",
-        "endAngle"
+        "endAngle",
+        "anticlockwise"
       ],
-      "for": [
-        "CanvasPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8573,9 +8375,7 @@
       "args": [
         "index"
       ],
-      "for": [
-        "TimeRanges"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8850,9 +8650,7 @@
   "fastSeek()": {
     "fastSeek()": {
       "args": [],
-      "for": [
-        "HTMLMediaElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8889,9 +8687,7 @@
   "fill()": {
     "fill()": {
       "args": [],
-      "for": [
-        "CanvasDrawPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -8903,18 +8699,14 @@
         "w",
         "h"
       ],
-      "for": [
-        "CanvasRect"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "fillText()": {
     "fillText()": {
       "args": [],
-      "for": [
-        "CanvasText"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9008,10 +8800,16 @@
     "focus()": {
       "args": [],
       "for": [
-        "HTMLOrSVGElement",
         "Window",
         "WindowClient"
       ],
+      "shortname": "html"
+    },
+    "focus(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9045,9 +8843,7 @@
   "forward()": {
     "forward()": {
       "args": [],
-      "for": [
-        "History"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9235,7 +9031,6 @@
         "name"
       ],
       "for": [
-        "CustomElementRegistry",
         "FormData",
         "Headers",
         "URLSearchParams"
@@ -9397,9 +9192,7 @@
   "getAsFile()": {
     "getAsFile()": {
       "args": [],
-      "for": [
-        "DataTransferItem"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9408,9 +9201,7 @@
       "args": [
         "callback"
       ],
-      "for": [
-        "DataTransferItem"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9708,23 +9499,19 @@
     }
   },
   "getContext()": {
-    "getContext(contextId)": {
+    "getContext(contextId, options)": {
       "args": [
-        "contextId"
+        "contextId",
+        "options"
       ],
-      "for": [
-        "HTMLCanvasElement",
-        "OffscreenCanvas"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "getContextAttributes()": {
     "getContextAttributes()": {
       "args": [],
-      "for": [
-        "CanvasRenderingContext2D"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9742,9 +9529,7 @@
       "args": [
         "id"
       ],
-      "for": [
-        "TextTrackCueList"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9753,9 +9538,7 @@
       "args": [
         "format"
       ],
-      "for": [
-        "DataTransfer"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9845,9 +9628,7 @@
       "args": [
         "name"
       ],
-      "for": [
-        "Document"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -9972,9 +9753,7 @@
         "sw",
         "sh"
       ],
-      "for": [
-        "CanvasImageData"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10012,9 +9791,7 @@
       "args": [
         "key"
       ],
-      "for": [
-        "Storage"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10054,9 +9831,7 @@
   "getLineDash()": {
     "getLineDash()": {
       "args": [],
-      "for": [
-        "CanvasPathDrawingStyles"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10402,9 +10177,7 @@
   "getSVGDocument()": {
     "getSVGDocument()": {
       "args": [],
-      "for": [
-        "HTMLObjectElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10449,9 +10222,7 @@
   "getStartDate()": {
     "getStartDate()": {
       "args": [],
-      "for": [
-        "HTMLMediaElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10542,10 +10313,7 @@
       "args": [
         "id"
       ],
-      "for": [
-        "TextTrackList",
-        "VideoTrackList"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10561,9 +10329,7 @@
   "getTransform()": {
     "getTransform()": {
       "args": [],
-      "for": [
-        "CanvasTransform"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10725,11 +10491,11 @@
     }
   },
   "go()": {
-    "go()": {
-      "args": [],
-      "for": [
-        "History"
+    "go(delta)": {
+      "args": [
+        "delta"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10902,9 +10668,7 @@
   "hasFocus()": {
     "hasFocus()": {
       "args": [],
-      "for": [
-        "Document"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -10971,8 +10735,7 @@
         "urls"
       ],
       "for": [
-        "ServiceWorkerGlobalScope",
-        "WorkerGlobalScope"
+        "ServiceWorkerGlobalScope"
       ],
       "shortname": "html"
     }
@@ -11130,9 +10893,7 @@
   "initMessageEvent()": {
     "initMessageEvent()": {
       "args": [],
-      "for": [
-        "MessageEvent"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -11157,9 +10918,7 @@
   "initStorageEvent()": {
     "initStorageEvent()": {
       "args": [],
-      "for": [
-        "StorageEvent"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -11227,11 +10986,11 @@
     }
   },
   "insertCell()": {
-    "insertCell()": {
-      "args": [],
-      "for": [
-        "HTMLTableRowElement"
+    "insertCell(index)": {
+      "args": [
+        "index"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -11268,12 +11027,11 @@
     }
   },
   "insertRow()": {
-    "insertRow()": {
-      "args": [],
-      "for": [
-        "HTMLTableElement",
-        "HTMLTableSectionElement"
+    "insertRow(index)": {
+      "args": [
+        "index"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -11372,9 +11130,7 @@
   "isPointInPath()": {
     "isPointInPath()": {
       "args": [],
-      "for": [
-        "CanvasDrawPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -11393,9 +11149,7 @@
   "isPointInStroke()": {
     "isPointInStroke()": {
       "args": [],
-      "for": [
-        "CanvasDrawPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -11458,10 +11212,7 @@
   "item()": {
     "item()": {
       "args": [],
-      "for": [
-        "HTMLAllCollection",
-        "Plugin"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "item(index)": {
@@ -11472,17 +11223,22 @@
         "CSSRuleList",
         "CSSStyleDeclaration",
         "DOMRectList",
-        "DOMStringList",
         "DOMTokenList",
         "FileList",
         "HTMLCollection",
-        "HTMLSelectElement",
         "MediaList",
         "NamedNodeMap",
         "NodeList",
         "StyleSheetList"
       ],
       "shortname": "cssom"
+    },
+    "item(nameOrIndex)": {
+      "args": [
+        "nameOrIndex"
+      ],
+      "for": [],
+      "shortname": "html"
     }
   },
   "iterateNext()": {
@@ -11531,9 +11287,7 @@
       "args": [
         "n"
       ],
-      "for": [
-        "Storage"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -11613,9 +11367,7 @@
         "x",
         "y"
       ],
-      "for": [
-        "CanvasPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -11636,8 +11388,7 @@
       "args": [],
       "for": [
         "FontFace",
-        "FontFaceSet",
-        "HTMLMediaElement"
+        "FontFaceSet"
       ],
       "shortname": "css-font-loading"
     },
@@ -11883,9 +11634,7 @@
   "measureText()": {
     "measureText()": {
       "args": [],
-      "for": [
-        "CanvasText"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "measureText(text, styleMap)": {
@@ -12100,7 +11849,6 @@
         "y"
       ],
       "for": [
-        "CanvasPath",
         "Window"
       ],
       "shortname": "cssom-view"
@@ -12174,9 +11922,7 @@
   "namedItem()": {
     "namedItem()": {
       "args": [],
-      "for": [
-        "Plugin"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "namedItem(key)": {
@@ -12193,10 +11939,7 @@
         "name"
       ],
       "for": [
-        "HTMLAllCollection",
-        "HTMLCollection",
-        "HTMLFormControlsCollection",
-        "HTMLSelectElement"
+        "HTMLCollection"
       ],
       "shortname": "dom"
     }
@@ -12435,9 +12178,7 @@
         "unused1",
         "unused2"
       ],
-      "for": [
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "open(url, name, features)": {
@@ -12446,9 +12187,7 @@
         "name",
         "features"
       ],
-      "for": [
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "open(url, target, features)": {
@@ -12595,9 +12334,7 @@
         "string",
         "type"
       ],
-      "for": [
-        "DOMParser"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -12605,8 +12342,7 @@
     "pause()": {
       "args": [],
       "for": [
-        "Animation",
-        "HTMLMediaElement"
+        "Animation"
       ],
       "shortname": "html"
     }
@@ -12698,8 +12434,7 @@
     "play()": {
       "args": [],
       "for": [
-        "Animation",
-        "HTMLMediaElement"
+        "Animation"
       ],
       "shortname": "html"
     }
@@ -12710,10 +12445,7 @@
         "message"
       ],
       "for": [
-        "BroadcastChannel",
         "Client",
-        "DedicatedWorkerGlobalScope",
-        "MessagePort",
         "ServiceWorker"
       ],
       "shortname": "html"
@@ -12725,9 +12457,7 @@
       ],
       "for": [
         "Client",
-        "ServiceWorker",
-        "Window",
-        "Worker"
+        "ServiceWorker"
       ],
       "shortname": "html"
     },
@@ -12737,9 +12467,7 @@
         "targetOrigin",
         "transfer"
       ],
-      "for": [
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "postMessage(message, transfer)": {
@@ -12749,10 +12477,7 @@
       ],
       "for": [
         "Client",
-        "DedicatedWorkerGlobalScope",
-        "MessagePort",
-        "ServiceWorker",
-        "Worker"
+        "ServiceWorker"
       ],
       "shortname": "html"
     }
@@ -12842,9 +12567,7 @@
   "print()": {
     "print()": {
       "args": [],
-      "for": [
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -12867,9 +12590,7 @@
         "message",
         "default"
       ],
-      "for": [
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -12905,14 +12626,13 @@
     }
   },
   "pushState()": {
-    "pushState(data, title)": {
+    "pushState(data, title, url)": {
       "args": [
         "data",
-        "title"
+        "title",
+        "url"
       ],
-      "for": [
-        "History"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -12950,9 +12670,7 @@
   "putImageData()": {
     "putImageData()": {
       "args": [],
-      "for": [
-        "CanvasImageData"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -12975,9 +12693,7 @@
         "x",
         "y"
       ],
-      "for": [
-        "CanvasPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -12995,45 +12711,35 @@
   "queryCommandEnabled()": {
     "queryCommandEnabled()": {
       "args": [],
-      "for": [
-        "Document"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "queryCommandIndeterm()": {
     "queryCommandIndeterm()": {
       "args": [],
-      "for": [
-        "Document"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "queryCommandState()": {
     "queryCommandState()": {
       "args": [],
-      "for": [
-        "Document"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "queryCommandSupported()": {
     "queryCommandSupported()": {
       "args": [],
-      "for": [
-        "Document"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "queryCommandValue()": {
     "queryCommandValue()": {
       "args": [],
-      "for": [
-        "Document"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13064,9 +12770,7 @@
       "args": [
         "callback"
       ],
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13185,9 +12889,7 @@
         "w",
         "h"
       ],
-      "for": [
-        "CanvasPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13215,9 +12917,7 @@
   "refresh()": {
     "refresh()": {
       "args": [],
-      "for": [
-        "PluginArray"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13337,19 +13037,14 @@
         "scheme",
         "url"
       ],
-      "for": [
-        "NavigatorContentUtils"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "releaseEvents()": {
     "releaseEvents()": {
       "args": [],
-      "for": [
-        "Document",
-        "Window"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13387,9 +13082,7 @@
   "reload()": {
     "reload()": {
       "args": [],
-      "for": [
-        "Location"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13409,9 +13102,7 @@
       "args": [],
       "for": [
         "ChildNode",
-        "DOMTokenList",
-        "DataTransferItemList",
-        "HTMLSelectElement"
+        "DOMTokenList"
       ],
       "shortname": "dom"
     },
@@ -13428,9 +13119,7 @@
       "args": [
         "index"
       ],
-      "for": [
-        "HTMLOptionsCollection"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "remove(tokens)": {
@@ -13493,9 +13182,7 @@
       "args": [
         "cue"
       ],
-      "for": [
-        "TextTrack"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13527,9 +13214,7 @@
       "args": [
         "key"
       ],
-      "for": [
-        "Storage"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13647,9 +13332,7 @@
       "args": [
         "url"
       ],
-      "for": [
-        "Location"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13706,14 +13389,13 @@
     }
   },
   "replaceState()": {
-    "replaceState(data, title)": {
+    "replaceState(data, title, url)": {
       "args": [
         "data",
-        "title"
+        "title",
+        "url"
       ],
-      "for": [
-        "History"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13765,10 +13447,7 @@
   "reportValidity()": {
     "reportValidity()": {
       "args": [],
-      "for": [
-        "HTMLFieldSetElement",
-        "HTMLFormElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13789,7 +13468,6 @@
         "callback"
       ],
       "for": [
-        "AnimationFrameProvider",
         "XRSession"
       ],
       "shortname": "html"
@@ -13887,11 +13565,11 @@
     }
   },
   "requestSubmit()": {
-    "requestSubmit()": {
-      "args": [],
-      "for": [
-        "HTMLFormElement"
+    "requestSubmit(submitter)": {
+      "args": [
+        "submitter"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13899,7 +13577,6 @@
     "reset()": {
       "args": [],
       "for": [
-        "HTMLFormElement",
         "USBDevice"
       ],
       "shortname": "html"
@@ -13908,9 +13585,7 @@
   "resetTransform()": {
     "resetTransform()": {
       "args": [],
-      "for": [
-        "CanvasTransform"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -13993,9 +13668,7 @@
   "restore()": {
     "restore()": {
       "args": [],
-      "for": [
-        "CanvasState"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -14072,9 +13745,7 @@
       "args": [
         "angle"
       ],
-      "for": [
-        "CanvasTransform"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "rotate(rotX)": {
@@ -14319,9 +13990,7 @@
   "save()": {
     "save()": {
       "args": [],
-      "for": [
-        "CanvasState"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -14407,9 +14076,7 @@
         "x",
         "y"
       ],
-      "for": [
-        "CanvasTransform"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -14704,9 +14371,7 @@
   "scrollPathIntoView()": {
     "scrollPathIntoView()": {
       "args": [],
-      "for": [
-        "CanvasUserInterface"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -14744,9 +14409,7 @@
   "select()": {
     "select()": {
       "args": [],
-      "for": [
-        "HTMLTextAreaElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -14844,9 +14507,7 @@
       "args": [
         "data"
       ],
-      "for": [
-        "WebSocket"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15006,9 +14667,7 @@
       "args": [
         "message"
       ],
-      "for": [
-        "HTMLFieldSetElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15018,9 +14677,7 @@
         "format",
         "data"
       ],
-      "for": [
-        "DataTransfer"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15031,9 +14688,7 @@
         "x",
         "y"
       ],
-      "for": [
-        "DataTransfer"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15072,13 +14727,12 @@
     }
   },
   "setFormValue()": {
-    "setFormValue(value)": {
+    "setFormValue(value, state)": {
       "args": [
-        "value"
+        "value",
+        "state"
       ],
-      "for": [
-        "ElementInternals"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15123,9 +14777,7 @@
   "setInterval()": {
     "setInterval()": {
       "args": [],
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15135,9 +14787,7 @@
         "key",
         "value"
       ],
-      "for": [
-        "Storage"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15155,9 +14805,7 @@
   "setLineDash()": {
     "setLineDash()": {
       "args": [],
-      "for": [
-        "CanvasPathDrawingStyles"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15337,9 +14985,7 @@
         "end",
         "selectMode"
       ],
-      "for": [
-        "HTMLTextAreaElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15374,14 +15020,13 @@
     }
   },
   "setSelectionRange()": {
-    "setSelectionRange(start, end)": {
+    "setSelectionRange(start, end, direction)": {
       "args": [
         "start",
-        "end"
+        "end",
+        "direction"
       ],
-      "for": [
-        "HTMLTextAreaElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15457,20 +15102,11 @@
   "setTimeout()": {
     "setTimeout()": {
       "args": [],
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "setTransform()": {
-    "setTransform()": {
-      "args": [],
-      "for": [
-        "CanvasPattern"
-      ],
-      "shortname": "html"
-    },
     "setTransform(a, b, c, d, e, f)": {
       "args": [
         "a",
@@ -15480,9 +15116,14 @@
         "e",
         "f"
       ],
-      "for": [
-        "CanvasPattern"
+      "for": [],
+      "shortname": "html"
+    },
+    "setTransform(transform)": {
+      "args": [
+        "transform"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15496,30 +15137,13 @@
     }
   },
   "setValidity()": {
-    "setValidity()": {
-      "args": [],
-      "for": [
-        "ElementInternals"
-      ],
-      "shortname": "html"
-    },
-    "setValidity(flags)": {
-      "args": [
-        "flags"
-      ],
-      "for": [
-        "ElementInternals"
-      ],
-      "shortname": "html"
-    },
-    "setValidity(flags, message)": {
+    "setValidity(flags, message, anchor)": {
       "args": [
         "flags",
-        "message"
+        "message",
+        "anchor"
       ],
-      "for": [
-        "ElementInternals"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15571,7 +15195,6 @@
     "show()": {
       "args": [],
       "for": [
-        "HTMLDialogElement",
         "PaymentRequest"
       ],
       "shortname": "html"
@@ -15580,9 +15203,7 @@
   "showModal()": {
     "showModal()": {
       "args": [],
-      "for": [
-        "HTMLDialogElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15788,8 +15409,6 @@
       "for": [
         "AudioBufferSourceNode",
         "AudioScheduledSourceNode",
-        "HTMLMarqueeElement",
-        "MessagePort",
         "Sensor"
       ],
       "shortname": "generic-sensor"
@@ -15798,9 +15417,7 @@
       "args": [
         "index"
       ],
-      "for": [
-        "TimeRanges"
-      ],
+      "for": [],
       "shortname": "html"
     },
     "start(when)": {
@@ -15872,20 +15489,20 @@
     }
   },
   "stepDown()": {
-    "stepDown()": {
-      "args": [],
-      "for": [
-        "HTMLInputElement"
+    "stepDown(n)": {
+      "args": [
+        "n"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
   "stepUp()": {
-    "stepUp()": {
-      "args": [],
-      "for": [
-        "HTMLInputElement"
+    "stepUp(n)": {
+      "args": [
+        "n"
       ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15894,10 +15511,8 @@
       "args": [],
       "for": [
         "AudioScheduledSourceNode",
-        "HTMLMarqueeElement",
         "RTCRtpTransceiver",
         "Sensor",
-        "Window",
         "mediastreamtrack"
       ],
       "shortname": "generic-sensor"
@@ -15969,9 +15584,7 @@
   "stroke()": {
     "stroke()": {
       "args": [],
-      "for": [
-        "CanvasDrawPath"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -15983,18 +15596,14 @@
         "w",
         "h"
       ],
-      "for": [
-        "CanvasRect"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "strokeText()": {
     "strokeText()": {
       "args": [],
-      "for": [
-        "CanvasText"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16019,9 +15628,7 @@
   "submit()": {
     "submit()": {
       "args": [],
-      "for": [
-        "HTMLFormElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16099,9 +15706,7 @@
   "swapCache()": {
     "swapCache()": {
       "args": [],
-      "for": [
-        "ApplicationCache"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16136,9 +15741,7 @@
   "taintEnabled()": {
     "taintEnabled()": {
       "args": [],
-      "for": [
-        "NavigatorID"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16166,8 +15769,7 @@
     "terminate()": {
       "args": [],
       "for": [
-        "TransformStreamDefaultController",
-        "Worker"
+        "TransformStreamDefaultController"
       ],
       "shortname": "html"
     }
@@ -16258,41 +15860,23 @@
     }
   },
   "toBlob()": {
-    "toBlob(callback)": {
-      "args": [
-        "callback"
-      ],
-      "for": [
-        "HTMLCanvasElement"
-      ],
-      "shortname": "html"
-    },
-    "toBlob(callback, type)": {
+    "toBlob(callback, type, quality)": {
       "args": [
         "callback",
-        "type"
+        "type",
+        "quality"
       ],
-      "for": [
-        "HTMLCanvasElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
   "toDataURL()": {
-    "toDataURL()": {
-      "args": [],
-      "for": [
-        "HTMLCanvasElement"
-      ],
-      "shortname": "html"
-    },
-    "toDataURL(type)": {
+    "toDataURL(type, quality)": {
       "args": [
-        "type"
+        "type",
+        "quality"
       ],
-      "for": [
-        "HTMLCanvasElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16497,9 +16081,7 @@
   "transferControlToOffscreen()": {
     "transferControlToOffscreen()": {
       "args": [],
-      "for": [
-        "HTMLCanvasElement"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16508,9 +16090,7 @@
       "args": [
         "imageBitmap"
       ],
-      "for": [
-        "ImageBitmapRenderingContext"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16541,9 +16121,7 @@
   "transferToImageBitmap()": {
     "transferToImageBitmap()": {
       "args": [],
-      "for": [
-        "OffscreenCanvas"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16557,9 +16135,7 @@
         "e",
         "f"
       ],
-      "for": [
-        "CanvasTransform"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16638,9 +16214,7 @@
         "x",
         "y"
       ],
-      "for": [
-        "CanvasTransform"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16739,9 +16313,7 @@
         "scheme",
         "url"
       ],
-      "for": [
-        "NavigatorContentUtils"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -16749,7 +16321,6 @@
     "update()": {
       "args": [],
       "for": [
-        "ApplicationCache",
         "ServiceWorkerRegistration"
       ],
       "shortname": "html"
@@ -16843,9 +16414,7 @@
       "args": [
         "root"
       ],
-      "for": [
-        "CustomElementRegistry"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
@@ -17010,9 +16579,7 @@
       "args": [
         "name"
       ],
-      "for": [
-        "CustomElementRegistry"
-      ],
+      "for": [],
       "shortname": "html"
     }
   },
