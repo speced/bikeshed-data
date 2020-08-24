@@ -369,6 +369,16 @@ https://webaudio.github.io/web-audio-api/#callback-decodesuccesscallback-paramet
 1
 1
 -
+DedicatedWorkerGlobalScope
+interface
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope
+1
+1
+-
 Default
 extended-attribute
 webidl
@@ -1002,7 +1012,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-object-declare
 1
 1
-object
+HTMLObjectElement
 -
 declared
 dfn
@@ -1246,6 +1256,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decode
 1
 1
+HTMLImageElement
 -
 decode(input)
 method
@@ -1431,7 +1442,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decoding
 1
 1
-img
+HTMLImageElement
 -
 decoding
 dfn
@@ -1596,16 +1607,6 @@ https://w3c.github.io/ServiceWorker/#dfn-dedicatedworker-client
 1
 1
 service worker client
--
-dedicatedworkerglobalscope
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope
-
-1
 -
 deep
 argument
@@ -1789,7 +1790,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-track-default
 1
 1
-track
+HTMLTrackElement
 -
 default
 attr-value
@@ -1810,7 +1811,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/input.html#dom-input-value-default
 1
 1
-input-value
+HTMLTrackElement
 -
 default
 dfn
@@ -1831,7 +1832,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-colorspaceconversion-default
 1
 1
-colorspaceconversion
+HTMLTrackElement
 -
 default
 attribute
@@ -1842,7 +1843,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-premultiplyalpha-default
 1
 1
-premultiplyalpha
+HTMLTrackElement
 -
 default
 enum-value
@@ -2610,7 +2611,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/input.html#dom-input-defaultchecked
 1
 1
-input
+HTMLInputElement
 -
 defaultGraph
 attribute
@@ -2632,7 +2633,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-defaultmuted
 1
 1
-media
+HTMLMediaElement
 -
 defaultPlaybackRate
 attribute
@@ -2643,7 +2644,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-defaultplaybackrate
 1
 1
-media
+HTMLMediaElement
 -
 defaultPrevented
 attribute
@@ -2665,7 +2666,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-defaultselected
 1
 1
-option
+HTMLOptionElement
 -
 defaultValue
 attribute
@@ -2676,7 +2677,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/input.html#dom-input-defaultvalue
 1
 1
-input
+HTMLInputElement
 -
 defaultValue
 attribute
@@ -2687,7 +2688,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-defaultvalue
 1
 1
-textarea
+HTMLTextAreaElement
 -
 defaultValue
 attribute
@@ -2698,7 +2699,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-output-defaultvalue
 1
 1
-output
+HTMLOutputElement
 -
 defaultValue
 attribute
@@ -2753,7 +2754,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/window-object.html#dom-document-defaultview
 1
 1
-document
+Document
 -
 defaultview
 dfn
@@ -2784,7 +2785,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/scripting.html#dom-script-defer
 1
 1
-script
+HTMLScriptElement
 -
 define an algorithm
 dfn
@@ -2966,7 +2967,7 @@ https://heycam.github.io/webidl/#define-the-unforgeable-regular-operations
 
 1
 -
-define(name, constructor, options)
+define(name, constructor)
 method
 html
 html
@@ -2975,6 +2976,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define
 1
 1
+CustomElementRegistry
 -
 defined
 dfn
@@ -4116,6 +4118,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/tables.html#dom-table-deletecaption
 1
 1
+HTMLTableElement
 -
 deleteCell(index)
 method
@@ -4126,6 +4129,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/tables.html#dom-tr-deletecell
 1
 1
+HTMLTableRowElement
 -
 deleteContents()
 method
@@ -4213,6 +4217,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/tables.html#dom-table-deleterow
 1
 1
+HTMLTableElement
 -
 deleteRow(index)
 method
@@ -4223,6 +4228,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/tables.html#dom-tbody-deleterow
 1
 1
+HTMLTableSectionElement
 -
 deleteRule
 method
@@ -4321,6 +4327,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/tables.html#dom-table-deletetfoot
 1
 1
+HTMLTableElement
 -
 deleteTHead()
 method
@@ -4331,6 +4338,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/tables.html#dom-table-deletethead
 1
 1
+HTMLTableElement
 -
 deleted
 dfn
@@ -5067,7 +5075,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetype-description
 1
 1
-mimetype
+MimeType
 -
 description
 attribute
@@ -5078,7 +5086,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-description
 1
 1
-plugin
+MimeType
 -
 descriptions
 element-attr
@@ -5696,7 +5704,7 @@ https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-desynchronized
 1
 -
 desynchronized
-attribute
+dict-member
 html
 html
 1
@@ -5704,7 +5712,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-desynchronized
 1
 1
-canvasrenderingcontext2dsettings
+CanvasRenderingContext2DSettings
 -
 detach
 dfn

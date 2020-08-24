@@ -151,7 +151,7 @@ https://drafts.csswg.org/selectors-4/#local-link-pseudo
 1
 -
 LOADED
-interface
+const
 html
 html
 1
@@ -159,6 +159,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-track-loaded
 1
 1
+HTMLTrackElement
 -
 LOADING
 const
@@ -172,7 +173,7 @@ https://w3c.github.io/FileAPI/#dom-filereader-loading
 FileReader
 -
 LOADING
-interface
+const
 html
 html
 1
@@ -180,6 +181,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-track-loading
 1
 1
+HTMLTrackElement
 -
 LOADING
 const
@@ -209,6 +211,16 @@ json-ld11-api
 1
 snapshot
 https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentoptions
+1
+1
+-
+Location
+interface
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/history.html#location
 1
 1
 -
@@ -394,6 +406,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-load
 1
 1
+HTMLMediaElement
 -
 load(font)
 method
@@ -620,7 +633,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-loading
 1
 1
-img
+HTMLImageElement
 -
 loading
 element-attr
@@ -642,7 +655,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-loading
 1
 1
-iframe
+HTMLIFrameElement
 -
 loading
 dfn
@@ -1398,6 +1411,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage
 1
 1
+WindowLocalStorage
 -
 localTime
 attribute
@@ -1555,7 +1569,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/history.html#dom-document-location
 1
 1
-document
+Window
 -
 location
 attribute
@@ -1566,16 +1580,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/history.html#dom-location
 1
 1
--
-location
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/history.html#location
-
-1
+Window
 -
 location
 attribute
@@ -1586,7 +1591,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-location
 1
 1
-workerglobalscope
+WorkerGlobalScope
 -
 location
 attribute
@@ -1660,7 +1665,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/window-object.html#dom-window-locationbar
 1
 1
-window
+Window
 -
 lock
 dfn
@@ -2019,7 +2024,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-frame-longdesc
 1
 1
-frame
+HTMLFrameElement
 -
 longDesc
 attribute
@@ -2030,7 +2035,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-iframe-longdesc
 1
 1
-iframe
+HTMLIFrameElement
 -
 longDesc
 attribute
@@ -2041,7 +2046,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-img-longdesc
 1
 1
-img
+HTMLImageElement
 -
 longdesc
 element-attr
@@ -2239,7 +2244,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-loop
 1
 1
-media
+HTMLMediaElement
 -
 loop
 element-attr
@@ -2261,7 +2266,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-marquee-loop
 1
 1
-marquee
+HTMLMarqueeElement
 -
 loop
 attribute
@@ -2500,7 +2505,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-elements.html#dom-meter-low
 1
 1
-meter
+HTMLMeterElement
 -
 low
 attribute
@@ -2511,7 +2516,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-imagesmoothingquality-low
 1
 1
-context-2d-imagesmoothingquality
+HTMLMeterElement
 -
 low
 attribute
@@ -2522,7 +2527,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-resizequality-low
 1
 1
-resizequality
+HTMLMeterElement
 -
 low
 value
@@ -3011,5 +3016,5 @@ snapshot
 https://html.spec.whatwg.org/multipage/obsolete.html#dom-img-lowsrc
 1
 1
-img
+HTMLImageElement
 -

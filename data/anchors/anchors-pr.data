@@ -150,6 +150,16 @@ https://www.w3.org/TR/css-properties-values-api-1/#dom-cssrule-property_rule
 1
 CSSRule
 -
+PremultiplyAlpha
+enum
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#premultiplyalpha
+1
+1
+-
 Prevent Silent Access
 abstract-op
 credential-management-1
@@ -259,6 +269,26 @@ webidl
 1
 current
 https://heycam.github.io/webidl/#idl-promise
+1
+1
+-
+PromiseRejectionEvent
+interface
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectionevent
+1
+1
+-
+PromiseRejectionEventInit
+dictionary
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectioneventinit
 1
 1
 -
@@ -1372,7 +1402,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-preload
 1
 1
-media
+HTMLMediaElement
 -
 preloadResponse
 attribute
@@ -1428,7 +1458,7 @@ https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-premu
 premultiplyalpha
 -
 premultiplyAlpha
-attribute
+dict-member
 html
 html
 1
@@ -1436,17 +1466,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagebitmapoptions-premultiplyalpha
 1
 1
-imagebitmapoptions
--
-premultiplyalpha
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#premultiplyalpha
-
-1
+ImageBitmapOptions
 -
 preparation-time document
 dfn
@@ -1947,7 +1967,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/media.html#dom-media-preservespitch
 1
 1
-media
+HTMLMediaElement
 -
 pressure
 attribute
@@ -2092,7 +2112,7 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#dom-event-preventdefa
 1
 -
 preventScroll
-attribute
+dict-member
 html
 html
 1
@@ -2100,7 +2120,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/interaction.html#dom-focusoptions-preventscroll
 1
 1
-focusoptions
+FocusOptions
 -
 preventSilentAccess()
 method
@@ -2832,6 +2852,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-print
 1
 1
+Window
 -
 printable area
 dfn
@@ -3818,7 +3839,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-product
 1
 1
-navigator
+NavigatorID
 -
 product id
 dfn
@@ -3903,7 +3924,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-productsub
 1
 1
-navigator
+NavigatorID
 -
 profile
 element-attr
@@ -4336,7 +4357,7 @@ https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-promise
 layout api work task
 -
 promise
-attribute
+dict-member
 html
 html
 1
@@ -4344,7 +4365,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/webappapis.html#dom-promiserejectionevent-promise
 1
 1
-promiserejectionevent
+PromiseRejectionEventInit
 -
 promise
 dfn
@@ -4399,26 +4420,6 @@ https://heycam.github.io/webidl/#dfn-promise-type
 1
 1
 -
-promiserejectionevent
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectionevent
-
-1
--
-promiserejectioneventinit
-dfn
-html
-html
-1
-snapshot
-https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectioneventinit
-
-1
--
 prompt the user to choose
 dfn
 permissions-1
@@ -4448,6 +4449,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-prompt
 1
 1
+Window
 -
 prompting the user to choose
 dfn
@@ -5350,7 +5352,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-protocol
 1
 1
-hyperlink
+HTMLHyperlinkElementUtils
 -
 protocol
 attribute
@@ -5361,7 +5363,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/history.html#dom-location-protocol
 1
 1
-location
+Location
 -
 protocol
 attribute
@@ -5372,7 +5374,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-protocol
 1
 1
-websocket
+WebSocket
 -
 protocol
 attribute
@@ -5383,7 +5385,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/workers.html#dom-workerlocation-protocol
 1
 1
-workerlocation
+WorkerLocation
 -
 protocol
 attribute
