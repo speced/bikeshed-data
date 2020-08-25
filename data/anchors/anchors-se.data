@@ -2652,17 +2652,6 @@ webrtc-1
 webrtc
 1
 snapshot
-https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send
-1
-1
-RTCDataChannel
--
-send
-method
-webrtc-1
-webrtc
-1
-snapshot
 https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send!overload-1
 1
 1
@@ -2720,17 +2709,6 @@ https://html.spec.whatwg.org/multipage/form-elements.html#send-select-update-not
 
 1
 -
-send!overload-1
-method
-webrtc-1
-webrtc
-1
-snapshot
-https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send!overload-1
-1
-1
-RTCDataChannel
--
 send!overload-1()
 method
 webrtc-1
@@ -2742,13 +2720,13 @@ https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send!overload-1
 1
 RTCDataChannel
 -
-send!overload-2
+send!overload-1(data)
 method
 webrtc-1
 webrtc
 1
 snapshot
-https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send!overload-2
+https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send!overload-1
 1
 1
 RTCDataChannel
@@ -2764,7 +2742,18 @@ https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send!overload-2
 1
 RTCDataChannel
 -
-send!overload-3
+send!overload-2(data)
+method
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send!overload-2
+1
+1
+RTCDataChannel
+-
+send!overload-3()
 method
 webrtc-1
 webrtc
@@ -2775,7 +2764,7 @@ https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send!overload-3
 1
 RTCDataChannel
 -
-send!overload-3()
+send!overload-3(data)
 method
 webrtc-1
 webrtc
@@ -2849,6 +2838,17 @@ https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-send
 1
 1
 WebSocket
+-
+send(data)
+method
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-send
+1
+1
+RTCDataChannel
 -
 sendEncodings
 dict-member
@@ -3347,16 +3347,6 @@ https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects
 1
 1
 -
-serializable objects
-dfn
-webrtc-1
-webrtc
-1
-snapshot
-https://www.w3.org/TR/webrtc/#dfn-serializable-objects
-
-1
--
 serializable types
 dfn
 webidl
@@ -3415,16 +3405,6 @@ html
 snapshot
 https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps
 1
-1
--
-serialization steps
-dfn
-webrtc-1
-webrtc
-1
-snapshot
-https://www.w3.org/TR/webrtc/#dfn-serialization-steps
-
 1
 -
 serialize a calc() value
@@ -7271,17 +7251,6 @@ https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver-setcodecpreferences
 1
 RTCRtpTransceiver
 -
-setCodecPreferences
-method
-webrtc-1
-webrtc
-1
-snapshot
-https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver-setcodecpreferences
-1
-1
-RTCRtpTransceiver
--
 setCodecPreferences()
 method
 webrtc-1
@@ -7293,16 +7262,16 @@ https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver-setcodecpreferences
 1
 RTCRtpTransceiver
 -
-setConfiguration
+setCodecPreferences(codecs)
 method
 webrtc-1
 webrtc
 1
 snapshot
-https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setconfiguration
+https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver-setcodecpreferences
 1
 1
-RTCPeerConnection
+RTCRtpTransceiver
 -
 setConfiguration
 method
@@ -7316,6 +7285,17 @@ https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setconfiguration
 RTCPeerConnection
 -
 setConfiguration()
+method
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setconfiguration
+1
+1
+RTCPeerConnection
+-
+setConfiguration(, configuration)
 method
 webrtc-1
 webrtc
@@ -7519,28 +7499,6 @@ webrtc-1
 webrtc
 1
 snapshot
-https://www.w3.org/TR/webrtc/#dom-peerconnection-setlocaldescription
-1
-1
-RTCPeerConnection
--
-setLocalDescription
-method
-webrtc-1
-webrtc
-1
-snapshot
-https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setlocaldescription!overload-1
-1
-1
-RTCPeerConnection
--
-setLocalDescription!overload-1
-method
-webrtc-1
-webrtc
-1
-snapshot
 https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setlocaldescription!overload-1
 1
 1
@@ -7557,7 +7515,40 @@ https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setlocaldescription!overload
 1
 RTCPeerConnection
 -
+setLocalDescription!overload-1(successCallback, failureCallback)
+method
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setlocaldescription!overload-1
+1
+1
+RTCPeerConnection
+-
+setLocalDescription!overload-1(successCallback, failureCallback, description)
+method
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setlocaldescription!overload-1
+1
+1
+RTCPeerConnection
+-
 setLocalDescription()
+method
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#dom-peerconnection-setlocaldescription
+1
+1
+RTCPeerConnection
+-
+setLocalDescription(, description)
 method
 webrtc-1
 webrtc
@@ -7667,7 +7658,7 @@ https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setparameters
 1
 RTCRtpSender
 -
-setParameters
+setParameters()
 method
 webrtc-1
 webrtc
@@ -7678,7 +7669,7 @@ https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setparameters
 1
 RTCRtpSender
 -
-setParameters()
+setParameters(parameters)
 method
 webrtc-1
 webrtc
@@ -7871,28 +7862,6 @@ webrtc-1
 webrtc
 1
 snapshot
-https://www.w3.org/TR/webrtc/#dom-peerconnection-setremotedescription
-1
-1
-RTCPeerConnection
--
-setRemoteDescription
-method
-webrtc-1
-webrtc
-1
-snapshot
-https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setremotedescription!overload-1
-1
-1
-RTCPeerConnection
--
-setRemoteDescription!overload-1
-method
-webrtc-1
-webrtc
-1
-snapshot
 https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setremotedescription!overload-1
 1
 1
@@ -7909,7 +7878,29 @@ https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setremotedescription!overloa
 1
 RTCPeerConnection
 -
+setRemoteDescription!overload-1(description, successCallback, failureCallback)
+method
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-setremotedescription!overload-1
+1
+1
+RTCPeerConnection
+-
 setRemoteDescription()
+method
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#dom-peerconnection-setremotedescription
+1
+1
+RTCPeerConnection
+-
+setRemoteDescription(description)
 method
 webrtc-1
 webrtc
@@ -8030,7 +8021,7 @@ https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setstreams
 1
 RTCRtpSender
 -
-setStreams
+setStreams()
 method
 webrtc-1
 webrtc
@@ -8041,7 +8032,7 @@ https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setstreams
 1
 RTCRtpSender
 -
-setStreams()
+setStreams(, streams)
 method
 webrtc-1
 webrtc
@@ -8276,6 +8267,16 @@ https://html.spec.whatwg.org/multipage/offline.html#concept-appcache-manifest-se
 
 1
 -
+setting an rtcsessiondescription
+dfn
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#set-description
+
+1
+-
 setting the indexed value
 dfn
 webidl
@@ -8297,6 +8298,26 @@ https://heycam.github.io/webidl/#observable-array-exotic-object-set-the-length
 
 1
 observable array exotic object
+-
+setting the local rtcsessiondescription
+dfn
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#set-local-description
+
+1
+-
+setting the remote rtcsessiondescription
+dfn
+webrtc-1
+webrtc
+1
+snapshot
+https://www.w3.org/TR/webrtc/#set-remote-description
+
+1
 -
 setting the search origin
 dfn
