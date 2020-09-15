@@ -1597,6 +1597,15 @@
       "shortname": "html"
     }
   },
+  "ImageData()": {
+    "ImageData()": {
+      "args": [],
+      "for": [
+        "ImageData"
+      ],
+      "shortname": "html"
+    }
+  },
   "InputEvent()": {
     "InputEvent(type)": {
       "args": [
@@ -4595,6 +4604,7 @@
         "AudioContext",
         "BroadcastChannel",
         "DedicatedWorkerGlobalScope",
+        "Document",
         "EventSource",
         "HTMLDialogElement",
         "IDBDatabase",
@@ -8009,7 +8019,9 @@
       "args": [
         "..."
       ],
-      "for": [],
+      "for": [
+        "Document"
+      ],
       "shortname": "html"
     }
   },
@@ -8018,7 +8030,9 @@
       "args": [
         "..."
       ],
-      "for": [],
+      "for": [
+        "Document"
+      ],
       "shortname": "html"
     }
   },
@@ -8682,9 +8696,17 @@
     "focus()": {
       "args": [],
       "for": [
-        "HTMLOrSVGElement",
         "Window",
         "WindowClient"
+      ],
+      "shortname": "html"
+    },
+    "focus(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "Window"
       ],
       "shortname": "html"
     }
@@ -12083,10 +12105,9 @@
     "open()": {
       "args": [],
       "for": [
-        "USBDevice",
-        "Window"
+        "USBDevice"
       ],
-      "shortname": "html"
+      "shortname": "webusb"
     },
     "open(cacheName)": {
       "args": [
@@ -14495,6 +14516,7 @@
     "select()": {
       "args": [],
       "for": [
+        "HTMLInputElement",
         "HTMLTextAreaElement"
       ],
       "shortname": "html"
