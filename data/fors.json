@@ -826,10 +826,8 @@
     "Create a FederatedCredential from FederatedCredentialInit",
     "Create a PasswordCredential from PasswordCredentialData",
     "Create a PasswordCredential from an HTMLFormElement",
-    "CreateReadableByteStream",
     "CreateReadableStream",
     "CreateSyntheticModule",
-    "CreateTransformStream",
     "CreateWritableStream",
     "Credential",
     "CredentialCreationOptions",
@@ -1157,7 +1155,6 @@
     "InvalidStateError",
     "Is an environment settings object contextually secure?",
     "IsNonNegativeNumber",
-    "IsReadableStreamDisturbed",
     "IsReadableStreamLocked",
     "IsWritableStreamLocked",
     "IterationCompositeOperation",
@@ -4057,6 +4054,7 @@
     "create an element for a token",
     "create an entry",
     "create an event",
+    "create an identity transformstream",
     "create an imagedata object",
     "create an inheritance stack",
     "create an interface object",
@@ -4092,6 +4090,7 @@
     "creating a type",
     "creating an element",
     "creating an event",
+    "creating an identity transformstream",
     "creating an observable array exotic object",
     "creating an operation function",
     "creating-a-device-info-object",
@@ -4708,6 +4707,7 @@
     "dtend",
     "dtstart",
     "duplex printing",
+    "duplex stream",
     "duplicate-attribute",
     "dur",
     "duration",
@@ -4842,6 +4842,7 @@
     "endpoint",
     "endpoint descriptor",
     "endpoint group",
+    "endpoint pair",
     "endpoint-on-the-path",
     "ends for any reason other than the stop() method being invoked",
     "ends for any reason other than the {{mediastreamtrack/stop()}} method being invoked",
@@ -22825,15 +22826,22 @@
     "constructor()",
     "constructor(underlyingSource)",
     "constructor(underlyingSource, strategy)",
+    "create",
+    "create a proxy",
+    "creating",
+    "creating a proxy",
     "disturbed",
+    "enqueue",
     "enqueue bytes",
     "error",
     "errored",
     "get a reader",
     "getReader()",
     "getReader(options)",
+    "getting a reader",
     "locked",
     "need more data",
+    "needs more data",
     "options",
     "pipeThrough(transform)",
     "pipeThrough(transform, options)",
@@ -22842,8 +22850,10 @@
     "read a chunk",
     "read all bytes",
     "readable",
+    "set up",
     "tee",
-    "tee()"
+    "tee()",
+    "teeing"
   ],
   "ReadableStream async iterator": [
     "prevent cancel",
@@ -22879,6 +22889,12 @@
     "strategy",
     "underlyingSource"
   ],
+  "ReadableStream/create": [
+    "cancelalgorithm",
+    "highwatermark",
+    "pullalgorithm",
+    "sizealgorithm"
+  ],
   "ReadableStream/getReader()": [
     "options"
   ],
@@ -22900,6 +22916,12 @@
   "ReadableStream/pipeTo(destination, options)": [
     "destination",
     "options"
+  ],
+  "ReadableStream/set up": [
+    "cancelalgorithm",
+    "highwatermark",
+    "pullalgorithm",
+    "sizealgorithm"
   ],
   "ReadableStreamBYOBReadResult": [
     "done",
@@ -22978,8 +23000,13 @@
   "ReadableStreamDefaultReader": [
     "ReadableStreamDefaultReader(stream)",
     "[[readrequests]]",
+    "cancel",
     "constructor(stream)",
+    "read a chunk",
+    "read all bytes",
     "read()",
+    "reading all bytes",
+    "release",
     "releaseLock()"
   ],
   "ReadableStreamDefaultReader/ReadableStreamDefaultReader(stream)": [
@@ -24351,7 +24378,12 @@
     "constructor(transformer)",
     "constructor(transformer, writableStrategy)",
     "constructor(transformer, writableStrategy, readableStrategy)",
+    "create",
+    "creating",
+    "enqueue",
+    "error",
     "readable",
+    "terminate",
     "writable"
   ],
   "TransformStream/TransformStream()": [
@@ -24393,6 +24425,10 @@
     "readableStrategy",
     "transformer",
     "writableStrategy"
+  ],
+  "TransformStream/create": [
+    "flushalgorithm",
+    "transformalgorithm"
   ],
   "TransformStreamDefaultController": [
     "[[flushalgorithm]]",
@@ -25630,14 +25666,23 @@
     "[[storederror]]",
     "[[writer]]",
     "[[writerequests]]",
+    "abort",
     "abort()",
     "abort(reason)",
+    "aborting",
+    "close",
     "close()",
+    "closing",
     "constructor()",
     "constructor(underlyingSink)",
     "constructor(underlyingSink, strategy)",
+    "create",
+    "creating",
+    "get a writer",
     "getWriter()",
-    "locked"
+    "getting a writer",
+    "locked",
+    "set up"
   ],
   "WritableStream/WritableStream()": [
     "strategy",
@@ -25668,6 +25713,20 @@
   "WritableStream/constructor(underlyingSink, strategy)": [
     "strategy",
     "underlyingSink"
+  ],
+  "WritableStream/create": [
+    "abortalgorithm",
+    "closealgorithm",
+    "highwatermark",
+    "sizealgorithm",
+    "writealgorithm"
+  ],
+  "WritableStream/set up": [
+    "abortalgorithm",
+    "closealgorithm",
+    "highwatermark",
+    "sizealgorithm",
+    "writealgorithm"
   ],
   "WritableStreamController": [
     "[[AbortSteps]]",
@@ -25706,9 +25765,12 @@
     "constructor(stream)",
     "desiredSize",
     "ready",
+    "release",
     "releaseLock()",
+    "write a chunk",
     "write()",
-    "write(chunk)"
+    "write(chunk)",
+    "writing a chunk"
   ],
   "WritableStreamDefaultWriter/WritableStreamDefaultWriter(stream)": [
     "stream"
