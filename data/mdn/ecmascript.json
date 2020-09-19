@@ -634,7 +634,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "flatMap",
             "slug": "JavaScript/Reference/Global_Objects/Array/flatMap",
-            "summary": "The flatMap() method first maps each element using a mapping function, then flattens the result into a new array. It is identical to a map() followed by a flat() of depth 1, but flatMap() is often quite useful, as merging both into one method is slightly more efficient.",
+            "summary": "The flatMap() method returns a new array formed by applying a given callback function to each element of the array, and then flattening the result by one level. It is identical to a map() followed by a flat() of depth 1, but slightly more efficient than calling those two methods separately.",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -1403,7 +1403,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "push",
             "slug": "JavaScript/Reference/Global_Objects/Array/push",
-            "summary": "The push() method adds zero or more elements to the end of an array and returns the new length of the array.",
+            "summary": "The push() method adds one or more elements to the end of an array and returns the new length of the array.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -4694,7 +4694,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/BigInt.json",
             "name": "BigInt",
@@ -4729,10 +4730,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -4751,7 +4752,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/BigInt.json",
             "name": "asIntN",
@@ -4786,10 +4788,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -4808,7 +4810,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/BigInt.json",
             "name": "asUintN",
@@ -4843,10 +4846,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -4865,7 +4868,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/BigInt.json",
             "name": "toString",
@@ -4900,10 +4904,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -4922,7 +4926,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/BigInt.json",
             "name": "valueOf",
@@ -4957,10 +4962,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -4979,7 +4984,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/BigInt.json",
             "name": "BigInt",
@@ -5014,10 +5020,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -10072,7 +10078,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "toTimeString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toTimeString",
-            "summary": "The toTimeString() method returns the time portion of a Date object in human readable form in American English.",
+            "summary": "The toTimeString() method returns the time portion of a Date object in human readable form in English.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12019,7 +12025,7 @@
             "filename": "javascript/builtins/Function.json",
             "name": "name",
             "slug": "JavaScript/Reference/Global_Objects/Function/name",
-            "summary": "A Function object's read-only name property indicates the function's name as specified when it was created, or it may be rather anonymous or ''(an empty string) for functions created anonymously.",
+            "summary": "A Function object's read-only name property indicates the function's name as specified when it was created, or it may be either anonymous or '' (an empty string) for functions created anonymously.",
             "support": {
                 "chrome": {
                     "version_added": "15"
@@ -13529,7 +13535,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/Map.json",
             "name": "@@toStringTag",
@@ -13564,10 +13571,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -17982,7 +17989,7 @@
             "filename": "javascript/builtins/Object.json",
             "name": "getOwnPropertyDescriptor",
             "slug": "JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor",
-            "summary": "The Object.getOwnPropertyDescriptor() method returns a property descriptor for an own property (that is, one directly present on an object and not in the object's prototype chain) of a given object.",
+            "summary": "The Object.getOwnPropertyDescriptor() method returns an object describing the configuration of a specific property on a given object (that is, one directly present on an object and not in the object's prototype chain). The object returned is mutable but mutating it has no effect on the original property's configuration.",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -19706,7 +19713,7 @@
             "filename": "javascript/builtins/Promise.json",
             "name": "Promise",
             "slug": "JavaScript/Reference/Global_Objects/Promise",
-            "summary": "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
+            "summary": "The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.",
             "support": {
                 "chrome": {
                     "version_added": "32"
@@ -20168,7 +20175,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/Proxy.json",
             "name": "getPrototypeOf",
@@ -20203,10 +20211,10 @@
                     "version_added": "36"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -22377,7 +22385,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/RegExp.json",
             "name": "@@matchAll",
@@ -22412,10 +22421,10 @@
                     "version_added": "52"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -23531,9 +23540,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "SharedArrayBuffer",
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer/SharedArrayBuffer",
@@ -23589,6 +23595,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -23665,9 +23674,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "byteLength",
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength",
@@ -23723,6 +23729,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -23799,9 +23808,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "slice",
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer/slice",
@@ -23857,6 +23863,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -23933,9 +23942,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "SharedArrayBuffer",
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer",
@@ -23991,6 +23997,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "57",
                         "flags": [
@@ -26318,7 +26327,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/String.json",
             "name": "@@iterator",
@@ -26381,10 +26391,10 @@
                     "version_added": "25"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9"
                 },
                 "samsunginternet_android": {
                     "version_added": "3.0"
@@ -26950,7 +26960,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/Symbol.json",
             "name": "matchAll",
@@ -26985,10 +26996,10 @@
                     "version_added": "52"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "13"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -28073,7 +28084,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "entries",
@@ -28108,10 +28120,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -28130,7 +28142,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "every",
@@ -28165,10 +28178,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -28187,7 +28200,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "fill",
@@ -28222,10 +28236,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -28244,7 +28258,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "filter",
@@ -28279,10 +28294,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -28301,7 +28316,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "find",
@@ -28336,10 +28352,10 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -28358,7 +28374,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "findIndex",
@@ -28393,10 +28410,10 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -28600,7 +28617,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "indexOf",
@@ -28637,10 +28655,10 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -28659,7 +28677,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "join",
@@ -28694,10 +28713,10 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -28892,7 +28911,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "map",
@@ -28927,10 +28947,10 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -29007,7 +29027,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "of",
@@ -29042,10 +29063,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "9.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "9.3"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -29788,7 +29809,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
             "name": "@@species",
@@ -29834,10 +29856,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -31388,7 +31410,7 @@
             "filename": "javascript/builtins/globals.json",
             "name": "undefined",
             "slug": "JavaScript/Reference/Global_Objects/undefined",
-            "summary": "The global undefined property represents the primitive value <undefined. It is one of JavaScript's primitive types.",
+            "summary": "The global undefined property represents the primitive value undefined. It is one of JavaScript's primitive types.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -31622,7 +31644,7 @@
             "filename": "javascript/classes.json",
             "name": "constructor",
             "slug": "JavaScript/Reference/Classes/constructor",
-            "summary": "The constructor method is a special method for creating and initializing an object created within a class.",
+            "summary": "The constructor method is a special method of a class for creating and initializing an object of that class.",
             "support": {
                 "chrome": [
                     {
@@ -32172,7 +32194,7 @@
             "filename": "javascript/classes.json",
             "name": "classes",
             "slug": "JavaScript/Reference/Classes",
-            "summary": "JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.",
+            "summary": "Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 classalike semantics.",
             "support": {
                 "chrome": [
                     {
@@ -32879,7 +32901,7 @@
             "filename": "javascript/functions.json",
             "name": "arrow_functions",
             "slug": "JavaScript/Reference/Functions/Arrow_functions",
-            "summary": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords. Arrow function expressions are all suited as methods, and they cannot be used as constructors.",
+            "summary": "An arrow function expression is a compact alternative to a traditional function expression, but is limited and can't be used in all situations.",
             "support": {
                 "chrome": {
                     "version_added": "45"
@@ -35361,7 +35383,7 @@
             "filename": "javascript/operators/exponentiation.json",
             "name": "exponentiation",
             "slug": "JavaScript/Reference/Operators/Exponentiation",
-            "summary": "The exponentiation operator (**) returns the result of raising the first operand to the power of the second operand.",
+            "summary": "The exponentiation operator (**) returns the result of raising the first operand to the power of the second operand. It is equivalent to Math.pow, except it also accepts BigInts as operands.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -35731,7 +35753,7 @@
             "filename": "javascript/operators/instanceof.json",
             "name": "instanceof",
             "slug": "JavaScript/Reference/Operators/instanceof",
-            "summary": "The instanceof operator tests whether the prototype property of a constructor appears anywhere in the prototype chain of an object.",
+            "summary": "The instanceof operator tests to see if the prototype property of a constructor appears anywhere in the prototype chain of an object. The return value is a boolean value.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -36295,6 +36317,64 @@
                 }
             },
             "title": "new.target"
+        }
+    ],
+    "prod-CoalesceExpression": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/nullish_coalescing.json",
+            "name": "nullish_coalescing",
+            "slug": "JavaScript/Reference/Operators/Nullish_coalescing_operator",
+            "summary": "The nullish coalescing operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.",
+            "support": {
+                "chrome": {
+                    "version_added": "80"
+                },
+                "chrome_android": {
+                    "version_added": "80"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "72"
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "14.0.0"
+                },
+                "opera": {
+                    "version_added": "67"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": {
+                    "version_added": "13.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "80"
+                },
+                "edge_blink": {
+                    "version_added": "80"
+                }
+            },
+            "title": "Nullish coalescing operator (??)"
         }
     ],
     "sec-object-initializer": [
@@ -37861,7 +37941,7 @@
             "filename": "javascript/statements.json",
             "name": "for_await_of",
             "slug": "JavaScript/Reference/Statements/for-await...of",
-            "summary": "The for await...of statement creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object. Like await operator, the statement can only be used inside an async function.",
+            "summary": "The for await...of statement creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object. Like the await operator, the statement can only be used inside an async function.",
             "support": {
                 "chrome": {
                     "version_added": "63"

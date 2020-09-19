@@ -1,14 +1,28 @@
 {
     "forced-colors": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
+            ],
             "filename": "css/at-rules/media.json",
             "name": "forced-colors",
             "slug": "CSS/@media/forced-colors",
             "summary": "The forced-colors CSS media feature is used to detect if the user agent has enabled a forced colors mode where it enforces a user-chosen limited color palette on the page.",
             "support": {
                 "chrome": {
-                    "version_added": false,
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#forced-colors",
+                            "value_to_set": "Enabled"
+                        }
+                    ],
                     "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
                 },
                 "chrome_android": {
@@ -19,7 +33,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "81",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.forced-colors.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -47,7 +68,14 @@
                     "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
                 },
                 "edge_blink": {
-                    "version_added": false,
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#forced-colors",
+                            "value_to_set": "Enabled"
+                        }
+                    ],
                     "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
                 }
             },
@@ -107,57 +135,6 @@
             "title": "inverted-colors"
         }
     ],
-    "light-level": [
-        {
-            "engines": [],
-            "filename": "css/at-rules/media.json",
-            "name": "light-level",
-            "slug": "CSS/@media/light-level",
-            "summary": "The light-level CSS media feature can be used to test the ambient light level.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "light-level"
-        }
-    ],
     "descdef-media-prefers-color-scheme": [
         {
             "engines": [
@@ -215,7 +192,12 @@
     ],
     "descdef-media-prefers-contrast": [
         {
-            "engines": [],
+            "engines": [
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
             "filename": "css/at-rules/media.json",
             "name": "prefers-contrast",
             "slug": "CSS/@media/prefers-contrast",
@@ -231,7 +213,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "80",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.prefers-contrast.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false

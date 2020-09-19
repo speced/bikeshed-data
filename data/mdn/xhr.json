@@ -133,7 +133,7 @@
                     "version_added": "44"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": true
@@ -780,7 +780,7 @@
             "filename": "api/ProgressEvent.json",
             "name": "total",
             "slug": "API/ProgressEvent/total",
-            "summary": "The ProgressEvent.total read-only property is an integer representing the total amount of work that the underlying process is in the progress of performing. When downloading a resource using HTTP, this only represent the content itself, not headers and other overhead.",
+            "summary": "The ProgressEvent.total read-only property is an unsigned 64-bit integer value indicating the total size of the data being processed or transmitted. In the case of an HTTP transmission, this is the size of the body of the message (the Content-Length), and does not include headers and other overhead.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -1748,9 +1748,15 @@
                 "ie": {
                     "version_added": "10"
                 },
-                "opera": {
-                    "version_added": "18"
-                },
+                "opera": [
+                    {
+                        "version_added": "12",
+                        "version_removed": "15"
+                    },
+                    {
+                        "version_added": "18"
+                    }
+                ],
                 "opera_android": {
                     "version_added": "42"
                 },
@@ -2515,7 +2521,7 @@
             "filename": "api/XMLHttpRequestEventTarget.json",
             "name": "onprogress",
             "slug": "API/XMLHttpRequestEventTarget/onprogress",
-            "summary": "The XMLHttpRequestEventTarget.onprogress is the function called periodically with information when an XMLHttpRequest before success completely .",
+            "summary": "The XMLHttpRequestEventTarget.onprogress is the function called periodically with information when an XMLHttpRequest before success completely.",
             "support": {
                 "chrome": {
                     "version_added": true

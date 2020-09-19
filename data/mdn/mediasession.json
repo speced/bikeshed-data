@@ -275,6 +275,9 @@
                 "blink",
                 "gecko"
             ],
+            "needsflag": [
+                "gecko"
+            ],
             "filename": "api/MediaMetadata.json",
             "name": "MediaMetadata",
             "slug": "API/MediaMetadata",
@@ -290,7 +293,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "71"
+                    "version_added": "71",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.media.mediasession.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": null
@@ -369,10 +379,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -390,7 +400,11 @@
     "dom-mediasession-playbackstate": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/MediaSession.json",
             "name": "playbackState",
@@ -407,7 +421,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "76",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.media.mediasession.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -422,10 +443,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -440,7 +461,7 @@
             "title": "MediaSession.playbackState"
         }
     ],
-    "dom-mediasession-setactionhandler": [
+    "enumdef-mediasessionaction": [
         {
             "engines": [
                 "blink",
@@ -486,10 +507,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -539,10 +560,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -603,10 +624,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"

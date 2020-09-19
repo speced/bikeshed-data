@@ -1,29 +1,40 @@
 {
     "appearance-switching": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "prefixed": [
-                "blink",
                 "gecko",
                 "webkit"
             ],
             "filename": "css/properties/appearance.json",
             "name": "appearance",
             "slug": "CSS/appearance",
-            "summary": "The -moz-appearance CSS property is used in Gecko (Firefox) to display an element using platform-native styling based on the operating system's theme.",
+            "summary": "The appearance CSS property is used to display an element using platform-native styling, based on the operating system's theme. The -moz-appearance and -webkit-appearance properties are non-standard versions of this propery, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support -webkit-appearance, for compatibility reasons.",
             "support": {
-                "chrome": {
-                    "version_added": "1",
-                    "partial_implementation": true,
-                    "prefix": "-webkit-"
-                },
-                "chrome_android": {
-                    "version_added": "18",
-                    "partial_implementation": true,
-                    "prefix": "-webkit-"
-                },
+                "chrome": [
+                    {
+                        "version_added": "84"
+                    },
+                    {
+                        "version_added": "1",
+                        "partial_implementation": true,
+                        "prefix": "-webkit-"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "84"
+                    },
+                    {
+                        "version_added": "18",
+                        "partial_implementation": true,
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": [
                     {
@@ -76,11 +87,16 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "15",
-                    "partial_implementation": true,
-                    "prefix": "-webkit-"
-                },
+                "opera": [
+                    {
+                        "version_added": "70"
+                    },
+                    {
+                        "version_added": "15",
+                        "partial_implementation": true,
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "opera_android": {
                     "version_added": "14",
                     "partial_implementation": true,
@@ -101,16 +117,26 @@
                     "partial_implementation": true,
                     "prefix": "-webkit-"
                 },
-                "webview_android": {
-                    "version_added": "1",
-                    "partial_implementation": true,
-                    "prefix": "-webkit-"
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "partial_implementation": true,
-                    "prefix": "-webkit-"
-                }
+                "webview_android": [
+                    {
+                        "version_added": "84"
+                    },
+                    {
+                        "version_added": "1",
+                        "partial_implementation": true,
+                        "prefix": "-webkit-"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "84"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "prefix": "-webkit-"
+                    }
+                ]
             },
             "caniuse": {
                 "feature": "css-appearance",
@@ -160,12 +186,12 @@
                         "version_added": "69"
                     },
                     {
-                        "prefix": "-moz-",
-                        "version_added": "1"
-                    },
-                    {
                         "prefix": "-webkit-",
                         "version_added": "49"
+                    },
+                    {
+                        "prefix": "-moz-",
+                        "version_added": "1"
                     },
                     {
                         "prefix": "-webkit-",
@@ -181,12 +207,12 @@
                 ],
                 "firefox_android": [
                     {
-                        "prefix": "-moz-",
-                        "version_added": "4"
-                    },
-                    {
                         "prefix": "-webkit-",
                         "version_added": "49"
+                    },
+                    {
+                        "prefix": "-moz-",
+                        "version_added": "4"
                     },
                     {
                         "prefix": "-webkit-",

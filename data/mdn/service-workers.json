@@ -2323,8 +2323,7 @@
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/ServiceWorkerRegistration.json",
             "name": "navigationPreload",
@@ -2357,10 +2356,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "11.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "11.3"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -2629,7 +2628,7 @@
                     "notes": "Implementation tracked in <a href='https://bugzil.la/1290958'>bug 1290958</a>"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "49"
@@ -2638,10 +2637,10 @@
                     "version_added": "46"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"
@@ -2890,7 +2889,7 @@
             "filename": "api/ServiceWorker.json",
             "name": "ServiceWorker",
             "slug": "API/ServiceWorker",
-            "summary": "The ServiceWorker interface of the ServiceWorker API provides a reference to a service worker. Multiple browsing contexts (e.g. pages, workers, etc.) can be associated with the same service worker, each through a unique ServiceWorker object.",
+            "summary": "The ServiceWorker interface of the Service Worker API provides a reference to a service worker. Multiple browsing contexts (e.g. pages, workers, etc.) can be associated with the same service worker, each through a unique ServiceWorker object.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -2946,7 +2945,7 @@
             "filename": "api/ServiceWorkerContainer.json",
             "name": "controller",
             "slug": "API/ServiceWorkerContainer/controller",
-            "summary": "The controller read-only property of the ServiceWorkerContainer interface returns a ServiceWorker object if its state is activated (the same object returned by ServiceWorkerRegistration.active). This property returns null if the request is a force refresh (Shift + refresh) or if there is no active worker.",
+            "summary": "The controller read-only property of the ServiceWorkerContainer interface returns a ServiceWorker object if its state is activating or activated (the same object returned by ServiceWorkerRegistration.active). This property returns null if the request is a force refresh (Shift + refresh) or if there is no active worker.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -4114,7 +4113,7 @@
             "filename": "api/ServiceWorkerGlobalScope.json",
             "name": "ServiceWorkerGlobalScope",
             "slug": "API/ServiceWorkerGlobalScope",
-            "summary": "The ServiceWorkerGlobalScope interface of the ServiceWorker API represents the global execution context of a service worker.",
+            "summary": "The ServiceWorkerGlobalScope interface of the Service Worker API represents the global execution context of a service worker.",
             "support": {
                 "chrome": {
                     "version_added": "40"

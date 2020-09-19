@@ -291,9 +291,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "css/properties/line-break.json",
@@ -357,6 +355,9 @@
                 ],
                 "safari": [
                     {
+                        "version_added": "11"
+                    },
+                    {
                         "version_added": "3",
                         "prefix": "-webkit-"
                     },
@@ -366,10 +367,15 @@
                         "prefix": "-khtml-"
                     }
                 ],
-                "safari_ios": {
-                    "version_added": "1",
-                    "prefix": "-webkit-"
-                },
+                "safari_ios": [
+                    {
+                        "version_added": "11"
+                    },
+                    {
+                        "version_added": "1",
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "7.0"
@@ -1220,7 +1226,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"

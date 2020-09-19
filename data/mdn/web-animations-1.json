@@ -357,6 +357,7 @@
     "dom-animation-effect": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/Animation.json",
@@ -365,10 +366,10 @@
             "summary": "The Animation.effect property of the Web Animations API gets and sets the target effect of an animation. The target effect may be either an effect object of a type based on AnimationEffectReadOnly, such as KeyframeEffect, or null.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "75"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "75"
                 },
                 "edge": {
                     "version_added": false
@@ -409,10 +410,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "62"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "54"
                 },
                 "safari": {
                     "version_added": false
@@ -421,13 +422,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "11.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "75"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "Animation.effect"
@@ -3145,7 +3146,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": "52"
@@ -3166,7 +3167,7 @@
             "filename": "api/EffectTiming.json",
             "name": "direction",
             "slug": "API/EffectTiming/direction",
-            "summary": "The direction property of the Web Animations API dictionary EffectTiming indicates an animation's playback direction along its timeline, as well as its behavior when it reaches the end of an interation",
+            "summary": "The direction property of the Web Animations API dictionary EffectTiming indicates an animation's playback direction along its timeline, as well as its behavior when it reaches the end of an iteration",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -3199,7 +3200,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": "52"
@@ -3253,7 +3254,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": "52"
@@ -3307,7 +3308,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": "52"
@@ -3361,7 +3362,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": "52"
@@ -3415,7 +3416,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": "52"
@@ -3469,7 +3470,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": "52"
@@ -3523,7 +3524,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": "52"
@@ -3576,7 +3577,7 @@
                     "version_added": "63"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": true
@@ -3590,9 +3591,16 @@
                 "safari_ios": {
                     "version_added": null
                 },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "9.0"
+                    },
+                    {
+                        "version_added": "6.0",
+                        "version_removed": "9.0",
+                        "alternative_name": "AnimationEffectTimingProperties"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "67"
@@ -3624,9 +3632,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "webkit"
-            ],
             "filename": "api/Element.json",
             "name": "animate",
             "slug": "API/Element/animate",
@@ -3656,19 +3661,24 @@
                 "opera_android": {
                     "version_added": "24"
                 },
-                "safari": {
-                    "version_added": true,
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Web Animations"
-                        },
-                        {
-                            "type": "preference",
-                            "name": "CSS Animations via Web Animations"
-                        }
-                    ]
-                },
+                "safari": [
+                    {
+                        "version_added": "13.1"
+                    },
+                    {
+                        "version_added": true,
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Web Animations"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "CSS Animations via Web Animations"
+                            }
+                        ]
+                    }
+                ],
                 "safari_ios": {
                     "version_added": "13.4"
                 },
@@ -3695,7 +3705,6 @@
                 "webkit"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/Element.json",
@@ -3704,6 +3713,9 @@
             "summary": "The getAnimations() method of the Element interface (specified on the Animatable mixin) returns an array of all Animation objects affecting this element or which are scheduled to do so in future. It can optionally return Animation objects for descendant elements too.",
             "support": {
                 "chrome": [
+                    {
+                        "version_added": "84"
+                    },
                     {
                         "version_added": "79",
                         "flags": [
@@ -3752,6 +3764,9 @@
                     }
                 ],
                 "chrome_android": [
+                    {
+                        "version_added": "84"
+                    },
                     {
                         "version_added": "79",
                         "flags": [
@@ -3929,6 +3944,9 @@
                 },
                 "opera": [
                     {
+                        "version_added": "71"
+                    },
+                    {
                         "version_added": "66",
                         "flags": [
                             {
@@ -4051,6 +4069,9 @@
                 },
                 "edge_blink": [
                     {
+                        "version_added": "84"
+                    },
+                    {
                         "version_added": "79",
                         "flags": [
                             {
@@ -4113,10 +4134,10 @@
             "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "edge": {
                     "version_added": false
@@ -4131,10 +4152,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "62"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "54"
                 },
                 "safari": {
                     "version_added": false
@@ -4143,13 +4164,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "11.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "KeyframeEffect.KeyframeEffect()"
@@ -4158,9 +4179,6 @@
     "dom-keyframeeffect-composite": [
         {
             "engines": [
-                "gecko"
-            ],
-            "needsflag": [
                 "gecko"
             ],
             "filename": "api/KeyframeEffect.json",
@@ -4177,18 +4195,25 @@
                 "edge": {
                     "version_added": null
                 },
-                "firefox": {
-                    "version_added": "63",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.animations-api.compositing.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "80"
+                    },
+                    {
+                        "version_added": "63",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.animations-api.compositing.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": "63",
+                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -4334,6 +4359,7 @@
     "dom-keyframeeffect-target": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/KeyframeEffect.json",
@@ -4342,13 +4368,13 @@
             "summary": "The target property of a KeyframeEffect interface represents the element or pseudo-element being animated. It may be null for animations that do not target a specific element. It performs as both a getter and a setter, except with animations and transitions generated by CSS.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "75"
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "75"
                 },
                 "edge": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "63"
@@ -4360,10 +4386,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "62"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "54"
                 },
                 "safari": {
                     "version_added": false
@@ -4372,13 +4398,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": "11.0"
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "75"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "KeyframeEffect.target"
@@ -4396,10 +4422,10 @@
             "summary": "The KeyframeEffect interface of the Web Animations API lets us create sets of animatable properties and values, called keyframes. These can then be played using the Animation() constructor.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "edge": {
                     "version_added": false
@@ -4414,10 +4440,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "62"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "54"
                 },
                 "safari": {
                     "version_added": false
@@ -4426,13 +4452,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "11.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "KeyframeEffect"

@@ -392,7 +392,7 @@
                     "version_added": "27"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "52"
@@ -1458,7 +1458,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": "13.0"
                 },
                 "webview_android": {
                     "version_added": "81"
@@ -2193,7 +2193,7 @@
             "title": "RTCDtlsTransport.state"
         }
     ],
-    "rtcdtlstransport-interface": [
+    "dom-rtcdtlstransport": [
         {
             "engines": [
                 "blink"
@@ -2201,7 +2201,7 @@
             "filename": "api/RTCDtlsTransport.json",
             "name": "RTCDtlsTransport",
             "slug": "API/RTCDtlsTransport",
-            "summary": "The RTCDtlsTransport interface provides information which describes a Datagram Transport Layer Security (DTLS) transport.",
+            "summary": "The RTCDtlsTransport interface provides access to information about the Datagram Transport Layer Security (DTLS) transport over which a RTCPeerConnection's RTP and RTCP packets are sent and received by its RTCRtpSender and RTCRtpReceiver objects.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -5767,7 +5767,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "generateCertificate",
             "slug": "API/RTCPeerConnection/generateCertificate",
-            "summary": "The generateCertificate() method of the RTCPeerConnection interface creates and stores an X.509 certificate and corresponding private key then returns an RTCCertificate, providing access to it.",
+            "summary": "The static  RTCPeerConnection.generateCertificate() function creates an X.509 certificate and corresponding private key, returning a promise that resolves with the new RTCCertificate once it's generated.",
             "support": {
                 "chrome": {
                     "version_added": "48"
@@ -5823,7 +5823,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.generateCertificate()"
+            "title": "RTCPeerConnection.generateCertificate() static function"
         }
     ],
     "dom-rtcpeerconnection-getconfiguration": [
@@ -8878,7 +8878,7 @@
                     "version_added": "59"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": true
@@ -9088,7 +9088,7 @@
             "filename": "api/RTCRtpSender.json",
             "name": "getParameters",
             "slug": "API/RTCRtpSender/getParameters",
-            "summary": "The getParameters() method of the RTCRtpSender interface returns an RTCRtpSendParameters object describing the current configuration for the encoding and transmission of media on the RTCRtpSender.track property.",
+            "summary": "The getParameters() method of the RTCRtpSender interface returns an RTCRtpSendParameters object describing the current configuration for the encoding and transmission of media on the sender's track.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -9382,7 +9382,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "34"

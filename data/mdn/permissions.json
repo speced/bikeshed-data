@@ -289,5 +289,80 @@
             },
             "title": "Permissions"
         }
+    ],
+    "dom-permissionname-display-capture": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "http/headers/feature-policy.json",
+            "name": "display-capture",
+            "slug": "HTTP/Headers/Feature-Policy/display-capture",
+            "summary": "The HTTP Feature-Policy header display-capture directive controls whether or not the document is permitted to use Screen Capture API, i.e.,getDisplayMedia() to capture the screen's contents.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "74"
+                    },
+                    {
+                        "version_added": "67",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "67",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.security.featurePolicy.header.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "Feature-Policy: display-capture"
+        }
     ]
 }

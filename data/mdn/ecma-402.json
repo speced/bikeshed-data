@@ -61,7 +61,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/BigInt.json",
             "name": "toLocaleString",
@@ -96,10 +97,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -2361,7 +2362,7 @@
             "filename": "javascript/builtins/intl/NumberFormat.json",
             "name": "formatToParts",
             "slug": "JavaScript/Reference/Global_Objects/Intl/NumberFormat/formatToParts",
-            "summary": "The Intl.Numberformat.prototype.formatToParts() method allows locale-aware formatting of strings produced by NumberTimeFormat formatters.",
+            "summary": "The Intl.Numberformat.prototype.formatToParts() method allows locale-aware formatting of strings produced by NumberFormat formatters.",
             "support": {
                 "chrome": {
                     "version_added": "64"
@@ -2662,6 +2663,65 @@
             "title": "Intl.PluralRules() constructor"
         }
     ],
+    "sec-intl.pluralrules.prototype.select": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/intl/PluralRules.json",
+            "name": "select",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/PluralRules/select",
+            "summary": "The Intl.PluralRules.prototype.select method returns a String indicating which plural rule to use for locale-aware formatting.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": {
+                    "version_added": "63"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "58"
+                },
+                "firefox_android": {
+                    "version_added": "58"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "10.0.0",
+                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules'>the <code>PluralRules()</code> constructor</a> for more details."
+                },
+                "opera": {
+                    "version_added": "50"
+                },
+                "opera_android": {
+                    "version_added": "46"
+                },
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": {
+                    "version_added": "13"
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "63"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Intl.PluralRules.select()"
+        }
+    ],
     "pluralrules-objects": [
         {
             "engines": [
@@ -2725,7 +2785,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/intl/RelativeTimeFormat.json",
             "name": "RelativeTimeFormat",
@@ -2767,10 +2828,10 @@
                     "version_added": "50"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -2789,7 +2850,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/intl/RelativeTimeFormat.json",
             "name": "format",
@@ -2825,10 +2887,10 @@
                     "version_added": "50"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -2847,7 +2909,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/intl/RelativeTimeFormat.json",
             "name": "formatToParts",
@@ -2883,10 +2946,10 @@
                     "version_added": "50"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -2905,7 +2968,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/intl/RelativeTimeFormat.json",
             "name": "resolvedOptions",
@@ -2941,10 +3005,10 @@
                     "version_added": "50"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -2963,7 +3027,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/intl/RelativeTimeFormat.json",
             "name": "supportedLocalesOf",
@@ -3005,10 +3070,10 @@
                     "version_added": "50"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -3027,7 +3092,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/intl/RelativeTimeFormat.json",
             "name": "RelativeTimeFormat",
@@ -3063,10 +3129,10 @@
                     "version_added": "50"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"

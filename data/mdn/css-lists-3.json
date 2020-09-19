@@ -389,32 +389,39 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "css/selectors/marker.json",
             "name": "marker",
             "slug": "CSS/::marker",
             "summary": "The ::marker CSS pseudo-element selects the marker box of a list item, which typically contains a bullet or number.",
             "support": {
-                "chrome": {
-                    "version_added": "80",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Enable experimental Web Platform features"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "80",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Enable experimental Web Platform features"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "86"
+                    },
+                    {
+                        "version_added": "80",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Enable experimental Web Platform features"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "86"
+                    },
+                    {
+                        "version_added": "80",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Enable experimental Web Platform features"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -443,17 +450,22 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "86"
                 },
-                "edge_blink": {
-                    "version_added": "80",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Enable experimental Web Platform features"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "86"
+                    },
+                    {
+                        "version_added": "80",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Enable experimental Web Platform features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "::marker"
         }
@@ -521,7 +533,7 @@
             "filename": "css/types/counters.json",
             "name": "counters",
             "slug": "CSS/counters",
-            "summary": "The counters() CSS function enables nested counters, returning a concatenated string representing the current values of the named counters, if there are any. The counters() function has two forms: 'counters(name, string)' or 'counters(name, string, style)'. It is generally used with pseudo-elements, but can be used, theoretically, anywhere a <string> value is supported. The generated text is the value of all counters with the given name, from outermost to innermost, separated by the specified string. The counters are rendered in the style indicated, defaulting to decimal if no style is specified.",
+            "summary": "The counters() CSS function enables nested counters, returning a concatenated string representing the current values of the named counters, if there are any. The counters() function has two forms: counters(name, string) or counters(name, string, style). It is generally used with pseudo-elements, but can be used, theoretically, anywhere a <string> value is supported. The generated text is the value of all counters with the given name, from outermost to innermost, separated by the specified string. The counters are rendered in the style indicated, defaulting to decimal if no style is specified.",
             "support": {
                 "chrome": {
                     "version_added": "1"

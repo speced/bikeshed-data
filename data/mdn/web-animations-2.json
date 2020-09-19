@@ -6,9 +6,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "webkit"
-            ],
             "filename": "api/Element.json",
             "name": "animate",
             "slug": "API/Element/animate",
@@ -38,19 +35,24 @@
                 "opera_android": {
                     "version_added": "24"
                 },
-                "safari": {
-                    "version_added": true,
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Web Animations"
-                        },
-                        {
-                            "type": "preference",
-                            "name": "CSS Animations via Web Animations"
-                        }
-                    ]
-                },
+                "safari": [
+                    {
+                        "version_added": "13.1"
+                    },
+                    {
+                        "version_added": true,
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Web Animations"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "CSS Animations via Web Animations"
+                            }
+                        ]
+                    }
+                ],
                 "safari_ios": {
                     "version_added": "13.4"
                 },
@@ -77,10 +79,10 @@
             "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "edge": {
                     "version_added": false
@@ -95,10 +97,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "62"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "54"
                 },
                 "safari": {
                     "version_added": false
@@ -107,22 +109,19 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "11.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "75"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "KeyframeEffect.KeyframeEffect()"
         },
         {
             "engines": [
-                "gecko"
-            ],
-            "needsflag": [
                 "gecko"
             ],
             "filename": "api/KeyframeEffect.json",
@@ -139,18 +138,25 @@
                 "edge": {
                     "version_added": null
                 },
-                "firefox": {
-                    "version_added": "63",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.animations-api.compositing.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "80"
+                    },
+                    {
+                        "version_added": "63",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.animations-api.compositing.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": "63",
+                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
