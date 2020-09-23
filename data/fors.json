@@ -2853,7 +2853,6 @@
     "auto-placement",
     "auto-placement cursor",
     "autocapitalization hints",
-    "autocapitalize",
     "autocapitalize-inheriting elements",
     "autofill anchor mantle",
     "autofill detail tokens",
@@ -3842,7 +3841,6 @@
     "content-type",
     "content-type metadata",
     "content-visibility",
-    "contenteditable",
     "contents",
     "contents of an arraybuffer",
     "contentscripttype",
@@ -4641,7 +4639,6 @@
     "domstring",
     "domsubtreemodified",
     "domtokenlist",
-    "done",
     "dotted",
     "double",
     "double-dot path segment",
@@ -4814,8 +4811,6 @@
     "ensurecspdoesnotblockstringcompilation",
     "ensurecspdoesnotblockstringcompilation(callerrealm, calleerealm, source)",
     "entangle",
-    "enter",
-    "enterkeyhint",
     "entries",
     "entry",
     "entry construction algorithm",
@@ -5853,7 +5848,6 @@
     "icecandidateerror",
     "iceconnectionstatechange",
     "icegatheringstatechange",
-    "id",
     "id map",
     "id selector",
     "ident",
@@ -6137,7 +6131,6 @@
     "input method editor",
     "input progress value",
     "input stream",
-    "inputmode",
     "inputs",
     "ins",
     "insecure requests policy",
@@ -6373,10 +6366,6 @@
     "item",
     "item types",
     "item()",
-    "itemid",
-    "itemref",
-    "itemscope",
-    "itemtype",
     "iterable",
     "iterable declaration",
     "iterate",
@@ -7291,7 +7280,6 @@
     "newpromisereactionjob",
     "newpromiseresolvethenablejob",
     "newtarget",
-    "next",
     "next input character",
     "next input code point",
     "next input token",
@@ -8151,7 +8139,6 @@
     "preserveaspectratio",
     "preserved white space",
     "preventDefault()",
-    "previous",
     "previous block",
     "previous context",
     "previous current time",
@@ -9089,7 +9076,6 @@
     "self-closing start tag state",
     "semi-condensed",
     "semi-expanded",
-    "send",
     "send a signal",
     "send a websocket message",
     "send select update notifications",
@@ -9478,6 +9464,7 @@
     "source text module record",
     "source-expression",
     "source-over",
+    "space",
     "space to fill",
     "space-discarding character set",
     "space-separated matching",
@@ -9522,7 +9509,6 @@
     "specified value",
     "specified values",
     "speech-rate",
-    "spellcheck",
     "spin the event loop",
     "split a string on ascii whitespace",
     "split a string on commas",
@@ -9877,7 +9863,6 @@
     "tab size",
     "tab stop",
     "tab-size",
-    "tabindex",
     "tabindex value",
     "tabindex-ordered focus navigation scope",
     "table",
@@ -10090,18 +10075,15 @@
     "the body element",
     "the constraint validation api",
     "the curve name",
-    "the dir attribute",
     "the directionality",
     "the document's referrer",
     "the drag data item kind",
     "the drag data item type string",
-    "the draggable attribute",
     "the embed element setup steps",
     "the empty string",
     "the event handler processing algorithm",
     "the given value",
     "the head element",
-    "the hidden attribute",
     "the html body element",
     "the html element",
     "the html syntax",
@@ -10125,7 +10107,6 @@
     "the scrollbar barprop object",
     "the special value *",
     "the status bar barprop object",
-    "the style attribute",
     "the template element",
     "the title element",
     "the toolbar barprop object",
@@ -10894,7 +10875,6 @@
     "xml scripting support disabled",
     "xml scripting support enabled",
     "xml-compatible",
-    "xml:space",
     "xmlhttprequest",
     "xmlns namespace",
     "xmp",
@@ -16625,6 +16605,7 @@
     "strictErrorChecking",
     "styleSheets",
     "timeline",
+    "title",
     "type",
     "url",
     "vlinkColor",
@@ -18301,7 +18282,6 @@
     "securitypolicyviolation",
     "select",
     "spellcheck",
-    "style",
     "submit",
     "title",
     "toggle",
@@ -27485,7 +27465,6 @@
   "button": [
     "action",
     "autocomplete",
-    "autofocus",
     "button",
     "dirname",
     "disabled",
@@ -28190,11 +28169,6 @@
     "optional",
     "required"
   ],
-  "dir": [
-    "auto",
-    "ltr",
-    "rtl"
-  ],
   "direction": [
     "ltr",
     "rtl"
@@ -28542,7 +28516,6 @@
   ],
   "fieldset": [
     "autocomplete",
-    "autofocus",
     "dirname",
     "disabled",
     "name"
@@ -28920,6 +28893,11 @@
   "gap": [
     "normal"
   ],
+  "global": [
+    "class",
+    "id",
+    "slot"
+  ],
   "global object": [
     "csp list",
     "realm"
@@ -29086,14 +29064,65 @@
     "version"
   ],
   "html-global": [
+    "autocapitalize",
+    "autofocus",
+    "contenteditable",
+    "dir",
+    "draggable",
+    "enterkeyhint",
     "exportparts",
-    "part"
+    "hidden",
+    "inputmode",
+    "is",
+    "itemid",
+    "itemref",
+    "itemscope",
+    "itemtype",
+    "lang",
+    "part",
+    "spellcheck",
+    "style",
+    "title",
+    "translate"
+  ],
+  "html-global/autocapitalize": [
+    "characters",
+    "none",
+    "off",
+    "on",
+    "sentences",
+    "words"
+  ],
+  "html-global/dir": [
+    "auto",
+    "ltr",
+    "rtl"
+  ],
+  "html-global/enterkeyhint": [
+    "done",
+    "enter",
+    "go",
+    "next",
+    "previous",
+    "search",
+    "send"
+  ],
+  "html-global/inputmode": [
+    "decimal",
+    "email",
+    "none",
+    "numeric",
+    "search",
+    "tel",
+    "text",
+    "url"
   ],
   "htmlcollection": [
     "length"
   ],
   "htmlsvg-global": [
-    "nonce"
+    "nonce",
+    "tabindex"
   ],
   "hyphenate-character": [
     "<string>",
@@ -29259,7 +29288,6 @@
     "align",
     "alt",
     "autocomplete",
-    "autofocus",
     "border",
     "checked",
     "dirname",
@@ -30130,7 +30158,6 @@
     "align",
     "archive",
     "autocomplete",
-    "autofocus",
     "border",
     "classid",
     "code",
@@ -30259,7 +30286,6 @@
   ],
   "output": [
     "autocomplete",
-    "autofocus",
     "dirname",
     "disabled",
     "for",
@@ -30924,7 +30950,6 @@
   ],
   "select": [
     "autocomplete",
-    "autofocus",
     "dirname",
     "disabled",
     "drop-down box",
@@ -31537,7 +31562,6 @@
   ],
   "textarea": [
     "autocomplete",
-    "autofocus",
     "character height",
     "character width",
     "cols",
