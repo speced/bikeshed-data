@@ -3662,18 +3662,20 @@
     "addTrack()": {
       "args": [],
       "for": [
+        "MediaStream",
         "RTCPeerConnection"
       ],
-      "shortname": "webrtc"
+      "shortname": "mediacapture-streams"
     },
     "addTrack(track)": {
       "args": [
         "track"
       ],
       "for": [
+        "MediaStream",
         "RTCPeerConnection"
       ],
-      "shortname": "webrtc"
+      "shortname": "mediacapture-streams"
     },
     "addTrack(track, streams)": {
       "args": [
@@ -3712,15 +3714,6 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
-    }
-  },
-  "addtrack()": {
-    "addtrack()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
     }
   },
   "adoptNode()": {
@@ -3962,12 +3955,23 @@
       "shortname": "css-animations"
     }
   },
-  "applyconstraints()": {
-    "applyconstraints()": {
+  "applyConstraints()": {
+    "applyConstraints()": {
       "args": [],
       "for": [
-        "constrainablepattern",
-        "mediastreamtrack"
+        "ConstrainablePattern",
+        "MediaStreamTrack"
+      ],
+      "shortname": "mediacapture-streams"
+    },
+    "applyConstraints(, constraints)": {
+      "args": [
+        "",
+        "constraints"
+      ],
+      "for": [
+        "ConstrainablePattern",
+        "MediaStreamTrack"
       ],
       "shortname": "mediacapture-streams"
     }
@@ -4499,10 +4503,10 @@
     "clone()": {
       "args": [],
       "for": [
+        "MediaStream",
+        "MediaStreamTrack",
         "Request",
-        "Response",
-        "mediastream",
-        "mediastreamtrack"
+        "Response"
       ],
       "shortname": "fetch"
     }
@@ -4838,38 +4842,38 @@
       "shortname": "webaudio"
     }
   },
-  "constrainablepattern.applyconstraints()": {
-    "constrainablepattern.applyconstraints()": {
+  "constructor!overload-1()": {
+    "constructor!overload-1()": {
       "args": [],
       "for": [
-        "constrainablepattern"
+        "MediaStream"
+      ],
+      "shortname": "mediacapture-streams"
+    },
+    "constructor!overload-1(stream)": {
+      "args": [
+        "stream"
+      ],
+      "for": [
+        "MediaStream"
       ],
       "shortname": "mediacapture-streams"
     }
   },
-  "constrainablepattern.getcapabilities()": {
-    "constrainablepattern.getcapabilities()": {
+  "constructor!overload-2()": {
+    "constructor!overload-2()": {
       "args": [],
       "for": [
-        "constrainablepattern"
+        "MediaStream"
       ],
       "shortname": "mediacapture-streams"
-    }
-  },
-  "constrainablepattern.getconstraints()": {
-    "constrainablepattern.getconstraints()": {
-      "args": [],
-      "for": [
-        "constrainablepattern"
+    },
+    "constructor!overload-2(tracks)": {
+      "args": [
+        "tracks"
       ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "constrainablepattern.getsettings()": {
-    "constrainablepattern.getsettings()": {
-      "args": [],
       "for": [
-        "constrainablepattern"
+        "MediaStream"
       ],
       "shortname": "mediacapture-streams"
     }
@@ -4906,6 +4910,8 @@
         "FragmentResult",
         "Headers",
         "JsonLdProcessor",
+        "MediaStream",
+        "MediaStreamTrackEvent",
         "MerchantValidationEvent",
         "PaymentMethodChangeEvent",
         "PaymentRequest",
@@ -5860,6 +5866,7 @@
         "FontFaceSetLoadEvent",
         "IDBVersionChangeEvent",
         "MediaQueryListEvent",
+        "MediaStreamTrackEvent",
         "NavigationEvent",
         "OfflineAudioCompletionEvent",
         "PointerEvent",
@@ -8190,11 +8197,11 @@
       "shortname": "streams"
     }
   },
-  "enumeratedevices()": {
-    "enumeratedevices()": {
+  "enumerateDevices()": {
+    "enumerateDevices()": {
       "args": [],
       "for": [
-        "mediadevices"
+        "MediaDevices"
       ],
       "shortname": "mediacapture-streams"
     }
@@ -9122,6 +9129,15 @@
       "shortname": "dom"
     }
   },
+  "getAudioTracks()": {
+    "getAudioTracks()": {
+      "args": [],
+      "for": [
+        "MediaStream"
+      ],
+      "shortname": "mediacapture-streams"
+    }
+  },
   "getAuthenticatorData()": {
     "getAuthenticatorData()": {
       "args": [],
@@ -9210,10 +9226,13 @@
     "getCapabilities()": {
       "args": [],
       "for": [
+        "ConstrainablePattern",
+        "InputDeviceInfo",
+        "MediaStreamTrack",
         "RTCRtpReceiver",
         "RTCRtpSender"
       ],
-      "shortname": "webrtc"
+      "shortname": "mediacapture-streams"
     },
     "getCapabilities(kind)": {
       "args": [
@@ -9359,6 +9378,16 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "getConstraints()": {
+    "getConstraints()": {
+      "args": [],
+      "for": [
+        "ConstrainablePattern",
+        "MediaStreamTrack"
+      ],
+      "shortname": "mediacapture-streams"
     }
   },
   "getContent()": {
@@ -10110,6 +10139,16 @@
       "shortname": "web-bluetooth"
     }
   },
+  "getSettings()": {
+    "getSettings()": {
+      "args": [],
+      "for": [
+        "ConstrainablePattern",
+        "MediaStreamTrack"
+      ],
+      "shortname": "mediacapture-streams"
+    }
+  },
   "getSpatialNavigationContainer()": {
     "getSpatialNavigationContainer()": {
       "args": [],
@@ -10192,6 +10231,15 @@
       "shortname": "webxr-layers"
     }
   },
+  "getSupportedConstraints()": {
+    "getSupportedConstraints()": {
+      "args": [],
+      "for": [
+        "MediaDevices"
+      ],
+      "shortname": "mediacapture-streams"
+    }
+  },
   "getSynchronizationSources()": {
     "getSynchronizationSources()": {
       "args": [],
@@ -10221,6 +10269,13 @@
     }
   },
   "getTrackById()": {
+    "getTrackById()": {
+      "args": [],
+      "for": [
+        "MediaStream"
+      ],
+      "shortname": "mediacapture-streams"
+    },
     "getTrackById(id)": {
       "args": [
         "id"
@@ -10230,6 +10285,24 @@
         "VideoTrackList"
       ],
       "shortname": "html"
+    },
+    "getTrackById(trackId)": {
+      "args": [
+        "trackId"
+      ],
+      "for": [
+        "MediaStream"
+      ],
+      "shortname": "mediacapture-streams"
+    }
+  },
+  "getTracks()": {
+    "getTracks()": {
+      "args": [],
+      "for": [
+        "MediaStream"
+      ],
+      "shortname": "mediacapture-streams"
     }
   },
   "getTransceivers()": {
@@ -10266,6 +10339,46 @@
         "Node"
       ],
       "shortname": "dom"
+    }
+  },
+  "getUserMedia()": {
+    "getUserMedia()": {
+      "args": [],
+      "for": [
+        "MediaDevices",
+        "Navigator"
+      ],
+      "shortname": "mediacapture-streams"
+    },
+    "getUserMedia(, constraints)": {
+      "args": [
+        "",
+        "constraints"
+      ],
+      "for": [
+        "MediaDevices"
+      ],
+      "shortname": "mediacapture-streams"
+    },
+    "getUserMedia(constraints, successCallback, errorCallback)": {
+      "args": [
+        "constraints",
+        "successCallback",
+        "errorCallback"
+      ],
+      "for": [
+        "Navigator"
+      ],
+      "shortname": "mediacapture-streams"
+    }
+  },
+  "getVideoTracks()": {
+    "getVideoTracks()": {
+      "args": [],
+      "for": [
+        "MediaStream"
+      ],
+      "shortname": "mediacapture-streams"
     }
   },
   "getViewSubImage()": {
@@ -10319,92 +10432,6 @@
         "WritableStream"
       ],
       "shortname": "streams"
-    }
-  },
-  "getaudiotracks()": {
-    "getaudiotracks()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "getcapabilities()": {
-    "getcapabilities()": {
-      "args": [],
-      "for": [
-        "constrainablepattern",
-        "inputdeviceinfo",
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "getconstraints()": {
-    "getconstraints()": {
-      "args": [],
-      "for": [
-        "constrainablepattern",
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "getsettings()": {
-    "getsettings()": {
-      "args": [],
-      "for": [
-        "constrainablepattern",
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "getsupportedconstraints()": {
-    "getsupportedconstraints()": {
-      "args": [],
-      "for": [
-        "mediadevices"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "gettrackbyid()": {
-    "gettrackbyid()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "gettracks()": {
-    "gettracks()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "getusermedia()": {
-    "getusermedia()": {
-      "args": [],
-      "for": [
-        "mediadevices",
-        "navigator"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "getvideotracks()": {
-    "getvideotracks()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
     }
   },
   "go()": {
@@ -10860,15 +10887,6 @@
         "WheelEvent"
       ],
       "shortname": "ui-events"
-    }
-  },
-  "inputdeviceinfo.getcapabilities()": {
-    "inputdeviceinfo.getcapabilities()": {
-      "args": [],
-      "for": [
-        "inputdeviceinfo"
-      ],
-      "shortname": "mediacapture-streams"
     }
   },
   "insertAdjacentElement()": {
@@ -11610,159 +11628,6 @@
       "shortname": "font-metrics-api"
     }
   },
-  "mediadeviceinfo.tojson()": {
-    "mediadeviceinfo.tojson()": {
-      "args": [],
-      "for": [
-        "mediadeviceinfo"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediadevices.enumeratedevices()": {
-    "mediadevices.enumeratedevices()": {
-      "args": [],
-      "for": [
-        "mediadevices"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediadevices.getsupportedconstraints()": {
-    "mediadevices.getsupportedconstraints()": {
-      "args": [],
-      "for": [
-        "mediadevices"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediadevices.getusermedia()": {
-    "mediadevices.getusermedia()": {
-      "args": [],
-      "for": [
-        "mediadevices"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastream.addtrack()": {
-    "mediastream.addtrack()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastream.clone()": {
-    "mediastream.clone()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastream.getaudiotracks()": {
-    "mediastream.getaudiotracks()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastream.gettrackbyid()": {
-    "mediastream.gettrackbyid()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastream.gettracks()": {
-    "mediastream.gettracks()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastream.getvideotracks()": {
-    "mediastream.getvideotracks()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastream.removetrack()": {
-    "mediastream.removetrack()": {
-      "args": [],
-      "for": [
-        "mediastream"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastreamtrack.applyconstraints()": {
-    "mediastreamtrack.applyconstraints()": {
-      "args": [],
-      "for": [
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastreamtrack.clone()": {
-    "mediastreamtrack.clone()": {
-      "args": [],
-      "for": [
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastreamtrack.getcapabilities()": {
-    "mediastreamtrack.getcapabilities()": {
-      "args": [],
-      "for": [
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastreamtrack.getconstraints()": {
-    "mediastreamtrack.getconstraints()": {
-      "args": [],
-      "for": [
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastreamtrack.getsettings()": {
-    "mediastreamtrack.getsettings()": {
-      "args": [],
-      "for": [
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
-  "mediastreamtrack.stop()": {
-    "mediastreamtrack.stop()": {
-      "args": [],
-      "for": [
-        "mediastreamtrack"
-      ],
-      "shortname": "mediacapture-streams"
-    }
-  },
   "min()": {
     "min()": {
       "args": [],
@@ -11930,15 +11795,6 @@
         "WindowClient"
       ],
       "shortname": "service-workers"
-    }
-  },
-  "navigator.getusermedia()": {
-    "navigator.getusermedia()": {
-      "args": [],
-      "for": [
-        "navigator"
-      ],
-      "shortname": "mediacapture-streams"
     }
   },
   "navigator.javaEnabled()": {
@@ -13328,9 +13184,10 @@
     "removeTrack()": {
       "args": [],
       "for": [
+        "MediaStream",
         "RTCPeerConnection"
       ],
-      "shortname": "webrtc"
+      "shortname": "mediacapture-streams"
     },
     "removeTrack(sender)": {
       "args": [
@@ -13340,13 +13197,13 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
-    }
-  },
-  "removetrack()": {
-    "removetrack()": {
-      "args": [],
+    },
+    "removeTrack(track)": {
+      "args": [
+        "track"
+      ],
       "for": [
-        "mediastream"
+        "MediaStream"
       ],
       "shortname": "mediacapture-streams"
     }
@@ -15745,10 +15602,10 @@
       "for": [
         "AudioScheduledSourceNode",
         "HTMLMarqueeElement",
+        "MediaStreamTrack",
         "RTCRtpTransceiver",
         "Sensor",
-        "Window",
-        "mediastreamtrack"
+        "Window"
       ],
       "shortname": "generic-sensor"
     },
@@ -16172,6 +16029,7 @@
         "DOMPointReadOnly",
         "DOMQuad",
         "DOMRectReadOnly",
+        "MediaDeviceInfo",
         "PaymentAddress",
         "PaymentResponse",
         "Performance",
@@ -16283,15 +16141,6 @@
         "Element"
       ],
       "shortname": "dom"
-    }
-  },
-  "tojson()": {
-    "tojson()": {
-      "args": [],
-      "for": [
-        "mediadeviceinfo"
-      ],
-      "shortname": "mediacapture-streams"
     }
   },
   "trace()": {

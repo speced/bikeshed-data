@@ -1216,7 +1216,6 @@
     "MediaStreamTrack",
     "MediaStreamTrackAudioSourceNode",
     "MediaStreamTrackAudioSourceOptions",
-    "MediaStreamTrackEvent",
     "MediaStreamTrackEventInit",
     "MediaStreamTrackState",
     "MediaTrackCapabilities",
@@ -2145,8 +2144,11 @@
     "[[associatedmediastreamids]]",
     "[[associatedremotemediastreams]]",
     "[[bufferedamount]]",
+    "[[canexposedeviceinfo]]",
+    "[[capabilities]]",
     "[[certificate]]",
     "[[configuration]]",
+    "[[constraints]]",
     "[[crossoriginpropertydescriptormap]]",
     "[[currentdirection]]",
     "[[currentlocaldescription]]",
@@ -2156,6 +2158,8 @@
     "[[datachannelprotocol]]",
     "[[defaultorientation]]",
     "[[defaultproperties]]",
+    "[[devicesaccessiblemap]]",
+    "[[deviceslivemap]]",
     "[[direction]]",
     "[[documentorigin]]",
     "[[dtlstransportstate]]",
@@ -2171,6 +2175,7 @@
     "[[ishtmldda]]",
     "[[jsepmid]]",
     "[[keyingmaterialhandle]]",
+    "[[kindsaccessiblemap]]",
     "[[lastcreatedanswer]]",
     "[[lastcreatedoffer]]",
     "[[lastreturnedparameters]]",
@@ -2210,8 +2215,10 @@
     "[[sender]]",
     "[[sendertrack]]",
     "[[sendertransport]]",
+    "[[settings]]",
     "[[stopped]]",
     "[[stopping]]",
+    "[[storeddevicelist]]",
     "[[tonebuffer]]",
     "[[updatenegotiationneededflagonemptychain]]",
     "[[window]]",
@@ -3305,7 +3312,6 @@
     "callback reaction",
     "callback this value",
     "camera",
-    "camera-feature",
     "can autoplay flag",
     "can be displayed",
     "can be manually scrolled",
@@ -3343,6 +3349,8 @@
     "canvas surface",
     "cap shapes",
     "cap-height baseline",
+    "capabilities",
+    "capability",
     "capable of supporting",
     "caption",
     "caption width minimum (capmin)",
@@ -4009,7 +4017,6 @@
     "create a new top-level browsing context",
     "create a paintrenderingcontext2d object",
     "create a paymentaddress from user-provided input",
-    "create a permission storage entry",
     "create a permissions policy for a browsing context",
     "create a permissions policy for a browsing context from response",
     "create a permissionstatus",
@@ -4053,6 +4060,7 @@
     "createbytedatablock",
     "created",
     "createdataproperty",
+    "creating a device info object",
     "creating a frozen array",
     "creating a frozen array from an iterable",
     "creating a permissions policy",
@@ -4471,9 +4479,11 @@
     "determines the set of origins on which the public key credential may be exercised",
     "determining the http cache partition",
     "determining the network partition key",
+    "device change notification steps",
     "device descriptor",
     "device discovery procedure",
-    "device information can be exposed check",
+    "device enumeration can proceed",
+    "device information can be exposed",
     "device sensor",
     "device-cmyk()",
     "device-enumeration-can-proceed",
@@ -4607,7 +4617,6 @@
     "documents",
     "documenttype",
     "dodgerblue",
-    "dom",
     "dom application",
     "dom interface",
     "dom level 0",
@@ -4763,7 +4772,6 @@
     "enable-background",
     "enabled",
     "enabled css style sheet set",
-    "enabled/disabled",
     "encapsulation contexts",
     "encode",
     "encode and enqueue a chunk",
@@ -4787,7 +4795,9 @@
     "end-tag-with-attributes",
     "end-tag-with-trailing-solidus",
     "ended",
+    "ended audio playback",
     "ended playback",
+    "ended video playback",
     "ending edges",
     "ending point",
     "ending shape",
@@ -4892,7 +4902,6 @@
     "event handler event type",
     "event handler idl attribute",
     "event handler map",
-    "event handlers",
     "event listener",
     "event loop",
     "event loop processing model",
@@ -4900,7 +4909,6 @@
     "event phase",
     "event target",
     "event type",
-    "eventhandler",
     "eventinit",
     "eventtarget",
     "ex",
@@ -4956,6 +4964,7 @@
     "expose a user interface to the user",
     "exposed",
     "exposes",
+    "exposure decision algorithm for devices other than camera and microphone",
     "exposure set",
     "expressly inert",
     "extend",
@@ -5160,7 +5169,6 @@
     "fire functional event",
     "firebrick",
     "fired unload",
-    "fires a simple event",
     "firing",
     "firing a click event",
     "firing a synthetic mouse event named e",
@@ -6067,6 +6075,7 @@
     "initialize a document's csp list",
     "initialize a equirect layer",
     "initialize a global object's csp list",
+    "initialize a new intersectionobserver",
     "initialize a quad layer",
     "initialize a sensor object",
     "initialize the render state",
@@ -6675,6 +6684,7 @@
     "list of elements with namespace namespace and local name localname",
     "list of elements with qualified name qualifiedname",
     "list of immersive xr devices",
+    "list of inherent constrainable track properties",
     "list of inline sessions",
     "list of newly introduced cues",
     "list of options",
@@ -6978,7 +6988,6 @@
     "media-type-list",
     "mediasource",
     "mediastream",
-    "mediastream()",
     "mediastreamtrack",
     "mediumaquamarine",
     "mediumblue",
@@ -7013,7 +7022,6 @@
     "microdata",
     "microdata errors",
     "microphone",
-    "microphone-feature",
     "microtask",
     "microtask queue",
     "microtask task source",
@@ -7223,7 +7231,6 @@
     "navigation params",
     "navigation request",
     "navigation-override",
-    "navigator",
     "navigator compatibility mode",
     "navigator.hardwareconcurrency",
     "navigator.javaEnabled()",
@@ -7438,6 +7445,7 @@
     "observable array type",
     "observable policy",
     "observation procedure",
+    "observe a target element",
     "observed attributes",
     "observer",
     "obsolete",
@@ -7930,7 +7938,6 @@
     "performing a microtask checkpoint",
     "peripheral",
     "permissible worker",
-    "permission",
     "permission descriptor type",
     "permission query algorithm",
     "permission request algorithm",
@@ -8358,6 +8365,7 @@
     "readable stream reader",
     "reader",
     "reading change threshold",
+    "reading current permission state",
     "reading timestamp",
     "reading value",
     "readonly",
@@ -8676,7 +8684,6 @@
     "response object",
     "response url",
     "responses",
-    "responsible document",
     "rest",
     "rest-after",
     "rest-before",
@@ -8698,7 +8705,6 @@
     "retrieve multiple referenced values from an index",
     "retrieve multiple values from an index",
     "retrieve multiple values from an object store",
-    "retrieve the permission state",
     "return state",
     "return type",
     "rev",
@@ -9244,6 +9250,7 @@
     "set the configuration",
     "set the current base text",
     "set the current time",
+    "set the device information exposure",
     "set the frozen base url",
     "set the muted state",
     "set the offset value",
@@ -9290,6 +9297,7 @@
     "setting the search origin",
     "setting the space on a layer",
     "setting the value of an entry",
+    "settings",
     "settings section",
     "settled",
     "setup packet",
@@ -10201,7 +10209,6 @@
     "track set",
     "track sizing algorithm",
     "track url",
-    "track-muted",
     "tracking",
     "tracking the effective position of the legacy mouse pointer",
     "tracking vector",
@@ -10386,6 +10393,7 @@
     "unloading document cleanup steps",
     "unloading document visibility change steps",
     "unmute",
+    "unobserve a target element",
     "unoccupied",
     "unordered set of unique space-separated tokens",
     "unprefixed",
@@ -10764,7 +10772,6 @@
     "well-known symbols",
     "wheat",
     "wheel",
-    "when the constructor is invoked",
     "when-defined promise map",
     "while",
     "white",
@@ -14860,12 +14867,38 @@
   "ConstantSourceOptions": [
     "offset"
   ],
+  "ConstrainBooleanParameters": [
+    "exact",
+    "ideal"
+  ],
+  "ConstrainDOMStringParameters": [
+    "exact",
+    "ideal"
+  ],
+  "ConstrainDoubleRange": [
+    "exact",
+    "ideal"
+  ],
+  "ConstrainULongRange": [
+    "exact",
+    "ideal"
+  ],
   "ConstrainablePattern": [
+    "applyConstraints",
+    "applyConstraints()",
+    "applyConstraints(, constraints)",
     "applyconstraints algorithm",
+    "applyconstraints template method",
     "fitness distance",
+    "getCapabilities()",
+    "getConstraints()",
+    "getSettings()",
     "required",
     "selectsettings",
     "settings dictionary"
+  ],
+  "Constraints": [
+    "advanced"
   ],
   "ConvertCoordinateOptions": [
     "fromBox",
@@ -16762,6 +16795,10 @@
     "publicId",
     "system id",
     "systemId"
+  ],
+  "DoubleRange": [
+    "max",
+    "min"
   ],
   "DragEventInit": [
     "dataTransfer"
@@ -19503,6 +19540,10 @@
     "src",
     "type"
   ],
+  "InputDeviceInfo": [
+    "getCapabilities",
+    "getCapabilities()"
+  ],
   "InputEvent": [
     "Constructor",
     "InputEvent(type)",
@@ -19945,9 +19986,14 @@
     "solid fill"
   ],
   "MediaDeviceInfo": [
+    "deviceId",
     "deviceid",
+    "groupId",
     "groupid",
-    "kind"
+    "kind",
+    "label",
+    "toJSON",
+    "toJSON()"
   ],
   "MediaDeviceKind": [
     "audioinput",
@@ -19955,6 +20001,13 @@
     "videoinput"
   ],
   "MediaDevices": [
+    "enumerateDevices",
+    "enumerateDevices()",
+    "getSupportedConstraints",
+    "getSupportedConstraints()",
+    "getUserMedia()",
+    "getUserMedia(, constraints)",
+    "ondevicechange",
     "same-permission"
   ],
   "MediaElementAudioSourceNode": [
@@ -20058,12 +20111,33 @@
     "media"
   ],
   "MediaStream": [
+    "active",
     "addTrack",
+    "addTrack()",
+    "addTrack(track)",
+    "clone",
+    "clone()",
+    "constructor",
+    "constructor!overload-1()",
+    "constructor!overload-1(stream)",
+    "constructor!overload-2()",
+    "constructor!overload-2(tracks)",
+    "constructor()",
     "getAudioTracks",
+    "getAudioTracks()",
     "getTrackById",
+    "getTrackById()",
+    "getTrackById(trackId)",
     "getTracks",
+    "getTracks()",
     "getVideoTracks",
-    "removeTrack"
+    "getVideoTracks()",
+    "id",
+    "onaddtrack",
+    "onremovetrack",
+    "removeTrack",
+    "removeTrack()",
+    "removeTrack(track)"
   ],
   "MediaStreamAudioDestinationNode": [
     "MediaStreamAudioDestinationNode(context)",
@@ -20113,11 +20187,34 @@
   "MediaStreamAudioSourceOptions": [
     "mediaStream"
   ],
+  "MediaStreamConstraints": [
+    "audio",
+    "video"
+  ],
   "MediaStreamTrack": [
+    "applyConstraints",
+    "applyConstraints()",
+    "applyConstraints(, constraints)",
+    "audio",
+    "clone",
+    "clone()",
     "enabled",
+    "getCapabilities",
+    "getCapabilities()",
+    "getConstraints",
+    "getConstraints()",
+    "getSettings",
+    "getSettings()",
+    "id",
     "kind",
     "label",
-    "readyState"
+    "muted",
+    "onended",
+    "onmute",
+    "onunmute",
+    "readyState",
+    "stop()",
+    "video"
   ],
   "MediaStreamTrackAudioSourceNode": [
     "MediaStreamTrackAudioSourceNode(context, options)",
@@ -20139,11 +20236,89 @@
     "mediaStreamTrack"
   ],
   "MediaStreamTrackEvent": [
+    "MediaStreamTrackEvent",
+    "constructor()",
+    "constructor(type, eventInitDict)",
+    "track"
+  ],
+  "MediaStreamTrackEventInit": [
     "track"
   ],
   "MediaStreamTrackState": [
+    "ended",
     "ended event",
     "live"
+  ],
+  "MediaTrackCapabilities": [
+    "aspectRatio",
+    "autoGainControl",
+    "channelCount",
+    "deviceId",
+    "echoCancellation",
+    "facingMode",
+    "frameRate",
+    "groupId",
+    "height",
+    "latency",
+    "noiseSuppression",
+    "resizeMode",
+    "sampleRate",
+    "sampleSize",
+    "width"
+  ],
+  "MediaTrackConstraintSet": [
+    "aspectRatio",
+    "autoGainControl",
+    "channelCount",
+    "deviceId",
+    "echoCancellation",
+    "facingMode",
+    "frameRate",
+    "groupId",
+    "height",
+    "latency",
+    "noiseSuppression",
+    "resizeMode",
+    "sampleRate",
+    "sampleSize",
+    "width"
+  ],
+  "MediaTrackConstraints": [
+    "advanced"
+  ],
+  "MediaTrackSettings": [
+    "aspectRatio",
+    "autoGainControl",
+    "channelCount",
+    "deviceId",
+    "echoCancellation",
+    "facingMode",
+    "frameRate",
+    "groupId",
+    "height",
+    "latency",
+    "noiseSuppression",
+    "resizeMode",
+    "sampleRate",
+    "sampleSize",
+    "width"
+  ],
+  "MediaTrackSupportedConstraints": [
+    "aspectRatio",
+    "autoGainControl",
+    "channelCount",
+    "deviceId",
+    "echoCancellation",
+    "facingMode",
+    "frameRate",
+    "groupId",
+    "height",
+    "latency",
+    "noiseSuppression",
+    "resizeMode",
+    "sampleRate",
+    "sampleSize",
+    "width"
   ],
   "MerchantValidationEvent": [
     "MerchantValidationEvent.complete",
@@ -20469,7 +20644,11 @@
     "[[sharepromise]]",
     "bluetooth",
     "credentials",
+    "getUserMedia",
+    "getUserMedia()",
+    "getUserMedia(constraints, successCallback, errorCallback)",
     "maxTouchPoints",
+    "mediaDevices",
     "permissions",
     "serviceWorker",
     "share()",
@@ -24460,6 +24639,10 @@
     "view",
     "which"
   ],
+  "ULongRange": [
+    "max",
+    "min"
+  ],
   "URL": [
     "URL(url)",
     "URL(url, base)",
@@ -27860,43 +28043,6 @@
   "console/warn(...data)": [
     "data"
   ],
-  "constrainablepattern": [
-    "applyconstraints",
-    "applyconstraints()",
-    "constrainablepattern.applyconstraints",
-    "constrainablepattern.applyconstraints()",
-    "constrainablepattern.getcapabilities",
-    "constrainablepattern.getcapabilities()",
-    "constrainablepattern.getconstraints",
-    "constrainablepattern.getconstraints()",
-    "constrainablepattern.getsettings",
-    "constrainablepattern.getsettings()",
-    "getcapabilities",
-    "getcapabilities()",
-    "getconstraints",
-    "getconstraints()",
-    "getsettings",
-    "getsettings()"
-  ],
-  "constrainbooleanparameters": [
-    "exact",
-    "ideal"
-  ],
-  "constraindomstringparameters": [
-    "exact",
-    "ideal"
-  ],
-  "constraindoublerange": [
-    "exact",
-    "ideal"
-  ],
-  "constraints": [
-    "advanced"
-  ],
-  "constrainulongrange": [
-    "exact",
-    "ideal"
-  ],
   "contain": [
     "content",
     "layout",
@@ -28259,10 +28405,6 @@
   ],
   "domtokenlist": [
     "value"
-  ],
-  "doublerange": [
-    "max",
-    "min"
   ],
   "easing-function": [
     "linear"
@@ -29317,12 +29459,6 @@
   "input-value": [
     "filename"
   ],
-  "inputdeviceinfo": [
-    "getcapabilities",
-    "getcapabilities()",
-    "inputdeviceinfo.getcapabilities",
-    "inputdeviceinfo.getcapabilities()"
-  ],
   "ins": [
     "cite",
     "datetime"
@@ -29871,216 +30007,6 @@
     "seek",
     "src"
   ],
-  "mediadeviceinfo": [
-    "deviceid",
-    "groupid",
-    "kind",
-    "label",
-    "mediadeviceinfo.deviceid",
-    "mediadeviceinfo.groupid",
-    "mediadeviceinfo.kind",
-    "mediadeviceinfo.label",
-    "mediadeviceinfo.tojson",
-    "mediadeviceinfo.tojson()",
-    "tojson",
-    "tojson()"
-  ],
-  "mediadevicekind": [
-    "audioinput",
-    "audiooutput",
-    "videoinput"
-  ],
-  "mediadevices": [
-    "enumeratedevices",
-    "enumeratedevices()",
-    "getSupportedConstraints",
-    "getsupportedconstraints",
-    "getsupportedconstraints()",
-    "getusermedia",
-    "getusermedia()",
-    "mediadevices.enumeratedevices",
-    "mediadevices.enumeratedevices()",
-    "mediadevices.getsupportedconstraints",
-    "mediadevices.getsupportedconstraints()",
-    "mediadevices.getusermedia",
-    "mediadevices.getusermedia()",
-    "mediadevices.ondevicechange",
-    "ondevicechange"
-  ],
-  "mediastream": [
-    "active",
-    "addTrack",
-    "addtrack",
-    "addtrack()",
-    "clone",
-    "clone()",
-    "getAudioTracks",
-    "getTrackById",
-    "getTracks",
-    "getVideoTracks",
-    "getaudiotracks",
-    "getaudiotracks()",
-    "gettrackbyid",
-    "gettrackbyid()",
-    "gettracks",
-    "gettracks()",
-    "getvideotracks",
-    "getvideotracks()",
-    "id",
-    "mediastream.active",
-    "mediastream.addtrack",
-    "mediastream.addtrack()",
-    "mediastream.clone",
-    "mediastream.clone()",
-    "mediastream.getaudiotracks",
-    "mediastream.getaudiotracks()",
-    "mediastream.gettrackbyid",
-    "mediastream.gettrackbyid()",
-    "mediastream.gettracks",
-    "mediastream.gettracks()",
-    "mediastream.getvideotracks",
-    "mediastream.getvideotracks()",
-    "mediastream.id",
-    "mediastream.onaddtrack",
-    "mediastream.onremovetrack",
-    "mediastream.removetrack",
-    "mediastream.removetrack()",
-    "onaddtrack",
-    "onremovetrack",
-    "removeTrack",
-    "removetrack",
-    "removetrack()"
-  ],
-  "mediastreamconstraints": [
-    "audio",
-    "video"
-  ],
-  "mediastreamtrack": [
-    "applyconstraints",
-    "applyconstraints()",
-    "clone",
-    "clone()",
-    "enabled",
-    "getcapabilities",
-    "getcapabilities()",
-    "getconstraints",
-    "getconstraints()",
-    "getsettings",
-    "getsettings()",
-    "id",
-    "kind",
-    "label",
-    "mediastreamtrack.applyconstraints",
-    "mediastreamtrack.applyconstraints()",
-    "mediastreamtrack.clone",
-    "mediastreamtrack.clone()",
-    "mediastreamtrack.enabled",
-    "mediastreamtrack.getcapabilities",
-    "mediastreamtrack.getcapabilities()",
-    "mediastreamtrack.getconstraints",
-    "mediastreamtrack.getconstraints()",
-    "mediastreamtrack.getsettings",
-    "mediastreamtrack.getsettings()",
-    "mediastreamtrack.id",
-    "mediastreamtrack.kind",
-    "mediastreamtrack.label",
-    "mediastreamtrack.muted",
-    "mediastreamtrack.onended",
-    "mediastreamtrack.onmute",
-    "mediastreamtrack.onunmute",
-    "mediastreamtrack.readystate",
-    "mediastreamtrack.stop",
-    "mediastreamtrack.stop()",
-    "muted",
-    "onended",
-    "onmute",
-    "onunmute",
-    "readystate",
-    "stop",
-    "stop()"
-  ],
-  "mediastreamtrackevent": [
-    "mediastreamtrackevent.track",
-    "track"
-  ],
-  "mediastreamtrackeventinit": [
-    "track"
-  ],
-  "mediastreamtrackstate": [
-    "ended",
-    "live"
-  ],
-  "mediatrackcapabilities": [
-    "aspectRatio",
-    "autoGainControl",
-    "channelCount",
-    "deviceId",
-    "echoCancellation",
-    "facingMode",
-    "frameRate",
-    "groupId",
-    "height",
-    "latency",
-    "noiseSuppression",
-    "resizeMode",
-    "sampleRate",
-    "sampleSize",
-    "width"
-  ],
-  "mediatrackconstraints": [
-    "advanced"
-  ],
-  "mediatrackconstraintset": [
-    "aspectRatio",
-    "autoGainControl",
-    "channelCount",
-    "deviceId",
-    "echoCancellation",
-    "facingMode",
-    "frameRate",
-    "groupId",
-    "height",
-    "latency",
-    "noiseSuppression",
-    "resizeMode",
-    "sampleRate",
-    "sampleSize",
-    "width"
-  ],
-  "mediatracksettings": [
-    "aspectRatio",
-    "autoGainControl",
-    "channelCount",
-    "deviceId",
-    "echoCancellation",
-    "facingMode",
-    "frameRate",
-    "groupId",
-    "height",
-    "latency",
-    "noiseSuppression",
-    "resizeMode",
-    "sampleRate",
-    "sampleSize",
-    "width"
-  ],
-  "mediatracksupportedconstraints": [
-    "aspectRatio",
-    "autoGainControl",
-    "channelCount",
-    "deviceId",
-    "echoCancellation",
-    "facingMode",
-    "frameRate",
-    "groupId",
-    "height",
-    "latency",
-    "noiseSuppression",
-    "resizeMode",
-    "sampleRate",
-    "sampleSize",
-    "width"
-  ],
   "menu": [
     "compact",
     "label",
@@ -30139,14 +30065,6 @@
   ],
   "mouseevent": [
     "relatedTarget"
-  ],
-  "navigator": [
-    "getusermedia",
-    "getusermedia()",
-    "mediadevices",
-    "navigator.getusermedia",
-    "navigator.getusermedia()",
-    "navigator.mediadevices"
   ],
   "no-composite": [
     "no-composite"
@@ -31796,10 +31714,6 @@
     "compact",
     "type"
   ],
-  "ulongrange": [
-    "max",
-    "min"
-  ],
   "unicode-bidi": [
     "bidi-override",
     "embed",
@@ -31887,16 +31801,6 @@
   "video": [
     "playsinline",
     "poster"
-  ],
-  "videofacingmodeenum": [
-    "environment",
-    "left",
-    "right",
-    "user"
-  ],
-  "videoresizemodeenum": [
-    "crop-and-scale",
-    "none"
   ],
   "view": [
     "active",
