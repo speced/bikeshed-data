@@ -26193,6 +26193,7 @@
     "centralAngle",
     "isStatic",
     "radius",
+    "textureType",
     "transform"
   ],
   "XRDOMOverlayInit": [
@@ -26231,6 +26232,7 @@
     "isStatic",
     "lowerVerticalAngle",
     "radius",
+    "textureType",
     "transform",
     "upperVerticalAngle"
   ],
@@ -26526,7 +26528,8 @@
     "alpha",
     "depth",
     "scaleFactor",
-    "stencil"
+    "stencil",
+    "textureType"
   ],
   "XRQuadLayer": [
     "height",
@@ -26538,6 +26541,7 @@
   "XRQuadLayerInit": [
     "height",
     "isStatic",
+    "textureType",
     "transform",
     "width"
   ],
@@ -26887,18 +26891,18 @@
     "createCubeLayer()",
     "createCubeLayer(XRCubeLayerInit init)",
     "createCubeLayer(init)",
-    "createCylinderLayer(XRTextureType textureType, XRCylinderLayerInit init)",
-    "createCylinderLayer(textureType)",
-    "createCylinderLayer(textureType, init)",
-    "createEquirectLayer(XRTextureType textureType, XREquirectLayerLayerInit init)",
-    "createEquirectLayer(textureType)",
-    "createEquirectLayer(textureType, init)",
-    "createProjectionLayer(XRTextureType textureType, optional XRProjectionLayerInit init)",
-    "createProjectionLayer(textureType)",
-    "createProjectionLayer(textureType, init)",
-    "createQuadLayer(XRTextureType textureType, XRQuadLayerInit init)",
-    "createQuadLayer(textureType)",
-    "createQuadLayer(textureType, init)",
+    "createCylinderLayer()",
+    "createCylinderLayer(XRCylinderLayerInit init)",
+    "createCylinderLayer(init)",
+    "createEquirectLayer()",
+    "createEquirectLayer(XREquirectLayerLayerInit init)",
+    "createEquirectLayer(init)",
+    "createProjectionLayer()",
+    "createProjectionLayer(init)",
+    "createProjectionLayer(optional XRProjectionLayerInit init)",
+    "createQuadLayer()",
+    "createQuadLayer(XRQuadLayerInit init)",
+    "createQuadLayer(init)",
     "getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\")",
     "getSubImage(layer, frame)",
     "getSubImage(layer, frame, eye)",
@@ -26921,37 +26925,29 @@
   "XRWebGLBinding/createCubeLayer(init)": [
     "init"
   ],
-  "XRWebGLBinding/createCylinderLayer(textureType)": [
-    "init",
-    "textureType"
+  "XRWebGLBinding/createCylinderLayer()": [
+    "init"
   ],
-  "XRWebGLBinding/createCylinderLayer(textureType, init)": [
-    "init",
-    "textureType"
+  "XRWebGLBinding/createCylinderLayer(init)": [
+    "init"
   ],
-  "XRWebGLBinding/createEquirectLayer(textureType)": [
-    "init",
-    "textureType"
+  "XRWebGLBinding/createEquirectLayer()": [
+    "init"
   ],
-  "XRWebGLBinding/createEquirectLayer(textureType, init)": [
-    "init",
-    "textureType"
+  "XRWebGLBinding/createEquirectLayer(init)": [
+    "init"
   ],
-  "XRWebGLBinding/createProjectionLayer(textureType)": [
-    "init",
-    "textureType"
+  "XRWebGLBinding/createProjectionLayer()": [
+    "init"
   ],
-  "XRWebGLBinding/createProjectionLayer(textureType, init)": [
-    "init",
-    "textureType"
+  "XRWebGLBinding/createProjectionLayer(init)": [
+    "init"
   ],
-  "XRWebGLBinding/createQuadLayer(textureType)": [
-    "init",
-    "textureType"
+  "XRWebGLBinding/createQuadLayer()": [
+    "init"
   ],
-  "XRWebGLBinding/createQuadLayer(textureType, init)": [
-    "init",
-    "textureType"
+  "XRWebGLBinding/createQuadLayer(init)": [
+    "init"
   ],
   "XRWebGLBinding/getSubImage(layer, frame)": [
     "eye",
