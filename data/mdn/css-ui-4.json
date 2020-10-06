@@ -2,10 +2,10 @@
     "appearance-switching": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "prefixed": [
-                "gecko",
                 "webkit"
             ],
             "filename": "css/properties/appearance.json",
@@ -38,6 +38,9 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "80"
+                    },
+                    {
                         "version_added": "1",
                         "partial_implementation": true,
                         "prefix": "-moz-"
@@ -61,6 +64,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "80"
+                    },
                     {
                         "version_added": "4",
                         "partial_implementation": true,
@@ -97,11 +103,16 @@
                         "prefix": "-webkit-"
                     }
                 ],
-                "opera_android": {
-                    "version_added": "14",
-                    "partial_implementation": true,
-                    "prefix": "-webkit-"
-                },
+                "opera_android": [
+                    {
+                        "version_added": "60"
+                    },
+                    {
+                        "version_added": "14",
+                        "partial_implementation": true,
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "safari": {
                     "version_added": "3",
                     "partial_implementation": true,

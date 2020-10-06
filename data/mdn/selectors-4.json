@@ -359,7 +359,7 @@
             "filename": "css/selectors/blank.json",
             "name": "blank",
             "slug": "CSS/:blank",
-            "summary": "The :blank CSS pseudo-class selects empty user input elements (eg. <input> or <textarea>).",
+            "summary": "The :blank CSS pseudo-class selects empty user input elements (e.g. <input> or <textarea>).",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -1815,16 +1815,210 @@
             "title": ":valid"
         }
     ],
+    "zero-matches": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "css/selectors/is.json",
+            "name": "forgiving_selector_list",
+            "slug": "CSS/:where",
+            "summary": "The :where() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "82"
+                },
+                "firefox_android": {
+                    "version_added": "82"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": ":where()"
+        },
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "css/selectors/where.json",
+            "name": "forgiving_selector_list",
+            "slug": "CSS/:where",
+            "summary": "The :where() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "82"
+                },
+                "firefox_android": {
+                    "version_added": "82"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": ":where()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "blink"
+            ],
+            "filename": "css/selectors/where.json",
+            "name": "where",
+            "slug": "CSS/:where",
+            "summary": "The :where() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.",
+            "support": {
+                "chrome": {
+                    "version_added": "72",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "chrome_android": {
+                    "version_added": "72",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "78"
+                    },
+                    {
+                        "version_added": "77",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.is-where-selectors.enabled",
+                                "value_to_set": "enabled"
+                            }
+                        ],
+                        "notes": "Enabled by default in Firefox Nightly."
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": {
+                    "version_added": "14"
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                }
+            },
+            "title": ":where()"
+        }
+    ],
     "matches-pseudo": [
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "altname": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "css/selectors/is.json",
             "name": "is",
@@ -1984,6 +2178,9 @@
                 ],
                 "safari": [
                     {
+                        "version_added": "14"
+                    },
+                    {
                         "version_added": "9",
                         "alternative_name": ":matches()"
                     },
@@ -1994,6 +2191,9 @@
                     }
                 ],
                 "safari_ios": [
+                    {
+                        "version_added": "14"
+                    },
                     {
                         "version_added": "9",
                         "alternative_name": ":matches()"
@@ -3443,97 +3643,6 @@
                 }
             },
             "title": "Universal selectors"
-        }
-    ],
-    "zero-matches": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "needsflag": [
-                "blink"
-            ],
-            "filename": "css/selectors/where.json",
-            "name": "where",
-            "slug": "CSS/:where",
-            "summary": "The :where() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.",
-            "support": {
-                "chrome": {
-                    "version_added": "72",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "72",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "77",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.is-where-selectors.enabled",
-                                "value_to_set": "enabled"
-                            }
-                        ],
-                        "notes": "Enabled by default in Firefox Nightly."
-                    }
-                ],
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
-            },
-            "title": ":where()"
         }
     ]
 }

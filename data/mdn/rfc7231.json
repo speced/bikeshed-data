@@ -675,7 +675,7 @@
             "filename": "http/headers/referer.json",
             "name": "Referer",
             "slug": "HTTP/Headers/Referer",
-            "summary": "The Referer request header contains the address of the previous web page from which a link to the currently requested page was followed. The Referer header allows servers to identify where people are visiting them from and may use that data for analytics, logging, or optimized caching, for example.",
+            "summary": "The Referer request header contains the address of the page making the request. When following a link, this would be the url of the page containing the link. When making AJAX requests to another domain, this would be your page's url. The Referer header allows servers to identify where people are visiting them from and may use that data for analytics, logging, or optimized caching, for example.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -1989,7 +1989,7 @@
             "filename": "http/status.json",
             "name": "409",
             "slug": "HTTP/Status/409",
-            "summary": "The HTTP 409 Conflict response status code indicates a request conflict with current state of the server.",
+            "summary": "The HTTP 409 Conflict response status code indicates a request conflict with current state of the target resource.",
             "support": {
                 "chrome": {
                     "version_added": true

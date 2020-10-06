@@ -3719,7 +3719,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
                     "version_added": "11"
@@ -18432,7 +18432,8 @@
     "dom-accesskeylabel": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/HTMLElement.json",
             "name": "accessKeyLabel",
@@ -18464,10 +18465,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -24399,10 +24400,10 @@
                     ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "8"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "8"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -26817,7 +26818,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "8"
+                },
+                "safari_ios": {
+                    "version_added": "8"
                 },
                 "edge_blink": {
                     "version_added": true
@@ -26964,7 +26968,10 @@
                     ]
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "8"
+                },
+                "safari_ios": {
+                    "version_added": "8"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -29030,7 +29037,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/HTMLScriptElement.json",
             "name": "referrerPolicy",
@@ -29062,10 +29070,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -44694,7 +44702,7 @@
                     "version_added": true
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -44749,7 +44757,7 @@
                     "version_added": true
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -45944,6 +45952,61 @@
                 }
             },
             "title": "Window.top"
+        }
+    ],
+    "event-unload": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Window.json",
+            "name": "unload_event",
+            "slug": "API/Window/unload_event",
+            "summary": "The unload event is fired when the document or a child resource is being unloaded.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window: unload event"
         }
     ],
     "dom-window": [
@@ -56805,7 +56868,7 @@
             "filename": "html/elements/ruby.json",
             "name": "ruby",
             "slug": "HTML/Element/ruby",
-            "summary": "The HTML <ruby> element represents a ruby annotation. Ruby annotations are for showing pronunciation of East Asian characters.",
+            "summary": "The HTML <ruby> element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters. It can also be used for annotating other kinds of text, but this usage is less common.",
             "support": {
                 "chrome": {
                     "version_added": "5"

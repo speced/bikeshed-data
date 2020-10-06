@@ -523,12 +523,202 @@
                 }
             },
             "title": "MediaSession.setActionHandler()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/MediaSessionAction.json",
+            "name": "MediaSessionAction",
+            "slug": "API/MediaSessionAction",
+            "summary": "The specific type of media session action to be handled on a MediaSession is identified using a string from the MediaSessionAction enumerated type.",
+            "support": {
+                "chrome": {
+                    "version_added": "73"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "71",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.media.mediasession.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Media Session action types"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/MediaSessionActionDetails.json",
+            "name": "action",
+            "slug": "API/MediaSessionActionDetails/action",
+            "summary": "The action property is the only required property MediaSessionActionDetails dictionary, specifying the type of media session action which the action handler callback is being executed for.",
+            "support": {
+                "chrome": {
+                    "version_added": "73"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "71",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.media.mediasession.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaSessionActionDetails.action"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/MediaSessionActionDetails.json",
+            "name": "MediaSessionActionDetails",
+            "slug": "API/MediaSessionActionDetails",
+            "summary": "The Media Session API's MediaSessionActionDetails dictionary is the type used by the sole input parameter into the callback which is executed when a media session action occurs.",
+            "support": {
+                "chrome": {
+                    "version_added": "73"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "71",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.media.mediasession.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaSessionActionDetails"
         }
     ],
     "dom-mediasession-setpositionstate": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/MediaSession.json",
             "name": "setPositionState",
@@ -545,7 +735,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "76",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.media.mediasession.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -640,6 +837,176 @@
                 }
             },
             "title": "MediaSession"
+        }
+    ],
+    "dom-mediasessionactiondetails-fastseek": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MediaSessionActionDetails.json",
+            "name": "fastSeek",
+            "slug": "API/MediaSessionActionDetails/fastSeek",
+            "summary": "The Boolean property fastSeek in the MediaSessionActionDetails dictionary is an optional value which, when specified and true, indicates that the requested seekto operation is part of an ongoing series of seekto operations. Your handler should take steps to return as quickly as possible by skipping any steps of its operation which are only necessary when the seek operation is complete.",
+            "support": {
+                "chrome": {
+                    "version_added": "73"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaSessionActionDetails.fastSeek"
+        }
+    ],
+    "dom-mediasessionactiondetails-seekoffset": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/MediaSessionActionDetails.json",
+            "name": "seekOffset",
+            "slug": "API/MediaSessionActionDetails/seekOffset",
+            "summary": "The MediaSessionActionDetails dictionary's seekOffset property is an optional value passed into the action handler callback to provide the number of seconds the seekforward and seekbackward actions should move the playback time by.",
+            "support": {
+                "chrome": {
+                    "version_added": "73"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "76",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.media.mediasession.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaSessionActionDetails.seekOffset"
+        }
+    ],
+    "dom-mediasessionactiondetails-seektime": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MediaSessionActionDetails.json",
+            "name": "seekTime",
+            "slug": "API/MediaSessionActionDetails/seekTime",
+            "summary": "The MediaSessionActionDetails dictionary's seekTime property is always included when a seekto action is sent to the action handler callback. Its value is the absolute time, in seconds, to move the current play position to.",
+            "support": {
+                "chrome": {
+                    "version_added": "73"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaSessionActionDetails.seekTime"
         }
     ],
     "dom-navigator-mediasession": [
