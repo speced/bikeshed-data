@@ -2491,18 +2491,15 @@
                 "gecko",
                 "webkit"
             ],
-            "partial": [
-                "gecko"
-            ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "api/Document.json",
             "name": "getAnimations",
             "slug": "API/Document/getAnimations",
             "summary": "The getAnimations() method of the Document interface returns an array of all Animation objects currently in effect whose target elements are descendants of the document. This array includes CSS Animations, CSS Transitions, and Web Animations.",
             "support": {
                 "chrome": [
+                    {
+                        "version_added": "84"
+                    },
                     {
                         "version_added": "83",
                         "flags": [
@@ -2538,6 +2535,9 @@
                     }
                 ],
                 "chrome_android": [
+                    {
+                        "version_added": "84"
+                    },
                     {
                         "version_added": "83",
                         "flags": [
@@ -2600,33 +2600,12 @@
                                 "name": "dom.animations-api.getAnimations.enabled"
                             }
                         ]
-                    },
-                    {
-                        "version_added": "47",
-                        "version_removed": "63",
-                        "partial_implementation": true,
-                        "notes": "Not supported on <code>ShadowRoot</code>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "47",
-                        "partial_implementation": true,
-                        "notes": "Does not return any animations on pseudo-elements and is not supported on <code>ShadowRoot</code>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "63",
                         "partial_implementation": true,
@@ -2637,36 +2616,15 @@
                                 "name": "dom.animations-api.getAnimations.enabled"
                             }
                         ]
-                    },
-                    {
-                        "version_added": "47",
-                        "version_removed": "63",
-                        "partial_implementation": true,
-                        "notes": "Not supported on <code>ShadowRoot</code>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "47",
-                        "partial_implementation": true,
-                        "notes": "Does not return any animations on pseudo-elements and is not supported on <code>ShadowRoot</code>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
                     }
                 ],
                 "ie": {
                     "version_added": false
                 },
                 "opera": [
+                    {
+                        "version_added": "70"
+                    },
                     {
                         "version_added": "69",
                         "flags": [
@@ -2702,6 +2660,9 @@
                     }
                 ],
                 "opera_android": [
+                    {
+                        "version_added": "60"
+                    },
                     {
                         "version_added": "48",
                         "partial_implementation": true,
@@ -2780,10 +2741,12 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false,
-                    "notes": "Currently Chrome Canary only"
+                    "version_added": "84"
                 },
                 "edge_blink": [
+                    {
+                        "version_added": "84"
+                    },
                     {
                         "version_added": "83",
                         "flags": [
@@ -2825,6 +2788,7 @@
     "dom-document-timeline": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -2837,12 +2801,10 @@
             "summary": "The timeline readonly property of the Document interface represents the default timeline of the current document. This timeline is a special instance of DocumentTimeline that is automatically created on page load.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "Currently Chrome Canary only"
+                    "version_added": "84"
                 },
                 "chrome_android": {
-                    "version_added": false,
-                    "notes": "Currently Chrome Canary only"
+                    "version_added": "84"
                 },
                 "edge": {
                     "version_added": false
@@ -2874,13 +2836,13 @@
                     }
                 ],
                 "ie": {
-                    "version_added": true
+                    "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "70"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "60"
                 },
                 "safari": {
                     "version_added": "13.1"
@@ -2892,11 +2854,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "84"
                 },
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "Currently Chrome Canary only"
+                    "version_added": "84"
                 }
             },
             "title": "Document.timeline"
