@@ -2186,7 +2186,10 @@
     "XRLayerInit",
     "XRLayerLayout",
     "XRMediaBinding",
+    "XRMediaCylinderLayerInit",
+    "XRMediaEquirectLayerInit",
     "XRMediaLayerInit",
+    "XRMediaQuadLayerInit",
     "XRPermissionDescriptor",
     "XRPermissionStatus",
     "XRPose",
@@ -3381,6 +3384,7 @@
     "calcmode",
     "calculate box size",
     "calculate depth for node",
+    "calculate the aspect ratio",
     "calculate the part element map",
     "calculation tree",
     "calibrated",
@@ -26608,11 +26612,14 @@
     "XRMediaBinding(XRSession session)",
     "XRMediaBinding(session)",
     "constructor(session)",
-    "createCylinderLayer(HTMLVideoElement video, XRMediaLayerInit init)",
+    "createCylinderLayer(HTMLVideoElement video, XRMediaCylinderLayerInit init)",
+    "createCylinderLayer(video)",
     "createCylinderLayer(video, init)",
-    "createEquirectLayer(HTMLVideoElement video, XRMediaLayerInit init)",
+    "createEquirectLayer(HTMLVideoElement video, XRMediaEquirectLayerInit init)",
+    "createEquirectLayer(video)",
     "createEquirectLayer(video, init)",
-    "createQuadLayer(HTMLVideoElement video, XRMediaLayerInit init)",
+    "createQuadLayer(HTMLVideoElement video, XRMediaQuadLayerInit init)",
+    "createQuadLayer(video)",
     "createQuadLayer(video, init)",
     "session"
   ],
@@ -26622,7 +26629,15 @@
   "XRMediaBinding/constructor(session)": [
     "session"
   ],
+  "XRMediaBinding/createCylinderLayer(video)": [
+    "init",
+    "video"
+  ],
   "XRMediaBinding/createCylinderLayer(video, init)": [
+    "init",
+    "video"
+  ],
+  "XRMediaBinding/createEquirectLayer(video)": [
     "init",
     "video"
   ],
@@ -26630,14 +26645,36 @@
     "init",
     "video"
   ],
+  "XRMediaBinding/createQuadLayer(video)": [
+    "init",
+    "video"
+  ],
   "XRMediaBinding/createQuadLayer(video, init)": [
     "init",
     "video"
+  ],
+  "XRMediaCylinderLayerInit": [
+    "aspectRatio",
+    "centralAngle",
+    "radius",
+    "transform"
+  ],
+  "XRMediaEquirectLayerInit": [
+    "centralHorizontalAngle",
+    "lowerVerticalAngle",
+    "radius",
+    "transform",
+    "upperVerticalAngle"
   ],
   "XRMediaLayerInit": [
     "invertStereo",
     "layout",
     "space"
+  ],
+  "XRMediaQuadLayerInit": [
+    "height",
+    "transform",
+    "width"
   ],
   "XRPermissionDescriptor": [
     "mode",
