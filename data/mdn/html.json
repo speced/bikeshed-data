@@ -18937,10 +18937,12 @@
     "inert-subtrees": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "needsflag": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/HTMLElement.json",
             "name": "inert",
@@ -18971,13 +18973,27 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "81",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "html5.inert.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "81",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "html5.inert.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "47",
@@ -19000,10 +19016,10 @@
                     ]
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -44352,7 +44368,7 @@
             "filename": "api/Window.json",
             "name": "name",
             "slug": "API/Window/name",
-            "summary": "Gets/sets the name of the window's browsing context.",
+            "summary": "The Window.name property gets/sets the name of the window's browsing context.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -44364,10 +44380,12 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "1"
+                    "version_added": "1",
+                    "notes": "From Firefox 82, if a new page from another domain is loaded into a tab, then <code>window.name</code> is set to the empty string (the original string is restored if the tab reverts back to the original page). This change prevents some cross-site attacks. See <a href='https://bugzil.la/444222'>bug 444222</a>."
                 },
                 "firefox_android": {
-                    "version_added": "4"
+                    "version_added": "4",
+                    "notes": "From Firefox 82, if a new page from another domain is loaded into a tab, then <code>window.name</code> is set to the empty string (the original string is restored if the tab reverts back to the original page). This change prevents some cross-site attacks. See <a href='https://bugzil.la/444222'>bug 444222</a>."
                 },
                 "ie": {
                     "version_added": "4"
@@ -46075,6 +46093,61 @@
                 }
             },
             "title": "Window.window"
+        }
+    ],
+    "the-window-object": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Window.json",
+            "name": "Window",
+            "slug": "API/Window",
+            "summary": "The Window interface represents a window containing a DOM document; the document property points to the DOM document loaded in that window.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window"
         }
     ],
     "handler-window-onafterprint": [
@@ -59530,16 +59603,21 @@
                         "version_removed": "23"
                     }
                 ],
-                "firefox_android": {
-                    "version_added": "68",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.forms.inputmode",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "68",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.forms.inputmode",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },

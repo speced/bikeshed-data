@@ -429,12 +429,26 @@
             "slug": "API/CSSKeyframesRule",
             "summary": "The CSSKeyframesRule interface describes an object representing a complete set of keyframes for a CSS animation. It corresponds to the contents of a whole @keyframes at-rule. It implements the CSSRule interface with a type value of 7 (CSSRule.KEYFRAMES_RULE).",
             "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome": [
+                    {
+                        "version_added": "31"
+                    },
+                    {
+                        "version_added": "1",
+                        "version_removed": "31",
+                        "prefix": "WebKit"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "31"
+                    },
+                    {
+                        "version_added": "18",
+                        "version_removed": "31",
+                        "prefix": "WebKit"
+                    }
+                ],
                 "edge": {
                     "version_added": "12"
                 },
@@ -444,7 +458,8 @@
                     },
                     {
                         "version_added": "5",
-                        "prefix": "moz"
+                        "version_removed": "48",
+                        "prefix": "Moz"
                     }
                 ],
                 "firefox_android": [
@@ -453,35 +468,101 @@
                     },
                     {
                         "version_added": "5",
-                        "prefix": "moz"
+                        "version_removed": "48",
+                        "prefix": "Moz"
                     }
                 ],
                 "ie": {
                     "version_added": "10"
                 },
-                "opera": {
-                    "version_added": "12",
-                    "prefix": "o"
-                },
-                "opera_android": {
-                    "version_added": "12",
-                    "prefix": "o"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
+                "opera": [
+                    {
+                        "version_added": "18"
+                    },
+                    {
+                        "version_added": "15",
+                        "version_removed": "18",
+                        "prefix": "WebKit"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "15"
+                    },
+                    {
+                        "version_added": "12",
+                        "version_removed": "12.1",
+                        "prefix": "O"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "18"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "18",
+                        "prefix": "WebKit"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "14"
+                    },
+                    {
+                        "version_added": "12",
+                        "version_removed": "12.1",
+                        "prefix": "O"
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": "9.1"
+                    },
+                    {
+                        "version_added": "4",
+                        "version_removed": "9.1",
+                        "prefix": "WebKit"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "9.3"
+                    },
+                    {
+                        "version_added": "3.2",
+                        "version_removed": "9.3",
+                        "prefix": "WebKit"
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": "2.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "version_removed": "2.0",
+                        "prefix": "WebKit"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "4.4.3"
+                    },
+                    {
+                        "version_added": "1",
+                        "version_removed": "4.4.3",
+                        "prefix": "WebKit"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "31",
+                        "prefix": "WebKit"
+                    }
+                ]
             },
             "title": "CSSKeyframesRule"
         }
@@ -517,22 +598,22 @@
                     "version_added": "9"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1695,7 +1776,7 @@
                     },
                     {
                         "prefix": "-webkit-",
-                        "version_added": "2"
+                        "version_added": "1"
                     }
                 ],
                 "chrome_android": [
@@ -1831,7 +1912,7 @@
                     },
                     {
                         "prefix": "-webkit-",
-                        "version_added": "37"
+                        "version_added": "1"
                     }
                 ],
                 "edge_blink": [

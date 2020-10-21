@@ -281,7 +281,7 @@
             "filename": "api/MediaMetadata.json",
             "name": "MediaMetadata",
             "slug": "API/MediaMetadata",
-            "summary": "The MediaMetadata interface of the the Media Session API provides allows a web page to provide rich media metadata for display in a platform UI.",
+            "summary": "The MediaMetadata interface of the the Media Session API allows a web page to provide rich media metadata for display in a platform UI.",
             "support": {
                 "chrome": {
                     "version_added": "57"
@@ -473,7 +473,7 @@
             "filename": "api/MediaSession.json",
             "name": "setActionHandler",
             "slug": "API/MediaSession/setActionHandler",
-            "summary": "The setActionHandler() property of the MediaSession interface sets an event handler for a media session action. These actions let a web app receive notifications when the user engages a device's built-in physical or onscreen media controls, such as play, stop, or seek buttons.",
+            "summary": "The setActionHandler() method of the MediaSession interface sets a handler for a media session action. These actions let a web app receive notifications when the user engages a device's built-in physical or onscreen media controls, such as play, stop, or seek buttons.",
             "support": {
                 "chrome": {
                     "version_added": "73"
@@ -585,68 +585,6 @@
                 }
             },
             "title": "Media Session action types"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "api/MediaSessionActionDetails.json",
-            "name": "action",
-            "slug": "API/MediaSessionActionDetails/action",
-            "summary": "The action property is the only required property MediaSessionActionDetails dictionary, specifying the type of media session action which the action handler callback is being executed for.",
-            "support": {
-                "chrome": {
-                    "version_added": "73"
-                },
-                "chrome_android": {
-                    "version_added": "57"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "71",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.media.mediasession.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaSessionActionDetails.action"
         }
     ],
     "dom-mediasession-setpositionstate": [
@@ -775,6 +713,70 @@
                 }
             },
             "title": "MediaSession"
+        }
+    ],
+    "dom-mediasessionactiondetails-action": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/MediaSessionActionDetails.json",
+            "name": "action",
+            "slug": "API/MediaSessionActionDetails/action",
+            "summary": "The action property is the only required property MediaSessionActionDetails dictionary, specifying the type of media session action which the action handler callback is being executed for.",
+            "support": {
+                "chrome": {
+                    "version_added": "73"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "71",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.media.mediasession.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaSessionActionDetails.action"
         }
     ],
     "dom-mediasessionactiondetails-fastseek": [
