@@ -634,6 +634,13 @@
     "AddEventListenerOptions",
     "AddressErrors",
     "AddressInit",
+    "AesCbcParams",
+    "AesCtrParams",
+    "AesDerivedKeyParams",
+    "AesGcmParams",
+    "AesKeyAlgorithm",
+    "AesKeyGenParams",
+    "Algorithm",
     "AllowShared",
     "AllowedBluetoothDevice",
     "AllowedUSBDevice",
@@ -710,6 +717,7 @@
     "BasicCardRequest",
     "BasicCardResponse",
     "BeforeUnloadEvent",
+    "BigInteger",
     "BinaryData",
     "BinaryType",
     "BiquadFilterNode",
@@ -916,6 +924,9 @@
     "CredentialsContainer",
     "CrossOriginIsolated",
     "CrossRealmTransformSendError",
+    "Crypto",
+    "CryptoKey",
+    "CryptoKeyPair",
     "CustomElementConstructor",
     "CustomElementRegistry",
     "CustomEvent",
@@ -987,6 +998,11 @@
     "DragEventInit",
     "DynamicsCompressorNode",
     "DynamicsCompressorOptions",
+    "EcKeyAlgorithm",
+    "EcKeyGenParams",
+    "EcKeyImportParams",
+    "EcdhKeyDeriveParams",
+    "EcdsaParams",
     "Edge",
     "EffectTiming",
     "Element",
@@ -1174,6 +1190,10 @@
     "Highlight",
     "HighlightsRegister",
     "History",
+    "HkdfParams",
+    "HmacImportParams",
+    "HmacKeyAlgorithm",
+    "HmacKeyGenParams",
     "IDBCursor",
     "IDBCursorDirection",
     "IDBCursorWithValue",
@@ -1244,6 +1264,11 @@
     "JsonLdOptions",
     "JsonLdProcessor",
     "JsonLdRecord",
+    "JsonWebKey",
+    "KeyAlgorithm",
+    "KeyFormat",
+    "KeyType",
+    "KeyUsage",
     "KeyboardEvent",
     "KeyboardEventInit",
     "KeyframeAnimationOptions",
@@ -1332,6 +1357,7 @@
     "NameList",
     "Named elements",
     "Named objects",
+    "NamedCurve",
     "NamedFlow",
     "NamedFlowMap",
     "NamedNodeMap",
@@ -1428,6 +1454,7 @@
     "PaymentShippingOption",
     "PaymentShippingType",
     "PaymentValidationErrors",
+    "Pbkdf2Params",
     "PeekQueueValue",
     "Performance",
     "PerformanceNavigation",
@@ -1705,6 +1732,14 @@
     "Response",
     "ResponseInit",
     "ResponseType",
+    "RsaHashedImportParams",
+    "RsaHashedKeyAlgorithm",
+    "RsaHashedKeyGenParams",
+    "RsaKeyAlgorithm",
+    "RsaKeyGenParams",
+    "RsaOaepParams",
+    "RsaOtherPrimesInfo",
+    "RsaPssParams",
     "SVGAElement",
     "SVGAltGlyphDefElement",
     "SVGAltGlyphElement",
@@ -1950,6 +1985,7 @@
     "StyleSheetList",
     "SubmitEvent",
     "SubmitEventInit",
+    "SubtleCrypto",
     "SyncEvent",
     "SyncEventInit",
     "SyncManager",
@@ -2231,6 +2267,7 @@
     "XRWebGLLayerInit",
     "XRWebGLRenderingContext",
     "XRWebGLSubImage",
+    "[[algorithm]]",
     "[[associatedmediastreamids]]",
     "[[associatedremotemediastreams]]",
     "[[bufferedamount]]",
@@ -2256,7 +2293,9 @@
     "[[dtmf]]",
     "[[duration]]",
     "[[earlycandidates]]",
+    "[[extractable]]",
     "[[fireddirection]]",
+    "[[handle]]",
     "[[icegathererstate]]",
     "[[icerole]]",
     "[[icetransportstate]]",
@@ -2309,9 +2348,13 @@
     "[[stopped]]",
     "[[stopping]]",
     "[[storeddevicelist]]",
+    "[[supportedalgorithms]]",
     "[[tonebuffer]]",
+    "[[type]]",
     "[[updatenegotiationneededflagonemptychain]]",
+    "[[usages]]",
     "[[window]]",
+    "[algorithm_cached]",
     "[legacyfactoryfunction]",
     "[legacylenientthis]",
     "[legacynulltoemptystring]",
@@ -2319,6 +2362,7 @@
     "[legacytreatnonobjectasnull]",
     "[legacyunenumerablenamedproperties]",
     "[legacyunforgeable]",
+    "[usages_cached]",
     "_charset_",
     "`cross-origin-embedder-policy-report-only`",
     "`cross-origin-embedder-policy`",
@@ -2549,6 +2593,7 @@
     "algorithm for growing downward-growing cells",
     "algorithm for processing row groups",
     "algorithm for processing rows",
+    "algorithm normalization",
     "algorithm queue",
     "algorithm to convert a date object to a string",
     "algorithm to convert a number to a string",
@@ -3470,6 +3515,7 @@
     "cascade origin",
     "cascaded value",
     "cascading style sheets (css)",
+    "case-insensitive",
     "case-sensitive",
     "categories",
     "cbor",
@@ -4790,11 +4836,13 @@
     "east asian width property",
     "ecdaa",
     "ecdaa-issuer public key",
+    "ecdh curve name",
     "ecdh derivation steps",
     "ecdh generation steps",
     "ecdh key export steps",
     "ecdh key import steps",
     "ecdhkeyderiveparams",
+    "ecdsa curve name",
     "ecdsa generation steps",
     "ecdsa key export steps",
     "ecdsa key import steps",
@@ -5855,6 +5903,8 @@
     "hit-testing",
     "hkdfparams",
     "hkern",
+    "hmac key export steps",
+    "hmac key import steps",
     "hmacimportparams",
     "hmackeyalgorithm",
     "hmackeygenparams",
@@ -7520,6 +7570,7 @@
     "normalize protocol handler parameters",
     "normalize the source densities",
     "normalized timeranges object",
+    "normalized value",
     "normalized value of a usages list",
     "normalized windows drive letter",
     "noscript",
@@ -7612,6 +7663,7 @@
     "occupied",
     "octet",
     "octet string",
+    "octet string containing",
     "octet string containing a bit string",
     "off",
     "official moment of creation",
@@ -8909,6 +8961,10 @@
     "rpidhash",
     "rr",
     "rrule",
+    "rsa-oaep key export steps",
+    "rsa-oaep key import steps",
+    "rsa-pss key export steps",
+    "rsa-pss key import steps",
     "rsahashedimportparams",
     "rsahashedkeyalgorithm",
     "rsahashedkeygenparams",
@@ -8917,6 +8973,8 @@
     "rsaoaepparams",
     "rsaotherprimesinfo",
     "rsapssparams",
+    "rsassa-pkcs1-v1_5 key export steps",
+    "rsassa-pkcs1-v1_5 key import steps",
     "rssi",
     "rt",
     "rtc",
@@ -11963,6 +12021,33 @@
     "recipient",
     "region",
     "sortingCode"
+  ],
+  "AesCbcParams": [
+    "iv"
+  ],
+  "AesCtrParams": [
+    "counter",
+    "length"
+  ],
+  "AesDerivedKeyParams": [
+    "length"
+  ],
+  "AesGcmParams": [
+    "additionalData",
+    "iv",
+    "tagLength"
+  ],
+  "AesKeyAlgorithm": [
+    "length"
+  ],
+  "AesKeyGenParams": [
+    "length"
+  ],
+  "Algorithm": [
+    "name"
+  ],
+  "AlgorithmIdentifier": [
+    "AlgorithmIdentifier"
   ],
   "AllowedBluetoothDevice": [
     "[[device]]",
@@ -15212,6 +15297,22 @@
   "CredentialsContainer/store(credential)": [
     "credential"
   ],
+  "Crypto": [
+    "getRandomValues",
+    "getRandomValues()",
+    "getRandomValues(array)",
+    "subtle"
+  ],
+  "CryptoKey": [
+    "algorithm",
+    "extractable",
+    "type",
+    "usages"
+  ],
+  "CryptoKeyPair": [
+    "privateKey",
+    "publicKey"
+  ],
   "CustomElementRegistry": [
     "define(name, constructor)",
     "get(name)",
@@ -17036,6 +17137,21 @@
   ],
   "ECMAScript": [
     "ecmascript throw"
+  ],
+  "EcKeyAlgorithm": [
+    "namedCurve"
+  ],
+  "EcKeyGenParams": [
+    "namedCurve"
+  ],
+  "EcKeyImportParams": [
+    "namedCurve"
+  ],
+  "EcdhKeyDeriveParams": [
+    "public"
+  ],
+  "EcdsaParams": [
+    "hash"
   ],
   "Edge": [
     "\"end\"",
@@ -19116,6 +19232,9 @@
     "videoWidth",
     "width"
   ],
+  "HashAlgorithmIdentifier": [
+    "HashAlgorithmIdentifier"
+  ],
   "HashChangeEventInit": [
     "newURL",
     "oldURL"
@@ -19206,6 +19325,23 @@
     "replaceState(data, title)",
     "scrollRestoration",
     "state"
+  ],
+  "HkdfParams": [
+    "hash",
+    "info",
+    "salt"
+  ],
+  "HmacImportParams": [
+    "hash",
+    "length"
+  ],
+  "HmacKeyAlgorithm": [
+    "hash",
+    "length"
+  ],
+  "HmacKeyGenParams": [
+    "hash",
+    "length"
   ],
   "I/O queue": [
     "peek",
@@ -19959,6 +20095,52 @@
     "toRdf()",
     "toRdf(input)",
     "toRdf(input, options)"
+  ],
+  "JsonWebKey": [
+    "alg",
+    "crv",
+    "d",
+    "dp",
+    "dq",
+    "e",
+    "ext",
+    "k",
+    "key_ops",
+    "kty",
+    "n",
+    "oth",
+    "p",
+    "q",
+    "qi",
+    "use",
+    "x",
+    "y"
+  ],
+  "KeyAlgorithm": [
+    "name"
+  ],
+  "KeyFormat": [
+    "jwk",
+    "pkcs8",
+    "raw",
+    "spki"
+  ],
+  "KeyType": [
+    "private",
+    "public",
+    "recognized key type values",
+    "secret"
+  ],
+  "KeyUsage": [
+    "decrypt",
+    "deriveBits",
+    "deriveKey",
+    "encrypt",
+    "recognized key usage values",
+    "sign",
+    "unwrapKey",
+    "verify",
+    "wrapKey"
   ],
   "KeyboardEveng": [
     "initKeyboardEvent()"
@@ -21604,6 +21786,11 @@
     "payer",
     "paymentMethod",
     "shippingAddress"
+  ],
+  "Pbkdf2Params": [
+    "hash",
+    "iterations",
+    "salt"
   ],
   "Performance": [
     "Performance.now",
@@ -23693,6 +23880,34 @@
     "\"opaque\"",
     "\"opaqueredirect\""
   ],
+  "RsaHashedImportParams": [
+    "hash"
+  ],
+  "RsaHashedKeyAlgorithm": [
+    "hash"
+  ],
+  "RsaHashedKeyGenParams": [
+    "hash"
+  ],
+  "RsaKeyAlgorithm": [
+    "modulusLength",
+    "publicExponent"
+  ],
+  "RsaKeyGenParams": [
+    "modulusLength",
+    "publicExponent"
+  ],
+  "RsaOaepParams": [
+    "label"
+  ],
+  "RsaOtherPrimesInfo": [
+    "d",
+    "r",
+    "t"
+  ],
+  "RsaPssParams": [
+    "saltLength"
+  ],
   "SVGClipPathElement": [
     "clipPathUnits",
     "transform"
@@ -24426,6 +24641,44 @@
   ],
   "SubmitEventInit": [
     "submitter"
+  ],
+  "SubtleCrypto": [
+    "decrypt",
+    "decrypt()",
+    "decrypt(algorithm, key, data)",
+    "deriveBits",
+    "deriveBits()",
+    "deriveBits(algorithm, baseKey, length)",
+    "deriveKey",
+    "deriveKey()",
+    "deriveKey(algorithm, baseKey, derivedKeyType, extractable, keyUsages)",
+    "digest",
+    "digest()",
+    "digest(algorithm, data)",
+    "encrypt",
+    "encrypt()",
+    "encrypt(algorithm, key, data)",
+    "exportKey",
+    "exportKey()",
+    "exportKey(format, key)",
+    "generateKey",
+    "generateKey()",
+    "generateKey(algorithm, extractable, keyUsages)",
+    "importKey",
+    "importKey()",
+    "importKey(format, keyData, algorithm, extractable, keyUsages)",
+    "sign",
+    "sign()",
+    "sign(algorithm, key, data)",
+    "unwrapKey",
+    "unwrapKey()",
+    "unwrapKey(format, wrappedKey, unwrappingKey, unwrapAlgorithm, unwrappedKeyAlgorithm, extractable, keyUsages)",
+    "verify",
+    "verify()",
+    "verify(algorithm, key, signature, data)",
+    "wrapKey",
+    "wrapKey()",
+    "wrapKey(format, key, wrappingKey, wrapAlgorithm)"
   ],
   "SyncEvent": [
     "SyncEvent(type, init)",
@@ -25840,6 +26093,7 @@
     "clearTimeout()",
     "createImageBitmap(image)",
     "crossOriginIsolated",
+    "crypto",
     "endpoints",
     "fetch(input)",
     "fetch(input, init)",
