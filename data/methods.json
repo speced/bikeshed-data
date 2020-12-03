@@ -1812,24 +1812,6 @@
       "shortname": "webaudio"
     }
   },
-  "MerchantValidationEvent.complete()": {
-    "MerchantValidationEvent.complete()": {
-      "args": [],
-      "for": [
-        "MerchantValidationEvent"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "MerchantValidationEvent.constructor()": {
-    "MerchantValidationEvent.constructor()": {
-      "args": [],
-      "for": [
-        "MerchantValidationEvent"
-      ],
-      "shortname": "payment-request"
-    }
-  },
   "MouseEvent()": {
     "MouseEvent(type)": {
       "args": [
@@ -1993,110 +1975,11 @@
       "shortname": "credential-management"
     }
   },
-  "PaymentAddress.toJSON()": {
-    "PaymentAddress.toJSON()": {
-      "args": [],
-      "for": [
-        "PaymentAddress"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentMethodChangeEvent.constructor()": {
-    "PaymentMethodChangeEvent.constructor()": {
-      "args": [],
-      "for": [
-        "PaymentMethodChangeEvent"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentRequest.abort()": {
-    "PaymentRequest.abort()": {
-      "args": [],
-      "for": [
-        "PaymentRequest"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentRequest.canMakePayment()": {
-    "PaymentRequest.canMakePayment()": {
-      "args": [],
-      "for": [
-        "PaymentRequest"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentRequest.constructor()": {
-    "PaymentRequest.constructor()": {
-      "args": [],
-      "for": [
-        "PaymentRequest"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentRequest.show()": {
-    "PaymentRequest.show()": {
-      "args": [],
-      "for": [
-        "PaymentRequest"
-      ],
-      "shortname": "payment-request"
-    }
-  },
   "PaymentRequestUpdateEvent.PaymentRequestUpdateEvent()": {
     "PaymentRequestUpdateEvent.PaymentRequestUpdateEvent()": {
       "args": [],
       "for": [
         "PaymentRequestUpdateEvent"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentRequestUpdateEvent.constructor()": {
-    "PaymentRequestUpdateEvent.constructor()": {
-      "args": [],
-      "for": [
-        "PaymentRequestUpdateEvent"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentRequestUpdateEvent.updateWith()": {
-    "PaymentRequestUpdateEvent.updateWith()": {
-      "args": [],
-      "for": [
-        "PaymentRequestUpdateEvent"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentResponse.complete()": {
-    "PaymentResponse.complete()": {
-      "args": [],
-      "for": [
-        "PaymentResponse"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentResponse.retry()": {
-    "PaymentResponse.retry()": {
-      "args": [],
-      "for": [
-        "PaymentResponse"
-      ],
-      "shortname": "payment-request"
-    }
-  },
-  "PaymentResponse.toJSON()": {
-    "PaymentResponse.toJSON()": {
-      "args": [],
-      "for": [
-        "PaymentResponse"
       ],
       "shortname": "payment-request"
     }
@@ -4739,7 +4622,6 @@
     "complete()": {
       "args": [],
       "for": [
-        "MerchantValidationEvent",
         "PaymentResponse"
       ],
       "shortname": "payment-request"
@@ -4911,7 +4793,6 @@
         "JsonLdProcessor",
         "MediaStream",
         "MediaStreamTrackEvent",
-        "MerchantValidationEvent",
         "OverconstrainedError",
         "PaymentMethodChangeEvent",
         "PaymentRequest",
@@ -5509,6 +5390,27 @@
       ],
       "shortname": "webidl"
     },
+    "constructor(methodData, details)": {
+      "args": [
+        "methodData",
+        "details"
+      ],
+      "for": [
+        "PaymentRequest"
+      ],
+      "shortname": "payment-request"
+    },
+    "constructor(methodData, details, options)": {
+      "args": [
+        "methodData",
+        "details",
+        "options"
+      ],
+      "for": [
+        "PaymentRequest"
+      ],
+      "shortname": "payment-request"
+    },
     "constructor(min, val, max)": {
       "args": [
         "min",
@@ -5840,6 +5742,8 @@
         "IDBVersionChangeEvent",
         "MediaQueryListEvent",
         "NavigationEvent",
+        "PaymentMethodChangeEvent",
+        "PaymentRequestUpdateEvent",
         "PointerEvent",
         "ProgressEvent",
         "RTCDTMFToneChangeEvent",
@@ -5889,6 +5793,8 @@
         "MediaStreamTrackEvent",
         "NavigationEvent",
         "OfflineAudioCompletionEvent",
+        "PaymentMethodChangeEvent",
+        "PaymentRequestUpdateEvent",
         "PointerEvent",
         "ProgressEvent",
         "RTCDTMFToneChangeEvent",
@@ -13847,6 +13753,15 @@
         "PaymentResponse"
       ],
       "shortname": "payment-request"
+    },
+    "retry(errorFields)": {
+      "args": [
+        "errorFields"
+      ],
+      "for": [
+        "PaymentResponse"
+      ],
+      "shortname": "payment-request"
     }
   },
   "reverse()": {
@@ -15509,6 +15424,15 @@
         "PaymentRequest"
       ],
       "shortname": "html"
+    },
+    "show(detailsPromise)": {
+      "args": [
+        "detailsPromise"
+      ],
+      "for": [
+        "PaymentRequest"
+      ],
+      "shortname": "payment-request"
     }
   },
   "showModal()": {
@@ -16268,8 +16192,6 @@
         "DOMQuad",
         "DOMRectReadOnly",
         "MediaDeviceInfo",
-        "PaymentAddress",
-        "PaymentResponse",
         "Performance",
         "PerformanceNavigation",
         "PerformanceNavigationTiming",
