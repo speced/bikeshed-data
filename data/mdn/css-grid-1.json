@@ -34,9 +34,6 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "qq_android": {
-                    "version_added": null
-                },
                 "safari": {
                     "version_added": false
                 },
@@ -44,12 +41,6 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
-                },
-                "uc_android": {
-                    "version_added": false
-                },
-                "uc_chinese_android": {
                     "version_added": false
                 },
                 "webview_android": {
@@ -196,9 +187,6 @@
                         ]
                     }
                 ],
-                "qq_android": {
-                    "version_added": null
-                },
                 "safari": [
                     {
                         "version_added": "12.1"
@@ -226,12 +214,6 @@
                         "version_added": "6.0"
                     }
                 ],
-                "uc_android": {
-                    "version_added": null
-                },
-                "uc_chinese_android": {
-                    "version_added": null
-                },
                 "webview_android": [
                     {
                         "version_added": "66"
@@ -344,9 +326,6 @@
                         "version_removed": "14"
                     }
                 ],
-                "qq_android": {
-                    "version_added": null
-                },
                 "safari": [
                     {
                         "version_added": "10"
@@ -374,12 +353,6 @@
                         "version_added": "1.0"
                     }
                 ],
-                "uc_android": {
-                    "version_added": null
-                },
-                "uc_chinese_android": {
-                    "version_added": null
-                },
                 "webview_android": [
                     {
                         "version_added": "50"
@@ -600,9 +573,6 @@
                 "gecko",
                 "webkit"
             ],
-            "partial": [
-                "gecko"
-            ],
             "filename": "css/properties/grid-auto-columns.json",
             "name": "grid-auto-columns",
             "slug": "CSS/grid-auto-columns",
@@ -665,7 +635,11 @@
                 ],
                 "firefox_android": [
                     {
+                        "version_added": "79"
+                    },
+                    {
                         "version_added": "52",
+                        "version_removed": "79",
                         "partial_implementation": true,
                         "notes": "Does not accept multiple track-size values. See <a href='https://bugzil.la/1339672'>bug 1339672</a>."
                     },
@@ -888,9 +862,6 @@
                 "gecko",
                 "webkit"
             ],
-            "partial": [
-                "gecko"
-            ],
             "filename": "css/properties/grid-auto-rows.json",
             "name": "grid-auto-rows",
             "slug": "CSS/grid-auto-rows",
@@ -953,7 +924,11 @@
                 ],
                 "firefox_android": [
                     {
+                        "version_added": "79"
+                    },
+                    {
                         "version_added": "52",
+                        "version_removed": "79",
                         "partial_implementation": true,
                         "notes": "Does not accept multiple track-size values.  See <a href='https://bugzil.la/1339672'>bug 1339672</a>."
                     },
@@ -2183,7 +2158,7 @@
             "filename": "css/properties/grid-template-columns.json",
             "name": "fit-content",
             "slug": "CSS/fit-content",
-            "summary": "The fit-content() CSS function clamps a given size to an available size according to the formula min(maximum size, max(minimum size, argument)).",
+            "summary": "The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -2225,7 +2200,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "fit-content()"
+            "title": "fit-content"
         },
         {
             "engines": [
@@ -2236,7 +2211,7 @@
             "filename": "css/properties/grid-template-rows.json",
             "name": "fit-content",
             "slug": "CSS/fit-content",
-            "summary": "The fit-content() CSS function clamps a given size to an available size according to the formula min(maximum size, max(minimum size, argument)).",
+            "summary": "The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -2278,7 +2253,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "fit-content()"
+            "title": "fit-content"
         }
     ],
     "valdef-grid-template-columns-minmax": [
@@ -2558,9 +2533,6 @@
                 "gecko",
                 "webkit"
             ],
-            "partial": [
-                "gecko"
-            ],
             "filename": "css/properties/grid-template-columns.json",
             "name": "repeat",
             "slug": "CSS/repeat",
@@ -2599,7 +2571,11 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "76"
+                    },
+                    {
                         "version_added": "57",
+                        "version_removed": "76",
                         "notes": "<code>repeat(auto-fill, ...)</code> and <code>repeat(auto-fit, ...)</code> only support one repeated column (see <a href='https://bugzil.la/1341507'>bug 1341507</a>).",
                         "partial_implementation": true
                     },
@@ -2703,9 +2679,6 @@
                 "gecko",
                 "webkit"
             ],
-            "partial": [
-                "gecko"
-            ],
             "filename": "css/properties/grid-template-rows.json",
             "name": "repeat",
             "slug": "CSS/repeat",
@@ -2744,7 +2717,11 @@
                 },
                 "firefox": [
                     {
+                        "version_added": "76"
+                    },
+                    {
                         "version_added": "57",
+                        "version_removed": "76",
                         "notes": "<code>repeat(auto-fill, ...)</code> and <code>repeat(auto-fit, ...)</code> only support one repeated column (see <a href='https://bugzil.la/1341507'>bug 1341507</a>).",
                         "partial_implementation": true
                     },

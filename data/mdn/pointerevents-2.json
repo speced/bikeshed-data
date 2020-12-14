@@ -1693,7 +1693,7 @@
             "title": "Element.hasPointerCapture()"
         }
     ],
-    "idl-def-element-releasepointercapture-pointerid": [
+    "dom-element-releasepointercapture": [
         {
             "engines": [
                 "blink",
@@ -1781,15 +1781,12 @@
             "title": "Element.releasePointerCapture()"
         }
     ],
-    "idl-def-element-setpointercapture-pointerid": [
+    "dom-element-setpointercapture": [
         {
             "engines": [
                 "blink",
                 "gecko",
                 "webkit"
-            ],
-            "needsflag": [
-                "gecko"
             ],
             "filename": "api/Element.json",
             "name": "setPointerCapture",
@@ -1807,7 +1804,8 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "59"
+                        "version_added": "59",
+                        "notes": "Before Firefox 82, <code>setPointerCapture()</code> throws <code>InvalidPointerId</code> for an invalid <code>pointerId</code> argument. From Firefox 82, it throws <a href='https://w3c.github.io/pointerevents/#setting-pointer-capture'>the specified</a> <code>NotFoundError</code> exception. See <a href='https://bugzil.la/1662124'>bug 1662124</a>."
                     },
                     {
                         "version_added": "41",
@@ -1822,7 +1820,8 @@
                 ],
                 "firefox_android": [
                     {
-                        "version_added": false
+                        "version_added": "79",
+                        "notes": "Before Firefox 82, <code>setPointerCapture()</code> throws <code>InvalidPointerId</code> for an invalid <code>pointerId</code> argument. From Firefox 82, it throws <a href='https://w3c.github.io/pointerevents/#setting-pointer-capture'>the specified</a> <code>NotFoundError</code> exception. See <a href='https://bugzil.la/1662124'>bug 1662124</a>."
                     },
                     {
                         "version_added": "41",
