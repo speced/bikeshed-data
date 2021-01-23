@@ -3434,7 +3434,9 @@
         "CSSNumericValue",
         "DOMTokenList",
         "DataTransferItemList",
-        "HTMLSelectElement"
+        "HTMLSelectElement",
+        "RdfDataset",
+        "RdfGraph"
       ],
       "shortname": "css-typed-om"
     },
@@ -3483,6 +3485,16 @@
       ],
       "shortname": "css-font-loading"
     },
+    "add(graphName, graph)": {
+      "args": [
+        "graphName",
+        "graph"
+      ],
+      "for": [
+        "RdfDataset"
+      ],
+      "shortname": "json-ld11-api"
+    },
     "add(request)": {
       "args": [
         "request"
@@ -3500,6 +3512,15 @@
         "DOMTokenList"
       ],
       "shortname": "dom"
+    },
+    "add(triple)": {
+      "args": [
+        "triple"
+      ],
+      "for": [
+        "RdfGraph"
+      ],
+      "shortname": "json-ld11-api"
     },
     "add(value)": {
       "args": [
@@ -4749,6 +4770,45 @@
       "shortname": "web-animations"
     }
   },
+  "compact()": {
+    "compact()": {
+      "args": [],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "compact(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "compact(input, context)": {
+      "args": [
+        "input",
+        "context"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "compact(input, context, options)": {
+      "args": [
+        "input",
+        "context",
+        "options"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    }
+  },
   "compareBoundaryPoints()": {
     "compareBoundaryPoints(how, sourceRange)": {
       "args": [
@@ -4956,6 +5016,7 @@
         "FormData",
         "FragmentResult",
         "Headers",
+        "JsonLdProcessor",
         "MediaStream",
         "MediaStreamTrackEvent",
         "OverconstrainedError",
@@ -4974,7 +5035,12 @@
         "RTCSessionDescription",
         "RTCTrackEvent",
         "Range",
+        "RdfDataset",
+        "RdfGraph",
+        "RdfLiteral",
+        "RdfTriple",
         "ReadableStream",
+        "RemoteDocument",
         "Response",
         "ScrollTimeline",
         "Text",
@@ -8734,6 +8800,34 @@
       "shortname": "fullscreen"
     }
   },
+  "expand()": {
+    "expand()": {
+      "args": [],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "expand(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "expand(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    }
+  },
   "exponentialRampToValueAtTime()": {
     "exponentialRampToValueAtTime(value, endTime)": {
       "args": [
@@ -8920,6 +9014,45 @@
       "shortname": "dom"
     }
   },
+  "flatten()": {
+    "flatten()": {
+      "args": [],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "flatten(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "flatten(input, context)": {
+      "args": [
+        "input",
+        "context"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "flatten(input, context, options)": {
+      "args": [
+        "input",
+        "context",
+        "options"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    }
+  },
   "flipX()": {
     "flipX()": {
       "args": [],
@@ -9084,6 +9217,34 @@
         "DOMQuad"
       ],
       "shortname": "geometry"
+    }
+  },
+  "fromRdf()": {
+    "fromRdf()": {
+      "args": [],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "fromRdf(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "fromRdf(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
     }
   },
   "fromRect()": {
@@ -16470,6 +16631,34 @@
         "CSSColorValue"
       ],
       "shortname": "css-typed-om"
+    }
+  },
+  "toRdf()": {
+    "toRdf()": {
+      "args": [],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "toRdf(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
+    },
+    "toRdf(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "shortname": "json-ld11-api"
     }
   },
   "toSum()": {
