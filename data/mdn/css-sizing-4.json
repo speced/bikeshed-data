@@ -7,26 +7,28 @@
             "partial": [
                 "gecko"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "css/properties/aspect-ratio.json",
             "name": "aspect-ratio",
             "slug": "CSS/aspect-ratio",
-            "summary": "The aspect-ratio  CSS property sets a preferred aspect ratio for the box, which will be used in the calculation of auto sizes and some other layout functions.",
+            "summary": "The aspect-ratio CSS property sets a preferred aspect ratio for the box, which will be used in the calculation of auto sizes and some other layout functions.",
             "support": {
-                "chrome": {
-                    "version_added": "84",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "84",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "88"
                 },
                 "edge": {
                     "version_added": false
@@ -79,18 +81,23 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "88"
                 },
-                "edge_blink": {
-                    "version_added": "84",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "84",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "aspect-ratio"
         }
@@ -146,6 +153,114 @@
                 }
             },
             "title": "contain-intrinsic-size"
+        }
+    ],
+    "valdef-width-fit-content": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/properties/grid-template-columns.json",
+            "name": "fit-content",
+            "slug": "CSS/fit-content",
+            "summary": "The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.",
+            "support": {
+                "chrome": {
+                    "version_added": "29"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "51"
+                },
+                "firefox_android": {
+                    "version_added": "51"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "44"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "57"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "fit-content"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/properties/grid-template-rows.json",
+            "name": "fit-content",
+            "slug": "CSS/fit-content",
+            "summary": "The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.",
+            "support": {
+                "chrome": {
+                    "version_added": "29"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "51"
+                },
+                "firefox_android": {
+                    "version_added": "51"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "44"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "57"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "fit-content"
         }
     ],
     "width-height-keywords": [

@@ -3145,7 +3145,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "compareExchange",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/compareExchange",
-            "summary": "The static Atomics.compareExchange() method exchanges a given replacement value at a given position in the array, if a given expected value equals the old value.  It returns the old value at that position whether it was equal to the expected value or not. This atomic operation guarantees that no other write happens until the modified value is written back.",
+            "summary": "The static Atomics.compareExchange() method exchanges a given replacement value at a given position in the array, if a given expected value equals the old value. It returns the old value at that position whether it was equal to the expected value or not. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
                 "chrome": [
                     {
@@ -9382,7 +9382,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "setUTCHours",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCHours",
-            "summary": "The setUTCHours() method sets the hour for a specified date according to universal time, and returns the number of milliseconds since  January 1, 1970 00:00:00 UTC until the time represented by the updated Date instance.",
+            "summary": "The setUTCHours() method sets the hour for a specified date according to universal time, and returns the number of milliseconds since January 1, 1970 00:00:00 UTC until the time represented by the updated Date instance.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -13690,7 +13690,7 @@
             "filename": "javascript/builtins/Math.json",
             "name": "E",
             "slug": "JavaScript/Reference/Global_Objects/Math/E",
-            "summary": "The Math.E property represents the base of natural logarithms, e, approximately 2.718.",
+            "summary": "The Math.E property represents Euler's number, the base of natural logarithms, e, which is approximately 2.718.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -15488,7 +15488,7 @@
             "filename": "javascript/builtins/Math.json",
             "name": "max",
             "slug": "JavaScript/Reference/Global_Objects/Math/max",
-            "summary": "The Math.max() function returns the largest of the zero or more numbers given as input parameters.",
+            "summary": "The Math.max() function returns the largest of the zero or more numbers given as input parameters, or NaN if any parameter isn't a number and can't be converted into one.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -16706,7 +16706,7 @@
             "filename": "javascript/builtins/Number.json",
             "name": "isFinite",
             "slug": "JavaScript/Reference/Global_Objects/Number/isFinite",
-            "summary": "The Number.isFinite() method determines whether the passed value is a finite number — that is, it checks that a number is neither positive nor negative Infinity, since JavaScript has both.",
+            "summary": "The Number.isFinite() method determines whether the passed value is a finite number — that is, it checks that the type of a given value is Number, and the number is neither positive Infinity, negative Infinity, nor NaN.",
             "support": {
                 "chrome": {
                     "version_added": "19"
@@ -22971,7 +22971,7 @@
             "filename": "javascript/builtins/Set.json",
             "name": "delete",
             "slug": "JavaScript/Reference/Global_Objects/Set/delete",
-            "summary": "The delete() method removes the specified element from a Set object.",
+            "summary": "The delete() method removes a specified value from a Set object, if it is in the set.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -24281,7 +24281,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "codePointAt",
             "slug": "JavaScript/Reference/Global_Objects/String/codePointAt",
-            "summary": "The codePointAt() method returns a non-negative integer that is the Unicode code point value.",
+            "summary": "The codePointAt() method returns a non-negative integer that is the UTF-16 code point value.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -25529,7 +25529,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "split",
             "slug": "JavaScript/Reference/Global_Objects/String/split",
-            "summary": "The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.  ",
+            "summary": "The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call. ",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -31143,7 +31143,7 @@
             "filename": "javascript/builtins/globals.json",
             "name": "isFinite",
             "slug": "JavaScript/Reference/Global_Objects/isFinite",
-            "summary": "The global isFinite() function determines whether the passed value is a finite number. If  needed, the parameter is first converted to a number.",
+            "summary": "The global isFinite() function determines whether the passed value is a finite number. If needed, the parameter is first converted to a number.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -32027,8 +32027,7 @@
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "javascript/classes.json",
             "name": "static",
@@ -32155,10 +32154,10 @@
                     }
                 ],
                 "safari": {
-                    "version_added": "9"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "9"
+                    "version_added": false
                 },
                 "samsunginternet_android": [
                     {
@@ -33067,7 +33066,7 @@
             "filename": "javascript/functions.json",
             "name": "rest_parameters",
             "slug": "JavaScript/Reference/Functions/rest_parameters",
-            "summary": "The rest parameter syntax allows us to represent an indefinite number of arguments as an array.",
+            "summary": "The rest parameter syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent variadic functions in JavaScript.",
             "support": {
                 "chrome": {
                     "version_added": "47"
@@ -36380,7 +36379,7 @@
                     "version_added": "72"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -37773,7 +37772,7 @@
                     "version_added": "80"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "80"
                 },
                 "ie": {
                     "version_added": false
@@ -37900,7 +37899,7 @@
                     "version_added": "8.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "61"
                 },
                 "edge_blink": {
                     "version_added": "79"

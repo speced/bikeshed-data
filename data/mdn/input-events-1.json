@@ -62,7 +62,7 @@
             "filename": "api/InputEvent.json",
             "name": "dataTransfer",
             "slug": "API/InputEvent/dataTransfer",
-            "summary": "The dataTransfer read-only property of the InputEvent interface returns a DataTransfer object containing information about richtext or plaintext data being added to or removed from editible content.",
+            "summary": "The dataTransfer read-only property of the InputEvent interface returns a DataTransfer object containing information about richtext or plaintext data being added to or removed from editable content.",
             "support": {
                 "chrome": {
                     "version_added": "60"
@@ -114,6 +114,9 @@
                 "gecko",
                 "webkit"
             ],
+            "needsflag": [
+                "gecko"
+            ],
             "filename": "api/InputEvent.json",
             "name": "getTargetRanges",
             "slug": "API/InputEvent/getTargetRanges",
@@ -129,10 +132,24 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "83"
+                    "version_added": "75",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.input_events.beforeinput.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": "83"
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.input_events.beforeinput.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false

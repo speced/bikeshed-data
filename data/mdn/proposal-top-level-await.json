@@ -2,6 +2,7 @@
     "introduction": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
@@ -13,11 +14,10 @@
             "summary": "The await operator is used to wait for a Promise. It can only be used inside an async function.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/v8/9344'>bug 9344</a>"
+                    "version_added": "89"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -60,7 +60,13 @@
                     }
                 ],
                 "opera": {
-                    "version_added": false
+                    "version_added": "73",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-javascript-harmony"
+                        }
+                    ]
                 },
                 "opera_android": {
                     "version_added": false
@@ -76,11 +82,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/v8/9344'>bug 9344</a>"
+                    "version_added": "89"
                 }
             },
             "title": "await"

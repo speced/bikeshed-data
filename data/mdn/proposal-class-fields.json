@@ -2,16 +2,12 @@
     "prod-PrivateIdentifier": [
         {
             "engines": [
-                "blink",
-                "gecko"
-            ],
-            "needsflag": [
-                "gecko"
+                "blink"
             ],
             "filename": "javascript/classes.json",
             "name": "private_class_fields",
-            "slug": "JavaScript/Reference/Classes/Class_elements#Private_fields",
-            "summary": "Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
+            "slug": "JavaScript/Reference/Classes/Private_class_fields",
+            "summary": "Class properties are public by default and can be examined or modified outside the class. There is however a stage 3 proposal to allow defining private class fields using a hash # prefix.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -23,7 +19,8 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "81",
+                    "version_added": false,
+                    "notes": "Available only in nightly builds. See <a href='https://bugzil.la/1562054'>bug 1562054</a>.",
                     "flags": [
                         {
                             "type": "preference",
@@ -38,7 +35,8 @@
                     ]
                 },
                 "firefox_android": {
-                    "version_added": "81",
+                    "version_added": false,
+                    "notes": "Available only in nightly builds. See <a href='https://bugzil.la/1562054'>bug 1562054</a>.",
                     "flags": [
                         {
                             "type": "preference",
@@ -80,7 +78,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Public class fields"
+            "title": "Private class fields"
         }
     ],
     "prod-FieldDefinition": [
@@ -110,7 +108,7 @@
                     "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -169,7 +167,7 @@
                     "version_added": "75"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false

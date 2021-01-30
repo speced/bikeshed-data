@@ -449,7 +449,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "55"
                 },
                 "edge": {
                     "version_added": false
@@ -464,10 +464,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "42"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "42"
                 },
                 "safari": {
                     "version_added": false
@@ -476,10 +476,10 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "55"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -613,7 +613,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1798,7 +1798,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/HTMLElement.json",
             "name": "beforeinput_event",
@@ -1815,10 +1819,24 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "74",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.input_events.beforeinput.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.input_events.beforeinput.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -1858,7 +1876,7 @@
             "filename": "api/InputEvent.json",
             "name": "inputType",
             "slug": "API/InputEvent/inputType",
-            "summary": "The inputType read-only property of the InputEvent interface returns the type of change made to editible content. Possible changes include for example inserting, deleting, and formatting text.",
+            "summary": "The inputType read-only property of the InputEvent interface returns the type of change made to editable content. Possible changes include for example inserting, deleting, and formatting text.",
             "support": {
                 "chrome": {
                     "version_added": "60"
@@ -2453,7 +2471,7 @@
                     "version_added": true
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"

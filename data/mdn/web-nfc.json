@@ -1,17 +1,19 @@
 {
     "dom-ndefmessage-records": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFMessage.json",
             "name": "records",
             "slug": "API/NDEFMessage/records",
-            "summary": "The records property of NDEFMessage interface represents a list of NDEFRecords defining the NDEF message.",
+            "summary": "The records property of NDEFMessage interface represents a list of NDEFRecords present in the NDEF message.",
             "support": {
                 "chrome": {
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -52,7 +54,9 @@
     ],
     "dom-ndefmessage": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFMessage.json",
             "name": "NDEFMessage",
             "slug": "API/NDEFMessage",
@@ -62,7 +66,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -103,7 +107,9 @@
     ],
     "dom-ndefreader": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFReader.json",
             "name": "NDEFReader",
             "slug": "API/NDEFReader/NDEFReader",
@@ -113,7 +119,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -152,17 +158,70 @@
             "title": "NDEFReader()"
         },
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFReader.json",
-            "name": "NDEFReader",
-            "slug": "API/NDEFReader",
-            "summary": "The NDEFReader interface of the Web NFC API is an abstract interface used to read data from compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.",
+            "name": "onreading",
+            "slug": "API/NDEFReader/onreading",
+            "summary": "The onreading property of NDEFReader interface of the Web NFC API is called whenever a new reading is available from compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.",
             "support": {
                 "chrome": {
                     "version_added": false
                 },
                 "chrome_android": {
+                    "version_added": "89"
+                },
+                "edge": {
                     "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "NDEFReader.onreading"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/NDEFReader.json",
+            "name": "NDEFReader",
+            "slug": "API/NDEFReader",
+            "summary": "The NDEFReader interface of the Web NFC API is an abstract interface used to read from and write data to compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -203,7 +262,9 @@
     ],
     "dom-ndefreader-onreadingerror": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFReader.json",
             "name": "onreadingerror",
             "slug": "API/NDEFReader/onreadingerror",
@@ -213,7 +274,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -254,7 +315,9 @@
     ],
     "dom-ndefreader-scan": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFReader.json",
             "name": "scan",
             "slug": "API/NDEFReader/scan",
@@ -264,7 +327,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -303,19 +366,74 @@
             "title": "NDEFReader.scan()"
         }
     ],
-    "dom-ndefreadingevent": [
+    "dom-ndefreader-write": [
         {
-            "engines": [],
-            "filename": "api/NDEFReadingEvent.json",
-            "name": "NDEFReadingEvent",
-            "slug": "API/NDEFReadingEvent",
-            "summary": "The NDEFReadingEvent interface represents events despatched on new NFC readings obtained by NDEFReader.",
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/NDEFReader.json",
+            "name": "write",
+            "slug": "API/NDEFReader/write",
+            "summary": "The write() method of NDEFReader interface writes a specified message to a compatible NFC tag.",
             "support": {
                 "chrome": {
                     "version_added": false
                 },
                 "chrome_android": {
+                    "version_added": "89"
+                },
+                "edge": {
                     "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "NDEFReader.write()"
+        }
+    ],
+    "dom-ndefreadingevent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/NDEFReadingEvent.json",
+            "name": "NDEFReadingEvent",
+            "slug": "API/NDEFReadingEvent",
+            "summary": "The NDEFReadingEvent interface represents events dispatched on new NFC readings obtained by NDEFReader.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -356,7 +474,9 @@
     ],
     "dom-ndefrecord": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "NDEFRecord",
             "slug": "API/NDEFRecord/NDEFRecord",
@@ -366,7 +486,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -405,7 +525,9 @@
             "title": "NDEFRecord()"
         },
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "NDEFRecord",
             "slug": "API/NDEFRecord",
@@ -415,7 +537,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -456,7 +578,9 @@
     ],
     "dom-ndefrecord-data": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "data",
             "slug": "API/NDEFRecord/data",
@@ -466,7 +590,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -507,7 +631,9 @@
     ],
     "dom-ndefrecord-encoding": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "encoding",
             "slug": "API/NDEFRecord/encoding",
@@ -517,7 +643,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -558,7 +684,9 @@
     ],
     "dom-ndefrecord-id": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "id",
             "slug": "API/NDEFRecord/id",
@@ -568,7 +696,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -609,7 +737,9 @@
     ],
     "dom-ndefrecord-lang": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "lang",
             "slug": "API/NDEFRecord/lang",
@@ -619,7 +749,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -660,7 +790,9 @@
     ],
     "dom-ndefrecord-mediatype": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "mediaType",
             "slug": "API/NDEFRecord/mediaType",
@@ -670,7 +802,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -711,7 +843,9 @@
     ],
     "dom-ndefrecord-recordtype": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "recordType",
             "slug": "API/NDEFRecord/recordType",
@@ -721,7 +855,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false
@@ -762,7 +896,9 @@
     ],
     "dom-ndefrecord-torecords": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/NDEFRecord.json",
             "name": "toRecords",
             "slug": "API/NDEFRecord/toRecords",
@@ -772,7 +908,7 @@
                     "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "89"
                 },
                 "edge": {
                     "version_added": false

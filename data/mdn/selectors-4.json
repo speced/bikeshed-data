@@ -1076,9 +1076,7 @@
     "the-focus-visible-pseudo": [
         {
             "engines": [
-                "blink"
-            ],
-            "altname": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/selectors/focus-visible.json",
@@ -1119,14 +1117,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "4",
-                    "alternative_name": ":-moz-focusring"
-                },
-                "firefox_android": {
-                    "version_added": "4",
-                    "alternative_name": ":-moz-focusring"
-                },
+                "firefox": [
+                    {
+                        "version_added": "85"
+                    },
+                    {
+                        "version_added": "4",
+                        "alternative_name": ":-moz-focusring"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "85"
+                    },
+                    {
+                        "version_added": "4",
+                        "alternative_name": ":-moz-focusring"
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -1764,7 +1772,6 @@
                 "webkit"
             ],
             "altname": [
-                "blink",
                 "gecko"
             ],
             "filename": "css/selectors/is.json",
@@ -1774,6 +1781,10 @@
             "support": {
                 "chrome": [
                     {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_removed": "88",
                         "version_added": "68",
                         "flags": [
                             {
@@ -1804,6 +1815,9 @@
                     }
                 ],
                 "chrome_android": [
+                    {
+                        "version_added": "88"
+                    },
                     {
                         "version_added": "66",
                         "version_removed": "71",
@@ -1962,14 +1976,23 @@
                         "version_added": "1.0"
                     }
                 ],
-                "webview_android": {
-                    "version_added": "37",
-                    "alternative_name": ":-webkit-any()",
-                    "notes": "Doesn't support combinators."
-                },
+                "webview_android": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "37",
+                        "alternative_name": ":-webkit-any()",
+                        "notes": "Doesn't support combinators."
+                    }
+                ],
                 "edge_blink": [
                     {
-                        "version_added": "79",
+                        "version_added": "88"
+                    },
+                    {
+                        "version_removed": "88",
+                        "version_added": false,
                         "flags": [
                             {
                                 "type": "preference",
@@ -3100,7 +3123,7 @@
             "filename": "css/selectors/root.json",
             "name": "root",
             "slug": "CSS/:root",
-            "summary": "The :root CSS  pseudo-class matches the root element of a tree representing the document. In HTML, :root represents the <html> element and is identical to the selector html, except that its specificity is higher.",
+            "summary": "The :root CSS pseudo-class matches the root element of a tree representing the document. In HTML, :root represents the <html> element and is identical to the selector html, except that its specificity is higher.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -3506,34 +3529,43 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "css/selectors/where.json",
             "name": "where",
             "slug": "CSS/:where",
             "summary": "The :where() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.",
             "support": {
-                "chrome": {
-                    "version_added": "72",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "72",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "72",
+                        "version_removed": "88",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "72",
+                        "version_removed": "88",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -3575,18 +3607,24 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "88"
                 },
-                "edge_blink": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "88",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": ":where()"
         }
