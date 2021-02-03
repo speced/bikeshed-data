@@ -1019,6 +1019,9 @@
   "#history-traversal": [
     "/browsing-the-web#history-traversal"
   ],
+  "#hostcalljobcallback": [
+    "/webappapis#hostcalljobcallback"
+  ],
   "#hostenqueuepromisejob": [
     "/webappapis#hostenqueuepromisejob"
   ],
@@ -1030,6 +1033,9 @@
   ],
   "#hostimportmoduledynamically(referencingscriptormodule,-specifier,-promisecapability)": [
     "/webappapis#hostimportmoduledynamically(referencingscriptormodule,-specifier,-promisecapability)"
+  ],
+  "#hostmakejobcallback": [
+    "/webappapis#hostmakejobcallback"
   ],
   "#hostresolveimportedmodule(referencingscriptormodule,-specifier)": [
     "/webappapis#hostresolveimportedmodule(referencingscriptormodule,-specifier)"
@@ -1138,6 +1144,9 @@
   ],
   "#integration-with-idl": [
     "/browsers#integration-with-idl"
+  ],
+  "#integration-with-javascript-jobs": [
+    "/webappapis#integration-with-javascript-jobs"
   ],
   "#integration-with-the-javascript-agent-cluster-formalism": [
     "/webappapis#integration-with-the-javascript-agent-cluster-formalism"
@@ -11016,9 +11025,17 @@
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#generic-task-sources"
     }
   },
+  "/webappapis#hostcalljobcallback": {
+    "snapshot": {
+      "number": "8.1.5.3.1",
+      "spec": "HTML 5",
+      "text": "HostCallJobCallback(callback, V, argumentsList)",
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostcalljobcallback"
+    }
+  },
   "/webappapis#hostenqueuepromisejob": {
     "snapshot": {
-      "number": "8.1.5.1",
+      "number": "8.1.5.3.2",
       "spec": "HTML 5",
       "text": "HostEnqueuePromiseJob(job, realm)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuepromisejob"
@@ -11026,7 +11043,7 @@
   },
   "/webappapis#hostensurecancompilestrings(callerrealm,-calleerealm)": {
     "snapshot": {
-      "number": "8.1.5.2",
+      "number": "8.1.5.1",
       "spec": "HTML 5",
       "text": "HostEnsureCanCompileStrings(callerRealm, calleeRealm)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostensurecancompilestrings(callerrealm,-calleerealm)"
@@ -11046,6 +11063,14 @@
       "spec": "HTML 5",
       "text": "HostImportModuleDynamically(referencingScriptOrModule, specifier, promiseCapability)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostimportmoduledynamically(referencingscriptormodule,-specifier,-promisecapability)"
+    }
+  },
+  "/webappapis#hostmakejobcallback": {
+    "snapshot": {
+      "number": "8.1.5.3.3",
+      "spec": "HTML 5",
+      "text": "HostMakeJobCallback(callable)",
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostmakejobcallback"
     }
   },
   "/webappapis#hostresolveimportedmodule(referencingscriptormodule,-specifier)": {
@@ -11070,6 +11095,14 @@
       "spec": "HTML 5",
       "text": "Incumbent",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#incumbent"
+    }
+  },
+  "/webappapis#integration-with-javascript-jobs": {
+    "snapshot": {
+      "number": "8.1.5.3",
+      "spec": "HTML 5",
+      "text": "Job-related host hooks",
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-javascript-jobs"
     }
   },
   "/webappapis#integration-with-the-javascript-agent-cluster-formalism": {
@@ -11194,7 +11227,7 @@
   },
   "/webappapis#the-hostpromiserejectiontracker-implementation": {
     "snapshot": {
-      "number": "8.1.5.3",
+      "number": "8.1.5.2",
       "spec": "HTML 5",
       "text": "HostPromiseRejectionTracker(promise, operation)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#the-hostpromiserejectiontracker-implementation"
