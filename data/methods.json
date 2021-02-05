@@ -1324,6 +1324,15 @@
       "shortname": "geometry"
     }
   },
+  "DataTransfer()": {
+    "DataTransfer()": {
+      "args": [],
+      "for": [
+        "DataTransfer"
+      ],
+      "shortname": "html"
+    }
+  },
   "DelayNode()": {
     "DelayNode(context)": {
       "args": [
@@ -1434,6 +1443,18 @@
         "Event"
       ],
       "shortname": "dom"
+    }
+  },
+  "EventSource()": {
+    "EventSource(url, eventSourceInitDict)": {
+      "args": [
+        "url",
+        "eventSourceInitDict"
+      ],
+      "for": [
+        "EventSource"
+      ],
+      "shortname": "html"
     }
   },
   "EventTarget()": {
@@ -2203,6 +2224,17 @@
       "shortname": "credential-management"
     }
   },
+  "Path2D()": {
+    "Path2D(path)": {
+      "args": [
+        "path"
+      ],
+      "for": [
+        "Path2D"
+      ],
+      "shortname": "html"
+    }
+  },
   "PaymentRequestUpdateEvent.PaymentRequestUpdateEvent()": {
     "PaymentRequestUpdateEvent.PaymentRequestUpdateEvent()": {
       "args": [],
@@ -2493,6 +2525,18 @@
         "SensorErrorEvent"
       ],
       "shortname": "generic-sensor"
+    }
+  },
+  "SharedWorker()": {
+    "SharedWorker(scriptURL, options)": {
+      "args": [
+        "scriptURL",
+        "options"
+      ],
+      "for": [
+        "SharedWorker"
+      ],
+      "shortname": "html"
     }
   },
   "StatefulAnimator()": {
@@ -3016,6 +3060,18 @@
       "shortname": "webaudio"
     }
   },
+  "WebSocket()": {
+    "WebSocket(url, protocols)": {
+      "args": [
+        "url",
+        "protocols"
+      ],
+      "for": [
+        "WebSocket"
+      ],
+      "shortname": "html"
+    }
+  },
   "WheelEvent()": {
     "WheelEvent(type)": {
       "args": [
@@ -3035,6 +3091,18 @@
         "WheelEvent"
       ],
       "shortname": "ui-events"
+    }
+  },
+  "Worker()": {
+    "Worker(scriptURL, options)": {
+      "args": [
+        "scriptURL",
+        "options"
+      ],
+      "for": [
+        "Worker"
+      ],
+      "shortname": "html"
     }
   },
   "WorkletAnimation()": {
@@ -4502,8 +4570,13 @@
     "checkValidity()": {
       "args": [],
       "for": [
-        "HTMLFieldSetElement",
-        "HTMLFormElement"
+        "ElementInternals",
+        "HTMLButtonElement",
+        "HTMLFormElement",
+        "HTMLInputElement",
+        "HTMLObjectElement",
+        "HTMLSelectElement",
+        "HTMLTextAreaElement"
       ],
       "shortname": "html"
     }
@@ -10592,6 +10665,8 @@
     "getSVGDocument()": {
       "args": [],
       "for": [
+        "HTMLEmbedElement",
+        "HTMLIFrameElement",
         "HTMLObjectElement"
       ],
       "shortname": "html"
@@ -10767,6 +10842,7 @@
         "id"
       ],
       "for": [
+        "AudioTrackList",
         "TextTrackList",
         "VideoTrackList"
       ],
@@ -11697,7 +11773,9 @@
       "args": [],
       "for": [
         "HTMLAllCollection",
-        "Plugin"
+        "MimeTypeArray",
+        "Plugin",
+        "PluginArray"
       ],
       "shortname": "html"
     },
@@ -12247,7 +12325,9 @@
     "namedItem()": {
       "args": [],
       "for": [
-        "Plugin"
+        "MimeTypeArray",
+        "Plugin",
+        "PluginArray"
       ],
       "shortname": "html"
     },
@@ -12296,7 +12376,9 @@
   "navigator.javaEnabled()": {
     "navigator.javaEnabled()": {
       "args": [],
-      "for": [],
+      "for": [
+        "NavigatorPlugins"
+      ],
       "shortname": "html"
     }
   },
@@ -13856,8 +13938,13 @@
     "reportValidity()": {
       "args": [],
       "for": [
-        "HTMLFieldSetElement",
-        "HTMLFormElement"
+        "ElementInternals",
+        "HTMLButtonElement",
+        "HTMLFormElement",
+        "HTMLInputElement",
+        "HTMLObjectElement",
+        "HTMLSelectElement",
+        "HTMLTextAreaElement"
       ],
       "shortname": "html"
     }
@@ -15164,7 +15251,11 @@
         "message"
       ],
       "for": [
-        "HTMLFieldSetElement"
+        "HTMLButtonElement",
+        "HTMLInputElement",
+        "HTMLObjectElement",
+        "HTMLSelectElement",
+        "HTMLTextAreaElement"
       ],
       "shortname": "html"
     }
@@ -15534,6 +15625,7 @@
         "selectMode"
       ],
       "for": [
+        "HTMLInputElement",
         "HTMLTextAreaElement"
       ],
       "shortname": "html"
@@ -15590,12 +15682,14 @@
     }
   },
   "setSelectionRange()": {
-    "setSelectionRange(start, end)": {
+    "setSelectionRange(start, end, direction)": {
       "args": [
         "start",
-        "end"
+        "end",
+        "direction"
       ],
       "for": [
+        "HTMLInputElement",
         "HTMLTextAreaElement"
       ],
       "shortname": "html"
@@ -15692,7 +15786,8 @@
     "setTransform()": {
       "args": [],
       "for": [
-        "CanvasPattern"
+        "CanvasPattern",
+        "CanvasTransform"
       ],
       "shortname": "html"
     },
@@ -15706,7 +15801,7 @@
         "f"
       ],
       "for": [
-        "CanvasPattern"
+        "CanvasTransform"
       ],
       "shortname": "html"
     }

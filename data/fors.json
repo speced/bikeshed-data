@@ -973,7 +973,6 @@
     "DataCloneError",
     "DataError",
     "DataTransfer",
-    "DataTransfer()",
     "DataTransferItem",
     "DataTransferItemList",
     "DataView",
@@ -1036,7 +1035,6 @@
     "EventListenerOptions",
     "EventModifierInit",
     "EventSource",
-    "EventSource(url, eventSourceInitDict)",
     "EventSourceInit",
     "EventTarget",
     "Exposed",
@@ -1434,7 +1432,6 @@
     "PasswordCredentialData",
     "PasswordCredentialInit",
     "Path2D",
-    "Path2D(path)",
     "PayerErrors",
     "PaymentAddress",
     "PaymentComplete",
@@ -1955,7 +1952,6 @@
     "ShadowRootMode",
     "ShareData",
     "SharedWorker",
-    "SharedWorker(scriptURL, options)",
     "SharedWorkerGlobalScope",
     "ShortcutItem",
     "Slottable",
@@ -2114,7 +2110,6 @@
     "WebAppManifest",
     "WebKitCSSMatrix",
     "WebSocket",
-    "WebSocket(url, protocols)",
     "WheelEvent",
     "WheelEventInit",
     "Window",
@@ -2126,7 +2121,6 @@
     "WindowProxy",
     "WindowSessionStorage",
     "Worker",
-    "Worker(scriptURL, options)",
     "WorkerGlobalScope",
     "WorkerLocation",
     "WorkerNavigator",
@@ -4526,7 +4520,6 @@
     "default-style",
     "default/on",
     "defaultview",
-    "defer",
     "define an algorithm",
     "define an inherited policy for feature in browsing context",
     "define an inherited policy for feature in container at origin",
@@ -5512,7 +5505,6 @@
     "formatting structure",
     "formdata",
     "formdataentryvalue",
-    "formtarget",
     "forward progress",
     "forward-compatible parsing",
     "forwards to the internal map object",
@@ -5543,7 +5535,6 @@
     "frame-current",
     "frame-requested",
     "frame-src",
-    "frameElement",
     "framerate",
     "frameset",
     "frameset-ok flag",
@@ -7429,8 +7420,6 @@
     "navigationtype",
     "navigator compatibility mode",
     "navigator.hardwareconcurrency",
-    "navigator.javaEnabled()",
-    "navigator.mimetypes",
     "navigator.online",
     "navy",
     "nearest ancestor autofocus scoping root element",
@@ -7694,30 +7683,11 @@
     "olivedrab",
     "omitted",
     "on",
-    "onaddtrack",
-    "onchange",
-    "onclose",
-    "onconnect",
-    "oncopy",
-    "oncuechange",
     "one permitted sandboxed navigator",
     "one-time-code",
-    "onenter",
-    "onerror",
-    "onexit",
-    "onlanguagechange",
     "online",
     "only if border is not equivalent to zero",
-    "onmessage",
-    "onmessageerror",
-    "onoffline",
-    "ononline",
-    "onopen",
-    "onpaste",
-    "onrejectionhandled",
-    "onremovetrack",
     "onshow",
-    "onunhandledrejection",
     "opacity",
     "opaque",
     "opaque black",
@@ -9598,7 +9568,6 @@
     "should navigation response to navigation request of type in target be blocked by content security policy?",
     "should not",
     "should not initialize device tracking",
-    "should plugin element be blocked a priori by content security policy?",
     "should plugin element be blocked a priori by content security policy?:",
     "should request be allowed to use feature?",
     "should request be blocked by content security policy?",
@@ -10879,7 +10848,6 @@
     "validation message",
     "validity",
     "validity states",
-    "valign",
     "value",
     "value accumulation",
     "value addition",
@@ -11991,7 +11959,8 @@
     "startOffset"
   ],
   "AbstractWorker": [
-    "error"
+    "error",
+    "onerror"
   ],
   "AddEventListenerOptions": [
     "once",
@@ -12709,11 +12678,20 @@
     "performanceTime"
   ],
   "AudioTrack": [
-    "enabled"
+    "enabled",
+    "id",
+    "kind",
+    "label",
+    "language"
   ],
   "AudioTrackList": [
     "addtrack",
     "change",
+    "getTrackById(id)",
+    "length",
+    "onaddtrack",
+    "onchange",
+    "onremovetrack",
     "removetrack"
   ],
   "AudioWorkletGlobalScope": [
@@ -13010,6 +12988,10 @@
   "BeforeUnloadEvent": [
     "returnValue"
   ],
+  "BinaryType": [
+    "arraybuffer",
+    "blob"
+  ],
   "BiquadFilterNode": [
     "BiquadFilterNode(context)",
     "BiquadFilterNode(context, options)",
@@ -13123,9 +13105,6 @@
     "contentType",
     "end",
     "start"
-  ],
-  "BlobCallback": [
-    "blob"
   ],
   "BlobPropertyBag": [
     "endings",
@@ -13428,6 +13407,8 @@
     "message",
     "messageerror",
     "name",
+    "onmessage",
+    "onmessageerror",
     "postMessage(message)"
   ],
   "ByteLengthQueuingStrategy": [
@@ -14931,6 +14912,10 @@
   "CameraDevicePermissionDescriptor": [
     "panTiltZoom"
   ],
+  "CanPlayTypeResult": [
+    "maybe",
+    "probably"
+  ],
   "CanvasCompositing": [
     "globalAlpha",
     "globalCompositeOperation"
@@ -14952,6 +14937,10 @@
     "isPointInPath()",
     "isPointInStroke()",
     "stroke()"
+  ],
+  "CanvasFillRule": [
+    "evenodd",
+    "nonzero"
   ],
   "CanvasFillStrokeStyles": [
     "createLinearGradient(x0, y0, x1, y1)",
@@ -14996,8 +14985,7 @@
     "setLineDash()"
   ],
   "CanvasPattern": [
-    "setTransform()",
-    "setTransform(a, b, c, d, e, f)"
+    "setTransform()"
   ],
   "CanvasRect": [
     "clearRect(x, y, w, h)",
@@ -15027,6 +15015,21 @@
     "measureText()",
     "strokeText()"
   ],
+  "CanvasTextAlign": [
+    "center",
+    "end",
+    "left",
+    "right",
+    "start"
+  ],
+  "CanvasTextBaseline": [
+    "alphabetic",
+    "bottom",
+    "hanging",
+    "ideographic",
+    "middle",
+    "top"
+  ],
   "CanvasTextDrawingStyles": [
     "direction",
     "font",
@@ -15038,6 +15041,8 @@
     "resetTransform()",
     "rotate(angle)",
     "scale(x, y)",
+    "setTransform()",
+    "setTransform(a, b, c, d, e, f)",
     "transform(a, b, c, d, e, f)",
     "translate(x, y)"
   ],
@@ -15255,7 +15260,7 @@
   "Clients/openWindow(url)": [
     "url"
   ],
-  "CloseEventInit": [
+  "CloseEvent": [
     "code",
     "reason",
     "wasClean"
@@ -15268,6 +15273,10 @@
     "origin",
     "tokenBinding",
     "type"
+  ],
+  "ColorSpaceConversion": [
+    "default",
+    "none"
   ],
   "Comment": [
     "Comment()",
@@ -16855,6 +16864,7 @@
     "token"
   ],
   "DataTransfer": [
+    "DataTransfer()",
     "clearData()",
     "dropEffect",
     "effectAllowed",
@@ -16901,6 +16911,8 @@
     "message",
     "messageerror",
     "name",
+    "onmessage",
+    "onmessageerror",
     "postMessage(message)",
     "postMessage(message, transfer)"
   ],
@@ -17043,6 +17055,7 @@
     "layoutNow()",
     "linkColor",
     "links",
+    "location",
     "measureElement",
     "measureElement(element)",
     "measureText",
@@ -17261,7 +17274,9 @@
     "text"
   ],
   "DocumentAndElementEventHandlers": [
-    "oncut"
+    "oncopy",
+    "oncut",
+    "onpaste"
   ],
   "DocumentFragment": [
     "DocumentFragment()",
@@ -17302,7 +17317,7 @@
     "max",
     "min"
   ],
-  "DragEventInit": [
+  "DragEvent": [
     "dataTransfer"
   ],
   "DynamicsCompressorNode": [
@@ -17652,10 +17667,16 @@
     "is"
   ],
   "ElementInternals": [
+    "checkValidity()",
+    "form",
+    "labels",
+    "reportValidity()",
     "setFormValue(value, state)",
     "setValidity(flags, message, anchor)",
     "shadowRoot",
-    "validationMessage"
+    "validationMessage",
+    "validity",
+    "willValidate"
   ],
   "EndingType": [
     "\"native\"",
@@ -17664,7 +17685,7 @@
   "Environment": [
     "ready promise"
   ],
-  "ErrorEventInit": [
+  "ErrorEvent": [
     "colno",
     "error",
     "filename",
@@ -17789,13 +17810,18 @@
   "EventSource": [
     "CLOSED",
     "CONNECTING",
+    "EventSource(url, eventSourceInitDict)",
     "OPEN",
     "close()",
     "error",
     "message",
+    "onerror",
+    "onmessage",
+    "onopen",
     "open",
     "readyState",
-    "url"
+    "url",
+    "withCredentials"
   ],
   "EventSourceInit": [
     "withCredentials"
@@ -18385,7 +18411,7 @@
     "name",
     "value"
   ],
-  "FormDataEventInit": [
+  "FormDataEvent": [
     "formData"
   ],
   "FragmentFilter": [
@@ -18690,6 +18716,7 @@
     "vLink"
   ],
   "HTMLButtonElement": [
+    "checkValidity()",
     "disabled",
     "form",
     "formAction",
@@ -18697,10 +18724,15 @@
     "formMethod",
     "formNoValidate",
     "formTarget",
+    "labels",
     "name",
+    "reportValidity()",
+    "setCustomValidity(message)",
     "type",
+    "validationMessage",
     "validity",
-    "value"
+    "value",
+    "willValidate"
   ],
   "HTMLCanvasElement": [
     "getContext(contextId)",
@@ -18852,21 +18884,17 @@
   ],
   "HTMLEmbedElement": [
     "align",
+    "getSVGDocument()",
+    "height",
     "name",
     "src",
     "type",
     "width"
   ],
   "HTMLFieldSetElement": [
-    "checkValidity()",
     "disabled",
     "elements",
-    "reportValidity()",
-    "setCustomValidity(message)",
-    "type",
-    "validationMessage",
-    "validity",
-    "willValidate"
+    "type"
   ],
   "HTMLFontElement": [
     "color",
@@ -18948,6 +18976,8 @@
     "contentDocument",
     "contentWindow",
     "frameBorder",
+    "getSVGDocument()",
+    "height",
     "loading",
     "longDesc",
     "marginHeight",
@@ -18995,6 +19025,7 @@
     "align",
     "alt",
     "autocomplete",
+    "checkValidity()",
     "checked",
     "defaultChecked",
     "defaultValue",
@@ -19004,6 +19035,7 @@
     "form",
     "height",
     "indeterminate",
+    "labels",
     "list",
     "max",
     "maxLength",
@@ -19014,8 +19046,15 @@
     "pattern",
     "placeholder",
     "readOnly",
+    "reportValidity()",
     "required",
     "select()",
+    "selectionDirection",
+    "selectionEnd",
+    "selectionStart",
+    "setCustomValidity(message)",
+    "setRangeText(replacement, start, end, selectMode)",
+    "setSelectionRange(start, end, direction)",
     "size",
     "src",
     "step",
@@ -19023,11 +19062,13 @@
     "stepUp()",
     "type",
     "useMap",
+    "validationMessage",
     "validity",
     "value",
     "valueAsDate",
     "valueAsNumber",
-    "width"
+    "width",
+    "willValidate"
   ],
   "HTMLLIElement": [
     "type",
@@ -19161,6 +19202,7 @@
   ],
   "HTMLMeterElement": [
     "high",
+    "labels",
     "low",
     "max",
     "min",
@@ -19181,6 +19223,7 @@
     "align",
     "archive",
     "border",
+    "checkValidity()",
     "code",
     "codeBase",
     "codeType",
@@ -19190,14 +19233,19 @@
     "declare",
     "form",
     "getSVGDocument()",
+    "height",
     "hspace",
     "name",
+    "reportValidity()",
+    "setCustomValidity(message)",
     "standby",
     "type",
     "useMap",
+    "validationMessage",
     "validity",
     "vspace",
-    "width"
+    "width",
+    "willValidate"
   ],
   "HTMLOptGroupElement": [
     "disabled",
@@ -19231,6 +19279,7 @@
     "defaultValue",
     "form",
     "htmlFor",
+    "labels",
     "type",
     "value"
   ],
@@ -19247,6 +19296,7 @@
     "width"
   ],
   "HTMLProgressElement": [
+    "labels",
     "max",
     "position",
     "value"
@@ -19271,22 +19321,28 @@
   "HTMLSelectElement": [
     "add()",
     "autocomplete",
+    "checkValidity()",
     "disabled",
     "form",
     "item(index)",
+    "labels",
     "length",
     "multiple",
     "name",
     "namedItem(name)",
     "options",
     "remove()",
+    "reportValidity()",
     "required",
     "selectedIndex",
     "selectedOptions",
+    "setCustomValidity(message)",
     "size",
     "type",
+    "validationMessage",
     "validity",
-    "value"
+    "value",
+    "willValidate"
   ],
   "HTMLSlotElement": [
     "assignedElements()",
@@ -19385,29 +19441,34 @@
   ],
   "HTMLTextAreaElement": [
     "autocomplete",
+    "checkValidity()",
     "cols",
     "defaultValue",
     "dirName",
     "disabled",
     "form",
+    "labels",
     "maxLength",
     "minLength",
     "name",
     "placeholder",
     "readOnly",
+    "reportValidity()",
     "required",
     "rows",
-    "select",
     "select()",
     "selectionDirection",
     "selectionEnd",
     "selectionStart",
+    "setCustomValidity(message)",
     "setRangeText(replacement, start, end, selectMode)",
-    "setSelectionRange(start, end)",
+    "setSelectionRange(start, end, direction)",
     "textLength",
     "type",
+    "validationMessage",
     "validity",
     "value",
+    "willValidate",
     "wrap"
   ],
   "HTMLTimeElement": [
@@ -20078,10 +20139,19 @@
     "height",
     "width"
   ],
+  "ImageOrientation": [
+    "flipY",
+    "none"
+  ],
   "ImageResource": [
     "sizes",
     "src",
     "type"
+  ],
+  "ImageSmoothingQuality": [
+    "high",
+    "low",
+    "medium"
   ],
   "InputDeviceInfo": [
     "getCapabilities",
@@ -20935,6 +21005,8 @@
     "close()",
     "message",
     "messageerror",
+    "onmessage",
+    "onmessageerror",
     "postMessage(message)",
     "postMessage(message, transfer)",
     "start()"
@@ -20947,6 +21019,11 @@
     "enabledPlugin",
     "suffixes",
     "type"
+  ],
+  "MimeTypeArray": [
+    "item()",
+    "length",
+    "namedItem()"
   ],
   "MockSensor": [
     "maxSamplingFrequency",
@@ -21256,7 +21333,12 @@
     "language",
     "languages"
   ],
+  "NavigatorOnLine": [
+    "onLine"
+  ],
   "NavigatorPlugins": [
+    "navigator.javaEnabled()",
+    "navigator.mimeTypes",
     "navigator.plugins"
   ],
   "NavigatorStorage": [
@@ -21759,6 +21841,7 @@
     "password"
   ],
   "Path2D": [
+    "Path2D(path)",
     "addPath(b, transform)"
   ],
   "PayerErrors": [
@@ -22139,6 +22222,7 @@
     "\"reverse\""
   ],
   "Plugin": [
+    "description",
     "filename",
     "item()",
     "length",
@@ -22146,6 +22230,9 @@
     "namedItem()"
   ],
   "PluginArray": [
+    "item()",
+    "length",
+    "namedItem()",
     "refresh()"
   ],
   "PointerEvent": [
@@ -22192,6 +22279,11 @@
   "PostMessageOptions": [
     "transfer"
   ],
+  "PremultiplyAlpha": [
+    "default",
+    "none",
+    "premultiply"
+  ],
   "ProcessingInstruction": [
     "substring data",
     "target"
@@ -22227,7 +22319,7 @@
     "loaded",
     "total"
   ],
-  "PromiseRejectionEventInit": [
+  "PromiseRejectionEvent": [
     "promise",
     "reason"
   ],
@@ -23959,6 +24051,12 @@
     "blockSize",
     "inlineSize"
   ],
+  "ResizeQuality": [
+    "high",
+    "low",
+    "medium",
+    "pixelated"
+  ],
   "Response": [
     "Response()",
     "Response(body)",
@@ -24418,6 +24516,12 @@
     "statusCode",
     "violatedDirective"
   ],
+  "SelectionMode": [
+    "end",
+    "preserve",
+    "select",
+    "start"
+  ],
   "Sensor": [
     "[[frequency]]",
     "[[lastEventFiredAt]]",
@@ -24586,6 +24690,7 @@
     "url"
   ],
   "SharedWorker": [
+    "SharedWorker(scriptURL, options)",
     "error",
     "port"
   ],
@@ -24595,7 +24700,8 @@
     "constructor origin",
     "constructor url",
     "credentials",
-    "name"
+    "name",
+    "onconnect"
   ],
   "ShortcutItem": [
     "description",
@@ -24696,9 +24802,7 @@
     "usage"
   ],
   "StorageEvent": [
-    "initStorageEvent()"
-  ],
-  "StorageEventInit": [
+    "initStorageEvent()",
     "key",
     "newValue",
     "oldValue",
@@ -24783,7 +24887,7 @@
   "StyleSheetList/item(index)": [
     "index"
   ],
-  "SubmitEventInit": [
+  "SubmitEvent": [
     "submitter"
   ],
   "SubtleCrypto": [
@@ -25033,11 +25137,14 @@
     "label",
     "language",
     "mode",
+    "oncuechange",
     "removeCue(cue)"
   ],
   "TextTrackCue": [
     "endTime",
     "id",
+    "onenter",
+    "onexit",
     "pauseOnExit",
     "startTime",
     "track"
@@ -25051,16 +25158,17 @@
     "change",
     "getTrackById(id)",
     "length",
+    "onaddtrack",
+    "onchange",
+    "onremovetrack",
     "removetrack"
   ],
   "This document previously defined the a priori authenticated URL concept. An a priori authenticated URL is now equivalent to a potentially trustworthy URL [SECURE-CONTEXTS].": [
     "a priori authenticated url"
   ],
   "TimeRanges": [
-    "end",
     "end(index)",
     "length",
-    "start",
     "start(index)"
   ],
   "TimelinePhase": [
@@ -25079,7 +25187,7 @@
     "present",
     "supported"
   ],
-  "TrackEventInit": [
+  "TrackEvent": [
     "track"
   ],
   "TransformStream": [
@@ -25843,6 +25951,9 @@
     "change",
     "getTrackById(id)",
     "length",
+    "onaddtrack",
+    "onchange",
+    "onremovetrack",
     "removetrack",
     "selectedIndex"
   ],
@@ -25929,6 +26040,7 @@
     "CLOSING",
     "CONNECTING",
     "OPEN",
+    "WebSocket(url, protocols)",
     "binaryType",
     "bufferedAmount",
     "close",
@@ -25937,6 +26049,10 @@
     "error",
     "extensions",
     "message",
+    "onclose",
+    "onerror",
+    "onmessage",
+    "onopen",
     "open",
     "protocol",
     "readyState",
@@ -25983,6 +26099,7 @@
     "closed",
     "confirm(message)",
     "current event",
+    "customElements",
     "devicePixelRatio",
     "document",
     "error",
@@ -25991,6 +26108,7 @@
     "focus",
     "focus()",
     "focus(options)",
+    "frameElement",
     "frames",
     "getComputedStyle(elt)",
     "getComputedStyle(elt, pseudoElt)",
@@ -26267,9 +26385,12 @@
     "sessionStorage"
   ],
   "Worker": [
+    "Worker(scriptURL, options)",
     "error",
     "message",
     "messageerror",
+    "onmessage",
+    "onmessageerror",
     "postMessage(message, options)",
     "postMessage(message, transfer)",
     "terminate()"
@@ -26287,7 +26408,13 @@
     "name",
     "navigator",
     "offline",
+    "onerror",
+    "onlanguagechange",
     "online",
+    "onoffline",
+    "ononline",
+    "onrejectionhandled",
+    "onunhandledrejection",
     "owner set",
     "referrer policy",
     "rejectionhandled",
@@ -27873,6 +28000,7 @@
     "polygon state",
     "rectangle state",
     "referrerpolicy",
+    "rel",
     "shape",
     "target",
     "type",
@@ -27979,9 +28107,6 @@
   "basic URL parser": [
     "state override",
     "url"
-  ],
-  "binarytype": [
-    "arraybuffer"
   ],
   "blob": [
     "type"
@@ -28319,10 +28444,12 @@
     "dirname",
     "disabled",
     "enctype",
+    "form",
     "formaction",
     "formenctype",
     "formmethod",
     "formnovalidate",
+    "formtarget",
     "method",
     "name",
     "novalidate",
@@ -28369,11 +28496,8 @@
     "calc-operator nodes",
     "operator nodes"
   ],
-  "canplaytyperesult": [
-    "maybe",
-    "probably"
-  ],
   "canvas": [
+    "height",
     "width"
   ],
   "caption": [
@@ -28493,9 +28617,6 @@
     "dark",
     "light",
     "normal"
-  ],
-  "colorspaceconversion": [
-    "none"
   ],
   "column-count": [
     "<integer [1,∞]>",
@@ -28770,26 +28891,6 @@
     "auto",
     "hidden",
     "visible"
-  ],
-  "context-2d-fillrule": [
-    "evenodd",
-    "nonzero"
-  ],
-  "context-2d-imagesmoothingquality": [
-    "medium"
-  ],
-  "context-2d-textalign": [
-    "center",
-    "left",
-    "right"
-  ],
-  "context-2d-textbaseline": [
-    "alphabetic",
-    "bottom",
-    "hanging",
-    "ideographic",
-    "middle",
-    "top"
   ],
   "continue": [
     "-webkit-discard",
@@ -29110,9 +29211,6 @@
     "part name list",
     "part name map"
   ],
-  "elementinternals": [
-    "labels"
-  ],
   "ellipse": [
     "cx",
     "cy",
@@ -29121,11 +29219,13 @@
   ],
   "embed": [
     "align",
+    "height",
     "hspace",
     "name",
     "src",
     "type",
-    "vspace"
+    "vspace",
+    "width"
   ],
   "embedder policy": [
     "report only reporting endpoint",
@@ -29346,6 +29446,7 @@
     "autocomplete",
     "dirname",
     "disabled",
+    "form",
     "name"
   ],
   "file": [
@@ -29713,6 +29814,7 @@
     "formenctype",
     "formmethod",
     "formnovalidate",
+    "formtarget",
     "method",
     "name",
     "novalidate",
@@ -29984,6 +30086,7 @@
     "allowtransparency",
     "frameborder",
     "framespacing",
+    "height",
     "hspace",
     "loading",
     "longdesc",
@@ -29996,7 +30099,8 @@
     "scrolling",
     "src",
     "srcdoc",
-    "vspace"
+    "vspace",
+    "width"
   ],
   "image": [
     "crossorigin",
@@ -30036,16 +30140,13 @@
   "image-set()": [
     "type()"
   ],
-  "imageorientation": [
-    "flipY",
-    "none"
-  ],
   "img": [
     "align",
     "alt",
     "border",
     "crossorigin",
     "decoding",
+    "height",
     "hspace",
     "ismap",
     "loading",
@@ -30056,7 +30157,8 @@
     "sizes",
     "src",
     "srcset",
-    "vspace"
+    "vspace",
+    "width"
   ],
   "in": [
     "backgroundalpha",
@@ -30127,6 +30229,7 @@
     "checked",
     "dirname",
     "disabled",
+    "form",
     "hspace",
     "ismap",
     "list",
@@ -30339,9 +30442,6 @@
   "letter-spacing": [
     "<length>",
     "normal"
-  ],
-  "lfe": [
-    "labels"
   ],
   "li": [
     "type",
@@ -30768,12 +30868,15 @@
     "declare",
     "dirname",
     "disabled",
+    "form",
+    "height",
     "hspace",
     "name",
     "standby",
     "type",
     "typemustmatch",
-    "vspace"
+    "vspace",
+    "width"
   ],
   "object-fit": [
     "contain",
@@ -30891,6 +30994,7 @@
     "dirname",
     "disabled",
     "for",
+    "form",
     "name"
   ],
   "overflow": [
@@ -31098,10 +31202,6 @@
   ],
   "pre": [
     "width"
-  ],
-  "premultiplyalpha": [
-    "none",
-    "premultiply"
   ],
   "primitiveUnits": [
     "objectboundingbox",
@@ -31338,10 +31438,6 @@
   "request/destination": [
     "script-like"
   ],
-  "resizequality": [
-    "medium",
-    "pixelated"
-  ],
   "response": [
     "aborted flag",
     "body",
@@ -31428,6 +31524,7 @@
     "base url",
     "charset",
     "crossorigin",
+    "defer",
     "error to rethrow",
     "event",
     "fetch options",
@@ -31556,14 +31653,12 @@
     "dirname",
     "disabled",
     "drop-down box",
+    "form",
     "list box",
     "multiple",
     "name",
     "required",
     "size"
-  ],
-  "selectionmode": [
-    "preserve"
   ],
   "selector": [
     "combinator",
@@ -31936,7 +32031,8 @@
     "align",
     "char",
     "charoff",
-    "height"
+    "height",
+    "valign"
   ],
   "td": [
     "abbr",
@@ -32196,6 +32292,7 @@
     "cols",
     "dirname",
     "disabled",
+    "form",
     "hard",
     "maxlength",
     "minlength",
@@ -32510,8 +32607,10 @@
     "top"
   ],
   "video": [
+    "height",
     "playsinline",
-    "poster"
+    "poster",
+    "width"
   ],
   "view": [
     "active",
@@ -32651,9 +32750,6 @@
     "auto",
     "contents",
     "scroll-position"
-  ],
-  "window": [
-    "customElements"
   ],
   "word-boundary-detection": [
     "<lang>",

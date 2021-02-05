@@ -1589,7 +1589,7 @@ https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
 1
 -
 select
-method
+enum-value
 html
 html
 1
@@ -1597,7 +1597,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-selectionmode-select
 1
 1
-HTMLTextAreaElement
+SelectionMode
 -
 select
 event
@@ -2053,6 +2053,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectiondirection
 1
 1
+HTMLInputElement
 HTMLTextAreaElement
 -
 selectionEnd
@@ -2064,6 +2065,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionend
 1
 1
+HTMLInputElement
 HTMLTextAreaElement
 -
 selectionStart
@@ -2075,6 +2077,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionstart
 1
 1
+HTMLInputElement
 HTMLTextAreaElement
 -
 selector
@@ -7575,7 +7578,11 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity
 1
 1
-HTMLFieldSetElement
+HTMLObjectElement
+HTMLInputElement
+HTMLButtonElement
+HTMLSelectElement
+HTMLTextAreaElement
 -
 setData(format, data)
 method
@@ -8092,6 +8099,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext
 1
 1
+HTMLInputElement
 HTMLTextAreaElement
 -
 setRemoteDescription
@@ -8171,7 +8179,7 @@ https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader
 1
 XMLHttpRequest
 -
-setSelectionRange(start, end)
+setSelectionRange(start, end, direction)
 method
 html
 html
@@ -8180,6 +8188,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setselectionrange
 1
 1
+HTMLInputElement
 HTMLTextAreaElement
 -
 setStart(node, offset)
@@ -8334,7 +8343,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform-matrix
 1
 1
-CanvasPattern
+CanvasTransform
 -
 setTransform()
 method
@@ -8356,7 +8365,7 @@ snapshot
 https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform
 1
 1
-CanvasPattern
+CanvasTransform
 -
 setUserData()
 method
