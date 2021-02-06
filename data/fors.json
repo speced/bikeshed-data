@@ -1101,6 +1101,7 @@
     "GeometryNode",
     "GeometryUtils",
     "GetAnimationsOptions",
+    "GetNotificationOptions",
     "GetRootNodeOptions",
     "GetSVGDocument",
     "Global",
@@ -1391,6 +1392,14 @@
     "NotReadableError",
     "NotSupportedError",
     "Notation",
+    "Notification",
+    "NotificationAction",
+    "NotificationDirection",
+    "NotificationEvent",
+    "NotificationEventInit",
+    "NotificationOptions",
+    "NotificationPermission",
+    "NotificationPermissionCallback",
     "ObservableArray",
     "ObservableArray<T>",
     "OfflineAudioCompletionEvent",
@@ -2587,6 +2596,7 @@
     "agent cluster",
     "agent cluster key",
     "agent cluster map",
+    "alert steps",
     "algorithm",
     "algorithm for assigning header cells",
     "algorithm for ending a row group",
@@ -3675,6 +3685,7 @@
     "close a p element",
     "close a worker",
     "close sentinel",
+    "close steps",
     "close the cell",
     "close the websocket connection",
     "close-quote",
@@ -4160,6 +4171,7 @@
     "create a new object implementing the interface",
     "create a new resolved promise",
     "create a new top-level browsing context",
+    "create a notification",
     "create a paintrenderingcontext2d object",
     "create a paymentaddress from user-provided input",
     "create a permissions policy for a browsing context",
@@ -4209,6 +4221,7 @@
     "creating a device info object",
     "creating a frozen array",
     "creating a frozen array from an iterable",
+    "creating a notification",
     "creating a permissions policy",
     "creating a permissions policy from a response",
     "creating a sequence from an iterable",
@@ -5223,6 +5236,7 @@
     "fetch directives",
     "fetch metadata headers",
     "fetch scheme",
+    "fetch steps",
     "fetch the descendants of a module script",
     "fetch the descendants of and link a module script",
     "fetch()",
@@ -5306,6 +5320,7 @@
     "fire a pointer event",
     "fire a pointer event named e",
     "fire a progress event",
+    "fire a service worker notification event",
     "fire a simple event",
     "fire a success event",
     "fire a sync event",
@@ -5801,6 +5816,7 @@
     "half-leading",
     "handle",
     "handle attribute changes",
+    "handle close events",
     "handle content codings",
     "handle errors",
     "handle fetch",
@@ -6863,6 +6879,7 @@
     "list of inline sessions",
     "list of joints",
     "list of newly introduced cues",
+    "list of notifications",
     "list of options",
     "list of pending fullscreen events",
     "list of pending play promises",
@@ -7134,6 +7151,7 @@
     "maximum far clip plane",
     "maximum height",
     "maximum inline field of view",
+    "maximum number of actions",
     "maximum size",
     "maximum value",
     "maximum width",
@@ -7525,6 +7543,7 @@
     "non-interactive",
     "non-local boundary default action",
     "non-negative-number",
+    "non-persistent notification",
     "non-printable code point",
     "non-rendered element",
     "non-replaced",
@@ -7583,6 +7602,7 @@
     "notfound",
     "notfounderror",
     "nothing",
+    "notification",
     "notify about playing",
     "notify about rejected promises",
     "notify activated state",
@@ -8104,6 +8124,7 @@
     "performing a microtask checkpoint",
     "peripheral",
     "permissible worker",
+    "permission",
     "permission descriptor type",
     "permission query algorithm",
     "permission request algorithm",
@@ -8119,6 +8140,7 @@
     "persisted user state",
     "persistent connections",
     "persistent css style sheet",
+    "persistent notification",
     "perspective",
     "perspective matrix",
     "perspective()",
@@ -9576,6 +9598,7 @@
     "should response to request be blocked due to nosniff",
     "should skip event",
     "show poster flag",
+    "show steps",
     "showing",
     "shut down the session",
     "shutdown",
@@ -18566,6 +18589,9 @@
   "GetAnimationsOptions": [
     "subtree"
   ],
+  "GetNotificationOptions": [
+    "tag"
+  ],
   "GetRootNodeOptions": [
     "composed"
   ],
@@ -21508,6 +21534,111 @@
   ],
   "NonElementParentNode/getElementById(elementId)": [
     "elementId"
+  ],
+  "Notification": [
+    "Notification(title)",
+    "Notification(title, options)",
+    "actions",
+    "badge",
+    "body",
+    "close()",
+    "constructor(title)",
+    "constructor(title, options)",
+    "data",
+    "dir",
+    "icon",
+    "image",
+    "lang",
+    "maxActions",
+    "onclick",
+    "onclose",
+    "onerror",
+    "onshow",
+    "permission",
+    "renotify",
+    "requestPermission()",
+    "requestPermission(deprecatedCallback)",
+    "requireInteraction",
+    "silent",
+    "tag",
+    "timestamp",
+    "title",
+    "vibrate"
+  ],
+  "Notification/Notification(title)": [
+    "options",
+    "title"
+  ],
+  "Notification/Notification(title, options)": [
+    "options",
+    "title"
+  ],
+  "Notification/constructor(title)": [
+    "options",
+    "title"
+  ],
+  "Notification/constructor(title, options)": [
+    "options",
+    "title"
+  ],
+  "Notification/requestPermission()": [
+    "deprecatedCallback"
+  ],
+  "Notification/requestPermission(deprecatedCallback)": [
+    "deprecatedCallback"
+  ],
+  "NotificationAction": [
+    "action",
+    "icon",
+    "title"
+  ],
+  "NotificationDirection": [
+    "\"auto\"",
+    "\"ltr\"",
+    "\"rtl\""
+  ],
+  "NotificationEvent": [
+    "NotificationEvent(type, eventInitDict)",
+    "action",
+    "constructor",
+    "constructor(type, eventInitDict)",
+    "notification"
+  ],
+  "NotificationEvent/NotificationEvent(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "NotificationEvent/constructor(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "NotificationEventInit": [
+    "action",
+    "notification"
+  ],
+  "NotificationOptions": [
+    "actions",
+    "badge",
+    "body",
+    "data",
+    "dir",
+    "icon",
+    "image",
+    "lang",
+    "renotify",
+    "requireInteraction",
+    "silent",
+    "tag",
+    "timestamp",
+    "vibrate"
+  ],
+  "NotificationPermission": [
+    "\"default\"",
+    "\"denied\"",
+    "\"granted\""
+  ],
+  "NotificationPermissionCallback": [
+    "permission"
   ],
   "OfflineAudioCompletionEvent": [
     "OfflineAudioCompletionEvent(type, eventInitDict)",
@@ -24632,6 +24763,8 @@
     "oninstall",
     "onmessage",
     "onmessageerror",
+    "onnotificationclick",
+    "onnotificationclose",
     "onsync",
     "registration",
     "service worker",
@@ -24640,17 +24773,35 @@
   ],
   "ServiceWorkerRegistration": [
     "active",
+    "getNotifications()",
+    "getNotifications(filter)",
     "installing",
     "navigationPreload",
     "onupdatefound",
     "scope",
     "service worker registration",
+    "showNotification(title)",
+    "showNotification(title, options)",
     "sync",
     "unregister()",
     "update()",
     "updateViaCache",
     "updatefound",
     "waiting"
+  ],
+  "ServiceWorkerRegistration/getNotifications()": [
+    "filter"
+  ],
+  "ServiceWorkerRegistration/getNotifications(filter)": [
+    "filter"
+  ],
+  "ServiceWorkerRegistration/showNotification(title)": [
+    "options",
+    "title"
+  ],
+  "ServiceWorkerRegistration/showNotification(title, options)": [
+    "options",
+    "title"
   ],
   "ServiceWorkerState": [
     "\"activated\"",
@@ -27811,6 +27962,12 @@
     "<color>",
     "auto"
   ],
+  "action": [
+    "icon resource",
+    "icon url",
+    "name",
+    "title"
+  ],
   "agent": [
     "event loop"
   ],
@@ -30851,6 +31008,28 @@
   ],
   "no-composite": [
     "no-composite"
+  ],
+  "notification": [
+    "action",
+    "badge resource",
+    "badge url",
+    "body",
+    "data",
+    "direction",
+    "icon resource",
+    "icon url",
+    "image resource",
+    "image url",
+    "language",
+    "origin",
+    "renotify preference flag",
+    "require interaction preference flag",
+    "service worker registration",
+    "silent preference flag",
+    "tag",
+    "timestamp",
+    "title",
+    "vibration pattern"
   ],
   "nullable types": [
     "inner type"

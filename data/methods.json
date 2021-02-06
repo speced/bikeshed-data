@@ -2114,6 +2114,39 @@
       "shortname": "css-nav"
     }
   },
+  "Notification()": {
+    "Notification(title)": {
+      "args": [
+        "title"
+      ],
+      "for": [
+        "Notification"
+      ],
+      "shortname": "notifications"
+    },
+    "Notification(title, options)": {
+      "args": [
+        "title",
+        "options"
+      ],
+      "for": [
+        "Notification"
+      ],
+      "shortname": "notifications"
+    }
+  },
+  "NotificationEvent()": {
+    "NotificationEvent(type, eventInitDict)": {
+      "args": [
+        "type",
+        "eventInitDict"
+      ],
+      "for": [
+        "NotificationEvent"
+      ],
+      "shortname": "notifications"
+    }
+  },
   "OfflineAudioCompletionEvent()": {
     "OfflineAudioCompletionEvent(type, eventInitDict)": {
       "args": [
@@ -4748,6 +4781,7 @@
         "IDBDatabase",
         "ImageBitmap",
         "MessagePort",
+        "Notification",
         "RTCDataChannel",
         "RTCPeerConnection",
         "ReadableByteStreamController",
@@ -6117,6 +6151,25 @@
       ],
       "shortname": "web-animations"
     },
+    "constructor(title)": {
+      "args": [
+        "title"
+      ],
+      "for": [
+        "Notification"
+      ],
+      "shortname": "notifications"
+    },
+    "constructor(title, options)": {
+      "args": [
+        "title",
+        "options"
+      ],
+      "for": [
+        "Notification"
+      ],
+      "shortname": "notifications"
+    },
     "constructor(transform)": {
       "args": [
         "transform"
@@ -6230,6 +6283,7 @@
         "MediaQueryListEvent",
         "MediaStreamTrackEvent",
         "NavigationEvent",
+        "NotificationEvent",
         "OfflineAudioCompletionEvent",
         "PaymentMethodChangeEvent",
         "PaymentRequestUpdateEvent",
@@ -10368,6 +10422,24 @@
       "shortname": "webxr"
     }
   },
+  "getNotifications()": {
+    "getNotifications()": {
+      "args": [],
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "shortname": "notifications"
+    },
+    "getNotifications(filter)": {
+      "args": [
+        "filter"
+      ],
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "shortname": "notifications"
+    }
+  },
   "getOffsetReferenceSpace()": {
     "getOffsetReferenceSpace(originOffset)": {
       "args": [
@@ -14031,6 +14103,24 @@
       "shortname": "webxr-hit-test"
     }
   },
+  "requestPermission()": {
+    "requestPermission()": {
+      "args": [],
+      "for": [
+        "Notification"
+      ],
+      "shortname": "notifications"
+    },
+    "requestPermission(deprecatedCallback)": {
+      "args": [
+        "deprecatedCallback"
+      ],
+      "for": [
+        "Notification"
+      ],
+      "shortname": "notifications"
+    }
+  },
   "requestReferenceSpace()": {
     "requestReferenceSpace(type)": {
       "args": [
@@ -15897,6 +15987,27 @@
         "HTMLDialogElement"
       ],
       "shortname": "html"
+    }
+  },
+  "showNotification()": {
+    "showNotification(title)": {
+      "args": [
+        "title"
+      ],
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "shortname": "notifications"
+    },
+    "showNotification(title, options)": {
+      "args": [
+        "title",
+        "options"
+      ],
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "shortname": "notifications"
     }
   },
   "sign()": {
