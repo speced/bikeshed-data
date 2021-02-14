@@ -5235,6 +5235,7 @@
     "fetch and process the linked resource",
     "fetch directives",
     "fetch metadata headers",
+    "fetch params",
     "fetch scheme",
     "fetch steps",
     "fetch the descendants of a module script",
@@ -6980,6 +6981,7 @@
     "main",
     "main axis",
     "main dimension",
+    "main fetch",
     "main size",
     "main size property",
     "main-axis",
@@ -7430,6 +7432,7 @@
     "navigate",
     "navigate an iframe or frame",
     "navigate to a fragment",
+    "navigate-redirect fetch",
     "navigate-to",
     "navigation",
     "navigation params",
@@ -8379,11 +8382,7 @@
     "process dt or dd",
     "process permissions policy attributes",
     "process remote tracks",
-    "process request body",
-    "process request end-of-body",
     "process response",
-    "process response done",
-    "process response end-of-body",
     "process response policy",
     "process the addition of a remote track",
     "process the frame attributes",
@@ -8479,7 +8478,6 @@
     "queue a cross-origin embedder policy corp violation report",
     "queue a cross-origin embedder policy inheritance violation",
     "queue a fetch task",
-    "queue a fetch-request-done task",
     "queue a global task",
     "queue a media element task",
     "queue a microtask",
@@ -10494,7 +10492,8 @@
     "translation",
     "translation mode",
     "transmission of request and response",
-    "transmit-body loop",
+    "transmit request body",
+    "transmit-request-body loop",
     "transp",
     "transparent",
     "transparent black",
@@ -11514,7 +11513,8 @@
     "ui-monospace",
     "ui-rounded",
     "ui-sans-serif",
-    "ui-serif"
+    "ui-serif",
+    "xxx"
   ],
   "<geometry-box>": [
     "border-box",
@@ -11735,12 +11735,17 @@
     "font-feature-settings",
     "font-language-override",
     "font-named-instance",
+    "font-size",
     "font-stretch",
     "font-style",
     "font-variation-settings",
     "font-weight",
     "line-gap-override",
     "src",
+    "subscript-position-override",
+    "subscript-size-override",
+    "superscript-position-override",
+    "superscript-size-override",
     "unicode-range"
   ],
   "@font-face/font-display": [
@@ -11749,6 +11754,10 @@
     "fallback",
     "optional",
     "swap"
+  ],
+  "@font-face/font-size": [
+    "<number>",
+    "auto"
   ],
   "@font-feature-values": [
     "font-display"
@@ -28775,7 +28784,6 @@
   ],
   "column-count": [
     "<integer [1,∞]>",
-    "<integer>",
     "auto"
   ],
   "column-fill": [
@@ -28797,7 +28805,6 @@
   ],
   "column-width": [
     "<length [0,∞]>",
-    "<length>",
     "auto",
     "fit-content(<length-percentage>)",
     "max-content",
@@ -29581,13 +29588,26 @@
   ],
   "fetch": [
     "fetch group",
+    "processrequestbody",
+    "processrequestendofbody",
+    "processresponse",
+    "processresponseendofbody",
     "resumed",
     "suspend",
-    "terminated"
+    "terminated",
+    "useparallelqueue"
   ],
   "fetch group": [
     "fetch record",
     "terminated"
+  ],
+  "fetch params": [
+    "process request body",
+    "process request end-of-body",
+    "process response",
+    "process response end-of-body",
+    "request",
+    "task destination"
   ],
   "fetch record": [
     "fetch",
@@ -29788,7 +29808,8 @@
     "ui-monospace",
     "ui-rounded",
     "ui-sans-serif",
-    "ui-serif"
+    "ui-serif",
+    "xxx"
   ],
   "font-feature-settings": [
     "<feature-tag-value>",
@@ -30738,9 +30759,6 @@
     ":recto",
     ":verso"
   ],
-  "main": [
-    "main fetch"
-  ],
   "manifest": [
     "navigation scope",
     "navigation scope of a manifest",
@@ -31598,11 +31616,9 @@
     "service-workers mode",
     "source",
     "success",
-    "synchronous flag",
     "tainted origin flag",
     "timing allow failed flag",
     "transaction",
-    "transmit body",
     "unsafe-request flag",
     "upgradeneeded",
     "url",
