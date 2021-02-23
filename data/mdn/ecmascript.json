@@ -12907,7 +12907,7 @@
             "filename": "javascript/builtins/Map.json",
             "name": "entries",
             "slug": "JavaScript/Reference/Global_Objects/Map/entries",
-            "summary": "The entries() method returns a new Iterator object that contains the [key, value] pairs for each element in the Map object in insertion order.",
+            "summary": "The entries() method returns a new Iterator object that contains the [key, value] pairs for each element in the Map object in insertion order. In this particular case, this iterator object is also an iterable, so the for-of loop can be used. When the protocol [Symbol.iterator] is used, it returns a function that, when invoked, returns this iterator itself.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -23287,48 +23287,120 @@
             "slug": "JavaScript/Reference/Global_Objects/Set/values",
             "summary": "The values() method returns a new iterator object that contains the values for each element in the Set object in insertion order.",
             "support": {
-                "chrome": {
-                    "version_added": "38"
-                },
-                "chrome_android": {
-                    "version_added": "38"
-                },
+                "chrome": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "38"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "38"
+                    }
+                ],
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": {
-                    "version_added": "24"
-                },
-                "firefox_android": {
-                    "version_added": "24"
-                },
+                "firefox": [
+                    {
+                        "version_added": "24"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "24"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "24"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "24"
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": {
-                    "version_added": "0.12.0"
-                },
-                "opera": {
-                    "version_added": "25"
-                },
-                "opera_android": {
-                    "version_added": "25"
-                },
-                "safari": {
-                    "version_added": "8"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "38"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "nodejs": [
+                    {
+                        "version_added": "0.12.0"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "0.12.0"
+                    }
+                ],
+                "opera": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "25"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "25"
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": "8"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "8"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "8"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "8"
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "3.0"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "38"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "keys",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "Set.prototype.values()"
         }
@@ -34354,7 +34426,7 @@
             "filename": "javascript/operators/await.json",
             "name": "await",
             "slug": "JavaScript/Reference/Operators/await",
-            "summary": "The await operator is used to wait for a Promise. It can only be used inside an async function.",
+            "summary": "The await operator is used to wait for a Promise. It can only be used inside an async function within regular JavaScript code; however it can be used on it's own with JavaScript modules.",
             "support": {
                 "chrome": {
                     "version_added": "55"
@@ -34425,7 +34497,7 @@
             "filename": "javascript/statements.json",
             "name": "async_function",
             "slug": "JavaScript/Reference/Statements/async_function",
-            "summary": "An async function is a function declared with the async keyword. Async functions are instances of the AsyncFunction constructor, and the await keyword is permitted within them. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.",
+            "summary": "An async function is a function declared with the async keyword, and the await keyword is permitted within them. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.",
             "support": {
                 "chrome": {
                     "version_added": "55"
@@ -37976,7 +38048,7 @@
             "filename": "javascript/statements.json",
             "name": "for_await_of",
             "slug": "JavaScript/Reference/Statements/for-await...of",
-            "summary": "The for await...of statement creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object. Like the await operator, the statement can only be used inside an async function.",
+            "summary": "The for await...of statement creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object. This statement can only be used inside an async function.",
             "support": {
                 "chrome": {
                     "version_added": "63"
