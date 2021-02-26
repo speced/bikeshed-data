@@ -392,7 +392,7 @@
             "filename": "api/AnalyserNode.json",
             "name": "maxDecibels",
             "slug": "API/AnalyserNode/maxDecibels",
-            "summary": "The maxDecibels property of the AnalyserNode interface is a double value representing the maximum power value in the scaling range for the FFT analysis data, for conversion to unsigned byte/float values — basically, this specifies the maximum value for the range of results when using getFloatFrequencyData() or getByteFrequencyData().",
+            "summary": "The maxDecibels property of the AnalyserNode interface is a double value representing the maximum power value in the scaling range for the FFT analysis data, for conversion to unsigned byte values — basically, this specifies the maximum value for the range of results when using getByteFrequencyData().",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -447,7 +447,7 @@
             "filename": "api/AnalyserNode.json",
             "name": "minDecibels",
             "slug": "API/AnalyserNode/minDecibels",
-            "summary": "The minDecibels property of the AnalyserNode interface is a double value representing the minimum power value in the scaling range for the FFT analysis data, for conversion to unsigned byte/float values — basically, this specifies the minimum value for the range of results when using getFloatFrequencyData() or getByteFrequencyData().",
+            "summary": "The minDecibels property of the AnalyserNode interface is a double value representing the minimum power value in the scaling range for the FFT analysis data, for conversion to unsigned byte values — basically, this specifies the minimum value for the range of results when using getByteFrequencyData().",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -672,7 +672,7 @@
             "filename": "api/AudioBuffer.json",
             "name": "copyFromChannel",
             "slug": "API/AudioBuffer/copyFromChannel",
-            "summary": "The copyFromChannel() method of the AudioBuffer interface copies the audio sample data from the specified channel of the AudioBuffer to a specified Float32Array.",
+            "summary": "The copyFromChannel() method of the AudioBuffer interface copies the audio sample data from the specified channel of the AudioBuffer to a specified Float32Array.The copyFromChannel() method of the AudioBuffer interface copies the audio sample data from the specified channel of the AudioBuffer to a specified Float32Array.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -2342,7 +2342,7 @@
             "filename": "api/AudioContext.json",
             "name": "getOutputTimestamp",
             "slug": "API/AudioContext/getOutputTimestamp",
-            "summary": "The getOutputTimestamp() property of the AudioContext interface returns a new AudioTimestamp object containing two audio timestamp values relating to the current audio context.",
+            "summary": "The getOutputTimestamp() property of the AudioContext interface returns a new AudioTimestamp object containing two audio timestamp values relating to the current audio context. The getOutputTimestamp() property of the AudioContext interface returns a new AudioTimestamp object containing two audio timestamp values relating to the current audio context.",
             "support": {
                 "chrome": {
                     "version_added": "57"
@@ -2947,7 +2947,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3002,7 +3002,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3057,7 +3057,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3112,7 +3112,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3167,7 +3167,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3222,7 +3222,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3277,7 +3277,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3332,7 +3332,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3387,7 +3387,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": false,
@@ -3875,7 +3875,7 @@
             "filename": "api/AudioNode.json",
             "name": "numberOfInputs",
             "slug": "API/AudioNode/numberOfInputs",
-            "summary": "The numberOfInputs property of the AudioNode interface returns the number of inputs feeding the node.",
+            "summary": "The numberOfInputs property of the AudioNode interface returns the number of inputs feeding the node. Source nodes are defined as nodes having a numberOfInputs property with a value of 0.The numberOfInputs property of the AudioNode interface returns the number of inputs feeding the node.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -3930,7 +3930,7 @@
             "filename": "api/AudioNode.json",
             "name": "numberOfOutputs",
             "slug": "API/AudioNode/numberOfOutputs",
-            "summary": "The numberOfOutputs property of the AudioNode interface returns the number of outputs coming out of the node.",
+            "summary": "The numberOfOutputs property of the AudioNode interface returns the number of outputs coming out of the node. Destination nodes — like AudioDestinationNode — have a value of 0 for this attribute.The numberOfOutputs property of the AudioNode interface returns the number of outputs coming out of the node.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -4202,7 +4202,7 @@
             "filename": "api/AudioParam.json",
             "name": "defaultValue",
             "slug": "API/AudioParam/defaultValue",
-            "summary": "The defaultValue read-only property of the AudioParam interface represents the initial value of the attributes as defined by the specific AudioNode creating the AudioParam.",
+            "summary": "The defaultValue read-only property of the AudioParam interface represents the initial value of the attributes as defined by the specific AudioNode creating the AudioParam.The defaultValue read-only property of the AudioParam interface represents the initial value of the attributes as defined by the specific AudioNode creating the AudioParam.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -4385,7 +4385,7 @@
             "filename": "api/AudioParam.json",
             "name": "maxValue",
             "slug": "API/AudioParam/maxValue",
-            "summary": "The maxValue read-only property of the AudioParam interface represents the maximum possible value for the parameter's nominal (effective) range.",
+            "summary": "The maxValue read-only property of the AudioParam interface represents the maximum possible value for the parameter's nominal (effective) range.The maxValue read-only property of the AudioParam interface represents the maximum possible value for the parameter's nominal (effective) range.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -4394,7 +4394,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "53"
@@ -4440,7 +4440,7 @@
             "filename": "api/AudioParam.json",
             "name": "minValue",
             "slug": "API/AudioParam/minValue",
-            "summary": "The minValue read-only property of the AudioParam interface represents the minimum possible value for the parameter's nominal (effective) range.",
+            "summary": "The minValue read-only property of the AudioParam interface represents the minimum possible value for the parameter's nominal (effective) range.The minValue read-only property of the AudioParam interface represents the minimum possible value for the parameter's nominal (effective) range.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -4449,7 +4449,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "53"
@@ -4550,7 +4550,7 @@
             "filename": "api/AudioParam.json",
             "name": "setValueAtTime",
             "slug": "API/AudioParam/setValueAtTime",
-            "summary": "The setValueAtTime() method of the AudioParam interface schedules an instant change to the AudioParam value at a precise time, as measured against AudioContext.currentTime. The new value is given in the value parameter.",
+            "summary": "The setValueAtTime() method of the AudioParam interface schedules an instant change to the AudioParam value at a precise time, as measured against AudioContext.currentTime. The new value is given in the value parameter. ",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -4605,7 +4605,7 @@
             "filename": "api/AudioParam.json",
             "name": "setValueCurveAtTime",
             "slug": "API/AudioParam/setValueCurveAtTime",
-            "summary": "The setValueCurveAtTime() method of the AudioParam interface schedules the parameter's value to change following a curve defined by a list of values.",
+            "summary": "The setValueCurveAtTime() method of the AudioParam interface schedules the parameter's value to change following a curve defined by a list of values. The curve is a linear interpolation between the sequence of values defined in an array of floating-point values, which are scaled to fit into the given interval starting at startTime and a specific duration.The setValueCurveAtTime() method of the AudioParam interface schedules the parameter's value to change following a curve defined by a list of values.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -4660,7 +4660,7 @@
             "filename": "api/AudioParam.json",
             "name": "value",
             "slug": "API/AudioParam/value",
-            "summary": "The Web Audio API's AudioParam interface property value gets or sets the value of this AudioParam at the current time.",
+            "summary": "The Web Audio API's AudioParam interface property value gets or sets the value of this AudioParam at the current time. Initially, the value is set to AudioParam.defaultValue.The Web Audio API's AudioParam interface property value gets or sets the value of this AudioParam at the current time.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -5219,7 +5219,7 @@
             "filename": "api/AudioWorklet.json",
             "name": "AudioWorklet",
             "slug": "API/AudioWorklet",
-            "summary": "The AudioWorklet interface of the Web Audio API is used to supply custom audio processing scripts that execute in a separate thread to provide very low latency audio processing.",
+            "summary": "The AudioWorklet interface of the Web Audio API is used to supply custom audio processing scripts that execute in a separate thread to provide very low latency audio processing. The worklet's code is run in the AudioWorkletGlobalScope global execution context, using a separate Web Audio thread which is shared by the worklet and other audio nodes.The AudioWorklet interface of the Web Audio API is used to supply custom audio processing scripts that execute in a separate thread to provide very low latency audio processing.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -5862,10 +5862,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -5874,8 +5871,7 @@
             "summary": "The createAnalyser() method of the BaseAudioContext interface creates an AnalyserNode, which can be used to expose audio time and frequency data and create data visualisations.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -5894,31 +5890,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -5927,8 +5909,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createAnalyser()"
@@ -5938,10 +5919,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -5950,8 +5928,7 @@
             "summary": "The createBiquadFilter() method of the BaseAudioContext interface creates a BiquadFilterNode, which represents a second order filter configurable as several different common filter types.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -5970,31 +5947,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6003,8 +5966,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createBiquadFilter()"
@@ -6014,10 +5976,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6026,8 +5985,7 @@
             "summary": "The createBuffer() method of the BaseAudioContext Interface is used to create a new, empty AudioBuffer object, which can then be populated by data, and played via an AudioBufferSourceNode",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6046,31 +6004,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6079,8 +6023,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createBuffer()"
@@ -6090,10 +6033,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6102,8 +6042,7 @@
             "summary": "The createBufferSource() method of the BaseAudioContext Interface is used to create a new AudioBufferSourceNode, which can be used to play audio data contained within an AudioBuffer object. AudioBuffers are created using BaseAudioContext.createBuffer or returned by BaseAudioContext.decodeAudioData when it successfully decodes an audio track.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6122,31 +6061,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6155,8 +6080,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createBufferSource()"
@@ -6166,10 +6090,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6178,8 +6099,7 @@
             "summary": "The createChannelMerger() method of the BaseAudioContext interface creates a ChannelMergerNode, which combines channels from multiple audio streams into a single audio stream.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6198,31 +6118,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6231,8 +6137,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createChannelMerger()"
@@ -6242,10 +6147,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6254,8 +6156,7 @@
             "summary": "The createChannelSplitter() method of the BaseAudioContext Interface is used to create a ChannelSplitterNode, which is used to access the individual channels of an audio stream and process them separately.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6274,31 +6175,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6307,8 +6194,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createChannelSplitter()"
@@ -6372,10 +6258,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6384,8 +6267,7 @@
             "summary": "The createConvolver() method of the BaseAudioContext interface creates a ConvolverNode, which is commonly used to apply reverb effects to your audio. See the spec definition of Convolution for more information.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6404,31 +6286,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6437,8 +6305,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createConvolver()"
@@ -6448,10 +6315,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6460,8 +6324,7 @@
             "summary": "The createDelay() method of the BaseAudioContext Interface is used to create a DelayNode, which is used to delay the incoming audio signal by a certain amount of time.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6480,31 +6343,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6513,8 +6362,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createDelay()"
@@ -6524,10 +6372,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6536,8 +6381,7 @@
             "summary": "The createDynamicsCompressor() method of the BaseAudioContext Interface is used to create a DynamicsCompressorNode, which can be used to apply compression to an audio signal.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6556,31 +6400,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6589,8 +6419,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createDynamicsCompressor()"
@@ -6600,10 +6429,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6612,8 +6438,7 @@
             "summary": "The createGain() method of the BaseAudioContext interface creates a GainNode, which can be used to control the overall gain (or volume) of the audio graph.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6632,31 +6457,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6665,8 +6476,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createGain()"
@@ -6732,10 +6542,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6744,8 +6551,7 @@
             "summary": "The createOscillator() method of the BaseAudioContext interface creates an OscillatorNode, a source representing a periodic waveform. It basically generates a constant tone.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6764,31 +6570,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6797,8 +6589,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createOscillator()"
@@ -6808,10 +6599,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6820,8 +6608,7 @@
             "summary": "The createPanner() method of the BaseAudioContext Interface is used to create a new PannerNode, which is used to spatialize an incoming audio stream in 3D space.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -6840,31 +6627,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -6873,8 +6646,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createPanner()"
@@ -6884,9 +6656,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6900,11 +6670,7 @@
                         "notes": "Default values supported"
                     },
                     {
-                        "version_added": "57"
-                    },
-                    {
-                        "version_added": "10",
-                        "prefix": "webkit"
+                        "version_added": "10"
                     }
                 ],
                 "chrome_android": [
@@ -6913,11 +6679,7 @@
                         "notes": "Default values supported"
                     },
                     {
-                        "version_added": "57"
-                    },
-                    {
-                        "version_added": "33",
-                        "prefix": "webkit"
+                        "version_added": "33"
                     }
                 ],
                 "edge": {
@@ -6934,31 +6696,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": [
                     {
@@ -6966,10 +6714,6 @@
                         "notes": "Default values supported"
                     },
                     {
-                        "version_added": "7.0"
-                    },
-                    {
-                        "prefix": "webkit",
                         "version_added": "2.0"
                     }
                 ],
@@ -6979,11 +6723,7 @@
                         "notes": "Default values supported"
                     },
                     {
-                        "version_added": "57"
-                    },
-                    {
-                        "version_added": "4.4.3",
-                        "prefix": "webkit"
+                        "version_added": "4.4.3"
                     }
                 ],
                 "edge_blink": [
@@ -6993,10 +6733,6 @@
                     },
                     {
                         "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "prefix": "webkit"
                     }
                 ]
             },
@@ -7007,10 +6743,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7019,8 +6752,7 @@
             "summary": "The createScriptProcessor() method of the BaseAudioContext interface creates a ScriptProcessorNode used for direct audio processing.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -7039,31 +6771,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7072,8 +6790,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createScriptProcessor()"
@@ -7139,10 +6856,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7151,8 +6865,7 @@
             "summary": "The createWaveShaper() method of the BaseAudioContext interface creates a WaveShaperNode, which represents a non-linear distortion. It is used to apply distortion effects to your audio.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -7171,31 +6884,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7204,8 +6903,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.createWaveShaper()"
@@ -7215,10 +6913,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7227,8 +6922,7 @@
             "summary": "The currentTime read-only property of the BaseAudioContext interface returns a double representing an ever-increasing hardware timestamp in seconds that can be used for scheduling audio playback, visualizing timelines, etc. It starts at 0.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -7247,31 +6941,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7280,8 +6960,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.currentTime"
@@ -7291,10 +6970,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7303,8 +6979,7 @@
             "summary": "The decodeAudioData() method of the BaseAudioContext Interface is used to asynchronously decode audio file data contained in an ArrayBuffer. In this case the ArrayBuffer is loaded from XMLHttpRequest and FileReader. The decoded AudioBuffer is resampled to the AudioContext's sampling rate, then passed to a callback or promise.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -7323,31 +6998,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7356,8 +7017,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.decodeAudioData()"
@@ -7367,10 +7027,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7379,8 +7036,7 @@
             "summary": "The destination property of the BaseAudioContext interface returns an AudioDestinationNode representing the final destination of all audio in the context. It often represents an actual audio-rendering device such as your device's speakers.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -7399,31 +7055,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7432,8 +7074,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.destination"
@@ -7443,10 +7084,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7455,8 +7093,7 @@
             "summary": "The listener property of the BaseAudioContext interface returns an AudioListener object that can then be used for implementing 3D audio spatialization.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -7473,31 +7110,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7506,8 +7129,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.listener"
@@ -7517,9 +7139,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7554,12 +7174,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": "9",
-                    "prefix": "webkit"
+                    "version_added": "9"
                 },
                 "safari_ios": {
-                    "version_added": "9",
-                    "prefix": "webkit"
+                    "version_added": "9"
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -7578,10 +7196,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7590,8 +7205,7 @@
             "summary": "The sampleRate property of the BaseAudioContext interface returns a floating point number representing the sample rate, in samples per second, used by all nodes in this audio context.",
             "support": {
                 "chrome": {
-                    "version_added": "10",
-                    "prefix": "webkit"
+                    "version_added": "10"
                 },
                 "chrome_android": {
                     "version_added": "33"
@@ -7610,31 +7224,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": "2.0"
@@ -7643,8 +7243,7 @@
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
+                    "version_added": "79"
                 }
             },
             "title": "BaseAudioContext.sampleRate"
@@ -7654,9 +7253,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -7691,12 +7288,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": "9",
-                    "prefix": "webkit"
+                    "version_added": "9"
                 },
                 "safari_ios": {
-                    "version_added": "9",
-                    "prefix": "webkit"
+                    "version_added": "9"
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -7715,15 +7310,13 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
             "name": "BaseAudioContext",
             "slug": "API/BaseAudioContext",
-            "summary": "The BaseAudioContext interface of the Web Audio API acts as a base definition for online and offline audio-processing graphs, as represented by AudioContext and OfflineAudioContext respectively.",
+            "summary": "The BaseAudioContext interface of the Web Audio API acts as a base definition for online and offline audio-processing graphs, as represented by AudioContext and OfflineAudioContext respectively. You wouldn't use BaseAudioContext directly — you'd use its features via one of these two inheriting interfaces.The BaseAudioContext interface of the Web Audio API acts as a base definition for online and offline audio-processing graphs, as represented by AudioContext and OfflineAudioContext respectively.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -7743,31 +7336,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -8183,7 +7762,7 @@
             "filename": "api/BiquadFilterNode.json",
             "name": "BiquadFilterNode",
             "slug": "API/BiquadFilterNode",
-            "summary": "The BiquadFilterNode interface represents a simple low-order filter, and is created using the AudioContext.createBiquadFilter() method. It is an AudioNode that can represent different kinds of filters, tone control devices, and graphic equalizers.",
+            "summary": "The BiquadFilterNode interface represents a simple low-order filter, and is created using the BaseAudioContext/createBiquadFilter method. It is an AudioNode that can represent different kinds of filters, tone control devices, and graphic equalizers.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -8299,7 +7878,7 @@
                     "version_added": "18"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "25"
@@ -8408,7 +7987,7 @@
                     "notes": "Starting in Chrome 56, <code>channelCountMode</code> is set to <code>explicit</code> and <code>channelCount</code> is fixed to the number of outputs, as per the latest spec."
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "25"
@@ -8844,7 +8423,7 @@
             "filename": "api/DelayNode.json",
             "name": "DelayNode",
             "slug": "API/DelayNode/DelayNode",
-            "summary": "The DelayNode() constructor of the Web Audio API creates a new DelayNode object with a delay-line; an AudioNode audio-processing module that causes a delay between the arrival of an input data, and its propagation to the output.",
+            "summary": "The DelayNode() constructor of the Web Audio API creates a new DelayNode object with a delay-line; an AudioNode audio-processing module that causes a delay between the arrival of an input data, and its propagation to the output.The DelayNode() constructor of the Web Audio API creates a new DelayNode object with a delay-line; an AudioNode audio-processing module that causes a delay between the arrival of an input data, and its propagation to the output.",
             "support": {
                 "chrome": {
                     "version_added": "55",
@@ -9863,7 +9442,7 @@
                     "version_added": "18"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "25"
@@ -10254,7 +9833,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "25"
@@ -10617,7 +10196,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OfflineAudioCompletionEvent.json",
             "name": "OfflineAudioCompletionEvent",
@@ -10651,10 +10231,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": true
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": true
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -10844,7 +10424,7 @@
             "filename": "api/OfflineAudioContext.json",
             "name": "OfflineAudioContext",
             "slug": "API/OfflineAudioContext/OfflineAudioContext",
-            "summary": "The OfflineAudioContext() constructor—part of the Web Audio API—creates and returns a new OfflineAudioContext object instance, which can then be used to render audio to an AudioBuffer rather than to an audio output device.",
+            "summary": "The OfflineAudioContext() constructor—part of the Web Audio API—creates and returns a new OfflineAudioContext object instance, which can then be used to render audio to an AudioBuffer rather than to an audio output device. The OfflineAudioContext() constructor—part of the Web Audio API—creates and returns a new OfflineAudioContext object instance, which can then be used to render audio to an AudioBuffer rather than to an audio output device.",
             "support": {
                 "chrome": {
                     "version_added": "55",
@@ -11905,7 +11485,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "50"
@@ -11959,7 +11539,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "50"
@@ -12013,7 +11593,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "50"
@@ -12122,7 +11702,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "50"
@@ -12176,7 +11756,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "50"
@@ -12230,7 +11810,7 @@
                     "version_added": "52"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "50"
@@ -12889,7 +12469,7 @@
             "filename": "api/WaveShaperNode.json",
             "name": "WaveShaperNode",
             "slug": "API/WaveShaperNode",
-            "summary": "The WaveShaperNode interface represents a non-linear distorter. It is an AudioNode that uses a curve to apply a wave shaping distortion to the signal. Beside obvious distortion effects, it is often used to add a warm feeling to the signal.",
+            "summary": "The WaveShaperNode interface represents a non-linear distorter.",
             "support": {
                 "chrome": {
                     "version_added": "14"

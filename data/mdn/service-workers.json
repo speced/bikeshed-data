@@ -423,18 +423,18 @@
             "filename": "api/Cache.json",
             "name": "Cache",
             "slug": "API/Cache",
-            "summary": "The Cache interface provides a storage mechanism for Request / Response object pairs that are cached, for example as part of the ServiceWorker life cycle. Note that the Cache interface is exposed to windowed scopes as well as workers. You don't have to use it in conjunction with service workers, even though it is defined in the service worker spec.",
+            "summary": "The Cache interface provides a persistent storage mechanism for Request / Response object pairs that are cached in long lived memory. How long a Cache lives is browser dependent, but a single origin's scripts can typically rely on the presence of a previously populated Cache. Note that the Cache interface is exposed to windowed scopes as well as workers. You don't have to use it in conjunction with service workers, even though it is defined in the service worker spec.",
             "support": {
                 "chrome": {
-                    "version_added": "43",
-                    "notes": "From 40 to 42, this was only available on service workers."
+                    "version_added": "40",
+                    "notes": "Before version 43, only service workers are supported. From version 43, all worker types and the main thread are supported."
                 },
                 "chrome_android": {
-                    "version_added": "43",
-                    "notes": "From 40 to 42, this was only available on service workers."
+                    "version_added": "40",
+                    "notes": "Before version 43, only service workers are supported. From version 43, all worker types and the main thread are supported."
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "16"
                 },
                 "firefox": {
                     "version_added": "39",
@@ -447,12 +447,12 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "30",
-                    "notes": "From 27 to 29, this was only available on service workers."
+                    "version_added": "27",
+                    "notes": "Before version 30, only service workers are supported. From version 30, all worker types and the main thread are supported."
                 },
                 "opera_android": {
-                    "version_added": "30",
-                    "notes": "From 27 to 29, this was only available on service workers."
+                    "version_added": "27",
+                    "notes": "Before version 30, only service workers are supported. From version 30, all worker types and the main thread are supported."
                 },
                 "safari": {
                     "version_added": "11"
@@ -461,16 +461,15 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "4.0",
-                    "notes": "From 40 to 42, this was only available on service workers."
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "43",
-                    "notes": "From 40 to 42, this was only available on service workers."
+                    "version_added": "40",
+                    "notes": "Before version 43, only service workers are supported. From version 43, all worker types and the main thread are supported."
                 },
                 "edge_blink": {
                     "version_added": "79",
-                    "notes": "From 40 to 42, this was only available on service workers."
+                    "notes": "Before version 43, only service workers are supported. From version 43, all worker types and the main thread are supported."
                 }
             },
             "title": "Cache"
@@ -826,7 +825,7 @@
                     "notes": "Before version 43, only service workers are supported. From version 43, all worker types and the main thread are supported"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "16"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -840,11 +839,11 @@
                 },
                 "opera": {
                     "version_added": "27",
-                    "notes": "Before version 30, only service workers are supported. From version 30, all worker types and the main thread are supported"
+                    "notes": "Before version 30, only service workers are supported. From version 30, all worker types and the main thread are supported."
                 },
                 "opera_android": {
                     "version_added": "27",
-                    "notes": "Before version 30, only service workers are supported. From version 30, all worker types and the main thread are supported"
+                    "notes": "Before version 30, only service workers are supported. From version 30, all worker types and the main thread are supported."
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -857,7 +856,7 @@
                 },
                 "webview_android": {
                     "version_added": "40",
-                    "notes": "Before version 43, only service workers are supported. From version 43, all worker types and the main thread are supported"
+                    "notes": "Before version 43, only service workers are supported. From version 43, all worker types and the main thread are supported."
                 },
                 "edge_blink": {
                     "version_added": "79",
@@ -940,7 +939,7 @@
                     "version_added": "40"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -995,7 +994,7 @@
                     "version_added": "45"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -1050,7 +1049,7 @@
                     "version_added": "60"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "54"
@@ -1104,7 +1103,7 @@
                     "version_added": "40"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -1200,7 +1199,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Clients.json",
             "name": "claim",
@@ -1214,7 +1214,7 @@
                     "version_added": "42"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -1233,10 +1233,10 @@
                     "version_added": "29"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -1255,7 +1255,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Clients.json",
             "name": "get",
@@ -1269,7 +1270,7 @@
                     "version_added": "51"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -1288,10 +1289,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -1310,7 +1311,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Clients.json",
             "name": "matchAll",
@@ -1326,7 +1328,7 @@
                     "notes": "<code>Client</code> objects returned in most recent focus order."
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": [
                     {
@@ -1357,10 +1359,10 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0",
@@ -1382,7 +1384,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Clients.json",
             "name": "openWindow",
@@ -1424,7 +1427,7 @@
                     }
                 ],
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -1443,10 +1446,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": [
                     {
@@ -1499,7 +1502,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Clients.json",
             "name": "Clients",
@@ -1513,7 +1517,7 @@
                     "version_added": "40"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -1532,10 +1536,10 @@
                     "version_added": "27"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -1731,7 +1735,7 @@
                     "version_added": null
                 },
                 "edge": {
-                    "version_added": null
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -1786,7 +1790,7 @@
                     "version_added": "51"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -1892,7 +1896,7 @@
                     "version_added": null
                 },
                 "edge": {
-                    "version_added": null
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": false
@@ -1945,7 +1949,7 @@
                     "version_added": null
                 },
                 "edge": {
-                    "version_added": null
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -1999,7 +2003,7 @@
                     "version_added": null
                 },
                 "edge": {
-                    "version_added": null
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -2054,7 +2058,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -4038,7 +4042,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ServiceWorkerGlobalScope.json",
             "name": "skipWaiting",
@@ -4071,10 +4076,10 @@
                     "version_added": "24"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -4861,24 +4866,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "52",
-                        "notes": "<code>caches</code> now defined on <code><a href='https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope'>WindowOrWorkerGlobalScope</a></code> mixin."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "52",
-                        "notes": "<code>caches</code> now defined on <code><a href='https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope'>WindowOrWorkerGlobalScope</a></code> mixin."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
+                "firefox_android": {
+                    "version_added": "42"
+                },
                 "ie": {
                     "version_added": false
                 },
