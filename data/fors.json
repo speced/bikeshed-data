@@ -250,6 +250,7 @@
     ":target",
     ":target-within",
     ":user-invalid",
+    ":user-valid",
     ":valid",
     ":visited",
     ":where()",
@@ -512,6 +513,7 @@
     "<shadow>",
     "<shape-arg>",
     "<shape-box>",
+    "<shape-command>",
     "<shape-radius>",
     "<shape>",
     "<side-or-corner>",
@@ -1191,6 +1193,7 @@
     "HeadersInit",
     "HierarchyRequestError",
     "Highlight",
+    "HighlightRegistry",
     "HighlightsRegister",
     "History",
     "HkdfParams",
@@ -2430,6 +2433,7 @@
     "absolute position",
     "absolute positioning containing block",
     "absolute positioning layout",
+    "absolute positioning layout model",
     "absolute postioning layout model",
     "absolute url",
     "absolute-url string",
@@ -2443,6 +2447,8 @@
     "abstract closure",
     "abstract dimensions",
     "abstract equality comparison",
+    "accent color",
+    "accent-color",
     "accept",
     "accept-language",
     "access key",
@@ -2739,6 +2745,7 @@
     "anniversary",
     "annotated types",
     "annotation",
+    "annotation box",
     "annotation level",
     "announce an rtcdatachannel as open",
     "announce the connection",
@@ -2898,6 +2905,7 @@
     "asynchronously iterable declaration",
     "at-keyword",
     "at-risk",
+    "at-rule",
     "at-rules",
     "atan()",
     "atan2()",
@@ -3080,6 +3088,7 @@
     "bad port",
     "barred the element from constraint validation",
     "base",
+    "base box",
     "base direction",
     "base iri",
     "base level",
@@ -3200,6 +3209,7 @@
     "blob url store",
     "blob:",
     "block",
+    "block at-rule",
     "block axis",
     "block bad port",
     "block box",
@@ -3434,6 +3444,7 @@
     "calcmode",
     "calculate box size",
     "calculate depth for node",
+    "calculate scroll timeline progress",
     "calculate the aspect ratio",
     "calculate the part element map",
     "calculation tree",
@@ -3648,6 +3659,7 @@
     "clear the stack back to a table body context",
     "clear the stack back to a table context",
     "clear the stack back to a table row context",
+    "clearance",
     "clearance.",
     "click",
     "click focusable",
@@ -4397,7 +4409,6 @@
     "cy",
     "cyan",
     "cycle",
-    "cyclic at computed-value time",
     "cyclic module record",
     "cyclic percentage size",
     "cylindrical polar color",
@@ -4678,6 +4689,7 @@
     "direction mapping",
     "direction of a path",
     "direction of playback",
+    "direction-agnostic size",
     "directional embedding",
     "directional keyword",
     "directional override",
@@ -4880,7 +4892,7 @@
     "effective position of the legacy mouse pointer",
     "effective resident key requirement for credential creation",
     "effective scroll offset",
-    "effective scroll range",
+    "effective scroll offsets",
     "effective start offset",
     "effective time range",
     "effective user verification requirement for assertion",
@@ -5890,6 +5902,7 @@
     "highlight",
     "highlight overlay",
     "highlight pseudo-element",
+    "highlight registry",
     "highlights register",
     "highlighttext",
     "historical agent cluster key map",
@@ -6201,6 +6214,7 @@
     "indexed property setters",
     "indexsizeerror",
     "indianred",
+    "indicate focus",
     "indigo",
     "indistinguishable by user-agent string",
     "individual",
@@ -6378,6 +6392,7 @@
     "interface object",
     "interface prototype object",
     "interface types",
+    "interlinear annotations",
     "internal algorithm for scanning and assigning header cells",
     "internal createelementns steps",
     "internal key modifier state",
@@ -6681,6 +6696,7 @@
     "last event id string",
     "last line",
     "last main-axis baseline set",
+    "last remembered size",
     "last selected source",
     "last usable css region",
     "last usable region",
@@ -7200,6 +7216,7 @@
     "menu",
     "menuitem",
     "menutext",
+    "merged",
     "merged annotation",
     "message",
     "message port post message steps",
@@ -8861,6 +8878,7 @@
     "resolve job promise",
     "resolve pending play promises",
     "resolve percentage heights in table-cell content:",
+    "resolve scroll timeline offsets",
     "resolve the requested features",
     "resolved",
     "resolved descendant node",
@@ -8997,6 +9015,7 @@
     "ruby base box",
     "ruby base container",
     "ruby base container box",
+    "ruby columns",
     "ruby container",
     "ruby container box",
     "ruby formatting context",
@@ -9117,9 +9136,12 @@
     "scalar value",
     "scalar value string",
     "scale",
+    "scale()",
     "scale3d()",
     "scaled flex shrink factor",
     "scaled viewport size",
+    "scalex()",
+    "scaley()",
     "scalez()",
     "scan for devices",
     "schedule job",
@@ -9202,6 +9224,7 @@
     "scroll snapport",
     "scroll timeline",
     "scroll timeline offset",
+    "scroll timeline progress",
     "scroll to the beginning of the document",
     "scroll to the fragment",
     "scroll-behavior",
@@ -9544,6 +9567,7 @@
     "shall",
     "shall not",
     "shape elements",
+    "shape()",
     "shape-image-threshold",
     "shape-inside",
     "shape-margin",
@@ -9810,6 +9834,7 @@
     "stateful animator instance",
     "stateful flag",
     "stateless animator",
+    "statement at-rule",
     "static",
     "static address",
     "static attributes",
@@ -11197,6 +11222,10 @@
     "svg viewport origin box",
     "view-box"
   ],
+  "<by-to>": [
+    "by",
+    "to"
+  ],
   "<color>": [
     "aliceblue",
     "antiquewhite",
@@ -11832,6 +11861,10 @@
     "opaque",
     "subtractive"
   ],
+  "@media/forced-colors": [
+    "active",
+    "none"
+  ],
   "@media/hover": [
     "hover",
     "none"
@@ -11937,10 +11970,9 @@
     "syntax"
   ],
   "@scroll-timeline": [
-    "end",
     "orientation",
+    "scroll-offsets",
     "source",
-    "start",
     "time-range"
   ],
   "@viewport": [
@@ -13483,6 +13515,8 @@
     "decode bytes",
     "deg",
     "deg(value)",
+    "descriptor",
+    "descriptor declarations",
     "dpcm",
     "dpcm(value)",
     "dpi",
@@ -13537,6 +13571,7 @@
     "percent(value)",
     "preserved tokens",
     "property",
+    "property declarations",
     "pt",
     "pt(value)",
     "px",
@@ -14525,11 +14560,10 @@
     "z"
   ],
   "CSSScrollTimelineRule": [
-    "end",
     "name",
     "orientation",
+    "scrollOffsets",
     "source",
-    "start",
     "timeRange"
   ],
   "CSSSkew": [
@@ -19609,6 +19643,13 @@
     "initialRanges",
     "name"
   ],
+  "HighlightRegistry": [
+    "add(Highlight value)",
+    "add(value)"
+  ],
+  "HighlightRegistry/add(value)": [
+    "value"
+  ],
   "HighlightsRegister": [
     "add(Highlight value)",
     "add(value)"
@@ -24557,10 +24598,9 @@
     "ScrollTimeline(options)",
     "constructor()",
     "constructor(options)",
-    "end",
     "orientation",
+    "scrollOffsets",
     "source",
-    "start",
     "timeRange"
   ],
   "ScrollTimeline/ScrollTimeline()": [
@@ -24579,10 +24619,9 @@
     "\"auto\""
   ],
   "ScrollTimelineOptions": [
-    "end",
     "orientation",
+    "scrollOffsets",
     "source",
-    "start",
     "timeRange"
   ],
   "ScrollToOptions": [
@@ -27964,6 +28003,10 @@
   "abbr": [
     "title"
   ],
+  "accent-color": [
+    "<color>",
+    "auto"
+  ],
   "action": [
     "icon resource",
     "icon url",
@@ -28141,6 +28184,12 @@
     "square-button",
     "textarea",
     "textfield"
+  ],
+  "arc": [
+    "ccw",
+    "cw",
+    "large",
+    "small"
   ],
   "area": [
     "alt",
@@ -28689,9 +28738,6 @@
     "right",
     "top"
   ],
-  "clearance.": [
-    "clearance"
-  ],
   "clip": [
     "<bottom>",
     "<left>",
@@ -28781,7 +28827,6 @@
     "balance-all"
   ],
   "column-gap": [
-    "<length-percentage [0,∞]>",
     "normal"
   ],
   "column-rule-color": [
@@ -28991,23 +29036,28 @@
   ],
   "contain-intrinsic-block-size": [
     "<length>",
+    "auto <length>",
     "none"
   ],
   "contain-intrinsic-height": [
     "<length>",
+    "auto <length>",
     "none"
   ],
   "contain-intrinsic-inline-size": [
     "<length>",
+    "auto <length>",
     "none"
   ],
   "contain-intrinsic-size": [
     "<length>",
     "<length>{2}",
+    "auto <length>",
     "none"
   ],
   "contain-intrinsic-width": [
     "<length>",
+    "auto <length>",
     "none"
   ],
   "content": [
@@ -31213,7 +31263,8 @@
     "none"
   ],
   "overflow-clip-margin": [
-    "<length [0,∞]>"
+    "<length [0,∞]>",
+    "<visual-box>"
   ],
   "overflow-wrap": [
     "anywhere",
@@ -31320,10 +31371,7 @@
     "pathlength"
   ],
   "path()": [
-    "<fill-rule>",
-    "<string>",
-    "evenodd",
-    "nonzero"
+    "<string>"
   ],
   "pattern": [
     "xlink:href",
@@ -31717,7 +31765,9 @@
     "none"
   ],
   "ruby-position": [
+    "alternate",
     "inter-character",
+    "inter-character annotation",
     "over",
     "under"
   ],
@@ -31952,12 +32002,38 @@
   "shadow root": [
     "part element map"
   ],
+  "shape()": [
+    "<arc-command>",
+    "<arc-size>",
+    "<arc-sweep>",
+    "<by-to>",
+    "<coordinate-pair>",
+    "<curve-command>",
+    "<hv-line-command>",
+    "<line-command>",
+    "<move-command>",
+    "<smooth-command>",
+    "arc",
+    "by",
+    "ccw",
+    "close",
+    "curve",
+    "cw",
+    "hline",
+    "large",
+    "line",
+    "move",
+    "small",
+    "smooth",
+    "to",
+    "vline"
+  ],
   "shape-image-threshold": [
     "<number>"
   ],
   "shape-inside": [
     "<basic-shape>",
-    "<uri>",
+    "<url>",
     "auto",
     "display",
     "outside-shape"
@@ -32865,7 +32941,7 @@
     "preserve",
     "young"
   ],
-  "voice-pitche": [
+  "voice-pitch": [
     "<frequency>",
     "<percentage>",
     "<semitones>",
