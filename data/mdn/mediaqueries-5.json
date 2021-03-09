@@ -6,7 +6,6 @@
                 "gecko"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "css/at-rules/media.json",
@@ -14,17 +13,22 @@
             "slug": "CSS/@media/forced-colors",
             "summary": "The forced-colors CSS media feature is used to detect if the user agent has enabled a forced colors mode where it enforces a user-chosen limited color palette on the page.",
             "support": {
-                "chrome": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#forced-colors",
-                            "value_to_set": "Enabled"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
-                },
+                "chrome": [
+                    {
+                        "version_added": "89"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#forced-colors",
+                                "value_to_set": "Enabled"
+                            }
+                        ],
+                        "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
+                    }
+                ],
                 "chrome_android": {
                     "version_added": false,
                     "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
@@ -68,17 +72,22 @@
                     "version_added": false,
                     "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
                 },
-                "edge_blink": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#forced-colors",
-                            "value_to_set": "Enabled"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "89"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#forced-colors",
+                                "value_to_set": "Enabled"
+                            }
+                        ],
+                        "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
+                    }
+                ]
             },
             "title": "forced-colors"
         }
