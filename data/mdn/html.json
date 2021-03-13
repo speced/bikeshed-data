@@ -8323,6 +8323,61 @@
             "title": "CustomElementRegistry"
         }
     ],
+    "dom-domparser-constructor": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/DOMParser.json",
+            "name": "DOMParser",
+            "slug": "API/DOMParser/DOMParser",
+            "summary": "The DOMParser() constructor creates a new DOMParser object.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "8"
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": "3.2"
+                },
+                "safari_ios": {
+                    "version_added": "2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "DOMParser()"
+        }
+    ],
     "dom-parsing-and-serialization": [
         {
             "engines": [
@@ -8443,7 +8498,7 @@
             "filename": "api/DOMStringMap.json",
             "name": "DOMStringMap",
             "slug": "API/DOMStringMap",
-            "summary": "The DOMStringMap interface is used for the HTMLElement.dataset attribute, to represent data for custom attributes added to elements.",
+            "summary": "The DOMStringMap interface is used for the HTMLOrForeignElement.dataset attribute, to represent data for custom attributes added to elements.",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -35373,117 +35428,6 @@
             "title": "MessagePort"
         }
     ],
-    "mimetype": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MimeType.json",
-            "name": "MimeType",
-            "slug": "API/MimeType",
-            "summary": "The MimeType interface provides contains information about a MIME type associated with a particular plugin. NavigatorPlugins.mimeTypes returns an array of this object.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": "11"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1",
-                    "version_removed": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MimeType"
-        }
-    ],
-    "mimetypearray": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MimeTypeArray.json",
-            "name": "MimeTypeArray",
-            "slug": "API/MimeTypeArray",
-            "summary": "The MimeTypeArray interface returns an array of MimeType instances, each of which contains information about a supported browser plugins. This object is returned by NavigatorPlugins.mimeTypes.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MimeTypeArray"
-        }
-    ],
     "dom-navigator-cookieenabled": [
         {
             "engines": [
@@ -36239,226 +36183,6 @@
                 "title": "Online/offline status"
             },
             "title": "NavigatorOnLine"
-        }
-    ],
-    "dom-navigator-javaenabled": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorPlugins.json",
-            "name": "javaEnabled",
-            "slug": "API/NavigatorPlugins/javaEnabled",
-            "summary": "This method indicates whether the current browser is Java-enabled or not.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "6"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "NavigatorPlugins.javaEnabled()"
-        }
-    ],
-    "dom-navigator-mimetypes": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorPlugins.json",
-            "name": "mimeTypes",
-            "slug": "API/NavigatorPlugins/mimeTypes",
-            "summary": "Returns a MimeTypeArray object, which contains a list of MimeType objects representing the MIME types recognized by the browser.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "NavigatorPlugins.mimeTypes"
-        }
-    ],
-    "dom-navigator-plugins": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorPlugins.json",
-            "name": "plugins",
-            "slug": "API/NavigatorPlugins/plugins",
-            "summary": "Returns a PluginArray object, listing the Plugin objects describing the plugins installed in the application.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "NavigatorPlugins.plugins"
-        }
-    ],
-    "navigatorplugins": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorPlugins.json",
-            "name": "NavigatorPlugins",
-            "slug": "API/NavigatorPlugins",
-            "summary": "The NavigatorPlugins mixin adds to the Navigator interface methods and properties for discovering and interacting with plugins installed into the browser.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "NavigatorPlugins"
         }
     ],
     "dom-offscreencanvas": [
@@ -37249,116 +36973,6 @@
                 "title": "Path2D"
             },
             "title": "Path2D"
-        }
-    ],
-    "dom-plugin": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Plugin.json",
-            "name": "Plugin",
-            "slug": "API/Plugin",
-            "summary": "The Plugin interface provides information about a browser plugin.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Plugin"
-        }
-    ],
-    "pluginarray": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/PluginArray.json",
-            "name": "PluginArray",
-            "slug": "API/PluginArray",
-            "summary": "The PluginArray interface is used to store a list of Plugin objects describing the available plugins; it's returned by the window.navigator.plugins property. The PluginArray is not a JavaScript array, but has the length property and supports accessing individual items using bracket notation (plugins[2]), as well as via item(index) and namedItem(\"name\") methods.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PluginArray"
         }
     ],
     "popstateevent": [
@@ -53603,7 +53217,7 @@
             "filename": "html/elements/figure.json",
             "name": "figure",
             "slug": "HTML/Element/figure",
-            "summary": "The HTML <figure> (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption, which is specified using the (<figcaption>) element.",
+            "summary": "The HTML <figure> (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element.",
             "support": {
                 "chrome": {
                     "version_added": "8"
@@ -53658,7 +53272,7 @@
             "filename": "html/elements/footer.json",
             "name": "footer",
             "slug": "HTML/Element/footer",
-            "summary": "The HTML <footer> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.",
+            "summary": "The HTML <footer> element represents a footer for its nearest sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents.",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -55859,8 +55473,7 @@
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "html/elements/input/week.json",
             "name": "input-week",
@@ -55897,7 +55510,8 @@
                     "notes": "See <a href='https://webkit.org/b/200416'>bug 200416</a>."
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/200416'>bug 200416</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": true
