@@ -8876,7 +8876,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DataTransfer.json",
             "name": "items",
@@ -8908,10 +8909,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -61216,6 +61217,138 @@
                 }
             },
             "title": "translate"
+        }
+    ],
+    "coep": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "http/headers/cross-origin-embedder-policy.json",
+            "name": "Cross-Origin-Embedder-Policy",
+            "slug": "HTTP/Headers/Cross-Origin-Embedder-Policy",
+            "summary": "The HTTP Cross-Origin-Embedder-Policy (COEP) response header prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).",
+            "support": {
+                "chrome": {
+                    "version_added": "83"
+                },
+                "chrome_android": {
+                    "version_added": "83"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "79"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "83"
+                }
+            },
+            "title": "Cross-Origin-Embedder-Policy"
+        }
+    ],
+    "the-headers": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "http/headers/cross-origin-opener-policy.json",
+            "name": "Cross-Origin-Opener-Policy",
+            "slug": "HTTP/Headers/Cross-Origin-Opener-Policy",
+            "summary": "The HTTP Cross-Origin-Opener-Policy (COOP) response header allows you to ensure a top-level document does not share a browsing context group with cross-origin documents.",
+            "support": {
+                "chrome": {
+                    "version_added": "83"
+                },
+                "chrome_android": {
+                    "version_added": "83"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "67",
+                        "flags": [
+                            {
+                                "name": "browser.tabs.remote.useCrossOriginOpenerPolicy",
+                                "type": "preference",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "67",
+                        "flags": [
+                            {
+                                "name": "browser.tabs.remote.useCrossOriginOpenerPolicy",
+                                "type": "preference",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "83"
+                }
+            },
+            "title": "Cross-Origin-Opener-Policy"
         }
     ],
     "document-domain-feature": [

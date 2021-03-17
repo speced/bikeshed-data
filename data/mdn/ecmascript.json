@@ -8164,7 +8164,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "getTimezoneOffset",
             "slug": "JavaScript/Reference/Global_Objects/Date/getTimezoneOffset",
-            "summary": "The getTimezoneOffset() method returns the time zone difference, in minutes, from current locale (host system settings) to UTC.",
+            "summary": "The getTimezoneOffset() method returns the difference, in minutes, between a date as evaluated in the UTC time zone, and the same date as evaluated in the local time zone.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8802,7 +8802,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "setDate",
             "slug": "JavaScript/Reference/Global_Objects/Date/setDate",
-            "summary": "The setDate() method sets the day of the Date object relative to the beginning of the currently set month.",
+            "summary": "The setDate() method changes the day of the month of a given Date instance, based on local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -9266,7 +9266,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "setUTCDate",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCDate",
-            "summary": "The setUTCDate() method sets the day of the month for a specified date according to universal time.",
+            "summary": "The setUTCDate() method changes the day of the month of a given Date instance, based on UTC time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -25078,7 +25078,7 @@
                     "version_added": "13"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "11.0"
                 },
                 "webview_android": {
                     "version_added": "73"
@@ -38341,6 +38341,7 @@
                     },
                     {
                         "version_added": "12.0.0",
+                        "version_removed": "13.2.0",
                         "flags": [
                             {
                                 "name": "--experimental-modules",
@@ -38351,6 +38352,7 @@
                     },
                     {
                         "version_added": "8.5.0",
+                        "version_removed": "12.0.0",
                         "flags": [
                             {
                                 "name": "--experimental-modules",

@@ -6,6 +6,7 @@
                 "webkit"
             ],
             "partial": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/Navigator.json",
@@ -14,7 +15,9 @@
             "summary": "The navigator.share() method of the Web Share API invokes the native sharing mechanism of the device.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "89",
+                    "partial_implementation": true,
+                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
                 },
                 "chrome_android": {
                     "version_added": "61"
@@ -52,7 +55,9 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "89",
+                    "partial_implementation": true,
+                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
                 }
             },
             "title": "Navigator.share()"
