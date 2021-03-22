@@ -1815,9 +1815,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/AnimationTimeline.json",
             "name": "currentTime",
             "slug": "API/AnimationTimeline/currentTime",
@@ -1859,6 +1856,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "63",
                         "flags": [
@@ -1916,9 +1916,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/AnimationTimeline.json",
             "name": "AnimationTimeline",
             "slug": "API/AnimationTimeline",
@@ -1960,6 +1957,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "63",
                         "flags": [
@@ -2095,9 +2095,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/DocumentTimeline.json",
             "name": "DocumentTimeline",
             "slug": "API/DocumentTimeline/DocumentTimeline",
@@ -2139,6 +2136,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "63",
                         "flags": [
@@ -2196,9 +2196,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/DocumentTimeline.json",
             "name": "DocumentTimeline",
             "slug": "API/DocumentTimeline",
@@ -2240,6 +2237,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "63",
                         "flags": [
@@ -2890,9 +2890,6 @@
             "partial": [
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/Element.json",
             "name": "getAnimations",
             "slug": "API/Element/getAnimations",
@@ -3067,6 +3064,9 @@
                     }
                 ],
                 "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
                     {
                         "version_added": "63",
                         "flags": [
@@ -3411,17 +3411,22 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": "63",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.animations-api.compositing.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "80"
+                    },
+                    {
+                        "version_added": "63",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.animations-api.compositing.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
