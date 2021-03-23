@@ -1,4 +1,4 @@
-sha: 50e1824bd054ff1f659969b7390fb32d631590d6
+sha: fcde9bb214001374d7df7ae22ba8e32528ba54e4
 crashtest css/CSS2/floats-clear/adjoining-float-new-fc-crash.html
 crashtest css/CSS2/floats-clear/clearance-containing-fragmented-float-crash.html
 crashtest css/CSS2/floats/floats-saturated-position-crash.html
@@ -40049,6 +40049,7 @@ testharness xhr/abort-during-done.window.js
 testharness xhr/abort-during-headers-received.window.js
 testharness xhr/abort-during-loading.window.js
 testharness xhr/abort-during-open.any.js
+testharness xhr/abort-during-readystatechange.any.js
 testharness xhr/abort-during-unsent.any.js
 testharness xhr/abort-during-upload.any.js
 testharness xhr/abort-event-abort.any.js
@@ -40087,7 +40088,9 @@ testharness xhr/access-control-preflight-credential-async.htm
 testharness xhr/access-control-preflight-credential-sync.htm
 testharness xhr/access-control-preflight-headers-async.htm
 testharness xhr/access-control-preflight-headers-sync.htm
+testharness xhr/access-control-preflight-request-allow-headers-returns-star.any.js
 testharness xhr/access-control-preflight-request-header-lowercase.htm
+testharness xhr/access-control-preflight-request-header-returns-origin.any.js
 testharness xhr/access-control-preflight-request-header-sorted.htm
 testharness xhr/access-control-preflight-request-headers-origin.htm
 testharness xhr/access-control-preflight-request-invalid-status-301.htm
@@ -40108,8 +40111,10 @@ testharness xhr/access-control-sandboxed-iframe-denied.htm
 testharness xhr/allow-lists-starting-with-comma.htm
 testharness xhr/anonymous-mode-unsupported.htm
 testharness xhr/close-worker-with-xhr-in-progress.html
+testharness xhr/content-type-unmodified.any.js
 testharness xhr/cookies.http.html
 testharness xhr/cors-expose-star.sub.any.js
+testharness xhr/cors-upload.any.js
 testharness xhr/data-uri.htm
 testharness xhr/event-abort.any.js
 testharness xhr/event-error-order.sub.html
@@ -40128,10 +40133,12 @@ testharness xhr/event-upload-progress.any.js
 testharness xhr/firing-events-http-content-length.html
 testharness xhr/firing-events-http-no-content-length.html
 testharness xhr/formdata-blob.htm
+testharness xhr/formdata-constructor.html
 testharness xhr/formdata-delete.htm
 testharness xhr/formdata-foreach.html
 testharness xhr/formdata-get.htm
 testharness xhr/formdata-has.htm
+testharness xhr/formdata-set-blob.html
 testharness xhr/formdata-set.htm
 testharness xhr/formdata.htm
 testharness xhr/getallresponseheaders-cookies.htm
@@ -40189,6 +40196,7 @@ testharness xhr/open-url-redirected-worker-origin.htm
 testharness xhr/open-url-worker-origin.htm
 testharness xhr/open-url-worker-simple.htm
 testharness xhr/open-user-password-non-same-origin.htm
+testharness xhr/over-1-meg.any.js
 testharness xhr/overridemimetype-blob.html
 testharness xhr/overridemimetype-done-state.any.js
 testharness xhr/overridemimetype-edge-cases.window.js
@@ -40308,6 +40316,7 @@ testharness xhr/sync-no-timeout.any.js
 testharness xhr/sync-xhr-and-window-onload.html
 testharness xhr/sync-xhr-supported-by-feature-policy.html
 testharness xhr/template-element.html
+testharness xhr/thrown-error-in-events.html
 testharness xhr/timeout-cors-async.htm
 testharness xhr/timeout-multiple-fetches.html
 testharness xhr/timeout-sync.htm
