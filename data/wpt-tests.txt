@@ -1,4 +1,4 @@
-sha: c89882cb8571e454e0643c3584206a48f9b37049
+sha: 8ed684e5fc9e9732320009121729aa2e510e68ad
 crashtest css/CSS2/floats-clear/adjoining-float-new-fc-crash.html
 crashtest css/CSS2/floats-clear/clearance-containing-fragmented-float-crash.html
 crashtest css/CSS2/floats/floats-saturated-position-crash.html
@@ -107,6 +107,9 @@ crashtest css/filter-effects/feimage-circular-reference-foreign-object-crash.htm
 crashtest css/filter-effects/feimage-reference-foreign-object-crash.html
 crashtest css/filter-effects/feimage-target-child-reference-crash.html
 crashtest css/filter-effects/svg-unused-filter-on-clippath-mutated-crash.html
+crashtest css/motion/offset-path-huge-angle-deg-001-crash.html
+crashtest css/motion/offset-path-huge-angle-grad-001-crash.html
+crashtest css/motion/offset-path-huge-angle-turn-001-crash.html
 crashtest custom-elements/xhtml-crash.xhtml
 crashtest dom/events/replace-event-listener-null-browsing-context-crash.html
 crashtest dom/nodes/DOMImplementation-createDocument-with-null-browsing-context-crash.html
@@ -13326,6 +13329,8 @@ reftest css/css-fonts/math-script-level-and-math-style/math-script-level-font-si
 reftest css/css-fonts/metrics-override-normal-keyword.html
 reftest css/css-fonts/quoted-generic-ignored.html
 reftest css/css-fonts/rem-in-monospace.html
+reftest css/css-fonts/size-adjust-text-decoration.tentative.html
+reftest css/css-fonts/size-adjust.tentative.html
 reftest css/css-fonts/standard-font-family-10.html
 reftest css/css-fonts/standard-font-family-11.html
 reftest css/css-fonts/standard-font-family-12.html
@@ -16097,6 +16102,7 @@ reftest css/css-tables/subpixel-table-width-001.html
 reftest css/css-tables/table-cell-overflow-auto.html
 reftest css/css-tables/table-has-box-sizing-border-box-001.html
 reftest css/css-tables/table-has-box-sizing-border-box-002.html
+reftest css/css-tables/table_grid_size_col_colspan.html
 reftest css/css-tables/tentative/paint/background-image-column-collapsed.html
 reftest css/css-tables/tentative/paint/background-image-column.html
 reftest css/css-tables/tentative/paint/background-image-row-collapsed.html
@@ -17281,6 +17287,9 @@ reftest css/css-text/writing-system/writing-system-text-transform-001.html
 reftest css/css-transforms/2d-rotate-001.html
 reftest css/css-transforms/2d-rotate-notref.html
 reftest css/css-transforms/2d-rotate-ref.html
+reftest css/css-transforms/3d-rendering-context-and-z-ordering-001.html
+reftest css/css-transforms/3d-rendering-context-and-z-ordering-002.html
+reftest css/css-transforms/3d-rendering-context-and-z-ordering-003.html
 reftest css/css-transforms/animation/rotate-transform-equivalent.html
 reftest css/css-transforms/animation/transform-interpolation-matrix.html
 reftest css/css-transforms/animation/transform-interpolation-rotate-slerp.html
@@ -17620,6 +17629,7 @@ reftest css/css-transforms/subpixel-transform-changes-004.html
 reftest css/css-transforms/text-perspective-001.html
 reftest css/css-transforms/transform-3d-rotateY-stair-above-001.xht
 reftest css/css-transforms/transform-3d-rotateY-stair-below-001.xht
+reftest css/css-transforms/transform-3d-scales-different-x-y-dynamic.html
 reftest css/css-transforms/transform-abspos-001.html
 reftest css/css-transforms/transform-abspos-002.html
 reftest css/css-transforms/transform-abspos-003.html
@@ -20461,6 +20471,7 @@ reftest html/canvas/element/manual/drawing-text-to-the-canvas/canvas.2d.fontStre
 reftest html/canvas/element/manual/drawing-text-to-the-canvas/canvas.2d.fontStretch.semi-expanded.html
 reftest html/canvas/element/manual/drawing-text-to-the-canvas/canvas.2d.fontStretch.ultra-condensed.html
 reftest html/canvas/element/manual/drawing-text-to-the-canvas/canvas.2d.fontStretch.ultra-expanded.html
+reftest html/canvas/element/manual/filters/canvas-filter-object-blur.html
 reftest html/canvas/element/manual/line-styles/canvas_linestyles_linecap_001.htm
 reftest html/canvas/element/manual/line-styles/lineto_a.html
 reftest html/canvas/element/manual/shadows/canvas_shadows_002.htm
@@ -22865,6 +22876,7 @@ testharness content-security-policy/generic/generic-0_2_3.html
 testharness content-security-policy/generic/generic-0_8.sub.html
 testharness content-security-policy/generic/generic-0_8_1.sub.html
 testharness content-security-policy/generic/generic-0_9.sub.html
+testharness content-security-policy/generic/invalid-characters-in-policy.html
 testharness content-security-policy/generic/no-default-src.sub.html
 testharness content-security-policy/generic/only-valid-whitespaces-are-allowed.html
 testharness content-security-policy/generic/policy-does-not-affect-child.sub.html
@@ -25545,6 +25557,7 @@ testharness css/css-tables/absolute-tables-005.html
 testharness css/css-tables/animations/border-spacing-interpolation.html
 testharness css/css-tables/auto-layout-calc-width-001.html
 testharness css/css-tables/border-spacing-included-in-sizes-001.html
+testharness css/css-tables/border-writing-mode-dynamic-001.html
 testharness css/css-tables/bounding-box-computation-1.html
 testharness css/css-tables/bounding-box-computation-2.html
 testharness css/css-tables/bounding-box-computation-3.html
@@ -29655,7 +29668,6 @@ testharness html/canvas/element/line-styles/2d.line.width.invalid.html
 testharness html/canvas/element/line-styles/2d.line.width.scaledefault.html
 testharness html/canvas/element/line-styles/2d.line.width.transformed.html
 testharness html/canvas/element/line-styles/2d.line.width.valid.html
-testharness html/canvas/element/manual/color-space/colorSpace.p3.getImageData.html
 testharness html/canvas/element/manual/context-attributes/canvas-with-padding.html
 testharness html/canvas/element/manual/context-attributes/getContextAttributes.html
 testharness html/canvas/element/manual/drawing-images-to-the-canvas/drawimage_canvas.html
@@ -29697,6 +29709,7 @@ testharness html/canvas/element/manual/transformations/2d.transformation.getTran
 testharness html/canvas/element/manual/wide-gamut-canvas/ImageData-fidelity.html
 testharness html/canvas/element/manual/wide-gamut-canvas/canvas-colorManaged-convertToBlob-roundtrip.html
 testharness html/canvas/element/manual/wide-gamut-canvas/canvas-colorManaged-toBlob-toDataURL.html
+testharness html/canvas/element/manual/wide-gamut-canvas/canvas-colorSpace-p3-getImageData.html
 testharness html/canvas/element/manual/wide-gamut-canvas/canvas-colorspace-arguments.html
 testharness html/canvas/element/manual/wide-gamut-canvas/canvas-createImageBitmap-e_srgb.html
 testharness html/canvas/element/manual/wide-gamut-canvas/canvas-createPutGetImageData-colorManaged.html
@@ -29932,6 +29945,8 @@ testharness html/canvas/element/shadows/2d.shadow.canvas.alpha.html
 testharness html/canvas/element/shadows/2d.shadow.canvas.basic.html
 testharness html/canvas/element/shadows/2d.shadow.canvas.transparent.1.html
 testharness html/canvas/element/shadows/2d.shadow.canvas.transparent.2.html
+testharness html/canvas/element/shadows/2d.shadow.canvasfilter.blur.object.exceptions.html
+testharness html/canvas/element/shadows/2d.shadow.canvasfilter.object.html
 testharness html/canvas/element/shadows/2d.shadow.clip.1.html
 testharness html/canvas/element/shadows/2d.shadow.clip.2.html
 testharness html/canvas/element/shadows/2d.shadow.clip.3.html
@@ -33951,7 +33966,6 @@ testharness html/webappapis/scripting/processing-model-2/window-onerror-with-cro
 testharness html/webappapis/scripting/processing-model-2/window-onerror-with-cross-frame-event-listeners-4.html
 testharness html/webappapis/system-state-and-capabilities/the-navigator-object/historical.https.window.js
 testharness html/webappapis/system-state-and-capabilities/the-navigator-object/navigator-indexed.html
-testharness html/webappapis/system-state-and-capabilities/the-navigator-object/navigator-pluginarray.html
 testharness html/webappapis/system-state-and-capabilities/the-navigator-object/navigator-window-controls-overlay.html
 testharness html/webappapis/system-state-and-capabilities/the-navigator-object/navigator.any.js
 testharness html/webappapis/system-state-and-capabilities/the-navigator-object/navigator_user_agent.https.html
