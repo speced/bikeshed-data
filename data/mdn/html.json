@@ -56079,8 +56079,10 @@
     "link-type-preload": [
         {
             "engines": [
-                "blink",
                 "gecko"
+            ],
+            "partial": [
+                "blink"
             ],
             "filename": "html/elements/link.json",
             "name": "preload",
@@ -56089,11 +56091,13 @@
             "support": {
                 "chrome": {
                     "version_added": "50",
-                    "notes": "<code>as=\"document\"</code> is unsupported. See <a href='https://crbug.com/593267'>bug 593267</a>."
+                    "partial_implementation": true,
+                    "notes": "Doesn’t support <code>as=\"audio\"</code>, <code>as=\"audioworklet\"</code>, <code>as=\"document\"</code>, <code>as=\"embed\"</code>, <code>as=\"manifest\"</code>, <code>as=\"object\"</code>, <code>as=\"paintworklet\"</code>, <code>as=\"report\"</code>, <code>as=\"sharedworker\"</code>, <code>as=\"video\"</code>, <code>as=\"worker\"</code>, or <code>as=\"xslt\"</code>."
                 },
                 "chrome_android": {
                     "version_added": "50",
-                    "notes": "<code>as=\"document\"</code> is unsupported. See <a href='https://crbug.com/593267'>bug 593267</a>."
+                    "partial_implementation": true,
+                    "notes": "Doesn’t support <code>as=\"audio\"</code>, <code>as=\"audioworklet\"</code>, <code>as=\"document\"</code>, <code>as=\"embed\"</code>, <code>as=\"manifest\"</code>, <code>as=\"object\"</code>, <code>as=\"paintworklet\"</code>, <code>as=\"report\"</code>, <code>as=\"sharedworker\"</code>, <code>as=\"video\"</code>, <code>as=\"worker\"</code>, or <code>as=\"xslt\"</code>."
                 },
                 "edge": {
                     "version_added": false
@@ -56165,7 +56169,8 @@
                 },
                 "edge_blink": {
                     "version_added": "79",
-                    "notes": "<code>as=\"document\"</code> is unsupported. See <a href='https://crbug.com/593267'>bug 593267</a>."
+                    "partial_implementation": true,
+                    "notes": "Doesn’t support <code>as=\"audio\"</code>, <code>as=\"audioworklet\"</code>, <code>as=\"document\"</code>, <code>as=\"embed\"</code>, <code>as=\"manifest\"</code>, <code>as=\"object\"</code>, <code>as=\"paintworklet\"</code>, <code>as=\"report\"</code>, <code>as=\"sharedworker\"</code>, <code>as=\"video\"</code>, <code>as=\"worker\"</code>, or <code>as=\"xslt\"</code>."
                 }
             },
             "title": "Link types: preload"

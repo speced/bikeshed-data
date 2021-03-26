@@ -4758,7 +4758,7 @@
             "filename": "javascript/builtins/BigInt.json",
             "name": "asIntN",
             "slug": "JavaScript/Reference/Global_Objects/BigInt/asIntN",
-            "summary": "The BigInt.asIntN static method is used to wrap a BigInt value to a signed integer between -2width-1 and 2width-1-1.",
+            "summary": "The BigInt.asIntN static method clamps a BigInt value to a signed integer value, and returns that value.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -4816,7 +4816,7 @@
             "filename": "javascript/builtins/BigInt.json",
             "name": "asUintN",
             "slug": "JavaScript/Reference/Global_Objects/BigInt/asUintN",
-            "summary": "The BigInt.asUintN static method is used to wrap a BigInt value to an unsigned integer between 0 and 2width-1.",
+            "summary": "The BigInt.asUintN static method clamps a BigInt value to an unsigned integer value, and returns that value.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -4990,7 +4990,7 @@
             "filename": "javascript/builtins/BigInt.json",
             "name": "BigInt",
             "slug": "JavaScript/Reference/Global_Objects/BigInt",
-            "summary": "BigInt is a built-in object that provides a way to represent whole numbers larger than 253 - 1, which is the largest number JavaScript can reliably represent with the Number primitive and represented by the Number.MAX_SAFE_INTEGER constant. BigInt can be used for arbitrarily large integers.",
+            "summary": "BigInt is a built-in object whose constructor returns a bigint primitive — also called a BigInt value, or sometimes just a BigInt — to represent whole numbers larger than 253 - 1 (Number.MAX_SAFE_INTEGER), which is the largest number JavaScript can represent with a number primitive (or Number value). BigInt values can be used for arbitrarily large integers.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -27721,7 +27721,7 @@
             "filename": "javascript/builtins/Symbol.json",
             "name": "Symbol",
             "slug": "JavaScript/Reference/Global_Objects/Symbol",
-            "summary": "The data type symbol is a primitive data type. The Symbol() function returns a value of type symbol, has static properties that expose several members of built-in objects, has static methods that expose the global symbol registry, and resembles a built-in object class, but is incomplete as a constructor because it does not support the syntax \"new Symbol()\".",
+            "summary": "Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that’s guaranteed to be unique. Symbols are often used to add unique property keys to an object that won’t collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object. That enables a form of weak encapsulation, or a weak form of information hiding.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -34352,8 +34352,8 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "javascript/operators/async_function_expression.json",
-            "name": "async_function_expression",
+            "filename": "javascript/operators/async_function_.json",
+            "name": "async_function",
             "slug": "JavaScript/Reference/Operators/async_function",
             "summary": "The async function keyword can be used to define async functions inside expressions.",
             "support": {
@@ -35556,8 +35556,8 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "javascript/operators/function_star.json",
-            "name": "function_star",
+            "filename": "javascript/operators/generator_function.json",
+            "name": "generator_function",
             "slug": "JavaScript/Reference/Operators/function*",
             "summary": "The function* keyword can be used to define a generator function inside an expression.",
             "support": {
