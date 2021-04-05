@@ -1059,6 +1059,7 @@
     "FillMode",
     "Float32Array",
     "Float64Array",
+    "FlowControlType",
     "FocusEvent",
     "FocusEventInit",
     "FocusOptions",
@@ -1433,6 +1434,7 @@
     "PannerOptions",
     "PanningModelType",
     "ParentNode",
+    "ParityType",
     "PasswordCredential",
     "PasswordCredentialData",
     "PasswordCredentialInit",
@@ -1929,6 +1931,13 @@
     "SensorErrorEvent",
     "SensorErrorEventInit",
     "SensorOptions",
+    "SerialInputSignals",
+    "SerialOptions",
+    "SerialOutputSignals",
+    "SerialPort",
+    "SerialPortFilter",
+    "SerialPortInfo",
+    "SerialPortRequestOptions",
     "Serializable",
     "ServiceEventHandlers",
     "ServiceWorker",
@@ -8872,7 +8881,6 @@
     "request permission to use",
     "request response list",
     "request sensor access",
-    "request the \"bluetooth\" permission",
     "request the \"usb\" permission",
     "request the xr permission",
     "request url",
@@ -12136,6 +12144,7 @@
   ],
   "AllowedBluetoothDevice": [
     "[[device]]",
+    "allowedManufacturerData",
     "allowedServices",
     "deviceId",
     "mayUseGATT"
@@ -12952,8 +12961,10 @@
     "visible"
   ],
   "BaseAudioContext": [
+    "[[control thread state]]",
     "[[current frame]]",
     "[[pending promises]]",
+    "[[rendering thread state]]",
     "associated task queue",
     "audioWorklet",
     "createAnalyser()",
@@ -13309,6 +13320,7 @@
     "matches"
   ],
   "BluetoothDevice": [
+    "[[allowedManufacturerData]]",
     "[[allowedServices]]",
     "[[context]]",
     "[[gatt]]",
@@ -13348,6 +13360,7 @@
     "acceptAllDevices",
     "deviceId",
     "filters",
+    "optionalManufacturerData",
     "optionalServices"
   ],
   "BluetoothPermissionResult": [
@@ -18231,6 +18244,10 @@
     "\"forwards\"",
     "\"none\""
   ],
+  "FlowControlType": [
+    "hardware",
+    "none"
+  ],
   "FocusEvent": [
     "Constructor",
     "FocusEvent(type)",
@@ -21396,6 +21413,7 @@
     "maxTouchPoints",
     "mediaDevices",
     "permissions",
+    "serial",
     "serviceWorker",
     "share()",
     "share(data)",
@@ -22009,6 +22027,11 @@
   ],
   "ParentNode/replaceChildren(...nodes)": [
     "nodes"
+  ],
+  "ParityType": [
+    "even",
+    "none",
+    "odd"
   ],
   "PasswordCredential": [
     "PasswordCredential(data)",
@@ -23754,9 +23777,7 @@
     "constructor()",
     "constructor(underlyingSource)",
     "constructor(underlyingSource, strategy)",
-    "create",
     "create a proxy",
-    "creating",
     "creating a proxy",
     "disturbed",
     "enqueue",
@@ -23813,12 +23834,6 @@
   "ReadableStream/constructor(underlyingSource, strategy)": [
     "strategy",
     "underlyingSource"
-  ],
-  "ReadableStream/create": [
-    "cancelalgorithm",
-    "highwatermark",
-    "pullalgorithm",
-    "sizealgorithm"
   ],
   "ReadableStream/getReader()": [
     "options"
@@ -24140,6 +24155,7 @@
   "RequestDeviceOptions": [
     "acceptAllDevices",
     "filters",
+    "optionalManufacturerData",
     "optionalServices"
   ],
   "RequestInit": [
@@ -24749,6 +24765,73 @@
   ],
   "SensorOptions": [
     "frequency"
+  ],
+  "Serial": [
+    "Serial",
+    "connect",
+    "disconnect",
+    "getPorts()",
+    "onconnect",
+    "ondisconnect",
+    "requestPort()",
+    "requestPort(options)"
+  ],
+  "SerialInputSignals": [
+    "clearToSend",
+    "dataCarrierDetect",
+    "dataSetReady",
+    "ringIndicator"
+  ],
+  "SerialOptions": [
+    "baudRate",
+    "bufferSize",
+    "dataBits",
+    "flowControl",
+    "parity",
+    "stopBits"
+  ],
+  "SerialOutputSignals": [
+    "break",
+    "dataTerminalReady",
+    "requestToSend"
+  ],
+  "SerialPort": [
+    "[[buffersize]]",
+    "[[pendingclosepromise]]",
+    "[[readable]]",
+    "[[readfatal]]",
+    "[[state]]",
+    "[[writable]]",
+    "[[writefatal]]",
+    "close()",
+    "getInfo()",
+    "getSignals()",
+    "handle closing the readable stream",
+    "handle closing the writable stream",
+    "onconnect",
+    "ondisconnect",
+    "open()",
+    "open(options)",
+    "readable",
+    "serial port task source",
+    "setSignals()",
+    "setSignals(signals)",
+    "writable"
+  ],
+  "SerialPortFilter": [
+    "match any filter",
+    "match the filter",
+    "matches any filter",
+    "matches the filter",
+    "usbProductId",
+    "usbVendorId"
+  ],
+  "SerialPortInfo": [
+    "usbProductId",
+    "usbVendorId"
+  ],
+  "SerialPortRequestOptions": [
+    "filters"
   ],
   "ServiceEventHandlers": [
     "onserviceadded",
@@ -25402,11 +25485,11 @@
     "constructor(transformer)",
     "constructor(transformer, writableStrategy)",
     "constructor(transformer, writableStrategy, readableStrategy)",
-    "create",
-    "creating",
     "enqueue",
     "error",
     "readable",
+    "set up",
+    "setting up",
     "terminate",
     "writable"
   ],
@@ -25450,7 +25533,7 @@
     "transformer",
     "writableStrategy"
   ],
-  "TransformStream/create": [
+  "TransformStream/set up": [
     "flushalgorithm",
     "transformalgorithm"
   ],
@@ -26601,6 +26684,7 @@
   ],
   "WorkerNavigator": [
     "permissions",
+    "serial",
     "serviceWorker",
     "usb"
   ],
@@ -26717,8 +26801,6 @@
     "constructor()",
     "constructor(underlyingSink)",
     "constructor(underlyingSink, strategy)",
-    "create",
-    "creating",
     "get a writer",
     "getWriter()",
     "getting a writer",
@@ -26754,13 +26836,6 @@
   "WritableStream/constructor(underlyingSink, strategy)": [
     "strategy",
     "underlyingSink"
-  ],
-  "WritableStream/create": [
-    "abortalgorithm",
-    "closealgorithm",
-    "highwatermark",
-    "sizealgorithm",
-    "writealgorithm"
   ],
   "WritableStream/set up": [
     "abortalgorithm",
@@ -27039,7 +27114,8 @@
     "index"
   ],
   "XR device": [
-    "list of enabled features"
+    "list of enabled features",
+    "set of granted features"
   ],
   "XRBoundedReferenceSpace": [
     "boundsGeometry",
@@ -27651,6 +27727,7 @@
     "selectstart",
     "set of active hit test sources",
     "set of active hit test sources for transient input",
+    "set of granted features",
     "squeeze",
     "squeezeend",
     "squeezestart",
@@ -29017,28 +29094,28 @@
   ],
   "contain-intrinsic-block-size": [
     "<length>",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "contain-intrinsic-height": [
     "<length>",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "contain-intrinsic-inline-size": [
     "<length>",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "contain-intrinsic-size": [
     "<length>",
     "<length>{2}",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "contain-intrinsic-width": [
     "<length>",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "content": [

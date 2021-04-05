@@ -4789,6 +4789,7 @@
         "RTCPeerConnection",
         "ReadableByteStreamController",
         "ReadableStreamDefaultController",
+        "SerialPort",
         "SharedWorkerGlobalScope",
         "USBDevice",
         "WebSocket",
@@ -10299,6 +10300,15 @@
       "shortname": "web-bluetooth"
     }
   },
+  "getInfo()": {
+    "getInfo()": {
+      "args": [],
+      "for": [
+        "SerialPort"
+      ],
+      "shortname": "serial"
+    }
+  },
   "getItem()": {
     "getItem(key)": {
       "args": [
@@ -10472,6 +10482,15 @@
         "RTCRtpSender"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "getPorts()": {
+    "getPorts()": {
+      "args": [],
+      "for": [
+        "Serial"
+      ],
+      "shortname": "serial"
     }
   },
   "getPose()": {
@@ -10785,6 +10804,15 @@
         "MediaStreamTrack"
       ],
       "shortname": "mediacapture-streams"
+    }
+  },
+  "getSignals()": {
+    "getSignals()": {
+      "args": [],
+      "for": [
+        "SerialPort"
+      ],
+      "shortname": "serial"
     }
   },
   "getSpatialNavigationContainer()": {
@@ -12574,9 +12602,10 @@
     "open()": {
       "args": [],
       "for": [
+        "SerialPort",
         "USBDevice"
       ],
-      "shortname": "webusb"
+      "shortname": "serial"
     },
     "open(cacheName)": {
       "args": [
@@ -12651,6 +12680,15 @@
         "IDBFactory"
       ],
       "shortname": "indexeddb"
+    },
+    "open(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "SerialPort"
+      ],
+      "shortname": "serial"
     },
     "open(unused1, unused2)": {
       "args": [
@@ -14125,6 +14163,24 @@
         "Notification"
       ],
       "shortname": "notifications"
+    }
+  },
+  "requestPort()": {
+    "requestPort()": {
+      "args": [],
+      "for": [
+        "Serial"
+      ],
+      "shortname": "serial"
+    },
+    "requestPort(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "Serial"
+      ],
+      "shortname": "serial"
     }
   },
   "requestReferenceSpace()": {
@@ -15789,6 +15845,24 @@
         "HTMLTextAreaElement"
       ],
       "shortname": "html"
+    }
+  },
+  "setSignals()": {
+    "setSignals()": {
+      "args": [],
+      "for": [
+        "SerialPort"
+      ],
+      "shortname": "serial"
+    },
+    "setSignals(signals)": {
+      "args": [
+        "signals"
+      ],
+      "for": [
+        "SerialPort"
+      ],
+      "shortname": "serial"
     }
   },
   "setStart()": {
