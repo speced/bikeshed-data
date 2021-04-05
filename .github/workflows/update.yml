@@ -28,6 +28,6 @@ jobs:
         git config user.name "bikeshed-bot"
         git config user.email "<>"
         git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-        git checkout master
+        git checkout main
     - name: update
       run: python __init__.py
