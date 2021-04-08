@@ -4594,15 +4594,6 @@
                         "version_added": "32"
                     },
                     {
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "canvas.focusring.enabled"
-                            }
-                        ]
-                    },
-                    {
                         "version_added": "28",
                         "alternative_name": "drawSystemFocusRing"
                     }
@@ -4610,15 +4601,6 @@
                 "firefox_android": [
                     {
                         "version_added": "32"
-                    },
-                    {
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "canvas.focusring.enabled"
-                            }
-                        ]
                     },
                     {
                         "version_added": "28",
@@ -5003,38 +4985,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "49"
-                    },
-                    {
-                        "version_added": "35",
-                        "version_removed": "48",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "canvas.filters.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "49"
-                    },
-                    {
-                        "version_added": "35",
-                        "version_removed": "48",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "canvas.filters.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "49"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -42125,7 +42081,7 @@
             "filename": "api/Window.json",
             "name": "alert",
             "slug": "API/Window/alert",
-            "summary": "The Window.alert() method displays an alert dialog with the optional specified content and an OK button.",
+            "summary": "window.alert() instructs the browser to display a dialog with an optional message, and to wait until the user dismisses the dialog.",
             "support": {
                 "chrome": {
                     "version_added": "1",
@@ -42485,7 +42441,7 @@
             "filename": "api/Window.json",
             "name": "confirm",
             "slug": "API/Window/confirm",
-            "summary": "The Window.confirm() method displays a modal dialog with an optional message and two buttons: OK and Cancel.",
+            "summary": "window.confirm() instructs the browser to display a dialog with an optional message, and to wait until the user either confirms or cancels the dialog.",
             "support": {
                 "chrome": {
                     "version_added": "1",
@@ -43096,7 +43052,7 @@
             "filename": "api/Window.json",
             "name": "localStorage",
             "slug": "API/Window/localStorage",
-            "summary": "The read-only localStorage property allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.",
+            "summary": "The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -44035,7 +43991,7 @@
             "filename": "api/Window.json",
             "name": "prompt",
             "slug": "API/Window/prompt",
-            "summary": "The Window.prompt() displays a dialog with an optional message prompting the user to input some text.",
+            "summary": "window.prompt() instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog.",
             "support": {
                 "chrome": {
                     "version_added": "1",
