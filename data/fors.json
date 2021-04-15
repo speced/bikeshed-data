@@ -168,6 +168,7 @@
     "::first-letter",
     "::first-line",
     "::grammar-error",
+    "::highlight(<custom-highlight-name>)",
     "::highlight(<highlight-name>)",
     "::marker",
     "::nth-fragment()",
@@ -338,6 +339,7 @@
     "<counter>",
     "<cubic-bezier-easing-function>",
     "<custom-arg>",
+    "<custom-highlight-name>",
     "<custom-ident>",
     "<custom-property-name>",
     "<custom-selector>",
@@ -4451,6 +4453,7 @@
     "custom element reactions stack",
     "custom element state",
     "custom highlight",
+    "custom highlight name",
     "custom highlight pseudo-element",
     "custom media query",
     "custom property",
@@ -19787,13 +19790,24 @@
     "value"
   ],
   "Highlight": [
+    "Highlight()",
+    "Highlight(...initialRanges)",
+    "Highlight(AbstractRange... initialRanges)",
     "Highlight(CSSOMString name, AbstractRange... initialRanges)",
     "Highlight(name)",
     "Highlight(name, ...initialRanges)",
+    "constructor()",
+    "constructor(...initialRanges)",
     "constructor(name)",
     "constructor(name, ...initialRanges)",
     "name",
     "priority"
+  ],
+  "Highlight/Highlight()": [
+    "initialRanges"
+  ],
+  "Highlight/Highlight(...initialRanges)": [
+    "initialRanges"
   ],
   "Highlight/Highlight(name)": [
     "initialRanges",
@@ -19803,6 +19817,12 @@
     "initialRanges",
     "name"
   ],
+  "Highlight/constructor()": [
+    "initialRanges"
+  ],
+  "Highlight/constructor(...initialRanges)": [
+    "initialRanges"
+  ],
   "Highlight/constructor(name)": [
     "initialRanges",
     "name"
@@ -19810,10 +19830,6 @@
   "Highlight/constructor(name, ...initialRanges)": [
     "initialRanges",
     "name"
-  ],
-  "HighlightRegistry": [
-    "add(Highlight value)",
-    "add(value)"
   ],
   "HighlightsRegister": [
     "add(Highlight value)",
