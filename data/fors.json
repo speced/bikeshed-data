@@ -1237,6 +1237,7 @@
     "ImageBitmapRenderingContextSettings",
     "ImageBitmapSource",
     "ImageData",
+    "ImageDataSettings",
     "ImageEncodeOptions",
     "ImageOrientation",
     "ImageSmoothingQuality",
@@ -1496,6 +1497,7 @@
     "PopStateEvent",
     "PopStateEventInit",
     "PostMessageOptions",
+    "PredefinedColorSpace",
     "PremultiplyAlpha",
     "Prevent Silent Access",
     "Printer",
@@ -3731,6 +3733,7 @@
     "clipping region",
     "clone",
     "clone a node",
+    "clone a policy container",
     "clone a track",
     "cloneNode()",
     "cloning steps",
@@ -4241,6 +4244,7 @@
     "create a permissions policy for a browsing context",
     "create a permissions policy for a browsing context from response",
     "create a permissionstatus",
+    "create a policy container from a fetch response",
     "create a potential-cors request",
     "create a reference space",
     "create a storage bucket",
@@ -4255,7 +4259,6 @@
     "create an entry",
     "create an event",
     "create an identity transformstream",
-    "create an imagedata object",
     "create an inheritance stack",
     "create an interface object",
     "create an interface prototype object",
@@ -4600,6 +4603,7 @@
     "default-src",
     "default-style",
     "default/on",
+    "defaultcolorspace",
     "defaultview",
     "define an algorithm",
     "define an inherited policy for feature in browsing context",
@@ -4694,6 +4698,7 @@
     "details notification task steps",
     "detector curve",
     "determine if dtmf can be sent",
+    "determine navigation params policy container",
     "determine nosniff",
     "determine request's referrer",
     "determine the creation sandboxing flags",
@@ -4804,6 +4809,7 @@
     "display state",
     "display technology",
     "display type",
+    "display-p3",
     "disposition",
     "distance along the ray",
     "distinguishable",
@@ -6000,6 +6006,7 @@
     "history traversal task source",
     "history-navigation flag",
     "historyhandling",
+    "historypolicycontainer",
     "hit test",
     "hit-test",
     "hit-testing",
@@ -6360,6 +6367,8 @@
     "initialize a new intersectionobserver",
     "initialize a quad layer",
     "initialize a sensor object",
+    "initialize a worker global scope's policy container",
+    "initialize an imagedata object",
     "initialize the render state",
     "initialize the session",
     "initialize the viewport",
@@ -8124,6 +8133,7 @@
     "parse a privatekeyinfo",
     "parse a referrer policy from a `referrer-policy` header",
     "parse a relative selector",
+    "parse a response's content security policies",
     "parse a root margin",
     "parse a rule",
     "parse a sandboxing directive",
@@ -8369,6 +8379,7 @@
     "pointerup",
     "pointerup event",
     "policy cache",
+    "policy container",
     "policy directive",
     "policy directives",
     "policy origin",
@@ -8839,6 +8850,7 @@
     "relative state",
     "relative units",
     "relative url",
+    "relative-colorimetric",
     "relative-url string",
     "relative-url-with-fragment string",
     "relatively position",
@@ -8984,6 +8996,7 @@
     "required features",
     "required-ascii-whitespace",
     "requiredExtensions",
+    "requires storing the policy container in history",
     "reregisteredwhilefiring",
     "reserialized",
     "reserved client",
@@ -9194,6 +9207,7 @@
     "run a worker",
     "run an upgrade transaction",
     "run animators",
+    "run csp initialization for a document",
     "run job",
     "run service worker",
     "run the animation frame callbacks",
@@ -15232,7 +15246,8 @@
     "addColorStop(offset, color)"
   ],
   "CanvasImageData": [
-    "createImageData()",
+    "createImageData(imagedata)",
+    "createImageData(sw, sh)",
     "getImageData(sx, sy, sw, sh)",
     "putImageData()"
   ],
@@ -15274,6 +15289,7 @@
   ],
   "CanvasRenderingContext2DSettings": [
     "alpha",
+    "colorSpace",
     "desynchronized"
   ],
   "CanvasShadowStyles": [
@@ -17293,7 +17309,6 @@
     "createTreeWalker(root)",
     "createTreeWalker(root, whatToShow)",
     "createTreeWalker(root, whatToShow, filter)",
-    "csp list",
     "currentScript",
     "defaultView",
     "dir",
@@ -17412,6 +17427,7 @@
     "permissions policy",
     "permissionsPolicy",
     "plugins",
+    "policy container",
     "policy object",
     "previous document unload timing",
     "processed manifest",
@@ -20417,10 +20433,15 @@
     "alpha"
   ],
   "ImageData": [
-    "ImageData()",
+    "colorSpace",
     "data",
     "height",
+    "new ImageData(data, sw, sh, settings)",
+    "new ImageData(sw, sh, settings)",
     "width"
+  ],
+  "ImageDataSettings": [
+    "colorSpace"
   ],
   "ImageOrientation": [
     "flipY",
@@ -22675,6 +22696,10 @@
   ],
   "PostMessageOptions": [
     "transfer"
+  ],
+  "PredefinedColorSpace": [
+    "display-p3",
+    "srgb"
   ],
   "PremultiplyAlpha": [
     "default",
@@ -26838,7 +26863,6 @@
   "WorkerGlobalScope": [
     "closing",
     "cross-origin isolated capability",
-    "csp list",
     "embedder policy",
     "error",
     "importScripts(urls)",
@@ -26856,6 +26880,7 @@
     "onrejectionhandled",
     "onunhandledrejection",
     "owner set",
+    "policy container",
     "referrer policy",
     "rejectionhandled",
     "self",
@@ -29774,6 +29799,7 @@
     "global object",
     "module map",
     "origin",
+    "policy container",
     "realm",
     "realm execution context",
     "referrer policy",
