@@ -108,6 +108,165 @@
             "title": "RTCCertificate"
         }
     ],
+    "dom-rtcconfiguration-bundlepolicy": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCConfiguration.json",
+            "name": "bundlePolicy",
+            "slug": "API/RTCConfiguration/bundlePolicy",
+            "summary": "The RTCConfiguration dictionary's bundlePolicy property is a string value indicating which SDP bundling policy, if any, to use for the underlying RTP streams used by an RTCPeerConnection.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCConfiguration.bundlePolicy"
+        }
+    ],
+    "dom-rtcconfiguration-certificates": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCConfiguration.json",
+            "name": "certificates",
+            "slug": "API/RTCConfiguration/certificates",
+            "summary": "The RTCConfiguration dictionary's optional certificates property is an array of RTCCertificate objects providing the security certificates available for use when authenticating duing the connection process.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCConfiguration.certificates"
+        }
+    ],
+    "dom-rtcconfiguration-icetransportpolicy": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCConfiguration.json",
+            "name": "iceTransportPolicy",
+            "slug": "API/RTCConfiguration/iceTransportPolicy",
+            "summary": "The WebRTC Device API dictionary RTCConfiguration's iceTransportPolicy property is a string indicating the transport selection policy the ICE agent should use during negotiation of connections. Its value must come from the RTCIceTransportPolicy enumerated type.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCConfiguration.iceTransportPolicy"
+        }
+    ],
     "dom-rtcconfiguration": [
         {
             "engines": [
@@ -378,59 +537,6 @@
                 }
             },
             "title": "RTCDTMFSender: tonechange event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCDTMFToneChangeEvent.json",
-            "name": "RTCDTMFToneChangeEvent",
-            "slug": "API/RTCDTMFToneChangeEvent",
-            "summary": "The RTCDTMFToneChangeEvent interface represents events sent to indicate that DTMF tones have started or finished playing. This interface is used by the tonechange event.",
-            "support": {
-                "chrome": {
-                    "version_added": "27"
-                },
-                "chrome_android": {
-                    "version_added": "27"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "52"
-                },
-                "firefox_android": {
-                    "version_added": "52"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": {
-                    "version_added": "13.4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCDTMFToneChangeEvent"
         }
     ],
     "rtcdtmfsender": [
@@ -488,7 +594,7 @@
             "title": "RTCDTMFSender"
         }
     ],
-    "dom-rtcdtmftonechangeevent": [
+    "dom-rtcdtmftonechangeevent-constructor": [
         {
             "engines": [
                 "blink",
@@ -596,6 +702,61 @@
                 }
             },
             "title": "RTCDTMFToneChangeEvent.tone"
+        }
+    ],
+    "dom-rtcdtmftonechangeevent": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCDTMFToneChangeEvent.json",
+            "name": "RTCDTMFToneChangeEvent",
+            "slug": "API/RTCDTMFToneChangeEvent",
+            "summary": "The RTCDTMFToneChangeEvent interface represents events sent to indicate that DTMF tones have started or finished playing. This interface is used by the tonechange event.",
+            "support": {
+                "chrome": {
+                    "version_added": "27"
+                },
+                "chrome_android": {
+                    "version_added": "27"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "52"
+                },
+                "firefox_android": {
+                    "version_added": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": {
+                    "version_added": "13.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCDTMFToneChangeEvent"
         }
     ],
     "dom-datachannel-binarytype": [
@@ -878,7 +1039,9 @@
                 }
             },
             "title": "RTCDataChannel.close()"
-        },
+        }
+    ],
+    "event-datachannel-close": [
         {
             "engines": [
                 "blink",
@@ -1649,6 +1812,61 @@
             "title": "RTCDataChannel.onopen"
         }
     ],
+    "event-datachannel-open": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "open_event",
+            "slug": "API/RTCDataChannel/open_event",
+            "summary": "The WebRTC open event is sent to an RTCDataChannel object's onopen event handler when the underlying transport used to send and receive the data channel's messages is opened or re-opened.",
+            "support": {
+                "chrome": {
+                    "version_added": "56"
+                },
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "43"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "56"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCDataChannel: open event"
+        }
+    ],
     "dom-datachannel-ordered": [
         {
             "engines": [
@@ -1938,7 +2156,7 @@
             "title": "RTCDataChannel"
         }
     ],
-    "dom-rtcdatachannelevent": [
+    "dom-rtcdatachannelevent-constructor": [
         {
             "engines": [
                 "blink",
@@ -2268,7 +2486,113 @@
             "title": "RTCDtlsTransport"
         }
     ],
-    "dfn-rtcicecandidate": [
+    "dom-rtcerrorevent-error": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCErrorEvent.json",
+            "name": "error",
+            "slug": "API/RTCErrorEvent/error",
+            "summary": "The read-only RTCErrorEvent property error contains an RTCError object describing the details of the error which the event is announcing.",
+            "support": {
+                "chrome": {
+                    "version_added": "74"
+                },
+                "chrome_android": {
+                    "version_added": "74"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "60"
+                },
+                "opera_android": {
+                    "version_added": "53"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.0"
+                },
+                "webview_android": {
+                    "version_added": "74"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCErrorEvent.error"
+        }
+    ],
+    "dom-rtcerrorevent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCErrorEvent.json",
+            "name": "RTCErrorEvent",
+            "slug": "API/RTCErrorEvent",
+            "summary": "The WebRTC API's RTCErrorEvent interface represents an error sent to a WebRTC object. It's based on the standard Event interface, but adds RTC-specific information describing the error, as shown below.",
+            "support": {
+                "chrome": {
+                    "version_added": "74"
+                },
+                "chrome_android": {
+                    "version_added": "74"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "60"
+                },
+                "opera_android": {
+                    "version_added": "53"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.0"
+                },
+                "webview_android": {
+                    "version_added": "74"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCErrorEvent"
+        }
+    ],
+    "dom-rtcicecandidate-constructor": [
         {
             "engines": [
                 "blink",
@@ -2328,7 +2652,8 @@
     "dom-rtcicecandidate-address": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "address",
@@ -2360,10 +2685,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -2436,7 +2761,8 @@
     "dom-rtcicecandidate-component": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "component",
@@ -2468,10 +2794,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -2489,7 +2815,8 @@
     "dom-rtcicecandidate-foundation": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "foundation",
@@ -2521,10 +2848,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -2542,7 +2869,8 @@
     "dom-rtcicecandidate-port": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "port",
@@ -2574,10 +2902,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -2595,7 +2923,8 @@
     "dom-rtcicecandidate-priority": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "priority",
@@ -2627,10 +2956,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -2648,7 +2977,8 @@
     "dom-rtcicecandidate-protocol": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "protocol",
@@ -2680,10 +3010,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -2701,7 +3031,8 @@
     "dom-rtcicecandidate-relatedaddress": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "relatedAddress",
@@ -2733,10 +3064,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -2754,7 +3085,8 @@
     "dom-rtcicecandidate-relatedport": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "relatedPort",
@@ -2786,10 +3118,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -2917,7 +3249,8 @@
     "dom-rtcicecandidate-tcptype": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "tcpType",
@@ -2949,10 +3282,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -3025,7 +3358,8 @@
     "dom-rtcicecandidate-type": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "type",
@@ -3057,10 +3391,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -3079,7 +3413,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/RTCIceCandidate.json",
             "name": "usernameFragment",
@@ -3111,10 +3446,10 @@
                     "version_added": "53"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -3670,7 +4005,9 @@
                 }
             },
             "title": "RTCIceServer.credential"
-        },
+        }
+    ],
+    "dom-rtciceserver-credentialtype": [
         {
             "engines": [
                 "blink",
@@ -3830,6 +4167,60 @@
                 }
             },
             "title": "RTCIceServer.username"
+        }
+    ],
+    "rtciceserver-dictionary": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/RTCIceServer.json",
+            "name": "RTCIceServer",
+            "slug": "API/RTCIceServer",
+            "summary": "The RTCIceServer dictionary defines how to connect to a single ICE server (such as a STUN or TURN server). Objects of this type are provided in the configuration of an RTCPeerConnection, in the iceServers array.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "24"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "RTCIceServer"
         }
     ],
     "dom-icetransport-component": [
@@ -4516,7 +4907,7 @@
             "title": "RTCIceTransport: selectedcandidatepairchange event"
         }
     ],
-    "rtcicetransportstate": [
+    "dom-icetransport-state": [
         {
             "engines": [
                 "blink",
@@ -6720,7 +7111,9 @@
     ],
     "dom-rtcpeerconnection-onicecandidateerror": [
         {
-            "engines": [],
+            "engines": [
+                "webkit"
+            ],
             "filename": "api/RTCPeerConnection.json",
             "name": "onicecandidateerror",
             "slug": "API/RTCPeerConnection/onicecandidateerror",
@@ -6751,10 +7144,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -7382,7 +7775,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/RTCPeerConnection.json",
             "name": "restartIce",
@@ -7414,10 +7808,10 @@
                     "version_added": "55"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "12.0"
@@ -8018,6 +8412,59 @@
                 }
             },
             "title": "RTCPeerConnection"
+        }
+    ],
+    "rtcpeerconnectioniceerrorevent": [
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "api/RTCPeerConnectionIceErrorEvent.json",
+            "name": "RTCPeerConnectionIceErrorEvent",
+            "slug": "API/RTCPeerConnectionIceErrorEvent",
+            "summary": "The RTCPeerConnectionIceErrorEvent interface—based upon the Event interface—provides details pertaining to an ICE error announced by sending an icecandidateerror event to the RTCPeerConnection object.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "title": "RTCPeerConnectionIceErrorEvent"
         }
     ],
     "dom-rtcpeerconnectioniceevent-constructor": [
@@ -8667,6 +9114,61 @@
             "title": "RTCRtpEncodingParameters"
         }
     ],
+    "dom-rtcrtpreceiver-getcapabilities": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpReceiver.json",
+            "name": "getCapabilities",
+            "slug": "API/RTCRtpReceiver/getCapabilities",
+            "summary": "The static function RTCRtpReceiver.getCapabilities() returns an RTCRtpCapabilities object describing the codecs and capabilities supported by RTCRtpReceivers on the current device.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": {
+                    "version_added": "12.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpReceiver.getCapabilities() static function"
+        }
+    ],
     "dom-rtcrtpreceiver-getcontributingsources": [
         {
             "engines": [
@@ -8730,6 +9232,61 @@
                 }
             },
             "title": "RTCRtpReceiver.getContributingSources()"
+        }
+    ],
+    "dom-rtcrtpreceiver-getparameters": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpReceiver.json",
+            "name": "getParameters",
+            "slug": "API/RTCRtpReceiver/getParameters",
+            "summary": "The getParameters() method of the RTCRtpReceiver interface returns an RTCRtpReceiveParameters object describing the current configuration for the encoding and transmission of media on the receiver's track.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpReceiver.getParameters()"
         }
     ],
     "widl-RTCRtpReceiver-getStats-Promise-RTCStatsReport": [
@@ -8905,6 +9462,60 @@
                 }
             },
             "title": "RTCRtpReceiver.track"
+        }
+    ],
+    "dom-rtcrtpreceiver-transport": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/RTCRtpReceiver.json",
+            "name": "transport",
+            "slug": "API/RTCRtpReceiver/transport",
+            "summary": "The read-only transport property of an RTCRtpReceiver object provides the RTCDtlsTransport object used to interact with the underlying transport over which the receiver is exchanging Real-time Transport Control Protocol (RTCP) packets.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpReceiver.transport"
         }
     ],
     "rtcrtpreceiver-interface": [
@@ -9125,6 +9736,60 @@
                 }
             },
             "title": "RTCRtpSender.dtmf"
+        }
+    ],
+    "dom-rtcrtpsender-getcapabilities": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "getCapabilities",
+            "slug": "API/RTCRtpSender/getCapabilities",
+            "summary": "The static function RTCRtpSender.getCapabilities() returns an RTCRtpCapabilities object describing the codecs and capabilities supported by the RTCRtpSender.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": {
+                    "version_added": "69"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "56"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": {
+                    "version_added": "12.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "10.0"
+                },
+                "webview_android": {
+                    "version_added": "69"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender.getCapabilities() static function"
         }
     ],
     "dom-rtcrtpsender-getparameters": [
@@ -9412,6 +10077,60 @@
                 }
             },
             "title": "RTCRtpSender.track"
+        }
+    ],
+    "dom-rtcrtpsender-transport": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "transport",
+            "slug": "API/RTCRtpSender/transport",
+            "summary": "The read-only transport property of an RTCRtpSender object provides the RTCDtlsTransport object used to interact with the underlying transport over which the sender is exchanging Real-time Transport Control Protocol (RTCP) packets.",
+            "support": {
+                "chrome": {
+                    "version_added": "75"
+                },
+                "chrome_android": {
+                    "version_added": "75"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "34"
+                },
+                "firefox_android": {
+                    "version_added": "34"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "62"
+                },
+                "opera_android": {
+                    "version_added": "54"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.0"
+                },
+                "webview_android": {
+                    "version_added": "75"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender.transport"
         }
     ],
     "rtcrtpsender-interface": [

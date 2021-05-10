@@ -152,7 +152,7 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -426,7 +426,7 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -646,7 +646,7 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -756,7 +756,7 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -985,7 +985,7 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1040,7 +1040,7 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1209,7 +1209,7 @@
                     "notes": "Currently only the getter is supported"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1224,6 +1224,7 @@
     "dom-animation-updateplaybackrate": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -1233,10 +1234,10 @@
             "summary": "The updatePlaybackRate() method of the Web Animations API's Animation Interface sets the speed of an animation after first synchronizing its playback position.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "76"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "76"
                 },
                 "edge": {
                     "version_added": false
@@ -1251,10 +1252,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "63"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "54"
                 },
                 "safari": {
                     "version_added": "13.1"
@@ -1263,13 +1264,13 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "12.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "76"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "Animation.updatePlaybackRate()"
@@ -1634,7 +1635,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1688,7 +1689,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1742,7 +1743,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1796,7 +1797,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1875,7 +1876,7 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1954,7 +1955,7 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1996,6 +1997,7 @@
                     },
                     {
                         "version_added": "63",
+                        "version_removed": "79",
                         "flags": [
                             {
                                 "type": "preference",
@@ -2003,14 +2005,84 @@
                                 "value_to_set": "true"
                             }
                         ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "70"
+                },
+                "opera_android": {
+                    "version_added": "60"
+                },
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": {
+                    "version_added": "13.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "84"
+                },
+                "edge_blink": {
+                    "version_added": "84"
+                }
+            },
+            "title": "Document.timeline"
+        }
+    ],
+    "dom-documenttimeline-documenttimeline": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/DocumentTimeline.json",
+            "name": "DocumentTimeline",
+            "slug": "API/DocumentTimeline/DocumentTimeline",
+            "summary": "The DocumentTimeline() constructor of the Web Animations API creates a new instance of the DocumentTimeline object associated with the active document of the current browsing context.",
+            "support": {
+                "chrome": {
+                    "version_added": "84"
+                },
+                "chrome_android": {
+                    "version_added": "84"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "75"
                     },
                     {
-                        "version_added": "32",
-                        "version_removed": "63",
+                        "version_added": "63",
+                        "version_removed": "75",
                         "flags": [
                             {
                                 "type": "preference",
-                                "name": "dom.animations-api.core.enabled",
+                                "name": "dom.animations-api.timelines.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "63",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.animations-api.timelines.enabled",
                                 "value_to_set": "true"
                             }
                         ]
@@ -2041,107 +2113,6 @@
                     "version_added": "84"
                 }
             },
-            "title": "Document.timeline"
-        }
-    ],
-    "dom-documenttimeline-documenttimeline": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/DocumentTimeline.json",
-            "name": "DocumentTimeline",
-            "slug": "API/DocumentTimeline/DocumentTimeline",
-            "summary": "The DocumentTimeline() constructor of the Web Animations API creates a new instance of the DocumentTimeline object associated with the active document of the current browsing context.",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": {
-                    "version_added": "61"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "75"
-                    },
-                    {
-                        "version_added": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.timelines.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "50",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.timelines.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "50",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": {
-                    "version_added": "13.4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "61"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
             "title": "DocumentTimeline.DocumentTimeline()"
         }
     ],
@@ -2158,10 +2129,10 @@
             "summary": "The DocumentTimeline interface of the Web Animations API represents animation timelines, including the default document timeline (accessed via Document.timeline).",
             "support": {
                 "chrome": {
-                    "version_added": "54"
+                    "version_added": "84"
                 },
                 "chrome_android": {
-                    "version_added": "54"
+                    "version_added": "84"
                 },
                 "edge": {
                     "version_added": false
@@ -2172,21 +2143,11 @@
                     },
                     {
                         "version_added": "63",
+                        "version_removed": "75",
                         "flags": [
                             {
                                 "type": "preference",
                                 "name": "dom.animations-api.timelines.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "50",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled",
                                 "value_to_set": "true"
                             }
                         ]
@@ -2198,21 +2159,11 @@
                     },
                     {
                         "version_added": "63",
+                        "version_removed": "79",
                         "flags": [
                             {
                                 "type": "preference",
                                 "name": "dom.animations-api.timelines.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "50",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled",
                                 "value_to_set": "true"
                             }
                         ]
@@ -2222,10 +2173,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "70"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "60"
                 },
                 "safari": {
                     "version_added": "13.1"
@@ -2234,13 +2185,13 @@
                     "version_added": "13.4"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "54"
+                    "version_added": "84"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "84"
                 }
             },
             "title": "DocumentTimeline"
@@ -2767,7 +2718,7 @@
             "title": "EffectTiming"
         }
     ],
-    "animatable": [
+    "dom-animatable-animate": [
         {
             "engines": [
                 "blink",
@@ -2969,54 +2920,6 @@
                                 "name": "dom.animations-api.getAnimations.enabled"
                             }
                         ]
-                    },
-                    {
-                        "version_added": "48",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "40",
-                        "version_removed": "48",
-                        "partial_implementation": true,
-                        "notes": "Does not support the <code>subtree</code> option.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "alternative_name": "getAnimationPlayers",
-                        "version_added": "35",
-                        "version_removed": "40",
-                        "partial_implementation": true,
-                        "notes": "Does not support the <code>subtree</code> option.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "alternative_name": "getAnimationPlayers",
-                        "version_added": "33",
-                        "version_removed": "35",
-                        "partial_implementation": true,
-                        "notes": "Does not automatically flush pending style changes and does not support the <code>subtree</code> option.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
                     }
                 ],
                 "firefox_android": [
@@ -3025,58 +2928,11 @@
                     },
                     {
                         "version_added": "63",
+                        "version_removed": "79",
                         "flags": [
                             {
                                 "type": "preference",
                                 "name": "dom.animations-api.getAnimations.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "48",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "40",
-                        "version_removed": "48",
-                        "partial_implementation": true,
-                        "notes": "Does not support the <code>subtree</code> option.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "alternative_name": "getAnimationPlayers",
-                        "version_added": "35",
-                        "version_removed": "40",
-                        "partial_implementation": true,
-                        "notes": "Does not support the <code>subtree</code> option.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "alternative_name": "getAnimationPlayers",
-                        "version_added": "33",
-                        "version_removed": "35",
-                        "partial_implementation": true,
-                        "notes": "Does not automatically flush pending style changes and does not support the <code>subtree</code> option.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
                             }
                         ]
                     }
@@ -3217,7 +3073,7 @@
                     ]
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": "84"
@@ -3399,7 +3255,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": "84"
@@ -3453,7 +3309,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": "84"
@@ -3507,7 +3363,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": "84"
@@ -3748,7 +3604,7 @@
                     }
                 ],
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": "84"
@@ -3859,7 +3715,7 @@
                     "version_added": "14"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "14.0"
                 },
                 "webview_android": {
                     "version_added": "84"

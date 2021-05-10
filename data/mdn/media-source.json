@@ -199,7 +199,77 @@
             "title": "HTMLMediaElement.seekable"
         }
     ],
-    "idl-def-mediasource-activesourcebuffers": [
+    "dom-mediasource-constructor": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaSource.json",
+            "name": "MediaSource",
+            "slug": "API/MediaSource/MediaSource",
+            "summary": "The MediaSource() constructor of the MediaSource interface constructs and returns a new MediaSource object with no associated source buffers.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "31"
+                    },
+                    {
+                        "version_added": "23",
+                        "version_removed": "31",
+                        "prefix": "WebKit"
+                    }
+                ],
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "42"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": "11",
+                    "notes": "Only works on Windows 8+."
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "8"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "31",
+                        "prefix": "WebKit"
+                    }
+                ]
+            },
+            "title": "MediaSource.MediaSource()"
+        }
+    ],
+    "dom-mediasource-activesourcebuffers": [
         {
             "engines": [
                 "blink",
@@ -362,7 +432,7 @@
             "title": "MediaSource.clearLiveSeekableRange()"
         }
     ],
-    "idl-def-mediasource-duration": [
+    "dom-mediasource-duration": [
         {
             "engines": [
                 "blink",
@@ -530,7 +600,7 @@
             "title": "MediaSource.isTypeSupported()"
         }
     ],
-    "idl-def-mediasource-readystate": [
+    "dom-mediasource-readystate": [
         {
             "engines": [
                 "blink",
@@ -693,7 +763,7 @@
             "title": "MediaSource.setLiveSeekableRange()"
         }
     ],
-    "idl-def-mediasource-sourcebuffers": [
+    "dom-mediasource-sourcebuffers": [
         {
             "engines": [
                 "blink",
@@ -867,23 +937,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -937,23 +993,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -986,7 +1028,7 @@
             "title": "SourceBuffer.appendBuffer()"
         }
     ],
-    "idl-def-sourcebuffer-appendwindowend": [
+    "dom-sourcebuffer-appendwindowend": [
         {
             "engines": [
                 "blink",
@@ -1007,23 +1049,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1056,7 +1084,7 @@
             "title": "SourceBuffer.appendWindowEnd"
         }
     ],
-    "idl-def-sourcebuffer-appendwindowstart": [
+    "dom-sourcebuffer-appendwindowstart": [
         {
             "engines": [
                 "blink",
@@ -1077,23 +1105,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1126,7 +1140,7 @@
             "title": "SourceBuffer.appendWindowStart"
         }
     ],
-    "idl-def-sourcebuffer-audiotracks": [
+    "dom-sourcebuffer-audiotracks": [
         {
             "engines": [
                 "blink",
@@ -1224,7 +1238,7 @@
             "title": "SourceBuffer.audioTracks"
         }
     ],
-    "idl-def-sourcebuffer-buffered": [
+    "dom-sourcebuffer-buffered": [
         {
             "engines": [
                 "blink",
@@ -1245,23 +1259,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1294,7 +1294,7 @@
             "title": "SourceBuffer.buffered"
         }
     ],
-    "idl-def-sourcebuffer-mode": [
+    "dom-sourcebuffer-mode": [
         {
             "engines": [
                 "blink",
@@ -1315,23 +1315,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1385,23 +1371,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1434,7 +1406,7 @@
             "title": "SourceBuffer.remove()"
         }
     ],
-    "idl-def-sourcebuffer-texttracks": [
+    "dom-sourcebuffer-texttracks": [
         {
             "engines": [
                 "webkit"
@@ -1492,7 +1464,7 @@
             "title": "SourceBuffer.textTracks"
         }
     ],
-    "idl-def-sourcebuffer-timestampoffset": [
+    "dom-sourcebuffer-timestampoffset": [
         {
             "engines": [
                 "blink",
@@ -1513,23 +1485,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1562,7 +1520,7 @@
             "title": "SourceBuffer.timestampOffset"
         }
     ],
-    "idl-def-sourcebuffer-updating": [
+    "dom-sourcebuffer-updating": [
         {
             "engines": [
                 "blink",
@@ -1583,23 +1541,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1632,7 +1576,7 @@
             "title": "SourceBuffer.updating"
         }
     ],
-    "idl-def-sourcebuffer-videotracks": [
+    "dom-sourcebuffer-videotracks": [
         {
             "engines": [
                 "blink",
@@ -1768,23 +1712,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1868,22 +1798,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1916,7 +1833,7 @@
             "title": "SourceBufferList: indexed property getter"
         }
     ],
-    "idl-def-sourcebufferlist-length": [
+    "dom-sourcebufferlist-length": [
         {
             "engines": [
                 "blink",
@@ -1937,22 +1854,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -2013,22 +1917,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "42"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.mediasource.enabled"
-                            }
-                        ],
-                        "notes": "Limited support to an allowed list of sites, for example YouTube, Netflix, and other popular streaming sites. The limitation was removed when Media Source Extensions was enabled by default in Firefox 42."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "42"
+                },
                 "firefox_android": {
                     "version_added": false
                 },
@@ -2066,67 +1957,6 @@
                 ]
             },
             "title": "SourceBufferList"
-        }
-    ],
-    "dom-url-createobjecturl": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/URL.json",
-            "name": "createObjectURL",
-            "slug": "API/URL/createObjectURL",
-            "summary": "The URL.createObjectURL() static method creates a DOMString containing a URL representing the object given in the parameter.",
-            "support": {
-                "chrome": {
-                    "version_added": "19"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "19",
-                    "notes": "<code>createObjectURL()</code> is no longer available within the context of a <code>ServiceWorker</code>."
-                },
-                "firefox_android": {
-                    "version_added": "19",
-                    "notes": "<code>createObjectURL()</code> is no longer available within the context of a <code>ServiceWorker</code>."
-                },
-                "ie": {
-                    "version_added": "10",
-                    "notes": "If the underlying object does not have a content type set, using this URL as the <code>src</code> of an <code>img</code> tag fails intermittently with error DOM7009."
-                },
-                "nodejs": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "URL.createObjectURL()"
         }
     ],
     "dom-videotrack-sourcebuffer": [

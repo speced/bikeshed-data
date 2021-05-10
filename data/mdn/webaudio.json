@@ -3,7 +3,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AnalyserNode.json",
             "name": "AnalyserNode",
@@ -35,10 +36,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -332,7 +333,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AnalyserNode.json",
             "name": "getFloatTimeDomainData",
@@ -364,10 +366,10 @@
                     "version_added": "14"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -606,7 +608,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioBuffer.json",
             "name": "AudioBuffer",
@@ -642,10 +645,10 @@
                     "notes": "The <code>context</code> parameter was supported up until version 44, but has now been removed."
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -667,7 +670,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioBuffer.json",
             "name": "copyFromChannel",
@@ -699,10 +703,10 @@
                     "version_added": "30"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -721,7 +725,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioBuffer.json",
             "name": "copyToChannel",
@@ -753,10 +758,10 @@
                     "version_added": "30"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -1105,7 +1110,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioBufferSourceNode.json",
             "name": "AudioBufferSourceNode",
@@ -1139,10 +1145,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -1274,7 +1280,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioBufferSourceNode.json",
             "name": "detune",
@@ -1306,10 +1313,10 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -1603,9 +1610,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/AudioContext.json",
@@ -1681,14 +1686,24 @@
                         "prefix": "webkit"
                     }
                 ],
-                "safari": {
-                    "version_added": "6.1",
-                    "prefix": "webkit"
-                },
-                "safari_ios": {
-                    "version_added": "6.1",
-                    "prefix": "webkit"
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "6",
+                        "prefix": "webkit"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "6",
+                        "prefix": "webkit"
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "3.0",
@@ -1739,7 +1754,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioContext.json",
             "name": "baseLatency",
@@ -1771,10 +1787,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2068,7 +2084,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioContext.json",
             "name": "getOutputTimestamp",
@@ -2100,10 +2117,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2285,9 +2302,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/AudioContext.json",
@@ -2347,14 +2362,26 @@
                         "prefix": "webkit"
                     }
                 ],
-                "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
-                },
-                "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.1",
+                        "prefix": "webkit"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.5",
+                        "prefix": "webkit"
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "3.0"
@@ -2664,7 +2691,8 @@
     "dom-audiolistener-forwardx": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "forwardX",
@@ -2698,10 +2726,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -2719,7 +2747,8 @@
     "dom-audiolistener-forwardy": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "forwardY",
@@ -2753,10 +2782,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -2774,7 +2803,8 @@
     "dom-audiolistener-forwardz": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "forwardZ",
@@ -2808,10 +2838,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -2829,7 +2859,8 @@
     "dom-audiolistener-positionx": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "positionX",
@@ -2863,10 +2894,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -2884,7 +2915,8 @@
     "dom-audiolistener-positiony": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "positionY",
@@ -2918,10 +2950,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -2939,7 +2971,8 @@
     "dom-audiolistener-positionz": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "positionZ",
@@ -2973,10 +3006,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -2994,7 +3027,8 @@
     "dom-audiolistener-upx": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "upX",
@@ -3028,10 +3062,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -3049,7 +3083,8 @@
     "dom-audiolistener-upy": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "upY",
@@ -3083,10 +3118,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -3104,7 +3139,8 @@
     "dom-audiolistener-upz": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioListener.json",
             "name": "upZ",
@@ -3138,10 +3174,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -3818,7 +3854,8 @@
     "dom-audioparam-cancelandholdattime": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/AudioParam.json",
             "name": "cancelAndHoldAtTime",
@@ -3850,10 +3887,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -4493,6 +4530,61 @@
             "title": "AudioParam"
         }
     ],
+    "audioparammap": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/AudioParamMap.json",
+            "name": "AudioParamMap",
+            "slug": "API/AudioParamMap",
+            "summary": "The Web Audio API interface AudioParamMap represents a set of multiple audio parameters, each described as a mapping of a DOMString identifying the parameter to the AudioParam object representing its value.",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": {
+                    "version_added": "66"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "76"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "53"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "66"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AudioParamMap"
+        }
+    ],
     "dom-audioscheduledsourcenode-onended": [
         {
             "engines": [
@@ -4858,7 +4950,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioWorklet.json",
             "name": "AudioWorklet",
@@ -4890,10 +4983,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -5020,7 +5113,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "AudioWorkletNode",
@@ -5052,10 +5146,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -5074,7 +5168,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "onprocessorerror",
@@ -5106,10 +5201,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -5128,7 +5223,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "parameters",
@@ -5160,10 +5256,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -5182,7 +5278,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "port",
@@ -5214,10 +5311,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -5236,7 +5333,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AudioWorkletNode.json",
             "name": "AudioWorkletNode",
@@ -5268,10 +5366,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -5452,7 +5550,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
             "name": "audioWorklet",
@@ -5484,10 +5583,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -5836,7 +5935,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
             "name": "createConstantSource",
@@ -5868,10 +5968,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -6110,7 +6210,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
             "name": "createIIRFilter",
@@ -6142,10 +6243,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -6359,7 +6460,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
             "name": "createStereoPanner",
@@ -6391,10 +6493,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -6853,9 +6955,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "partial": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/BaseAudioContext.json",
@@ -6935,16 +7035,28 @@
                         "notes": "The <code>BaseAudioContext</code> interface itself is not present, but many of the methods are available on the <a href='https://developer.mozilla.org/docs/Web/API/AudioContext'><code>AudioContext</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/OfflineAudioContext'><code>OfflineAudioContext</code></a> interfaces."
                     }
                 ],
-                "safari": {
-                    "version_added": "6",
-                    "partial_implementation": true,
-                    "notes": "The <code>BaseAudioContext</code> interface itself is not present, but many of the methods are available on the <a href='https://developer.mozilla.org/docs/Web/API/AudioContext'><code>AudioContext</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/OfflineAudioContext'><code>OfflineAudioContext</code></a> interfaces."
-                },
-                "safari_ios": {
-                    "version_added": "6",
-                    "partial_implementation": true,
-                    "notes": "The <code>BaseAudioContext</code> interface itself is not present, but many of the methods are available on the <a href='https://developer.mozilla.org/docs/Web/API/AudioContext'><code>AudioContext</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/OfflineAudioContext'><code>OfflineAudioContext</code></a> interfaces."
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.1",
+                        "partial_implementation": true,
+                        "notes": "The <code>BaseAudioContext</code> interface itself is not present, but many of the methods are available on the <a href='https://developer.mozilla.org/docs/Web/API/AudioContext'><code>AudioContext</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/OfflineAudioContext'><code>OfflineAudioContext</code></a> interfaces."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.5",
+                        "partial_implementation": true,
+                        "notes": "The <code>BaseAudioContext</code> interface itself is not present, but many of the methods are available on the <a href='https://developer.mozilla.org/docs/Web/API/AudioContext'><code>AudioContext</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/OfflineAudioContext'><code>OfflineAudioContext</code></a> interfaces."
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "6.0"
@@ -6986,7 +7098,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/BiquadFilterNode.json",
             "name": "BiquadFilterNode",
@@ -7022,10 +7135,10 @@
                     "notes": "Before Opera 46, the default values were not supported."
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -7432,7 +7545,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ChannelMergerNode.json",
             "name": "ChannelMergerNode",
@@ -7464,10 +7578,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -7539,7 +7653,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ChannelSplitterNode.json",
             "name": "ChannelSplitterNode",
@@ -7571,10 +7686,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -7653,7 +7768,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ConstantSourceNode.json",
             "name": "ConstantSourceNode",
@@ -7685,10 +7801,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -7707,7 +7823,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ConstantSourceNode.json",
             "name": "offset",
@@ -7739,10 +7856,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -7761,7 +7878,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ConstantSourceNode.json",
             "name": "ConstantSourceNode",
@@ -7793,10 +7911,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -7815,7 +7933,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ConvolverNode.json",
             "name": "ConvolverNode",
@@ -7847,10 +7966,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -8034,7 +8153,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DelayNode.json",
             "name": "DelayNode",
@@ -8068,10 +8188,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -8203,7 +8323,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DynamicsCompressorNode.json",
             "name": "DynamicsCompressorNode",
@@ -8237,10 +8358,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -8650,7 +8771,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/GainNode.json",
             "name": "GainNode",
@@ -8684,10 +8806,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -8815,11 +8937,12 @@
             "title": "GainNode"
         }
     ],
-    "dom-iirfilternode-iirfilternode": [
+    "dom-iirfilternode-constructor-iirfilternode": [
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/IIRFilterNode.json",
             "name": "IIRFilterNode",
@@ -8853,10 +8976,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -8878,7 +9001,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/IIRFilterNode.json",
             "name": "getFrequencyResponse",
@@ -8910,10 +9034,10 @@
                     "version_added": "36"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -8932,7 +9056,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/IIRFilterNode.json",
             "name": "IIRFilterNode",
@@ -8964,10 +9089,10 @@
                     "version_added": "36"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -8982,11 +9107,12 @@
             "title": "IIRFilterNode"
         }
     ],
-    "mediaelementaudiosourcenode": [
+    "dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode": [
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/MediaElementAudioSourceNode.json",
             "name": "MediaElementAudioSourceNode",
@@ -9020,10 +9146,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -9039,59 +9165,6 @@
                 }
             },
             "title": "MediaElementAudioSourceNode()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaElementAudioSourceNode.json",
-            "name": "MediaElementAudioSourceNode",
-            "slug": "API/MediaElementAudioSourceNode",
-            "summary": "The MediaElementAudioSourceNode interface represents an audio source consisting of an HTML5 <audio> or <video> element. It is an AudioNode that acts as an audio source.",
-            "support": {
-                "chrome": {
-                    "version_added": "14"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "25"
-                },
-                "firefox_android": {
-                    "version_added": "25"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaElementAudioSourceNode"
         }
     ],
     "dom-mediaelementaudiosourcenode-mediaelement": [
@@ -9149,11 +9222,67 @@
             "title": "MediaElementAudioSourceNode.mediaElement"
         }
     ],
-    "mediastreamaudiodestinationnode": [
+    "MediaElementAudioSourceNode": [
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaElementAudioSourceNode.json",
+            "name": "MediaElementAudioSourceNode",
+            "slug": "API/MediaElementAudioSourceNode",
+            "summary": "The MediaElementAudioSourceNode interface represents an audio source consisting of an HTML5 <audio> or <video> element. It is an AudioNode that acts as an audio source.",
+            "support": {
+                "chrome": {
+                    "version_added": "14"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "25"
+                },
+                "firefox_android": {
+                    "version_added": "25"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "6"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaElementAudioSourceNode"
+        }
+    ],
+    "dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
             ],
             "filename": "api/MediaStreamAudioDestinationNode.json",
             "name": "MediaStreamAudioDestinationNode",
@@ -9187,10 +9316,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -9206,59 +9335,6 @@
                 }
             },
             "title": "MediaStreamAudioDestinationNode.MediaStreamAudioDestinationNode()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaStreamAudioDestinationNode.json",
-            "name": "MediaStreamAudioDestinationNode",
-            "slug": "API/MediaStreamAudioDestinationNode",
-            "summary": "The MediaStreamAudioDestinationNode interface represents an audio destination consisting of a WebRTC MediaStream with a single AudioMediaStreamTrack, which can be used in a similar way to a MediaStream obtained from Navigator.getUserMedia().",
-            "support": {
-                "chrome": {
-                    "version_added": "14"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "25"
-                },
-                "firefox_android": {
-                    "version_added": "25"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaStreamAudioDestinationNode"
         }
     ],
     "dom-mediastreamaudiodestinationnode-stream": [
@@ -9316,11 +9392,67 @@
             "title": "MediaStreamAudioDestinationNode.stream"
         }
     ],
+    "MediaStreamAudioDestinationNode": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaStreamAudioDestinationNode.json",
+            "name": "MediaStreamAudioDestinationNode",
+            "slug": "API/MediaStreamAudioDestinationNode",
+            "summary": "The MediaStreamAudioDestinationNode interface represents an audio destination consisting of a WebRTC MediaStream with a single AudioMediaStreamTrack, which can be used in a similar way to a MediaStream obtained from Navigator.getUserMedia().",
+            "support": {
+                "chrome": {
+                    "version_added": "14"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "25"
+                },
+                "firefox_android": {
+                    "version_added": "25"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "6"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaStreamAudioDestinationNode"
+        }
+    ],
     "dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode": [
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/MediaStreamAudioSourceNode.json",
             "name": "MediaStreamAudioSourceNode",
@@ -9354,10 +9486,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -9430,7 +9562,7 @@
             "title": "MediaStreamAudioSourceNode.mediaStream"
         }
     ],
-    "mediastreamaudiosourcenode": [
+    "MediaStreamAudioSourceNode": [
         {
             "engines": [
                 "blink",
@@ -9539,7 +9671,7 @@
             "title": "MediaStreamAudioSourceOptions.mediaStream"
         }
     ],
-    "dictdef-mediastreamaudiosourceoptions": [
+    "MediaStreamAudioSourceOptions": [
         {
             "engines": [
                 "blink",
@@ -9649,7 +9781,7 @@
             "title": "MediaStreamTrackAudioSourceNode()"
         }
     ],
-    "mediastreamtrackaudiosourcenode": [
+    "MediaStreamTrackAudioSourceNode": [
         {
             "engines": [
                 "gecko"
@@ -9755,7 +9887,7 @@
             "title": "MediaStreamTrackAudioSourceOptions.mediaStreamTrack"
         }
     ],
-    "dictdef-mediastreamtrackaudiosourceoptions": [
+    "MediaStreamTrackAudioSourceOptions": [
         {
             "engines": [
                 "gecko"
@@ -10035,9 +10167,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/OfflineAudioContext.json",
@@ -10066,7 +10196,7 @@
                     }
                 ],
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "53"
@@ -10097,14 +10227,26 @@
                         "prefix": "webkit"
                     }
                 ],
-                "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
-                },
-                "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.1",
+                        "prefix": "webkit"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.5",
+                        "prefix": "webkit"
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "3.0"
@@ -10143,7 +10285,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OfflineAudioContext.json",
             "name": "length",
@@ -10175,10 +10318,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -10265,7 +10408,7 @@
                     "version_added": "49"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": false
@@ -10337,12 +10480,26 @@
                 "opera_android": {
                     "version_added": "14"
                 },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.1",
+                        "prefix": "webkit"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.5",
+                        "prefix": "webkit"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "1.5"
                 },
@@ -10359,7 +10516,8 @@
     "dom-offlineaudiocontext-suspend": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/OfflineAudioContext.json",
             "name": "suspend",
@@ -10373,7 +10531,7 @@
                     "version_added": "49"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": false
@@ -10391,10 +10549,10 @@
                     "version_added": "36"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -10413,9 +10571,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/OfflineAudioContext.json",
@@ -10475,14 +10631,26 @@
                         "prefix": "webkit"
                     }
                 ],
-                "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
-                },
-                "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.1",
+                        "prefix": "webkit"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.5",
+                        "prefix": "webkit"
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "3.0"
@@ -10521,7 +10689,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OscillatorNode.json",
             "name": "OscillatorNode",
@@ -10555,10 +10724,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -10855,7 +11024,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PannerNode.json",
             "name": "PannerNode",
@@ -10889,10 +11059,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -11189,7 +11359,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PannerNode.json",
             "name": "orientationX",
@@ -11221,10 +11392,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -11243,7 +11414,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PannerNode.json",
             "name": "orientationY",
@@ -11275,10 +11447,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -11297,7 +11469,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PannerNode.json",
             "name": "orientationZ",
@@ -11329,10 +11502,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -11406,7 +11579,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PannerNode.json",
             "name": "positionX",
@@ -11438,10 +11612,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -11460,7 +11634,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PannerNode.json",
             "name": "positionY",
@@ -11492,10 +11667,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -11514,7 +11689,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PannerNode.json",
             "name": "positionZ",
@@ -11546,10 +11722,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -11710,12 +11886,26 @@
                 "opera_android": {
                     "version_added": "14"
                 },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.1",
+                        "prefix": "webkit"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "6",
+                        "version_removed": "14.5",
+                        "prefix": "webkit"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "1.0"
                 },
@@ -11729,11 +11919,12 @@
             "title": "PannerNode"
         }
     ],
-    "periodicwave": [
+    "dom-periodicwave-periodicwave": [
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PeriodicWave.json",
             "name": "PeriodicWave",
@@ -11767,10 +11958,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -11786,7 +11977,9 @@
                 }
             },
             "title": "PeriodicWave.PeriodicWave()"
-        },
+        }
+    ],
+    "PeriodicWave": [
         {
             "engines": [
                 "blink",
@@ -11805,7 +11998,7 @@
                     "version_added": "30"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "25"
@@ -11845,7 +12038,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/StereoPannerNode.json",
             "name": "StereoPannerNode",
@@ -11879,10 +12073,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",
@@ -11904,7 +12098,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/StereoPannerNode.json",
             "name": "pan",
@@ -11936,10 +12131,10 @@
                     "version_added": "28"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -11958,7 +12153,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/StereoPannerNode.json",
             "name": "StereoPannerNode",
@@ -11990,10 +12186,10 @@
                     "version_added": "28"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -12012,7 +12208,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/WaveShaperNode.json",
             "name": "WaveShaperNode",
@@ -12046,10 +12243,10 @@
                     "version_added": "42"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0",

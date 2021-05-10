@@ -608,6 +608,236 @@
             "title": "ClipboardEvent"
         }
     ],
+    "clipboarditem": [
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "partial": [
+                "blink"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/ClipboardItem.json",
+            "name": "ClipboardItem",
+            "slug": "API/ClipboardItem/ClipboardItem",
+            "summary": "The ClipboardItem() constructor of the Clipboard API creates a new ClipboardItem object which represents data to be stored or retrieved via the Clipboard API, that is clipboard.write() and clipboard.read() respectively.The ClipboardItem() constructor of the Clipboard API creates a new ClipboardItem object which represents data to be stored or retrieved via the Clipboard API, that is clipboard.write() and clipboard.read() respectively.",
+            "support": {
+                "chrome": {
+                    "version_added": "66",
+                    "partial_implementation": true,
+                    "notes": "The <code>ClipboardItem</code> constructor only accepts a blob as the item data, but not strings or Promises that resolve to strings or blobs. See <a href='https://crbug.com/1014310'>bug 1014310</a>."
+                },
+                "chrome_android": {
+                    "version_added": "66",
+                    "partial_implementation": true,
+                    "notes": "The <code>ClipboardItem</code> constructor only accepts a blob as the item data. Full implementation would also allow for a string or a Promise which resolves with either a string or blob. See <a href='https://crbug.com/1014310'>bug 1014310</a>."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "87",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.events.asyncClipboard.clipboardItem",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "87",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.events.asyncClipboard.clipboardItem",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true,
+                    "partial_implementation": true,
+                    "notes": "The <code>ClipboardItem</code> constructor only accepts a blob as the item data, but not strings or Promises that resolve to strings or blobs. See <a href='https://crbug.com/1014310'>bug 1014310</a>."
+                },
+                "opera_android": {
+                    "version_added": true,
+                    "partial_implementation": true,
+                    "notes": "The <code>ClipboardItem</code> constructor only accepts a blob as the item data, but not strings or Promises that resolve to strings or blobs. See <a href='https://crbug.com/1014310'>bug 1014310</a>."
+                },
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": {
+                    "version_added": "13.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0",
+                    "partial_implementation": true,
+                    "notes": "The <code>ClipboardItem</code> constructor only accepts a blob as the item data, but not strings or Promises that resolve to strings or blobs. See <a href='https://crbug.com/1014310'>bug 1014310</a>."
+                },
+                "webview_android": {
+                    "version_added": "66",
+                    "partial_implementation": true,
+                    "notes": "The <code>ClipboardItem</code> constructor only accepts a blob as the item data. Full implementation would also allow for a string or a Promise which resolves with either a string or blob. See <a href='https://crbug.com/1014310'>bug 1014310</a>."
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "The <code>ClipboardItem</code> constructor only accepts a blob as the item data, but not strings or Promises that resolve to strings or blobs. See <a href='https://crbug.com/1014310'>bug 1014310</a>."
+                }
+            },
+            "title": "ClipboardItem()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/ClipboardItem.json",
+            "name": "ClipboardItem",
+            "slug": "API/ClipboardItem",
+            "summary": "The ClipboardItem interface of the Clipboard API represents a single item format, used when reading or writing data via the Clipboard API. That is clipboard.read() and clipboard.write() respectively.The ClipboardItem interface of the Clipboard API represents a single item format, used when reading or writing data via the Clipboard API. That is clipboard.read() and clipboard.write() respectively.",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": {
+                    "version_added": "66"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "87",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.events.asyncClipboard.clipboardItem",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "87",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.events.asyncClipboard.clipboardItem",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": {
+                    "version_added": "13.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "66"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ClipboardItem"
+        }
+    ],
+    "dom-clipboarditem-gettype-type-type": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/ClipboardItem.json",
+            "name": "getType",
+            "slug": "API/ClipboardItem/getType",
+            "summary": "The getType() method of the ClipboardItem interface returns a Promise that resolves with a Blob of the requested MIME type or an error if the MIME type is not found.The getType() method of the ClipboardItem interface returns a Promise that resolves with a Blob of the requested MIME type or an error if the MIME type is not found.",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": {
+                    "version_added": "66"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "87",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.events.asyncClipboard.clipboardItem",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "87",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.events.asyncClipboard.clipboardItem",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": {
+                    "version_added": "13.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "66"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ClipboardItem.getType()"
+        }
+    ],
     "dom-clipboarditem-presentationstyle": [
         {
             "engines": [
@@ -677,6 +907,78 @@
                 }
             },
             "title": "ClipboardItem.presentationStyle"
+        }
+    ],
+    "dom-clipboarditem-types": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/ClipboardItem.json",
+            "name": "types",
+            "slug": "API/ClipboardItem/types",
+            "summary": "The read-only types property of the ClipboardItem interface returns an Array of MIME types available within the ClipboardItemThe read-only types property of the ClipboardItem interface returns an Array of MIME types available within the ClipboardItem",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": {
+                    "version_added": "66"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "87",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.events.asyncClipboard.clipboardItem",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "87",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.events.asyncClipboard.clipboardItem",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": {
+                    "version_added": "13.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "66"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ClipboardItem.types"
         }
     ],
     "clipboard-event-copy": [

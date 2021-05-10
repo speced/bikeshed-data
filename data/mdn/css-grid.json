@@ -3,7 +3,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/column-gap.json",
             "name": "flex_context",
@@ -35,10 +36,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -1212,63 +1213,84 @@
             "title": "repeat()"
         }
     ],
-    "propdef-grid-template-columns": [
+    "subgrids": [
         {
             "engines": [
-                "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "css/properties/grid-template-columns.json",
-            "name": "grid-template-columns",
-            "slug": "CSS/grid-template-columns",
-            "summary": "The grid-template-columns CSS property defines the line names and track sizing functions of the grid columns.",
+            "name": "subgrid",
+            "slug": "CSS/CSS_Grid_Layout/Subgrid",
+            "summary": "Level 2 of the CSS Grid Layout specification includes a subgrid value for grid-template-columns and grid-template-rows. This guide details what subgrid does, and gives some use cases and design patterns that are solved by the feature.",
             "support": {
                 "chrome": {
-                    "version_added": "57"
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
                 },
                 "chrome_android": {
-                    "version_added": "57"
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
                 },
                 "edge": {
-                    "version_added": "16"
+                    "version_added": false
                 },
-                "firefox": {
-                    "version_added": "52"
-                },
+                "firefox": [
+                    {
+                        "version_added": "71"
+                    },
+                    {
+                        "version_added": "69",
+                        "notes": "Enabled by default in Firefox Nightly.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.grid-template-subgrid-value.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": "52"
+                    "version_added": false
                 },
                 "ie": {
-                    "version_added": "10",
-                    "alternative_name": "-ms-grid-columns"
+                    "version_added": false
                 },
                 "opera": {
-                    "version_added": "44"
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
                 },
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/202115'>bug 202115</a>."
                 },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/202115'>bug 202115</a>."
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
                 },
                 "webview_android": {
-                    "version_added": "57"
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
                 }
             },
-            "title": "grid-template-columns"
-        }
-    ],
-    "subgrids": [
+            "caniuse": {
+                "feature": "css-subgrid",
+                "title": "CSS Subgrid"
+            },
+            "title": "Subgrid"
+        },
         {
             "engines": [
                 "blink",
@@ -1329,6 +1351,83 @@
         },
         {
             "engines": [
+                "gecko"
+            ],
+            "filename": "css/properties/grid-template-rows.json",
+            "name": "subgrid",
+            "slug": "CSS/CSS_Grid_Layout/Subgrid",
+            "summary": "Level 2 of the CSS Grid Layout specification includes a subgrid value for grid-template-columns and grid-template-rows. This guide details what subgrid does, and gives some use cases and design patterns that are solved by the feature.",
+            "support": {
+                "chrome": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
+                },
+                "chrome_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "71"
+                    },
+                    {
+                        "version_added": "69",
+                        "notes": "Enabled by default in Firefox Nightly.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.grid-template-subgrid-value.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
+                },
+                "opera_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/202115'>bug 202115</a>."
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/202115'>bug 202115</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/618969'>bug 618969</a>."
+                }
+            },
+            "caniuse": {
+                "feature": "css-subgrid",
+                "title": "CSS Subgrid"
+            },
+            "title": "Subgrid"
+        },
+        {
+            "engines": [
                 "blink",
                 "gecko",
                 "webkit"
@@ -1384,6 +1483,62 @@
                 "title": "CSS Subgrid"
             },
             "title": "grid-template-rows"
+        }
+    ],
+    "propdef-grid-template-columns": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/properties/grid-template-columns.json",
+            "name": "grid-template-columns",
+            "slug": "CSS/grid-template-columns",
+            "summary": "The grid-template-columns CSS property defines the line names and track sizing functions of the grid columns.",
+            "support": {
+                "chrome": {
+                    "version_added": "57"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "52"
+                },
+                "firefox_android": {
+                    "version_added": "52"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "alternative_name": "-ms-grid-columns"
+                },
+                "opera": {
+                    "version_added": "44"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "57"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "grid-template-columns"
         }
     ],
     "propdef-grid-template-rows": [

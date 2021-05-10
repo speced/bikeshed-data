@@ -105,7 +105,7 @@
             "title": "Document.caretPositionFromPoint()"
         }
     ],
-    "scrolling-events": [
+    "eventdef-document-scroll": [
         {
             "engines": [
                 "blink",
@@ -160,29 +160,26 @@
             "title": "Document: scroll event"
         },
         {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Element.json",
+            "engines": [],
+            "filename": "api/SVGElement.json",
             "name": "scroll_event",
-            "slug": "API/Element/scroll_event",
-            "summary": "The scroll event fires an element has been scrolled.",
+            "slug": "API/SVGElement/scroll_event",
+            "summary": "The scroll event is fired when an SVG document view is being shifted along the X and/or Y axes. This basically implements the standard scroll DOM event.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": null
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": null
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": null
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": null
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": null
                 },
                 "ie": {
                     "version_added": null
@@ -200,16 +197,16 @@
                     "version_added": null
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": null
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": null
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": null
                 }
             },
-            "title": "Element: scroll event"
+            "title": "SVGElement: scroll event"
         }
     ],
     "dom-document-scrollingelement": [
@@ -714,6 +711,60 @@
                 }
             },
             "title": "Element.scroll()"
+        }
+    ],
+    "scrolling-events": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Element.json",
+            "name": "scroll_event",
+            "slug": "API/Element/scroll_event",
+            "summary": "The scroll event fires an element has been scrolled.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Element: scroll event"
         }
     ],
     "dom-element-scrollby-options-options": [
@@ -1525,61 +1576,6 @@
             "title": "HTMLElement.offsetWidth"
         }
     ],
-    "extensions-to-the-htmlelement-interface": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "HTMLElement",
-            "slug": "API/HTMLElement",
-            "summary": "The HTMLElement interface represents any HTML element. Some elements directly implement this interface, while others implement it via an interface that inherits it.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "opera": {
-                    "version_added": "8"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1.3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLElement"
-        }
-    ],
     "dom-htmlimageelement-x": [
         {
             "engines": [
@@ -1712,61 +1708,6 @@
                 }
             },
             "title": "HTMLImageElement.y"
-        }
-    ],
-    "extensions-to-the-htmlimageelement-interface": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLImageElement.json",
-            "name": "HTMLImageElement",
-            "slug": "API/HTMLImageElement",
-            "summary": "The HTMLImageElement interface represents an HTML <img> element, providing the properties and methods used to manipulate image elements.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "opera": {
-                    "version_added": "8"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLImageElement"
         }
     ],
     "dom-mediaquerylist-matches": [
@@ -2211,308 +2152,6 @@
             "title": "MediaQueryListEvent"
         }
     ],
-    "extensions-to-the-mouseevent-interface": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MouseEvent.json",
-            "name": "MouseEvent",
-            "slug": "API/MouseEvent/MouseEvent",
-            "summary": "The MouseEvent() constructor creates a new MouseEvent.",
-            "support": {
-                "chrome": {
-                    "version_added": "47"
-                },
-                "chrome_android": {
-                    "version_added": "47"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "11"
-                },
-                "firefox_android": {
-                    "version_added": "14"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "47"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MouseEvent()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MouseEvent.json",
-            "name": "MouseEvent",
-            "slug": "API/MouseEvent",
-            "summary": "The MouseEvent interface represents events that occur due to the user interacting with a pointing device (such as a mouse). Common events using this interface include click, dblclick, mouseup, mousedown.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "10.6"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "3.1"
-                },
-                "safari_ios": {
-                    "version_added": "2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MouseEvent"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/PointerEvent.json",
-            "name": "pointerType",
-            "slug": "API/PointerEvent/pointerType",
-            "summary": "The pointerType read-only property of the PointerEvent interface indicates the device type (mouse, pen, or touch) that caused a given pointer event.",
-            "support": {
-                "chrome": {
-                    "version_added": "55"
-                },
-                "chrome_android": {
-                    "version_added": "55"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": [
-                    {
-                        "version_added": "59"
-                    },
-                    {
-                        "version_added": "41",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.w3c_pointer_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "41",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.w3c_pointer_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "ie": [
-                    {
-                        "version_added": "11"
-                    },
-                    {
-                        "version_added": "10",
-                        "partial_implementation": true,
-                        "notes": "Returns an integer enumeration instead of a string."
-                    }
-                ],
-                "opera": {
-                    "version_added": "42"
-                },
-                "opera_android": {
-                    "version_added": "42"
-                },
-                "safari": {
-                    "version_added": "13"
-                },
-                "safari_ios": {
-                    "version_added": "13"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "55"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PointerEvent.pointerType"
-        }
-    ],
-    "dom-mouseevent-clientx": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MouseEvent.json",
-            "name": "clientX",
-            "slug": "API/MouseEvent/clientX",
-            "summary": "The clientX read-only property of the MouseEvent interface provides the horizontal coordinate within the application's viewport at which the event occurred (as opposed to the coordinate within the page).",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "10.6"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "3.1"
-                },
-                "safari_ios": {
-                    "version_added": "2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MouseEvent.clientX"
-        }
-    ],
-    "dom-mouseevent-clienty": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MouseEvent.json",
-            "name": "clientY",
-            "slug": "API/MouseEvent/clientY",
-            "summary": "The clientY read-only property of the MouseEvent interface provides the vertical coordinate within the application's viewport at which the event occurred (as opposed to the coordinate within the page).",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "MouseEvent.clientY"
-        }
-    ],
     "dom-mouseevent-offsetx": [
         {
             "engines": [
@@ -2733,116 +2372,6 @@
             "title": "MouseEvent.pageY"
         }
     ],
-    "dom-mouseevent-screenx": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MouseEvent.json",
-            "name": "screenX",
-            "slug": "API/MouseEvent/screenX",
-            "summary": "The screenX read-only property of the MouseEvent interface provides the horizontal coordinate (offset) of the mouse pointer in global (screen) coordinates.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "MouseEvent.screenX"
-        }
-    ],
-    "dom-mouseevent-screeny": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MouseEvent.json",
-            "name": "screenY",
-            "slug": "API/MouseEvent/screenY",
-            "summary": "The screenY read-only property of the MouseEvent interface provides the vertical coordinate (offset) of the mouse pointer in global (screen) coordinates.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "MouseEvent.screenY"
-        }
-    ],
     "dom-mouseevent-x": [
         {
             "engines": [
@@ -2951,6 +2480,61 @@
                 }
             },
             "title": "MouseEvent.y"
+        }
+    ],
+    "extensions-to-the-mouseevent-interface": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MouseEvent.json",
+            "name": "MouseEvent",
+            "slug": "API/MouseEvent",
+            "summary": "The MouseEvent interface represents events that occur due to the user interacting with a pointing device (such as a mouse). Common events using this interface include click, dblclick, mouseup, mousedown.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "10.6"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MouseEvent"
         }
     ],
     "dom-range-getboundingclientrect": [
@@ -3118,6 +2702,60 @@
                 }
             },
             "title": "Range"
+        }
+    ],
+    "eventdef-window-resize": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/SVGElement.json",
+            "name": "resize_event",
+            "slug": "API/SVGElement/resize_event",
+            "summary": "The resize event is fired when an SVG document is being resized. This event is only applicable to outermost SVG elements and is dispatched after the resize operation has taken place.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "SVGElement: resize event"
         }
     ],
     "dom-screen-availheight": [
@@ -3515,7 +3153,7 @@
             "title": "Screen"
         }
     ],
-    "dictdef-scrolloptions": [
+    "dom-scrolloptions-behavior": [
         {
             "engines": [
                 "blink",

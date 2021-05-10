@@ -1,4 +1,65 @@
 {
+    "dom-pushevent-constructor": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/PushEvent.json",
+            "name": "PushEvent",
+            "slug": "API/PushEvent/PushEvent",
+            "summary": "The PushEvent() constructor creates a new PushEvent object. Note that the this constructor is exposed only to a service worker context.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": {
+                    "version_added": "42"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": [
+                    {
+                        "version_added": "44"
+                    },
+                    {
+                        "version_added": "48",
+                        "notes": "Push enabled by default."
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "37"
+                },
+                "opera_android": {
+                    "version_added": "37"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PushEvent.PushEvent()"
+        }
+    ],
     "dom-pushevent-data": [
         {
             "engines": [
@@ -406,60 +467,6 @@
                 }
             },
             "title": "PushManager"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/ServiceWorkerRegistration.json",
-            "name": "pushManager",
-            "slug": "API/ServiceWorkerRegistration/pushManager",
-            "summary": "The pushManager property of the ServiceWorkerRegistration interface returns a reference to the PushManager interface for managing push subscriptions; this includes support for subscribing, getting an active subscription, and accessing push permission status.",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "27"
-                },
-                "opera_android": {
-                    "version_added": "27"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/421921'>bug 421921</a>"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerRegistration.pushManager"
         }
     ],
     "dom-pushmessagedata-arraybuffer": [
@@ -480,7 +487,7 @@
                     "version_added": "50"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -535,7 +542,7 @@
                     "version_added": "50"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -590,7 +597,7 @@
                     "version_added": "50"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -645,7 +652,7 @@
                     "version_added": "50"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -700,7 +707,7 @@
                     "version_added": "50"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -844,6 +851,61 @@
                 }
             },
             "title": "PushSubscription.expirationTime"
+        }
+    ],
+    "dom-pushsubscription-getkey": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/PushSubscription.json",
+            "name": "getKey",
+            "slug": "API/PushSubscription/getKey",
+            "summary": "The getKey() method of the PushSubscription interface returns an ArrayBuffer representing a client public key, which can then be sent to a server and used in encrypting push message data.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": {
+                    "version_added": "42"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "48"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "29"
+                },
+                "opera_android": {
+                    "version_added": "29"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PushSubscription.getKey()"
         }
     ],
     "dom-pushsubscription-options": [
@@ -1291,6 +1353,62 @@
         }
     ],
     "dom-serviceworkerregistration-pushmanager": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/ServiceWorkerRegistration.json",
+            "name": "pushManager",
+            "slug": "API/ServiceWorkerRegistration/pushManager",
+            "summary": "The pushManager property of the ServiceWorkerRegistration interface returns a reference to the PushManager interface for managing push subscriptions; this includes support for subscribing, getting an active subscription, and accessing push permission status.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "27"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/421921'>bug 421921</a>"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerRegistration.pushManager"
+        }
+    ],
+    "extensions-to-the-serviceworkerregistration-interface": [
         {
             "engines": [
                 "blink",

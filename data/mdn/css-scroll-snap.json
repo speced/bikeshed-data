@@ -3,7 +3,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/scroll-margin-block-end.json",
             "name": "scroll-margin-block-end",
@@ -35,10 +36,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -57,7 +58,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/scroll-margin-block-start.json",
             "name": "scroll-margin-block-start",
@@ -89,10 +91,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -111,7 +113,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/scroll-margin-block.json",
             "name": "scroll-margin-block",
@@ -143,10 +146,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -165,9 +168,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "altname": [
+                "gecko",
                 "webkit"
             ],
             "filename": "css/properties/scroll-margin-bottom.json",
@@ -199,18 +200,28 @@
                 "opera_android": {
                     "version_added": "48"
                 },
-                "safari": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin-bottom",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
-                "safari_ios": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin-bottom",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin-bottom",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.1, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin-bottom",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.5, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "10.0"
                 },
@@ -228,7 +239,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/scroll-margin-inline-end.json",
             "name": "scroll-margin-inline-end",
@@ -260,10 +272,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -282,7 +294,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/scroll-margin-inline-start.json",
             "name": "scroll-margin-inline-start",
@@ -314,10 +327,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -335,7 +348,8 @@
     "propdef-scroll-margin-inline": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/scroll-margin-inline.json",
             "name": "scroll-margin-inline",
@@ -367,10 +381,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -389,9 +403,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "altname": [
+                "gecko",
                 "webkit"
             ],
             "filename": "css/properties/scroll-margin-left.json",
@@ -423,18 +435,28 @@
                 "opera_android": {
                     "version_added": "48"
                 },
-                "safari": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin-left",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
-                "safari_ios": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin-left",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin-left",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.1, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin-left",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.5, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "10.0"
                 },
@@ -452,9 +474,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "altname": [
+                "gecko",
                 "webkit"
             ],
             "filename": "css/properties/scroll-margin-right.json",
@@ -486,18 +506,28 @@
                 "opera_android": {
                     "version_added": "48"
                 },
-                "safari": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin-right",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
-                "safari_ios": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin-right",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin-right",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.1, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin-right",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.5, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "10.0"
                 },
@@ -515,9 +545,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "altname": [
+                "gecko",
                 "webkit"
             ],
             "filename": "css/properties/scroll-margin-top.json",
@@ -549,18 +577,28 @@
                 "opera_android": {
                     "version_added": "48"
                 },
-                "safari": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin-top",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
-                "safari_ios": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin-top",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin-top",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.1, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin-top",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.5, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "10.0"
                 },
@@ -578,9 +616,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "altname": [
+                "gecko",
                 "webkit"
             ],
             "filename": "css/properties/scroll-margin.json",
@@ -612,18 +648,28 @@
                 "opera_android": {
                     "version_added": "48"
                 },
-                "safari": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
-                "safari_ios": {
-                    "version_added": "11",
-                    "alternative_name": "scroll-snap-margin",
-                    "partial_implementation": true,
-                    "notes": "Scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.1, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "11",
+                        "alternative_name": "scroll-snap-margin",
+                        "partial_implementation": true,
+                        "notes": "Before version 14.5, scroll margin is not applied for scrolls to fragment target or <code>scrollIntoView()</code>, see <a href='https://webkit.org/b/189265'>bug 189265</a>."
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "10.0"
                 },

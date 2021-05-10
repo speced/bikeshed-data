@@ -56,7 +56,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "blink",
@@ -118,10 +119,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -194,6 +195,75 @@
                 }
             },
             "title": "<maction>"
+        }
+    ],
+    "the-top-level-math-element": [
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "filename": "mathml/elements/math.json",
+            "name": "math",
+            "slug": "MathML/Element/math",
+            "summary": "The top-level element in MathML is <math>. Every valid MathML instance must be wrapped in <math> tags. In addition you must not nest a second <math> element in another, but you can have an arbitrary number of other child elements in it.",
+            "support": {
+                "chrome": {
+                    "version_added": "24",
+                    "version_removed": "25"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "4"
+                    },
+                    {
+                        "version_added": "1",
+                        "partial_implementation": true,
+                        "notes": "Only supported in XHTML documents."
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "9.5",
+                    "version_removed": "15",
+                    "partial_implementation": true,
+                    "notes": "Only supported in XHTML documents."
+                },
+                "opera_android": {
+                    "version_added": "10.1",
+                    "version_removed": "14",
+                    "partial_implementation": true,
+                    "notes": "Only supported in XHTML documents."
+                },
+                "safari": {
+                    "version_added": "5.1"
+                },
+                "safari_ios": {
+                    "version_added": "5.1"
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "version_removed": "25"
+                }
+            },
+            "title": "<math>"
         }
     ],
     "error-message-merror": [

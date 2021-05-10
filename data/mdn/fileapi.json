@@ -269,7 +269,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Blob.json",
             "name": "stream",
@@ -301,10 +302,10 @@
                     "version_added": "54"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "12.0"
@@ -323,7 +324,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Blob.json",
             "name": "text",
@@ -355,10 +357,10 @@
                     "version_added": "54"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14"
                 },
                 "samsunginternet_android": {
                     "version_added": "12.0"
@@ -1974,132 +1976,6 @@
                 }
             },
             "title": "URL.revokeObjectURL()"
-        }
-    ],
-    "creating-revoking": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/URL.json",
-            "name": "URL",
-            "slug": "API/URL",
-            "summary": "The URL interface is used to parse, construct, normalize, and encode URLs. It works by providing properties which allow you to easily read and modify the components of a URL.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "32"
-                    },
-                    {
-                        "version_added": "19",
-                        "prefix": "webkit"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "32"
-                    },
-                    {
-                        "version_added": "25",
-                        "prefix": "webkit"
-                    }
-                ],
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "19",
-                    "notes": [
-                        "Before version 57, Firefox had a bug whereby single quotes contained in URLs are escaped when accessed via URL APIs (see <a href='https://bugzil.la/1386683'>bug 1386683</a>).",
-                        "To use it from chrome code, JSM and Bootstrap scope, you have to import it with <code>Cu.importGlobalProperties(['URL']);</code>."
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "19",
-                    "notes": [
-                        "Before version 57, Firefox had a bug whereby single quotes contained in URLs are escaped when accessed via URL APIs (see <a href='https://bugzil.la/1386683'>bug 1386683</a>).",
-                        "To use it from chrome code, JSM and Bootstrap scope, you have to import it with <code>Cu.importGlobalProperties(['URL']);</code>."
-                    ]
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "nodejs": [
-                    {
-                        "version_added": "10.0.0"
-                    },
-                    {
-                        "version_added": "7.0.0",
-                        "notes": "Has to be imported from the URL module."
-                    }
-                ],
-                "opera": [
-                    {
-                        "version_added": "19"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "19"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    }
-                ],
-                "safari": [
-                    {
-                        "version_added": "7"
-                    },
-                    {
-                        "version_added": "6",
-                        "prefix": "webkit"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "7"
-                    },
-                    {
-                        "version_added": "6",
-                        "prefix": "webkit"
-                    }
-                ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "version_added": "1.5",
-                        "prefix": "webkit"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "4.4"
-                    },
-                    {
-                        "version_added": "4",
-                        "prefix": "webkit"
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "prefix": "webkit"
-                    }
-                ]
-            },
-            "title": "URL"
         }
     ]
 }

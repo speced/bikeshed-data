@@ -870,7 +870,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Client.json",
             "name": "frameType",
@@ -903,10 +904,10 @@
                     "version_added": "30"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -925,7 +926,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Client.json",
             "name": "id",
@@ -958,10 +960,10 @@
                     "version_added": "27"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -980,7 +982,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Client.json",
             "name": "postMessage",
@@ -1013,10 +1016,10 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -1035,7 +1038,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Client.json",
             "name": "type",
@@ -1067,10 +1071,10 @@
                     "version_added": "44"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"
@@ -1089,7 +1093,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Client.json",
             "name": "url",
@@ -1122,10 +1127,10 @@
                     "version_added": "27"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -1144,7 +1149,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Client.json",
             "name": "Client",
@@ -1177,10 +1183,10 @@
                     "version_added": "27"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -2113,7 +2119,7 @@
                     "version_added": "40"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -2166,7 +2172,7 @@
                     "version_added": "40"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -2221,7 +2227,7 @@
                     "version_added": "49"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -2435,7 +2441,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44"
@@ -2491,7 +2497,7 @@
                     "notes": "NetworkError thrown if request mode is same-origin and response type is cors (see <a href='https://bugzil.la/1222008'>bug 1222008</a>). This is being worked on - see <a href='https://www.chromestatus.com/feature/5694278818856960'>https://www.chromestatus.com/feature/5694278818856960</a>."
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": [
                     {
@@ -2869,7 +2875,7 @@
             "title": "ServiceWorker.state"
         }
     ],
-    "serviceworker": [
+    "serviceworker-interface": [
         {
             "engines": [
                 "blink",
@@ -2981,7 +2987,7 @@
             "title": "ServiceWorkerContainer.controller"
         }
     ],
-    "dom-serviceworkercontainer-getregistration": [
+    "navigator-service-worker-getRegistration": [
         {
             "engines": [
                 "blink",
@@ -3259,6 +3265,60 @@
                 }
             },
             "title": "ServiceWorkerContainer.onmessage"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ServiceWorkerGlobalScope.json",
+            "name": "onmessage",
+            "slug": "API/ServiceWorkerGlobalScope/onmessage",
+            "summary": "The onmessage property of the ServiceWorkerGlobalScope interface is an event handler fired whenever a message event occurs — when incoming messages are received.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerGlobalScope.onmessage"
         }
     ],
     "navigator-service-worker-ready": [
@@ -3317,7 +3377,7 @@
             "title": "ServiceWorkerContainer.ready"
         }
     ],
-    "dom-serviceworkercontainer-register": [
+    "navigator-service-worker-register": [
         {
             "engines": [
                 "blink",
@@ -3373,7 +3433,7 @@
             "title": "ServiceWorkerContainer.register()"
         }
     ],
-    "dom-serviceworkercontainer-startmessages": [
+    "navigator-service-worker-startMessages": [
         {
             "engines": [
                 "blink",
@@ -3428,7 +3488,7 @@
             "title": "ServiceWorkerContainer.startMessages()"
         }
     ],
-    "serviceworkercontainer": [
+    "serviceworkercontainer-interface": [
         {
             "engines": [
                 "blink",
@@ -3764,7 +3824,7 @@
             "title": "ServiceWorkerGlobalScope: message event"
         }
     ],
-    "service-worker-global-scope-event-handlers": [
+    "dom-serviceworkerglobalscope-onactivate": [
         {
             "engines": [
                 "blink",
@@ -3818,7 +3878,9 @@
                 }
             },
             "title": "ServiceWorkerGlobalScope.onactivate"
-        },
+        }
+    ],
+    "dom-serviceworkerglobalscope-onfetch": [
         {
             "engines": [
                 "blink",
@@ -3872,7 +3934,9 @@
                 }
             },
             "title": "ServiceWorkerGlobalScope.onfetch"
-        },
+        }
+    ],
+    "dom-serviceworkerglobalscope-oninstall": [
         {
             "engines": [
                 "blink",
@@ -3926,60 +3990,6 @@
                 }
             },
             "title": "ServiceWorkerGlobalScope.oninstall"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onmessage",
-            "slug": "API/ServiceWorkerGlobalScope/onmessage",
-            "summary": "The onmessage property of the ServiceWorkerGlobalScope interface is an event handler fired whenever a message event occurs — when incoming messages are received.",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerGlobalScope.onmessage"
         }
     ],
     "service-worker-global-scope-registration": [
@@ -4038,7 +4048,7 @@
             "title": "ServiceWorkerGlobalScope.registration"
         }
     ],
-    "dom-serviceworkerglobalscope-skipwaiting": [
+    "service-worker-global-scope-skipwaiting": [
         {
             "engines": [
                 "blink",
@@ -4150,7 +4160,7 @@
             "title": "ServiceWorkerGlobalScope"
         }
     ],
-    "dom-serviceworkerregistration-active": [
+    "navigator-service-worker-active": [
         {
             "engines": [
                 "blink",
@@ -4206,7 +4216,7 @@
             "title": "ServiceWorkerRegistration.active"
         }
     ],
-    "dom-serviceworkerregistration-installing": [
+    "navigator-service-worker-installing": [
         {
             "engines": [
                 "blink",
@@ -4318,7 +4328,7 @@
             "title": "ServiceWorkerRegistration.onupdatefound"
         }
     ],
-    "dom-serviceworkerregistration-scope": [
+    "service-worker-registration-scope": [
         {
             "engines": [
                 "blink",
@@ -4372,6 +4382,62 @@
                 }
             },
             "title": "ServiceWorkerRegistration.scope"
+        }
+    ],
+    "navigator-service-worker-unregister": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ServiceWorkerRegistration.json",
+            "name": "unregister",
+            "slug": "API/ServiceWorkerRegistration/unregister",
+            "summary": "The unregister() method of the ServiceWorkerRegistration interface unregisters the service worker registration and returns a Promise. The promise will resolve to false if no registration was found, otherwise it resolves to true irrespective of whether unregistration happened or not (it may not unregister if someone else just called ServiceWorkerContainer.register() with the same scope.) The service worker will finish any ongoing operations before it is unregistered.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "27"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerRegistration.unregister()"
         }
     ],
     "service-worker-registration-update": [
@@ -4514,7 +4580,7 @@
             "title": "ServiceWorkerRegistration.waiting"
         }
     ],
-    "serviceworkerregistration": [
+    "serviceworkerregistration-interface": [
         {
             "engines": [
                 "blink",
@@ -4629,7 +4695,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/WindowClient.json",
             "name": "focused",
@@ -4662,10 +4729,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -4739,7 +4806,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/WindowClient.json",
             "name": "visibilityState",
@@ -4772,10 +4840,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -4794,7 +4862,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/WindowClient.json",
             "name": "WindowClient",
@@ -4827,10 +4896,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"

@@ -51,22 +51,12 @@
                                 "name": "dom.animations-api.getAnimations.enabled"
                             }
                         ]
-                    },
-                    {
-                        "alternative_name": "parentElement",
-                        "version_added": "47",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
                     }
                 ],
                 "firefox_android": [
                     {
                         "version_added": "67",
+                        "version_removed": "79",
                         "flags": [
                             {
                                 "type": "preference",
@@ -82,17 +72,6 @@
                             {
                                 "type": "preference",
                                 "name": "dom.animations-api.getAnimations.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "alternative_name": "parentElement",
-                        "version_added": "47",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
                             }
                         ]
                     }
@@ -166,39 +145,18 @@
                                 "name": "dom.animations-api.getAnimations.enabled"
                             }
                         ]
-                    },
-                    {
-                        "version_added": "47",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.getAnimations.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "47",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    }
-                ],
+                "firefox_android": {
+                    "version_added": "63",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.animations-api.getAnimations.enabled"
+                        }
+                    ]
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -268,39 +226,18 @@
                                 "name": "dom.animations-api.getAnimations.enabled"
                             }
                         ]
-                    },
-                    {
-                        "version_added": "47",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.getAnimations.enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "47",
-                        "version_removed": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.animations-api.core.enabled"
-                            }
-                        ]
-                    }
-                ],
+                "firefox_android": {
+                    "version_added": "63",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.animations-api.getAnimations.enabled"
+                        }
+                    ]
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -586,6 +523,117 @@
                 ]
             },
             "title": "::before (:before)"
+        }
+    ],
+    "file-selector-button-pseudo": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "altname": [
+                "webkit"
+            ],
+            "filename": "css/selectors/file-selector-button.json",
+            "name": "file-selector-button",
+            "slug": "CSS/::file-selector-button",
+            "summary": "The ::file-selector-button CSS pseudo-element represents the button of an <input> of type=\"file\".",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "89"
+                    },
+                    {
+                        "version_added": "1",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "89"
+                    },
+                    {
+                        "version_added": "18",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ],
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "82"
+                },
+                "firefox_android": {
+                    "version_added": "82"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "75"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": false
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": false
+                    },
+                    {
+                        "version_added": "3",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": false
+                    },
+                    {
+                        "version_added": "1",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": false
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "89"
+                    },
+                    {
+                        "version_added": "1",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "89"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "::-webkit-file-upload-button"
+                    }
+                ]
+            },
+            "title": "::file-selector-button"
         }
     ],
     "first-letter-pseudo": [

@@ -52,59 +52,6 @@
                 }
             },
             "title": "CSS.escape()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CSS.json",
-            "name": "CSS",
-            "slug": "API/CSS",
-            "summary": "The CSS interface holds useful CSS-related methods. No objects with this interface are implemented: it contains only static methods and is therefore a utilitarian interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "28"
-                },
-                "chrome_android": {
-                    "version_added": "28"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CSS"
         }
     ],
     "cssgroupingrule": [
@@ -161,17 +108,17 @@
             "title": "CSSGroupingRule"
         }
     ],
-    "the-cssmediarule-interface": [
+    "dom-cssimportrule-href": [
         {
             "engines": [
                 "blink",
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/CSSMediaRule.json",
-            "name": "CSSMediaRule",
-            "slug": "API/CSSMediaRule",
-            "summary": "The CSSMediaRule interface represents a single CSS @media rule.",
+            "filename": "api/CSSImportRule.json",
+            "name": "href",
+            "slug": "API/CSSImportRule/href",
+            "summary": "The read-only href property of the CSSImportRule interface returns the URL specified by the @import at-rule.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -183,12 +130,10 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "1",
-                    "notes": "Before Firefox 20, <code>conditionText</code> could not be set."
+                    "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": "4",
-                    "notes": "Before Firefox 20, <code>conditionText</code> could not be set."
+                    "version_added": "4"
                 },
                 "ie": {
                     "version_added": "9"
@@ -200,7 +145,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -215,7 +160,172 @@
                     "version_added": "79"
                 }
             },
-            "title": "CSSMediaRule"
+            "title": "CSSImportRule.href"
+        }
+    ],
+    "dom-cssimportrule-media": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/CSSImportRule.json",
+            "name": "media",
+            "slug": "API/CSSImportRule/media",
+            "summary": "The read-only media property of the CSSImportRule interface returns a MediaList object, containing the value of the media attribute of the associated stylesheet. ",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSImportRule.media"
+        }
+    ],
+    "dom-cssimportrule-stylesheet": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/CSSImportRule.json",
+            "name": "styleSheet",
+            "slug": "API/CSSImportRule/styleSheet",
+            "summary": "The read-only styleSheet property of the CSSImportRule interface returns the CSS Stylesheet specified by the @import at-rule. This will be in the form of a CSSStyleSheet object.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSImportRule.stylesheet"
+        }
+    ],
+    "cssimportrule": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/CSSImportRule.json",
+            "name": "CSSImportRule",
+            "slug": "API/CSSImportRule",
+            "summary": "The CSSImportRule interface represents an @import at-rule.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSImportRule"
         }
     ],
     "dom-cssnamespacerule-namespaceuri": [
@@ -381,6 +491,168 @@
             "title": "CSSNamespaceRule"
         }
     ],
+    "dom-csspagerule-selectortext": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/CSSPageRule.json",
+            "name": "selectorText",
+            "slug": "API/CSSPageRule/selectorText",
+            "summary": "The selectorText property of the CSSPageRule interface gets and sets the selectors associated with the CSSPageRule.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSPageRule.selectorText"
+        }
+    ],
+    "dom-cssstylerule-style": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/CSSPageRule.json",
+            "name": "style",
+            "slug": "API/CSSPageRule/style",
+            "summary": "The style read-only property of the CSSPageRule interface returns a CSSStyleDeclaration object. This represents an object that is a CSS declaration block, and exposes style information and various style-related methods and properties.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "12"
+                },
+                "firefox_android": {
+                    "version_added": "14"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSPageRule.style"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/CSSStyleRule.json",
+            "name": "style",
+            "slug": "API/CSSStyleRule/style",
+            "summary": "The read-only style property is the CSSStyleDeclaration interface for the declaration block of the CSSStyleRule.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSStyleRule.style"
+        }
+    ],
     "the-csspagerule-interface": [
         {
             "engines": [
@@ -500,6 +772,59 @@
                 "webkit"
             ],
             "filename": "api/CSSRule.json",
+            "name": "parentRule",
+            "slug": "API/CSSRule/parentRule",
+            "summary": "The parentRule property of the CSSRule interface returns the containing rule of the current rule if this exists, or otherwise returns null.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSRule.parentRule"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/CSSRule.json",
             "name": "parentStyleSheet",
             "slug": "API/CSSRule/parentStyleSheet",
             "summary": "The parentStyleSheet property of the CSSRule interface returns the StyleSheet object in which the current rule is defined.",
@@ -547,7 +872,7 @@
             "title": "CSSRule.parentStyleSheet"
         }
     ],
-    "css-rules": [
+    "the-cssrule-interface": [
         {
             "engines": [
                 "blink",
@@ -655,6 +980,62 @@
                 }
             },
             "title": "CSSRuleList"
+        }
+    ],
+    "dom-cssstyledeclaration-cssfloat": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/CSSStyleDeclaration.json",
+            "name": "cssFloat",
+            "slug": "API/CSSStyleDeclaration/cssFloat",
+            "summary": "The cssFloat property of the CSSStyleDeclaration interface returns the result of invoking CSSStyleDeclaration.getPropertyValue() with float as an argument.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "version_removed": "17"
+                },
+                "firefox_android": {
+                    "version_added": "4",
+                    "version_removed": "17"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSStyleDeclaration.cssFloat"
         }
     ],
     "dom-cssstyledeclaration-csstext": [
@@ -1205,61 +1586,6 @@
                 }
             },
             "title": "CSSStyleRule.selectorText"
-        }
-    ],
-    "dom-cssstylerule-style": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CSSStyleRule.json",
-            "name": "style",
-            "slug": "API/CSSStyleRule/style",
-            "summary": "The read-only style property is the CSSStyleDeclaration interface for the declaration block of the CSSStyleRule.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CSSStyleRule.style"
         }
     ],
     "the-cssstylerule-interface": [
@@ -2193,7 +2519,7 @@
             "title": "StyleSheet.type"
         }
     ],
-    "stylesheet": [
+    "the-stylesheet-interface": [
         {
             "engines": [
                 "blink",
@@ -2417,6 +2743,59 @@
                 }
             },
             "title": "Document.styleSheets"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_mixins/DocumentOrShadowRoot__ShadowRoot.json",
+            "name": "styleSheets",
+            "slug": "API/ShadowRoot/styleSheets",
+            "summary": "The styleSheets read-only property of the ShadowRoot interface returns a StyleSheetList of CSSStyleSheet objects, for stylesheets explicitly linked into or embedded in a shadow tree.",
+            "support": {
+                "chrome": {
+                    "version_added": "53"
+                },
+                "chrome_android": {
+                    "version_added": "53"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "63"
+                },
+                "firefox_android": {
+                    "version_added": "63"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "40"
+                },
+                "opera_android": {
+                    "version_added": "41"
+                },
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": {
+                    "version_added": "12.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "53"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ShadowRoot.styleSheets"
         }
     ]
 }
