@@ -299,6 +299,27 @@
     }
   },
   "CSSColor()": {
+    "CSSColor(colorspace, channels)": {
+      "args": [
+        "colorspace",
+        "channels"
+      ],
+      "for": [
+        "CSSColor"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "CSSColor(colorspace, channels, alpha)": {
+      "args": [
+        "colorspace",
+        "channels",
+        "alpha"
+      ],
+      "for": [
+        "CSSColor"
+      ],
+      "shortname": "css-typed-om"
+    },
     "CSSColor(colorspace, channels, optional alpha)": {
       "args": [
         "colorspace",
@@ -309,13 +330,44 @@
         "CSSColor"
       ],
       "shortname": "css-typed-om"
-    },
-    "CSSColor(variant)": {
+    }
+  },
+  "CSSDeviceCMYK()": {
+    "CSSDeviceCMYK(c, m, y, k)": {
       "args": [
-        "variant"
+        "c",
+        "m",
+        "y",
+        "k"
       ],
       "for": [
-        "CSSColor"
+        "CSSDeviceCMYK"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "CSSDeviceCMYK(c, m, y, k, alpha)": {
+      "args": [
+        "c",
+        "m",
+        "y",
+        "k",
+        "alpha"
+      ],
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "CSSDeviceCMYK(c, m, y, k, optional alpha)": {
+      "args": [
+        "c",
+        "m",
+        "y",
+        "k",
+        "optional alpha"
+      ],
+      "for": [
+        "CSSDeviceCMYK"
       ],
       "shortname": "css-typed-om"
     }
@@ -334,6 +386,16 @@
       "args": [
         "gray",
         "alpha"
+      ],
+      "for": [
+        "CSSGray"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "CSSGray(l, optional alpha)": {
+      "args": [
+        "l",
+        "optional alpha"
       ],
       "for": [
         "CSSGray"
@@ -5377,6 +5439,31 @@
       ],
       "shortname": "fetch"
     },
+    "constructor(c, m, y, k)": {
+      "args": [
+        "c",
+        "m",
+        "y",
+        "k"
+      ],
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "constructor(c, m, y, k, alpha)": {
+      "args": [
+        "c",
+        "m",
+        "y",
+        "k",
+        "alpha"
+      ],
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "shortname": "css-typed-om"
+    },
     "constructor(callback)": {
       "args": [
         "callback"
@@ -5408,6 +5495,27 @@
         "RTCIceCandidate"
       ],
       "shortname": "webrtc"
+    },
+    "constructor(colorspace, channels)": {
+      "args": [
+        "colorspace",
+        "channels"
+      ],
+      "for": [
+        "CSSColor"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "constructor(colorspace, channels, alpha)": {
+      "args": [
+        "colorspace",
+        "channels",
+        "alpha"
+      ],
+      "for": [
+        "CSSColor"
+      ],
+      "shortname": "css-typed-om"
     },
     "constructor(configuration)": {
       "args": [
@@ -6483,15 +6591,6 @@
       ],
       "for": [
         "CSSVariableReferenceValue"
-      ],
-      "shortname": "css-typed-om"
-    },
-    "constructor(variant)": {
-      "args": [
-        "variant"
-      ],
-      "for": [
-        "CSSColor"
       ],
       "shortname": "css-typed-om"
     },
@@ -16927,6 +17026,15 @@
         "HTMLCanvasElement"
       ],
       "shortname": "html"
+    }
+  },
+  "toDeviceCMYK()": {
+    "toDeviceCMYK()": {
+      "args": [],
+      "for": [
+        "CSSColorValue"
+      ],
+      "shortname": "css-typed-om"
     }
   },
   "toFloat32Array()": {

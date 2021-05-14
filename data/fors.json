@@ -779,6 +779,7 @@
     "CSSColorValue",
     "CSSConditionRule",
     "CSSCounterStyleRule",
+    "CSSDeviceCMYK",
     "CSSFontFaceLoadEvent",
     "CSSFontFaceLoadEventInit",
     "CSSFontFaceRule",
@@ -11380,6 +11381,14 @@
     "by",
     "to"
   ],
+  "<color-space>": [
+    "hsl",
+    "hwb",
+    "lab",
+    "lch",
+    "srgb",
+    "xyz"
+  ],
   "<color>": [
     "aliceblue",
     "antiquewhite",
@@ -13927,22 +13936,40 @@
     "\"padding\""
   ],
   "CSSColor": [
+    "CSSColor(colorspace, channels)",
+    "CSSColor(colorspace, channels, alpha)",
     "CSSColor(colorspace, channels, optional alpha)",
-    "CSSColor(variant)",
     "alpha",
+    "channels",
     "colorspace",
     "constructor",
-    "constructor(variant)"
+    "constructor(colorspace, channels)",
+    "constructor(colorspace, channels, alpha)"
   ],
-  "CSSColor/CSSColor(variant)": [
-    "variant"
+  "CSSColor/CSSColor(colorspace, channels)": [
+    "alpha",
+    "channels",
+    "colorspace"
   ],
-  "CSSColor/constructor(variant)": [
-    "variant"
+  "CSSColor/CSSColor(colorspace, channels, alpha)": [
+    "alpha",
+    "channels",
+    "colorspace"
+  ],
+  "CSSColor/constructor(colorspace, channels)": [
+    "alpha",
+    "channels",
+    "colorspace"
+  ],
+  "CSSColor/constructor(colorspace, channels, alpha)": [
+    "alpha",
+    "channels",
+    "colorspace"
   ],
   "CSSColorValue": [
     "parse(cssText)",
     "toColor(colorspace)",
+    "toDeviceCMYK()",
     "toGray()",
     "toHSL()",
     "toHWB()",
@@ -13971,6 +13998,47 @@
     "suffix",
     "symbols",
     "system"
+  ],
+  "CSSDeviceCMYK": [
+    "CSSDeviceCMYK(c, m, y, k)",
+    "CSSDeviceCMYK(c, m, y, k, alpha)",
+    "CSSDeviceCMYK(c, m, y, k, optional alpha)",
+    "alpha",
+    "c",
+    "constructor",
+    "constructor(c, m, y, k)",
+    "constructor(c, m, y, k, alpha)",
+    "k",
+    "m",
+    "y"
+  ],
+  "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k)": [
+    "alpha",
+    "c",
+    "k",
+    "m",
+    "y"
+  ],
+  "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k, alpha)": [
+    "alpha",
+    "c",
+    "k",
+    "m",
+    "y"
+  ],
+  "CSSDeviceCMYK/constructor(c, m, y, k)": [
+    "alpha",
+    "c",
+    "k",
+    "m",
+    "y"
+  ],
+  "CSSDeviceCMYK/constructor(c, m, y, k, alpha)": [
+    "alpha",
+    "c",
+    "k",
+    "m",
+    "y"
   ],
   "CSSFontFaceLoadEvent": [
     "fontfaces"
@@ -14009,11 +14077,13 @@
   "CSSGray": [
     "CSSGray(gray)",
     "CSSGray(gray, alpha)",
+    "CSSGray(l, optional alpha)",
     "alpha",
     "constructor",
     "constructor(gray)",
     "constructor(gray, alpha)",
-    "gray"
+    "gray",
+    "l"
   ],
   "CSSGray/CSSGray(gray)": [
     "alpha",
@@ -29067,6 +29137,10 @@
   "color-adjust": [
     "economy",
     "exact"
+  ],
+  "color-contrast()": [
+    "aa",
+    "aa-large"
   ],
   "color-interpolation-filters": [
     "auto",
