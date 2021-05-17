@@ -1763,31 +1763,6 @@
     }
   },
   "Highlight()": {
-    "Highlight()": {
-      "args": [],
-      "for": [
-        "Highlight"
-      ],
-      "shortname": "css-highlight-api"
-    },
-    "Highlight(...initialRanges)": {
-      "args": [
-        "...initialRanges"
-      ],
-      "for": [
-        "Highlight"
-      ],
-      "shortname": "css-highlight-api"
-    },
-    "Highlight(AbstractRange... initialRanges)": {
-      "args": [
-        "AbstractRange... initialRanges"
-      ],
-      "for": [
-        "Highlight"
-      ],
-      "shortname": "css-highlight-api"
-    },
     "Highlight(CSSOMString name, AbstractRange... initialRanges)": {
       "args": [
         "CSSOMString name",
@@ -3621,6 +3596,7 @@
         "Highlight value"
       ],
       "for": [
+        "HighlightRegistry",
         "HighlightsRegister"
       ],
       "shortname": "css-highlight-api"
@@ -3685,6 +3661,7 @@
         "value"
       ],
       "for": [
+        "HighlightRegistry",
         "HighlightsRegister",
         "IDBObjectStore"
       ],
@@ -5205,7 +5182,6 @@
         "FormData",
         "FragmentResult",
         "Headers",
-        "Highlight",
         "JsonLdProcessor",
         "MediaStream",
         "MediaStreamTrackEvent",
@@ -5247,7 +5223,7 @@
         "XRRigidTransform",
         "XSLTProcessor"
       ],
-      "shortname": "css-highlight-api"
+      "shortname": "css-layout-api"
     },
     "constructor(...args)": {
       "args": [
@@ -5260,15 +5236,6 @@
         "CSSMathSum"
       ],
       "shortname": "css-typed-om"
-    },
-    "constructor(...initialRanges)": {
-      "args": [
-        "...initialRanges"
-      ],
-      "for": [
-        "Highlight"
-      ],
-      "shortname": "css-highlight-api"
     },
     "constructor(alternate, endpointNumber, direction)": {
       "args": [
@@ -8164,6 +8131,15 @@
       ],
       "shortname": "service-workers"
     },
+    "delete(flowName)": {
+      "args": [
+        "flowName"
+      ],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
+    },
     "delete(font)": {
       "args": [
         "font"
@@ -8327,7 +8303,6 @@
       "for": [
         "CSSGroupingRule",
         "CSSNestingRule",
-        "CSSStyleRule",
         "CSSStyleSheet"
       ],
       "shortname": "css-nesting"
@@ -9557,6 +9532,15 @@
         "NamedFlowMap"
       ],
       "shortname": "credential-management"
+    },
+    "get(flowName)": {
+      "args": [
+        "flowName"
+      ],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
     },
     "get(id)": {
       "args": [
@@ -11298,6 +11282,15 @@
       ],
       "shortname": "service-workers"
     },
+    "has(flowName)": {
+      "args": [
+        "flowName"
+      ],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
+    },
     "has(name)": {
       "args": [
         "name"
@@ -11808,7 +11801,6 @@
       "for": [
         "CSSGroupingRule",
         "CSSNestingRule",
-        "CSSStyleRule",
         "CSSStyleSheet"
       ],
       "shortname": "css-nesting"
@@ -11821,7 +11813,6 @@
       "for": [
         "CSSGroupingRule",
         "CSSNestingRule",
-        "CSSStyleRule",
         "CSSStyleSheet"
       ],
       "shortname": "css-nesting"
@@ -15380,6 +15371,16 @@
         "CSSFontFeatureValuesMap"
       ],
       "shortname": "css-fonts"
+    },
+    "set(flowName, flowValue)": {
+      "args": [
+        "flowName",
+        "flowValue"
+      ],
+      "for": [
+        "NamedFlowMap"
+      ],
+      "shortname": "css-regions"
     },
     "set(name, blobValue)": {
       "args": [

@@ -98,7 +98,6 @@
     "-webkit-flex-grow",
     "-webkit-flex-shrink",
     "-webkit-flex-wrap",
-    "-webkit-image-set()",
     "-webkit-justify-content",
     "-webkit-line-clamp",
     "-webkit-linear-gradient()",
@@ -169,7 +168,6 @@
     "::first-letter",
     "::first-line",
     "::grammar-error",
-    "::highlight(<custom-highlight-name>)",
     "::highlight(<highlight-name>)",
     "::marker",
     "::nth-fragment()",
@@ -320,12 +318,12 @@
     "<colon-token>",
     "<color-adjuster>",
     "<color-font-technology>",
-    "<color-space>",
     "<color-stop-angle>",
     "<color-stop-length>",
     "<color-stop-list>",
     "<color-stop>",
     "<color>",
+    "<colorspace>",
     "<combinator>",
     "<comma-token>",
     "<common-lig-values>",
@@ -345,7 +343,6 @@
     "<counter>",
     "<cubic-bezier-easing-function>",
     "<custom-arg>",
-    "<custom-highlight-name>",
     "<custom-ident>",
     "<custom-property-name>",
     "<custom-selector>",
@@ -510,7 +507,6 @@
     "<relative-size>",
     "<repeat-style>",
     "<resolution>",
-    "<reversed-counter-name>",
     "<right>",
     "<rounding-strategy>",
     "<row-height>",
@@ -1089,6 +1085,7 @@
     "FontFaceSetLoadStatus",
     "FontFaceSource",
     "FontMetrics",
+    "ForEachCallback",
     "FormData",
     "FormDataEntryValue",
     "FormDataEvent",
@@ -2554,7 +2551,7 @@
     "additional-name",
     "additionaldata",
     "additive",
-    "additive color space",
+    "additive colorspace",
     "additive environment blending",
     "additive light",
     "additive tuple",
@@ -3784,7 +3781,6 @@
     "collection",
     "color",
     "color interpolation hint",
-    "color scheme",
     "color schemes",
     "color space",
     "color state (type=color)",
@@ -4446,7 +4442,6 @@
     "custom element reactions stack",
     "custom element state",
     "custom highlight",
-    "custom highlight name",
     "custom highlight pseudo-element",
     "custom media query",
     "custom property",
@@ -4463,7 +4458,6 @@
     "cyclic percentage size",
     "cylindrical polar color",
     "d",
-    "dark color scheme",
     "darkblue",
     "darkcyan",
     "darkgoldenrod",
@@ -5687,7 +5681,6 @@
     "gainoptions",
     "gainsboro",
     "gamut",
-    "gamut-map",
     "gap",
     "gap interoperability requirements",
     "garbage-collect the connection",
@@ -6857,7 +6850,6 @@
     "li",
     "license",
     "lifecycle callbacks",
-    "light color scheme",
     "light source",
     "light tree",
     "lightblue",
@@ -8428,7 +8420,6 @@
     "preceding element",
     "predicate",
     "preferred aspect ratio",
-    "preferred color scheme",
     "preferred css style sheet set name",
     "preferred height",
     "preferred line height",
@@ -11380,14 +11371,6 @@
     "by",
     "to"
   ],
-  "<color-space>": [
-    "hsl",
-    "hwb",
-    "lab",
-    "lch",
-    "srgb",
-    "xyz"
-  ],
   "<color>": [
     "aliceblue",
     "antiquewhite",
@@ -11909,6 +11892,7 @@
     "true"
   ],
   "@font-face": [
+    "advance-override",
     "ascent-override",
     "descent-override",
     "font-display",
@@ -11922,7 +11906,6 @@
     "font-variation-settings",
     "font-weight",
     "line-gap-override",
-    "size-adjust",
     "src",
     "subscript-position-override",
     "subscript-size-override",
@@ -13801,7 +13784,6 @@
   "CSS counter": [
     "creator",
     "name",
-    "reversed",
     "value"
   ],
   "CSS declaration": [
@@ -14468,7 +14450,9 @@
   ],
   "CSSNestingRule": [
     "cssRules",
+    "deleteRule",
     "deleteRule(index)",
+    "insertRule",
     "insertRule(rule)",
     "insertRule(rule, index)",
     "selectorText",
@@ -14871,24 +14855,9 @@
     "value"
   ],
   "CSSStyleRule": [
-    "cssRules",
-    "deleteRule(index)",
-    "insertRule(rule)",
-    "insertRule(rule, index)",
     "selectorText",
     "style",
     "styleMap"
-  ],
-  "CSSStyleRule/deleteRule(index)": [
-    "index"
-  ],
-  "CSSStyleRule/insertRule(rule)": [
-    "index",
-    "rule"
-  ],
-  "CSSStyleRule/insertRule(rule, index)": [
-    "index",
-    "rule"
   ],
   "CSSStyleSheet": [
     "addRule()",
@@ -18630,6 +18599,11 @@
     "height",
     "width"
   ],
+  "ForEachCallback": [
+    "font",
+    "index",
+    "self"
+  ],
   "FormData": [
     "FormData()",
     "FormData(form)",
@@ -19853,24 +19827,13 @@
     "value"
   ],
   "Highlight": [
-    "Highlight()",
-    "Highlight(...initialRanges)",
-    "Highlight(AbstractRange... initialRanges)",
     "Highlight(CSSOMString name, AbstractRange... initialRanges)",
     "Highlight(name)",
     "Highlight(name, ...initialRanges)",
-    "constructor()",
-    "constructor(...initialRanges)",
     "constructor(name)",
     "constructor(name, ...initialRanges)",
     "name",
     "priority"
-  ],
-  "Highlight/Highlight()": [
-    "initialRanges"
-  ],
-  "Highlight/Highlight(...initialRanges)": [
-    "initialRanges"
   ],
   "Highlight/Highlight(name)": [
     "initialRanges",
@@ -19880,12 +19843,6 @@
     "initialRanges",
     "name"
   ],
-  "Highlight/constructor()": [
-    "initialRanges"
-  ],
-  "Highlight/constructor(...initialRanges)": [
-    "initialRanges"
-  ],
   "Highlight/constructor(name)": [
     "initialRanges",
     "name"
@@ -19893,6 +19850,13 @@
   "Highlight/constructor(name, ...initialRanges)": [
     "initialRanges",
     "name"
+  ],
+  "HighlightRegistry": [
+    "add(Highlight value)",
+    "add(value)"
+  ],
+  "HighlightRegistry/add(value)": [
+    "value"
   ],
   "HighlightsRegister": [
     "add(Highlight value)",
@@ -21471,21 +21435,42 @@
     "node"
   ],
   "NamedFlowMap": [
+    "delete",
     "delete()",
+    "delete(flowName)",
+    "get",
     "get()",
+    "get(flowName)",
+    "has",
     "has()",
-    "set()"
+    "has(flowName)",
+    "set",
+    "set()",
+    "set(flowName, flowValue)"
   ],
   "NamedFlowMap/delete()": [
+    "flowName"
+  ],
+  "NamedFlowMap/delete(flowName)": [
     "flowName"
   ],
   "NamedFlowMap/get()": [
     "flowName"
   ],
+  "NamedFlowMap/get(flowName)": [
+    "flowName"
+  ],
   "NamedFlowMap/has()": [
     "flowName"
   ],
+  "NamedFlowMap/has(flowName)": [
+    "flowName"
+  ],
   "NamedFlowMap/set()": [
+    "flowName",
+    "flowValue"
+  ],
+  "NamedFlowMap/set(flowName, flowValue)": [
     "flowName",
     "flowValue"
   ],
@@ -28508,10 +28493,6 @@
     "type",
     "usemap"
   ],
-  "ascent-override!!descriptor": [
-    "<percentage>",
-    "normal"
-  ],
   "aspect-ratio": [
     "<ratio>",
     "auto",
@@ -29105,10 +29086,6 @@
     "economy",
     "exact"
   ],
-  "color-contrast()": [
-    "aa",
-    "aa-large"
-  ],
   "color-interpolation-filters": [
     "auto",
     "linearrgb",
@@ -29121,7 +29098,6 @@
     "xlink:href"
   ],
   "color-scheme": [
-    "<custom-ident>",
     "dark",
     "light",
     "normal"
@@ -29440,7 +29416,6 @@
   ],
   "counter-reset": [
     "<counter-name> <integer>?",
-    "<reversed-counter-name> <integer>?",
     "list-item",
     "none"
   ],
@@ -29601,10 +29576,6 @@
   "del": [
     "cite",
     "datetime"
-  ],
-  "descent-override!!descriptor": [
-    "<percentage>",
-    "normal"
   ],
   "destination": [
     "translate"
@@ -31059,10 +31030,6 @@
   "line-clamp": [
     "<integer>",
     "none"
-  ],
-  "line-gap-override!!descriptor": [
-    "<percentage>",
-    "normal"
   ],
   "line-grid": [
     "create",
@@ -32644,29 +32611,9 @@
     "title",
     "type"
   ],
-  "subscript-position-override!!descriptor": [
-    "<percentage>",
-    "auto",
-    "from-font"
-  ],
-  "subscript-size-override!!descriptor": [
-    "<percentage>",
-    "auto",
-    "from-font"
-  ],
   "sum value": [
     "unit map",
     "value"
-  ],
-  "superscript-position-override!!descriptor": [
-    "<percentage>",
-    "auto",
-    "from-font"
-  ],
-  "superscript-size-override!!descriptor": [
-    "<percentage>",
-    "auto",
-    "from-font"
   ],
   "supported open() feature name": [
     "height",
