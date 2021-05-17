@@ -98,6 +98,7 @@
     "-webkit-flex-grow",
     "-webkit-flex-shrink",
     "-webkit-flex-wrap",
+    "-webkit-image-set()",
     "-webkit-justify-content",
     "-webkit-line-clamp",
     "-webkit-linear-gradient()",
@@ -168,6 +169,7 @@
     "::first-letter",
     "::first-line",
     "::grammar-error",
+    "::highlight(<custom-highlight-name>)",
     "::highlight(<highlight-name>)",
     "::marker",
     "::nth-fragment()",
@@ -184,6 +186,7 @@
     ":autofill",
     ":before",
     ":blank",
+    ":buffering",
     ":checked",
     ":current",
     ":current()",
@@ -224,6 +227,7 @@
     ":link",
     ":local-link",
     ":matches()",
+    ":muted",
     ":not()",
     ":nth-child()",
     ":nth-col()",
@@ -247,6 +251,8 @@
     ":root",
     ":scope",
     ":scope element",
+    ":seeking",
+    ":stalled",
     ":start-of-page",
     ":target",
     ":target-within",
@@ -254,6 +260,7 @@
     ":user-valid",
     ":valid",
     ":visited",
+    ":volume-locked",
     ":where()",
     ":xr-overlay",
     "<(-token>",
@@ -338,6 +345,7 @@
     "<counter>",
     "<cubic-bezier-easing-function>",
     "<custom-arg>",
+    "<custom-highlight-name>",
     "<custom-ident>",
     "<custom-property-name>",
     "<custom-selector>",
@@ -502,6 +510,7 @@
     "<relative-size>",
     "<repeat-style>",
     "<resolution>",
+    "<reversed-counter-name>",
     "<right>",
     "<rounding-strategy>",
     "<row-height>",
@@ -4437,6 +4446,7 @@
     "custom element reactions stack",
     "custom element state",
     "custom highlight",
+    "custom highlight name",
     "custom highlight pseudo-element",
     "custom media query",
     "custom property",
@@ -13791,6 +13801,7 @@
   "CSS counter": [
     "creator",
     "name",
+    "reversed",
     "value"
   ],
   "CSS declaration": [
@@ -14457,9 +14468,7 @@
   ],
   "CSSNestingRule": [
     "cssRules",
-    "deleteRule",
     "deleteRule(index)",
-    "insertRule",
     "insertRule(rule)",
     "insertRule(rule, index)",
     "selectorText",
@@ -14862,9 +14871,24 @@
     "value"
   ],
   "CSSStyleRule": [
+    "cssRules",
+    "deleteRule(index)",
+    "insertRule(rule)",
+    "insertRule(rule, index)",
     "selectorText",
     "style",
     "styleMap"
+  ],
+  "CSSStyleRule/deleteRule(index)": [
+    "index"
+  ],
+  "CSSStyleRule/insertRule(rule)": [
+    "index",
+    "rule"
+  ],
+  "CSSStyleRule/insertRule(rule, index)": [
+    "index",
+    "rule"
   ],
   "CSSStyleSheet": [
     "addRule()",
@@ -19829,13 +19853,24 @@
     "value"
   ],
   "Highlight": [
+    "Highlight()",
+    "Highlight(...initialRanges)",
+    "Highlight(AbstractRange... initialRanges)",
     "Highlight(CSSOMString name, AbstractRange... initialRanges)",
     "Highlight(name)",
     "Highlight(name, ...initialRanges)",
+    "constructor()",
+    "constructor(...initialRanges)",
     "constructor(name)",
     "constructor(name, ...initialRanges)",
     "name",
     "priority"
+  ],
+  "Highlight/Highlight()": [
+    "initialRanges"
+  ],
+  "Highlight/Highlight(...initialRanges)": [
+    "initialRanges"
   ],
   "Highlight/Highlight(name)": [
     "initialRanges",
@@ -19845,6 +19880,12 @@
     "initialRanges",
     "name"
   ],
+  "Highlight/constructor()": [
+    "initialRanges"
+  ],
+  "Highlight/constructor(...initialRanges)": [
+    "initialRanges"
+  ],
   "Highlight/constructor(name)": [
     "initialRanges",
     "name"
@@ -19852,13 +19893,6 @@
   "Highlight/constructor(name, ...initialRanges)": [
     "initialRanges",
     "name"
-  ],
-  "HighlightRegistry": [
-    "add(Highlight value)",
-    "add(value)"
-  ],
-  "HighlightRegistry/add(value)": [
-    "value"
   ],
   "HighlightsRegister": [
     "add(Highlight value)",
@@ -21437,42 +21471,21 @@
     "node"
   ],
   "NamedFlowMap": [
-    "delete",
     "delete()",
-    "delete(flowName)",
-    "get",
     "get()",
-    "get(flowName)",
-    "has",
     "has()",
-    "has(flowName)",
-    "set",
-    "set()",
-    "set(flowName, flowValue)"
+    "set()"
   ],
   "NamedFlowMap/delete()": [
-    "flowName"
-  ],
-  "NamedFlowMap/delete(flowName)": [
     "flowName"
   ],
   "NamedFlowMap/get()": [
     "flowName"
   ],
-  "NamedFlowMap/get(flowName)": [
-    "flowName"
-  ],
   "NamedFlowMap/has()": [
     "flowName"
   ],
-  "NamedFlowMap/has(flowName)": [
-    "flowName"
-  ],
   "NamedFlowMap/set()": [
-    "flowName",
-    "flowValue"
-  ],
-  "NamedFlowMap/set(flowName, flowValue)": [
     "flowName",
     "flowValue"
   ],
@@ -29341,28 +29354,28 @@
   ],
   "contain-intrinsic-block-size": [
     "<length>",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "contain-intrinsic-height": [
     "<length>",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "contain-intrinsic-inline-size": [
     "<length>",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "contain-intrinsic-size": [
     "<length>",
     "<length>{2}",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "contain-intrinsic-width": [
     "<length>",
-    "auto <length>",
+    "auto && <length>",
     "none"
   ],
   "content": [
@@ -29427,6 +29440,7 @@
   ],
   "counter-reset": [
     "<counter-name> <integer>?",
+    "<reversed-counter-name> <integer>?",
     "list-item",
     "none"
   ],
