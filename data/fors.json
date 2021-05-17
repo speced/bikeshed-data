@@ -313,12 +313,12 @@
     "<colon-token>",
     "<color-adjuster>",
     "<color-font-technology>",
+    "<color-space>",
     "<color-stop-angle>",
     "<color-stop-length>",
     "<color-stop-list>",
     "<color-stop>",
     "<color>",
-    "<colorspace>",
     "<combinator>",
     "<comma-token>",
     "<common-lig-values>",
@@ -1080,7 +1080,6 @@
     "FontFaceSetLoadStatus",
     "FontFaceSource",
     "FontMetrics",
-    "ForEachCallback",
     "FormData",
     "FormDataEntryValue",
     "FormDataEvent",
@@ -2546,7 +2545,7 @@
     "additional-name",
     "additionaldata",
     "additive",
-    "additive colorspace",
+    "additive color space",
     "additive environment blending",
     "additive light",
     "additive tuple",
@@ -3776,6 +3775,7 @@
     "collection",
     "color",
     "color interpolation hint",
+    "color scheme",
     "color schemes",
     "color space",
     "color state (type=color)",
@@ -4453,6 +4453,7 @@
     "cyclic percentage size",
     "cylindrical polar color",
     "d",
+    "dark color scheme",
     "darkblue",
     "darkcyan",
     "darkgoldenrod",
@@ -5676,6 +5677,7 @@
     "gainoptions",
     "gainsboro",
     "gamut",
+    "gamut-map",
     "gap",
     "gap interoperability requirements",
     "garbage-collect the connection",
@@ -6845,6 +6847,7 @@
     "li",
     "license",
     "lifecycle callbacks",
+    "light color scheme",
     "light source",
     "light tree",
     "lightblue",
@@ -8415,6 +8418,7 @@
     "preceding element",
     "predicate",
     "preferred aspect ratio",
+    "preferred color scheme",
     "preferred css style sheet set name",
     "preferred height",
     "preferred line height",
@@ -11366,6 +11370,14 @@
     "by",
     "to"
   ],
+  "<color-space>": [
+    "hsl",
+    "hwb",
+    "lab",
+    "lch",
+    "srgb",
+    "xyz"
+  ],
   "<color>": [
     "aliceblue",
     "antiquewhite",
@@ -11887,7 +11899,6 @@
     "true"
   ],
   "@font-face": [
-    "advance-override",
     "ascent-override",
     "descent-override",
     "font-display",
@@ -11901,6 +11912,7 @@
     "font-variation-settings",
     "font-weight",
     "line-gap-override",
+    "size-adjust",
     "src",
     "subscript-position-override",
     "subscript-size-override",
@@ -18593,11 +18605,6 @@
     "fonts",
     "height",
     "width"
-  ],
-  "ForEachCallback": [
-    "font",
-    "index",
-    "self"
   ],
   "FormData": [
     "FormData()",
@@ -28488,6 +28495,10 @@
     "type",
     "usemap"
   ],
+  "ascent-override!!descriptor": [
+    "<percentage>",
+    "normal"
+  ],
   "aspect-ratio": [
     "<ratio>",
     "auto",
@@ -29081,6 +29092,10 @@
     "economy",
     "exact"
   ],
+  "color-contrast()": [
+    "aa",
+    "aa-large"
+  ],
   "color-interpolation-filters": [
     "auto",
     "linearrgb",
@@ -29093,6 +29108,7 @@
     "xlink:href"
   ],
   "color-scheme": [
+    "<custom-ident>",
     "dark",
     "light",
     "normal"
@@ -29571,6 +29587,10 @@
   "del": [
     "cite",
     "datetime"
+  ],
+  "descent-override!!descriptor": [
+    "<percentage>",
+    "normal"
   ],
   "destination": [
     "translate"
@@ -31025,6 +31045,10 @@
   "line-clamp": [
     "<integer>",
     "none"
+  ],
+  "line-gap-override!!descriptor": [
+    "<percentage>",
+    "normal"
   ],
   "line-grid": [
     "create",
@@ -32606,9 +32630,29 @@
     "title",
     "type"
   ],
+  "subscript-position-override!!descriptor": [
+    "<percentage>",
+    "auto",
+    "from-font"
+  ],
+  "subscript-size-override!!descriptor": [
+    "<percentage>",
+    "auto",
+    "from-font"
+  ],
   "sum value": [
     "unit map",
     "value"
+  ],
+  "superscript-position-override!!descriptor": [
+    "<percentage>",
+    "auto",
+    "from-font"
+  ],
+  "superscript-size-override!!descriptor": [
+    "<percentage>",
+    "auto",
+    "from-font"
   ],
   "supported open() feature name": [
     "height",
