@@ -1744,6 +1744,27 @@
       "shortname": "webaudio"
     }
   },
+  "Global()": {
+    "Global(descriptor)": {
+      "args": [
+        "descriptor"
+      ],
+      "for": [
+        "Global"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "Global(descriptor, v)": {
+      "args": [
+        "descriptor",
+        "v"
+      ],
+      "for": [
+        "Global"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
   "Headers()": {
     "Headers()": {
       "args": [],
@@ -1894,6 +1915,27 @@
         "InputEvent"
       ],
       "shortname": "ui-events"
+    }
+  },
+  "Instance()": {
+    "Instance(module)": {
+      "args": [
+        "module"
+      ],
+      "for": [
+        "Instance"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "Instance(module, importObject)": {
+      "args": [
+        "module",
+        "importObject"
+      ],
+      "for": [
+        "Instance"
+      ],
+      "shortname": "wasm-js-api"
     }
   },
   "IntersectionObserver()": {
@@ -2106,6 +2148,28 @@
         "MediaStreamTrackAudioSourceNode"
       ],
       "shortname": "webaudio"
+    }
+  },
+  "Memory()": {
+    "Memory(descriptor)": {
+      "args": [
+        "descriptor"
+      ],
+      "for": [
+        "Memory"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
+  "Module()": {
+    "Module(bytes)": {
+      "args": [
+        "bytes"
+      ],
+      "for": [
+        "Module"
+      ],
+      "shortname": "wasm-js-api"
     }
   },
   "MouseEvent()": {
@@ -2707,6 +2771,27 @@
         "SyncEvent"
       ],
       "shortname": "web-background-sync"
+    }
+  },
+  "Table()": {
+    "Table(descriptor)": {
+      "args": [
+        "descriptor"
+      ],
+      "for": [
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "Table(descriptor, value)": {
+      "args": [
+        "descriptor",
+        "value"
+      ],
+      "for": [
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
     }
   },
   "Text()": {
@@ -5033,6 +5118,17 @@
       "shortname": "dom"
     }
   },
+  "compile()": {
+    "compile(bytes)": {
+      "args": [
+        "bytes"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
   "complete()": {
     "complete()": {
       "args": [],
@@ -5408,6 +5504,15 @@
       ],
       "shortname": "fetch"
     },
+    "constructor(bytes)": {
+      "args": [
+        "bytes"
+      ],
+      "for": [
+        "Module"
+      ],
+      "shortname": "wasm-js-api"
+    },
     "constructor(c, m, y, k)": {
       "args": [
         "c",
@@ -5628,6 +5733,37 @@
         "RTCSessionDescription"
       ],
       "shortname": "webrtc"
+    },
+    "constructor(descriptor)": {
+      "args": [
+        "descriptor"
+      ],
+      "for": [
+        "Global",
+        "Memory",
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "constructor(descriptor, v)": {
+      "args": [
+        "descriptor",
+        "v"
+      ],
+      "for": [
+        "Global"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "constructor(descriptor, value)": {
+      "args": [
+        "descriptor",
+        "value"
+      ],
+      "for": [
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
     },
     "constructor(device, configurationValue)": {
       "args": [
@@ -5983,6 +6119,25 @@
         "CSSMathClamp"
       ],
       "shortname": "css-typed-om"
+    },
+    "constructor(module)": {
+      "args": [
+        "module"
+      ],
+      "for": [
+        "Instance"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "constructor(module, importObject)": {
+      "args": [
+        "module",
+        "importObject"
+      ],
+      "for": [
+        "Instance"
+      ],
+      "shortname": "wasm-js-api"
     },
     "constructor(name)": {
       "args": [
@@ -8028,6 +8183,18 @@
       "shortname": "webaudio"
     }
   },
+  "customSections()": {
+    "customSections(moduleObject, sectionName)": {
+      "args": [
+        "moduleObject",
+        "sectionName"
+      ],
+      "for": [
+        "Module"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
   "databases()": {
     "databases()": {
       "args": [],
@@ -9114,6 +9281,17 @@
       "shortname": "webcryptoapi"
     }
   },
+  "exports()": {
+    "exports(moduleObject)": {
+      "args": [
+        "moduleObject"
+      ],
+      "for": [
+        "Module"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
   "extractContents()": {
     "extractContents()": {
       "args": [],
@@ -9579,6 +9757,15 @@
         "Clients"
       ],
       "shortname": "service-workers"
+    },
+    "get(index)": {
+      "args": [
+        "index"
+      ],
+      "for": [
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
     },
     "get(jointName)": {
       "args": [
@@ -11282,6 +11469,28 @@
       "shortname": "console"
     }
   },
+  "grow()": {
+    "grow(delta)": {
+      "args": [
+        "delta"
+      ],
+      "for": [
+        "Memory",
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "grow(delta, value)": {
+      "args": [
+        "delta",
+        "value"
+      ],
+      "for": [
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
   "handleEvent()": {
     "handleEvent(event)": {
       "args": [
@@ -11489,6 +11698,17 @@
         "XSLTProcessor"
       ],
       "shortname": "dom"
+    }
+  },
+  "imports()": {
+    "imports(moduleObject)": {
+      "args": [
+        "moduleObject"
+      ],
+      "for": [
+        "Module"
+      ],
+      "shortname": "wasm-js-api"
     }
   },
   "in()": {
@@ -11837,6 +12057,46 @@
         "CSSStyleSheet"
       ],
       "shortname": "css-nesting"
+    }
+  },
+  "instantiate()": {
+    "instantiate(bytes)": {
+      "args": [
+        "bytes"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "instantiate(bytes, importObject)": {
+      "args": [
+        "bytes",
+        "importObject"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "instantiate(moduleObject)": {
+      "args": [
+        "moduleObject"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "instantiate(moduleObject, importObject)": {
+      "args": [
+        "moduleObject",
+        "importObject"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
     }
   },
   "intersectsNode()": {
@@ -15393,6 +15653,25 @@
       ],
       "shortname": "css-fonts"
     },
+    "set(index)": {
+      "args": [
+        "index"
+      ],
+      "for": [
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "set(index, value)": {
+      "args": [
+        "index",
+        "value"
+      ],
+      "for": [
+        "Table"
+      ],
+      "shortname": "wasm-js-api"
+    },
     "set(name, blobValue)": {
       "args": [
         "name",
@@ -17593,6 +17872,26 @@
         "IDBKeyRange"
       ],
       "shortname": "indexeddb"
+    }
+  },
+  "validate()": {
+    "validate(bytes)": {
+      "args": [
+        "bytes"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
+  "valueOf()": {
+    "valueOf()": {
+      "args": [],
+      "for": [
+        "Global"
+      ],
+      "shortname": "wasm-js-api"
     }
   },
   "vb()": {
