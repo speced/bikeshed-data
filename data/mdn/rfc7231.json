@@ -341,7 +341,7 @@
             "filename": "http/headers/content-type.json",
             "name": "Content-Type",
             "slug": "HTTP/Headers/Content-Type",
-            "summary": "The Content-Type entity header is used to indicate the media type of the resource.",
+            "summary": "The Content-Type representation header is used to indicate the original media type of the resource (prior to any content encoding applied for sending).",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -1104,7 +1104,7 @@
             "filename": "http/methods.json",
             "name": "HEAD",
             "slug": "HTTP/Methods/HEAD",
-            "summary": "The HTTP HEAD method requests the headers that would be returned if the HEAD request's URL was instead requested with the HTTP GET method.",
+            "summary": "The HTTP HEAD method requests the headers that would be returned if the HEAD request's URL was instead requested with the HTTP GET method. For example, if a URL might produce a large download, a HEAD request could read its Content-Length header to check the filesize without actually downloading the file.",
             "support": {
                 "chrome": {
                     "version_added": true
