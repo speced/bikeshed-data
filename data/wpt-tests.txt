@@ -1,4 +1,4 @@
-sha: 8b2cb90984a76e3348f30826bb2a47714bd2fb41
+sha: 08515771db32f5e538d1fa0e42195c2be7e62620
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest css/CSS2/floats-clear/adjoining-float-new-fc-crash.html
 crashtest css/CSS2/floats-clear/clearance-containing-fragmented-float-crash.html
@@ -31,6 +31,7 @@ crashtest css/css-flexbox/padding-overflow-crash.html
 crashtest css/css-flexbox/position-relative-with-scrollable-with-abspos-crash.html
 crashtest css/css-flexbox/remove-out-of-flow-child-crash.html
 crashtest css/css-flexbox/zero-content-size-with-scrollbar-crash.html
+crashtest css/css-fonts/infinite-size-crash.html
 crashtest css/css-grid/abspos/positioned-grid-items-crash.html
 crashtest css/css-grid/grid-definition/grid-add-item-with-positioned-items-crash.html
 crashtest css/css-grid/grid-definition/grid-add-positioned-block-item-after-inline-item-crash.html
@@ -107,6 +108,7 @@ crashtest css/css-text/white-space/nowrap-wbr-and-space-crash.html
 crashtest css/css-text/white-space/pre-line-br-with-whitespace-child-crash.html
 crashtest css/css-text/white-space/pre-with-whitespace-crash.html
 crashtest css/css-text/whitespace-followed-by-cham-symbol-crash.html
+crashtest css/css-typed-om/stylevalue-serialization/crashtests/cssTransform-Internal-value.html
 crashtest css/css-ui/outline-with-001-crash.html
 crashtest css/css-writing-modes/bidi-inline-fragment-crash.html
 crashtest css/cssom-view/client-props-root-display-none-crash.html
@@ -3314,12 +3316,14 @@ print-reftest html/rendering/widgets/input-date-baseline-print.html
 print-reftest html/semantics/embedded-content/the-img-element/image-srcdoc-relative-uri-print.html
 print-reftest infrastructure/reftest/reftest_match-print.html
 print-reftest infrastructure/reftest/reftest_match_fail-print.html
+print-reftest infrastructure/reftest/reftest_mismatch-num-pages-print.html
 print-reftest infrastructure/reftest/reftest_mismatch-print.html
 print-reftest infrastructure/reftest/reftest_mismatch_fail-print.html
 print-reftest infrastructure/reftest/reftest_mismatch_page_margins-print.html
 print-reftest selection/selection-shadow-dom-crash-print.html
 print-reftest svg/layout/svg-use-symbol-width-print.html
 print-reftest svg/painting/reftests/mask-print.svg
+print-reftest svg/print/svg-use-page-break-crash-print.html
 reftest FileAPI/url/url_xmlhttprequest_img.html
 reftest acid/acid2/reftest.html
 reftest acid/acid3/test.html
@@ -25493,6 +25497,7 @@ testharness css/css-scroll-snap/scroll-snap-type-change.html
 testharness css/css-scroll-snap/scroll-snap-type-on-root-element.html
 testharness css/css-scroll-snap/scroll-snap-type.html
 testharness css/css-scroll-snap/scrollTo-scrollBy-snaps.html
+testharness css/css-scroll-snap/selection-target.html
 testharness css/css-scroll-snap/snap-after-relayout/adding-only-snap-area.html
 testharness css/css-scroll-snap/snap-after-relayout/adding-snap-area-while-snapped.html
 testharness css/css-scroll-snap/snap-after-relayout/changing-scroll-snap-align.html
@@ -28523,6 +28528,7 @@ testharness eventsource/dedicated-worker/eventsource-url.htm
 testharness eventsource/event-data.html
 testharness eventsource/eventsource-close.htm
 testharness eventsource/eventsource-constructor-document-domain.htm
+testharness eventsource/eventsource-constructor-empty-url.html
 testharness eventsource/eventsource-constructor-non-same-origin.htm
 testharness eventsource/eventsource-constructor-stringify.htm
 testharness eventsource/eventsource-constructor-url-bogus.any.js
@@ -33230,6 +33236,7 @@ testharness html/semantics/embedded-content/the-img-element/environment-changes/
 testharness html/semantics/embedded-content/the-img-element/historical-progress-event.window.js
 testharness html/semantics/embedded-content/the-img-element/image-base-url.html
 testharness html/semantics/embedded-content/the-img-element/image-loading-eager.html
+testharness html/semantics/embedded-content/the-img-element/image-loading-lazy-available.html
 testharness html/semantics/embedded-content/the-img-element/image-loading-lazy-base-url-2.html
 testharness html/semantics/embedded-content/the-img-element/image-loading-lazy-base-url.html
 testharness html/semantics/embedded-content/the-img-element/image-loading-lazy-below-viewport-dynamic.html
