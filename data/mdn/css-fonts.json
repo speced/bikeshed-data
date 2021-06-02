@@ -109,62 +109,7 @@
             "title": "CSSFontFaceRule"
         }
     ],
-    "descdef-font-face-font-display": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/FontFace.json",
-            "name": "display",
-            "slug": "API/FontFace/display",
-            "summary": "The display property of the FontFace interface determines how a font face is displayed based on whether and when it is downloaded and ready to use. This property is equivalent to the CSS font-display descriptor.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": {
-                    "version_added": "60"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "58"
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "47"
-                },
-                "opera_android": {
-                    "version_added": "44"
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": "10"
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "60"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "FontFace.display"
-        }
-    ],
-    "descdef-font-face-ascent-override": [
+    "font-metrics-override-desc": [
         {
             "engines": [
                 "blink",
@@ -216,9 +161,7 @@
                 }
             },
             "title": "ascent-override"
-        }
-    ],
-    "descdef-font-face-descent-override": [
+        },
         {
             "engines": [
                 "blink",
@@ -270,6 +213,58 @@
                 }
             },
             "title": "descent-override"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "css/at-rules/font-face.json",
+            "name": "line-gap-override",
+            "slug": "CSS/@font-face/line-gap-override",
+            "summary": "The line-gap-override CSS descriptor defines the line-gap metric for the font. The line-gap metric is the font recommended line-gap or external leading.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "89"
+                },
+                "firefox_android": {
+                    "version_added": "89"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "line-gap-override"
         }
     ],
     "font-display-desc": [
@@ -386,7 +381,7 @@
             "title": "font-family"
         }
     ],
-    "descdef-font-face-font-stretch": [
+    "font-prop-desc": [
         {
             "engines": [
                 "blink",
@@ -439,9 +434,7 @@
                 }
             },
             "title": "font-stretch"
-        }
-    ],
-    "descdef-font-face-font-style": [
+        },
         {
             "engines": [
                 "blink",
@@ -494,6 +487,59 @@
                 }
             },
             "title": "font-style"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/at-rules/font-face.json",
+            "name": "font-weight",
+            "slug": "CSS/@font-face/font-weight",
+            "summary": "The font-weight CSS descriptor allows authors to specify font weights for the fonts specified in the @font-face rule. The font-weight property can separately be used to set how thick or thin characters in text should be displayed.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "opera": {
+                    "version_added": "10"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "font-weight"
         }
     ],
     "font-variant-prop": [
@@ -551,6 +597,59 @@
             "title": "font-variant"
         },
         {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/properties/font-variant.json",
+            "name": "font-variant",
+            "slug": "CSS/font-variant",
+            "summary": "The font-variant CSS shorthand property allows you to set all the font variants for a font.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "opera": {
+                    "version_added": "3.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "font-variant"
+        },
+        {
             "engines": [],
             "filename": "svg/attributes/presentation.json",
             "name": "font-variant",
@@ -600,7 +699,7 @@
             "title": "font-variant"
         }
     ],
-    "descdef-font-face-font-variation-settings": [
+    "font-rend-desc": [
         {
             "engines": [
                 "blink",
@@ -707,115 +806,6 @@
                 }
             },
             "title": "font-variation-settings"
-        }
-    ],
-    "descdef-font-face-font-weight": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "css/at-rules/font-face.json",
-            "name": "font-weight",
-            "slug": "CSS/@font-face/font-weight",
-            "summary": "The font-weight CSS descriptor allows authors to specify font weights for the fonts specified in the @font-face rule. The font-weight property can separately be used to set how thick or thin characters in text should be displayed.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.5"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "10"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "3.1"
-                },
-                "safari_ios": {
-                    "version_added": "2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "font-weight"
-        }
-    ],
-    "descdef-font-face-line-gap-override": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "css/at-rules/font-face.json",
-            "name": "line-gap-override",
-            "slug": "CSS/@font-face/line-gap-override",
-            "summary": "The line-gap-override CSS descriptor defines the line-gap metric for the font. The line-gap metric is the font recommended line-gap or external leading.",
-            "support": {
-                "chrome": {
-                    "version_added": "87"
-                },
-                "chrome_android": {
-                    "version_added": "87"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "89"
-                },
-                "firefox_android": {
-                    "version_added": "89"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "73"
-                },
-                "opera_android": {
-                    "version_added": "62"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "14.0"
-                },
-                "webview_android": {
-                    "version_added": "87"
-                },
-                "edge_blink": {
-                    "version_added": "87"
-                }
-            },
-            "title": "line-gap-override"
         }
     ],
     "src-desc": [
@@ -1251,7 +1241,7 @@
             "title": "font-family"
         }
     ],
-    "propdef-font-feature-settings": [
+    "font-feature-settings-prop": [
         {
             "engines": [
                 "blink",
@@ -1360,7 +1350,7 @@
             "title": "font-feature-settings"
         }
     ],
-    "propdef-font-kerning": [
+    "font-kerning-prop": [
         {
             "engines": [
                 "blink",
@@ -1473,10 +1463,14 @@
                     }
                 ]
             },
+            "caniuse": {
+                "feature": "font-kerning",
+                "title": "CSS3 font-kerning"
+            },
             "title": "font-kerning"
         }
     ],
-    "propdef-font-language-override": [
+    "font-language-override-prop": [
         {
             "engines": [
                 "gecko"
@@ -1596,7 +1590,7 @@
             "title": "font-optical-sizing"
         }
     ],
-    "propdef-font-size-adjust": [
+    "font-size-adjust-prop": [
         {
             "engines": [
                 "blink",
@@ -1689,6 +1683,63 @@
                         }
                     ]
                 }
+            },
+            "caniuse": {
+                "feature": "font-size-adjust",
+                "title": "CSS font-size-adjust"
+            },
+            "title": "font-size-adjust"
+        },
+        {
+            "engines": [],
+            "filename": "svg/attributes/presentation.json",
+            "name": "font-size-adjust",
+            "slug": "SVG/Attribute/font-size-adjust",
+            "summary": "The font-size-adjust attribute allows authors to specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "caniuse": {
+                "feature": "font-size-adjust",
+                "title": "CSS font-size-adjust"
             },
             "title": "font-size-adjust"
         }
@@ -1797,7 +1848,7 @@
             "title": "font-size"
         }
     ],
-    "propdef-font-stretch": [
+    "font-stretch-prop": [
         {
             "engines": [
                 "blink",
@@ -1856,6 +1907,10 @@
                     "notes": "A <code>font-stretch</code> definition must be added to the <code>@font-face</code> before this property will function."
                 }
             },
+            "caniuse": {
+                "feature": "css-font-stretch",
+                "title": "CSS font-stretch"
+            },
             "title": "font-stretch"
         },
         {
@@ -1904,6 +1959,10 @@
                 "edge_blink": {
                     "version_added": null
                 }
+            },
+            "caniuse": {
+                "feature": "css-font-stretch",
+                "title": "CSS font-stretch"
             },
             "title": "font-stretch"
         }
@@ -2014,7 +2073,7 @@
             "title": "font-style"
         }
     ],
-    "propdef-font-synthesis": [
+    "font-synthesis": [
         {
             "engines": [
                 "gecko",
@@ -2068,7 +2127,7 @@
             "title": "font-synthesis"
         }
     ],
-    "propdef-font-variant-caps": [
+    "font-variant-caps-prop": [
         {
             "engines": [
                 "blink",
@@ -2123,7 +2182,7 @@
             "title": "font-variant-caps"
         }
     ],
-    "propdef-font-variant-east-asian": [
+    "font-variant-east-asian-prop": [
         {
             "engines": [
                 "blink",
@@ -2178,7 +2237,7 @@
             "title": "font-variant-east-asian"
         }
     ],
-    "propdef-font-variant-ligatures": [
+    "font-variant-ligatures-prop": [
         {
             "engines": [
                 "blink",
@@ -2275,7 +2334,7 @@
             "title": "font-variant-ligatures"
         }
     ],
-    "propdef-font-variant-numeric": [
+    "font-variant-numeric-prop": [
         {
             "engines": [
                 "blink",
@@ -2327,14 +2386,10 @@
                     "version_added": "79"
                 }
             },
-            "caniuse": {
-                "feature": "font-variant-numeric",
-                "title": "CSS font-variant-numeric"
-            },
             "title": "font-variant-numeric"
         }
     ],
-    "propdef-font-variant-position": [
+    "font-variant-position-prop": [
         {
             "engines": [
                 "gecko",
@@ -2386,61 +2441,6 @@
                 }
             },
             "title": "font-variant-position"
-        }
-    ],
-    "propdef-font-variant": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "css/properties/font-variant.json",
-            "name": "font-variant",
-            "slug": "CSS/font-variant",
-            "summary": "The font-variant CSS shorthand property allows you to set all the font variants for a font.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "3.5"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "font-variant"
         }
     ],
     "font-weight-prop": [
@@ -2600,61 +2600,6 @@
                 }
             },
             "title": "font"
-        }
-    ],
-    "font-size-adjust-prop": [
-        {
-            "engines": [],
-            "filename": "svg/attributes/presentation.json",
-            "name": "font-size-adjust",
-            "slug": "SVG/Attribute/font-size-adjust",
-            "summary": "The font-size-adjust attribute allows authors to specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.",
-            "support": {
-                "chrome": {
-                    "version_added": null
-                },
-                "chrome_android": {
-                    "version_added": null
-                },
-                "edge": {
-                    "version_added": null
-                },
-                "firefox": {
-                    "version_added": null
-                },
-                "firefox_android": {
-                    "version_added": null
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": null
-                },
-                "webview_android": {
-                    "version_added": null
-                },
-                "edge_blink": {
-                    "version_added": null
-                }
-            },
-            "caniuse": {
-                "feature": "font-size-adjust",
-                "title": "CSS font-size-adjust"
-            },
-            "title": "font-size-adjust"
         }
     ]
 }
