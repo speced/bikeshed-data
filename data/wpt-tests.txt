@@ -1,6 +1,7 @@
-sha: 23aa68617363d0524e4c0a721be3101b4500e4ff
+sha: cf84beafec2055bc7a7ba01fcaecd4f528f2f1dc
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/content-visibility-generated-content-removal.html
+crashtest accessibility/crashtests/table-ignored-child.html
 crashtest css/CSS2/floats-clear/adjoining-float-new-fc-crash.html
 crashtest css/CSS2/floats-clear/clearance-containing-fragmented-float-crash.html
 crashtest css/CSS2/floats/floats-saturated-position-crash.html
@@ -115,6 +116,7 @@ crashtest css/css-text/whitespace-followed-by-cham-symbol-crash.html
 crashtest css/css-typed-om/stylevalue-serialization/crashtests/cssTransform-Internal-value.html
 crashtest css/css-ui/outline-with-001-crash.html
 crashtest css/css-writing-modes/bidi-inline-fragment-crash.html
+crashtest css/css-writing-modes/crashtests/orthogonal-percent-height-multicol-crash.html
 crashtest css/css-writing-modes/crashtests/orthogonal-scroll-percent-height-crash.html
 crashtest css/cssom-view/client-props-root-display-none-crash.html
 crashtest css/cssom/declaration-block-all-crash.html
@@ -136,6 +138,7 @@ crashtest dom/events/replace-event-listener-null-browsing-context-crash.html
 crashtest dom/nodes/DOMImplementation-createDocument-with-null-browsing-context-crash.html
 crashtest dom/nodes/DOMImplementation-createHTMLDocument-with-null-browsing-context-crash.html
 crashtest dom/nodes/Node-cloneNode-on-inactive-document-crash.html
+crashtest dom/nodes/node-appendchild-crash.html
 crashtest dom/svg-insert-crash.html
 crashtest dom/xslt/invalid-output-encoding-crash.html
 crashtest dom/xslt/transformToFragment-on-node-from-inactive-document-crash.html
@@ -200,6 +203,7 @@ crashtest svg/animations/animated-classname-crash.svg
 crashtest svg/animations/end-of-time-crash.html
 crashtest svg/crashtests/chrome-bug-1172059.html
 crashtest svg/crashtests/chrome-bug-1205852.html
+crashtest svg/crashtests/chrome-bug-1207590.html
 crashtest svg/crashtests/firefox-bug-1688293.html
 crashtest svg/crashtests/firefox-bug-1703592.html
 crashtest svg/extensibility/foreignObject/foreign-object-circular-filter-reference-crash.html
@@ -10826,6 +10830,7 @@ reftest css/css-backgrounds/background-color-body-propagation-004.html
 reftest css/css-backgrounds/background-color-body-propagation-005.html
 reftest css/css-backgrounds/background-color-body-propagation-006.html
 reftest css/css-backgrounds/background-color-body-propagation-007.html
+reftest css/css-backgrounds/background-color-body-propagation-008.html
 reftest css/css-backgrounds/background-color-clip.html
 reftest css/css-backgrounds/background-color-root-propagation-001.html
 reftest css/css-backgrounds/background-color-root-propagation-002.html
@@ -15162,6 +15167,7 @@ reftest css/css-overflow/overflow-body-propagation-007.html
 reftest css/css-overflow/overflow-body-propagation-008.html
 reftest css/css-overflow/overflow-body-propagation-009.html
 reftest css/css-overflow/overflow-body-propagation-010.html
+reftest css/css-overflow/overflow-body-propagation-011.html
 reftest css/css-overflow/overflow-clip-cant-scroll.html
 reftest css/css-overflow/overflow-clip-content-visual-overflow.html
 reftest css/css-overflow/overflow-clip-margin-001.html
@@ -16328,6 +16334,8 @@ reftest css/css-tables/col-definite-max-size-001.html
 reftest css/css-tables/col-definite-min-size-001.html
 reftest css/css-tables/col-definite-size-001.html
 reftest css/css-tables/collapsed-border-color-change-with-compositing.html
+reftest css/css-tables/collapsed-border-paint-phase-001.html
+reftest css/css-tables/collapsed-border-paint-phase-002.html
 reftest css/css-tables/collapsed-border-positioned-tr-td.html
 reftest css/css-tables/dynamic-table-cell-height.html
 reftest css/css-tables/empty-table-height.html
@@ -19255,6 +19263,7 @@ reftest css/css-writing-modes/contiguous-floated-table-vrl-006.xht
 reftest css/css-writing-modes/contiguous-floated-table-vrl-008.xht
 reftest css/css-writing-modes/different-block-flow-dir-001.xht
 reftest css/css-writing-modes/different-block-flow-dir-002.xht
+reftest css/css-writing-modes/direction-propagation-body-contain-root.html
 reftest css/css-writing-modes/direction-upright-001.html
 reftest css/css-writing-modes/direction-upright-002.html
 reftest css/css-writing-modes/direction-vlr-003.xht
@@ -19748,6 +19757,7 @@ reftest css/css-writing-modes/wm-propagation-body-052.html
 reftest css/css-writing-modes/wm-propagation-body-053.html
 reftest css/css-writing-modes/wm-propagation-body-054.html
 reftest css/css-writing-modes/wm-propagation-body-055.html
+reftest css/css-writing-modes/wm-propagation-body-contain-root.html
 reftest css/css-writing-modes/wm-propagation-body-dynamic-change-001.html
 reftest css/css-writing-modes/wm-propagation-body-dynamic-change-002.html
 reftest css/css-writing-modes/wm-propagation-body-dynamic-change-003.html
@@ -37331,6 +37341,7 @@ testharness referrer-policy/generic/inheritance/iframe-inheritance-srcdoc.html
 testharness referrer-policy/generic/inheritance/popup-inheritance-about-blank.html
 testharness referrer-policy/generic/inheritance/workers.html
 testharness referrer-policy/generic/link-rel-prefetch.html
+testharness referrer-policy/generic/meta-referrer-outofhead-fetch.http.html
 testharness referrer-policy/generic/meta-tag-in-svg-image.html
 testharness referrer-policy/generic/multiple-headers-and-values.html
 testharness referrer-policy/generic/multiple-headers-combined.html
@@ -39252,6 +39263,7 @@ testharness web-bundle/subresource-loading/subresource-loading-nested-bundle.htt
 testharness web-bundle/subresource-loading/subresource-loading-network-error.https.tentative.sub.html
 testharness web-bundle/subresource-loading/subresource-loading-path-restriction.https.tentative.html
 testharness web-bundle/subresource-loading/subresource-loading-request-destination.https.tentative.sub.html
+testharness web-bundle/subresource-loading/subresource-loading-resource-timing.https.tentative.html
 testharness web-bundle/subresource-loading/subresource-loading-static-element-with-base.https.tentative.html
 testharness web-bundle/subresource-loading/subresource-loading-static-element.https.tentative.html
 testharness web-bundle/subresource-loading/subresource-loading-webbundle-not-found.https.tentative.html
