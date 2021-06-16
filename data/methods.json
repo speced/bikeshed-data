@@ -2310,6 +2310,18 @@
       "shortname": "webaudio"
     }
   },
+  "OffscreenCanvas()": {
+    "OffscreenCanvas(width, height)": {
+      "args": [
+        "width",
+        "height"
+      ],
+      "for": [
+        "OffscreenCanvas"
+      ],
+      "shortname": "html"
+    }
+  },
   "Option()": {
     "Option(text, value, defaultSelected, selected)": {
       "args": [
@@ -4558,7 +4570,7 @@
     "blur()": {
       "args": [],
       "for": [
-        "HTMLElement",
+        "HTMLOrSVGElement",
         "Window"
       ],
       "shortname": "html"
@@ -15978,8 +15990,12 @@
     }
   },
   "setInterval()": {
-    "setInterval()": {
-      "args": [],
+    "setInterval(handler, timeout, ...arguments)": {
+      "args": [
+        "handler",
+        "timeout",
+        "...arguments"
+      ],
       "for": [
         "WindowOrWorkerGlobalScope"
       ],
@@ -16431,8 +16447,12 @@
     }
   },
   "setTimeout()": {
-    "setTimeout()": {
-      "args": [],
+    "setTimeout(handler, timeout, ...arguments)": {
+      "args": [
+        "handler",
+        "timeout",
+        "...arguments"
+      ],
       "for": [
         "WindowOrWorkerGlobalScope"
       ],
