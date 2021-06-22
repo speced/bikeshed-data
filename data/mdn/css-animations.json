@@ -3,7 +3,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AnimationEvent.json",
             "name": "AnimationEvent",
@@ -34,12 +35,24 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
+                "safari": [
+                    {
+                        "version_added": "9.1"
+                    },
+                    {
+                        "prefix": "WebKit",
+                        "version_added": "6"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "9.3"
+                    },
+                    {
+                        "prefix": "WebKit",
+                        "version_added": "6"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "4.0"
                 },
@@ -167,7 +180,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AnimationEvent.json",
             "name": "pseudoElement",
@@ -199,10 +213,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "13.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "13.4"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -1300,7 +1314,7 @@
                     "version_added": "54"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": false
@@ -1957,7 +1971,7 @@
                     "version_added": "54"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": null
@@ -2263,7 +2277,7 @@
             "filename": "css/at-rules/keyframes.json",
             "name": "keyframes",
             "slug": "CSS/@keyframes",
-            "summary": "The @keyframes CSS at-rule controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence.",
+            "summary": "The @keyframes CSS at-rule controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. This gives more control over the intermediate steps of the animation sequence than transitions.",
             "support": {
                 "chrome": [
                     {
@@ -2295,17 +2309,6 @@
                         "prefix": "-webkit-"
                     },
                     {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -2317,17 +2320,6 @@
                     {
                         "version_added": "49",
                         "prefix": "-webkit-"
-                    },
-                    {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -2432,7 +2424,7 @@
             "filename": "css/properties/animation-delay.json",
             "name": "animation-delay",
             "slug": "CSS/animation-delay",
-            "summary": "The animation-delay CSS property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation.",
+            "summary": "The animation-delay CSS property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation. The animation can start later, immediately from its beginning, or immediately and partway through the animation.",
             "support": {
                 "chrome": [
                     {
@@ -2465,17 +2457,6 @@
                         "prefix": "-webkit-"
                     },
                     {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -2487,17 +2468,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -2634,17 +2604,6 @@
                         "prefix": "-webkit-"
                     },
                     {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -2656,17 +2615,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -2803,17 +2751,6 @@
                         "prefix": "-webkit-"
                     },
                     {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -2825,17 +2762,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -2974,17 +2900,6 @@
                         "prefix": "-webkit-"
                     },
                     {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -2996,17 +2911,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -3143,17 +3047,6 @@
                         "prefix": "-webkit-"
                     },
                     {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -3165,17 +3058,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -3312,17 +3194,6 @@
                         "version_added": "49"
                     },
                     {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -3334,17 +3205,6 @@
                     {
                         "version_added": "49",
                         "prefix": "-webkit-"
-                    },
-                    {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -3481,17 +3341,6 @@
                         "version_added": "49"
                     },
                     {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -3503,17 +3352,6 @@
                     {
                         "version_added": "49",
                         "prefix": "-webkit-"
-                    },
-                    {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -3650,17 +3488,6 @@
                         "version_added": "49"
                     },
                     {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -3672,17 +3499,6 @@
                     {
                         "version_added": "49",
                         "prefix": "-webkit-"
-                    },
-                    {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",
@@ -3787,7 +3603,7 @@
             "filename": "css/properties/animation.json",
             "name": "animation",
             "slug": "CSS/animation",
-            "summary": "The animation shorthand CSS property applies an animation between styles.",
+            "summary": "The animation shorthand CSS property applies an animation between styles. It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state.",
             "support": {
                 "chrome": [
                     {
@@ -3819,17 +3635,6 @@
                         "version_added": "49"
                     },
                     {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "prefix": "-moz-",
                         "version_added": "5"
                     }
@@ -3841,17 +3646,6 @@
                     {
                         "version_added": "49",
                         "prefix": "-webkit-"
-                    },
-                    {
-                        "version_added": "44",
-                        "prefix": "-webkit-",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "prefix": "-moz-",

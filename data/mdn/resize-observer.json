@@ -331,7 +331,9 @@
     "dom-resizeobserverentry-contentboxsize": [
         {
             "engines": [
-                "blink",
+                "blink"
+            ],
+            "partial": [
                 "gecko"
             ],
             "filename": "api/ResizeObserverEntry.json",
@@ -349,7 +351,9 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "69"
+                    "version_added": "69",
+                    "partial_implementation": true,
+                    "notes": "Implemented as a single object representing a content box size, rather than an array of content box size objects."
                 },
                 "firefox_android": {
                     "version_added": false
@@ -547,7 +551,8 @@
     "dom-resizeobserversize-blocksize": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/ResizeObserverSize.json",
             "name": "blockSize",
@@ -564,10 +569,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -600,7 +605,8 @@
     "dom-resizeobserversize-inlinesize": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/ResizeObserverSize.json",
             "name": "inlineSize",
@@ -617,10 +623,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -653,7 +659,8 @@
     "resizeobserversize": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/ResizeObserverSize.json",
             "name": "ResizeObserverSize",
@@ -670,10 +677,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false

@@ -2,7 +2,8 @@
     "dom-devicemotionevent-devicemotionevent": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/DeviceMotionEvent.json",
             "name": "DeviceMotionEvent",
@@ -19,10 +20,10 @@
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "ie": {
                     "version_added": false
@@ -34,10 +35,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -62,7 +63,7 @@
             "filename": "api/DeviceMotionEvent.json",
             "name": "acceleration",
             "slug": "API/DeviceMotionEvent/acceleration",
-            "summary": "The acceleration property returns the amount of acceleration recorded by the device, in meters per second squared (m/s2).",
+            "summary": "The acceleration property returns the amount of acceleration recorded by the device, in meters per second squared (m/s²).",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -89,7 +90,7 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"
@@ -117,7 +118,7 @@
             "filename": "api/DeviceMotionEvent.json",
             "name": "accelerationIncludingGravity",
             "slug": "API/DeviceMotionEvent/accelerationIncludingGravity",
-            "summary": "The accelerationIncludingGravity property returns the amount of acceleration recorded by the device, in meters per second squared (m/s2). Unlike DeviceMotionEvent.acceleration which compensates for the influence of gravity, its value is the sum of the acceleration of the device as induced by the user and the acceleration caused by gravity.",
+            "summary": "The accelerationIncludingGravity property returns the amount of acceleration recorded by the device, in meters per second squared (m/s²). Unlike DeviceMotionEvent.acceleration which compensates for the influence of gravity, its value is the sum of the acceleration of the device as induced by the user and the acceleration caused by gravity.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -144,7 +145,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"
@@ -199,7 +200,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"
@@ -254,7 +255,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"
@@ -309,7 +310,7 @@
                     "version_added": "14"
                 },
                 "safari": {
-                    "version_added": "5"
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"
@@ -383,7 +384,8 @@
     "dom-devicemotioneventacceleration-x": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "partial": [
                 "webkit"
@@ -403,10 +405,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -443,7 +445,8 @@
     "dom-devicemotioneventacceleration-y": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "partial": [
                 "webkit"
@@ -463,10 +466,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -503,7 +506,8 @@
     "dom-devicemotioneventacceleration-z": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "partial": [
                 "webkit"
@@ -523,10 +527,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -566,6 +570,7 @@
                 "blink"
             ],
             "partial": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/DeviceMotionEventAcceleration.json",
@@ -590,10 +595,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "6",
+                    "partial_implementation": true,
+                    "notes": "Doesn't expose the <code>DeviceMotionEventAcceleration</code> interface itself."
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "6",
+                    "partial_implementation": true,
+                    "notes": "Doesn't expose the <code>DeviceMotionEventAcceleration</code> interface itself."
                 },
                 "ie": {
                     "version_added": false
@@ -644,7 +653,8 @@
     "dom-devicemotioneventrotationrate-alpha": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "partial": [
                 "webkit"
@@ -664,10 +674,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -704,7 +714,8 @@
     "dom-devicemotioneventrotationrate-beta": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "partial": [
                 "webkit"
@@ -724,10 +735,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -764,7 +775,8 @@
     "dom-devicemotioneventrotationrate-gamma": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "partial": [
                 "webkit"
@@ -784,10 +796,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -827,6 +839,7 @@
                 "blink"
             ],
             "partial": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/DeviceMotionEventRotationRate.json",
@@ -851,10 +864,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "6",
+                    "partial_implementation": true,
+                    "notes": "Doesn't expose the <code>DeviceMotionEventAcceleration</code> interface itself."
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "6",
+                    "partial_implementation": true,
+                    "notes": "Doesn't expose the <code>DeviceMotionEventAcceleration</code> interface itself."
                 },
                 "ie": {
                     "version_added": false
@@ -905,7 +922,8 @@
     "dom-deviceorientationevent-deviceorientationevent": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/DeviceOrientationEvent.json",
             "name": "DeviceOrientationEvent",
@@ -922,10 +940,10 @@
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "17"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "17"
                 },
                 "ie": {
                     "version_added": false
@@ -937,10 +955,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -959,8 +977,7 @@
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/DeviceOrientationEvent.json",
             "name": "absolute",
@@ -992,10 +1009,10 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "4.2"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -1047,7 +1064,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"
@@ -1102,7 +1119,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"
@@ -1157,7 +1174,7 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"
@@ -1216,7 +1233,7 @@
                     "version_added": "14"
                 },
                 "safari": {
-                    "version_added": "5"
+                    "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "4.2"

@@ -3529,7 +3529,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "isLockFree",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/isLockFree",
-            "summary": "The static Atomics.isLockFree() method is used to determine whether to use locks or atomic operations. It returns true, if the given size is one of the BYTES_PER_ELEMENT property of integer TypedArray types.",
+            "summary": "The static Atomics.isLockFree() method is used to determine whether the Atomics methods use locks or atomic hardware operations when applied to typed arrays with the given element byte size. It returns false if the given size is not one of the BYTES_PER_ELEMENT property of integer TypedArray types.",
             "support": {
                 "chrome": [
                     {
@@ -6312,7 +6312,7 @@
             "filename": "javascript/builtins/DataView.json",
             "name": "byteLength",
             "slug": "JavaScript/Reference/Global_Objects/DataView/byteLength",
-            "summary": "The byteLength accessor property represents the length (in bytes) of this view from the start of its ArrayBuffer or SharedArrayBuffer.",
+            "summary": "The byteLength accessor property represents the length (in bytes) of the dataview.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -10078,7 +10078,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "toLocaleTimeString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toLocaleTimeString",
-            "summary": "The toLocaleTimeString() method returns a string with a language sensitive representation of the time portion of this date. The new locales and options arguments let applications specify the language whose formatting conventions should be used and customize the behavior of the function. In older implementations, which ignore the locales and options arguments, the locale used and the form of the string returned are entirely implementation dependent.",
+            "summary": "The toLocaleTimeString() method returns a string with a language-sensitive representation of the time portion of the date. The newer locales and options arguments let applications specify the language formatting conventions to use. These arguments can also customize the behavior of the function.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -17915,7 +17915,7 @@
             "filename": "javascript/builtins/Object.json",
             "name": "assign",
             "slug": "JavaScript/Reference/Global_Objects/Object/assign",
-            "summary": "The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the target object.",
+            "summary": "The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.",
             "support": {
                 "chrome": {
                     "version_added": "45"
@@ -28736,7 +28736,7 @@
             "filename": "javascript/builtins/TypedArray.json",
             "name": "byteLength",
             "slug": "JavaScript/Reference/Global_Objects/TypedArray/byteLength",
-            "summary": "The byteLength accessor property represents the length (in bytes) of a typed array.",
+            "summary": "The byteLength accessor property represents the length (in bytes) of the typed array.",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -33632,6 +33632,249 @@
             "title": "class"
         }
     ],
+    "prod-PrivateIdentifier": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/classes.json",
+            "name": "private_class_fields",
+            "slug": "JavaScript/Reference/Classes/Private_class_fields",
+            "summary": "Class properties are public by default and can be examined or modified outside the class. There is however a stage 3 proposal to allow defining private class fields using a hash # prefix.",
+            "support": {
+                "chrome": {
+                    "version_added": "74"
+                },
+                "chrome_android": {
+                    "version_added": "74"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "90"
+                },
+                "firefox_android": {
+                    "version_added": "90"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "12.0.0"
+                },
+                "opera": {
+                    "version_added": "62"
+                },
+                "opera_android": {
+                    "version_added": "53"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "74"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Private class fields"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "javascript/classes.json",
+            "name": "private_class_methods",
+            "slug": "JavaScript/Reference/Classes/Private_class_fields",
+            "summary": "Class properties are public by default and can be examined or modified outside the class. There is however a stage 3 proposal to allow defining private class fields using a hash # prefix.",
+            "support": {
+                "chrome": {
+                    "version_added": "84"
+                },
+                "chrome_android": {
+                    "version_added": "84"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "90"
+                },
+                "firefox_android": {
+                    "version_added": "90"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "14.0.0"
+                },
+                "opera": {
+                    "version_added": "70"
+                },
+                "opera_android": {
+                    "version_added": "60"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "84"
+                },
+                "edge_blink": {
+                    "version_added": "84"
+                }
+            },
+            "title": "Private class fields"
+        }
+    ],
+    "prod-FieldDefinition": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/classes.json",
+            "name": "public_class_fields",
+            "slug": "JavaScript/Reference/Classes/Class_elements#Public_fields",
+            "summary": "Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
+            "support": {
+                "chrome": {
+                    "version_added": "72"
+                },
+                "chrome_android": {
+                    "version_added": "72"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "69"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "12.0.0"
+                },
+                "opera": {
+                    "version_added": "60"
+                },
+                "opera_android": {
+                    "version_added": "51"
+                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "14.1",
+                        "partial_implementation": true,
+                        "notes": "Doesn't support public static fields. See WebKit bug <a href='https://webkit.org/b/194095'>194095</a>."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "14.5",
+                        "partial_implementation": true,
+                        "notes": "Doesn't support public static fields. See WebKit bug <a href='https://webkit.org/b/194095'>194095</a>."
+                    }
+                ],
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "72"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Public class fields"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/classes.json",
+            "name": "static_class_fields",
+            "slug": "JavaScript/Reference/Classes/Class_fields",
+            "summary": "Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
+            "support": {
+                "chrome": {
+                    "version_added": "72"
+                },
+                "chrome_android": {
+                    "version_added": "72"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "75"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "12.0.0"
+                },
+                "opera": {
+                    "version_added": "60"
+                },
+                "opera_android": {
+                    "version_added": "51"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "72"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Public class fields"
+        }
+    ],
     "sec-arguments-exotic-objects": [
         {
             "engines": [
@@ -37230,7 +37473,7 @@
             "filename": "javascript/operators/bitwise_not.json",
             "name": "bitwise_not",
             "slug": "JavaScript/Reference/Operators/Bitwise_NOT",
-            "summary": "The bitwise NOT operator (~) inverts the bits of its operand.",
+            "summary": "The bitwise NOT operator (~) inverts the bits of its operand. Like other bitwise operators, it converts the operand to a 32-bit signed integer",
             "support": {
                 "chrome": {
                     "version_added": "1"

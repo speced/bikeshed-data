@@ -9,7 +9,7 @@
             "filename": "css/properties/image-orientation.json",
             "name": "image-orientation",
             "slug": "CSS/image-orientation",
-            "summary": "The image-orientation CSS property specifies a layout-independent correction to the orientation of an image.",
+            "summary": "The image-orientation CSS property specifies a layout-independent correction to the orientation of an image. It should not be used for any other orientation adjustments; instead, the transform property should be used with the rotate <transform-function>.",
             "support": {
                 "chrome": {
                     "version_added": "81"
@@ -241,7 +241,7 @@
             "filename": "css/properties/object-position.json",
             "name": "object-position",
             "slug": "CSS/object-position",
-            "summary": "The object-position CSS property specifies the alignment of the selected replaced element's contents within the element's box.",
+            "summary": "The object-position CSS property specifies the alignment of the selected replaced element's contents within the element's box. Areas of the box which aren't covered by the replaced element's object will show the element's background.",
             "support": {
                 "chrome": {
                     "version_added": "32"
@@ -512,17 +512,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     }
                 ],
                 "firefox_android": [
@@ -541,17 +530,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     }
                 ],
                 "ie": {
@@ -693,17 +671,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     }
                 ],
                 "firefox_android": [
@@ -719,17 +686,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     }
                 ],
                 "ie": {
@@ -904,7 +860,7 @@
             "filename": "css/types/image.json",
             "name": "repeating-linear-gradient",
             "slug": "CSS/repeating-linear-gradient()",
-            "summary": "The repeating-linear-gradient() CSS function creates an image consisting of repeating linear gradients. It is similar to linear-gradient() and takes the same arguments, but it repeats the color stops infinitely in all directions so as to cover its entire container. The function's result is an object of the <gradient> data type, which is a special kind of <image>.",
+            "summary": "The repeating-linear-gradient() CSS function creates an image consisting of repeating linear gradients. It is similar to gradient/linear-gradient() and takes the same arguments, but it repeats the color stops infinitely in all directions so as to cover its entire container. The function's result is an object of the <gradient> data type, which is a special kind of <image>.",
             "support": {
                 "chrome": [
                     {
@@ -943,17 +899,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     }
                 ],
                 "firefox_android": [
@@ -972,17 +917,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     }
                 ],
                 "ie": {
@@ -1090,7 +1024,7 @@
             "filename": "css/types/image.json",
             "name": "repeating-radial-gradient",
             "slug": "CSS/repeating-radial-gradient()",
-            "summary": "The repeating-radial-gradient() CSS function creates an image consisting of repeating gradients that radiate from an origin. It is similar to radial-gradient() and takes the same arguments, but it repeats the color stops infinitely in all directions so as to cover its entire container, similar to repeating-linear-gradient() . The function's result is an object of the <gradient> data type, which is a special kind of <image>.",
+            "summary": "The repeating-radial-gradient() CSS function creates an image consisting of repeating gradients that radiate from an origin. It is similar to gradient/radial-gradient() and takes the same arguments, but it repeats the color stops infinitely in all directions so as to cover its entire container, similar to gradient/repeating-linear-gradient() . The function's result is an object of the <gradient> data type, which is a special kind of <image>.",
             "support": {
                 "chrome": [
                     {
@@ -1126,17 +1060,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     }
                 ],
                 "firefox_android": [
@@ -1152,17 +1075,6 @@
                     {
                         "prefix": "-webkit-",
                         "version_added": "49"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefixes.webkit",
-                                "value_to_set": "true"
-                            }
-                        ]
                     }
                 ],
                 "ie": {

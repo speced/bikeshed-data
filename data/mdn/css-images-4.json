@@ -225,7 +225,7 @@
             "filename": "css/properties/background-image.json",
             "name": "image-set",
             "slug": "CSS/image-set()",
-            "summary": "The image-set() CSS function notation is a method of letting the browser pick the most appropriate CSS image from a given set, primarily for high pixel density screens.",
+            "summary": "The image-set() CSS functional notation is a method of letting the browser pick the most appropriate CSS image from a given set, primarily for high pixel density screens.",
             "support": {
                 "chrome": {
                     "prefix": "-webkit-",
@@ -299,7 +299,7 @@
             "filename": "css/types/image.json",
             "name": "image-set",
             "slug": "CSS/image-set()",
-            "summary": "The image-set() CSS function notation is a method of letting the browser pick the most appropriate CSS image from a given set, primarily for high pixel density screens.",
+            "summary": "The image-set() CSS functional notation is a method of letting the browser pick the most appropriate CSS image from a given set, primarily for high pixel density screens.",
             "support": {
                 "chrome": {
                     "prefix": "-webkit-",
@@ -312,20 +312,32 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "88",
-                    "notes": [
-                        "In <code>cursor</code> and <code>content</code> properties, gradients are not supported as arguments to <code>image-set()</code>. See <a href='https://bugzil.la/1696314'>bug 1696314</a>.",
-                        "Before Firefox 89, the <code>type()</code> function is not supported as an argument to <code>image-set()</code>."
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "88",
-                    "notes": [
-                        "In <code>cursor</code> and <code>content</code> properties, gradients are not supported as arguments to <code>image-set()</code>. See <a href='https://bugzil.la/1696314'>bug 1696314</a>.",
-                        "Before Firefox 89, the <code>type()</code> function is not supported as an argument to <code>image-set()</code>."
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "88",
+                        "notes": [
+                            "In <code>cursor</code> and <code>content</code> properties, gradients are not supported as arguments to <code>image-set()</code>. See <a href='https://bugzil.la/1696314'>bug 1696314</a>.",
+                            "Before Firefox 89, the <code>type()</code> function is not supported as an argument to <code>image-set()</code>."
+                        ]
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "90"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "88",
+                        "notes": [
+                            "In <code>cursor</code> and <code>content</code> properties, gradients are not supported as arguments to <code>image-set()</code>. See <a href='https://bugzil.la/1696314'>bug 1696314</a>.",
+                            "Before Firefox 89, the <code>type()</code> function is not supported as an argument to <code>image-set()</code>."
+                        ]
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "90"
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -380,7 +392,7 @@
             "filename": "css/types/image.json",
             "name": "cross-fade",
             "slug": "CSS/cross-fade()",
-            "summary": "The cross-fade() CSS function can be used to blend two or more images at a defined transparency.",
+            "summary": "The cross-fade() CSS function can be used to blend two or more images at a defined transparency. It can be used for many simple image manipulations, such as tinting an image with a solid color or highlighting a particular area of the page by combining an image with a radial gradient.",
             "support": {
                 "chrome": {
                     "prefix": "-webkit-",
@@ -546,7 +558,7 @@
             "filename": "css/types/image.json",
             "name": "image",
             "slug": "CSS/image()",
-            "summary": "The image() CSS function defines an <image> in a similar fashion to the <url>() function, but with added functionality including specifying the image's directionality, specifying fallback images for when the preferred image is not supported, displaying just a part of that image defined by a media fragment, and specifying a solid color as a fallback in case none of the specified images are able to be rendered.",
+            "summary": "The image() CSS function defines an <image> in a similar fashion to the url() function, but with added functionality including specifying the image's directionality, displaying just a part of that image defined by a media fragment, and specifying a solid color as a fallback in case none of the specified images are able to be rendered.",
             "support": {
                 "chrome": {
                     "version_added": false

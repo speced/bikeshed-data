@@ -95,7 +95,7 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0",
@@ -169,6 +169,9 @@
                 "blink",
                 "gecko"
             ],
+            "partial": [
+                "webkit"
+            ],
             "filename": "html/manifest/display.json",
             "name": "display",
             "slug": "Manifest/display",
@@ -202,7 +205,9 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "11.3",
+                    "partial_implementation": true,
+                    "notes": "Does not support <code>fullscreen</code> or <code>minimal-ui</code>."
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -267,7 +272,8 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/183937'>bug 183937</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -437,7 +443,7 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": null
@@ -561,7 +567,8 @@
     "scope-member": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "html/manifest/scope.json",
             "name": "scope",
@@ -596,7 +603,7 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": null
@@ -615,7 +622,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -661,7 +669,7 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -745,7 +753,8 @@
     "start_url-member": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "html/manifest/start_url.json",
             "name": "start_url",
@@ -780,7 +789,7 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": null

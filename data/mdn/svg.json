@@ -45,7 +45,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -100,7 +100,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -155,7 +155,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -210,7 +210,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -320,7 +320,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -430,7 +430,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -540,7 +540,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -705,7 +705,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1145,7 +1145,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1200,7 +1200,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1255,7 +1255,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1310,7 +1310,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1365,7 +1365,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1420,7 +1420,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1431,50 +1431,54 @@
     ],
     "interact.html#ErrorEvent": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "api/SVGElement.json",
             "name": "error_event",
             "slug": "API/SVGElement/error_event",
             "summary": "The error event is fired when an SVG element does not load properly or when an error occurs during script execution.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "chrome_android": {
-                    "version_added": null
+                    "version_added": "18"
                 },
                 "edge": {
-                    "version_added": null
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "6"
                 },
                 "samsunginternet_android": {
-                    "version_added": null
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": null
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "SVGElement: error event"
@@ -1483,7 +1487,8 @@
     "interact.html#LoadEvent": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "altname": [
                 "gecko"
@@ -1494,99 +1499,50 @@
             "summary": "The load event fires on an SVGElement when it is loaded in the browser, e.g. in the DOM in the case of an embedded <svg>. It is basically the same as the standard load DOM event.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true,
-                    "alternative_name": "SVGLoad"
+                    "version_added": "4",
+                    "alternative_name": "SVGLoad",
+                    "notes": "See <a href='https://bugzil.la/620002'>bug 620002</a> for implementation status of the standard <code>load</code> event."
                 },
                 "firefox_android": {
-                    "version_added": true,
-                    "alternative_name": "SVGLoad"
+                    "version_added": "4",
+                    "alternative_name": "SVGLoad",
+                    "notes": "See <a href='https://bugzil.la/620002'>bug 620002</a> for implementation status of the standard <code>load</code> event."
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "SVGElement: load event"
-        }
-    ],
-    "interact.html#UnloadEvent": [
-        {
-            "engines": [],
-            "filename": "api/SVGElement.json",
-            "name": "unload_event",
-            "slug": "API/SVGElement/unload_event",
-            "summary": "The unload event is fired when the DOM implementation removes an SVG document from a window or frame.",
-            "support": {
-                "chrome": {
-                    "version_added": null
-                },
-                "chrome_android": {
-                    "version_added": null
-                },
-                "edge": {
-                    "version_added": null
-                },
-                "firefox": {
-                    "version_added": null
-                },
-                "firefox_android": {
-                    "version_added": null
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": null
-                },
-                "webview_android": {
-                    "version_added": null
-                },
-                "edge_blink": {
-                    "version_added": null
-                }
-            },
-            "title": "SVGElement: unload event"
         }
     ],
     "types.html#InterfaceSVGElement": [
@@ -1611,7 +1567,7 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "1"
+                    "version_added": "1.5"
                 },
                 "firefox_android": {
                     "version_added": "4"
@@ -1635,7 +1591,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1690,7 +1646,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1745,7 +1701,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1800,7 +1756,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1933,7 +1889,7 @@
                         "version_added": "56"
                     },
                     {
-                        "version_added": "1",
+                        "version_added": "37",
                         "version_removed": "56",
                         "partial_implementation": true,
                         "notes": "Only supported for <a href='https://developer.mozilla.org/docs/Web/API/SVGPathElement'><code>SVGPathElement</code></a>, not all <code>SVGGeometryElement</code> objects."
@@ -2078,7 +2034,7 @@
                         "version_added": "56"
                     },
                     {
-                        "version_added": "1",
+                        "version_added": "37",
                         "version_removed": "56",
                         "partial_implementation": true,
                         "notes": "Only supported for <a href='https://developer.mozilla.org/docs/Web/API/SVGPathElement'><code>SVGPathElement</code></a>, not all <code>SVGGeometryElement</code> objects."
@@ -2331,7 +2287,7 @@
                         "version_added": "57"
                     },
                     {
-                        "version_added": "1",
+                        "version_added": "37",
                         "version_removed": "57",
                         "partial_implementation": true,
                         "notes": "Only supported for <a href='https://developer.mozilla.org/docs/Web/API/SVGPathElement'><code>SVGPathElement</code></a>, not all <code>SVGGeometryElement</code> objects."
@@ -2476,7 +2432,7 @@
                         "version_added": "56"
                     },
                     {
-                        "version_added": "1",
+                        "version_added": "37",
                         "version_removed": "56",
                         "partial_implementation": true,
                         "notes": "The <code>SVGGeometryElement</code> interface itself is not present, but some of its members are available on the <a href='https://developer.mozilla.org/docs/Web/API/SVGPathElement'><code>SVGPathElement</code></a> interface."
@@ -2543,7 +2499,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2606,7 +2562,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2778,10 +2734,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
@@ -2857,7 +2813,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2912,7 +2868,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2967,7 +2923,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3022,7 +2978,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3077,7 +3033,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3132,7 +3088,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3187,7 +3143,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3297,7 +3253,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3352,13 +3308,673 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
                 }
             },
             "title": "SVGLinearGradientElement"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__markerHeight": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "markerHeight",
+            "slug": "API/SVGMarkerElement/markerHeight",
+            "summary": "The markerHeight read-only property of the SVGMarkerElement interface returns an SVGAnimatedLength object containing the height of the <marker> viewport as defined by the markerHeight attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.markerHeight"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__markerUnits": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "markerUnits",
+            "slug": "API/SVGMarkerElement/markerUnits",
+            "summary": "The markerUnits read-only property of the SVGMarkerElement interface returns an SVGAnimatedEnumeration object. This object returns an integer which represents the keyword values that the markerUnits attribute accepts.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.markerUnits"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__markerWidth": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "markerWidth",
+            "slug": "API/SVGMarkerElement/markerWidth",
+            "summary": "The markerWidth read-only property of the SVGMarkerElement interface returns an SVGAnimatedLength object containing the width of the <marker> viewport as defined by the markerWidth attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.markerWidth"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__orientAngle": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "orientAngle",
+            "slug": "API/SVGMarkerElement/orientAngle",
+            "summary": "The orientAngle read-only property of the SVGMarkerElement interface returns an SVGAnimatedAngle object containing the angle of the orient attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.orientAngle"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__orientType": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "orientType",
+            "slug": "API/SVGMarkerElement/orientType",
+            "summary": "The orientType read-only property of the SVGMarkerElement interface returns an SVGAnimatedEnumeration object indicating whether the orient attribute is auto, an angle value, or something else.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.orientType"
+        }
+    ],
+    "types.html#__svg__SVGFitToViewBox__preserveAspectRatio": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "preserveAspectRatio",
+            "slug": "API/SVGMarkerElement/preserveAspectRatio",
+            "summary": "The preserveAspectRatio read-only property of the SVGMarkerElement interface returns an SVGAnimatedPreserveAspectRatio object containing the value of the preserveAspectRatio attribute of the <marker>.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "2"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.preserveAspectRatio"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__refX": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "refX",
+            "slug": "API/SVGMarkerElement/refX",
+            "summary": "The refX read-only property of the SVGMarkerElement interface returns an SVGAnimatedLength object containing the value of the refX attribute of the <marker>.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.refX"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__refY": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "refY",
+            "slug": "API/SVGMarkerElement/refY",
+            "summary": "The refY read-only property of the SVGMarkerElement interface returns an SVGAnimatedLength object containing the value of the refY attribute of the <marker>.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.refY"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__setOrientToAngle": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "setOrientToAngle",
+            "slug": "API/SVGMarkerElement/setOrientToAngle",
+            "summary": "The setOrientToAngle() method of the SVGMarkerElement interface sets the value of the orient attribute to the value in the SVGAngle passed in.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.setOrientToAngle()"
+        }
+    ],
+    "painting.html#__svg__SVGMarkerElement__setOrientToAuto": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "setOrientToAuto",
+            "slug": "API/SVGMarkerElement/setOrientToAuto",
+            "summary": "The setOrientToAuto() method of the SVGMarkerElement interface sets the value of the orient attribute to auto.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.setOrientToAuto()"
+        }
+    ],
+    "types.html#__svg__SVGFitToViewBox__viewBox": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "viewBox",
+            "slug": "API/SVGMarkerElement/viewBox",
+            "summary": "The viewBox read-only property of the SVGMarkerElement interface returns an SVGAnimatedRect object which contains the values set by the viewBox attribute on the <marker>.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "2"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement.viewBox"
+        }
+    ],
+    "painting.html#InterfaceSVGMarkerElement": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SVGMarkerElement.json",
+            "name": "SVGMarkerElement",
+            "slug": "API/SVGMarkerElement",
+            "summary": "The SVGMarkerElement interface provides access to the properties of <marker> elements, as well as methods to manipulate them. The <marker> element defines the graphics used for drawing marks on a shape.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SVGMarkerElement"
         }
     ],
     "struct.html#InterfaceSVGMetadataElement": [
@@ -3407,7 +4023,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3572,7 +4188,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3627,7 +4243,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3682,7 +4298,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3737,7 +4353,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3792,7 +4408,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3847,7 +4463,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3902,7 +4518,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -3957,7 +4573,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4012,7 +4628,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4067,7 +4683,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4179,7 +4795,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4234,7 +4850,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4289,7 +4905,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4344,7 +4960,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4399,7 +5015,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4454,7 +5070,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4509,7 +5125,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4564,7 +5180,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4619,7 +5235,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4674,7 +5290,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4784,7 +5400,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4894,7 +5510,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
