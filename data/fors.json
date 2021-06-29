@@ -5777,7 +5777,6 @@
     "get a layout class instance",
     "get a layout definition",
     "get a promise to wait for all",
-    "get a reference to the buffer source",
     "get a reference to the bytes held by the buffer source",
     "get a response mime type",
     "get a style map",
@@ -12512,7 +12511,20 @@
     "state"
   ],
   "ArrayBuffer": [
-    "detach"
+    "create",
+    "detach",
+    "transfer",
+    "write"
+  ],
+  "ArrayBuffer/write": [
+    "startingoffset"
+  ],
+  "ArrayBufferView": [
+    "create",
+    "write"
+  ],
+  "ArrayBufferView/write": [
+    "startingoffset"
   ],
   "AssignedNodeOptions": [
     "flatten"
@@ -13690,6 +13702,11 @@
     "onmessage",
     "onmessageerror",
     "postMessage(message)"
+  ],
+  "BufferSource": [
+    "byte length",
+    "detached",
+    "underlying buffer"
   ],
   "ByteLengthQueuingStrategy": [
     "ByteLengthQueuingStrategy(init)",
