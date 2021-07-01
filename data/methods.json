@@ -3707,7 +3707,6 @@
         "CSSNumericValue",
         "DOMTokenList",
         "DataTransferItemList",
-        "HTMLSelectElement",
         "RdfDataset",
         "RdfGraph"
       ],
@@ -3745,7 +3744,8 @@
         "element"
       ],
       "for": [
-        "HTMLOptionsCollection"
+        "HTMLOptionsCollection",
+        "HTMLSelectElement"
       ],
       "shortname": "html"
     },
@@ -3948,9 +3948,9 @@
     }
   },
   "addPath()": {
-    "addPath(b, transform)": {
+    "addPath(path, transform)": {
       "args": [
-        "b",
+        "path",
         "transform"
       ],
       "for": [
@@ -9326,8 +9326,10 @@
     }
   },
   "fastSeek()": {
-    "fastSeek()": {
-      "args": [],
+    "fastSeek(time)": {
+      "args": [
+        "time"
+      ],
       "for": [
         "HTMLMediaElement"
       ],
@@ -9434,8 +9436,12 @@
     }
   },
   "fillText()": {
-    "fillText()": {
-      "args": [],
+    "fillText(text, x, y)": {
+      "args": [
+        "text",
+        "x",
+        "y"
+      ],
       "for": [
         "CanvasText"
       ],
@@ -10443,9 +10449,9 @@
     }
   },
   "getElementsByName()": {
-    "getElementsByName(name)": {
+    "getElementsByName(elementName)": {
       "args": [
-        "name"
+        "elementName"
       ],
       "for": [
         "Document"
@@ -11694,15 +11700,23 @@
     }
   },
   "importScripts()": {
+    "importScripts(...urls)": {
+      "args": [
+        "...urls"
+      ],
+      "for": [
+        "WorkerGlobalScope"
+      ],
+      "shortname": "html"
+    },
     "importScripts(urls)": {
       "args": [
         "urls"
       ],
       "for": [
-        "ServiceWorkerGlobalScope",
-        "WorkerGlobalScope"
+        "ServiceWorkerGlobalScope"
       ],
-      "shortname": "html"
+      "shortname": "service-workers"
     }
   },
   "importStylesheet()": {
@@ -11878,8 +11892,85 @@
     }
   },
   "initMessageEvent()": {
-    "initMessageEvent()": {
-      "args": [],
+    "initMessageEvent(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "MessageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initMessageEvent(type, bubbles)": {
+      "args": [
+        "type",
+        "bubbles"
+      ],
+      "for": [
+        "MessageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initMessageEvent(type, bubbles, cancelable)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable"
+      ],
+      "for": [
+        "MessageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initMessageEvent(type, bubbles, cancelable, data)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable",
+        "data"
+      ],
+      "for": [
+        "MessageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initMessageEvent(type, bubbles, cancelable, data, origin)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable",
+        "data",
+        "origin"
+      ],
+      "for": [
+        "MessageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable",
+        "data",
+        "origin",
+        "lastEventId"
+      ],
+      "for": [
+        "MessageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable",
+        "data",
+        "origin",
+        "lastEventId",
+        "source"
+      ],
       "for": [
         "MessageEvent"
       ],
@@ -11905,8 +11996,85 @@
     }
   },
   "initStorageEvent()": {
-    "initStorageEvent()": {
-      "args": [],
+    "initStorageEvent(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "StorageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initStorageEvent(type, bubbles)": {
+      "args": [
+        "type",
+        "bubbles"
+      ],
+      "for": [
+        "StorageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initStorageEvent(type, bubbles, cancelable)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable"
+      ],
+      "for": [
+        "StorageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initStorageEvent(type, bubbles, cancelable, key)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable",
+        "key"
+      ],
+      "for": [
+        "StorageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initStorageEvent(type, bubbles, cancelable, key, oldValue)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable",
+        "key",
+        "oldValue"
+      ],
+      "for": [
+        "StorageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable",
+        "key",
+        "oldValue",
+        "newValue"
+      ],
+      "for": [
+        "StorageEvent"
+      ],
+      "shortname": "html"
+    },
+    "initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue, url)": {
+      "args": [
+        "type",
+        "bubbles",
+        "cancelable",
+        "key",
+        "oldValue",
+        "newValue",
+        "url"
+      ],
       "for": [
         "StorageEvent"
       ],
@@ -12275,9 +12443,7 @@
       "args": [],
       "for": [
         "HTMLAllCollection",
-        "MimeTypeArray",
-        "Plugin",
-        "PluginArray"
+        "Plugin"
       ],
       "shortname": "html"
     },
@@ -12295,8 +12461,10 @@
         "HTMLCollection",
         "HTMLSelectElement",
         "MediaList",
+        "MimeTypeArray",
         "NamedNodeMap",
         "NodeList",
+        "PluginArray",
         "StyleSheetList"
       ],
       "shortname": "cssom"
@@ -12341,9 +12509,9 @@
     }
   },
   "key()": {
-    "key(n)": {
+    "key(index)": {
       "args": [
-        "n"
+        "index"
       ],
       "for": [
         "Storage"
@@ -12695,8 +12863,10 @@
     }
   },
   "measureText()": {
-    "measureText()": {
-      "args": [],
+    "measureText(text)": {
+      "args": [
+        "text"
+      ],
       "for": [
         "CanvasText"
       ],
@@ -12836,9 +13006,7 @@
     "namedItem()": {
       "args": [],
       "for": [
-        "MimeTypeArray",
-        "Plugin",
-        "PluginArray"
+        "Plugin"
       ],
       "shortname": "html"
     },
@@ -12859,7 +13027,9 @@
         "HTMLAllCollection",
         "HTMLCollection",
         "HTMLFormControlsCollection",
-        "HTMLSelectElement"
+        "HTMLSelectElement",
+        "MimeTypeArray",
+        "PluginArray"
       ],
       "shortname": "dom"
     }
@@ -14088,7 +14258,6 @@
       "for": [
         "ChildNode",
         "DOMTokenList",
-        "DataTransferItemList",
         "HTMLSelectElement"
       ],
       "shortname": "dom"
@@ -14107,6 +14276,7 @@
         "index"
       ],
       "for": [
+        "DataTransferItemList",
         "HTMLOptionsCollection"
       ],
       "shortname": "html"
@@ -15852,9 +16022,9 @@
     }
   },
   "setCustomValidity()": {
-    "setCustomValidity(message)": {
+    "setCustomValidity(error)": {
       "args": [
-        "message"
+        "error"
       ],
       "for": [
         "HTMLButtonElement",
@@ -15881,9 +16051,9 @@
     }
   },
   "setDragImage()": {
-    "setDragImage(element, x, y)": {
+    "setDragImage(image, x, y)": {
       "args": [
-        "element",
+        "image",
         "x",
         "y"
       ],
@@ -16014,8 +16184,10 @@
     }
   },
   "setLineDash()": {
-    "setLineDash()": {
-      "args": [],
+    "setLineDash(segments)": {
+      "args": [
+        "segments"
+      ],
       "for": [
         "CanvasPathDrawingStyles"
       ],
@@ -17009,8 +17181,12 @@
     }
   },
   "strokeText()": {
-    "strokeText()": {
-      "args": [],
+    "strokeText(text, x, y)": {
+      "args": [
+        "text",
+        "x",
+        "y"
+      ],
       "for": [
         "CanvasText"
       ],
@@ -17514,9 +17690,9 @@
     }
   },
   "transferFromImageBitmap()": {
-    "transferFromImageBitmap(imageBitmap)": {
+    "transferFromImageBitmap(bitmap)": {
       "args": [
-        "imageBitmap"
+        "bitmap"
       ],
       "for": [
         "ImageBitmapRenderingContext"

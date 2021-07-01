@@ -15382,7 +15382,7 @@
     "lineJoin",
     "lineWidth",
     "miterLimit",
-    "setLineDash()"
+    "setLineDash(segments)"
   ],
   "CanvasPattern": [
     "setTransform()"
@@ -15414,9 +15414,9 @@
     "save()"
   ],
   "CanvasText": [
-    "fillText()",
-    "measureText()",
-    "strokeText()"
+    "fillText(text, x, y)",
+    "measureText(text)",
+    "strokeText(text, x, y)"
   ],
   "CanvasTextAlign": [
     "center",
@@ -17290,7 +17290,7 @@
     "getData(format)",
     "items",
     "setData(format, data)",
-    "setDragImage(element, x, y)",
+    "setDragImage(image, x, y)",
     "types"
   ],
   "DataTransferItem": [
@@ -17303,7 +17303,7 @@
     "add()",
     "clear()",
     "length",
-    "remove()"
+    "remove(index)"
   ],
   "DeadFragmentInformation": [
     "children",
@@ -17445,7 +17445,7 @@
     "fullscreenEnabled",
     "fully active",
     "getElementsByClassName(classNames)",
-    "getElementsByName(name)",
+    "getElementsByName(elementName)",
     "getElementsByTagName(qualifiedName)",
     "getElementsByTagNameNS(namespace, localName)",
     "hasFocus()",
@@ -19154,7 +19154,7 @@
     "labels",
     "name",
     "reportValidity()",
-    "setCustomValidity(message)",
+    "setCustomValidity(error)",
     "type",
     "validationMessage",
     "validity",
@@ -19325,7 +19325,7 @@
     "form",
     "name",
     "reportValidity()",
-    "setCustomValidity(message)",
+    "setCustomValidity(error)",
     "type",
     "validationMessage",
     "validity",
@@ -19492,7 +19492,7 @@
     "selectionDirection",
     "selectionEnd",
     "selectionStart",
-    "setCustomValidity(message)",
+    "setCustomValidity(error)",
     "setRangeText(replacement, start, end, selectMode)",
     "setSelectionRange(start, end, direction)",
     "size",
@@ -19595,7 +19595,7 @@
     "enter",
     "error",
     "exit",
-    "fastSeek()",
+    "fastSeek(time)",
     "getStartDate()",
     "load()",
     "loadeddata",
@@ -19680,7 +19680,7 @@
     "hspace",
     "name",
     "reportValidity()",
-    "setCustomValidity(message)",
+    "setCustomValidity(error)",
     "standby",
     "type",
     "useMap",
@@ -19728,7 +19728,7 @@
     "labels",
     "name",
     "reportValidity()",
-    "setCustomValidity(message)",
+    "setCustomValidity(error)",
     "type",
     "validationMessage",
     "validity",
@@ -19771,7 +19771,7 @@
     "type"
   ],
   "HTMLSelectElement": [
-    "add()",
+    "add(element)",
     "autocomplete",
     "checkValidity()",
     "disabled",
@@ -19788,7 +19788,7 @@
     "required",
     "selectedIndex",
     "selectedOptions",
-    "setCustomValidity(message)",
+    "setCustomValidity(error)",
     "size",
     "type",
     "validationMessage",
@@ -19916,7 +19916,7 @@
     "selectionDirection",
     "selectionEnd",
     "selectionStart",
-    "setCustomValidity(message)",
+    "setCustomValidity(error)",
     "setRangeText(replacement, start, end, selectMode)",
     "setSelectionRange(start, end, direction)",
     "textLength",
@@ -20601,7 +20601,7 @@
   ],
   "ImageBitmapRenderingContext": [
     "canvas",
-    "transferFromImageBitmap(imageBitmap)"
+    "transferFromImageBitmap(bitmap)"
   ],
   "ImageBitmapRenderingContextSettings": [
     "alpha"
@@ -21495,7 +21495,13 @@
   ],
   "MessageEvent": [
     "data",
-    "initMessageEvent()",
+    "initMessageEvent(type)",
+    "initMessageEvent(type, bubbles)",
+    "initMessageEvent(type, bubbles, cancelable)",
+    "initMessageEvent(type, bubbles, cancelable, data)",
+    "initMessageEvent(type, bubbles, cancelable, data, origin)",
+    "initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId)",
+    "initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source)",
     "lastEventId",
     "origin",
     "ports",
@@ -21528,9 +21534,9 @@
     "type"
   ],
   "MimeTypeArray": [
-    "item()",
+    "item(index)",
     "length",
-    "namedItem()"
+    "namedItem(name)"
   ],
   "MockSensor": [
     "maxSamplingFrequency",
@@ -22476,7 +22482,7 @@
   ],
   "Path2D": [
     "Path2D(path)",
-    "addPath(b, transform)"
+    "addPath(path, transform)"
   ],
   "PaymentComplete": [
     "fail",
@@ -22837,9 +22843,9 @@
     "namedItem()"
   ],
   "PluginArray": [
-    "item()",
+    "item(index)",
     "length",
-    "namedItem()",
+    "namedItem(name)",
     "refresh()"
   ],
   "PointerEvent": [
@@ -25509,7 +25515,7 @@
   "Storage": [
     "clear()",
     "getItem(key)",
-    "key(n)",
+    "key(index)",
     "length",
     "removeItem(key)",
     "setItem(key, value)"
@@ -25519,7 +25525,13 @@
     "usage"
   ],
   "StorageEvent": [
-    "initStorageEvent()",
+    "initStorageEvent(type)",
+    "initStorageEvent(type, bubbles)",
+    "initStorageEvent(type, bubbles, cancelable)",
+    "initStorageEvent(type, bubbles, cancelable, key)",
+    "initStorageEvent(type, bubbles, cancelable, key, oldValue)",
+    "initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue)",
+    "initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue, url)",
     "key",
     "newValue",
     "oldValue",
@@ -27176,7 +27188,7 @@
     "cross-origin isolated capability",
     "embedder policy",
     "error",
-    "importScripts(urls)",
+    "importScripts(...urls)",
     "languagechange",
     "location",
     "module map",
