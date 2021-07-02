@@ -79,7 +79,7 @@
             "filename": "api/AbortController.json",
             "name": "abort",
             "slug": "API/AbortController/abort",
-            "summary": "The abort() method of the AbortController interface aborts a DOM request before it has completed. This is able to abort fetch requests, the consumption of any response Body, or streams.",
+            "summary": "The abort() method of the AbortController interface aborts a DOM request before it has completed. This is able to abort fetch requests, the consumption of any response bodies, or streams.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -288,7 +288,8 @@
     "ref-for-dom-abortsignal-abort①": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/AbortSignal.json",
             "name": "abort",
@@ -323,10 +324,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "15"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "15"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -8207,7 +8208,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "nodejs": {
                     "version_added": "14.5.0",
@@ -8266,7 +8267,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "nodejs": {
                     "version_added": "14.5.0"
@@ -9504,7 +9505,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3.2"
+                    "version_added": "3.1"
                 },
                 "safari_ios": {
                     "version_added": "3"
@@ -11578,7 +11579,7 @@
             "filename": "api/Node.json",
             "name": "isSameNode",
             "slug": "API/Node/isSameNode",
-            "summary": "The isSameNode() method for Node objects tests whether two nodes are the same (that is, whether they reference the same object).",
+            "summary": "The isSameNode() method for Node objects is a legacy alias the for the === strict equality operator. That is, it tests whether two nodes are the same (in other words, whether they reference the same object).",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -14652,7 +14653,8 @@
     "dom-shadowroot-delegatesfocus": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/ShadowRoot.json",
             "name": "delegatesFocus",
@@ -14669,10 +14671,12 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1706275'>bug 1706275</a>"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1706275'>bug 1706275</a>"
                 },
                 "ie": {
                     "version_added": false
@@ -14684,10 +14688,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "15"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "15"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
