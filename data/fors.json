@@ -1502,7 +1502,6 @@
     "PointerEventInit",
     "PopStateEvent",
     "PopStateEventInit",
-    "PostMessageOptions",
     "PredefinedColorSpace",
     "PremultiplyAlpha",
     "Prevent Silent Access",
@@ -2015,6 +2014,7 @@
     "StructuredSerialize",
     "StructuredSerializeForStorage",
     "StructuredSerializeInternal",
+    "StructuredSerializeOptions",
     "StructuredSerializeWithTransfer",
     "StylePropertyMap",
     "StylePropertyMapReadOnly",
@@ -8299,6 +8299,7 @@
     "perform a security check",
     "perform automatic text track selection",
     "perform some steps once a promise is settled",
+    "performance",
     "performanceentry",
     "performanceresourcetiming",
     "performing a microtask checkpoint",
@@ -9293,7 +9294,6 @@
     "same site",
     "same-document url reference",
     "same-origin",
-    "same-origin check",
     "same-origin request",
     "same-origin with its ancestors",
     "same-origin-allow-popups",
@@ -17479,6 +17479,7 @@
     "measureText(text, styleMap)",
     "mode",
     "namedFlows",
+    "navigation timing entry",
     "normalizeDocument()",
     "onabort",
     "onanimationcancel",
@@ -22660,11 +22661,13 @@
     "domContentLoadedEventEnd",
     "domContentLoadedEventStart",
     "domInteractive",
-    "duration",
     "loadEventEnd",
     "loadEventStart",
-    "name",
+    "navigation type",
+    "previous document unload timing",
+    "redirect count",
     "redirectCount",
+    "service worker timing",
     "toJSON()",
     "type",
     "unloadEventEnd",
@@ -22674,6 +22677,7 @@
     "connectEnd",
     "connectStart",
     "decodedBodySize",
+    "document load timing",
     "domainLookupEnd",
     "domainLookupStart",
     "duration",
@@ -22682,7 +22686,6 @@
     "fetchStart",
     "initiator type",
     "initiatorType",
-    "initiatortype",
     "name",
     "nextHopProtocol",
     "performanceentry",
@@ -22698,8 +22701,7 @@
     "toJSON",
     "toJSON()",
     "transferSize",
-    "workerStart",
-    "workerstart"
+    "workerStart"
   ],
   "PerformanceTiming": [
     "connectEnd",
@@ -22772,9 +22774,7 @@
     "\"background-sync\"",
     "\"bluetooth\"",
     "\"camera\"",
-    "\"device-info\"",
     "\"display-capture\"",
-    "\"gamepad\"",
     "\"geolocation\"",
     "\"gyroscope\"",
     "\"magnetometer\"",
@@ -22910,9 +22910,6 @@
   ],
   "PopStateEvent": [
     "state"
-  ],
-  "PostMessageOptions": [
-    "transfer"
   ],
   "PredefinedColorSpace": [
     "display-p3",
@@ -25581,6 +25578,9 @@
     "preventClose",
     "signal"
   ],
+  "StructuredSerializeOptions": [
+    "transfer"
+  ],
   "StylePropertyMap": [
     "[[declarations]]",
     "append(property)",
@@ -27189,7 +27189,8 @@
     "reportError(e)",
     "reports",
     "setInterval(handler, timeout, ...arguments)",
-    "setTimeout(handler, timeout, ...arguments)"
+    "setTimeout(handler, timeout, ...arguments)",
+    "structuredClone(value, options)"
   ],
   "WindowOrWorkerGlobalScope/fetch(input)": [
     "init",
