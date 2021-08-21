@@ -60,7 +60,7 @@
             "filename": "api/NDEFMessage.json",
             "name": "NDEFMessage",
             "slug": "API/NDEFMessage",
-            "summary": "The NDEFMessage interface of the Web NFC API is an abstract interface that represents message that can be received or sent to a to compatible NFC devices, e.g. NFC tags supporting NDEF.The NDEFMessage interface of the Web NFC API is an abstract interface that represents message that can be received or sent to a to compatible NFC devices, e.g. NFC tags supporting NDEF.",
+            "summary": "The NDEFMessage interface of the Web NFC API represents the content of an NDEF message that has been read from or could be written to an NFC tag. An instance is acquired by calling the NDEFMessage() constructor or from the NDEFReadingEvent.message property, which is passed to NDEFReader.onreading.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -113,7 +113,7 @@
             "filename": "api/NDEFReader.json",
             "name": "NDEFReader",
             "slug": "API/NDEFReader/NDEFReader",
-            "summary": "The NDEFReader() constructor of the Web NFC API returns a newly constructed NDEFReader object used to read NDEF messages from compatiable NFC devices, e.g. NDEF tags, within the reader's magnetic induction field.The NDEFReader() constructor of the Web NFC API returns a newly constructed NDEFReader object used to read NDEF messages from compatiable NFC devices, e.g. NDEF tags, within the reader's magnetic induction field.",
+            "summary": "The NDEFReader() constructor of the NDEFReader interface returns a new NDEFReader object, which is used to read NDEF messages from compatible NFC devices, e.g. NDEF tags, within the reader's magnetic induction field.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -166,7 +166,7 @@
             "filename": "api/NDEFReader.json",
             "name": "onreading",
             "slug": "API/NDEFReader/onreading",
-            "summary": "The onreading property of NDEFReader interface of the Web NFC API is called whenever a new reading is available from compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.The onreading property of NDEFReader interface of the Web NFC API is called whenever a new reading is available from compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.",
+            "summary": "The onreading property of the NDEFReader interface is called whenever a new reading is available from compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -219,7 +219,7 @@
             "filename": "api/NDEFReader.json",
             "name": "onreadingerror",
             "slug": "API/NDEFReader/onreadingerror",
-            "summary": "The onreadingerror property of the NDEFReader interface of the Web NFC API is called whenever an error occurs during reading of NFC tags, e.g. when tags leave the reader's magnetic induction field.The onreadingerror property of the NDEFReader interface of the Web NFC API is called whenever an error occurs during reading of NFC tags, e.g. when tags leave the reader's magnetic induction field.",
+            "summary": "The onreadingerror property of the NDEFReader interface is called whenever an error occurs during reading of NFC tags, e.g. when tags leave the reader's magnetic induction field.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -272,7 +272,7 @@
             "filename": "api/NDEFReader.json",
             "name": "scan",
             "slug": "API/NDEFReader/scan",
-            "summary": "The scan() method of NDEFReader interface reads NDEF records from compatible NFC devices, e.g., NDEF NFC tags.",
+            "summary": "The scan() method of the NDEFReader interface activates a reading device and returns a Promise that either resolves when an NFC tag is read or rejects if a hardware or permission error is encountered. This method triggers a permission prompt if the \"nfc\" permission has not been previously granted.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -325,7 +325,7 @@
             "filename": "api/NDEFReader.json",
             "name": "write",
             "slug": "API/NDEFReader/write",
-            "summary": "The write() method of NDEFReader interface writes a specified message to a compatible NFC tag.",
+            "summary": "The write() method of the NDEFReader interface attempts to write an NDEF message to a tag and returns a Promise that either resolves when a message has been written to the tag or rejects if a hardware or permission error is encountered. This method triggers a permission prompt if the \"nfc\" permission has not been previously granted.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -378,7 +378,7 @@
             "filename": "api/NDEFReader.json",
             "name": "NDEFReader",
             "slug": "API/NDEFReader",
-            "summary": "The NDEFReader interface of the Web NFC API is an abstract interface used to read from and write data to compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.The NDEFReader interface of the Web NFC API is an abstract interface used to read from and write data to compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.",
+            "summary": "The NDEFReader interface of the Web NFC API is used to read from and write data to compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -431,7 +431,7 @@
             "filename": "api/NDEFReadingEvent.json",
             "name": "NDEFReadingEvent",
             "slug": "API/NDEFReadingEvent",
-            "summary": "The NDEFReadingEvent interface represents events dispatched on new NFC readings obtained by NDEFReader.",
+            "summary": "The NDEFReadingEvent interface of the Web NFC API represents events dispatched on new NFC readings obtained by NDEFReader.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -484,7 +484,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "NDEFRecord",
             "slug": "API/NDEFRecord/NDEFRecord",
-            "summary": "The NDEFRecord() constructor of the Web NFC API returns a newly constructed NDEFRecord object that represents data that can be read from or written to compatible NFC devices, e.g. NFC tags supporting NDEF. The NDEFRecord() constructor of the Web NFC API returns a newly constructed NDEFRecord object that represents data that can be read from or written to compatible NFC devices, e.g. NFC tags supporting NDEF.",
+            "summary": "The NDEFRecord() constructor of the Web NFC API returns a newly constructed NDEFRecord object that represents data that can be read from, or written to, compatible NFC devices; e.g. NFC tags supporting NDEF. ",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -537,7 +537,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "data",
             "slug": "API/NDEFRecord/data",
-            "summary": "The data property of the NDEFRecord interface is DataView providing access to the payload data of the record.",
+            "summary": "The data property of the NDEFRecord interface returns a DataView containing the raw bytes of the record's payload.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -590,7 +590,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "encoding",
             "slug": "API/NDEFRecord/encoding",
-            "summary": "The encoding property ofthe NDEFRecord interface is USVString containing the name of the encoding used to encode NDEF payload if it contains textual data.The encoding property ofthe NDEFRecord interface is USVString containing the name of the encoding used to encode NDEF payload if it contains textual data.",
+            "summary": "The encoding property of the NDEFRecord interface returns the encoding of a textual payload, or null otherwise.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -643,7 +643,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "id",
             "slug": "API/NDEFRecord/id",
-            "summary": "The id property ofthe NDEFRecord interface is USVString containing the record identifier.The id property ofthe NDEFRecord interface is USVString containing the record identifier.",
+            "summary": "The id property of the NDEFRecord interface returns the record identifier, which is an absolute or relative URL used to identify the record.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -696,7 +696,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "lang",
             "slug": "API/NDEFRecord/lang",
-            "summary": "The lang property ofthe NDEFRecord interface is USVString containing the language tag of the record contents, if it is a vailable.The lang property ofthe NDEFRecord interface is USVString containing the language tag of the record contents, if it is a vailable.",
+            "summary": "The lang property of the NDEFRecord interface returns the language of a textual payload, or null if one was not supplied.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -749,7 +749,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "mediaType",
             "slug": "API/NDEFRecord/mediaType",
-            "summary": "The mediaType property ofthe NDEFRecord interface is USVString containing the MIME type of the record payload.The mediaType property ofthe NDEFRecord interface is USVString containing the MIME type of the record payload.",
+            "summary": "The mediaType property of the NDEFRecord interface returns the MIME type of the record. This value will be null if recordType is not equal to \"mime\".",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -802,7 +802,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "recordType",
             "slug": "API/NDEFRecord/recordType",
-            "summary": "The recordType property ofthe NDEFRecord interface is USVString containing the NDEF record type.The recordType property ofthe NDEFRecord interface is USVString containing the NDEF record type.",
+            "summary": "The recordType property of the NDEFRecord interface returns the record type of the record.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -855,7 +855,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "toRecords",
             "slug": "API/NDEFRecord/toRecords",
-            "summary": "The toRecords() method of the NDEFRecord interface of Web NFC API parses record payload NDEFRecord.data besed on NDEFRecord.recordType and returns the result.The toRecords() method of the NDEFRecord interface of Web NFC API parses record payload NDEFRecord.data besed on NDEFRecord.recordType and returns the result.",
+            "summary": "The toRecords() method of the NDEFRecord interface converts NDEFRecord.data to a sequence of records based on NDEFRecord.recordType, and returns the result. This allows parsing the payloads of record types which may contain nested records, such as smart poster and external type records.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -908,7 +908,7 @@
             "filename": "api/NDEFRecord.json",
             "name": "NDEFRecord",
             "slug": "API/NDEFRecord",
-            "summary": "The NDEFRecord interface of the Web NFC API is an abstract interface that represents data that can be read from or written to compatible NFC devices, e.g. NFC tags supporting NDEF.The NDEFRecord interface of the Web NFC API is an abstract interface that represents data that can be read from or written to compatible NFC devices, e.g. NFC tags supporting NDEF.",
+            "summary": "The NDEFRecord interface of the Web NFC API provides data that can be read from, or written to, compatible NFC devices, e.g. NFC tags supporting NDEF.",
             "support": {
                 "chrome": {
                     "version_added": false
