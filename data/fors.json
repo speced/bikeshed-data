@@ -3489,7 +3489,6 @@
     "calcmode",
     "calculate box size",
     "calculate depth for node",
-    "calculate scroll timeline progress",
     "calculate the aspect ratio",
     "calculate the part element map",
     "calculation tree",
@@ -4992,7 +4991,6 @@
     "effective position of the legacy mouse pointer",
     "effective resident key requirement for credential creation",
     "effective scroll offset",
-    "effective scroll offsets",
     "effective start offset",
     "effective user verification requirement for assertion",
     "effective user verification requirement for credential creation",
@@ -9102,7 +9100,6 @@
     "resolve job promise",
     "resolve pending play promises",
     "resolve percentage heights in table-cell content:",
-    "resolve scroll timeline offsets",
     "resolve the requested features",
     "resolved",
     "resolved descendant node",
@@ -9454,7 +9451,6 @@
     "scroll snapport",
     "scroll timeline",
     "scroll timeline offset",
-    "scroll timeline progress",
     "scroll to the beginning of the document",
     "scroll to the fragment",
     "scroll-behavior",
@@ -9726,7 +9722,6 @@
     "set the device information exposure",
     "set the frozen base url",
     "set the muted state",
-    "set the offset value",
     "set the password",
     "set the playback rate",
     "set the search origin",
@@ -12274,6 +12269,11 @@
     "orientation",
     "scroll-offsets",
     "source"
+  ],
+  "@scroll-timeline/source": [
+    "auto",
+    "none",
+    "selector()"
   ],
   "@viewport": [
     "height",
@@ -25162,7 +25162,11 @@
     "\"block\"",
     "\"horizontal\"",
     "\"inline\"",
-    "\"vertical\""
+    "\"vertical\"",
+    "block",
+    "horizontal",
+    "inline",
+    "vertical"
   ],
   "ScrollIntoViewOptions": [
     "block",
@@ -25188,6 +25192,7 @@
     "constructor(options)",
     "orientation",
     "scrollOffsets",
+    "set the offset value",
     "source"
   ],
   "ScrollTimeline/ScrollTimeline()": [
@@ -33225,6 +33230,12 @@
     "anonymous",
     "use-credentials"
   ],
+  "scroll timeline": [
+    "calculate scroll timeline progress",
+    "effective scroll offsets",
+    "resolve scroll timeline offsets",
+    "scroll timeline progress"
+  ],
   "scroll-anchoring": [
     "anchor node"
   ],
@@ -33542,8 +33553,11 @@
     "name"
   ],
   "source": [
+    "auto",
     "height",
     "media",
+    "none",
+    "selector()",
     "sizes",
     "src",
     "srcset",
