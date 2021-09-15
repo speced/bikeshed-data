@@ -10696,6 +10696,15 @@
       "shortname": "web-animations"
     }
   },
+  "getLayoutMap()": {
+    "getLayoutMap()": {
+      "args": [],
+      "for": [
+        "Keyboard"
+      ],
+      "shortname": "keyboard-map"
+    }
+  },
   "getLineDash()": {
     "getLineDash()": {
       "args": [],
@@ -12674,9 +12683,19 @@
     "lock()": {
       "args": [],
       "for": [
+        "Keyboard",
         "ScreenOrientation"
       ],
-      "shortname": "screen-orientation"
+      "shortname": "keyboard-lock"
+    },
+    "lock(keyCodes)": {
+      "args": [
+        "keyCodes"
+      ],
+      "for": [
+        "Keyboard"
+      ],
+      "shortname": "keyboard-lock"
     },
     "lock(orientation)": {
       "args": [
@@ -17968,9 +17987,10 @@
     "unlock()": {
       "args": [],
       "for": [
+        "Keyboard",
         "ScreenOrientation"
       ],
-      "shortname": "screen-orientation"
+      "shortname": "keyboard-lock"
     }
   },
   "unobserve()": {
