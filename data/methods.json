@@ -6535,13 +6535,18 @@
       "for": [
         "AnimationEvent",
         "AnimationPlaybackEvent",
+        "CompositionEvent",
         "CustomEvent",
         "Event",
         "ExtendableEvent",
         "ExtendableMessageEvent",
+        "FocusEvent",
         "FontFaceSetLoadEvent",
         "IDBVersionChangeEvent",
+        "InputEvent",
+        "KeyboardEvent",
         "MediaQueryListEvent",
+        "MouseEvent",
         "NavigationEvent",
         "PaymentMethodChangeEvent",
         "PaymentRequestUpdateEvent",
@@ -6551,7 +6556,9 @@
         "RTCPeerConnectionIceEvent",
         "SecurityPolicyViolationEvent",
         "TransitionEvent",
-        "ValueEvent"
+        "UIEvent",
+        "ValueEvent",
+        "WheelEvent"
       ],
       "shortname": "csp"
     },
@@ -6583,15 +6590,20 @@
       "for": [
         "AnimationPlaybackEvent",
         "AudioProcessingEvent",
+        "CompositionEvent",
         "CustomEvent",
         "Event",
         "ExtendableEvent",
         "ExtendableMessageEvent",
         "FetchEvent",
+        "FocusEvent",
         "FontFaceSetLoadEvent",
         "IDBVersionChangeEvent",
+        "InputEvent",
+        "KeyboardEvent",
         "MediaQueryListEvent",
         "MediaStreamTrackEvent",
+        "MouseEvent",
         "NavigationEvent",
         "NotificationEvent",
         "OfflineAudioCompletionEvent",
@@ -6606,7 +6618,9 @@
         "RTCPeerConnectionIceEvent",
         "RTCTrackEvent",
         "SecurityPolicyViolationEvent",
+        "UIEvent",
         "USBConnectionEvent",
+        "WheelEvent",
         "XRInputSourceEvent",
         "XRInputSourcesChangeEvent",
         "XRLayerEvent",
@@ -11820,8 +11834,56 @@
     }
   },
   "initCompositionEvent()": {
-    "initCompositionEvent()": {
-      "args": [],
+    "initCompositionEvent(typeArg)": {
+      "args": [
+        "typeArg"
+      ],
+      "for": [
+        "CompositionEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initCompositionEvent(typeArg, bubblesArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg"
+      ],
+      "for": [
+        "CompositionEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initCompositionEvent(typeArg, bubblesArg, cancelableArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg"
+      ],
+      "for": [
+        "CompositionEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initCompositionEvent(typeArg, bubblesArg, cancelableArg, viewArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg"
+      ],
+      "for": [
+        "CompositionEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initCompositionEvent(typeArg, bubblesArg, cancelableArg, viewArg, dataArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "dataArg"
+      ],
       "for": [
         "CompositionEvent"
       ],
@@ -11910,10 +11972,83 @@
     }
   },
   "initKeyboardEvent()": {
-    "initKeyboardEvent()": {
-      "args": [],
+    "initKeyboardEvent(typeArg, bubblesArg, cancelableArg, viewArg, keyArg, locationArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "keyArg",
+        "locationArg"
+      ],
       "for": [
-        "KeyboardEveng"
+        "KeyboardEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initKeyboardEvent(typeArg, bubblesArg, cancelableArg, viewArg, keyArg, locationArg, ctrlKey)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "keyArg",
+        "locationArg",
+        "ctrlKey"
+      ],
+      "for": [
+        "KeyboardEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initKeyboardEvent(typeArg, bubblesArg, cancelableArg, viewArg, keyArg, locationArg, ctrlKey, altKey)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "keyArg",
+        "locationArg",
+        "ctrlKey",
+        "altKey"
+      ],
+      "for": [
+        "KeyboardEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initKeyboardEvent(typeArg, bubblesArg, cancelableArg, viewArg, keyArg, locationArg, ctrlKey, altKey, shiftKey)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "keyArg",
+        "locationArg",
+        "ctrlKey",
+        "altKey",
+        "shiftKey"
+      ],
+      "for": [
+        "KeyboardEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initKeyboardEvent(typeArg, bubblesArg, cancelableArg, viewArg, keyArg, locationArg, ctrlKey, altKey, shiftKey, metaKey)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "keyArg",
+        "locationArg",
+        "ctrlKey",
+        "altKey",
+        "shiftKey",
+        "metaKey"
+      ],
+      "for": [
+        "KeyboardEvent"
       ],
       "shortname": "ui-events"
     }
@@ -12005,8 +12140,46 @@
     }
   },
   "initMouseEvent()": {
-    "initMouseEvent()": {
-      "args": [],
+    "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "detailArg",
+        "screenXArg",
+        "screenYArg",
+        "clientXArg",
+        "clientYArg",
+        "ctrlKeyArg",
+        "altKeyArg",
+        "shiftKeyArg",
+        "metaKeyArg",
+        "buttonArg"
+      ],
+      "for": [
+        "MouseEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "detailArg",
+        "screenXArg",
+        "screenYArg",
+        "clientXArg",
+        "clientYArg",
+        "ctrlKeyArg",
+        "altKeyArg",
+        "shiftKeyArg",
+        "metaKeyArg",
+        "buttonArg",
+        "relatedTargetArg"
+      ],
       "for": [
         "MouseEvent"
       ],
@@ -12014,8 +12187,71 @@
     }
   },
   "initMutationEvent()": {
-    "initMutationEvent()": {
-      "args": [],
+    "initMutationEvent(typeArg, bubblesArg, cancelableArg, relatedNodeArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "relatedNodeArg"
+      ],
+      "for": [
+        "MutationEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initMutationEvent(typeArg, bubblesArg, cancelableArg, relatedNodeArg, prevValueArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "relatedNodeArg",
+        "prevValueArg"
+      ],
+      "for": [
+        "MutationEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initMutationEvent(typeArg, bubblesArg, cancelableArg, relatedNodeArg, prevValueArg, newValueArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "relatedNodeArg",
+        "prevValueArg",
+        "newValueArg"
+      ],
+      "for": [
+        "MutationEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initMutationEvent(typeArg, bubblesArg, cancelableArg, relatedNodeArg, prevValueArg, newValueArg, attrNameArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "relatedNodeArg",
+        "prevValueArg",
+        "newValueArg",
+        "attrNameArg"
+      ],
+      "for": [
+        "MutationEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initMutationEvent(typeArg, bubblesArg, cancelableArg, relatedNodeArg, prevValueArg, newValueArg, attrNameArg, attrChangeArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "relatedNodeArg",
+        "prevValueArg",
+        "newValueArg",
+        "attrNameArg",
+        "attrChangeArg"
+      ],
       "for": [
         "MutationEvent"
       ],
@@ -12109,19 +12345,58 @@
     }
   },
   "initUIEvent()": {
-    "initUIEvent()": {
-      "args": [],
+    "initUIEvent(typeArg)": {
+      "args": [
+        "typeArg"
+      ],
       "for": [
         "UIEvent"
       ],
       "shortname": "ui-events"
-    }
-  },
-  "initWheelEvent()": {
-    "initWheelEvent()": {
-      "args": [],
+    },
+    "initUIEvent(typeArg, bubblesArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg"
+      ],
       "for": [
-        "WheelEvent"
+        "UIEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initUIEvent(typeArg, bubblesArg, cancelableArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg"
+      ],
+      "for": [
+        "UIEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initUIEvent(typeArg, bubblesArg, cancelableArg, viewArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg"
+      ],
+      "for": [
+        "UIEvent"
+      ],
+      "shortname": "ui-events"
+    },
+    "initUIEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg)": {
+      "args": [
+        "typeArg",
+        "bubblesArg",
+        "cancelableArg",
+        "viewArg",
+        "detailArg"
+      ],
+      "for": [
+        "UIEvent"
       ],
       "shortname": "ui-events"
     }
