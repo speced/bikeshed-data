@@ -269,7 +269,6 @@
     "<?xml-stylesheet?>",
     "<[-token>",
     "<]-token>",
-    "<absolute-color-base>",
     "<absolute-size>",
     "<alpha-value>",
     "<alphavalue>",
@@ -361,7 +360,6 @@
     "<declaration-value>",
     "<declaration>",
     "<delim-token>",
-    "<deprecated-color>",
     "<deprecated-colors>",
     "<device-performance>",
     "<dimension-token>",
@@ -3266,6 +3264,7 @@
     "blank node",
     "blank node identifier",
     "blank!!pseudo-element",
+    "bleed",
     "bleed area",
     "blend technique",
     "blink",
@@ -3338,6 +3337,7 @@
     "bookmark-label",
     "bookmark-level",
     "bookmark-state",
+    "bookmark-target",
     "bookmarks",
     "boolean",
     "boolean attributes",
@@ -3405,6 +3405,11 @@
     "border-left-style",
     "border-left-width",
     "border-limit",
+    "border-parts",
+    "border-parts-bottom",
+    "border-parts-left",
+    "border-parts-right",
+    "border-parts-top",
     "border-radius",
     "border-right",
     "border-right-color",
@@ -4520,8 +4525,6 @@
     "cyclic percentage size",
     "cylindrical polar color",
     "d",
-    "d50 whitepoint",
-    "d65 whitepoint",
     "dark color scheme",
     "darkblue",
     "darkcyan",
@@ -5338,7 +5341,6 @@
     "fax",
     "feature",
     "feature descriptor",
-    "feature queries",
     "feature requirements",
     "feature separator",
     "feature-identifier",
@@ -6111,7 +6113,6 @@
     "host parsing",
     "host serializer",
     "host state",
-    "host syntax",
     "host-char",
     "host-including inclusive ancestor",
     "host-part",
@@ -6184,11 +6185,15 @@
     "hyperlink auditing",
     "hyphen-separated matching",
     "hyphenate",
+    "hyphenate-after",
+    "hyphenate-before",
     "hyphenate-character",
     "hyphenate-limit-chars",
     "hyphenate-limit-last",
     "hyphenate-limit-lines",
     "hyphenate-limit-zone",
+    "hyphenate-lines",
+    "hyphenate-resource",
     "hyphenation",
     "hyphenation opportunity",
     "hyphens",
@@ -6536,7 +6541,7 @@
     "inset-inline-end",
     "inset-inline-start",
     "inset-modified containing block",
-    "inside",
+    "inset-rectangle",
     "inside area",
     "install",
     "installation",
@@ -7245,6 +7250,7 @@
     "marker-side",
     "marker-start",
     "markers",
+    "marks",
     "markup declaration open state",
     "maroon",
     "marquee",
@@ -7499,7 +7505,6 @@
     "minimum width",
     "mintcream",
     "minw",
-    "missing color component",
     "missing value default",
     "missing-attribute-value",
     "missing-doctype-name",
@@ -7618,6 +7623,7 @@
     "named property setter",
     "named property visibility algorithm",
     "named string",
+    "named strings",
     "namedItem()",
     "namedcurve",
     "namedflows",
@@ -8060,7 +8066,6 @@
     "output progress value",
     "outputs",
     "outset",
-    "outside",
     "outside-inside",
     "outstanding rejected promises weak set",
     "over",
@@ -8544,7 +8549,6 @@
     "pow()",
     "powderblue",
     "powerful feature",
-    "powerless color component",
     "pr",
     "pragma-set default language",
     "pre",
@@ -8712,6 +8716,10 @@
     "protected",
     "protected mode",
     "protected worker",
+    "prototype",
+    "prototype-insert",
+    "prototype-insert-policy",
+    "prototype-insert-position",
     "proxy",
     "proxy-authentication entry",
     "pseudo-class",
@@ -10329,7 +10337,6 @@
     "supportedalgorithms",
     "supports hand tracking",
     "supports indexed properties",
-    "supports queries",
     "supports()",
     "suppression trigger",
     "suppression window",
@@ -10546,6 +10553,7 @@
     "text-over baseline",
     "text-overflow",
     "text-rendering",
+    "text-replace",
     "text-shadow",
     "text-size-adjust",
     "text-space-collapse",
@@ -11348,7 +11356,6 @@
     "when-defined promise map",
     "while",
     "white",
-    "white point",
     "white space",
     "white space characters",
     "white-space",
@@ -11668,7 +11675,6 @@
     "moccasin",
     "navajowhite",
     "navy",
-    "none",
     "oldlace",
     "olive",
     "olivedrab",
@@ -12049,8 +12055,6 @@
     "linktext",
     "mark",
     "marktext",
-    "selecteditem",
-    "selecteditemtext",
     "visitedtext"
   ],
   "<time>": [
@@ -30173,8 +30177,6 @@
     "srgb",
     "x",
     "xyz",
-    "xyz-d50",
-    "xyz-d65",
     "y",
     "z"
   ],
@@ -32355,6 +32357,9 @@
     "layout generator function",
     "layout options"
   ],
+  "layout-containment": [
+    "containing box"
+  ],
   "lch()": [
     "alpha",
     "c",
@@ -33254,6 +33259,9 @@
     "paint function",
     "paintrenderingcontext2dsettings object"
   ],
+  "paint-containment": [
+    "containing box"
+  ],
   "pair": [
     "item",
     "name"
@@ -33417,11 +33425,6 @@
   "promise": [
     "react",
     "reacting"
-  ],
-  "propdef-footnote-display": [
-    "block",
-    "compact",
-    "inline"
   ],
   "property": [
     "scoped",
@@ -34117,6 +34120,9 @@
   "single-animation-timeline": [
     "auto",
     "none"
+  ],
+  "size-containment": [
+    "containing box"
   ],
   "skeleton joint": [
     "radius"
@@ -35275,14 +35281,7 @@
     "'wrap-flow'!!'end'",
     "'wrap-flow'!!'maximum'",
     "'wrap-flow'!!'minimum'",
-    "'wrap-flow'!!'start'",
-    "auto",
-    "both",
-    "clear",
-    "end",
-    "maximum",
-    "minimum",
-    "start"
+    "'wrap-flow'!!'start'"
   ],
   "wrap-inside": [
     "auto",
@@ -35292,9 +35291,7 @@
     "'none'",
     "'wrap'",
     "'wrap-through'!!'none'",
-    "'wrap-through'!!'wrap'",
-    "none",
-    "wrap"
+    "'wrap-through'!!'wrap'"
   ],
   "writing-mode": [
     "horizontal-tb",
