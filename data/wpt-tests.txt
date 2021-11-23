@@ -1,4 +1,4 @@
-sha: 0a78bb206d187eb6573240920596f0d9a5c54b40
+sha: 40b3fc0a0c207c6a23ad3db27084719d35152086
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -363,6 +363,8 @@ crashtest svg/svg-in-svg/svg-in-svg-circular-filter-reference-crash.html
 crashtest svg/text/reftests/text-display-contents-crash.html
 crashtest svg/text/reftests/text-huge-font-size-crash.html
 crashtest web-animations/interfaces/Animation/commitStyles-crash.html
+crashtest web-locks/crashtests/after-worker-termination.https.html
+crashtest web-locks/crashtests/iframe-append.https.html
 crashtest web-locks/crashtests/settle-after-steal.https.html
 crashtest xslt/strip-space-crash.xml
 manual FileAPI/BlobURL/test2-manual.html
@@ -30703,21 +30705,7 @@ testharness html/browsers/history/the-location-interface/scripted_click_location
 testharness html/browsers/history/the-location-interface/scripted_form_submit_assign_during_load.html
 testharness html/browsers/history/the-location-interface/security_location_0.htm
 testharness html/browsers/history/the-session-history-of-browsing-contexts/navigation-in-onload.html
-testharness html/browsers/offline/appcache/appcache-iframe.https.html
-testharness html/browsers/offline/appcache/workers/appcache-worker.https.html
-testharness html/browsers/offline/application-cache-api/api_status_idle.https.html
-testharness html/browsers/offline/application-cache-api/api_status_uncached.https.html
-testharness html/browsers/offline/application-cache-api/api_swapcache_error.https.html
-testharness html/browsers/offline/application-cache-api/api_update.https.html
-testharness html/browsers/offline/application-cache-api/api_update_error.https.html
-testharness html/browsers/offline/application-cache-api/secure_context.html
 testharness html/browsers/offline/browser-state/navigator_online_online.https.html
-testharness html/browsers/offline/introduction-4/event_cached.https.html
-testharness html/browsers/offline/introduction-4/event_checking.https.html
-testharness html/browsers/offline/introduction-4/event_noupdate.https.html
-testharness html/browsers/offline/introduction-4/event_progress.https.html
-testharness html/browsers/offline/manifest_url_check.https.https.html
-testharness html/browsers/offline/no-appcache-in-shared-workers-historical.https.html
 testharness html/browsers/origin/cross-origin-objects/cross-origin-due-to-document-domain-only.html
 testharness html/browsers/origin/cross-origin-objects/cross-origin-objects-function-caching.html
 testharness html/browsers/origin/cross-origin-objects/cross-origin-objects-function-length.html
@@ -39329,6 +39317,7 @@ testharness secure-contexts/basic-shared-worker.https.html
 testharness secure-contexts/shared-worker-insecure-first.https.html
 testharness secure-contexts/shared-worker-secure-first.https.html
 testharness secure-payment-confirmation/authentication-accepted.https.html
+testharness secure-payment-confirmation/authentication-cannot-bypass-spc.https.html
 testharness secure-payment-confirmation/authentication-cross-origin.sub.https.html
 testharness secure-payment-confirmation/authentication-icon-data-url.https.html
 testharness secure-payment-confirmation/authentication-in-iframe.sub.https.html
@@ -39478,9 +39467,7 @@ testharness service-workers/service-worker/activate-event-after-install-state-ch
 testharness service-workers/service-worker/activation-after-registration.https.html
 testharness service-workers/service-worker/activation.https.html
 testharness service-workers/service-worker/active.https.html
-testharness service-workers/service-worker/appcache-ordering-main.https.html
 testharness service-workers/service-worker/claim-affect-other-registration.https.html
-testharness service-workers/service-worker/claim-fetch-with-appcache.https.html
 testharness service-workers/service-worker/claim-fetch.https.html
 testharness service-workers/service-worker/claim-not-using-registration.https.html
 testharness service-workers/service-worker/claim-shared-worker-fetch.https.html
@@ -39853,8 +39840,6 @@ testharness shape-detection/detection-security-test.https.html
 testharness shape-detection/detector-same-object.https.html
 testharness shape-detection/idlharness.https.any.js
 testharness shape-detection/shapedetection-cross-origin.sub.https.html
-testharness signed-exchange/appcache/sxg-inner-resp-over-appcache.tentative.https.html
-testharness signed-exchange/appcache/sxg-served-from-appcache.tentative.https.html
 testharness signed-exchange/check-cert-request.tentative.html
 testharness signed-exchange/fallback-to-another-sxg.tentative.html
 testharness signed-exchange/nested-sxg.tentative.html
@@ -39950,7 +39935,6 @@ testharness storage-access-api/sandboxAttribute.window.js
 testharness storage-access-api/storageAccess.testdriver.sub.html
 testharness storage/estimate-indexeddb.https.any.js
 testharness storage/estimate-parallel.https.any.js
-testharness storage/estimate-usage-details-application-cache.https.tentative.html
 testharness storage/estimate-usage-details-caches.https.tentative.any.js
 testharness storage/estimate-usage-details-indexeddb.https.tentative.any.js
 testharness storage/estimate-usage-details-service-workers.https.tentative.window.js
