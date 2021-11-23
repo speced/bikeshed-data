@@ -1,4 +1,4 @@
-sha: f0430b5100cd8dd248e669abf1f29b5e248c47d5
+sha: 0a78bb206d187eb6573240920596f0d9a5c54b40
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -344,6 +344,7 @@ crashtest shadow-dom/nested-slot-remove-crash.html
 crashtest shadow-dom/user-agent-shadow-root-crash.html
 crashtest svg/animations/animated-classname-crash.svg
 crashtest svg/animations/end-of-time-crash.html
+crashtest svg/animations/svg-style-animate-crash.html
 crashtest svg/crashtests/chrome-bug-1172059.html
 crashtest svg/crashtests/chrome-bug-1205852.html
 crashtest svg/crashtests/chrome-bug-1207590.html
@@ -12447,6 +12448,8 @@ reftest css/css-content/element-replacement-display-contents.html
 reftest css/css-content/element-replacement-display-none.html
 reftest css/css-content/element-replacement-dynamic.html
 reftest css/css-content/element-replacement-image-alt.html
+reftest css/css-content/element-replacement-image-no-src.tentative.html
+reftest css/css-content/element-replacement-image-src.tentative.html
 reftest css/css-content/element-replacement-on-replaced-element.tentative.html
 reftest css/css-content/element-replacement.html
 reftest css/css-content/pseudo-element-inline-box.html
@@ -14648,6 +14651,8 @@ reftest css/css-highlight-api/painting/custom-highlight-painting-invalidation-00
 reftest css/css-highlight-api/painting/custom-highlight-painting-invalidation-005.html
 reftest css/css-highlight-api/painting/custom-highlight-painting-invalidation-006.html
 reftest css/css-highlight-api/painting/custom-highlight-painting-invalidation-007.html
+reftest css/css-highlight-api/painting/custom-highlight-painting-overlapping-highlights-001.html
+reftest css/css-highlight-api/painting/custom-highlight-painting-overlapping-highlights-002.html
 reftest css/css-highlight-api/painting/custom-highlight-painting-prioritization-001.html
 reftest css/css-highlight-api/painting/custom-highlight-painting-prioritization-002.html
 reftest css/css-highlight-api/painting/custom-highlight-painting-staticrange-001.html
@@ -17129,6 +17134,7 @@ reftest css/css-text-decor/text-decoration-line-013.xht
 reftest css/css-text-decor/text-decoration-line-recalc.html
 reftest css/css-text-decor/text-decoration-line-through-wavy-covers-whole-line-length-001.html
 reftest css/css-text-decor/text-decoration-line.html
+reftest css/css-text-decor/text-decoration-lines-001.html
 reftest css/css-text-decor/text-decoration-overline-wavy-covers-whole-line-length-001.html
 reftest css/css-text-decor/text-decoration-propagation-display-contents.html
 reftest css/css-text-decor/text-decoration-propagation-shadow.html
@@ -21745,6 +21751,7 @@ reftest html/rendering/widgets/the-select-element/option-empty-label.html
 reftest html/rendering/widgets/the-select-element/option-label-and-text.html
 reftest html/rendering/widgets/the-select-element/option-only-label.html
 reftest html/rendering/widgets/the-select-element/option-rm-label.html
+reftest html/rendering/widgets/the-select-element/select-invalidation.html
 reftest html/rendering/widgets/the-select-element/select-size-001.html
 reftest html/rendering/widgets/the-select-element/select-size-002.html
 reftest html/semantics/document-metadata/the-link-element/link-rel-attribute-ascii-case-insensitive.html
@@ -28654,7 +28661,9 @@ testharness css/selectors/focus-visible-013.html
 testharness css/selectors/focus-visible-014.html
 testharness css/selectors/focus-visible-015.html
 testharness css/selectors/focus-visible-016.html
+testharness css/selectors/focus-visible-017-2.html
 testharness css/selectors/focus-visible-017.html
+testharness css/selectors/focus-visible-018-2.html
 testharness css/selectors/focus-visible-018.html
 testharness css/selectors/focus-visible-019.html
 testharness css/selectors/focus-visible-020.html
@@ -30870,6 +30879,7 @@ testharness html/browsers/the-window-object/window-open-defaults.window.js
 testharness html/browsers/the-window-object/window-open-invalid-url.html
 testharness html/browsers/the-window-object/window-open-noopener.html
 testharness html/browsers/the-window-object/window-open-noreferrer.html
+testharness html/browsers/the-window-object/window-open-popup-behavior.html
 testharness html/browsers/the-window-object/window-opener-unconfigurable.window.js
 testharness html/browsers/the-window-object/window-properties.https.html
 testharness html/browsers/the-window-object/window-prototype-chain.html
@@ -36176,8 +36186,9 @@ testharness html/webappapis/system-state-and-capabilities/the-navigator-object/p
 testharness html/webappapis/system-state-and-capabilities/the-navigator-object/protocol.tentative.https.html
 testharness html/webappapis/system-state-and-capabilities/the-navigator-object/secure_context.html
 testharness html/webappapis/the-windoworworkerglobalscope-mixin/Worker_Self_Origin.html
+testharness html/webappapis/timers/clearinterval-from-callback.any.js
 testharness html/webappapis/timers/cleartimeout-clearinterval.any.js
-testharness html/webappapis/timers/evil-spec-example.html
+testharness html/webappapis/timers/evil-spec-example.any.js
 testharness html/webappapis/timers/missing-timeout-setinterval.any.js
 testharness html/webappapis/timers/negative-setinterval.any.js
 testharness html/webappapis/timers/negative-settimeout.any.js
@@ -39600,6 +39611,7 @@ testharness service-workers/service-worker/onactivate-script-error.https.html
 testharness service-workers/service-worker/oninstall-script-error.https.html
 testharness service-workers/service-worker/opaque-response-preloaded.https.html
 testharness service-workers/service-worker/opaque-script.https.html
+testharness service-workers/service-worker/partitioned-service-worker-claim.tentative.https.html
 testharness service-workers/service-worker/partitioned-service-worker-getRegistrations.tentative.https.html
 testharness service-workers/service-worker/partitioned-service-worker-matchAll.tentative.https.html
 testharness service-workers/service-worker/partitioned-service-worker.tentative.https.html
