@@ -1256,9 +1256,6 @@
   "#language-preferences": [
     "/system-state#language-preferences"
   ],
-  "#last-event-id": [
-    "/iana#last-event-id"
-  ],
   "#lazy-loading-attributes": [
     "/urls-and-fetching#lazy-loading-attributes"
   ],
@@ -1721,12 +1718,6 @@
   "#ping-and-pong-frames": [
     "/web-sockets#ping-and-pong-frames"
   ],
-  "#ping-from": [
-    "/iana#ping-from"
-  ],
-  "#ping-to": [
-    "/iana#ping-to"
-  ],
   "#pixel-manipulation": [
     "/canvas#pixel-manipulation"
   ],
@@ -1876,9 +1867,6 @@
   ],
   "#reflecting-content-attributes-in-idl-attributes": [
     "/common-dom-interfaces#reflecting-content-attributes-in-idl-attributes"
-  ],
-  "#refresh": [
-    "/iana#refresh"
   ],
   "#rel-alternate": [
     "/links#rel-alternate"
@@ -2678,6 +2666,9 @@
   "#the-lang-and-xml:lang-attributes": [
     "/dom#the-lang-and-xml:lang-attributes"
   ],
+  "#the-last-event-id-header": [
+    "/server-sent-events#the-last-event-id-header"
+  ],
   "#the-legend-element": [
     "/form-elements#the-legend-element"
   ],
@@ -2795,6 +2786,9 @@
   "#the-picture-element": [
     "/embedded-content#the-picture-element"
   ],
+  "#the-ping-headers": [
+    "/links#the-ping-headers"
+  ],
   "#the-placeholder-attribute": [
     "/input#the-placeholder-attribute"
   ],
@@ -2815,6 +2809,9 @@
   ],
   "#the-readonly-attribute": [
     "/input#the-readonly-attribute"
+  ],
+  "#the-refresh-header": [
+    "/browsing-the-web#the-refresh-header"
   ],
   "#the-required-attribute": [
     "/input#the-required-attribute"
@@ -3266,9 +3263,6 @@
   "#writing-xhtml-documents": [
     "/xhtml#writing-xhtml-documents"
   ],
-  "#x-frame-options": [
-    "/iana#x-frame-options"
-  ],
   "#xml": [
     "/infrastructure#xml"
   ],
@@ -3569,6 +3563,14 @@
       "spec": "HTML",
       "text": "The PopStateEvent interface",
       "url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#the-popstateevent-interface"
+    }
+  },
+  "/browsing-the-web#the-refresh-header": {
+    "snapshot": {
+      "number": "7.11.15",
+      "spec": "HTML",
+      "text": "The `Refresh` header",
+      "url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#the-refresh-header"
     }
   },
   "/browsing-the-web#the-x-frame-options-header": {
@@ -5603,44 +5605,12 @@
       "url": "https://html.spec.whatwg.org/multipage/iana.html#iana"
     }
   },
-  "/iana#last-event-id": {
-    "snapshot": {
-      "number": "17.10",
-      "spec": "HTML",
-      "text": "`Last-Event-ID`",
-      "url": "https://html.spec.whatwg.org/multipage/iana.html#last-event-id"
-    }
-  },
   "/iana#multipart/x-mixed-replace": {
     "snapshot": {
       "number": "17.2",
       "spec": "HTML",
       "text": "multipart/x-mixed-replace",
       "url": "https://html.spec.whatwg.org/multipage/iana.html#multipart/x-mixed-replace"
-    }
-  },
-  "/iana#ping-from": {
-    "snapshot": {
-      "number": "17.7",
-      "spec": "HTML",
-      "text": "`Ping-From`",
-      "url": "https://html.spec.whatwg.org/multipage/iana.html#ping-from"
-    }
-  },
-  "/iana#ping-to": {
-    "snapshot": {
-      "number": "17.8",
-      "spec": "HTML",
-      "text": "`Ping-To`",
-      "url": "https://html.spec.whatwg.org/multipage/iana.html#ping-to"
-    }
-  },
-  "/iana#refresh": {
-    "snapshot": {
-      "number": "17.9",
-      "spec": "HTML",
-      "text": "`Refresh`",
-      "url": "https://html.spec.whatwg.org/multipage/iana.html#refresh"
     }
   },
   "/iana#text/event-stream": {
@@ -5669,18 +5639,10 @@
   },
   "/iana#web+-scheme-prefix": {
     "snapshot": {
-      "number": "17.12",
+      "number": "17.7",
       "spec": "HTML",
       "text": "web+ scheme prefix",
       "url": "https://html.spec.whatwg.org/multipage/iana.html#web+-scheme-prefix"
-    }
-  },
-  "/iana#x-frame-options": {
-    "snapshot": {
-      "number": "17.11",
-      "spec": "HTML",
-      "text": "`X-Frame-Options`",
-      "url": "https://html.spec.whatwg.org/multipage/iana.html#x-frame-options"
     }
   },
   "/iframe-embed-object#the-embed-element": {
@@ -7045,7 +7007,7 @@
   },
   "/links#hyperlink-auditing": {
     "snapshot": {
-      "number": "4.6.5.1",
+      "number": "4.6.6",
       "spec": "HTML",
       "text": "Hyperlink auditing",
       "url": "https://html.spec.whatwg.org/multipage/links.html#hyperlink-auditing"
@@ -7061,7 +7023,7 @@
   },
   "/links#link-type-author": {
     "snapshot": {
-      "number": "4.6.6.2",
+      "number": "4.6.7.2",
       "spec": "HTML",
       "text": "Link type \"author\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-author"
@@ -7069,7 +7031,7 @@
   },
   "/links#link-type-bookmark": {
     "snapshot": {
-      "number": "4.6.6.3",
+      "number": "4.6.7.3",
       "spec": "HTML",
       "text": "Link type \"bookmark\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-bookmark"
@@ -7077,7 +7039,7 @@
   },
   "/links#link-type-canonical": {
     "snapshot": {
-      "number": "4.6.6.4",
+      "number": "4.6.7.4",
       "spec": "HTML",
       "text": "Link type \"canonical\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-canonical"
@@ -7085,7 +7047,7 @@
   },
   "/links#link-type-dns-prefetch": {
     "snapshot": {
-      "number": "4.6.6.5",
+      "number": "4.6.7.5",
       "spec": "HTML",
       "text": "Link type \"dns-prefetch\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-dns-prefetch"
@@ -7093,7 +7055,7 @@
   },
   "/links#link-type-external": {
     "snapshot": {
-      "number": "4.6.6.6",
+      "number": "4.6.7.6",
       "spec": "HTML",
       "text": "Link type \"external\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-external"
@@ -7101,7 +7063,7 @@
   },
   "/links#link-type-help": {
     "snapshot": {
-      "number": "4.6.6.7",
+      "number": "4.6.7.7",
       "spec": "HTML",
       "text": "Link type \"help\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-help"
@@ -7109,7 +7071,7 @@
   },
   "/links#link-type-license": {
     "snapshot": {
-      "number": "4.6.6.9",
+      "number": "4.6.7.9",
       "spec": "HTML",
       "text": "Link type \"license\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-license"
@@ -7117,7 +7079,7 @@
   },
   "/links#link-type-manifest": {
     "snapshot": {
-      "number": "4.6.6.10",
+      "number": "4.6.7.10",
       "spec": "HTML",
       "text": "Link type \"manifest\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-manifest"
@@ -7125,7 +7087,7 @@
   },
   "/links#link-type-modulepreload": {
     "snapshot": {
-      "number": "4.6.6.11",
+      "number": "4.6.7.11",
       "spec": "HTML",
       "text": "Link type \"modulepreload\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload"
@@ -7133,7 +7095,7 @@
   },
   "/links#link-type-next": {
     "snapshot": {
-      "number": "4.6.6.24.1",
+      "number": "4.6.7.24.1",
       "spec": "HTML",
       "text": "Link type \"next\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-next"
@@ -7141,7 +7103,7 @@
   },
   "/links#link-type-nofollow": {
     "snapshot": {
-      "number": "4.6.6.12",
+      "number": "4.6.7.12",
       "spec": "HTML",
       "text": "Link type \"nofollow\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-nofollow"
@@ -7149,7 +7111,7 @@
   },
   "/links#link-type-noopener": {
     "snapshot": {
-      "number": "4.6.6.13",
+      "number": "4.6.7.13",
       "spec": "HTML",
       "text": "Link type \"noopener\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-noopener"
@@ -7157,7 +7119,7 @@
   },
   "/links#link-type-noreferrer": {
     "snapshot": {
-      "number": "4.6.6.14",
+      "number": "4.6.7.14",
       "spec": "HTML",
       "text": "Link type \"noreferrer\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-noreferrer"
@@ -7165,7 +7127,7 @@
   },
   "/links#link-type-opener": {
     "snapshot": {
-      "number": "4.6.6.15",
+      "number": "4.6.7.15",
       "spec": "HTML",
       "text": "Link type \"opener\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-opener"
@@ -7173,7 +7135,7 @@
   },
   "/links#link-type-pingback": {
     "snapshot": {
-      "number": "4.6.6.16",
+      "number": "4.6.7.16",
       "spec": "HTML",
       "text": "Link type \"pingback\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-pingback"
@@ -7181,7 +7143,7 @@
   },
   "/links#link-type-preconnect": {
     "snapshot": {
-      "number": "4.6.6.17",
+      "number": "4.6.7.17",
       "spec": "HTML",
       "text": "Link type \"preconnect\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-preconnect"
@@ -7189,7 +7151,7 @@
   },
   "/links#link-type-prefetch": {
     "snapshot": {
-      "number": "4.6.6.18",
+      "number": "4.6.7.18",
       "spec": "HTML",
       "text": "Link type \"prefetch\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-prefetch"
@@ -7197,7 +7159,7 @@
   },
   "/links#link-type-preload": {
     "snapshot": {
-      "number": "4.6.6.19",
+      "number": "4.6.7.19",
       "spec": "HTML",
       "text": "Link type \"preload\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-preload"
@@ -7205,7 +7167,7 @@
   },
   "/links#link-type-prerender": {
     "snapshot": {
-      "number": "4.6.6.20",
+      "number": "4.6.7.20",
       "spec": "HTML",
       "text": "Link type \"prerender\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-prerender"
@@ -7213,7 +7175,7 @@
   },
   "/links#link-type-prev": {
     "snapshot": {
-      "number": "4.6.6.24.2",
+      "number": "4.6.7.24.2",
       "spec": "HTML",
       "text": "Link type \"prev\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-prev"
@@ -7221,7 +7183,7 @@
   },
   "/links#link-type-search": {
     "snapshot": {
-      "number": "4.6.6.21",
+      "number": "4.6.7.21",
       "spec": "HTML",
       "text": "Link type \"search\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-search"
@@ -7229,7 +7191,7 @@
   },
   "/links#link-type-stylesheet": {
     "snapshot": {
-      "number": "4.6.6.22",
+      "number": "4.6.7.22",
       "spec": "HTML",
       "text": "Link type \"stylesheet\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-stylesheet"
@@ -7237,7 +7199,7 @@
   },
   "/links#link-type-tag": {
     "snapshot": {
-      "number": "4.6.6.23",
+      "number": "4.6.7.23",
       "spec": "HTML",
       "text": "Link type \"tag\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#link-type-tag"
@@ -7245,7 +7207,7 @@
   },
   "/links#linkTypes": {
     "snapshot": {
-      "number": "4.6.6",
+      "number": "4.6.7",
       "spec": "HTML",
       "text": "Link types",
       "url": "https://html.spec.whatwg.org/multipage/links.html#linkTypes"
@@ -7269,7 +7231,7 @@
   },
   "/links#other-link-types": {
     "snapshot": {
-      "number": "4.6.6.25",
+      "number": "4.6.7.25",
       "spec": "HTML",
       "text": "Other link types",
       "url": "https://html.spec.whatwg.org/multipage/links.html#other-link-types"
@@ -7277,7 +7239,7 @@
   },
   "/links#rel-alternate": {
     "snapshot": {
-      "number": "4.6.6.1",
+      "number": "4.6.7.1",
       "spec": "HTML",
       "text": "Link type \"alternate\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#rel-alternate"
@@ -7285,7 +7247,7 @@
   },
   "/links#rel-icon": {
     "snapshot": {
-      "number": "4.6.6.8",
+      "number": "4.6.7.8",
       "spec": "HTML",
       "text": "Link type \"icon\"",
       "url": "https://html.spec.whatwg.org/multipage/links.html#rel-icon"
@@ -7293,10 +7255,18 @@
   },
   "/links#sequential-link-types": {
     "snapshot": {
-      "number": "4.6.6.24",
+      "number": "4.6.7.24",
       "spec": "HTML",
       "text": "Sequential link types",
       "url": "https://html.spec.whatwg.org/multipage/links.html#sequential-link-types"
+    }
+  },
+  "/links#the-ping-headers": {
+    "snapshot": {
+      "number": "4.6.6.1",
+      "spec": "HTML",
+      "text": "The `Ping-From` and `Ping-To` headers",
+      "url": "https://html.spec.whatwg.org/multipage/links.html#the-ping-headers"
     }
   },
   "/media#audiotracklist-and-videotracklist-objects": {
@@ -9861,7 +9831,7 @@
   },
   "/server-sent-events#authoring-notes": {
     "snapshot": {
-      "number": "9.2.6",
+      "number": "9.2.7",
       "spec": "HTML",
       "text": "Authoring notes",
       "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#authoring-notes"
@@ -9869,7 +9839,7 @@
   },
   "/server-sent-events#event-stream-interpretation": {
     "snapshot": {
-      "number": "9.2.5",
+      "number": "9.2.6",
       "spec": "HTML",
       "text": "Interpreting an event stream",
       "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#event-stream-interpretation"
@@ -9877,7 +9847,7 @@
   },
   "/server-sent-events#eventsource-push": {
     "snapshot": {
-      "number": "9.2.7",
+      "number": "9.2.8",
       "spec": "HTML",
       "text": "Connectionless push and other features",
       "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource-push"
@@ -9885,7 +9855,7 @@
   },
   "/server-sent-events#garbage-collection": {
     "snapshot": {
-      "number": "9.2.8",
+      "number": "9.2.9",
       "spec": "HTML",
       "text": "Garbage collection",
       "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#garbage-collection"
@@ -9893,7 +9863,7 @@
   },
   "/server-sent-events#implementation-advice": {
     "snapshot": {
-      "number": "9.2.9",
+      "number": "9.2.10",
       "spec": "HTML",
       "text": "Implementation advice",
       "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#implementation-advice"
@@ -9901,7 +9871,7 @@
   },
   "/server-sent-events#parsing-an-event-stream": {
     "snapshot": {
-      "number": "9.2.4",
+      "number": "9.2.5",
       "spec": "HTML",
       "text": "Parsing an event stream",
       "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#parsing-an-event-stream"
@@ -9937,6 +9907,14 @@
       "spec": "HTML",
       "text": "The EventSource interface",
       "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface"
+    }
+  },
+  "/server-sent-events#the-last-event-id-header": {
+    "snapshot": {
+      "number": "9.2.4",
+      "spec": "HTML",
+      "text": "The `Last-Event-ID` header",
+      "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-last-event-id-header"
     }
   },
   "/structured-data#performing-structured-clones-from-other-specifications": {
