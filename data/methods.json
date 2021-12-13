@@ -939,6 +939,27 @@
       "shortname": "webaudio"
     }
   },
+  "CloseEvent()": {
+    "CloseEvent(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "CloseEvent"
+      ],
+      "shortname": "websockets"
+    },
+    "CloseEvent(type, eventInitDict)": {
+      "args": [
+        "type",
+        "eventInitDict"
+      ],
+      "for": [
+        "CloseEvent"
+      ],
+      "shortname": "websockets"
+    }
+  },
   "Comment()": {
     "Comment()": {
       "args": [],
@@ -3256,6 +3277,15 @@
     }
   },
   "WebSocket()": {
+    "WebSocket(url)": {
+      "args": [
+        "url"
+      ],
+      "for": [
+        "WebSocket"
+      ],
+      "shortname": "websockets"
+    },
     "WebSocket(url, protocols)": {
       "args": [
         "url",
@@ -5025,6 +5055,16 @@
         "WebSocket"
       ],
       "shortname": "html"
+    },
+    "close(code, reason)": {
+      "args": [
+        "code",
+        "reason"
+      ],
+      "for": [
+        "WebSocket"
+      ],
+      "shortname": "websockets"
     }
   },
   "closePath()": {
@@ -6546,6 +6586,7 @@
       "for": [
         "AnimationEvent",
         "AnimationPlaybackEvent",
+        "CloseEvent",
         "CompositionEvent",
         "CustomEvent",
         "Event",
@@ -6601,6 +6642,7 @@
       "for": [
         "AnimationPlaybackEvent",
         "AudioProcessingEvent",
+        "CloseEvent",
         "CompositionEvent",
         "CustomEvent",
         "Event",
@@ -6714,7 +6756,8 @@
         "url"
       ],
       "for": [
-        "URL"
+        "URL",
+        "WebSocket"
       ],
       "shortname": "url"
     },
@@ -6727,6 +6770,16 @@
         "URL"
       ],
       "shortname": "url"
+    },
+    "constructor(url, protocols)": {
+      "args": [
+        "url",
+        "protocols"
+      ],
+      "for": [
+        "WebSocket"
+      ],
+      "shortname": "websockets"
     },
     "constructor(value)": {
       "args": [
@@ -9774,6 +9827,15 @@
         "DOMRectReadOnly"
       ],
       "shortname": "geometry"
+    }
+  },
+  "gc()": {
+    "gc()": {
+      "args": [],
+      "for": [
+        "TestUtils"
+      ],
+      "shortname": "testutils"
     }
   },
   "generateCertificate()": {

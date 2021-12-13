@@ -2072,6 +2072,7 @@
     "Table",
     "TableDescriptor",
     "TableKind",
+    "TestUtils",
     "Text",
     "TextDecodeOptions",
     "TextDecoder",
@@ -13515,6 +13516,8 @@
     "returnValue"
   ],
   "BinaryType": [
+    "\"arraybuffer\"",
+    "\"blob\"",
     "arraybuffer",
     "blob"
   ],
@@ -15929,6 +15932,32 @@
     "url"
   ],
   "CloseEvent": [
+    "CloseEvent(type)",
+    "CloseEvent(type, eventInitDict)",
+    "code",
+    "constructor",
+    "constructor(type)",
+    "constructor(type, eventInitDict)",
+    "reason",
+    "wasClean"
+  ],
+  "CloseEvent/CloseEvent(type)": [
+    "eventInitDict",
+    "type"
+  ],
+  "CloseEvent/CloseEvent(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "CloseEvent/constructor(type)": [
+    "eventInitDict",
+    "type"
+  ],
+  "CloseEvent/constructor(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "CloseEventInit": [
     "code",
     "reason",
     "wasClean"
@@ -26376,6 +26405,10 @@
     "\"anyfunc\"",
     "\"externref\""
   ],
+  "TestUtils": [
+    "gc",
+    "gc()"
+  ],
   "Text": [
     "Text()",
     "Text(data)",
@@ -27519,14 +27552,19 @@
     "CLOSING",
     "CONNECTING",
     "OPEN",
+    "WebSocket(url)",
     "WebSocket(url, protocols)",
     "binaryType",
     "bufferedAmount",
     "close",
     "close()",
     "close(code)",
+    "close(code, reason)",
+    "constructor(url)",
+    "constructor(url, protocols)",
     "error",
     "extensions",
+    "internal-url",
     "message",
     "onclose",
     "onerror",
@@ -27537,6 +27575,37 @@
     "readyState",
     "send(data)",
     "url"
+  ],
+  "WebSocket/WebSocket(url)": [
+    "protocols",
+    "url"
+  ],
+  "WebSocket/WebSocket(url, protocols)": [
+    "protocols",
+    "url"
+  ],
+  "WebSocket/close()": [
+    "code",
+    "reason"
+  ],
+  "WebSocket/close(code)": [
+    "code",
+    "reason"
+  ],
+  "WebSocket/close(code, reason)": [
+    "code",
+    "reason"
+  ],
+  "WebSocket/constructor(url)": [
+    "protocols",
+    "url"
+  ],
+  "WebSocket/constructor(url, protocols)": [
+    "protocols",
+    "url"
+  ],
+  "WebSocket/send(data)": [
+    "data"
   ],
   "WheelEvent": [
     "DOM_DELTA_LINE",
@@ -27863,7 +27932,8 @@
     "reports",
     "setInterval(handler, timeout, ...arguments)",
     "setTimeout(handler, timeout, ...arguments)",
-    "structuredClone(value, options)"
+    "structuredClone(value, options)",
+    "testUtils"
   ],
   "WindowOrWorkerGlobalScope/fetch(input)": [
     "init",
