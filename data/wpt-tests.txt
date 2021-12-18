@@ -1,4 +1,4 @@
-sha: 1368c75fdbfd4d0a8424d28b2b857e0a73914157
+sha: 6259400ce70fd41d25bcf5db624a04db854f304e
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -17677,6 +17677,10 @@ reftest css/css-text/hanging-punctuation/hanging-punctuation-inline-001.html
 reftest css/css-text/hanging-punctuation/hanging-punctuation-inline-bound-001.html
 reftest css/css-text/hanging-punctuation/hanging-punctuation-last-001.xht
 reftest css/css-text/hanging-punctuation/hanging-scrollable-001.html
+reftest css/css-text/hyphens/hyphenate-character-001.html
+reftest css/css-text/hyphens/hyphenate-character-002.html
+reftest css/css-text/hyphens/hyphenate-character-003.html
+reftest css/css-text/hyphens/hyphenate-character-004.html
 reftest css/css-text/hyphens/hyphens-auto-001.html
 reftest css/css-text/hyphens/hyphens-auto-002.html
 reftest css/css-text/hyphens/hyphens-auto-003.html
@@ -27807,6 +27811,9 @@ testharness css/css-text/overflow-wrap/overflow-wrap-break-word-white-space-cras
 testharness css/css-text/overflow-wrap/word-wrap-alias.html
 testharness css/css-text/parsing/hanging-punctuation-invalid.html
 testharness css/css-text/parsing/hanging-punctuation-valid.html
+testharness css/css-text/parsing/hyphenate-character-computed.html
+testharness css/css-text/parsing/hyphenate-character-invalid.html
+testharness css/css-text/parsing/hyphenate-character-valid.html
 testharness css/css-text/parsing/hyphens-computed.html
 testharness css/css-text/parsing/hyphens-invalid.html
 testharness css/css-text/parsing/hyphens-valid.html
@@ -35481,6 +35488,7 @@ testharness html/semantics/forms/the-select-element/select-setcustomvalidity.htm
 testharness html/semantics/forms/the-select-element/select-validity.html
 testharness html/semantics/forms/the-select-element/select-value.html
 testharness html/semantics/forms/the-select-element/selected-index.html
+testharness html/semantics/forms/the-selectmenu-element/selectmenu-ask-for-reset.html
 testharness html/semantics/forms/the-selectmenu-element/selectmenu-events.tentative.html
 testharness html/semantics/forms/the-selectmenu-element/selectmenu-form-attribute.tentative.html
 testharness html/semantics/forms/the-selectmenu-element/selectmenu-form-state-restore.tentative.html
@@ -35497,7 +35505,7 @@ testharness html/semantics/forms/the-selectmenu-element/selectmenu-popup.tentati
 testharness html/semantics/forms/the-selectmenu-element/selectmenu-required-attribute.tentative.html
 testharness html/semantics/forms/the-selectmenu-element/selectmenu-shadow-root-replacement.tentative.html
 testharness html/semantics/forms/the-selectmenu-element/selectmenu-validity.tentative.html
-testharness html/semantics/forms/the-selectmenu-element/selectmenu-value.tentative.html
+testharness html/semantics/forms/the-selectmenu-element/selectmenu-value-selectedOption.tentative.html
 testharness html/semantics/forms/the-textarea-element/cloning-steps.html
 testharness html/semantics/forms/the-textarea-element/textarea-maxlength.html
 testharness html/semantics/forms/the-textarea-element/textarea-minlength.html
@@ -39857,6 +39865,7 @@ testharness selection/modify.tentative.html
 testharness selection/removeAllRanges.html
 testharness selection/removeRange.html
 testharness selection/script-and-style-elements.html
+testharness selection/select-end-of-line-image.tentative.html
 testharness selection/selectAllChildren.html
 testharness selection/setBaseAndExtent.html
 testharness selection/stringifier.tentative.html
@@ -46518,6 +46527,7 @@ wdspec webdriver/tests/bidi/log_entry_added/javascript.py
 wdspec webdriver/tests/bidi/log_entry_added/stacktrace.py
 wdspec webdriver/tests/bidi/log_entry_added/subscription.py
 wdspec webdriver/tests/bidi/new_session/connect.py
+wdspec webdriver/tests/bidi/session_status/status.py
 wdspec webdriver/tests/bidi/session_subscribe/subscribe.py
 wdspec webdriver/tests/bidi/session_unsubscribe/unsubscribe.py
 wdspec webdriver/tests/close_window/close.py
