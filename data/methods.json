@@ -50,6 +50,17 @@
       "shortname": "web-animations"
     }
   },
+  "Animation play()": {
+    "Animation play(optional AnimationEffect? effect = null)": {
+      "args": [
+        "optional AnimationEffect? effect = null"
+      ],
+      "for": [
+        "AnimationTimeline"
+      ],
+      "shortname": "web-animations"
+    }
+  },
   "Animation()": {
     "Animation()": {
       "args": [],
@@ -1804,6 +1815,45 @@
       "shortname": "wasm-js-api"
     }
   },
+  "GroupEffect ()": {
+    "GroupEffect ()": {
+      "args": [],
+      "for": [
+        "GroupEffect"
+      ],
+      "shortname": "web-animations"
+    }
+  },
+  "GroupEffect clone ()": {
+    "GroupEffect clone ()": {
+      "args": [],
+      "for": [
+        "GroupEffect"
+      ],
+      "shortname": "web-animations"
+    }
+  },
+  "GroupEffect()": {
+    "GroupEffect(children)": {
+      "args": [
+        "children"
+      ],
+      "for": [
+        "GroupEffect"
+      ],
+      "shortname": "web-animations"
+    },
+    "GroupEffect(children, timing)": {
+      "args": [
+        "children",
+        "timing"
+      ],
+      "for": [
+        "GroupEffect"
+      ],
+      "shortname": "web-animations"
+    }
+  },
   "Headers()": {
     "Headers()": {
       "args": [],
@@ -2691,6 +2741,43 @@
         "SensorErrorEvent"
       ],
       "shortname": "generic-sensor"
+    }
+  },
+  "SequenceEffect clone ()": {
+    "SequenceEffect clone ()": {
+      "args": [],
+      "for": [
+        "SequenceEffect"
+      ],
+      "shortname": "web-animations"
+    }
+  },
+  "SequenceEffect()": {
+    "SequenceEffect()": {
+      "args": [],
+      "for": [
+        "SequenceEffect"
+      ],
+      "shortname": "web-animations"
+    },
+    "SequenceEffect(children)": {
+      "args": [
+        "children"
+      ],
+      "for": [
+        "SequenceEffect"
+      ],
+      "shortname": "web-animations"
+    },
+    "SequenceEffect(children, timing)": {
+      "args": [
+        "children",
+        "timing"
+      ],
+      "for": [
+        "SequenceEffect"
+      ],
+      "shortname": "web-animations"
     }
   },
   "SharedWorker()": {
@@ -4107,9 +4194,19 @@
     "after()": {
       "args": [],
       "for": [
+        "AnimationEffect",
         "ChildNode"
       ],
       "shortname": "dom"
+    },
+    "after(...effects)": {
+      "args": [
+        "...effects"
+      ],
+      "for": [
+        "AnimationEffect"
+      ],
+      "shortname": "web-animations"
     },
     "after(...nodes)": {
       "args": [
@@ -4203,9 +4300,19 @@
     "append()": {
       "args": [],
       "for": [
+        "GroupEffect",
         "ParentNode"
       ],
       "shortname": "dom"
+    },
+    "append(...effects)": {
+      "args": [
+        "...effects"
+      ],
+      "for": [
+        "GroupEffect"
+      ],
+      "shortname": "web-animations"
     },
     "append(...nodes)": {
       "args": [
@@ -4502,9 +4609,19 @@
     "before()": {
       "args": [],
       "for": [
+        "AnimationEffect",
         "ChildNode"
       ],
       "shortname": "dom"
+    },
+    "before(...effects)": {
+      "args": [
+        "...effects"
+      ],
+      "for": [
+        "AnimationEffect"
+      ],
+      "shortname": "web-animations"
     },
     "before(...nodes)": {
       "args": [
@@ -4936,10 +5053,12 @@
     "clone()": {
       "args": [],
       "for": [
+        "GroupEffect",
         "MediaStream",
         "MediaStreamTrack",
         "Request",
-        "Response"
+        "Response",
+        "SequenceEffect"
       ],
       "shortname": "fetch"
     }
@@ -5297,6 +5416,18 @@
       "shortname": "webaudio"
     }
   },
+  "constructor ()": {
+    "constructor (sequence<AnimationEffect>? children, optional (unrestricted double or EffectTiming) timing)": {
+      "args": [
+        "sequence<AnimationEffect>? children",
+        "optional (unrestricted double or EffectTiming) timing"
+      ],
+      "for": [
+        "SequenceEffect"
+      ],
+      "shortname": "web-animations"
+    }
+  },
   "constructor!overload-1()": {
     "constructor!overload-1()": {
       "args": [],
@@ -5633,6 +5764,27 @@
         "RTCIceCandidate"
       ],
       "shortname": "webrtc"
+    },
+    "constructor(children)": {
+      "args": [
+        "children"
+      ],
+      "for": [
+        "GroupEffect",
+        "SequenceEffect"
+      ],
+      "shortname": "web-animations"
+    },
+    "constructor(children, timing)": {
+      "args": [
+        "children",
+        "timing"
+      ],
+      "for": [
+        "GroupEffect",
+        "SequenceEffect"
+      ],
+      "shortname": "web-animations"
     },
     "constructor(colorSpace, channels)": {
       "args": [
@@ -11491,6 +11643,17 @@
       "shortname": "streams"
     }
   },
+  "getter AnimationEffect? item()": {
+    "getter AnimationEffect? item(unsigned long index)": {
+      "args": [
+        "unsigned long index"
+      ],
+      "for": [
+        "AnimationNodeList"
+      ],
+      "shortname": "web-animations"
+    }
+  },
   "go()": {
     "go()": {
       "args": [],
@@ -12823,6 +12986,7 @@
         "index"
       ],
       "for": [
+        "AnimationNodeList",
         "CSSRuleList",
         "CSSStyleDeclaration",
         "DOMRectList",
@@ -13943,9 +14107,19 @@
       "args": [],
       "for": [
         "Animation",
+        "AnimationTimeline",
         "HTMLMediaElement"
       ],
       "shortname": "html"
+    },
+    "play(effect)": {
+      "args": [
+        "effect"
+      ],
+      "for": [
+        "AnimationTimeline"
+      ],
+      "shortname": "web-animations"
     }
   },
   "postMessage()": {
@@ -14023,9 +14197,19 @@
     "prepend()": {
       "args": [],
       "for": [
+        "GroupEffect",
         "ParentNode"
       ],
       "shortname": "dom"
+    },
+    "prepend(...effects)": {
+      "args": [
+        "...effects"
+      ],
+      "for": [
+        "GroupEffect"
+      ],
+      "shortname": "web-animations"
     },
     "prepend(...nodes)": {
       "args": [
@@ -14656,6 +14840,7 @@
     "remove()": {
       "args": [],
       "for": [
+        "AnimationEffect",
         "ChildNode",
         "DOMTokenList",
         "HTMLSelectElement"
@@ -14903,6 +15088,22 @@
     }
   },
   "replace()": {
+    "replace()": {
+      "args": [],
+      "for": [
+        "AnimationEffect"
+      ],
+      "shortname": "web-animations"
+    },
+    "replace(...effects)": {
+      "args": [
+        "...effects"
+      ],
+      "for": [
+        "AnimationEffect"
+      ],
+      "shortname": "web-animations"
+    },
     "replace(text)": {
       "args": [
         "text"
@@ -18356,6 +18557,50 @@
         "CSSNumericValue"
       ],
       "shortname": "css-typed-om"
+    }
+  },
+  "undefined after()": {
+    "undefined after(AnimationEffect... effects)": {
+      "args": [
+        "AnimationEffect... effects"
+      ],
+      "for": [
+        "AnimationEffect"
+      ],
+      "shortname": "web-animations"
+    }
+  },
+  "undefined append ()": {
+    "undefined append (AnimationEffect... effects)": {
+      "args": [
+        "AnimationEffect... effects"
+      ],
+      "for": [
+        "GroupEffect"
+      ],
+      "shortname": "web-animations"
+    }
+  },
+  "undefined before ()": {
+    "undefined before (AnimationEffect... effects)": {
+      "args": [
+        "AnimationEffect... effects"
+      ],
+      "for": [
+        "AnimationEffect"
+      ],
+      "shortname": "web-animations"
+    }
+  },
+  "undefined replace()": {
+    "undefined replace(AnimationEffect... effects)": {
+      "args": [
+        "AnimationEffect... effects"
+      ],
+      "for": [
+        "AnimationEffect"
+      ],
+      "shortname": "web-animations"
     }
   },
   "unlock()": {

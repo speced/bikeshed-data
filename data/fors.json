@@ -289,6 +289,7 @@
     "<attr-matcher>",
     "<attr-modifier>",
     "<attr-name>",
+    "<attr-type>",
     "<attribute-selector>",
     "<auto-repeat>",
     "<auto-track-list>",
@@ -364,6 +365,7 @@
     "<deprecated-color>",
     "<device-performance>",
     "<dimension-token>",
+    "<dimension-unit>",
     "<dimension>",
     "<discretionary-lig-values>",
     "<display-box>",
@@ -395,6 +397,7 @@
     "<flex>",
     "<font-face-name>",
     "<font-feature-tech>",
+    "<font-format",
     "<font-format>",
     "<font-stretch-css3>",
     "<font-tech>",
@@ -567,6 +570,8 @@
     "<supports-condition>",
     "<supports-decl>",
     "<supports-feature>",
+    "<supports-font-format-fn>",
+    "<supports-font-tech-fn>",
     "<supports-in-parens>",
     "<supports-selector-fn>",
     "<svg-paint>",
@@ -578,6 +583,7 @@
     "<time-percentage>",
     "<time>",
     "<timeline-name>",
+    "<toggle-value>",
     "<top>",
     "<track-breadth>",
     "<track-list>",
@@ -617,6 +623,7 @@
     "@counter-style",
     "@custom-media",
     "@custom-selector",
+    "@else",
     "@font-face",
     "@font-feature-values",
     "@font-palette-values",
@@ -643,6 +650,7 @@
     "@top-right",
     "@top-right-corner",
     "@viewport",
+    "@when",
     "AbortController",
     "AbortError",
     "AbortSignal",
@@ -672,6 +680,7 @@
     "AnimationEvent",
     "AnimationEventInit",
     "AnimationFrameProvider",
+    "AnimationNodeList",
     "AnimationPlayState",
     "AnimationPlaybackEvent",
     "AnimationPlaybackEventInit",
@@ -1042,6 +1051,7 @@
     "EcdhKeyDeriveParams",
     "EcdsaParams",
     "Edge",
+    "EffectCallback",
     "EffectTiming",
     "Element",
     "ElementBasedOffset",
@@ -1144,6 +1154,7 @@
     "Global",
     "GlobalDescriptor",
     "GlobalEventHandlers",
+    "GroupEffect",
     "HTMLAllCollection",
     "HTMLAnchorElement",
     "HTMLAreaElement",
@@ -1302,6 +1313,7 @@
     "IsNonNegativeNumber",
     "IsReadableStreamLocked",
     "IsWritableStreamLocked",
+    "IterationCompositeOperation",
     "JsonLdContext",
     "JsonLdError",
     "JsonLdErrorCode",
@@ -1980,6 +1992,7 @@
     "SensorErrorEvent",
     "SensorErrorEventInit",
     "SensorOptions",
+    "SequenceEffect",
     "Serial",
     "SerialInputSignals",
     "SerialOptions",
@@ -2739,6 +2752,8 @@
     "animation composite order",
     "animation direction",
     "animation effect",
+    "animation effect playback rate",
+    "animation effect start time",
     "animation events",
     "animation frame",
     "animation frame callback identifier",
@@ -2939,6 +2954,7 @@
     "asynchronously execute a request",
     "asynchronously instantiate a webassembly module",
     "asynchronously iterable declaration",
+    "at progress timeline boundary",
     "at risk",
     "at-keyword",
     "at-risk",
@@ -3680,6 +3696,7 @@
     "child",
     "child browsing context",
     "child combinator",
+    "child effect",
     "child layout",
     "child selector",
     "child text content",
@@ -3961,6 +3978,7 @@
     "conditional group rule",
     "conditional import",
     "conditional processing attribute",
+    "conditional rule chain",
     "conditionally exposed",
     "conditionally hang",
     "conditionally hsts-safe origin",
@@ -4510,6 +4528,7 @@
     "custodian",
     "custom",
     "custom data attribute",
+    "custom effect",
     "custom element",
     "custom element constructor",
     "custom element definition",
@@ -4704,6 +4723,7 @@
     "defs",
     "degenerate ratio",
     "del",
+    "delay",
     "delaying load events mode",
     "delaying-the-load-event flag",
     "delaynode",
@@ -4832,6 +4852,7 @@
     "directive-name",
     "directive-value",
     "directives",
+    "directly associated with an animation",
     "directly nested",
     "director",
     "dirtiness",
@@ -5045,6 +5066,7 @@
     "effective resident key requirement for credential creation",
     "effective scroll offset",
     "effective start offset",
+    "effective timeline phase",
     "effective user verification requirement for assertion",
     "effective user verification requirement for credential creation",
     "elapsed time",
@@ -5120,6 +5142,7 @@
     "end-of-queue",
     "end-tag-with-attributes",
     "end-tag-with-trailing-solidus",
+    "enddelay",
     "ended",
     "ended audio playback",
     "ended playback",
@@ -6001,6 +6024,7 @@
     "group alignment",
     "group decision",
     "group decision appeal",
+    "group effect",
     "group note",
     "group stack",
     "group-align",
@@ -6118,6 +6142,7 @@
     "hmacimportparams",
     "hmackeyalgorithm",
     "hmackeygenparams",
+    "hold phase",
     "hold time",
     "home",
     "home document",
@@ -6383,6 +6408,7 @@
     "includes undefined",
     "inclusion criteria",
     "inclusive ancestor",
+    "inclusive descendant",
     "inclusive descendants",
     "incorrectly-closed-comment",
     "incorrectly-opened-comment",
@@ -6446,6 +6472,7 @@
     "inherited policy",
     "inherited policy for a feature",
     "inherited property",
+    "inherited time",
     "inherited value",
     "inhibit",
     "initEvent()",
@@ -6557,6 +6584,7 @@
     "insert a foreign element",
     "insert adjacent",
     "insert an html element",
+    "insert children",
     "inserted into a document",
     "insertion mode",
     "insertion point",
@@ -6648,6 +6676,7 @@
     "intra-ruby white space",
     "intrinsic dimensions",
     "intrinsic height",
+    "intrinsic iteration duration",
     "intrinsic minimum",
     "intrinsic percentage width of a column",
     "intrinsic percentage width of a column based on cells of span up to 1",
@@ -6789,11 +6818,15 @@
     "iterable declaration",
     "iterate",
     "iterate a cursor",
+    "iteration composite operation",
+    "iteration composite operation accumulate",
+    "iteration composite operation replace",
     "iteration count",
     "iteration duration",
     "iteration interval",
     "iteration progress",
     "iteration start",
+    "iterationcompositeoperation",
     "iterations",
     "iterator prototype object",
     "iterator result",
@@ -6908,6 +6941,7 @@
     "last call for review of proposed amendments",
     "last call for review of proposed corrections",
     "last call for review of proposed corrections and additions",
+    "last child",
     "last cross-axis baseline set",
     "last css style sheet set name",
     "last event id string",
@@ -7427,6 +7461,7 @@
     "media timeline",
     "media transport",
     "media type",
+    "media()",
     "media-dependent import",
     "media-resource-specific text track",
     "media-src",
@@ -7767,6 +7802,7 @@
     "next input code point",
     "next input token",
     "next sibling",
+    "next sibling not included",
     "next token",
     "next-sibling combinator",
     "nextid",
@@ -7856,6 +7892,7 @@
     "normalize newlines",
     "normalize non-finite values",
     "normalize protocol handler parameters",
+    "normalize specified timing",
     "normalize the source densities",
     "normalized timeranges object",
     "normalized value",
@@ -8238,6 +8275,7 @@
     "parent css style sheet",
     "parent element",
     "parent grid",
+    "parent group",
     "parent layout",
     "parse a boolean feature",
     "parse a calculation",
@@ -8690,6 +8728,7 @@
     "process a queue",
     "process a shortcut",
     "process a text member",
+    "process a timing argument",
     "process an image resource from json",
     "process an imageresource from an api",
     "process an item",
@@ -8738,6 +8777,7 @@
     "product of two unit maps",
     "profile fundamentals",
     "progress",
+    "progress-based timeline",
     "progressevent",
     "proleptic gregorian calendar",
     "proleptic-gregorian date",
@@ -9078,6 +9118,7 @@
     "remove a track",
     "remove all credentials",
     "remove all event listeners",
+    "remove an animation effect",
     "remove an animator instance",
     "remove an attribute",
     "remove an attribute by name",
@@ -9112,6 +9153,7 @@
     "repeatable list",
     "repeatcount",
     "repeatdur",
+    "repeated duration",
     "repeating-conic-gradient()",
     "repeating-linear-gradient()",
     "repeating-radial-gradient()",
@@ -9681,6 +9723,7 @@
     "sentences",
     "separated borders model",
     "sequence",
+    "sequence effect",
     "sequence of simple selectors",
     "sequence type",
     "sequential focus navigation",
@@ -10098,11 +10141,14 @@
     "specifications whose evaluations are both affected by the same changes to the user environment, and so always must be evaluated together in order to ensure proper rendering.",
     "specificity",
     "specified",
+    "specified end delay",
     "specified flow",
+    "specified iteration duration",
     "specified length",
     "specified order",
     "specified size",
     "specified size suggestion",
+    "specified start delay",
     "specified value",
     "specified values",
     "speculative fetch",
@@ -10348,6 +10394,7 @@
     "substantive change",
     "substitute",
     "substitute a var()",
+    "substitute an attr()",
     "substitute an env()",
     "subtags",
     "subtitles",
@@ -10402,6 +10449,7 @@
     "supports hand tracking",
     "supports indexed properties",
     "supports queries",
+    "supports()",
     "suppression trigger",
     "suppression window",
     "surface a candidate",
@@ -10760,6 +10808,7 @@
     "time origin timestamp",
     "time state (type=time)",
     "time value",
+    "time-based animation to a proportional animation",
     "time-zone offset",
     "timed out flag",
     "timeline",
@@ -10768,6 +10817,7 @@
     "timeline associated with a document",
     "timeline before phase",
     "timeline current time",
+    "timeline duration",
     "timeline inactive phase",
     "timeline offset",
     "timeline phase",
@@ -10786,6 +10836,7 @@
     "to",
     "toboolean",
     "toggle",
+    "toggle()",
     "tojsvalue",
     "token",
     "tokenization",
@@ -10850,6 +10901,7 @@
     "transformations",
     "transformed element",
     "transformed progress",
+    "transformed time",
     "transformer",
     "transforms",
     "transient action",
@@ -11264,6 +11316,7 @@
     "valid week string",
     "valid yearless date string",
     "validate",
+    "validate a cssnumberish time",
     "validate a payment method identifier",
     "validate a standardized payment method identifier",
     "validate a url-based payment method identifier",
@@ -12660,11 +12713,42 @@
     "playbackRate"
   ],
   "AnimationEffect": [
+    "after()",
+    "after(...effects)",
+    "before()",
+    "before(...effects)",
     "getComputedTiming()",
     "getTiming()",
     "localTime",
+    "nextSibling",
+    "parent",
+    "previousSibling",
+    "remove()",
+    "replace()",
+    "replace(...effects)",
+    "undefined after(AnimationEffect... effects)",
+    "undefined before (AnimationEffect... effects)",
+    "undefined replace(AnimationEffect... effects)",
     "updateTiming()",
     "updateTiming(timing)"
+  ],
+  "AnimationEffect/after()": [
+    "effects"
+  ],
+  "AnimationEffect/after(...effects)": [
+    "effects"
+  ],
+  "AnimationEffect/before()": [
+    "effects"
+  ],
+  "AnimationEffect/before(...effects)": [
+    "effects"
+  ],
+  "AnimationEffect/replace()": [
+    "effects"
+  ],
+  "AnimationEffect/replace(...effects)": [
+    "effects"
   ],
   "AnimationEffect/updateTiming(timing)": [
     "timing"
@@ -12705,6 +12789,14 @@
     "cancelAnimationFrame(handle)",
     "requestAnimationFrame(callback)"
   ],
+  "AnimationNodeList": [
+    "getter AnimationEffect? item(unsigned long index)",
+    "item(index)",
+    "length"
+  ],
+  "AnimationNodeList/item(index)": [
+    "index"
+  ],
   "AnimationPlayState": [
     "\"finished\"",
     "\"idle\"",
@@ -12714,6 +12806,7 @@
   "AnimationPlaybackEvent": [
     "AnimationPlaybackEvent(type)",
     "AnimationPlaybackEvent(type, eventInitDict)",
+    "constructor",
     "constructor(type)",
     "constructor(type, eventInitDict)",
     "currentTime",
@@ -12745,8 +12838,15 @@
     "\"removed\""
   ],
   "AnimationTimeline": [
+    "Animation play(optional AnimationEffect? effect = null)",
     "currentTime",
-    "phase"
+    "duration",
+    "phase",
+    "play()",
+    "play(effect)"
+  ],
+  "AnimationTimeline/play(effect)": [
+    "effect"
   ],
   "AnimationWorkletGlobalScope": [
     "registerAnimator(name, animatorCtor)"
@@ -14069,6 +14169,8 @@
     "start",
     "support",
     "support a css selector",
+    "support a font format",
+    "support a font tech",
     "supported syntax component name",
     "supports",
     "supports(conditionText)",
@@ -16073,7 +16175,8 @@
     "currentIteration",
     "endTime",
     "localTime",
-    "progress"
+    "progress",
+    "startTime"
   ],
   "ConstantSourceNode": [
     "ConstantSourceNode(context)",
@@ -18146,6 +18249,11 @@
     "\"end\"",
     "\"start\""
   ],
+  "EffectCallback": [
+    "animation",
+    "currentTarget",
+    "progress"
+  ],
   "EffectTiming": [
     "delay",
     "direction",
@@ -18154,7 +18262,8 @@
     "endDelay",
     "fill",
     "iterationStart",
-    "iterations"
+    "iterations",
+    "playbackRate"
   ],
   "Element": [
     "[[RegisteredIntersectionObservers]]",
@@ -19471,6 +19580,40 @@
     "onwebkitanimationstart",
     "onwebkittransitionend",
     "onwheel"
+  ],
+  "GroupEffect": [
+    "",
+    "GroupEffect ()",
+    "GroupEffect clone ()",
+    "GroupEffect(children)",
+    "GroupEffect(children, timing)",
+    "append()",
+    "append(...effects)",
+    "children",
+    "clone()",
+    "constructor(children)",
+    "constructor(children, timing)",
+    "firstChild",
+    "lastChild",
+    "prepend()",
+    "prepend(...effects)",
+    "undefined append (AnimationEffect... effects)"
+  ],
+  "GroupEffect/GroupEffect(children, timing)": [
+    "children",
+    "timing"
+  ],
+  "GroupEffect/append()": [
+    "effects"
+  ],
+  "GroupEffect/append(...effects)": [
+    "effects"
+  ],
+  "GroupEffect/prepend()": [
+    "effects"
+  ],
+  "GroupEffect/prepend(...effects)": [
+    "effects"
   ],
   "HTMLAllCollection": [
     "item()",
@@ -21159,6 +21302,10 @@
     "maxContentSize",
     "minContentSize"
   ],
+  "IterationCompositeOperation": [
+    "\"accumulate\"",
+    "\"replace\""
+  ],
   "JavaScript string": [
     "code point length",
     "convert",
@@ -21456,6 +21603,7 @@
     "constructor(target, keyframes)",
     "constructor(target, keyframes, options)",
     "getKeyframes()",
+    "iterationComposite",
     "pseudoElement",
     "setKeyframes(keyframes)",
     "target",
@@ -21477,6 +21625,7 @@
   ],
   "KeyframeEffectOptions": [
     "composite",
+    "iterationComposite",
     "pseudoElement"
   ],
   "LargeBlobSupport": [
@@ -22825,7 +22974,8 @@
     "endDelay",
     "fill",
     "iterationStart",
-    "iterations"
+    "iterations",
+    "playbackRate"
   ],
   "OrientationLockType": [
     "any",
@@ -25815,6 +25965,33 @@
   ],
   "SensorOptions": [
     "frequency"
+  ],
+  "SequenceEffect": [
+    "SequenceEffect clone ()",
+    "SequenceEffect()",
+    "SequenceEffect(children)",
+    "SequenceEffect(children, timing)",
+    "clone()",
+    "constructor",
+    "constructor (sequence<AnimationEffect>? children, optional (unrestricted double or EffectTiming) timing)",
+    "constructor(children)",
+    "constructor(children, timing)"
+  ],
+  "SequenceEffect/SequenceEffect(children)": [
+    "children",
+    "timing"
+  ],
+  "SequenceEffect/SequenceEffect(children, timing)": [
+    "children",
+    "timing"
+  ],
+  "SequenceEffect/constructor(children)": [
+    "children",
+    "timing"
+  ],
+  "SequenceEffect/constructor(children, timing)": [
+    "children",
+    "timing"
   ],
   "Serial": [
     "connect",
@@ -29619,6 +29796,21 @@
     "credentialidresult",
     "signatureresult",
     "userhandleresult"
+  ],
+  "attr()": [
+    "<dimension-unit>",
+    "angle",
+    "color",
+    "flex",
+    "frequency",
+    "ident",
+    "length",
+    "number",
+    "percentage",
+    "string",
+    "substitution value",
+    "time",
+    "url"
   ],
   "audio": [
     "autoplay",
