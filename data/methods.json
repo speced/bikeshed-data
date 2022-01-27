@@ -343,46 +343,6 @@
       "shortname": "css-typed-om"
     }
   },
-  "CSSDeviceCMYK()": {
-    "CSSDeviceCMYK(c, m, y, k)": {
-      "args": [
-        "c",
-        "m",
-        "y",
-        "k"
-      ],
-      "for": [
-        "CSSDeviceCMYK"
-      ],
-      "shortname": "css-typed-om"
-    },
-    "CSSDeviceCMYK(c, m, y, k, alpha)": {
-      "args": [
-        "c",
-        "m",
-        "y",
-        "k",
-        "alpha"
-      ],
-      "for": [
-        "CSSDeviceCMYK"
-      ],
-      "shortname": "css-typed-om"
-    },
-    "CSSDeviceCMYK(c, m, y, k, optional alpha)": {
-      "args": [
-        "c",
-        "m",
-        "y",
-        "k",
-        "optional alpha"
-      ],
-      "for": [
-        "CSSDeviceCMYK"
-      ],
-      "shortname": "css-typed-om"
-    }
-  },
   "CSSHSL()": {
     "CSSHSL(h, s, l)": {
       "args": [
@@ -666,6 +626,80 @@
       ],
       "for": [
         "CSSMatrixComponent"
+      ],
+      "shortname": "css-typed-om"
+    }
+  },
+  "CSSOKLCH()": {
+    "CSSOKLCH(l, c, h)": {
+      "args": [
+        "l",
+        "c",
+        "h"
+      ],
+      "for": [
+        "CSSOKLCH"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "CSSOKLCH(l, c, h, alpha)": {
+      "args": [
+        "l",
+        "c",
+        "h",
+        "alpha"
+      ],
+      "for": [
+        "CSSOKLCH"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "CSSOKLCH(l, c, h, optional alpha)": {
+      "args": [
+        "l",
+        "c",
+        "h",
+        "optional alpha"
+      ],
+      "for": [
+        "CSSOKLCH"
+      ],
+      "shortname": "css-typed-om"
+    }
+  },
+  "CSSOKLab()": {
+    "CSSOKLab(l, a, b)": {
+      "args": [
+        "l",
+        "a",
+        "b"
+      ],
+      "for": [
+        "CSSOKLab"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "CSSOKLab(l, a, b, alpha)": {
+      "args": [
+        "l",
+        "a",
+        "b",
+        "alpha"
+      ],
+      "for": [
+        "CSSOKLab"
+      ],
+      "shortname": "css-typed-om"
+    },
+    "CSSOKLab(l, a, b, optional alpha)": {
+      "args": [
+        "l",
+        "a",
+        "b",
+        "optional alpha"
+      ],
+      "for": [
+        "CSSOKLab"
       ],
       "shortname": "css-typed-om"
     }
@@ -5708,31 +5742,6 @@
       ],
       "shortname": "wasm-js-api"
     },
-    "constructor(c, m, y, k)": {
-      "args": [
-        "c",
-        "m",
-        "y",
-        "k"
-      ],
-      "for": [
-        "CSSDeviceCMYK"
-      ],
-      "shortname": "css-typed-om"
-    },
-    "constructor(c, m, y, k, alpha)": {
-      "args": [
-        "c",
-        "m",
-        "y",
-        "k",
-        "alpha"
-      ],
-      "for": [
-        "CSSDeviceCMYK"
-      ],
-      "shortname": "css-typed-om"
-    },
     "constructor(callback)": {
       "args": [
         "callback"
@@ -6188,7 +6197,8 @@
         "b"
       ],
       "for": [
-        "CSSLab"
+        "CSSLab",
+        "CSSOKLab"
       ],
       "shortname": "css-typed-om"
     },
@@ -6200,7 +6210,8 @@
         "alpha"
       ],
       "for": [
-        "CSSLab"
+        "CSSLab",
+        "CSSOKLab"
       ],
       "shortname": "css-typed-om"
     },
@@ -6211,7 +6222,8 @@
         "h"
       ],
       "for": [
-        "CSSLCH"
+        "CSSLCH",
+        "CSSOKLCH"
       ],
       "shortname": "css-typed-om"
     },
@@ -6223,7 +6235,8 @@
         "alpha"
       ],
       "for": [
-        "CSSLCH"
+        "CSSLCH",
+        "CSSOKLCH"
       ],
       "shortname": "css-typed-om"
     },
