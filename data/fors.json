@@ -1122,6 +1122,16 @@
     "FilePropertyBag",
     "FileReader",
     "FileReaderSync",
+    "FileSystemCreateWritableOptions",
+    "FileSystemDirectoryHandle",
+    "FileSystemFileHandle",
+    "FileSystemGetDirectoryOptions",
+    "FileSystemGetFileOptions",
+    "FileSystemHandle",
+    "FileSystemHandleKind",
+    "FileSystemRemoveOptions",
+    "FileSystemWritableFileStream",
+    "FileSystemWriteChunkType",
     "FillMode",
     "Float32Array",
     "Float64Array",
@@ -2284,6 +2294,8 @@
     "WritableStreamRejectCloseAndClosedPromiseIfNeeded",
     "WritableStreamStartErroring",
     "WritableStreamUpdateBackpressure",
+    "WriteCommandType",
+    "WriteParams",
     "WrongDocumentError",
     "XMLDocument",
     "XMLHttpRequest",
@@ -4329,6 +4341,7 @@
     "create a new browsing context",
     "create a new browsing context group",
     "create a new cache entry",
+    "create a new filesystemwritablefilestream",
     "create a new javascript realm",
     "create a new nested browsing context",
     "create a new object implementing the interface",
@@ -4887,6 +4900,8 @@
     "directly associated with an animation",
     "directly nested",
     "director",
+    "directory",
+    "directory entry",
     "dirtiness",
     "dirty checkedness",
     "dirty checkedness flag",
@@ -5477,6 +5492,7 @@
     "figcaption",
     "figure",
     "file",
+    "file entry",
     "file read error",
     "file reading task source",
     "file type guidelines",
@@ -8148,6 +8164,7 @@
     "orientationchange",
     "origin",
     "origin color",
+    "origin private file system",
     "origin time",
     "origin-agent-cluster",
     "origin-bound one-time code",
@@ -11340,6 +11357,7 @@
     "valid email address",
     "valid email address list",
     "valid external application resource",
+    "valid file name",
     "valid floating-point number",
     "valid global date and time string",
     "valid hash-name reference",
@@ -11628,6 +11646,7 @@
     "writable side",
     "writable stream",
     "writable stream writer",
+    "write a chunk",
     "write characteristic descriptors",
     "write characteristic value",
     "write long characteristic descriptors",
@@ -19072,6 +19091,98 @@
     "blob",
     "encoding"
   ],
+  "FileSystemCreateWritableOptions": [
+    "keepExistingData"
+  ],
+  "FileSystemDirectoryHandle": [
+    "getDirectoryHandle(name)",
+    "getDirectoryHandle(name, options)",
+    "getFileHandle(name)",
+    "getFileHandle(name, options)",
+    "removeEntry(name)",
+    "removeEntry(name, options)",
+    "resolve(possibleDescendant)"
+  ],
+  "FileSystemDirectoryHandle-iterator": [
+    "past results"
+  ],
+  "FileSystemDirectoryHandle/getDirectoryHandle(name)": [
+    "name",
+    "options"
+  ],
+  "FileSystemDirectoryHandle/getDirectoryHandle(name, options)": [
+    "name",
+    "options"
+  ],
+  "FileSystemDirectoryHandle/getFileHandle(name)": [
+    "name",
+    "options"
+  ],
+  "FileSystemDirectoryHandle/getFileHandle(name, options)": [
+    "name",
+    "options"
+  ],
+  "FileSystemDirectoryHandle/removeEntry(name)": [
+    "name",
+    "options"
+  ],
+  "FileSystemDirectoryHandle/removeEntry(name, options)": [
+    "name",
+    "options"
+  ],
+  "FileSystemDirectoryHandle/resolve(possibleDescendant)": [
+    "possibleDescendant"
+  ],
+  "FileSystemFileHandle": [
+    "createWritable()",
+    "createWritable(options)",
+    "getFile()"
+  ],
+  "FileSystemFileHandle/createWritable()": [
+    "options"
+  ],
+  "FileSystemFileHandle/createWritable(options)": [
+    "options"
+  ],
+  "FileSystemGetDirectoryOptions": [
+    "create"
+  ],
+  "FileSystemGetFileOptions": [
+    "create"
+  ],
+  "FileSystemHandle": [
+    "entry",
+    "isSameEntry(other)",
+    "kind",
+    "name"
+  ],
+  "FileSystemHandle/isSameEntry(other)": [
+    "other"
+  ],
+  "FileSystemHandleKind": [
+    "\"directory\"",
+    "\"file\""
+  ],
+  "FileSystemRemoveOptions": [
+    "recursive"
+  ],
+  "FileSystemWritableFileStream": [
+    "[[buffer]]",
+    "[[file]]",
+    "[[seekoffset]]",
+    "seek(position)",
+    "truncate(size)",
+    "write(data)"
+  ],
+  "FileSystemWritableFileStream/seek(position)": [
+    "position"
+  ],
+  "FileSystemWritableFileStream/truncate(size)": [
+    "size"
+  ],
+  "FileSystemWritableFileStream/write(data)": [
+    "data"
+  ],
   "FillMode": [
     "\"auto\"",
     "\"backwards\"",
@@ -26442,6 +26553,7 @@
   ],
   "StorageManager": [
     "estimate()",
+    "getDirectory()",
     "persist()",
     "persisted()"
   ],
@@ -28452,6 +28564,17 @@
   ],
   "WritableStreamDefaultWriter/write(chunk)": [
     "chunk"
+  ],
+  "WriteCommandType": [
+    "\"seek\"",
+    "\"truncate\"",
+    "\"write\""
+  ],
+  "WriteParams": [
+    "data",
+    "position",
+    "size",
+    "type"
   ],
   "XMLHttpRequest": [
     "DONE",
@@ -31240,6 +31363,9 @@
     "pre-request check",
     "value"
   ],
+  "directory entry": [
+    "children"
+  ],
   "discard": [
     "onbegin",
     "onend",
@@ -31387,6 +31513,14 @@
     "failures",
     "name",
     "url"
+  ],
+  "entry": [
+    "name",
+    "parent",
+    "query access",
+    "request access",
+    "resolve",
+    "the same as"
   ],
   "entry list": [
     "create an entry",
@@ -31708,6 +31842,10 @@
   "file": [
     "lastModified",
     "name"
+  ],
+  "file entry": [
+    "binary data",
+    "modification timestamp"
   ],
   "fill-origin": [
     "border-box",
