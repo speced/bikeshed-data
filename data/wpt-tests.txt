@@ -1,4 +1,4 @@
-sha: 114cb3e3a979d97721b6cafc65af5e777a5af8a5
+sha: 8b8eba63463e54a68ca260b387adb5f425b4a84c
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -181,6 +181,7 @@ crashtest css/css-multicol/crashtests/multicol-floats-after-column-span-crash.ht
 crashtest css/css-multicol/crashtests/multicol-floats-in-ifc.html
 crashtest css/css-multicol/crashtests/nested-multicol-and-float-with-tall-padding.html
 crashtest css/css-multicol/crashtests/specified-height-with-just-spanner-and-oof.html
+crashtest css/css-multicol/crashtests/table-cell-writing-mode-root.html
 crashtest css/css-multicol/dynamic-become-multicol-add-oof-inside-inline-crash.html
 crashtest css/css-multicol/extremely-tall-multicol-with-extremely-tall-child-crash.html
 crashtest css/css-multicol/img-alt-as-multicol-crash.html
@@ -23735,6 +23736,8 @@ testharness apng/supported-in-source-type.html
 testharness app-history/app-history-entry/after-detach.html
 testharness app-history/app-history-entry/current-basic.html
 testharness app-history/app-history-entry/entries-across-origins.html
+testharness app-history/app-history-entry/entries-after-bfcache-in-iframe.html
+testharness app-history/app-history-entry/entries-after-bfcache.html
 testharness app-history/app-history-entry/entries-after-blank-navigation.html
 testharness app-history/app-history-entry/entries-after-blob-navigation.html
 testharness app-history/app-history-entry/entries-after-cross-document-forward-pruning.html
@@ -24004,6 +24007,7 @@ testharness app-history/ordering-and-transition/reload-transitionWhile.html
 testharness app-history/ordering-and-transition/transition-cross-document.html
 testharness app-history/ordering-and-transition/transition-finished-mark-as-handled.html
 testharness app-history/ordering-and-transition/transition-realms-and-identity.html
+testharness app-history/per-entry-events/dispose-after-bfcache.html
 testharness app-history/per-entry-events/dispose-cross-document.html
 testharness app-history/per-entry-events/dispose-same-document-navigate-during.html
 testharness app-history/per-entry-events/dispose-same-document-reload-with-transitionWhile.html
@@ -25353,6 +25357,7 @@ testharness cors/status-preflight.htm
 testharness cors/status.htm
 testharness credential-management/credentialscontainer-create-basics.https.html
 testharness credential-management/fedcm-logout-rps.https.html
+testharness credential-management/fedcm-network-requests.sub.https.html
 testharness credential-management/fedcm-revoke.https.html
 testharness credential-management/fedcm.https.html
 testharness credential-management/federatedcredential-framed-get.sub.https.html
@@ -31245,6 +31250,7 @@ testharness html/browsers/browsing-the-web/back-forward-cache/eligibility/inflig
 testharness html/browsers/browsing-the-web/back-forward-cache/eligibility/shared-worker.html
 testharness html/browsers/browsing-the-web/back-forward-cache/events.html
 testharness html/browsers/browsing-the-web/back-forward-cache/focus.html
+testharness html/browsers/browsing-the-web/back-forward-cache/pushstate.https.html
 testharness html/browsers/browsing-the-web/back-forward-cache/timers.html
 testharness html/browsers/browsing-the-web/history-traversal/001.html
 testharness html/browsers/browsing-the-web/history-traversal/PopStateEvent.html
@@ -36098,6 +36104,7 @@ testharness html/semantics/links/downloading-resources/header-referrer-unsafe-ur
 testharness html/semantics/links/downloading-resources/header-referrer.html
 testharness html/semantics/links/following-hyperlinks/activation-behavior.window.js
 testharness html/semantics/links/following-hyperlinks/active-document.window.js
+testharness html/semantics/links/hyperlink-auditing/headers.optional.html
 testharness html/semantics/links/links-created-by-a-and-area-elements/htmlanchorelement_attribute-getter-setter.html
 testharness html/semantics/links/links-created-by-a-and-area-elements/htmlanchorelement_getter.html
 testharness html/semantics/links/links-created-by-a-and-area-elements/htmlanchorelement_noopener.html
@@ -42557,6 +42564,7 @@ testharness webidl/ecmascript-binding/legacy-platform-object/GetOwnProperty.html
 testharness webidl/ecmascript-binding/legacy-platform-object/OwnPropertyKeys.html
 testharness webidl/ecmascript-binding/legacy-platform-object/Set.html
 testharness webidl/ecmascript-binding/no-regexp-special-casing.any.js
+testharness webidl/ecmascript-binding/observable-array-ownkeys.window.js
 testharness webidl/ecmascript-binding/put-forwards.html
 testharness webidl/ecmascript-binding/sequence-conversion.html
 testharness webidl/ecmascript-binding/window-named-properties-object.html
