@@ -1,4 +1,4 @@
-sha: da5b9380f07e5fabd6c4de993e2c7188a14fa1d6
+sha: b13358b272a2870388a1f0a82954c2a4189ad04f
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -190,7 +190,9 @@ crashtest css/css-multicol/crashtests/multicol-floats-after-column-span-crash.ht
 crashtest css/css-multicol/crashtests/multicol-floats-in-ifc.html
 crashtest css/css-multicol/crashtests/nested-multicol-and-float-with-tall-padding-before-float.html
 crashtest css/css-multicol/crashtests/nested-multicol-and-float-with-tall-padding.html
+crashtest css/css-multicol/crashtests/nested-multicol-with-float-between.html
 crashtest css/css-multicol/crashtests/nested-oof-multicol-with-oof-needing-additional-columns.html
+crashtest css/css-multicol/crashtests/nested-with-oof-inside-fixed-width.html
 crashtest css/css-multicol/crashtests/nested-with-percentage-size-and-oof.html
 crashtest css/css-multicol/crashtests/nested-with-tall-padding-and-oof.html
 crashtest css/css-multicol/crashtests/relayout-nested-with-oof.html
@@ -11688,6 +11690,9 @@ reftest css/css-break/flexbox/multi-line-column-flex-fragmentation-005.html
 reftest css/css-break/flexbox/multi-line-column-flex-fragmentation-006.html
 reftest css/css-break/flexbox/multi-line-column-flex-fragmentation-007.html
 reftest css/css-break/flexbox/multi-line-column-flex-fragmentation-008.html
+reftest css/css-break/flexbox/multi-line-column-flex-fragmentation-009.html
+reftest css/css-break/flexbox/multi-line-column-flex-fragmentation-010.html
+reftest css/css-break/flexbox/multi-line-column-flex-fragmentation-011.html
 reftest css/css-break/flexbox/multi-line-row-flex-fragmentation-001.html
 reftest css/css-break/flexbox/multi-line-row-flex-fragmentation-002.html
 reftest css/css-break/flexbox/multi-line-row-flex-fragmentation-003.html
@@ -11733,6 +11738,7 @@ reftest css/css-break/flexbox/multi-line-row-flex-fragmentation-042.tentative.ht
 reftest css/css-break/flexbox/multi-line-row-flex-fragmentation-043.html
 reftest css/css-break/flexbox/multi-line-row-flex-fragmentation-044.html
 reftest css/css-break/flexbox/multi-line-row-flex-fragmentation-045.html
+reftest css/css-break/flexbox/multi-line-row-flex-fragmentation-046.html
 reftest css/css-break/flexbox/single-line-column-flex-fragmentation-001.html
 reftest css/css-break/flexbox/single-line-column-flex-fragmentation-002.html
 reftest css/css-break/flexbox/single-line-column-flex-fragmentation-003.html
@@ -11768,6 +11774,7 @@ reftest css/css-break/flexbox/single-line-column-flex-fragmentation-032.html
 reftest css/css-break/flexbox/single-line-column-flex-fragmentation-033.html
 reftest css/css-break/flexbox/single-line-column-flex-fragmentation-034.html
 reftest css/css-break/flexbox/single-line-column-flex-fragmentation-035.html
+reftest css/css-break/flexbox/single-line-column-flex-fragmentation-036.html
 reftest css/css-break/flexbox/single-line-row-flex-fragmentation-001.html
 reftest css/css-break/flexbox/single-line-row-flex-fragmentation-002.html
 reftest css/css-break/flexbox/single-line-row-flex-fragmentation-003.html
@@ -11793,6 +11800,7 @@ reftest css/css-break/flexbox/single-line-row-flex-fragmentation-022.html
 reftest css/css-break/flexbox/single-line-row-flex-fragmentation-023.html
 reftest css/css-break/flexbox/single-line-row-flex-fragmentation-024.html
 reftest css/css-break/flexbox/single-line-row-flex-fragmentation-025.html
+reftest css/css-break/flexbox/single-line-row-flex-fragmentation-026.html
 reftest css/css-break/float-000.html
 reftest css/css-break/float-001.html
 reftest css/css-break/float-002.html
@@ -11871,6 +11879,7 @@ reftest css/css-break/grid/grid-item-fragmentation-045.html
 reftest css/css-break/grid/grid-item-fragmentation-046.html
 reftest css/css-break/grid/grid-item-fragmentation-047.html
 reftest css/css-break/grid/grid-item-fragmentation-048.html
+reftest css/css-break/grid/grid-item-infinite-expansion.html
 reftest css/css-break/grid/grid-item-oof-001.html
 reftest css/css-break/grid/grid-item-oof-002.html
 reftest css/css-break/grid/grid-item-oof-003.html
@@ -11993,7 +12002,11 @@ reftest css/css-break/ruby-000.html
 reftest css/css-break/ruby-001.html
 reftest css/css-break/ruby-002.html
 reftest css/css-break/ruby-003.html
+reftest css/css-break/table/break-after-table-cell-child.html
+reftest css/css-break/table/break-after-table-cell.html
 reftest css/css-break/table/break-before-second-row.html
+reftest css/css-break/table/break-before-table-cell-child.html
+reftest css/css-break/table/break-before-table-cell.html
 reftest css/css-break/table/break-inside-cell-000.html
 reftest css/css-break/table/break-inside-cell-001.html
 reftest css/css-break/table/section-with-overflow-000.html
@@ -31251,6 +31264,7 @@ testharness focus/iframe-focuses-parent-different-site.html
 testharness focus/iframe-focuses-parent-same-site.html
 testharness font-access/font_access_basic.tentative.https.window.js
 testharness font-access/font_access_blob.tentative.https.window.js
+testharness font-access/font_access_permission.tentative.https.window.js
 testharness font-access/font_access_query_select.tentative.https.window.js
 testharness font-access/font_access_sorted.tentative.https.window.js
 testharness forced-colors-mode/forced-colors-mode-03.html
@@ -37656,6 +37670,7 @@ testharness lifecycle/child-out-of-viewport.tentative.html
 testharness lifecycle/freeze.html
 testharness lifecycle/worker-dispay-none.tentative.html
 testharness loading/early-hints/preload-initiator-type.h2.window.js
+testharness loading/early-hints/referrer-policy.h2.window.js
 testharness loading/preloader-css-import-no-quote.tentative.html
 testharness loading/preloader-css-import-no-semicolon.tentative.html
 testharness loading/preloader-css-import-no-space.tentative.html
@@ -45228,6 +45243,7 @@ visual css/CSS2/normal-flow/block-formatting-contexts-013.xht
 visual css/CSS2/normal-flow/block-formatting-contexts-014.xht
 visual css/CSS2/normal-flow/block-in-inline-insert-019.html
 visual css/CSS2/normal-flow/block-in-inline-insert-020.html
+visual css/CSS2/normal-flow/block-in-inline-vertical-align-001.html
 visual css/CSS2/normal-flow/block-non-replaced-height-002.xht
 visual css/CSS2/normal-flow/block-non-replaced-height-003.xht
 visual css/CSS2/normal-flow/block-non-replaced-height-004.xht
