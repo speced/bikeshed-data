@@ -1,4 +1,4 @@
-sha: db1d8d994f24b6d031e5cab56145082af682cd70
+sha: b497523e2b9e2e97ccba03aec177af6cdf918c3e
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -15816,6 +15816,13 @@ reftest css/css-masking/clip-path/clip-path-reference-box-004.html
 reftest css/css-masking/clip-path/clip-path-reference-restore.html
 reftest css/css-masking/clip-path/clip-path-rotated-will-change-transform.html
 reftest css/css-masking/clip-path/clip-path-scroll.html
+reftest css/css-masking/clip-path/clip-path-shape-001.html
+reftest css/css-masking/clip-path/clip-path-shape-002-units.html
+reftest css/css-masking/clip-path/clip-path-shape-002.html
+reftest css/css-masking/clip-path/clip-path-shape-003.html
+reftest css/css-masking/clip-path/clip-path-shape-004.html
+reftest css/css-masking/clip-path/clip-path-shape-interpolation-001.html
+reftest css/css-masking/clip-path/clip-path-shape-interpolation-002.html
 reftest css/css-masking/clip-path/clip-path-strokeBox-1a.html
 reftest css/css-masking/clip-path/clip-path-strokeBox-1b.html
 reftest css/css-masking/clip-path/clip-path-svg-invalidate.html
@@ -17763,6 +17770,7 @@ reftest css/css-tables/tentative/paint/overflow-hidden-table.html
 reftest css/css-tables/tentative/section-no-tbody-fixed-distribution.html
 reftest css/css-tables/tentative/section-no-tbody-percent-distribution.html
 reftest css/css-tables/toggle-row-display-property-001.html
+reftest css/css-tables/visibility-collapse-border-spacing.html
 reftest css/css-tables/visibility-collapse-colspan-003.html
 reftest css/css-tables/visibility-collapse-rowspan-005.html
 reftest css/css-tables/visibility-hidden-collapsed-borders.html
@@ -24220,6 +24228,9 @@ testharness bluetooth/descriptor/readValue/read-succeeds.https.window.js
 testharness bluetooth/descriptor/writeValue/buffer-is-detached.https.window.js
 testharness bluetooth/descriptor/writeValue/detachedIframe.https.window.js
 testharness bluetooth/descriptor/writeValue/gen-service-is-removed.https.window.js
+testharness bluetooth/device/forget/connect-after-forget.https.window.js
+testharness bluetooth/device/forget/detachedIframe.https.window.js
+testharness bluetooth/device/forget/getDevices.https.window.js
 testharness bluetooth/device/gattserverdisconnected-event/disconnected.https.window.js
 testharness bluetooth/device/gattserverdisconnected-event/disconnected_gc.https.window.js
 testharness bluetooth/device/gattserverdisconnected-event/one-event-per-disconnection.https.window.js
@@ -27206,6 +27217,7 @@ testharness css/css-masking/animations/clip-interpolation.html
 testharness css/css-masking/animations/clip-path-composition.html
 testharness css/css-masking/animations/clip-path-interpolation-001.html
 testharness css/css-masking/animations/clip-path-interpolation-002.html
+testharness css/css-masking/animations/clip-path-interpolation-shape.html
 testharness css/css-masking/animations/mask-image-interpolation.html
 testharness css/css-masking/animations/mask-position-interpolation.html
 testharness css/css-masking/clip-path/clip-path-path-with-zoom-hittest.html
@@ -27220,6 +27232,7 @@ testharness css/css-masking/parsing/clip-computed.html
 testharness css/css-masking/parsing/clip-invalid.html
 testharness css/css-masking/parsing/clip-path-computed.html
 testharness css/css-masking/parsing/clip-path-invalid.html
+testharness css/css-masking/parsing/clip-path-shape-parsing.html
 testharness css/css-masking/parsing/clip-path-valid.html
 testharness css/css-masking/parsing/clip-rule-computed.html
 testharness css/css-masking/parsing/clip-rule-invalid.html
@@ -31276,6 +31289,7 @@ testharness focus/iframe-focuses-parent-different-site.html
 testharness focus/iframe-focuses-parent-same-site.html
 testharness font-access/font_access_basic.tentative.https.window.js
 testharness font-access/font_access_blob.tentative.https.window.js
+testharness font-access/font_access_detached_iframe.tentative.https.window.js
 testharness font-access/font_access_permission.tentative.https.window.js
 testharness font-access/font_access_query_select.tentative.https.window.js
 testharness font-access/font_access_sorted.tentative.https.window.js
@@ -34915,6 +34929,7 @@ testharness html/dom/render-blocking/parser-inserted-module-script.tentative.htm
 testharness html/dom/render-blocking/parser-inserted-preload-link.tentative.html
 testharness html/dom/render-blocking/parser-inserted-style-element.tentative.html
 testharness html/dom/render-blocking/parser-inserted-stylesheet-link.tentative.html
+testharness html/dom/render-blocking/remove-pending-async-render-blocking-script.html
 testharness html/dom/render-blocking/render-blocked-apis-by-preload-link.tentative.html
 testharness html/dom/render-blocking/render-blocked-apis-by-stylesheet-link.tentative.html
 testharness html/dom/render-blocking/script-inserted-module-script.tentative.html
@@ -38547,7 +38562,7 @@ testharness performance-timeline/get-invalid-entries.html
 testharness performance-timeline/idlharness-shadowrealm.window.js
 testharness performance-timeline/idlharness.any.js
 testharness performance-timeline/multiple-buffered-flag-observers.any.js
-testharness performance-timeline/navigation-counter.tentative.html
+testharness performance-timeline/navigation-id.tentative.html
 testharness performance-timeline/not-clonable.html
 testharness performance-timeline/observer-buffered-false.any.js
 testharness performance-timeline/performanceentry-tojson.any.js
