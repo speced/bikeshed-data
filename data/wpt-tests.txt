@@ -1,4 +1,4 @@
-sha: 7f43143f25682928c84465db2b1e127ae4993046
+sha: 367b1e5553c87fd9554eec135dc671960b9c41d1
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -360,8 +360,12 @@ crashtest editing/crashtests/delete-in-empty-editable-list-followed-by-non-edita
 crashtest editing/crashtests/designMode-document-will-be-blurred-by-focus-event-listener.html
 crashtest editing/crashtests/execCommand-at-load-with-changing-editing-host.html
 crashtest editing/crashtests/execCommand-backcolor-and-hilitecolor-in-empty-iframe-in-designMode.html
+crashtest editing/crashtests/execCommand-without-selection-ranges.html
 crashtest editing/crashtests/format-block-selection-containing-non-editable-list.html
+crashtest editing/crashtests/forwarddelete-at-empty-text-node-in-body.html
+crashtest editing/crashtests/forwarddelete-in-text-in-span-in-editable-documentElement.html
 crashtest editing/crashtests/insert-image-with-joining-header-element-and-body.html
+crashtest editing/crashtests/insertText-at-end-of-text-in-body.html
 crashtest editing/crashtests/inserthorizontalrule-in-fieldset-and-everything-styled-white-space-pre.html
 crashtest editing/crashtests/inserthtml-after-temporarily-removing-document-element.html
 crashtest editing/crashtests/inserthtml-in-inline-editing-host-at-load-event.html
@@ -394,6 +398,7 @@ crashtest editing/crashtests/queryCommandValue-backcolor-after-replacing-html-el
 crashtest editing/crashtests/remove-document-element-of-iframe-having-style-content.html
 crashtest editing/crashtests/remove-editing-host-which-is-selected.html
 crashtest editing/crashtests/remove-iframe-for-designMode.html
+crashtest editing/crashtests/remve-documentElement-after-inserthtml-svg-and-td.html
 crashtest editing/crashtests/selectall-and-inerthtml-in-textarea-editing-host.html
 crashtest editing/crashtests/selectall-in-head-editing-host-after-body-removed.html
 crashtest editing/crashtests/selectall-selection-modify-move-forward-lineboundary-selectall-around-editable-canvas.html
@@ -491,7 +496,8 @@ crashtest shadow-dom/nested-slot-remove-crash.html
 crashtest shadow-dom/user-agent-shadow-root-crash.html
 crashtest streams/readable-streams/crashtests/strategy-worker-terminate.html
 crashtest svg/animations/animated-classname-crash.svg
-crashtest svg/animations/end-of-time-crash.html
+crashtest svg/animations/end-of-time-001-crash.html
+crashtest svg/animations/end-of-time-002-crash.html
 crashtest svg/animations/svg-style-animate-crash.html
 crashtest svg/crashtests/chrome-bug-1172059.html
 crashtest svg/crashtests/chrome-bug-1205852.html
@@ -3580,6 +3586,7 @@ print-reftest css/css-values/viewport-units-001-print.html
 print-reftest css/printing/emoji-print.html
 print-reftest css/printing/fragmented-inline-block-001-print.html
 print-reftest css/printing/fragmented-inline-block-002-print.html
+print-reftest css/printing/input-file-print.html
 print-reftest css/printing/page-overflow-crash-print.html
 print-reftest custom-elements/pseudo-class-defined-print.html
 print-reftest html/browsers/windows/iframe-cross-origin-print.sub.html
@@ -20115,6 +20122,7 @@ reftest css/css-ui/outline-025.html
 reftest css/css-ui/outline-026.html
 reftest css/css-ui/outline-027.html
 reftest css/css-ui/outline-028.html
+reftest css/css-ui/outline-auto-dynamic-change.html
 reftest css/css-ui/outline-color-001.html
 reftest css/css-ui/outline-negative-offset-composited-scroll.html
 reftest css/css-ui/outline-offset-001.html
@@ -34953,6 +34961,8 @@ testharness html/rendering/widgets/input-date-no-resize-on-hover.html
 testharness html/rendering/widgets/select-wrap-no-spill.optional.html
 testharness html/semantics/disabled-elements/disabledElement.html
 testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/conditionally-block-rendering-on-link-media-attr.html
+testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/script-created-link-stylesheet-does-not-block-script.html
+testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/script-created-style-element-does-not-block-script.html
 testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/style-element-media-match-block-script.html
 testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/style-element-media-not-match-does-not-block-script.html
 testharness html/semantics/document-metadata/styling/LinkStyle.html
@@ -38107,6 +38117,7 @@ testharness navigation-api/currententrychange-event/navigation-navigate-transiti
 testharness navigation-api/currententrychange-event/navigation-reload-cross-doc.html
 testharness navigation-api/currententrychange-event/navigation-reload-transitionWhile.html
 testharness navigation-api/currententrychange-event/navigation-updateCurrentEntry.html
+testharness navigation-api/currententrychange-event/not-on-load.html
 testharness navigation-api/currententrychange-event/properties.html
 testharness navigation-api/focus-reset/autofocus.html
 testharness navigation-api/focus-reset/basic.html
@@ -40323,6 +40334,7 @@ testharness resize-observer/eventloop.html
 testharness resize-observer/idlharness.window.js
 testharness resize-observer/notify.html
 testharness resize-observer/observe.html
+testharness resize-observer/scrollbars-2.html
 testharness resize-observer/scrollbars.html
 testharness resize-observer/svg.html
 testharness resource-timing/304-response-recorded.html
