@@ -8,6 +8,15 @@
       "shortname": "dom"
     }
   },
+  "AddSearchProvider()": {
+    "AddSearchProvider()": {
+      "args": [],
+      "for": [
+        "External"
+      ],
+      "shortname": "html"
+    }
+  },
   "AnalyserNode()": {
     "AnalyserNode(context)": {
       "args": [
@@ -2055,6 +2064,15 @@
       "shortname": "intersection-observer"
     }
   },
+  "IsSearchProviderInstalled()": {
+    "IsSearchProviderInstalled()": {
+      "args": [],
+      "for": [
+        "External"
+      ],
+      "shortname": "html"
+    }
+  },
   "KeyboardEvent()": {
     "KeyboardEvent(type)": {
       "args": [
@@ -3935,6 +3953,17 @@
       "shortname": "html"
     }
   },
+  "addCue()": {
+    "addCue(cue)": {
+      "args": [
+        "cue"
+      ],
+      "for": [
+        "TextTrack"
+      ],
+      "shortname": "html"
+    }
+  },
   "addEventListener()": {
     "addEventListener()": {
       "args": [],
@@ -4092,6 +4121,27 @@
         "CSSStyleSheet"
       ],
       "shortname": "cssom"
+    }
+  },
+  "addTextTrack()": {
+    "addTextTrack(kind)": {
+      "args": [
+        "kind"
+      ],
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "shortname": "html"
+    },
+    "addTextTrack(kind, label)": {
+      "args": [
+        "kind",
+        "label"
+      ],
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "shortname": "html"
     }
   },
   "addTrack()": {
@@ -4555,6 +4605,15 @@
       "shortname": "html"
     }
   },
+  "attachInternals()": {
+    "attachInternals()": {
+      "args": [],
+      "for": [
+        "HTMLElement"
+      ],
+      "shortname": "html"
+    }
+  },
   "attachShadow()": {
     "attachShadow()": {
       "args": [],
@@ -4813,6 +4872,16 @@
       "shortname": "web-bluetooth"
     }
   },
+  "captureEvents()": {
+    "captureEvents()": {
+      "args": [],
+      "for": [
+        "Document",
+        "Window"
+      ],
+      "shortname": "html"
+    }
+  },
   "caretPositionFromPoint()": {
     "caretPositionFromPoint(x, y)": {
       "args": [
@@ -4868,7 +4937,15 @@
     "checkValidity()": {
       "args": [],
       "for": [
-        "HTMLFormElement"
+        "ElementInternals",
+        "HTMLButtonElement",
+        "HTMLFieldSetElement",
+        "HTMLFormElement",
+        "HTMLInputElement",
+        "HTMLObjectElement",
+        "HTMLOutputElement",
+        "HTMLSelectElement",
+        "HTMLTextAreaElement"
       ],
       "shortname": "html"
     }
@@ -4898,6 +4975,7 @@
       "args": [],
       "for": [
         "DataTransferItemList",
+        "Document",
         "FontFaceSet",
         "IDBObjectStore",
         "Storage",
@@ -8536,6 +8614,18 @@
       "shortname": "webcryptoapi"
     }
   },
+  "define()": {
+    "define(name, constructor)": {
+      "args": [
+        "name",
+        "constructor"
+      ],
+      "for": [
+        "CustomElementRegistry"
+      ],
+      "shortname": "html"
+    }
+  },
   "deg()": {
     "deg(value)": {
       "args": [
@@ -9279,6 +9369,15 @@
         "XRSession"
       ],
       "shortname": "webxr"
+    },
+    "end(index)": {
+      "args": [
+        "index"
+      ],
+      "for": [
+        "TimeRanges"
+      ],
+      "shortname": "html"
     }
   },
   "endpointNumber()": {
@@ -9590,6 +9689,17 @@
         "Range"
       ],
       "shortname": "dom"
+    }
+  },
+  "fastSeek()": {
+    "fastSeek(time)": {
+      "args": [
+        "time"
+      ],
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "shortname": "html"
     }
   },
   "features()": {
@@ -10095,6 +10205,7 @@
         "name"
       ],
       "for": [
+        "CustomElementRegistry",
         "FormData",
         "Headers",
         "URLSearchParams"
@@ -10625,6 +10736,17 @@
         "RTCRtpReceiver"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "getCueById()": {
+    "getCueById(id)": {
+      "args": [
+        "id"
+      ],
+      "for": [
+        "TextTrackCueList"
+      ],
+      "shortname": "html"
     }
   },
   "getData()": {
@@ -11423,6 +11545,17 @@
       "shortname": "dom"
     }
   },
+  "getSVGDocument()": {
+    "getSVGDocument()": {
+      "args": [],
+      "for": [
+        "HTMLEmbedElement",
+        "HTMLIFrameElement",
+        "HTMLObjectElement"
+      ],
+      "shortname": "html"
+    }
+  },
   "getSelectedCandidatePair()": {
     "getSelectedCandidatePair()": {
       "args": [],
@@ -11478,6 +11611,15 @@
         "Element"
       ],
       "shortname": "css-nav"
+    }
+  },
+  "getStartDate()": {
+    "getStartDate()": {
+      "args": [],
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "shortname": "html"
     }
   },
   "getState()": {
@@ -11587,6 +11729,17 @@
         "MediaStream"
       ],
       "shortname": "mediacapture-streams"
+    },
+    "getTrackById(id)": {
+      "args": [
+        "id"
+      ],
+      "for": [
+        "AudioTrackList",
+        "TextTrackList",
+        "VideoTrackList"
+      ],
+      "shortname": "html"
     },
     "getTrackById(trackId)": {
       "args": [
@@ -13275,7 +13428,8 @@
       "args": [],
       "for": [
         "FontFace",
-        "FontFaceSet"
+        "FontFaceSet",
+        "HTMLMediaElement"
       ],
       "shortname": "css-font-loading"
     },
@@ -14199,9 +14353,10 @@
     "pause()": {
       "args": [],
       "for": [
-        "Animation"
+        "Animation",
+        "HTMLMediaElement"
       ],
-      "shortname": "web-animations"
+      "shortname": "html"
     }
   },
   "pc()": {
@@ -14292,9 +14447,10 @@
       "args": [],
       "for": [
         "Animation",
-        "AnimationTimeline"
+        "AnimationTimeline",
+        "HTMLMediaElement"
       ],
-      "shortname": "web-animations"
+      "shortname": "html"
     },
     "play(effect)": {
       "args": [
@@ -14959,6 +15115,16 @@
       "shortname": "html"
     }
   },
+  "releaseEvents()": {
+    "releaseEvents()": {
+      "args": [],
+      "for": [
+        "Document",
+        "Window"
+      ],
+      "shortname": "html"
+    }
+  },
   "releaseInterface()": {
     "releaseInterface(interfaceNumber)": {
       "args": [
@@ -15102,6 +15268,17 @@
         "Node"
       ],
       "shortname": "dom"
+    }
+  },
+  "removeCue()": {
+    "removeCue(cue)": {
+      "args": [
+        "cue"
+      ],
+      "for": [
+        "TextTrack"
+      ],
+      "shortname": "html"
     }
   },
   "removeEntry()": {
@@ -15470,7 +15647,15 @@
     "reportValidity()": {
       "args": [],
       "for": [
-        "HTMLFormElement"
+        "ElementInternals",
+        "HTMLButtonElement",
+        "HTMLFieldSetElement",
+        "HTMLFormElement",
+        "HTMLInputElement",
+        "HTMLObjectElement",
+        "HTMLOutputElement",
+        "HTMLSelectElement",
+        "HTMLTextAreaElement"
       ],
       "shortname": "html"
     }
@@ -16538,6 +16723,16 @@
       "shortname": "fs"
     }
   },
+  "select()": {
+    "select()": {
+      "args": [],
+      "for": [
+        "HTMLInputElement",
+        "HTMLTextAreaElement"
+      ],
+      "shortname": "html"
+    }
+  },
   "selectAlternateInterface()": {
     "selectAlternateInterface(interfaceNumber, alternateSetting)": {
       "args": [
@@ -16844,6 +17039,23 @@
       "shortname": "webrtc"
     }
   },
+  "setCustomValidity()": {
+    "setCustomValidity(error)": {
+      "args": [
+        "error"
+      ],
+      "for": [
+        "HTMLButtonElement",
+        "HTMLFieldSetElement",
+        "HTMLInputElement",
+        "HTMLObjectElement",
+        "HTMLOutputElement",
+        "HTMLSelectElement",
+        "HTMLTextAreaElement"
+      ],
+      "shortname": "html"
+    }
+  },
   "setData()": {
     "setData(format, data)": {
       "args": [
@@ -16901,6 +17113,18 @@
         "Range"
       ],
       "shortname": "dom"
+    }
+  },
+  "setFormValue()": {
+    "setFormValue(value, state)": {
+      "args": [
+        "value",
+        "state"
+      ],
+      "for": [
+        "ElementInternals"
+      ],
+      "shortname": "html"
     }
   },
   "setHeaderValue()": {
@@ -17183,6 +17407,21 @@
       "shortname": "cssom"
     }
   },
+  "setRangeText()": {
+    "setRangeText(replacement, start, end, selectMode)": {
+      "args": [
+        "replacement",
+        "start",
+        "end",
+        "selectMode"
+      ],
+      "for": [
+        "HTMLInputElement",
+        "HTMLTextAreaElement"
+      ],
+      "shortname": "html"
+    }
+  },
   "setRemoteDescription!overload-1()": {
     "setRemoteDescription!overload-1()": {
       "args": [],
@@ -17249,6 +17488,20 @@
         "Performance"
       ],
       "shortname": "resource-timing"
+    }
+  },
+  "setSelectionRange()": {
+    "setSelectionRange(start, end, direction)": {
+      "args": [
+        "start",
+        "end",
+        "direction"
+      ],
+      "for": [
+        "HTMLInputElement",
+        "HTMLTextAreaElement"
+      ],
+      "shortname": "html"
     }
   },
   "setSignals()": {
@@ -17391,6 +17644,19 @@
         "Node"
       ],
       "shortname": "dom"
+    }
+  },
+  "setValidity()": {
+    "setValidity(flags, message, anchor)": {
+      "args": [
+        "flags",
+        "message",
+        "anchor"
+      ],
+      "for": [
+        "ElementInternals"
+      ],
+      "shortname": "html"
     }
   },
   "setValueAtTime()": {
@@ -17716,10 +17982,20 @@
       "for": [
         "AudioBufferSourceNode",
         "AudioScheduledSourceNode",
+        "HTMLMarqueeElement",
         "MessagePort",
         "Sensor"
       ],
       "shortname": "generic-sensor"
+    },
+    "start(index)": {
+      "args": [
+        "index"
+      ],
+      "for": [
+        "TimeRanges"
+      ],
+      "shortname": "html"
     },
     "start(when)": {
       "args": [
@@ -17812,6 +18088,7 @@
       "args": [],
       "for": [
         "AudioScheduledSourceNode",
+        "HTMLMarqueeElement",
         "MediaStreamTrack",
         "RTCRtpTransceiver",
         "Sensor",
@@ -18975,6 +19252,17 @@
       "shortname": "payment-request"
     }
   },
+  "upgrade()": {
+    "upgrade(root)": {
+      "args": [
+        "root"
+      ],
+      "for": [
+        "CustomElementRegistry"
+      ],
+      "shortname": "html"
+    }
+  },
   "upperBound()": {
     "upperBound(upper)": {
       "args": [
@@ -19170,6 +19458,17 @@
         "Element"
       ],
       "shortname": "dom"
+    }
+  },
+  "whenDefined()": {
+    "whenDefined(name)": {
+      "args": [
+        "name"
+      ],
+      "for": [
+        "CustomElementRegistry"
+      ],
+      "shortname": "html"
     }
   },
   "wrapKey()": {
