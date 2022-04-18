@@ -1760,7 +1760,6 @@
     "ReadableStream",
     "ReadableStreamAddReadIntoRequest",
     "ReadableStreamAddReadRequest",
-    "ReadableStreamBYOBReadResult",
     "ReadableStreamBYOBReader",
     "ReadableStreamBYOBReaderErrorReadIntoRequests",
     "ReadableStreamBYOBReaderRead",
@@ -1779,7 +1778,6 @@
     "ReadableStreamDefaultControllerGetDesiredSize",
     "ReadableStreamDefaultControllerHasBackpressure",
     "ReadableStreamDefaultControllerShouldCallPull",
-    "ReadableStreamDefaultReadResult",
     "ReadableStreamDefaultReader",
     "ReadableStreamDefaultReaderErrorReadRequests",
     "ReadableStreamDefaultReaderRead",
@@ -1796,6 +1794,7 @@
     "ReadableStreamHasDefaultReader",
     "ReadableStreamIteratorOptions",
     "ReadableStreamPipeTo",
+    "ReadableStreamReadResult",
     "ReadableStreamReader",
     "ReadableStreamReaderGenericCancel",
     "ReadableStreamReaderGenericInitialize",
@@ -25478,10 +25477,6 @@
     "highwatermark",
     "pullalgorithm"
   ],
-  "ReadableStreamBYOBReadResult": [
-    "done",
-    "value"
-  ],
   "ReadableStreamBYOBReader": [
     "ReadableStreamBYOBReader(stream)",
     "[[readintorequests]]",
@@ -25550,10 +25545,6 @@
   "ReadableStreamDefaultController/error(e)": [
     "e"
   ],
-  "ReadableStreamDefaultReadResult": [
-    "done",
-    "value"
-  ],
   "ReadableStreamDefaultReader": [
     "ReadableStreamDefaultReader(stream)",
     "[[readrequests]]",
@@ -25591,6 +25582,10 @@
   ],
   "ReadableStreamIteratorOptions": [
     "preventCancel"
+  ],
+  "ReadableStreamReadResult": [
+    "done",
+    "value"
   ],
   "ReadableStreamReaderMode": [
     "\"byob\""
