@@ -3358,7 +3358,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/BroadcastChannel.json",
             "name": "messageerror_event",
@@ -3396,12 +3397,10 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                    "version_added": "15.4"
                 },
                 "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                    "version_added": "15.4"
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"
@@ -3659,7 +3658,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/BroadcastChannel.json",
             "name": "messageerror_event",
@@ -3697,12 +3697,10 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                    "version_added": "15.4"
                 },
                 "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                    "version_added": "15.4"
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"
@@ -4649,34 +4647,39 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "api/CanvasRenderingContext2D.json",
             "name": "createConicGradient",
             "slug": "API/CanvasRenderingContext2D/createConicGradient",
             "summary": "The CanvasRenderingContext2D.createConicGradient() method of the Canvas 2D API creates a gradient around a point with given coordinates.",
             "support": {
-                "chrome": {
-                    "version_added": "86",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#new-canvas-2d-api"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
-                },
-                "chrome_android": {
-                    "version_added": "86",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#new-canvas-2d-api"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
-                },
+                "chrome": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "86",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#new-canvas-2d-api"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "86",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#new-canvas-2d-api"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -4702,12 +4705,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
+                    "version_added": "85"
                 },
                 "opera_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
+                    "version_added": "68"
                 },
                 "safari": {
                     "version_added": "15"
@@ -4716,23 +4717,25 @@
                     "version_added": "15"
                 },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
+                    "version_added": "99"
                 },
-                "edge_blink": {
-                    "version_added": "86",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#new-canvas-2d-api"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "86",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#new-canvas-2d-api"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "CanvasRenderingContext2D.createConicGradient()"
         }
@@ -20566,7 +20569,7 @@
             "filename": "api/HTMLElement.json",
             "name": "attachInternals",
             "slug": "API/HTMLElement/attachInternals",
-            "summary": "The HTMLElement.attachInternals() method returns a ElementInternals object. This method allows a custom element to participate in HTML forms. The ElementInternals interface provides utilities for working with these elements in the same way you would work with any standard HTML form element, and also exposes the Accessibility Object Model to the element.",
+            "summary": "The HTMLElement.attachInternals() method returns an ElementInternals object. This method allows a custom element to participate in HTML forms. The ElementInternals interface provides utilities for working with these elements in the same way you would work with any standard HTML form element, and also exposes the Accessibility Object Model to the element.",
             "support": {
                 "chrome": {
                     "version_added": "77"
@@ -21265,8 +21268,7 @@
             ],
             "needsflag": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/HTMLElement.json",
             "name": "inert",
@@ -21333,13 +21335,7 @@
                     ]
                 },
                 "safari": {
-                    "version_added": "preview",
-                    "flags": [
-                        {
-                            "name": "inert attribute",
-                            "type": "preference"
-                        }
-                    ]
+                    "version_added": "15.5"
                 },
                 "safari_ios": {
                     "version_added": false
@@ -28038,10 +28034,10 @@
     "dom-media-preservespitch-dev": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "prefixed": [
-                "gecko",
                 "webkit"
             ],
             "filename": "api/HTMLMediaElement.json",
@@ -28058,16 +28054,26 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "prefix": "moz",
-                    "version_added": "20",
-                    "notes": "See <a href='https://bugzil.la/1652950'>bug 1652950</a>."
-                },
-                "firefox_android": {
-                    "prefix": "moz",
-                    "version_added": "20",
-                    "notes": "See <a href='https://bugzil.la/1652950'>bug 1652950</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "101"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "20",
+                        "notes": "May be removed in a future release, see <a href='https://bugzil.la/1765201'>bug 1765201</a>."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "101"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "20",
+                        "notes": "May be removed in a future release, see <a href='https://bugzil.la/1765201'>bug 1765201</a>."
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -30703,61 +30709,6 @@
                 }
             },
             "title": "HTMLParagraphElement"
-        }
-    ],
-    "htmlparamelement": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLParamElement.json",
-            "name": "HTMLParamElement",
-            "slug": "API/HTMLParamElement",
-            "summary": "The HTMLParamElement interface provides special properties (beyond those of the regular HTMLElement object interface it inherits) for manipulating <param> elements, representing a pair of a key and a value that acts as a parameter for an <object> element.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "6"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLParamElement"
         }
     ],
     "htmlpictureelement": [
@@ -39593,21 +39544,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -39663,21 +39602,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -39733,21 +39660,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -39803,21 +39718,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -43289,7 +43192,7 @@
             "filename": "api/TimeRanges.json",
             "name": "end",
             "slug": "API/TimeRanges/end",
-            "summary": "Returns the time offset at which a specified time range ends.",
+            "summary": "The end() method of the TimeRanges interface returns the time offset at which a specified time range ends.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -43399,7 +43302,7 @@
             "filename": "api/TimeRanges.json",
             "name": "start",
             "slug": "API/TimeRanges/start",
-            "summary": "Returns the time offset at which a specified time range begins.",
+            "summary": "The start() method of the TimeRanges interface returns the time offset at which a specified time range begins.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -44506,7 +44409,7 @@
                     ]
                 }
             },
-            "title": "Videotrack.language"
+            "title": "VideoTrack.language"
         }
     ],
     "dom-videotrack-selected-dev": [
@@ -47471,21 +47374,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -48450,7 +48341,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onbeforeunload",
             "slug": "API/WindowEventHandlers/onbeforeunload",
-            "summary": "The onbeforeunload property of the WindowEventHandlers mixin is the event handler for processing beforeunload events. These events fire when a window is about to unload its resources. At this point, the document is still visible and the event is still cancelable.",
+            "summary": "The beforeunload event is fired when the window, the document and its resources are about to be unloaded. The document is still visible and the event is still cancelable at this point.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -48492,7 +48383,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onbeforeunload"
+            "title": "Window: beforeunload event"
         }
     ],
     "handler-window-onhashchange": [
@@ -48560,7 +48451,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onlanguagechange",
             "slug": "API/WindowEventHandlers/onlanguagechange",
-            "summary": "The onlanguagechange property of the WindowEventHandlers mixin is the event handler for processing languagechange events.",
+            "summary": "The languagechange event is fired at the global scope object when the user's preferred language changes.",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -48602,7 +48493,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onlanguagechange"
+            "title": "Window: languagechange event"
         }
     ],
     "handler-window-onpopstate": [
@@ -48670,7 +48561,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onrejectionhandled",
             "slug": "API/WindowEventHandlers/onrejectionhandled",
-            "summary": "The onrejectionhandled property of the WindowEventHandlers mixin is the event handler for processing rejectionhandled events. These events are raised when Promises are rejected.",
+            "summary": "The rejectionhandled event is sent to the script's global scope (usually window but also Worker) whenever a JavaScript Promise is rejected but after the promise rejection has been handled.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -48681,33 +48572,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "55",
-                        "partial_implementation": true,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "This event handler was added in Firefox 55 but was disabled since it wasn't fully implemented. It was fully implemented in Firefox 68 and enabled by default in Firefox 69."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -48736,7 +48603,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onrejectionhandled"
+            "title": "Window: rejectionhandled event"
         }
     ],
     "handler-window-onstorage": [
@@ -48749,7 +48616,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onstorage",
             "slug": "API/WindowEventHandlers/onstorage",
-            "summary": "The onstorage property of the WindowEventHandlers mixin is an event handler for processing storage events.",
+            "summary": "The storage event of the Window interface fires when a storage area (localStorage) has been modified in the context of another document.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -48791,7 +48658,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onstorage"
+            "title": "Window: storage event"
         }
     ],
     "handler-window-onunhandledrejection": [
@@ -48804,7 +48671,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onunhandledrejection",
             "slug": "API/WindowEventHandlers/onunhandledrejection",
-            "summary": "The onunhandledrejection property of the WindowEventHandlers mixin is the event handler for processing unhandledrejection events. These events are raised for unhandled Promise rejections.",
+            "summary": "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -48815,33 +48682,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "55",
-                        "partial_implementation": true,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "This event handler was added in Firefox 55 but was disabled since it wasn't fully implemented. It was fully implemented in Firefox 68 and enabled by default in Firefox 69."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -48870,7 +48713,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onunhandledrejection"
+            "title": "Window: unhandledrejection event"
         }
     ],
     "handler-window-onunload": [
@@ -48883,7 +48726,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onunload",
             "slug": "API/WindowEventHandlers/onunload",
-            "summary": "The onunload property of the WindowEventHandlers mixin is the event handler for processing unload events. These events fire when the window is unloading its content and resources. The resource removal is processed after the unload event occurs.",
+            "summary": "The unload event is fired when the document or a child resource is being unloaded.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -48925,62 +48768,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onunload"
-        }
-    ],
-    "windoweventhandlers": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowEventHandlers.json",
-            "name": "WindowEventHandlers",
-            "slug": "API/WindowEventHandlers",
-            "summary": "The WindowEventHandlers mixin describes the event handlers common to several interfaces like Window, or HTMLBodyElement and HTMLFrameSetElement. Each of these interfaces can implement additional specific event handlers.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowEventHandlers"
+            "title": "Window: unload event"
         }
     ],
     "dom-worker-dev": [
@@ -50359,7 +50147,7 @@
             "filename": "api/WorkerLocation.json",
             "name": "toString",
             "slug": "API/WorkerLocation/toString",
-            "summary": "The toString() stringifier method of a WorkerLocation object returns a USVString containing the serialized URL for the worker's location. It is a synonym for WorkerLocation.href.",
+            "summary": "The toString() stringifier method of a WorkerLocation object returns a string containing the serialized URL for the worker's location. It is a synonym for WorkerLocation.href.",
             "support": {
                 "chrome": {
                     "version_added": "3"
@@ -56460,7 +56248,7 @@
             "filename": "html/elements/footer.json",
             "name": "footer",
             "slug": "HTML/Element/footer",
-            "summary": "The <footer> HTML element represents a footer for its nearest sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents.",
+            "summary": "The <footer> HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents.",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -59312,16 +59100,6 @@
                         "version_added": "85"
                     },
                     {
-                        "version_added": "78",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "network.preload",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
                         "partial_implementation": true,
                         "version_added": "56",
                         "version_removed": "57",
@@ -59331,16 +59109,6 @@
                 "firefox_android": [
                     {
                         "version_added": "85"
-                    },
-                    {
-                        "version_added": "79",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "network.preload",
-                                "value_to_set": "true"
-                            }
-                        ]
                     },
                     {
                         "partial_implementation": true,
@@ -60458,61 +60226,6 @@
                 }
             },
             "title": "<p>: The Paragraph element"
-        }
-    ],
-    "the-param-element": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "html/elements/param.json",
-            "name": "param",
-            "slug": "HTML/Element/param",
-            "summary": "The <param> HTML element defines parameters for an <object> element.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": true
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "<param>: The Object Parameter element"
         }
     ],
     "the-picture-element": [
@@ -62793,14 +62506,14 @@
                         "version_added": "66",
                         "notes": [
                             "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
-                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "Chrome does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     },
                     {
                         "version_added": true,
                         "notes": [
                             "Originally only supported on the <code>&lt;input&gt;</code> element.",
-                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "Chrome does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     }
                 ],
@@ -62809,14 +62522,14 @@
                         "version_added": "66",
                         "notes": [
                             "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
-                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "Chrome does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     },
                     {
                         "version_added": true,
                         "notes": [
                             "Originally only supported on the <code>&lt;input&gt;</code> element.",
-                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "Chrome does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     }
                 ],
@@ -62849,14 +62562,14 @@
                         "version_added": "9.0",
                         "notes": [
                             "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
-                            "Samsung Internet does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "Samsung Internet does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     },
                     {
                         "version_added": true,
                         "notes": [
                             "Originally only supported on the <code>&lt;input&gt;</code> element.",
-                            "Samsung Internet does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "Samsung Internet does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     }
                 ],
@@ -62865,14 +62578,14 @@
                         "version_added": "66",
                         "notes": [
                             "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
-                            "WebView does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "WebView does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     },
                     {
                         "version_added": true,
                         "notes": [
                             "Originally only supported on the <code>&lt;input&gt;</code> element.",
-                            "WebView does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "WebView does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     }
                 ],
@@ -62881,14 +62594,14 @@
                         "version_added": "79",
                         "notes": [
                             "Support added for <code>autocomplete</code> on the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements.",
-                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "Chrome does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     },
                     {
                         "version_added": true,
                         "notes": [
                             "Originally only supported on the <code>&lt;input&gt;</code> element.",
-                            "Chrome does not accept <code>off</code> as a value.  See <a href='https://crbug.com/587466'>bug 587466</a>."
+                            "Chrome does not accept <code>off</code> as a value. See <a href='https://crbug.com/587466'>bug 587466</a>."
                         ]
                     }
                 ]
@@ -63363,6 +63076,57 @@
         }
     ],
     "the-hidden-attribute": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "html/global_attributes.json",
+            "name": "until-found_value",
+            "slug": "HTML/Global_attributes/hidden",
+            "summary": "The hidden global attribute is a Boolean attribute indicating that the element is not yet, or is no longer, relevant. For example, it can be used to hide elements of the page that can't be used until the login process has been completed. Browsers won't render elements with the hidden attribute set.",
+            "support": {
+                "chrome": {
+                    "version_added": "102"
+                },
+                "chrome_android": {
+                    "version_added": "102"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "102"
+                },
+                "edge_blink": {
+                    "version_added": "102"
+                }
+            },
+            "title": "hidden"
+        },
         {
             "engines": [
                 "blink",
@@ -66554,7 +66318,7 @@
             "filename": null,
             "name": "Document_and_website_structure#HTML_for_structuring_content",
             "slug": "HTML/Introduction_to_HTML/Document_and_website_structure#HTML_for_structuring_content",
-            "summary": "At this point you should have a better idea about how to structure a web page/site. In the last article of this module, we'll study how to debug HTML.",
+            "summary": "At this point, you should have a better idea about how to structure a web page/site. In the last article of this module, we'll learn how to debug HTML.",
             "support": {
                 "chrome": {
                     "version_added": "5"

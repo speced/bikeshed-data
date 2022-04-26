@@ -15,7 +15,7 @@
   },
   "#allow-all-inline": {
     "current": {
-      "number": "6.6.3.2",
+      "number": "6.7.3.2",
       "spec": "Content Security Policy",
       "text": "Does a source list allow all inline behavior for type?",
       "url": "https://w3c.github.io/webappsec-csp/#allow-all-inline"
@@ -29,7 +29,7 @@
   },
   "#allow-base-for-document": {
     "current": {
-      "number": "6.2.1.1",
+      "number": "6.3.1.1",
       "spec": "Content Security Policy",
       "text": "Is base allowed for document?",
       "url": "https://w3c.github.io/webappsec-csp/#allow-base-for-document"
@@ -57,9 +57,9 @@
   },
   "#can-compile-strings": {
     "current": {
-      "number": "4.3.1",
+      "number": "4.4.1",
       "spec": "Content Security Policy",
-      "text": "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)",
+      "text": "EnsureCSPDoesNotBlockStringCompilation(realm, source)",
       "url": "https://w3c.github.io/webappsec-csp/#can-compile-strings"
     },
     "snapshot": {
@@ -71,9 +71,9 @@
   },
   "#can-compile-wasm-bytes": {
     "current": {
-      "number": "4.4.1",
+      "number": "4.5.1",
       "spec": "Content Security Policy",
-      "text": "EnsureCSPDoesNotBlockWasmByteCompilation(callerRealm, calleeRealm)",
+      "text": "EnsureCSPDoesNotBlockWasmByteCompilation(realm)",
       "url": "https://w3c.github.io/webappsec-csp/#can-compile-wasm-bytes"
     }
   },
@@ -289,7 +289,7 @@
   },
   "#directive-algorithms": {
     "current": {
-      "number": "6.7",
+      "number": "6.8",
       "spec": "Content Security Policy",
       "text": "Directive Algorithms",
       "url": "https://w3c.github.io/webappsec-csp/#directive-algorithms"
@@ -303,7 +303,7 @@
   },
   "#directive-base-uri": {
     "current": {
-      "number": "6.2.1",
+      "number": "6.3.1",
       "spec": "Content Security Policy",
       "text": "base-uri",
       "url": "https://w3c.github.io/webappsec-csp/#directive-base-uri"
@@ -359,7 +359,7 @@
   },
   "#directive-fallback-list": {
     "current": {
-      "number": "6.7.3",
+      "number": "6.8.3",
       "spec": "Content Security Policy",
       "text": "Get fetch directive fallback list",
       "url": "https://w3c.github.io/webappsec-csp/#directive-fallback-list"
@@ -387,7 +387,7 @@
   },
   "#directive-form-action": {
     "current": {
-      "number": "6.3.1",
+      "number": "6.4.1",
       "spec": "Content Security Policy",
       "text": "form-action",
       "url": "https://w3c.github.io/webappsec-csp/#directive-form-action"
@@ -401,7 +401,7 @@
   },
   "#directive-frame-ancestors": {
     "current": {
-      "number": "6.3.2",
+      "number": "6.4.2",
       "spec": "Content Security Policy",
       "text": "frame-ancestors",
       "url": "https://w3c.github.io/webappsec-csp/#directive-frame-ancestors"
@@ -471,7 +471,7 @@
   },
   "#directive-navigate-to": {
     "current": {
-      "number": "6.3.3",
+      "number": "6.4.3",
       "spec": "Content Security Policy",
       "text": "navigate-to",
       "url": "https://w3c.github.io/webappsec-csp/#directive-navigate-to"
@@ -513,7 +513,7 @@
   },
   "#directive-report-to": {
     "current": {
-      "number": "6.4.2",
+      "number": "6.5.2",
       "spec": "Content Security Policy",
       "text": "report-to",
       "url": "https://w3c.github.io/webappsec-csp/#directive-report-to"
@@ -527,7 +527,7 @@
   },
   "#directive-report-uri": {
     "current": {
-      "number": "6.4.1",
+      "number": "6.5.1",
       "spec": "Content Security Policy",
       "text": "report-uri",
       "url": "https://w3c.github.io/webappsec-csp/#directive-report-uri"
@@ -541,7 +541,7 @@
   },
   "#directive-sandbox": {
     "current": {
-      "number": "6.2.2",
+      "number": "6.3.2",
       "spec": "Content Security Policy",
       "text": "sandbox",
       "url": "https://w3c.github.io/webappsec-csp/#directive-sandbox"
@@ -637,9 +637,17 @@
       "url": "https://www.w3.org/TR/CSP3/#directive-style-src-elem"
     }
   },
+  "#directive-webrtc": {
+    "current": {
+      "number": "6.2.1",
+      "spec": "Content Security Policy",
+      "text": "webrtc",
+      "url": "https://w3c.github.io/webappsec-csp/#directive-webrtc"
+    }
+  },
   "#directive-worker-src": {
     "current": {
-      "number": "6.1.17",
+      "number": "6.2.2",
       "spec": "Content Security Policy",
       "text": "worker-src",
       "url": "https://w3c.github.io/webappsec-csp/#directive-worker-src"
@@ -653,7 +661,7 @@
   },
   "#directives-document": {
     "current": {
-      "number": "6.2",
+      "number": "6.3",
       "spec": "Content Security Policy",
       "text": "Document Directives",
       "url": "https://w3c.github.io/webappsec-csp/#directives-document"
@@ -667,7 +675,7 @@
   },
   "#directives-elsewhere": {
     "current": {
-      "number": "6.5",
+      "number": "6.6",
       "spec": "Content Security Policy",
       "text": "Directives Defined in Other Documents",
       "url": "https://w3c.github.io/webappsec-csp/#directives-elsewhere"
@@ -695,7 +703,7 @@
   },
   "#directives-navigation": {
     "current": {
-      "number": "6.3",
+      "number": "6.4",
       "spec": "Content Security Policy",
       "text": "Navigation Directives",
       "url": "https://w3c.github.io/webappsec-csp/#directives-navigation"
@@ -707,9 +715,17 @@
       "url": "https://www.w3.org/TR/CSP3/#directives-navigation"
     }
   },
+  "#directives-other": {
+    "current": {
+      "number": "6.2",
+      "spec": "Content Security Policy",
+      "text": "Other Directives",
+      "url": "https://w3c.github.io/webappsec-csp/#directives-other"
+    }
+  },
   "#directives-reporting": {
     "current": {
-      "number": "6.4",
+      "number": "6.5",
       "spec": "Content Security Policy",
       "text": "Reporting Directives",
       "url": "https://w3c.github.io/webappsec-csp/#directives-reporting"
@@ -723,7 +739,7 @@
   },
   "#does-request-violate-policy": {
     "current": {
-      "number": "6.6.2.1",
+      "number": "6.7.2.1",
       "spec": "Content Security Policy",
       "text": "Does request violate policy?",
       "url": "https://w3c.github.io/webappsec-csp/#does-request-violate-policy"
@@ -737,7 +753,7 @@
   },
   "#ecma-integration": {
     "current": {
-      "number": "4.3",
+      "number": "4.4",
       "spec": "Content Security Policy",
       "text": "Integration with ECMAScript",
       "url": "https://w3c.github.io/webappsec-csp/#ecma-integration"
@@ -751,7 +767,7 @@
   },
   "#effective-directive-for-a-request": {
     "current": {
-      "number": "6.7.1",
+      "number": "6.8.1",
       "spec": "Content Security Policy",
       "text": "Get the effective directive for request",
       "url": "https://w3c.github.io/webappsec-csp/#effective-directive-for-a-request"
@@ -765,7 +781,7 @@
   },
   "#effective-directive-for-inline-check": {
     "current": {
-      "number": "6.7.2",
+      "number": "6.8.2",
       "spec": "Content Security Policy",
       "text": "Get the effective directive for inline checks",
       "url": "https://w3c.github.io/webappsec-csp/#effective-directive-for-inline-check"
@@ -877,7 +893,7 @@
   },
   "#form-action-pre-navigate": {
     "current": {
-      "number": "6.3.1.1",
+      "number": "6.4.1.1",
       "spec": "Content Security Policy",
       "text": "form-action Pre-Navigation Check",
       "url": "https://w3c.github.io/webappsec-csp/#form-action-pre-navigate"
@@ -891,7 +907,7 @@
   },
   "#frame-ancestors-and-frame-options": {
     "current": {
-      "number": "6.3.2.2",
+      "number": "6.4.2.2",
       "spec": "Content Security Policy",
       "text": "Relation to X-Frame-Options",
       "url": "https://w3c.github.io/webappsec-csp/#frame-ancestors-and-frame-options"
@@ -905,7 +921,7 @@
   },
   "#frame-ancestors-navigation-response": {
     "current": {
-      "number": "6.3.2.1",
+      "number": "6.4.2.1",
       "spec": "Content Security Policy",
       "text": "frame-ancestors Navigation Response Check",
       "url": "https://w3c.github.io/webappsec-csp/#frame-ancestors-navigation-response"
@@ -1213,7 +1229,7 @@
   },
   "#is-element-nonceable": {
     "current": {
-      "number": "6.6.3.1",
+      "number": "6.7.3.1",
       "spec": "Content Security Policy",
       "text": "Is element nonceable?",
       "url": "https://w3c.github.io/webappsec-csp/#is-element-nonceable"
@@ -1255,7 +1271,7 @@
   },
   "#match-element-to-source-list": {
     "current": {
-      "number": "6.6.3.3",
+      "number": "6.7.3.3",
       "spec": "Content Security Policy",
       "text": "Does element match source list for type and source?",
       "url": "https://w3c.github.io/webappsec-csp/#match-element-to-source-list"
@@ -1269,7 +1285,7 @@
   },
   "#match-hosts": {
     "current": {
-      "number": "6.6.2.8",
+      "number": "6.7.2.8",
       "spec": "Content Security Policy",
       "text": "host-part matching",
       "url": "https://w3c.github.io/webappsec-csp/#match-hosts"
@@ -1283,7 +1299,7 @@
   },
   "#match-nonce-to-source-list": {
     "current": {
-      "number": "6.6.2.2",
+      "number": "6.7.2.2",
       "spec": "Content Security Policy",
       "text": "Does nonce match source list?",
       "url": "https://w3c.github.io/webappsec-csp/#match-nonce-to-source-list"
@@ -1297,7 +1313,7 @@
   },
   "#match-paths": {
     "current": {
-      "number": "6.6.2.10",
+      "number": "6.7.2.10",
       "spec": "Content Security Policy",
       "text": "path-part matching",
       "url": "https://w3c.github.io/webappsec-csp/#match-paths"
@@ -1311,7 +1327,7 @@
   },
   "#match-ports": {
     "current": {
-      "number": "6.6.2.9",
+      "number": "6.7.2.9",
       "spec": "Content Security Policy",
       "text": "port-part matching",
       "url": "https://w3c.github.io/webappsec-csp/#match-ports"
@@ -1325,7 +1341,7 @@
   },
   "#match-request-to-source-list": {
     "current": {
-      "number": "6.6.2.3",
+      "number": "6.7.2.3",
       "spec": "Content Security Policy",
       "text": "Does request match source list?",
       "url": "https://w3c.github.io/webappsec-csp/#match-request-to-source-list"
@@ -1339,7 +1355,7 @@
   },
   "#match-response-to-source-list": {
     "current": {
-      "number": "6.6.2.4",
+      "number": "6.7.2.4",
       "spec": "Content Security Policy",
       "text": "Does response to request match source list?",
       "url": "https://w3c.github.io/webappsec-csp/#match-response-to-source-list"
@@ -1353,7 +1369,7 @@
   },
   "#match-schemes": {
     "current": {
-      "number": "6.6.2.7",
+      "number": "6.7.2.7",
       "spec": "Content Security Policy",
       "text": "scheme-part matching",
       "url": "https://w3c.github.io/webappsec-csp/#match-schemes"
@@ -1367,7 +1383,7 @@
   },
   "#match-url-to-source-expression": {
     "current": {
-      "number": "6.6.2.6",
+      "number": "6.7.2.6",
       "spec": "Content Security Policy",
       "text": "Does url match expression in origin with redirect count?",
       "url": "https://w3c.github.io/webappsec-csp/#match-url-to-source-expression"
@@ -1381,7 +1397,7 @@
   },
   "#match-url-to-source-list": {
     "current": {
-      "number": "6.6.2.5",
+      "number": "6.7.2.5",
       "spec": "Content Security Policy",
       "text": "Does url match source list in origin with redirect count?",
       "url": "https://w3c.github.io/webappsec-csp/#match-url-to-source-list"
@@ -1395,7 +1411,7 @@
   },
   "#matching-algorithms": {
     "current": {
-      "number": "6.6",
+      "number": "6.7",
       "spec": "Content Security Policy",
       "text": "Matching Algorithms",
       "url": "https://w3c.github.io/webappsec-csp/#matching-algorithms"
@@ -1409,7 +1425,7 @@
   },
   "#matching-elements": {
     "current": {
-      "number": "6.6.3",
+      "number": "6.7.3",
       "spec": "Content Security Policy",
       "text": "Element Matching Algorithms",
       "url": "https://w3c.github.io/webappsec-csp/#matching-elements"
@@ -1423,7 +1439,7 @@
   },
   "#matching-urls": {
     "current": {
-      "number": "6.6.2",
+      "number": "6.7.2",
       "spec": "Content Security Policy",
       "text": "URL Matching",
       "url": "https://w3c.github.io/webappsec-csp/#matching-urls"
@@ -1493,7 +1509,7 @@
   },
   "#navigate-to-navigation-response": {
     "current": {
-      "number": "6.3.3.2",
+      "number": "6.4.3.2",
       "spec": "Content Security Policy",
       "text": "navigate-to Navigation Response Check",
       "url": "https://w3c.github.io/webappsec-csp/#navigate-to-navigation-response"
@@ -1507,7 +1523,7 @@
   },
   "#navigate-to-pre-navigate": {
     "current": {
-      "number": "6.3.3.1",
+      "number": "6.4.3.1",
       "spec": "Content Security Policy",
       "text": "navigate-to Pre-Navigation Check",
       "url": "https://w3c.github.io/webappsec-csp/#navigate-to-pre-navigate"
@@ -1725,7 +1741,7 @@
   },
   "#sandbox-init": {
     "current": {
-      "number": "6.2.2.1",
+      "number": "6.3.2.1",
       "spec": "Content Security Policy",
       "text": "sandbox Initialization",
       "url": "https://w3c.github.io/webappsec-csp/#sandbox-init"
@@ -1739,7 +1755,7 @@
   },
   "#script-checks": {
     "current": {
-      "number": "6.6.1",
+      "number": "6.7.1",
       "spec": "Content Security Policy",
       "text": "Script directive checks",
       "url": "https://w3c.github.io/webappsec-csp/#script-checks"
@@ -1753,7 +1769,7 @@
   },
   "#script-post-request": {
     "current": {
-      "number": "6.6.1.2",
+      "number": "6.7.1.2",
       "spec": "Content Security Policy",
       "text": "Script directives post-request check",
       "url": "https://w3c.github.io/webappsec-csp/#script-post-request"
@@ -1767,7 +1783,7 @@
   },
   "#script-pre-request": {
     "current": {
-      "number": "6.6.1.1",
+      "number": "6.7.1.1",
       "spec": "Content Security Policy",
       "text": "Script directives pre-request check",
       "url": "https://w3c.github.io/webappsec-csp/#script-pre-request"
@@ -2059,9 +2075,17 @@
       "url": "https://www.w3.org/TR/CSP3/#should-block-response"
     }
   },
+  "#should-block-rtc-connection": {
+    "current": {
+      "number": "4.3.1",
+      "spec": "Content Security Policy",
+      "text": "Should RTC connections be blocked for global?",
+      "url": "https://w3c.github.io/webappsec-csp/#should-block-rtc-connection"
+    }
+  },
   "#should-directive-execute": {
     "current": {
-      "number": "6.7.4",
+      "number": "6.8.4",
       "spec": "Content Security Policy",
       "text": "Should fetch directive execute",
       "url": "https://w3c.github.io/webappsec-csp/#should-directive-execute"
@@ -2245,15 +2269,31 @@
   },
   "#wasm-integration": {
     "current": {
-      "number": "4.4",
+      "number": "4.5",
       "spec": "Content Security Policy",
       "text": "Integration with WebAssembly",
       "url": "https://w3c.github.io/webappsec-csp/#wasm-integration"
     }
   },
+  "#webrtc-integration": {
+    "current": {
+      "number": "4.3",
+      "spec": "Content Security Policy",
+      "text": "Integration with WebRTC",
+      "url": "https://w3c.github.io/webappsec-csp/#webrtc-integration"
+    }
+  },
+  "#webrtc-pre-connect": {
+    "current": {
+      "number": "6.2.1.1",
+      "spec": "Content Security Policy",
+      "text": "webrtc Pre-connect Check",
+      "url": "https://w3c.github.io/webappsec-csp/#webrtc-pre-connect"
+    }
+  },
   "#worker-src-post-request": {
     "current": {
-      "number": "6.1.17.2",
+      "number": "6.2.2.2",
       "spec": "Content Security Policy",
       "text": "worker-src Post-request Check",
       "url": "https://w3c.github.io/webappsec-csp/#worker-src-post-request"
@@ -2267,7 +2307,7 @@
   },
   "#worker-src-pre-request": {
     "current": {
-      "number": "6.1.17.1",
+      "number": "6.2.2.1",
       "spec": "Content Security Policy",
       "text": "worker-src Pre-request Check",
       "url": "https://w3c.github.io/webappsec-csp/#worker-src-pre-request"

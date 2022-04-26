@@ -205,6 +205,21 @@
       "shortname": "webaudio"
     }
   },
+  "AudioRenderCapacityEvent()": {
+    "AudioRenderCapacityEvent(type, timestamp, averageLoad, peakLoad, underrunRatio)": {
+      "args": [
+        "type",
+        "timestamp",
+        "averageLoad",
+        "peakLoad",
+        "underrunRatio"
+      ],
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "shortname": "webaudio"
+    }
+  },
   "AudioWorkletNode()": {
     "AudioWorkletNode(context, name)": {
       "args": [
@@ -6819,6 +6834,19 @@
         "ValueEvent"
       ],
       "shortname": "web-bluetooth"
+    },
+    "constructor(type, timestamp, averageLoad, peakLoad, underrunRatio)": {
+      "args": [
+        "type",
+        "timestamp",
+        "averageLoad",
+        "peakLoad",
+        "underrunRatio"
+      ],
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "shortname": "webaudio"
     },
     "constructor(type, transitionEventInitDict)": {
       "args": [
@@ -18009,6 +18037,15 @@
       ],
       "shortname": "html"
     },
+    "start(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "AudioRenderCapacity"
+      ],
+      "shortname": "webaudio"
+    },
     "start(when)": {
       "args": [
         "when"
@@ -18099,6 +18136,7 @@
     "stop()": {
       "args": [],
       "for": [
+        "AudioRenderCapacity",
         "AudioScheduledSourceNode",
         "HTMLMarqueeElement",
         "MediaStreamTrack",

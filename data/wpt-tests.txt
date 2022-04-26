@@ -1,4 +1,4 @@
-sha: aa589680a1c6c5941155b247bd24a6712e8cac2a
+sha: 391286580b210fad81c0ab67584c70b374bcb87b
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -29,6 +29,7 @@ crashtest css/CSS2/floats-clear/adjoining-float-new-fc-crash.html
 crashtest css/CSS2/floats-clear/clearance-containing-fragmented-float-crash.html
 crashtest css/CSS2/floats/floats-saturated-position-crash.html
 crashtest css/CSS2/floats/line-pushed-by-floats-crash.html
+crashtest css/CSS2/linebox/crashtests/dir-change-simplifed-crash.html
 crashtest css/CSS2/linebox/crashtests/inline-block-baseline-crash.html
 crashtest css/CSS2/linebox/video-needs-layout-crash.html
 crashtest css/CSS2/normal-flow/crashtests/block-in-inline-ax-crash.html
@@ -84,8 +85,10 @@ crashtest css/css-break/max-height-with-margin-pushed-below-fragmentation-line-c
 crashtest css/css-break/nested-multicol-with-spanners-and-oofs-crash.html
 crashtest css/css-break/nested-oof-in-multicol-crash.html
 crashtest css/css-break/no-room-for-line-in-first-fragmentainer-crash.html
+crashtest css/css-break/out-of-flow-in-inline-with-negative-offset-crash.html
 crashtest css/css-break/out-of-flow-in-multicolumn-crash.html
 crashtest css/css-break/out-of-flow-in-new-column-crash.html
+crashtest css/css-break/out-of-flow-with-negative-offset-crash.html
 crashtest css/css-break/overflow-auto-height-with-bottom-padding-crash.html
 crashtest css/css-break/resumed-float-and-inline-block-crash.html
 crashtest css/css-break/uncontained-oof-in-inline-after-break-000-crash.html
@@ -97,6 +100,7 @@ crashtest css/css-contain/container-queries/crashtests/chrome-bug-1289718-000-cr
 crashtest css/css-contain/container-queries/crashtests/chrome-bug-1289718-001-crash.html
 crashtest css/css-contain/container-queries/crashtests/chrome-quotes-crash.html
 crashtest css/css-contain/container-queries/crashtests/columns-in-table-001-crash.html
+crashtest css/css-contain/container-queries/crashtests/columns-in-table-002-crash.html
 crashtest css/css-contain/container-queries/crashtests/container-type-change-chrome-legacy-crash.html
 crashtest css/css-contain/container-queries/crashtests/flex-in-columns-000-crash.html
 crashtest css/css-contain/container-queries/crashtests/flex-in-columns-001-crash.html
@@ -12678,6 +12682,7 @@ reftest css/css-contain/contain-inline-size-grid.html
 reftest css/css-contain/contain-inline-size-legend.html
 reftest css/css-contain/contain-inline-size-multicol.html
 reftest css/css-contain/contain-inline-size-regular-container.html
+reftest css/css-contain/contain-inline-size-removed.html
 reftest css/css-contain/contain-inline-size-table.html
 reftest css/css-contain/contain-inline-size-vertical-rl-.html
 reftest css/css-contain/contain-layout-001.html
@@ -12698,6 +12703,7 @@ reftest css/css-contain/contain-layout-017.html
 reftest css/css-contain/contain-layout-018.html
 reftest css/css-contain/contain-layout-019.html
 reftest css/css-contain/contain-layout-020.html
+reftest css/css-contain/contain-layout-021.html
 reftest css/css-contain/contain-layout-baseline-001.html
 reftest css/css-contain/contain-layout-baseline-002.html
 reftest css/css-contain/contain-layout-baseline-003.html
@@ -12859,6 +12865,7 @@ reftest css/css-contain/contain-size-multicol-001.html
 reftest css/css-contain/contain-size-multicol-002.html
 reftest css/css-contain/contain-size-multicol-003.html
 reftest css/css-contain/contain-size-multicol-004.html
+reftest css/css-contain/contain-size-removed.html
 reftest css/css-contain/contain-size-replaced-001.html
 reftest css/css-contain/contain-size-replaced-002.html
 reftest css/css-contain/contain-size-replaced-003a.html
@@ -17086,6 +17093,9 @@ reftest css/css-pseudo/selection-contenteditable-011.html
 reftest css/css-pseudo/selection-input-011.html
 reftest css/css-pseudo/selection-intercharacter-011.html
 reftest css/css-pseudo/selection-intercharacter-012.html
+reftest css/css-pseudo/selection-link-001.html
+reftest css/css-pseudo/selection-link-002.html
+reftest css/css-pseudo/selection-link-003.html
 reftest css/css-pseudo/selection-originating-decoration-color.html
 reftest css/css-pseudo/selection-originating-strikethrough-order.html
 reftest css/css-pseudo/selection-originating-underline-order.html
@@ -17936,6 +17946,8 @@ reftest css/css-tables/max-height-table.html
 reftest css/css-tables/min-height-table-2.html
 reftest css/css-tables/min-height-table.html
 reftest css/css-tables/min-max-size-table-content-box.html
+reftest css/css-tables/paint/col-paint-htb-rtl.html
+reftest css/css-tables/paint/col-paint-vrl-rtl.html
 reftest css/css-tables/percent-height-overflow-auto-in-unrestricted-block-size-cell.tentative.html
 reftest css/css-tables/percent-height-replaced-in-percent-cell-002.html
 reftest css/css-tables/percent-height-replaced-in-percent-cell.tentative.html
@@ -23500,12 +23512,6 @@ reftest html/semantics/interactive-elements/the-dialog-element/top-layer-positio
 reftest html/semantics/interactive-elements/the-dialog-element/top-layer-stacking-correct-order-remove-readd.html
 reftest html/semantics/interactive-elements/the-dialog-element/top-layer-stacking-dynamic.html
 reftest html/semantics/interactive-elements/the-dialog-element/top-layer-stacking.html
-reftest html/semantics/interactive-elements/the-popup-element/popup-hidden-display.tentative.html
-reftest html/semantics/interactive-elements/the-popup-element/popup-initiallyopen-display.tentative.html
-reftest html/semantics/interactive-elements/the-popup-element/popup-inside-display-none.tentative.html
-reftest html/semantics/interactive-elements/the-popup-element/popup-open-display.tentative.html
-reftest html/semantics/interactive-elements/the-popup-element/popup-open-overflow-display.tentative.html
-reftest html/semantics/interactive-elements/the-popup-element/popup-stacking-context.tentative.html
 reftest html/semantics/links/linktypes/alternate-css.html
 reftest html/semantics/links/linktypes/link-type-stylesheet/process-stylesheet-linked-resource-ascii-case-insensitive.html
 reftest html/semantics/popups/popup-hidden-display.tentative.html
@@ -24031,6 +24037,7 @@ reftest svg/text/reftests/textpath-side-001.svg
 reftest svg/text/reftests/transform-dynamic-change.html
 reftest svg/text/reftests/tspan-opacity-mixed-direction.svg
 reftest svg/text/reftests/writing-mode-dynamic-change.html
+reftest web-animations/animation-model/keyframe-effects/transform-and-opacity-on-inline-001.html
 reftest web-animations/timing-model/animations/infinite-duration-animation.html
 reftest web-animations/timing-model/animations/reverse-running-animation.html
 reftest web-animations/timing-model/animations/sync-start-times.html
@@ -26679,6 +26686,9 @@ testharness css/css-cascade/revert-val-008.html
 testharness css/css-cascade/revert-val-009.html
 testharness css/css-cascade/revert-val-010.html
 testharness css/css-cascade/revert-val-011.html
+testharness css/css-cascade/scope-deep.html
+testharness css/css-cascade/scope-evaluation.html
+testharness css/css-cascade/scope-proximity.html
 testharness css/css-cascade/scope-specificity.html
 testharness css/css-cascade/unset-value-storage.html
 testharness css/css-color-adjust/inheritance.html
@@ -32055,6 +32065,12 @@ testharness font-access/font_access_detached_iframe.tentative.https.window.js
 testharness font-access/font_access_permission.tentative.https.window.js
 testharness font-access/font_access_query_select.tentative.https.window.js
 testharness font-access/font_access_sorted.tentative.https.window.js
+testharness font-access/permissions-policy/local-fonts-allowed-by-permissions-policy-attribute-redirect-on-load.https.sub.html
+testharness font-access/permissions-policy/local-fonts-allowed-by-permissions-policy-attribute.https.sub.html
+testharness font-access/permissions-policy/local-fonts-allowed-by-permissions-policy.https.sub.html
+testharness font-access/permissions-policy/local-fonts-default-permissions-policy.https.sub.html
+testharness font-access/permissions-policy/local-fonts-disabled-by-permissions-policy.https.sub.html
+testharness font-access/permissions-policy/local-fonts-supported-by-permissions-policy.html
 testharness forced-colors-mode/forced-colors-mode-03.html
 testharness forced-colors-mode/forced-colors-mode-09.html
 testharness forced-colors-mode/forced-colors-mode-10.html
@@ -35699,6 +35715,8 @@ testharness html/dom/render-blocking/parser-inserted-modulepreload-link.tentativ
 testharness html/dom/render-blocking/parser-inserted-preload-link.tentative.html
 testharness html/dom/render-blocking/parser-inserted-style-element.tentative.html
 testharness html/dom/render-blocking/parser-inserted-stylesheet-link.tentative.html
+testharness html/dom/render-blocking/remove-attr-unblocks-rendering.optional.html
+testharness html/dom/render-blocking/remove-element-unblocks-rendering.optional.html
 testharness html/dom/render-blocking/remove-pending-async-render-blocking-script.html
 testharness html/dom/render-blocking/render-blocked-apis-by-preload-link.tentative.html
 testharness html/dom/render-blocking/script-inserted-module-script.tentative.html
@@ -35949,6 +35967,8 @@ testharness html/rendering/widgets/input-date-no-resize-on-hover.html
 testharness html/rendering/widgets/select-wrap-no-spill.optional.html
 testharness html/semantics/disabled-elements/disabledElement.html
 testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/conditionally-block-rendering-on-link-media-attr.html
+testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/dynamic-render-blocking-link-stylesheet-does-not-block-script.html
+testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/dynamic-render-blocking-style-element-does-not-block-script.html
 testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/script-created-link-stylesheet-does-not-block-script.html
 testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/script-created-style-element-does-not-block-script.html
 testharness html/semantics/document-metadata/interactions-of-styling-and-scripting/style-element-media-match-block-script.html
@@ -36622,6 +36642,7 @@ testharness html/semantics/embedded-content/the-img-element/srcset/select-an-ima
 testharness html/semantics/embedded-content/the-img-element/srcset/srcset-media-dynamic.html
 testharness html/semantics/embedded-content/the-img-element/update-media.html
 testharness html/semantics/embedded-content/the-img-element/update-src-complete.html
+testharness html/semantics/embedded-content/the-img-element/update-the-image-data/current-request-microtask.html
 testharness html/semantics/embedded-content/the-img-element/update-the-image-data/fail-to-resolve.html
 testharness html/semantics/embedded-content/the-img-element/update-the-source-set.html
 testharness html/semantics/embedded-content/the-img-element/usemap-casing.html
@@ -37000,17 +37021,6 @@ testharness html/semantics/interactive-elements/the-dialog-element/simulated-cli
 testharness html/semantics/interactive-elements/the-dialog-element/submit-dialog-close-event.html
 testharness html/semantics/interactive-elements/the-dialog-element/synthetic-click-inert.html
 testharness html/semantics/interactive-elements/the-dialog-element/top-layer-position.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-anchor-nesting.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-element-basic.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-element-not-keyboard-focusable.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-element-removal-2.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-element-removal.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-focus.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-initiallyopen-2.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-initiallyopen.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-light-dismiss.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-shadow-dom.tentative.html
-testharness html/semantics/interactive-elements/the-popup-element/popup-stacking.tentative.html
 testharness html/semantics/interactive-elements/the-summary-element/activation-behavior.html
 testharness html/semantics/interactive-elements/the-summary-element/anchor-with-inline-element.html
 testharness html/semantics/interactive-elements/the-summary-element/click-behavior-optional.tentative.html
@@ -37057,6 +37067,7 @@ testharness html/semantics/popups/popup-removal-2.tentative.html
 testharness html/semantics/popups/popup-removal.tentative.html
 testharness html/semantics/popups/popup-shadow-dom.tentative.html
 testharness html/semantics/popups/popup-stacking.tentative.html
+testharness html/semantics/popups/popup-top-layer-interactions.tentative.html
 testharness html/semantics/rellist-feature-detection.html
 testharness html/semantics/scripting-1/the-noscript-element/non-html-noscript.html
 testharness html/semantics/scripting-1/the-script-element/async_001.htm
@@ -37444,6 +37455,10 @@ testharness html/semantics/scripting-1/the-script-element/moving-between-documen
 testharness html/semantics/scripting-1/the-script-element/moving-between-documents/move-back-iframe-success-external-classic.html
 testharness html/semantics/scripting-1/the-script-element/moving-between-documents/move-back-iframe-success-external-module.html
 testharness html/semantics/scripting-1/the-script-element/moving-between-documents/move-back-iframe-success-inline-classic.html
+testharness html/semantics/scripting-1/the-script-element/moving-between-documents/ordering/delay-load-event-1.html
+testharness html/semantics/scripting-1/the-script-element/moving-between-documents/ordering/delay-load-event-2.html
+testharness html/semantics/scripting-1/the-script-element/moving-between-documents/ordering/in-order.html
+testharness html/semantics/scripting-1/the-script-element/moving-between-documents/ordering/parser-blocking.html
 testharness html/semantics/scripting-1/the-script-element/muted-errors.sub.html
 testharness html/semantics/scripting-1/the-script-element/nomodule-reflect.html
 testharness html/semantics/scripting-1/the-script-element/nomodule-set-on-async-classic-script.html
@@ -37467,6 +37482,7 @@ testharness html/semantics/scripting-1/the-script-element/script-onerror-inserti
 testharness html/semantics/scripting-1/the-script-element/script-onerror-insertion-point-2.html
 testharness html/semantics/scripting-1/the-script-element/script-onload-insertion-point.html
 testharness html/semantics/scripting-1/the-script-element/script-onload-string.html
+testharness html/semantics/scripting-1/the-script-element/script-referrerpolicy-idl.html
 testharness html/semantics/scripting-1/the-script-element/script-supports.html
 testharness html/semantics/scripting-1/the-script-element/script-text-modifications.html
 testharness html/semantics/scripting-1/the-script-element/script-text-xhtml.xhtml
@@ -38118,6 +38134,9 @@ testharness imagebitmap-renderingcontext/transferFromImageBitmap-detached.html
 testharness imagebitmap-renderingcontext/transferFromImageBitmap-null-offscreen.html
 testharness imagebitmap-renderingcontext/transferFromImageBitmap-null.html
 testharness import-maps/acquiring/dynamic-import.html
+testharness import-maps/acquiring/modulepreload-link-header.html
+testharness import-maps/acquiring/modulepreload.html
+testharness import-maps/acquiring/script-tag-inline.html
 testharness import-maps/acquiring/script-tag.html
 testharness import-maps/acquiring/worker-request.html
 testharness import-maps/bare-specifiers.sub.html
@@ -40008,6 +40027,7 @@ testharness preload/preload-link-cached-stylesheet-different-doc.html
 testharness preload/preload-resource-match.https.html
 testharness preload/preload-strict-dynamic.html
 testharness preload/preload-time-to-fetch.https.html
+testharness preload/preload-type-match.html
 testharness preload/preload-with-type.html
 testharness preload/preload-xhr.html
 testharness preload/reflected-as-value.html
@@ -41513,11 +41533,13 @@ testharness scheduler/post-task-result-success.any.js
 testharness scheduler/post-task-result-throws.any.js
 testharness scheduler/post-task-run-order.any.js
 testharness scheduler/post-task-then-detach.html
+testharness scheduler/post-task-with-abort-signal-in-handler.any.js
 testharness scheduler/post-task-with-abort-signal.any.js
 testharness scheduler/post-task-with-aborted-signal.any.js
 testharness scheduler/post-task-with-signal-and-priority.any.js
 testharness scheduler/post-task-with-signal-from-detached-iframe.html
 testharness scheduler/post-task-without-signals.any.js
+testharness scheduler/scheduler-replaceable.any.js
 testharness scheduler/task-controller-abort-completed-tasks.any.js
 testharness scheduler/task-controller-abort-signal-and-priority.any.js
 testharness scheduler/task-controller-abort1.any.js
@@ -41568,6 +41590,7 @@ testharness scroll-animations/css/animation-timeline-in-keyframe.html
 testharness scroll-animations/css/animation-timeline-multiple.html
 testharness scroll-animations/css/animation-timeline-none.html
 testharness scroll-animations/css/animation-timeline-parsing.html
+testharness scroll-animations/css/animation-timeline-scroll-functional-notation.tentative.html
 testharness scroll-animations/css/at-scroll-timeline-before-phase.html
 testharness scroll-animations/css/at-scroll-timeline-cascade.html
 testharness scroll-animations/css/at-scroll-timeline-dynamic.tentative.html
@@ -42257,6 +42280,7 @@ testharness speculation-rules/prerender/restriction-broadcast-channel.html
 testharness speculation-rules/prerender/restriction-focus.html
 testharness speculation-rules/prerender/restriction-notification.https.html
 testharness speculation-rules/prerender/restriction-presentation-request.https.html
+testharness speculation-rules/prerender/restriction-service-worker-unregister.https.html
 testharness speculation-rules/prerender/restriction-window-move.html
 testharness speculation-rules/prerender/restriction-window-open.html
 testharness speculation-rules/prerender/restriction-window-resize.html

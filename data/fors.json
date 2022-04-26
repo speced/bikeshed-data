@@ -42,8 +42,10 @@
     "&",
     "&&",
     "'all' media group",
+    "'allow'",
     "'audio' media group",
     "'bitmap' media group",
+    "'block'",
     "'continuous' media group",
     "'false'",
     "'grid' media group",
@@ -349,6 +351,7 @@
     "<common-lig-values>",
     "<comparison-operand>",
     "<comparison-operator>",
+    "<compat-auto>",
     "<complex-selector-list>",
     "<complex-selector>",
     "<composite-mode>",
@@ -733,6 +736,9 @@
     "AudioParamMap",
     "AudioProcessingEvent",
     "AudioProcessingEventInit",
+    "AudioRenderCapacity",
+    "AudioRenderCapacityEvent",
+    "AudioRenderCapacityOptions",
     "AudioScheduledSourceNode",
     "AudioTimestamp",
     "AudioTrack",
@@ -1629,6 +1635,7 @@
     "RTCDataChannelState",
     "RTCDataChannelStats",
     "RTCDtlsFingerprint",
+    "RTCDtlsRole",
     "RTCDtlsTransport",
     "RTCDtlsTransportState",
     "RTCError",
@@ -3087,6 +3094,9 @@
     "audioparamdescriptor",
     "audioprocessingevent",
     "audioprocessingeventinit",
+    "audiorenderCapacity",
+    "audiorenderCapacityevent",
+    "audiorenderCapacityoptions",
     "audioscheduledsourcenode",
     "audiotimestamp",
     "audioworklet",
@@ -5243,7 +5253,8 @@
     "ensure there is a subpath",
     "ensurecspdoesnotblockstringcompilation",
     "ensurecspdoesnotblockstringcompilation(callerrealm, calleerealm, source)",
-    "ensurecspdoesnotblockwasmbytecompilation(callerrealm, calleerealm)",
+    "ensurecspdoesnotblockstringcompilation(realm, source)",
+    "ensurecspdoesnotblockwasmbytecompilation(realm)",
     "entangle",
     "entries",
     "entry",
@@ -6292,7 +6303,7 @@
     "hostenqueuepromisejob",
     "hostenqueuepromisejob(job, realm)",
     "hostensurecancompilestrings",
-    "hostensurecancompilestrings(callerrealm, calleerealm)",
+    "hostensurecancompilestrings(realm)",
     "hostgetimportmetaproperties",
     "hostgetimportmetaproperties(modulerecord)",
     "hostgetsupportedimportassertions",
@@ -6624,6 +6635,7 @@
     "initialize an instance object",
     "initialize the render state",
     "initialize the session",
+    "initialize the underlying source",
     "initialize the viewport",
     "initializehostdefinedrealm",
     "initializing",
@@ -7596,7 +7608,6 @@
     "mediastreamaudiodestinationnode",
     "mediastreamaudiosourcenode",
     "mediastreamaudiosourceoptions",
-    "mediastreamtrack",
     "mediastreamtrackaudiosourcenode",
     "mediastreamtrackaudiosourceoptions",
     "mediumaquamarine",
@@ -7621,6 +7632,7 @@
     "memory object cache",
     "menu",
     "menuitem",
+    "menulist-button",
     "menutext",
     "merge with the next text node",
     "merged",
@@ -10880,6 +10892,7 @@
     "textarea effective width",
     "textarea wrapping transformation",
     "textcontent",
+    "textfield",
     "textpath",
     "textphone",
     "textual data types",
@@ -11375,6 +11388,7 @@
     "user action pseudo-class",
     "user agent",
     "user agent (ua)",
+    "user agent origin",
     "user consent",
     "user coordinate system",
     "user handle",
@@ -11640,6 +11654,7 @@
     "webglrenderingcontext",
     "webgpu",
     "webkitURL",
+    "webrtc",
     "websocket",
     "websocket task source",
     "webusb platform capability descriptor",
@@ -13227,6 +13242,7 @@
     "createMediaStreamTrackSource(mediaStreamTrack)",
     "getOutputTimestamp()",
     "outputLatency",
+    "renderCapacity",
     "resume()",
     "suspend()"
   ],
@@ -13474,6 +13490,40 @@
     "inputBuffer",
     "outputBuffer",
     "playbackTime"
+  ],
+  "AudioRenderCapacity": [
+    "onupdate",
+    "start(options)",
+    "stop()"
+  ],
+  "AudioRenderCapacity/start(options)": [
+    "options"
+  ],
+  "AudioRenderCapacityEvent": [
+    "AudioRenderCapacityEvent(type, timestamp, averageLoad, peakLoad, underrunRatio)",
+    "averageLoad",
+    "constructor",
+    "constructor(type, timestamp, averageLoad, peakLoad, underrunRatio)",
+    "peakLoad",
+    "timestamp",
+    "underrunRatio"
+  ],
+  "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type, timestamp, averageLoad, peakLoad, underrunRatio)": [
+    "averageLoad",
+    "peakLoad",
+    "timestamp",
+    "type",
+    "underrunRatio"
+  ],
+  "AudioRenderCapacityEvent/constructor(type, timestamp, averageLoad, peakLoad, underrunRatio)": [
+    "averageLoad",
+    "peakLoad",
+    "timestamp",
+    "type",
+    "underrunRatio"
+  ],
+  "AudioRenderCapacityOptions": [
+    "updateInterval"
   ],
   "AudioScheduledSourceNode": [
     "[[source started]]",
@@ -24377,12 +24427,16 @@
     "messagesReceived",
     "messagesSent",
     "protocol",
-    "state",
-    "transportid"
+    "state"
   ],
   "RTCDtlsFingerprint": [
     "algorithm",
     "value"
+  ],
+  "RTCDtlsRole": [
+    "client",
+    "server",
+    "unknown"
   ],
   "RTCDtlsTransport": [
     "getRemoteCertificates",
@@ -25151,6 +25205,7 @@
     "bytesReceived",
     "bytesSent",
     "dtlsCipher",
+    "dtlsRole",
     "dtlsState",
     "iceLocalUsernameFragment",
     "iceRole",
@@ -31589,7 +31644,8 @@
     "post-request check",
     "pre-navigation check",
     "pre-request check",
-    "value"
+    "value",
+    "webrtc pre-connect check"
   ],
   "directory entry": [
     "children"
