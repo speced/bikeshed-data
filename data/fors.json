@@ -738,6 +738,7 @@
     "AudioProcessingEventInit",
     "AudioRenderCapacity",
     "AudioRenderCapacityEvent",
+    "AudioRenderCapacityEventInit",
     "AudioRenderCapacityOptions",
     "AudioScheduledSourceNode",
     "AudioTimestamp",
@@ -5397,7 +5398,6 @@
     "explicit span",
     "explicithistorynavigation",
     "explicitly enabled",
-    "explicitly render-blocking",
     "explicitly supported json mime type",
     "explicitly supported xml mime type",
     "explicitly-assigned line name",
@@ -6490,7 +6490,7 @@
     "implicit signals",
     "implicit span",
     "implicit template",
-    "implicitly render-blocking",
+    "implicitly potentially render-blocking",
     "implicitly-assigned line name",
     "implicitly-named area",
     "implied document",
@@ -8778,6 +8778,7 @@
     "potentially active",
     "potentially delays the load event",
     "potentially playing",
+    "potentially render-blocking",
     "potentially scrollable",
     "potentially trustworthy origin",
     "potentially trustworthy origins",
@@ -11264,7 +11265,6 @@
     "unrestricted float",
     "unsafe response",
     "unsafe shared current time",
-    "unsafe start time",
     "unsafe-none",
     "unsafe-request flag",
     "unsafe-url",
@@ -13496,33 +13496,47 @@
   ],
   "AudioRenderCapacity": [
     "onupdate",
+    "start()",
     "start(options)",
     "stop()"
+  ],
+  "AudioRenderCapacity/start()": [
+    "options"
   ],
   "AudioRenderCapacity/start(options)": [
     "options"
   ],
   "AudioRenderCapacityEvent": [
-    "AudioRenderCapacityEvent(type, timestamp, averageLoad, peakLoad, underrunRatio)",
+    "AudioRenderCapacityEvent(type)",
+    "AudioRenderCapacityEvent(type, eventInitDict)",
     "averageLoad",
     "constructor",
-    "constructor(type, timestamp, averageLoad, peakLoad, underrunRatio)",
+    "constructor(type)",
+    "constructor(type, eventInitDict)",
     "peakLoad",
     "timestamp",
     "underrunRatio"
   ],
-  "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type, timestamp, averageLoad, peakLoad, underrunRatio)": [
-    "averageLoad",
-    "peakLoad",
-    "timestamp",
-    "type",
-    "underrunRatio"
+  "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type)": [
+    "eventInitDict",
+    "type"
   ],
-  "AudioRenderCapacityEvent/constructor(type, timestamp, averageLoad, peakLoad, underrunRatio)": [
+  "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "AudioRenderCapacityEvent/constructor(type)": [
+    "eventInitDict",
+    "type"
+  ],
+  "AudioRenderCapacityEvent/constructor(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "AudioRenderCapacityEventInit": [
     "averageLoad",
     "peakLoad",
     "timestamp",
-    "type",
     "underrunRatio"
   ],
   "AudioRenderCapacityOptions": [

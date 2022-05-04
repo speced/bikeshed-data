@@ -206,13 +206,19 @@
     }
   },
   "AudioRenderCapacityEvent()": {
-    "AudioRenderCapacityEvent(type, timestamp, averageLoad, peakLoad, underrunRatio)": {
+    "AudioRenderCapacityEvent(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "shortname": "webaudio"
+    },
+    "AudioRenderCapacityEvent(type, eventInitDict)": {
       "args": [
         "type",
-        "timestamp",
-        "averageLoad",
-        "peakLoad",
-        "underrunRatio"
+        "eventInitDict"
       ],
       "for": [
         "AudioRenderCapacityEvent"
@@ -6718,6 +6724,7 @@
       "for": [
         "AnimationEvent",
         "AnimationPlaybackEvent",
+        "AudioRenderCapacityEvent",
         "CloseEvent",
         "CompositionEvent",
         "CustomEvent",
@@ -6774,6 +6781,7 @@
       "for": [
         "AnimationPlaybackEvent",
         "AudioProcessingEvent",
+        "AudioRenderCapacityEvent",
         "CloseEvent",
         "CompositionEvent",
         "CustomEvent",
@@ -6834,19 +6842,6 @@
         "ValueEvent"
       ],
       "shortname": "web-bluetooth"
-    },
-    "constructor(type, timestamp, averageLoad, peakLoad, underrunRatio)": {
-      "args": [
-        "type",
-        "timestamp",
-        "averageLoad",
-        "peakLoad",
-        "underrunRatio"
-      ],
-      "for": [
-        "AudioRenderCapacityEvent"
-      ],
-      "shortname": "webaudio"
     },
     "constructor(type, transitionEventInitDict)": {
       "args": [
@@ -18021,6 +18016,7 @@
       "args": [],
       "for": [
         "AudioBufferSourceNode",
+        "AudioRenderCapacity",
         "AudioScheduledSourceNode",
         "HTMLMarqueeElement",
         "MessagePort",
