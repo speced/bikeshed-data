@@ -1,4 +1,4 @@
-sha: ceade5901b6e6a5062d873cdf40cb5a1cccb2a2d
+sha: 88cd60961f5cd877cf5083a8874a233f69ae72a2
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -56,6 +56,7 @@ crashtest css/css-break/block-in-inline-005-crash.html
 crashtest css/css-break/block-in-inline-006-crash.html
 crashtest css/css-break/block-in-inline-007-crash.html
 crashtest css/css-break/break-after-in-parallel-flow-crash.html
+crashtest css/css-break/break-after-oof-before-preceding-pushed-float-crash.html
 crashtest css/css-break/break-before-float-after-line-after-floats-crash.html
 crashtest css/css-break/break-before-with-no-fragmentation-crash.html
 crashtest css/css-break/chrome-bug-1283776-000-crash.html
@@ -65,8 +66,10 @@ crashtest css/css-break/chrome-bug-1287342-crash.html
 crashtest css/css-break/chrome-bug-1288769-000-crash.html
 crashtest css/css-break/chrome-bug-1288769-001-crash.html
 crashtest css/css-break/chrome-bug-1289999-crash.https.html
+crashtest css/css-break/chrome-bug-1318455-crash.html
 crashtest css/css-break/clear-br-in-size-containment-crash.html
 crashtest css/css-break/clear-float-in-size-containment-crash.html
+crashtest css/css-break/clear-past-float-with-oof-twice-crash.html
 crashtest css/css-break/firefox-bug1693616-001-crash.html
 crashtest css/css-break/firefox-bug1693616-002-crash.html
 crashtest css/css-break/flexbox/button-in-multicol-crash.html
@@ -11153,6 +11156,7 @@ reftest css/css-backgrounds/animations/background-color-animation-single-keyfram
 reftest css/css-backgrounds/animations/background-color-animation-three-keyframes1.html
 reftest css/css-backgrounds/animations/background-color-animation-three-keyframes2.html
 reftest css/css-backgrounds/animations/background-color-animation-three-keyframes3.html
+reftest css/css-backgrounds/animations/background-color-animation-will-change-contents.html
 reftest css/css-backgrounds/animations/background-color-animation-with-images.html
 reftest css/css-backgrounds/animations/background-color-animation-with-mask.html
 reftest css/css-backgrounds/animations/background-color-animation-with-table1.html
@@ -11163,6 +11167,7 @@ reftest css/css-backgrounds/animations/background-color-animation-with-zero-play
 reftest css/css-backgrounds/animations/background-color-animation-zero-size-element-change-to-non-zero.html
 reftest css/css-backgrounds/animations/background-color-animation-zero-size-element.html
 reftest css/css-backgrounds/animations/background-color-animation.html
+reftest css/css-backgrounds/animations/background-color-scroll-into-viewport.html
 reftest css/css-backgrounds/animations/background-color-transition-currentcolor.html
 reftest css/css-backgrounds/animations/background-color-transition.html
 reftest css/css-backgrounds/animations/background-color-transparent-animation-in-body.html
@@ -20242,7 +20247,6 @@ reftest css/css-ui/appearance-slider-horizontal-001.html
 reftest css/css-ui/appearance-square-button-001.html
 reftest css/css-ui/appearance-textarea-001.html
 reftest css/css-ui/appearance-textfield-001.html
-reftest css/css-ui/appearance-transition.tentative.html
 reftest css/css-ui/box-sizing-001.html
 reftest css/css-ui/box-sizing-003.html
 reftest css/css-ui/box-sizing-005.html
@@ -23422,6 +23426,11 @@ reftest html/rendering/the-details-element/summary-display-list-item-001.html
 reftest html/rendering/the-details-element/summary-display-list-item-002.html
 reftest html/rendering/the-details-element/summary-in-ol.html
 reftest html/rendering/the-details-element/summary-text-decoration.html
+reftest html/rendering/widgets/appearance/appearance-animation-001.html
+reftest html/rendering/widgets/appearance/appearance-animation-002.html
+reftest html/rendering/widgets/appearance/appearance-transition-001.html
+reftest html/rendering/widgets/appearance/appearance-transition-002.html
+reftest html/rendering/widgets/appearance/appearance-transition-003.html
 reftest html/rendering/widgets/button-layout/anonymous-button-content-box.html
 reftest html/rendering/widgets/button-layout/inline-level.html
 reftest html/rendering/widgets/button-layout/input-type-button-newline-2.html
@@ -30398,6 +30407,8 @@ testharness css/selectors/attribute-selectors/style-attribute-selector.html
 testharness css/selectors/child-indexed-pseudo-class.html
 testharness css/selectors/dir-selector-auto.html
 testharness css/selectors/dir-selector-querySelector.html
+testharness css/selectors/first-child.html
+testharness css/selectors/first-of-type.html
 testharness css/selectors/focus-display-none-001.html
 testharness css/selectors/focus-in-focus-event-001.html
 testharness css/selectors/focus-in-focusin-event-001.html
@@ -30537,6 +30548,8 @@ testharness css/selectors/is-where-not.html
 testharness css/selectors/is-where-parsing.html
 testharness css/selectors/is-where-pseudo-classes.html
 testharness css/selectors/is-where-shadow.html
+testharness css/selectors/last-child.html
+testharness css/selectors/last-of-type.html
 testharness css/selectors/missing-right-token.html
 testharness css/selectors/nesting-parsing.html
 testharness css/selectors/not-complex.html
@@ -42474,6 +42487,7 @@ testharness speculation-rules/prerender/restriction-presentation-request.https.h
 testharness speculation-rules/prerender/restriction-service-worker-postmessage.https.html
 testharness speculation-rules/prerender/restriction-service-worker-unregister.https.html
 testharness speculation-rules/prerender/restriction-service-worker-update.https.html
+testharness speculation-rules/prerender/restriction-web-usb.https.html
 testharness speculation-rules/prerender/restriction-window-move.html
 testharness speculation-rules/prerender/restriction-window-open.html
 testharness speculation-rules/prerender/restriction-window-resize.html
