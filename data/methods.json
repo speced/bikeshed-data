@@ -2655,6 +2655,27 @@
       "shortname": "streams"
     }
   },
+  "ReportingObserver()": {
+    "ReportingObserver(callback)": {
+      "args": [
+        "callback"
+      ],
+      "for": [
+        "ReportingObserver"
+      ],
+      "shortname": "reporting"
+    },
+    "ReportingObserver(callback, options)": {
+      "args": [
+        "callback",
+        "options"
+      ],
+      "for": [
+        "ReportingObserver"
+      ],
+      "shortname": "reporting"
+    }
+  },
   "Request()": {
     "Request(input)": {
       "args": [
@@ -5759,6 +5780,7 @@
       "for": [
         "IntersectionObserver",
         "MutationObserver",
+        "ReportingObserver",
         "ResizeObserver"
       ],
       "shortname": "dom"
@@ -5769,7 +5791,8 @@
         "options"
       ],
       "for": [
-        "IntersectionObserver"
+        "IntersectionObserver",
+        "ReportingObserver"
       ],
       "shortname": "intersection-observer"
     },
@@ -9004,6 +9027,7 @@
         "BluetoothRemoteGATTServer",
         "IntersectionObserver",
         "MutationObserver",
+        "ReportingObserver",
         "ResizeObserver"
       ],
       "shortname": "dom"
@@ -14074,6 +14098,13 @@
     }
   },
   "observe()": {
+    "observe()": {
+      "args": [],
+      "for": [
+        "ReportingObserver"
+      ],
+      "shortname": "reporting"
+    },
     "observe(target)": {
       "args": [
         "target"
@@ -18466,7 +18497,8 @@
       "args": [],
       "for": [
         "IntersectionObserver",
-        "MutationObserver"
+        "MutationObserver",
+        "ReportingObserver"
       ],
       "shortname": "dom"
     }
@@ -18668,6 +18700,8 @@
         "PerformanceTiming",
         "RTCIceCandidate",
         "RTCSessionDescription",
+        "Report",
+        "ReportBody",
         "URL"
       ],
       "shortname": "geometry"

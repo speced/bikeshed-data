@@ -1191,6 +1191,7 @@
     "FunctionStringCallback",
     "GainNode",
     "GainOptions",
+    "GenerateTestReportParameters",
     "GenericTransformStream",
     "GeometryNode",
     "GeometryUtils",
@@ -1824,6 +1825,12 @@
     "RemoteDocument",
     "RenderingContext",
     "Replaceable",
+    "Report",
+    "ReportBody",
+    "ReportList",
+    "ReportingObserver",
+    "ReportingObserverCallback",
+    "ReportingObserverOptions",
     "Request",
     "Request a Credential",
     "RequestCache",
@@ -5233,6 +5240,7 @@
     "ending point",
     "ending shape",
     "ending token",
+    "endpoint",
     "endpoint descriptor",
     "endpoint group",
     "endpoint pair",
@@ -5956,11 +5964,13 @@
     "generate a network error report",
     "generate a new blob url",
     "generate a random uuid",
+    "generate a report",
     "generate all implied end tags thoroughly",
     "generate an xml value",
     "generate baselines",
     "generate implied end tags",
     "generate report for violation of permissions policy on settings",
+    "generate test report",
     "generated",
     "generated content",
     "generatekey",
@@ -6623,6 +6633,7 @@
     "initialize a cylinder layer",
     "initialize a equirect layer",
     "initialize a global object",
+    "initialize a global's endpoint list",
     "initialize a memory object",
     "initialize a new intersectionobserver",
     "initialize a quad layer",
@@ -9359,6 +9370,8 @@
     "reporting endpoint",
     "reporting frequency",
     "reporting group",
+    "reporting observer",
+    "reporting-endpoints",
     "reports",
     "represent",
     "representation",
@@ -9941,6 +9954,7 @@
     "serialize a javascript value to a json string",
     "serialize a javascript value to json bytes",
     "serialize a list of css page selectors",
+    "serialize a list of reports to json",
     "serialize a local",
     "serialize a math function",
     "serialize a media feature value",
@@ -19876,6 +19890,10 @@
   "GainOptions": [
     "gain"
   ],
+  "GenerateTestReportParameters": [
+    "group",
+    "message"
+  ],
   "GenericTransformStream": [
     "readable",
     "transform",
@@ -25706,6 +25724,53 @@
     "documentUrl",
     "profile"
   ],
+  "Report": [
+    "body",
+    "toJSON",
+    "toJSON()",
+    "type",
+    "url"
+  ],
+  "ReportBody": [
+    "toJSON",
+    "toJSON()"
+  ],
+  "ReportingObserver": [
+    "ReportingObserver(callback)",
+    "ReportingObserver(callback, options)",
+    "callback",
+    "constructor(callback)",
+    "constructor(callback, options)",
+    "disconnect()",
+    "observe()",
+    "options",
+    "report queue",
+    "takeRecords()"
+  ],
+  "ReportingObserver/ReportingObserver(callback)": [
+    "callback",
+    "options"
+  ],
+  "ReportingObserver/ReportingObserver(callback, options)": [
+    "callback",
+    "options"
+  ],
+  "ReportingObserver/constructor(callback)": [
+    "callback",
+    "options"
+  ],
+  "ReportingObserver/constructor(callback, options)": [
+    "callback",
+    "options"
+  ],
+  "ReportingObserverCallback": [
+    "observer",
+    "reports"
+  ],
+  "ReportingObserverOptions": [
+    "buffered",
+    "types"
+  ],
   "Request": [
     "Request(input)",
     "Request(input, init)",
@@ -28507,6 +28572,7 @@
     "createImageBitmap(image)",
     "crossOriginIsolated",
     "crypto",
+    "endpoints",
     "fetch(input)",
     "fetch(input, init)",
     "indexedDB",
@@ -28514,7 +28580,10 @@
     "origin",
     "performance",
     "queueMicrotask(callback)",
+    "registered reporting observer list",
+    "report buffer",
     "reportError(e)",
+    "reports",
     "setInterval(handler, timeout, ...arguments)",
     "setTimeout(handler, timeout, ...arguments)",
     "structuredClone(value, options)"
@@ -31752,6 +31821,11 @@
     "label",
     "name"
   ],
+  "endpoint": [
+    "failures",
+    "name",
+    "url"
+  ],
   "endpointNumber": [
     "endpointNumber(alternate, endpointNumber, direction)"
   ],
@@ -34519,6 +34593,18 @@
     "<position>",
     "<size>",
     "gradient center"
+  ],
+  "report": [
+    "attempts",
+    "body",
+    "destination",
+    "timestamp",
+    "type",
+    "url",
+    "user agent"
+  ],
+  "reporting": [
+    "queue"
   ],
   "request": [
     "add a range header",
