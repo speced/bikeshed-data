@@ -1,4 +1,4 @@
-sha: 85f8e58db43225ac10b86d25c9376d90c5b81e52
+sha: 4f944e32b46acfc971af4ce345fc6b511aea59fe
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -12276,6 +12276,9 @@ reftest css/css-break/table/table-collapsed-borders-paint-at-boundary.tentative.
 reftest css/css-break/table/table-collapsed-borders-paint-htb-ltr.html
 reftest css/css-break/table/table-collapsed-borders-paint-vlr-rtl.html
 reftest css/css-break/table/table-collapsed-borders-paint-vrl-ltr.html
+reftest css/css-break/table/table-grid-paint-htb-ltr.html
+reftest css/css-break/table/table-grid-paint-vlr-rtl.html
+reftest css/css-break/table/table-grid-paint-vrl-rtl.html
 reftest css/css-break/table/table-row-paint-htb-ltr.html
 reftest css/css-break/table/table-row-paint-vlr-rtl.html
 reftest css/css-break/table/table-row-paint-vrl-rtl.html
@@ -26195,14 +26198,20 @@ testharness content-security-policy/unsafe-eval/eval-scripts-setTimeout-blocked.
 testharness content-security-policy/unsafe-eval/function-constructor-allowed.sub.html
 testharness content-security-policy/unsafe-eval/function-constructor-blocked.sub.html
 testharness content-security-policy/unsafe-hashes/javascript_src_allowed-href.html
+testharness content-security-policy/unsafe-hashes/javascript_src_allowed-href_blank-script-src-attr.html
+testharness content-security-policy/unsafe-hashes/javascript_src_allowed-href_blank-script-src-elem.html
 testharness content-security-policy/unsafe-hashes/javascript_src_allowed-href_blank.html
 testharness content-security-policy/unsafe-hashes/javascript_src_allowed-window_location.html
 testharness content-security-policy/unsafe-hashes/javascript_src_allowed-window_open.html
 testharness content-security-policy/unsafe-hashes/javascript_src_denied_missing_unsafe_hashes-href.html
+testharness content-security-policy/unsafe-hashes/javascript_src_denied_missing_unsafe_hashes-href_blank-script-src-attr.html
+testharness content-security-policy/unsafe-hashes/javascript_src_denied_missing_unsafe_hashes-href_blank-script-src-elem.html
 testharness content-security-policy/unsafe-hashes/javascript_src_denied_missing_unsafe_hashes-href_blank.html
 testharness content-security-policy/unsafe-hashes/javascript_src_denied_missing_unsafe_hashes-window_location.html
 testharness content-security-policy/unsafe-hashes/javascript_src_denied_missing_unsafe_hashes-window_open.html
 testharness content-security-policy/unsafe-hashes/javascript_src_denied_wrong_hash-href.html
+testharness content-security-policy/unsafe-hashes/javascript_src_denied_wrong_hash-href_blank-script-src-attr.html
+testharness content-security-policy/unsafe-hashes/javascript_src_denied_wrong_hash-href_blank-script-src-elem.html
 testharness content-security-policy/unsafe-hashes/javascript_src_denied_wrong_hash-href_blank.html
 testharness content-security-policy/unsafe-hashes/javascript_src_denied_wrong_hash-window_location.html
 testharness content-security-policy/unsafe-hashes/javascript_src_denied_wrong_hash-window_open.html
@@ -32492,6 +32501,10 @@ testharness html/browsers/browsing-the-web/back-forward-cache/eligibility/shared
 testharness html/browsers/browsing-the-web/back-forward-cache/events.html
 testharness html/browsers/browsing-the-web/back-forward-cache/focus.html
 testharness html/browsers/browsing-the-web/back-forward-cache/pushstate.https.html
+testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-clients-claim.https.html
+testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-clients-matchall.https.html
+testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-controlled-after-restore.https.html
+testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-unregister.https.html
 testharness html/browsers/browsing-the-web/back-forward-cache/timers.html
 testharness html/browsers/browsing-the-web/history-traversal/001.html
 testharness html/browsers/browsing-the-web/history-traversal/PopStateEvent.html
