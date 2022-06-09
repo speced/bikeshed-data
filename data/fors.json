@@ -1626,7 +1626,6 @@
     "RTCCertificateExpiration",
     "RTCCertificateStats",
     "RTCCodecStats",
-    "RTCCodecType",
     "RTCConfiguration",
     "RTCDTMFSender",
     "RTCDTMFToneChangeEvent",
@@ -1661,7 +1660,6 @@
     "RTCIceProtocol",
     "RTCIceRole",
     "RTCIceServer",
-    "RTCIceServerStats",
     "RTCIceTcpCandidateType",
     "RTCIceTransport",
     "RTCIceTransportPolicy",
@@ -1695,7 +1693,6 @@
     "RTCRtpCodecParameters",
     "RTCRtpCodingParameters",
     "RTCRtpContributingSource",
-    "RTCRtpContributingSourceStats",
     "RTCRtpDecodingParameters",
     "RTCRtpEncodingParameters",
     "RTCRtpHeaderExtensionCapability",
@@ -4073,6 +4070,7 @@
     "connection",
     "connection flag",
     "connection pool",
+    "connection queue",
     "connection state",
     "connection timing info",
     "connection-checking wrapper",
@@ -6063,7 +6061,6 @@
     "go",
     "gold",
     "goldenrod",
-    "gotpointercapture",
     "gpucanvascontext",
     "gradient box",
     "gradient element",
@@ -7353,7 +7350,6 @@
     "longhand property",
     "look up a custom element definition",
     "loosely sorted by offset",
-    "lostpointercapture",
     "low boundary",
     "low-level",
     "lower-alpha",
@@ -8686,13 +8682,7 @@
     "pointer-events",
     "pointercancel",
     "pointerdown",
-    "pointerenter",
     "pointerevent",
-    "pointerleave",
-    "pointermove",
-    "pointerout",
-    "pointerover",
-    "pointerrawupdate",
     "pointertype",
     "pointerup",
     "policy cache",
@@ -14005,10 +13995,8 @@
     "[[gatt]]",
     "[[representedDevice]]",
     "[[watchAdvertisementsState]]",
-    "advertisementreceived",
     "forget()",
     "gatt",
-    "gattserverdisconnected",
     "id",
     "name",
     "watchAdvertisements()",
@@ -14022,6 +14010,8 @@
     "options"
   ],
   "BluetoothDeviceEventHandlers": [
+    "advertisementreceived",
+    "gattserverdisconnected",
     "onadvertisementreceived",
     "ongattserverdisconnected"
   ],
@@ -19940,6 +19930,8 @@
     "dragover",
     "dragstart",
     "drop",
+    "gotpointercapture",
+    "lostpointercapture",
     "onabort",
     "onanimationcancel",
     "onanimationend",
@@ -20028,7 +20020,16 @@
     "onwebkitanimationiteration",
     "onwebkitanimationstart",
     "onwebkittransitionend",
-    "onwheel"
+    "onwheel",
+    "pointercancel",
+    "pointerdown",
+    "pointerenter",
+    "pointerleave",
+    "pointermove",
+    "pointerout",
+    "pointerover",
+    "pointerrawupdate",
+    "pointerup"
   ],
   "GroupEffect": [
     "",
@@ -24237,8 +24238,7 @@
   "RTCAudioHandlerStats": [
     "audioLevel",
     "totalAudioEnergy",
-    "totalSamplesDuration",
-    "voiceActivityFlag"
+    "totalSamplesDuration"
   ],
   "RTCAudioReceiverStats": [
     "audioLevel",
@@ -24257,8 +24257,7 @@
   "RTCAudioSenderStats": [
     "echoReturnLoss",
     "echoReturnLossEnhancement",
-    "mediaSourceId",
-    "totalSamplesSent"
+    "mediaSourceId"
   ],
   "RTCAudioSourceStats": [
     "audioLevel",
@@ -24289,16 +24288,11 @@
   "RTCCodecStats": [
     "channels",
     "clockRate",
-    "codecType",
     "implementation",
     "mimeType",
     "payloadType",
     "sdpFmtpLine",
     "transportId"
-  ],
-  "RTCCodecType": [
-    "decode",
-    "encode"
   ],
   "RTCConfiguration": [
     "bundlePolicy",
@@ -24487,17 +24481,11 @@
     "bytesDiscardedOnSend",
     "bytesReceived",
     "bytesSent",
-    "circuitBreakerTriggerCount",
-    "consentExpiredTimestamp",
-    "consentRequestBytesSent",
     "consentRequestsSent",
     "currentRoundTripTime",
     "currentRtt",
-    "firstRequestTimestamp",
     "lastPacketReceivedTimestamp",
     "lastPacketSentTimestamp",
-    "lastRequestTimestamp",
-    "lastResponseTimestamp",
     "localCandidateId",
     "nominated",
     "packetsDiscardedOnSend",
@@ -24505,14 +24493,10 @@
     "packetsSent",
     "priority",
     "remoteCandidateId",
-    "requestBytesSent",
     "requestsReceived",
     "requestsSent",
-    "responseBytesSent",
     "responsesReceived",
     "responsesSent",
-    "retransmissionsReceived",
-    "retransmissionsSent",
     "state",
     "totalRoundTripTime",
     "totalRtt",
@@ -24581,14 +24565,6 @@
     "urls",
     "username"
   ],
-  "RTCIceServerStats": [
-    "port",
-    "relayProtocol",
-    "totalRequestsSent",
-    "totalResponsesReceived",
-    "totalRoundTripTime",
-    "url"
-  ],
   "RTCIceTcpCandidateType": [
     "active",
     "passive",
@@ -24628,7 +24604,6 @@
   ],
   "RTCInboundRtpStreamStats": [
     "audioLevel",
-    "averageRtcpInterval",
     "bytesReceived",
     "concealedSamples",
     "concealmentEvents",
@@ -24638,7 +24613,6 @@
     "fecPacketsReceived",
     "firCount",
     "fractionLost",
-    "frameBitDepth",
     "frameHeight",
     "frameWidth",
     "framesDecoded",
@@ -24651,28 +24625,21 @@
     "keyFramesDecoded",
     "lastPacketReceivedTimestamp",
     "nackCount",
-    "packetsDuplicated",
-    "packetsFailedDecryption",
-    "perDscpPacketsReceived",
+    "packetsDiscarded",
     "pliCount",
     "qpSum",
     "receiverId",
     "remoteId",
     "removedSamplesForAcceleration",
-    "samplesDecodedWithCelt",
-    "samplesDecodedWithSilk",
     "silentConcealedSamples",
-    "sliCount",
     "totalAudioEnergy",
     "totalDecodeTime",
     "totalInterFrameDelay",
     "totalProcessingDelay",
-    "totalSamplesDecoded",
     "totalSamplesDuration",
     "totalSamplesReceived",
     "totalSquaredInterFrameDelay",
-    "trackId",
-    "voiceActivityFlag"
+    "trackId"
   ],
   "RTCLocalSessionDescriptionInit": [
     "sdp",
@@ -24687,7 +24654,6 @@
   ],
   "RTCMediaSourceStats": [
     "kind",
-    "relayedSource",
     "trackIdentifier"
   ],
   "RTCMediaStreamStats": [
@@ -24700,26 +24666,18 @@
     "offerToReceiveVideo"
   ],
   "RTCOutboundRtpStreamStats": [
-    "averageRtcpInterval",
-    "bytesDiscardedOnSend",
     "encoderImplementation",
-    "fecPacketsSent",
     "firCount",
-    "frameBitDepth",
     "frameHeight",
     "frameWidth",
-    "framesDiscardedOnSend",
     "framesEncoded",
     "framesPerSecond",
     "framesSent",
     "headerBytesSent",
     "hugeFramesSent",
     "keyFramesEncoded",
-    "lastPacketSentTimestamp",
     "mediaSourceId",
     "nackCount",
-    "packetsDiscardedOnSend",
-    "perDscpPacketsSent",
     "pliCount",
     "qpSum",
     "qualityLimitationDurations",
@@ -24729,18 +24687,12 @@
     "retransmittedBytesSent",
     "retransmittedPacketsSent",
     "rid",
-    "rtxSsrc",
-    "samplesEncodedWithCelt",
-    "samplesEncodedWithSilk",
     "senderId",
-    "sliCount",
     "targetBitrate",
     "totalEncodeTime",
     "totalEncodedBytesTarget",
     "totalPacketSendDelay",
-    "totalSamplesSent",
-    "trackId",
-    "voiceActivityFlag"
+    "trackId"
   ],
   "RTCPeerConnection": [
     "addIceCandidate",
@@ -24879,10 +24831,8 @@
     "new"
   ],
   "RTCPeerConnectionStats": [
-    "dataChannelsAccepted",
     "dataChannelsClosed",
-    "dataChannelsOpened",
-    "dataChannelsRequested"
+    "dataChannelsOpened"
   ],
   "RTCQualityLimitationReason": [
     "bandwidth",
@@ -24891,27 +24841,14 @@
     "other"
   ],
   "RTCReceivedRtpStreamStats": [
-    "burstDiscardCount",
-    "burstDiscardRate",
-    "burstLossCount",
-    "burstLossRate",
-    "burstPacketsDiscarded",
-    "burstPacketsLost",
     "framesDropped",
-    "fullFramesLost",
-    "gapDiscardRate",
-    "gapLossRate",
     "jitter",
-    "packetsDiscarded",
     "packetsLost",
-    "packetsReceived",
-    "packetsRepaired",
-    "partialFramesLost"
+    "packetsReceived"
   ],
   "RTCRemoteInboundRtpStreamStats": [
     "fractionLost",
     "localId",
-    "reportsReceived",
     "roundTripTime",
     "roundTripTimeMeasurements",
     "totalRoundTripTime"
@@ -24956,12 +24893,6 @@
     "rtpTimestamp",
     "source",
     "timestamp"
-  ],
-  "RTCRtpContributingSourceStats": [
-    "audioLevel",
-    "contributorSsrc",
-    "inboundRtpStreamId",
-    "packetsContributedTo"
   ],
   "RTCRtpEncodingParameters": [
     "active",
@@ -25023,7 +24954,6 @@
     "transport"
   ],
   "RTCRtpStreamStats": [
-    "averageRTCPInterval",
     "codecId",
     "kind",
     "mediaType",
@@ -25129,9 +25059,7 @@
     "candidate-pair",
     "certificate",
     "codec",
-    "csrc",
     "data-channel",
-    "ice-server",
     "inbound-rtp",
     "local-candidate",
     "media-source",
@@ -25179,7 +25107,6 @@
     "selectedCandidatePairChanges",
     "selectedCandidatePairId",
     "srtpCipher",
-    "tlsGroup",
     "tlsVersion"
   ],
   "RTCVideoHandlerStats": [
@@ -25192,11 +25119,9 @@
     "framesDecoded",
     "framesDropped",
     "framesReceived",
-    "fullFramesLost",
     "jitterBufferDelay",
     "jitterBufferEmittedCount",
-    "keyFramesReceived",
-    "partialFramesLost"
+    "keyFramesReceived"
   ],
   "RTCVideoSenderStats": [
     "framesCaptured",
@@ -25206,7 +25131,6 @@
     "mediaSourceId"
   ],
   "RTCVideoSourceStats": [
-    "bitDepth",
     "frames",
     "framesPerSecond",
     "height",
@@ -31091,6 +31015,7 @@
     "gradient center"
   ],
   "connection": [
+    "close",
     "close pending flag",
     "closed",
     "credentials",
@@ -34518,7 +34443,6 @@
     "cache mode",
     "client",
     "clone",
-    "connection queue",
     "credentials mode",
     "cryptographic nonce metadata",
     "current url",
@@ -35107,6 +35031,9 @@
   "single-animation-timeline": [
     "auto",
     "none"
+  ],
+  "site": [
+    "same site"
   ],
   "skeleton joint": [
     "radius"
