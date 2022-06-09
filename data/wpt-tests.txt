@@ -1,4 +1,4 @@
-sha: e93dceeda80bfbd1beb9888a1d7272866dc4423e
+sha: 6af879fd3587fad533bfbdb098cafa6d6d4b6022
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -270,6 +270,7 @@ crashtest css/css-multicol/crashtests/oof-nested-multicol-inside-oof.html
 crashtest css/css-multicol/crashtests/relayout-nested-with-oof.html
 crashtest css/css-multicol/crashtests/relpos-inline-with-abspos-multicol-gets-block-child.html
 crashtest css/css-multicol/crashtests/remove-spanner-after-spanner-in-inline-before-inline.html
+crashtest css/css-multicol/crashtests/scrollable-spanner-in-nested.html
 crashtest css/css-multicol/crashtests/spanner-in-overflowed-container-before-float.html
 crashtest css/css-multicol/crashtests/spanner-in-overflowed-container-before-inline-content.html
 crashtest css/css-multicol/crashtests/specified-height-with-just-spanner-and-oof.html
@@ -33472,8 +33473,8 @@ testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.conic.negativ
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.conic.positive.rotation.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.empty.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.interpolate.alpha.html
-testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.interpolate.colour.html
-testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.interpolate.colouralpha.html
+testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.interpolate.color.html
+testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.interpolate.coloralpha.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.interpolate.multiple.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.interpolate.outside.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.interpolate.overlap.html
@@ -33493,7 +33494,7 @@ testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.linear.transf
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.object.compare.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.object.crosscanvas.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.object.current.html
-testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.object.invalidcolour.html
+testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.object.invalidcolor.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.object.invalidoffset.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.object.return.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.gradient.object.type.html
@@ -34674,10 +34675,10 @@ testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.empty.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.empty.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.alpha.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.alpha.worker.js
-testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.colour.html
-testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.colour.worker.js
-testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.colouralpha.html
-testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.colouralpha.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.color.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.color.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.coloralpha.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.coloralpha.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.multiple.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.multiple.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.interpolate.outside.html
@@ -34710,8 +34711,8 @@ testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.comp
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.compare.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.crosscanvas.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.crosscanvas.worker.js
-testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.invalidcolour.html
-testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.invalidcolour.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.invalidcolor.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.invalidcolor.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.invalidoffset.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.invalidoffset.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.gradient.object.update.html
@@ -35726,8 +35727,8 @@ testharness html/canvas/offscreen/the-offscreen-canvas/context.unrecognised.null
 testharness html/canvas/offscreen/the-offscreen-canvas/context.unrecognised.nullsuffix.worker.js
 testharness html/canvas/offscreen/the-offscreen-canvas/context.unrecognised.unicode.html
 testharness html/canvas/offscreen/the-offscreen-canvas/context.unrecognised.unicode.worker.js
-testharness html/canvas/offscreen/the-offscreen-canvas/initial.colour.html
-testharness html/canvas/offscreen/the-offscreen-canvas/initial.colour.worker.js
+testharness html/canvas/offscreen/the-offscreen-canvas/initial.color.html
+testharness html/canvas/offscreen/the-offscreen-canvas/initial.color.worker.js
 testharness html/canvas/offscreen/the-offscreen-canvas/initial.reset.2dstate.html
 testharness html/canvas/offscreen/the-offscreen-canvas/initial.reset.2dstate.worker.js
 testharness html/canvas/offscreen/the-offscreen-canvas/initial.reset.clip.html
