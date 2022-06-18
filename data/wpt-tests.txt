@@ -1,4 +1,4 @@
-sha: 6fd33e196498fc5c274f559992adfbb1fdee5aae
+sha: bd23d172241f5bdd356368a1ef05a649d8a79bad
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -97,6 +97,7 @@ crashtest css/css-break/iframe-in-repeated-table-header-crash.html
 crashtest css/css-break/large-text-node-oof-crash.html
 crashtest css/css-break/line-and-fragmentainer-break-before-float-crash.html
 crashtest css/css-break/max-height-with-margin-pushed-below-fragmentation-line-crash.html
+crashtest css/css-break/nested-float-in-multicol-crash.html
 crashtest css/css-break/nested-multicol-with-spanners-and-oofs-crash.html
 crashtest css/css-break/nested-oof-in-multicol-crash.html
 crashtest css/css-break/no-room-for-line-in-first-fragmentainer-crash.html
@@ -107,6 +108,7 @@ crashtest css/css-break/out-of-flow-in-new-column-crash.html
 crashtest css/css-break/out-of-flow-with-negative-offset-crash.html
 crashtest css/css-break/overflow-auto-height-with-bottom-padding-crash.html
 crashtest css/css-break/resumed-float-and-inline-block-crash.html
+crashtest css/css-break/table/repeated-section/nested-repeated-header-crash.html
 crashtest css/css-break/uncontained-oof-in-inline-after-break-000-crash.html
 crashtest css/css-break/uncontained-oof-in-inline-after-break-001-crash.html
 crashtest css/css-break/wide-line-after-floats-crash.html
@@ -3621,6 +3623,7 @@ manual webusb/usbDevice_controlTransferIn-manual.https.html
 manual webusb/usbDevice_forget-manual.https.html
 manual webusb/usbDevice_reset-manual.https.html
 manual webusb/usbDevice_transferIn-manual.https.html
+manual window-placement/fullscreen-companion-window-manual.tentative.https.html
 manual xhr/send-authentication-existing-session-manual.htm
 manual xhr/send-authentication-prompt-2-manual.htm
 manual xhr/send-authentication-prompt-manual.htm
@@ -16458,6 +16461,7 @@ reftest css/css-multicol/multicol-fill-balance-004.html
 reftest css/css-multicol/multicol-fill-balance-005.html
 reftest css/css-multicol/multicol-fill-balance-006.html
 reftest css/css-multicol/multicol-fill-balance-018.html
+reftest css/css-multicol/multicol-fill-balance-024.html
 reftest css/css-multicol/multicol-fill-balance-nested-000.html
 reftest css/css-multicol/multicol-gap-000.xht
 reftest css/css-multicol/multicol-gap-001.xht
@@ -16669,6 +16673,7 @@ reftest css/css-multicol/remove-child-in-strict-containment-also-spanner.html
 reftest css/css-multicol/remove-inline-with-block-beside-spanners.html
 reftest css/css-multicol/replaced-content-spanner-auto-width.html
 reftest css/css-multicol/resize-in-strict-containment-nested.html
+reftest css/css-multicol/resize-multicol-with-fixed-size-children.html
 reftest css/css-multicol/spanner-fragmentation-000.html
 reftest css/css-multicol/spanner-fragmentation-001.html
 reftest css/css-multicol/spanner-fragmentation-002.html
@@ -27949,8 +27954,16 @@ testharness css/css-grid/alignment/grid-self-baseline-not-applied-if-sizing-cycl
 testharness css/css-grid/alignment/grid-self-baseline-not-applied-if-sizing-cyclic-dependency-003.html
 testharness css/css-grid/animation/grid-template-columns-composition.html
 testharness css/css-grid/animation/grid-template-columns-interpolation.html
+testharness css/css-grid/animation/grid-template-columns-neutral-keyframe-001.html
+testharness css/css-grid/animation/grid-template-columns-neutral-keyframe-002.html
+testharness css/css-grid/animation/grid-template-columns-neutral-keyframe-003.html
+testharness css/css-grid/animation/grid-template-columns-neutral-keyframe-004.html
 testharness css/css-grid/animation/grid-template-rows-composition.html
 testharness css/css-grid/animation/grid-template-rows-interpolation.html
+testharness css/css-grid/animation/grid-template-rows-neutral-keyframe-001.html
+testharness css/css-grid/animation/grid-template-rows-neutral-keyframe-002.html
+testharness css/css-grid/animation/grid-template-rows-neutral-keyframe-003.html
+testharness css/css-grid/animation/grid-template-rows-neutral-keyframe-004.html
 testharness css/css-grid/chrome-crash-001.html
 testharness css/css-grid/grid-definition/explicit-grid-size-001.html
 testharness css/css-grid/grid-definition/flex-content-distribution-001.html
@@ -30759,6 +30772,7 @@ testharness css/selectors/focus-within-009.html
 testharness css/selectors/focus-within-display-none-001.html
 testharness css/selectors/has-argument-with-explicit-scope.html
 testharness css/selectors/has-basic.html
+testharness css/selectors/has-error-recovery.html
 testharness css/selectors/has-matches-to-uninserted-elements.html
 testharness css/selectors/has-relative-argument.html
 testharness css/selectors/has-specificity.html
