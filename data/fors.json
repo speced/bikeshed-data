@@ -458,6 +458,7 @@
     "<left>",
     "<length-percentage>",
     "<length>",
+    "<length>{1,4}",
     "<line-name-list>",
     "<line-names>",
     "<line-style>",
@@ -2386,6 +2387,7 @@
     "XRWebGLRenderingContext",
     "XRWebGLSubImage",
     "XSLTProcessor",
+    "[ <length> | <percentage> ]{1,4}",
     "[[associatedmediastreamids]]",
     "[[associatedremotemediastreams]]",
     "[[bufferedamount]]",
@@ -2756,6 +2758,7 @@
     "alternative",
     "altglyph",
     "altglyphdef",
+    "always",
     "ambiguous ampersand",
     "ambiguous ampersand state",
     "an end time",
@@ -3180,6 +3183,8 @@
     "await a stable state",
     "axis value",
     "axis-lock",
+    "axis-snap",
+    "axis-snapping",
     "azimuth",
     "azure",
     "b",
@@ -3484,6 +3489,7 @@
     "border-top-style",
     "border-top-width",
     "border-width",
+    "both",
     "bottle map",
     "bottom",
     "bound credential",
@@ -4927,6 +4933,8 @@
     "directional embedding",
     "directional keyword",
     "directional override",
+    "directional scroll",
+    "directional scrolling",
     "directionality of an attribute",
     "directionality-capable attributes",
     "directionally scroll an element",
@@ -5393,6 +5401,8 @@
     "explicit grid track",
     "explicit intrinsic inner size",
     "explicit row span",
+    "explicit scroll",
+    "explicit scrolling",
     "explicit span",
     "explicithistorynavigation",
     "explicitly enabled",
@@ -6587,6 +6597,8 @@
     "indistinguishable by user agent string",
     "individual",
     "inert",
+    "inertial scroll",
+    "inertial scrolling",
     "infinitely growable",
     "info",
     "infobackground",
@@ -6733,7 +6745,7 @@
     "inset-inline-end",
     "inset-inline-start",
     "inset-modified containing block",
-    "inside",
+    "inset-rectangle",
     "inside area",
     "install",
     "installation",
@@ -7407,6 +7419,7 @@
     "majorversion",
     "make disappear",
     "making a buffer available for reading",
+    "mandatory",
     "manifest",
     "manifest image resource",
     "manifest's",
@@ -8307,7 +8320,6 @@
     "output progress value",
     "outputs",
     "outset",
-    "outside",
     "outside-inside",
     "outstanding rejected promises weak set",
     "over",
@@ -8706,6 +8718,8 @@
     "plus-lighter",
     "pmi",
     "point",
+    "point-snap",
+    "point-snapping",
     "pointer",
     "pointer capture",
     "pointer capture target override",
@@ -8969,6 +8983,7 @@
     "protected",
     "protected mode",
     "protected worker",
+    "proximity",
     "proxy",
     "proxy-authentication entry",
     "pseudo-class",
@@ -9794,7 +9809,9 @@
     "scroll snap",
     "scroll snap area",
     "scroll snap container",
+    "scroll snap margin area 2",
     "scroll snap position",
+    "scroll snap positions",
     "scroll snapport",
     "scroll timeline",
     "scroll timeline offset",
@@ -9824,6 +9841,27 @@
     "scroll-padding-right",
     "scroll-padding-top",
     "scroll-snap-align",
+    "scroll-snap-margin",
+    "scroll-snap-margin-block",
+    "scroll-snap-margin-block-end",
+    "scroll-snap-margin-block-start",
+    "scroll-snap-margin-bottom",
+    "scroll-snap-margin-inline",
+    "scroll-snap-margin-inline-end",
+    "scroll-snap-margin-inline-start",
+    "scroll-snap-margin-left",
+    "scroll-snap-margin-right",
+    "scroll-snap-margin-top",
+    "scroll-snap-padding",
+    "scroll-snap-padding-block",
+    "scroll-snap-padding-block-start",
+    "scroll-snap-padding-bottom",
+    "scroll-snap-padding-inline",
+    "scroll-snap-padding-inline-end",
+    "scroll-snap-padding-inline-start",
+    "scroll-snap-padding-left",
+    "scroll-snap-padding-right",
+    "scroll-snap-padding-top",
     "scroll-snap-stop",
     "scroll-snap-type",
     "scroll-start",
@@ -10273,6 +10311,14 @@
     "smooth scroll completed",
     "smoothing over time",
     "sms:",
+    "snap",
+    "snap alignment container",
+    "snap behavior",
+    "snap margin",
+    "snapped",
+    "snapping",
+    "snapping behavior",
+    "snapping behaviors",
     "snapshot state",
     "snapshotstate",
     "sniff-scriptable flag",
@@ -12376,8 +12422,6 @@
     "child(<integer>)"
   ],
   "<system-color>": [
-    "accentcolor",
-    "accentcolortext",
     "activetext",
     "buttonborder",
     "buttonface",
@@ -33274,6 +33318,9 @@
     "layout generator function",
     "layout options"
   ],
+  "layout-containment": [
+    "containing box"
+  ],
   "lch()": [
     "alpha",
     "c",
@@ -34209,6 +34256,9 @@
     "paint function",
     "paintrenderingcontext2dsettings object"
   ],
+  "paint-containment": [
+    "containing box"
+  ],
   "parallel queue": [
     "enqueue steps",
     "enqueue the following steps"
@@ -34824,6 +34874,7 @@
     "inline",
     "mandatory",
     "none",
+    "point",
     "proximity",
     "x",
     "y"
@@ -35135,6 +35186,9 @@
   ],
   "site": [
     "same site"
+  ],
+  "size-containment": [
+    "containing box"
   ],
   "skeleton joint": [
     "radius"
@@ -36283,14 +36337,7 @@
     "'wrap-flow'!!'end'",
     "'wrap-flow'!!'maximum'",
     "'wrap-flow'!!'minimum'",
-    "'wrap-flow'!!'start'",
-    "auto",
-    "both",
-    "clear",
-    "end",
-    "maximum",
-    "minimum",
-    "start"
+    "'wrap-flow'!!'start'"
   ],
   "wrap-inside": [
     "auto",
@@ -36300,9 +36347,7 @@
     "'none'",
     "'wrap'",
     "'wrap-through'!!'none'",
-    "'wrap-through'!!'wrap'",
-    "none",
-    "wrap"
+    "'wrap-through'!!'wrap'"
   ],
   "writing-mode": [
     "horizontal-tb",
