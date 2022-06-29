@@ -12229,7 +12229,9 @@
   "<grid-line>": [
     "<custom-ident>",
     "<integer> && <custom-ident>?",
+    "[ <integer [−∞,−1]> | <integer [1,∞]> ] && <custom-ident>?",
     "auto",
+    "span && [ <integer [1,∞]> || <custom-ident> ]",
     "span && [ <integer> || <custom-ident> ]"
   ],
   "<left>": [
@@ -12363,6 +12365,8 @@
     "view-box"
   ],
   "<size>": [
+    "<length [0,∞]>",
+    "<length-percentage [0,∞]>{2}",
     "<length-percentage>{2}",
     "<length>",
     "closest-corner",
@@ -30151,6 +30155,7 @@
     "reverse"
   ],
   "animation-duration": [
+    "<time [0s,∞]>",
     "<time>"
   ],
   "animation-fill-mode": [
@@ -30160,6 +30165,7 @@
     "none"
   ],
   "animation-iteration-count": [
+    "<number [0,∞]>",
     "<number>",
     "infinite"
   ],
@@ -32323,6 +32329,7 @@
   ],
   "font-size": [
     "<absolute-size>",
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "<relative-size>",
     "large",
@@ -32335,6 +32342,7 @@
     "xx-small"
   ],
   "font-size-adjust": [
+    "<number [0,∞]>",
     "<number>",
     "aspect value",
     "cap-height",
@@ -32347,6 +32355,7 @@
     "none"
   ],
   "font-stretch": [
+    "<percentage [0,∞]>",
     "<percentage>",
     "condensed",
     "expanded",
@@ -32362,6 +32371,7 @@
     "italic",
     "normal",
     "oblique",
+    "oblique <angle [−90deg,90deg]>?",
     "oblique <angle>?",
     "small-caps"
   ],
@@ -32652,10 +32662,12 @@
     "normalize"
   ],
   "height": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
+    "fit-content(<length-percentage [0,∞]>)",
     "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
@@ -32935,7 +32947,9 @@
     "transaction"
   ],
   "initial-letter": [
+    "<integer [1,∞]>",
     "<integer>",
+    "<number [1,∞]>",
     "<number>",
     "drop",
     "initial letter sink",
@@ -33653,9 +33667,11 @@
     "stretch"
   ],
   "max-height": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "contain",
     "fit-content",
+    "fit-content(<length-percentage [0,∞]>)",
     "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
@@ -33672,9 +33688,11 @@
     "none"
   ],
   "max-width": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "contain",
     "fit-content",
+    "fit-content(<length-percentage [0,∞]>)",
     "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
@@ -33736,10 +33754,12 @@
     "stretch"
   ],
   "min-height": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
+    "fit-content(<length-percentage [0,∞]>)",
     "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
@@ -33761,10 +33781,12 @@
     "zero-if-scroll"
   ],
   "min-width": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
+    "fit-content(<length-percentage [0,∞]>)",
     "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
@@ -34787,30 +34809,37 @@
     "smooth"
   ],
   "scroll-padding": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block-end": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block-start": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline-end": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline-start": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto"
   ],
@@ -34835,21 +34864,21 @@
     "y"
   ],
   "scroll-start": [
-    "<length-percentage>",
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-block": [
-    "<length-percentage>",
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-inline": [
-    "<length-percentage>",
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
@@ -34876,14 +34905,14 @@
     "none"
   ],
   "scroll-start-x": [
-    "<length-percentage>",
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-y": [
-    "<length-percentage>",
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
@@ -35455,6 +35484,7 @@
   ],
   "text-combine-upright": [
     "all",
+    "digits <integer [2,4]>?",
     "digits <integer>?",
     "none"
   ],
@@ -35580,7 +35610,7 @@
     "fade()"
   ],
   "text-size-adjust": [
-    "<percentage>",
+    "<percentage [0,∞]>",
     "auto",
     "none"
   ],
@@ -36222,10 +36252,12 @@
     "pre-wrap"
   ],
   "width": [
+    "<length-percentage [0,∞]>",
     "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
+    "fit-content(<length-percentage [0,∞]>)",
     "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
