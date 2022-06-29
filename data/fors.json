@@ -751,17 +751,23 @@
     "AudioWorkletProcessor",
     "AudioWorkletProcessorConstructor",
     "AuthenticationExtensionsClientInputs",
+    "AuthenticationExtensionsClientInputsJSON",
     "AuthenticationExtensionsClientOutputs",
+    "AuthenticationExtensionsClientOutputsJSON",
     "AuthenticationExtensionsLargeBlobInputs",
     "AuthenticationExtensionsLargeBlobOutputs",
+    "AuthenticationResponseJSON",
     "AuthenticatorAssertionResponse",
+    "AuthenticatorAssertionResponseJSON",
     "AuthenticatorAttachment",
     "AuthenticatorAttestationResponse",
+    "AuthenticatorAttestationResponseJSON",
     "AuthenticatorResponse",
     "AuthenticatorSelectionCriteria",
     "AuthenticatorTransport",
     "AutomationRate",
     "BarProp",
+    "Base64URLString",
     "BaseAudioContext",
     "BaseComputedKeyframe",
     "BaseKeyframe",
@@ -1600,13 +1606,18 @@
     "PropertyDefinition",
     "PublicKeyCredential",
     "PublicKeyCredentialCreationOptions",
+    "PublicKeyCredentialCreationOptionsJSON",
     "PublicKeyCredentialDescriptor",
+    "PublicKeyCredentialDescriptorJSON",
     "PublicKeyCredentialEntity",
+    "PublicKeyCredentialJSON",
     "PublicKeyCredentialParameters",
     "PublicKeyCredentialRequestOptions",
+    "PublicKeyCredentialRequestOptionsJSON",
     "PublicKeyCredentialRpEntity",
     "PublicKeyCredentialType",
     "PublicKeyCredentialUserEntity",
+    "PublicKeyCredentialUserEntityJSON",
     "PutForwards",
     "QueuingStrategy",
     "QueuingStrategyInit",
@@ -1803,6 +1814,7 @@
     "ReferrerPolicy",
     "Region",
     "RegistrationOptions",
+    "RegistrationResponseJSON",
     "RemoteDocument",
     "RenderingContext",
     "Replaceable",
@@ -4964,6 +4976,7 @@
     "discoverable credential",
     "discoverable credential capable",
     "discoverable mode",
+    "discoverablecredentialmetadata",
     "discrete",
     "discretionary-ligatures",
     "disowned",
@@ -10208,6 +10221,7 @@
     "signature counter",
     "signcount",
     "signing procedure",
+    "silentcredentialdiscovery",
     "silently set the current time",
     "silver",
     "similar-origin window agent",
@@ -13665,8 +13679,22 @@
     "supported",
     "written"
   ],
+  "AuthenticationResponseJSON": [
+    "authenticatorAttachment",
+    "clientExtensionResults",
+    "id",
+    "rawId",
+    "response",
+    "type"
+  ],
   "AuthenticatorAssertionResponse": [
     "authenticatorData",
+    "signature",
+    "userHandle"
+  ],
+  "AuthenticatorAssertionResponseJSON": [
+    "authenticatorData",
+    "clientDataJSON",
     "signature",
     "userHandle"
   ],
@@ -13687,6 +13715,11 @@
     "getPublicKeyAlgorithm()",
     "getTransports",
     "getTransports()"
+  ],
+  "AuthenticatorAttestationResponseJSON": [
+    "attestationObject",
+    "clientDataJSON",
+    "transports"
   ],
   "AuthenticatorResponse": [
     "clientDataJSON"
@@ -18210,6 +18243,11 @@
   "DevicePermissionDescriptor": [
     "deviceId"
   ],
+  "DiscoverableCredentialMetadata": [
+    "id",
+    "otherui",
+    "type"
+  ],
   "DistanceModelType": [
     "\"exponential\"",
     "\"inverse\"",
@@ -21852,6 +21890,14 @@
     "maxContentSize",
     "minContentSize"
   ],
+  "Issuing a credential request to an authenticator": [
+    "authenticator",
+    "authenticatorExtensions",
+    "clientDataHash",
+    "options",
+    "rpId",
+    "savedCredentialIds"
+  ],
   "IterationCompositeOperation": [
     "\"accumulate\"",
     "\"replace\""
@@ -24252,10 +24298,19 @@
     "authenticatorAttachment",
     "getClientExtensionResults",
     "getClientExtensionResults()",
+    "isConditionalMediationAvailable",
+    "isConditionalMediationAvailable()",
     "isUserVerifyingPlatformAuthenticatorAvailable",
     "isUserVerifyingPlatformAuthenticatorAvailable()",
+    "issuing a credential request to an authenticator",
+    "parseCreationOptionsFromJSON",
+    "parseCreationOptionsFromJSON(options)",
+    "parseRequestOptionsFromJSON",
+    "parseRequestOptionsFromJSON(options)",
     "rawId",
-    "response"
+    "response",
+    "toJSON",
+    "toJSON()"
   ],
   "PublicKeyCredential/[[Create]](origin, options, sameOriginWithAncestors)": [
     "options",
@@ -24271,6 +24326,12 @@
     "credential",
     "sameOriginWithAncestors"
   ],
+  "PublicKeyCredential/parseCreationOptionsFromJSON(options)": [
+    "options"
+  ],
+  "PublicKeyCredential/parseRequestOptionsFromJSON(options)": [
+    "options"
+  ],
   "PublicKeyCredentialCreationOptions": [
     "attestation",
     "authenticatorSelection",
@@ -24282,7 +24343,23 @@
     "timeout",
     "user"
   ],
+  "PublicKeyCredentialCreationOptionsJSON": [
+    "attestation",
+    "authenticatorSelection",
+    "challenge",
+    "excludeCredentials",
+    "extensions",
+    "pubKeyCredParams",
+    "rp",
+    "timeout",
+    "user"
+  ],
   "PublicKeyCredentialDescriptor": [
+    "id",
+    "transports",
+    "type"
+  ],
+  "PublicKeyCredentialDescriptorJSON": [
     "id",
     "transports",
     "type"
@@ -24302,6 +24379,14 @@
     "timeout",
     "userVerification"
   ],
+  "PublicKeyCredentialRequestOptionsJSON": [
+    "allowCredentials",
+    "challenge",
+    "extensions",
+    "rpId",
+    "timeout",
+    "userVerification"
+  ],
   "PublicKeyCredentialRpEntity": [
     "id"
   ],
@@ -24312,6 +24397,11 @@
   "PublicKeyCredentialUserEntity": [
     "displayName",
     "id"
+  ],
+  "PublicKeyCredentialUserEntityJSON": [
+    "displayName",
+    "id",
+    "name"
   ],
   "QueuingStrategy": [
     "highWaterMark",
@@ -25640,6 +25730,14 @@
     "scope",
     "type",
     "updateViaCache"
+  ],
+  "RegistrationResponseJSON": [
+    "authenticatorAttachment",
+    "clientExtensionResults",
+    "id",
+    "rawId",
+    "response",
+    "type"
   ],
   "RemoteDocument": [
     "constructor",
