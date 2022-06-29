@@ -951,6 +951,7 @@
     "ChannelSplitterOptions",
     "CharacterData",
     "CharacteristicEventHandlers",
+    "CheckVisibilityOptions",
     "ChildBreakToken",
     "ChildDisplayType",
     "ChildNode",
@@ -1356,7 +1357,6 @@
     "InvalidStateError",
     "IsNonNegativeNumber",
     "IsReadableStreamLocked",
-    "IsVisibleOptions",
     "IsWritableStreamLocked",
     "IterationCompositeOperation",
     "JsonLdContext",
@@ -16323,6 +16323,10 @@
   "CharacteristicEventHandlers": [
     "oncharacteristicvaluechanged"
   ],
+  "CheckVisibilityOptions": [
+    "checkOpacity",
+    "checkVisibilityCSS"
+  ],
   "ChildBreakToken": [
     "[[unique id]]",
     "breakType",
@@ -18679,6 +18683,8 @@
     "attr-associated elements",
     "attribute list",
     "attributes",
+    "checkVisibility()",
+    "checkVisibility(options)",
     "class",
     "classList",
     "className",
@@ -18720,8 +18726,6 @@
     "insertAdjacentElement(where, element)",
     "insertAdjacentText(where, data)",
     "is value",
-    "isVisible()",
-    "isVisible(options)",
     "local name",
     "localName",
     "matches(selectors)",
@@ -18785,6 +18789,12 @@
   "Element/attachShadow(init)": [
     "init"
   ],
+  "Element/checkVisibility()": [
+    "options"
+  ],
+  "Element/checkVisibility(options)": [
+    "options"
+  ],
   "Element/closest(selectors)": [
     "selectors"
   ],
@@ -18835,12 +18845,6 @@
   "Element/insertAdjacentText(where, data)": [
     "data",
     "where"
-  ],
-  "Element/isVisible()": [
-    "options"
-  ],
-  "Element/isVisible(options)": [
-    "options"
   ],
   "Element/matches(selectors)": [
     "selectors"
@@ -21847,10 +21851,6 @@
   "IntrinsicSizesResultOptions": [
     "maxContentSize",
     "minContentSize"
-  ],
-  "IsVisibleOptions": [
-    "checkOpacity",
-    "checkVisibilityCSS"
   ],
   "IterationCompositeOperation": [
     "\"accumulate\"",
