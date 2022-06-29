@@ -21174,6 +21174,7 @@
     "value"
   ],
   "IDBDatabase": [
+    "close",
     "close()",
     "createObjectStore(name)",
     "createObjectStore(name, options)",
@@ -21187,7 +21188,8 @@
     "transaction(storeNames)",
     "transaction(storeNames, mode)",
     "transaction(storeNames, mode, options)",
-    "version"
+    "version",
+    "versionchange"
   ],
   "IDBDatabase/createObjectStore(name)": [
     "name",
@@ -21516,8 +21518,10 @@
     "keyPath"
   ],
   "IDBOpenDBRequest": [
+    "blocked",
     "onblocked",
-    "onupgradeneeded"
+    "onupgradeneeded",
+    "upgradeneeded"
   ],
   "IDBRequest": [
     "error",
@@ -21526,6 +21530,7 @@
     "readyState",
     "result",
     "source",
+    "success",
     "transaction"
   ],
   "IDBRequestReadyState": [
@@ -21533,8 +21538,10 @@
     "\"pending\""
   ],
   "IDBTransaction": [
+    "abort",
     "abort()",
     "commit()",
+    "complete",
     "db",
     "durability",
     "error",
@@ -31064,7 +31071,6 @@
     "gradient center"
   ],
   "connection": [
-    "close",
     "close pending flag",
     "closed",
     "credentials",
@@ -31072,8 +31078,7 @@
     "object store set",
     "origin",
     "timing info",
-    "version",
-    "versionchange"
+    "version"
   ],
   "connection timing info": [
     "alpn negotiated protocol",
@@ -34540,7 +34545,6 @@
   ],
   "request": [
     "add a range header",
-    "blocked",
     "body",
     "cache mode",
     "client",
@@ -34584,11 +34588,9 @@
     "result",
     "service-workers mode",
     "source",
-    "success",
     "timing allow failed flag",
     "transaction",
     "unsafe-request flag",
-    "upgradeneeded",
     "url",
     "url list",
     "use-cors-preflight flag",
@@ -35857,7 +35859,6 @@
     "commit",
     "committed",
     "committing",
-    "complete",
     "connection",
     "created",
     "durability hint",
