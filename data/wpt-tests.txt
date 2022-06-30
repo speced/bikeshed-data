@@ -1,4 +1,4 @@
-sha: de5b2c973c0e90d3e909c18e05dd1bbce2d2e746
+sha: ba22f229dfafa51c637aa02957f8b9f330f1cfa3
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -36248,6 +36248,7 @@ testharness html/dom/idlharness-shadowrealm.window.js
 testharness html/dom/idlharness.https.html
 testharness html/dom/idlharness.worker.js
 testharness html/dom/reflection-embedded.html
+testharness html/dom/reflection-forms-weekmonth.html
 testharness html/dom/reflection-forms.html
 testharness html/dom/reflection-grouping.html
 testharness html/dom/reflection-metadata.html
@@ -37316,13 +37317,17 @@ testharness html/semantics/forms/constraints/form-validation-validate.html
 testharness html/semantics/forms/constraints/form-validation-validity-badInput.html
 testharness html/semantics/forms/constraints/form-validation-validity-customError.html
 testharness html/semantics/forms/constraints/form-validation-validity-patternMismatch.html
+testharness html/semantics/forms/constraints/form-validation-validity-rangeOverflow-weekmonth.html
 testharness html/semantics/forms/constraints/form-validation-validity-rangeOverflow.html
+testharness html/semantics/forms/constraints/form-validation-validity-rangeUnderflow-weekmonth.html
 testharness html/semantics/forms/constraints/form-validation-validity-rangeUnderflow.html
 testharness html/semantics/forms/constraints/form-validation-validity-stepMismatch.html
 testharness html/semantics/forms/constraints/form-validation-validity-tooLong.html
 testharness html/semantics/forms/constraints/form-validation-validity-tooShort.html
 testharness html/semantics/forms/constraints/form-validation-validity-typeMismatch.html
+testharness html/semantics/forms/constraints/form-validation-validity-valid-weekmonth.html
 testharness html/semantics/forms/constraints/form-validation-validity-valid.html
+testharness html/semantics/forms/constraints/form-validation-validity-valueMissing-weekmonth.html
 testharness html/semantics/forms/constraints/form-validation-validity-valueMissing.html
 testharness html/semantics/forms/constraints/form-validation-willValidate-datalist.html
 testharness html/semantics/forms/constraints/form-validation-willValidate.html
@@ -37448,6 +37453,7 @@ testharness html/semantics/forms/the-input-element/color.html
 testharness html/semantics/forms/the-input-element/date.html
 testharness html/semantics/forms/the-input-element/datetime-local-trailing-zeros.html
 testharness html/semantics/forms/the-input-element/datetime-local.html
+testharness html/semantics/forms/the-input-element/datetime-weekmonth.html
 testharness html/semantics/forms/the-input-element/datetime.html
 testharness html/semantics/forms/the-input-element/defaultValue-clobbering.html
 testharness html/semantics/forms/the-input-element/email-set-value.html
@@ -37462,7 +37468,9 @@ testharness html/semantics/forms/the-input-element/input-labels.html
 testharness html/semantics/forms/the-input-element/input-list.html
 testharness html/semantics/forms/the-input-element/input-seconds-leading-zeroes.html
 testharness html/semantics/forms/the-input-element/input-setcustomvalidity.html
+testharness html/semantics/forms/the-input-element/input-stepdown-weekmonth.html
 testharness html/semantics/forms/the-input-element/input-stepdown.html
+testharness html/semantics/forms/the-input-element/input-stepup-weekmonth.html
 testharness html/semantics/forms/the-input-element/input-stepup.html
 testharness html/semantics/forms/the-input-element/input-submit-remove-jssubmit.html
 testharness html/semantics/forms/the-input-element/input-type-button.html
@@ -37501,6 +37509,7 @@ testharness html/semantics/forms/the-input-element/required_attribute.html
 testharness html/semantics/forms/the-input-element/reset.html
 testharness html/semantics/forms/the-input-element/search_input.html
 testharness html/semantics/forms/the-input-element/selection-pointer.html
+testharness html/semantics/forms/the-input-element/selection-weekmonth.html
 testharness html/semantics/forms/the-input-element/selection.html
 testharness html/semantics/forms/the-input-element/show-picker-cross-origin-iframe.html
 testharness html/semantics/forms/the-input-element/show-picker-disabled-readonly.html
@@ -37510,8 +37519,10 @@ testharness html/semantics/forms/the-input-element/text.html
 testharness html/semantics/forms/the-input-element/time-2.html
 testharness html/semantics/forms/the-input-element/time-focus-dynamic-value-change.html
 testharness html/semantics/forms/the-input-element/time.html
+testharness html/semantics/forms/the-input-element/type-change-state-weekmonth.html
 testharness html/semantics/forms/the-input-element/type-change-state.html
 testharness html/semantics/forms/the-input-element/url.html
+testharness html/semantics/forms/the-input-element/valueMode-weekmonth.html
 testharness html/semantics/forms/the-input-element/valueMode.html
 testharness html/semantics/forms/the-input-element/week.html
 testharness html/semantics/forms/the-label-element/clicking-interactive-content.html
@@ -40677,7 +40688,7 @@ testharness preload/preload-invalid-resources.html
 testharness preload/preload-link-cached-stylesheet-different-doc.html
 testharness preload/preload-referrer-policy.html
 testharness preload/preload-resource-match.https.html
-testharness preload/preload-strict-dynamic.html
+testharness preload/preload-strict-dynamic.sub.html
 testharness preload/preload-time-to-fetch.https.html
 testharness preload/preload-type-match.html
 testharness preload/preload-with-type.html
