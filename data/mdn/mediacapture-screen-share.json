@@ -15,7 +15,8 @@
                     "version_added": "72"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/487935'>bug 487935</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -47,10 +48,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": false,
-                    "notes": "API is available, but will always fail with <code>NotAllowedError</code>."
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -379,7 +377,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/feature-policy.json",
+            "filename": "http/headers/Feature-Policy.json",
             "name": "display-capture",
             "slug": "HTTP/Headers/Feature-Policy/display-capture",
             "summary": "The HTTP Feature-Policy header display-capture directive controls whether or not the document is permitted to use Screen Capture API, that is, getDisplayMedia() to capture the screen's contents.",

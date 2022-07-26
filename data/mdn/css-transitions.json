@@ -17,6 +17,7 @@
                     },
                     {
                         "version_added": "74",
+                        "version_removed": "87",
                         "partial_implementation": true,
                         "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
                     }
@@ -39,8 +40,9 @@
                     },
                     {
                         "version_added": "12",
+                        "version_removed": "13.1",
                         "partial_implementation": true,
-                        "notes": "Although the <code>ontransitioncancel</code> property is supported, the <code>transitioncancel</code> event is never fired."
+                        "notes": "Although the <code>ontransitioncancel</code> event handler property is supported, the <code>transitioncancel</code> event is never fired."
                     }
                 ],
                 "safari_ios": "mirror",
@@ -51,7 +53,8 @@
                         "version_added": "87"
                     },
                     {
-                        "version_added": "79",
+                        "version_added": false,
+                        "version_removed": "87",
                         "partial_implementation": true,
                         "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
                     }
@@ -78,6 +81,7 @@
                     },
                     {
                         "version_added": "74",
+                        "version_removed": "87",
                         "partial_implementation": true,
                         "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
                     }
@@ -100,8 +104,9 @@
                     },
                     {
                         "version_added": "12",
+                        "version_removed": "13.1",
                         "partial_implementation": true,
-                        "notes": "Although the <code>ontransitioncancel</code> property is supported, the <code>transitioncancel</code> event is never fired."
+                        "notes": "Although the <code>ontransitioncancel</code> event handler property is supported, the <code>transitioncancel</code> event is never fired."
                     }
                 ],
                 "safari_ios": "mirror",
@@ -112,7 +117,8 @@
                         "version_added": "87"
                     },
                     {
-                        "version_added": "79",
+                        "version_added": false,
+                        "version_removed": "87",
                         "partial_implementation": true,
                         "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
                     }
@@ -614,19 +620,7 @@
                         "version_added": "4"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "16"
-                    },
-                    {
-                        "version_added": "49",
-                        "prefix": "-webkit-"
-                    },
-                    {
-                        "prefix": "-moz-",
-                        "version_added": "4"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": [
                     {
                         "version_added": "10"
@@ -744,19 +738,7 @@
                         "version_added": "4"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "16"
-                    },
-                    {
-                        "version_added": "49",
-                        "prefix": "-webkit-"
-                    },
-                    {
-                        "prefix": "-moz-",
-                        "version_added": "4"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": [
                     {
                         "version_added": "10"
@@ -866,19 +848,7 @@
                         "version_added": "4"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "16"
-                    },
-                    {
-                        "version_added": "49",
-                        "prefix": "-webkit-"
-                    },
-                    {
-                        "prefix": "-moz-",
-                        "version_added": "4"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": [
                     {
                         "version_added": "10"
@@ -988,19 +958,7 @@
                         "version_added": "4"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "16"
-                    },
-                    {
-                        "version_added": "49",
-                        "prefix": "-webkit-"
-                    },
-                    {
-                        "prefix": "-moz-",
-                        "version_added": "4"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": [
                     {
                         "version_added": "10"
@@ -1115,24 +1073,7 @@
                         "version_added": "4"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "16",
-                        "notes": [
-                            "Before Firefox 57, transitions do not work when transitioning from a <a href='https://developer.mozilla.org/docs/Web/CSS/text-shadow'><code>text-shadow</code></a> with a color specified to a <code>text-shadow</code> without a color specified (see <a href='https://bugzil.la/726550'>bug 726550</a>).",
-                            "Before Firefox 57, cancelling a filling animation (for example, with <code>animation-fill-mode: forwards</code> set) can trigger a transition set on the same element, although only once (see <a href='https://bugzil.la/1192592'>bug 1192592</a> and <a href='https://bug1192592.bmoattachments.org/attachment.cgi?id=8843824'>these test cases</a> for more information).",
-                            "Before Firefox 57, the <a href='https://developer.mozilla.org/docs/Web/CSS/background-position'><code>background-position</code></a> property can't be transitioned between two values containing different numbers of <a href='https://developer.mozilla.org/docs/Web/CSS/position_value'><code>&lt;position&gt;</code></a> values, for example <code>background-position: 10px 10px;</code> and <code>background-position: 20px 20px, 30px 30px;</code> (see <a href='https://bugzil.la/1390446'>bug 1390446</a>)."
-                        ]
-                    },
-                    {
-                        "version_added": "49",
-                        "prefix": "-webkit-"
-                    },
-                    {
-                        "prefix": "-moz-",
-                        "version_added": "4"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": [
                     {
                         "version_added": "10"
