@@ -303,6 +303,7 @@
     "<attribute-selector>",
     "<auto-repeat>",
     "<auto-track-list>",
+    "<axis>",
     "<bad-string-token>",
     "<bad-url-token>",
     "<baseline-position>",
@@ -396,8 +397,6 @@
     "<easing-function>",
     "<east-asian-variant-values>",
     "<east-asian-width-values>",
-    "<element-offset-edge>",
-    "<element-offset>",
     "<eof-token>",
     "<explicit-track-list>",
     "<extension-name>",
@@ -550,7 +549,7 @@
     "<rule-list>",
     "<scope-end>",
     "<scope-start>",
-    "<scroll-timeline-offset>",
+    "<scroller>",
     "<selector-list>",
     "<selector-scope>",
     "<self-position>",
@@ -671,7 +670,6 @@
     "@right-middle",
     "@right-top",
     "@scope",
-    "@scroll-timeline",
     "@supports",
     "@top-center",
     "@top-left",
@@ -897,7 +895,6 @@
     "CSSRule",
     "CSSRuleList",
     "CSSScale",
-    "CSSScrollTimelineRule",
     "CSSSkew",
     "CSSSkewX",
     "CSSSkewY",
@@ -1000,7 +997,6 @@
     "ConstraintError",
     "ConstraintSet",
     "Constraints",
-    "ContainerBasedOffset",
     "ConvertCoordinateOptions",
     "ConvertToInt",
     "ConvolverNode",
@@ -1099,11 +1095,9 @@
     "EcKeyImportParams",
     "EcdhKeyDeriveParams",
     "EcdsaParams",
-    "Edge",
     "EffectCallback",
     "EffectTiming",
     "Element",
-    "ElementBasedOffset",
     "ElementCSSInlineStyle",
     "ElementContentEditable",
     "ElementCreationOptions",
@@ -2030,15 +2024,13 @@
     "Screen",
     "ScreenOrientation",
     "ScriptProcessorNode",
+    "ScrollAxis",
     "ScrollBehavior",
-    "ScrollDirection",
     "ScrollIntoViewOptions",
     "ScrollLogicalPosition",
     "ScrollOptions",
     "ScrollRestoration",
     "ScrollTimeline",
-    "ScrollTimelineAutoKeyword",
-    "ScrollTimelineOffset",
     "ScrollTimelineOptions",
     "ScrollToOptions",
     "SecureContext",
@@ -2245,6 +2237,8 @@
     "VideoResizeModeEnum",
     "VideoTrack",
     "VideoTrackList",
+    "ViewTimeline",
+    "ViewTimelineOptions",
     "VisibilityState",
     "VisualViewport",
     "VoidFunction",
@@ -4163,7 +4157,6 @@
     "container query length",
     "container size query",
     "container style query",
-    "container-based offset",
     "container-name",
     "container-type",
     "containing block",
@@ -5171,14 +5164,11 @@
     "effective automation rate",
     "effective character map",
     "effective domain",
-    "effective end offset",
     "effective frame rate",
     "effective overload set",
     "effective playback rate",
     "effective position of the legacy mouse pointer",
     "effective resident key requirement for credential creation",
-    "effective scroll offset",
-    "effective start offset",
     "effective user verification requirement for assertion",
     "effective user verification requirement for credential creation",
     "elapsed time",
@@ -5192,7 +5182,6 @@
     "element queue",
     "element type",
     "element()",
-    "element-based offset",
     "element-based template.",
     "element-not-rendered",
     "elements",
@@ -9454,10 +9443,7 @@
     "resolution",
     "resolvable private address resolution procedure",
     "resolve",
-    "resolve a container-based offset",
     "resolve a module specifier",
-    "resolve a scroll timeline offset",
-    "resolve an element-based offset",
     "resolve an origin",
     "resolve get client promise",
     "resolve job promise",
@@ -9818,17 +9804,18 @@
     "scroll completed",
     "scroll container",
     "scroll position data",
+    "scroll progress timelines",
     "scroll restoration mode",
     "scroll snap",
     "scroll snap area",
     "scroll snap container",
     "scroll snap position",
     "scroll snapport",
-    "scroll timeline",
-    "scroll timeline offset",
     "scroll to the beginning of the document",
     "scroll to the fragment",
+    "scroll()",
     "scroll-behavior",
+    "scroll-driven animations",
     "scroll-margin",
     "scroll-margin-block",
     "scroll-margin-block-end",
@@ -9860,6 +9847,9 @@
     "scroll-start-target",
     "scroll-start-x",
     "scroll-start-y",
+    "scroll-timeline",
+    "scroll-timeline-axis",
+    "scroll-timeline-name",
     "scrollable overflow",
     "scrollable overflow area",
     "scrollable overflow rectangle",
@@ -9966,7 +9956,6 @@
     "serialize a csspropertyrule",
     "serialize a cssrotate",
     "serialize a cssscale",
-    "serialize a cssscrolltimelinerule",
     "serialize a cssskew",
     "serialize a cssskewx",
     "serialize a cssskewy",
@@ -9988,9 +9977,7 @@
     "serialize a mime type",
     "serialize a mime type to bytes",
     "serialize a response url for reporting",
-    "serialize a scroll timeline offset",
     "serialize a selector",
-    "serialize a selector() function",
     "serialize a simple selector",
     "serialize a string",
     "serialize a url",
@@ -11579,6 +11566,13 @@
     "videoframe",
     "view",
     "view offset",
+    "view progress rectangle",
+    "view progress subject",
+    "view progress timelines",
+    "view-timeline",
+    "view-timeline-axis",
+    "view-timeline-inset",
+    "view-timeline-name",
     "viewer",
     "viewport",
     "viewport coordinate system",
@@ -12711,16 +12705,6 @@
     "inherits",
     "initial-value",
     "syntax"
-  ],
-  "@scroll-timeline": [
-    "orientation",
-    "scroll-offsets",
-    "source"
-  ],
-  "@scroll-timeline/source": [
-    "auto",
-    "none",
-    "selector()"
   ],
   "@viewport": [
     "height",
@@ -15639,12 +15623,6 @@
     "x",
     "y",
     "z"
-  ],
-  "CSSScrollTimelineRule": [
-    "name",
-    "orientation",
-    "scrollOffsets",
-    "source"
   ],
   "CSSSkew": [
     "CSSSkew(ax, ay)",
@@ -18725,10 +18703,6 @@
   "EcdsaParams": [
     "hash"
   ],
-  "Edge": [
-    "\"end\"",
-    "\"start\""
-  ],
   "EffectCallback": [
     "animation",
     "currentTarget",
@@ -19008,11 +18982,6 @@
   ],
   "Element/webkitMatchesSelector(selectors)": [
     "selectors"
-  ],
-  "ElementBasedOffset": [
-    "edge",
-    "target",
-    "threshold"
   ],
   "ElementCSSInlineStyle": [
     "attributeStyleMap",
@@ -26376,20 +26345,16 @@
     "bufferSize",
     "onaudioprocess"
   ],
+  "ScrollAxis": [
+    "\"block\"",
+    "\"horizontal\"",
+    "\"inline\"",
+    "\"vertical\""
+  ],
   "ScrollBehavior": [
     "\"auto\"",
     "\"instant\"",
     "\"smooth\""
-  ],
-  "ScrollDirection": [
-    "\"block\"",
-    "\"horizontal\"",
-    "\"inline\"",
-    "\"vertical\"",
-    "block",
-    "horizontal",
-    "inline",
-    "vertical"
   ],
   "ScrollIntoViewOptions": [
     "block",
@@ -26411,11 +26376,9 @@
   "ScrollTimeline": [
     "ScrollTimeline()",
     "ScrollTimeline(options)",
+    "axis",
     "constructor()",
     "constructor(options)",
-    "orientation",
-    "scrollOffsets",
-    "set the offset value",
     "source"
   ],
   "ScrollTimeline/ScrollTimeline()": [
@@ -26430,12 +26393,8 @@
   "ScrollTimeline/constructor(options)": [
     "options"
   ],
-  "ScrollTimelineAutoKeyword": [
-    "\"auto\""
-  ],
   "ScrollTimelineOptions": [
-    "orientation",
-    "scrollOffsets",
+    "axis",
     "source"
   ],
   "ScrollToOptions": [
@@ -28176,6 +28135,31 @@
     "onremovetrack",
     "removetrack",
     "selectedIndex"
+  ],
+  "ViewTimeline": [
+    "ViewTimeline()",
+    "ViewTimeline(options)",
+    "constructor()",
+    "constructor(options)",
+    "endOffset",
+    "startOffset",
+    "subject"
+  ],
+  "ViewTimeline/ViewTimeline()": [
+    "options"
+  ],
+  "ViewTimeline/ViewTimeline(options)": [
+    "options"
+  ],
+  "ViewTimeline/constructor()": [
+    "options"
+  ],
+  "ViewTimeline/constructor(options)": [
+    "options"
+  ],
+  "ViewTimelineOptions": [
+    "axis",
+    "subject"
   ],
   "VisibilityState": [
     "hidden",
@@ -34942,11 +34926,14 @@
     "anonymous",
     "use-credentials"
   ],
-  "scroll timeline": [
-    "calculate scroll timeline progress",
-    "effective scroll offsets",
-    "resolve scroll timeline offsets",
-    "scroll timeline progress"
+  "scroll()": [
+    "<custom-ident>",
+    "block",
+    "horizontal",
+    "inline",
+    "nearest",
+    "root",
+    "vertical"
   ],
   "scroll-anchoring": [
     "anchor node"
@@ -35064,6 +35051,15 @@
     "center",
     "end",
     "start"
+  ],
+  "scroll-timeline-axis": [
+    "<custom-ident>",
+    "block",
+    "horizontal",
+    "inline",
+    "nearest",
+    "root",
+    "vertical"
   ],
   "scrollbar-color": [
     "<color>",
@@ -35332,11 +35328,8 @@
     "name"
   ],
   "source": [
-    "auto",
     "height",
     "media",
-    "none",
-    "selector()",
     "sizes",
     "src",
     "srcset",
@@ -36259,6 +36252,19 @@
     "requested viewport scale",
     "viewport modifiable",
     "viewtarget"
+  ],
+  "view-timeline-axis": [
+    "<custom-ident>",
+    "block",
+    "horizontal",
+    "inline",
+    "nearest",
+    "root",
+    "vertical"
+  ],
+  "view-timeline-inset": [
+    "<length-percentage>",
+    "auto"
   ],
   "viewArg": [
     "altKeyArg",
