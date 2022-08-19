@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import bikeshed
 import datetime
 import json
 import os
 import subprocess
+
+import bikeshed
 
 def main():
 	updateAndCommit()
@@ -43,7 +44,7 @@ def updateAndCommit():
 	print(subprocess.check_output("git push", shell=True))
 
 def updateDataFiles(path):
-	bikeshed.constants.quiet = False
+	bikeshed.constants.quiet = 0
 	bikeshed.update.update(path=path, force=True)
 
 def diffManifest(old, new):
