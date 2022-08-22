@@ -205,6 +205,27 @@
       "shortname": "webaudio"
     }
   },
+  "AudioRenderCapacityEvent()": {
+    "AudioRenderCapacityEvent(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "shortname": "webaudio"
+    },
+    "AudioRenderCapacityEvent(type, eventInitDict)": {
+      "args": [
+        "type",
+        "eventInitDict"
+      ],
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "shortname": "webaudio"
+    }
+  },
   "AudioWorkletNode()": {
     "AudioWorkletNode(context, name)": {
       "args": [
@@ -6766,6 +6787,7 @@
       "for": [
         "AnimationEvent",
         "AnimationPlaybackEvent",
+        "AudioRenderCapacityEvent",
         "CloseEvent",
         "CompositionEvent",
         "ContentVisibilityAutoStateChangedEvent",
@@ -6823,6 +6845,7 @@
       "for": [
         "AnimationPlaybackEvent",
         "AudioProcessingEvent",
+        "AudioRenderCapacityEvent",
         "CloseEvent",
         "CompositionEvent",
         "ContentVisibilityAutoStateChangedEvent",
@@ -18082,6 +18105,7 @@
       "args": [],
       "for": [
         "AudioBufferSourceNode",
+        "AudioRenderCapacity",
         "AudioScheduledSourceNode",
         "HTMLMarqueeElement",
         "MessagePort",
@@ -18097,6 +18121,15 @@
         "TimeRanges"
       ],
       "shortname": "html"
+    },
+    "start(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "AudioRenderCapacity"
+      ],
+      "shortname": "webaudio"
     },
     "start(when)": {
       "args": [
@@ -18188,6 +18221,7 @@
     "stop()": {
       "args": [],
       "for": [
+        "AudioRenderCapacity",
         "AudioScheduledSourceNode",
         "HTMLMarqueeElement",
         "MediaStreamTrack",

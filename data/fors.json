@@ -737,6 +737,10 @@
     "AudioParamMap",
     "AudioProcessingEvent",
     "AudioProcessingEventInit",
+    "AudioRenderCapacity",
+    "AudioRenderCapacityEvent",
+    "AudioRenderCapacityEventInit",
+    "AudioRenderCapacityOptions",
     "AudioScheduledSourceNode",
     "AudioTimestamp",
     "AudioTrack",
@@ -3072,6 +3076,7 @@
     "attributes for form submission",
     "attributetype",
     "audio",
+    "audio buffer underrun",
     "audio or video mime type",
     "audio or video type pattern matching algorithm",
     "audio sample",
@@ -3089,6 +3094,9 @@
     "audioparamdescriptor",
     "audioprocessingevent",
     "audioprocessingeventinit",
+    "audiorenderCapacity",
+    "audiorenderCapacityevent",
+    "audiorenderCapacityoptions",
     "audioscheduledsourcenode",
     "audiotimestamp",
     "audioworklet",
@@ -7343,6 +7351,7 @@
     "live",
     "live ranges",
     "load",
+    "load value",
     "loaddocumentcallback-options",
     "loaded",
     "loading",
@@ -8933,6 +8942,7 @@
     "processing",
     "processing a manifest",
     "processing a queue",
+    "processing an input buffer",
     "processing an item",
     "processing blob parts",
     "processing mode",
@@ -10729,6 +10739,8 @@
     "system id",
     "system key press handler",
     "system visibility state",
+    "system-level audio callback",
+    "system-level audio callback buffer size",
     "systemLanguage",
     "t1",
     "t2",
@@ -13253,6 +13265,7 @@
     "createMediaStreamTrackSource(mediaStreamTrack)",
     "getOutputTimestamp()",
     "outputLatency",
+    "renderCapacity",
     "resume()",
     "suspend()"
   ],
@@ -13500,6 +13513,54 @@
     "inputBuffer",
     "outputBuffer",
     "playbackTime"
+  ],
+  "AudioRenderCapacity": [
+    "onupdate",
+    "start()",
+    "start(options)",
+    "stop()"
+  ],
+  "AudioRenderCapacity/start()": [
+    "options"
+  ],
+  "AudioRenderCapacity/start(options)": [
+    "options"
+  ],
+  "AudioRenderCapacityEvent": [
+    "AudioRenderCapacityEvent(type)",
+    "AudioRenderCapacityEvent(type, eventInitDict)",
+    "averageLoad",
+    "constructor",
+    "constructor(type)",
+    "constructor(type, eventInitDict)",
+    "peakLoad",
+    "timestamp",
+    "underrunRatio"
+  ],
+  "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type)": [
+    "eventInitDict",
+    "type"
+  ],
+  "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "AudioRenderCapacityEvent/constructor(type)": [
+    "eventInitDict",
+    "type"
+  ],
+  "AudioRenderCapacityEvent/constructor(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "AudioRenderCapacityEventInit": [
+    "averageLoad",
+    "peakLoad",
+    "timestamp",
+    "underrunRatio"
+  ],
+  "AudioRenderCapacityOptions": [
+    "updateInterval"
   ],
   "AudioScheduledSourceNode": [
     "[[source started]]",
