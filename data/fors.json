@@ -610,6 +610,7 @@
     "<time-percentage>",
     "<time>",
     "<timeline-name>",
+    "<timeline-range-name>",
     "<toggle-value>",
     "<top>",
     "<track-breadth>",
@@ -2834,12 +2835,15 @@
     "animation worklet",
     "animation-composition",
     "animation-delay",
+    "animation-delay-end",
+    "animation-delay-start",
     "animation-direction",
     "animation-duration",
     "animation-fill-mode",
     "animation-iteration-count",
     "animation-name",
     "animation-play-state",
+    "animation-range",
     "animation-tainted",
     "animation-timeline",
     "animation-timing-function",
@@ -7893,6 +7897,7 @@
     "named property setter",
     "named property visibility algorithm",
     "named string",
+    "named timeline range",
     "namedItem()",
     "namedcurve",
     "namedflows",
@@ -13090,8 +13095,17 @@
     "Animation play(optional AnimationEffect? effect = null)",
     "currentTime",
     "duration",
+    "getCurrentTime()",
+    "getCurrentTime(optionalrangeName)",
+    "getCurrentTime(rangeName)",
     "play()",
     "play(effect)"
+  ],
+  "AnimationTimeline/getCurrentTime()": [
+    "rangeName"
+  ],
+  "AnimationTimeline/getCurrentTime(rangeName)": [
+    "rangeName"
   ],
   "AnimationTimeline/play(effect)": [
     "effect"
@@ -30401,6 +30415,14 @@
   "animation-delay": [
     "<time>"
   ],
+  "animation-delay-end": [
+    "<time>",
+    "<timeline-range-name> <percentage>"
+  ],
+  "animation-delay-start": [
+    "<time>",
+    "<timeline-range-name> <percentage>"
+  ],
   "animation-direction": [
     "alternate",
     "alternate-reverse",
@@ -30429,6 +30451,12 @@
   "animation-play-state": [
     "paused",
     "running"
+  ],
+  "animation-timeline-range": [
+    "contain",
+    "cover",
+    "entry",
+    "exit"
   ],
   "animationevent": [
     "animationcancel",
