@@ -757,17 +757,26 @@
     "AudioWorkletProcessor",
     "AudioWorkletProcessorConstructor",
     "AuthenticationExtensionsClientInputs",
+    "AuthenticationExtensionsClientInputsJSON",
     "AuthenticationExtensionsClientOutputs",
+    "AuthenticationExtensionsClientOutputsJSON",
     "AuthenticationExtensionsLargeBlobInputs",
     "AuthenticationExtensionsLargeBlobOutputs",
+    "AuthenticationExtensionsPRFInputs",
+    "AuthenticationExtensionsPRFOutputs",
+    "AuthenticationExtensionsPRFValues",
+    "AuthenticationResponseJSON",
     "AuthenticatorAssertionResponse",
+    "AuthenticatorAssertionResponseJSON",
     "AuthenticatorAttachment",
     "AuthenticatorAttestationResponse",
+    "AuthenticatorAttestationResponseJSON",
     "AuthenticatorResponse",
     "AuthenticatorSelectionCriteria",
     "AuthenticatorTransport",
     "AutomationRate",
     "BarProp",
+    "Base64URLString",
     "BaseAudioContext",
     "BaseComputedKeyframe",
     "BaseKeyframe",
@@ -1606,13 +1615,18 @@
     "PropertyDefinition",
     "PublicKeyCredential",
     "PublicKeyCredentialCreationOptions",
+    "PublicKeyCredentialCreationOptionsJSON",
     "PublicKeyCredentialDescriptor",
+    "PublicKeyCredentialDescriptorJSON",
     "PublicKeyCredentialEntity",
+    "PublicKeyCredentialJSON",
     "PublicKeyCredentialParameters",
     "PublicKeyCredentialRequestOptions",
+    "PublicKeyCredentialRequestOptionsJSON",
     "PublicKeyCredentialRpEntity",
     "PublicKeyCredentialType",
     "PublicKeyCredentialUserEntity",
+    "PublicKeyCredentialUserEntityJSON",
     "PutForwards",
     "QueuingStrategy",
     "QueuingStrategyInit",
@@ -1809,6 +1823,7 @@
     "ReferrerPolicy",
     "Region",
     "RegistrationOptions",
+    "RegistrationResponseJSON",
     "RemoteDocument",
     "RenderBlockingStatusType",
     "RenderingContext",
@@ -3203,6 +3218,7 @@
     "backdrop root",
     "backdrop root image",
     "backdrop-filter",
+    "backed up",
     "backface-visibility",
     "background",
     "background painting area",
@@ -3223,8 +3239,12 @@
     "backing observable array exotic object",
     "backpressure",
     "backslash escapes",
+    "backup",
     "backup element queue",
+    "backup eligibility",
+    "backup eligible",
     "backup incumbent settings object stack",
+    "backup state",
     "bad import script response",
     "bad port",
     "barred the element from constraint validation",
@@ -4435,6 +4455,7 @@
     "createbuiltinfunction",
     "createbytedatablock",
     "created",
+    "created on",
     "createdataproperty",
     "createdefaultexportsyntheticmodule",
     "creating a device info object",
@@ -4983,6 +5004,7 @@
     "discoverable credential",
     "discoverable credential capable",
     "discoverable mode",
+    "discoverablecredentialmetadata",
     "discrete",
     "discretionary-ligatures",
     "disowned",
@@ -5987,6 +6009,7 @@
     "generatekey",
     "generating a new blob url",
     "generating a random uuid",
+    "generating authenticator",
     "generation",
     "generator-unable-to-provide-required-alt",
     "generic attribute profile",
@@ -7820,6 +7843,7 @@
     "multi-column formatting context",
     "multi-column layout",
     "multi-column line",
+    "multi-device credential",
     "multi-factor capable",
     "multi-line flex container",
     "multicol",
@@ -8866,6 +8890,7 @@
     "previous current time",
     "previous sibling",
     "previously focused element",
+    "prf",
     "primary action",
     "primary affiliation",
     "primary filter primitive tree",
@@ -10233,6 +10258,7 @@
     "signature counter",
     "signcount",
     "signing procedure",
+    "silentcredentialdiscovery",
     "silently set the current time",
     "silver",
     "similar-origin window agent",
@@ -10255,6 +10281,7 @@
     "single-byte decoder",
     "single-byte encoder",
     "single-byte encoding",
+    "single-device credential",
     "single-dot path segment",
     "single-factor capable",
     "single-line flex container",
@@ -11400,6 +11427,7 @@
     "user aborts the payment request algorithm",
     "user accepts the payment request",
     "user accepts the payment request algorithm",
+    "user account",
     "user action pseudo-class",
     "user agent",
     "user agent (ua)",
@@ -13678,6 +13706,7 @@
     "appidExclude",
     "credProps",
     "largeBlob",
+    "prf",
     "uvm"
   ],
   "AuthenticationExtensionsClientOutputs": [
@@ -13685,6 +13714,7 @@
     "appidExclude",
     "credProps",
     "largeBlob",
+    "prf",
     "uvm"
   ],
   "AuthenticationExtensionsLargeBlobInputs": [
@@ -13697,8 +13727,34 @@
     "supported",
     "written"
   ],
+  "AuthenticationExtensionsPRFInputs": [
+    "eval",
+    "evalByCredential"
+  ],
+  "AuthenticationExtensionsPRFOutputs": [
+    "enabled",
+    "results"
+  ],
+  "AuthenticationExtensionsPRFValues": [
+    "first",
+    "second"
+  ],
+  "AuthenticationResponseJSON": [
+    "authenticatorAttachment",
+    "clientExtensionResults",
+    "id",
+    "rawId",
+    "response",
+    "type"
+  ],
   "AuthenticatorAssertionResponse": [
     "authenticatorData",
+    "signature",
+    "userHandle"
+  ],
+  "AuthenticatorAssertionResponseJSON": [
+    "authenticatorData",
+    "clientDataJSON",
     "signature",
     "userHandle"
   ],
@@ -13720,6 +13776,11 @@
     "getTransports",
     "getTransports()"
   ],
+  "AuthenticatorAttestationResponseJSON": [
+    "attestationObject",
+    "clientDataJSON",
+    "transports"
+  ],
   "AuthenticatorResponse": [
     "clientDataJSON"
   ],
@@ -13731,10 +13792,12 @@
   ],
   "AuthenticatorTransport": [
     "\"ble\"",
+    "\"hybrid\"",
     "\"internal\"",
     "\"nfc\"",
     "\"usb\"",
     "ble",
+    "hybrid",
     "internal",
     "nfc",
     "usb"
@@ -16487,6 +16550,7 @@
     "json-compatible serialization of client data",
     "origin",
     "tokenBinding",
+    "tokenbinding",
     "type"
   ],
   "ColorSpaceConversion": [
@@ -18264,6 +18328,11 @@
   ],
   "DevicePermissionDescriptor": [
     "deviceId"
+  ],
+  "DiscoverableCredentialMetadata": [
+    "id",
+    "otherui",
+    "type"
   ],
   "DistanceModelType": [
     "\"exponential\"",
@@ -21926,6 +21995,14 @@
     "maxContentSize",
     "minContentSize"
   ],
+  "Issuing a credential request to an authenticator": [
+    "authenticator",
+    "authenticatorExtensions",
+    "clientDataHash",
+    "options",
+    "rpId",
+    "savedCredentialIds"
+  ],
   "IterationCompositeOperation": [
     "\"accumulate\"",
     "\"replace\""
@@ -24333,12 +24410,22 @@
     "[[identifier]]",
     "[[preventSilentAccess]](credential, sameOriginWithAncestors)",
     "[[type]]",
+    "authenticatorAttachment",
     "getClientExtensionResults",
     "getClientExtensionResults()",
+    "isConditionalMediationAvailable",
+    "isConditionalMediationAvailable()",
     "isUserVerifyingPlatformAuthenticatorAvailable",
     "isUserVerifyingPlatformAuthenticatorAvailable()",
+    "issuing a credential request to an authenticator",
+    "parseCreationOptionsFromJSON",
+    "parseCreationOptionsFromJSON(options)",
+    "parseRequestOptionsFromJSON",
+    "parseRequestOptionsFromJSON(options)",
     "rawId",
-    "response"
+    "response",
+    "toJSON",
+    "toJSON()"
   ],
   "PublicKeyCredential/[[Create]](origin, options, sameOriginWithAncestors)": [
     "options",
@@ -24354,6 +24441,12 @@
     "credential",
     "sameOriginWithAncestors"
   ],
+  "PublicKeyCredential/parseCreationOptionsFromJSON(options)": [
+    "options"
+  ],
+  "PublicKeyCredential/parseRequestOptionsFromJSON(options)": [
+    "options"
+  ],
   "PublicKeyCredentialCreationOptions": [
     "attestation",
     "authenticatorSelection",
@@ -24365,7 +24458,23 @@
     "timeout",
     "user"
   ],
+  "PublicKeyCredentialCreationOptionsJSON": [
+    "attestation",
+    "authenticatorSelection",
+    "challenge",
+    "excludeCredentials",
+    "extensions",
+    "pubKeyCredParams",
+    "rp",
+    "timeout",
+    "user"
+  ],
   "PublicKeyCredentialDescriptor": [
+    "id",
+    "transports",
+    "type"
+  ],
+  "PublicKeyCredentialDescriptorJSON": [
     "id",
     "transports",
     "type"
@@ -24385,6 +24494,14 @@
     "timeout",
     "userVerification"
   ],
+  "PublicKeyCredentialRequestOptionsJSON": [
+    "allowCredentials",
+    "challenge",
+    "extensions",
+    "rpId",
+    "timeout",
+    "userVerification"
+  ],
   "PublicKeyCredentialRpEntity": [
     "id"
   ],
@@ -24395,6 +24512,11 @@
   "PublicKeyCredentialUserEntity": [
     "displayName",
     "id"
+  ],
+  "PublicKeyCredentialUserEntityJSON": [
+    "displayName",
+    "id",
+    "name"
   ],
   "QueuingStrategy": [
     "highWaterMark",
@@ -25724,6 +25846,14 @@
     "scope",
     "type",
     "updateViaCache"
+  ],
+  "RegistrationResponseJSON": [
+    "authenticatorAttachment",
+    "clientExtensionResults",
+    "id",
+    "rawId",
+    "response",
+    "type"
   ],
   "RemoteDocument": [
     "constructor",
@@ -30438,6 +30568,27 @@
     "auto",
     "metadata",
     "none"
+  ],
+  "authData": [
+    "attestedcredentialdata",
+    "extensions",
+    "flags",
+    "rpidhash",
+    "signcount"
+  ],
+  "authData/attestedCredentialData": [
+    "aaguid",
+    "credentialid",
+    "credentialidlength",
+    "credentialpublickey"
+  ],
+  "authData/flags": [
+    "at",
+    "be",
+    "bs",
+    "ed",
+    "up",
+    "uv"
   ],
   "authenticator": [
     "credentials map"
