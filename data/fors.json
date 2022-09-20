@@ -1633,6 +1633,7 @@
     "QueuingStrategySize",
     "QuotaExceededError",
     "RTCAnswerOptions",
+    "RTCAudioPlayoutStats",
     "RTCAudioSourceStats",
     "RTCBundlePolicy",
     "RTCCertificate",
@@ -24537,11 +24538,20 @@
   "QueuingStrategySize": [
     "chunk"
   ],
+  "RTCAudioPlayoutStats": [
+    "synthesizedSamplesDuration",
+    "totalPlayoutDelay",
+    "totalSamplesCount",
+    "totalSamplesDuration"
+  ],
   "RTCAudioSourceStats": [
     "audioLevel",
+    "droppedSamplesDuration",
     "echoReturnLoss",
     "echoReturnLossEnhancement",
     "totalAudioEnergy",
+    "totalCaptureDelay",
+    "totalSamplesCaptured",
     "totalSamplesDuration"
   ],
   "RTCBundlePolicy": [
@@ -24908,6 +24918,7 @@
     "mid",
     "nackCount",
     "packetsDiscarded",
+    "playoutId",
     "pliCount",
     "qpSum",
     "remoteId",
@@ -25357,6 +25368,7 @@
     "data-channel",
     "inbound-rtp",
     "local-candidate",
+    "media-playout",
     "media-source",
     "outbound-rtp",
     "peer-connection",
