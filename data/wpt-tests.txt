@@ -1,4 +1,4 @@
-sha: 4aa150516bf3d029c669c9c2499f1e663a8c0da9
+sha: 9bfed22643dce4ae374b8fcea6f51866e9bfbfd9
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -12526,6 +12526,7 @@ reftest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-change-che
 reftest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-iframe-background-mismatch-alpha.html
 reftest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-iframe-background-mismatch-opaque-cross-origin.sub.html
 reftest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-iframe-background-mismatch-opaque.html
+reftest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-iframe-background-mismatch-used-preferred.html
 reftest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-iframe-background.html
 reftest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-iframe-preferred.html
 reftest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-table-border-currentcolor-responsive.html
@@ -16964,6 +16965,7 @@ reftest css/css-overflow/scrollable-overflow-input-002.html
 reftest css/css-overflow/scrollbar-empty-001.html
 reftest css/css-overflow/scrollbar-empty-002.html
 reftest css/css-overflow/scrollbar-gutter-002.html
+reftest css/css-overflow/scrollbar-gutter-abspos-001.html
 reftest css/css-overflow/scrollbar-gutter-dynamic-001.html
 reftest css/css-overflow/scrollbar-gutter-rtl-002.html
 reftest css/css-overflow/scrollbar-gutter-vertical-lr-002.html
@@ -18171,7 +18173,6 @@ reftest css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-005.html
 reftest css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-006.html
 reftest css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-007.html
 reftest css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-008.html
-reftest css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-009.html
 reftest css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-010.html
 reftest css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-011.html
 reftest css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-012.html
@@ -24229,6 +24230,7 @@ reftest mathml/presentation-markup/operators/op-dict-6.html
 reftest mathml/presentation-markup/operators/op-dict-7.html
 reftest mathml/presentation-markup/operators/op-dict-8.html
 reftest mathml/presentation-markup/operators/op-dict-9.html
+reftest mathml/presentation-markup/operators/operator-dictionary-empty-and-three-chars.html
 reftest mathml/presentation-markup/radicals/dynamic-radical-paint-invalidation-001.html
 reftest mathml/presentation-markup/radicals/radical-rendering-from-in-flow.html
 reftest mathml/presentation-markup/scripts/mover-accent-dynamic-change.html
@@ -24282,6 +24284,7 @@ reftest mathml/relations/css-styling/mathvariant-bold.html
 reftest mathml/relations/css-styling/mathvariant-case-sensitivity.html
 reftest mathml/relations/css-styling/mathvariant-double-struck-font-style-font-weight.html
 reftest mathml/relations/css-styling/mathvariant-double-struck.html
+reftest mathml/relations/css-styling/mathvariant-font-style-font-weight.html
 reftest mathml/relations/css-styling/mathvariant-fraktur.html
 reftest mathml/relations/css-styling/mathvariant-initial.html
 reftest mathml/relations/css-styling/mathvariant-italic.html
@@ -24293,6 +24296,7 @@ reftest mathml/relations/css-styling/mathvariant-sans-serif.html
 reftest mathml/relations/css-styling/mathvariant-script.html
 reftest mathml/relations/css-styling/mathvariant-stretched.html
 reftest mathml/relations/css-styling/mathvariant-tailed.html
+reftest mathml/relations/css-styling/mi-fontstyle-fontweight.html
 reftest mathml/relations/css-styling/padding-border-margin/padding-border-margin-001.html
 reftest mathml/relations/css-styling/padding-border-margin/padding-border-margin-002.html
 reftest mathml/relations/css-styling/padding-border-margin/padding-border-margin-003.html
@@ -29380,6 +29384,7 @@ testharness css/css-sizing/contain-intrinsic-size/auto-007.html
 testharness css/css-sizing/contain-intrinsic-size/auto-008.html
 testharness css/css-sizing/contain-intrinsic-size/auto-009.html
 testharness css/css-sizing/contain-intrinsic-size/auto-010.html
+testharness css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-009.html
 testharness css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-028.html
 testharness css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-029.html
 testharness css/css-sizing/contain-intrinsic-size/contain-intrinsic-size-030.html
@@ -49855,20 +49860,25 @@ wdspec webdriver/tests/bidi/log/entry_added/stacktrace.py
 wdspec webdriver/tests/bidi/log/entry_added/subscription.py
 wdspec webdriver/tests/bidi/script/call_function/arguments.py
 wdspec webdriver/tests/bidi/script/call_function/await_promise.py
-wdspec webdriver/tests/bidi/script/call_function/call_function.py
 wdspec webdriver/tests/bidi/script/call_function/exception_details.py
+wdspec webdriver/tests/bidi/script/call_function/function_declaration.py
 wdspec webdriver/tests/bidi/script/call_function/invalid.py
+wdspec webdriver/tests/bidi/script/call_function/invalid_tentative.py
+wdspec webdriver/tests/bidi/script/call_function/realm.py
 wdspec webdriver/tests/bidi/script/call_function/result.py
 wdspec webdriver/tests/bidi/script/call_function/result_ownership.py
 wdspec webdriver/tests/bidi/script/call_function/sandbox.py
 wdspec webdriver/tests/bidi/script/call_function/strict_mode.py
+wdspec webdriver/tests/bidi/script/call_function/this.py
 wdspec webdriver/tests/bidi/script/disown/handles.py
 wdspec webdriver/tests/bidi/script/disown/invalid.py
+wdspec webdriver/tests/bidi/script/disown/invalid_tentative.py
 wdspec webdriver/tests/bidi/script/disown/target.py
 wdspec webdriver/tests/bidi/script/evaluate/await_promise.py
 wdspec webdriver/tests/bidi/script/evaluate/evaluate.py
 wdspec webdriver/tests/bidi/script/evaluate/exception_details.py
 wdspec webdriver/tests/bidi/script/evaluate/invalid.py
+wdspec webdriver/tests/bidi/script/evaluate/invalid_tentative.py
 wdspec webdriver/tests/bidi/script/evaluate/result.py
 wdspec webdriver/tests/bidi/script/evaluate/result_ownership.py
 wdspec webdriver/tests/bidi/script/evaluate/sandbox.py
