@@ -1,4 +1,4 @@
-sha: 18d6fe503a28b1df760d2c1156e113f3bf74c583
+sha: f6a4c7e5efbd59c2c1da796abaf8bd3be3bef466
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -470,6 +470,7 @@ crashtest css/motion/offset-path-huge-angle-deg-001-crash.html
 crashtest css/motion/offset-path-huge-angle-grad-001-crash.html
 crashtest css/motion/offset-path-huge-angle-turn-001-crash.html
 crashtest custom-elements/prevent-extensions-crash.html
+crashtest custom-elements/when-defined-reentry-crash.html
 crashtest custom-elements/xhtml-crash.xhtml
 crashtest dom/abort/crashtests/timeout-close.html
 crashtest dom/events/keypress-dispatch-crash.html
@@ -24563,6 +24564,7 @@ reftest svg/shapes/reftests/pathlength-001.svg
 reftest svg/shapes/reftests/pathlength-002.svg
 reftest svg/shapes/reftests/pathlength-003.svg
 reftest svg/shapes/reftests/polygon-with-filtered-marker.html
+reftest svg/struct/reftests/currentScale-change-repaint.html
 reftest svg/struct/reftests/requiredextensions-empty-string.svg
 reftest svg/struct/reftests/requiredextensions-xhtml.tentative.svg
 reftest svg/struct/reftests/use-adopted-with-external-resource.tentative.svg
@@ -25840,6 +25842,7 @@ testharness compat/webkit-mask-box-enumeration.html
 testharness compat/webkit-radial-gradient-radii.html
 testharness compat/webkit-text-fill-color-currentColor.html
 testharness compression/compression-bad-chunks.tentative.any.js
+testharness compression/compression-constructor-error.tentative.any.js
 testharness compression/compression-including-empty-chunk.tentative.any.js
 testharness compression/compression-multiple-chunks.tentative.any.js
 testharness compression/compression-output-length.tentative.any.js
@@ -33169,6 +33172,7 @@ testharness html/browsers/browsing-the-web/back-forward-cache/eligibility/shared
 testharness html/browsers/browsing-the-web/back-forward-cache/events.html
 testharness html/browsers/browsing-the-web/back-forward-cache/focus.html
 testharness html/browsers/browsing-the-web/back-forward-cache/pushstate.https.html
+testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-client-postmessage.https.html
 testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-clients-claim.https.html
 testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-clients-matchall.https.html
 testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-controlled-after-restore.https.html
@@ -39437,6 +39441,7 @@ testharness infrastructure/testdriver/actions/multiDevice.html
 testharness infrastructure/testdriver/actions/multiTouchPoints.html
 testharness infrastructure/testdriver/actions/multiTouchPointsReleaseFirstPoint.html
 testharness infrastructure/testdriver/actions/multiTouchPointsReleaseSecondPoint.html
+testharness infrastructure/testdriver/actions/multiTouchPointsSimultaneousMove.html
 testharness infrastructure/testdriver/actions/multiTouchPointsTwoTouchStarts.html
 testharness infrastructure/testdriver/actions/multiTouchPointsWithPause.html
 testharness infrastructure/testdriver/actions/pause.html
@@ -40674,12 +40679,15 @@ testharness navigation-api/ordering-and-transition/transition-finished-mark-as-h
 testharness navigation-api/ordering-and-transition/transition-realms-and-identity.html
 testharness navigation-api/per-entry-events/dispose-after-bfcache.html
 testharness navigation-api/per-entry-events/dispose-cross-document.html
+testharness navigation-api/per-entry-events/dispose-for-full-session-history.tentative.html
+testharness navigation-api/per-entry-events/dispose-for-navigation-in-child.html
 testharness navigation-api/per-entry-events/dispose-same-document-intercept.html
 testharness navigation-api/per-entry-events/dispose-same-document-navigate-during.html
 testharness navigation-api/per-entry-events/dispose-same-document-reload-with-intercept.html
 testharness navigation-api/per-entry-events/dispose-same-document-replace-with-intercept.html
 testharness navigation-api/per-entry-events/dispose-same-document-replaceState.html
 testharness navigation-api/per-entry-events/dispose-same-document.html
+testharness navigation-api/per-entry-events/dispose-skip-current-on-truncate.html
 testharness navigation-api/scroll-behavior/after-transition-basic.html
 testharness navigation-api/scroll-behavior/after-transition-change-history-scroll-restoration-during-promise.html
 testharness navigation-api/scroll-behavior/after-transition-explicit-scroll.html
@@ -50023,12 +50031,14 @@ wdspec webdriver/tests/perform_actions/key_modifiers.py
 wdspec webdriver/tests/perform_actions/key_shortcuts.py
 wdspec webdriver/tests/perform_actions/key_special_keys.py
 wdspec webdriver/tests/perform_actions/none.py
-wdspec webdriver/tests/perform_actions/pointer.py
 wdspec webdriver/tests/perform_actions/pointer_contextmenu.py
 wdspec webdriver/tests/perform_actions/pointer_dblclick.py
 wdspec webdriver/tests/perform_actions/pointer_modifier_click.py
+wdspec webdriver/tests/perform_actions/pointer_mouse.py
 wdspec webdriver/tests/perform_actions/pointer_origin.py
 wdspec webdriver/tests/perform_actions/pointer_pause_dblclick.py
+wdspec webdriver/tests/perform_actions/pointer_pen.py
+wdspec webdriver/tests/perform_actions/pointer_touch.py
 wdspec webdriver/tests/perform_actions/pointer_tripleclick.py
 wdspec webdriver/tests/perform_actions/sequence.py
 wdspec webdriver/tests/perform_actions/user_prompts.py
