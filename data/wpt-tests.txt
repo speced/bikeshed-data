@@ -1,4 +1,4 @@
-sha: 1daa81be64af6d8af3dd2e1a802803a11c344db1
+sha: 561a71e3a0d7011b1811a79efa367f342c39865c
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -3754,6 +3754,7 @@ print-reftest css/css-position/position-fixed-overflow-print.html
 print-reftest css/css-position/position-fixed-video-controls-print.html
 print-reftest css/css-tables/tfoot-crash-print.html
 print-reftest css/css-values/viewport-units-001-print.html
+print-reftest css/printing/animated-image-print.html
 print-reftest css/printing/background-image-print.html
 print-reftest css/printing/emoji-print.html
 print-reftest css/printing/fragmented-inline-block-001-print.html
@@ -23277,6 +23278,7 @@ reftest css/motion/offset-rotate-002.html
 reftest css/motion/offset-rotate-003.html
 reftest css/motion/offset-rotate-004.html
 reftest css/motion/offset-rotate-005.html
+reftest css/printing/animated-image-print-image-orientation-none.html
 reftest css/reference/pass_if_filler_text_match_bold.xht
 reftest css/reference/pass_if_filler_text_match_smallcaps.xht
 reftest css/reference/pass_if_filler_text_underlined.html
@@ -24258,6 +24260,8 @@ reftest mathml/presentation-markup/operators/op-dict-6.html
 reftest mathml/presentation-markup/operators/op-dict-7.html
 reftest mathml/presentation-markup/operators/op-dict-8.html
 reftest mathml/presentation-markup/operators/op-dict-9.html
+reftest mathml/presentation-markup/operators/operator-dictionary-arabic-001.html
+reftest mathml/presentation-markup/operators/operator-dictionary-arabic-002.html
 reftest mathml/presentation-markup/operators/operator-dictionary-empty-and-three-chars.html
 reftest mathml/presentation-markup/radicals/dynamic-radical-paint-invalidation-001.html
 reftest mathml/presentation-markup/radicals/radical-rendering-from-in-flow.html
@@ -25898,6 +25902,7 @@ testharness compute-pressure/compute_pressure_observe_idempotent.tentative.https
 testharness compute-pressure/compute_pressure_observe_unobserve_failure.tentative.https.window.js
 testharness compute-pressure/compute_pressure_supported_sources.tentative.https.window.js
 testharness compute-pressure/compute_pressure_take_records.tentative.https.window.js
+testharness compute-pressure/idlharness.https.window.js
 testharness console/console-is-a-namespace.any.js
 testharness console/console-label-conversion.any.js
 testharness console/console-namespace-object-class-string.any.js
@@ -32085,6 +32090,10 @@ testharness editing/other/insertparagraph-in-child-of-head.tentative.html
 testharness editing/other/insertparagraph-in-child-of-html.tentative.html
 testharness editing/other/insertparagraph-in-inline-editing-host.tentative.html
 testharness editing/other/insertparagraph-with-white-space-style.tentative.html
+testharness editing/other/join-different-white-space-style-left-line-and-right-paragraph.html
+testharness editing/other/join-different-white-space-style-left-paragraph-and-right-line.html
+testharness editing/other/join-different-white-space-style-paragraphs.html
+testharness editing/other/join-pre-and-other-block.html
 testharness editing/other/justify-preserving-selection.tentative.html
 testharness editing/other/keeping-attributes-at-joining-elements.tentative.html
 testharness editing/other/legacy-edit-command.html
@@ -32673,7 +32682,6 @@ testharness feature-policy/reporting/microphone-reporting.https.html
 testharness feature-policy/reporting/midi-reporting.https.html
 testharness feature-policy/reporting/payment-reporting.https.html
 testharness feature-policy/reporting/picture-in-picture-reporting.html
-testharness feature-policy/reporting/screen-wake-lock-reporting.https.html
 testharness feature-policy/reporting/serial-reporting.https.html
 testharness feature-policy/reporting/sync-xhr-reporting.html
 testharness feature-policy/reporting/usb-reporting.https.html
@@ -33672,6 +33680,7 @@ testharness html/browsers/sandboxing/sandbox-disallow-popups.html
 testharness html/browsers/sandboxing/sandbox-disallow-same-origin.html
 testharness html/browsers/sandboxing/sandbox-disallow-scripts-via-unsandboxed-popup.tentative.html
 testharness html/browsers/sandboxing/sandbox-disallow-scripts.html
+testharness html/browsers/sandboxing/sandbox-document-open-mutation.window.js
 testharness html/browsers/sandboxing/sandbox-document-open.html
 testharness html/browsers/sandboxing/sandbox-inherited-from-initiator-frame.html
 testharness html/browsers/sandboxing/sandbox-inherited-from-initiator-response.html
@@ -36706,6 +36715,7 @@ testharness html/cross-origin-opener-policy/reporting/navigation-reporting/repor
 testharness html/cross-origin-opener-policy/reporting/navigation-reporting/reporting-popup-unsafe-none-report-to.https.html
 testharness html/cross-origin-opener-policy/reporting/navigation-reporting/reporting-redirect-with-same-origin-allow-popups.https.html
 testharness html/cross-origin-opener-policy/resource-popup.https.html
+testharness html/cross-origin-opener-policy/tentative/restrict-properties/coop-rp-in-navigation-chain.https.html
 testharness html/cross-origin-opener-policy/tentative/restrict-properties/iframe-popup-to-so.https.html
 testharness html/cross-origin-opener-policy/tentative/restrict-properties/iframe-popup-to-soap.https.html
 testharness html/cross-origin-opener-policy/tentative/restrict-properties/iframe-popup-to-un.https.html
@@ -41127,6 +41137,7 @@ testharness permissions-policy/reporting/payment-report-only.https.html
 testharness permissions-policy/reporting/payment-reporting.https.html
 testharness permissions-policy/reporting/picture-in-picture-report-only.html
 testharness permissions-policy/reporting/picture-in-picture-reporting.html
+testharness permissions-policy/reporting/screen-wake-lock-reporting.https.html
 testharness permissions-policy/reporting/serial-report-only.https.html
 testharness permissions-policy/reporting/serial-reporting.https.html
 testharness permissions-policy/reporting/sync-xhr-report-only.html
@@ -42917,17 +42928,17 @@ testharness screen-orientation/onchange-event.html
 testharness screen-orientation/orientation-reading.html
 testharness screen-wake-lock/idlharness.https.window.js
 testharness screen-wake-lock/wakelock-active-document.https.window.js
-testharness screen-wake-lock/wakelock-disabled-by-feature-policy.https.html
-testharness screen-wake-lock/wakelock-enabled-by-feature-policy-attribute-redirect-on-load.https.html
-testharness screen-wake-lock/wakelock-enabled-by-feature-policy-attribute.https.html
-testharness screen-wake-lock/wakelock-enabled-by-feature-policy.https.html
-testharness screen-wake-lock/wakelock-enabled-on-self-origin-by-feature-policy.https.html
+testharness screen-wake-lock/wakelock-disabled-by-permissions-policy.https.html
+testharness screen-wake-lock/wakelock-enabled-by-permissions-policy-attribute-redirect-on-load.https.html
+testharness screen-wake-lock/wakelock-enabled-by-permissions-policy-attribute.https.html
+testharness screen-wake-lock/wakelock-enabled-by-permissions-policy.https.html
+testharness screen-wake-lock/wakelock-enabled-on-self-origin-by-permissions-policy.https.html
 testharness screen-wake-lock/wakelock-insecure-context.any.js
 testharness screen-wake-lock/wakelock-onrelease.https.html
 testharness screen-wake-lock/wakelock-released.https.html
 testharness screen-wake-lock/wakelock-request-denied.https.html
 testharness screen-wake-lock/wakelock-screen-type-on-worker.https.worker.js
-testharness screen-wake-lock/wakelock-supported-by-feature-policy.html
+testharness screen-wake-lock/wakelock-supported-by-permissions-policy.html
 testharness screen-wake-lock/wakelock-type.https.window.js
 testharness screen-wake-lock/wakelockpermissiondescriptor.https.html
 testharness scroll-animations/css/animation-shorthand.html
@@ -45946,6 +45957,7 @@ testharness webstorage/event_session_url.html
 testharness webstorage/event_setattribute.html
 testharness webstorage/localstorage-about-blank-3P-iframe-opens-3P-window.partitioned.tentative.html
 testharness webstorage/localstorage-basic-partitioned.tentative.sub.html
+testharness webstorage/localstorage-cross-origin-iframe.tentative.https.window.js
 testharness webstorage/missing_arguments.window.js
 testharness webstorage/set.window.js
 testharness webstorage/storage_builtins.window.js
@@ -49943,6 +49955,7 @@ wdspec webdriver/tests/bidi/script/call_function/arguments.py
 wdspec webdriver/tests/bidi/script/call_function/await_promise.py
 wdspec webdriver/tests/bidi/script/call_function/exception_details.py
 wdspec webdriver/tests/bidi/script/call_function/function_declaration.py
+wdspec webdriver/tests/bidi/script/call_function/internal_id.py
 wdspec webdriver/tests/bidi/script/call_function/invalid.py
 wdspec webdriver/tests/bidi/script/call_function/invalid_tentative.py
 wdspec webdriver/tests/bidi/script/call_function/realm.py
@@ -49958,6 +49971,7 @@ wdspec webdriver/tests/bidi/script/disown/target.py
 wdspec webdriver/tests/bidi/script/evaluate/await_promise.py
 wdspec webdriver/tests/bidi/script/evaluate/evaluate.py
 wdspec webdriver/tests/bidi/script/evaluate/exception_details.py
+wdspec webdriver/tests/bidi/script/evaluate/internal_id.py
 wdspec webdriver/tests/bidi/script/evaluate/invalid.py
 wdspec webdriver/tests/bidi/script/evaluate/invalid_tentative.py
 wdspec webdriver/tests/bidi/script/evaluate/result.py
