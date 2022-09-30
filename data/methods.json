@@ -5234,6 +5234,7 @@
         "DedicatedWorkerGlobalScope",
         "Document",
         "EventSource",
+        "FileSystemSyncAccessHandle",
         "HTMLDialogElement",
         "IDBDatabase",
         "ImageBitmap",
@@ -5251,7 +5252,7 @@
         "WritableStream",
         "WritableStreamDefaultWriter"
       ],
-      "shortname": "html"
+      "shortname": "fs"
     },
     "close(code)": {
       "args": [
@@ -8496,6 +8497,15 @@
       "shortname": "webaudio"
     }
   },
+  "createSyncAccessHandle()": {
+    "createSyncAccessHandle()": {
+      "args": [],
+      "for": [
+        "FileSystemFileHandle"
+      ],
+      "shortname": "fs"
+    }
+  },
   "createTBody()": {
     "createTBody()": {
       "args": [],
@@ -10006,6 +10016,15 @@
         "DOMMatrixReadOnly"
       ],
       "shortname": "geometry"
+    }
+  },
+  "flush()": {
+    "flush()": {
+      "args": [],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
     }
   },
   "focus()": {
@@ -11730,6 +11749,15 @@
         "SerialPort"
       ],
       "shortname": "serial"
+    }
+  },
+  "getSize()": {
+    "getSize()": {
+      "args": [],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
     }
   },
   "getSpatialNavigationContainer()": {
@@ -15030,6 +15058,35 @@
         "ReadableStreamDefaultReader"
       ],
       "shortname": "streams"
+    },
+    "read(buffer)": {
+      "args": [
+        "buffer"
+      ],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
+    },
+    "read(buffer, FileSystemReadWriteOptions: options)": {
+      "args": [
+        "buffer",
+        "FileSystemReadWriteOptions: options"
+      ],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
+    },
+    "read(buffer, options)": {
+      "args": [
+        "buffer",
+        "options"
+      ],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
     },
     "read(view)": {
       "args": [
@@ -19182,6 +19239,15 @@
     }
   },
   "truncate()": {
+    "truncate(newSize)": {
+      "args": [
+        "newSize"
+      ],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
+    },
     "truncate(size)": {
       "args": [
         "size"
@@ -19673,6 +19739,35 @@
         "WritableStreamDefaultWriter"
       ],
       "shortname": "streams"
+    },
+    "write(buffer)": {
+      "args": [
+        "buffer"
+      ],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
+    },
+    "write(buffer, FileSystemReadWriteOptions: options)": {
+      "args": [
+        "buffer",
+        "FileSystemReadWriteOptions: options"
+      ],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
+    },
+    "write(buffer, options)": {
+      "args": [
+        "buffer",
+        "options"
+      ],
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "shortname": "fs"
     },
     "write(chunk)": {
       "args": [

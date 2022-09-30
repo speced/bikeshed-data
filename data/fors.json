@@ -1159,7 +1159,9 @@
     "FileSystemGetFileOptions",
     "FileSystemHandle",
     "FileSystemHandleKind",
+    "FileSystemReadWriteOptions",
     "FileSystemRemoveOptions",
+    "FileSystemSyncAccessHandle",
     "FileSystemWritableFileStream",
     "FileSystemWriteChunkType",
     "FillMode",
@@ -4224,7 +4226,6 @@
     "content-based minimum size",
     "content-box",
     "content-disposition",
-    "content-distribution",
     "content-distribution properties",
     "content-empty page",
     "content-language",
@@ -4411,6 +4412,7 @@
     "create a new browsing context",
     "create a new browsing context group",
     "create a new cache entry",
+    "create a new filesystemsyncaccesshandle",
     "create a new filesystemwritablefilestream",
     "create a new javascript realm",
     "create a new nested browsing context",
@@ -19582,6 +19584,7 @@
     "possibleDescendant"
   ],
   "FileSystemFileHandle": [
+    "createSyncAccessHandle()",
     "createWritable()",
     "createWritable(options)",
     "getFile()"
@@ -19611,8 +19614,46 @@
     "\"directory\"",
     "\"file\""
   ],
+  "FileSystemReadWriteOptions": [
+    "at"
+  ],
   "FileSystemRemoveOptions": [
     "recursive"
+  ],
+  "FileSystemSyncAccessHandle": [
+    "[[file]]",
+    "[[state]]",
+    "close()",
+    "flush()",
+    "getSize()",
+    "read",
+    "read(buffer)",
+    "read(buffer, FileSystemReadWriteOptions: options)",
+    "read(buffer, options)",
+    "truncate(newSize)",
+    "write",
+    "write(buffer)",
+    "write(buffer, FileSystemReadWriteOptions: options)",
+    "write(buffer, options)"
+  ],
+  "FileSystemSyncAccessHandle/read(buffer)": [
+    "buffer",
+    "options"
+  ],
+  "FileSystemSyncAccessHandle/read(buffer, options)": [
+    "buffer",
+    "options"
+  ],
+  "FileSystemSyncAccessHandle/truncate(newSize)": [
+    "newSize"
+  ],
+  "FileSystemSyncAccessHandle/write(buffer)": [
+    "buffer",
+    "options"
+  ],
+  "FileSystemSyncAccessHandle/write(buffer, options)": [
+    "buffer",
+    "options"
   ],
   "FileSystemWritableFileStream": [
     "[[buffer]]",
@@ -32505,7 +32546,13 @@
   ],
   "file entry": [
     "binary data",
-    "modification timestamp"
+    "lock",
+    "modification timestamp",
+    "shared lock count"
+  ],
+  "file entry/lock": [
+    "release",
+    "take"
   ],
   "fill-origin": [
     "border-box",
