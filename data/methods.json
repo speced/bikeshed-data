@@ -4935,6 +4935,24 @@
       "shortname": "webaudio"
     }
   },
+  "cancelWatchAvailability()": {
+    "cancelWatchAvailability()": {
+      "args": [],
+      "for": [
+        "RemotePlayback"
+      ],
+      "shortname": "remote-playback"
+    },
+    "cancelWatchAvailability(id)": {
+      "args": [
+        "id"
+      ],
+      "for": [
+        "RemotePlayback"
+      ],
+      "shortname": "remote-playback"
+    }
+  },
   "canonicalUUID()": {
     "canonicalUUID(alias)": {
       "args": [
@@ -5240,6 +5258,7 @@
         "ImageBitmap",
         "MessagePort",
         "Notification",
+        "PresentationConnection",
         "RTCDataChannel",
         "RTCPeerConnection",
         "ReadableByteStreamController",
@@ -5559,7 +5578,8 @@
     "constructor!overload-1()": {
       "args": [],
       "for": [
-        "MediaStream"
+        "MediaStream",
+        "PresentationRequest"
       ],
       "shortname": "mediacapture-streams"
     },
@@ -5571,6 +5591,15 @@
         "MediaStream"
       ],
       "shortname": "mediacapture-streams"
+    },
+    "constructor!overload-1(urls)": {
+      "args": [
+        "urls"
+      ],
+      "for": [
+        "PresentationRequest"
+      ],
+      "shortname": "presentation-api"
     }
   },
   "constructor!overload-2()": {
@@ -5632,6 +5661,9 @@
         "PaymentRequest",
         "PaymentRequestUpdateEvent",
         "PointerEvent",
+        "PresentationConnectionAvailableEvent",
+        "PresentationConnectionCloseEvent",
+        "PresentationRequest",
         "RTCDTMFToneChangeEvent",
         "RTCDataChannelEvent",
         "RTCError",
@@ -6870,6 +6902,8 @@
         "PaymentMethodChangeEvent",
         "PaymentRequestUpdateEvent",
         "PointerEvent",
+        "PresentationConnectionAvailableEvent",
+        "PresentationConnectionCloseEvent",
         "ProgressEvent",
         "RTCDTMFToneChangeEvent",
         "RTCDataChannelEvent",
@@ -6963,10 +6997,11 @@
         "url"
       ],
       "for": [
+        "PresentationRequest",
         "URL",
         "WebSocket"
       ],
-      "shortname": "url"
+      "shortname": "presentation-api"
     },
     "constructor(url, base)": {
       "args": [
@@ -10580,9 +10615,10 @@
     "getAvailability()": {
       "args": [],
       "for": [
-        "Bluetooth"
+        "Bluetooth",
+        "PresentationRequest"
       ],
-      "shortname": "web-bluetooth"
+      "shortname": "presentation-api"
     }
   },
   "getBattery()": {
@@ -14815,6 +14851,13 @@
     }
   },
   "prompt()": {
+    "prompt()": {
+      "args": [],
+      "for": [
+        "RemotePlayback"
+      ],
+      "shortname": "remote-playback"
+    },
     "prompt(message, default)": {
       "args": [
         "message",
@@ -15174,6 +15217,24 @@
         "FontFaceSet"
       ],
       "shortname": "css-font-loading"
+    }
+  },
+  "reconnect()": {
+    "reconnect()": {
+      "args": [],
+      "for": [
+        "PresentationRequest"
+      ],
+      "shortname": "presentation-api"
+    },
+    "reconnect(presentationId)": {
+      "args": [
+        "presentationId"
+      ],
+      "for": [
+        "PresentationRequest"
+      ],
+      "shortname": "presentation-api"
     }
   },
   "rect()": {
@@ -17009,64 +17070,71 @@
     "send!overload-1()": {
       "args": [],
       "for": [
+        "PresentationConnection",
         "RTCDataChannel"
       ],
-      "shortname": "webrtc"
+      "shortname": "presentation-api"
     },
     "send!overload-1(data)": {
       "args": [
         "data"
       ],
       "for": [
+        "PresentationConnection",
         "RTCDataChannel"
       ],
-      "shortname": "webrtc"
+      "shortname": "presentation-api"
     }
   },
   "send!overload-2()": {
     "send!overload-2()": {
       "args": [],
       "for": [
+        "PresentationConnection",
         "RTCDataChannel"
       ],
-      "shortname": "webrtc"
+      "shortname": "presentation-api"
     },
     "send!overload-2(data)": {
       "args": [
         "data"
       ],
       "for": [
+        "PresentationConnection",
         "RTCDataChannel"
       ],
-      "shortname": "webrtc"
+      "shortname": "presentation-api"
     }
   },
   "send!overload-3()": {
     "send!overload-3()": {
       "args": [],
       "for": [
+        "PresentationConnection",
         "RTCDataChannel"
       ],
-      "shortname": "webrtc"
+      "shortname": "presentation-api"
     },
     "send!overload-3(data)": {
       "args": [
         "data"
       ],
       "for": [
+        "PresentationConnection",
         "RTCDataChannel"
       ],
-      "shortname": "webrtc"
+      "shortname": "presentation-api"
     }
   },
   "send()": {
     "send()": {
       "args": [],
       "for": [
+        "PresentationConnection",
         "RTCDataChannel",
         "XMLHttpRequest"
       ],
-      "shortname": "webrtc"
+      "shortname": "presentation-api"
     },
     "send(body)": {
       "args": [
@@ -17086,6 +17154,15 @@
         "WebSocket"
       ],
       "shortname": "webrtc"
+    },
+    "send(message)": {
+      "args": [
+        "message"
+      ],
+      "for": [
+        "PresentationConnection"
+      ],
+      "shortname": "presentation-api"
     }
   },
   "set()": {
@@ -18212,6 +18289,7 @@
         "AudioScheduledSourceNode",
         "HTMLMarqueeElement",
         "MessagePort",
+        "PresentationRequest",
         "Sensor"
       ],
       "shortname": "generic-sensor"
@@ -18689,6 +18767,7 @@
     "terminate()": {
       "args": [],
       "for": [
+        "PresentationConnection",
         "TransformStreamDefaultController",
         "Worker"
       ],
@@ -19687,6 +19766,24 @@
         "BluetoothDevice"
       ],
       "shortname": "web-bluetooth"
+    }
+  },
+  "watchAvailability()": {
+    "watchAvailability()": {
+      "args": [],
+      "for": [
+        "RemotePlayback"
+      ],
+      "shortname": "remote-playback"
+    },
+    "watchAvailability(callback)": {
+      "args": [
+        "callback"
+      ],
+      "for": [
+        "RemotePlayback"
+      ],
+      "shortname": "remote-playback"
     }
   },
   "webkitMatchesSelector()": {
