@@ -749,6 +749,8 @@
     "AudioRenderCapacityEventInit",
     "AudioRenderCapacityOptions",
     "AudioScheduledSourceNode",
+    "AudioSinkOptions",
+    "AudioSinkType",
     "AudioTimestamp",
     "AudioTrack",
     "AudioTrackList",
@@ -13435,6 +13437,7 @@
     "AudioContext()",
     "AudioContext(contextOptions)",
     "[[pending resume promises]]",
+    "[[sink ID]]",
     "[[suspended by user]]",
     "baseLatency",
     "close()",
@@ -13445,9 +13448,12 @@
     "createMediaStreamSource(mediaStream)",
     "createMediaStreamTrackSource(mediaStreamTrack)",
     "getOutputTimestamp()",
+    "onsinkchange",
     "outputLatency",
     "renderCapacity",
     "resume()",
+    "setSinkId((DOMString or AudioSinkOptions) sinkId)",
+    "sinkId",
     "suspend()"
   ],
   "AudioContext/constructor(contextOptions)": [
@@ -13481,7 +13487,8 @@
   ],
   "AudioContextOptions": [
     "latencyHint",
-    "sampleRate"
+    "sampleRate",
+    "sinkId"
   ],
   "AudioContextState": [
     "\"closed\"",
@@ -13756,6 +13763,13 @@
   ],
   "AudioScheduledSourceNode/stop(when)": [
     "when"
+  ],
+  "AudioSinkOptions": [
+    "type"
+  ],
+  "AudioSinkType": [
+    "\"none\"",
+    "none"
   ],
   "AudioTimestamp": [
     "contextTime",
