@@ -180,6 +180,11 @@
     "::highlight(<custom-highlight-name>)",
     "::marker",
     "::nth-fragment()",
+    "::page-transition",
+    "::page-transition-container( <pt-tag-selector> )",
+    "::page-transition-image-wrapper( <pt-tag-selector> )",
+    "::page-transition-incoming-image( <pt-tag-selector> )",
+    "::page-transition-outgoing-image( <pt-tag-selector> )",
     "::part()",
     "::placeholder",
     "::selection",
@@ -538,6 +543,7 @@
     "<pseudo-class-selector>",
     "<pseudo-element-selector>",
     "<pseudo-page>",
+    "<pt-tag-selector>",
     "<query-in-parens>",
     "<quirky-color>",
     "<quirky-length>",
@@ -1069,6 +1075,8 @@
     "DOMStringList",
     "DOMStringMap",
     "DOMTokenList",
+    "DOMTransition",
+    "DOMTransitionInit",
     "DOMUserData",
     "DataCloneError",
     "DataError",
@@ -2266,6 +2274,7 @@
     "UnderlyingSourceStartCallback",
     "UnknownError",
     "Unscopable",
+    "UpdateDOMCallback",
     "UserActivation",
     "UserDataHandler",
     "UserVerificationRequirement",
@@ -2847,6 +2856,7 @@
     "android key attestation certificate extension data",
     "animatable",
     "animate",
+    "animate a page transition",
     "animate function",
     "animatecolor",
     "animatemotion",
@@ -3656,6 +3666,7 @@
     "call an exported function",
     "call for exclusion",
     "call for review",
+    "call the dom update callback",
     "callback",
     "callback context",
     "callback function",
@@ -3720,7 +3731,10 @@
     "captions",
     "captiontext",
     "capture phase",
+    "capture the image",
+    "captured element",
     "captures snap positions",
+    "capturing the image",
     "card",
     "caret",
     "caret node",
@@ -4092,6 +4106,7 @@
     "compute hit test results for transient input",
     "compute missing keyframe offsets",
     "compute the effective overload set",
+    "compute the interest rectangle",
     "compute the intersection",
     "computed <image>",
     "computed color",
@@ -4112,6 +4127,7 @@
     "computedvalue",
     "computing a block of audio",
     "computing the envelope rate",
+    "computing the interest rectangle",
     "computing the makeup gain",
     "computing the manifest url",
     "concrete",
@@ -4503,6 +4519,7 @@
     "create mock sensor",
     "create the navigation timing entry",
     "create tokens",
+    "create transition pseudo-elements",
     "create window client",
     "createDocument()",
     "createElement()",
@@ -8546,6 +8563,7 @@
     "page selectors",
     "page sheet",
     "page showing",
+    "page transition tag",
     "page type selector",
     "page visibility change steps",
     "page zoom",
@@ -8558,6 +8576,9 @@
     "page-context",
     "page-margin boxes",
     "page-margin property",
+    "page-transition layer",
+    "page-transition pseudo-elements",
+    "page-transition-tag",
     "paged media",
     "pager",
     "pagination",
@@ -8772,7 +8793,9 @@
     "perform a microtask checkpoint",
     "perform a scroll",
     "perform a security check",
+    "perform an outgoing capture",
     "perform automatic text track selection",
+    "perform pending transition operations",
     "performance",
     "performanceresourcetiming",
     "performing a microtask checkpoint",
@@ -10450,6 +10473,7 @@
     "skeleton joints",
     "skip ascii whitespace",
     "skip its contents",
+    "skip the page transition",
     "skip-when-determining-incumbent counter",
     "skipped contents",
     "skipping its contents",
@@ -11516,6 +11540,7 @@
     "update the timing properties of an animation effect",
     "update the viewports",
     "update the visibility state",
+    "update transition dom",
     "update worker state",
     "updating the search origin",
     "upgrade a mixed content request to a potentially trustworthy url, if appropriate",
@@ -18426,6 +18451,21 @@
     "force",
     "token"
   ],
+  "DOMTransition": [
+    "dom update callback",
+    "dom updated promise",
+    "domUpdated",
+    "finished",
+    "finished promise",
+    "phase",
+    "ready",
+    "ready promise",
+    "skipTransition()",
+    "tagged elements"
+  ],
+  "DOMTransitionInit": [
+    "updateDOM"
+  ],
   "DataTransfer": [
     "DataTransfer()",
     "clearData()",
@@ -18573,6 +18613,7 @@
     "createProcessingInstruction(target, data)",
     "createRange()",
     "createTextNode(data)",
+    "createTransition(init)",
     "createTreeWalker(root)",
     "createTreeWalker(root, whatToShow)",
     "createTreeWalker(root, whatToShow, filter)",
@@ -18806,6 +18847,9 @@
   ],
   "Document/createTextNode(data)": [
     "data"
+  ],
+  "Document/createTransition(init)": [
+    "init"
   ],
   "Document/createTreeWalker(root)": [
     "filter",
@@ -31580,6 +31624,11 @@
     "bottom",
     "top"
   ],
+  "captured element": [
+    "incoming element",
+    "outgoing image",
+    "outgoing styles"
+  ],
   "caret-color": [
     "auto"
   ],
@@ -32352,7 +32401,9 @@
     "compact"
   ],
   "document": [
-    "doctype"
+    "active dom transition",
+    "doctype",
+    "transition suppressing rendering"
   ],
   "document animator definition": [
     "stateful flag"
@@ -34956,6 +35007,10 @@
     "rotate-right",
     "upright"
   ],
+  "page-transition-tag": [
+    "<custom-ident>",
+    "none"
+  ],
   "paint definition": [
     "class constructor",
     "constructor valid flag",
@@ -35035,6 +35090,10 @@
     "left",
     "right",
     "top"
+  ],
+  "phases": [
+    "after",
+    "before"
   ],
   "platform object": [
     "[[Detached]]"
