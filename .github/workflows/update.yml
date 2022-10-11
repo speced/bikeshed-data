@@ -1,10 +1,17 @@
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+# temporarily disable while I figure out what's up with the data source
+#  schedule:
+#    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: update-data
+
 name: update
 jobs:
   update:
     runs-on: ubuntu-18.04
+    timeout-minutes: 30
     steps:
     - name: checkout
       uses: actions/checkout@master
