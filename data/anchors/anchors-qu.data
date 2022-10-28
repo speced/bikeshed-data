@@ -1,23 +1,3 @@
-<quirky-length>
-type
-css-values-4
-css-values
-4
-snapshot
-https://www.w3.org/TR/css-values-4/#typedef-quirky-length
-1
-1
--
-<quirky-length>
-type
-css-values-4
-css-values
-4
-current
-https://drafts.csswg.org/css-values-4/#typedef-quirky-length
-1
-1
--
 QUOTA_EXCEEDED_ERR
 const
 webidl
@@ -229,10 +209,10 @@ dom
 dom
 1
 snapshot
-https://dom.spec.whatwg.org/#concept-attribute-qualified-name
+https://dom.spec.whatwg.org/#concept-element-qualified-name
 1
 1
-Attr
+Element
 -
 qualified name
 dfn
@@ -240,10 +220,10 @@ dom
 dom
 1
 snapshot
-https://dom.spec.whatwg.org/#concept-element-qualified-name
+https://dom.spec.whatwg.org/#concept-attribute-qualified-name
 1
 1
-Element
+Attr
 -
 qualified name
 dfn
@@ -276,29 +256,6 @@ https://drafts.csswg.org/css-syntax-3/#qualified-rule
 1
 1
 CSS
--
-qualifiedName
-argument
-dom
-dom
-1
-snapshot
-https://dom.spec.whatwg.org/#dom-domimplementation-createdocument-namespace-qualifiedname-doctype-qualifiedname
-1
-1
-DOMImplementation/createDocument(namespace, qualifiedName, doctype)
-DOMImplementation/createDocument(namespace, qualifiedName)
--
-qualifiedName
-argument
-dom
-dom
-1
-snapshot
-https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype-qualifiedname-publicid-systemid-qualifiedname
-1
-1
-DOMImplementation/createDocumentType(qualifiedName, publicId, systemId)
 -
 qualifiedName
 argument
@@ -340,10 +297,11 @@ dom
 dom
 1
 snapshot
-https://dom.spec.whatwg.org/#dom-namednodemap-getnameditem-qualifiedname-qualifiedname
+https://dom.spec.whatwg.org/#dom-domimplementation-createdocument-namespace-qualifiedname-doctype-qualifiedname
 1
 1
-NamedNodeMap/getNamedItem(qualifiedName)
+DOMImplementation/createDocument(namespace, qualifiedName, doctype)
+DOMImplementation/createDocument(namespace, qualifiedName)
 -
 qualifiedName
 argument
@@ -351,10 +309,10 @@ dom
 dom
 1
 snapshot
-https://dom.spec.whatwg.org/#dom-namednodemap-removenameditem-qualifiedname-qualifiedname
+https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype-qualifiedname-publicid-systemid-qualifiedname
 1
 1
-NamedNodeMap/removeNamedItem(qualifiedName)
+DOMImplementation/createDocumentType(qualifiedName, publicId, systemId)
 -
 qualifiedName
 argument
@@ -444,6 +402,28 @@ https://dom.spec.whatwg.org/#dom-element-toggleattribute-qualifiedname-force-qua
 1
 Element/toggleAttribute(qualifiedName, force)
 Element/toggleAttribute(qualifiedName)
+-
+qualifiedName
+argument
+dom
+dom
+1
+snapshot
+https://dom.spec.whatwg.org/#dom-namednodemap-getnameditem-qualifiedname-qualifiedname
+1
+1
+NamedNodeMap/getNamedItem(qualifiedName)
+-
+qualifiedName
+argument
+dom
+dom
+1
+snapshot
+https://dom.spec.whatwg.org/#dom-namednodemap-removenameditem-qualifiedname-qualifiedname
+1
+1
+NamedNodeMap/removeNamedItem(qualifiedName)
 -
 quality
 dfn

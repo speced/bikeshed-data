@@ -1397,9 +1397,10 @@ encoding-1
 encoding
 1
 current
-https://encoding.spec.whatwg.org/#decoder
+https://encoding.spec.whatwg.org/#textdecodercommon-decoder
 
 1
+TextDecoderCommon
 -
 decoder
 dfn
@@ -1407,10 +1408,9 @@ encoding-1
 encoding
 1
 current
-https://encoding.spec.whatwg.org/#textdecodercommon-decoder
+https://encoding.spec.whatwg.org/#decoder
 
 1
-TextDecoderCommon
 -
 decoderImplementation
 dict-member
@@ -1679,11 +1679,11 @@ dom
 dom
 1
 snapshot
-https://dom.spec.whatwg.org/#dom-node-clonenode-deep-deep
+https://dom.spec.whatwg.org/#dom-document-importnode-node-deep-deep
 1
 1
-Node/cloneNode(deep)
-Node/cloneNode()
+Document/importNode(node, deep)
+Document/importNode(node)
 -
 deep
 argument
@@ -1691,11 +1691,11 @@ dom
 dom
 1
 snapshot
-https://dom.spec.whatwg.org/#dom-document-importnode-node-deep-deep
+https://dom.spec.whatwg.org/#dom-node-clonenode-deep-deep
 1
 1
-Document/importNode(node, deep)
-Document/importNode(node)
+Node/cloneNode(deep)
+Node/cloneNode()
 -
 deep link
 dfn
@@ -3980,17 +3980,6 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#delegates-focus
 1
 -
 delegatesFocus
-attribute
-dom
-dom
-1
-snapshot
-https://dom.spec.whatwg.org/#dom-shadowroot-delegatesfocus
-1
-1
-ShadowRoot
--
-delegatesFocus
 dict-member
 dom
 dom
@@ -4000,6 +3989,17 @@ https://dom.spec.whatwg.org/#dom-shadowrootinit-delegatesfocus
 1
 1
 ShadowRootInit
+-
+delegatesFocus
+attribute
+dom
+dom
+1
+snapshot
+https://dom.spec.whatwg.org/#dom-shadowroot-delegatesfocus
+1
+1
+ShadowRoot
 -
 delete
 dfn
@@ -4461,17 +4461,6 @@ cssom-1
 cssom
 1
 snapshot
-https://www.w3.org/TR/cssom-1/#dom-cssstylesheet-deleterule
-1
-1
-CSSStyleSheet
--
-deleteRule(index)
-method
-cssom-1
-cssom
-1
-snapshot
 https://www.w3.org/TR/cssom-1/#dom-cssgroupingrule-deleterule
 1
 1
@@ -4482,8 +4471,8 @@ method
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-deleterule
+snapshot
+https://www.w3.org/TR/cssom-1/#dom-cssstylesheet-deleterule
 1
 1
 CSSStyleSheet
@@ -4498,6 +4487,17 @@ https://drafts.csswg.org/cssom-1/#dom-cssgroupingrule-deleterule
 1
 1
 CSSGroupingRule
+-
+deleteRule(index)
+method
+cssom-1
+cssom
+1
+current
+https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-deleterule
+1
+1
+CSSStyleSheet
 -
 deleteRule(select)
 method
@@ -5981,17 +5981,6 @@ https://encoding.spec.whatwg.org/#dom-textencoder-encodeinto-source-destination-
 TextEncoder/encodeInto(source, destination)
 -
 destination
-dfn
-fetch
-fetch
-1
-current
-https://fetch.spec.whatwg.org/#concept-request-destination
-1
-1
-request
--
-destination
 attribute
 fetch
 fetch
@@ -6001,6 +5990,17 @@ https://fetch.spec.whatwg.org/#dom-request-destination
 1
 1
 Request
+-
+destination
+dfn
+fetch
+fetch
+1
+current
+https://fetch.spec.whatwg.org/#concept-request-destination
+1
+1
+request
 -
 destination
 dfn

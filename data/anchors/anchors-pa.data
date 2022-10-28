@@ -149,7 +149,7 @@ https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition
 1
 1
 -
-::page-transition-container( <pt-tag-selector> )
+::page-transition-container( )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -159,7 +159,7 @@ https://www.w3.org/TR/css-view-transitions-1/#selectordef-page-transition-contai
 1
 1
 -
-::page-transition-container( <pt-tag-selector> )
+::page-transition-container( )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -169,7 +169,7 @@ https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-con
 1
 1
 -
-::page-transition-image-wrapper( <pt-tag-selector> )
+::page-transition-image-wrapper( )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -179,7 +179,7 @@ https://www.w3.org/TR/css-view-transitions-1/#selectordef-page-transition-image-
 1
 1
 -
-::page-transition-image-wrapper( <pt-tag-selector> )
+::page-transition-image-wrapper( )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -189,7 +189,7 @@ https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-ima
 1
 1
 -
-::page-transition-incoming-image( <pt-tag-selector> )
+::page-transition-incoming-image( )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -199,7 +199,7 @@ https://www.w3.org/TR/css-view-transitions-1/#selectordef-page-transition-incomi
 1
 1
 -
-::page-transition-incoming-image( <pt-tag-selector> )
+::page-transition-incoming-image( )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -209,7 +209,7 @@ https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-inc
 1
 1
 -
-::page-transition-outgoing-image( <pt-tag-selector> )
+::page-transition-outgoing-image( )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -219,7 +219,7 @@ https://www.w3.org/TR/css-view-transitions-1/#selectordef-page-transition-outgoi
 1
 1
 -
-::page-transition-outgoing-image( <pt-tag-selector> )
+::page-transition-outgoing-image( )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -4549,17 +4549,6 @@ cssom-1
 cssom
 1
 snapshot
-https://www.w3.org/TR/cssom-1/#concept-css-rule-parent-css-rule
-
-1
-CSSRule
--
-parent css rule
-dfn
-cssom-1
-cssom
-1
-snapshot
 https://www.w3.org/TR/cssom-1/#cssstyledeclaration-parent-css-rule
 1
 1
@@ -4570,8 +4559,8 @@ dfn
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-rule
+snapshot
+https://www.w3.org/TR/cssom-1/#concept-css-rule-parent-css-rule
 
 1
 CSSRule
@@ -4587,16 +4576,16 @@ https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule
 1
 CSSStyleDeclaration
 -
-parent css style sheet
+parent css rule
 dfn
 cssom-1
 cssom
 1
-snapshot
-https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-parent-css-style-sheet
+current
+https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-rule
 
 1
-CSSStyleSheet
+CSSRule
 -
 parent css style sheet
 dfn
@@ -4614,8 +4603,8 @@ dfn
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet
+snapshot
+https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-parent-css-style-sheet
 
 1
 CSSStyleSheet
@@ -4630,6 +4619,17 @@ https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-style-sheet
 
 1
 CSSRule
+-
+parent css style sheet
+dfn
+cssom-1
+cssom
+1
+current
+https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet
+
+1
+CSSStyleSheet
 -
 parent css style sheet
 dfn
@@ -4750,17 +4750,6 @@ cssom-1
 cssom
 1
 snapshot
-https://www.w3.org/TR/cssom-1/#dom-cssrule-parentrule
-1
-1
-CSSRule
--
-parentRule
-attribute
-cssom-1
-cssom
-1
-snapshot
 https://www.w3.org/TR/cssom-1/#dom-cssstyledeclaration-parentrule
 1
 1
@@ -4771,8 +4760,8 @@ attribute
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#dom-cssrule-parentrule
+snapshot
+https://www.w3.org/TR/cssom-1/#dom-cssrule-parentrule
 1
 1
 CSSRule
@@ -4788,16 +4777,16 @@ https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-parentrule
 1
 CSSStyleDeclaration
 -
-parentStyleSheet
+parentRule
 attribute
 cssom-1
 cssom
 1
-snapshot
-https://www.w3.org/TR/cssom-1/#dom-stylesheet-parentstylesheet
+current
+https://drafts.csswg.org/cssom-1/#dom-cssrule-parentrule
 1
 1
-StyleSheet
+CSSRule
 -
 parentStyleSheet
 attribute
@@ -4815,8 +4804,8 @@ attribute
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#dom-stylesheet-parentstylesheet
+snapshot
+https://www.w3.org/TR/cssom-1/#dom-stylesheet-parentstylesheet
 1
 1
 StyleSheet
@@ -4831,6 +4820,17 @@ https://drafts.csswg.org/cssom-1/#dom-cssrule-parentstylesheet
 1
 1
 CSSRule
+-
+parentStyleSheet
+attribute
+cssom-1
+cssom
+1
+current
+https://drafts.csswg.org/cssom-1/#dom-stylesheet-parentstylesheet
+1
+1
+StyleSheet
 -
 parity
 dict-member
@@ -6089,10 +6089,10 @@ css-typed-om-1
 css-typed-om
 1
 current
-https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-parse
+https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-parse
 1
 1
-CSSNumericValue
+CSSColorValue
 -
 parse(cssText)
 method
@@ -6100,10 +6100,10 @@ css-typed-om-1
 css-typed-om
 1
 current
-https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-parse
+https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-parse
 1
 1
-CSSColorValue
+CSSNumericValue
 -
 parse(property, cssText)
 method

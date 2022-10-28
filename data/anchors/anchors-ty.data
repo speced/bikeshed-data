@@ -598,26 +598,15 @@ https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type
 CSSNumericValue
 -
 type
-attribute
-cssom-1
-cssom
-1
-snapshot
-https://www.w3.org/TR/cssom-1/#dom-stylesheet-type
-1
-1
-StyleSheet
--
-type
 dfn
 cssom-1
 cssom
 1
 snapshot
-https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-type
+https://www.w3.org/TR/cssom-1/#concept-css-rule-type
 
 1
-CSSStyleSheet
+CSSRule
 -
 type
 attribute
@@ -636,18 +625,18 @@ cssom-1
 cssom
 1
 snapshot
-https://www.w3.org/TR/cssom-1/#concept-css-rule-type
+https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-type
 
 1
-CSSRule
+CSSStyleSheet
 -
 type
 attribute
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#dom-stylesheet-type
+snapshot
+https://www.w3.org/TR/cssom-1/#dom-stylesheet-type
 1
 1
 StyleSheet
@@ -658,10 +647,10 @@ cssom-1
 cssom
 1
 current
-https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-type
+https://drafts.csswg.org/cssom-1/#concept-css-rule-type
 
 1
-CSSStyleSheet
+CSSRule
 -
 type
 attribute
@@ -680,10 +669,21 @@ cssom-1
 cssom
 1
 current
-https://drafts.csswg.org/cssom-1/#concept-css-rule-type
+https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-type
 
 1
-CSSRule
+CSSStyleSheet
+-
+type
+attribute
+cssom-1
+cssom
+1
+current
+https://drafts.csswg.org/cssom-1/#dom-stylesheet-type
+1
+1
+StyleSheet
 -
 type
 argument
@@ -709,6 +709,34 @@ MediaQueryListEvent/MediaQueryListEvent(type, eventInitDict)
 MediaQueryListEvent/constructor(type, eventInitDict)
 MediaQueryListEvent/MediaQueryListEvent(type)
 MediaQueryListEvent/constructor(type)
+-
+type
+argument
+dom
+dom
+1
+snapshot
+https://dom.spec.whatwg.org/#dom-customevent-customevent-type-eventinitdict-type
+1
+1
+CustomEvent/CustomEvent(type, eventInitDict)
+CustomEvent/constructor(type, eventInitDict)
+CustomEvent/CustomEvent(type)
+CustomEvent/constructor(type)
+-
+type
+argument
+dom
+dom
+1
+snapshot
+https://dom.spec.whatwg.org/#dom-customevent-initcustomevent-type-bubbles-cancelable-detail-type
+1
+1
+CustomEvent/initCustomEvent(type, bubbles, cancelable, detail)
+CustomEvent/initCustomEvent(type, bubbles, cancelable)
+CustomEvent/initCustomEvent(type, bubbles)
+CustomEvent/initCustomEvent(type)
 -
 type
 argument
@@ -754,34 +782,6 @@ dom
 dom
 1
 snapshot
-https://dom.spec.whatwg.org/#dom-customevent-customevent-type-eventinitdict-type
-1
-1
-CustomEvent/CustomEvent(type, eventInitDict)
-CustomEvent/constructor(type, eventInitDict)
-CustomEvent/CustomEvent(type)
-CustomEvent/constructor(type)
--
-type
-argument
-dom
-dom
-1
-snapshot
-https://dom.spec.whatwg.org/#dom-customevent-initcustomevent-type-bubbles-cancelable-detail-type
-1
-1
-CustomEvent/initCustomEvent(type, bubbles, cancelable, detail)
-CustomEvent/initCustomEvent(type, bubbles, cancelable)
-CustomEvent/initCustomEvent(type, bubbles)
-CustomEvent/initCustomEvent(type)
--
-type
-argument
-dom
-dom
-1
-snapshot
 https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener-type-callback-options-type
 1
 1
@@ -812,17 +812,6 @@ https://dom.spec.whatwg.org/#event-listener-type
 event listener
 -
 type
-attribute
-dom
-dom
-1
-snapshot
-https://dom.spec.whatwg.org/#dom-mutationrecord-type
-1
-1
-MutationRecord
--
-type
 dfn
 dom
 dom
@@ -832,6 +821,17 @@ https://dom.spec.whatwg.org/#concept-document-type
 1
 1
 Document
+-
+type
+attribute
+dom
+dom
+1
+snapshot
+https://dom.spec.whatwg.org/#dom-mutationrecord-type
+1
+1
+MutationRecord
 -
 type
 argument
@@ -861,6 +861,17 @@ XPathEvaluatorBase/evaluate(expression, contextNode, resolver)
 XPathEvaluatorBase/evaluate(expression, contextNode)
 -
 type
+attribute
+fetch
+fetch
+1
+current
+https://fetch.spec.whatwg.org/#dom-response-type
+1
+1
+Response
+-
+type
 dfn
 fetch
 fetch
@@ -884,14 +895,14 @@ response
 -
 type
 attribute
-fetch
-fetch
+fileapi-1
+fileapi
 1
 current
-https://fetch.spec.whatwg.org/#dom-response-type
+https://w3c.github.io/FileAPI/#dfn-type
 1
 1
-Response
+Blob
 -
 type
 dict-member
@@ -903,17 +914,6 @@ https://w3c.github.io/FileAPI/#dfn-BPtype
 1
 1
 BlobPropertyBag
--
-type
-attribute
-fileapi-1
-fileapi
-1
-current
-https://w3c.github.io/FileAPI/#dfn-type
-1
-1
-Blob
 -
 type
 element-attr
