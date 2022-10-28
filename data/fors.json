@@ -177,7 +177,7 @@
     "::first-letter",
     "::first-line",
     "::grammar-error",
-    "::highlight(<custom-highlight-name>)",
+    "::highlight()",
     "::marker",
     "::nth-fragment()",
     "::page-transition",
@@ -310,7 +310,6 @@
     "<attr-name>",
     "<attr-type>",
     "<attribute-selector>",
-    "<auto-repeat>",
     "<auto-track-list>",
     "<axis>",
     "<bad-string-token>",
@@ -363,19 +362,14 @@
     "<condition-in-parens>",
     "<condition>",
     "<consequent>",
-    "<container-condition>",
-    "<container-name>",
-    "<container-query>",
     "<content-distribution>",
     "<content-position>",
     "<contextual-alt-values>",
-    "<counter-name>",
     "<counter-style-name>",
     "<counter-style>",
     "<counter>",
     "<cubic-bezier-easing-function>",
     "<custom-arg>",
-    "<custom-highlight-name>",
     "<custom-ident>",
     "<custom-params>",
     "<custom-property-name>",
@@ -386,8 +380,6 @@
     "<declaration-list>",
     "<declaration-value>",
     "<delim-token>",
-    "<deprecated-color>",
-    "<device-performance>",
     "<dimension-token>",
     "<dimension-unit>",
     "<dimension>",
@@ -401,30 +393,23 @@
     "<easing-function>",
     "<east-asian-variant-values>",
     "<east-asian-width-values>",
-    "<eof-token>",
     "<explicit-track-list>",
     "<extension-name>",
     "<extent-keyword>",
-    "<extent>",
     "<family-name>",
     "<feature-tag-value>",
     "<feature-value-name>",
-    "<fill-rule>",
     "<filter-function>",
     "<filter-value-list>",
     "<fixed-breadth>",
-    "<fixed-repeat>",
     "<fixed-size>",
-    "<flex>",
     "<font-face-name>",
     "<font-feature-tech>",
     "<font-features-tech>",
     "<font-format",
     "<font-format>",
-    "<font-stretch-css3>",
     "<font-tech>",
     "<font-variant-css21>",
-    "<font-variant-css2>",
     "<font-weight-absolute>",
     "<forgiving-relative-selector-list>",
     "<forgiving-selector-list>",
@@ -457,8 +442,6 @@
     "<keyframe-block>",
     "<keyframe-selector>",
     "<keyframes-name>",
-    "<layer-name>",
-    "<leader-type>",
     "<left>",
     "<length-percentage>",
     "<length>",
@@ -500,7 +483,6 @@
     "<n-dimension>",
     "<na-name>",
     "<na-prefix>",
-    "<name-repeat>",
     "<named-color>",
     "<namespace-attr>",
     "<namespace-prefix>",
@@ -518,8 +500,6 @@
     "<outline-line-style>",
     "<overflow-position>",
     "<padding-width>",
-    "<page-selector-list>",
-    "<page-selector>",
     "<paint>",
     "<percentage-token>",
     "<percentage>",
@@ -530,34 +510,22 @@
     "<predefined-rgb>",
     "<pseudo-class-selector>",
     "<pseudo-element-selector>",
-    "<pseudo-page>",
     "<pt-tag-selector>",
-    "<query-in-parens>",
-    "<quirky-color>",
     "<quirky-length>",
-    "<quote>",
     "<ratio>",
     "<rectangular-color-space>",
     "<relative-selector-list>",
     "<relative-selector>",
     "<relative-size>",
     "<resolution>",
-    "<reversed-counter-name>",
     "<right>",
     "<rounding-strategy>",
     "<row-height>",
     "<rule-list>",
-    "<scope-end>",
-    "<scope-start>",
     "<scroller>",
     "<selector-list>",
-    "<selector-scope>",
     "<self-position>",
     "<semicolon-token>",
-    "<shape-arg>",
-    "<shape-box>",
-    "<shape-command>",
-    "<shape-radius>",
     "<shape>",
     "<side-or-corner>",
     "<signed-integer>",
@@ -573,21 +541,16 @@
     "<single-animation>",
     "<single-transition-property>",
     "<single-transition>",
-    "<size-feature>",
     "<size>",
     "<source-size-list>",
     "<source-size-value>",
     "<source-size>",
     "<specific-voice>",
-    "<speech-rate>",
     "<step-easing-function>",
     "<step-position>",
     "<string-token>",
     "<string>",
     "<style-block>",
-    "<style-feature>",
-    "<style-in-parens>",
-    "<style-query>",
     "<stylesheet>",
     "<subclass-selector>",
     "<supports-condition>",
@@ -601,9 +564,7 @@
     "<symbol>",
     "<symbols-type>",
     "<system-color>",
-    "<target-contrast>",
     "<target-name>",
-    "<target>",
     "<time-percentage>",
     "<time>",
     "<timeline-name>",
@@ -612,7 +573,6 @@
     "<top>",
     "<track-breadth>",
     "<track-list>",
-    "<track-repeat>",
     "<track-size>",
     "<transform-function>",
     "<transform-list>",
@@ -624,7 +584,6 @@
     "<url-token>",
     "<url>",
     "<viewport-length>",
-    "<wcag2>",
     "<whitespace-token>",
     "<wq-name>",
     "<xyz-params>",
@@ -4095,7 +4054,7 @@
     "compute the effective overload set",
     "compute the interest rectangle",
     "compute the intersection",
-    "computed <image>",
+    "computed",
     "computed color",
     "computed keyframe offset",
     "computed keyframes",
@@ -10217,11 +10176,11 @@
     "serialize a string",
     "serialize a url",
     "serialize a whitespace-separated list",
-    "serialize an <an+b> value",
     "serialize an identifier",
     "serialize an infra value to a json string",
     "serialize an infra value to json bytes",
     "serialize an integer",
+    "serialize an value",
     "serialize i/o queue",
     "serialize json to bytes",
     "serialize the calculation tree",
@@ -12350,8 +12309,6 @@
     "stretch"
   ],
   "<content-list>": [
-    "<image>",
-    "<string>",
     "close-quote",
     "contents",
     "leader()",
@@ -12511,12 +12468,10 @@
     "view-box"
   ],
   "<grid-line>": [
-    "<custom-ident>",
-    "<integer> && <custom-ident>?",
-    "[ <integer [−∞,−1]> | <integer [1,∞]> ] && <custom-ident>?",
+    "&& ?",
+    "[ | ] && ?",
     "auto",
-    "span && [ <integer [1,∞]> || <custom-ident> ]",
-    "span && [ <integer> || <custom-ident> ]"
+    "span && [ || ]"
   ],
   "<left>": [
     "auto"
@@ -12650,14 +12605,13 @@
   ],
   "<size>": [
     "<length [0,∞]>",
-    "<length-percentage [0,∞]>{2}",
-    "<length-percentage>{2}",
     "<length>",
     "closest-corner",
     "closest-side",
     "farthest-corner",
     "farthest-side",
-    "sides"
+    "sides",
+    "{2}"
   ],
   "<step-easing-function>": [
     "step-end",
@@ -12735,7 +12689,6 @@
     "auto"
   ],
   "@counter-style/speak-as": [
-    "<counter-style-name>",
     "auto",
     "bullets",
     "numbers",
@@ -12784,7 +12737,6 @@
     "swap"
   ],
   "@font-face/font-size": [
-    "<number>",
     "auto"
   ],
   "@font-feature-values": [
@@ -12955,7 +12907,6 @@
     "size"
   ],
   "@page/bleed": [
-    "<length>",
     "auto"
   ],
   "@page/marks": [
@@ -12964,8 +12915,6 @@
     "none"
   ],
   "@page/size": [
-    "<length>",
-    "<page-size>",
     "auto",
     "landscape",
     "portrait"
@@ -31008,13 +30957,11 @@
     "rectangle state"
   ],
   "ascent-override!!descriptor": [
-    "<percentage>",
     "normal"
   ],
   "aspect-ratio": [
-    "<ratio>",
     "auto",
-    "auto && <ratio>"
+    "auto &&"
   ],
   "assertionCreationData": [
     "assertionattestation",
@@ -31131,13 +31078,10 @@
     "target"
   ],
   "base-palette": [
-    "<integer>",
     "dark",
     "light"
   ],
   "baseline-shift": [
-    "<length>",
-    "<percentage>",
     "baseline",
     "bottom",
     "center",
@@ -31201,7 +31145,6 @@
     "remove the entry from the blob url store"
   ],
   "block-ellipsis": [
-    "<string>",
     "auto",
     "none"
   ],
@@ -31249,12 +31192,7 @@
     "body",
     "type"
   ],
-  "bookmark-label": [
-    "<content-list>"
-  ],
   "bookmark-level": [
-    "<integer [1,∞]>",
-    "<integer>",
     "none"
   ],
   "bookmark-state": [
@@ -31828,14 +31766,12 @@
     "xlink:href"
   ],
   "color-scheme": [
-    "<custom-ident>",
     "dark",
     "light",
     "normal",
     "only"
   ],
   "column-count": [
-    "<integer [1,∞]>",
     "auto"
   ],
   "column-fill": [
@@ -31846,25 +31782,18 @@
   "column-gap": [
     "normal"
   ],
-  "column-rule-color": [
-    "<color>"
-  ],
   "column-span": [
-    "<integer [1,∞]>",
     "all",
     "auto",
     "none"
   ],
   "column-width": [
-    "<length [0,∞]>",
     "auto",
-    "fit-content(<length-percentage>)",
+    "fit-content()",
     "max-content",
     "min-content"
   ],
   "conic-gradient()": [
-    "<angle>",
-    "<position>",
     "gradient center"
   ],
   "connection": [
@@ -32069,37 +31998,31 @@
     "style"
   ],
   "contain-intrinsic-block-size": [
-    "<length>",
-    "auto && <length>",
-    "auto <length>",
+    "auto",
+    "auto &&",
     "none"
   ],
   "contain-intrinsic-height": [
-    "<length>",
-    "auto && <length>",
-    "auto <length>",
+    "auto",
+    "auto &&",
     "none"
   ],
   "contain-intrinsic-inline-size": [
-    "<length>",
-    "auto && <length>",
-    "auto <length>",
+    "auto",
+    "auto &&",
     "none"
   ],
   "contain-intrinsic-size": [
-    "<length>",
-    "auto && <length>",
-    "auto <length>",
+    "auto",
+    "auto &&",
     "none"
   ],
   "contain-intrinsic-width": [
-    "<length>",
-    "auto && <length>",
-    "auto <length>",
+    "auto",
+    "auto &&",
     "none"
   ],
   "container-name": [
-    "<custom-ident>",
     "none"
   ],
   "container-type": [
@@ -32108,9 +32031,7 @@
     "size"
   ],
   "content": [
-    "/ [ <string> | <counter> ]+",
-    "<content-list>",
-    "<content-replacement>",
+    "/ [ | ]+",
     "<counter>",
     "<string>",
     "<uri>",
@@ -32169,23 +32090,22 @@
     "list-item"
   ],
   "counter-increment": [
-    "<counter-name> <integer>?",
+    "?",
     "list-item",
     "none"
   ],
   "counter-reset": [
-    "<counter-name> <integer>?",
-    "<reversed-counter-name> <integer>?",
+    "?",
     "list-item",
     "none"
   ],
   "counter-set": [
-    "<counter-name> <integer>?",
+    "?",
     "list-item",
     "none"
   ],
   "counter-set counter-increment": [
-    "<counter-name> <integer>?",
+    "?",
     "none"
   ],
   "counters()": [
@@ -32242,12 +32162,6 @@
     "ease-in",
     "ease-in-out",
     "ease-out"
-  ],
-  "cue-after": [
-    "<uri>"
-  ],
-  "cue-before": [
-    "<uri>"
   ],
   "cursor": [
     "<url-set>",
@@ -32359,7 +32273,6 @@
     "datetime"
   ],
   "descent-override!!descriptor": [
-    "<percentage>",
     "normal"
   ],
   "destination": [
@@ -33004,9 +32917,6 @@
     "-webkit-flex",
     "-webkit-inline-box",
     "-webkit-inline-flex",
-    "<'flex-basis'>",
-    "<'flex-grow'>",
-    "<'flex-shrink'>",
     "flex basis",
     "flex grow factor",
     "flex shrink factor",
@@ -33021,12 +32931,6 @@
     "column-reverse",
     "row",
     "row-reverse"
-  ],
-  "flex-grow": [
-    "<number>"
-  ],
-  "flex-shrink": [
-    "<number>"
   ],
   "flex-wrap": [
     "nowrap",
@@ -33144,24 +33048,16 @@
   "font-language override": [
     "normal"
   ],
-  "font-language-override": [
-    "<string>"
-  ],
   "font-optical-sizing": [
     "auto",
     "none"
   ],
   "font-palette": [
-    "<palette-identifier>",
     "dark",
     "light",
     "normal"
   ],
   "font-size": [
-    "<absolute-size>",
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
-    "<relative-size>",
     "large",
     "math",
     "medium",
@@ -33172,7 +33068,6 @@
     "xx-small"
   ],
   "font-size-adjust": [
-    "<number [0,∞]>",
     "<number>",
     "aspect value",
     "cap-height",
@@ -33185,8 +33080,6 @@
     "none"
   ],
   "font-stretch": [
-    "<percentage [0,∞]>",
-    "<percentage>",
     "condensed",
     "expanded",
     "extra-condensed",
@@ -33201,8 +33094,7 @@
     "italic",
     "normal",
     "oblique",
-    "oblique <angle [−90deg,90deg]>?",
-    "oblique <angle>?",
+    "oblique ?",
     "small-caps"
   ],
   "font-synthesis-small-caps": [
@@ -33222,14 +33114,14 @@
     "normal"
   ],
   "font-variant-alternates": [
-    "annotation(<feature-value-name>)",
-    "character-variant(<feature-value-name>#)",
+    "annotation()",
+    "character-variant(#)",
     "historical-forms",
     "normal",
-    "ornaments(<feature-value-name>)",
-    "styleset(<feature-value-name>#)",
-    "stylistic(<feature-value-name>)",
-    "swash(<feature-value-name>)"
+    "ornaments()",
+    "styleset(#)",
+    "stylistic()",
+    "swash()"
   ],
   "font-variant-caps": [
     "all-petite-caps",
@@ -33288,7 +33180,6 @@
     "super"
   ],
   "font-weight": [
-    "<number [1,1000]>",
     "bold",
     "bolder",
     "lighter",
@@ -33375,42 +33266,27 @@
     "vert-origin-y"
   ],
   "grid": [
-    "<'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>?",
-    "[ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>"
+    "/ [ auto-flow && dense? ] ?",
+    "[ auto-flow && dense? ] ? /"
   ],
   "grid-auto-flow": [
     "column",
     "dense",
     "row"
   ],
-  "grid-column-end": [
-    "<grid-line>"
-  ],
-  "grid-column-start": [
-    "<grid-line>"
-  ],
-  "grid-row-end": [
-    "<grid-line>"
-  ],
-  "grid-row-start": [
-    "<grid-line>"
-  ],
   "grid-template": [
-    "<'grid-template-rows'> / <'grid-template-columns'>",
-    "[ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
+    "/",
+    "[ ? ? ? ]+ [ / ]?",
     "none"
   ],
   "grid-template-areas": [
-    "<string>+",
+    "+",
     "named cell token",
     "none",
     "null cell token",
     "trash token"
   ],
   "grid-template-columns": [
-    "<flex>",
-    "<length-percentage>",
-    "<track-list> | <auto-track-list>",
     "auto",
     "fit-content()",
     "flex factor",
@@ -33420,13 +33296,11 @@
     "none",
     "sizing function",
     "subgrid",
-    "subgrid <line-name-list>?",
-    "track sizing function"
+    "subgrid ?",
+    "track sizing function",
+    "|"
   ],
   "grid-template-rows": [
-    "<flex>",
-    "<length-percentage>",
-    "<track-list> | <auto-track-list>",
     "auto",
     "fit-content()",
     "flex factor",
@@ -33436,8 +33310,9 @@
     "none",
     "sizing function",
     "subgrid",
-    "subgrid <line-name-list>?",
-    "track sizing function"
+    "subgrid ?",
+    "track sizing function",
+    "|"
   ],
   "h1": [
     "align"
@@ -33493,13 +33368,10 @@
     "normalize"
   ],
   "height": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
-    "fit-content(<length-percentage [0,∞]>)",
-    "fit-content(<length-percentage>)",
+    "fit-content()",
     "max-content",
     "min-content",
     "stretch"
@@ -33718,7 +33590,6 @@
     "smooth"
   ],
   "image-resolution": [
-    "<resolution>",
     "from-image",
     "snap"
   ],
@@ -33787,10 +33658,6 @@
     "transaction"
   ],
   "initial-letter": [
-    "<integer [1,∞]>",
-    "<integer>",
-    "<number [1,∞]>",
-    "<number>",
     "drop",
     "initial letter sink",
     "initial letter size",
@@ -33805,8 +33672,6 @@
     "leading"
   ],
   "initial-letter-wrap": [
-    "<length>",
-    "<percentage>",
     "all",
     "first",
     "grid",
@@ -34133,7 +33998,6 @@
     "lch"
   ],
   "leader()": [
-    "<string>",
     "dotted",
     "solid",
     "space"
@@ -34177,11 +34041,9 @@
     "strict"
   ],
   "line-clamp": [
-    "<integer>",
     "none"
   ],
   "line-gap-override!!descriptor": [
-    "<percentage>",
     "normal"
   ],
   "line-grid": [
@@ -34189,9 +34051,6 @@
     "match-parent"
   ],
   "line-height": [
-    "<length>",
-    "<number>",
-    "<percentage>",
     "normal"
   ],
   "line-snap": [
@@ -34272,7 +34131,6 @@
     "sorting in descending order"
   ],
   "list-style-image": [
-    "<image>",
     "none"
   ],
   "list-style-position": [
@@ -34280,8 +34138,6 @@
     "outside"
   ],
   "list-style-type": [
-    "<counter-style>",
-    "<string>",
     "armenian",
     "circle",
     "decimal",
@@ -34511,12 +34367,9 @@
     "stretch"
   ],
   "max-height": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "contain",
     "fit-content",
-    "fit-content(<length-percentage [0,∞]>)",
-    "fit-content(<length-percentage>)",
+    "fit-content()",
     "max-content",
     "min-content",
     "none",
@@ -34528,16 +34381,12 @@
     "stretch"
   ],
   "max-lines": [
-    "<integer>",
     "none"
   ],
   "max-width": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "contain",
     "fit-content",
-    "fit-content(<length-percentage [0,∞]>)",
-    "fit-content(<length-percentage>)",
+    "fit-content()",
     "max-content",
     "min-content",
     "none",
@@ -34598,13 +34447,10 @@
     "stretch"
   ],
   "min-height": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
-    "fit-content(<length-percentage [0,∞]>)",
-    "fit-content(<length-percentage>)",
+    "fit-content()",
     "max-content",
     "min-content",
     "stretch"
@@ -34625,13 +34471,10 @@
     "zero-if-scroll"
   ],
   "min-width": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
-    "fit-content(<length-percentage [0,∞]>)",
-    "fit-content(<length-percentage>)",
+    "fit-content()",
     "max-content",
     "min-content",
     "stretch"
@@ -34723,7 +34566,6 @@
     "transaction"
   ],
   "object-view-box": [
-    "<basic-shape-rect>",
     "none"
   ],
   "object/autocomplete": [
@@ -34881,9 +34723,6 @@
   "optional argument": [
     "default value"
   ],
-  "order": [
-    "<integer>"
-  ],
   "orientation": [
     "auto",
     "landscape",
@@ -34991,10 +34830,6 @@
     "auto",
     "none"
   ],
-  "overflow-clip-margin": [
-    "<length [0,∞]>",
-    "<visual-box>"
-  ],
   "overflow-wrap": [
     "anywhere",
     "break-word",
@@ -35093,15 +34928,11 @@
     "d",
     "pathlength"
   ],
-  "path()": [
-    "<string>"
-  ],
   "pattern": [
     "xlink:href",
     "xlink:title"
   ],
   "pause-after": [
-    "<time>",
     "medium",
     "none",
     "strong",
@@ -35110,7 +34941,6 @@
     "x-weak"
   ],
   "pause-before": [
-    "<time>",
     "medium",
     "none",
     "strong",
@@ -35320,9 +35150,6 @@
     "none"
   ],
   "radial-gradient()": [
-    "<ending-shape>",
-    "<position>",
-    "<size>",
     "gradient center"
   ],
   "radialGradient": [
@@ -35388,14 +35215,9 @@
     "auto-fit"
   ],
   "repeating-conic-gradient()": [
-    "<angle>",
-    "<position>",
     "gradient center"
   ],
   "repeating-radial-gradient()": [
-    "<ending-shape>",
-    "<position>",
-    "<size>",
     "gradient center"
   ],
   "report": [
@@ -35490,7 +35312,6 @@
     "encoded size"
   ],
   "rest-after": [
-    "<time>",
     "medium",
     "none",
     "strong",
@@ -35499,7 +35320,6 @@
     "x-weak"
   ],
   "rest-before": [
-    "<time>",
     "medium",
     "none",
     "strong",
@@ -35661,38 +35481,24 @@
     "smooth"
   ],
   "scroll-padding": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block-end": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block-start": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline-end": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline-start": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto"
   ],
   "scroll-snap-align": [
@@ -35716,21 +35522,18 @@
     "y"
   ],
   "scroll-start": [
-    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-block": [
-    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-inline": [
-    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
@@ -35757,14 +35560,12 @@
     "none"
   ],
   "scroll-start-x": [
-    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-y": [
-    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
@@ -35779,7 +35580,6 @@
     "vertical"
   ],
   "scrollbar-color": [
-    "<color>",
     "auto"
   ],
   "scrollbar-gutter": [
@@ -35968,16 +35768,6 @@
     "part element map"
   ],
   "shape()": [
-    "<arc-command>",
-    "<arc-size>",
-    "<arc-sweep>",
-    "<by-to>",
-    "<coordinate-pair>",
-    "<curve-command>",
-    "<hv-line-command>",
-    "<line-command>",
-    "<move-command>",
-    "<smooth-command>",
     "arc",
     "by",
     "ccw",
@@ -35993,24 +35783,12 @@
     "to",
     "vline"
   ],
-  "shape-image-threshold": [
-    "<number>"
-  ],
   "shape-inside": [
-    "<basic-shape>",
-    "<url>",
     "auto",
     "display",
     "outside-shape"
   ],
-  "shape-margin": [
-    "<length-percentage>",
-    "<length>",
-    "<percentage>"
-  ],
   "shape-outside": [
-    "<basic-shape>",
-    "<image>",
     "border-box",
     "content-box",
     "margin-box",
@@ -36216,12 +35994,10 @@
     "type"
   ],
   "subscript-position-override!!descriptor": [
-    "<percentage>",
     "from-font",
     "normal"
   ],
   "subscript-size-override!!descriptor": [
-    "<percentage>",
     "from-font",
     "normal"
   ],
@@ -36230,12 +36006,10 @@
     "value"
   ],
   "superscript-position-override!!descriptor": [
-    "<percentage>",
     "from-font",
     "normal"
   ],
   "superscript-size-override!!descriptor": [
-    "<percentage>",
     "from-font",
     "normal"
   ],
@@ -37037,7 +36811,6 @@
     "associated document"
   ],
   "voice-balance": [
-    "<number>",
     "center",
     "left",
     "leftwards",
@@ -37045,14 +36818,9 @@
     "rightwards"
   ],
   "voice-duration": [
-    "<time>",
     "auto"
   ],
   "voice-family": [
-    "<age>",
-    "<family-name>",
-    "<gender>",
-    "<integer>",
     "child",
     "female",
     "male",
@@ -37062,9 +36830,6 @@
     "young"
   ],
   "voice-pitch": [
-    "<frequency>",
-    "<percentage>",
-    "<semitones>",
     "absolute",
     "high",
     "low",
@@ -37074,8 +36839,6 @@
     "x-low"
   ],
   "voice-range": [
-    "<percentage>",
-    "<semitones>",
     "absolute",
     "high",
     "low",
@@ -37084,7 +36847,6 @@
     "x-low"
   ],
   "voice-rate": [
-    "<percentage>",
     "fast",
     "medium",
     "normal",
@@ -37100,7 +36862,6 @@
     "strong"
   ],
   "voice-volume": [
-    "<decibel>",
     "loud",
     "medium",
     "silent",
@@ -37117,13 +36878,10 @@
     "pre-wrap"
   ],
   "width": [
-    "<length-percentage [0,∞]>",
-    "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
-    "fit-content(<length-percentage [0,∞]>)",
-    "fit-content(<length-percentage>)",
+    "fit-content()",
     "max-content",
     "min-content",
     "stretch"
