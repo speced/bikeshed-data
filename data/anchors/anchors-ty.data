@@ -2262,18 +2262,6 @@ webaudio
 webaudio
 1
 snapshot
-https://www.w3.org/TR/webaudio/#dom-offlineaudiocompletionevent-offlineaudiocompletionevent-type-eventinitdict-type
-1
-1
-OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)
-OfflineAudioCompletionEvent/constructor(type, eventInitDict)
--
-type
-argument
-webaudio
-webaudio
-1
-snapshot
 https://www.w3.org/TR/webaudio/#dom-audioprocessingevent-audioprocessingevent-type-eventinitdict-type
 1
 1
@@ -2303,6 +2291,18 @@ https://www.w3.org/TR/webaudio/#dom-biquadfilteroptions-type
 BiquadFilterOptions
 -
 type
+argument
+webaudio
+webaudio
+1
+snapshot
+https://www.w3.org/TR/webaudio/#dom-offlineaudiocompletionevent-offlineaudiocompletionevent-type-eventinitdict-type
+1
+1
+OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)
+OfflineAudioCompletionEvent/constructor(type, eventInitDict)
+-
+type
 attribute
 webaudio
 webaudio
@@ -2325,28 +2325,6 @@ https://www.w3.org/TR/webaudio/#dom-oscillatoroptions-type
 OscillatorOptions
 -
 type
-dict-member
-webaudio
-webaudio
-1
-current
-https://webaudio.github.io/web-audio-api/#dom-audiosinkoptions-type
-1
-1
-AudioSinkOptions
--
-type
-attribute
-webaudio
-webaudio
-1
-current
-https://webaudio.github.io/web-audio-api/#dom-audiosinkinfo-type
-1
-1
-AudioSinkInfo
--
-type
 argument
 webaudio
 webaudio
@@ -2361,16 +2339,26 @@ AudioRenderCapacityEvent/AudioRenderCapacityEvent(type)
 AudioRenderCapacityEvent/constructor(type)
 -
 type
-argument
+attribute
 webaudio
 webaudio
 1
 current
-https://webaudio.github.io/web-audio-api/#dom-offlineaudiocompletionevent-offlineaudiocompletionevent-type-eventinitdict-type
+https://webaudio.github.io/web-audio-api/#dom-audiosinkinfo-type
 1
 1
-OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)
-OfflineAudioCompletionEvent/constructor(type, eventInitDict)
+AudioSinkInfo
+-
+type
+dict-member
+webaudio
+webaudio
+1
+current
+https://webaudio.github.io/web-audio-api/#dom-audiosinkoptions-type
+1
+1
+AudioSinkOptions
 -
 type
 argument
@@ -2407,6 +2395,18 @@ https://webaudio.github.io/web-audio-api/#dom-biquadfilteroptions-type
 BiquadFilterOptions
 -
 type
+argument
+webaudio
+webaudio
+1
+current
+https://webaudio.github.io/web-audio-api/#dom-offlineaudiocompletionevent-offlineaudiocompletionevent-type-eventinitdict-type
+1
+1
+OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)
+OfflineAudioCompletionEvent/constructor(type, eventInitDict)
+-
+type
 attribute
 webaudio
 webaudio
@@ -2427,17 +2427,6 @@ https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-type
 1
 1
 OscillatorOptions
--
-type
-dfn
-webauthn-1
-webauthn
-1
-snapshot
-https://www.w3.org/TR/webauthn/#public-key-credential-source-type
-
-1
-public key credential source
 -
 type
 dict-member
@@ -2473,23 +2462,12 @@ https://www.w3.org/TR/webauthn/#dom-publickeycredentialdescriptor-type
 PublicKeyCredentialDescriptor
 -
 type
-abstract-op
-webauthn-1
-webauthn
-1
-current
-https://w3c.github.io/webauthn/#abstract-opdef-credential-record-type
-1
-1
-credential record
--
-type
 dfn
 webauthn-1
 webauthn
 1
-current
-https://w3c.github.io/webauthn/#public-key-credential-source-type
+snapshot
+https://www.w3.org/TR/webauthn/#public-key-credential-source-type
 
 1
 public key credential source
@@ -2500,10 +2478,10 @@ webauthn-1
 webauthn
 1
 current
-https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-type
+https://w3c.github.io/webauthn/#dom-publickeycredentialparameters-type
 1
 1
-PublicKeyCredentialDescriptorJSON
+PublicKeyCredentialParameters
 -
 type
 dict-member
@@ -2533,10 +2511,10 @@ webauthn-1
 webauthn
 1
 current
-https://w3c.github.io/webauthn/#dom-publickeycredentialparameters-type
+https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-type
 1
 1
-PublicKeyCredentialParameters
+PublicKeyCredentialDescriptorJSON
 -
 type
 dict-member
@@ -2570,6 +2548,28 @@ https://w3c.github.io/webauthn/#discoverablecredentialmetadata-type
 
 1
 DiscoverableCredentialMetadata
+-
+type
+abstract-op
+webauthn-1
+webauthn
+1
+current
+https://w3c.github.io/webauthn/#abstract-opdef-credential-record-type
+1
+1
+credential record
+-
+type
+dfn
+webauthn-1
+webauthn
+1
+current
+https://w3c.github.io/webauthn/#public-key-credential-source-type
+
+1
+public key credential source
 -
 type
 dfn
