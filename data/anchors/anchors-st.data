@@ -87,16 +87,6 @@ https://w3c.github.io/IndexedDB/#dom-idbtransactiondurability-strict
 IDBTransactionDurability
 -
 "strict-origin"
-dfn
-referrer-policy-1
-referrer-policy
-1
-snapshot
-http://www.w3.org/TR/referrer-policy/#referrer-policy-strict-origin
-1
-1
--
-"strict-origin"
 enum-value
 referrer-policy-1
 referrer-policy
@@ -112,8 +102,8 @@ dfn
 referrer-policy-1
 referrer-policy
 1
-current
-https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-strict-origin
+snapshot
+http://www.w3.org/TR/referrer-policy/#referrer-policy-strict-origin
 1
 1
 -
@@ -128,13 +118,13 @@ https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-strict-origi
 1
 ReferrerPolicy
 -
-"strict-origin-when-cross-origin"
+"strict-origin"
 dfn
 referrer-policy-1
 referrer-policy
 1
-snapshot
-http://www.w3.org/TR/referrer-policy/#referrer-policy-strict-origin-when-cross-origin
+current
+https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-strict-origin
 1
 1
 -
@@ -154,8 +144,8 @@ dfn
 referrer-policy-1
 referrer-policy
 1
-current
-https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-strict-origin-when-cross-origin
+snapshot
+http://www.w3.org/TR/referrer-policy/#referrer-policy-strict-origin-when-cross-origin
 1
 1
 -
@@ -169,6 +159,16 @@ https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-strict-origi
 1
 1
 ReferrerPolicy
+-
+"strict-origin-when-cross-origin"
+dfn
+referrer-policy-1
+referrer-policy
+1
+current
+https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-strict-origin-when-cross-origin
+1
+1
 -
 "style"
 enum-value
@@ -1054,10 +1054,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#readablestreamdefaultcontroller-started
+https://streams.spec.whatwg.org/#readablebytestreamcontroller-started
 
 1
-ReadableStreamDefaultController
+ReadableByteStreamController
 -
 [[started]]
 dfn
@@ -1065,10 +1065,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#readablebytestreamcontroller-started
+https://streams.spec.whatwg.org/#readablestreamdefaultcontroller-started
 
 1
-ReadableByteStreamController
+ReadableStreamDefaultController
 -
 [[started]]
 dfn
@@ -1217,10 +1217,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#readablestreamdefaultcontroller-strategyhwm
+https://streams.spec.whatwg.org/#readablebytestreamcontroller-strategyhwm
 
 1
-ReadableStreamDefaultController
+ReadableByteStreamController
 -
 [[strategyhwm]]
 dfn
@@ -1228,10 +1228,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#readablebytestreamcontroller-strategyhwm
+https://streams.spec.whatwg.org/#readablestreamdefaultcontroller-strategyhwm
 
 1
-ReadableByteStreamController
+ReadableStreamDefaultController
 -
 [[strategyhwm]]
 dfn
@@ -1283,6 +1283,17 @@ streams
 streams
 1
 current
+https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream
+
+1
+ReadableByteStreamController
+-
+[[stream]]
+dfn
+streams
+streams
+1
+current
 https://streams.spec.whatwg.org/#readablestreamdefaultcontroller-stream
 
 1
@@ -1294,10 +1305,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#readablebytestreamcontroller-stream
+https://streams.spec.whatwg.org/#transformstreamdefaultcontroller-stream
 
 1
-ReadableByteStreamController
+TransformStreamDefaultController
 -
 [[stream]]
 dfn
@@ -1320,17 +1331,6 @@ https://streams.spec.whatwg.org/#writablestreamdefaultcontroller-stream
 
 1
 WritableStreamDefaultController
--
-[[stream]]
-dfn
-streams
-streams
-1
-current
-https://streams.spec.whatwg.org/#transformstreamdefaultcontroller-stream
-
-1
-TransformStreamDefaultController
 -
 [[styleMap]]
 attribute
@@ -2198,10 +2198,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#dom-underlyingsink-start
+https://streams.spec.whatwg.org/#dom-transformer-start
 1
 1
-UnderlyingSink
+Transformer
 -
 start
 dict-member
@@ -2209,10 +2209,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#dom-transformer-start
+https://streams.spec.whatwg.org/#dom-underlyingsink-start
 1
 1
-Transformer
+UnderlyingSink
 -
 start a new parallel queue
 dfn
@@ -3630,6 +3630,17 @@ https://www.w3.org/TR/payment-request/#dfn-state-0
 PaymentRequest
 -
 state
+dict-member
+permissions-1
+permissions
+1
+current
+https://w3c.github.io/permissions/#dom-permissionsetparameters-state
+1
+1
+PermissionSetParameters
+-
+state
 dfn
 permissions-1
 permissions
@@ -3650,17 +3661,6 @@ https://w3c.github.io/permissions/#dom-permissionstatus-state
 1
 1
 PermissionStatus
--
-state
-dict-member
-permissions-1
-permissions
-1
-current
-https://w3c.github.io/permissions/#dom-permissionsetparameters-state
-1
-1
-PermissionSetParameters
 -
 state
 attribute
@@ -3707,17 +3707,6 @@ https://w3c.github.io/remote-playback/#dom-remoteplayback-state
 RemotePlayback
 -
 state
-dfn
-service-workers
-service-workers
-1
-snapshot
-https://www.w3.org/TR/service-workers-1/#dfn-state
-1
-1
-service worker
--
-state
 attribute
 service-workers
 service-workers
@@ -3733,8 +3722,8 @@ dfn
 service-workers
 service-workers
 1
-current
-https://w3c.github.io/ServiceWorker/#dfn-state
+snapshot
+https://www.w3.org/TR/service-workers-1/#dfn-state
 1
 1
 service worker
@@ -3749,6 +3738,17 @@ https://w3c.github.io/ServiceWorker/#dom-serviceworker-state
 1
 1
 ServiceWorker
+-
+state
+dfn
+service-workers
+service-workers
+1
+current
+https://w3c.github.io/ServiceWorker/#dfn-state
+1
+1
+service worker
 -
 state
 attribute
@@ -6229,17 +6229,6 @@ service-workers
 service-workers
 1
 snapshot
-https://www.w3.org/TR/service-workers-1/#service-worker-registration-storage-key
-1
-1
-service worker registration
--
-storage key
-dfn
-service-workers
-service-workers
-1
-snapshot
 https://www.w3.org/TR/service-workers-1/#job-storage-key
 
 1
@@ -6250,8 +6239,8 @@ dfn
 service-workers
 service-workers
 1
-current
-https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key
+snapshot
+https://www.w3.org/TR/service-workers-1/#service-worker-registration-storage-key
 1
 1
 service worker registration
@@ -6266,6 +6255,17 @@ https://w3c.github.io/ServiceWorker/#job-storage-key
 
 1
 job
+-
+storage key
+dfn
+service-workers
+service-workers
+1
+current
+https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key
+1
+1
+service worker registration
 -
 storage key
 dfn
@@ -6547,11 +6547,11 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#dom-readablestreamdefaultreader-readablestreamdefaultreader-stream-stream
+https://streams.spec.whatwg.org/#dom-readablestreambyobreader-readablestreambyobreader-stream-stream
 1
 1
-ReadableStreamDefaultReader/ReadableStreamDefaultReader(stream)
-ReadableStreamDefaultReader/constructor(stream)
+ReadableStreamBYOBReader/ReadableStreamBYOBReader(stream)
+ReadableStreamBYOBReader/constructor(stream)
 -
 stream
 argument
@@ -6559,11 +6559,11 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#dom-readablestreambyobreader-readablestreambyobreader-stream-stream
+https://streams.spec.whatwg.org/#dom-readablestreamdefaultreader-readablestreamdefaultreader-stream-stream
 1
 1
-ReadableStreamBYOBReader/ReadableStreamBYOBReader(stream)
-ReadableStreamBYOBReader/constructor(stream)
+ReadableStreamDefaultReader/ReadableStreamDefaultReader(stream)
+ReadableStreamDefaultReader/constructor(stream)
 -
 stream
 argument

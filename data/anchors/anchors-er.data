@@ -78,10 +78,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#ws-default-controller-private-error
+https://streams.spec.whatwg.org/#abstract-opdef-writablestreamcontroller-errorsteps
 1
 1
-WritableStreamDefaultController
+WritableStreamController
 -
 [[ErrorSteps]]
 abstract-op
@@ -89,10 +89,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#abstract-opdef-writablestreamcontroller-errorsteps
+https://streams.spec.whatwg.org/#ws-default-controller-private-error
 1
 1
-WritableStreamController
+WritableStreamDefaultController
 -
 e-resize
 value
@@ -452,10 +452,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#writablestream-error
+https://streams.spec.whatwg.org/#transformstream-error
 1
 1
-WritableStream
+TransformStream
 -
 error
 dfn
@@ -463,10 +463,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#transformstream-error
+https://streams.spec.whatwg.org/#writablestream-error
 1
 1
-TransformStream
+WritableStream
 -
 error
 dfn
@@ -612,10 +612,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#read-request-error-steps
+https://streams.spec.whatwg.org/#read-into-request-error-steps
 1
 1
-read request
+read-into request
 -
 error steps
 dfn
@@ -623,10 +623,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#read-into-request-error-steps
+https://streams.spec.whatwg.org/#read-request-error-steps
 1
 1
-read-into request
+read request
 -
 error to rethrow
 dfn
@@ -677,17 +677,6 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#rs-default-controller-error
-1
-1
-ReadableStreamDefaultController
--
-error()
-method
-streams
-streams
-1
-current
 https://streams.spec.whatwg.org/#rbs-controller-error
 1
 1
@@ -699,10 +688,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#ws-default-controller-error
+https://streams.spec.whatwg.org/#rs-default-controller-error
 1
 1
-WritableStreamDefaultController
+ReadableStreamDefaultController
 -
 error()
 method
@@ -714,6 +703,17 @@ https://streams.spec.whatwg.org/#ts-default-controller-error
 1
 1
 TransformStreamDefaultController
+-
+error()
+method
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#ws-default-controller-error
+1
+1
+WritableStreamDefaultController
 -
 error(...data)
 method
@@ -732,17 +732,6 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#rs-default-controller-error
-1
-1
-ReadableStreamDefaultController
--
-error(e)
-method
-streams
-streams
-1
-current
 https://streams.spec.whatwg.org/#rbs-controller-error
 1
 1
@@ -754,10 +743,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#ws-default-controller-error
+https://streams.spec.whatwg.org/#rs-default-controller-error
 1
 1
-WritableStreamDefaultController
+ReadableStreamDefaultController
 -
 error(e)
 method
@@ -769,6 +758,17 @@ https://streams.spec.whatwg.org/#ts-default-controller-error
 1
 1
 TransformStreamDefaultController
+-
+error(e)
+method
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#ws-default-controller-error
+1
+1
+WritableStreamDefaultController
 -
 error(reason)
 method

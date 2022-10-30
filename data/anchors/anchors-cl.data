@@ -384,10 +384,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#readablestreamdefaultcontroller-closerequested
+https://streams.spec.whatwg.org/#readablebytestreamcontroller-closerequested
 
 1
-ReadableStreamDefaultController
+ReadableByteStreamController
 -
 [[closerequested]]
 dfn
@@ -395,10 +395,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#readablebytestreamcontroller-closerequested
+https://streams.spec.whatwg.org/#readablestreamdefaultcontroller-closerequested
 
 1
-ReadableByteStreamController
+ReadableStreamDefaultController
 -
 claim()
 method
@@ -1886,17 +1886,6 @@ https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-clientid
 IdentityProviderConfig
 -
 clientId
-attribute
-service-workers
-service-workers
-1
-snapshot
-https://www.w3.org/TR/service-workers-1/#dom-fetchevent-clientid
-1
-1
-FetchEvent
--
-clientId
 dict-member
 service-workers
 service-workers
@@ -1912,8 +1901,8 @@ attribute
 service-workers
 service-workers
 1
-current
-https://w3c.github.io/ServiceWorker/#dom-fetchevent-clientid
+snapshot
+https://www.w3.org/TR/service-workers-1/#dom-fetchevent-clientid
 1
 1
 FetchEvent
@@ -1928,6 +1917,17 @@ https://w3c.github.io/ServiceWorker/#dom-fetcheventinit-clientid
 1
 1
 FetchEventInit
+-
+clientId
+attribute
+service-workers
+service-workers
+1
+current
+https://w3c.github.io/ServiceWorker/#dom-fetchevent-clientid
+1
+1
+FetchEvent
 -
 clientInformation
 attribute
@@ -2096,26 +2096,6 @@ https://www.w3.org/TR/uievents/#dom-mouseeventinit-clientx
 1
 MouseEventInit
 -
-clientXArg
-argument
-ui-events-1
-ui-events
-1
-snapshot
-https://www.w3.org/TR/uievents/#dom-mouseevent-initmouseevent-typearg-bubblesarg-cancelablearg-viewarg-detailarg-screenxarg-screenyarg-clientxarg-clientyarg-ctrlkeyarg-altkeyarg-shiftkeyarg-metakeyarg-buttonarg-relatedtargetarg-clientxarg
-1
-1
-MouseEvent/initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg)
-MouseEvent/initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg)
-MouseEvent/initMouseEvent(typeArg
-bubblesArg
-cancelableArg
-viewArg
-detailArg
-screenXArg
-screenYArg
-clientXAr
--
 clientY
 attribute
 cssom-view-1
@@ -2181,26 +2161,6 @@ https://www.w3.org/TR/uievents/#dom-mouseeventinit-clienty
 1
 1
 MouseEventInit
--
-clientYArg
-argument
-ui-events-1
-ui-events
-1
-snapshot
-https://www.w3.org/TR/uievents/#dom-mouseevent-initmouseevent-typearg-bubblesarg-cancelablearg-viewarg-detailarg-screenxarg-screenyarg-clientxarg-clientyarg-ctrlkeyarg-altkeyarg-shiftkeyarg-metakeyarg-buttonarg-relatedtargetarg-clientyarg
-1
-1
-MouseEvent/initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg)
-MouseEvent/initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg)
-MouseEvent/initMouseEvent(typeArg
-bubblesArg
-cancelableArg
-viewArg
-detailArg
-screenXArg
-screenYArg
-clientXAr
 -
 client_id
 argument
@@ -3146,17 +3106,6 @@ https://w3c.github.io/presentation-api/#dom-presentationconnection-close
 PresentationConnection
 -
 close
-dict-member
-streams
-streams
-1
-current
-https://streams.spec.whatwg.org/#dom-underlyingsink-close
-1
-1
-UnderlyingSink
--
-close
 dfn
 streams
 streams
@@ -3177,6 +3126,17 @@ https://streams.spec.whatwg.org/#writablestream-close
 1
 1
 WritableStream
+-
+close
+dict-member
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#dom-underlyingsink-close
+1
+1
+UnderlyingSink
 -
 close
 method
@@ -3318,10 +3278,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#read-request-close-steps
+https://streams.spec.whatwg.org/#read-into-request-close-steps
 1
 1
-read request
+read-into request
 -
 close steps
 dfn
@@ -3329,10 +3289,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#read-into-request-close-steps
+https://streams.spec.whatwg.org/#read-request-close-steps
 1
 1
-read-into request
+read request
 -
 close the cell
 dfn
@@ -3546,17 +3506,6 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#rs-default-controller-close
-1
-1
-ReadableStreamDefaultController
--
-close()
-method
-streams
-streams
-1
-current
 https://streams.spec.whatwg.org/#rbs-controller-close
 1
 1
@@ -3568,10 +3517,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#ws-close
+https://streams.spec.whatwg.org/#rs-default-controller-close
 1
 1
-WritableStream
+ReadableStreamDefaultController
 -
 close()
 method
@@ -3583,6 +3532,17 @@ https://streams.spec.whatwg.org/#default-writer-close
 1
 1
 WritableStreamDefaultWriter
+-
+close()
+method
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#ws-close
+1
+1
+WritableStream
 -
 close()
 method
@@ -3812,6 +3772,17 @@ presentation-api-1
 presentation-api
 1
 snapshot
+https://www.w3.org/TR/presentation-api/#dom-presentationconnectionstate-closed
+1
+1
+PresentationConnectionState
+-
+closed
+enum-value
+presentation-api-1
+presentation-api
+1
+snapshot
 https://www.w3.org/TR/presentation-api/#dom-presentationconnectionclosereason-closed
 1
 1
@@ -3822,8 +3793,8 @@ enum-value
 presentation-api-1
 presentation-api
 1
-snapshot
-https://www.w3.org/TR/presentation-api/#dom-presentationconnectionstate-closed
+current
+https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed
 1
 1
 PresentationConnectionState
@@ -3840,15 +3811,15 @@ https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-cl
 PresentationConnectionCloseReason
 -
 closed
-enum-value
-presentation-api-1
-presentation-api
+dfn
+streams
+streams
 1
 current
-https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed
+https://streams.spec.whatwg.org/#readablestream-closed
 1
 1
-PresentationConnectionState
+ReadableStream
 -
 closed
 attribute
@@ -3871,17 +3842,6 @@ https://streams.spec.whatwg.org/#default-writer-closed
 1
 1
 WritableStreamDefaultWriter
--
-closed
-dfn
-streams
-streams
-1
-current
-https://streams.spec.whatwg.org/#readablestream-closed
-1
-1
-ReadableStream
 -
 closed
 enum-value
