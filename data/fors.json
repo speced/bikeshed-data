@@ -177,7 +177,7 @@
     "::first-letter",
     "::first-line",
     "::grammar-error",
-    "::highlight()",
+    "::highlight(<custom-highlight-name>)",
     "::marker",
     "::nth-fragment()",
     "::page-transition",
@@ -311,6 +311,7 @@
     "<attr-name>",
     "<attr-type>",
     "<attribute-selector>",
+    "<auto-repeat>",
     "<auto-track-list>",
     "<bad-string-token>",
     "<bad-url-token>",
@@ -374,11 +375,13 @@
     "<content-position>",
     "<contextual-alt-values>",
     "<coord-box>",
+    "<counter-name>",
     "<counter-style-name>",
     "<counter-style>",
     "<counter>",
     "<cubic-bezier-easing-function>",
     "<custom-arg>",
+    "<custom-highlight-name>",
     "<custom-ident>",
     "<custom-params>",
     "<custom-property-name>",
@@ -414,14 +417,18 @@
     "<filter-value-list>",
     "<final-bg-layer>",
     "<fixed-breadth>",
+    "<fixed-repeat>",
     "<fixed-size>",
+    "<flex>",
     "<font-face-name>",
     "<font-feature-tech>",
     "<font-features-tech>",
     "<font-format",
     "<font-format>",
+    "<font-stretch-css3>",
     "<font-tech>",
     "<font-variant-css21>",
+    "<font-variant-css2>",
     "<font-weight-absolute>",
     "<frequency-percentage>",
     "<frequency>",
@@ -497,6 +504,7 @@
     "<n-dimension>",
     "<na-name>",
     "<na-prefix>",
+    "<name-repeat>",
     "<named-color>",
     "<namespace-attr>",
     "<namespace-prefix>",
@@ -513,6 +521,8 @@
     "<numeric-spacing-values>",
     "<overflow-position>",
     "<padding-width>",
+    "<page-selector-list>",
+    "<page-selector>",
     "<paint-box>",
     "<paint>",
     "<percentage-token>",
@@ -524,6 +534,7 @@
     "<predefined-rgb>",
     "<pseudo-class-selector>",
     "<pseudo-element-selector>",
+    "<pseudo-page>",
     "<pt-tag-selector>",
     "<query-in-parens>",
     "<quirky-color>",
@@ -535,6 +546,7 @@
     "<relative-size>",
     "<repeat-style>",
     "<resolution>",
+    "<reversed-counter-name>",
     "<right>",
     "<row-height>",
     "<rule-list>",
@@ -597,6 +609,7 @@
     "<top>",
     "<track-breadth>",
     "<track-list>",
+    "<track-repeat>",
     "<track-size>",
     "<transform-function>",
     "<transform-list>",
@@ -4101,7 +4114,7 @@
     "compute the effective overload set",
     "compute the interest rectangle",
     "compute the intersection",
-    "computed",
+    "computed <image>",
     "computed color",
     "computed keyframe offset",
     "computed keyframes",
@@ -12574,10 +12587,12 @@
     "view-box"
   ],
   "<grid-line>": [
-    "&& ?",
-    "[ | ] && ?",
+    "<custom-ident>",
+    "<integer> && <custom-ident>?",
+    "[ <integer [−∞,−1]> | <integer [1,∞]> ] && <custom-ident>?",
     "auto",
-    "span && [ || ]"
+    "span && [ <integer [1,∞]> || <custom-ident> ]",
+    "span && [ <integer> || <custom-ident> ]"
   ],
   "<left>": [
     "auto"
@@ -12707,13 +12722,14 @@
   ],
   "<size>": [
     "<length [0,∞]>",
+    "<length-percentage [0,∞]>{2}",
+    "<length-percentage>{2}",
     "<length>",
     "closest-corner",
     "closest-side",
     "farthest-corner",
     "farthest-side",
-    "sides",
-    "{2}"
+    "sides"
   ],
   "<step-easing-function>": [
     "step-end",
@@ -12840,6 +12856,7 @@
     "swap"
   ],
   "@font-face/font-size": [
+    "<number>",
     "auto"
   ],
   "@font-feature-values": [
@@ -13010,6 +13027,7 @@
     "size"
   ],
   "@page/bleed": [
+    "<length>",
     "auto"
   ],
   "@page/marks": [
@@ -13018,6 +13036,8 @@
     "none"
   ],
   "@page/size": [
+    "<length>",
+    "<page-size>",
     "auto",
     "landscape",
     "portrait"
@@ -31377,6 +31397,7 @@
     "rectangle state"
   ],
   "ascent-override!!descriptor": [
+    "<percentage>",
     "normal"
   ],
   "aspect-ratio": [
@@ -31500,10 +31521,13 @@
     "target"
   ],
   "base-palette": [
+    "<integer>",
     "dark",
     "light"
   ],
   "baseline-shift": [
+    "<length>",
+    "<percentage>",
     "baseline",
     "bottom",
     "center",
@@ -31567,6 +31591,7 @@
     "remove the entry from the blob url store"
   ],
   "block-ellipsis": [
+    "<string>",
     "auto",
     "none"
   ],
@@ -32143,6 +32168,7 @@
     "only"
   ],
   "column-count": [
+    "<integer [1,∞]>",
     "auto"
   ],
   "column-fill": [
@@ -32153,12 +32179,17 @@
   "column-gap": [
     "normal"
   ],
+  "column-rule-color": [
+    "<color>"
+  ],
   "column-span": [
+    "<integer [1,∞]>",
     "all",
     "auto",
     "none"
   ],
   "column-width": [
+    "<length [0,∞]>",
     "auto",
     "fit-content()",
     "fit-content(<length-percentage>)",
@@ -32166,6 +32197,8 @@
     "min-content"
   ],
   "conic-gradient()": [
+    "<angle>",
+    "<position>",
     "gradient center"
   ],
   "connection": [
@@ -32463,22 +32496,23 @@
     "list-item"
   ],
   "counter-increment": [
-    "?",
+    "<counter-name> <integer>?",
     "list-item",
     "none"
   ],
   "counter-reset": [
-    "?",
+    "<counter-name> <integer>?",
+    "<reversed-counter-name> <integer>?",
     "list-item",
     "none"
   ],
   "counter-set": [
-    "?",
+    "<counter-name> <integer>?",
     "list-item",
     "none"
   ],
   "counter-set counter-increment": [
-    "?",
+    "<counter-name> <integer>?",
     "none"
   ],
   "counters()": [
@@ -32646,6 +32680,7 @@
     "datetime"
   ],
   "descent-override!!descriptor": [
+    "<percentage>",
     "normal"
   ],
   "destination": [
@@ -33410,16 +33445,24 @@
   "font-language override": [
     "normal"
   ],
+  "font-language-override": [
+    "<string>"
+  ],
   "font-optical-sizing": [
     "auto",
     "none"
   ],
   "font-palette": [
+    "<palette-identifier>",
     "dark",
     "light",
     "normal"
   ],
   "font-size": [
+    "<absolute-size>",
+    "<length-percentage [0,∞]>",
+    "<length-percentage>",
+    "<relative-size>",
     "large",
     "math",
     "medium",
@@ -33430,6 +33473,7 @@
     "xx-small"
   ],
   "font-size-adjust": [
+    "<number [0,∞]>",
     "<number>",
     "aspect value",
     "cap-height",
@@ -33442,6 +33486,8 @@
     "none"
   ],
   "font-stretch": [
+    "<percentage [0,∞]>",
+    "<percentage>",
     "condensed",
     "expanded",
     "extra-condensed",
@@ -33456,7 +33502,8 @@
     "italic",
     "normal",
     "oblique",
-    "oblique ?",
+    "oblique <angle [−90deg,90deg]>?",
+    "oblique <angle>?",
     "small-caps"
   ],
   "font-synthesis-small-caps": [
@@ -33476,14 +33523,14 @@
     "normal"
   ],
   "font-variant-alternates": [
-    "annotation()",
-    "character-variant(#)",
+    "annotation(<feature-value-name>)",
+    "character-variant(<feature-value-name>#)",
     "historical-forms",
     "normal",
-    "ornaments()",
-    "styleset(#)",
-    "stylistic()",
-    "swash()"
+    "ornaments(<feature-value-name>)",
+    "styleset(<feature-value-name>#)",
+    "stylistic(<feature-value-name>)",
+    "swash(<feature-value-name>)"
   ],
   "font-variant-caps": [
     "all-petite-caps",
@@ -33542,6 +33589,7 @@
     "super"
   ],
   "font-weight": [
+    "<number [1,1000]>",
     "bold",
     "bolder",
     "lighter",
@@ -33628,27 +33676,42 @@
     "vert-origin-y"
   ],
   "grid": [
-    "/ [ auto-flow && dense? ] ?",
-    "[ auto-flow && dense? ] ? /"
+    "<'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>?",
+    "[ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>"
   ],
   "grid-auto-flow": [
     "column",
     "dense",
     "row"
   ],
+  "grid-column-end": [
+    "<grid-line>"
+  ],
+  "grid-column-start": [
+    "<grid-line>"
+  ],
+  "grid-row-end": [
+    "<grid-line>"
+  ],
+  "grid-row-start": [
+    "<grid-line>"
+  ],
   "grid-template": [
-    "/",
-    "[ ? ? ? ]+ [ / ]?",
+    "<'grid-template-rows'> / <'grid-template-columns'>",
+    "[ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
     "none"
   ],
   "grid-template-areas": [
-    "+",
+    "<string>+",
     "named cell token",
     "none",
     "null cell token",
     "trash token"
   ],
   "grid-template-columns": [
+    "<flex>",
+    "<length-percentage>",
+    "<track-list> | <auto-track-list>",
     "auto",
     "fit-content()",
     "flex factor",
@@ -33658,11 +33721,13 @@
     "none",
     "sizing function",
     "subgrid",
-    "subgrid ?",
-    "track sizing function",
-    "|"
+    "subgrid <line-name-list>?",
+    "track sizing function"
   ],
   "grid-template-rows": [
+    "<flex>",
+    "<length-percentage>",
+    "<track-list> | <auto-track-list>",
     "auto",
     "fit-content()",
     "flex factor",
@@ -33672,9 +33737,8 @@
     "none",
     "sizing function",
     "subgrid",
-    "subgrid ?",
-    "track sizing function",
-    "|"
+    "subgrid <line-name-list>?",
+    "track sizing function"
   ],
   "h1": [
     "align"
@@ -33953,6 +34017,7 @@
     "smooth"
   ],
   "image-resolution": [
+    "<resolution>",
     "from-image",
     "snap"
   ],
@@ -34021,6 +34086,10 @@
     "transaction"
   ],
   "initial-letter": [
+    "<integer [1,∞]>",
+    "<integer>",
+    "<number [1,∞]>",
+    "<number>",
     "drop",
     "initial letter sink",
     "initial letter size",
@@ -34035,6 +34104,8 @@
     "leading"
   ],
   "initial-letter-wrap": [
+    "<length>",
+    "<percentage>",
     "all",
     "first",
     "grid",
@@ -34405,9 +34476,11 @@
     "strict"
   ],
   "line-clamp": [
+    "<integer>",
     "none"
   ],
   "line-gap-override!!descriptor": [
+    "<percentage>",
     "normal"
   ],
   "line-grid": [
@@ -34415,6 +34488,9 @@
     "match-parent"
   ],
   "line-height": [
+    "<length>",
+    "<number>",
+    "<percentage>",
     "normal"
   ],
   "line-snap": [
@@ -34495,6 +34571,7 @@
     "sorting in descending order"
   ],
   "list-style-image": [
+    "<image>",
     "none"
   ],
   "list-style-position": [
@@ -34502,6 +34579,8 @@
     "outside"
   ],
   "list-style-type": [
+    "<counter-style>",
+    "<string>",
     "armenian",
     "circle",
     "decimal",
@@ -34747,6 +34826,7 @@
     "stretch"
   ],
   "max-lines": [
+    "<integer>",
     "none"
   ],
   "max-width": [
@@ -34936,6 +35016,7 @@
     "transaction"
   ],
   "object-view-box": [
+    "<basic-shape-rect>",
     "none"
   ],
   "object/autocomplete": [
@@ -35202,6 +35283,10 @@
   "overflow-anchor": [
     "auto",
     "none"
+  ],
+  "overflow-clip-margin": [
+    "<length [0,∞]>",
+    "<visual-box>"
   ],
   "overflow-wrap": [
     "anywhere",
@@ -35519,6 +35604,9 @@
     "none"
   ],
   "radial-gradient()": [
+    "<ending-shape>",
+    "<position>",
+    "<size>",
     "gradient center"
   ],
   "radialGradient": [
@@ -35583,9 +35671,14 @@
     "auto-fit"
   ],
   "repeating-conic-gradient()": [
+    "<angle>",
+    "<position>",
     "gradient center"
   ],
   "repeating-radial-gradient()": [
+    "<ending-shape>",
+    "<position>",
+    "<size>",
     "gradient center"
   ],
   "report": [
@@ -36325,10 +36418,12 @@
     "type"
   ],
   "subscript-position-override!!descriptor": [
+    "<percentage>",
     "from-font",
     "normal"
   ],
   "subscript-size-override!!descriptor": [
+    "<percentage>",
     "from-font",
     "normal"
   ],
@@ -36337,10 +36432,12 @@
     "value"
   ],
   "superscript-position-override!!descriptor": [
+    "<percentage>",
     "from-font",
     "normal"
   ],
   "superscript-size-override!!descriptor": [
+    "<percentage>",
     "from-font",
     "normal"
   ],
