@@ -149,7 +149,7 @@ https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition
 1
 1
 -
-::page-transition-container( )
+::page-transition-container( <pt-tag-selector> )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -159,7 +159,7 @@ https://www.w3.org/TR/css-view-transitions-1/#selectordef-page-transition-contai
 1
 1
 -
-::page-transition-container( )
+::page-transition-container( <pt-tag-selector> )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -169,7 +169,7 @@ https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-con
 1
 1
 -
-::page-transition-image-wrapper( )
+::page-transition-image-wrapper( <pt-tag-selector> )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -179,7 +179,7 @@ https://www.w3.org/TR/css-view-transitions-1/#selectordef-page-transition-image-
 1
 1
 -
-::page-transition-image-wrapper( )
+::page-transition-image-wrapper( <pt-tag-selector> )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -189,7 +189,7 @@ https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-ima
 1
 1
 -
-::page-transition-incoming-image( )
+::page-transition-incoming-image( <pt-tag-selector> )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -199,7 +199,7 @@ https://www.w3.org/TR/css-view-transitions-1/#selectordef-page-transition-incomi
 1
 1
 -
-::page-transition-incoming-image( )
+::page-transition-incoming-image( <pt-tag-selector> )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -209,7 +209,7 @@ https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-inc
 1
 1
 -
-::page-transition-outgoing-image( )
+::page-transition-outgoing-image( <pt-tag-selector> )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -219,7 +219,7 @@ https://www.w3.org/TR/css-view-transitions-1/#selectordef-page-transition-outgoi
 1
 1
 -
-::page-transition-outgoing-image( )
+::page-transition-outgoing-image( <pt-tag-selector> )
 selector
 css-view-transitions-1
 css-view-transitions
@@ -4549,16 +4549,6 @@ html
 html
 1
 snapshot
-https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent
-
-1
--
-parent
-dfn
-html
-html
-1
-snapshot
 https://html.spec.whatwg.org/multipage/microdata.html#md-vcard-rel-parent
 
 1
@@ -4573,6 +4563,16 @@ https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-parent
 1
 1
 Window
+-
+parent
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent
+
+1
 -
 parent
 attribute
@@ -4613,17 +4613,6 @@ cssom-1
 cssom
 1
 snapshot
-https://www.w3.org/TR/cssom-1/#cssstyledeclaration-parent-css-rule
-1
-1
-CSSStyleDeclaration
--
-parent css rule
-dfn
-cssom-1
-cssom
-1
-snapshot
 https://www.w3.org/TR/cssom-1/#concept-css-rule-parent-css-rule
 
 1
@@ -4634,8 +4623,8 @@ dfn
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule
+snapshot
+https://www.w3.org/TR/cssom-1/#cssstyledeclaration-parent-css-rule
 1
 1
 CSSStyleDeclaration
@@ -4651,16 +4640,16 @@ https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-rule
 1
 CSSRule
 -
-parent css style sheet
+parent css rule
 dfn
 cssom-1
 cssom
 1
-snapshot
-https://www.w3.org/TR/cssom-1/#concept-css-rule-parent-css-style-sheet
-
+current
+https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule
 1
-CSSRule
+1
+CSSStyleDeclaration
 -
 parent css style sheet
 dfn
@@ -4678,8 +4667,8 @@ dfn
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-style-sheet
+snapshot
+https://www.w3.org/TR/cssom-1/#concept-css-rule-parent-css-style-sheet
 
 1
 CSSRule
@@ -4694,6 +4683,17 @@ https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet
 
 1
 CSSStyleSheet
+-
+parent css style sheet
+dfn
+cssom-1
+cssom
+1
+current
+https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-style-sheet
+
+1
+CSSRule
 -
 parent css style sheet
 dfn
@@ -4814,17 +4814,6 @@ cssom-1
 cssom
 1
 snapshot
-https://www.w3.org/TR/cssom-1/#dom-cssstyledeclaration-parentrule
-1
-1
-CSSStyleDeclaration
--
-parentRule
-attribute
-cssom-1
-cssom
-1
-snapshot
 https://www.w3.org/TR/cssom-1/#dom-cssrule-parentrule
 1
 1
@@ -4835,8 +4824,8 @@ attribute
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-parentrule
+snapshot
+https://www.w3.org/TR/cssom-1/#dom-cssstyledeclaration-parentrule
 1
 1
 CSSStyleDeclaration
@@ -4852,16 +4841,16 @@ https://drafts.csswg.org/cssom-1/#dom-cssrule-parentrule
 1
 CSSRule
 -
-parentStyleSheet
+parentRule
 attribute
 cssom-1
 cssom
 1
-snapshot
-https://www.w3.org/TR/cssom-1/#dom-cssrule-parentstylesheet
+current
+https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-parentrule
 1
 1
-CSSRule
+CSSStyleDeclaration
 -
 parentStyleSheet
 attribute
@@ -4879,8 +4868,8 @@ attribute
 cssom-1
 cssom
 1
-current
-https://drafts.csswg.org/cssom-1/#dom-cssrule-parentstylesheet
+snapshot
+https://www.w3.org/TR/cssom-1/#dom-cssrule-parentstylesheet
 1
 1
 CSSRule
@@ -4895,6 +4884,17 @@ https://drafts.csswg.org/cssom-1/#dom-stylesheet-parentstylesheet
 1
 1
 StyleSheet
+-
+parentStyleSheet
+attribute
+cssom-1
+cssom
+1
+current
+https://drafts.csswg.org/cssom-1/#dom-cssrule-parentstylesheet
+1
+1
+CSSRule
 -
 parity
 dict-member
@@ -6153,10 +6153,10 @@ css-typed-om-1
 css-typed-om
 1
 current
-https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-parse
+https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-parse
 1
 1
-CSSColorValue
+CSSNumericValue
 -
 parse(cssText)
 method
@@ -6164,10 +6164,10 @@ css-typed-om-1
 css-typed-om
 1
 current
-https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-parse
+https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-parse
 1
 1
-CSSNumericValue
+CSSColorValue
 -
 parse(property, cssText)
 method
@@ -7058,16 +7058,6 @@ html
 html
 1
 snapshot
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#control-group-password
-
-1
--
-password
-dfn
-html
-html
-1
-snapshot
 https://html.spec.whatwg.org/multipage/infrastructure.html#concept-url-password
 
 1
@@ -7093,6 +7083,16 @@ https://html.spec.whatwg.org/multipage/input.html#attr-input-type-password-keywo
 1
 1
 input/type
+-
+password
+dfn
+html
+html
+1
+snapshot
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#control-group-password
+
+1
 -
 password
 attribute

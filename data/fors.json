@@ -181,10 +181,10 @@
     "::marker",
     "::nth-fragment()",
     "::page-transition",
-    "::page-transition-container( )",
-    "::page-transition-image-wrapper( )",
-    "::page-transition-incoming-image( )",
-    "::page-transition-outgoing-image( )",
+    "::page-transition-container( <pt-tag-selector> )",
+    "::page-transition-image-wrapper( <pt-tag-selector> )",
+    "::page-transition-incoming-image( <pt-tag-selector> )",
+    "::page-transition-outgoing-image( <pt-tag-selector> )",
     "::part()",
     "::placeholder",
     "::selection",
@@ -387,6 +387,7 @@
     "<custom-property-name>",
     "<custom-selector>",
     "<dasharray>",
+    "<dashed-ident>",
     "<dashndashdigit-ident>",
     "<declaration-list>",
     "<declaration-value>",
@@ -406,6 +407,7 @@
     "<easing-function>",
     "<east-asian-variant-values>",
     "<east-asian-width-values>",
+    "<eof-token>",
     "<explicit-track-list>",
     "<extension-name>",
     "<extent-keyword>",
@@ -413,6 +415,7 @@
     "<family-name>",
     "<feature-tag-value>",
     "<feature-value-name>",
+    "<fill-rule>",
     "<filter-function>",
     "<filter-value-list>",
     "<final-bg-layer>",
@@ -444,6 +447,7 @@
     "<hue-interpolation-method>",
     "<hue>",
     "<id-selector>",
+    "<id>",
     "<ident-token>",
     "<ident>",
     "<identifier>",
@@ -519,6 +523,7 @@
     "<numeric-figure-values>",
     "<numeric-fraction-values>",
     "<numeric-spacing-values>",
+    "<outline-line-style>",
     "<overflow-position>",
     "<padding-width>",
     "<page-selector-list>",
@@ -538,6 +543,7 @@
     "<pt-tag-selector>",
     "<query-in-parens>",
     "<quirky-color>",
+    "<quirky-length>",
     "<quote>",
     "<ratio>",
     "<rectangular-color-space>",
@@ -548,6 +554,7 @@
     "<resolution>",
     "<reversed-counter-name>",
     "<right>",
+    "<rounding-strategy>",
     "<row-height>",
     "<rule-list>",
     "<scope-end>",
@@ -557,6 +564,10 @@
     "<self-position>",
     "<semicolon-token>",
     "<shadow>",
+    "<shape-arg>",
+    "<shape-box>",
+    "<shape-command>",
+    "<shape-radius>",
     "<shape>",
     "<side-or-corner>",
     "<signed-integer>",
@@ -601,6 +612,7 @@
     "<symbols-type>",
     "<system-color>",
     "<target-contrast>",
+    "<target-name>",
     "<target>",
     "<time-percentage>",
     "<time>",
@@ -1339,7 +1351,15 @@
     "IdentityCredentialLogoutRPsRequest",
     "IdentityCredentialRequestOptions",
     "IdentityProvider",
+    "IdentityProviderAPIConfig",
+    "IdentityProviderAccount",
+    "IdentityProviderAccountList",
+    "IdentityProviderBranding",
+    "IdentityProviderClientMetadata",
     "IdentityProviderConfig",
+    "IdentityProviderIcon",
+    "IdentityProviderToken",
+    "IdentityProviderWellKnown",
     "ImageBitmap",
     "ImageBitmapOptions",
     "ImageBitmapRenderingContext",
@@ -2615,7 +2635,6 @@
     "accessor is opener",
     "accessor-accessed relationship",
     "account",
-    "account json",
     "accountstate",
     "accumulate",
     "accumulated 3d transformation matrix",
@@ -3587,7 +3606,6 @@
     "br",
     "br/edr bonding procedure",
     "branches of a readable stream tee",
-    "branding json",
     "break",
     "break-after",
     "break-before",
@@ -6579,7 +6597,6 @@
     "icecandidateerror",
     "iceconnectionstatechange",
     "icegatheringstatechange",
-    "icon json",
     "icon purposes",
     "icon purposes list",
     "ictcp",
@@ -9490,7 +9507,8 @@
     "regular attribute",
     "regular operation",
     "reified as a cssstylevalue",
-    "reify a",
+    "reify a <transform-function>",
+    "reify a <transform-list>",
     "reify a color value",
     "reify a list of component values",
     "reify a math expression",
@@ -10276,11 +10294,11 @@
     "serialize a string",
     "serialize a url",
     "serialize a whitespace-separated list",
+    "serialize an <an+b> value",
     "serialize an identifier",
     "serialize an infra value to a json string",
     "serialize an infra value to json bytes",
     "serialize an integer",
-    "serialize an value",
     "serialize i/o queue",
     "serialize json to bytes",
     "serialize the calculation tree",
@@ -12245,6 +12263,7 @@
     "solid"
   ],
   "<border-width>": [
+    "<length>",
     "medium",
     "thick",
     "thin"
@@ -12665,6 +12684,10 @@
     "safe",
     "unsafe"
   ],
+  "<padding-width>": [
+    "<length>",
+    "<percentage>"
+  ],
   "<page-size>": [
     "a3",
     "a4",
@@ -12738,7 +12761,7 @@
   ],
   "<svg-paint>": [
     "child",
-    "child()"
+    "child(<integer>)"
   ],
   "<system-color>": [
     "accentcolor",
@@ -22170,10 +22193,46 @@
     "logout",
     "logout()"
   ],
+  "IdentityProviderAPIConfig": [
+    "accounts_endpoint",
+    "branding",
+    "client_metadata_endpoint",
+    "id_assertion_endpoint",
+    "signin_url"
+  ],
+  "IdentityProviderAccount": [
+    "approved_clients",
+    "email",
+    "given_name",
+    "id",
+    "name"
+  ],
+  "IdentityProviderAccountList": [
+    "accounts"
+  ],
+  "IdentityProviderBranding": [
+    "background_color",
+    "color",
+    "icons"
+  ],
+  "IdentityProviderClientMetadata": [
+    "privacy_policy_url",
+    "terms_of_service_url"
+  ],
   "IdentityProviderConfig": [
     "clientId",
     "configURL",
     "nonce"
+  ],
+  "IdentityProviderIcon": [
+    "size",
+    "url"
+  ],
+  "IdentityProviderToken": [
+    "token"
+  ],
+  "IdentityProviderWellKnown": [
+    "provider_urls"
   ],
   "ImageBitmap": [
     "close()",
@@ -22916,13 +22975,6 @@
     "parameters",
     "subtype",
     "type"
-  ],
-  "Manifest": [
-    "accounts_endpoint",
-    "branding",
-    "client_metadata_endpoint",
-    "id_assertion_endpoint",
-    "signin_url"
   ],
   "MediaDeviceInfo": [
     "deviceId",
@@ -31150,17 +31202,8 @@
     "title"
   ],
   "accent-color": [
+    "<color>",
     "auto"
-  ],
-  "account_json": [
-    "approved_clients",
-    "email",
-    "given_name",
-    "id",
-    "name"
-  ],
-  "accounts_endpoint_response": [
-    "accounts"
   ],
   "action": [
     "icon resource",
@@ -31401,8 +31444,9 @@
     "normal"
   ],
   "aspect-ratio": [
+    "<ratio>",
     "auto",
-    "auto &&"
+    "auto && <ratio>"
   ],
   "assertionCreationData": [
     "assertionattestation",
@@ -31414,6 +31458,7 @@
     "userhandleresult"
   ],
   "attr()": [
+    "<dimension-unit>",
     "angle",
     "color",
     "flex",
@@ -31486,6 +31531,7 @@
     "text"
   ],
   "background-image": [
+    "<uri>",
     "none"
   ],
   "background-origin": [
@@ -31667,9 +31713,11 @@
     "thin"
   ],
   "border-bottom-color": [
+    "<color>",
     "transparent"
   ],
   "border-bottom-right": [
+    "<length>",
     "medium",
     "thick",
     "thin"
@@ -31696,6 +31744,7 @@
     "separate"
   ],
   "border-color": [
+    "<color>",
     "logical",
     "transparent"
   ],
@@ -31716,6 +31765,7 @@
     "auto"
   ],
   "border-left-color": [
+    "<color>",
     "transparent"
   ],
   "border-left-style": [
@@ -31731,6 +31781,7 @@
     "solid"
   ],
   "border-left-width": [
+    "<length>",
     "medium",
     "thick",
     "thin"
@@ -31744,6 +31795,7 @@
     "top"
   ],
   "border-right-color": [
+    "<color>",
     "transparent"
   ],
   "border-right-style": [
@@ -31759,6 +31811,7 @@
     "solid"
   ],
   "border-right-width": [
+    "<length>",
     "medium",
     "thick",
     "thin"
@@ -31777,6 +31830,7 @@
     "solid"
   ],
   "border-top-color": [
+    "<color>",
     "transparent"
   ],
   "border-top-style": [
@@ -31792,11 +31846,13 @@
     "solid"
   ],
   "border-top-width": [
+    "<length>",
     "medium",
     "thick",
     "thin"
   ],
   "border-width": [
+    "<length>",
     "logical",
     "medium",
     "thick",
@@ -32078,10 +32134,6 @@
     "right",
     "top"
   ],
-  "client_metadata": [
-    "privacy_policy_url",
-    "terms_of_service_url"
-  ],
   "clip": [
     "<bottom>",
     "<left>",
@@ -32191,7 +32243,6 @@
   "column-width": [
     "<length [0,∞]>",
     "auto",
-    "fit-content()",
     "fit-content(<length-percentage>)",
     "max-content",
     "min-content"
@@ -32403,28 +32454,33 @@
     "style"
   ],
   "contain-intrinsic-block-size": [
-    "auto",
-    "auto &&",
+    "<length>",
+    "auto && <length>",
+    "auto <length>",
     "none"
   ],
   "contain-intrinsic-height": [
-    "auto",
-    "auto &&",
+    "<length>",
+    "auto && <length>",
+    "auto <length>",
     "none"
   ],
   "contain-intrinsic-inline-size": [
-    "auto",
-    "auto &&",
+    "<length>",
+    "auto && <length>",
+    "auto <length>",
     "none"
   ],
   "contain-intrinsic-size": [
-    "auto",
-    "auto &&",
+    "<length>",
+    "auto && <length>",
+    "auto <length>",
     "none"
   ],
   "contain-intrinsic-width": [
-    "auto",
-    "auto &&",
+    "<length>",
+    "auto && <length>",
+    "auto <length>",
     "none"
   ],
   "container-name": [
@@ -32440,7 +32496,9 @@
     "/ [ <string> | <counter> ]+",
     "<content-list>",
     "<content-replacement>",
+    "<counter>",
     "<string>",
+    "<uri>",
     "attr(x)",
     "close-quote",
     "contents",
@@ -32569,6 +32627,12 @@
     "ease-in",
     "ease-in-out",
     "ease-out"
+  ],
+  "cue-after": [
+    "<uri>"
+  ],
+  "cue-before": [
+    "<uri>"
   ],
   "cursor": [
     "<url-set>",
@@ -33795,11 +33859,12 @@
   ],
   "height": [
     "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
-    "fit-content()",
     "fit-content(<length-percentage [0,∞]>)",
+    "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
     "stretch"
@@ -33907,6 +33972,7 @@
     "w"
   ],
   "hyphenate-character": [
+    "<string>",
     "auto"
   ],
   "hyphenate-limit-chars": [
@@ -33934,9 +34000,6 @@
     "client_id",
     "disclosure_text_shown",
     "nonce"
-  ],
-  "id_assertion_endpoint_response": [
-    "token"
   ],
   "iframe": [
     "align",
@@ -34640,15 +34703,6 @@
   "manifest image resource": [
     "purpose"
   ],
-  "manifest_branding": [
-    "background_color",
-    "color",
-    "icons"
-  ],
-  "manifest_branding_icons": [
-    "size",
-    "url"
-  ],
   "map": [
     "clear",
     "clone",
@@ -34811,10 +34865,11 @@
   ],
   "max-height": [
     "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "contain",
     "fit-content",
-    "fit-content()",
     "fit-content(<length-percentage [0,∞]>)",
+    "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
     "none",
@@ -34831,10 +34886,11 @@
   ],
   "max-width": [
     "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "contain",
     "fit-content",
-    "fit-content()",
     "fit-content(<length-percentage [0,∞]>)",
+    "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
     "none",
@@ -34896,11 +34952,12 @@
   ],
   "min-height": [
     "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
-    "fit-content()",
     "fit-content(<length-percentage [0,∞]>)",
+    "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
     "stretch"
@@ -34922,14 +34979,20 @@
   ],
   "min-width": [
     "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
-    "fit-content()",
     "fit-content(<length-percentage [0,∞]>)",
+    "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
     "stretch"
+  ],
+  "mix()": [
+    "<end-value>",
+    "<percentage>",
+    "<start-value>"
   ],
   "mouseevent": [
     "relatedTarget"
@@ -35368,6 +35431,7 @@
     "upright"
   ],
   "page-transition-tag": [
+    "<custom-ident>",
     "none"
   ],
   "paint definition": [
@@ -35385,11 +35449,15 @@
     "d",
     "pathlength"
   ],
+  "path()": [
+    "<string>"
+  ],
   "pattern": [
     "xlink:href",
     "xlink:title"
   ],
   "pause-after": [
+    "<time>",
     "medium",
     "none",
     "strong",
@@ -35398,6 +35466,7 @@
     "x-weak"
   ],
   "pause-before": [
+    "<time>",
     "medium",
     "none",
     "strong",
@@ -35430,12 +35499,15 @@
     "states"
   ],
   "perspective": [
+    "<length [0,∞]>",
     "none"
   ],
   "perspective()": [
     "none"
   ],
   "perspective-origin": [
+    "<length>",
+    "<percentage>",
     "bottom",
     "center",
     "left",
@@ -35773,6 +35845,7 @@
     "encoded size"
   ],
   "rest-after": [
+    "<time>",
     "medium",
     "none",
     "strong",
@@ -35781,6 +35854,7 @@
     "x-weak"
   ],
   "rest-before": [
+    "<time>",
     "medium",
     "none",
     "strong",
@@ -35908,24 +35982,38 @@
     "smooth"
   ],
   "scroll-padding": [
+    "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block": [
+    "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block-end": [
+    "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-block-start": [
+    "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline": [
+    "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline-end": [
+    "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto"
   ],
   "scroll-padding-inline-start": [
+    "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto"
   ],
   "scroll-snap-align": [
@@ -35949,18 +36037,21 @@
     "y"
   ],
   "scroll-start": [
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-block": [
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-inline": [
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
@@ -35987,12 +36078,14 @@
     "none"
   ],
   "scroll-start-x": [
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
     "start"
   ],
   "scroll-start-y": [
+    "<length-percentage [0,∞]>",
     "auto",
     "center",
     "end",
@@ -36007,6 +36100,7 @@
     "vertical"
   ],
   "scrollbar-color": [
+    "<color>",
     "auto"
   ],
   "scrollbar-gutter": [
@@ -36195,6 +36289,16 @@
     "part element map"
   ],
   "shape()": [
+    "<arc-command>",
+    "<arc-size>",
+    "<arc-sweep>",
+    "<by-to>",
+    "<coordinate-pair>",
+    "<curve-command>",
+    "<hv-line-command>",
+    "<line-command>",
+    "<move-command>",
+    "<smooth-command>",
     "arc",
     "by",
     "ccw",
@@ -36210,12 +36314,24 @@
     "to",
     "vline"
   ],
+  "shape-image-threshold": [
+    "<number>"
+  ],
   "shape-inside": [
+    "<basic-shape>",
+    "<url>",
     "auto",
     "display",
     "outside-shape"
   ],
+  "shape-margin": [
+    "<length-percentage>",
+    "<length>",
+    "<percentage>"
+  ],
   "shape-outside": [
+    "<basic-shape>",
+    "<image>",
     "border-box",
     "content-box",
     "margin-box",
@@ -36382,7 +36498,7 @@
     "stretch"
   ],
   "stroke-dasharray": [
-    "+#",
+    "<length-percentage>+#",
     "none"
   ],
   "stroke-linecap": [
@@ -36397,6 +36513,9 @@
     "fallback",
     "miter",
     "round"
+  ],
+  "stroke-miterlimit": [
+    "<number>"
   ],
   "stroke-origin": [
     "border-box",
@@ -36527,6 +36646,7 @@
     "y"
   ],
   "text-align": [
+    "<string>",
     "alignment character",
     "center",
     "end",
@@ -36542,7 +36662,8 @@
   ],
   "text-combine-upright": [
     "all",
-    "digits ?",
+    "digits <integer [2,4]>?",
+    "digits <integer>?",
     "none"
   ],
   "text-decoration": [
@@ -36575,6 +36696,7 @@
     "none"
   ],
   "text-decoration-skip-inset": [
+    "<length>",
     "auto"
   ],
   "text-decoration-skip-self": [
@@ -36595,6 +36717,8 @@
     "wavy"
   ],
   "text-decoration-thickness": [
+    "<length>",
+    "<percentage>",
     "auto",
     "from-font"
   ],
@@ -36625,6 +36749,7 @@
     "symbols"
   ],
   "text-emphasis-style": [
+    "<string>",
     "circle",
     "dot",
     "double-circle",
@@ -37214,6 +37339,7 @@
     "associated document"
   ],
   "voice-balance": [
+    "<number>",
     "center",
     "left",
     "leftwards",
@@ -37221,9 +37347,14 @@
     "rightwards"
   ],
   "voice-duration": [
+    "<time>",
     "auto"
   ],
   "voice-family": [
+    "<age>",
+    "<family-name>",
+    "<gender>",
+    "<integer>",
     "child",
     "female",
     "male",
@@ -37233,6 +37364,9 @@
     "young"
   ],
   "voice-pitch": [
+    "<frequency>",
+    "<percentage>",
+    "<semitones>",
     "absolute",
     "high",
     "low",
@@ -37242,6 +37376,8 @@
     "x-low"
   ],
   "voice-range": [
+    "<percentage>",
+    "<semitones>",
     "absolute",
     "high",
     "low",
@@ -37250,6 +37386,7 @@
     "x-low"
   ],
   "voice-rate": [
+    "<percentage>",
     "fast",
     "medium",
     "normal",
@@ -37265,6 +37402,7 @@
     "strong"
   ],
   "voice-volume": [
+    "<decibel>",
     "loud",
     "medium",
     "silent",
@@ -37282,22 +37420,25 @@
   ],
   "width": [
     "<length-percentage [0,∞]>",
+    "<length-percentage>",
     "auto",
     "contain",
     "fit-content",
-    "fit-content()",
     "fit-content(<length-percentage [0,∞]>)",
+    "fit-content(<length-percentage>)",
     "max-content",
     "min-content",
     "stretch"
   ],
   "will-change": [
+    "<custom-ident>",
     "auto",
     "contents",
     "scroll-position"
   ],
   "word-boundary-detection": [
-    "auto()",
+    "<lang>",
+    "auto(<lang>)",
     "manual",
     "normal"
   ],
