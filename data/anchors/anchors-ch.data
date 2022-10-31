@@ -1664,17 +1664,6 @@ https://html.spec.whatwg.org/multipage/obsolete.html#attr-tr-char
 tr
 -
 charCode
-dict-member
-ui-events-1
-ui-events
-1
-snapshot
-https://www.w3.org/TR/uievents/#dom-keyboardeventinit-charcode
-
-1
-KeyboardEventInit
--
-charCode
 attribute
 ui-events-1
 ui-events
@@ -1684,6 +1673,17 @@ https://www.w3.org/TR/uievents/#dom-keyboardevent-charcode
 1
 1
 KeyboardEvent
+-
+charCode
+dict-member
+ui-events-1
+ui-events
+1
+snapshot
+https://www.w3.org/TR/uievents/#dom-keyboardeventinit-charcode
+
+1
+KeyboardEventInit
 -
 character
 dfn
@@ -3802,10 +3802,11 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#dom-queuingstrategysize-chunk
+https://streams.spec.whatwg.org/#dom-readablestreamdefaultcontroller-enqueue-chunk-chunk
 1
 1
-QueuingStrategySize
+ReadableStreamDefaultController/enqueue(chunk)
+ReadableStreamDefaultController/enqueue()
 -
 chunk
 argument
@@ -3824,11 +3825,22 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#dom-readablestreamdefaultcontroller-enqueue-chunk-chunk
+https://streams.spec.whatwg.org/#dom-underlyingsinkwritecallback-chunk
 1
 1
-ReadableStreamDefaultController/enqueue(chunk)
-ReadableStreamDefaultController/enqueue()
+UnderlyingSinkWriteCallback
+-
+chunk
+argument
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#dom-writablestreamdefaultwriter-write-chunk-chunk
+1
+1
+WritableStreamDefaultWriter/write(chunk)
+WritableStreamDefaultWriter/write()
 -
 chunk
 argument
@@ -3859,33 +3871,10 @@ streams
 streams
 1
 current
-https://streams.spec.whatwg.org/#dom-writablestreamdefaultwriter-write-chunk-chunk
+https://streams.spec.whatwg.org/#dom-queuingstrategysize-chunk
 1
 1
-WritableStreamDefaultWriter/write(chunk)
-WritableStreamDefaultWriter/write()
--
-chunk
-argument
-streams
-streams
-1
-current
-https://streams.spec.whatwg.org/#dom-underlyingsinkwritecallback-chunk
-1
-1
-UnderlyingSinkWriteCallback
--
-chunk steps
-dfn
-streams
-streams
-1
-current
-https://streams.spec.whatwg.org/#read-into-request-chunk-steps
-1
-1
-read-into request
+QueuingStrategySize
 -
 chunk steps
 dfn
@@ -3897,4 +3886,15 @@ https://streams.spec.whatwg.org/#read-request-chunk-steps
 1
 1
 read request
+-
+chunk steps
+dfn
+streams
+streams
+1
+current
+https://streams.spec.whatwg.org/#read-into-request-chunk-steps
+1
+1
+read-into request
 -
