@@ -145,7 +145,7 @@
     "1-ua",
     "1-ua mode",
     "100...900 weight values",
-    "1st",
+    "1st <length>",
     "2-ua",
     "2-ua mode",
     "200 response",
@@ -153,14 +153,14 @@
     "2d",
     "2d context creation algorithm",
     "2d matrix",
-    "2nd",
+    "2nd <length>",
     "3d matrix",
     "3d rendering context",
     "3d transform functions",
     "3d transformed element",
     "3dof",
-    "3rd",
-    "4th",
+    "3rd <length [0,∞]>",
+    "4th <length>",
     "4x4 abstract matrix",
     "4xx",
     "4xx status code",
@@ -304,6 +304,7 @@
     "<any-value>",
     "<at-keyword-token>",
     "<atomic-condition>",
+    "<attachment>",
     "<attr-fallback>",
     "<attr-matcher>",
     "<attr-modifier>",
@@ -317,11 +318,16 @@
     "<basic-shape-rect>",
     "<basic-shape>",
     "<bg-clip>",
+    "<bg-image>",
+    "<bg-layer>",
+    "<bg-position>",
+    "<bg-size>",
     "<blend-mode>",
     "<boolean-constant>",
     "<border-style>",
     "<border-width>",
     "<bottom>",
+    "<box>",
     "<calc-constant>",
     "<calc-number-product>",
     "<calc-number-sum>",
@@ -361,9 +367,13 @@
     "<condition-in-parens>",
     "<condition>",
     "<consequent>",
+    "<container-condition>",
+    "<container-name>",
+    "<container-query>",
     "<content-distribution>",
     "<content-position>",
     "<contextual-alt-values>",
+    "<coord-box>",
     "<counter-style-name>",
     "<counter-style>",
     "<counter>",
@@ -378,6 +388,8 @@
     "<declaration-list>",
     "<declaration-value>",
     "<delim-token>",
+    "<deprecated-color>",
+    "<device-performance>",
     "<dimension-token>",
     "<dimension-unit>",
     "<dimension>",
@@ -394,11 +406,13 @@
     "<explicit-track-list>",
     "<extension-name>",
     "<extent-keyword>",
+    "<extent>",
     "<family-name>",
     "<feature-tag-value>",
     "<feature-value-name>",
     "<filter-function>",
     "<filter-value-list>",
+    "<final-bg-layer>",
     "<fixed-breadth>",
     "<fixed-size>",
     "<font-face-name>",
@@ -437,11 +451,16 @@
     "<keyframe-block>",
     "<keyframe-selector>",
     "<keyframes-name>",
+    "<layer-name>",
+    "<layout-box>",
+    "<leader-type>",
     "<left>",
     "<length-percentage>",
     "<length>",
     "<line-name-list>",
     "<line-names>",
+    "<line-style>",
+    "<line-width>",
     "<linear-color-hint>",
     "<linear-color-stop>",
     "<linear-easing-function>",
@@ -494,6 +513,7 @@
     "<numeric-spacing-values>",
     "<overflow-position>",
     "<padding-width>",
+    "<paint-box>",
     "<paint>",
     "<percentage-token>",
     "<percentage>",
@@ -505,18 +525,26 @@
     "<pseudo-class-selector>",
     "<pseudo-element-selector>",
     "<pt-tag-selector>",
+    "<query-in-parens>",
+    "<quirky-color>",
+    "<quote>",
     "<ratio>",
     "<rectangular-color-space>",
     "<relative-selector-list>",
     "<relative-selector>",
     "<relative-size>",
+    "<repeat-style>",
     "<resolution>",
     "<right>",
     "<row-height>",
     "<rule-list>",
+    "<scope-end>",
+    "<scope-start>",
     "<selector-list>",
+    "<selector-scope>",
     "<self-position>",
     "<semicolon-token>",
+    "<shadow>",
     "<shape>",
     "<side-or-corner>",
     "<signed-integer>",
@@ -532,16 +560,21 @@
     "<single-animation>",
     "<single-transition-property>",
     "<single-transition>",
+    "<size-feature>",
     "<size>",
     "<source-size-list>",
     "<source-size-value>",
     "<source-size>",
     "<specific-voice>",
+    "<speech-rate>",
     "<step-easing-function>",
     "<step-position>",
     "<string-token>",
     "<string>",
     "<style-block>",
+    "<style-feature>",
+    "<style-in-parens>",
+    "<style-query>",
     "<stylesheet>",
     "<subclass-selector>",
     "<supports-condition>",
@@ -555,6 +588,8 @@
     "<symbol>",
     "<symbols-type>",
     "<system-color>",
+    "<target-contrast>",
+    "<target>",
     "<time-percentage>",
     "<time>",
     "<timeline-name>",
@@ -573,6 +608,8 @@
     "<url-token>",
     "<url>",
     "<viewport-length>",
+    "<visual-box>",
+    "<wcag2>",
     "<whitespace-token>",
     "<wq-name>",
     "<xyz-params>",
@@ -2073,6 +2110,8 @@
     "Slottable",
     "SpatialNavigationDirection",
     "SpatialNavigationSearchOptions",
+    "StatefulAnimator",
+    "StatelessAnimator",
     "StaticRange",
     "StaticRangeInit",
     "StereoPannerNode",
@@ -2817,6 +2856,7 @@
     "animation origin",
     "animation playback events",
     "animation property name to idl attribute name",
+    "animation requested flag",
     "animation time to origin-relative time",
     "animation time to timeline time",
     "animation type",
@@ -2844,6 +2884,7 @@
     "animator instance",
     "animator instance set",
     "animator name",
+    "animator name to animator definition map",
     "animator serialized options",
     "animator timeline",
     "anniversary",
@@ -5982,6 +6023,8 @@
     "frame update",
     "frame-ancestors",
     "frame-ancestors directive",
+    "frame-current",
+    "frame-requested",
     "frame-src",
     "framerate",
     "frameset",
@@ -10694,6 +10737,7 @@
     "stateful animator",
     "stateful animator definition",
     "stateful animator instance",
+    "stateful flag",
     "stateless animator",
     "statement",
     "statement at-rule",
@@ -12153,6 +12197,7 @@
     "xywh()"
   ],
   "<bg-clip>": [
+    "<box>",
     "border",
     "text"
   ],
@@ -12368,6 +12413,8 @@
     "stretch"
   ],
   "<content-list>": [
+    "<image>",
+    "<string>",
     "close-quote",
     "contents",
     "leader()",
@@ -12744,6 +12791,7 @@
     "auto"
   ],
   "@counter-style/speak-as": [
+    "<counter-style-name>",
     "auto",
     "bullets",
     "numbers",
@@ -13211,6 +13259,7 @@
     "before(...effects)",
     "getComputedTiming()",
     "getTiming()",
+    "localTime",
     "nextSibling",
     "parent",
     "previousSibling",
@@ -27684,6 +27733,26 @@
     "candidates",
     "container"
   ],
+  "StatefulAnimator": [
+    "Constructor",
+    "StatefulAnimator()",
+    "StatefulAnimator(options)",
+    "StatefulAnimator(options, state)",
+    "state",
+    "state()"
+  ],
+  "StatefulAnimator/StatefulAnimator(options, state)": [
+    "options",
+    "state"
+  ],
+  "StatelessAnimator": [
+    "Constructor",
+    "StatelessAnimator()",
+    "StatelessAnimator(options)"
+  ],
+  "StatelessAnimator/StatelessAnimator(options)": [
+    "options"
+  ],
   "StaticRange": [
     "StaticRange(init)",
     "constructor(init)",
@@ -31208,11 +31277,18 @@
     "before phase",
     "idle phase"
   ],
+  "animation-delay": [
+    "<time>"
+  ],
   "animation-direction": [
     "alternate",
     "alternate-reverse",
     "normal",
     "reverse"
+  ],
+  "animation-duration": [
+    "<time [0s,∞]>",
+    "<time>"
   ],
   "animation-fill-mode": [
     "backwards",
@@ -31221,9 +31297,12 @@
     "none"
   ],
   "animation-iteration-count": [
+    "<number [0,∞]>",
+    "<number>",
     "infinite"
   ],
   "animation-name": [
+    "<keyframes-name>",
     "none"
   ],
   "animation-play-state": [
@@ -31378,6 +31457,7 @@
     "scroll"
   ],
   "background-clip": [
+    "<box>",
     "border",
     "border-box",
     "content-box",
@@ -31393,6 +31473,8 @@
     "padding-box"
   ],
   "background-position": [
+    "<length>",
+    "<percentage>",
     "bottom",
     "center",
     "left",
@@ -31408,6 +31490,7 @@
     "space"
   ],
   "background-size": [
+    "<length-percentage [0,∞]>",
     "auto",
     "contain",
     "cover"
@@ -31531,7 +31614,12 @@
     "body",
     "type"
   ],
+  "bookmark-label": [
+    "<content-list>"
+  ],
   "bookmark-level": [
+    "<integer [1,∞]>",
+    "<integer>",
     "none"
   ],
   "bookmark-state": [
@@ -31593,9 +31681,13 @@
     "stretch"
   ],
   "border-image-slice": [
+    "<number [0,∞]>",
+    "<percentage [0,∞]>",
     "fill"
   ],
   "border-image-width": [
+    "<length-percentage [0,∞]>",
+    "<number [0,∞]>",
     "auto"
   ],
   "border-left-color": [
@@ -31708,6 +31800,7 @@
     "slice"
   ],
   "box-shadow": [
+    "<color>",
     "inset",
     "none"
   ],
@@ -32043,6 +32136,7 @@
     "xlink:href"
   ],
   "color-scheme": [
+    "<custom-ident>",
     "dark",
     "light",
     "normal",
@@ -32301,6 +32395,7 @@
     "none"
   ],
   "container-name": [
+    "<custom-ident>",
     "none"
   ],
   "container-type": [
@@ -32309,7 +32404,10 @@
     "size"
   ],
   "content": [
-    "/ [ | ]+",
+    "/ [ <string> | <counter> ]+",
+    "<content-list>",
+    "<content-replacement>",
+    "<string>",
     "attr(x)",
     "close-quote",
     "contents",
@@ -33172,6 +33270,9 @@
     "-webkit-flex",
     "-webkit-inline-box",
     "-webkit-inline-flex",
+    "<'flex-basis'>",
+    "<'flex-grow'>",
+    "<'flex-shrink'>",
     "flex basis",
     "flex grow factor",
     "flex shrink factor",
@@ -33186,6 +33287,12 @@
     "column-reverse",
     "row",
     "row-reverse"
+  ],
+  "flex-grow": [
+    "<number>"
+  ],
+  "flex-shrink": [
+    "<number>"
   ],
   "flex-wrap": [
     "nowrap",
@@ -34254,6 +34361,7 @@
     "lch"
   ],
   "leader()": [
+    "<string>",
     "dotted",
     "solid",
     "space"
@@ -34984,6 +35092,9 @@
   ],
   "optional argument": [
     "default value"
+  ],
+  "order": [
+    "<integer>"
   ],
   "orientation": [
     "auto",
