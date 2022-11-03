@@ -181,13 +181,9 @@
     "::marker",
     "::nth-fragment()",
     "::page-transition",
-    "::page-transition-container( <> )",
     "::page-transition-container( <pt-tag-selector> )",
-    "::page-transition-image-wrapper( <> )",
     "::page-transition-image-wrapper( <pt-tag-selector> )",
-    "::page-transition-incoming-image( <> )",
     "::page-transition-incoming-image( <pt-tag-selector> )",
-    "::page-transition-outgoing-image( <> )",
     "::page-transition-outgoing-image( <pt-tag-selector> )",
     "::part()",
     "::placeholder",
@@ -196,6 +192,11 @@
     "::slotted()",
     "::spelling-error",
     "::target-text",
+    "::view-transition",
+    "::view-transition-group( <> )",
+    "::view-transition-image-pair( <> )",
+    "::view-transition-new( <> )",
+    "::view-transition-old( <> )",
     ":active",
     ":after",
     ":any-link",
@@ -2879,6 +2880,7 @@
     "animatable",
     "animate",
     "animate a page transition",
+    "animate a view transition",
     "animate function",
     "animatecolor",
     "animatemotion",
@@ -8890,6 +8892,7 @@
     "perform a microtask checkpoint",
     "perform a scroll",
     "perform a security check",
+    "perform an old capture",
     "perform an outgoing capture",
     "perform automatic text track selection",
     "perform pending transition operations",
@@ -10588,6 +10591,7 @@
     "skip ascii whitespace",
     "skip its contents",
     "skip the page transition",
+    "skip the view transition",
     "skip-when-determining-incumbent counter",
     "skipped contents",
     "skipping its contents",
@@ -11932,10 +11936,14 @@
     "view progress subject",
     "view progress timelines",
     "view progress visibility range",
+    "view transition name",
     "view-timeline",
     "view-timeline-axis",
     "view-timeline-inset",
     "view-timeline-name",
+    "view-transition layer",
+    "view-transition pseudo-elements",
+    "view-transition-name",
     "viewer",
     "viewport",
     "viewport coordinate system",
@@ -32126,6 +32134,9 @@
   ],
   "captured element": [
     "incoming element",
+    "new element",
+    "old image",
+    "old styles",
     "outgoing image",
     "outgoing styles"
   ],
@@ -35460,7 +35471,6 @@
     "upright"
   ],
   "page-transition-tag": [
-    "<>",
     "<custom-ident>",
     "none"
   ],
@@ -37336,6 +37346,10 @@
   "view-timeline-inset": [
     "<length-percentage>",
     "auto"
+  ],
+  "view-transition-name": [
+    "<>",
+    "none"
   ],
   "viewport-fit": [
     "auto",
