@@ -181,9 +181,13 @@
     "::marker",
     "::nth-fragment()",
     "::page-transition",
+    "::page-transition-container( <> )",
     "::page-transition-container( <pt-tag-selector> )",
+    "::page-transition-image-wrapper( <> )",
     "::page-transition-image-wrapper( <pt-tag-selector> )",
+    "::page-transition-incoming-image( <> )",
     "::page-transition-incoming-image( <pt-tag-selector> )",
+    "::page-transition-outgoing-image( <> )",
     "::page-transition-outgoing-image( <pt-tag-selector> )",
     "::part()",
     "::placeholder",
@@ -18921,6 +18925,8 @@
     "scroll",
     "scrollend",
     "scrollingElement",
+    "startViewTransition()",
+    "startViewTransition(callback)",
     "strictErrorChecking",
     "timeline",
     "title",
@@ -19050,6 +19056,12 @@
   "Document/measureText(text, styleMap)": [
     "styleMap",
     "text"
+  ],
+  "Document/startViewTransition()": [
+    "callback"
+  ],
+  "Document/startViewTransition(callback)": [
+    "callback"
   ],
   "DocumentAndElementEventHandlers": [
     "oncopy",
@@ -35448,6 +35460,7 @@
     "upright"
   ],
   "page-transition-tag": [
+    "<>",
     "<custom-ident>",
     "none"
   ],
