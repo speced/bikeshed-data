@@ -205,6 +205,7 @@
     ":blank",
     ":buffering",
     ":checked",
+    ":closed",
     ":current",
     ":current()",
     ":default",
@@ -257,6 +258,7 @@
     ":nth-of-type()",
     ":only-child",
     ":only-of-type",
+    ":open",
     ":optional",
     ":out-of-range",
     ":past",
@@ -270,7 +272,6 @@
     ":right",
     ":root",
     ":scope",
-    ":scope element",
     ":seeking",
     ":snapped",
     ":snapped-block",
@@ -1578,6 +1579,7 @@
     "OnErrorEventHandler",
     "OnErrorEventHandlerNonNull",
     "OperationError",
+    "OptOutError",
     "OptionalEffectTiming",
     "OrientationLockType",
     "OrientationType",
@@ -2620,8 +2622,6 @@
     "absolutely positioned box",
     "absolutely positioned element",
     "absolutely-positioned",
-    "absolutize a relative selector",
-    "absolutize a relative selector list",
     "abstract closure",
     "abstract dimensions",
     "ac",
@@ -5111,7 +5111,6 @@
     "directly associated with an animation",
     "directly nested",
     "director",
-    "directory",
     "directory entry",
     "dirtiness",
     "dirty checkedness",
@@ -5724,6 +5723,7 @@
     "file entry",
     "file read error",
     "file reading task source",
+    "file system entry",
     "file type guidelines",
     "file upload state (type=file)",
     "filelist",
@@ -9517,7 +9517,6 @@
     "related member",
     "relationship discovery",
     "relationship strings",
-    "relative",
     "relative color",
     "relative high resolution coarse time",
     "relative high resolution time",
@@ -10033,12 +10032,10 @@
     "scope proximity",
     "scope to job queue map",
     "scope-match a selectors string",
-    "scope-relative",
     "scoped context",
     "scoped descendant combinator",
     "scoped selector",
     "scopes",
-    "scoping element",
     "scoping limit",
     "scoping root",
     "screen",
@@ -10580,6 +10577,7 @@
     "slateblue",
     "slategray",
     "slategrey",
+    "slice blob",
     "slot",
     "slot assignment",
     "slot!!pseudo-element",
@@ -11937,7 +11935,6 @@
     "virtual authenticator database",
     "virtual authenticators",
     "virtual browsing context group id",
-    "virtual scoping root",
     "virtual word boundary",
     "visibility",
     "visibility state",
@@ -14417,6 +14414,21 @@
   ],
   "Blob/constructor(blobParts, options)": [
     "options"
+  ],
+  "Blob/slice()": [
+    "contentType",
+    "end",
+    "start"
+  ],
+  "Blob/slice(start)": [
+    "contentType",
+    "end",
+    "start"
+  ],
+  "Blob/slice(start, end)": [
+    "contentType",
+    "end",
+    "start"
   ],
   "Blob/slice(start, end, contentType)": [
     "contentType",
@@ -24919,8 +24931,10 @@
     "requestStart",
     "requested url",
     "resource info",
+    "response status",
     "responseEnd",
     "responseStart",
+    "responseStatus",
     "secureConnectionStart",
     "starttime",
     "timing info",
@@ -32966,11 +32980,6 @@
     "endpointNumber(alternate, endpointNumber, direction)"
   ],
   "entry": [
-    "name",
-    "parent",
-    "query access",
-    "request access",
-    "resolve",
     "the same as"
   ],
   "entry list": [
@@ -33333,6 +33342,13 @@
   "file entry/lock": [
     "release",
     "take"
+  ],
+  "file system entry": [
+    "name",
+    "parent",
+    "query access",
+    "request access",
+    "resolve"
   ],
   "fill-origin": [
     "border-box",
