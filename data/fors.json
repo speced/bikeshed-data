@@ -180,11 +180,6 @@
     "::highlight(<custom-highlight-name>)",
     "::marker",
     "::nth-fragment()",
-    "::page-transition",
-    "::page-transition-container( <pt-tag-selector> )",
-    "::page-transition-image-wrapper( <pt-tag-selector> )",
-    "::page-transition-incoming-image( <pt-tag-selector> )",
-    "::page-transition-outgoing-image( <pt-tag-selector> )",
     "::part()",
     "::placeholder",
     "::selection",
@@ -551,7 +546,6 @@
     "<pseudo-element-selector>",
     "<pseudo-page>",
     "<pt-name-selector>",
-    "<pt-tag-selector>",
     "<query-in-parens>",
     "<quirky-color>",
     "<quirky-length>",
@@ -2313,7 +2307,6 @@
     "ViewTimeline",
     "ViewTimelineOptions",
     "ViewTransition",
-    "ViewTransitionInit",
     "VisibilityState",
     "VisualViewport",
     "VoidFunction",
@@ -2880,7 +2873,6 @@
     "android key attestation certificate extension data",
     "animatable",
     "animate",
-    "animate a page transition",
     "animate a view transition",
     "animate function",
     "animatecolor",
@@ -3924,6 +3916,7 @@
     "clear the stack back to a table body context",
     "clear the stack back to a table context",
     "clear the stack back to a table row context",
+    "clear view transition",
     "clearance",
     "clearance.",
     "clearkeptobjects",
@@ -4990,7 +4983,6 @@
     "deriving the accessible name",
     "desc",
     "descendant",
-    "descendant browsing context",
     "descendant combinator",
     "descendant script fetch options",
     "descendant text content",
@@ -5990,9 +5982,9 @@
     "footnote-display",
     "footnote-policy",
     "forbidden domain code point",
-    "forbidden header name",
     "forbidden host code point",
     "forbidden method",
+    "forbidden request-header",
     "forbidden response-header name",
     "force async",
     "force-quirks flag",
@@ -7379,7 +7371,6 @@
     "legacy selector alias",
     "legacy shorthand",
     "legacy-canceled-activation behavior",
-    "legacy-clone a browsing session storage shed",
     "legacy-clone a traversable storage shed",
     "legacy-pre-activation behavior",
     "legacy-uppercased-byte less than",
@@ -8655,7 +8646,6 @@
     "page selectors",
     "page sheet",
     "page showing",
-    "page transition tag",
     "page type selector",
     "page visibility change steps",
     "page zoom",
@@ -8668,9 +8658,6 @@
     "page-context",
     "page-margin boxes",
     "page-margin property",
-    "page-transition layer",
-    "page-transition pseudo-elements",
-    "page-transition-tag",
     "paged media",
     "pager",
     "pagination",
@@ -8888,7 +8875,6 @@
     "perform a scroll",
     "perform a security check",
     "perform an old capture",
-    "perform an outgoing capture",
     "perform automatic text track selection",
     "perform pending transition operations",
     "performance",
@@ -10448,6 +10434,8 @@
     "setup packet",
     "setup stage",
     "setup the resource timing entry",
+    "setup transition pseudo-elements",
+    "setup view transition",
     "sex",
     "sha-2",
     "sha-256",
@@ -10581,7 +10569,6 @@
     "skeleton joints",
     "skip ascii whitespace",
     "skip its contents",
-    "skip the page transition",
     "skip the view transition",
     "skip-when-determining-incumbent counter",
     "skipped contents",
@@ -11653,6 +11640,7 @@
     "update latest reading",
     "update mock sensor reading",
     "update only",
+    "update pseudo-element styles",
     "update registration state",
     "update requests",
     "update service worker extended events set",
@@ -18788,7 +18776,6 @@
     "createProcessingInstruction(target, data)",
     "createRange()",
     "createTextNode(data)",
-    "createTransition(init)",
     "createTreeWalker(root)",
     "createTreeWalker(root, whatToShow)",
     "createTreeWalker(root, whatToShow, filter)",
@@ -19027,9 +19014,6 @@
   ],
   "Document/createTextNode(data)": [
     "data"
-  ],
-  "Document/createTransition(init)": [
-    "init"
   ],
   "Document/createTreeWalker(root)": [
     "filter",
@@ -21621,7 +21605,7 @@
     "guard",
     "has(name)",
     "header list",
-    "remove privileged no-cors request headers",
+    "remove privileged no-cors request-headers",
     "set(name, value)"
   ],
   "Headers/Headers()": [
@@ -29251,11 +29235,7 @@
     "phase",
     "ready",
     "ready promise",
-    "skipTransition()",
-    "tagged elements"
-  ],
-  "ViewTransitionInit": [
-    "updateDOM"
+    "skipTransition()"
   ],
   "VisibilityState": [
     "hidden",
@@ -31998,9 +31978,6 @@
     "avoid-page",
     "avoid-region"
   ],
-  "browsing session": [
-    "storage shed"
-  ],
   "button": [
     "action",
     "autocomplete",
@@ -32152,12 +32129,17 @@
     "top"
   ],
   "captured element": [
-    "incoming element",
+    "group animation name rule",
+    "group keyframes",
+    "group styles rule",
+    "image pair isolation rule",
     "new element",
+    "new view-box rule",
     "old image",
     "old styles",
-    "outgoing image",
-    "outgoing styles"
+    "old view-box rule",
+    "style definitions",
+    "view blend mode rule"
   ],
   "caret-color": [
     "auto"
@@ -32895,7 +32877,8 @@
     "active dom transition",
     "default document timeline",
     "doctype",
-    "transition suppressing rendering"
+    "transition suppressing rendering",
+    "view transition style sheet"
   ],
   "document animator definition": [
     "stateful flag"
@@ -33920,6 +33903,8 @@
     "sort and combine"
   ],
   "header value": [
+    "get, decode, and split",
+    "getting, decoding, and splitting",
     "normalize"
   ],
   "height": [
@@ -35497,10 +35482,6 @@
     "rotate-left",
     "rotate-right",
     "upright"
-  ],
-  "page-transition-tag": [
-    "<custom-ident>",
-    "none"
   ],
   "paint definition": [
     "class constructor",
@@ -37187,6 +37168,9 @@
   ],
   "translate": [
     "none"
+  ],
+  "traversable navigable": [
+    "storage shed"
   ],
   "traversal": [
     "active flag",
