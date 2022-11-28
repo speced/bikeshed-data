@@ -1,4 +1,4 @@
-sha: 7b17db977eb8b366dcd78c09d6adf12f3fd57503
+sha: 22ecfc9bac05cadf8ed5e47a591f1d7e74fdc2c2
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -29138,10 +29138,12 @@ testharness css/css-grid/subgrid/grid-template-valid.html
 testharness css/css-grid/table-grid-item-005.html
 testharness css/css-highlight-api/Highlight-iteration-with-modifications.html
 testharness css/css-highlight-api/Highlight-iteration.html
+testharness css/css-highlight-api/Highlight-setlike-tampered-Set-prototype.html
 testharness css/css-highlight-api/Highlight-setlike.html
 testharness css/css-highlight-api/Highlight-type-attribute.tentative.html
 testharness css/css-highlight-api/HighlightRegistry-iteration-with-modifications.html
 testharness css/css-highlight-api/HighlightRegistry-iteration.html
+testharness css/css-highlight-api/HighlightRegistry-maplike-tampered-Map-prototype.html
 testharness css/css-highlight-api/HighlightRegistry-maplike.html
 testharness css/css-highlight-api/highlight-pseudo-computed.html
 testharness css/css-highlight-api/highlight-pseudo-parsing.html
@@ -32049,6 +32051,7 @@ testharness custom-elements/attribute-changed-callback.html
 testharness custom-elements/builtin-coverage.html
 testharness custom-elements/connected-callbacks-html-fragment-parsing.html
 testharness custom-elements/connected-callbacks.html
+testharness custom-elements/cross-realm-callback-report-exception.html
 testharness custom-elements/custom-element-reaction-queue.html
 testharness custom-elements/custom-element-registry/define.html
 testharness custom-elements/custom-element-registry/per-global.html
@@ -32494,6 +32497,7 @@ testharness dom/nodes/MutationObserver-attributes.html
 testharness dom/nodes/MutationObserver-callback-arguments.html
 testharness dom/nodes/MutationObserver-characterData.html
 testharness dom/nodes/MutationObserver-childList.html
+testharness dom/nodes/MutationObserver-cross-realm-callback-report-exception.html
 testharness dom/nodes/MutationObserver-disconnect.html
 testharness dom/nodes/MutationObserver-document.html
 testharness dom/nodes/MutationObserver-inner-outer.html
@@ -32703,7 +32707,7 @@ testharness domxpath/lexical-structure.html
 testharness domxpath/node-sets.html
 testharness domxpath/numbers.html
 testharness domxpath/predicates.html
-testharness domxpath/resolver-callback-interface-cross-realm.html
+testharness domxpath/resolver-callback-interface-cross-realm.tentative.html
 testharness domxpath/resolver-callback-interface.html
 testharness domxpath/resolver-non-string-result.html
 testharness domxpath/xml_xpath_runner.html
@@ -38357,6 +38361,7 @@ testharness html/semantics/embedded-content/the-canvas-element/size.attributes.s
 testharness html/semantics/embedded-content/the-canvas-element/size.attributes.setAttribute.whitespace.html
 testharness html/semantics/embedded-content/the-canvas-element/size.attributes.setAttribute.zero.html
 testharness html/semantics/embedded-content/the-canvas-element/size.attributes.style.html
+testharness html/semantics/embedded-content/the-canvas-element/toBlob-cross-realm-callback-report-exception.html
 testharness html/semantics/embedded-content/the-canvas-element/toBlob.jpeg.html
 testharness html/semantics/embedded-content/the-canvas-element/toBlob.null.html
 testharness html/semantics/embedded-content/the-canvas-element/toBlob.png.html
@@ -39799,6 +39804,7 @@ testharness html/user-activation/propagation-crossorigin.sub.html
 testharness html/user-activation/propagation-same-and-cross-origin.sub.html
 testharness html/user-activation/propagation-sameorigin.html
 testharness html/user-activation/user-activation-interface.html
+testharness html/webappapis/animation-frames/callback-cross-realm-report-exception.html
 testharness html/webappapis/animation-frames/callback-exception.html
 testharness html/webappapis/animation-frames/callback-handle.html
 testharness html/webappapis/animation-frames/callback-invoked.html
@@ -39954,6 +39960,7 @@ testharness html/webappapis/dynamic-markup-insertion/opening-the-input-stream/ur
 testharness html/webappapis/dynamic-markup-insertion/opening-the-input-stream/url-entry-document.window.js
 testharness html/webappapis/dynamic-markup-insertion/opening-the-input-stream/url-fragment.window.js
 testharness html/webappapis/dynamic-markup-insertion/opening-the-input-stream/url.window.js
+testharness html/webappapis/microtask-queuing/queue-microtask-cross-realm-callback-report-exception.html
 testharness html/webappapis/microtask-queuing/queue-microtask-exceptions.any.js
 testharness html/webappapis/microtask-queuing/queue-microtask.any.js
 testharness html/webappapis/microtask-queuing/queue-microtask.window.js
@@ -40050,6 +40057,7 @@ testharness html/webappapis/scripting/processing-model-2/window-onerror-with-cro
 testharness html/webappapis/scripting/processing-model-2/window-onerror-with-cross-frame-event-listeners-2.html
 testharness html/webappapis/scripting/processing-model-2/window-onerror-with-cross-frame-event-listeners-3.html
 testharness html/webappapis/scripting/processing-model-2/window-onerror-with-cross-frame-event-listeners-4.html
+testharness html/webappapis/scripting/processing-model-2/window-onerror-with-cross-frame-event-listeners-5.html
 testharness html/webappapis/scripting/reporterror-cross-realm-method.html
 testharness html/webappapis/scripting/reporterror.any.js
 testharness html/webappapis/structured-clone/structured-clone-cross-realm-method.html
@@ -40075,6 +40083,8 @@ testharness html/webappapis/timers/evil-spec-example.any.js
 testharness html/webappapis/timers/missing-timeout-setinterval.any.js
 testharness html/webappapis/timers/negative-setinterval.any.js
 testharness html/webappapis/timers/negative-settimeout.any.js
+testharness html/webappapis/timers/setinterval-cross-realm-callback-report-exception.html
+testharness html/webappapis/timers/settimeout-cross-realm-callback-report-exception.html
 testharness html/webappapis/timers/type-long-setinterval.any.js
 testharness html/webappapis/timers/type-long-settimeout.any.js
 testharness html/webappapis/update-rendering/child-document-raf-order.html
@@ -40237,6 +40247,7 @@ testharness input-events/select-event-drag-remove.html
 testharness installedapp/idlharness.https.window.js
 testharness installedapp/installedapp.https.window.js
 testharness intersection-observer/bounding-box.html
+testharness intersection-observer/callback-cross-realm-report-exception.html
 testharness intersection-observer/client-rect.html
 testharness intersection-observer/clip-path.html
 testharness intersection-observer/containing-block.html
@@ -43491,6 +43502,7 @@ testharness requestidlecallback/deadline-max-timeout-dynamic.html
 testharness requestidlecallback/deadline-max.html
 testharness requestidlecallback/idlharness.window.js
 testharness resize-observer/calculate-depth-for-node.html
+testharness resize-observer/callback-cross-realm-report-exception.html
 testharness resize-observer/change-layout-in-error.html
 testharness resize-observer/eventloop.html
 testharness resize-observer/fragments.html
