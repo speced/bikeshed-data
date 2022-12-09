@@ -13345,6 +13345,7 @@
   "<grid-line>": [
     "<custom-ident>",
     "<integer> && <custom-ident>?",
+    "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
     "[ <integer [−∞,−1]> | <integer [1,∞]> ] && <custom-ident>?",
     "auto",
     "span && [ <integer [1,∞]> || <custom-ident> ]",
@@ -34395,7 +34396,7 @@
     "italic",
     "normal",
     "oblique",
-    "oblique <angle [−90deg,90deg]>?",
+    "oblique <angle [-90deg,90deg]>?",
     "oblique <angle>?",
     "small-caps"
   ],
