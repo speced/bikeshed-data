@@ -297,6 +297,8 @@
     "<alpha-value>",
     "<alphavalue>",
     "<an+b>",
+    "<anchor-side>",
+    "<anchor-size>",
     "<angle-percentage>",
     "<angle>",
     "<angular-color-hint>",
@@ -487,6 +489,7 @@
     "<linear-stop-length>",
     "<linear-stop-list>",
     "<linear-stop>",
+    "<link-param>",
     "<margin-width>",
     "<marker-ref>",
     "<mask-layer>",
@@ -687,6 +690,7 @@
     "@media",
     "@nest",
     "@page",
+    "@position-fallback",
     "@property",
     "@region",
     "@right-bottom",
@@ -699,6 +703,7 @@
     "@top-left-corner",
     "@top-right",
     "@top-right-corner",
+    "@try",
     "@viewport",
     "@when",
     "AbortController",
@@ -2651,6 +2656,7 @@
     "accept insecure tls certificates",
     "accept state",
     "accept-language",
+    "acceptable anchor element",
     "accepted",
     "accepting",
     "accepts",
@@ -2913,9 +2919,17 @@
     "ancestor-source",
     "ancestor-source-list",
     "anchor",
+    "anchor element",
+    "anchor function",
+    "anchor name",
     "anchor node selection algorithm",
     "anchor point",
+    "anchor query",
     "anchor unit",
+    "anchor()",
+    "anchor-name",
+    "anchor-scroll",
+    "anchor-size()",
     "android key attestation certificate extension data",
     "animatable",
     "animate",
@@ -4798,6 +4812,7 @@
     "css level 2",
     "css level 3",
     "css level 4",
+    "css link parameter",
     "css module script",
     "css pixels",
     "css property to idl attribute",
@@ -7009,6 +7024,7 @@
     "implementation-check an object",
     "implementation-defined",
     "implements",
+    "implicit anchor element",
     "implicit column span",
     "implicit consent",
     "implicit grid",
@@ -7402,6 +7418,7 @@
     "intrinsic width",
     "intrinsic-sizes-invalid",
     "intrinsic-sizes-valid",
+    "invalid anchor query",
     "invalid argument",
     "invalid at computed-value time",
     "invalid color",
@@ -7890,6 +7907,7 @@
     "link type \"search\"",
     "link type \"stylesheet\"",
     "link type \"tag\"",
+    "link-parameters",
     "linked data",
     "linked data graph",
     "linked resource fetch setup steps",
@@ -8844,6 +8862,7 @@
     "object-fit",
     "object-position",
     "object-src",
+    "object-view-box",
     "objects",
     "oblique",
     "obscured",
@@ -9535,7 +9554,9 @@
     "poses must be limited",
     "position",
     "position box",
+    "position fallback list",
     "position variable",
+    "position-fallback",
     "positional alignment",
     "positioned",
     "positioned box",
@@ -10390,6 +10411,7 @@
     "root element",
     "root font-relative lengths",
     "root inline box",
+    "root layer",
     "rosybrown",
     "rotate",
     "rotate3d()",
@@ -11236,6 +11258,7 @@
     "snapshot viewport origin",
     "snapshotitem",
     "snapshotstate",
+    "snapshotted scroll offset",
     "sniff-scriptable flag",
     "snow",
     "socks authentication",
@@ -11662,6 +11685,7 @@
     "svg interpreters",
     "svg layout box",
     "svg namespace",
+    "svg parameter fragment identifier",
     "svg script",
     "svg servers",
     "svg svg",
@@ -11784,6 +11808,7 @@
     "tan()",
     "tao check",
     "target",
+    "target anchor element",
     "target contrast level",
     "target element",
     "target entry",
@@ -12513,6 +12538,7 @@
     "uuid alias",
     "uv",
     "valid",
+    "valid anchor query",
     "valid color",
     "valid css property",
     "valid custom element name",
@@ -32123,6 +32149,34 @@
     "xlink:href",
     "y"
   ],
+  "anchor()": [
+    "bottom",
+    "center",
+    "end",
+    "left",
+    "right",
+    "self-end",
+    "self-start",
+    "start",
+    "top"
+  ],
+  "anchor-name": [
+    "<dashed-ident>",
+    "none"
+  ],
+  "anchor-scroll": [
+    "<dashed-ident>",
+    "implicit",
+    "none"
+  ],
+  "anchor-size()": [
+    "block",
+    "height",
+    "inline",
+    "self-block",
+    "self-inline",
+    "width"
+  ],
   "animate": [
     "onbegin",
     "onend",
@@ -35865,6 +35919,10 @@
   "no-composite": [
     "no-composite"
   ],
+  "none": [
+    "<link-param>+",
+    "none"
+  ],
   "notification": [
     "action",
     "badge resource",
@@ -35934,6 +35992,10 @@
     "name",
     "object store",
     "transaction"
+  ],
+  "object-view-box": [
+    "<basic-shape-rect>",
+    "none"
   ],
   "object/autocomplete": [
     "additional-name",
@@ -36421,6 +36483,10 @@
     "relative",
     "static",
     "sticky"
+  ],
+  "position-fallback": [
+    "<dashed-ident>",
+    "none"
   ],
   "powerful feature": [
     "aspects",
