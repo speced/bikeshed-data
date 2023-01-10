@@ -1,4 +1,4 @@
-sha: a0ddc451e02afbbe600c679fe1edab0e4f878ecf
+sha: 614efe4b90cc1c14c52bfb9fdf7c068f101862b0
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
 crashtest accessibility/crashtests/aria-hidden-with-select.html
@@ -42,7 +42,11 @@ crashtest css/CSS2/normal-flow/crashtests/block-in-inline-ax-crash.html
 crashtest css/CSS2/text/crashtests/bidi-inline-fragment-oof-crash.html
 crashtest css/compositing/opacity-and-transform-animation-crash.html
 crashtest css/compositing/root-element-filter-background-clip-text-crash.html
-crashtest css/css-anchor-position/anchor-scroll-no-overflow-crash.html
+crashtest css/css-anchor-position/anchor-scroll-composited-scrolling-001-crash.html
+crashtest css/css-anchor-position/anchor-scroll-composited-scrolling-002-crash.html
+crashtest css/css-anchor-position/anchor-scroll-composited-scrolling-003-crash.html
+crashtest css/css-anchor-position/anchor-scroll-composited-scrolling-004-crash.html
+crashtest css/css-anchor-position/anchor-scroll-composited-scrolling-005-crash.html
 crashtest css/css-animations/CSSAnimation-getKeyframes-crash.html
 crashtest css/css-animations/crashtests/replace-keyframes-animating-filter-001.html
 crashtest css/css-animations/keyframes-remove-documentElement-crash.html
@@ -668,6 +672,7 @@ crashtest html/semantics/forms/the-input-element/large-step-crash.html
 crashtest html/semantics/forms/the-input-element/time-datalist-crash.html
 crashtest html/semantics/forms/the-input-element/type-change-file-to-text-crash.html
 crashtest html/semantics/forms/the-select-element/select-add-option-crash.html
+crashtest html/semantics/forms/the-selectmenu-element/selectmenu-listbox-fallback-change-crash.tentative.html
 crashtest html/semantics/interactive-elements/the-details-element/auto-expand-ax-slot-recalc-crash.html
 crashtest html/semantics/interactive-elements/the-details-element/auto-expand-window-find-crash.html
 crashtest html/semantics/interactive-elements/the-details-element/details-cq-crash.html
@@ -23861,6 +23866,11 @@ reftest css/selectors/focus-within-shadow-006.html
 reftest css/selectors/has-visited.html
 reftest css/selectors/historical-xmlid.xht
 reftest css/selectors/invalidation/class-id-attr.html
+reftest css/selectors/invalidation/nth-child-of-attr.html
+reftest css/selectors/invalidation/nth-child-of-class.html
+reftest css/selectors/invalidation/nth-child-of-has.html
+reftest css/selectors/invalidation/nth-child-of-in-ancestor.html
+reftest css/selectors/invalidation/nth-child-of-sibling.html
 reftest css/selectors/invalidation/sheet-going-away-002.html
 reftest css/selectors/is-default-ns-001.html
 reftest css/selectors/is-default-ns-002.html
@@ -24815,6 +24825,7 @@ reftest mathml/presentation-markup/fractions/frac-parameters-gap-006.html
 reftest mathml/presentation-markup/fractions/frac-rendering-from-in-flow.html
 reftest mathml/presentation-markup/fractions/frac-visibility-001.html
 reftest mathml/presentation-markup/menclose/legacy-menclose-radical-notation.html
+reftest mathml/presentation-markup/mpadded/mpadded-percentage-001.html
 reftest mathml/presentation-markup/mrow/dynamic-mrow-like-001.html
 reftest mathml/presentation-markup/mrow/legacy-mfenced-element-001.html
 reftest mathml/presentation-markup/mrow/legacy-mrow-like-elements-002.html
@@ -24865,6 +24876,7 @@ reftest mathml/presentation-markup/scripts/underover-stretchy-001.html
 reftest mathml/presentation-markup/scripts/underover-stretchy-002.html
 reftest mathml/presentation-markup/scripts/underover-stretchy-003.html
 reftest mathml/presentation-markup/spaces/mspace-children.html
+reftest mathml/presentation-markup/spaces/mspace-percentage-001.html
 reftest mathml/presentation-markup/spaces/space-2.html
 reftest mathml/presentation-markup/spaces/space-vertical-align.tentative.html
 reftest mathml/presentation-markup/tokens/dynamic-mtext-like-001.html
@@ -40991,6 +41003,7 @@ testharness mathml/presentation-markup/mpadded/legacy-orthogonal-pseudo-units.ht
 testharness mathml/presentation-markup/mpadded/mpadded-001.html
 testharness mathml/presentation-markup/mpadded/mpadded-002.html
 testharness mathml/presentation-markup/mpadded/mpadded-003.html
+testharness mathml/presentation-markup/mpadded/mpadded-percentage-002.html
 testharness mathml/presentation-markup/mrow/inferred-mrow-baseline.html
 testharness mathml/presentation-markup/mrow/inferred-mrow-stretchy.html
 testharness mathml/presentation-markup/mrow/legacy-mrow-like-elements-001.html
@@ -51198,6 +51211,8 @@ wdspec webdriver/tests/bidi/log/entry_added/javascript.py
 wdspec webdriver/tests/bidi/log/entry_added/stacktrace.py
 wdspec webdriver/tests/bidi/log/entry_added/subscription.py
 wdspec webdriver/tests/bidi/network/before_request_sent/before_request_sent_tentative.py
+wdspec webdriver/tests/bidi/network/combined/network_events_tentative.py
+wdspec webdriver/tests/bidi/network/response_started/response_started_tentative.py
 wdspec webdriver/tests/bidi/script/call_function/arguments.py
 wdspec webdriver/tests/bidi/script/call_function/await_promise.py
 wdspec webdriver/tests/bidi/script/call_function/exception_details.py
