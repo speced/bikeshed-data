@@ -18,6 +18,14 @@ feel free to file an issue,
 as the updater process may have fallen over
 and be in need of manual restarting.
 
+## My Spec Is Missing From Bikeshed?
+
+Bikeshed draws most of its data from [Browser Specs](https://github.com/w3c/browser-specs),
+which should capture all the specs (W3C and otherwise)
+that are relevant for web browsers.
+If your spec isn't on [the list](https://github.com/speced/bikeshed-data/blob/main/data/specs.json) but you think it fits that bill,
+[file an issue on Browser Specs](https://github.com/w3c/browser-specs/issues/new).
+
 ## Running Manually
 
 Normally this project is updated automatically several times a day.
