@@ -762,6 +762,7 @@
     "<quote>",
     "<random-caching-options>",
     "<ratio>",
+    "<ray-size>",
     "<rectangular-color-space>",
     "<relative-real-selector-list>",
     "<relative-real-selector>",
@@ -4597,6 +4598,8 @@
     "animation-name",
     "animation-play-state",
     "animation-range",
+    "animation-range-end",
+    "animation-range-start",
     "animation-tainted",
     "animation-timeline",
     "animation-timing-function",
@@ -12028,6 +12031,7 @@
     "offset",
     "offset distance",
     "offset path",
+    "offset transform",
     "offset-anchor",
     "offset-distance",
     "offset-path",
@@ -13425,6 +13429,7 @@
     "rawtext end tag open state",
     "rawtext less-than sign state",
     "rawtext state",
+    "ray()",
     "rb",
     "rcdata end tag name state",
     "rcdata end tag open state",
@@ -17875,6 +17880,13 @@
     "no-close-quote",
     "no-open-quote",
     "open-quote"
+  ],
+  "<ray-size>": [
+    "closest-corner",
+    "closest-side",
+    "farthest-corner",
+    "farthest-side",
+    "sides"
   ],
   "<resolution>": [
     "dpcm",
@@ -37065,7 +37077,8 @@
     "\"usb\""
   ],
   "PermissionPolicy": [
-    "\"local-fonts\""
+    "\"local-fonts\"",
+    "\"window-management\""
   ],
   "PermissionSetParameters": [
     "descriptor",
@@ -46583,6 +46596,14 @@
     "paused",
     "running"
   ],
+  "animation-range-end": [
+    "<timeline-range-name> <percentage>",
+    "normal"
+  ],
+  "animation-range-start": [
+    "<timeline-range-name> <percentage>",
+    "normal"
+  ],
   "animation-timeline": [
     "auto",
     "none"
@@ -46977,9 +46998,6 @@
     "special relative or authority state",
     "state override",
     "url"
-  ],
-  "blob URL": [
-    "resolve"
   ],
   "blob URL entry": [
     "environment",
@@ -51189,8 +51207,10 @@
     "initial position"
   ],
   "offset-path": [
-    "none",
-    "ray()"
+    "none"
+  ],
+  "offset-position": [
+    "auto"
   ],
   "offset-rotate": [
     "auto",
@@ -51679,8 +51699,7 @@
     "bluetooth",
     "default allowlist",
     "default allowlists",
-    "serial",
-    "window-management"
+    "serial"
   ],
   "polygon": [
     "points",
@@ -51911,7 +51930,7 @@
     "source"
   ],
   "ray()": [
-    "<size>",
+    "<ray-size>",
     "contain"
   ],
   "read buffer": [
