@@ -1,4 +1,4 @@
-sha: ca56f0ecba108bfb211eb0b3e5755f47401f275c
+sha: 021d1b5eb068f8f9a0791f70660a314508160b02
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
 crashtest accessibility/crashtests/aom-in-destroyed-iframe.html
@@ -27268,12 +27268,6 @@ testharness content-security-policy/object-src/object-src-url-redirect-allowed.h
 testharness content-security-policy/object-src/object-src-url-redirect-blocked.sub.html
 testharness content-security-policy/parsing/invalid-directive.html
 testharness content-security-policy/plugin-types/plugin-types-ignored.html
-testharness content-security-policy/prefetch-src/prefetch-allowed.html
-testharness content-security-policy/prefetch-src/prefetch-blocked-by-default.html
-testharness content-security-policy/prefetch-src/prefetch-blocked.html
-testharness content-security-policy/prefetch-src/prefetch-header-allowed.html
-testharness content-security-policy/prefetch-src/prefetch-header-blocked-by-default.html
-testharness content-security-policy/prefetch-src/prefetch-header-blocked.html
 testharness content-security-policy/reporting-api/report-to-directive-allowed-in-meta.https.sub.html
 testharness content-security-policy/reporting-api/reporting-api-doesnt-send-reports-without-violation.https.sub.html
 testharness content-security-policy/reporting-api/reporting-api-report-only-sends-reports-on-violation.https.sub.html
@@ -27309,6 +27303,15 @@ testharness content-security-policy/reporting/report-uri-from-javascript.html
 testharness content-security-policy/reporting/report-uri-multiple-reversed.html
 testharness content-security-policy/reporting/report-uri-multiple.html
 testharness content-security-policy/reporting/report-uri-scheme-relative.html
+testharness content-security-policy/resource-hints/prefetch-allowed-by-any-directive.sub.html
+testharness content-security-policy/resource-hints/prefetch-allowed-by-default.html
+testharness content-security-policy/resource-hints/prefetch-allowed-no-default.html
+testharness content-security-policy/resource-hints/prefetch-allowed-with-conflicting-permissive-policies.html
+testharness content-security-policy/resource-hints/prefetch-blocked-by-default-multiple-policies.html
+testharness content-security-policy/resource-hints/prefetch-blocked-by-default.html
+testharness content-security-policy/resource-hints/prefetch-generate-directives.html
+testharness content-security-policy/resource-hints/prefetch-ignores-prefetch-src.sub.html
+testharness content-security-policy/resource-hints/prefetch-no-csp.html
 testharness content-security-policy/sandbox/iframe-inside-csp.sub.html
 testharness content-security-policy/sandbox/meta-element.sub.html
 testharness content-security-policy/sandbox/sandbox-allow-scripts-subframe.sub.html
@@ -45138,8 +45141,6 @@ testharness speculation-rules/prerender/credentialed-prerender-not-opt-in.html
 testharness speculation-rules/prerender/credentialed-prerender-opt-in.html
 testharness speculation-rules/prerender/cross-origin-iframe.html
 testharness speculation-rules/prerender/cross-origin-isolated.https.html
-testharness speculation-rules/prerender/csp-prefetch-src-allow.html
-testharness speculation-rules/prerender/csp-prefetch-src-disallow.html
 testharness speculation-rules/prerender/csp-script-src-elem-inline-speculation-rules.tentative.html
 testharness speculation-rules/prerender/csp-script-src-inline-speculation-rules.tentative.html
 testharness speculation-rules/prerender/csp-script-src-self.html
