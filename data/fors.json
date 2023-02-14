@@ -3821,9 +3821,11 @@
     "WebTransportDatagramStats",
     "WebTransportError",
     "WebTransportErrorInit",
+    "WebTransportErrorOptions",
     "WebTransportErrorSource",
     "WebTransportHash",
     "WebTransportOptions",
+    "WebTransportRateControlFeedback",
     "WebTransportReceiveStream",
     "WebTransportReceiveStreamStats",
     "WebTransportReliabilityMode",
@@ -44057,6 +44059,8 @@
     "[[Datagrams]]",
     "[[IncomingBidirectionalStreams]]",
     "[[IncomingUnidirectionalStreams]]",
+    "[[RateControlFeedbackMinInterval]]",
+    "[[RateControlFeedback]]",
     "[[Ready]]",
     "[[ReceiveStreams]]",
     "[[Reliability]]",
@@ -44078,7 +44082,11 @@
     "getStats()",
     "incomingBidirectionalStreams",
     "incomingUnidirectionalStreams",
+    "onratecontrolfeedback",
     "queue a network task",
+    "rateControlFeedback",
+    "rateControlFeedbackMinInterval",
+    "ratecontrolfeedback",
     "ready",
     "reliability"
   ],
@@ -44166,29 +44174,57 @@
   "WebTransportError": [
     "WebTransportError()",
     "WebTransportError(init)",
+    "WebTransportError(message)",
+    "WebTransportError(message, options)",
     "[[Source]]",
     "[[StreamErrorCode]]",
     "constructor()",
     "constructor(init)",
+    "constructor(message)",
+    "constructor(message, options)",
     "create",
     "set up",
     "source",
     "streamErrorCode"
   ],
   "WebTransportError/WebTransportError()": [
-    "init"
+    "init",
+    "message",
+    "options"
   ],
   "WebTransportError/WebTransportError(init)": [
     "init"
   ],
+  "WebTransportError/WebTransportError(message)": [
+    "message",
+    "options"
+  ],
+  "WebTransportError/WebTransportError(message, options)": [
+    "message",
+    "options"
+  ],
   "WebTransportError/constructor()": [
-    "init"
+    "init",
+    "message",
+    "options"
   ],
   "WebTransportError/constructor(init)": [
     "init"
   ],
+  "WebTransportError/constructor(message)": [
+    "message",
+    "options"
+  ],
+  "WebTransportError/constructor(message, options)": [
+    "message",
+    "options"
+  ],
   "WebTransportErrorInit": [
     "message",
+    "streamErrorCode"
+  ],
+  "WebTransportErrorOptions": [
+    "source",
     "streamErrorCode"
   ],
   "WebTransportErrorSource": [
@@ -44204,6 +44240,11 @@
     "congestionControl",
     "requireUnreliable",
     "serverCertificateHashes"
+  ],
+  "WebTransportRateControlFeedback": [
+    "[[SendRate]]",
+    "create",
+    "sendRate"
   ],
   "WebTransportReceiveStream": [
     "[[InternalStream]]",
