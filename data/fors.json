@@ -867,6 +867,7 @@
     "<{-token>",
     "<}-token>",
     ">",
+    ">n-quads parser",
     "?",
     "@-webkit-keyframes",
     "@@asyncIterator",
@@ -10965,6 +10966,7 @@
     "match a selector against a pseudo-element",
     "match a selector against a tree",
     "match a selector against an element",
+    "match an attribution source's filter data against a filter map",
     "match an attribution source's filter data against filters",
     "match an attribution source's filter data against filters and negated filters",
     "match an installed app",
@@ -11039,6 +11041,7 @@
     "max height",
     "max inner height",
     "max inner width",
+    "max items in filters",
     "max main size",
     "max main size property",
     "max pending sources per source origin",
@@ -12474,6 +12477,7 @@
     "parse errors",
     "parse event triggers",
     "parse filter data",
+    "parse filters",
     "parse json bytes to a javascript value",
     "parse json bytes to an infra value",
     "parse json from bytes",
@@ -15824,6 +15828,10 @@
     "telephone type strings",
     "template",
     "template contents",
+    "template list",
+    "template list discovery",
+    "template parameterization",
+    "template parameters",
     "templatefriendlyname",
     "temporal layer",
     "temporarily unavailable",
@@ -17161,7 +17169,6 @@
     "well-formed",
     "well-formed language tag",
     "well-formed language tags",
-    "well-known",
     "well-known type record",
     "well-typed",
     "wheat",
@@ -40712,8 +40719,8 @@
     "extend(node, offset)",
     "focusNode",
     "focusOffset",
-    "getComposedRange()",
-    "getComposedRange(shadowRoots)",
+    "getComposedRanges()",
+    "getComposedRanges(shadowRoots)",
     "getRangeAt()",
     "getRangeAt(index)",
     "isCollapsed",
@@ -44251,9 +44258,6 @@
     "rttVariation",
     "smoothedRtt",
     "timestamp"
-  ],
-  "Well-Known": [
-    "provider_urls"
   ],
   "WellKnownDirectory": [
     "\"desktop\"",
@@ -48130,13 +48134,6 @@
     "ignored",
     "invalid"
   ],
-  "cubic-bezier-easing-function": [
-    "cubic-bezier()",
-    "ease",
-    "ease-in",
-    "ease-in-out",
-    "ease-out"
-  ],
   "cursor": [
     "<url-set>",
     "alias",
@@ -50640,6 +50637,9 @@
     "objectboundingbox",
     "userspaceonuse"
   ],
+  "match an attribution source’s filter data against a filter map": [
+    "isnegated"
+  ],
   "match an attribution source’s filter data against filters": [
     "isnegated"
   ],
@@ -52865,11 +52865,6 @@
     "switch",
     "while"
   ],
-  "step-easing-function": [
-    "step-end",
-    "step-start",
-    "steps()"
-  ],
   "steps()": [
     "end",
     "jump-both",
@@ -53243,6 +53238,8 @@
     "while"
   ],
   "syntax_sym": [
+    "_template_args_end",
+    "_template_args_start",
     "and",
     "and_and",
     "and_equal",
@@ -53280,9 +53277,9 @@
     "plus_plus",
     "semicolon",
     "shift_left",
-    "shift_left_equal",
+    "shift_left_assign",
     "shift_right",
-    "shift_right_equal",
+    "shift_right_assign",
     "star",
     "tilde",
     "times_equal",
