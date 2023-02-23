@@ -501,6 +501,7 @@
     "<attribute-selector>",
     "<auto-repeat>",
     "<auto-track-list>",
+    "<autospace>",
     "<axis>",
     "<bad-string-token>",
     "<bad-url-token>",
@@ -656,7 +657,11 @@
     "<layout-box>",
     "<leader-type>",
     "<left>",
+    "<legacy-hsl-syntax>",
+    "<legacy-hsla-syntax>",
     "<legacy-pseudo-element-selector>",
+    "<legacy-rgb-syntax>",
+    "<legacy-rgba-syntax>",
     "<length-percentage>",
     "<length>",
     "<line-name-list>",
@@ -703,6 +708,10 @@
     "<mmultiscripts>",
     "<mn>",
     "<mo>",
+    "<modern-hsl-syntax>",
+    "<modern-hsla-syntax>",
+    "<modern-rgb-syntax>",
+    "<modern-rgba-syntax>",
     "<mover>",
     "<mpadded>",
     "<mphantom>",
@@ -814,6 +823,7 @@
     "<source-size-list>",
     "<source-size-value>",
     "<source-size>",
+    "<spacing-trim>",
     "<step-easing-function>",
     "<step-position>",
     "<string-token>",
@@ -1260,6 +1270,7 @@
     "CSSRule",
     "CSSRuleList",
     "CSSScale",
+    "CSSScopeRule",
     "CSSSkew",
     "CSSSkewX",
     "CSSSkewY",
@@ -7431,6 +7442,7 @@
     "determine the member type",
     "determine the network partition key",
     "determine the origin",
+    "determine the position fallback styles",
     "determine the purpose of an image",
     "determine the start page",
     "determine the target of an event handler",
@@ -11460,6 +11472,7 @@
     "mod()",
     "mode",
     "model",
+    "modern color syntax",
     "modifier key",
     "modifiers population algorithm",
     "module",
@@ -15927,6 +15940,7 @@
     "text-align-all",
     "text-align-last",
     "text-anchor",
+    "text-autospace",
     "text-combine-upright",
     "text-decoration",
     "text-decoration-color",
@@ -15963,6 +15977,7 @@
     "text-space-collapse",
     "text-space-trim",
     "text-spacing",
+    "text-spacing-trim",
     "text-track-cue",
     "text-transform",
     "text-under baseline",
@@ -16817,6 +16832,10 @@
     "valid yearless date string",
     "valid-relative-ocf-url-with-fragment string",
     "validate",
+    "validate GPUColor shape",
+    "validate GPUExtent3D shape",
+    "validate GPUOrigin2D shape",
+    "validate GPUOrigin3D shape",
     "validate a cssnumberish time",
     "validate a partial response",
     "validate a payment method identifier",
@@ -19750,7 +19769,6 @@
     "attestationFormats"
   ],
   "AuthenticationExtensionsDevicePublicKeyOutputs": [
-    "authenticatorOutput",
     "signature"
   ],
   "AuthenticationExtensionsLargeBlobInputs": [
@@ -22116,6 +22134,10 @@
     "x",
     "y",
     "z"
+  ],
+  "CSSScopeRule": [
+    "end",
+    "start"
   ],
   "CSSSkew": [
     "CSSSkew(ax, ay)",
@@ -29001,7 +29023,6 @@
     "mipmapFilter"
   ],
   "GPUShaderModule": [
-    "compilationInfo()",
     "getCompilationInfo()"
   ],
   "GPUShaderModuleCompilationHint": [
@@ -53474,6 +53495,15 @@
   "text-align-last": [
     "auto"
   ],
+  "text-autospace": [
+    "ideograph-alpha",
+    "ideograph-numeric",
+    "insert",
+    "no-autospace",
+    "normal",
+    "punctuation",
+    "replace"
+  ],
   "text-combine-upright": [
     "all",
     "digits <integer [2,4]>?",
@@ -53590,6 +53620,7 @@
     "distribute",
     "inter-character",
     "inter-word",
+    "no-compress",
     "none",
     "ruby"
   ],
@@ -53623,6 +53654,8 @@
     "discard-inner"
   ],
   "text-spacing": [
+    "<autospace>",
+    "<spacing-trim>",
     "allow-end",
     "auto",
     "ideograph-alpha",
@@ -53638,6 +53671,13 @@
     "trim-adjacent",
     "trim-end",
     "trim-start"
+  ],
+  "text-spacing-trim": [
+    "allow-end",
+    "auto",
+    "space-all",
+    "space-first",
+    "trim-auto"
   ],
   "text-text-emphasis": [
     "open"
