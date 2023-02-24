@@ -134,7 +134,7 @@ ecmascript
 ecmascript
 1
 current
-https://tc39.es/ecma262/multipage/keyed-collections.html#sec-%setiteratorprototype%-object
+https://tc39.es/ecma262/multipage/keyed-collections.html#sec-%25setiteratorprototype%25-object
 1
 1
 -
@@ -805,6 +805,16 @@ https://html.spec.whatwg.org/multipage/structured-data.html#serializable
 1
 1
 -
+SerializeJSONArray
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonarray
+1
+1
+-
 SerializeJSONArray(state, value)
 abstract-op
 ecmascript
@@ -815,6 +825,16 @@ https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonarray
 1
 1
 -
+SerializeJSONObject
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonobject
+1
+1
+-
 SerializeJSONObject(state, value)
 abstract-op
 ecmascript
@@ -822,6 +842,16 @@ ecmascript
 1
 current
 https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonobject
+1
+1
+-
+SerializeJSONProperty
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonproperty
 1
 1
 -
@@ -966,6 +996,16 @@ https://www.w3.org/TR/service-workers/#enumdef-serviceworkerupdateviacache
 1
 -
 Set
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/abstract-operations.html#sec-set-o-p-v-throw
+1
+1
+-
+Set
 interface
 ecmascript
 ecmascript
@@ -996,6 +1036,16 @@ https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-iterable
 1
 Set
 -
+SetDefaultGlobalBindings
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setdefaultglobalbindings
+1
+1
+-
 SetDefaultGlobalBindings(realmRec)
 abstract-op
 ecmascript
@@ -1006,6 +1056,16 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
+SetFunctionLength
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength
+1
+1
+-
 SetFunctionLength(F, length)
 abstract-op
 ecmascript
@@ -1013,6 +1073,16 @@ ecmascript
 1
 current
 https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength
+1
+1
+-
+SetFunctionName
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname
 1
 1
 -
@@ -1036,6 +1106,16 @@ https://wicg.github.io/sanitizer-api/#dictdef-sethtmloptions
 1
 1
 -
+SetImmutablePrototype
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-set-immutable-prototype
+1
+1
+-
 SetImmutablePrototype(O, V)
 abstract-op
 ecmascript
@@ -1043,6 +1123,16 @@ ecmascript
 1
 current
 https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-set-immutable-prototype
+1
+1
+-
+SetIntegrityLevel
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel
 1
 1
 -
@@ -1065,7 +1155,39 @@ current
 https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-setmutablebinding-n-v-s
 1
 1
-Environment Records
+Declarative Environment Records
+-
+SetMutableBinding(N, V, S)
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-setmutablebinding-n-v-s
+1
+1
+Global Environment Records
+-
+SetMutableBinding(N, V, S)
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-setmutablebinding-n-v-s
+1
+1
+Object Environment Records
+-
+SetRealmGlobalObject
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setrealmglobalobject
+1
+1
 -
 SetRealmGlobalObject(realmRec, globalObj, thisValue)
 abstract-op
@@ -1077,6 +1199,16 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
+SetTypedArrayFromArrayLike
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/indexed-collections.html#sec-settypedarrayfromarraylike
+1
+1
+-
 SetTypedArrayFromArrayLike(target, targetOffset, source)
 abstract-op
 ecmascript
@@ -1084,6 +1216,16 @@ ecmascript
 1
 current
 https://tc39.es/ecma262/multipage/indexed-collections.html#sec-settypedarrayfromarraylike
+1
+1
+-
+SetTypedArrayFromTypedArray
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/indexed-collections.html#sec-settypedarrayfromtypedarray
 1
 1
 -
@@ -1227,6 +1369,16 @@ https://streams.spec.whatwg.org/#set-up-writable-stream-default-writer
 1
 1
 -
+SetValueInBuffer
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/structured-data.html#sec-setvalueinbuffer
+1
+1
+-
 SetValueInBuffer(arrayBuffer, byteIndex, type, value, isTypedArray, order, isLittleEndian)
 abstract-op
 ecmascript
@@ -1234,6 +1386,16 @@ ecmascript
 1
 current
 https://tc39.es/ecma262/multipage/structured-data.html#sec-setvalueinbuffer
+1
+1
+-
+SetViewValue
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/structured-data.html#sec-setviewvalue
 1
 1
 -
@@ -1757,7 +1919,7 @@ html
 html
 1
 current
-https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search)
+https://html.spec.whatwg.org/multipage/input.html#text-(type%3Dtext)-state-and-search-state-(type%3Dsearch)
 1
 1
 input
@@ -3451,7 +3613,7 @@ html
 html
 1
 current
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-select
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea%2Finput-select
 1
 1
 HTMLInputElement
@@ -4077,7 +4239,7 @@ html
 html
 1
 current
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-textarea/input-selection
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-textarea%2Finput-selection
 
 1
 -
@@ -4160,7 +4322,7 @@ html
 html
 1
 current
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectiondirection
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea%2Finput-selectiondirection
 1
 1
 HTMLInputElement
@@ -4172,7 +4334,7 @@ html
 html
 1
 current
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionend
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea%2Finput-selectionend
 1
 1
 HTMLInputElement
@@ -4272,7 +4434,7 @@ html
 html
 1
 current
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionstart
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea%2Finput-selectionstart
 1
 1
 HTMLInputElement
@@ -12892,7 +13054,7 @@ ecmascript
 ecmascript
 1
 current
-https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.set
+https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.set
 1
 1
 %TypedArray%
@@ -14724,7 +14886,7 @@ html
 html
 1
 current
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea%2Finput-setrangetext
 1
 1
 HTMLInputElement
@@ -14956,7 +15118,7 @@ html
 html
 1
 current
-https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setselectionrange
+https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea%2Finput-setselectionrange
 1
 1
 HTMLInputElement
