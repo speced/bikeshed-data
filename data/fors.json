@@ -33693,9 +33693,12 @@
     "min(a, b)",
     "mul(a, b)",
     "neg(x)",
+    "pad(input, beginningPadding, endingPadding)",
+    "pad(input, beginningPadding, endingPadding, options)",
     "pad(input, padding)",
     "pad(input, padding, options)",
     "pow(a, b)",
+    "prelu(x, slope)",
     "reduceL1(input)",
     "reduceL1(input, options)",
     "reduceL2(input)",
@@ -34035,6 +34038,18 @@
   "MLGraphBuilder/neg(x)": [
     "x"
   ],
+  "MLGraphBuilder/pad(input, beginningPadding, endingPadding)": [
+    "beginningPadding",
+    "endingPadding",
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/pad(input, beginningPadding, endingPadding, options)": [
+    "beginningPadding",
+    "endingPadding",
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/pad(input, padding)": [
     "input",
     "options",
@@ -34048,6 +34063,10 @@
   "MLGraphBuilder/pow(a, b)": [
     "a",
     "b"
+  ],
+  "MLGraphBuilder/prelu(x, slope)": [
+    "slope",
+    "x"
   ],
   "MLGraphBuilder/reduceL1(input)": [
     "input",
@@ -52585,7 +52604,6 @@
     "relational_expression.post.unary_expression",
     "severity_control_name",
     "shift_expression.post.unary_expression",
-    "software_extension_name",
     "statement",
     "switch_clause",
     "swizzle_name",
