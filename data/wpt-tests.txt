@@ -1,4 +1,4 @@
-sha: 71d751d6404d9454744fdd9ad7b2f54d710731f2
+sha: 14684f837eba364df3de2b6683d4eb5385333158
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -35991,6 +35991,7 @@ testharness html/canvas/element/pixel-manipulation/2d.imageData.create2.initial.
 testharness html/canvas/element/pixel-manipulation/2d.imageData.create2.large.html
 testharness html/canvas/element/pixel-manipulation/2d.imageData.create2.negative.html
 testharness html/canvas/element/pixel-manipulation/2d.imageData.create2.nonfinite.html
+testharness html/canvas/element/pixel-manipulation/2d.imageData.create2.round.html
 testharness html/canvas/element/pixel-manipulation/2d.imageData.create2.this.html
 testharness html/canvas/element/pixel-manipulation/2d.imageData.create2.type.html
 testharness html/canvas/element/pixel-manipulation/2d.imageData.create2.zero.html
@@ -37424,6 +37425,8 @@ testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create1.zero.h
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create1.zero.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create2.basic.html
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create2.basic.worker.js
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create2.double.html
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create2.double.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create2.initial.html
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create2.initial.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.create2.large.html
@@ -37440,6 +37443,12 @@ testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.basic.html
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.basic.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.clamp.html
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.clamp.worker.js
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.double.html
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.double.worker.js
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.invalid.html
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.invalid.worker.js
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.large.crash.html
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.large.crash.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.length.html
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.length.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.nonfinite.html
@@ -37456,6 +37465,8 @@ testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.order.rows
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.order.rows.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.range.html
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.range.worker.js
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.rounding.html
+testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.rounding.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.source.negative.html
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.source.negative.worker.js
 testharness html/canvas/offscreen/pixel-manipulation/2d.imageData.get.source.outside.html
@@ -45054,6 +45065,7 @@ testharness shadow-dom/focus-navigation/focus-reverse-unassignable-slot.html
 testharness shadow-dom/focus-navigation/focus-reverse-unassigned-slot.html
 testharness shadow-dom/focus-navigation/focus-unassignable-slot.html
 testharness shadow-dom/focus-navigation/focus-with-negative-index.html
+testharness shadow-dom/focus-within-shadow.html
 testharness shadow-dom/focus/DocumentOrShadowRoot-activeElement.html
 testharness shadow-dom/focus/ShadowRoot-delegatesFocus.html
 testharness shadow-dom/focus/blur-on-shadow-host-delegatesFocus.html
