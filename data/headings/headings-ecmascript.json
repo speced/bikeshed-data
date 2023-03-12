@@ -173,11 +173,20 @@
   "#sec-%25typedarray%25.prototype.tolocalestring": [
     "/indexed-collections#sec-%25typedarray%25.prototype.tolocalestring"
   ],
+  "#sec-%25typedarray%25.prototype.toreversed": [
+    "/indexed-collections#sec-%25typedarray%25.prototype.toreversed"
+  ],
+  "#sec-%25typedarray%25.prototype.tosorted": [
+    "/indexed-collections#sec-%25typedarray%25.prototype.tosorted"
+  ],
   "#sec-%25typedarray%25.prototype.tostring": [
     "/indexed-collections#sec-%25typedarray%25.prototype.tostring"
   ],
   "#sec-%25typedarray%25.prototype.values": [
     "/indexed-collections#sec-%25typedarray%25.prototype.values"
+  ],
+  "#sec-%25typedarray%25.prototype.with": [
+    "/indexed-collections#sec-%25typedarray%25.prototype.with"
   ],
   "#sec-%40%40tostringtag": [
     "/reflection#sec-%40%40tostringtag"
@@ -488,6 +497,15 @@
   "#sec-array.prototype.tolocalestring": [
     "/indexed-collections#sec-array.prototype.tolocalestring"
   ],
+  "#sec-array.prototype.toreversed": [
+    "/indexed-collections#sec-array.prototype.toreversed"
+  ],
+  "#sec-array.prototype.tosorted": [
+    "/indexed-collections#sec-array.prototype.tosorted"
+  ],
+  "#sec-array.prototype.tospliced": [
+    "/indexed-collections#sec-array.prototype.tospliced"
+  ],
   "#sec-array.prototype.tostring": [
     "/indexed-collections#sec-array.prototype.tostring"
   ],
@@ -496,6 +514,9 @@
   ],
   "#sec-array.prototype.values": [
     "/indexed-collections#sec-array.prototype.values"
+  ],
+  "#sec-array.prototype.with": [
+    "/indexed-collections#sec-array.prototype.with"
   ],
   "#sec-arraybuffer-constructor": [
     "/structured-data#sec-arraybuffer-constructor"
@@ -1027,6 +1048,12 @@
   ],
   "#sec-common-iteration-interfaces": [
     "/control-abstraction-objects#sec-common-iteration-interfaces"
+  ],
+  "#sec-comparearrayelements": [
+    "/indexed-collections#sec-comparearrayelements"
+  ],
+  "#sec-comparetypedarrayelements": [
+    "/indexed-collections#sec-comparetypedarrayelements"
   ],
   "#sec-compileassertion": [
     "/text-processing#sec-compileassertion"
@@ -5653,6 +5680,9 @@
   ],
   "#sec-typedarray-constructors": [
     "/indexed-collections#sec-typedarray-constructors"
+  ],
+  "#sec-typedarray-create-same-type": [
+    "/indexed-collections#sec-typedarray-create-same-type"
   ],
   "#sec-typedarray-objects": [
     "/indexed-collections#sec-typedarray-objects"
@@ -14347,7 +14377,7 @@
   },
   "/indexed-collections#sec-%25typedarray%25.prototype-%40%40iterator": {
     "current": {
-      "number": "23.2.3.34",
+      "number": "23.2.3.37",
       "spec": "ECMAScript",
       "text": "%TypedArray%.prototype [ @@iterator ] ( )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype-%40%40iterator"
@@ -14569,9 +14599,25 @@
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tolocalestring"
     }
   },
-  "/indexed-collections#sec-%25typedarray%25.prototype.tostring": {
+  "/indexed-collections#sec-%25typedarray%25.prototype.toreversed": {
     "current": {
       "number": "23.2.3.32",
+      "spec": "ECMAScript",
+      "text": "%TypedArray%.prototype.toReversed ( )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.toreversed"
+    }
+  },
+  "/indexed-collections#sec-%25typedarray%25.prototype.tosorted": {
+    "current": {
+      "number": "23.2.3.33",
+      "spec": "ECMAScript",
+      "text": "%TypedArray%.prototype.toSorted ( comparefn )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tosorted"
+    }
+  },
+  "/indexed-collections#sec-%25typedarray%25.prototype.tostring": {
+    "current": {
+      "number": "23.2.3.34",
       "spec": "ECMAScript",
       "text": "%TypedArray%.prototype.toString ( )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tostring"
@@ -14579,10 +14625,18 @@
   },
   "/indexed-collections#sec-%25typedarray%25.prototype.values": {
     "current": {
-      "number": "23.2.3.33",
+      "number": "23.2.3.35",
       "spec": "ECMAScript",
       "text": "%TypedArray%.prototype.values ( )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.values"
+    }
+  },
+  "/indexed-collections#sec-%25typedarray%25.prototype.with": {
+    "current": {
+      "number": "23.2.3.36",
+      "spec": "ECMAScript",
+      "text": "%TypedArray%.prototype.with ( index, value )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.with"
     }
   },
   "/indexed-collections#sec-abstract-operations-for-typedarray-objects": {
@@ -14675,7 +14729,7 @@
   },
   "/indexed-collections#sec-array.prototype-%40%40iterator": {
     "current": {
-      "number": "23.1.3.36",
+      "number": "23.1.3.40",
       "spec": "ECMAScript",
       "text": "Array.prototype [ @@iterator ] ( )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype-%40%40iterator"
@@ -14683,7 +14737,7 @@
   },
   "/indexed-collections#sec-array.prototype-%40%40unscopables": {
     "current": {
-      "number": "23.1.3.37",
+      "number": "23.1.3.41",
       "spec": "ECMAScript",
       "text": "Array.prototype [ @@unscopables ]",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype-%40%40unscopables"
@@ -14945,9 +14999,33 @@
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tolocalestring"
     }
   },
-  "/indexed-collections#sec-array.prototype.tostring": {
+  "/indexed-collections#sec-array.prototype.toreversed": {
     "current": {
       "number": "23.1.3.33",
+      "spec": "ECMAScript",
+      "text": "Array.prototype.toReversed ( )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.toreversed"
+    }
+  },
+  "/indexed-collections#sec-array.prototype.tosorted": {
+    "current": {
+      "number": "23.1.3.34",
+      "spec": "ECMAScript",
+      "text": "Array.prototype.toSorted ( comparefn )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tosorted"
+    }
+  },
+  "/indexed-collections#sec-array.prototype.tospliced": {
+    "current": {
+      "number": "23.1.3.35",
+      "spec": "ECMAScript",
+      "text": "Array.prototype.toSpliced ( start, skipCount, ...items )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tospliced"
+    }
+  },
+  "/indexed-collections#sec-array.prototype.tostring": {
+    "current": {
+      "number": "23.1.3.36",
       "spec": "ECMAScript",
       "text": "Array.prototype.toString ( )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tostring"
@@ -14955,7 +15033,7 @@
   },
   "/indexed-collections#sec-array.prototype.unshift": {
     "current": {
-      "number": "23.1.3.34",
+      "number": "23.1.3.37",
       "spec": "ECMAScript",
       "text": "Array.prototype.unshift ( ...items )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.unshift"
@@ -14963,10 +15041,34 @@
   },
   "/indexed-collections#sec-array.prototype.values": {
     "current": {
-      "number": "23.1.3.35",
+      "number": "23.1.3.38",
       "spec": "ECMAScript",
       "text": "Array.prototype.values ( )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.values"
+    }
+  },
+  "/indexed-collections#sec-array.prototype.with": {
+    "current": {
+      "number": "23.1.3.39",
+      "spec": "ECMAScript",
+      "text": "Array.prototype.with ( index, value )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.with"
+    }
+  },
+  "/indexed-collections#sec-comparearrayelements": {
+    "current": {
+      "number": "23.1.3.30.2",
+      "spec": "ECMAScript",
+      "text": "CompareArrayElements ( x, y, comparefn )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-comparearrayelements"
+    }
+  },
+  "/indexed-collections#sec-comparetypedarrayelements": {
+    "current": {
+      "number": "23.2.4.7",
+      "spec": "ECMAScript",
+      "text": "CompareTypedArrayElements ( x, y, comparefn )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-comparetypedarrayelements"
     }
   },
   "/indexed-collections#sec-createarrayiterator": {
@@ -15003,7 +15105,7 @@
   },
   "/indexed-collections#sec-get-%25typedarray%25.prototype-%40%40tostringtag": {
     "current": {
-      "number": "23.2.3.35",
+      "number": "23.2.3.38",
       "spec": "ECMAScript",
       "text": "get %TypedArray%.prototype [ @@toStringTag ]",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype-%40%40tostringtag"
@@ -15189,7 +15291,7 @@
     "current": {
       "number": "23.1.3.30.1",
       "spec": "ECMAScript",
-      "text": "SortIndexedProperties ( obj, len, SortCompare )",
+      "text": "SortIndexedProperties ( obj, len, SortCompare, holes )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-sortindexedproperties"
     }
   },
@@ -15207,6 +15309,14 @@
       "spec": "ECMAScript",
       "text": "The TypedArray Constructors",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-constructors"
+    }
+  },
+  "/indexed-collections#sec-typedarray-create-same-type": {
+    "current": {
+      "number": "23.2.4.3",
+      "spec": "ECMAScript",
+      "text": "TypedArrayCreateSameType ( exemplar, argumentList )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-create-same-type"
     }
   },
   "/indexed-collections#sec-typedarray-objects": {
@@ -15251,7 +15361,7 @@
   },
   "/indexed-collections#sec-typedarrayelementsize": {
     "current": {
-      "number": "23.2.4.4",
+      "number": "23.2.4.5",
       "spec": "ECMAScript",
       "text": "TypedArrayElementSize ( O )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementsize"
@@ -15259,7 +15369,7 @@
   },
   "/indexed-collections#sec-typedarrayelementtype": {
     "current": {
-      "number": "23.2.4.5",
+      "number": "23.2.4.6",
       "spec": "ECMAScript",
       "text": "TypedArrayElementType ( O )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementtype"
@@ -15267,7 +15377,7 @@
   },
   "/indexed-collections#sec-validatetypedarray": {
     "current": {
-      "number": "23.2.4.3",
+      "number": "23.2.4.4",
       "spec": "ECMAScript",
       "text": "ValidateTypedArray ( O )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validatetypedarray"
