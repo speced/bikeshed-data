@@ -789,6 +789,7 @@
     "<relative-selector>",
     "<relative-size>",
     "<repeat-style>",
+    "<request-url-modifier>",
     "<resolution>",
     "<reversed-counter-name>",
     "<rg-ending-shape>",
@@ -831,6 +832,7 @@
     "<source-size>",
     "<spacing-trim>",
     "<specific-voice>",
+    "<spread-shadow>",
     "<step-easing-function>",
     "<step-position>",
     "<string-token>",
@@ -5036,6 +5038,7 @@
     "apply link options from parsed header attributes",
     "apply orientation lock",
     "apply pending history changes",
+    "apply request modifiers from url value",
     "apply the history step",
     "apply the nominal frame rate",
     "apply the pending render state",
@@ -5809,6 +5812,11 @@
     "box-corner",
     "box-decoration-break",
     "box-shadow",
+    "box-shadow-blur",
+    "box-shadow-color",
+    "box-shadow-offset",
+    "box-shadow-position",
+    "box-shadow-spread",
     "box-sizing",
     "box-snap",
     "box::border",
@@ -14357,6 +14365,7 @@
     "request hit test",
     "request matches cached item",
     "request method",
+    "request modifier steps",
     "request permission to sign-up",
     "request permission to use",
     "request picture-in-picture algorithm",
@@ -14935,6 +14944,7 @@
     "scroll()",
     "scroll-behavior",
     "scroll-driven animations",
+    "scroll-driven timelines",
     "scroll-margin",
     "scroll-margin-block",
     "scroll-margin-block-end",
@@ -18240,6 +18250,24 @@
   "<ending-shape>": [
     "circle",
     "ellipse"
+  ],
+  "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>": [
+    "<crossorigin-modifier>",
+    "<integrity-modifier>",
+    "<referrerpolicy-modifier>",
+    "anonymous",
+    "crossorigin()",
+    "integrity()",
+    "no-referrer",
+    "no-referrer-when-downgrade",
+    "origin",
+    "origin-when-cross-origin",
+    "referrerpolicy()",
+    "same-origin",
+    "strict-origin",
+    "strict-origin-when-cross-origin",
+    "unsafe-url",
+    "use-credentials"
   ],
   "<flex>": [
     "fr",
@@ -46998,6 +47026,9 @@
     "normal",
     "reverse"
   ],
+  "animation-duration": [
+    "auto"
+  ],
   "animation-fill-mode": [
     "backwards",
     "both",
@@ -47016,11 +47047,11 @@
     "running"
   ],
   "animation-range-end": [
-    "<timeline-range-name> <percentage>",
+    "<timeline-range-name> <length-percentage>?",
     "normal"
   ],
   "animation-range-start": [
-    "<timeline-range-name> <percentage>",
+    "<timeline-range-name> <length-percentage>?",
     "normal"
   ],
   "animation-timeline": [
@@ -47690,6 +47721,12 @@
   "box-shadow": [
     "inset",
     "none"
+  ],
+  "box-shadow-position": [
+    "inner box-shadow",
+    "inset",
+    "outer box-shadow",
+    "outset"
   ],
   "box-sizing": [
     "border-box",
@@ -52838,6 +52875,7 @@
     "inline",
     "nearest",
     "root",
+    "self",
     "vertical"
   ],
   "scroll-anchoring": [
@@ -52944,6 +52982,7 @@
     "inline",
     "nearest",
     "root",
+    "self",
     "vertical"
   ],
   "scrollbar-color": [
@@ -54553,6 +54592,7 @@
     "inline",
     "nearest",
     "root",
+    "self",
     "vertical"
   ],
   "view-timeline-inset": [
