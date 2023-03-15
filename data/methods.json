@@ -9887,6 +9887,7 @@
         "AudioRenderCapacityEvent",
         "BeforeInstallPromptEvent",
         "CanMakePaymentEvent",
+        "CharacterBoundsUpdateEvent",
         "ClipboardEvent",
         "CloseEvent",
         "CompositionEvent",
@@ -9922,6 +9923,8 @@
         "RTCDTMFToneChangeEvent",
         "RTCPeerConnectionIceEvent",
         "SecurityPolicyViolationEvent",
+        "TextFormatUpdateEvent",
+        "TextUpdateEvent",
         "TouchEvent",
         "TransitionEvent",
         "UIEvent",
@@ -10063,6 +10066,18 @@
         "ValueEvent"
       ],
       "shortname": "web-bluetooth"
+    },
+    "constructor(type, options)": {
+      "args": [
+        "type",
+        "options"
+      ],
+      "for": [
+        "CharacterBoundsUpdateEvent",
+        "TextFormatUpdateEvent",
+        "TextUpdateEvent"
+      ],
+      "shortname": "edit-context"
     },
     "constructor(type, priorityChangeEventInitDict)": {
       "args": [
@@ -30803,6 +30818,24 @@
       "shortname": "edit-context"
     }
   },
+  "updateControlBounds()": {
+    "updateControlBounds()": {
+      "args": [],
+      "for": [
+        "EditContext"
+      ],
+      "shortname": "edit-context"
+    },
+    "updateControlBounds(controlBounds)": {
+      "args": [
+        "controlBounds"
+      ],
+      "for": [
+        "EditContext"
+      ],
+      "shortname": "edit-context"
+    }
+  },
   "updateInkTrailStartPoint()": {
     "updateInkTrailStartPoint(event, style)": {
       "args": [
@@ -30883,6 +30916,24 @@
     "updateSelectionBound(selectionBound)": {
       "args": [
         "selectionBound"
+      ],
+      "for": [
+        "EditContext"
+      ],
+      "shortname": "edit-context"
+    }
+  },
+  "updateSelectionBounds()": {
+    "updateSelectionBounds()": {
+      "args": [],
+      "for": [
+        "EditContext"
+      ],
+      "shortname": "edit-context"
+    },
+    "updateSelectionBounds(selectionBounds)": {
+      "args": [
+        "selectionBounds"
       ],
       "for": [
         "EditContext"
