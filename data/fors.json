@@ -1964,8 +1964,6 @@
     "GPUCompilationMessageType",
     "GPUComputePassDescriptor",
     "GPUComputePassEncoder",
-    "GPUComputePassTimestampLocation",
-    "GPUComputePassTimestampWrite",
     "GPUComputePassTimestampWrites",
     "GPUComputePipeline",
     "GPUComputePipelineDescriptor",
@@ -2037,8 +2035,6 @@
     "GPURenderPassDescriptor",
     "GPURenderPassEncoder",
     "GPURenderPassLayout",
-    "GPURenderPassTimestampLocation",
-    "GPURenderPassTimestampWrite",
     "GPURenderPassTimestampWrites",
     "GPURenderPipeline",
     "GPURenderPipelineDescriptor",
@@ -11360,7 +11356,6 @@
     "margin::of a box",
     "mark",
     "mark a promise as handled",
-    "mark adapters stale",
     "mark as handled",
     "mark as ready",
     "mark paint timing",
@@ -28649,7 +28644,6 @@
     "HasThisBinding()"
   ],
   "GPU": [
-    "[[previously_returned_adapters]]",
     "getPreferredCanvasFormat()",
     "requestAdapter()",
     "requestAdapter(options)"
@@ -29006,15 +29000,6 @@
   ],
   "GPUComputePassEncoder/setPipeline(pipeline)": [
     "pipeline"
-  ],
-  "GPUComputePassTimestampLocation": [
-    "\"beginning\"",
-    "\"end\""
-  ],
-  "GPUComputePassTimestampWrite": [
-    "location",
-    "queryIndex",
-    "querySet"
   ],
   "GPUComputePassTimestampWrites": [
     "beginningOfPassWriteIndex",
@@ -29549,15 +29534,6 @@
     "colorFormats",
     "depthStencilFormat",
     "sampleCount"
-  ],
-  "GPURenderPassTimestampLocation": [
-    "\"beginning\"",
-    "\"end\""
-  ],
-  "GPURenderPassTimestampWrite": [
-    "location",
-    "queryIndex",
-    "querySet"
   ],
   "GPURenderPassTimestampWrites": [
     "beginningOfPassWriteIndex",
@@ -51975,12 +51951,19 @@
     "auto",
     "clip",
     "hidden",
+    "overlay",
     "scroll",
     "visible"
   ],
   "overflow-anchor": [
     "auto",
     "none"
+  ],
+  "overflow-block": [
+    "overlay"
+  ],
+  "overflow-inline": [
+    "overlay"
   ],
   "overflow-wrap": [
     "anywhere",
@@ -51991,6 +51974,7 @@
     "auto",
     "clip",
     "hidden",
+    "overlay",
     "scroll",
     "visible"
   ],
@@ -51998,6 +51982,7 @@
     "auto",
     "clip",
     "hidden",
+    "overlay",
     "scroll",
     "visible"
   ],
