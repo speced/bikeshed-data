@@ -1964,6 +1964,8 @@
     "GPUCompilationMessageType",
     "GPUComputePassDescriptor",
     "GPUComputePassEncoder",
+    "GPUComputePassTimestampLocation",
+    "GPUComputePassTimestampWrite",
     "GPUComputePassTimestampWrites",
     "GPUComputePipeline",
     "GPUComputePipelineDescriptor",
@@ -2035,6 +2037,8 @@
     "GPURenderPassDescriptor",
     "GPURenderPassEncoder",
     "GPURenderPassLayout",
+    "GPURenderPassTimestampLocation",
+    "GPURenderPassTimestampWrite",
     "GPURenderPassTimestampWrites",
     "GPURenderPipeline",
     "GPURenderPipelineDescriptor",
@@ -5076,10 +5080,8 @@
     "array key",
     "array layer",
     "array layer count",
-    "array size",
     "arraybuffer",
     "arraybufferview",
-    "arrayed texture",
     "arrayof",
     "arrow pad",
     "art direction",
@@ -8503,7 +8505,6 @@
     "event handler content attribute",
     "event handler event type",
     "event handler idl attribute",
-    "event handler map",
     "event is enabled",
     "event listener",
     "event loop",
@@ -9408,6 +9409,7 @@
     "get an encoder",
     "get an encoding",
     "get an input source",
+    "get an os-registration url from a header list",
     "get an output encoding",
     "get an xml encoding",
     "get boundary point at index",
@@ -10486,6 +10488,7 @@
     "intersect the viewport",
     "intersection observer",
     "intersectionobserver task source",
+    "interval",
     "interval end",
     "interval start",
     "intervention reports",
@@ -11120,7 +11123,6 @@
     "list-style-type",
     "list-valued properties",
     "listed elements",
-    "listener",
     "listening agent",
     "listing",
     "literal",
@@ -11224,6 +11226,7 @@
     "logical miplevel-specific texture extent",
     "logical order",
     "logical property group",
+    "logical texel address",
     "logical width",
     "logicalsurface",
     "logo",
@@ -12259,7 +12262,6 @@
     "noisesuppression",
     "nominal frame rate",
     "nominal range",
-    "non-arrayed texture",
     "non-ascii code point",
     "non-ascii ident code point",
     "non-associable",
@@ -12963,7 +12965,6 @@
     "parse url",
     "parsed as a forgiving selector list",
     "parsed payment method manifest",
-    "parsedtextdirective",
     "parser cannot change the mode flag",
     "parser document",
     "parser inserted flag",
@@ -15299,6 +15300,7 @@
     "set an attribute value",
     "set an existing attribute value",
     "set an imagebitmaprenderingcontext's output bitmap",
+    "set an os-support header",
     "set animator instance of worklet animation",
     "set bitmap dimensions",
     "set capture prompt result",
@@ -16375,6 +16377,7 @@
     "text content block element",
     "text content child element",
     "text content element",
+    "text directive",
     "text edit context",
     "text entry cursor position",
     "text format",
@@ -26356,7 +26359,7 @@
     "releaseEvents()",
     "renameNode()",
     "requestStorageAccess()",
-    "requestStorageAccessForOrigin(requestedOrigin)",
+    "requestStorageAccessFor(requestedOrigin)",
     "resizeObservers",
     "run the resize steps",
     "run the scroll steps",
@@ -26505,7 +26508,7 @@
     "styleMap",
     "text"
   ],
-  "Document/requestStorageAccessForOrigin(requestedOrigin)": [
+  "Document/requestStorageAccessFor(requestedOrigin)": [
     "requestedOrigin"
   ],
   "Document/startViewTransition()": [
@@ -29001,9 +29004,13 @@
   "GPUComputePassEncoder/setPipeline(pipeline)": [
     "pipeline"
   ],
-  "GPUComputePassTimestampWrites": [
-    "beginningOfPassWriteIndex",
-    "endOfPassWriteIndex",
+  "GPUComputePassTimestampLocation": [
+    "\"beginning\"",
+    "\"end\""
+  ],
+  "GPUComputePassTimestampWrite": [
+    "location",
+    "queryIndex",
     "querySet"
   ],
   "GPUComputePipelineDescriptor": [
@@ -29125,7 +29132,8 @@
     "reason"
   ],
   "GPUDeviceLostReason": [
-    "\"destroyed\""
+    "\"destroyed\"",
+    "\"unknown\""
   ],
   "GPUError": [
     "message"
@@ -29535,9 +29543,13 @@
     "depthStencilFormat",
     "sampleCount"
   ],
-  "GPURenderPassTimestampWrites": [
-    "beginningOfPassWriteIndex",
-    "endOfPassWriteIndex",
+  "GPURenderPassTimestampLocation": [
+    "\"beginning\"",
+    "\"end\""
+  ],
+  "GPURenderPassTimestampWrite": [
+    "location",
+    "queryIndex",
     "querySet"
   ],
   "GPURenderPipeline": [
@@ -37014,12 +37026,6 @@
     "even",
     "none",
     "odd"
-  ],
-  "ParsedTextDirective": [
-    "prefix",
-    "suffix",
-    "textend",
-    "textstart"
   ],
   "PasswordCredential": [
     "PasswordCredential(data)",
@@ -53926,6 +53932,12 @@
     "x",
     "y"
   ],
+  "text directive": [
+    "prefix",
+    "suffix",
+    "textend",
+    "textstart"
+  ],
   "text style values": [
     "black",
     "white"
@@ -54240,6 +54252,14 @@
     "auto",
     "ltr",
     "rtl"
+  ],
+  "texture": [
+    "array size",
+    "arrayed",
+    "dimensionality",
+    "mip level count",
+    "sample count",
+    "size"
   ],
   "th": [
     "abbr",
