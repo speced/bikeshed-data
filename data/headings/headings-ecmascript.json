@@ -2246,6 +2246,9 @@
   "#sec-getiterator": [
     "/abstract-operations#sec-getiterator"
   ],
+  "#sec-getiteratorfrommethod": [
+    "/abstract-operations#sec-getiteratorfrommethod"
+  ],
   "#sec-getmatchindexpair": [
     "/text-processing#sec-getmatchindexpair"
   ],
@@ -2711,9 +2714,6 @@
   "#sec-iterable-interface": [
     "/control-abstraction-objects#sec-iterable-interface"
   ],
-  "#sec-iterabletolist": [
-    "/abstract-operations#sec-iterabletolist"
-  ],
   "#sec-iteration": [
     "/control-abstraction-objects#sec-iteration"
   ],
@@ -2743,6 +2743,9 @@
   ],
   "#sec-iteratorstep": [
     "/abstract-operations#sec-iteratorstep"
+  ],
+  "#sec-iteratortolist": [
+    "/abstract-operations#sec-iteratortolist"
   ],
   "#sec-iteratorvalue": [
     "/abstract-operations#sec-iteratorvalue"
@@ -5997,7 +6000,7 @@
   },
   "/abstract-operations#sec-asynciteratorclose": {
     "current": {
-      "number": "7.4.9",
+      "number": "7.4.10",
       "spec": "ECMAScript",
       "text": "AsyncIteratorClose ( iteratorRecord, completion )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-asynciteratorclose"
@@ -6061,7 +6064,7 @@
   },
   "/abstract-operations#sec-createiterresultobject": {
     "current": {
-      "number": "7.4.10",
+      "number": "7.4.11",
       "spec": "ECMAScript",
       "text": "CreateIterResultObject ( value, done )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createiterresultobject"
@@ -6077,7 +6080,7 @@
   },
   "/abstract-operations#sec-createlistiteratorRecord": {
     "current": {
-      "number": "7.4.11",
+      "number": "7.4.12",
       "spec": "ECMAScript",
       "text": "CreateListIteratorRecord ( list )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createlistiteratorRecord"
@@ -6149,10 +6152,18 @@
   },
   "/abstract-operations#sec-getiterator": {
     "current": {
+      "number": "7.4.3",
+      "spec": "ECMAScript",
+      "text": "GetIterator ( obj, kind )",
+      "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiterator"
+    }
+  },
+  "/abstract-operations#sec-getiteratorfrommethod": {
+    "current": {
       "number": "7.4.2",
       "spec": "ECMAScript",
-      "text": "GetIterator ( obj [ , hint [ , method ] ] )",
-      "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiterator"
+      "text": "GetIteratorFromMethod ( obj, method )",
+      "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod"
     }
   },
   "/abstract-operations#sec-getmethod": {
@@ -6197,7 +6208,7 @@
   },
   "/abstract-operations#sec-ifabruptcloseiterator": {
     "current": {
-      "number": "7.4.8",
+      "number": "7.4.9",
       "spec": "ECMAScript",
       "text": "IfAbruptCloseIterator ( value, iteratorRecord )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ifabruptcloseiterator"
@@ -6307,14 +6318,6 @@
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isstringwellformedunicode"
     }
   },
-  "/abstract-operations#sec-iterabletolist": {
-    "current": {
-      "number": "7.4.12",
-      "spec": "ECMAScript",
-      "text": "IterableToList ( items [ , method ] )",
-      "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iterabletolist"
-    }
-  },
   "/abstract-operations#sec-iterator-records": {
     "current": {
       "number": "7.4.1",
@@ -6325,7 +6328,7 @@
   },
   "/abstract-operations#sec-iteratorclose": {
     "current": {
-      "number": "7.4.7",
+      "number": "7.4.8",
       "spec": "ECMAScript",
       "text": "IteratorClose ( iteratorRecord, completion )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorclose"
@@ -6333,7 +6336,7 @@
   },
   "/abstract-operations#sec-iteratorcomplete": {
     "current": {
-      "number": "7.4.4",
+      "number": "7.4.5",
       "spec": "ECMAScript",
       "text": "IteratorComplete ( iterResult )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorcomplete"
@@ -6341,7 +6344,7 @@
   },
   "/abstract-operations#sec-iteratornext": {
     "current": {
-      "number": "7.4.3",
+      "number": "7.4.4",
       "spec": "ECMAScript",
       "text": "IteratorNext ( iteratorRecord [ , value ] )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratornext"
@@ -6349,15 +6352,23 @@
   },
   "/abstract-operations#sec-iteratorstep": {
     "current": {
-      "number": "7.4.6",
+      "number": "7.4.7",
       "spec": "ECMAScript",
       "text": "IteratorStep ( iteratorRecord )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorstep"
     }
   },
+  "/abstract-operations#sec-iteratortolist": {
+    "current": {
+      "number": "7.4.13",
+      "spec": "ECMAScript",
+      "text": "IteratorToList ( iteratorRecord )",
+      "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist"
+    }
+  },
   "/abstract-operations#sec-iteratorvalue": {
     "current": {
-      "number": "7.4.5",
+      "number": "7.4.6",
       "spec": "ECMAScript",
       "text": "IteratorValue ( iterResult )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorvalue"
