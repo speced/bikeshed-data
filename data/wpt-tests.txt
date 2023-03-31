@@ -1,4 +1,4 @@
-sha: 8f71659306c53f3cabad054ed02ac7c4d14de693
+sha: d5b8219263c41fc8f87d8f92d8bd3db75090a30b
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -35423,6 +35423,7 @@ testharness html/canvas/element/2d.conformance.requirements.basics.html
 testharness html/canvas/element/2d.conformance.requirements.delete.html
 testharness html/canvas/element/2d.conformance.requirements.drawings.html
 testharness html/canvas/element/2d.conformance.requirements.missingargs.html
+testharness html/canvas/element/compositing/2d.composite.canvas.clear.html
 testharness html/canvas/element/compositing/2d.composite.canvas.copy.html
 testharness html/canvas/element/compositing/2d.composite.canvas.destination-atop.html
 testharness html/canvas/element/compositing/2d.composite.canvas.destination-in.html
@@ -35434,6 +35435,7 @@ testharness html/canvas/element/compositing/2d.composite.canvas.source-in.html
 testharness html/canvas/element/compositing/2d.composite.canvas.source-out.html
 testharness html/canvas/element/compositing/2d.composite.canvas.source-over.html
 testharness html/canvas/element/compositing/2d.composite.canvas.xor.html
+testharness html/canvas/element/compositing/2d.composite.clip.clear.html
 testharness html/canvas/element/compositing/2d.composite.clip.copy.html
 testharness html/canvas/element/compositing/2d.composite.clip.destination-atop.html
 testharness html/canvas/element/compositing/2d.composite.clip.destination-in.html
@@ -35454,6 +35456,7 @@ testharness html/canvas/element/compositing/2d.composite.globalAlpha.image.html
 testharness html/canvas/element/compositing/2d.composite.globalAlpha.imagepattern.html
 testharness html/canvas/element/compositing/2d.composite.globalAlpha.invalid.html
 testharness html/canvas/element/compositing/2d.composite.globalAlpha.range.html
+testharness html/canvas/element/compositing/2d.composite.image.clear.html
 testharness html/canvas/element/compositing/2d.composite.image.copy.html
 testharness html/canvas/element/compositing/2d.composite.image.destination-atop.html
 testharness html/canvas/element/compositing/2d.composite.image.destination-in.html
@@ -35474,6 +35477,7 @@ testharness html/canvas/element/compositing/2d.composite.operation.highlight.htm
 testharness html/canvas/element/compositing/2d.composite.operation.nullsuffix.html
 testharness html/canvas/element/compositing/2d.composite.operation.over.html
 testharness html/canvas/element/compositing/2d.composite.operation.unrecognised.html
+testharness html/canvas/element/compositing/2d.composite.solid.clear.html
 testharness html/canvas/element/compositing/2d.composite.solid.copy.html
 testharness html/canvas/element/compositing/2d.composite.solid.destination-atop.html
 testharness html/canvas/element/compositing/2d.composite.solid.destination-in.html
@@ -35485,6 +35489,7 @@ testharness html/canvas/element/compositing/2d.composite.solid.source-in.html
 testharness html/canvas/element/compositing/2d.composite.solid.source-out.html
 testharness html/canvas/element/compositing/2d.composite.solid.source-over.html
 testharness html/canvas/element/compositing/2d.composite.solid.xor.html
+testharness html/canvas/element/compositing/2d.composite.transparent.clear.html
 testharness html/canvas/element/compositing/2d.composite.transparent.copy.html
 testharness html/canvas/element/compositing/2d.composite.transparent.destination-atop.html
 testharness html/canvas/element/compositing/2d.composite.transparent.destination-in.html
@@ -36388,6 +36393,8 @@ testharness html/canvas/offscreen/2d.conformance.requirements.basics.html
 testharness html/canvas/offscreen/2d.conformance.requirements.basics.worker.js
 testharness html/canvas/offscreen/2d.conformance.requirements.missingargs.html
 testharness html/canvas/offscreen/2d.conformance.requirements.missingargs.worker.js
+testharness html/canvas/offscreen/compositing/2d.composite.canvas.clear.html
+testharness html/canvas/offscreen/compositing/2d.composite.canvas.clear.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.canvas.copy.html
 testharness html/canvas/offscreen/compositing/2d.composite.canvas.copy.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.canvas.destination-atop.html
@@ -36410,6 +36417,8 @@ testharness html/canvas/offscreen/compositing/2d.composite.canvas.source-over.ht
 testharness html/canvas/offscreen/compositing/2d.composite.canvas.source-over.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.canvas.xor.html
 testharness html/canvas/offscreen/compositing/2d.composite.canvas.xor.worker.js
+testharness html/canvas/offscreen/compositing/2d.composite.clip.clear.html
+testharness html/canvas/offscreen/compositing/2d.composite.clip.clear.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.clip.copy.html
 testharness html/canvas/offscreen/compositing/2d.composite.clip.copy.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.clip.destination-atop.html
@@ -36450,6 +36459,8 @@ testharness html/canvas/offscreen/compositing/2d.composite.globalAlpha.invalid.h
 testharness html/canvas/offscreen/compositing/2d.composite.globalAlpha.invalid.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.globalAlpha.range.html
 testharness html/canvas/offscreen/compositing/2d.composite.globalAlpha.range.worker.js
+testharness html/canvas/offscreen/compositing/2d.composite.image.clear.html
+testharness html/canvas/offscreen/compositing/2d.composite.image.clear.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.image.copy.html
 testharness html/canvas/offscreen/compositing/2d.composite.image.copy.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.image.destination-atop.html
@@ -36490,6 +36501,8 @@ testharness html/canvas/offscreen/compositing/2d.composite.operation.over.html
 testharness html/canvas/offscreen/compositing/2d.composite.operation.over.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.operation.unrecognised.html
 testharness html/canvas/offscreen/compositing/2d.composite.operation.unrecognised.worker.js
+testharness html/canvas/offscreen/compositing/2d.composite.solid.clear.html
+testharness html/canvas/offscreen/compositing/2d.composite.solid.clear.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.solid.copy.html
 testharness html/canvas/offscreen/compositing/2d.composite.solid.copy.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.solid.destination-atop.html
@@ -36512,6 +36525,8 @@ testharness html/canvas/offscreen/compositing/2d.composite.solid.source-over.htm
 testharness html/canvas/offscreen/compositing/2d.composite.solid.source-over.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.solid.xor.html
 testharness html/canvas/offscreen/compositing/2d.composite.solid.xor.worker.js
+testharness html/canvas/offscreen/compositing/2d.composite.transparent.clear.html
+testharness html/canvas/offscreen/compositing/2d.composite.transparent.clear.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.transparent.copy.html
 testharness html/canvas/offscreen/compositing/2d.composite.transparent.copy.worker.js
 testharness html/canvas/offscreen/compositing/2d.composite.transparent.destination-atop.html
