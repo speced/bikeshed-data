@@ -631,6 +631,14 @@
       "url": "https://tc39.es/ecma402/#sec-apply-unicode-extension-to-tag"
     }
   },
+  "#sec-applyunsignedroundingmode": {
+    "current": {
+      "number": "15.5.18",
+      "spec": "ECMAScript Internationalization API",
+      "text": "ApplyUnsignedRoundingMode ( x, r1, r2, unsignedRoundingMode )",
+      "url": "https://tc39.es/ecma402/#sec-applyunsignedroundingmode"
+    }
+  },
   "#sec-availablecanonicalcalendars": {
     "current": {
       "number": "6.9.1",
@@ -791,6 +799,14 @@
       "url": "https://tc39.es/ecma402/#sec-coerceoptionstoobject"
     }
   },
+  "#sec-collapsenumberrange": {
+    "current": {
+      "number": "15.5.21",
+      "spec": "ECMAScript Internationalization API",
+      "text": "CollapseNumberRange ( result )",
+      "url": "https://tc39.es/ecma402/#sec-collapsenumberrange"
+    }
+  },
   "#sec-collation-types": {
     "current": {
       "number": "6.8",
@@ -945,7 +961,7 @@
   },
   "#sec-defaultnumberoption": {
     "current": {
-      "number": "9.2.14",
+      "number": "9.2.15",
       "spec": "ECMAScript Internationalization API",
       "text": "DefaultNumberOption ( value, minimum, maximum, fallback )",
       "url": "https://tc39.es/ecma402/#sec-defaultnumberoption"
@@ -957,6 +973,14 @@
       "spec": "ECMAScript Internationalization API",
       "text": "FindBoundary ( segmenter, string, startIndex, direction )",
       "url": "https://tc39.es/ecma402/#sec-findboundary"
+    }
+  },
+  "#sec-formatapproximately": {
+    "current": {
+      "number": "15.5.20",
+      "spec": "ECMAScript Internationalization API",
+      "text": "FormatApproximately ( numberFormat, result )",
+      "url": "https://tc39.es/ecma402/#sec-formatapproximately"
     }
   },
   "#sec-formatdatetime": {
@@ -1039,12 +1063,36 @@
       "url": "https://tc39.es/ecma402/#sec-formatnumbertoparts"
     }
   },
+  "#sec-formatnumericrange": {
+    "current": {
+      "number": "15.5.22",
+      "spec": "ECMAScript Internationalization API",
+      "text": "FormatNumericRange ( numberFormat, x, y )",
+      "url": "https://tc39.es/ecma402/#sec-formatnumericrange"
+    }
+  },
+  "#sec-formatnumericrangetoparts": {
+    "current": {
+      "number": "15.5.23",
+      "spec": "ECMAScript Internationalization API",
+      "text": "FormatNumericRangeToParts ( numberFormat, x, y )",
+      "url": "https://tc39.es/ecma402/#sec-formatnumericrangetoparts"
+    }
+  },
   "#sec-function-properties-of-the-intl-object": {
     "current": {
       "number": "8.3",
       "spec": "ECMAScript Internationalization API",
       "text": "Function Properties of the Intl Object",
       "url": "https://tc39.es/ecma402/#sec-function-properties-of-the-intl-object"
+    }
+  },
+  "#sec-getbooleanorstringnumberformatoption": {
+    "current": {
+      "number": "9.2.14",
+      "spec": "ECMAScript Internationalization API",
+      "text": "GetBooleanOrStringNumberFormatOption ( options, property, stringValues, fallback )",
+      "url": "https://tc39.es/ecma402/#sec-getbooleanorstringnumberformatoption"
     }
   },
   "#sec-getnotationsubpattern": {
@@ -1065,7 +1113,7 @@
   },
   "#sec-getnumberoption": {
     "current": {
-      "number": "9.2.15",
+      "number": "9.2.16",
       "spec": "ECMAScript Internationalization API",
       "text": "GetNumberOption ( options, property, minimum, maximum, fallback )",
       "url": "https://tc39.es/ecma402/#sec-getnumberoption"
@@ -1093,6 +1141,14 @@
       "spec": "ECMAScript Internationalization API",
       "text": "GetOptionsObject ( options )",
       "url": "https://tc39.es/ecma402/#sec-getoptionsobject"
+    }
+  },
+  "#sec-getunsignedroundingmode": {
+    "current": {
+      "number": "15.5.17",
+      "spec": "ECMAScript Internationalization API",
+      "text": "GetUnsignedRoundingMode ( roundingMode, isNegative )",
+      "url": "https://tc39.es/ecma402/#sec-getunsignedroundingmode"
     }
   },
   "#sec-implementation-dependencies": {
@@ -1511,6 +1567,22 @@
       "url": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.format"
     }
   },
+  "#sec-intl.numberformat.prototype.formatrange": {
+    "current": {
+      "number": "15.3.5",
+      "spec": "ECMAScript Internationalization API",
+      "text": "Intl.NumberFormat.prototype.formatRange ( start, end )",
+      "url": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrange"
+    }
+  },
+  "#sec-intl.numberformat.prototype.formatrangetoparts": {
+    "current": {
+      "number": "15.3.6",
+      "spec": "ECMAScript Internationalization API",
+      "text": "Intl.NumberFormat.prototype.formatRangeToParts ( start, end )",
+      "url": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrangetoparts"
+    }
+  },
   "#sec-intl.numberformat.prototype.formattoparts": {
     "current": {
       "number": "15.3.4",
@@ -1521,7 +1593,7 @@
   },
   "#sec-intl.numberformat.prototype.resolvedoptions": {
     "current": {
-      "number": "15.3.5",
+      "number": "15.3.7",
       "spec": "ECMAScript Internationalization API",
       "text": "Intl.NumberFormat.prototype.resolvedOptions ( )",
       "url": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions"
@@ -1585,7 +1657,7 @@
   },
   "#sec-intl.pluralrules.prototype.resolvedoptions": {
     "current": {
-      "number": "16.3.4",
+      "number": "16.3.5",
       "spec": "ECMAScript Internationalization API",
       "text": "Intl.PluralRules.prototype.resolvedOptions ( )",
       "url": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.resolvedoptions"
@@ -1597,6 +1669,14 @@
       "spec": "ECMAScript Internationalization API",
       "text": "Intl.PluralRules.prototype.select ( value )",
       "url": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select"
+    }
+  },
+  "#sec-intl.pluralrules.prototype.selectrange": {
+    "current": {
+      "number": "16.3.4",
+      "spec": "ECMAScript Internationalization API",
+      "text": "Intl.PluralRules.prototype.selectRange ( start, end )",
+      "url": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.selectrange"
     }
   },
   "#sec-intl.pluralrules.supportedlocalesof": {
@@ -1847,9 +1927,17 @@
       "url": "https://tc39.es/ecma402/#sec-partitionnumberpattern"
     }
   },
+  "#sec-partitionnumberrangepattern": {
+    "current": {
+      "number": "15.5.19",
+      "spec": "ECMAScript Internationalization API",
+      "text": "PartitionNumberRangePattern ( numberFormat, x, y )",
+      "url": "https://tc39.es/ecma402/#sec-partitionnumberrangepattern"
+    }
+  },
   "#sec-partitionpattern": {
     "current": {
-      "number": "9.2.16",
+      "number": "9.2.17",
       "spec": "ECMAScript Internationalization API",
       "text": "PartitionPattern ( pattern )",
       "url": "https://tc39.es/ecma402/#sec-partitionpattern"
@@ -1861,6 +1949,14 @@
       "spec": "ECMAScript Internationalization API",
       "text": "PluralRuleSelect ( locale, type, n, operands )",
       "url": "https://tc39.es/ecma402/#sec-pluralruleselect"
+    }
+  },
+  "#sec-pluralruleselectrange": {
+    "current": {
+      "number": "16.5.4",
+      "spec": "ECMAScript Internationalization API",
+      "text": "PluralRuleSelectRange ( locale, type, xp, yp )",
+      "url": "https://tc39.es/ecma402/#sec-pluralruleselectrange"
     }
   },
   "#sec-properties-of-intl-collator-instances": {
@@ -2103,6 +2199,22 @@
       "url": "https://tc39.es/ecma402/#sec-resolveplural"
     }
   },
+  "#sec-resolvepluralrange": {
+    "current": {
+      "number": "16.5.5",
+      "spec": "ECMAScript Internationalization API",
+      "text": "ResolvePluralRange ( pluralRules, x, y )",
+      "url": "https://tc39.es/ecma402/#sec-resolvepluralrange"
+    }
+  },
+  "#sec-runtime-semantics-stringintlmv": {
+    "current": {
+      "number": "15.5.15",
+      "spec": "ECMAScript Internationalization API",
+      "text": "Runtime Semantics: StringIntlMV",
+      "url": "https://tc39.es/ecma402/#sec-runtime-semantics-stringintlmv"
+    }
+  },
   "#sec-segment-data-objects": {
     "current": {
       "number": "18.7",
@@ -2183,6 +2295,14 @@
       "url": "https://tc39.es/ecma402/#sec-todatetimeoptions"
     }
   },
+  "#sec-tointlmathematicalvalue": {
+    "current": {
+      "number": "15.5.16",
+      "spec": "ECMAScript Internationalization API",
+      "text": "ToIntlMathematicalValue ( value )",
+      "url": "https://tc39.es/ecma402/#sec-tointlmathematicalvalue"
+    }
+  },
   "#sec-tolocaltime": {
     "current": {
       "number": "11.5.13",
@@ -2195,7 +2315,7 @@
     "current": {
       "number": "15.5.9",
       "spec": "ECMAScript Internationalization API",
-      "text": "ToRawFixed ( x, minInteger, minFraction, maxFraction )",
+      "text": "ToRawFixed ( x, minFraction, maxFraction, roundingIncrement, unsignedRoundingMode )",
       "url": "https://tc39.es/ecma402/#sec-torawfixed"
     }
   },
@@ -2203,7 +2323,7 @@
     "current": {
       "number": "15.5.8",
       "spec": "ECMAScript Internationalization API",
-      "text": "ToRawPrecision ( x, minPrecision, maxPrecision )",
+      "text": "ToRawPrecision ( x, minPrecision, maxPrecision, unsignedRoundingMode )",
       "url": "https://tc39.es/ecma402/#sec-torawprecision"
     }
   },

@@ -964,6 +964,7 @@
     "AcquireReadableStreamBYOBReader",
     "AcquireReadableStreamDefaultReader",
     "AcquireWritableStreamDefaultWriter",
+    "AdRender",
     "AddEntriesFromIterable",
     "AddEntriesFromIterable(target, iterable, adder)",
     "AddEventListenerOptions",
@@ -2112,6 +2113,7 @@
     "Generate an out-of-memory error",
     "Generate report for violation of permissions policy on settings",
     "GenerateAssertionCallback",
+    "GenerateBidOutput",
     "GenerateTestReportParameters",
     "Generator",
     "GeneratorFunction",
@@ -2483,6 +2485,9 @@
     "IntegerIndexedObjectCreate(prototype)",
     "IntegerPart",
     "InteractionCounts",
+    "InterestGroupBiddingScriptRunnerGlobalScope",
+    "InterestGroupReportingScriptRunnerGlobalScope",
+    "InterestGroupScoringScriptRunnerGlobalScope",
     "InternalizeJSONProperty",
     "InternalizeJSONProperty(holder, name, reviver)",
     "IntersectionObserver",
@@ -4665,6 +4670,8 @@
     "actual values",
     "actual viewport",
     "actually disabled",
+    "ad descriptor",
+    "ad size",
     "ad structure",
     "adapter",
     "add",
@@ -6960,6 +6967,7 @@
     "convert a value to a key",
     "convert a value to a key range",
     "convert a value to a multientry key",
+    "convert an ad render",
     "convert an infra value to a json-compatible javascript value",
     "convert artwork algorithm",
     "convert code unit to scalar value",
@@ -17445,6 +17453,7 @@
     "validate a standardized payment method identifier",
     "validate a suffix",
     "validate a url-based payment method identifier",
+    "validate an ad url",
     "validate and convert auction ad config",
     "validate and extract",
     "validate and normalize",
@@ -19136,6 +19145,11 @@
     "registered",
     "registration state",
     "unregistered"
+  ],
+  "AdRender": [
+    "height",
+    "url",
+    "width"
   ],
   "AddEventListenerOptions": [
     "once",
@@ -30196,6 +30210,15 @@
     "surfaceId",
     "touchId"
   ],
+  "GenerateBidOutput": [
+    "ad",
+    "adComponents",
+    "adCost",
+    "adRender",
+    "allowComponentAuction",
+    "bid",
+    "modelingSignals"
+  ],
   "GenerateTestReportParameters": [
     "group",
     "message"
@@ -32718,6 +32741,28 @@
   "Instance/constructor(module, importObject)": [
     "importObject",
     "module"
+  ],
+  "InterestGroupBiddingScriptRunnerGlobalScope": [
+    "setBid()",
+    "setBid(generateBidOutput)",
+    "setPriority(priority)",
+    "setPrioritySignalsOverride(key, priority)"
+  ],
+  "InterestGroupBiddingScriptRunnerGlobalScope/setBid(generateBidOutput)": [
+    "generateBidOutput"
+  ],
+  "InterestGroupBiddingScriptRunnerGlobalScope/setPriority(priority)": [
+    "priority"
+  ],
+  "InterestGroupBiddingScriptRunnerGlobalScope/setPrioritySignalsOverride(key, priority)": [
+    "key",
+    "priority"
+  ],
+  "InterestGroupReportingScriptRunnerGlobalScope": [
+    "sendReportTo(url)"
+  ],
+  "InterestGroupReportingScriptRunnerGlobalScope/sendReportTo(url)": [
+    "url"
   ],
   "IntersectionObserver": [
     "IntersectionObserver(callback)",
@@ -39002,6 +39047,7 @@
     "addTransceiver()",
     "addTransceiver(trackOrKind)",
     "addTransceiver(trackOrKind, init)",
+    "addtransceiver sendencodings validation steps",
     "canTrickleIceCandidates",
     "close()",
     "connectionState",
@@ -39310,6 +39356,7 @@
     "setParameters(parameters)",
     "setStreams()",
     "setStreams(streams)",
+    "setparameters validation steps",
     "track",
     "transform",
     "transport"
@@ -46984,6 +47031,16 @@
     "range",
     "views"
   ],
+  "ad descriptor": [
+    "size",
+    "url"
+  ],
+  "ad size": [
+    "height",
+    "height units",
+    "width",
+    "width units"
+  ],
   "adapter": [
     "[[fallback]]",
     "[[features]]",
@@ -50052,8 +50109,12 @@
     "isdebugreport"
   ],
   "generated bid": [
+    "ad",
+    "ad component descriptors",
+    "ad cost",
+    "ad descriptor",
     "bid",
-    "render"
+    "modeling signals"
   ],
   "getAssert": [
     "allowlist",
