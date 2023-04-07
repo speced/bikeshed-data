@@ -1077,6 +1077,7 @@
     "AuctionAd",
     "AuctionAdConfig",
     "AuctionAdInterestGroup",
+    "AuctionAdInterestGroupKey",
     "AudioBuffer",
     "AudioBufferOptions",
     "AudioBufferSourceNode",
@@ -3525,6 +3526,7 @@
     "Replaceable",
     "Report",
     "ReportBody",
+    "ReportEventType",
     "ReportList",
     "ReportingObserver",
     "ReportingObserverCallback",
@@ -19674,6 +19676,10 @@
     "trustedBiddingSignalsUrl",
     "userBiddingSignals"
   ],
+  "AuctionAdInterestGroupKey": [
+    "name",
+    "owner"
+  ],
   "AudioBuffer": [
     "AudioBuffer(options)",
     "[[internal data]]",
@@ -27880,9 +27886,14 @@
     "providers"
   ],
   "Fence": [
-    "reportEvent(event)"
+    "getNestedConfigs()",
+    "reportEvent(event)",
+    "setReportEventDataForAutomaticBeacons(event)"
   ],
   "Fence/reportEvent(event)": [
+    "event"
+  ],
+  "Fence/setReportEventDataForAutomaticBeacons(event)": [
     "event"
   ],
   "FenceEvent": [
@@ -27893,6 +27904,7 @@
   "FenceReportingDestination": [
     "\"buyer\"",
     "\"component-seller\"",
+    "\"direct-seller\"",
     "\"seller\"",
     "\"shared-storage-select-url\""
   ],
@@ -36302,6 +36314,7 @@
     "ink",
     "joinAdInterestGroup(group, durationSeconds)",
     "keyboard",
+    "leaveAdInterestGroup(group)",
     "maxTouchPoints",
     "mediaCapabilities",
     "mediaDevices",
@@ -36347,6 +36360,9 @@
   ],
   "Navigator/joinAdInterestGroup(group, durationSeconds)": [
     "durationSeconds",
+    "group"
+  ],
+  "Navigator/leaveAdInterestGroup(group)": [
     "group"
   ],
   "Navigator/runAdAuction(config)": [
