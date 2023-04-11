@@ -1,4 +1,4 @@
-sha: 3b7aec0eacad18836543a6fb4111e937bd97edbe
+sha: b569958bbd6d218053c0594099b1439a4cc2387c
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -253,6 +253,7 @@ crashtest css/css-flexbox/position-relative-with-scrollable-with-abspos-crash.ht
 crashtest css/css-flexbox/remove-out-of-flow-child-crash.html
 crashtest css/css-flexbox/zero-content-size-with-scrollbar-crash.html
 crashtest css/css-font-loading/fontfaceset-loading-worker-crash.html
+crashtest css/css-font-loading/fontfaceset-worker-fontface-crash.html
 crashtest css/css-fonts/font-face-local-css-wide-keyword-crash.html
 crashtest css/css-fonts/infinite-size-crash.html
 crashtest css/css-fonts/math-script-level-and-math-style/math-depth-001-crash.html
@@ -13139,6 +13140,7 @@ reftest css/css-color/srgb-linear-001.html
 reftest css/css-color/srgb-linear-002.html
 reftest css/css-color/srgb-linear-003.html
 reftest css/css-color/srgb-linear-004.html
+reftest css/css-color/system-color-hightlights-vs-getSelection-001.html
 reftest css/css-color/t31-color-currentColor-b.xht
 reftest css/css-color/t31-color-text-a.xht
 reftest css/css-color/t32-opacity-basic-0.0-a.xht
@@ -24123,8 +24125,6 @@ reftest css/mediaqueries/relative-units-001.html
 reftest css/mediaqueries/relative-units-002.html
 reftest css/mediaqueries/relative-units-003.html
 reftest css/mediaqueries/relative-units-004.html
-reftest css/mediaqueries/scripting-print-noscript.html
-reftest css/mediaqueries/scripting-print-script.html
 reftest css/mediaqueries/viewport-script-dynamic.html
 reftest css/motion/animation/reftests/offset-distance-interpolation-001.html
 reftest css/motion/animation/reftests/offset-path-path-interpolation-001.html
@@ -32715,6 +32715,7 @@ testharness css/geometry/structured-serialization.html
 testharness css/mediaqueries/aspect-ratio-serialization.html
 testharness css/mediaqueries/dynamic-range.html
 testharness css/mediaqueries/forced-colors.html
+testharness css/mediaqueries/inverted-colors.html
 testharness css/mediaqueries/match-media-parsing.html
 testharness css/mediaqueries/media-query-matches-in-iframe.html
 testharness css/mediaqueries/mq-dynamic-empty-children.html
@@ -32730,7 +32731,6 @@ testharness css/mediaqueries/prefers-reduced-data.html
 testharness css/mediaqueries/prefers-reduced-motion.html
 testharness css/mediaqueries/prefers-reduced-transparency.html
 testharness css/mediaqueries/relative-units-005.html
-testharness css/mediaqueries/scripting.html
 testharness css/mediaqueries/test_media_queries.html
 testharness css/mediaqueries/update-media-feature.html
 testharness css/motion/animation/offset-anchor-composition.html
@@ -46158,6 +46158,7 @@ testharness svg/animations/syncbase-remove-add-while-running.html
 testharness svg/coordinate-systems/outer-svg-intrinsic-size-001.html
 testharness svg/coordinate-systems/outer-svg-intrinsic-size-002.html
 testharness svg/coordinate-systems/svgtransformlist-replaceitem.html
+testharness svg/embedded/image-crossorigin.sub.html
 testharness svg/extensibility/foreignObject/containing-block.html
 testharness svg/extensibility/foreignObject/getboundingclientrect.html
 testharness svg/extensibility/foreignObject/properties.svg
