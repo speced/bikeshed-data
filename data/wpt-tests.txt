@@ -1,4 +1,4 @@
-sha: 047d587229bcaec2ef168452beaa2dfa9878169a
+sha: 3bbdaa6d86eb6d67dff3afb6da4b334343cfe23c
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -28128,6 +28128,7 @@ testharness css/CSS2/tables/border-collapse-no-interpolation.html
 testharness css/CSS2/tables/empty-cells-no-interpolation.html
 testharness css/CSS2/visufx/animation/visibility-interpolation.html
 testharness css/compositing/inheritance.html
+testharness css/compositing/isolation/animation/isolation-no-interpolation.html
 testharness css/compositing/mix-blend-mode/mix-blend-mode-creates-stacking-context.html
 testharness css/compositing/mix-blend-mode/mix-blend-mode-parsing.html
 testharness css/compositing/parsing/background-blend-mode-computed.html
@@ -28142,6 +28143,7 @@ testharness css/compositing/parsing/mix-blend-mode-valid.html
 testharness css/css-align/animation/align-no-interpolation.html
 testharness css/css-align/animation/column-gap-composition.html
 testharness css/css-align/animation/column-gap-interpolation.html
+testharness css/css-align/animation/justify-no-interpolation.html
 testharness css/css-align/animation/row-gap-composition.html
 testharness css/css-align/animation/row-gap-interpolation.html
 testharness css/css-align/baseline-rules/synthesized-baseline-flexbox-001.html
@@ -28729,7 +28731,8 @@ testharness css/css-cascade/scope-proximity.html
 testharness css/css-cascade/scope-shadow.html
 testharness css/css-cascade/scope-specificity.html
 testharness css/css-cascade/unset-value-storage.html
-testharness css/css-color-adjust/color-scheme-no-interpolation.html
+testharness css/css-color-adjust/animation/color-scheme-no-interpolation.html
+testharness css/css-color-adjust/animation/forced-color-adjust-no-interpolation.html
 testharness css/css-color-adjust/inheritance.html
 testharness css/css-color-adjust/parsing/color-scheme-computed.html
 testharness css/css-color-adjust/parsing/color-scheme-invalid.html
@@ -29783,6 +29786,7 @@ testharness css/css-grid/alignment/grid-self-alignment.html
 testharness css/css-grid/alignment/grid-self-baseline-not-applied-if-sizing-cyclic-dependency-001.html
 testharness css/css-grid/alignment/grid-self-baseline-not-applied-if-sizing-cyclic-dependency-002.html
 testharness css/css-grid/alignment/grid-self-baseline-not-applied-if-sizing-cyclic-dependency-003.html
+testharness css/css-grid/animation/grid-no-interpolation.html
 testharness css/css-grid/animation/grid-template-columns-composition.html
 testharness css/css-grid/animation/grid-template-columns-interpolation.html
 testharness css/css-grid/animation/grid-template-columns-neutral-keyframe-001.html
@@ -29989,6 +29993,9 @@ testharness css/css-highlight-api/HighlightRegistry-maplike.html
 testharness css/css-highlight-api/highlight-pseudo-computed.html
 testharness css/css-highlight-api/highlight-pseudo-parsing.html
 testharness css/css-highlight-api/idlharness.window.js
+testharness css/css-images/animation/image-no-interpolation.html
+testharness css/css-images/animation/object-position-interpolation.html
+testharness css/css-images/animation/object-view-box-interpolation.html
 testharness css/css-images/empty-background-image.html
 testharness css/css-images/gradient/color-stops-parsing.html
 testharness css/css-images/idlharness.html
@@ -29997,8 +30004,6 @@ testharness css/css-images/image-orientation/image-orientation-none-computed-sty
 testharness css/css-images/image-set/image-set-computed.sub.html
 testharness css/css-images/image-set/image-set-parsing.html
 testharness css/css-images/inheritance.html
-testharness css/css-images/object-position-interpolation.html
-testharness css/css-images/object-view-box-interpolation.html
 testharness css/css-images/object-view-box-parsing.html
 testharness css/css-images/object-view-box-transition-mutation.html
 testharness css/css-images/parsing/gradient-interpolation-method-computed.html
@@ -30020,7 +30025,8 @@ testharness css/css-images/parsing/object-fit-valid.html
 testharness css/css-images/parsing/object-position-computed.html
 testharness css/css-images/parsing/object-position-invalid.html
 testharness css/css-images/parsing/object-position-valid.html
-testharness css/css-inline/alignment-baseline-no-interpolation.html
+testharness css/css-inline/animation/alignment-baseline-no-interpolation.html
+testharness css/css-inline/animation/dominant-baseline-no-interpolation.html
 testharness css/css-inline/baseline-source/baseline-source-computed.html
 testharness css/css-inline/baseline-source/baseline-source-first-001.html
 testharness css/css-inline/baseline-source/baseline-source-first-002.html
@@ -30032,8 +30038,8 @@ testharness css/css-inline/baseline-source/baseline-source-last-003.html
 testharness css/css-inline/baseline-source/baseline-source-no-interpolation.html
 testharness css/css-inline/baseline-source/baseline-source-valid.html
 testharness css/css-inline/baseline-source/baseline-source-vertical-align.html
-testharness css/css-inline/dominant-baseline-no-interpolation.html
 testharness css/css-inline/inheritance.html
+testharness css/css-inline/initial-letter-no-interoplation.html
 testharness css/css-inline/initial-letter/initial-letter-computed.html
 testharness css/css-inline/initial-letter/initial-letter-invalid.html
 testharness css/css-inline/initial-letter/initial-letter-valid.html
@@ -30913,6 +30919,7 @@ testharness css/css-sizing/animation/aspect-ratio-interpolation.html
 testharness css/css-sizing/animation/box-sizing-no-interpolation.html
 testharness css/css-sizing/animation/height-composition.html
 testharness css/css-sizing/animation/height-interpolation.html
+testharness css/css-sizing/animation/height-no-interpolation.html
 testharness css/css-sizing/animation/max-height-composition.html
 testharness css/css-sizing/animation/max-height-interpolation.html
 testharness css/css-sizing/animation/max-width-composition.html
@@ -31198,8 +31205,10 @@ testharness css/css-text-decor/text-underline-offset-computed.html
 testharness css/css-text-decor/text-underline-offset-initial.html
 testharness css/css-text-decor/text-underline-offset-invalid.html
 testharness css/css-text-decor/text-underline-offset-valid.html
+testharness css/css-text/animations/hyphen-no-interpolation.html
 testharness css/css-text/animations/letter-spacing-composition.html
 testharness css/css-text/animations/letter-spacing-interpolation.html
+testharness css/css-text/animations/line-break-no-interpolation.html
 testharness css/css-text/animations/tab-size-interpolation.html
 testharness css/css-text/animations/text-indent-composition.html
 testharness css/css-text/animations/text-indent-interpolation.html
