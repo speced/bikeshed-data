@@ -1,4 +1,4 @@
-sha: 2afa73a2c31a4736aae9b0b626a53d6fed89ad37
+sha: 261ca115bd5c894316f75b7b55b5974c0db114b0
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -25111,6 +25111,7 @@ reftest html/semantics/interactive-elements/the-dialog-element/backdrop-dynamic-
 reftest html/semantics/interactive-elements/the-dialog-element/backdrop-dynamic-style-change.html
 reftest html/semantics/interactive-elements/the-dialog-element/backdrop-in-flow.html
 reftest html/semantics/interactive-elements/the-dialog-element/backdrop-stacking-order.html
+reftest html/semantics/interactive-elements/the-dialog-element/dialog-overlay-re-add-during-transition.html
 reftest html/semantics/interactive-elements/the-dialog-element/dialogs-with-no-backdrop.html
 reftest html/semantics/interactive-elements/the-dialog-element/dont-share-style-to-top-layer.html
 reftest html/semantics/interactive-elements/the-dialog-element/element-removed-from-top-layer-has-original-position.html
@@ -40138,6 +40139,7 @@ testharness html/semantics/interactive-elements/the-dialog-element/dialog-inert.
 testharness html/semantics/interactive-elements/the-dialog-element/dialog-keydown-preventDefault.html
 testharness html/semantics/interactive-elements/the-dialog-element/dialog-open-2.html
 testharness html/semantics/interactive-elements/the-dialog-element/dialog-open.html
+testharness html/semantics/interactive-elements/the-dialog-element/dialog-overlay.html
 testharness html/semantics/interactive-elements/the-dialog-element/dialog-return-value.html
 testharness html/semantics/interactive-elements/the-dialog-element/dialog-showModal-remove.html
 testharness html/semantics/interactive-elements/the-dialog-element/dialog-showModal.html
@@ -40215,6 +40217,7 @@ testharness html/semantics/popovers/popover-invoking-attribute.html
 testharness html/semantics/popovers/popover-light-dismiss-on-scroll.html
 testharness html/semantics/popovers/popover-light-dismiss.html
 testharness html/semantics/popovers/popover-not-keyboard-focusable.html
+testharness html/semantics/popovers/popover-overlay.html
 testharness html/semantics/popovers/popover-removal-2.html
 testharness html/semantics/popovers/popover-removal.html
 testharness html/semantics/popovers/popover-shadow-dom.html
@@ -44965,6 +44968,7 @@ testharness screen-orientation/onchange-event-subframe.html
 testharness screen-orientation/onchange-event.html
 testharness screen-orientation/orientation-reading.html
 testharness screen-orientation/unlock.html
+testharness screen-wake-lock/chrome-bug-1348019.https.html
 testharness screen-wake-lock/idlharness.https.window.js
 testharness screen-wake-lock/wakelock-active-document.https.window.js
 testharness screen-wake-lock/wakelock-disabled-by-permissions-policy.https.html
@@ -45397,6 +45401,7 @@ testharness service-workers/service-worker/oninstall-script-error.https.html
 testharness service-workers/service-worker/opaque-response-preloaded.https.html
 testharness service-workers/service-worker/opaque-script.https.html
 testharness service-workers/service-worker/partitioned-claim.tentative.https.html
+testharness service-workers/service-worker/partitioned-cookies.tentative.https.html
 testharness service-workers/service-worker/partitioned-getRegistrations.tentative.https.html
 testharness service-workers/service-worker/partitioned-matchAll.tentative.https.html
 testharness service-workers/service-worker/partitioned.tentative.https.html
@@ -47535,6 +47540,7 @@ testharness webcodecs/audio-data.any.js
 testharness webcodecs/audio-data.crossOriginIsolated.https.any.js
 testharness webcodecs/audio-decoder.crossOriginIsolated.https.any.js
 testharness webcodecs/audio-decoder.https.any.js
+testharness webcodecs/audio-encoder-codec-specific.https.any.js
 testharness webcodecs/audio-encoder-config.https.any.js
 testharness webcodecs/audio-encoder.https.any.js
 testharness webcodecs/audioDecoder-codec-specific.https.any.js
@@ -47759,6 +47765,7 @@ testharness webnn/conv2d.https.any.js
 testharness webnn/conv_transpose2d.https.any.js
 testharness webnn/elementwise_binary.https.any.js
 testharness webnn/elementwise_unary.https.any.js
+testharness webnn/elu.https.any.js
 testharness webnn/gemm.https.any.js
 testharness webnn/hard_swish.https.any.js
 testharness webnn/idlharness.https.any.js
