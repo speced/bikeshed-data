@@ -4782,6 +4782,7 @@
     "aggregatable dedup key",
     "aggregatable report",
     "aggregatable report cache",
+    "aggregatable source registration time configuration",
     "aggregatable trigger data",
     "aggregation coordinator",
     "agreement",
@@ -5151,6 +5152,7 @@
     "assertion",
     "assertion signature",
     "assign a slot",
+    "assign private state tokens",
     "assign slottables",
     "assign slottables for a tree",
     "assignable table width",
@@ -6243,6 +6245,7 @@
     "check if an access between two browsing contexts should be reported",
     "check if an attribution source can create aggregatable contributions",
     "check if an attribution source exceeds the unexpired destination limit",
+    "check if an attribution trigger contains aggregatable data",
     "check if an origin is suitable",
     "check if cookie-based debugging is allowed",
     "check if coop values require a browsing context group switch",
@@ -7851,6 +7854,7 @@
     "determine a field's category",
     "determine eligibility for an associated site",
     "determine if a performance entry buffer is full",
+    "determine if a randomized null report is generated",
     "determine if a request has top-level storage access",
     "determine if dtmf can be sent",
     "determine navigation params policy container",
@@ -9403,6 +9407,8 @@
     "generate implied end tags",
     "generate key frame algorithm",
     "generate masked tokens",
+    "generate null reports",
+    "generate null reports and assign private state tokens",
     "generate reporting urls",
     "generate test report",
     "generateassertioncallback",
@@ -12538,6 +12544,7 @@
     "obtain a local storage bottle map",
     "obtain a local storage shelf",
     "obtain a lock manager",
+    "obtain a null report",
     "obtain a physical form",
     "obtain a randomized response",
     "obtain a randomized source response",
@@ -12582,6 +12589,7 @@
     "obtain hit test results",
     "obtain hit test results for transient input",
     "obtain permission",
+    "obtain rounded source time",
     "obtain the aggregation service payloads",
     "obtain the current device",
     "obtain the encrypted payload",
@@ -14017,6 +14025,8 @@
     "random-caching key",
     "random-item()",
     "randomized aggregatable report delay",
+    "randomized null report rate excluding source registration time",
+    "randomized null report rate including source registration time",
     "randomized response epsilon",
     "randomized response output configuration",
     "randomized source response",
@@ -15651,6 +15661,7 @@
     "show steps",
     "show the picker, if applicable",
     "showing",
+    "shuffle a list",
     "shut down the session",
     "shutdown",
     "shutdown with an action",
@@ -15939,6 +15950,7 @@
     "standalone grid",
     "standalone vowel",
     "standard gamepad",
+    "standard sample patterns",
     "standardize",
     "standardized payment method",
     "standardized payment method identifier",
@@ -16778,7 +16790,6 @@
     "torch",
     "total horizontal border spacing",
     "total length",
-    "total number of fragment output resources",
     "total video frame count",
     "touch point",
     "touch-action",
@@ -29816,6 +29827,7 @@
   ],
   "GPUSupportedLimits": [
     "maxBindGroups",
+    "maxBindGroupsPlusVertexBuffers",
     "maxBindingsPerBindGroup",
     "maxBufferSize",
     "maxColorAttachmentBytesPerSample",
@@ -29828,7 +29840,6 @@
     "maxComputeWorkgroupsPerDimension",
     "maxDynamicStorageBuffersPerPipelineLayout",
     "maxDynamicUniformBuffersPerPipelineLayout",
-    "maxFragmentCombinedOutputResources",
     "maxInterStageShaderComponents",
     "maxInterStageShaderVariables",
     "maxSampledTexturesPerShaderStage",
@@ -47089,6 +47100,7 @@
     "debug mode",
     "delivered",
     "effective attribution destination",
+    "is null report",
     "original report time",
     "plaintext payload",
     "report id",
@@ -47098,8 +47110,13 @@
     "serialized private state token",
     "shared info",
     "source debug key",
+    "source registration time configuration",
     "source time",
     "trigger debug key"
+  ],
+  "aggregatable source registration time configuration": [
+    "exclude",
+    "include"
   ],
   "aggregatable trigger data": [
     "filters",
@@ -47519,6 +47536,7 @@
   ],
   "attribution trigger": [
     "aggregatable dedup keys",
+    "aggregatable source registration time configuration",
     "aggregatable trigger data",
     "aggregatable values",
     "aggregation coordinator",
@@ -47529,7 +47547,7 @@
     "filters",
     "negated filters",
     "reporting endpoint",
-    "serialized private state token",
+    "serialized private state tokens",
     "trigger time"
   ],
   "auction config": [
@@ -50181,6 +50199,9 @@
   ],
   "generate an attribution report URL": [
     "isdebugreport"
+  ],
+  "generate null reports and assign private state tokens": [
+    "report"
   ],
   "generated bid": [
     "ad",
@@ -53968,6 +53989,7 @@
   ],
   "supported limits": [
     "maxBindGroups",
+    "maxBindGroupsPlusVertexBuffers",
     "maxBindingsPerBindGroup",
     "maxBufferSize",
     "maxColorAttachmentBytesPerSample",
@@ -53980,7 +54002,6 @@
     "maxComputeWorkgroupsPerDimension",
     "maxDynamicStorageBuffersPerPipelineLayout",
     "maxDynamicUniformBuffersPerPipelineLayout",
-    "maxFragmentCombinedOutputResources",
     "maxInterStageShaderComponents",
     "maxInterStageShaderVariables",
     "maxSampledTexturesPerShaderStage",
