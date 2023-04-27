@@ -948,6 +948,7 @@
     "@try",
     "@when",
     "ARIAMixin",
+    "AV1EncoderConfig",
     "AacBitstreamFormat",
     "AacEncoderConfig",
     "AbortController",
@@ -1024,6 +1025,7 @@
     "AnimatorInstanceConstructor",
     "AppBannerPromptOutcome",
     "AppendMode",
+    "ApplyConstraints algorithm",
     "ApplyStringOrNumericBinaryOperator",
     "ApplyStringOrNumericBinaryOperator(lval, opText, rval)",
     "Array",
@@ -3731,6 +3733,7 @@
     "SecurityPolicyViolationEvent",
     "SecurityPolicyViolationEventDisposition",
     "SecurityPolicyViolationEventInit",
+    "SelectSettings",
     "Selection",
     "SelectionMode",
     "SelfCapturePreferenceEnum",
@@ -4177,6 +4180,7 @@
     "VideoEncoderConfig",
     "VideoEncoderEncodeOptions",
     "VideoEncoderEncodeOptionsForAv1",
+    "VideoEncoderEncodeOptionsForAvc",
     "VideoEncoderEncodeOptionsForVp9",
     "VideoEncoderInit",
     "VideoEncoderSupport",
@@ -7090,6 +7094,8 @@
     "create a 'webgpu' context on a canvas",
     "create a 2d matrix",
     "create a 3d matrix",
+    "create a MediaDevices",
+    "create a MediaStreamTrack",
     "create a bluetoothcharacteristicproperties instance from the characteristic",
     "create a bluetoothremotegattcharacteristic representing",
     "create a bluetoothremotegattdescriptor representing",
@@ -8210,6 +8216,7 @@
     "dropzone",
     "dt",
     "dtend",
+    "dtmf playout task steps",
     "dtstart",
     "duplex printing",
     "duplex stream",
@@ -9580,6 +9587,7 @@
     "get window handles",
     "get window rect",
     "get-policy-value",
+    "getUserMedia specific failure is allowed",
     "getdisplaymedia prompt result",
     "getgattchildren",
     "getglobalvalue",
@@ -16707,6 +16715,7 @@
     "throw-on-dynamic-markup-insertion counter",
     "tick",
     "ticks",
+    "tie track source to MediaDevices",
     "tie track source to mediadevices",
     "tilt",
     "time",
@@ -19063,6 +19072,9 @@
     "ariaValueNow",
     "ariaValueText",
     "role"
+  ],
+  "AV1EncoderConfig": [
+    "forceScreenContentTools"
   ],
   "AacBitstreamFormat": [
     "\"aac\"",
@@ -26426,6 +26438,7 @@
     "initialization",
     "inputEncoding",
     "intersectionobservertaskqueued",
+    "is in view",
     "lastModified",
     "launched",
     "linkColor",
@@ -38650,6 +38663,7 @@
     "synchronizationSource",
     "synchronizationsource",
     "temporalIndex",
+    "timestamp",
     "width"
   ],
   "RTCEncodedVideoFrameType": [
@@ -44276,6 +44290,7 @@
   ],
   "VideoEncoderConfig": [
     "alpha",
+    "av1",
     "avc",
     "bitrate",
     "bitrateMode",
@@ -44292,10 +44307,14 @@
   ],
   "VideoEncoderEncodeOptions": [
     "av1",
+    "avc",
     "keyFrame",
     "vp9"
   ],
   "VideoEncoderEncodeOptionsForAv1": [
+    "quantizer"
+  ],
+  "VideoEncoderEncodeOptionsForAvc": [
     "quantizer"
   ],
   "VideoEncoderEncodeOptionsForVp9": [
@@ -49249,12 +49268,12 @@
     "target element",
     "target pseudo-selector"
   ],
-  "effective overload set tuple": [
-    "callable"
-  ],
-  "effective permissions": [
+  "effective enabled permissions": [
     "value",
     "visibility"
+  ],
+  "effective overload set tuple": [
+    "callable"
   ],
   "effective sandbox flags": [
     "value",
@@ -49621,7 +49640,7 @@
   "fenced frame config": [
     "container size",
     "content size",
-    "effective permissions",
+    "effective enabled permissions",
     "effective sandbox flags",
     "embedder shared storage context",
     "exfiltration budget metadata",
@@ -49633,7 +49652,7 @@
   "fenced frame config instance": [
     "container size",
     "content size",
-    "effective permissions",
+    "effective enabled permissions",
     "effective sandbox flags",
     "embedder shared storage context",
     "exfiltration budget metadata reference",
@@ -49672,7 +49691,6 @@
     "embedder shared storage context",
     "exfiltration budget metadata",
     "exfiltration budget metadata reference",
-    "exhaustive set of permissions",
     "exhaustive set of sandbox flags",
     "fenced frame reporter",
     "interest group descriptor",
