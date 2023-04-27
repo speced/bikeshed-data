@@ -17328,7 +17328,6 @@
     "user prompt message",
     "user public key",
     "user style sheet",
-    "user timing",
     "user units",
     "user verification",
     "user verification method",
@@ -22096,7 +22095,8 @@
     "href",
     "layerName",
     "media",
-    "styleSheet"
+    "styleSheet",
+    "supportsText"
   ],
   "CSSKeyframeRule": [
     "keyText",
@@ -28879,7 +28879,8 @@
   "GPUBindGroup": [
     "[[entries]]",
     "[[layout]]",
-    "[[usedResources]]"
+    "[[usedResources]]",
+    "bound buffer ranges"
   ],
   "GPUBindGroupDescriptor": [
     "entries",
@@ -29171,6 +29172,7 @@
   ],
   "GPUComputePassEncoder": [
     "[[command_encoder]]",
+    "[[endTimestampWrite]]",
     "[[endTimestampWrites]]",
     "[[pipeline]]",
     "dispatchWorkgroups(workgroupCountX)",
@@ -29199,6 +29201,11 @@
   "GPUComputePassTimestampWrite": [
     "location",
     "queryIndex",
+    "querySet"
+  ],
+  "GPUComputePassTimestampWrites": [
+    "beginningOfPassWriteIndex",
+    "endOfPassWriteIndex",
     "querySet"
   ],
   "GPUComputePipelineDescriptor": [
@@ -29687,6 +29694,7 @@
   "GPURenderPassEncoder": [
     "[[attachment_size]]",
     "[[command_encoder]]",
+    "[[endTimestampWrite]]",
     "[[endTimestampWrites]]",
     "[[maxDrawCount]]",
     "[[occlusion_query_active]]",
@@ -29738,6 +29746,11 @@
   "GPURenderPassTimestampWrite": [
     "location",
     "queryIndex",
+    "querySet"
+  ],
+  "GPURenderPassTimestampWrites": [
+    "beginningOfPassWriteIndex",
+    "endOfPassWriteIndex",
     "querySet"
   ],
   "GPURenderPipeline": [
