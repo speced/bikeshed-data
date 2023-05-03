@@ -4001,7 +4001,6 @@
     "ToggleEventInit",
     "TokenBinding",
     "TokenBindingStatus",
-    "TokenType",
     "TokenVersion",
     "TopLevelStorageAccessPermissionDescriptor",
     "Touch",
@@ -5309,11 +5308,14 @@
     "attribution rate-limit record",
     "attribution rate-limit window",
     "attribution report",
+    "attribution reporting eligibility",
     "attribution source",
     "attribution source cache",
     "attribution source id",
     "attribution trigger",
     "attribution-reporting",
+    "attribution-reporting-eligible",
+    "attribution-reporting-support",
     "auction config",
     "audience segmentation",
     "audio",
@@ -8339,6 +8341,7 @@
     "eligible for autoplay",
     "eligible for messaging",
     "eligible for same-party membership when embedded within",
+    "eligible key",
     "eligible track",
     "ellipse",
     "ellipse method steps",
@@ -9494,6 +9497,7 @@
     "get an element id",
     "get an element's noopener",
     "get an element's target",
+    "get an eligibility from attributionreportingrequestoptions",
     "get an encoder",
     "get an encoding",
     "get an input source",
@@ -11470,7 +11474,6 @@
     "margin::of a box",
     "mark",
     "mark a promise as handled",
-    "mark a request for attribution reporting eligibility",
     "mark as handled",
     "mark as ready",
     "mark paint timing",
@@ -12569,7 +12572,6 @@
     "obtain a worklet agent",
     "obtain an aggregatable report",
     "obtain an aggregatable report delivery time",
-    "obtain an attribution source from an anchor",
     "obtain an embedder policy",
     "obtain an event-level report",
     "obtain an event-level report body",
@@ -15458,6 +15460,7 @@
     "set an imagebitmaprenderingcontext's output bitmap",
     "set an os-support header",
     "set animator instance of worklet animation",
+    "set attribution reporting headers",
     "set automatic beacon data",
     "set bitmap dimensions",
     "set descriptor",
@@ -16290,6 +16293,7 @@
     "support elementinternals",
     "support global identifiers for items",
     "support indexed properties",
+    "support key",
     "support named properties",
     "supported",
     "supported by the user agent",
@@ -17488,6 +17492,7 @@
     "validate GPUExtent3D shape",
     "validate GPUOrigin2D shape",
     "validate GPUOrigin3D shape",
+    "validate a background attributionsrc eligibility",
     "validate a cssnumberish time",
     "validate a partial response",
     "validate a payment method identifier",
@@ -26418,8 +26423,8 @@
     "global application lifecycle events",
     "global application lifecycle states",
     "hasFocus()",
-    "hasPrivateTokens(issuer, type)",
-    "hasRedemptionRecord(issuer, type)",
+    "hasPrivateTokens(issuer)",
+    "hasRedemptionRecord(issuer)",
     "hasStorageAccess()",
     "head",
     "hidden",
@@ -26696,13 +26701,11 @@
     "localName",
     "namespace"
   ],
-  "Document/hasPrivateTokens(issuer, type)": [
-    "issuer",
-    "type"
+  "Document/hasPrivateTokens(issuer)": [
+    "issuer"
   ],
-  "Document/hasRedemptionRecord(issuer, type)": [
-    "issuer",
-    "type"
+  "Document/hasRedemptionRecord(issuer)": [
+    "issuer"
   ],
   "Document/importNode(node)": [
     "deep",
@@ -38093,7 +38096,6 @@
     "issuers",
     "operation",
     "refreshPolicy",
-    "type",
     "version"
   ],
   "ProcessingInstruction": [
@@ -42838,9 +42840,6 @@
     "\"supported\"",
     "present",
     "supported"
-  ],
-  "TokenType": [
-    "\"private-state-token\""
   ],
   "TokenVersion": [
     "\"1\""
@@ -49275,8 +49274,17 @@
     "part name map"
   ],
   "eligibility": [
-    "event-source, trigger",
-    "navigation-source"
+    "empty",
+    "event-source",
+    "event-source-or-trigger",
+    "navigation-source",
+    "trigger",
+    "unset"
+  ],
+  "eligible key": [
+    "event-source",
+    "navigation-source",
+    "trigger"
   ],
   "ellipse": [
     "requiredextensions",
@@ -53083,6 +53091,7 @@
   ],
   "request": [
     "add a range header",
+    "attribution reporting eligibility",
     "body",
     "cache mode",
     "client",
@@ -54056,6 +54065,10 @@
   "superscript-size-override!!descriptor": [
     "from-font",
     "normal"
+  ],
+  "support key": [
+    "os",
+    "web"
   ],
   "supported limits": [
     "maxBindGroups",
