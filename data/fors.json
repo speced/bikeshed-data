@@ -797,9 +797,6 @@
     "<relative-selector>",
     "<relative-size>",
     "<repeat-style>",
-    "<repeating-conic-gradient()>",
-    "<repeating-linear-gradient()>",
-    "<repeating-radial-gradient()>",
     "<request-url-modifier>",
     "<resolution>",
     "<reversed-counter-name>",
@@ -8939,6 +8936,7 @@
     "final steps to create an offer",
     "finalize",
     "finalize a cross-document navigation",
+    "finalize a reporting destination",
     "finalize a same-document navigation",
     "finalize event timing",
     "finalize focus decision algorithm",
@@ -9515,7 +9513,6 @@
     "get an encoder",
     "get an encoding",
     "get an input source",
-    "get an os-registration url from a header list",
     "get an output encoding",
     "get an xml encoding",
     "get boundary point at index",
@@ -9547,6 +9544,7 @@
     "get or create a shadow root reference",
     "get or create a web element reference",
     "get or create an input source",
+    "get os-registration urls from a header list",
     "get page source",
     "get registration",
     "get related browsing contexts",
@@ -11424,6 +11422,7 @@
     "make a component string",
     "make active",
     "make an nfc tag permanently read-only",
+    "make background attributionsrc requests",
     "make disappear",
     "making a buffer available for reading",
     "making content read-only",
@@ -15284,6 +15283,7 @@
     "semantically",
     "semantics",
     "semantics of an expression",
+    "send a beacon",
     "send a message",
     "send a response",
     "send a termination request",
@@ -15477,7 +15477,6 @@
     "set an os-support header",
     "set animator instance of worklet animation",
     "set attribution reporting headers",
-    "set automatic beacon data",
     "set bitmap dimensions",
     "set descriptor",
     "set entries",
@@ -15965,6 +15964,7 @@
     "stacktopshiftup",
     "stale element reference",
     "stale response",
+    "stale timelines",
     "stale-while-revalidate response",
     "standalone axis",
     "standalone grid",
@@ -47679,6 +47679,10 @@
     "pinuvauthprotocol",
     "rpid"
   ],
+  "automatic beacon data": [
+    "destination",
+    "eventdata"
+  ],
   "background fetch": [
     "abort all flag",
     "display",
@@ -49666,7 +49670,7 @@
     "effective sandbox flags",
     "embedder shared storage context",
     "exfiltration budget metadata",
-    "fenced frame reporter",
+    "fenced frame reporting metadata",
     "interest group descriptor",
     "mapped url",
     "nested configs"
@@ -49695,8 +49699,14 @@
     "store nested configs"
   ],
   "fenced frame reporter": [
-    "value",
+    "automatic beacon data",
+    "fenced frame reporting metadata reference",
     "visibility"
+  ],
+  "fenced frame reporting metadata": [
+    "direct seller is seller",
+    "fenced frame reporting map",
+    "value"
   ],
   "fenced navigable container": [
     "fenced navigable"
@@ -49711,12 +49721,14 @@
     "visibility"
   ],
   "fencedframetype": [
-    "embedder shared storage context",
     "exfiltration budget metadata",
     "exfiltration budget metadata reference",
     "exhaustive set of sandbox flags",
     "fenced frame reporter",
+    "fenced frame reporting map",
+    "fenced frame reporting metadata",
     "interest group descriptor",
+    "pending event",
     "size"
   ],
   "fetch": [
@@ -52006,8 +52018,12 @@
   "navigable container": [
     "content navigable"
   ],
+  "navigate": [
+    "navigationsourceeligible"
+  ],
   "navigation params": [
     "delivery type",
+    "navigationsourceeligible",
     "prefetched subresource signed exchanges"
   ],
   "navigation style values": [
@@ -52583,6 +52599,11 @@
     "promise",
     "reason",
     "was already erroring"
+  ],
+  "pending event": [
+    "destination",
+    "eventdata",
+    "eventtype"
   ],
   "pending external speculation rule resource": [
     "cancel and discard",
