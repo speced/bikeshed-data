@@ -2034,6 +2034,18 @@
       "shortname": "dom"
     }
   },
+  "DocumentPictureInPictureEvent()": {
+    "DocumentPictureInPictureEvent(type, eventInitDict)": {
+      "args": [
+        "type",
+        "eventInitDict"
+      ],
+      "for": [
+        "DocumentPictureInPictureEvent"
+      ],
+      "shortname": "document-picture-in-picture"
+    }
+  },
   "DocumentTimeline()": {
     "DocumentTimeline()": {
       "args": [],
@@ -6122,6 +6134,18 @@
       ],
       "shortname": "dom"
     },
+    "append(key, value)": {
+      "args": [
+        "key",
+        "value"
+      ],
+      "for": [
+        "SharedStorage",
+        "WindowSharedStorage",
+        "WorkletSharedStorage"
+      ],
+      "shortname": "shared-storage"
+    },
     "append(name, blobValue)": {
       "args": [
         "name",
@@ -7339,8 +7363,11 @@
         "MIDIOutput",
         "Map",
         "Set",
+        "SharedStorage",
         "Storage",
         "StylePropertyMap",
+        "WindowSharedStorage",
+        "WorkletSharedStorage",
         "console"
       ],
       "shortname": "console"
@@ -7639,6 +7666,9 @@
         "ReadableStreamDefaultController",
         "SerialPort",
         "SharedWorkerGlobalScope",
+        "TCPServerSocket",
+        "TCPSocket",
+        "UDPSocket",
         "USBDevice",
         "VideoDecoder",
         "VideoEncoder",
@@ -8347,6 +8377,8 @@
         "SpeechGrammarList",
         "SpeechRecognition",
         "SpeechSynthesisUtterance",
+        "TCPServerSocket",
+        "TCPSocket",
         "TaskController",
         "Text",
         "TextDecoder",
@@ -8360,6 +8392,7 @@
         "Touch",
         "TouchEvent",
         "TransformStream",
+        "UDPSocket",
         "URLPattern",
         "URLSearchParams",
         "UncalibratedMagnetometer",
@@ -9238,6 +9271,25 @@
       ],
       "shortname": "css-typed-om"
     },
+    "constructor(localAddress)": {
+      "args": [
+        "localAddress"
+      ],
+      "for": [
+        "TCPServerSocket"
+      ],
+      "shortname": "direct-sockets"
+    },
+    "constructor(localAddress, options)": {
+      "args": [
+        "localAddress",
+        "options"
+      ],
+      "for": [
+        "TCPServerSocket"
+      ],
+      "shortname": "direct-sockets"
+    },
     "constructor(lower, value, upper)": {
       "args": [
         "lower",
@@ -9452,6 +9504,7 @@
         "TextFormat",
         "TextFormatUpdateEvent",
         "TextUpdateEvent",
+        "UDPSocket",
         "ViewTimeline"
       ],
       "shortname": "close-watcher"
@@ -9606,6 +9659,27 @@
         "NDEFRecord"
       ],
       "shortname": "web-nfc"
+    },
+    "constructor(remoteAddress, remotePort)": {
+      "args": [
+        "remoteAddress",
+        "remotePort"
+      ],
+      "for": [
+        "TCPSocket"
+      ],
+      "shortname": "direct-sockets"
+    },
+    "constructor(remoteAddress, remotePort, options)": {
+      "args": [
+        "remoteAddress",
+        "remotePort",
+        "options"
+      ],
+      "for": [
+        "TCPSocket"
+      ],
+      "shortname": "direct-sockets"
     },
     "constructor(sensorOptions)": {
       "args": [
@@ -9964,6 +10038,7 @@
         "CustomEvent",
         "DeviceMotionEvent",
         "DeviceOrientationEvent",
+        "DocumentPictureInPictureEvent",
         "Event",
         "ExtendableCookieChangeEvent",
         "ExtendableEvent",
@@ -12719,7 +12794,10 @@
       ],
       "for": [
         "Map",
-        "WeakMap"
+        "SharedStorage",
+        "WeakMap",
+        "WindowSharedStorage",
+        "WorkletSharedStorage"
       ],
       "shortname": "ecmascript"
     },
@@ -12731,6 +12809,7 @@
         "CookieStore",
         "FormData",
         "Headers",
+        "StorageBucketManager",
         "URLSearchParams"
       ],
       "shortname": "fetch"
@@ -13503,6 +13582,15 @@
       "shortname": "webgpu"
     }
   },
+  "durability()": {
+    "durability()": {
+      "args": [],
+      "for": [
+        "StorageBucket"
+      ],
+      "shortname": "storage-buckets"
+    }
+  },
   "dvb()": {
     "dvb(value)": {
       "args": [
@@ -14024,6 +14112,7 @@
     "estimate()": {
       "args": [],
       "for": [
+        "StorageBucket",
         "StorageManager"
       ],
       "shortname": "storage"
@@ -14268,6 +14357,15 @@
         "JsonLdProcessor"
       ],
       "shortname": "json-ld-api"
+    }
+  },
+  "expires()": {
+    "expires()": {
+      "args": [],
+      "for": [
+        "StorageBucket"
+      ],
+      "shortname": "storage-buckets"
     }
   },
   "expm1()": {
@@ -15330,6 +15428,7 @@
       "for": [
         "Map",
         "WeakMap",
+        "WorkletSharedStorage",
         "XRHand"
       ],
       "shortname": "ecmascript"
@@ -16292,6 +16391,7 @@
       "args": [],
       "for": [
         "FileSystemDirectoryEntry",
+        "StorageBucket",
         "StorageManager"
       ],
       "shortname": "fs"
@@ -20523,7 +20623,8 @@
         "Cache",
         "CacheStorage",
         "Map",
-        "Set"
+        "Set",
+        "StorageBucketManager"
       ],
       "shortname": "ecmascript"
     },
@@ -20667,6 +20768,15 @@
         "Navigator"
       ],
       "shortname": "turtledove"
+    }
+  },
+  "length()": {
+    "length()": {
+      "args": [],
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "shortname": "shared-storage"
     }
   },
   "lh()": {
@@ -22011,9 +22121,20 @@
         "name"
       ],
       "for": [
-        "IDBFactory"
+        "IDBFactory",
+        "StorageBucketManager"
       ],
-      "shortname": "indexeddb"
+      "shortname": "storage-buckets"
+    },
+    "open(name, options)": {
+      "args": [
+        "name",
+        "options"
+      ],
+      "for": [
+        "StorageBucketManager"
+      ],
+      "shortname": "storage-buckets"
     },
     "open(name, version)": {
       "args": [
@@ -22549,6 +22670,7 @@
       "args": [],
       "for": [
         "Animation",
+        "StorageBucket",
         "StorageManager"
       ],
       "shortname": "storage"
@@ -22558,6 +22680,7 @@
     "persisted()": {
       "args": [],
       "for": [
+        "StorageBucket",
         "StorageManager"
       ],
       "shortname": "storage"
@@ -23730,6 +23853,16 @@
       ],
       "shortname": "webrtc-identity"
     },
+    "register(name, operationCtor)": {
+      "args": [
+        "name",
+        "operationCtor"
+      ],
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "shortname": "shared-storage"
+    },
     "register(scriptURL)": {
       "args": [
         "scriptURL"
@@ -23958,6 +24091,15 @@
         "CSS"
       ],
       "shortname": "css-typed-om"
+    }
+  },
+  "remainingBudget()": {
+    "remainingBudget()": {
+      "args": [],
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "shortname": "shared-storage"
     }
   },
   "remove()": {
@@ -24984,6 +25126,24 @@
       "shortname": "webxr"
     }
   },
+  "requestWindow()": {
+    "requestWindow()": {
+      "args": [],
+      "for": [
+        "DocumentPictureInPicture"
+      ],
+      "shortname": "document-picture-in-picture"
+    },
+    "requestWindow(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "DocumentPictureInPicture"
+      ],
+      "shortname": "document-picture-in-picture"
+    }
+  },
   "resample2d()": {
     "resample2d(input)": {
       "args": [
@@ -25568,6 +25728,46 @@
         "CanvasPath"
       ],
       "shortname": "html"
+    }
+  },
+  "run()": {
+    "run(data)": {
+      "args": [
+        "data"
+      ],
+      "for": [
+        "SharedStorageRunOperation"
+      ],
+      "shortname": "shared-storage"
+    },
+    "run(data, urls)": {
+      "args": [
+        "data",
+        "urls"
+      ],
+      "for": [
+        "SharedStorageSelectURLOperation"
+      ],
+      "shortname": "shared-storage"
+    },
+    "run(name)": {
+      "args": [
+        "name"
+      ],
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "shortname": "shared-storage"
+    },
+    "run(name, options)": {
+      "args": [
+        "name",
+        "options"
+      ],
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "shortname": "shared-storage"
     }
   },
   "runAdAuction()": {
@@ -26201,6 +26401,29 @@
       "shortname": "dom"
     }
   },
+  "selectURL()": {
+    "selectURL(name, urls)": {
+      "args": [
+        "name",
+        "urls"
+      ],
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "shortname": "shared-storage"
+    },
+    "selectURL(name, urls, options)": {
+      "args": [
+        "name",
+        "urls",
+        "options"
+      ],
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "shortname": "shared-storage"
+    }
+  },
   "send!overload-1()": {
     "send!overload-1()": {
       "args": [],
@@ -26478,9 +26701,23 @@
       ],
       "for": [
         "Map",
+        "SharedStorage",
         "WeakMap"
       ],
       "shortname": "ecmascript"
+    },
+    "set(key, value, options)": {
+      "args": [
+        "key",
+        "value",
+        "options"
+      ],
+      "for": [
+        "SharedStorage",
+        "WindowSharedStorage",
+        "WorkletSharedStorage"
+      ],
+      "shortname": "shared-storage"
     },
     "set(name, blobValue)": {
       "args": [
@@ -26956,6 +27193,17 @@
         "Range"
       ],
       "shortname": "dom"
+    }
+  },
+  "setExpires()": {
+    "setExpires(expires)": {
+      "args": [
+        "expires"
+      ],
+      "for": [
+        "StorageBucket"
+      ],
+      "shortname": "storage-buckets"
     }
   },
   "setFloat32()": {

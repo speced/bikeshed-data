@@ -1725,6 +1725,10 @@
     "Document",
     "DocumentFragment",
     "DocumentOrShadowRoot",
+    "DocumentPictureInPicture",
+    "DocumentPictureInPictureEvent",
+    "DocumentPictureInPictureEventInit",
+    "DocumentPictureInPictureOptions",
     "DocumentReadyState",
     "DocumentTimeline",
     "DocumentTimelineOptions",
@@ -2917,6 +2921,7 @@
     "NavigatorNetworkInformation",
     "NavigatorOnLine",
     "NavigatorStorage",
+    "NavigatorStorageBuckets",
     "NavigatorUA",
     "NavigatorUABrandVersion",
     "NavigatorUAData",
@@ -3810,6 +3815,17 @@
     "SharedArrayBuffer",
     "SharedDataBlockEventSet",
     "SharedDataBlockEventSet(execution)",
+    "SharedStorage",
+    "SharedStorageOperation",
+    "SharedStorageOperationConstructor",
+    "SharedStorageResponse",
+    "SharedStorageRunOperation",
+    "SharedStorageRunOperationMethodOptions",
+    "SharedStorageSelectURLOperation",
+    "SharedStorageSetMethodOptions",
+    "SharedStorageUrlWithMetadata",
+    "SharedStorageWorklet",
+    "SharedStorageWorkletGlobalScope",
     "SharedWorker",
     "SharedWorkerGlobalScope",
     "Should Trusted Type policy creation be blocked by Content Security Policy?",
@@ -3818,6 +3834,7 @@
     "SlotAssignmentMode",
     "Slottable",
     "SmallCryptoKeyID",
+    "SocketDnsQueryType",
     "SortIndexedProperties",
     "SortIndexedProperties(obj, len, SortCompare, holes)",
     "SourceBuffer",
@@ -3853,6 +3870,10 @@
     "StereoPannerNode",
     "StereoPannerOptions",
     "Storage",
+    "StorageBucket",
+    "StorageBucketDurability",
+    "StorageBucketManager",
+    "StorageBucketOptions",
     "StorageEstimate",
     "StorageEvent",
     "StorageEventInit",
@@ -3900,6 +3921,12 @@
     "SyncManager",
     "SyntaxError",
     "SystemAudioPreferenceEnum",
+    "TCPServerSocket",
+    "TCPServerSocketOpenInfo",
+    "TCPServerSocketOptions",
+    "TCPSocket",
+    "TCPSocketOpenInfo",
+    "TCPSocketOptions",
     "Table",
     "TableDescriptor",
     "TableKind",
@@ -4064,6 +4091,10 @@
     "TypedArraySpeciesCreate(exemplar, argumentList)",
     "UADataValues",
     "UALowEntropyJSON",
+    "UDPMessage",
+    "UDPSocket",
+    "UDPSocketOpenInfo",
+    "UDPSocketOptions",
     "UIEvent",
     "UIEventInit",
     "ULongRange",
@@ -4279,6 +4310,7 @@
     "WindowPostMessageOptions",
     "WindowProxy",
     "WindowSessionStorage",
+    "WindowSharedStorage",
     "WordCharacters",
     "WordCharacters(rer)",
     "Worker",
@@ -4293,6 +4325,7 @@
     "WorkletGlobalScope",
     "WorkletGroupEffect",
     "WorkletOptions",
+    "WorkletSharedStorage",
     "WritableStream",
     "WritableStreamAbort",
     "WritableStreamAddWriteRequest",
@@ -4399,6 +4432,8 @@
     "XRMediaEquirectLayerInit",
     "XRMediaLayerInit",
     "XRMediaQuadLayerInit",
+    "XRMesh",
+    "XRMeshSet",
     "XRPermissionDescriptor",
     "XRPermissionStatus",
     "XRPose",
@@ -4561,14 +4596,14 @@
     "access mode",
     "access-control-allow-credentials",
     "access-control-allow-headers",
-    "access-control-allow-local-network",
     "access-control-allow-methods",
     "access-control-allow-origin",
+    "access-control-allow-private-network",
     "access-control-expose-headers",
     "access-control-max-age",
     "access-control-request-headers",
-    "access-control-request-local-network",
     "access-control-request-method",
+    "access-control-request-private-network",
     "accessibility api",
     "accessibility apis",
     "accessibility child",
@@ -5027,6 +5062,7 @@
     "anyuri",
     "api url parser",
     "api value",
+    "app-region",
     "app_id",
     "appeal",
     "appearance",
@@ -5654,6 +5690,7 @@
     "biquadfilternode",
     "biquadfilteroptions",
     "bisque",
+    "bit debit",
     "bitmap",
     "bitmap data",
     "bitmap mode",
@@ -5847,6 +5884,12 @@
     "border::of a box",
     "bottle map",
     "bottom",
+    "bounce tracking",
+    "bounce tracking activation lifetime",
+    "bounce tracking grace period",
+    "bounce tracking timer",
+    "bounce tracking timer period",
+    "bound",
     "bound credential",
     "boundary box",
     "boundary default action",
@@ -5978,6 +6021,7 @@
     "calculate linear easing output progress",
     "calculate the absolute position",
     "calculate the aspect ratio",
+    "calculate the effective durability hint",
     "calculate the part element map",
     "calculation tree",
     "calibrated",
@@ -6004,6 +6048,7 @@
     "callee",
     "caller",
     "calling function",
+    "calling origin",
     "callsitenorestriction",
     "callsiterequiredtobeuniform.s",
     "camera information can be exposed",
@@ -6029,6 +6074,7 @@
     "candidate",
     "candidate addition",
     "candidate amendment",
+    "candidate bounce tracking map",
     "candidate correction",
     "candidate examination algorithm",
     "candidate for constraint validation",
@@ -6235,6 +6281,8 @@
     "characterized",
     "characters",
     "characterstring",
+    "charge shared storage navigation budget",
+    "charge shared storage reporting budget",
     "chargingchange",
     "chargingtimechange",
     "charter",
@@ -6265,6 +6313,7 @@
     "check if debug reporting is allowed",
     "check if enforcing report-only coop would require a browsing context group switch",
     "check if hardware exposure is allowed",
+    "check if module added and update status",
     "check if negotiation is needed",
     "check if the device is configured",
     "check if three code points would start a number",
@@ -6285,6 +6334,7 @@
     "check the usability of the image argument",
     "check the validity of the control transfer parameters",
     "check validity steps",
+    "check whether a bit debit is expired",
     "check-for-apache-bug flag",
     "checkedness",
     "checkforusercancelation",
@@ -6341,8 +6391,12 @@
     "clear algorithm",
     "clear an object store",
     "clear cache entries",
+    "clear cache for host",
     "clear cache for origin",
+    "clear cookies for host",
     "clear cookies for origin",
+    "clear data with buckets",
+    "clear non-cookie storage for host",
     "clear registration",
     "clear site data",
     "clear site data for response",
@@ -7062,6 +7116,7 @@
     "cornsilk",
     "corpus",
     "correctly rounded",
+    "correspond to",
     "corresponding animator instance",
     "corresponding effect",
     "corresponding element",
@@ -7208,6 +7263,8 @@
     "create a sanitizer",
     "create a scheduler task queue",
     "create a set iterator",
+    "create a shared storage bucket",
+    "create a shared storage shelf",
     "create a sorted name list",
     "create a source set",
     "create a speculative mock element",
@@ -7269,6 +7326,7 @@
     "create context",
     "create job",
     "create link options from element",
+    "create mesh object",
     "create mock sensor",
     "create navigation params by fetching",
     "create navigation params from a prefetch record",
@@ -7683,11 +7741,13 @@
     "default display mode",
     "default document timeline",
     "default endpoint",
+    "default entry lifetime",
     "default face",
     "default fallback constant",
     "default features",
     "default fetch and process the linked resource",
     "default graph",
+    "default index",
     "default initial value",
     "default inline xr device",
     "default iterator object",
@@ -7887,6 +7947,8 @@
     "determine if dtmf can be sent",
     "determine navigation params policy container",
     "determine nosniff",
+    "determine remaining navigation budget",
+    "determine reporting budget to charge",
     "determine request's referrer",
     "determine the creation sandboxing flags",
     "determine the device pixel ratio",
@@ -8138,6 +8200,7 @@
     "document order",
     "document paint definition",
     "document paint definitions",
+    "document picture-in-picture support",
     "document policy",
     "document policy directive",
     "document rule conjunction",
@@ -9547,6 +9610,7 @@
     "get or create a shadow root reference",
     "get or create a web element reference",
     "get or create an input source",
+    "get or expire a bucket",
     "get os-registration urls from a header list",
     "get page source",
     "get registration",
@@ -9561,6 +9625,7 @@
     "get the bluetoothdevice representing",
     "get the browsing context",
     "get the browsing context info",
+    "get the canonical url string if valid",
     "get the child browsing contexts",
     "get the content attribute",
     "get the current permission state",
@@ -9778,6 +9843,11 @@
     "handle attribute changes",
     "handle close events",
     "handle closing the readable stream",
+    "handle closing the tcpserversocket readable stream",
+    "handle closing the tcpsocket readable stream",
+    "handle closing the tcpsocket writable stream",
+    "handle closing the udpsocket readable stream",
+    "handle closing the udpsocket writable stream",
     "handle closing the writable stream",
     "handle content codings",
     "handle errors",
@@ -9824,10 +9894,12 @@
     "has dispatched input event",
     "has dispatched scroll event",
     "has focus steps",
+    "has navigated",
     "has no style sheet that is blocking scripts",
     "has not shifted",
     "has range limitations",
     "has reloaded for critical-ch",
+    "has reported",
     "has shifted",
     "has skipped observations",
     "has skipped resize observations",
@@ -10379,12 +10451,22 @@
     "initialize axes",
     "initialize buttons",
     "initialize event timing",
+    "initialize tcpserversocket readable stream",
+    "initialize tcpsocket readable stream",
+    "initialize tcpsocket writable stream",
     "initialize the navigable",
     "initialize the nested traversable",
     "initialize the render state",
     "initialize the session",
+    "initialize the tcpserversocket readable stream",
+    "initialize the tcpsocket readable stream",
+    "initialize the tcpsocket writable stream",
+    "initialize the udpsocket readable stream",
+    "initialize the udpsocket writable stream",
     "initialize the underlying source",
     "initialize the viewport",
+    "initialize udpsocket readable stream",
+    "initialize udpsocket writable stream",
     "initialize webtransport over http",
     "initializing",
     "initializing axes",
@@ -11184,6 +11266,7 @@
     "linethickness",
     "link",
     "link (pseudo-class)",
+    "link decoration",
     "link processing options",
     "link text",
     "link text selector",
@@ -11837,6 +11920,7 @@
     "merging",
     "merging capabilities",
     "merror",
+    "mesh-detection",
     "message",
     "message entity",
     "message port post message steps",
@@ -12023,6 +12107,7 @@
     "modifier key",
     "modifiers population algorithm",
     "module",
+    "module added",
     "module map",
     "module name",
     "module responses map",
@@ -12214,6 +12299,8 @@
     "native hit test",
     "native hit test result",
     "native hit test results",
+    "native mesh detection",
+    "native mesh objects",
     "native webgl framebuffer resolution",
     "natural",
     "natural aspect ratio",
@@ -12242,6 +12329,10 @@
     "navigate to a javascript: url",
     "navigating to a fragment identifier",
     "navigation and traversal task source",
+    "navigation budget epoch",
+    "navigation budget lifetime",
+    "navigation entropy allowance",
+    "navigation entropy ledger",
     "navigation id",
     "navigation params",
     "navigation request",
@@ -12255,6 +12346,7 @@
     "navigation_bar_text_style",
     "navigation_bar_title_text",
     "navigation_style",
+    "navigational tracking",
     "navigationtype",
     "navigator",
     "navigator compatibility mode",
@@ -12576,6 +12668,8 @@
     "obtain a set of css boxes",
     "obtain a set of event names",
     "obtain a set of possible trigger states",
+    "obtain a shared storage bottle map",
+    "obtain a shared storage shelf",
     "obtain a similar-origin window agent",
     "obtain a site",
     "obtain a source expiry",
@@ -12695,6 +12789,7 @@
     "opaque-host parser",
     "opaque-host-and-port string",
     "opaque-redirect filtered response",
+    "open a bucket",
     "open a database",
     "open screen protocol agent",
     "open subpath",
@@ -12915,6 +13010,7 @@
     "page footer",
     "page group",
     "page header",
+    "page load",
     "page load strategy",
     "page load timeout",
     "page loading strategy",
@@ -13007,6 +13103,7 @@
     "parent media source",
     "parse a boolean feature",
     "parse a calculation",
+    "parse a clear-site-data header with buckets",
     "parse a comma-separated list of component values",
     "parse a component value",
     "parse a constructor string",
@@ -13251,6 +13348,7 @@
     "pending request",
     "pending resource-timing start time",
     "pending scroll event targets",
+    "pending shared storage budget debit",
     "pending table character tokens",
     "pending text track change notification flag",
     "pending top layer removals",
@@ -13942,6 +14040,7 @@
     "pullbidirectionalstream",
     "pulldatagrams",
     "pullunidirectionalstream",
+    "purge expired bit debits from all navigation entropy ledgers",
     "purple",
     "push",
     "push a ruby annotation",
@@ -14213,6 +14312,7 @@
     "reconsume the current input token",
     "record",
     "record a redemption record",
+    "record a user activation",
     "record connection timing info",
     "record identifier",
     "record of license destruction",
@@ -14278,6 +14378,7 @@
     "register a system key press handler",
     "register an import map",
     "register file handlers",
+    "register reporting metadata",
     "registered",
     "registered class constructors map",
     "registered custom property",
@@ -14421,6 +14522,7 @@
     "remote-playback-termination-request",
     "remote-playback-termination-response",
     "remove",
+    "remove a bucket",
     "remove a css rule",
     "remove a css style sheet",
     "remove a permission store entry",
@@ -14526,6 +14628,7 @@
     "report-uri",
     "report_to",
     "reporting endpoint",
+    "reporting entropy allowance",
     "reporting frequency",
     "reporting group",
     "reporting observer",
@@ -15630,6 +15733,12 @@
     "shared declarative refresh steps",
     "shared history push/replace state steps",
     "shared secret",
+    "shared storage",
+    "shared storage bucket",
+    "shared storage database",
+    "shared storage navigation budget table",
+    "shared storage reporting budget",
+    "shared storage shed",
     "shared utf-16 decoder",
     "shared worker",
     "shared worker agent",
@@ -16116,6 +16225,7 @@
     "storage usage",
     "storage-access",
     "storage-texel-formats",
+    "storage:bucket-name",
     "store a record into an object store",
     "store type",
     "stored permission",
@@ -16516,6 +16626,8 @@
     "task source",
     "taxonomy",
     "tbody",
+    "tcpserversocket task source",
+    "tcpsocket task source",
     "td",
     "teal",
     "team",
@@ -17026,6 +17138,7 @@
     "ua-default viewport-percentage units",
     "ua-origin",
     "uba",
+    "udpsocket task source",
     "ui redressing",
     "uid",
     "uint32littleendian",
@@ -17194,6 +17307,8 @@
     "update highest scoring other bid",
     "update href",
     "update latest reading",
+    "update mesh object",
+    "update meshs",
     "update metadata algorithm",
     "update mock sensor reading",
     "update only",
@@ -17332,6 +17447,7 @@
     "user action pseudo-class",
     "user action timeout",
     "user activation",
+    "user activation map",
     "user activity",
     "user agent",
     "user agent (ua)",
@@ -17514,6 +17630,7 @@
     "validate GPUOrigin2D shape",
     "validate GPUOrigin3D shape",
     "validate a background attributionsrc eligibility",
+    "validate a bucket name",
     "validate a cssnumberish time",
     "validate a partial response",
     "validate a payment method identifier",
@@ -17530,6 +17647,7 @@
     "validate fetching response",
     "validate local type",
     "validate mlcontext",
+    "validate reporting metadata",
     "validate share data",
     "validate the state of the xrwebglsubimage creation function",
     "validate the string in context",
@@ -26768,6 +26886,40 @@
     "pictureInPictureElement",
     "pointerLockElement",
     "styleSheets"
+  ],
+  "DocumentPictureInPicture": [
+    "enter",
+    "onenter",
+    "requestWindow()",
+    "requestWindow(options)",
+    "window"
+  ],
+  "DocumentPictureInPicture/requestWindow()": [
+    "options"
+  ],
+  "DocumentPictureInPicture/requestWindow(options)": [
+    "options"
+  ],
+  "DocumentPictureInPictureEvent": [
+    "DocumentPictureInPictureEvent(type, eventInitDict)",
+    "constructor(type, eventInitDict)",
+    "window"
+  ],
+  "DocumentPictureInPictureEvent/DocumentPictureInPictureEvent(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "DocumentPictureInPictureEvent/constructor(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "DocumentPictureInPictureEventInit": [
+    "window"
+  ],
+  "DocumentPictureInPictureOptions": [
+    "copyStyleSheets",
+    "height",
+    "width"
   ],
   "DocumentTimeline": [
     "DocumentTimeline()",
@@ -36499,6 +36651,9 @@
   "NavigatorStorage": [
     "storage"
   ],
+  "NavigatorStorageBuckets": [
+    "storageBuckets"
+  ],
   "NavigatorUA": [
     "getHighEntropyValues(hints)",
     "toJSON()",
@@ -41811,6 +41966,67 @@
     "byteLength",
     "slice(start, end)"
   ],
+  "SharedStorage": [
+    "append(key, value)",
+    "clear()",
+    "delete(key)",
+    "set(key, value)",
+    "set(key, value, options)"
+  ],
+  "SharedStorage/append(key, value)": [
+    "key",
+    "value"
+  ],
+  "SharedStorage/delete(key)": [
+    "key"
+  ],
+  "SharedStorage/set(key, value)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorage/set(key, value, options)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorageOperationConstructor": [
+    "options"
+  ],
+  "SharedStorageRunOperation": [
+    "run(data)"
+  ],
+  "SharedStorageRunOperation/run(data)": [
+    "data"
+  ],
+  "SharedStorageRunOperationMethodOptions": [
+    "data",
+    "keepAlive",
+    "resolveToConfig"
+  ],
+  "SharedStorageSelectURLOperation": [
+    "run(data, urls)"
+  ],
+  "SharedStorageSelectURLOperation/run(data, urls)": [
+    "data",
+    "urls"
+  ],
+  "SharedStorageSetMethodOptions": [
+    "ignoreIfPresent"
+  ],
+  "SharedStorageUrlWithMetadata": [
+    "reportingMetadata",
+    "url"
+  ],
+  "SharedStorageWorkletGlobalScope": [
+    "operation map",
+    "outside settings",
+    "register(name, operationCtor)"
+  ],
+  "SharedStorageWorkletGlobalScope/register(name, operationCtor)": [
+    "name",
+    "operationCtor"
+  ],
   "SharedWorker": [
     "SharedWorker(scriptURL, options)",
     "error",
@@ -41831,6 +42047,10 @@
   ],
   "Slottable": [
     "assignedSlot"
+  ],
+  "SocketDnsQueryType": [
+    "ipv4",
+    "ipv6"
   ],
   "Source Text Module Records": [
     "GetExportedNames(exportStarSet)",
@@ -42202,6 +42422,51 @@
     "removeItem(key)",
     "setItem(key, value)"
   ],
+  "StorageBucket": [
+    "caches",
+    "durability value",
+    "durability()",
+    "estimate()",
+    "expiration time",
+    "expires()",
+    "getDirectory()",
+    "indexedDB",
+    "name",
+    "persist()",
+    "persisted()",
+    "quota value",
+    "setExpires(expires)"
+  ],
+  "StorageBucket/setExpires(expires)": [
+    "expires"
+  ],
+  "StorageBucketDurability": [
+    "\"relaxed\"",
+    "\"strict\""
+  ],
+  "StorageBucketManager": [
+    "delete(name)",
+    "keys()",
+    "open(name)",
+    "open(name, options)"
+  ],
+  "StorageBucketManager/delete(name)": [
+    "name"
+  ],
+  "StorageBucketManager/open(name)": [
+    "name",
+    "options"
+  ],
+  "StorageBucketManager/open(name, options)": [
+    "name",
+    "options"
+  ],
+  "StorageBucketOptions": [
+    "durability",
+    "expires",
+    "persisted",
+    "quota"
+  ],
   "StorageEstimate": [
     "quota",
     "usage"
@@ -42442,6 +42707,54 @@
   "SystemAudioPreferenceEnum": [
     "exclude",
     "include"
+  ],
+  "TCPServerSocket": [
+    "[[closedPromise]]",
+    "[[openedPromise]]",
+    "[[readable]]",
+    "close()",
+    "closed",
+    "constructor()",
+    "constructor(localAddress)",
+    "constructor(localAddress, options)",
+    "opened"
+  ],
+  "TCPServerSocketOpenInfo": [
+    "localAddress",
+    "localPort",
+    "readable"
+  ],
+  "TCPServerSocketOptions": [
+    "backlog",
+    "ipv6Only",
+    "localPort"
+  ],
+  "TCPSocket": [
+    "[[closedPromise]]",
+    "[[openedPromise]]",
+    "[[readable]]",
+    "[[writable]]",
+    "close()",
+    "closed",
+    "constructor()",
+    "constructor(remoteAddress, remotePort)",
+    "constructor(remoteAddress, remotePort, options)",
+    "opened"
+  ],
+  "TCPSocketOpenInfo": [
+    "localAddress",
+    "localPort",
+    "readable",
+    "remoteAddress",
+    "remotePort",
+    "writable"
+  ],
+  "TCPSocketOptions": [
+    "dnsQueryType",
+    "keepAliveDelay",
+    "noDelay",
+    "receiveBufferSize",
+    "sendBufferSize"
   ],
   "Table": [
     "Table(descriptor)",
@@ -43255,6 +43568,41 @@
     "brands",
     "mobile",
     "platform"
+  ],
+  "UDPMessage": [
+    "data",
+    "dnsQueryType",
+    "remoteAddress",
+    "remotePort"
+  ],
+  "UDPSocket": [
+    "[[closedPromise]]",
+    "[[openedPromise]]",
+    "[[readable]]",
+    "[[writable]]",
+    "close()",
+    "closed",
+    "constructor()",
+    "constructor(options)",
+    "opened"
+  ],
+  "UDPSocketOpenInfo": [
+    "localAddress",
+    "localPort",
+    "readable",
+    "remoteAddress",
+    "remotePort",
+    "writable"
+  ],
+  "UDPSocketOptions": [
+    "dnsQueryType",
+    "ipv6Only",
+    "localAddress",
+    "localPort",
+    "receiveBufferSize",
+    "remoteAddress",
+    "remotePort",
+    "sendBufferSize"
   ],
   "UIEvent": [
     "UIEvent(type)",
@@ -45125,6 +45473,8 @@
     "deviceorientation",
     "deviceorientationabsolute",
     "document",
+    "documentPictureInPicture",
+    "documentpictureinpicture api",
     "error",
     "event",
     "eventcounts",
@@ -45496,6 +45846,35 @@
   "WindowSessionStorage": [
     "sessionStorage"
   ],
+  "WindowSharedStorage": [
+    "append(key, value)",
+    "clear()",
+    "delete(key)",
+    "run(name)",
+    "run(name, options)",
+    "selectURL(name, urls)",
+    "selectURL(name, urls, options)",
+    "set(key, value, options)",
+    "worklet"
+  ],
+  "WindowSharedStorage/run(name)": [
+    "name",
+    "options"
+  ],
+  "WindowSharedStorage/run(name, options)": [
+    "name",
+    "options"
+  ],
+  "WindowSharedStorage/selectURL(name, urls)": [
+    "name",
+    "options",
+    "urls"
+  ],
+  "WindowSharedStorage/selectURL(name, urls, options)": [
+    "name",
+    "options",
+    "urls"
+  ],
   "Worker": [
     "Worker(scriptURL, options)",
     "error",
@@ -45631,6 +46010,24 @@
   ],
   "WorkletOptions": [
     "credentials"
+  ],
+  "WorkletSharedStorage": [
+    "append(key, value)",
+    "clear()",
+    "delete(key)",
+    "get(key)",
+    "length()",
+    "remainingBudget()",
+    "set(key, value, options)"
+  ],
+  "WorkletSharedStorage/get(key)": [
+    "key"
+  ],
+  "WorkletSharedStorageIterator": [
+    "asynchronous iterator initialization steps",
+    "error",
+    "get the next iteration result",
+    "pending entries"
   ],
   "WritableStream": [
     "WritableStream()",
@@ -46123,6 +46520,7 @@
     "apply frame updates",
     "apply gamepad frame updates",
     "createAnchor(pose, space)",
+    "detectedMeshs",
     "fillJointRadii(jointSpaces, radii)",
     "fillPoses(spaces, baseSpace, transforms)",
     "getDepthInformation(view)",
@@ -46448,6 +46846,15 @@
     "transform",
     "width"
   ],
+  "XRMesh": [
+    "frame",
+    "indices",
+    "lastChangedTime",
+    "meshSpace",
+    "native entity",
+    "semanticLabel",
+    "vertices"
+  ],
   "XRPermissionDescriptor": [
     "mode",
     "optionalFeatures",
@@ -46695,6 +47102,7 @@
     "set of active hit test sources for transient input",
     "set of granted features",
     "set of tracked anchors",
+    "set of tracked meshs",
     "squeeze",
     "squeezeend",
     "squeezestart",
@@ -47835,6 +48243,11 @@
     "state override",
     "url"
   ],
+  "bit debit": [
+    "bits",
+    "expired",
+    "timestamp"
+  ],
   "blob URL entry": [
     "environment",
     "object"
@@ -48318,6 +48731,9 @@
   "calculation tree": [
     "calc-operator nodes",
     "operator nodes"
+  ],
+  "calling origin": [
+    "remaining navigation budget"
   ],
   "canvas": [
     "height",
@@ -49394,8 +49810,10 @@
   ],
   "entry": [
     "file system",
+    "key",
     "name",
-    "root"
+    "root",
+    "value struct"
   ],
   "entry list": [
     "create an entry",
@@ -51213,6 +51631,7 @@
     "small kana"
   ],
   "key": [
+    "maximum length",
     "type",
     "value"
   ],
@@ -52769,6 +53188,7 @@
     "bluetooth",
     "default allowlist",
     "default allowlists",
+    "direct-sockets",
     "private-state-token-issuance",
     "private-state-token-redemption",
     "serial"
@@ -53676,6 +54096,9 @@
     "username",
     "work"
   ],
+  "selectURL": [
+    "input url list"
+  ],
   "selector": [
     "combinator",
     "subject",
@@ -53836,6 +54259,18 @@
     "margin-box",
     "none",
     "padding-box"
+  ],
+  "shared storage database": [
+    "clear all entries in the database",
+    "count entries in the database",
+    "delete an entry from the database",
+    "determine whether an entry is expired",
+    "entry",
+    "purge expired entries from the database",
+    "retrieve all entries from the database",
+    "retrieve an entry from the database",
+    "shared storage database queue",
+    "store an entry in the database"
   ],
   "she": [
     "directive state"
@@ -54012,6 +54447,10 @@
     "map",
     "proxy map reference set",
     "quota"
+  ],
+  "storage bucket": [
+    "removed",
+    "storage usage"
   ],
   "storage endpoint": [
     "identifier",
@@ -55198,8 +55637,15 @@
   "validate and convert auction ad config": [
     "istoplevel"
   ],
+  "value": [
+    "maximum length"
+  ],
   "value pair": [
     "key",
+    "value"
+  ],
+  "value struct": [
+    "last updated",
     "value"
   ],
   "value-with-size": [
