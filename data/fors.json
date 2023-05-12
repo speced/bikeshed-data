@@ -3348,8 +3348,6 @@
     "RTCInboundRtpStreamStats",
     "RTCLocalSessionDescriptionInit",
     "RTCMediaSourceStats",
-    "RTCMediaStreamStats",
-    "RTCMediaStreamTrackStats",
     "RTCOfferAnswerOptions",
     "RTCOfferOptions",
     "RTCOutboundRtpStreamStats",
@@ -6868,6 +6866,7 @@
     "constructor steps",
     "constructor string parser",
     "consume a block",
+    "consume a block's contents",
     "consume a component value",
     "consume a data type name",
     "consume a declaration",
@@ -38652,7 +38651,6 @@
   "RTCCodecStats": [
     "channels",
     "clockRate",
-    "implementation",
     "mimeType",
     "payloadType",
     "sdpFmtpLine",
@@ -38931,7 +38929,6 @@
     "bytesSent",
     "consentRequestsSent",
     "currentRoundTripTime",
-    "currentRtt",
     "lastPacketReceivedTimestamp",
     "lastPacketSentTimestamp",
     "localCandidateId",
@@ -38939,7 +38936,6 @@
     "packetsDiscardedOnSend",
     "packetsReceived",
     "packetsSent",
-    "priority",
     "remoteCandidateId",
     "requestsReceived",
     "requestsSent",
@@ -38947,15 +38943,12 @@
     "responsesSent",
     "state",
     "totalRoundTripTime",
-    "totalRtt",
     "transportId"
   ],
   "RTCIceCandidateStats": [
     "address",
     "candidateType",
-    "deleted",
     "foundation",
-    "isRemote",
     "port",
     "priority",
     "protocol",
@@ -39120,7 +39113,6 @@
     "fecPacketsDiscarded",
     "fecPacketsReceived",
     "firCount",
-    "fractionLost",
     "frameHeight",
     "frameWidth",
     "framesAssembledFromMultiplePackets",
@@ -39162,7 +39154,6 @@
     "totalSamplesDuration",
     "totalSamplesReceived",
     "totalSquaredInterFrameDelay",
-    "trackId",
     "trackIdentifier"
   ],
   "RTCLocalSessionDescriptionInit": [
@@ -39171,42 +39162,6 @@
   ],
   "RTCMediaSourceStats": [
     "kind",
-    "trackIdentifier"
-  ],
-  "RTCMediaStreamStats": [
-    "streamIdentifier",
-    "trackIds"
-  ],
-  "RTCMediaStreamTrackStats": [
-    "audioLevel",
-    "concealedSamples",
-    "concealmentEvents",
-    "echoReturnLoss",
-    "echoReturnLossEnhancement",
-    "ended",
-    "estimatedPlayoutTimestamp",
-    "frameHeight",
-    "frameWidth",
-    "framesCaptured",
-    "framesDecoded",
-    "framesDropped",
-    "framesPerSecond",
-    "framesReceived",
-    "framesSent",
-    "hugeFramesSent",
-    "insertedSamplesForDeceleration",
-    "jitterBufferDelay",
-    "jitterBufferEmittedCount",
-    "keyFramesReceived",
-    "keyFramesSent",
-    "kind",
-    "priority",
-    "remoteSource",
-    "removedSamplesForAcceleration",
-    "silentConcealedSamples",
-    "totalAudioEnergy",
-    "totalSamplesDuration",
-    "totalSamplesReceived",
     "trackIdentifier"
   ],
   "RTCOfferOptions": [
@@ -39243,8 +39198,7 @@
     "targetBitrate",
     "totalEncodeTime",
     "totalEncodedBytesTarget",
-    "totalPacketSendDelay",
-    "trackId"
+    "totalPacketSendDelay"
   ],
   "RTCPeerConnection": [
     "[[Configuration]]",
@@ -39600,7 +39554,6 @@
   "RTCRtpStreamStats": [
     "codecId",
     "kind",
-    "mediaType",
     "ssrc",
     "transportId"
   ],
@@ -39711,8 +39664,6 @@
     "remote-candidate",
     "remote-inbound-rtp",
     "remote-outbound-rtp",
-    "stream",
-    "track",
     "transport"
   ],
   "RTCTrackEvent": [
