@@ -5225,6 +5225,9 @@
   "#sec-string.prototype.indexof": [
     "/text-processing#sec-string.prototype.indexof"
   ],
+  "#sec-string.prototype.iswellformed": [
+    "/text-processing#sec-string.prototype.iswellformed"
+  ],
   "#sec-string.prototype.lastindexof": [
     "/text-processing#sec-string.prototype.lastindexof"
   ],
@@ -5284,6 +5287,9 @@
   ],
   "#sec-string.prototype.touppercase": [
     "/text-processing#sec-string.prototype.touppercase"
+  ],
+  "#sec-string.prototype.towellformed": [
+    "/text-processing#sec-string.prototype.towellformed"
   ],
   "#sec-string.prototype.trim": [
     "/text-processing#sec-string.prototype.trim"
@@ -21184,7 +21190,7 @@
   },
   "/text-processing#sec-getsubstitution": {
     "current": {
-      "number": "22.1.3.18.1",
+      "number": "22.1.3.19.1",
       "spec": "ECMAScript",
       "text": "GetSubstitution ( matched, str, position, captures, namedCaptures, replacementTemplate )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getsubstitution"
@@ -21648,7 +21654,7 @@
   },
   "/text-processing#sec-string.prototype-%40%40iterator": {
     "current": {
-      "number": "22.1.3.34",
+      "number": "22.1.3.36",
       "spec": "ECMAScript",
       "text": "String.prototype [ @@iterator ] ( )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype-%40%40iterator"
@@ -21726,9 +21732,17 @@
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.indexof"
     }
   },
-  "/text-processing#sec-string.prototype.lastindexof": {
+  "/text-processing#sec-string.prototype.iswellformed": {
     "current": {
       "number": "22.1.3.10",
+      "spec": "ECMAScript",
+      "text": "String.prototype.isWellFormed ( )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.iswellformed"
+    }
+  },
+  "/text-processing#sec-string.prototype.lastindexof": {
+    "current": {
+      "number": "22.1.3.11",
       "spec": "ECMAScript",
       "text": "String.prototype.lastIndexOf ( searchString [ , position ] )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.lastindexof"
@@ -21736,7 +21750,7 @@
   },
   "/text-processing#sec-string.prototype.localecompare": {
     "current": {
-      "number": "22.1.3.11",
+      "number": "22.1.3.12",
       "spec": "ECMAScript",
       "text": "String.prototype.localeCompare ( that [ , reserved1 [ , reserved2 ] ] )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.localecompare"
@@ -21744,7 +21758,7 @@
   },
   "/text-processing#sec-string.prototype.match": {
     "current": {
-      "number": "22.1.3.12",
+      "number": "22.1.3.13",
       "spec": "ECMAScript",
       "text": "String.prototype.match ( regexp )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.match"
@@ -21752,7 +21766,7 @@
   },
   "/text-processing#sec-string.prototype.matchall": {
     "current": {
-      "number": "22.1.3.13",
+      "number": "22.1.3.14",
       "spec": "ECMAScript",
       "text": "String.prototype.matchAll ( regexp )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.matchall"
@@ -21760,7 +21774,7 @@
   },
   "/text-processing#sec-string.prototype.normalize": {
     "current": {
-      "number": "22.1.3.14",
+      "number": "22.1.3.15",
       "spec": "ECMAScript",
       "text": "String.prototype.normalize ( [ form ] )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.normalize"
@@ -21768,7 +21782,7 @@
   },
   "/text-processing#sec-string.prototype.padend": {
     "current": {
-      "number": "22.1.3.15",
+      "number": "22.1.3.16",
       "spec": "ECMAScript",
       "text": "String.prototype.padEnd ( maxLength [ , fillString ] )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.padend"
@@ -21776,7 +21790,7 @@
   },
   "/text-processing#sec-string.prototype.padstart": {
     "current": {
-      "number": "22.1.3.16",
+      "number": "22.1.3.17",
       "spec": "ECMAScript",
       "text": "String.prototype.padStart ( maxLength [ , fillString ] )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.padstart"
@@ -21784,7 +21798,7 @@
   },
   "/text-processing#sec-string.prototype.repeat": {
     "current": {
-      "number": "22.1.3.17",
+      "number": "22.1.3.18",
       "spec": "ECMAScript",
       "text": "String.prototype.repeat ( count )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.repeat"
@@ -21792,7 +21806,7 @@
   },
   "/text-processing#sec-string.prototype.replace": {
     "current": {
-      "number": "22.1.3.18",
+      "number": "22.1.3.19",
       "spec": "ECMAScript",
       "text": "String.prototype.replace ( searchValue, replaceValue )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.replace"
@@ -21800,7 +21814,7 @@
   },
   "/text-processing#sec-string.prototype.replaceall": {
     "current": {
-      "number": "22.1.3.19",
+      "number": "22.1.3.20",
       "spec": "ECMAScript",
       "text": "String.prototype.replaceAll ( searchValue, replaceValue )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.replaceall"
@@ -21808,7 +21822,7 @@
   },
   "/text-processing#sec-string.prototype.search": {
     "current": {
-      "number": "22.1.3.20",
+      "number": "22.1.3.21",
       "spec": "ECMAScript",
       "text": "String.prototype.search ( regexp )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.search"
@@ -21816,7 +21830,7 @@
   },
   "/text-processing#sec-string.prototype.slice": {
     "current": {
-      "number": "22.1.3.21",
+      "number": "22.1.3.22",
       "spec": "ECMAScript",
       "text": "String.prototype.slice ( start, end )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.slice"
@@ -21824,7 +21838,7 @@
   },
   "/text-processing#sec-string.prototype.split": {
     "current": {
-      "number": "22.1.3.22",
+      "number": "22.1.3.23",
       "spec": "ECMAScript",
       "text": "String.prototype.split ( separator, limit )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.split"
@@ -21832,7 +21846,7 @@
   },
   "/text-processing#sec-string.prototype.startswith": {
     "current": {
-      "number": "22.1.3.23",
+      "number": "22.1.3.24",
       "spec": "ECMAScript",
       "text": "String.prototype.startsWith ( searchString [ , position ] )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.startswith"
@@ -21840,7 +21854,7 @@
   },
   "/text-processing#sec-string.prototype.substring": {
     "current": {
-      "number": "22.1.3.24",
+      "number": "22.1.3.25",
       "spec": "ECMAScript",
       "text": "String.prototype.substring ( start, end )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.substring"
@@ -21848,7 +21862,7 @@
   },
   "/text-processing#sec-string.prototype.tolocalelowercase": {
     "current": {
-      "number": "22.1.3.25",
+      "number": "22.1.3.26",
       "spec": "ECMAScript",
       "text": "String.prototype.toLocaleLowerCase ( [ reserved1 [ , reserved2 ] ] )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.tolocalelowercase"
@@ -21856,7 +21870,7 @@
   },
   "/text-processing#sec-string.prototype.tolocaleuppercase": {
     "current": {
-      "number": "22.1.3.26",
+      "number": "22.1.3.27",
       "spec": "ECMAScript",
       "text": "String.prototype.toLocaleUpperCase ( [ reserved1 [ , reserved2 ] ] )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.tolocaleuppercase"
@@ -21864,7 +21878,7 @@
   },
   "/text-processing#sec-string.prototype.tolowercase": {
     "current": {
-      "number": "22.1.3.27",
+      "number": "22.1.3.28",
       "spec": "ECMAScript",
       "text": "String.prototype.toLowerCase ( )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.tolowercase"
@@ -21872,7 +21886,7 @@
   },
   "/text-processing#sec-string.prototype.tostring": {
     "current": {
-      "number": "22.1.3.28",
+      "number": "22.1.3.29",
       "spec": "ECMAScript",
       "text": "String.prototype.toString ( )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.tostring"
@@ -21880,15 +21894,23 @@
   },
   "/text-processing#sec-string.prototype.touppercase": {
     "current": {
-      "number": "22.1.3.29",
+      "number": "22.1.3.30",
       "spec": "ECMAScript",
       "text": "String.prototype.toUpperCase ( )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.touppercase"
     }
   },
+  "/text-processing#sec-string.prototype.towellformed": {
+    "current": {
+      "number": "22.1.3.31",
+      "spec": "ECMAScript",
+      "text": "String.prototype.toWellFormed ( )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.towellformed"
+    }
+  },
   "/text-processing#sec-string.prototype.trim": {
     "current": {
-      "number": "22.1.3.30",
+      "number": "22.1.3.32",
       "spec": "ECMAScript",
       "text": "String.prototype.trim ( )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.trim"
@@ -21896,7 +21918,7 @@
   },
   "/text-processing#sec-string.prototype.trimend": {
     "current": {
-      "number": "22.1.3.31",
+      "number": "22.1.3.33",
       "spec": "ECMAScript",
       "text": "String.prototype.trimEnd ( )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.trimend"
@@ -21904,7 +21926,7 @@
   },
   "/text-processing#sec-string.prototype.trimstart": {
     "current": {
-      "number": "22.1.3.32",
+      "number": "22.1.3.34",
       "spec": "ECMAScript",
       "text": "String.prototype.trimStart ( )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.trimstart"
@@ -21912,7 +21934,7 @@
   },
   "/text-processing#sec-string.prototype.valueof": {
     "current": {
-      "number": "22.1.3.33",
+      "number": "22.1.3.35",
       "spec": "ECMAScript",
       "text": "String.prototype.valueOf ( )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.valueof"
@@ -21928,7 +21950,7 @@
   },
   "/text-processing#sec-stringpad": {
     "current": {
-      "number": "22.1.3.16.1",
+      "number": "22.1.3.17.1",
       "spec": "ECMAScript",
       "text": "StringPad ( O, maxLength, fillString, placement )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad"
@@ -21944,7 +21966,7 @@
   },
   "/text-processing#sec-tozeropaddeddecimalstring": {
     "current": {
-      "number": "22.1.3.16.2",
+      "number": "22.1.3.17.2",
       "spec": "ECMAScript",
       "text": "ToZeroPaddedDecimalString ( n, minLength )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-tozeropaddeddecimalstring"
@@ -21952,7 +21974,7 @@
   },
   "/text-processing#sec-trimstring": {
     "current": {
-      "number": "22.1.3.30.1",
+      "number": "22.1.3.32.1",
       "spec": "ECMAScript",
       "text": "TrimString ( string, where )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-trimstring"
