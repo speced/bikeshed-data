@@ -6315,6 +6315,7 @@
     "check if a window feature is set",
     "check if an access between two browsing contexts should be reported",
     "check if an attribution source can create aggregatable contributions",
+    "check if an attribution source exceeds the time-based destination limits",
     "check if an attribution source exceeds the unexpired destination limit",
     "check if an attribution trigger contains aggregatable data",
     "check if an origin is suitable",
@@ -7943,6 +7944,8 @@
     "destination",
     "destination browsing context",
     "destination node",
+    "destination rate-limit result",
+    "destination rate-limit window",
     "destination-atop",
     "destination-in",
     "destination-out",
@@ -11740,6 +11743,7 @@
     "max cross size",
     "max cross size property",
     "max destinations covered by unexpired sources",
+    "max destinations per rate-limit window",
     "max entries per filter data",
     "max event-level reports per attribution destination",
     "max height",
@@ -11754,6 +11758,7 @@
     "max size property",
     "max source expiry",
     "max source reporting origins per rate-limit window",
+    "max source reporting origins per source reporting site",
     "max track sizing function",
     "max values per filter data entry",
     "max width",
@@ -12869,6 +12874,7 @@
     "origin",
     "origin color",
     "origin private file system",
+    "origin rate-limit window",
     "origin time",
     "origin-agent-cluster",
     "origin-bound one-time code",
@@ -49538,6 +49544,11 @@
   "destination": [
     "translate"
   ],
+  "destination rate-limit result": [
+    "allowed",
+    "hit global limit",
+    "hit reporting limit"
+  ],
   "details": [
     "open"
   ],
@@ -54344,6 +54355,7 @@
   ],
   "source debug data type": [
     "source-destination-limit",
+    "source-destination-rate-limit",
     "source-noised",
     "source-storage-limit",
     "source-success",
