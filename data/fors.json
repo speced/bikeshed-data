@@ -4973,11 +4973,12 @@
     "ancestor-source-list",
     "anchor",
     "anchor element",
-    "anchor function",
+    "anchor functions",
     "anchor name",
     "anchor node selection algorithm",
     "anchor point",
-    "anchor query",
+    "anchor positioning",
+    "anchor specifier",
     "anchor unit",
     "anchor()",
     "anchor-default",
@@ -5477,6 +5478,7 @@
     "autogaincontrol",
     "automated install prompt",
     "automatic",
+    "automatic anchor fallbacks",
     "automatic anchor positioning",
     "automatic block size",
     "automatic column position",
@@ -10503,7 +10505,6 @@
     "initializing",
     "initializing axes",
     "initializing buttons",
-    "initially stale",
     "initiate remote playback",
     "initiate the drag-and-drop operation",
     "initiator",
@@ -10752,7 +10753,8 @@
     "intrinsic-sizes-invalid",
     "intrinsic-sizes-valid",
     "invalid",
-    "invalid anchor query",
+    "invalid anchor function",
+    "invalid anchor-size function",
     "invalid argument",
     "invalid at computed-value time",
     "invalid color",
@@ -12281,7 +12283,6 @@
     "naively converted to cmyk",
     "naively converted to rgba",
     "name",
-    "name attachment",
     "name discovery procedure",
     "name of the webassembly function",
     "name to cache map",
@@ -13639,6 +13640,7 @@
     "position fallback list",
     "position state",
     "position-fallback",
+    "position-fallback-bounds",
     "positional alignment",
     "positioned",
     "positioned box",
@@ -15313,7 +15315,6 @@
     "scroll-start-x",
     "scroll-start-y",
     "scroll-timeline",
-    "scroll-timeline-attachment",
     "scroll-timeline-axis",
     "scroll-timeline-name",
     "scrollable overflow",
@@ -16904,6 +16905,7 @@
     "timeline duration",
     "timeline offset",
     "timeline time to origin-relative time",
+    "timeline-scope",
     "timelinebegin",
     "timeout",
     "timeouts configuration",
@@ -17577,7 +17579,8 @@
     "uv coordinates",
     "uvretries",
     "valid",
-    "valid anchor query",
+    "valid anchor function",
+    "valid anchor-size function",
     "valid audio configuration",
     "valid audio mime type",
     "valid audiodatainit",
@@ -17805,7 +17808,6 @@
     "view transitions",
     "view()",
     "view-timeline",
-    "view-timeline-attachment",
     "view-timeline-axis",
     "view-timeline-inset",
     "view-timeline-name",
@@ -41459,9 +41461,7 @@
   ],
   "ScrollAxis": [
     "\"block\"",
-    "\"horizontal\"",
     "\"inline\"",
-    "\"vertical\"",
     "\"x\"",
     "\"y\""
   ],
@@ -53260,6 +53260,9 @@
   "position-fallback": [
     "none"
   ],
+  "position-fallback-bounds": [
+    "normal"
+  ],
   "powerful feature": [
     "aspects",
     "default permission state",
@@ -53924,12 +53927,10 @@
   ],
   "scroll()": [
     "block",
-    "horizontal",
     "inline",
     "nearest",
     "root",
     "self",
-    "vertical",
     "x",
     "y"
   ],
@@ -54031,19 +54032,12 @@
     "end",
     "start"
   ],
-  "scroll-timeline-attachment": [
-    "ancestor",
-    "defer",
-    "local"
-  ],
   "scroll-timeline-axis": [
     "block",
-    "horizontal",
     "inline",
     "nearest",
     "root",
     "self",
-    "vertical",
     "x",
     "y"
   ],
@@ -55312,6 +55306,9 @@
   "timeline": [
     "current time"
   ],
+  "timeline-scope": [
+    "none"
+  ],
   "to I/O queue": [
     "convert"
   ],
@@ -55754,19 +55751,12 @@
     "requested viewport scale",
     "viewport modifiable"
   ],
-  "view-timeline-attachment": [
-    "ancestor",
-    "defer",
-    "local"
-  ],
   "view-timeline-axis": [
     "block",
-    "horizontal",
     "inline",
     "nearest",
     "root",
     "self",
-    "vertical",
     "x",
     "y"
   ],
