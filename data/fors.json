@@ -1171,6 +1171,8 @@
     "AutomationRate",
     "AutoplayPolicy",
     "AutoplayPolicyMediaType",
+    "AvailableNamedTimeZoneIdentifiers",
+    "AvailableNamedTimeZoneIdentifiers()",
     "AvcBitstreamFormat",
     "AvcEncoderConfig",
     "Await",
@@ -1692,8 +1694,6 @@
     "DecompressionStream",
     "DedicatedWorkerGlobalScope",
     "Default",
-    "DefaultTimeZone",
-    "DefaultTimeZone()",
     "Define an inherited policy for feature in container at origin",
     "DefineField",
     "DefineField(receiver, fieldRecord)",
@@ -2412,6 +2412,8 @@
     "IIRFilterOptions",
     "IdentityCredential",
     "IdentityCredentialRequestOptions",
+    "IdentityCredentialRequestOptionsContext",
+    "IdentityProvider",
     "IdentityProviderAPIConfig",
     "IdentityProviderAccount",
     "IdentityProviderAccountList",
@@ -2421,6 +2423,7 @@
     "IdentityProviderIcon",
     "IdentityProviderToken",
     "IdentityProviderWellKnown",
+    "IdentityUserInfo",
     "IdleDeadline",
     "IdleDetector",
     "IdleOptions",
@@ -3932,6 +3935,8 @@
     "SyncManager",
     "SyntaxError",
     "SystemAudioPreferenceEnum",
+    "SystemTimeZoneIdentifier",
+    "SystemTimeZoneIdentifier()",
     "TCPServerSocket",
     "TCPServerSocketOpenInfo",
     "TCPServerSocketOptions",
@@ -7129,7 +7134,6 @@
     "coordinating list property group",
     "copy",
     "copy a namespace prefix map",
-    "copy css style sheets to document picture-in-picture algorithm",
     "copy prefetch cookies",
     "copy secondary buffer",
     "copy-compatible",
@@ -13854,13 +13858,14 @@
     "process a base url string",
     "process a color member",
     "process a file handler item",
+    "process a general storage access for bounce tracking mitigations",
     "process a key action",
     "process a keyframe-like object",
     "process a keyframes argument",
     "process a link header",
     "process a miniapp manifest",
     "process a miniapp package",
-    "process a network cookie access for bounce tracking mitigations",
+    "process a navigation storage access for bounce tracking mitigations",
     "process a null action",
     "process a pause action",
     "process a pointer action",
@@ -14245,6 +14250,7 @@
     "rdf/xml document",
     "rdf:html",
     "rdf:xmlliteral",
+    "rdfc-1.0",
     "rdfd1",
     "rdfd2",
     "rdfdataset-add-graph",
@@ -26969,7 +26975,6 @@
     "window"
   ],
   "DocumentPictureInPictureOptions": [
-    "copyStyleSheets",
     "height",
     "width"
   ],
@@ -27078,6 +27083,10 @@
     "asyncgenerator prototype object",
     "asyncgeneratorrequest",
     "asyncgeneratorrequests",
+    "available named time zone",
+    "available named time zone identifier",
+    "available named time zone identifiers",
+    "available named time zones",
     "bigint type",
     "boolean type",
     "bound function exotic object",
@@ -27234,6 +27243,8 @@
     "module record",
     "module records",
     "nativeerror prototype object",
+    "non-primary time zone identifier",
+    "non-primary time zone identifiers",
     "non-strict code",
     "non-strict function",
     "non-strict functions",
@@ -27246,10 +27257,14 @@
     "object environment record",
     "object environment records",
     "object type",
+    "offset time zone",
+    "offset time zones",
     "ordinary object",
     "ordinary objects",
     "possible read values",
     "prepared to evaluate ecmascript code",
+    "primary time zone identifier",
+    "primary time zone identifiers",
     "private name",
     "private names",
     "privateelement",
@@ -27329,6 +27344,11 @@
     "throw completions",
     "time value",
     "time values",
+    "time zone aware",
+    "time zone identifier",
+    "time zone identifier record",
+    "time zone identifier records",
+    "time zone identifiers",
     "trailing surrogate",
     "trailing surrogates",
     "typedarray element type",
@@ -32648,7 +32668,20 @@
     "sameOriginWithAncestors"
   ],
   "IdentityCredentialRequestOptions": [
+    "context",
     "providers"
+  ],
+  "IdentityCredentialRequestOptionsContext": [
+    "\"continue\"",
+    "\"signin\"",
+    "\"signup\"",
+    "\"use\""
+  ],
+  "IdentityProvider": [
+    "getUserInfo(config)"
+  ],
+  "IdentityProvider/getUserInfo(config)": [
+    "config"
   ],
   "IdentityProviderAPIConfig": [
     "accounts_endpoint",
@@ -32661,6 +32694,7 @@
     "email",
     "given_name",
     "id",
+    "login_hints",
     "name",
     "picture"
   ],
@@ -32680,6 +32714,7 @@
   "IdentityProviderConfig": [
     "clientId",
     "configURL",
+    "loginHint",
     "nonce"
   ],
   "IdentityProviderIcon": [
@@ -32691,6 +32726,12 @@
   ],
   "IdentityProviderWellKnown": [
     "provider_urls"
+  ],
+  "IdentityUserInfo": [
+    "email",
+    "givenName",
+    "name",
+    "picture"
   ],
   "IdleDeadline": [
     "didTimeout",
@@ -44830,6 +44871,7 @@
     "format",
     "layout",
     "timestamp",
+    "transfer",
     "visibleRect"
   ],
   "VideoFrameCallbackMetadata": [

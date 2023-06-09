@@ -821,6 +821,9 @@
   "#sec-automatic-semicolon-insertion": [
     "/ecmascript-language-lexical-grammar#sec-automatic-semicolon-insertion"
   ],
+  "#sec-availablenamedtimezoneidentifiers": [
+    "/numbers-and-dates#sec-availablenamedtimezoneidentifiers"
+  ],
   "#sec-backreference-matcher": [
     "/text-processing#sec-backreference-matcher"
   ],
@@ -1633,9 +1636,6 @@
   ],
   "#sec-decodeuricomponent-encodeduricomponent": [
     "/global-object#sec-decodeuricomponent-encodeduricomponent"
-  ],
-  "#sec-defaulttimezone": [
-    "/numbers-and-dates#sec-defaulttimezone"
   ],
   "#sec-definefield": [
     "/abstract-operations#sec-definefield"
@@ -5468,6 +5468,9 @@
   "#sec-syntax-directed-operations-scope-analysis": [
     "/syntax-directed-operations#sec-syntax-directed-operations-scope-analysis"
   ],
+  "#sec-systemtimezoneidentifier": [
+    "/numbers-and-dates#sec-systemtimezoneidentifier"
+  ],
   "#sec-tagged-templates": [
     "/ecmascript-language-expressions#sec-tagged-templates"
   ],
@@ -5587,6 +5590,12 @@
   ],
   "#sec-time-values-and-time-range": [
     "/numbers-and-dates#sec-time-values-and-time-range"
+  ],
+  "#sec-time-zone-identifier-record": [
+    "/numbers-and-dates#sec-time-zone-identifier-record"
+  ],
+  "#sec-time-zone-identifiers": [
+    "/numbers-and-dates#sec-time-zone-identifiers"
   ],
   "#sec-time-zone-offset-strings": [
     "/numbers-and-dates#sec-time-zone-offset-strings"
@@ -16748,6 +16757,14 @@
       "url": "https://tc39.es/ecma262/multipage/notational-conventions.html#sec-value-notation"
     }
   },
+  "/numbers-and-dates#sec-availablenamedtimezoneidentifiers": {
+    "current": {
+      "number": "21.4.1.12",
+      "spec": "ECMAScript",
+      "text": "AvailableNamedTimeZoneIdentifiers ( )",
+      "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-availablenamedtimezoneidentifiers"
+    }
+  },
   "/numbers-and-dates#sec-bigint-constructor": {
     "current": {
       "number": "21.2.1",
@@ -16870,7 +16887,7 @@
   },
   "/numbers-and-dates#sec-date-time-string-format": {
     "current": {
-      "number": "21.4.1.18",
+      "number": "21.4.1.21",
       "spec": "ECMAScript",
       "text": "Date Time String Format",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-time-string-format"
@@ -17284,17 +17301,9 @@
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-day-number-and-time-within-day"
     }
   },
-  "/numbers-and-dates#sec-defaulttimezone": {
-    "current": {
-      "number": "21.4.1.10",
-      "spec": "ECMAScript",
-      "text": "DefaultTimeZone ( )",
-      "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-defaulttimezone"
-    }
-  },
   "/numbers-and-dates#sec-expanded-years": {
     "current": {
-      "number": "21.4.1.18.1",
+      "number": "21.4.1.21.1",
       "spec": "ECMAScript",
       "text": "Expanded Years",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-expanded-years"
@@ -17310,7 +17319,7 @@
   },
   "/numbers-and-dates#sec-getnamedtimezoneepochnanoseconds": {
     "current": {
-      "number": "21.4.1.8",
+      "number": "21.4.1.9",
       "spec": "ECMAScript",
       "text": "GetNamedTimeZoneEpochNanoseconds ( timeZoneIdentifier, year, month, day, hour, minute, second, millisecond, microsecond, nanosecond )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-getnamedtimezoneepochnanoseconds"
@@ -17318,7 +17327,7 @@
   },
   "/numbers-and-dates#sec-getnamedtimezoneoffsetnanoseconds": {
     "current": {
-      "number": "21.4.1.9",
+      "number": "21.4.1.10",
       "spec": "ECMAScript",
       "text": "GetNamedTimeZoneOffsetNanoseconds ( timeZoneIdentifier, epochNanoseconds )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-getnamedtimezoneoffsetnanoseconds"
@@ -17334,7 +17343,7 @@
   },
   "/numbers-and-dates#sec-hours-minutes-second-and-milliseconds": {
     "current": {
-      "number": "21.4.1.13",
+      "number": "21.4.1.16",
       "spec": "ECMAScript",
       "text": "Hours, Minutes, Second, and Milliseconds",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-hours-minutes-second-and-milliseconds"
@@ -17342,7 +17351,7 @@
   },
   "/numbers-and-dates#sec-istimezoneoffsetstring": {
     "current": {
-      "number": "21.4.1.19.1",
+      "number": "21.4.1.22.1",
       "spec": "ECMAScript",
       "text": "IsTimeZoneOffsetString ( offsetString )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-istimezoneoffsetstring"
@@ -17350,7 +17359,7 @@
   },
   "/numbers-and-dates#sec-localtime": {
     "current": {
-      "number": "21.4.1.11",
+      "number": "21.4.1.14",
       "spec": "ECMAScript",
       "text": "LocalTime ( t )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-localtime"
@@ -17358,7 +17367,7 @@
   },
   "/numbers-and-dates#sec-makedate": {
     "current": {
-      "number": "21.4.1.16",
+      "number": "21.4.1.19",
       "spec": "ECMAScript",
       "text": "MakeDate ( day, time )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-makedate"
@@ -17366,7 +17375,7 @@
   },
   "/numbers-and-dates#sec-makeday": {
     "current": {
-      "number": "21.4.1.15",
+      "number": "21.4.1.18",
       "spec": "ECMAScript",
       "text": "MakeDay ( year, month, date )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-makeday"
@@ -17374,7 +17383,7 @@
   },
   "/numbers-and-dates#sec-maketime": {
     "current": {
-      "number": "21.4.1.14",
+      "number": "21.4.1.17",
       "spec": "ECMAScript",
       "text": "MakeTime ( hour, min, sec, ms )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-maketime"
@@ -17974,7 +17983,7 @@
   },
   "/numbers-and-dates#sec-parsetimezoneoffsetstring": {
     "current": {
-      "number": "21.4.1.19.2",
+      "number": "21.4.1.22.2",
       "spec": "ECMAScript",
       "text": "ParseTimeZoneOffsetString ( offsetString )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-parsetimezoneoffsetstring"
@@ -18044,6 +18053,14 @@
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-properties-of-the-number-prototype-object"
     }
   },
+  "/numbers-and-dates#sec-systemtimezoneidentifier": {
+    "current": {
+      "number": "21.4.1.13",
+      "spec": "ECMAScript",
+      "text": "SystemTimeZoneIdentifier ( )",
+      "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-systemtimezoneidentifier"
+    }
+  },
   "/numbers-and-dates#sec-time-values-and-time-range": {
     "current": {
       "number": "21.4.1.1",
@@ -18052,9 +18069,25 @@
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-time-values-and-time-range"
     }
   },
+  "/numbers-and-dates#sec-time-zone-identifier-record": {
+    "current": {
+      "number": "21.4.1.11",
+      "spec": "ECMAScript",
+      "text": "Time Zone Identifier Record",
+      "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-time-zone-identifier-record"
+    }
+  },
+  "/numbers-and-dates#sec-time-zone-identifiers": {
+    "current": {
+      "number": "21.4.1.8",
+      "spec": "ECMAScript",
+      "text": "Time Zone Identifiers",
+      "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-time-zone-identifiers"
+    }
+  },
   "/numbers-and-dates#sec-time-zone-offset-strings": {
     "current": {
-      "number": "21.4.1.19",
+      "number": "21.4.1.22",
       "spec": "ECMAScript",
       "text": "Time Zone Offset String Format",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-time-zone-offset-strings"
@@ -18062,7 +18095,7 @@
   },
   "/numbers-and-dates#sec-timeclip": {
     "current": {
-      "number": "21.4.1.17",
+      "number": "21.4.1.20",
       "spec": "ECMAScript",
       "text": "TimeClip ( time )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-timeclip"
@@ -18094,7 +18127,7 @@
   },
   "/numbers-and-dates#sec-utc-t": {
     "current": {
-      "number": "21.4.1.12",
+      "number": "21.4.1.15",
       "spec": "ECMAScript",
       "text": "UTC ( t )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-utc-t"
