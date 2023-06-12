@@ -1417,7 +1417,7 @@
   },
   "#sec-temporal-addduration": {
     "current": {
-      "number": "7.5.22",
+      "number": "7.5.24",
       "spec": "Temporal proposal",
       "text": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, relativeTo )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-addduration"
@@ -1433,7 +1433,7 @@
   },
   "#sec-temporal-adddurationtoorsubtractdurationfromduration": {
     "current": {
-      "number": "7.5.29",
+      "number": "7.5.31",
       "spec": "Temporal proposal",
       "text": "AddDurationToOrSubtractDurationFromDuration ( operation, duration, other, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddurationtoorsubtractdurationfromduration"
@@ -1505,7 +1505,7 @@
   },
   "#sec-temporal-adjustroundeddurationdays": {
     "current": {
-      "number": "7.5.27",
+      "number": "7.5.29",
       "spec": "Temporal proposal",
       "text": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, relativeTo )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adjustroundeddurationdays"
@@ -1527,20 +1527,12 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-availablecalendars"
     }
   },
-  "#sec-temporal-balanceduration": {
+  "#sec-temporal-balancedatedurationrelative": {
     "current": {
-      "number": "7.5.18",
+      "number": "7.5.23",
       "spec": "Temporal proposal",
-      "text": "BalanceDuration ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit [ , relativeTo ] )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-balanceduration"
-    }
-  },
-  "#sec-temporal-balancedurationrelative": {
-    "current": {
-      "number": "7.5.21",
-      "spec": "Temporal proposal",
-      "text": "BalanceDurationRelative ( years, months, weeks, days, largestUnit, relativeTo )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancedurationrelative"
+      "text": "BalanceDateDurationRelative ( years, months, weeks, days, largestUnit, relativeTo )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancedatedurationrelative"
     }
   },
   "#sec-temporal-balanceisodate": {
@@ -1567,12 +1559,20 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-balanceisoyearmonth"
     }
   },
-  "#sec-temporal-balancepossiblyinfiniteduration": {
+  "#sec-temporal-balancepossiblyinfinitetimeduration": {
     "current": {
       "number": "7.5.19",
       "spec": "Temporal proposal",
-      "text": "BalancePossiblyInfiniteDuration ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit [ , relativeTo ] )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancepossiblyinfiniteduration"
+      "text": "BalancePossiblyInfiniteTimeDuration ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancepossiblyinfinitetimeduration"
+    }
+  },
+  "#sec-temporal-balancepossiblyinfinitetimedurationrelative": {
+    "current": {
+      "number": "7.5.21",
+      "spec": "Temporal proposal",
+      "text": "BalancePossiblyInfiniteTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancepossiblyinfinitetimedurationrelative"
     }
   },
   "#sec-temporal-balancetime": {
@@ -1581,6 +1581,22 @@
       "spec": "Temporal proposal",
       "text": "BalanceTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancetime"
+    }
+  },
+  "#sec-temporal-balancetimeduration": {
+    "current": {
+      "number": "7.5.18",
+      "spec": "Temporal proposal",
+      "text": "BalanceTimeDuration ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancetimeduration"
+    }
+  },
+  "#sec-temporal-balancetimedurationrelative": {
+    "current": {
+      "number": "7.5.20",
+      "spec": "Temporal proposal",
+      "text": "BalanceTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancetimedurationrelative"
     }
   },
   "#sec-temporal-calculateoffsetshift": {
@@ -2177,7 +2193,7 @@
   },
   "#sec-temporal-daysuntil": {
     "current": {
-      "number": "7.5.23",
+      "number": "7.5.25",
       "spec": "Temporal proposal",
       "text": "DaysUntil ( earlier, later )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-daysuntil"
@@ -2801,7 +2817,7 @@
   },
   "#sec-temporal-moverelativedate": {
     "current": {
-      "number": "7.5.24",
+      "number": "7.5.26",
       "spec": "Temporal proposal",
       "text": "MoveRelativeDate ( calendar, relativeTo, duration, dateAdd )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativedate"
@@ -2809,7 +2825,7 @@
   },
   "#sec-temporal-moverelativezoneddatetime": {
     "current": {
-      "number": "7.5.25",
+      "number": "7.5.27",
       "spec": "Temporal proposal",
       "text": "MoveRelativeZonedDateTime ( zonedDateTime, years, months, weeks, days )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativezoneddatetime"
@@ -2819,7 +2835,7 @@
     "current": {
       "number": "6.5.7",
       "spec": "Temporal proposal",
-      "text": "NanosecondsToDays ( nanoseconds, relativeTo )",
+      "text": "NanosecondsToDays ( nanoseconds, zonedRelativeTo )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-nanosecondstodays"
     }
   },
@@ -3225,7 +3241,7 @@
   },
   "#sec-temporal-roundduration": {
     "current": {
-      "number": "7.5.26",
+      "number": "7.5.28",
       "spec": "Temporal proposal",
       "text": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , relativeTo ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-roundduration"
@@ -3281,7 +3297,7 @@
   },
   "#sec-temporal-systemdatetime": {
     "current": {
-      "number": "2.3.4",
+      "number": "2.3.5",
       "spec": "Temporal proposal",
       "text": "SystemDateTime ( temporalTimeZoneLike, calendarLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-systemdatetime"
@@ -3289,15 +3305,23 @@
   },
   "#sec-temporal-systeminstant": {
     "current": {
-      "number": "2.3.3",
+      "number": "2.3.4",
       "spec": "Temporal proposal",
       "text": "SystemInstant ( )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-systeminstant"
     }
   },
-  "#sec-temporal-systemutcepochnanoseconds": {
+  "#sec-temporal-systemutcepochmilliseconds": {
     "current": {
       "number": "2.3.2",
+      "spec": "Temporal proposal",
+      "text": "SystemUTCEpochMilliseconds ( )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-systemutcepochmilliseconds"
+    }
+  },
+  "#sec-temporal-systemutcepochnanoseconds": {
+    "current": {
+      "number": "2.3.3",
       "spec": "Temporal proposal",
       "text": "SystemUTCEpochNanoseconds ( )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-systemutcepochnanoseconds"
@@ -3305,7 +3329,7 @@
   },
   "#sec-temporal-systemzoneddatetime": {
     "current": {
-      "number": "2.3.5",
+      "number": "2.3.6",
       "spec": "Temporal proposal",
       "text": "SystemZonedDateTime ( temporalTimeZoneLike, calendarLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-systemzoneddatetime"
@@ -3329,7 +3353,7 @@
   },
   "#sec-temporal-temporaldurationtostring": {
     "current": {
-      "number": "7.5.28",
+      "number": "7.5.30",
       "spec": "Temporal proposal",
       "text": "TemporalDurationToString ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, precision )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-temporaldurationtostring"
@@ -3687,12 +3711,12 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totimezonenameoption"
     }
   },
-  "#sec-temporal-unbalancedurationrelative": {
+  "#sec-temporal-unbalancedatedurationrelative": {
     "current": {
-      "number": "7.5.20",
+      "number": "7.5.22",
       "spec": "Temporal proposal",
-      "text": "UnbalanceDurationRelative ( years, months, weeks, days, largestUnit, relativeTo )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-unbalancedurationrelative"
+      "text": "UnbalanceDateDurationRelative ( years, months, weeks, days, largestUnit, relativeTo )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-unbalancedatedurationrelative"
     }
   },
   "#sec-temporal-zoneddatetime-abstract-ops": {
