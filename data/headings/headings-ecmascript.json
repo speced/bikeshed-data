@@ -812,6 +812,9 @@
   "#sec-atomics.wait": [
     "/structured-data#sec-atomics.wait"
   ],
+  "#sec-atomics.waitasync": [
+    "/structured-data#sec-atomics.waitasync"
+  ],
   "#sec-atomics.xor": [
     "/structured-data#sec-atomics.xor"
   ],
@@ -1688,6 +1691,9 @@
   "#sec-do-while-statement-static-semantics-early-errors": [
     "/ecmascript-language-statements-and-declarations#sec-do-while-statement-static-semantics-early-errors"
   ],
+  "#sec-dowait": [
+    "/structured-data#sec-dowait"
+  ],
   "#sec-ecmascript-data-types-and-values": [
     "/ecmascript-data-types-and-values#sec-ecmascript-data-types-and-values"
   ],
@@ -1771,6 +1777,12 @@
   ],
   "#sec-encodeuricomponent-uricomponent": [
     "/global-object#sec-encodeuricomponent-uricomponent"
+  ],
+  "#sec-enqueueatomicswaitasynctimeoutjob": [
+    "/structured-data#sec-enqueueatomicswaitasynctimeoutjob"
+  ],
+  "#sec-enqueueresolveinagentjob": [
+    "/structured-data#sec-enqueueresolveinagentjob"
   ],
   "#sec-entercriticalsection": [
     "/structured-data#sec-entercriticalsection"
@@ -2417,8 +2429,14 @@
   "#sec-hostcalljobcallback": [
     "/executable-code-and-execution-contexts#sec-hostcalljobcallback"
   ],
+  "#sec-hostenqueuegenericjob": [
+    "/executable-code-and-execution-contexts#sec-hostenqueuegenericjob"
+  ],
   "#sec-hostenqueuepromisejob": [
     "/executable-code-and-execution-contexts#sec-hostenqueuepromisejob"
+  ],
+  "#sec-hostenqueuetimeoutjob": [
+    "/executable-code-and-execution-contexts#sec-hostenqueuetimeoutjob"
   ],
   "#sec-hostensurecanaddprivateelement": [
     "/abstract-operations#sec-hostensurecanaddprivateelement"
@@ -5345,8 +5363,8 @@
   "#sec-super-keyword-runtime-semantics-evaluation": [
     "/ecmascript-language-expressions#sec-super-keyword-runtime-semantics-evaluation"
   ],
-  "#sec-suspendagent": [
-    "/structured-data#sec-suspendagent"
+  "#sec-suspendthisagent": [
+    "/structured-data#sec-suspendthisagent"
   ],
   "#sec-switch-statement": [
     "/ecmascript-language-statements-and-declarations#sec-switch-statement"
@@ -5861,8 +5879,11 @@
   "#sec-void-operator-runtime-semantics-evaluation": [
     "/ecmascript-language-expressions#sec-void-operator-runtime-semantics-evaluation"
   ],
-  "#sec-waiterlist-objects": [
-    "/structured-data#sec-waiterlist-objects"
+  "#sec-waiter-record": [
+    "/structured-data#sec-waiter-record"
+  ],
+  "#sec-waiterlist-records": [
+    "/structured-data#sec-waiterlist-records"
   ],
   "#sec-weak-ref-constructor": [
     "/managing-memory#sec-weak-ref-constructor"
@@ -12333,12 +12354,28 @@
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostcalljobcallback"
     }
   },
-  "/executable-code-and-execution-contexts#sec-hostenqueuepromisejob": {
+  "/executable-code-and-execution-contexts#sec-hostenqueuegenericjob": {
     "current": {
       "number": "9.5.4",
       "spec": "ECMAScript",
+      "text": "HostEnqueueGenericJob ( job, realm )",
+      "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuegenericjob"
+    }
+  },
+  "/executable-code-and-execution-contexts#sec-hostenqueuepromisejob": {
+    "current": {
+      "number": "9.5.5",
+      "spec": "ECMAScript",
       "text": "HostEnqueuePromiseJob ( job, realm )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuepromisejob"
+    }
+  },
+  "/executable-code-and-execution-contexts#sec-hostenqueuetimeoutjob": {
+    "current": {
+      "number": "9.5.6",
+      "spec": "ECMAScript",
+      "text": "HostEnqueueTimeoutJob ( timeoutJob, realm, milliseconds )",
+      "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuetimeoutjob"
     }
   },
   "/executable-code-and-execution-contexts#sec-hostmakejobcallback": {
@@ -19727,7 +19764,7 @@
   },
   "/structured-data#sec-abstract-operations-for-atomics": {
     "current": {
-      "number": "25.4.2",
+      "number": "25.4.3",
       "spec": "ECMAScript",
       "text": "Abstract Operations for Atomics",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-abstract-operations-for-atomics"
@@ -19751,9 +19788,9 @@
   },
   "/structured-data#sec-addwaiter": {
     "current": {
-      "number": "25.4.2.6",
+      "number": "25.4.3.6",
       "spec": "ECMAScript",
-      "text": "AddWaiter ( WL, W )",
+      "text": "AddWaiter ( WL, waiterRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-addwaiter"
     }
   },
@@ -19847,7 +19884,7 @@
   },
   "/structured-data#sec-atomicreadmodifywrite": {
     "current": {
-      "number": "25.4.2.11",
+      "number": "25.4.3.14",
       "spec": "ECMAScript",
       "text": "AtomicReadModifyWrite ( typedArray, index, value, op )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomicreadmodifywrite"
@@ -19855,7 +19892,7 @@
   },
   "/structured-data#sec-atomics-%40%40tostringtag": {
     "current": {
-      "number": "25.4.15",
+      "number": "25.4.17",
       "spec": "ECMAScript",
       "text": "Atomics [ @@toStringTag ]",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics-%40%40tostringtag"
@@ -19871,7 +19908,7 @@
   },
   "/structured-data#sec-atomics.add": {
     "current": {
-      "number": "25.4.3",
+      "number": "25.4.4",
       "spec": "ECMAScript",
       "text": "Atomics.add ( typedArray, index, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.add"
@@ -19879,7 +19916,7 @@
   },
   "/structured-data#sec-atomics.and": {
     "current": {
-      "number": "25.4.4",
+      "number": "25.4.5",
       "spec": "ECMAScript",
       "text": "Atomics.and ( typedArray, index, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.and"
@@ -19887,7 +19924,7 @@
   },
   "/structured-data#sec-atomics.compareexchange": {
     "current": {
-      "number": "25.4.5",
+      "number": "25.4.6",
       "spec": "ECMAScript",
       "text": "Atomics.compareExchange ( typedArray, index, expectedValue, replacementValue )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.compareexchange"
@@ -19895,7 +19932,7 @@
   },
   "/structured-data#sec-atomics.exchange": {
     "current": {
-      "number": "25.4.6",
+      "number": "25.4.7",
       "spec": "ECMAScript",
       "text": "Atomics.exchange ( typedArray, index, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.exchange"
@@ -19903,7 +19940,7 @@
   },
   "/structured-data#sec-atomics.islockfree": {
     "current": {
-      "number": "25.4.7",
+      "number": "25.4.8",
       "spec": "ECMAScript",
       "text": "Atomics.isLockFree ( size )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.islockfree"
@@ -19911,7 +19948,7 @@
   },
   "/structured-data#sec-atomics.load": {
     "current": {
-      "number": "25.4.8",
+      "number": "25.4.9",
       "spec": "ECMAScript",
       "text": "Atomics.load ( typedArray, index )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.load"
@@ -19919,7 +19956,7 @@
   },
   "/structured-data#sec-atomics.notify": {
     "current": {
-      "number": "25.4.13",
+      "number": "25.4.15",
       "spec": "ECMAScript",
       "text": "Atomics.notify ( typedArray, index, count )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.notify"
@@ -19927,7 +19964,7 @@
   },
   "/structured-data#sec-atomics.or": {
     "current": {
-      "number": "25.4.9",
+      "number": "25.4.10",
       "spec": "ECMAScript",
       "text": "Atomics.or ( typedArray, index, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.or"
@@ -19935,7 +19972,7 @@
   },
   "/structured-data#sec-atomics.store": {
     "current": {
-      "number": "25.4.10",
+      "number": "25.4.11",
       "spec": "ECMAScript",
       "text": "Atomics.store ( typedArray, index, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.store"
@@ -19943,7 +19980,7 @@
   },
   "/structured-data#sec-atomics.sub": {
     "current": {
-      "number": "25.4.11",
+      "number": "25.4.12",
       "spec": "ECMAScript",
       "text": "Atomics.sub ( typedArray, index, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.sub"
@@ -19951,15 +19988,23 @@
   },
   "/structured-data#sec-atomics.wait": {
     "current": {
-      "number": "25.4.12",
+      "number": "25.4.13",
       "spec": "ECMAScript",
       "text": "Atomics.wait ( typedArray, index, value, timeout )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.wait"
     }
   },
-  "/structured-data#sec-atomics.xor": {
+  "/structured-data#sec-atomics.waitasync": {
     "current": {
       "number": "25.4.14",
+      "spec": "ECMAScript",
+      "text": "Atomics.waitAsync ( typedArray, index, value, timeout )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync"
+    }
+  },
+  "/structured-data#sec-atomics.xor": {
+    "current": {
+      "number": "25.4.16",
       "spec": "ECMAScript",
       "text": "Atomics.xor ( typedArray, index, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.xor"
@@ -19967,7 +20012,7 @@
   },
   "/structured-data#sec-bytelistbitwiseop": {
     "current": {
-      "number": "25.4.2.12",
+      "number": "25.4.3.15",
       "spec": "ECMAScript",
       "text": "ByteListBitwiseOp ( op, xBytes, yBytes )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-bytelistbitwiseop"
@@ -19975,7 +20020,7 @@
   },
   "/structured-data#sec-bytelistequal": {
     "current": {
-      "number": "25.4.2.13",
+      "number": "25.4.3.16",
       "spec": "ECMAScript",
       "text": "ByteListEqual ( xBytes, yBytes )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-bytelistequal"
@@ -20205,9 +20250,33 @@
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer"
     }
   },
+  "/structured-data#sec-dowait": {
+    "current": {
+      "number": "25.4.3.12",
+      "spec": "ECMAScript",
+      "text": "DoWait ( mode, typedArray, index, value, timeout )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dowait"
+    }
+  },
+  "/structured-data#sec-enqueueatomicswaitasynctimeoutjob": {
+    "current": {
+      "number": "25.4.3.13",
+      "spec": "ECMAScript",
+      "text": "EnqueueAtomicsWaitAsyncTimeoutJob ( WL, waiterRecord )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasynctimeoutjob"
+    }
+  },
+  "/structured-data#sec-enqueueresolveinagentjob": {
+    "current": {
+      "number": "25.4.3.11",
+      "spec": "ECMAScript",
+      "text": "EnqueueResolveInAgentJob ( agentSignifier, promiseCapability, resolution )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueresolveinagentjob"
+    }
+  },
   "/structured-data#sec-entercriticalsection": {
     "current": {
-      "number": "25.4.2.4",
+      "number": "25.4.3.4",
       "spec": "ECMAScript",
       "text": "EnterCriticalSection ( WL )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection"
@@ -20287,7 +20356,7 @@
   },
   "/structured-data#sec-getwaiterlist": {
     "current": {
-      "number": "25.4.2.3",
+      "number": "25.4.3.3",
       "spec": "ECMAScript",
       "text": "GetWaiterList ( block, i )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getwaiterlist"
@@ -20391,7 +20460,7 @@
   },
   "/structured-data#sec-leavecriticalsection": {
     "current": {
-      "number": "25.4.2.5",
+      "number": "25.4.3.5",
       "spec": "ECMAScript",
       "text": "LeaveCriticalSection ( WL )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-leavecriticalsection"
@@ -20399,9 +20468,9 @@
   },
   "/structured-data#sec-notifywaiter": {
     "current": {
-      "number": "25.4.2.10",
+      "number": "25.4.3.10",
       "spec": "ECMAScript",
-      "text": "NotifyWaiter ( WL, W )",
+      "text": "NotifyWaiter ( WL, waiterRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-notifywaiter"
     }
   },
@@ -20503,15 +20572,15 @@
   },
   "/structured-data#sec-removewaiter": {
     "current": {
-      "number": "25.4.2.7",
+      "number": "25.4.3.7",
       "spec": "ECMAScript",
-      "text": "RemoveWaiter ( WL, W )",
+      "text": "RemoveWaiter ( WL, waiterRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter"
     }
   },
   "/structured-data#sec-removewaiters": {
     "current": {
-      "number": "25.4.2.8",
+      "number": "25.4.3.8",
       "spec": "ECMAScript",
       "text": "RemoveWaiters ( WL, c )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiters"
@@ -20629,12 +20698,12 @@
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-structured-data"
     }
   },
-  "/structured-data#sec-suspendagent": {
+  "/structured-data#sec-suspendthisagent": {
     "current": {
-      "number": "25.4.2.9",
+      "number": "25.4.3.9",
       "spec": "ECMAScript",
-      "text": "SuspendAgent ( WL, W, minimumTimeout )",
-      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendagent"
+      "text": "SuspendThisAgent ( WL, waiterRecord )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendthisagent"
     }
   },
   "/structured-data#sec-unicodeescape": {
@@ -20647,7 +20716,7 @@
   },
   "/structured-data#sec-validateatomicaccess": {
     "current": {
-      "number": "25.4.2.2",
+      "number": "25.4.3.2",
       "spec": "ECMAScript",
       "text": "ValidateAtomicAccess ( typedArray, requestIndex )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateatomicaccess"
@@ -20655,18 +20724,26 @@
   },
   "/structured-data#sec-validateintegertypedarray": {
     "current": {
-      "number": "25.4.2.1",
+      "number": "25.4.3.1",
       "spec": "ECMAScript",
       "text": "ValidateIntegerTypedArray ( typedArray [ , waitable ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateintegertypedarray"
     }
   },
-  "/structured-data#sec-waiterlist-objects": {
+  "/structured-data#sec-waiter-record": {
     "current": {
       "number": "25.4.1",
       "spec": "ECMAScript",
-      "text": "WaiterList Objects",
-      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-objects"
+      "text": "Waiter Record",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiter-record"
+    }
+  },
+  "/structured-data#sec-waiterlist-records": {
+    "current": {
+      "number": "25.4.2",
+      "spec": "ECMAScript",
+      "text": "WaiterList Records",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-records"
     }
   },
   "/syntax-directed-operations#sec-evaluation": {

@@ -987,7 +987,7 @@
     "AddToKeptObjects",
     "AddToKeptObjects(value)",
     "AddWaiter",
-    "AddWaiter(WL, W)",
+    "AddWaiter(WL, waiterRecord)",
     "AdvanceStringIndex",
     "AdvanceStringIndex(S, index, unicode)",
     "AesCbcParams",
@@ -1730,6 +1730,8 @@
     "DisplayCaptureSurfaceType",
     "DisplayMediaStreamOptions",
     "DistanceModelType",
+    "DoWait",
+    "DoWait(mode, typedArray, index, value, timeout)",
     "Document",
     "DocumentFragment",
     "DocumentOrShadowRoot",
@@ -1783,6 +1785,10 @@
     "EnforceRange",
     "Enqueue a command",
     "Enqueue a render command",
+    "EnqueueAtomicsWaitAsyncTimeoutJob",
+    "EnqueueAtomicsWaitAsyncTimeoutJob(WL, waiterRecord)",
+    "EnqueueResolveInAgentJob",
+    "EnqueueResolveInAgentJob(agentSignifier, promiseCapability, resolution)",
     "EnqueueValueWithSize",
     "EnsureScriptingPolicyDoesNotBlockScriptExecution(callerRealm, calleeRealm, source)",
     "EnterCriticalSection",
@@ -2015,6 +2021,7 @@
     "GPUFrontFace",
     "GPUImageCopyBuffer",
     "GPUImageCopyExternalImage",
+    "GPUImageCopyExternalImageSource",
     "GPUImageCopyTexture",
     "GPUImageCopyTextureTagged",
     "GPUImageDataLayout",
@@ -2368,8 +2375,12 @@
     "HostCallJobCallback(jobCallback, V, argumentsList)",
     "HostEnqueueFinalizationRegistryCleanupJob",
     "HostEnqueueFinalizationRegistryCleanupJob(finalizationRegistry)",
+    "HostEnqueueGenericJob",
+    "HostEnqueueGenericJob(job, realm)",
     "HostEnqueuePromiseJob",
     "HostEnqueuePromiseJob(job, realm)",
+    "HostEnqueueTimeoutJob",
+    "HostEnqueueTimeoutJob(timeoutJob, realm, milliseconds)",
     "HostEnsureCanAddPrivateElement",
     "HostEnsureCanAddPrivateElement(O)",
     "HostEnsureCanCompileStrings",
@@ -2986,7 +2997,7 @@
     "NotificationPermission",
     "NotificationPermissionCallback",
     "NotifyWaiter",
-    "NotifyWaiter(WL, W)",
+    "NotifyWaiter(WL, waiterRecord)",
     "Number",
     "NumberBitwiseOp",
     "NumberBitwiseOp(op, x, y)",
@@ -3539,7 +3550,7 @@
     "RemotePlaybackAvailabilityCallback",
     "RemotePlaybackState",
     "RemoveWaiter",
-    "RemoveWaiter(WL, W)",
+    "RemoveWaiter(WL, waiterRecord)",
     "RemoveWaiters",
     "RemoveWaiters(WL, c)",
     "RenderBlockingStatusType",
@@ -3925,8 +3936,8 @@
     "SubmitEventInit",
     "SubtleCrypto",
     "SurfaceSwitchingPreferenceEnum",
-    "SuspendAgent",
-    "SuspendAgent(WL, W, minimumTimeout)",
+    "SuspendThisAgent",
+    "SuspendThisAgent(WL, waiterRecord)",
     "SvcOutputMetadata",
     "Symbol",
     "SymbolDescriptiveString",
@@ -6133,6 +6144,7 @@
     "canonical tag",
     "canonical unicode locale identifier",
     "canonical unit",
+    "canonicalization function",
     "canonicalization state",
     "canonicalize a hash",
     "canonicalize a hostname",
@@ -13308,6 +13320,7 @@
     "part",
     "part list",
     "partial assignment",
+    "partial canonicalization function",
     "partial derivative",
     "partial dictionary",
     "partial interface",
@@ -19901,6 +19914,7 @@
     "store(typedArray, index, value)",
     "sub(typedArray, index, value)",
     "wait(typedArray, index, value, timeout)",
+    "waitAsync(typedArray, index, value, timeout)",
     "xor(typedArray, index, value)"
   ],
   "AttestationConveyancePreference": [
@@ -27398,8 +27412,10 @@
     "typedarray element types",
     "use strict directive",
     "use strict directives",
-    "waiterlist",
-    "waiterlists",
+    "waiter record",
+    "waiter records",
+    "waiterlist record",
+    "waiterlist records",
     "writesharedmemory"
   ],
   "ECMAScript Code Execution Contexts": [
@@ -28610,6 +28626,7 @@
     "create"
   ],
   "FileSystemHandle": [
+    "is in an origin private file system",
     "isSameEntry(other)",
     "kind",
     "locator",
@@ -36685,6 +36702,7 @@
     "ink",
     "joinAdInterestGroup(group)",
     "keyboard",
+    "leaveAdInterestGroup()",
     "leaveAdInterestGroup(group)",
     "maxTouchPoints",
     "mediaCapabilities",
@@ -36731,6 +36749,9 @@
     "type"
   ],
   "Navigator/joinAdInterestGroup(group)": [
+    "group"
+  ],
+  "Navigator/leaveAdInterestGroup()": [
     "group"
   ],
   "Navigator/leaveAdInterestGroup(group)": [
@@ -50306,13 +50327,13 @@
   ],
   "fenced frame reporter": [
     "automatic beacon data",
-    "fenced frame reporting metadata reference",
-    "visibility"
+    "fenced frame reporting metadata reference"
   ],
   "fenced frame reporting metadata": [
     "direct seller is seller",
     "fenced frame reporting map",
-    "value"
+    "value",
+    "visibility"
   ],
   "fenced navigable container": [
     "fenced navigable"
