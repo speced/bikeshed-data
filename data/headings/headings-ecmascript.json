@@ -326,6 +326,9 @@
   "#sec-algorithm-conventions-syntax-directed-operations": [
     "/notational-conventions#sec-algorithm-conventions-syntax-directed-operations"
   ],
+  "#sec-allcharacters": [
+    "/text-processing#sec-allcharacters"
+  ],
   "#sec-allocatearraybuffer": [
     "/structured-data#sec-allocatearraybuffer"
   ],
@@ -1010,6 +1013,9 @@
   "#sec-canonicalnumericindexstring": [
     "/abstract-operations#sec-canonicalnumericindexstring"
   ],
+  "#sec-charactercomplement": [
+    "/text-processing#sec-charactercomplement"
+  ],
   "#sec-chosen-value-records": [
     "/memory-model#sec-chosen-value-records"
   ],
@@ -1075,6 +1081,9 @@
   ],
   "#sec-compilecharacterclass": [
     "/text-processing#sec-compilecharacterclass"
+  ],
+  "#sec-compileclasssetstring": [
+    "/text-processing#sec-compileclasssetstring"
   ],
   "#sec-compilepattern": [
     "/text-processing#sec-compilepattern"
@@ -1769,6 +1778,9 @@
   "#sec-empty-statement-runtime-semantics-evaluation": [
     "/ecmascript-language-statements-and-declarations#sec-empty-statement-runtime-semantics-evaluation"
   ],
+  "#sec-emptymatcher": [
+    "/text-processing#sec-emptymatcher"
+  ],
   "#sec-encode": [
     "/global-object#sec-encode"
   ],
@@ -2227,6 +2239,9 @@
   ],
   "#sec-get-regexp.prototype.unicode": [
     "/text-processing#sec-get-regexp.prototype.unicode"
+  ],
+  "#sec-get-regexp.prototype.unicodesets": [
+    "/text-processing#sec-get-regexp.prototype.unicodesets"
   ],
   "#sec-get-set-%40%40species": [
     "/keyed-collections#sec-get-set-%40%40species"
@@ -2981,6 +2996,12 @@
   "#sec-match-records": [
     "/text-processing#sec-match-records"
   ],
+  "#sec-matchsequence": [
+    "/text-processing#sec-matchsequence"
+  ],
+  "#sec-matchtwoalternatives": [
+    "/text-processing#sec-matchtwoalternatives"
+  ],
   "#sec-math": [
     "/global-object#sec-math"
   ],
@@ -3121,6 +3142,9 @@
   ],
   "#sec-mathematical-operations": [
     "/notational-conventions#sec-mathematical-operations"
+  ],
+  "#sec-maybesimplecasefolding": [
+    "/text-processing#sec-maybesimplecasefolding"
   ],
   "#sec-memory-model": [
     "/memory-model#sec-memory-model"
@@ -4697,6 +4721,9 @@
   "#sec-runtime-semantics-forloopevaluation": [
     "/ecmascript-language-statements-and-declarations#sec-runtime-semantics-forloopevaluation"
   ],
+  "#sec-runtime-semantics-haseitherunicodeflag-abstract-operation": [
+    "/text-processing#sec-runtime-semantics-haseitherunicodeflag-abstract-operation"
+  ],
   "#sec-runtime-semantics-instantiatearrowfunctionexpression": [
     "/ecmascript-language-functions-and-classes#sec-runtime-semantics-instantiatearrowfunctionexpression"
   ],
@@ -5105,6 +5132,9 @@
   "#sec-static-semantics-lexicallyscopeddeclarations": [
     "/syntax-directed-operations#sec-static-semantics-lexicallyscopeddeclarations"
   ],
+  "#sec-static-semantics-maycontainstrings": [
+    "/text-processing#sec-static-semantics-maycontainstrings"
+  ],
   "#sec-static-semantics-modulerequests": [
     "/ecmascript-language-scripts-and-modules#sec-static-semantics-modulerequests"
   ],
@@ -5341,6 +5371,9 @@
   ],
   "#sec-stringpad": [
     "/text-processing#sec-stringpad"
+  ],
+  "#sec-stringpaddingbuiltinsimpl": [
+    "/text-processing#sec-stringpaddingbuiltinsimpl"
   ],
   "#sec-stringtobigint": [
     "/abstract-operations#sec-stringtobigint"
@@ -21101,12 +21134,28 @@
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-advancestringindex"
     }
   },
+  "/text-processing#sec-allcharacters": {
+    "current": {
+      "number": "22.2.2.9.4",
+      "spec": "ECMAScript",
+      "text": "AllCharacters ( rer )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-allcharacters"
+    }
+  },
   "/text-processing#sec-backreference-matcher": {
     "current": {
       "number": "22.2.2.7.2",
       "spec": "ECMAScript",
       "text": "BackreferenceMatcher ( rer, n, direction )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-backreference-matcher"
+    }
+  },
+  "/text-processing#sec-charactercomplement": {
+    "current": {
+      "number": "22.2.2.9.6",
+      "spec": "ECMAScript",
+      "text": "CharacterComplement ( rer, S )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-charactercomplement"
     }
   },
   "/text-processing#sec-compileassertion": {
@@ -21131,6 +21180,14 @@
       "spec": "ECMAScript",
       "text": "Runtime Semantics: CompileCharacterClass",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-compilecharacterclass"
+    }
+  },
+  "/text-processing#sec-compileclasssetstring": {
+    "current": {
+      "number": "22.2.2.10",
+      "spec": "ECMAScript",
+      "text": "Runtime Semantics: CompileClassSetString",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-compileclasssetstring"
     }
   },
   "/text-processing#sec-compilepattern": {
@@ -21195,6 +21252,14 @@
       "spec": "ECMAScript",
       "text": "CreateRegExpStringIterator ( R, S, global, fullUnicode )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-createregexpstringiterator"
+    }
+  },
+  "/text-processing#sec-emptymatcher": {
+    "current": {
+      "number": "22.2.2.3.2",
+      "spec": "ECMAScript",
+      "text": "EmptyMatcher ( )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-emptymatcher"
     }
   },
   "/text-processing#sec-escaperegexppattern": {
@@ -21285,6 +21350,14 @@
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.unicode"
     }
   },
+  "/text-processing#sec-get-regexp.prototype.unicodesets": {
+    "current": {
+      "number": "22.2.6.19",
+      "spec": "ECMAScript",
+      "text": "get RegExp.prototype.unicodeSets",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.unicodesets"
+    }
+  },
   "/text-processing#sec-getmatchindexpair": {
     "current": {
       "number": "22.2.7.7",
@@ -21319,7 +21392,7 @@
   },
   "/text-processing#sec-groupspecifiersthatmatch": {
     "current": {
-      "number": "22.2.1.7",
+      "number": "22.2.1.8",
       "spec": "ECMAScript",
       "text": "Static Semantics: GroupSpecifiersThatMatch ( thisGroupName )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-groupspecifiersthatmatch"
@@ -21349,11 +21422,35 @@
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-match-records"
     }
   },
+  "/text-processing#sec-matchsequence": {
+    "current": {
+      "number": "22.2.2.3.4",
+      "spec": "ECMAScript",
+      "text": "MatchSequence ( m1, m2, direction )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-matchsequence"
+    }
+  },
+  "/text-processing#sec-matchtwoalternatives": {
+    "current": {
+      "number": "22.2.2.3.3",
+      "spec": "ECMAScript",
+      "text": "MatchTwoAlternatives ( m1, m2 )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-matchtwoalternatives"
+    }
+  },
+  "/text-processing#sec-maybesimplecasefolding": {
+    "current": {
+      "number": "22.2.2.9.5",
+      "spec": "ECMAScript",
+      "text": "MaybeSimpleCaseFolding ( rer, A )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefolding"
+    }
+  },
   "/text-processing#sec-parsepattern": {
     "current": {
       "number": "22.2.3.4",
       "spec": "ECMAScript",
-      "text": "Static Semantics: ParsePattern ( patternText, u )",
+      "text": "Static Semantics: ParsePattern ( patternText, u, v )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-parsepattern"
     }
   },
@@ -21631,7 +21728,7 @@
   },
   "/text-processing#sec-regexpidentifiercodepoint": {
     "current": {
-      "number": "22.2.1.10",
+      "number": "22.2.1.11",
       "spec": "ECMAScript",
       "text": "Static Semantics: RegExpIdentifierCodePoint",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpidentifiercodepoint"
@@ -21639,7 +21736,7 @@
   },
   "/text-processing#sec-regexpidentifiercodepoints": {
     "current": {
-      "number": "22.2.1.9",
+      "number": "22.2.1.10",
       "spec": "ECMAScript",
       "text": "Static Semantics: RegExpIdentifierCodePoints",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpidentifiercodepoints"
@@ -21677,6 +21774,14 @@
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-charactersetmatcher-abstract-operation"
     }
   },
+  "/text-processing#sec-runtime-semantics-haseitherunicodeflag-abstract-operation": {
+    "current": {
+      "number": "22.2.2.9.2",
+      "spec": "ECMAScript",
+      "text": "HasEitherUnicodeFlag ( rer )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-haseitherunicodeflag-abstract-operation"
+    }
+  },
   "/text-processing#sec-runtime-semantics-iswordchar-abstract-operation": {
     "current": {
       "number": "22.2.2.4.1",
@@ -21695,15 +21800,15 @@
   },
   "/text-processing#sec-runtime-semantics-unicodematchproperty-p": {
     "current": {
-      "number": "22.2.2.9.3",
+      "number": "22.2.2.9.7",
       "spec": "ECMAScript",
-      "text": "UnicodeMatchProperty ( p )",
+      "text": "UnicodeMatchProperty ( rer, p )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p"
     }
   },
   "/text-processing#sec-runtime-semantics-unicodematchpropertyvalue-p-v": {
     "current": {
-      "number": "22.2.2.9.4",
+      "number": "22.2.2.9.8",
       "spec": "ECMAScript",
       "text": "UnicodeMatchPropertyValue ( p, v )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchpropertyvalue-p-v"
@@ -21711,10 +21816,18 @@
   },
   "/text-processing#sec-static-semantics-capturinggroupname": {
     "current": {
-      "number": "22.2.1.8",
+      "number": "22.2.1.9",
       "spec": "ECMAScript",
       "text": "Static Semantics: CapturingGroupName",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-static-semantics-capturinggroupname"
+    }
+  },
+  "/text-processing#sec-static-semantics-maycontainstrings": {
+    "current": {
+      "number": "22.2.1.7",
+      "spec": "ECMAScript",
+      "text": "Static Semantics: MayContainStrings",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-static-semantics-maycontainstrings"
     }
   },
   "/text-processing#sec-string-constructor": {
@@ -22071,10 +22184,18 @@
   },
   "/text-processing#sec-stringpad": {
     "current": {
+      "number": "22.1.3.17.2",
+      "spec": "ECMAScript",
+      "text": "StringPad ( S, maxLength, fillString, placement )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad"
+    }
+  },
+  "/text-processing#sec-stringpaddingbuiltinsimpl": {
+    "current": {
       "number": "22.1.3.17.1",
       "spec": "ECMAScript",
-      "text": "StringPad ( O, maxLength, fillString, placement )",
-      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad"
+      "text": "StringPaddingBuiltinsImpl ( O, maxLength, fillString, placement )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpaddingbuiltinsimpl"
     }
   },
   "/text-processing#sec-text-processing": {
@@ -22087,7 +22208,7 @@
   },
   "/text-processing#sec-tozeropaddeddecimalstring": {
     "current": {
-      "number": "22.1.3.17.2",
+      "number": "22.1.3.17.3",
       "spec": "ECMAScript",
       "text": "ToZeroPaddedDecimalString ( n, minLength )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-tozeropaddeddecimalstring"
@@ -22103,7 +22224,7 @@
   },
   "/text-processing#sec-wordcharacters": {
     "current": {
-      "number": "22.2.2.9.2",
+      "number": "22.2.2.9.3",
       "spec": "ECMAScript",
       "text": "WordCharacters ( rer )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-wordcharacters"
