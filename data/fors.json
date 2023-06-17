@@ -1206,6 +1206,7 @@
     "BatteryManager",
     "BeforeInstallPromptEvent",
     "BeforeUnloadEvent",
+    "BiddingBrowserSignals",
     "BigInt",
     "BigInt64Array",
     "BigIntBitwiseOp",
@@ -2146,6 +2147,7 @@
     "Generate an out-of-memory error",
     "Generate report for violation of permissions policy on settings",
     "GenerateAssertionCallback",
+    "GenerateBidInterestGroup",
     "GenerateBidOutput",
     "GenerateTestReportParameters",
     "Generator",
@@ -3247,6 +3249,7 @@
     "PressureState",
     "PressureUpdateCallback",
     "Prevent Silent Access",
+    "PreviousWin",
     "Printer",
     "PrivateElementFind",
     "PrivateElementFind(O, P)",
@@ -3580,6 +3583,7 @@
     "ReportBody",
     "ReportEventType",
     "ReportList",
+    "ReportResultOutput",
     "ReportingObserver",
     "ReportingObserverCallback",
     "ReportingObserverOptions",
@@ -6022,6 +6026,7 @@
     "buffer view types",
     "buffer-binding-aliasing",
     "buffersource",
+    "build an interest group passed to generatebid",
     "build an interest group permissions url",
     "build bid generators map",
     "build the list of first-party sets",
@@ -7137,6 +7142,7 @@
     "convert line endings to native",
     "convert ndefrecord.data bytes",
     "convert to a list of name-value pairs",
+    "convert to an auctionad sequence",
     "converted to a numeric type or bigint",
     "converted to an ecmascript value",
     "converted to an idl value",
@@ -20002,22 +20008,8 @@
     "trustedScoringSignalsURL"
   ],
   "AuctionAdInterestGroup": [
-    "adComponents",
-    "ads",
-    "biddingLogicURL",
-    "biddingWasmHelperURL",
-    "enableBiddingSignalsPrioritization",
-    "executionMode",
-    "lifetimeMs",
-    "name",
-    "owner",
     "priority",
-    "prioritySignalsOverrides",
-    "priorityVector",
-    "trustedBiddingSignalsKeys",
-    "trustedBiddingSignalsURL",
-    "updateURL",
-    "userBiddingSignals"
+    "prioritySignalsOverrides"
   ],
   "AuctionAdInterestGroupKey": [
     "name",
@@ -21289,6 +21281,16 @@
   ],
   "BeforeUnloadEvent": [
     "returnValue"
+  ],
+  "BiddingBrowserSignals": [
+    "bidCount",
+    "dataVersion",
+    "joinCount",
+    "prevWinsMs",
+    "seller",
+    "topLevelSeller",
+    "topWindowHostname",
+    "wasmHelper"
   ],
   "BidirectionalStream": [
     "create"
@@ -30578,6 +30580,22 @@
     "surfaceId",
     "touchId"
   ],
+  "GenerateBidInterestGroup": [
+    "adComponents",
+    "ads",
+    "biddingLogicURL",
+    "biddingWasmHelperURL",
+    "enableBiddingSignalsPrioritization",
+    "executionMode",
+    "lifetimeMs",
+    "name",
+    "owner",
+    "priorityVector",
+    "trustedBiddingSignalsKeys",
+    "trustedBiddingSignalsURL",
+    "updateURL",
+    "userBiddingSignals"
+  ],
   "GenerateBidOutput": [
     "ad",
     "adComponents",
@@ -38492,6 +38510,10 @@
     "nominal",
     "serious"
   ],
+  "PreviousWin": [
+    "adJSON",
+    "timeDelta"
+  ],
   "PrivateToken": [
     "issuers",
     "operation",
@@ -40505,6 +40527,11 @@
   ],
   "ReportBody": [
     "toJSON()"
+  ],
+  "ReportResultOutput": [
+    "reportUrl",
+    "reportingBeaconMap",
+    "signalsForWinner"
   ],
   "ReportingObserver": [
     "ReportingObserver(callback)",
@@ -48244,6 +48271,7 @@
     "all buyers timeout",
     "auction signals",
     "component auctions",
+    "config idl",
     "decision logic url",
     "interest group buyers",
     "pending promise count",
