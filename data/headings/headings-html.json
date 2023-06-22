@@ -1060,8 +1060,14 @@
   "#hostenqueuefinalizationregistrycleanupjob": [
     "/webappapis#hostenqueuefinalizationregistrycleanupjob"
   ],
+  "#hostenqueuegenericjob": [
+    "/webappapis#hostenqueuegenericjob"
+  ],
   "#hostenqueuepromisejob": [
     "/webappapis#hostenqueuepromisejob"
+  ],
+  "#hostenqueuetimeoutjob": [
+    "/webappapis#hostenqueuetimeoutjob"
   ],
   "#hostensurecancompilestrings(realm)": [
     "/webappapis#hostensurecancompilestrings(realm)"
@@ -11758,12 +11764,28 @@
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuefinalizationregistrycleanupjob"
     }
   },
-  "/webappapis#hostenqueuepromisejob": {
+  "/webappapis#hostenqueuegenericjob": {
     "current": {
       "number": "8.1.6.4.3",
       "spec": "HTML",
+      "text": "HostEnqueueGenericJob(job, realm)",
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuegenericjob"
+    }
+  },
+  "/webappapis#hostenqueuepromisejob": {
+    "current": {
+      "number": "8.1.6.4.4",
+      "spec": "HTML",
       "text": "HostEnqueuePromiseJob(job, realm)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuepromisejob"
+    }
+  },
+  "/webappapis#hostenqueuetimeoutjob": {
+    "current": {
+      "number": "8.1.6.4.5",
+      "spec": "HTML",
+      "text": "HostEnqueueTimeoutJob(job, realm, milliseconds)",
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuetimeoutjob"
     }
   },
   "/webappapis#hostensurecancompilestrings(realm)": {
@@ -11800,7 +11822,7 @@
   },
   "/webappapis#hostmakejobcallback": {
     "current": {
-      "number": "8.1.6.4.4",
+      "number": "8.1.6.4.6",
       "spec": "HTML",
       "text": "HostMakeJobCallback(callable)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostmakejobcallback"
