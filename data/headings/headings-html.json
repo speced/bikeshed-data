@@ -41,6 +41,9 @@
   "#aborting-a-document-load": [
     "/document-lifecycle#aborting-a-document-load"
   ],
+  "#aborting-navigation": [
+    "/browsing-the-web#aborting-navigation"
+  ],
   "#abstract": [
     "/introduction#abstract"
   ],
@@ -1588,6 +1591,12 @@
   "#navigables": [
     "/document-sequences#navigables"
   ],
+  "#navigate-event-firing": [
+    "/nav-history-apis#navigate-event-firing"
+  ],
+  "#navigate-event-scroll-focus": [
+    "/nav-history-apis#navigate-event-scroll-focus"
+  ],
   "#navigate-non-frag-sync": [
     "/browsing-the-web#navigate-non-frag-sync"
   ],
@@ -1599,6 +1608,24 @@
   ],
   "#navigation-and-session-history": [
     "/browsing-the-web#navigation-and-session-history"
+  ],
+  "#navigation-api": [
+    "/nav-history-apis#navigation-api"
+  ],
+  "#navigation-api-core": [
+    "/nav-history-apis#navigation-api-core"
+  ],
+  "#navigation-api-entry-updates": [
+    "/nav-history-apis#navigation-api-entry-updates"
+  ],
+  "#navigation-api-initiating-navigations": [
+    "/nav-history-apis#navigation-api-initiating-navigations"
+  ],
+  "#navigation-api-intro": [
+    "/nav-history-apis#navigation-api-intro"
+  ],
+  "#navigation-interface": [
+    "/nav-history-apis#navigation-interface"
   ],
   "#navigation-supporting-concepts": [
     "/browsing-the-web#navigation-supporting-concepts"
@@ -1659,6 +1686,9 @@
   ],
   "#offsets-into-the-media-resource": [
     "/media#offsets-into-the-media-resource"
+  ],
+  "#ongoing-navigation-tracking": [
+    "/nav-history-apis#ongoing-navigation-tracking"
   ],
   "#opening-the-input-stream": [
     "/dynamic-markup-insertion#opening-the-input-stream"
@@ -2706,6 +2736,9 @@
   "#the-hidden-attribute": [
     "/interaction#the-hidden-attribute"
   ],
+  "#the-history-entry-list": [
+    "/nav-history-apis#the-history-entry-list"
+  ],
   "#the-history-interface": [
     "/nav-history-apis#the-history-interface"
   ],
@@ -2873,6 +2906,21 @@
   ],
   "#the-nav-element": [
     "/sections#the-nav-element"
+  ],
+  "#the-navigate-event": [
+    "/nav-history-apis#the-navigate-event"
+  ],
+  "#the-navigateevent-interface": [
+    "/nav-history-apis#the-navigateevent-interface"
+  ],
+  "#the-navigationcurrententrychangeevent-interface": [
+    "/nav-history-apis#the-navigationcurrententrychangeevent-interface"
+  ],
+  "#the-navigationdestination-interface": [
+    "/nav-history-apis#the-navigationdestination-interface"
+  ],
+  "#the-navigationhistoryentry-interface": [
+    "/nav-history-apis#the-navigationhistoryentry-interface"
   ],
   "#the-navigator-object": [
     "/system-state#the-navigator-object"
@@ -3578,6 +3626,14 @@
       "spec": "HTML",
       "text": "The headers",
       "url": "https://html.spec.whatwg.org/multipage/browsers.html#the-coop-headers"
+    }
+  },
+  "/browsing-the-web#aborting-navigation": {
+    "current": {
+      "number": "7.4.2.5",
+      "spec": "HTML",
+      "text": "Aborting navigation",
+      "url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#aborting-navigation"
     }
   },
   "/browsing-the-web#applying-the-history-step": {
@@ -8342,10 +8398,26 @@
   },
   "/nav-history-apis#nav-traversal-event-interfaces": {
     "current": {
-      "number": "7.2.6",
+      "number": "7.2.7",
       "spec": "HTML",
       "text": "Event interfaces",
       "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#nav-traversal-event-interfaces"
+    }
+  },
+  "/nav-history-apis#navigate-event-firing": {
+    "current": {
+      "number": "7.2.6.9.3",
+      "spec": "HTML",
+      "text": "Firing the event",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing"
+    }
+  },
+  "/nav-history-apis#navigate-event-scroll-focus": {
+    "current": {
+      "number": "7.2.6.9.4",
+      "spec": "HTML",
+      "text": "Scroll and focus behavior",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-scroll-focus"
     }
   },
   "/nav-history-apis#navigating-nested-browsing-contexts-in-the-dom": {
@@ -8354,6 +8426,62 @@
       "spec": "HTML",
       "text": "Accessing related windows",
       "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigating-nested-browsing-contexts-in-the-dom"
+    }
+  },
+  "/nav-history-apis#navigation-api": {
+    "current": {
+      "number": "7.2.6",
+      "spec": "HTML",
+      "text": "The navigation API",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    }
+  },
+  "/nav-history-apis#navigation-api-core": {
+    "current": {
+      "number": "7.2.6.3",
+      "spec": "HTML",
+      "text": "Core infrastructure",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api-core"
+    }
+  },
+  "/nav-history-apis#navigation-api-entry-updates": {
+    "current": {
+      "number": "7.2.6.4",
+      "spec": "HTML",
+      "text": "Initializing and updating the entry list",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api-entry-updates"
+    }
+  },
+  "/nav-history-apis#navigation-api-initiating-navigations": {
+    "current": {
+      "number": "7.2.6.7",
+      "spec": "HTML",
+      "text": "Initiating navigations",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api-initiating-navigations"
+    }
+  },
+  "/nav-history-apis#navigation-api-intro": {
+    "current": {
+      "number": "7.2.6.1",
+      "spec": "HTML",
+      "text": "Introduction",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api-intro"
+    }
+  },
+  "/nav-history-apis#navigation-interface": {
+    "current": {
+      "number": "7.2.6.2",
+      "spec": "HTML",
+      "text": "The Navigation inteface",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-interface"
+    }
+  },
+  "/nav-history-apis#ongoing-navigation-tracking": {
+    "current": {
+      "number": "7.2.6.8",
+      "spec": "HTML",
+      "text": "Ongoing navigation tracking",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking"
     }
   },
   "/nav-history-apis#script-settings-for-window-objects": {
@@ -8382,7 +8510,7 @@
   },
   "/nav-history-apis#the-beforeunloadevent-interface": {
     "current": {
-      "number": "7.2.6.4",
+      "number": "7.2.7.5",
       "spec": "HTML",
       "text": "The BeforeUnloadEvent interface",
       "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-beforeunloadevent-interface"
@@ -8390,10 +8518,18 @@
   },
   "/nav-history-apis#the-hashchangeevent-interface": {
     "current": {
-      "number": "7.2.6.2",
+      "number": "7.2.7.3",
       "spec": "HTML",
       "text": "The HashChangeEvent interface",
       "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-hashchangeevent-interface"
+    }
+  },
+  "/nav-history-apis#the-history-entry-list": {
+    "current": {
+      "number": "7.2.6.6",
+      "spec": "HTML",
+      "text": "The history entry list",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-history-entry-list"
     }
   },
   "/nav-history-apis#the-history-interface": {
@@ -8412,9 +8548,49 @@
       "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-location-interface"
     }
   },
+  "/nav-history-apis#the-navigate-event": {
+    "current": {
+      "number": "7.2.6.9",
+      "spec": "HTML",
+      "text": "The navigate event",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigate-event"
+    }
+  },
+  "/nav-history-apis#the-navigateevent-interface": {
+    "current": {
+      "number": "7.2.6.9.1",
+      "spec": "HTML",
+      "text": "The NavigateEvent interface",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigateevent-interface"
+    }
+  },
+  "/nav-history-apis#the-navigationcurrententrychangeevent-interface": {
+    "current": {
+      "number": "7.2.7.1",
+      "spec": "HTML",
+      "text": "The NavigationCurrentEntryChangeEvent interface",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationcurrententrychangeevent-interface"
+    }
+  },
+  "/nav-history-apis#the-navigationdestination-interface": {
+    "current": {
+      "number": "7.2.6.9.2",
+      "spec": "HTML",
+      "text": "The NavigationDestination interface",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface"
+    }
+  },
+  "/nav-history-apis#the-navigationhistoryentry-interface": {
+    "current": {
+      "number": "7.2.6.5",
+      "spec": "HTML",
+      "text": "The NavigationHistoryEntry interface",
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationhistoryentry-interface"
+    }
+  },
   "/nav-history-apis#the-pagetransitionevent-interface": {
     "current": {
-      "number": "7.2.6.3",
+      "number": "7.2.7.4",
       "spec": "HTML",
       "text": "The PageTransitionEvent interface",
       "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-pagetransitionevent-interface"
@@ -8422,7 +8598,7 @@
   },
   "/nav-history-apis#the-popstateevent-interface": {
     "current": {
-      "number": "7.2.6.1",
+      "number": "7.2.7.2",
       "spec": "HTML",
       "text": "The PopStateEvent interface",
       "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-popstateevent-interface"
