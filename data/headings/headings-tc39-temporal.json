@@ -1103,6 +1103,14 @@
       "url": "https://tc39.es/proposal-temporal/#sec-literals-numeric-literals"
     }
   },
+  "#sec-localtime": {
+    "current": {
+      "number": "14.9.5",
+      "spec": "Temporal proposal",
+      "text": "LocalTime ( t )",
+      "url": "https://tc39.es/proposal-temporal/#sec-localtime"
+    }
+  },
   "#sec-mathematical-operations": {
     "current": {
       "number": "14.6",
@@ -1125,6 +1133,14 @@
       "spec": "Temporal proposal",
       "text": "Overview of Date Objects and Definitions of Abstract Operations",
       "url": "https://tc39.es/proposal-temporal/#sec-overview-of-date-objects-and-definitions-of-abstract-operations"
+    }
+  },
+  "#sec-parsetimezoneidentifier": {
+    "current": {
+      "number": "11.5.19",
+      "spec": "Temporal proposal",
+      "text": "ParseTimeZoneIdentifier ( identifier )",
+      "url": "https://tc39.es/proposal-temporal/#sec-parsetimezoneidentifier"
     }
   },
   "#sec-partitiondatetimepattern": {
@@ -1413,6 +1429,14 @@
       "spec": "Temporal proposal",
       "text": "SortStringListByCodeUnit ( strings )",
       "url": "https://tc39.es/proposal-temporal/#sec-sortstringlistbycodeunit"
+    }
+  },
+  "#sec-systemtimezoneidentifier": {
+    "current": {
+      "number": "14.9.3",
+      "spec": "Temporal proposal",
+      "text": "SystemTimeZoneIdentifier ( )",
+      "url": "https://tc39.es/proposal-temporal/#sec-systemtimezoneidentifier"
     }
   },
   "#sec-temporal-%40%40tostringtag": {
@@ -2007,14 +2031,6 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryearofweek"
     }
   },
-  "#sec-temporal-canonicalizetimezoneoffsetstring": {
-    "current": {
-      "number": "11.5.9",
-      "spec": "Temporal proposal",
-      "text": "CanonicalizeTimeZoneOffsetString ( offsetString )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-canonicalizetimezoneoffsetstring"
-    }
-  },
   "#sec-temporal-compareepochnanoseconds": {
     "current": {
       "number": "8.5.5",
@@ -2321,7 +2337,7 @@
   },
   "#sec-temporal-disambiguatepossibleinstants": {
     "current": {
-      "number": "11.5.17",
+      "number": "11.5.16",
       "spec": "Temporal proposal",
       "text": "DisambiguatePossibleInstants ( possibleInstants, timeZone, dateTime, disambiguation )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-disambiguatepossibleinstants"
@@ -2391,12 +2407,20 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatdatetimetoparts"
     }
   },
-  "#sec-temporal-formatisotimezoneoffsetstring": {
+  "#sec-temporal-formatdatetimeutcoffsetrounded": {
     "current": {
       "number": "11.5.7",
       "spec": "Temporal proposal",
-      "text": "FormatISOTimeZoneOffsetString ( offsetNanoseconds )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatisotimezoneoffsetstring"
+      "text": "FormatDateTimeUTCOffsetRounded ( offsetNanoseconds )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatdatetimeutcoffsetrounded"
+    }
+  },
+  "#sec-temporal-formatoffsettimezoneidentifier": {
+    "current": {
+      "number": "11.5.6",
+      "spec": "Temporal proposal",
+      "text": "FormatOffsetTimeZoneIdentifier ( offsetNanoseconds, style )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatoffsettimezoneidentifier"
     }
   },
   "#sec-temporal-formatsecondsstringpart": {
@@ -2405,14 +2429,6 @@
       "spec": "Temporal proposal",
       "text": "FormatSecondsStringPart ( second, millisecond, microsecond, nanosecond, precision )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatsecondsstringpart"
-    }
-  },
-  "#sec-temporal-formattimezoneoffsetstring": {
-    "current": {
-      "number": "11.5.6",
-      "spec": "Temporal proposal",
-      "text": "FormatTimeZoneOffsetString ( offsetNanoseconds )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-formattimezoneoffsetstring"
     }
   },
   "#sec-temporal-getdatetimeformatpattern": {
@@ -2449,7 +2465,7 @@
   },
   "#sec-temporal-getinstantfor": {
     "current": {
-      "number": "11.5.16",
+      "number": "11.5.15",
       "spec": "Temporal proposal",
       "text": "GetInstantFor ( timeZone, dateTime, disambiguation )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getinstantfor"
@@ -2465,7 +2481,7 @@
   },
   "#sec-temporal-getoffsetnanosecondsfor": {
     "current": {
-      "number": "11.5.13",
+      "number": "11.5.12",
       "spec": "Temporal proposal",
       "text": "GetOffsetNanosecondsFor ( timeZone, instant [ , getOffsetNanosecondsFor ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetnanosecondsfor"
@@ -2473,7 +2489,7 @@
   },
   "#sec-temporal-getoffsetstringfor": {
     "current": {
-      "number": "11.5.14",
+      "number": "11.5.13",
       "spec": "Temporal proposal",
       "text": "GetOffsetStringFor ( timeZone, instant )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetstringfor"
@@ -2481,7 +2497,7 @@
   },
   "#sec-temporal-getplaindatetimefor": {
     "current": {
-      "number": "11.5.15",
+      "number": "11.5.14",
       "spec": "Temporal proposal",
       "text": "GetPlainDateTimeFor ( timeZone, instant, calendar )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getplaindatetimefor"
@@ -2489,7 +2505,7 @@
   },
   "#sec-temporal-getpossibleinstantsfor": {
     "current": {
-      "number": "11.5.18",
+      "number": "11.5.17",
       "spec": "Temporal proposal",
       "text": "GetPossibleInstantsFor ( timeZone, dateTime [ , getPossibleInstantsFor ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getpossibleinstantsfor"
@@ -3473,7 +3489,7 @@
   },
   "#sec-temporal-timezoneequals": {
     "current": {
-      "number": "11.5.19",
+      "number": "11.5.18",
       "spec": "Temporal proposal",
       "text": "TimeZoneEquals ( one, two )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-timezoneequals"
@@ -3697,7 +3713,7 @@
   },
   "#sec-temporal-totemporaltimezoneidentifier": {
     "current": {
-      "number": "11.5.11",
+      "number": "11.5.10",
       "spec": "Temporal proposal",
       "text": "ToTemporalTimeZoneIdentifier ( timeZoneSlotValue )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneidentifier"
@@ -3705,7 +3721,7 @@
   },
   "#sec-temporal-totemporaltimezoneobject": {
     "current": {
-      "number": "11.5.12",
+      "number": "11.5.11",
       "spec": "Temporal proposal",
       "text": "ToTemporalTimeZoneObject ( timeZoneSlotValue )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneobject"
@@ -3713,7 +3729,7 @@
   },
   "#sec-temporal-totemporaltimezoneslotvalue": {
     "current": {
-      "number": "11.5.10",
+      "number": "11.5.9",
       "spec": "Temporal proposal",
       "text": "ToTemporalTimeZoneSlotValue ( temporalTimeZoneLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneslotvalue"
@@ -5591,6 +5607,22 @@
       "url": "https://tc39.es/proposal-temporal/#sec-time-zone-names-deleted"
     }
   },
+  "#sec-time-zone-offset-strings": {
+    "current": {
+      "number": "14.9.4",
+      "spec": "Temporal proposal",
+      "text": "Time Zone Offset String FormatFormats",
+      "url": "https://tc39.es/proposal-temporal/#sec-time-zone-offset-strings"
+    }
+  },
+  "#sec-timezoneestring": {
+    "current": {
+      "number": "14.9.7",
+      "spec": "Temporal proposal",
+      "text": "TimeZoneString ( tv )",
+      "url": "https://tc39.es/proposal-temporal/#sec-timezoneestring"
+    }
+  },
   "#sec-tointegerifintegral": {
     "current": {
       "number": "13.44",
@@ -5621,6 +5653,14 @@
       "spec": "Temporal proposal",
       "text": "Use of the IANA Time Zone Database",
       "url": "https://tc39.es/proposal-temporal/#sec-use-of-iana-time-zone-database"
+    }
+  },
+  "#sec-utc-t": {
+    "current": {
+      "number": "14.9.6",
+      "spec": "Temporal proposal",
+      "text": "UTC ( t )",
+      "url": "https://tc39.es/proposal-temporal/#sec-utc-t"
     }
   },
   "#sec-validatetemporalroundingincrement": {
