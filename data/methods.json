@@ -8329,6 +8329,7 @@
         "CanMakePaymentEvent",
         "CaptureActionEvent",
         "CaptureController",
+        "CapturedMouseEvent",
         "CharacterBoundsUpdateEvent",
         "CloseWatcher",
         "Comment",
@@ -9998,6 +9999,7 @@
         "AudioRenderCapacityEvent",
         "BeforeInstallPromptEvent",
         "CanMakePaymentEvent",
+        "CapturedMouseEvent",
         "CharacterBoundsUpdateEvent",
         "ClipboardEvent",
         "CloseEvent",
@@ -10075,6 +10077,7 @@
         "AudioRenderCapacityEvent",
         "BeforeInstallPromptEvent",
         "BlobEvent",
+        "CapturedMouseEvent",
         "ClipboardEvent",
         "CloseEvent",
         "CompositionEvent",
@@ -25490,6 +25493,24 @@
         "XRSession"
       ],
       "shortname": "anchors"
+    }
+  },
+  "restrictTo()": {
+    "restrictTo()": {
+      "args": [],
+      "for": [
+        "BrowserCaptureMediaStreamTrack"
+      ],
+      "shortname": "element-capture"
+    },
+    "restrictTo(cropTarget)": {
+      "args": [
+        "cropTarget"
+      ],
+      "for": [
+        "BrowserCaptureMediaStreamTrack"
+      ],
+      "shortname": "element-capture"
     }
   },
   "resume()": {
