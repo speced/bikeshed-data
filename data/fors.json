@@ -1271,6 +1271,8 @@
     "BreakType",
     "BroadcastChannel",
     "BrowserCaptureMediaStreamTrack",
+    "BrowsingTopic",
+    "BrowsingTopicsOptions",
     "BufferSource",
     "ByteLengthQueuingStrategy",
     "ByteListBitwiseOp",
@@ -2722,7 +2724,6 @@
     "LinearAccelerationSensor",
     "LinkError",
     "LinkStyle",
-    "LinkedResource",
     "Load a font with a HTTP Cache",
     "LoadDocumentCallback",
     "LoadDocumentOptions",
@@ -3346,7 +3347,6 @@
     "PublicKeyCredentialType",
     "PublicKeyCredentialUserEntity",
     "PublicKeyCredentialUserEntityJSON",
-    "PublicationManifest",
     "PurchaseDetails",
     "PushEncryptionKeyName",
     "PushEvent",
@@ -5206,6 +5206,7 @@
     "append an attribute",
     "append client hints to request",
     "append error",
+    "append or modify a request `sec-browsing-topics` header",
     "append private state token issue request headers",
     "append private state token redemption record headers",
     "append private state token redemption request headers",
@@ -5572,8 +5573,6 @@
     "author request headers",
     "author style sheet",
     "author-origin",
-    "authored manifest",
-    "authored publication manifest",
     "authoring tool",
     "authorization gesture",
     "authorization server",
@@ -5708,7 +5707,6 @@
     "base box",
     "base direction",
     "base iri",
-    "base language direction",
     "base level",
     "base size",
     "base text level",
@@ -6080,7 +6078,9 @@
     "browsing context scope origin",
     "browsing context set",
     "browsing context tree discarded",
+    "browsing topics task source",
     "browsing-context connected",
+    "browsing-topics",
     "bsize field",
     "bubble phase",
     "bubbling phase",
@@ -6158,7 +6158,10 @@
     "calculate the absolute position",
     "calculate the aspect ratio",
     "calculate the effective durability hint",
+    "calculate the epochs for caller",
     "calculate the part element map",
+    "calculate the topics for caller",
+    "calculate user topics",
     "calculation tree",
     "calibrated",
     "calibrated magnetic field",
@@ -6232,13 +6235,11 @@
     "canonical keyword",
     "canonical lexical form",
     "canonical locale",
-    "canonical manifest",
     "canonical n-quads",
     "canonical n-quads document",
     "canonical n-quads form",
     "canonical n-triples document",
     "canonical paymentcurrencyamount",
-    "canonical publication manifest",
     "canonical tag",
     "canonical unicode locale identifier",
     "canonical unit",
@@ -6525,6 +6526,7 @@
     "classic script",
     "classic scrollbars",
     "classichistoryapistate",
+    "classify",
     "cldr",
     "clean up",
     "clean up after running a callback",
@@ -6702,6 +6704,8 @@
     "collect attribute values",
     "collect attribute values of an inheritance stack",
     "collect documents to unfullscreen",
+    "collect page topics calculation input data",
+    "collect topics caller domain",
     "collect webvtt cue timings and settings",
     "collect webvtt region settings",
     "collecting a sequence of code points",
@@ -7551,8 +7555,6 @@
     "creation",
     "creation-fixed footprint",
     "creator",
-    "creator information",
-    "creatorinfo",
     "credblob value",
     "credential",
     "credential chooser",
@@ -7835,7 +7837,6 @@
     "dataset-isomorphic",
     "datasrc",
     "datastream",
-    "datastreamposition",
     "datatype",
     "datatype iri",
     "datatype map",
@@ -8058,6 +8059,7 @@
     "derive render targets layout from pass",
     "derive render targets layout from pipeline",
     "derive the accessible name",
+    "derive top 5 topics",
     "derivebits",
     "derivekey",
     "deriving the accessible name",
@@ -8975,8 +8977,6 @@
     "external type",
     "external type name",
     "external type record",
-    "external web resource",
-    "external web resources",
     "extract a byte sequence",
     "extract a four-bit decimal value",
     "extract a key from a value using a key path",
@@ -9803,6 +9803,7 @@
     "get credentials",
     "get current url",
     "get deadline time",
+    "get descendant topics",
     "get descriptor",
     "get element attribute",
     "get element css value",
@@ -9859,6 +9860,7 @@
     "get the next code point",
     "get the next iteration result",
     "get the notifications permission state",
+    "get the number of distinct versions in epochs",
     "get the object",
     "get the parent",
     "get the parent browsing context",
@@ -10079,6 +10081,7 @@
     "handle object map",
     "handle response end-of-body",
     "handle service worker client unload",
+    "handle topics response",
     "handle transition frame",
     "handle user agent shutdown",
     "handled",
@@ -10867,6 +10870,7 @@
     "interest group set",
     "interest group update",
     "interest groups",
+    "interest-cohort",
     "interface",
     "interface descriptor",
     "interface member",
@@ -11659,7 +11663,6 @@
     "locating an entry",
     "location",
     "location-object navigate",
-    "locator",
     "lock",
     "lock manager",
     "lock request",
@@ -11673,8 +11676,6 @@
     "locked to a reader",
     "locked to a writer",
     "locking the screen orientation",
-    "locus",
-    "locus (of interest)",
     "log event buffer",
     "log()",
     "logical",
@@ -12904,6 +12905,7 @@
     "observable policy",
     "observation procedure",
     "observe a target element",
+    "observe-browsing-topics",
     "observed attributes",
     "observer",
     "observer buffer",
@@ -12976,12 +12978,9 @@
     "obtain the report time at a window",
     "obtain their numeric values",
     "obtain webgl depth information",
-    "obtaining a manifest",
     "obtaining a window memory attribution token",
     "obtaining a worker memory attribution token",
     "obtaining permission",
-    "obtaining the manifest",
-    "obtains a manifest",
     "obviously discoverable",
     "occupied",
     "ocf abstract container",
@@ -13892,7 +13891,6 @@
     "positioning rectangle",
     "positioning scheme",
     "positioning schemes:",
-    "positions",
     "possible blocking tokens",
     "possibly appropriate alternatives",
     "possibly update the key generator",
@@ -13904,8 +13902,6 @@
     "post-navigation checks",
     "post-office-box",
     "post-prerendering activation geolocation watch process id",
-    "post-process the canonical manifest",
-    "post-processing a canonical manifest",
     "postal-code",
     "posted message task source",
     "poster",
@@ -14116,7 +14112,6 @@
     "process a keyframe-like object",
     "process a keyframes argument",
     "process a link header",
-    "process a manifest",
     "process a miniapp manifest",
     "process a miniapp package",
     "process a null action",
@@ -14228,7 +14223,6 @@
     "process username for init",
     "process vertices",
     "process()",
-    "processed manifest",
     "processing",
     "processing a manifest",
     "processing a miniapp manifest",
@@ -14584,7 +14578,6 @@
     "reader",
     "readiness state",
     "reading a body",
-    "reading progression",
     "reading progression direction",
     "reading quantization algorithm",
     "reading system",
@@ -15455,6 +15448,7 @@
     "schedule a posttask task",
     "schedule a task to invoke a callback",
     "schedule job",
+    "schedule user topics calculation",
     "scheduled event time",
     "scheduler task",
     "scheduler task queue",
@@ -15647,6 +15641,7 @@
     "search origin",
     "searching for services",
     "seashell",
+    "sec-browsing-topics",
     "sec-ch-dpr",
     "sec-ch-ua",
     "sec-ch-ua-arch",
@@ -15689,8 +15684,6 @@
     "seek",
     "seek and get the next code point",
     "seeking",
-    "segment",
-    "segment (of interest)",
     "segment break",
     "segment parser loop",
     "segment-completing close path",
@@ -15728,7 +15721,6 @@
     "selector matches",
     "selector::match",
     "selector::subject of",
-    "selectors",
     "selectstart",
     "self",
     "self attestation",
@@ -16320,7 +16312,6 @@
     "sourcedocument",
     "sourceended",
     "sourceopen",
-    "sources",
     "space to fill",
     "space warp",
     "space-like",
@@ -16381,8 +16372,6 @@
     "specified start delay",
     "specified value",
     "specified values",
-    "specifier",
-    "specifiers",
     "specifies a powerful feature",
     "speculation rule",
     "speculation rule set",
@@ -16534,9 +16523,6 @@
     "step unit",
     "steps",
     "steps for determining the web app's chosen display mode",
-    "steps for obtaining a manifest",
-    "steps for post-processing a canonical manifest",
-    "steps for processing a manifest",
     "steps for when a user changes payment method",
     "steps to check if a payment can be made",
     "steps to expose a media-resource-specific text track",
@@ -17141,7 +17127,6 @@
     "textarea effective width",
     "textarea wrapping transformation",
     "textcolor",
-    "textdirection",
     "textdirective",
     "textdirectiveexplicitchar",
     "textdirectiveparameters",
@@ -17150,7 +17135,6 @@
     "textdirectivesuffix",
     "textpath",
     "textphone",
-    "textstreamposition",
     "texture",
     "texture gather",
     "texture gather compare",
@@ -17504,7 +17488,6 @@
     "typeset upright",
     "typesetting sideways",
     "typesetting upright",
-    "typing",
     "typographic character",
     "typographic character unit",
     "typographic letter unit",
@@ -18272,12 +18255,7 @@
     "web frame identifier",
     "web idl arguments list",
     "web locks tasks source",
-    "web publication",
-    "web publication's",
-    "web publications",
     "web push protocol",
-    "web resource",
-    "web resources",
     "web share target",
     "web window identifier",
     "web worker",
@@ -22069,6 +22047,16 @@
     "restrictTo()",
     "restrictTo(cropTarget)"
   ],
+  "BrowsingTopic": [
+    "configVersion",
+    "modelVersion",
+    "taxonomyVersion",
+    "topic",
+    "version"
+  ],
+  "BrowsingTopicsOptions": [
+    "skipObservation"
+  ],
   "BufferSource": [
     "byte length",
     "detached",
@@ -25060,13 +25048,6 @@
     "arguments",
     "input"
   ],
-  "CreatorInfo": [
-    "CreatorInfo",
-    "id",
-    "name",
-    "type",
-    "url"
-  ],
   "Credential": [
     "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)",
     "[[Create]](origin, options, sameOriginWithAncestors)",
@@ -26919,6 +26900,8 @@
     "bgColor",
     "body",
     "browsing context",
+    "browsingTopics()",
+    "browsingTopics(options)",
     "captureEvents()",
     "caretPositionFromPoint(x, y)",
     "characterSet",
@@ -27176,6 +27159,12 @@
   ],
   "Document/adoptNode(node)": [
     "node"
+  ],
+  "Document/browsingTopics()": [
+    "options"
+  ],
+  "Document/browsingTopics(options)": [
+    "options"
   ],
   "Document/caretPositionFromPoint(x, y)": [
     "x",
@@ -31805,6 +31794,7 @@
     "align",
     "allow",
     "allowFullscreen",
+    "browsingTopics",
     "contentDocument",
     "contentWindow",
     "csp",
@@ -34221,15 +34211,6 @@
   "LinkStyle": [
     "sheet"
   ],
-  "LinkedResource": [
-    "description",
-    "encodingFormat",
-    "integrity",
-    "length",
-    "name",
-    "rel",
-    "url"
-  ],
   "LoadDocumentCallback": [
     "url"
   ],
@@ -34237,11 +34218,6 @@
     "extractAllScripts",
     "profile",
     "requestProfile"
-  ],
-  "LocalizableString": [
-    "LocalizableString",
-    "language",
-    "value"
   ],
   "Location": [
     "ancestorOrigins",
@@ -39032,11 +39008,6 @@
     "loaded",
     "total"
   ],
-  "ProgressionDirection": [
-    "ProgressionDirection",
-    "ltr",
-    "rtl"
-  ],
   "Promise": [
     "Promise(executor)",
     "all(iterable)",
@@ -39210,39 +39181,6 @@
     "displayName",
     "id",
     "name"
-  ],
-  "PublicationManifest": [
-    "accessMode",
-    "accessModeSufficient",
-    "accessibilityFeature",
-    "accessibilityHazard",
-    "accessibilitySummary",
-    "artist",
-    "author",
-    "colorist",
-    "contributor",
-    "creator",
-    "dateModified",
-    "datePublished",
-    "duration",
-    "editor",
-    "id",
-    "illustrator",
-    "inDirection",
-    "inLanguage",
-    "inker",
-    "letterer",
-    "links",
-    "name",
-    "penciler",
-    "publisher",
-    "readBy",
-    "readingOrder",
-    "readingProgression",
-    "resources",
-    "translator",
-    "type",
-    "url"
   ],
   "PurchaseDetails": [
     "itemId",
@@ -41167,6 +41105,7 @@
   "RequestInit": [
     "attributionReporting",
     "body",
+    "browsingTopics",
     "cache",
     "credentials",
     "duplex",
@@ -43775,7 +43714,6 @@
     "image"
   ],
   "TextDirection": [
-    "TextDirection",
     "auto",
     "ltr",
     "rtl"
@@ -49343,6 +49281,24 @@
     "required csp",
     "top-level traversable"
   ],
+  "browsing topics types": [
+    "configuration version",
+    "epoch",
+    "maximum version string length",
+    "model",
+    "model version",
+    "taxonomy",
+    "taxonomy version",
+    "topic ids",
+    "topic with caller domains",
+    "topics caller context",
+    "topics history entry",
+    "user topics state",
+    "version"
+  ],
+  "browsing-topic": [
+    "code unit less than"
+  ],
   "buffer internals": [
     "state"
   ],
@@ -50138,12 +50094,6 @@
     "candidate authenticator",
     "selected authenticator"
   ],
-  "creatorinfo": [
-    "id",
-    "name",
-    "type",
-    "url"
-  ],
   "credential": [
     "credential type",
     "effective"
@@ -50293,6 +50243,9 @@
   ],
   "details": [
     "open"
+  ],
+  "determine-topics-calculation-input-data-header": [
+    "topics calculation input data"
   ],
   "device": [
     "[[adapter]]",
@@ -50470,6 +50423,9 @@
     "unload event end time",
     "unload event start time"
   ],
+  "document-id-header": [
+    "document id"
+  ],
   "dominant-baseline": [
     "alphabetic",
     "auto",
@@ -50640,6 +50596,14 @@
     "service worker object map",
     "service worker registration object map",
     "time origin"
+  ],
+  "epoch": [
+    "config version",
+    "model version",
+    "taxonomy",
+    "taxonomy version",
+    "time",
+    "top 5 topics with caller domains"
   ],
   "event": [
     "browsing context event map",
@@ -51888,6 +51852,7 @@
     "allow",
     "allowfullscreen",
     "allowtransparency",
+    "browsingtopics",
     "csp",
     "frameborder",
     "framespacing",
@@ -52628,15 +52593,6 @@
     "search",
     "stylesheet"
   ],
-  "linkedresource": [
-    "description",
-    "encodingFormat",
-    "integrity",
-    "length",
-    "name",
-    "rel",
-    "url"
-  ],
   "list": [
     "append",
     "clone",
@@ -52703,10 +52659,6 @@
   ],
   "local storage bucket": [
     "mode"
-  ],
-  "localizablestring": [
-    "language",
-    "value"
   ],
   "lock manager": [
     "held lock set",
@@ -54115,10 +54067,6 @@
     "max",
     "value"
   ],
-  "progressiondirection": [
-    "ltr",
-    "rtl"
-  ],
   "promise": [
     "react",
     "reacting"
@@ -54149,39 +54097,6 @@
     "rpid",
     "type",
     "userhandle"
-  ],
-  "publicationmanifest": [
-    "accessMode",
-    "accessModeSufficient",
-    "accessibilityFeature",
-    "accessibilityHazard",
-    "accessibilitySummary",
-    "artist",
-    "author",
-    "colorist",
-    "contributor",
-    "creator",
-    "dateModified",
-    "datePublished",
-    "duration",
-    "editor",
-    "id",
-    "illustrator",
-    "inDirection",
-    "inLanguage",
-    "inker",
-    "letterer",
-    "links",
-    "name",
-    "penciler",
-    "publisher",
-    "readBy",
-    "readingOrder",
-    "readingProgression",
-    "resources",
-    "translator",
-    "type",
-    "url"
   ],
   "pull-into descriptor": [
     "buffer",
@@ -54483,6 +54398,7 @@
     "reserved client",
     "response tainting",
     "result",
+    "send browsing topics header boolean",
     "service-workers mode",
     "source",
     "stashed exchange",
@@ -56167,6 +56083,21 @@
     "system focus",
     "user attention"
   ],
+  "topic with caller domains": [
+    "caller domains",
+    "topic id"
+  ],
+  "topics caller context": [
+    "caller domain",
+    "timestamp",
+    "top level context domain"
+  ],
+  "topics history entry": [
+    "document id",
+    "time",
+    "topics calculation input data",
+    "topics caller domains"
+  ],
   "tr": [
     "align",
     "bgcolor",
@@ -56456,17 +56387,23 @@
   "user agent": [
     "brand",
     "brands",
+    "configuration version",
     "equivalence class",
     "form-factor",
     "full version",
     "mobileness",
     "model",
+    "model version",
     "platform architecture",
     "platform bitness",
     "platform brand",
     "platform version",
     "significant version",
     "storage shed",
+    "taxonomy",
+    "taxonomy version",
+    "topics history storage",
+    "user topics state",
     "wow64-ness"
   ],
   "user contact": [
@@ -56475,6 +56412,10 @@
     "icons",
     "names",
     "numbers"
+  ],
+  "user topics state": [
+    "epochs",
+    "hmac key"
   ],
   "user-select": [
     "all",
