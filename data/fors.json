@@ -4069,6 +4069,16 @@
     "TextTrackMode",
     "TextUpdateEvent",
     "TextUpdateEventInit",
+    "ThisBigIntValue",
+    "ThisBigIntValue(value)",
+    "ThisBooleanValue",
+    "ThisBooleanValue(value)",
+    "ThisNumberValue",
+    "ThisNumberValue(value)",
+    "ThisStringValue",
+    "ThisStringValue(value)",
+    "ThisSymbolValue",
+    "ThisSymbolValue(value)",
     "ThrowCompletion",
     "ThrowCompletion(value)",
     "TimeClip",
@@ -9185,6 +9195,7 @@
     "filter",
     "filter buffer by name and type",
     "filter buffer map by name and type",
+    "filter config",
     "filter map",
     "filter method",
     "filter primitive",
@@ -11896,7 +11907,7 @@
     "match a selector against a pseudo-element",
     "match a selector against a tree",
     "match a selector against an element",
-    "match an attribution source's filter data against a filter map",
+    "match an attribution source's filter data against a filter config",
     "match an attribution source's filter data against filters",
     "match an attribution source's filter data against filters and negated filters",
     "match an installed app",
@@ -13475,6 +13486,7 @@
     "parse error",
     "parse errors",
     "parse event triggers",
+    "parse filter config",
     "parse filter data",
     "parse filter values",
     "parse filters",
@@ -17188,11 +17200,6 @@
     "third party context",
     "third party identifier name",
     "this",
-    "thisBigIntValue",
-    "thisBooleanValue",
-    "thisNumberValue",
-    "thisStringValue",
-    "thisSymbolValue",
     "thistle",
     "threeddarkshadow",
     "threedface",
@@ -17711,6 +17718,7 @@
     "updatestart",
     "updating the rendering of a WebGPU canvas",
     "updating the search origin",
+    "upgrade a database",
     "upgrade a mixed content request to a potentially trustworthy url, if appropriate",
     "upgrade a request",
     "upgrade an element",
@@ -24933,6 +24941,7 @@
     "domain",
     "expires",
     "name",
+    "partitioned",
     "path",
     "sameSite",
     "value"
@@ -24941,6 +24950,7 @@
     "domain",
     "expires",
     "name",
+    "partitioned",
     "path",
     "sameSite",
     "secure",
@@ -24998,6 +25008,7 @@
   "CookieStoreDeleteOptions": [
     "domain",
     "name",
+    "partitioned",
     "path"
   ],
   "CookieStoreGetOptions": [
@@ -39757,6 +39768,7 @@
     "fecBytesReceived",
     "fecPacketsDiscarded",
     "fecPacketsReceived",
+    "fecSsrc",
     "firCount",
     "frameHeight",
     "frameWidth",
@@ -39788,6 +39800,7 @@
     "removedSamplesForAcceleration",
     "retransmittedBytesReceived",
     "retransmittedPacketsReceived",
+    "rtxSsrc",
     "silentConcealedSamples",
     "totalAssemblyTime",
     "totalAudioEnergy",
@@ -39839,6 +39852,7 @@
     "retransmittedBytesSent",
     "retransmittedPacketsSent",
     "rid",
+    "rtxSsrc",
     "scalabilityMode",
     "targetBitrate",
     "totalEncodeTime",
@@ -51131,6 +51145,10 @@
     "x",
     "y"
   ],
+  "filter config": [
+    "lookback window",
+    "map"
+  ],
   "filter-primitive": [
     "height",
     "in",
@@ -52877,7 +52895,7 @@
     "objectboundingbox",
     "userspaceonuse"
   ],
-  "match an attribution source’s filter data against a filter map": [
+  "match an attribution source’s filter data against a filter config": [
     "isnegated"
   ],
   "match an attribution source’s filter data against filters": [
@@ -56129,6 +56147,7 @@
     "finished",
     "inactive",
     "lifetime",
+    "live",
     "mode",
     "overlap",
     "overlapping scope",
