@@ -111,6 +111,62 @@
       "url": "https://w3c.github.io/webdriver-bidi/#command-input-releaseActions"
     }
   },
+  "#command-network-addIntercept": {
+    "current": {
+      "number": "6.4.4.1",
+      "spec": "WebDriver BiDi",
+      "text": "The network.addIntercept Command",
+      "url": "https://w3c.github.io/webdriver-bidi/#command-network-addIntercept"
+    }
+  },
+  "#command-network-continueRequest": {
+    "current": {
+      "number": "6.4.4.2",
+      "spec": "WebDriver BiDi",
+      "text": "The network.continueRequest Command",
+      "url": "https://w3c.github.io/webdriver-bidi/#command-network-continueRequest"
+    }
+  },
+  "#command-network-continueResponse": {
+    "current": {
+      "number": "6.4.4.3",
+      "spec": "WebDriver BiDi",
+      "text": "The network.continueResponse Command",
+      "url": "https://w3c.github.io/webdriver-bidi/#command-network-continueResponse"
+    }
+  },
+  "#command-network-continueWithAuth": {
+    "current": {
+      "number": "6.4.4.4",
+      "spec": "WebDriver BiDi",
+      "text": "The network.continueWithAuth Command",
+      "url": "https://w3c.github.io/webdriver-bidi/#command-network-continueWithAuth"
+    }
+  },
+  "#command-network-failRequest": {
+    "current": {
+      "number": "6.4.4.5",
+      "spec": "WebDriver BiDi",
+      "text": "The network.failRequest Command",
+      "url": "https://w3c.github.io/webdriver-bidi/#command-network-failRequest"
+    }
+  },
+  "#command-network-provideResponse": {
+    "current": {
+      "number": "6.4.4.6",
+      "spec": "WebDriver BiDi",
+      "text": "The network.provideResponse Command",
+      "url": "https://w3c.github.io/webdriver-bidi/#command-network-provideResponse"
+    }
+  },
+  "#command-network-removeIntercept": {
+    "current": {
+      "number": "6.4.4.7",
+      "spec": "WebDriver BiDi",
+      "text": "The network.removeIntercept Command",
+      "url": "https://w3c.github.io/webdriver-bidi/#command-network-removeIntercept"
+    }
+  },
   "#command-script-addPreloadScript": {
     "current": {
       "number": "6.5.4.1",
@@ -319,9 +375,17 @@
       "url": "https://w3c.github.io/webdriver-bidi/#event-log-entryAdded"
     }
   },
+  "#event-network-authRequired": {
+    "current": {
+      "number": "6.4.5.1",
+      "spec": "WebDriver BiDi",
+      "text": "The network.authRequired Event",
+      "url": "https://w3c.github.io/webdriver-bidi/#event-network-authRequired"
+    }
+  },
   "#event-network-beforeSendRequest": {
     "current": {
-      "number": "6.4.3.1",
+      "number": "6.4.5.2",
       "spec": "WebDriver BiDi",
       "text": "The network.beforeRequestSent Event",
       "url": "https://w3c.github.io/webdriver-bidi/#event-network-beforeSendRequest"
@@ -329,7 +393,7 @@
   },
   "#event-network-fetchError": {
     "current": {
-      "number": "6.4.3.2",
+      "number": "6.4.5.3",
       "spec": "WebDriver BiDi",
       "text": "The network.fetchError Event",
       "url": "https://w3c.github.io/webdriver-bidi/#event-network-fetchError"
@@ -337,7 +401,7 @@
   },
   "#event-network-responseCompleted": {
     "current": {
-      "number": "6.4.3.3",
+      "number": "6.4.5.4",
       "spec": "WebDriver BiDi",
       "text": "The network.responseCompleted Event",
       "url": "https://w3c.github.io/webdriver-bidi/#event-network-responseCompleted"
@@ -345,7 +409,7 @@
   },
   "#event-network-responseStarted": {
     "current": {
-      "number": "6.4.3.4",
+      "number": "6.4.5.5",
       "spec": "WebDriver BiDi",
       "text": "The network.responseStarted Event",
       "url": "https://w3c.github.io/webdriver-bidi/#event-network-responseStarted"
@@ -575,6 +639,14 @@
       "url": "https://w3c.github.io/webdriver-bidi/#module-network"
     }
   },
+  "#module-network-commands": {
+    "current": {
+      "number": "6.4.4",
+      "spec": "WebDriver BiDi",
+      "text": "Commands",
+      "url": "https://w3c.github.io/webdriver-bidi/#module-network-commands"
+    }
+  },
   "#module-network-definition": {
     "current": {
       "number": "6.4.1",
@@ -585,7 +657,7 @@
   },
   "#module-network-event": {
     "current": {
-      "number": "6.4.3",
+      "number": "6.4.5",
       "spec": "WebDriver BiDi",
       "text": "Events",
       "url": "https://w3c.github.io/webdriver-bidi/#module-network-event"
@@ -593,7 +665,7 @@
   },
   "#module-network-types": {
     "current": {
-      "number": "6.4.2",
+      "number": "6.4.3",
       "spec": "WebDriver BiDi",
       "text": "Types",
       "url": "https://w3c.github.io/webdriver-bidi/#module-network-types"
@@ -677,6 +749,14 @@
       "spec": "WebDriver BiDi",
       "text": "Modules",
       "url": "https://w3c.github.io/webdriver-bidi/#modules"
+    }
+  },
+  "#network-intercepts": {
+    "current": {
+      "number": "6.4.2",
+      "spec": "WebDriver BiDi",
+      "text": "Network Intercepts",
+      "url": "https://w3c.github.io/webdriver-bidi/#network-intercepts"
     }
   },
   "#normative": {
@@ -871,9 +951,25 @@
       "url": "https://w3c.github.io/webdriver-bidi/#type-input-origin"
     }
   },
+  "#type-network-AuthChallenge": {
+    "current": {
+      "number": "6.4.3.1",
+      "spec": "WebDriver BiDi",
+      "text": "The network.AuthChallenge Type",
+      "url": "https://w3c.github.io/webdriver-bidi/#type-network-AuthChallenge"
+    }
+  },
+  "#type-network-AuthCredentials": {
+    "current": {
+      "number": "6.4.3.2",
+      "spec": "WebDriver BiDi",
+      "text": "The network.AuthCredentials Type",
+      "url": "https://w3c.github.io/webdriver-bidi/#type-network-AuthCredentials"
+    }
+  },
   "#type-network-BaseParameters": {
     "current": {
-      "number": "6.4.2.1",
+      "number": "6.4.3.3",
       "spec": "WebDriver BiDi",
       "text": "The network.BaseParameters Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-BaseParameters"
@@ -881,7 +977,7 @@
   },
   "#type-network-BytesValue": {
     "current": {
-      "number": "6.4.2.2",
+      "number": "6.4.3.4",
       "spec": "WebDriver BiDi",
       "text": "The network.BytesValue Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-BytesValue"
@@ -889,15 +985,23 @@
   },
   "#type-network-Cookie": {
     "current": {
-      "number": "6.4.2.3",
+      "number": "6.4.3.5",
       "spec": "WebDriver BiDi",
       "text": "The network.Cookie Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-Cookie"
     }
   },
+  "#type-network-CookieHeader": {
+    "current": {
+      "number": "6.4.3.6",
+      "spec": "WebDriver BiDi",
+      "text": "The network.CookieHeader Type",
+      "url": "https://w3c.github.io/webdriver-bidi/#type-network-CookieHeader"
+    }
+  },
   "#type-network-FetchTimingInfo": {
     "current": {
-      "number": "6.4.2.4",
+      "number": "6.4.3.7",
       "spec": "WebDriver BiDi",
       "text": "The network.FetchTimingInfo Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-FetchTimingInfo"
@@ -905,7 +1009,7 @@
   },
   "#type-network-Header": {
     "current": {
-      "number": "6.4.2.5",
+      "number": "6.4.3.8",
       "spec": "WebDriver BiDi",
       "text": "The network.Header Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-Header"
@@ -913,15 +1017,23 @@
   },
   "#type-network-Initiator": {
     "current": {
-      "number": "6.4.2.6",
+      "number": "6.4.3.9",
       "spec": "WebDriver BiDi",
       "text": "The network.Initiator Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-Initiator"
     }
   },
+  "#type-network-Intercept": {
+    "current": {
+      "number": "6.4.3.10",
+      "spec": "WebDriver BiDi",
+      "text": "The network.Intercept Type",
+      "url": "https://w3c.github.io/webdriver-bidi/#type-network-Intercept"
+    }
+  },
   "#type-network-Request": {
     "current": {
-      "number": "6.4.2.7",
+      "number": "6.4.3.11",
       "spec": "WebDriver BiDi",
       "text": "The network.Request Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-Request"
@@ -929,7 +1041,7 @@
   },
   "#type-network-RequestData": {
     "current": {
-      "number": "6.4.2.8",
+      "number": "6.4.3.12",
       "spec": "WebDriver BiDi",
       "text": "The network.RequestData Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-RequestData"
@@ -937,7 +1049,7 @@
   },
   "#type-network-ResponseContent": {
     "current": {
-      "number": "6.4.2.9",
+      "number": "6.4.3.13",
       "spec": "WebDriver BiDi",
       "text": "The network.ResponseContent Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-ResponseContent"
@@ -945,10 +1057,26 @@
   },
   "#type-network-ResponseData": {
     "current": {
-      "number": "6.4.2.10",
+      "number": "6.4.3.14",
       "spec": "WebDriver BiDi",
       "text": "The network.ResponseData Type",
       "url": "https://w3c.github.io/webdriver-bidi/#type-network-ResponseData"
+    }
+  },
+  "#type-network-SetCookieHeader": {
+    "current": {
+      "number": "6.4.3.15",
+      "spec": "WebDriver BiDi",
+      "text": "The network.SetCookieHeader Type",
+      "url": "https://w3c.github.io/webdriver-bidi/#type-network-SetCookieHeader"
+    }
+  },
+  "#type-network-UrlPattern": {
+    "current": {
+      "number": "6.4.3.16",
+      "spec": "WebDriver BiDi",
+      "text": "The network.UrlPattern Type",
+      "url": "https://w3c.github.io/webdriver-bidi/#type-network-UrlPattern"
     }
   },
   "#type-script-Channel": {
