@@ -7541,11 +7541,9 @@
     "create brands",
     "create camera instance",
     "create client",
-    "create context",
     "create job",
     "create link options from element",
     "create mesh object",
-    "create mloperand",
     "create mock sensor",
     "create navigation params by fetching",
     "create navigation params from a prefetch record",
@@ -34621,7 +34619,6 @@
     "MLGraphBuilder(context)",
     "[[context]]",
     "abs(input)",
-    "abs(x)",
     "add(a, b)",
     "averagePool2d(input)",
     "averagePool2d(input, options)",
@@ -34633,14 +34630,11 @@
     "calculate matmul output sizes",
     "calculate padding output sizes",
     "ceil(input)",
-    "ceil(x)",
     "check resample options",
     "clamp()",
     "clamp(operand)",
     "clamp(operand, options)",
     "clamp(options)",
-    "clamp(x)",
-    "clamp(x, options)",
     "concat(inputs, axis)",
     "constant(descriptor, bufferView)",
     "constant(value)",
@@ -34651,7 +34645,6 @@
     "convTranspose2d(input, filter)",
     "convTranspose2d(input, filter, options)",
     "cos(input)",
-    "cos(x)",
     "div(a, b)",
     "element-wise-binary-op",
     "element-wise-unary-op",
@@ -34659,12 +34652,8 @@
     "elu(input)",
     "elu(input, options)",
     "elu(options)",
-    "elu(x)",
-    "elu(x, options)",
     "exp(input)",
-    "exp(x)",
     "floor(input)",
-    "floor(x)",
     "gemm(a, b)",
     "gemm(a, b, options)",
     "gru(input, weight, recurrentWeight, steps, hiddenSize)",
@@ -34675,11 +34664,8 @@
     "hardSigmoid(input)",
     "hardSigmoid(input, options)",
     "hardSigmoid(options)",
-    "hardSigmoid(x)",
-    "hardSigmoid(x, options)",
     "hardSwish()",
     "hardSwish(input)",
-    "hardSwish(x)",
     "input(name, descriptor)",
     "instanceNormalization(input)",
     "instanceNormalization(input, options)",
@@ -34689,16 +34675,11 @@
     "leakyRelu(input)",
     "leakyRelu(input, options)",
     "leakyRelu(options)",
-    "leakyRelu(x)",
-    "leakyRelu(x, options)",
     "linear()",
     "linear(input)",
     "linear(input, options)",
     "linear(options)",
-    "linear(x)",
-    "linear(x, options)",
     "log(input)",
-    "log(x)",
     "lstm(input, weight, recurrentWeight, steps, hiddenSize)",
     "lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
     "lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)",
@@ -34710,13 +34691,11 @@
     "min(a, b)",
     "mul(a, b)",
     "neg(input)",
-    "neg(x)",
     "pad(input, beginningPadding, endingPadding)",
     "pad(input, beginningPadding, endingPadding, options)",
     "pooling-op",
     "pow(a, b)",
     "prelu(input, slope)",
-    "prelu(x, slope)",
     "reduce-op",
     "reduceL1(input)",
     "reduceL1(input, options)",
@@ -34740,39 +34719,30 @@
     "reduceSumSquare(input, options)",
     "relu()",
     "relu(input)",
-    "relu(x)",
     "resample output sizes",
     "resample2d(input)",
     "resample2d(input, options)",
     "reshape(input, newShape)",
     "sigmoid()",
     "sigmoid(input)",
-    "sigmoid(x)",
     "sin(input)",
-    "sin(x)",
     "slice(input, starts, sizes)",
     "softmax()",
     "softmax(input)",
-    "softmax(x)",
     "softplus()",
     "softplus(input)",
     "softplus(input, options)",
     "softplus(options)",
-    "softplus(x)",
-    "softplus(x, options)",
     "softsign()",
     "softsign(input)",
-    "softsign(x)",
     "split(input, splits)",
     "split(input, splits, options)",
     "squeeze(input)",
     "squeeze(input, options)",
     "sub(a, b)",
     "tan(input)",
-    "tan(x)",
     "tanh()",
     "tanh(input)",
-    "tanh(x)",
     "transpose(input)",
     "transpose(input, options)"
   ],
@@ -34781,9 +34751,6 @@
   ],
   "MLGraphBuilder/abs(input)": [
     "input"
-  ],
-  "MLGraphBuilder/abs(x)": [
-    "x"
   ],
   "MLGraphBuilder/add(a, b)": [
     "a",
@@ -34818,9 +34785,6 @@
   "MLGraphBuilder/ceil(input)": [
     "input"
   ],
-  "MLGraphBuilder/ceil(x)": [
-    "x"
-  ],
   "MLGraphBuilder/clamp()": [
     "options"
   ],
@@ -34834,14 +34798,6 @@
   ],
   "MLGraphBuilder/clamp(options)": [
     "options"
-  ],
-  "MLGraphBuilder/clamp(x)": [
-    "options",
-    "x"
-  ],
-  "MLGraphBuilder/clamp(x, options)": [
-    "options",
-    "x"
   ],
   "MLGraphBuilder/concat(inputs, axis)": [
     "axis",
@@ -34885,9 +34841,6 @@
   "MLGraphBuilder/cos(input)": [
     "input"
   ],
-  "MLGraphBuilder/cos(x)": [
-    "x"
-  ],
   "MLGraphBuilder/div(a, b)": [
     "a",
     "b"
@@ -34906,25 +34859,11 @@
   "MLGraphBuilder/elu(options)": [
     "options"
   ],
-  "MLGraphBuilder/elu(x)": [
-    "options",
-    "x"
-  ],
-  "MLGraphBuilder/elu(x, options)": [
-    "options",
-    "x"
-  ],
   "MLGraphBuilder/exp(input)": [
     "input"
   ],
-  "MLGraphBuilder/exp(x)": [
-    "x"
-  ],
   "MLGraphBuilder/floor(input)": [
     "input"
-  ],
-  "MLGraphBuilder/floor(x)": [
-    "x"
   ],
   "MLGraphBuilder/gemm(a, b)": [
     "a",
@@ -34982,19 +34921,8 @@
   "MLGraphBuilder/hardSigmoid(options)": [
     "options"
   ],
-  "MLGraphBuilder/hardSigmoid(x)": [
-    "options",
-    "x"
-  ],
-  "MLGraphBuilder/hardSigmoid(x, options)": [
-    "options",
-    "x"
-  ],
   "MLGraphBuilder/hardSwish(input)": [
     "input"
-  ],
-  "MLGraphBuilder/hardSwish(x)": [
-    "x"
   ],
   "MLGraphBuilder/input(name, descriptor)": [
     "descriptor",
@@ -35030,14 +34958,6 @@
   "MLGraphBuilder/leakyRelu(options)": [
     "options"
   ],
-  "MLGraphBuilder/leakyRelu(x)": [
-    "options",
-    "x"
-  ],
-  "MLGraphBuilder/leakyRelu(x, options)": [
-    "options",
-    "x"
-  ],
   "MLGraphBuilder/linear()": [
     "options"
   ],
@@ -35052,19 +34972,8 @@
   "MLGraphBuilder/linear(options)": [
     "options"
   ],
-  "MLGraphBuilder/linear(x)": [
-    "options",
-    "x"
-  ],
-  "MLGraphBuilder/linear(x, options)": [
-    "options",
-    "x"
-  ],
   "MLGraphBuilder/log(input)": [
     "input"
-  ],
-  "MLGraphBuilder/log(x)": [
-    "x"
   ],
   "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)": [
     "hiddenSize",
@@ -35127,9 +35036,6 @@
   "MLGraphBuilder/neg(input)": [
     "input"
   ],
-  "MLGraphBuilder/neg(x)": [
-    "x"
-  ],
   "MLGraphBuilder/pad(input, beginningPadding, endingPadding)": [
     "beginningPadding",
     "endingPadding",
@@ -35149,10 +35055,6 @@
   "MLGraphBuilder/prelu(input, slope)": [
     "input",
     "slope"
-  ],
-  "MLGraphBuilder/prelu(x, slope)": [
-    "slope",
-    "x"
   ],
   "MLGraphBuilder/reduceL1(input)": [
     "input",
@@ -35237,9 +35139,6 @@
   "MLGraphBuilder/relu(input)": [
     "input"
   ],
-  "MLGraphBuilder/relu(x)": [
-    "x"
-  ],
   "MLGraphBuilder/resample2d(input)": [
     "input",
     "options"
@@ -35255,14 +35154,8 @@
   "MLGraphBuilder/sigmoid(input)": [
     "input"
   ],
-  "MLGraphBuilder/sigmoid(x)": [
-    "x"
-  ],
   "MLGraphBuilder/sin(input)": [
     "input"
-  ],
-  "MLGraphBuilder/sin(x)": [
-    "x"
   ],
   "MLGraphBuilder/slice(input, starts, sizes)": [
     "input",
@@ -35271,9 +35164,6 @@
   ],
   "MLGraphBuilder/softmax(input)": [
     "input"
-  ],
-  "MLGraphBuilder/softmax(x)": [
-    "x"
   ],
   "MLGraphBuilder/softplus()": [
     "options"
@@ -35289,19 +35179,8 @@
   "MLGraphBuilder/softplus(options)": [
     "options"
   ],
-  "MLGraphBuilder/softplus(x)": [
-    "options",
-    "x"
-  ],
-  "MLGraphBuilder/softplus(x, options)": [
-    "options",
-    "x"
-  ],
   "MLGraphBuilder/softsign(input)": [
     "input"
-  ],
-  "MLGraphBuilder/softsign(x)": [
-    "x"
   ],
   "MLGraphBuilder/split(input, splits)": [
     "input",
@@ -35328,14 +35207,8 @@
   "MLGraphBuilder/tan(input)": [
     "input"
   ],
-  "MLGraphBuilder/tan(x)": [
-    "x"
-  ],
   "MLGraphBuilder/tanh(input)": [
     "input"
-  ],
-  "MLGraphBuilder/tanh(x)": [
-    "x"
   ],
   "MLGraphBuilder/transpose(input)": [
     "input",
