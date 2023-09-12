@@ -4862,6 +4862,7 @@
     "ad descriptor",
     "ad size",
     "ad structure",
+    "ad-auction-allowed",
     "adapter",
     "add",
     "add a css style sheet",
@@ -6138,7 +6139,7 @@
     "build an interest group passed to generatebid",
     "build an interest group permissions url",
     "build bid generators map",
-    "build the list of first-party sets",
+    "build the list of related website sets",
     "build trusted bidding signals url",
     "build trusted scoring signals url",
     "built-in functions",
@@ -9273,7 +9274,6 @@
     "finalize event timing",
     "finalize focus decision algorithm",
     "find",
-    "find a first-party set",
     "find a list of configuration descriptors for the connected usb device",
     "find a list of descriptors for a configuration",
     "find a list of endpoint descriptors",
@@ -9281,6 +9281,7 @@
     "find a potential indicated element",
     "find a range from a node list",
     "find a range from a text directive",
+    "find a related website set",
     "find a slot",
     "find a string in range",
     "find client hint value",
@@ -9293,6 +9294,7 @@
     "find flattened slottables",
     "find focusable areas",
     "find if the interface is claimed",
+    "find matching ad",
     "find matching links",
     "find matching sources",
     "find slottables",
@@ -9387,7 +9389,6 @@
     "first-letter",
     "first-letter text",
     "first-line",
-    "first-party set",
     "first-party-site context",
     "first-person observer view",
     "first-strong detection",
@@ -11614,7 +11615,6 @@
     "list of elements with class names classnames",
     "list of elements with namespace namespace and local name localname",
     "list of elements with qualified name qualifiedname",
-    "list of first-party sets",
     "list of full-sized viewports",
     "list of idle request callbacks",
     "list of immersive xr devices",
@@ -11633,6 +11633,7 @@
     "list of pending play promises",
     "list of pending text tracks",
     "list of registered performance observer objects",
+    "list of related website sets",
     "list of representations",
     "list of runnable idle callbacks",
     "list of scripts that will execute in order as soon as possible",
@@ -14850,6 +14851,7 @@
     "related application",
     "related construct",
     "related member",
+    "related website set",
     "relationship",
     "relationship discovery",
     "relationship strings",
@@ -18114,7 +18116,6 @@
     "validate a standardized payment method identifier",
     "validate a suffix",
     "validate a url-based payment method identifier",
-    "validate an ad url",
     "validate and convert auction ad config",
     "validate and extract",
     "validate and normalize",
@@ -18676,12 +18677,12 @@
     "x",
     "x-axis",
     "x-content-type-options",
+    "x-fledge-bidding-signals-format-version",
     "x-frame-options",
     "x-height",
     "x-height baseline",
     "x-mac-cyrillic",
     "x-middle baseline",
-    "x-protected-audience-bidding-signals-format-version",
     "x-ua-compatible state",
     "x-user-defined",
     "x-user-defined decoder",
@@ -20342,6 +20343,7 @@
     "triggerEligible"
   ],
   "AuctionAd": [
+    "allowedReportingOrigins",
     "buyerAndSellerReportingId",
     "buyerReportingId",
     "metadata",
@@ -33603,12 +33605,18 @@
   ],
   "InterestGroupReportingScriptRunnerGlobalScope": [
     "registerAdBeacon(map)",
+    "registerAdMacro(name, value)",
     "report url",
     "reporting beacon map",
+    "reporting macro map",
     "sendReportTo(url)"
   ],
   "InterestGroupReportingScriptRunnerGlobalScope/registerAdBeacon(map)": [
     "map"
+  ],
+  "InterestGroupReportingScriptRunnerGlobalScope/registerAdMacro(name, value)": [
+    "name",
+    "value"
   ],
   "InterestGroupReportingScriptRunnerGlobalScope/sendReportTo(url)": [
     "url"
@@ -51391,12 +51399,6 @@
   "firefox": [
     "devicecompat"
   ],
-  "first-party set": [
-    "associatedsites",
-    "cctlds",
-    "primary",
-    "servicesites"
-  ],
   "flex": [
     "-webkit-box",
     "-webkit-flex",
@@ -51723,6 +51725,7 @@
     "ad cost",
     "ad descriptor",
     "bid",
+    "bid ad",
     "bid duration",
     "bid in seller currency",
     "interest group",
@@ -52504,6 +52507,7 @@
     "user bidding signals"
   ],
   "interest group ad": [
+    "allowed reporting origins",
     "buyer and seller reporting id",
     "buyer reporting id",
     "metadata",
@@ -54530,6 +54534,12 @@
     "os",
     "web"
   ],
+  "related website set": [
+    "associatedsites",
+    "cctlds",
+    "primary",
+    "servicesites"
+  ],
   "relevant global object": [
     "[[explicitlyGrantedAudioOutputDevices]]"
   ],
@@ -54572,7 +54582,8 @@
   ],
   "reporting result": [
     "report url",
-    "reporting beacon map"
+    "reporting beacon map",
+    "reporting macro map"
   ],
   "representation": [
     "data",
