@@ -634,6 +634,8 @@
     "<font-features-tech>",
     "<font-format",
     "<font-format>",
+    "<font-src-list>",
+    "<font-src>",
     "<font-stretch-css3>",
     "<font-tech>",
     "<font-variant-css2>",
@@ -1108,6 +1110,7 @@
     "AudioContext",
     "AudioContextLatencyCategory",
     "AudioContextOptions",
+    "AudioContextRenderSizeCategory",
     "AudioContextState",
     "AudioData",
     "AudioDataCopyToOptions",
@@ -20576,8 +20579,15 @@
   ],
   "AudioContextOptions": [
     "latencyHint",
+    "renderSizeHint",
     "sampleRate",
     "sinkId"
+  ],
+  "AudioContextRenderSizeCategory": [
+    "\"default\"",
+    "\"hardware\"",
+    "default",
+    "hardware"
   ],
   "AudioContextState": [
     "\"closed\"",
@@ -21082,6 +21092,7 @@
     "currentTime",
     "port",
     "registerProcessor(name, processorCtor)",
+    "renderQuantumSize",
     "sampleRate"
   ],
   "AudioWorkletGlobalScope/registerProcessor(name, processorCtor)": [
@@ -21509,6 +21520,7 @@
     "[[control thread state]]",
     "[[current frame]]",
     "[[pending promises]]",
+    "[[render quantum size]]",
     "[[rendering thread state]]",
     "associated task queue",
     "audioWorklet",
@@ -21545,6 +21557,7 @@
     "destination",
     "listener",
     "onstatechange",
+    "renderQuantumSize",
     "sampleRate",
     "state",
     "statechange"
@@ -37905,6 +37918,7 @@
   "OfflineAudioContextOptions": [
     "length",
     "numberOfChannels",
+    "renderSizeHint",
     "sampleRate"
   ],
   "OffscreenCanvas": [
