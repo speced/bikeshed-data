@@ -12713,6 +12713,7 @@
     "need new subpath",
     "need random access point flag",
     "needs a browsing context group switch",
+    "needs scroll adjustment",
     "negative scrollable overflow region",
     "negotiation-needed flag",
     "neighbor",
@@ -13545,6 +13546,7 @@
     "parse an asn.1 structure",
     "parse an attribution destination",
     "parse an equivalence map",
+    "parse an https origin",
     "parse an import map string",
     "parse an mp3 frame",
     "parse an ndef absolute-url record",
@@ -13557,7 +13559,6 @@
     "parse an ndef url record",
     "parse an optional 64-bit signed integer",
     "parse an optional 64-bit unsigned integer",
-    "parse an origin",
     "parse an origin-bound one-time code message",
     "parse and validate a site",
     "parse as a forgiving selector list",
@@ -28731,10 +28732,18 @@
   ],
   "Fence": [
     "getNestedConfigs()",
+    "reportEvent()",
     "reportEvent(event)",
+    "setReportEventDataForAutomaticBeacons()",
     "setReportEventDataForAutomaticBeacons(event)"
   ],
+  "Fence/reportEvent()": [
+    "event"
+  ],
   "Fence/reportEvent(event)": [
+    "event"
+  ],
+  "Fence/setReportEventDataForAutomaticBeacons()": [
     "event"
   ],
   "Fence/setReportEventDataForAutomaticBeacons(event)": [
@@ -28742,6 +28751,7 @@
   ],
   "FenceEvent": [
     "destination",
+    "destinationURL",
     "eventData",
     "eventType",
     "once"
@@ -50555,6 +50565,10 @@
   "destination": [
     "translate"
   ],
+  "destination enum event": [
+    "data",
+    "type"
+  ],
   "destination rate-limit result": [
     "allowed",
     "hit global limit",
@@ -51208,6 +51222,8 @@
     "fenced frame reporting metadata reference"
   ],
   "fenced frame reporting metadata": [
+    "allowed reporting origins",
+    "attempted custom url report to disallowed origin",
     "direct seller is seller",
     "fenced frame reporting map",
     "value",
@@ -51232,6 +51248,9 @@
     "visibility"
   ],
   "fencedframetype": [
+    "destination enum event",
+    "destination event",
+    "destination url event",
     "exfiltration budget metadata",
     "exfiltration budget metadata reference",
     "exhaustive set of sandbox flags",
@@ -51240,6 +51259,7 @@
     "fenced frame reporting metadata",
     "interest group descriptor",
     "pending event",
+    "reporting destination info",
     "size"
   ],
   "fencedframeutil": [
@@ -54124,8 +54144,7 @@
     "attributionreportingenabled",
     "contextorigin",
     "destination",
-    "eventdata",
-    "eventtype"
+    "event"
   ],
   "pending external speculation rule resource": [
     "cancel and discard",
@@ -54677,6 +54696,10 @@
   "report window": [
     "end",
     "start"
+  ],
+  "reporting destination info": [
+    "reporting macro map",
+    "reporting url map"
   ],
   "reporting result": [
     "report url",
