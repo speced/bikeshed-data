@@ -4187,11 +4187,14 @@
     "TransformStreamDefaultSinkAbortAlgorithm",
     "TransformStreamDefaultSinkCloseAlgorithm",
     "TransformStreamDefaultSinkWriteAlgorithm",
+    "TransformStreamDefaultSourceCancelAlgorithm",
     "TransformStreamDefaultSourcePullAlgorithm",
     "TransformStreamError",
     "TransformStreamErrorWritableAndUnblockWrite",
     "TransformStreamSetBackpressure",
+    "TransformStreamUnblockWrite",
     "Transformer",
+    "TransformerCancelCallback",
     "TransformerFlushCallback",
     "TransformerStartCallback",
     "TransformerTransformCallback",
@@ -44394,10 +44397,13 @@
     "writableStrategy"
   ],
   "TransformStream/set up": [
+    "cancelalgorithm",
     "flushalgorithm",
     "transformalgorithm"
   ],
   "TransformStreamDefaultController": [
+    "[[cancelalgorithm]]",
+    "[[finishpromise]]",
     "[[flushalgorithm]]",
     "[[stream]]",
     "[[transformalgorithm]]",
@@ -44422,11 +44428,15 @@
     "reason"
   ],
   "Transformer": [
+    "cancel",
     "flush",
     "readableType",
     "start",
     "transform",
     "writableType"
+  ],
+  "TransformerCancelCallback": [
+    "reason"
   ],
   "TransformerFlushCallback": [
     "controller"
