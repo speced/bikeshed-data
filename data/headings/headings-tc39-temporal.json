@@ -1455,6 +1455,14 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-abstract-ops"
     }
   },
+  "#sec-temporal-adddate": {
+    "current": {
+      "number": "3.5.13",
+      "spec": "Temporal proposal",
+      "text": "AddDate ( calendar, plainDate, duration [ , options [ , dateAdd ] ] )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddate"
+    }
+  },
   "#sec-temporal-adddatetime": {
     "current": {
       "number": "5.5.9",
@@ -1463,17 +1471,25 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddatetime"
     }
   },
+  "#sec-temporal-adddaystozoneddatetime": {
+    "current": {
+      "number": "6.5.6",
+      "spec": "Temporal proposal",
+      "text": "AddDaysToZonedDateTime ( instant, dateTime, timeZone, calendar, days [ , overflow ] )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddaystozoneddatetime"
+    }
+  },
   "#sec-temporal-addduration": {
     "current": {
       "number": "7.5.23",
       "spec": "Temporal proposal",
-      "text": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, zonedRelativeTo )",
+      "text": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-addduration"
     }
   },
   "#sec-temporal-adddurationtoOrsubtractdurationfromzoneddatetime": {
     "current": {
-      "number": "6.5.9",
+      "number": "6.5.10",
       "spec": "Temporal proposal",
       "text": "AddDurationToOrSubtractDurationFromZonedDateTime ( operation, zonedDateTime, temporalDurationLike, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddurationtoOrsubtractdurationfromzoneddatetime"
@@ -1529,7 +1545,7 @@
   },
   "#sec-temporal-addisodate": {
     "current": {
-      "number": "3.5.11",
+      "number": "3.5.12",
       "spec": "Temporal proposal",
       "text": "AddISODate ( year, month, day, years, months, weeks, days, overflow )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-addisodate"
@@ -1555,7 +1571,7 @@
     "current": {
       "number": "7.5.28",
       "spec": "Temporal proposal",
-      "text": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, zonedRelativeTo )",
+      "text": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, zonedRelativeTo, precalculatedPlainDateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adjustroundeddurationdays"
     }
   },
@@ -1585,7 +1601,7 @@
   },
   "#sec-temporal-balanceisodate": {
     "current": {
-      "number": "3.5.8",
+      "number": "3.5.9",
       "spec": "Temporal proposal",
       "text": "BalanceISODate ( year, month, day )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-balanceisodate"
@@ -1619,7 +1635,7 @@
     "current": {
       "number": "7.5.20",
       "spec": "Temporal proposal",
-      "text": "BalancePossiblyInfiniteTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo )",
+      "text": "BalancePossiblyInfiniteTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancepossiblyinfinitetimedurationrelative"
     }
   },
@@ -1643,7 +1659,7 @@
     "current": {
       "number": "7.5.19",
       "spec": "Temporal proposal",
-      "text": "BalanceTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo )",
+      "text": "BalanceTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, precalculatedPlainDateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancetimedurationrelative"
     }
   },
@@ -2041,7 +2057,7 @@
   },
   "#sec-temporal-compareisodate": {
     "current": {
-      "number": "3.5.12",
+      "number": "3.5.14",
       "spec": "Temporal proposal",
       "text": "CompareISODate ( y1, m1, d1, y2, m2, d2 )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-compareisodate"
@@ -2247,6 +2263,14 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-defaulttemporallargestunit"
     }
   },
+  "#sec-temporal-differencedate": {
+    "current": {
+      "number": "3.5.6",
+      "spec": "Temporal proposal",
+      "text": "DifferenceDate ( calendar, one, two, options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-differencedate"
+    }
+  },
   "#sec-temporal-differenceinstant": {
     "current": {
       "number": "8.5.6",
@@ -2281,7 +2305,7 @@
   },
   "#sec-temporal-differencetemporalplaindate": {
     "current": {
-      "number": "3.5.13",
+      "number": "3.5.15",
       "spec": "Temporal proposal",
       "text": "DifferenceTemporalPlainDate ( operation, temporalDate, other, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-differencetemporalplaindate"
@@ -2313,7 +2337,7 @@
   },
   "#sec-temporal-differencetemporalzoneddatetime": {
     "current": {
-      "number": "6.5.8",
+      "number": "6.5.9",
       "spec": "Temporal proposal",
       "text": "DifferenceTemporalZonedDateTime ( operation, zonedDateTime, other, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-differencetemporalzoneddatetime"
@@ -2329,9 +2353,9 @@
   },
   "#sec-temporal-differencezoneddatetime": {
     "current": {
-      "number": "6.5.6",
+      "number": "6.5.7",
       "spec": "Temporal proposal",
-      "text": "DifferenceZonedDateTime ( ns1, ns2, timeZone, calendar, largestUnit, options )",
+      "text": "DifferenceZonedDateTime ( ns1, ns2, timeZone, calendar, largestUnit, options, precalculatedPlainDateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-differencezoneddatetime"
     }
   },
@@ -2833,7 +2857,7 @@
   },
   "#sec-temporal-isvalidisodate": {
     "current": {
-      "number": "3.5.7",
+      "number": "3.5.8",
       "spec": "Temporal proposal",
       "text": "IsValidISODate ( year, month, day )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-isvalidisodate"
@@ -2891,15 +2915,15 @@
     "current": {
       "number": "7.5.26",
       "spec": "Temporal proposal",
-      "text": "MoveRelativeZonedDateTime ( zonedDateTime, years, months, weeks, days )",
+      "text": "MoveRelativeZonedDateTime ( zonedDateTime, years, months, weeks, days, precalculatedPlainDateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativezoneddatetime"
     }
   },
   "#sec-temporal-nanosecondstodays": {
     "current": {
-      "number": "6.5.7",
+      "number": "6.5.8",
       "spec": "Temporal proposal",
-      "text": "NanosecondsToDays ( nanoseconds, zonedRelativeTo )",
+      "text": "NanosecondsToDays ( nanoseconds, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-nanosecondstodays"
     }
   },
@@ -2969,7 +2993,7 @@
   },
   "#sec-temporal-padisoyear": {
     "current": {
-      "number": "3.5.9",
+      "number": "3.5.10",
       "spec": "Temporal proposal",
       "text": "PadISOYear ( y )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-padisoyear"
@@ -3265,7 +3289,7 @@
   },
   "#sec-temporal-regulateisodate": {
     "current": {
-      "number": "3.5.6",
+      "number": "3.5.7",
       "spec": "Temporal proposal",
       "text": "RegulateISODate ( year, month, day, overflow )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-regulateisodate"
@@ -3299,7 +3323,7 @@
     "current": {
       "number": "7.5.27",
       "spec": "Temporal proposal",
-      "text": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , plainRelativeTo [ , zonedRelativeTo ] ] )",
+      "text": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , plainRelativeTo [ , zonedRelativeTo [ , precalculatedPlainDateTime ] ] ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-roundduration"
     }
   },
@@ -3401,7 +3425,7 @@
   },
   "#sec-temporal-temporaldatetostring": {
     "current": {
-      "number": "3.5.10",
+      "number": "3.5.11",
       "spec": "Temporal proposal",
       "text": "TemporalDateToString ( temporalDate, showCalendar )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-temporaldatetostring"
