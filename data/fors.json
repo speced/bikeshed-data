@@ -389,6 +389,7 @@
     "::view-transition-new()",
     "::view-transition-old()",
     ":active",
+    ":active-view-transition(<vt-type-selector>)",
     ":after",
     ":any-link",
     ":autofill",
@@ -897,6 +898,7 @@
     "<url-token>",
     "<url>",
     "<visual-box>",
+    "<vt-type-selector>",
     "<wcag2>",
     "<whitespace-token>",
     "<wq-name>",
@@ -3975,6 +3977,7 @@
     "SpeechSynthesisUtterance",
     "SpeechSynthesisVoice",
     "StartInDirectory",
+    "StartViewTransitionOptions",
     "StatefulAnimator",
     "StatelessAnimator",
     "StaticRange",
@@ -4429,6 +4432,7 @@
     "WebTransportReceiveStream",
     "WebTransportReceiveStreamStats",
     "WebTransportReliabilityMode",
+    "WebTransportSendGroup",
     "WebTransportSendStream",
     "WebTransportSendStreamOptions",
     "WebTransportSendStreamStats",
@@ -9787,6 +9791,7 @@
     "generate all implied end tags thoroughly",
     "generate an attribution debug report url",
     "generate an attribution report url",
+    "generate an id",
     "generate an internal error",
     "generate an out-of-memory error",
     "generate and queue a report",
@@ -10129,6 +10134,7 @@
     "group_count_x",
     "group_count_y",
     "group_count_z",
+    "grouped",
     "groupid",
     "grouping elements",
     "growth limit",
@@ -11428,6 +11434,7 @@
     "last line",
     "last main-axis baseline set",
     "last modification date",
+    "last performance entry id",
     "last position updated time",
     "last presented frame indentifier",
     "last remembered size",
@@ -12493,6 +12500,7 @@
     "monotonic clock",
     "monotonically increasing timeline",
     "month",
+    "most recent navigation",
     "most-negative-single-float",
     "most-positive-single-float",
     "motionvectortextures",
@@ -14546,6 +14554,7 @@
     "queue a microtask",
     "queue a mutation observer microtask",
     "queue a mutation record",
+    "queue a navigation performanceentry",
     "queue a performanceentry",
     "queue a popover toggle event task",
     "queue a pressure observer task",
@@ -17720,6 +17729,7 @@
     "unfrozen",
     "unfullscreen a document",
     "unfullscreen an element",
+    "ungrouped",
     "unhandled prompt behavior",
     "unicode",
     "unicode bidi algorithm",
@@ -27390,6 +27400,7 @@
     "scrollingElement",
     "shown",
     "startViewTransition()",
+    "startViewTransition(callbackOptionsOrNull)",
     "startViewTransition(updateCallback)",
     "strictErrorChecking",
     "timeline",
@@ -27539,6 +27550,9 @@
   ],
   "Document/startViewTransition()": [
     "updateCallback"
+  ],
+  "Document/startViewTransition(callbackOptionsOrNull)": [
+    "callbackOptionsOrNull"
   ],
   "Document/startViewTransition(updateCallback)": [
     "updateCallback"
@@ -38630,7 +38644,9 @@
   "PerformanceEntry": [
     "duration",
     "entryType",
+    "id",
     "name",
+    "navigationId",
     "startTime",
     "toJSON()"
   ],
@@ -43377,6 +43393,10 @@
     "name",
     "voiceURI"
   ],
+  "StartViewTransitionOptions": [
+    "types",
+    "update"
+  ],
   "StatefulAnimator": [
     "StatefulAnimator()",
     "StatefulAnimator(options)",
@@ -46007,6 +46027,7 @@
     "subject"
   ],
   "ViewTransition": [
+    "active types",
     "finished",
     "finished promise",
     "initial snapshot containing block size",
@@ -46262,6 +46283,7 @@
     "constructor(url, options)",
     "createBidirectionalStream()",
     "createBidirectionalStream(options)",
+    "createSendGroup()",
     "createUnidirectionalStream()",
     "createUnidirectionalStream(options)",
     "datagrams",
@@ -46441,9 +46463,16 @@
     "\"reliable-only\"",
     "\"supports-unreliable\""
   ],
+  "WebTransportSendGroup": [
+    "[[Transport]]",
+    "create",
+    "creating",
+    "getStats()"
+  ],
   "WebTransportSendStream": [
     "[[InternalStream]]",
     "[[PendingOperation]]",
+    "[[SendGroup]]",
     "[[SendOrder]]",
     "[[Transport]]",
     "abort",
@@ -46451,10 +46480,12 @@
     "create",
     "creating",
     "getStats()",
+    "sendGroup",
     "sendOrder",
     "write"
   ],
   "WebTransportSendStreamOptions": [
+    "sendGroup",
     "sendOrder"
   ],
   "WebTransportSendStreamStats": [
