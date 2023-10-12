@@ -929,7 +929,6 @@
     "@@toprimitive",
     "@@tostringtag",
     "@@unscopables",
-    "@auto-view-transition",
     "@bottom-center",
     "@bottom-left",
     "@bottom-left-corner",
@@ -968,6 +967,7 @@
     "@top-right",
     "@top-right-corner",
     "@try",
+    "@view-transition",
     "@when",
     "ARIAMixin",
     "AV1EncoderConfig",
@@ -1391,6 +1391,7 @@
     "CSSUnparsedSegment",
     "CSSUnparsedValue",
     "CSSVariableReferenceValue",
+    "CSSViewTransitionRule",
     "Cache",
     "CacheQueryOptions",
     "CacheStorage",
@@ -3158,7 +3159,6 @@
     "PackAndPostMessageHandlingError",
     "Page",
     "PageInputObject",
-    "PageRevealEvent",
     "PageState",
     "PageTransitionEvent",
     "PageTransitionEventInit",
@@ -3686,6 +3686,7 @@
     "ResponseInit",
     "ResponseType",
     "RestrictionTarget",
+    "RevealEvent",
     "RotationMatrixType",
     "RoundMVResult",
     "RoundMVResult(n)",
@@ -4375,6 +4376,7 @@
     "ViewTimeline",
     "ViewTimelineOptions",
     "ViewTransition",
+    "ViewTransitionTrigger",
     "VirtualKeyboard",
     "VisibilityStateEntry",
     "VisualViewport",
@@ -19468,9 +19470,6 @@
   "<url>": [
     "local url flag"
   ],
-  "@auto-view-transition": [
-    "same-origin"
-  ],
   "@color-profile": [
     "components",
     "rendering-intent",
@@ -19753,6 +19752,9 @@
     "inherits",
     "initial-value",
     "syntax"
+  ],
+  "@view-transition": [
+    "trigger"
   ],
   "@viewport": [
     "viewport-fit"
@@ -23670,6 +23672,7 @@
     "PAGE_RULE",
     "STYLE_RULE",
     "SUPPORTS_RULE",
+    "VIEW_TRANSITION_RULE",
     "child css rules",
     "cssText",
     "parent css rule",
@@ -24053,6 +24056,10 @@
   "CSSVariableReferenceValue/constructor(variable, fallback)": [
     "fallback",
     "variable"
+  ],
+  "CSSViewTransitionRule": [
+    "navigationConditionText",
+    "trigger"
   ],
   "Cache": [
     "add(request)",
@@ -38221,9 +38228,6 @@
   "PageInputObject": [
     "pageInputQuery"
   ],
-  "PageRevealEvent": [
-    "viewTransition"
-  ],
   "PageState": [
     "hidden",
     "loaded",
@@ -41672,6 +41676,9 @@
     "[[Element]]",
     "fromElement()",
     "fromElement(element)"
+  ],
+  "RevealEvent": [
+    "viewTransition"
   ],
   "RsaHashedImportParams": [
     "hash"
@@ -46053,6 +46060,10 @@
     "update callback",
     "update callback done promise",
     "updateCallbackDone"
+  ],
+  "ViewTransitionTrigger": [
+    "\"navigation\"",
+    "\"none\""
   ],
   "VirtualKeyboard": [
     "boundingRect",
@@ -50835,13 +50846,13 @@
     "default document timeline",
     "dynamic view transition style sheet",
     "inbound cross-document view-transition",
-    "is revealed",
     "list of pending external speculation rule resources",
     "list of speculation rule sets",
     "opt in to cross-document view transitions",
     "potential soft navigation task id",
+    "ready to render",
+    "ready to render fired",
     "rendering suppression for view transitions",
-    "reveal document",
     "scripting policy",
     "setup outbound cross-document view transition",
     "show view transition tree",
@@ -55051,10 +55062,6 @@
     "over",
     "under"
   ],
-  "same-origin": [
-    "disabled",
-    "enabled"
-  ],
   "scalar value string": [
     "code point length",
     "length"
@@ -56776,7 +56783,9 @@
     "sibling"
   ],
   "trigger": [
-    "derivative_uniformity"
+    "derivative_uniformity",
+    "navigation",
+    "none"
   ],
   "trigger debug data type": [
     "trigger-aggregate-deduplicated",
