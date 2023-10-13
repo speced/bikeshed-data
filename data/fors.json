@@ -1766,6 +1766,8 @@
     "DevicePosture",
     "DevicePostureType",
     "DigitalGoodsService",
+    "DirectFromSellerSignalsForBuyer",
+    "DirectFromSellerSignalsForSeller",
     "DirectionSetting",
     "DirectoryPickerOptions",
     "Dispatch error",
@@ -2781,6 +2783,7 @@
     "LockOptions",
     "Logger",
     "Logical miplevel-specific texture extent",
+    "LoginStatus",
     "LoopContinues",
     "LoopContinues(completion, labelSet)",
     "MIDIAccess",
@@ -3049,6 +3052,7 @@
     "NavigatorID",
     "NavigatorLanguage",
     "NavigatorLocks",
+    "NavigatorLogin",
     "NavigatorML",
     "NavigatorNetworkInformation",
     "NavigatorOnLine",
@@ -4920,6 +4924,7 @@
     "ad size",
     "ad structure",
     "ad-auction-allowed",
+    "ad-auction-signals",
     "adapter",
     "add",
     "add a css style sheet",
@@ -7049,6 +7054,7 @@
     "configuration point",
     "configure the image decoder",
     "confirm",
+    "confirm idp login dialog",
     "conflicting credentials exist",
     "conformance",
     "conformant server",
@@ -8338,6 +8344,8 @@
     "dimgray",
     "dimgrey",
     "dir",
+    "direct from seller signals",
+    "direct from seller signals key",
     "direct manipulation",
     "direct manipulation behavior",
     "directed progress",
@@ -9224,6 +9232,7 @@
     "fetch a style resource",
     "fetch a worklet script graph",
     "fetch a worklet/module worker script graph",
+    "fetch accounts list step",
     "fetch an @import",
     "fetch an external color profile",
     "fetch an external image for a stylesheet",
@@ -9937,6 +9946,9 @@
     "get deadline time",
     "get descendant topics",
     "get descriptor",
+    "get direct from seller signals",
+    "get direct from seller signals for a buyer",
+    "get direct from seller signals for a seller",
     "get element attribute",
     "get element css value",
     "get element from input.elementorigin steps",
@@ -9984,6 +9996,7 @@
     "get the input state",
     "get the legacy windows version number",
     "get the lock request queue",
+    "get the login status",
     "get the matching prerendering navigable",
     "get the navigation api entry index",
     "get the navigation info",
@@ -11836,6 +11849,8 @@
     "locking the screen orientation",
     "log event buffer",
     "log()",
+    "logged-in",
+    "logged-out",
     "logical",
     "logical combination pseudo-classes",
     "logical display surface",
@@ -11849,6 +11864,7 @@
     "logical texel address",
     "logical width",
     "logicalsurface",
+    "login status map",
     "logo",
     "long",
     "long attribute values",
@@ -12480,6 +12496,7 @@
     "mip level",
     "mipmap level",
     "mirror if necessary",
+    "mismatch dialog step",
     "missing color component",
     "missing value default",
     "missing-attribute-value",
@@ -15828,6 +15845,7 @@
     "search origin",
     "searching for services",
     "seashell",
+    "sec-ad-auction-fetch",
     "sec-attribution-reporting-private-state-token",
     "sec-browsing-topics",
     "sec-ch-dpr",
@@ -16168,6 +16186,7 @@
     "set the current top-level browsing context",
     "set the device information exposure",
     "set the frozen base url",
+    "set the login status",
     "set the muted state",
     "set the ongoing navigation",
     "set the playback rate",
@@ -16196,6 +16215,7 @@
     "set window rect",
     "set-cookie state",
     "set-dest",
+    "set-login",
     "set-mode",
     "set-site",
     "set-user",
@@ -16334,6 +16354,7 @@
     "should restart loading the page for critical client hints",
     "should skip event",
     "show",
+    "show an idp login dialog",
     "show popover",
     "show poster flag",
     "show steps",
@@ -17880,6 +17901,7 @@
     "update animations and send events",
     "update background fetch instances",
     "update bid count",
+    "update captured headers",
     "update document for history step application",
     "update document frozenness steps",
     "update for navigable creation/destruction",
@@ -20497,7 +20519,7 @@
     "auctionSignals",
     "componentAuctions",
     "decisionLogicURL",
-    "directFromSellerSignals",
+    "directFromSellerSignalsHeaderAdSlot",
     "interestGroupBuyers",
     "perBuyerCurrencies",
     "perBuyerExperimentGroupIds",
@@ -27156,6 +27178,14 @@
   "DigitalGoodsService/getDetails(itemIds)": [
     "itemIds"
   ],
+  "DirectFromSellerSignalsForBuyer": [
+    "auctionSignals",
+    "perBuyerSignals"
+  ],
+  "DirectFromSellerSignalsForSeller": [
+    "auctionSignals",
+    "sellerSignals"
+  ],
   "DirectionSetting": [
     "",
     "\"\"",
@@ -28088,8 +28118,6 @@
     "constructor()",
     "constructor(options)",
     "controlBound",
-    "controlBounds",
-    "isComposing",
     "isInComposition",
     "oncharacterboundsupdate",
     "oncompositionend",
@@ -28097,7 +28125,6 @@
     "ontextformatupdate",
     "ontextupdate",
     "selectionBound",
-    "selectionBounds",
     "selectionEnd",
     "selectionStart",
     "text",
@@ -33428,6 +33455,7 @@
     "\"use\""
   ],
   "IdentityProvider": [
+    "close()",
     "getUserInfo(config)"
   ],
   "IdentityProvider/getUserInfo(config)": [
@@ -33437,7 +33465,8 @@
     "accounts_endpoint",
     "branding",
     "client_metadata_endpoint",
-    "id_assertion_endpoint"
+    "id_assertion_endpoint",
+    "login_url"
   ],
   "IdentityProviderAccount": [
     "approved_clients",
@@ -34636,6 +34665,10 @@
     "mode",
     "signal",
     "steal"
+  ],
+  "LoginStatus": [
+    "\"logged-in\"",
+    "\"logged-out\""
   ],
   "MIDIAccess": [
     "inputs",
@@ -37529,6 +37562,7 @@
     "keyboard",
     "leaveAdInterestGroup()",
     "leaveAdInterestGroup(group)",
+    "login",
     "maxTouchPoints",
     "mediaCapabilities",
     "mediaDevices",
@@ -37633,6 +37667,12 @@
   ],
   "NavigatorLocks": [
     "locks"
+  ],
+  "NavigatorLogin": [
+    "setStatus(status)"
+  ],
+  "NavigatorLogin/setStatus(status)": [
+    "status"
   ],
   "NavigatorML": [
     "ml"
@@ -41522,6 +41562,7 @@
     "\"half\""
   ],
   "RequestInit": [
+    "adAuctionHeaders",
     "attributionReporting",
     "body",
     "browsingTopics",
@@ -49251,6 +49292,7 @@
     "component auctions",
     "config idl",
     "decision logic url",
+    "direct from seller signals header ad slot",
     "interest group buyers",
     "pending promise count",
     "per buyer currencies",
@@ -50830,6 +50872,15 @@
     "default value",
     "optional",
     "required"
+  ],
+  "direct from seller signals": [
+    "auction signals",
+    "per buyer signals",
+    "seller signals"
+  ],
+  "direct from seller signals key": [
+    "ad slot",
+    "seller"
   ],
   "direction": [
     "ltr",
@@ -54938,6 +54989,7 @@
     "attribution reporting eligibility",
     "body",
     "cache mode",
+    "capture-ad-auction-headers",
     "client",
     "clone",
     "credentials mode",
@@ -56825,6 +56877,7 @@
     "none"
   ],
   "traversable navigable": [
+    "captured ad auction headers",
     "fenced frame config mapping",
     "storage shed",
     "unfenced parent"
