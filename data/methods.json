@@ -187,9 +187,10 @@
     }
   },
   "ArrayBuffer()": {
-    "ArrayBuffer(length)": {
+    "ArrayBuffer(length, options)": {
       "args": [
-        "length"
+        "length",
+        "options"
       ],
       "for": [
         "ArrayBuffer"
@@ -3884,9 +3885,10 @@
     }
   },
   "SharedArrayBuffer()": {
-    "SharedArrayBuffer(length)": {
+    "SharedArrayBuffer(length, options)": {
       "args": [
-        "length"
+        "length",
+        "options"
       ],
       "for": [
         "SharedArrayBuffer"
@@ -18555,6 +18557,15 @@
         "Table"
       ],
       "shortname": "wasm-js-api"
+    },
+    "grow(newLength)": {
+      "args": [
+        "newLength"
+      ],
+      "for": [
+        "SharedArrayBuffer"
+      ],
+      "shortname": "ecmascript"
     }
   },
   "gru()": {
@@ -25485,6 +25496,17 @@
         "MLGraphBuilder"
       ],
       "shortname": "webnn"
+    }
+  },
+  "resize()": {
+    "resize(newLength)": {
+      "args": [
+        "newLength"
+      ],
+      "for": [
+        "ArrayBuffer"
+      ],
+      "shortname": "ecmascript"
     }
   },
   "resizeBy()": {
