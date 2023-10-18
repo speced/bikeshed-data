@@ -7729,6 +7729,7 @@
         "AudioDecoder",
         "AudioEncoder",
         "BroadcastChannel",
+        "CloseWatcher",
         "DedicatedWorkerGlobalScope",
         "Document",
         "EventSource",
@@ -13198,13 +13199,14 @@
     "destroy()": {
       "args": [],
       "for": [
+        "CloseWatcher",
         "GPUBuffer",
         "GPUDevice",
         "GPUQuerySet",
         "GPUTexture",
         "XRCompositionLayer"
       ],
-      "shortname": "webgpu"
+      "shortname": "html"
     }
   },
   "detach()": {
@@ -25048,6 +25050,15 @@
       "for": [
         "AnimationFrameProvider",
         "XRSession"
+      ],
+      "shortname": "html"
+    }
+  },
+  "requestClose()": {
+    "requestClose()": {
+      "args": [],
+      "for": [
+        "CloseWatcher"
       ],
       "shortname": "html"
     }
