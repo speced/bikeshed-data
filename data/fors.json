@@ -4924,6 +4924,7 @@
     "ad descriptor",
     "ad size",
     "ad structure",
+    "ad-auction-additional-bid",
     "ad-auction-allowed",
     "ad-auction-signals",
     "adapter",
@@ -4955,6 +4956,7 @@
     "added modules list",
     "adding a cookie",
     "addition procedure",
+    "additional bids",
     "additional capability deserialization algorithm",
     "additional fallback-bounds rect",
     "additional webdriver capabilities",
@@ -5570,7 +5572,9 @@
     "attribution trigger",
     "attribution-reporting-eligible",
     "attribution-reporting-support",
+    "auction",
     "auction config",
+    "auction nonce",
     "audience segmentation",
     "audio",
     "audio buffer underrun",
@@ -6387,6 +6391,7 @@
     "capture the new state",
     "capture the old state",
     "capture-session",
+    "captured additional bids headers",
     "captured element",
     "captured in a view transition",
     "capturedmousechange",
@@ -6594,6 +6599,7 @@
     "check whether a bit debit is expired",
     "check whether a moment falls within a window",
     "check whether a string is a valid currency tag",
+    "check whether negative targeted",
     "check-for-apache-bug flag",
     "checkedness",
     "checking permission",
@@ -8003,9 +8009,11 @@
     "declaring direct manipulation behavior",
     "declination angle",
     "decode",
+    "decode an additional bid json",
     "decode and enqueue a chunk",
     "decode timestamp",
     "decode track metadata",
+    "decoded additional bid",
     "decoder",
     "decoding",
     "decompose",
@@ -10042,6 +10050,7 @@
     "get title",
     "get unique urls",
     "get url",
+    "get uuid from string",
     "get valid values for colorscheme",
     "get valid values for contrast",
     "get valid values for reduceddata",
@@ -10577,6 +10586,7 @@
     "ill-typed",
     "illegal",
     "illuminance",
+    "illuminance reading parsing algorithm",
     "illuminance rounding multiple",
     "illuminance threshold value",
     "image",
@@ -12165,6 +12175,8 @@
     "max height",
     "max inner height",
     "max inner width",
+    "max length per aggregation key identifier",
+    "max length per filter string",
     "max main size",
     "max main size property",
     "max pending sources per source origin",
@@ -12826,7 +12838,10 @@
     "need random access point flag",
     "needs a browsing context group switch",
     "needs scroll adjustment",
+    "negative interest group",
     "negative scrollable overflow region",
+    "negative target info",
+    "negative targeting",
     "negotiation-needed flag",
     "neighbor",
     "nel",
@@ -13128,7 +13143,6 @@
     "obtain a randomized response",
     "obtain a randomized source response",
     "obtain a randomized source response pick rate",
-    "obtain a report time from a window",
     "obtain a script runner agent",
     "obtain a service worker agent",
     "obtain a session storage bottle map",
@@ -13175,7 +13189,6 @@
     "obtain the current device",
     "obtain the encrypted payload",
     "obtain the public key for encryption",
-    "obtain the report time at a window",
     "obtain their numeric values",
     "obtain webgl depth information",
     "obtaining a window memory attribution token",
@@ -13626,6 +13639,7 @@
     "parse a serialized CSP",
     "parse a serialized CSP list",
     "parse a server-timing header field",
+    "parse a signed additional bid",
     "parse a single range header value",
     "parse a sizes attribute",
     "parse a smart-poster action record",
@@ -14958,6 +14972,7 @@
     "registry table",
     "registry track",
     "regular attribute",
+    "regular interest group",
     "regular operation",
     "reification",
     "reified as a cssstylevalue",
@@ -16401,6 +16416,7 @@
     "signature",
     "signature counter",
     "signatures",
+    "signed additional bid signature",
     "signed exchange report",
     "signed exchange version",
     "signed message",
@@ -18283,6 +18299,7 @@
     "validate a standardized payment method identifier",
     "validate a suffix",
     "validate a url-based payment method identifier",
+    "validate and convert additional bids",
     "validate and convert auction ad config",
     "validate and extract",
     "validate and normalize",
@@ -20545,6 +20562,8 @@
     "renderURL"
   ],
   "AuctionAdConfig": [
+    "additionalBids",
+    "auctionNonce",
     "auctionSignals",
     "componentAuctions",
     "decisionLogicURL",
@@ -20566,6 +20585,7 @@
     "trustedScoringSignalsURL"
   ],
   "AuctionAdInterestGroup": [
+    "additionalBidKey",
     "priority",
     "prioritySignalsOverrides"
   ],
@@ -30843,6 +30863,8 @@
     "\"zero\""
   ],
   "GPUStorageTextureAccess": [
+    "\"read-only\"",
+    "\"read-write\"",
     "\"write-only\""
   ],
   "GPUStorageTextureBindingLayout": [
@@ -37580,6 +37602,7 @@
     "clipboard",
     "contacts",
     "contacts manager",
+    "createAuctionNonce()",
     "credentials",
     "deprecatedReplaceInURN(urnOrConfig, replacements)",
     "devicePosture",
@@ -49327,11 +49350,13 @@
     "all buyers group limit",
     "all buyers priority signals",
     "all buyers timeout",
+    "auction nonce",
     "auction signals",
     "component auctions",
     "config idl",
     "decision logic url",
     "direct from seller signals header ad slot",
+    "expects additional bids",
     "interest group buyers",
     "pending promise count",
     "per buyer currencies",
@@ -50829,6 +50854,11 @@
     "declarations",
     "reporting configuration"
   ],
+  "decoded additional bid": [
+    "bid",
+    "negative target interest group names",
+    "negative target joining origin"
+  ],
   "decomposition": [
     "base"
   ],
@@ -52159,7 +52189,8 @@
     "bid in seller currency",
     "interest group",
     "modeling signals",
-    "modified bid"
+    "modified bid",
+    "provided as additional bid"
   ],
   "getAssert": [
     "allowlist",
@@ -52914,6 +52945,7 @@
   ],
   "interest group": [
     "ad components",
+    "additional bid key",
     "ads",
     "bid counts",
     "bidding url",
@@ -54837,8 +54869,7 @@
   ],
   "randomized response output configuration": [
     "max attributions per source",
-    "num report windows",
-    "trigger data cardinality"
+    "trigger data map"
   ],
   "range": [
     "collapsed",
@@ -55724,6 +55755,10 @@
     "name",
     "short_name",
     "url"
+  ],
+  "signed additional bid signature": [
+    "key",
+    "signature"
   ],
   "signed exchange report": [
     "cert server ip list",
@@ -57021,6 +57056,8 @@
     "luminancetoalpha",
     "matrix",
     "multisampled texture",
+    "read-only storage texture",
+    "read-write storage texture",
     "sampled texture",
     "sampler",
     "sampler_comparison",
