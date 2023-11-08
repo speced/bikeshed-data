@@ -497,6 +497,78 @@
       "shortname": "web-bluetooth"
     }
   },
+  "BluetoothDataFilter()": {
+    "BluetoothDataFilter()": {
+      "args": [],
+      "for": [
+        "BluetoothDataFilter"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    },
+    "BluetoothDataFilter(init)": {
+      "args": [
+        "init"
+      ],
+      "for": [
+        "BluetoothDataFilter"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    }
+  },
+  "BluetoothLEScanFilter()": {
+    "BluetoothLEScanFilter()": {
+      "args": [],
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    },
+    "BluetoothLEScanFilter(init)": {
+      "args": [
+        "init"
+      ],
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    }
+  },
+  "BluetoothManufacturerDataFilter()": {
+    "BluetoothManufacturerDataFilter()": {
+      "args": [],
+      "for": [
+        "BluetoothManufacturerDataFilter"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    },
+    "BluetoothManufacturerDataFilter(init)": {
+      "args": [
+        "init"
+      ],
+      "for": [
+        "BluetoothManufacturerDataFilter"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    }
+  },
+  "BluetoothServiceDataFilter()": {
+    "BluetoothServiceDataFilter()": {
+      "args": [],
+      "for": [
+        "BluetoothServiceDataFilter"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    },
+    "BluetoothServiceDataFilter(init)": {
+      "args": [
+        "init"
+      ],
+      "for": [
+        "BluetoothServiceDataFilter"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    }
+  },
   "Boolean()": {
     "Boolean(value)": {
       "args": [
@@ -4369,6 +4441,55 @@
       "shortname": "url"
     }
   },
+  "URLPattern()": {
+    "URLPattern()": {
+      "args": [],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
+    "URLPattern(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
+    "URLPattern(input, baseURL)": {
+      "args": [
+        "input",
+        "baseURL"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
+    "URLPattern(input, baseURL, options)": {
+      "args": [
+        "input",
+        "baseURL",
+        "options"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
+    "URLPattern(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    }
+  },
   "URLSearchParams()": {
     "URLSearchParams()": {
       "args": [],
@@ -7518,6 +7639,27 @@
       "shortname": "user-timing"
     }
   },
+  "clearOriginJoinedAdInterestGroups()": {
+    "clearOriginJoinedAdInterestGroups(owner)": {
+      "args": [
+        "owner"
+      ],
+      "for": [
+        "Navigator"
+      ],
+      "shortname": "turtledove"
+    },
+    "clearOriginJoinedAdInterestGroups(owner, interestGroupsToKeep)": {
+      "args": [
+        "owner",
+        "interestGroupsToKeep"
+      ],
+      "for": [
+        "Navigator"
+      ],
+      "shortname": "turtledove"
+    }
+  },
   "clearOverride()": {
     "clearOverride()": {
       "args": [],
@@ -8153,7 +8295,8 @@
     "connect()": {
       "args": [],
       "for": [
-        "BluetoothRemoteGATTServer"
+        "BluetoothRemoteGATTServer",
+        "SmartCardContext"
       ],
       "shortname": "web-bluetooth"
     },
@@ -8205,6 +8348,27 @@
         "AudioNode"
       ],
       "shortname": "webaudio"
+    },
+    "connect(readerName, accessMode)": {
+      "args": [
+        "readerName",
+        "accessMode"
+      ],
+      "for": [
+        "SmartCardContext"
+      ],
+      "shortname": "web-smart-card"
+    },
+    "connect(readerName, accessMode, options)": {
+      "args": [
+        "readerName",
+        "accessMode",
+        "options"
+      ],
+      "for": [
+        "SmartCardContext"
+      ],
+      "shortname": "web-smart-card"
     }
   },
   "constant()": {
@@ -8221,6 +8385,16 @@
     "constant(value)": {
       "args": [
         "value"
+      ],
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "shortname": "webnn"
+    },
+    "constant(value, dataType)": {
+      "args": [
+        "value",
+        "dataType"
       ],
       "for": [
         "MLGraphBuilder"
@@ -8311,6 +8485,10 @@
         "BarcodeDetector",
         "BeforeInstallPromptEvent",
         "Blob",
+        "BluetoothDataFilter",
+        "BluetoothLEScanFilter",
+        "BluetoothManufacturerDataFilter",
+        "BluetoothServiceDataFilter",
         "CSSMathMax",
         "CSSMathMin",
         "CSSMathProduct",
@@ -8409,6 +8587,7 @@
         "SFrameTransform",
         "Sanitizer",
         "ScrollTimeline",
+        "SmartCardError",
         "SpeechGrammarList",
         "SpeechRecognition",
         "SpeechSynthesisUtterance",
@@ -8428,6 +8607,7 @@
         "TouchEvent",
         "TransformStream",
         "UDPSocket",
+        "URLPattern",
         "URLSearchParams",
         "UncalibratedMagnetometer",
         "VTTRegion",
@@ -9106,6 +9286,10 @@
         "AudioData",
         "AudioDecoder",
         "AudioEncoder",
+        "BluetoothDataFilter",
+        "BluetoothLEScanFilter",
+        "BluetoothManufacturerDataFilter",
+        "BluetoothServiceDataFilter",
         "ByteLengthQueuingStrategy",
         "CaptureActionEvent",
         "CountQueuingStrategy",
@@ -9151,9 +9335,31 @@
         "input"
       ],
       "for": [
-        "Request"
+        "Request",
+        "URLPattern"
       ],
       "shortname": "fetch"
+    },
+    "constructor(input, baseURL)": {
+      "args": [
+        "input",
+        "baseURL"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
+    "constructor(input, baseURL, options)": {
+      "args": [
+        "input",
+        "baseURL",
+        "options"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
     },
     "constructor(input, init)": {
       "args": [
@@ -9164,6 +9370,16 @@
         "Request"
       ],
       "shortname": "fetch"
+    },
+    "constructor(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
     },
     "constructor(intersectionObserverEntryInit)": {
       "args": [
@@ -9503,6 +9719,7 @@
         "Profiler",
         "SFrameTransform",
         "ScrollTimeline",
+        "SmartCardError",
         "TextFormat",
         "TextFormatUpdateEvent",
         "TextUpdateEvent",
@@ -9510,6 +9727,16 @@
         "ViewTimeline"
       ],
       "shortname": "direct-sockets"
+    },
+    "constructor(options, message)": {
+      "args": [
+        "options",
+        "message"
+      ],
+      "for": [
+        "SmartCardError"
+      ],
+      "shortname": "web-smart-card"
     },
     "constructor(origin)": {
       "args": [
@@ -10524,6 +10751,25 @@
         "IDBCursor"
       ],
       "shortname": "indexeddb"
+    }
+  },
+  "control()": {
+    "control()": {
+      "args": [],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    },
+    "control(controlCode, data)": {
+      "args": [
+        "controlCode",
+        "data"
+      ],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
     }
   },
   "controlTransferIn()": {
@@ -13244,7 +13490,8 @@
         "PerformanceObserver",
         "PressureObserver",
         "ReportingObserver",
-        "ResizeObserver"
+        "ResizeObserver",
+        "SmartCardConnection"
       ],
       "shortname": "dom"
     },
@@ -13296,6 +13543,15 @@
         "AudioNode"
       ],
       "shortname": "webaudio"
+    },
+    "disconnect(disposition)": {
+      "args": [
+        "disposition"
+      ],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
     },
     "disconnect(output)": {
       "args": [
@@ -14121,6 +14377,15 @@
       "shortname": "ecmascript"
     }
   },
+  "establishContext()": {
+    "establishContext()": {
+      "args": [],
+      "for": [
+        "SmartCardResourceManager"
+      ],
+      "shortname": "web-smart-card"
+    }
+  },
   "estimate()": {
     "estimate()": {
       "args": [],
@@ -14258,6 +14523,32 @@
     }
   },
   "exec()": {
+    "exec()": {
+      "args": [],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
+    "exec(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
+    "exec(input, baseURL)": {
+      "args": [
+        "input",
+        "baseURL"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
     "exec(string)": {
       "args": [
         "string"
@@ -15683,6 +15974,13 @@
     }
   },
   "getAttribute()": {
+    "getAttribute()": {
+      "args": [],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    },
     "getAttribute(qualifiedName)": {
       "args": [
         "qualifiedName"
@@ -15691,6 +15989,15 @@
         "Element"
       ],
       "shortname": "dom"
+    },
+    "getAttribute(tag)": {
+      "args": [
+        "tag"
+      ],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
     }
   },
   "getAttributeNS()": {
@@ -17056,6 +17363,17 @@
       "shortname": "webrtc"
     }
   },
+  "getManagedConfiguration()": {
+    "getManagedConfiguration(keys)": {
+      "args": [
+        "keys"
+      ],
+      "for": [
+        "NavigatorManagedData"
+      ],
+      "shortname": "managed-configuration"
+    }
+  },
   "getMappedRange()": {
     "getMappedRange()": {
       "args": [],
@@ -17873,6 +18191,34 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "getStatusChange()": {
+    "getStatusChange()": {
+      "args": [],
+      "for": [
+        "SmartCardContext"
+      ],
+      "shortname": "web-smart-card"
+    },
+    "getStatusChange(readerStates)": {
+      "args": [
+        "readerStates"
+      ],
+      "for": [
+        "SmartCardContext"
+      ],
+      "shortname": "web-smart-card"
+    },
+    "getStatusChange(readerStates, options)": {
+      "args": [
+        "readerStates",
+        "options"
+      ],
+      "for": [
+        "SmartCardContext"
+      ],
+      "shortname": "web-smart-card"
     }
   },
   "getSubImage()": {
@@ -19797,6 +20143,15 @@
       "shortname": "webnn"
     }
   },
+  "initiateRoomCapture()": {
+    "initiateRoomCapture()": {
+      "args": [],
+      "for": [
+        "XRSession"
+      ],
+      "shortname": "webxr-plane-detection"
+    }
+  },
   "input()": {
     "input(name, descriptor)": {
       "args": [
@@ -20978,6 +21333,15 @@
         "DigitalGoodsService"
       ],
       "shortname": "digital-goods"
+    }
+  },
+  "listReaders()": {
+    "listReaders()": {
+      "args": [],
+      "for": [
+        "SmartCardContext"
+      ],
+      "shortname": "web-smart-card"
     }
   },
   "load()": {
@@ -25081,6 +25445,24 @@
       "shortname": "requestidlecallback"
     }
   },
+  "requestLEScan()": {
+    "requestLEScan()": {
+      "args": [],
+      "for": [
+        "Bluetooth"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    },
+    "requestLEScan(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "Bluetooth"
+      ],
+      "shortname": "web-bluetooth-scanning"
+    }
+  },
   "requestLightProbe()": {
     "requestLightProbe()": {
       "args": [],
@@ -27094,6 +27476,13 @@
     }
   },
   "setAttribute()": {
+    "setAttribute()": {
+      "args": [],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    },
     "setAttribute(qualifiedName, value)": {
       "args": [
         "qualifiedName",
@@ -27103,6 +27492,16 @@
         "Element"
       ],
       "shortname": "dom"
+    },
+    "setAttribute(tag, value)": {
+      "args": [
+        "tag",
+        "value"
+      ],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
     }
   },
   "setAttributeNS()": {
@@ -29561,6 +29960,34 @@
       "shortname": "webaudio"
     }
   },
+  "startTransaction()": {
+    "startTransaction()": {
+      "args": [],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    },
+    "startTransaction(transaction)": {
+      "args": [
+        "transaction"
+      ],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    },
+    "startTransaction(transaction, options)": {
+      "args": [
+        "transaction",
+        "options"
+      ],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    }
+  },
   "startViewTransition()": {
     "startViewTransition()": {
       "args": [],
@@ -29609,6 +30036,15 @@
       "shortname": "css-animation-worklet"
     }
   },
+  "status()": {
+    "status()": {
+      "args": [],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    }
+  },
   "stepDown()": {
     "stepDown(n)": {
       "args": [
@@ -29637,6 +30073,7 @@
       "for": [
         "AudioRenderCapacity",
         "AudioScheduledSourceNode",
+        "BluetoothLEScan",
         "HTMLMarqueeElement",
         "MediaRecorder",
         "MediaStreamTrack",
@@ -30244,6 +30681,13 @@
     }
   },
   "test()": {
+    "test()": {
+      "args": [],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
     "test(S)": {
       "args": [
         "S"
@@ -30252,6 +30696,25 @@
         "RegExp"
       ],
       "shortname": "ecmascript"
+    },
+    "test(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
+    },
+    "test(input, baseURL)": {
+      "args": [
+        "input",
+        "baseURL"
+      ],
+      "for": [
+        "URLPattern"
+      ],
+      "shortname": "urlpattern"
     }
   },
   "text()": {
@@ -31105,6 +31568,34 @@
         "DOMMatrix"
       ],
       "shortname": "geometry"
+    }
+  },
+  "transmit()": {
+    "transmit()": {
+      "args": [],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    },
+    "transmit(sendBuffer)": {
+      "args": [
+        "sendBuffer"
+      ],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
+    },
+    "transmit(sendBuffer, options)": {
+      "args": [
+        "sendBuffer",
+        "options"
+      ],
+      "for": [
+        "SmartCardConnection"
+      ],
+      "shortname": "web-smart-card"
     }
   },
   "transpose()": {

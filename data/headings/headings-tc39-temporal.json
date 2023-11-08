@@ -1009,7 +1009,7 @@
   },
   "#sec-getavailablenamedtimezoneidentifier": {
     "current": {
-      "number": "11.5.2",
+      "number": "11.5.8",
       "spec": "Temporal proposal",
       "text": "GetAvailableNamedTimeZoneIdentifier ( timeZoneIdentifier )",
       "url": "https://tc39.es/proposal-temporal/#sec-getavailablenamedtimezoneidentifier"
@@ -1137,7 +1137,7 @@
   },
   "#sec-parsetimezoneidentifier": {
     "current": {
-      "number": "11.5.20",
+      "number": "11.5.26",
       "spec": "Temporal proposal",
       "text": "ParseTimeZoneIdentifier ( identifier )",
       "url": "https://tc39.es/proposal-temporal/#sec-parsetimezoneidentifier"
@@ -1459,7 +1459,7 @@
     "current": {
       "number": "3.5.13",
       "spec": "Temporal proposal",
-      "text": "AddDate ( calendar, plainDate, duration [ , options [ , dateAdd ] ] )",
+      "text": "AddDate ( calendarRec, plainDate, duration [ , options ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddate"
     }
   },
@@ -1467,7 +1467,7 @@
     "current": {
       "number": "5.5.9",
       "spec": "Temporal proposal",
-      "text": "AddDateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, calendar, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, options )",
+      "text": "AddDateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, calendarRec, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddatetime"
     }
   },
@@ -1475,7 +1475,7 @@
     "current": {
       "number": "6.5.6",
       "spec": "Temporal proposal",
-      "text": "AddDaysToZonedDateTime ( instant, dateTime, timeZone, calendar, days [ , overflow ] )",
+      "text": "AddDaysToZonedDateTime ( instant, dateTime, timeZoneRec, calendar, days [ , overflow ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddaystozoneddatetime"
     }
   },
@@ -1483,7 +1483,7 @@
     "current": {
       "number": "7.5.23",
       "spec": "Temporal proposal",
-      "text": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
+      "text": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, calendarRec, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-addduration"
     }
   },
@@ -1563,7 +1563,7 @@
     "current": {
       "number": "6.5.5",
       "spec": "Temporal proposal",
-      "text": "AddZonedDateTime ( epochNanoseconds, timeZone, calendar, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds [ , precalculatedPlainDateTime [ , options ] ] )",
+      "text": "AddZonedDateTime ( epochNanoseconds, timeZoneRec, calendarRec, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds [ , precalculatedPlainDateTime [ , options ] ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-addzoneddatetime"
     }
   },
@@ -1571,7 +1571,7 @@
     "current": {
       "number": "7.5.28",
       "spec": "Temporal proposal",
-      "text": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, zonedRelativeTo, precalculatedPlainDateTime )",
+      "text": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, zonedRelativeTo, calendarRec, timeZoneRec, precalculatedPlainDateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adjustroundeddurationdays"
     }
   },
@@ -1595,7 +1595,7 @@
     "current": {
       "number": "7.5.22",
       "spec": "Temporal proposal",
-      "text": "BalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo )",
+      "text": "BalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo, calendarRec )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancedatedurationrelative"
     }
   },
@@ -1635,7 +1635,7 @@
     "current": {
       "number": "7.5.20",
       "spec": "Temporal proposal",
-      "text": "BalancePossiblyInfiniteTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
+      "text": "BalancePossiblyInfiniteTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancepossiblyinfinitetimedurationrelative"
     }
   },
@@ -1659,7 +1659,7 @@
     "current": {
       "number": "7.5.19",
       "spec": "Temporal proposal",
-      "text": "BalanceTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, precalculatedPlainDateTime )",
+      "text": "BalanceTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, timeZoneRec, precalculatedPlainDateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-balancetimedurationrelative"
     }
   },
@@ -1687,6 +1687,14 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-field-descriptor-record"
     }
   },
+  "#sec-temporal-calendar-methods-records": {
+    "current": {
+      "number": "12.2.1",
+      "spec": "Temporal proposal",
+      "text": "Calendar Methods Records",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-methods-records"
+    }
+  },
   "#sec-temporal-calendar-objects": {
     "current": {
       "number": "12",
@@ -1697,9 +1705,9 @@
   },
   "#sec-temporal-calendardateadd": {
     "current": {
-      "number": "12.2.4",
+      "number": "12.2.10",
       "spec": "Temporal proposal",
-      "text": "CalendarDateAdd ( calendar, date, duration [ , options [ , dateAdd ] ] )",
+      "text": "CalendarDateAdd ( calendarRec, date, duration [ , options ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateadd"
     }
   },
@@ -1785,9 +1793,9 @@
   },
   "#sec-temporal-calendardatefromfields": {
     "current": {
-      "number": "12.2.24",
+      "number": "12.2.30",
       "spec": "Temporal proposal",
-      "text": "CalendarDateFromFields ( calendar, fields [ , options [ , dateFromFields ] ] )",
+      "text": "CalendarDateFromFields ( calendarRec, fields [ , options ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendardatefromfields"
     }
   },
@@ -1833,9 +1841,9 @@
   },
   "#sec-temporal-calendardateuntil": {
     "current": {
-      "number": "12.2.5",
+      "number": "12.2.11",
       "spec": "Temporal proposal",
-      "text": "CalendarDateUntil ( calendar, one, two, options [ , dateUntil ] )",
+      "text": "CalendarDateUntil ( calendarRec, one, two, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateuntil"
     }
   },
@@ -1857,15 +1865,15 @@
   },
   "#sec-temporal-calendarday": {
     "current": {
-      "number": "12.2.9",
+      "number": "12.2.15",
       "spec": "Temporal proposal",
-      "text": "CalendarDay ( calendar, dateLike )",
+      "text": "CalendarDay ( calendarRec, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarday"
     }
   },
   "#sec-temporal-calendardayofweek": {
     "current": {
-      "number": "12.2.10",
+      "number": "12.2.16",
       "spec": "Temporal proposal",
       "text": "CalendarDayOfWeek ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendardayofweek"
@@ -1873,7 +1881,7 @@
   },
   "#sec-temporal-calendardayofyear": {
     "current": {
-      "number": "12.2.11",
+      "number": "12.2.17",
       "spec": "Temporal proposal",
       "text": "CalendarDayOfYear ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendardayofyear"
@@ -1881,7 +1889,7 @@
   },
   "#sec-temporal-calendardaysinmonth": {
     "current": {
-      "number": "12.2.15",
+      "number": "12.2.21",
       "spec": "Temporal proposal",
       "text": "CalendarDaysInMonth ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinmonth"
@@ -1889,7 +1897,7 @@
   },
   "#sec-temporal-calendardaysinweek": {
     "current": {
-      "number": "12.2.14",
+      "number": "12.2.20",
       "spec": "Temporal proposal",
       "text": "CalendarDaysInWeek ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinweek"
@@ -1897,7 +1905,7 @@
   },
   "#sec-temporal-calendardaysinyear": {
     "current": {
-      "number": "12.2.16",
+      "number": "12.2.22",
       "spec": "Temporal proposal",
       "text": "CalendarDaysInYear ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinyear"
@@ -1905,7 +1913,7 @@
   },
   "#sec-temporal-calendarequals": {
     "current": {
-      "number": "12.2.29",
+      "number": "12.2.35",
       "spec": "Temporal proposal",
       "text": "CalendarEquals ( one, two )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarequals"
@@ -1945,15 +1953,15 @@
   },
   "#sec-temporal-calendarfields": {
     "current": {
-      "number": "12.2.2",
+      "number": "12.2.8",
       "spec": "Temporal proposal",
-      "text": "CalendarFields ( calendar, fieldNames )",
+      "text": "CalendarFields ( calendarRec, fieldNames )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarfields"
     }
   },
   "#sec-temporal-calendarinleapyear": {
     "current": {
-      "number": "12.2.18",
+      "number": "12.2.24",
       "spec": "Temporal proposal",
       "text": "CalendarInLeapYear ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarinleapyear"
@@ -1961,15 +1969,47 @@
   },
   "#sec-temporal-calendarmergefields": {
     "current": {
+      "number": "12.2.9",
+      "spec": "Temporal proposal",
+      "text": "CalendarMergeFields ( calendarRec, fields, additionalFields )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmergefields"
+    }
+  },
+  "#sec-temporal-calendarmethodsrecordcall": {
+    "current": {
+      "number": "12.2.6",
+      "spec": "Temporal proposal",
+      "text": "CalendarMethodsRecordCall ( calendarRec, methodName, arguments )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmethodsrecordcall"
+    }
+  },
+  "#sec-temporal-calendarmethodsrecordhaslookedup": {
+    "current": {
+      "number": "12.2.4",
+      "spec": "Temporal proposal",
+      "text": "CalendarMethodsRecordHasLookedUp ( calendarRec, methodName )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmethodsrecordhaslookedup"
+    }
+  },
+  "#sec-temporal-calendarmethodsrecordisbuiltin": {
+    "current": {
+      "number": "12.2.5",
+      "spec": "Temporal proposal",
+      "text": "CalendarMethodsRecordIsBuiltin ( calendarRec )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmethodsrecordisbuiltin"
+    }
+  },
+  "#sec-temporal-calendarmethodsrecordlookup": {
+    "current": {
       "number": "12.2.3",
       "spec": "Temporal proposal",
-      "text": "CalendarMergeFields ( calendar, fields, additionalFields )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmergefields"
+      "text": "CalendarMethodsRecordLookup ( calendarRec, methodName )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmethodsrecordlookup"
     }
   },
   "#sec-temporal-calendarmonth": {
     "current": {
-      "number": "12.2.7",
+      "number": "12.2.13",
       "spec": "Temporal proposal",
       "text": "CalendarMonth ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonth"
@@ -1977,7 +2017,7 @@
   },
   "#sec-temporal-calendarmonthcode": {
     "current": {
-      "number": "12.2.8",
+      "number": "12.2.14",
       "spec": "Temporal proposal",
       "text": "CalendarMonthCode ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthcode"
@@ -1985,9 +2025,9 @@
   },
   "#sec-temporal-calendarmonthdayfromfields": {
     "current": {
-      "number": "12.2.26",
+      "number": "12.2.32",
       "spec": "Temporal proposal",
-      "text": "CalendarMonthDayFromFields ( calendar, fields [ , options ] )",
+      "text": "CalendarMonthDayFromFields ( calendarRec, fields [ , options ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthdayfromfields"
     }
   },
@@ -2001,7 +2041,7 @@
   },
   "#sec-temporal-calendarmonthsinyear": {
     "current": {
-      "number": "12.2.17",
+      "number": "12.2.23",
       "spec": "Temporal proposal",
       "text": "CalendarMonthsInYear ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthsinyear"
@@ -2017,7 +2057,7 @@
   },
   "#sec-temporal-calendarweekofyear": {
     "current": {
-      "number": "12.2.12",
+      "number": "12.2.18",
       "spec": "Temporal proposal",
       "text": "CalendarWeekOfYear ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendarweekofyear"
@@ -2025,7 +2065,7 @@
   },
   "#sec-temporal-calendaryear": {
     "current": {
-      "number": "12.2.6",
+      "number": "12.2.12",
       "spec": "Temporal proposal",
       "text": "CalendarYear ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryear"
@@ -2033,15 +2073,15 @@
   },
   "#sec-temporal-calendaryearmonthfromfields": {
     "current": {
-      "number": "12.2.25",
+      "number": "12.2.31",
       "spec": "Temporal proposal",
-      "text": "CalendarYearMonthFromFields ( calendar, fields [ , options ] )",
+      "text": "CalendarYearMonthFromFields ( calendarRec, fields [ , options ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryearmonthfromfields"
     }
   },
   "#sec-temporal-calendaryearofweek": {
     "current": {
-      "number": "12.2.13",
+      "number": "12.2.19",
       "spec": "Temporal proposal",
       "text": "CalendarYearOfWeek ( calendar, dateLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryearofweek"
@@ -2081,7 +2121,7 @@
   },
   "#sec-temporal-consolidatecalendars": {
     "current": {
-      "number": "12.2.30",
+      "number": "12.2.36",
       "spec": "Temporal proposal",
       "text": "ConsolidateCalendars ( one, two )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-consolidatecalendars"
@@ -2101,6 +2141,14 @@
       "spec": "Temporal proposal",
       "text": "CreateISODateRecord ( year, month, day )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-create-iso-date-record"
+    }
+  },
+  "#sec-temporal-createcalendarmethodsrecord": {
+    "current": {
+      "number": "12.2.2",
+      "spec": "Temporal proposal",
+      "text": "CreateCalendarMethodsRecord ( calendar, methods )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-createcalendarmethodsrecord"
     }
   },
   "#sec-temporal-createdatedurationrecord": {
@@ -2129,7 +2177,7 @@
   },
   "#sec-temporal-createtemporalcalendar": {
     "current": {
-      "number": "12.2.1",
+      "number": "12.2.7",
       "spec": "Temporal proposal",
       "text": "CreateTemporalCalendar ( identifier [ , newTarget ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-createtemporalcalendar"
@@ -2185,7 +2233,7 @@
   },
   "#sec-temporal-createtemporaltimezone": {
     "current": {
-      "number": "11.5.1",
+      "number": "11.5.7",
       "spec": "Temporal proposal",
       "text": "CreateTemporalTimeZone ( identifier [ , newTarget ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-createtemporaltimezone"
@@ -2213,6 +2261,14 @@
       "spec": "Temporal proposal",
       "text": "CreateTimeDurationRecord ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-createtimedurationrecord"
+    }
+  },
+  "#sec-temporal-createtimezonemethodsrecord": {
+    "current": {
+      "number": "11.5.2",
+      "spec": "Temporal proposal",
+      "text": "CreateTimeZoneMethodsRecord ( timeZone, methods )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-createtimezonemethodsrecord"
     }
   },
   "#sec-temporal-date": {
@@ -2267,7 +2323,7 @@
     "current": {
       "number": "3.5.6",
       "spec": "Temporal proposal",
-      "text": "DifferenceDate ( calendar, one, two, options )",
+      "text": "DifferenceDate ( calendarRec, one, two, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-differencedate"
     }
   },
@@ -2291,7 +2347,7 @@
     "current": {
       "number": "5.5.11",
       "spec": "Temporal proposal",
-      "text": "DifferenceISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendar, largestUnit, options )",
+      "text": "DifferenceISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendarRec, largestUnit, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-differenceisodatetime"
     }
   },
@@ -2355,15 +2411,15 @@
     "current": {
       "number": "6.5.7",
       "spec": "Temporal proposal",
-      "text": "DifferenceZonedDateTime ( ns1, ns2, timeZone, calendar, largestUnit, options, precalculatedPlainDateTime )",
+      "text": "DifferenceZonedDateTime ( ns1, ns2, timeZoneRec, calendarRec, largestUnit, options, precalculatedPlainDateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-differencezoneddatetime"
     }
   },
   "#sec-temporal-disambiguatepossibleinstants": {
     "current": {
-      "number": "11.5.17",
+      "number": "11.5.23",
       "spec": "Temporal proposal",
-      "text": "DisambiguatePossibleInstants ( possibleInstants, timeZone, dateTime, disambiguation )",
+      "text": "DisambiguatePossibleInstants ( possibleInstants, timeZoneRec, dateTime, disambiguation )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-disambiguatepossibleinstants"
     }
   },
@@ -2417,7 +2473,7 @@
   },
   "#sec-temporal-formatcalendarannotation": {
     "current": {
-      "number": "12.2.28",
+      "number": "12.2.34",
       "spec": "Temporal proposal",
       "text": "FormatCalendarAnnotation ( id, showCalendar )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatcalendarannotation"
@@ -2433,7 +2489,7 @@
   },
   "#sec-temporal-formatdatetimeutcoffsetrounded": {
     "current": {
-      "number": "11.5.8",
+      "number": "11.5.14",
       "spec": "Temporal proposal",
       "text": "FormatDateTimeUTCOffsetRounded ( offsetNanoseconds )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatdatetimeutcoffsetrounded"
@@ -2449,7 +2505,7 @@
   },
   "#sec-temporal-formatoffsettimezoneidentifier": {
     "current": {
-      "number": "11.5.6",
+      "number": "11.5.12",
       "spec": "Temporal proposal",
       "text": "FormatOffsetTimeZoneIdentifier ( offsetMinutes [ , style ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatoffsettimezoneidentifier"
@@ -2465,7 +2521,7 @@
   },
   "#sec-temporal-formatutcoffsetnanoseconds": {
     "current": {
-      "number": "11.5.7",
+      "number": "11.5.13",
       "spec": "Temporal proposal",
       "text": "FormatUTCOffsetNanoseconds ( offsetNanoseconds )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-formatutcoffsetnanoseconds"
@@ -2489,7 +2545,7 @@
   },
   "#sec-temporal-getianatimezonenexttransition": {
     "current": {
-      "number": "11.5.4",
+      "number": "11.5.10",
       "spec": "Temporal proposal",
       "text": "GetNamedTimeZoneNextTransition ( timeZoneIdentifier, epochNanoseconds )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getianatimezonenexttransition"
@@ -2497,7 +2553,7 @@
   },
   "#sec-temporal-getianatimezoneprevioustransition": {
     "current": {
-      "number": "11.5.5",
+      "number": "11.5.11",
       "spec": "Temporal proposal",
       "text": "GetNamedTimeZonePreviousTransition ( timeZoneIdentifier, epochNanoseconds )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getianatimezoneprevioustransition"
@@ -2505,15 +2561,15 @@
   },
   "#sec-temporal-getinstantfor": {
     "current": {
-      "number": "11.5.16",
+      "number": "11.5.22",
       "spec": "Temporal proposal",
-      "text": "GetInstantFor ( timeZone, dateTime, disambiguation )",
+      "text": "GetInstantFor ( timeZoneRec, dateTime, disambiguation )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getinstantfor"
     }
   },
   "#sec-temporal-getisopartsfromepoch": {
     "current": {
-      "number": "11.5.3",
+      "number": "11.5.9",
       "spec": "Temporal proposal",
       "text": "GetISOPartsFromEpoch ( epochNanoseconds )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getisopartsfromepoch"
@@ -2521,39 +2577,39 @@
   },
   "#sec-temporal-getoffsetnanosecondsfor": {
     "current": {
-      "number": "11.5.13",
+      "number": "11.5.19",
       "spec": "Temporal proposal",
-      "text": "GetOffsetNanosecondsFor ( timeZone, instant [ , getOffsetNanosecondsFor ] )",
+      "text": "GetOffsetNanosecondsFor ( timeZoneRec, instant )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetnanosecondsfor"
     }
   },
   "#sec-temporal-getoffsetstringfor": {
     "current": {
-      "number": "11.5.14",
+      "number": "11.5.20",
       "spec": "Temporal proposal",
-      "text": "GetOffsetStringFor ( timeZone, instant )",
+      "text": "GetOffsetStringFor ( timeZoneRec, instant )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetstringfor"
     }
   },
   "#sec-temporal-getplaindatetimefor": {
     "current": {
-      "number": "11.5.15",
+      "number": "11.5.21",
       "spec": "Temporal proposal",
-      "text": "GetPlainDateTimeFor ( timeZone, instant, calendar [ , precalculatedOffsetNanoseconds ] )",
+      "text": "GetPlainDateTimeFor ( timeZoneRec, instant, calendar [ , precalculatedOffsetNanoseconds ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getplaindatetimefor"
     }
   },
   "#sec-temporal-getpossibleinstantsfor": {
     "current": {
-      "number": "11.5.18",
+      "number": "11.5.24",
       "spec": "Temporal proposal",
-      "text": "GetPossibleInstantsFor ( timeZone, dateTime [ , getPossibleInstantsFor ] )",
+      "text": "GetPossibleInstantsFor ( timeZoneRec, dateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getpossibleinstantsfor"
     }
   },
   "#sec-temporal-gettemporalcalendarslotvaluewithisodefault": {
     "current": {
-      "number": "12.2.21",
+      "number": "12.2.27",
       "spec": "Temporal proposal",
       "text": "GetTemporalCalendarSlotValueWithISODefault ( item )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalcalendarslotvaluewithisodefault"
@@ -2699,7 +2755,7 @@
     "current": {
       "number": "6.5.1",
       "spec": "Temporal proposal",
-      "text": "InterpretISODateTimeOffset ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, offsetBehaviour, offsetNanoseconds, timeZone, disambiguation, offsetOption, matchBehaviour )",
+      "text": "InterpretISODateTimeOffset ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, offsetBehaviour, offsetNanoseconds, timeZoneRec, disambiguation, offsetOption, matchBehaviour )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-interpretisodatetimeoffset"
     }
   },
@@ -2707,7 +2763,7 @@
     "current": {
       "number": "5.5.3",
       "spec": "Temporal proposal",
-      "text": "InterpretTemporalDateTimeFields ( calendar, fields, options )",
+      "text": "InterpretTemporalDateTimeFields ( calendarRec, fields, options )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-interprettemporaldatetimefields"
     }
   },
@@ -2761,7 +2817,7 @@
   },
   "#sec-temporal-isodatefromfields": {
     "current": {
-      "number": "12.2.35",
+      "number": "12.2.41",
       "spec": "Temporal proposal",
       "text": "ISODateFromFields ( fields, overflow )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-isodatefromfields"
@@ -2777,7 +2833,7 @@
   },
   "#sec-temporal-isodaysinmonth": {
     "current": {
-      "number": "12.2.31",
+      "number": "12.2.37",
       "spec": "Temporal proposal",
       "text": "ISODaysInMonth ( year, month )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-isodaysinmonth"
@@ -2785,7 +2841,7 @@
   },
   "#sec-temporal-isofieldkeystoignore": {
     "current": {
-      "number": "12.2.38",
+      "number": "12.2.44",
       "spec": "Temporal proposal",
       "text": "ISOFieldKeysToIgnore ( keys )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-isofieldkeystoignore"
@@ -2793,7 +2849,7 @@
   },
   "#sec-temporal-isomonthcode": {
     "current": {
-      "number": "12.2.33",
+      "number": "12.2.39",
       "spec": "Temporal proposal",
       "text": "ISOMonthCode ( month )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-isomonthcode"
@@ -2801,7 +2857,7 @@
   },
   "#sec-temporal-isomonthdayfromfields": {
     "current": {
-      "number": "12.2.37",
+      "number": "12.2.43",
       "spec": "Temporal proposal",
       "text": "ISOMonthDayFromFields ( fields, overflow )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-isomonthdayfromfields"
@@ -2809,7 +2865,7 @@
   },
   "#sec-temporal-isoresolvemonth": {
     "current": {
-      "number": "12.2.34",
+      "number": "12.2.40",
       "spec": "Temporal proposal",
       "text": "ISOResolveMonth ( fields )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-isoresolvemonth"
@@ -2817,7 +2873,7 @@
   },
   "#sec-temporal-isoyearmonthfromfields": {
     "current": {
-      "number": "12.2.36",
+      "number": "12.2.42",
       "spec": "Temporal proposal",
       "text": "ISOYearMonthFromFields ( fields, overflow )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-isoyearmonthfromfields"
@@ -2897,7 +2953,7 @@
   },
   "#sec-temporal-maybeformatcalendarannotation": {
     "current": {
-      "number": "12.2.27",
+      "number": "12.2.33",
       "spec": "Temporal proposal",
       "text": "MaybeFormatCalendarAnnotation ( calendar, showCalendar )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-maybeformatcalendarannotation"
@@ -2907,7 +2963,7 @@
     "current": {
       "number": "7.5.25",
       "spec": "Temporal proposal",
-      "text": "MoveRelativeDate ( calendar, relativeTo, duration, dateAdd )",
+      "text": "MoveRelativeDate ( calendarRec, relativeTo, duration )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativedate"
     }
   },
@@ -2915,7 +2971,7 @@
     "current": {
       "number": "7.5.26",
       "spec": "Temporal proposal",
-      "text": "MoveRelativeZonedDateTime ( zonedDateTime, years, months, weeks, days, precalculatedPlainDateTime )",
+      "text": "MoveRelativeZonedDateTime ( zonedDateTime, calendarRec, timeZoneRec, years, months, weeks, days, precalculatedPlainDateTime )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativezoneddatetime"
     }
   },
@@ -2923,7 +2979,7 @@
     "current": {
       "number": "6.5.8",
       "spec": "Temporal proposal",
-      "text": "NanosecondsToDays ( nanoseconds, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
+      "text": "NanosecondsToDays ( nanoseconds, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-nanosecondstodays"
     }
   },
@@ -2969,7 +3025,7 @@
   },
   "#sec-temporal-objectimplementstemporalcalendarprotocol": {
     "current": {
-      "number": "12.2.19",
+      "number": "12.2.25",
       "spec": "Temporal proposal",
       "text": "ObjectImplementsTemporalCalendarProtocol ( object )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-objectimplementstemporalcalendarprotocol"
@@ -2977,7 +3033,7 @@
   },
   "#sec-temporal-objectimplementstemporaltimezoneprotocol": {
     "current": {
-      "number": "11.5.9",
+      "number": "11.5.15",
       "spec": "Temporal proposal",
       "text": "ObjectImplementsTemporalTimeZoneProtocol ( object )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-objectimplementstemporaltimezoneprotocol"
@@ -3323,7 +3379,7 @@
     "current": {
       "number": "7.5.27",
       "spec": "Temporal proposal",
-      "text": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , plainRelativeTo [ , zonedRelativeTo [ , precalculatedPlainDateTime ] ] ] )",
+      "text": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , plainRelativeTo [ , calendarRec [ , zonedRelativeTo [ , timeZoneRec [ , precalculatedPlainDateTime ] ] ] ] ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-roundduration"
     }
   },
@@ -3495,6 +3551,14 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-time-records"
     }
   },
+  "#sec-temporal-time-zone-methods-records": {
+    "current": {
+      "number": "11.5.1",
+      "spec": "Temporal proposal",
+      "text": "Time Zone Methods Records",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-time-zone-methods-records"
+    }
+  },
   "#sec-temporal-timezone": {
     "current": {
       "number": "1.2.7",
@@ -3529,10 +3593,42 @@
   },
   "#sec-temporal-timezoneequals": {
     "current": {
-      "number": "11.5.19",
+      "number": "11.5.25",
       "spec": "Temporal proposal",
       "text": "TimeZoneEquals ( one, two )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-timezoneequals"
+    }
+  },
+  "#sec-temporal-timezonemethodsrecordcall": {
+    "current": {
+      "number": "11.5.6",
+      "spec": "Temporal proposal",
+      "text": "TimeZoneMethodsRecordCall ( timeZoneRec, methodName, arguments )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordcall"
+    }
+  },
+  "#sec-temporal-timezonemethodsrecordhaslookedup": {
+    "current": {
+      "number": "11.5.4",
+      "spec": "Temporal proposal",
+      "text": "TimeZoneMethodsRecordHasLookedUp ( timeZoneRec, methodName )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordhaslookedup"
+    }
+  },
+  "#sec-temporal-timezonemethodsrecordisbuiltin": {
+    "current": {
+      "number": "11.5.5",
+      "spec": "Temporal proposal",
+      "text": "TimeZoneMethodsRecordIsBuiltin ( timeZoneRec )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordisbuiltin"
+    }
+  },
+  "#sec-temporal-timezonemethodsrecordlookup": {
+    "current": {
+      "number": "11.5.3",
+      "spec": "Temporal proposal",
+      "text": "TimeZoneMethodsRecordLookup ( timeZoneRec, methodName )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordlookup"
     }
   },
   "#sec-temporal-tocalendarnameoption": {
@@ -3553,7 +3649,7 @@
   },
   "#sec-temporal-toisodayofweek": {
     "current": {
-      "number": "12.2.40",
+      "number": "12.2.46",
       "spec": "Temporal proposal",
       "text": "ToISODayOfWeek ( year, month, day )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-toisodayofweek"
@@ -3561,7 +3657,7 @@
   },
   "#sec-temporal-toisodayofyear": {
     "current": {
-      "number": "12.2.39",
+      "number": "12.2.45",
       "spec": "Temporal proposal",
       "text": "ToISODayOfYear ( year, month, day )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-toisodayofyear"
@@ -3569,7 +3665,7 @@
   },
   "#sec-temporal-toisoweekofyear": {
     "current": {
-      "number": "12.2.32",
+      "number": "12.2.38",
       "spec": "Temporal proposal",
       "text": "ToISOWeekOfYear ( year, month, day )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-toisoweekofyear"
@@ -3617,7 +3713,7 @@
   },
   "#sec-temporal-totemporalcalendaridentifier": {
     "current": {
-      "number": "12.2.22",
+      "number": "12.2.28",
       "spec": "Temporal proposal",
       "text": "ToTemporalCalendarIdentifier ( calendarSlotValue )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendaridentifier"
@@ -3625,7 +3721,7 @@
   },
   "#sec-temporal-totemporalcalendarobject": {
     "current": {
-      "number": "12.2.23",
+      "number": "12.2.29",
       "spec": "Temporal proposal",
       "text": "ToTemporalCalendarObject ( calendarSlotValue )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendarobject"
@@ -3633,7 +3729,7 @@
   },
   "#sec-temporal-totemporalcalendarslotvalue": {
     "current": {
-      "number": "12.2.20",
+      "number": "12.2.26",
       "spec": "Temporal proposal",
       "text": "ToTemporalCalendarSlotValue ( temporalCalendarLike [ , default ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendarslotvalue"
@@ -3753,7 +3849,7 @@
   },
   "#sec-temporal-totemporaltimezoneidentifier": {
     "current": {
-      "number": "11.5.11",
+      "number": "11.5.17",
       "spec": "Temporal proposal",
       "text": "ToTemporalTimeZoneIdentifier ( timeZoneSlotValue )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneidentifier"
@@ -3761,7 +3857,7 @@
   },
   "#sec-temporal-totemporaltimezoneobject": {
     "current": {
-      "number": "11.5.12",
+      "number": "11.5.18",
       "spec": "Temporal proposal",
       "text": "ToTemporalTimeZoneObject ( timeZoneSlotValue )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneobject"
@@ -3769,7 +3865,7 @@
   },
   "#sec-temporal-totemporaltimezoneslotvalue": {
     "current": {
-      "number": "11.5.10",
+      "number": "11.5.16",
       "spec": "Temporal proposal",
       "text": "ToTemporalTimeZoneSlotValue ( temporalTimeZoneLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneslotvalue"
@@ -3803,7 +3899,7 @@
     "current": {
       "number": "7.5.21",
       "spec": "Temporal proposal",
-      "text": "UnbalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo )",
+      "text": "UnbalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo, calendarRec )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-unbalancedatedurationrelative"
     }
   },
