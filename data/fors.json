@@ -3752,6 +3752,7 @@
     "ReadableStreamBYOBReader",
     "ReadableStreamBYOBReaderErrorReadIntoRequests",
     "ReadableStreamBYOBReaderRead",
+    "ReadableStreamBYOBReaderReadOptions",
     "ReadableStreamBYOBReaderRelease",
     "ReadableStreamBYOBRequest",
     "ReadableStreamCancel",
@@ -41733,6 +41734,7 @@
     "[[readintorequests]]",
     "constructor(stream)",
     "read(view)",
+    "read(view, options)",
     "releaseLock()"
   ],
   "ReadableStreamBYOBReader/ReadableStreamBYOBReader(stream)": [
@@ -41742,7 +41744,15 @@
     "stream"
   ],
   "ReadableStreamBYOBReader/read(view)": [
+    "options",
     "view"
+  ],
+  "ReadableStreamBYOBReader/read(view, options)": [
+    "options",
+    "view"
+  ],
+  "ReadableStreamBYOBReaderReadOptions": [
+    "min"
   ],
   "ReadableStreamBYOBRequest": [
     "[[controller]]",
@@ -55622,6 +55632,7 @@
     "byte offset",
     "bytes filled",
     "element size",
+    "minimum fill",
     "reader type",
     "view constructor"
   ],
