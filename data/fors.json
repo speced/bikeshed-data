@@ -6411,7 +6411,6 @@
     "buffersource",
     "build a content range",
     "build an interest group passed to generatebid",
-    "build an interest group permissions url",
     "build bid generators map",
     "build the list of related website sets",
     "build trusted bidding signals url",
@@ -7403,6 +7402,7 @@
     "contact picker is showing flag",
     "contact picker task source",
     "contacts source",
+    "contagious invalidity",
     "contain",
     "contain constraint",
     "contain the nesting selector",
@@ -9962,6 +9962,7 @@
     "frames",
     "frameset",
     "frameset-ok flag",
+    "framework",
     "framing",
     "framing keywords",
     "framing state",
@@ -10472,6 +10473,7 @@
     "handle a connection closing",
     "handle a redeem response",
     "handle a shared-storage-write response",
+    "handle ad auction signals header value",
     "handle an incoming message",
     "handle an input promise in configuration",
     "handle an issue response",
@@ -12285,6 +12287,7 @@
     "mark as ready",
     "mark paint timing",
     "mark resource timing",
+    "mark_feature_usage",
     "mark_fully_loaded",
     "mark_fully_visible",
     "mark_interactive",
@@ -19736,8 +19739,12 @@
     "start",
     "top",
     "x-end",
+    "x-self-end",
+    "x-self-start",
     "x-start",
     "y-end",
+    "y-self-end",
+    "y-self-start",
     "y-start"
   ],
   "<layout-box>": [
@@ -30678,8 +30685,7 @@
     "copyTextureToTexture(source, destination, copySize)",
     "finish()",
     "finish(descriptor)",
-    "resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)",
-    "writeTimestamp(querySet, queryIndex)"
+    "resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
   ],
   "GPUCommandEncoder/beginComputePass(descriptor)": [
     "descriptor"
@@ -30722,10 +30728,6 @@
     "destinationOffset",
     "firstQuery",
     "queryCount",
-    "querySet"
-  ],
-  "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)": [
-    "queryIndex",
     "querySet"
   ],
   "GPUCommandsMixin": [
@@ -32288,6 +32290,18 @@
   ],
   "GyroscopeSensorOptions": [
     "referenceFrame"
+  ],
+  "HDCPVersion": [
+    "1.0",
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4",
+    "2.0",
+    "2.1",
+    "2.2",
+    "2.3",
+    "HDCPVersion"
   ],
   "HID": [
     "[[devices]]",
@@ -36549,8 +36563,14 @@
   "MediaKeys": [
     "createSession()",
     "createSession(, sessionType)",
+    "getStatusForPolicy()",
+    "getStatusForPolicy(, policy)",
     "setServerCertificate()",
     "setServerCertificate(serverCertificate)"
+  ],
+  "MediaKeysPolicy": [
+    "MediaKeysPolicy",
+    "minHdcpVersion"
   ],
   "MediaKeysRequirement": [
     "not-allowed",
@@ -53761,8 +53781,12 @@
     "start",
     "top",
     "x-end",
+    "x-self-end",
+    "x-self-start",
     "x-start",
     "y-end",
+    "y-self-end",
+    "y-self-start",
     "y-start"
   ],
   "inset-block": [
@@ -57836,7 +57860,8 @@
     "none"
   ],
   "traversable navigable": [
-    "captured ad auction headers",
+    "captured ad auction additional bids headers",
+    "captured ad auction signals headers",
     "fenced frame config mapping",
     "storage shed",
     "unfenced parent"
