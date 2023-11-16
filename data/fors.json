@@ -1331,6 +1331,8 @@
     "AuthenticationExtensionsPRFOutputs",
     "AuthenticationExtensionsPRFValues",
     "AuthenticationExtensionsPaymentInputs",
+    "AuthenticationExtensionsSupplementalPubKeysInputs",
+    "AuthenticationExtensionsSupplementalPubKeysOutputs",
     "AuthenticationResponseJSON",
     "AuthenticatorAssertionResponse",
     "AuthenticatorAssertionResponseJSON",
@@ -1759,6 +1761,7 @@
     "Create a Trusted Type Policy",
     "Create a Trusted Type from literal",
     "Create a new device-bound key record",
+    "Create a new supplemental public key record",
     "CreateArrayFromList",
     "CreateArrayFromList(elements)",
     "CreateArrayIterator",
@@ -15169,6 +15172,7 @@
     "recommendation-track",
     "recommended",
     "recommended motion vector texture resolution",
+    "recommended range and default for a webauthn ceremony timeout",
     "recommended use",
     "recommended webgl color texture resolution",
     "recommended webgl depth texture resolution",
@@ -17381,6 +17385,8 @@
     "superseded registry",
     "supplemental confidential council report",
     "supplemental content",
+    "supplemental public key",
+    "supplementalpubkeys",
     "supplementary character",
     "supplementary code point",
     "supplied mime type",
@@ -21809,6 +21815,7 @@
     "minPinLength",
     "payment",
     "prf",
+    "supplementalPubKeys",
     "uvm"
   ],
   "AuthenticationExtensionsClientOutputs": [
@@ -21820,6 +21827,7 @@
     "hmacGetSecret",
     "largeBlob",
     "prf",
+    "supplementalPubKeys",
     "uvm"
   ],
   "AuthenticationExtensionsDevicePublicKeyInputs": [
@@ -21859,6 +21867,14 @@
     "rpId",
     "topOrigin",
     "total"
+  ],
+  "AuthenticationExtensionsSupplementalPubKeysInputs": [
+    "attestation",
+    "attestationFormats",
+    "scopes"
+  ],
+  "AuthenticationExtensionsSupplementalPubKeysOutputs": [
+    "signatures"
   ],
   "AuthenticationResponseJSON": [
     "authenticatorAttachment",
@@ -51590,6 +51606,8 @@
     "id",
     "publicKey",
     "signCount",
+    "supplemental public key record",
+    "supplementalPubKeys",
     "transports",
     "type",
     "uvInitialized"
@@ -56961,6 +56979,13 @@
   "superscript-size-override!!descriptor": [
     "from-font",
     "normal"
+  ],
+  "supplementalPubKeys record": [
+    "aaguid",
+    "attStmt",
+    "fmt",
+    "scope",
+    "spk"
   ],
   "supported limits": [
     "maxBindGroups",
