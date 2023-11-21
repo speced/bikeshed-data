@@ -1660,6 +1660,7 @@
     "ClipboardItemOptions",
     "ClipboardItems",
     "ClipboardPermissionDescriptor",
+    "ClipboardUnsanitizedFormats",
     "CloneArrayBuffer",
     "CloneArrayBuffer(srcBuffer, srcByteOffset, srcLength)",
     "CloneAsUint8Array",
@@ -13589,6 +13590,7 @@
     "optional data types",
     "optional features",
     "optional trigger priority",
+    "optional unsanitized data types",
     "optional-ascii-whitespace",
     "optionality list",
     "optionality values",
@@ -18278,6 +18280,7 @@
     "unsafe-none",
     "unsafefile",
     "unsafely set html",
+    "unsanitized data types",
     "unsatisfiable",
     "unset",
     "unshipped port message queue",
@@ -25303,9 +25306,16 @@
   ],
   "Clipboard": [
     "read()",
+    "read(formats)",
     "readText()",
     "write(data)",
     "writeText(data)"
+  ],
+  "Clipboard/read()": [
+    "formats"
+  ],
+  "Clipboard/read(formats)": [
+    "formats"
   ],
   "Clipboard/write(data)": [
     "data"
@@ -25380,6 +25390,9 @@
   ],
   "ClipboardPermissionDescriptor": [
     "allowWithoutGesture"
+  ],
+  "ClipboardUnsanitizedFormats": [
+    "unsanitized"
   ],
   "CloseEvent": [
     "CloseEvent(type)",
