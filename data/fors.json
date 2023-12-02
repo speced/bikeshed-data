@@ -1906,6 +1906,7 @@
     "DirectFromSellerSignalsForSeller",
     "DirectionSetting",
     "DirectoryPickerOptions",
+    "DisconnectedAccount",
     "Dispatch error",
     "DisplayCaptureSurfaceType",
     "DisplayMediaStreamOptions",
@@ -2619,6 +2620,7 @@
     "IIRFilterOptions",
     "IPAddressSpace",
     "IdentityCredential",
+    "IdentityCredentialDisconnectOptions",
     "IdentityCredentialRequestOptions",
     "IdentityCredentialRequestOptionsContext",
     "IdentityProvider",
@@ -2629,6 +2631,7 @@
     "IdentityProviderClientMetadata",
     "IdentityProviderConfig",
     "IdentityProviderIcon",
+    "IdentityProviderRequestOptions",
     "IdentityProviderToken",
     "IdentityProviderWellKnown",
     "IdentityUserInfo",
@@ -5677,6 +5680,7 @@
     "attempt to deliver a debug report",
     "attempt to deliver a report",
     "attempt to deliver a verbose debug report",
+    "attempt to disconnect",
     "attempt to populate the history entry's document",
     "attempt to send an automatic beacon",
     "attempting to access the depth buffer",
@@ -8638,6 +8642,7 @@
     "disclosure requests",
     "disclosure requirement",
     "disconnect",
+    "disconnect endpoint",
     "disconnect from a remote playback device",
     "disconnected crop-session target",
     "discontinued draft",
@@ -15424,10 +15429,12 @@
     "remote-playback-termination-response",
     "remove",
     "remove a bucket",
+    "remove a connection",
     "remove a css rule",
     "remove a css style sheet",
     "remove a permission store entry",
     "remove a track",
+    "remove all connections",
     "remove all credentials",
     "remove all event listeners",
     "remove an animation effect",
@@ -16349,6 +16356,7 @@
     "semantics",
     "semantics of an expression",
     "send a beacon",
+    "send a disconnect request",
     "send a message",
     "send a response",
     "send a termination request",
@@ -28080,6 +28088,9 @@
     "mode",
     "startIn"
   ],
+  "DisconnectedAccount": [
+    "account_id"
+  ],
   "DiscoverableCredentialMetadata": [
     "id",
     "otherui",
@@ -34326,12 +34337,23 @@
   ],
   "IdentityCredential": [
     "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)",
+    "disconnect()",
+    "disconnect(options)",
     "token"
   ],
   "IdentityCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)": [
     "options",
     "origin",
     "sameOriginWithAncestors"
+  ],
+  "IdentityCredential/disconnect()": [
+    "options"
+  ],
+  "IdentityCredential/disconnect(options)": [
+    "options"
+  ],
+  "IdentityCredentialDisconnectOptions": [
+    "accountHint"
   ],
   "IdentityCredentialRequestOptions": [
     "context",
@@ -34354,6 +34376,7 @@
     "accounts_endpoint",
     "branding",
     "client_metadata_endpoint",
+    "disconnect_endpoint",
     "id_assertion_endpoint",
     "login_url"
   ],
@@ -34381,13 +34404,15 @@
   ],
   "IdentityProviderConfig": [
     "clientId",
-    "configURL",
-    "loginHint",
-    "nonce"
+    "configURL"
   ],
   "IdentityProviderIcon": [
     "size",
     "url"
+  ],
+  "IdentityProviderRequestOptions": [
+    "loginHint",
+    "nonce"
   ],
   "IdentityProviderToken": [
     "token"
@@ -50105,7 +50130,9 @@
     "center",
     "end",
     "implicit",
+    "inside",
     "left",
+    "outside",
     "right",
     "self-end",
     "self-start",
@@ -52126,6 +52153,10 @@
     "onrepeat",
     "requiredextensions",
     "systemlanguage"
+  ],
+  "disconnect_endpoint_request": [
+    "account_hint",
+    "client_id"
   ],
   "display": [
     "block",
