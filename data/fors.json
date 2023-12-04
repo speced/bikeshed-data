@@ -1119,6 +1119,8 @@
     "AddRestrictedFunctionProperties(F, realm)",
     "AddToKeptObjects",
     "AddToKeptObjects(value)",
+    "AddValueToKeyedGroup",
+    "AddValueToKeyedGroup(groups, key, value)",
     "AddWaiter",
     "AddWaiter(WL, waiterRecord)",
     "AdvanceStringIndex",
@@ -2432,6 +2434,8 @@
     "GlobalPrivacyControl",
     "GlobalState",
     "GravitySensor",
+    "GroupBy",
+    "GroupBy(items, callbackfn, keyCoercion)",
     "GroupEffect",
     "Gyroscope",
     "GyroscopeLocalCoordinateSystem",
@@ -8540,6 +8544,7 @@
     "device discovery procedure",
     "device enumeration can proceed",
     "device information can be exposed",
+    "device motion and orientation task source",
     "device permission revocation algorithm",
     "device pixel",
     "device private key",
@@ -14021,6 +14026,8 @@
     "parse single-value number reading",
     "parse source-registration json",
     "parse speculation rules",
+    "parse summary buckets",
+    "parse summary window operator",
     "parse the report descriptor",
     "parse the webvtt cue settings",
     "parse top-level report windows",
@@ -17399,7 +17406,10 @@
     "suitable sequentially focusable area",
     "sum value",
     "summary",
+    "summary bucket",
+    "summary bucket list",
     "summary for its parent details",
+    "summary window operator",
     "summer time",
     "sunken initial",
     "sup",
@@ -28022,7 +28032,8 @@
     "constructor(type)",
     "constructor(type, eventInitDict)",
     "gamma",
-    "requestPermission()"
+    "requestPermission()",
+    "requestPermission(absolute)"
   ],
   "DeviceOrientationEvent/DeviceOrientationEvent(type)": [
     "eventInitDict",
@@ -28039,6 +28050,12 @@
   "DeviceOrientationEvent/constructor(type, eventInitDict)": [
     "eventInitDict",
     "type"
+  ],
+  "DeviceOrientationEvent/requestPermission()": [
+    "absolute"
+  ],
+  "DeviceOrientationEvent/requestPermission(absolute)": [
+    "absolute"
   ],
   "DeviceOrientationEventInit": [
     "absolute",
@@ -36600,6 +36617,7 @@
     "entries()",
     "forEach(callbackfn, thisArg)",
     "get(key)",
+    "groupBy(items, callbackfn)",
     "has(key)",
     "keys()",
     "set(key, value)",
@@ -38991,6 +39009,7 @@
     "getOwnPropertyNames(O)",
     "getOwnPropertySymbols(O)",
     "getPrototypeOf(O)",
+    "groupBy(items, callbackfn)",
     "hasOwn(O, P)",
     "hasOwnProperty(V)",
     "is(value1, value2)",
@@ -40413,7 +40432,8 @@
     "race(iterable)",
     "reject(r)",
     "resolve(x)",
-    "then(onFulfilled, onRejected)"
+    "then(onFulfilled, onRejected)",
+    "withResolvers()"
   ],
   "PromiseRejectionEvent": [
     "promise",
@@ -57330,6 +57350,14 @@
   "sum value": [
     "unit map",
     "value"
+  ],
+  "summary bucket": [
+    "end",
+    "start"
+  ],
+  "summary window operator": [
+    "count",
+    "value_sum"
   ],
   "superscript-position-override!!descriptor": [
     "from-font",
