@@ -2934,6 +2934,7 @@
     "MIDIPortType",
     "ML",
     "MLActivation",
+    "MLArgMinMaxOptions",
     "MLAutoPad",
     "MLBatchNormalizationOptions",
     "MLBufferResourceView",
@@ -2950,6 +2951,7 @@
     "MLDeviceType",
     "MLEluOptions",
     "MLGPUResource",
+    "MLGatherOptions",
     "MLGemmOptions",
     "MLGraph",
     "MLGraphBuilder",
@@ -2960,6 +2962,7 @@
     "MLInputOperandLayout",
     "MLInstanceNormalizationOptions",
     "MLInterpolationMode",
+    "MLLayerNormalizationOptions",
     "MLLeakyReluOptions",
     "MLLinearOptions",
     "MLLstmCellOptions",
@@ -2983,6 +2986,7 @@
     "MLSplitOptions",
     "MLSqueezeOptions",
     "MLTransposeOptions",
+    "MLTriangularOptions",
     "Magnetometer",
     "MagnetometerLocalCoordinateSystem",
     "MagnetometerSensorOptions",
@@ -35712,6 +35716,11 @@
     "[[operator]]",
     "[[options]]"
   ],
+  "MLArgMinMaxOptions": [
+    "axes",
+    "keepDimensions",
+    "selectLastIndex"
+  ],
   "MLAutoPad": [
     "\"explicit\"",
     "\"same-lower\"",
@@ -35823,6 +35832,9 @@
   "MLEluOptions": [
     "alpha"
   ],
+  "MLGatherOptions": [
+    "axis"
+  ],
   "MLGemmOptions": [
     "aTranspose",
     "alpha",
@@ -35841,6 +35853,11 @@
     "[[context]]",
     "abs(input)",
     "add(a, b)",
+    "argMax(input)",
+    "argMax(input, options)",
+    "argMin(input)",
+    "argMin(input, options)",
+    "argminmax-op",
     "averagePool2d(input)",
     "averagePool2d(input, options)",
     "batchNormalization(input, mean, variance)",
@@ -35850,16 +35867,21 @@
     "buildSync(outputs)",
     "calculate matmul output sizes",
     "calculate padding output sizes",
+    "cast(input, type)",
     "ceil(input)",
     "check resample options",
     "clamp()",
+    "clamp(input)",
+    "clamp(input, options)",
     "clamp(operand)",
     "clamp(operand, options)",
     "clamp(options)",
     "concat(inputs, axis)",
     "constant(descriptor, bufferView)",
+    "constant(start, end, step, type)",
     "constant(value)",
     "constant(value, dataType)",
+    "constant(value, type)",
     "constructor(context)",
     "conv2d(input, filter)",
     "conv2d(input, filter, options)",
@@ -35868,15 +35890,23 @@
     "cos(input)",
     "div(a, b)",
     "element-wise-binary-op",
+    "element-wise-logical-op",
     "element-wise-unary-op",
     "elu()",
     "elu(input)",
     "elu(input, options)",
     "elu(options)",
+    "equal(a, b)",
+    "erf(input)",
     "exp(input)",
+    "expand(input, newShape)",
     "floor(input)",
+    "gather(input, indices)",
+    "gather(input, indices, options)",
     "gemm(a, b)",
     "gemm(a, b, options)",
+    "greater(a, b)",
+    "greaterOrEqual(a, b)",
     "gru(input, weight, recurrentWeight, steps, hiddenSize)",
     "gru(input, weight, recurrentWeight, steps, hiddenSize, options)",
     "gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize)",
@@ -35887,15 +35917,20 @@
     "hardSigmoid(options)",
     "hardSwish()",
     "hardSwish(input)",
+    "identity(input)",
     "input(name, descriptor)",
     "instanceNormalization(input)",
     "instanceNormalization(input, options)",
     "l2Pool2d(input)",
     "l2Pool2d(input, options)",
+    "layerNormalization(input)",
+    "layerNormalization(input, options)",
     "leakyRelu()",
     "leakyRelu(input)",
     "leakyRelu(input, options)",
     "leakyRelu(options)",
+    "lesser(a, b)",
+    "lesserOrEqual(a, b)",
     "linear()",
     "linear(input)",
     "linear(input, options)",
@@ -35912,11 +35947,13 @@
     "min(a, b)",
     "mul(a, b)",
     "neg(input)",
+    "not(a)",
     "pad(input, beginningPadding, endingPadding)",
     "pad(input, beginningPadding, endingPadding, options)",
     "pooling-op",
     "pow(a, b)",
     "prelu(input, slope)",
+    "reciprocal(input)",
     "reduce-op",
     "reduceL1(input)",
     "reduceL1(input, options)",
@@ -35958,6 +35995,7 @@
     "softsign(input)",
     "split(input, splits)",
     "split(input, splits, options)",
+    "sqrt(input)",
     "squeeze(input)",
     "squeeze(input, options)",
     "sub(a, b)",
@@ -35965,7 +36003,10 @@
     "tanh()",
     "tanh(input)",
     "transpose(input)",
-    "transpose(input, options)"
+    "transpose(input, options)",
+    "triangular(input)",
+    "triangular(input, options)",
+    "where(condition, input, other)"
   ],
   "MLGraphBuilder/MLGraphBuilder(context)": [
     "context"
@@ -35976,6 +36017,22 @@
   "MLGraphBuilder/add(a, b)": [
     "a",
     "b"
+  ],
+  "MLGraphBuilder/argMax(input)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/argMax(input, options)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/argMin(input)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/argMin(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/averagePool2d(input)": [
     "input",
@@ -36003,10 +36060,22 @@
   "MLGraphBuilder/buildSync(outputs)": [
     "outputs"
   ],
+  "MLGraphBuilder/cast(input, type)": [
+    "input",
+    "type"
+  ],
   "MLGraphBuilder/ceil(input)": [
     "input"
   ],
   "MLGraphBuilder/clamp()": [
+    "options"
+  ],
+  "MLGraphBuilder/clamp(input)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/clamp(input, options)": [
+    "input",
     "options"
   ],
   "MLGraphBuilder/clamp(operand)": [
@@ -36030,10 +36099,15 @@
   ],
   "MLGraphBuilder/constant(value)": [
     "dataType",
+    "type",
     "value"
   ],
   "MLGraphBuilder/constant(value, dataType)": [
     "dataType",
+    "value"
+  ],
+  "MLGraphBuilder/constant(value, type)": [
+    "type",
     "value"
   ],
   "MLGraphBuilder/constructor(context)": [
@@ -36080,11 +36154,32 @@
   "MLGraphBuilder/elu(options)": [
     "options"
   ],
+  "MLGraphBuilder/equal(a, b)": [
+    "a",
+    "b"
+  ],
+  "MLGraphBuilder/erf(input)": [
+    "input"
+  ],
   "MLGraphBuilder/exp(input)": [
     "input"
   ],
+  "MLGraphBuilder/expand(input, newShape)": [
+    "input",
+    "newShape"
+  ],
   "MLGraphBuilder/floor(input)": [
     "input"
+  ],
+  "MLGraphBuilder/gather(input, indices)": [
+    "indices",
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/gather(input, indices, options)": [
+    "indices",
+    "input",
+    "options"
   ],
   "MLGraphBuilder/gemm(a, b)": [
     "a",
@@ -36095,6 +36190,14 @@
     "a",
     "b",
     "options"
+  ],
+  "MLGraphBuilder/greater(a, b)": [
+    "a",
+    "b"
+  ],
+  "MLGraphBuilder/greaterOrEqual(a, b)": [
+    "a",
+    "b"
   ],
   "MLGraphBuilder/gru(input, weight, recurrentWeight, steps, hiddenSize)": [
     "hiddenSize",
@@ -36145,6 +36248,9 @@
   "MLGraphBuilder/hardSwish(input)": [
     "input"
   ],
+  "MLGraphBuilder/identity(input)": [
+    "input"
+  ],
   "MLGraphBuilder/input(name, descriptor)": [
     "descriptor",
     "name"
@@ -36165,6 +36271,14 @@
     "input",
     "options"
   ],
+  "MLGraphBuilder/layerNormalization(input)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/layerNormalization(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/leakyRelu()": [
     "options"
   ],
@@ -36178,6 +36292,14 @@
   ],
   "MLGraphBuilder/leakyRelu(options)": [
     "options"
+  ],
+  "MLGraphBuilder/lesser(a, b)": [
+    "a",
+    "b"
+  ],
+  "MLGraphBuilder/lesserOrEqual(a, b)": [
+    "a",
+    "b"
   ],
   "MLGraphBuilder/linear()": [
     "options"
@@ -36257,6 +36379,9 @@
   "MLGraphBuilder/neg(input)": [
     "input"
   ],
+  "MLGraphBuilder/not(a)": [
+    "a"
+  ],
   "MLGraphBuilder/pad(input, beginningPadding, endingPadding)": [
     "beginningPadding",
     "endingPadding",
@@ -36276,6 +36401,9 @@
   "MLGraphBuilder/prelu(input, slope)": [
     "input",
     "slope"
+  ],
+  "MLGraphBuilder/reciprocal(input)": [
+    "input"
   ],
   "MLGraphBuilder/reduceL1(input)": [
     "input",
@@ -36413,6 +36541,9 @@
     "options",
     "splits"
   ],
+  "MLGraphBuilder/sqrt(input)": [
+    "input"
+  ],
   "MLGraphBuilder/squeeze(input)": [
     "input",
     "options"
@@ -36438,6 +36569,19 @@
   "MLGraphBuilder/transpose(input, options)": [
     "input",
     "options"
+  ],
+  "MLGraphBuilder/triangular(input)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/triangular(input, options)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/where(condition, input, other)": [
+    "condition",
+    "input",
+    "other"
   ],
   "MLGruCellOptions": [
     "activations",
@@ -36478,6 +36622,12 @@
     "\"linear\"",
     "\"nearest-neighbor\""
   ],
+  "MLLayerNormalizationOptions": [
+    "axes",
+    "bias",
+    "epsilon",
+    "scale"
+  ],
   "MLLeakyReluOptions": [
     "alpha"
   ],
@@ -36516,15 +36666,19 @@
     "[[name]]",
     "[[operand]]",
     "[[operator]]",
+    "dataType()",
     "rank",
+    "shape()",
     "validate mloperand"
   ],
   "MLOperandDataType": [
     "\"float16\"",
     "\"float32\"",
     "\"int32\"",
+    "\"int64\"",
     "\"int8\"",
     "\"uint32\"",
+    "\"uint64\"",
     "\"uint8\""
   ],
   "MLOperandDescriptor": [
@@ -36587,6 +36741,10 @@
   ],
   "MLTransposeOptions": [
     "permutation"
+  ],
+  "MLTriangularOptions": [
+    "diagonal",
+    "upper"
   ],
   "Magnetometer": [
     "Magnetometer()",
