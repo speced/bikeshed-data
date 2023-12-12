@@ -2847,6 +2847,7 @@
     "KeyForSymbol",
     "KeyForSymbol(sym)",
     "KeyFormat",
+    "KeyFrameRequestEvent",
     "KeySystemTrackConfiguration",
     "KeyType",
     "KeyUsage",
@@ -35114,6 +35115,29 @@
     "raw",
     "spki"
   ],
+  "KeyFrameRequestEvent": [
+    "KeyFrameRequestEvent(type)",
+    "KeyFrameRequestEvent(type, rid)",
+    "constructor(type)",
+    "constructor(type, rid)",
+    "rid"
+  ],
+  "KeyFrameRequestEvent/KeyFrameRequestEvent(type)": [
+    "rid",
+    "type"
+  ],
+  "KeyFrameRequestEvent/KeyFrameRequestEvent(type, rid)": [
+    "rid",
+    "type"
+  ],
+  "KeyFrameRequestEvent/constructor(type)": [
+    "rid",
+    "type"
+  ],
+  "KeyFrameRequestEvent/constructor(type, rid)": [
+    "rid",
+    "type"
+  ],
   "KeySystemTrackConfiguration": [
     "encryptionScheme",
     "robustness"
@@ -41679,7 +41703,13 @@
     "RTCRtpScriptTransform(worker, options, transfer)",
     "constructor(worker)",
     "constructor(worker, options)",
-    "constructor(worker, options, transfer)"
+    "constructor(worker, options, transfer)",
+    "generateKeyFrame(rid)",
+    "onbandwidthestimate",
+    "onkeyframerequest",
+    "readable",
+    "sendKeyFrameRequest()",
+    "writable"
   ],
   "RTCRtpScriptTransform/RTCRtpScriptTransform(worker)": [
     "options",
@@ -41714,6 +41744,7 @@
   "RTCRtpScriptTransformer": [
     "generateKeyFrame()",
     "generateKeyFrame(rid)",
+    "onkeyframerequest",
     "options",
     "readable",
     "sendKeyFrameRequest()",
