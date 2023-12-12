@@ -2984,7 +2984,6 @@
     "MLRoundingType",
     "MLSoftplusOptions",
     "MLSplitOptions",
-    "MLSqueezeOptions",
     "MLTransposeOptions",
     "MLTriangularOptions",
     "Magnetometer",
@@ -35873,14 +35872,11 @@
     "clamp()",
     "clamp(input)",
     "clamp(input, options)",
-    "clamp(operand)",
-    "clamp(operand, options)",
     "clamp(options)",
     "concat(inputs, axis)",
     "constant(descriptor, bufferView)",
     "constant(start, end, step, type)",
     "constant(value)",
-    "constant(value, dataType)",
     "constant(value, type)",
     "constructor(context)",
     "conv2d(input, filter)",
@@ -35996,8 +35992,6 @@
     "split(input, splits)",
     "split(input, splits, options)",
     "sqrt(input)",
-    "squeeze(input)",
-    "squeeze(input, options)",
     "sub(a, b)",
     "tan(input)",
     "tanh()",
@@ -36078,14 +36072,6 @@
     "input",
     "options"
   ],
-  "MLGraphBuilder/clamp(operand)": [
-    "operand",
-    "options"
-  ],
-  "MLGraphBuilder/clamp(operand, options)": [
-    "operand",
-    "options"
-  ],
   "MLGraphBuilder/clamp(options)": [
     "options"
   ],
@@ -36098,12 +36084,7 @@
     "descriptor"
   ],
   "MLGraphBuilder/constant(value)": [
-    "dataType",
     "type",
-    "value"
-  ],
-  "MLGraphBuilder/constant(value, dataType)": [
-    "dataType",
     "value"
   ],
   "MLGraphBuilder/constant(value, type)": [
@@ -36544,14 +36525,6 @@
   "MLGraphBuilder/sqrt(input)": [
     "input"
   ],
-  "MLGraphBuilder/squeeze(input)": [
-    "input",
-    "options"
-  ],
-  "MLGraphBuilder/squeeze(input, options)": [
-    "input",
-    "options"
-  ],
   "MLGraphBuilder/sub(a, b)": [
     "a",
     "b"
@@ -36735,9 +36708,6 @@
   ],
   "MLSplitOptions": [
     "axis"
-  ],
-  "MLSqueezeOptions": [
-    "axes"
   ],
   "MLTransposeOptions": [
     "permutation"
