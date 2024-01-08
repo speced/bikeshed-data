@@ -3414,6 +3414,7 @@
     "PerformanceObserverInit",
     "PerformancePaintTiming",
     "PerformanceResourceTiming",
+    "PerformanceScriptTiming",
     "PerformanceServerTiming",
     "PerformanceTiming",
     "PeriodicSyncEvent",
@@ -4006,6 +4007,7 @@
     "ScriptEvaluation(scriptRecord)",
     "ScriptProcessorNode",
     "ScriptString",
+    "ScriptTimingType",
     "ScriptURLString",
     "ScriptingPolicyReportBody",
     "ScriptingPolicyViolationType",
@@ -5511,6 +5513,7 @@
     "apply orientation lock",
     "apply request modifiers from url value",
     "apply scroll margin to a scrollport",
+    "apply source location",
     "apply the history step",
     "apply the nominal frame rate",
     "apply the pending render state",
@@ -7867,6 +7870,7 @@
     "create or override the cached client hints set",
     "create plane object",
     "create record objects",
+    "create script entry point",
     "create the attribution",
     "create the navigation timing entry",
     "create window client",
@@ -9814,6 +9818,7 @@
     "flush autofocus candidates",
     "flush code points consumed as a character reference",
     "flush frame timing",
+    "flush script entry point",
     "flush to zero",
     "fn",
     "focus",
@@ -15540,13 +15545,18 @@
     "report an error",
     "report an event",
     "report an exception",
+    "report classic script creation",
+    "report classic script execution start",
     "report content security policy violations for request",
     "report count tag",
     "report descriptor",
+    "report event handler",
     "report id tag",
     "report image element timing",
     "report latest reading updated",
+    "report module script execution start",
     "report paint timing",
+    "report promise resolver",
     "report rendering time",
     "report result",
     "report size tag",
@@ -15556,7 +15566,9 @@
     "report the exception",
     "report the layout shift",
     "report the layout shift sources",
+    "report timer handler",
     "report type",
+    "report user callback",
     "report validity steps",
     "report win",
     "report window",
@@ -16159,6 +16171,7 @@
     "script speculationrules",
     "script timeout",
     "script timeout error",
+    "script timing info",
     "script-blocking style sheet set",
     "script-closable",
     "script-created parser",
@@ -16620,6 +16633,7 @@
     "set rph registration mode",
     "set sensor settings",
     "set size getter",
+    "set source url for script block",
     "set spc transaction mode",
     "set storage access",
     "set the Sec-Required-CSP header",
@@ -39933,13 +39947,23 @@
   ],
   "PerformanceLongAnimationFrameTiming": [
     "blockingDuration",
+    "duration",
+    "entryType",
+    "firstUIEventTimestamp",
+    "name",
     "renderStart",
+    "scripts",
+    "startTime",
     "styleAndLayoutStart",
     "timing info",
     "toJSON()"
   ],
   "PerformanceLongTaskTiming": [
     "attribution",
+    "duration",
+    "entryType",
+    "name",
+    "startTime",
     "toJSON()"
   ],
   "PerformanceMark": [
@@ -40037,6 +40061,17 @@
     "toJSON()",
     "transferSize",
     "workerStart"
+  ],
+  "PerformanceScriptTiming": [
+    "duration",
+    "entryType",
+    "executionStart",
+    "name",
+    "sourceLocation",
+    "startTime",
+    "timing info",
+    "toJSON()",
+    "type"
   ],
   "PerformanceServerTiming": [
     "description",
@@ -40631,9 +40666,11 @@
     "any(iterable)",
     "catch(onRejected)",
     "finally(onFinally)",
+    "invoker name when created",
     "race(iterable)",
     "reject(r)",
     "resolve(x)",
+    "script url when created",
     "then(onFulfilled, onRejected)",
     "withResolvers()"
   ],
@@ -43758,6 +43795,14 @@
     "bufferSize",
     "onaudioprocess"
   ],
+  "ScriptTimingType": [
+    "\"classic-script\"",
+    "\"event-listener\"",
+    "\"module-script\"",
+    "\"reject-promise\"",
+    "\"resolve-promise\"",
+    "\"user-callback\""
+  ],
   "ScriptingPolicyReportBody": [
     "colno",
     "lineno",
@@ -45315,6 +45360,10 @@
     "containerName",
     "containerSrc",
     "containerType",
+    "duration",
+    "entryType",
+    "name",
+    "startTime",
     "toJSON()"
   ],
   "TaskController": [
@@ -53565,7 +53614,10 @@
   "frame timing info": [
     "current task start time",
     "end time",
+    "first ui event timestamp",
     "longest task duration",
+    "pending script",
+    "scripts",
     "start time",
     "style and layout start time",
     "update the rendering start time"
@@ -56812,6 +56864,19 @@
   "script resource": [
     "has ever been evaluated flag",
     "policy container"
+  ],
+  "script timing info": [
+    "end time",
+    "event target element id",
+    "event target element src attribute",
+    "event type",
+    "execution start time",
+    "invoker name",
+    "source character position",
+    "source function name",
+    "source url",
+    "start time",
+    "type"
   ],
   "script/crossorigin": [
     "anonymous",
