@@ -4011,6 +4011,7 @@
     "ScriptString",
     "ScriptTimingType",
     "ScriptURLString",
+    "ScriptWindowAttribution",
     "ScriptingPolicyReportBody",
     "ScriptingPolicyViolationType",
     "ScrollAxis",
@@ -8678,6 +8679,7 @@
     "discoverable mode",
     "discoverablecredentialmetadata",
     "discrete",
+    "disentangle",
     "dismiss",
     "dismiss alert",
     "dismiss and notify state",
@@ -14657,7 +14659,6 @@
     "previous frame visual representation",
     "previous win",
     "previously focused element",
-    "previously reported paints",
     "prf",
     "primary",
     "primary action",
@@ -15573,6 +15574,7 @@
     "report latest reading updated",
     "report module script execution start",
     "report paint timing",
+    "report pause duration",
     "report promise resolver",
     "report rendering time",
     "report result",
@@ -37814,6 +37816,7 @@
     "close()",
     "message",
     "messageerror",
+    "onclose",
     "onmessage",
     "onmessageerror",
     "postMessage(message, options)",
@@ -40104,12 +40107,17 @@
     "duration",
     "entryType",
     "executionStart",
+    "forcedStyleAndLayoutDuration",
     "name",
+    "pauseDuration",
     "sourceLocation",
     "startTime",
     "timing info",
     "toJSON()",
-    "type"
+    "type",
+    "window",
+    "window attribution",
+    "windowAttribution"
   ],
   "PerformanceServerTiming": [
     "description",
@@ -43841,6 +43849,13 @@
     "\"reject-promise\"",
     "\"resolve-promise\"",
     "\"user-callback\""
+  ],
+  "ScriptWindowAttribution": [
+    "\"ancestor\"",
+    "\"descendant\"",
+    "\"other\"",
+    "\"same-page\"",
+    "\"self\""
   ],
   "ScriptingPolicyReportBody": [
     "colno",
@@ -56920,11 +56935,13 @@
     "event type",
     "execution start time",
     "invoker name",
+    "pause duration",
     "source character position",
     "source function name",
     "source url",
     "start time",
-    "type"
+    "type",
+    "window"
   ],
   "script/crossorigin": [
     "anonymous",
