@@ -48,7 +48,6 @@
     "\"coep\" report type",
     "\"detail\"",
     "\"display-capture\"",
-    "\"dual-rumble\" actuator type",
     "\"dual-rumble\" effect type",
     "\"empty\"",
     "\"english-linear\"",
@@ -123,7 +122,6 @@
     "\"unsafe-url\"",
     "\"url\"",
     "\"vendor-defined\"",
-    "\"vibration\" actuator type",
     "\"video\"",
     "\"viewport-capture\"",
     "\"web-share\"",
@@ -2310,7 +2308,6 @@
     "GamepadEventInit",
     "GamepadHand",
     "GamepadHapticActuator",
-    "GamepadHapticActuatorType",
     "GamepadHapticEffectType",
     "GamepadHapticsResult",
     "GamepadMappingType",
@@ -7374,6 +7371,7 @@
     "construct an ambient light sensor object",
     "construct an orientation sensor object",
     "constructible",
+    "constructing a gamepadhapticactuator",
     "constructing a websocket resource name",
     "constructing a websocket url",
     "constructing entry list",
@@ -10091,6 +10089,7 @@
     "gamepad user gesture",
     "gamepadconnected",
     "gamepaddisconnected",
+    "gamepadhapticactuator",
     "gamma",
     "gamma encoding",
     "gamma value",
@@ -14987,6 +14986,7 @@
     "pullbidirectionalstream",
     "pulldatagrams",
     "pullunidirectionalstream",
+    "pulse()",
     "purge expired bit debits from all navigation entropy ledgers",
     "purple",
     "push a ruby annotation",
@@ -18712,6 +18712,7 @@
     "valid decimal monetary value",
     "valid domain",
     "valid domain string",
+    "valid dual-rumble effect",
     "valid duration string",
     "valid eagerness strings",
     "valid effect",
@@ -32162,6 +32163,7 @@
     "[[pose]]",
     "[[timestamp]]",
     "[[touchevents]]",
+    "[[vibrationActuator]]",
     "axes",
     "buttons",
     "connected",
@@ -32204,20 +32206,15 @@
     "the-empty-string"
   ],
   "GamepadHapticActuator": [
-    "[[playingeffectpromise]]",
-    "canPlayEffectType()",
-    "canPlayEffectType(type)",
+    "[[effects]]",
+    "[[playingEffectPromise]]",
+    "effects",
     "playEffect()",
     "playEffect(type)",
     "playEffect(type, params)",
     "pulse()",
     "pulse(value, duration)",
-    "reset()",
-    "type"
-  ],
-  "GamepadHapticActuatorType": [
-    "dual-rumble",
-    "vibration"
+    "reset()"
   ],
   "GamepadHapticEffectType": [
     "dual-rumble"
@@ -58452,6 +58449,7 @@
     "current time"
   ],
   "timeline-scope": [
+    "all",
     "none"
   ],
   "to I/O queue": [
