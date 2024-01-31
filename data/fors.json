@@ -2825,6 +2825,8 @@
     "IteratorNext(iteratorRecord, value)",
     "IteratorStep",
     "IteratorStep(iteratorRecord)",
+    "IteratorStepValue",
+    "IteratorStepValue(iteratorRecord)",
     "IteratorToList",
     "IteratorToList(iteratorRecord)",
     "IteratorValue",
@@ -4658,6 +4660,7 @@
     "WebTransportSendStream",
     "WebTransportSendStreamOptions",
     "WebTransportSendStreamStats",
+    "WebTransportWriter",
     "WeekDay",
     "WeekDay(t)",
     "WellKnownDirectory",
@@ -48053,6 +48056,7 @@
   ],
   "WebTransportDatagramStats": [
     "droppedIncoming",
+    "expiredIncoming",
     "expiredOutgoing",
     "lostOutgoing"
   ],
@@ -48135,16 +48139,19 @@
     "getStats()"
   ],
   "WebTransportSendStream": [
+    "[[AtomicWriteRequests]]",
     "[[InternalStream]]",
     "[[PendingOperation]]",
     "[[SendGroup]]",
     "[[SendOrder]]",
     "[[Transport]]",
     "abort",
+    "abort all atomic write requests",
     "close",
     "create",
     "creating",
     "getStats()",
+    "getWriter()",
     "sendGroup",
     "sendOrder",
     "write"
@@ -48158,6 +48165,18 @@
     "bytesAcknowledged",
     "bytesSent",
     "bytesWritten"
+  ],
+  "WebTransportWriter": [
+    "atomicWrite()",
+    "atomicWrite(chunk)",
+    "create",
+    "creating"
+  ],
+  "WebTransportWriter/atomicWrite()": [
+    "chunk"
+  ],
+  "WebTransportWriter/atomicWrite(chunk)": [
+    "chunk"
   ],
   "WellKnownDirectory": [
     "\"desktop\"",
