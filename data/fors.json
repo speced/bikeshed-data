@@ -1497,7 +1497,7 @@
     "CSSParserValue",
     "CSSPerspective",
     "CSSPerspectiveValue",
-    "CSSPositionFallbackRule",
+    "CSSPositionTryRule",
     "CSSPositionValue",
     "CSSPropertyRule",
     "CSSPseudoElement",
@@ -1523,7 +1523,6 @@
     "CSSTransformValue",
     "CSSTransition",
     "CSSTranslate",
-    "CSSTryRule",
     "CSSUnitValue",
     "CSSUnparsedSegment",
     "CSSUnparsedValue",
@@ -5527,6 +5526,7 @@
     "applies to",
     "apply",
     "apply a default",
+    "apply a position option",
     "apply any pending playback rate",
     "apply interest groups limits to prioritized list",
     "apply link options from parsed header attributes",
@@ -6642,6 +6642,7 @@
     "caret offset",
     "caret position",
     "caret range",
+    "caret-animation",
     "caret-color",
     "caret-shape",
     "cascade",
@@ -7466,6 +7467,7 @@
     "container policy",
     "container query",
     "container query length",
+    "container query length unit",
     "container resource",
     "container root url",
     "container size query",
@@ -11901,6 +11903,7 @@
     "last render opportunity time",
     "last reported playback position",
     "last selected source",
+    "last successful position option",
     "last usable css region",
     "last usable region",
     "last-baseline alignment",
@@ -13862,6 +13865,7 @@
     "override the color scheme",
     "override-declaration",
     "override-expressions",
+    "overriding position rectangle",
     "overrule",
     "overscroll",
     "overscroll behavior",
@@ -14552,8 +14556,10 @@
     "position option",
     "position options list",
     "position state",
+    "position-animation",
     "position-fallback",
     "position-fallback-bounds",
+    "position-try",
     "position-try-options",
     "position-try-order",
     "positional alignment",
@@ -17478,6 +17484,7 @@
     "strut size",
     "stub elements",
     "style",
+    "style & layout interleave",
     "style attribute",
     "style change event",
     "style containment",
@@ -24721,8 +24728,9 @@
   "CSSPerspective/constructor(length)": [
     "length"
   ],
-  "CSSPositionFallbackRule": [
-    "name"
+  "CSSPositionTryRule": [
+    "name",
+    "style"
   ],
   "CSSPositionValue": [
     "CSSPositionValue(x, y)",
@@ -25150,9 +25158,6 @@
     "x",
     "y",
     "z"
-  ],
-  "CSSTryRule": [
-    "style"
   ],
   "CSSUnitValue": [
     "CSSUnitValue(value, unit)",
@@ -51831,6 +51836,10 @@
     "old writing-mode",
     "style definitions"
   ],
+  "caret-animation": [
+    "auto",
+    "manual"
+  ],
   "caret-color": [
     "auto"
   ],
@@ -56534,6 +56543,10 @@
     "static",
     "sticky"
   ],
+  "position-animation": [
+    "magic",
+    "normal"
+  ],
   "position-fallback": [
     "none"
   ],
@@ -56541,6 +56554,7 @@
     "normal"
   ],
   "position-try-options": [
+    "<dashed-ident> || <try-tactic>",
     "<try-tactic>",
     "flip-block",
     "flip-inline",
