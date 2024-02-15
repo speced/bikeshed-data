@@ -557,8 +557,17 @@
   "#sec-arraybuffer.prototype.slice": [
     "/structured-data#sec-arraybuffer.prototype.slice"
   ],
+  "#sec-arraybuffer.prototype.transfer": [
+    "/structured-data#sec-arraybuffer.prototype.transfer"
+  ],
+  "#sec-arraybuffer.prototype.transfertofixedlength": [
+    "/structured-data#sec-arraybuffer.prototype.transfertofixedlength"
+  ],
   "#sec-arraybufferbytelength": [
     "/structured-data#sec-arraybufferbytelength"
+  ],
+  "#sec-arraybuffercopyanddetach": [
+    "/structured-data#sec-arraybuffercopyanddetach"
   ],
   "#sec-arraycreate": [
     "/ordinary-and-exotic-objects-behaviours#sec-arraycreate"
@@ -2209,6 +2218,9 @@
   ],
   "#sec-get-arraybuffer.prototype.bytelength": [
     "/structured-data#sec-get-arraybuffer.prototype.bytelength"
+  ],
+  "#sec-get-arraybuffer.prototype.detached": [
+    "/structured-data#sec-get-arraybuffer.prototype.detached"
   ],
   "#sec-get-arraybuffer.prototype.maxbytelength": [
     "/structured-data#sec-get-arraybuffer.prototype.maxbytelength"
@@ -20251,7 +20263,7 @@
   },
   "/structured-data#sec-arraybuffer.prototype-%40%40tostringtag": {
     "current": {
-      "number": "25.1.6.7",
+      "number": "25.1.6.10",
       "spec": "ECMAScript",
       "text": "ArrayBuffer.prototype [ @@toStringTag ]",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype-%40%40tostringtag"
@@ -20267,7 +20279,7 @@
   },
   "/structured-data#sec-arraybuffer.prototype.resize": {
     "current": {
-      "number": "25.1.6.5",
+      "number": "25.1.6.6",
       "spec": "ECMAScript",
       "text": "ArrayBuffer.prototype.resize ( newLength )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.resize"
@@ -20275,10 +20287,26 @@
   },
   "/structured-data#sec-arraybuffer.prototype.slice": {
     "current": {
-      "number": "25.1.6.6",
+      "number": "25.1.6.7",
       "spec": "ECMAScript",
       "text": "ArrayBuffer.prototype.slice ( start, end )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.slice"
+    }
+  },
+  "/structured-data#sec-arraybuffer.prototype.transfer": {
+    "current": {
+      "number": "25.1.6.8",
+      "spec": "ECMAScript",
+      "text": "ArrayBuffer.prototype.transfer ( [ newLength ] )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.transfer"
+    }
+  },
+  "/structured-data#sec-arraybuffer.prototype.transfertofixedlength": {
+    "current": {
+      "number": "25.1.6.9",
+      "spec": "ECMAScript",
+      "text": "ArrayBuffer.prototype.transferToFixedLength ( [ newLength ] )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.transfertofixedlength"
     }
   },
   "/structured-data#sec-arraybufferbytelength": {
@@ -20287,6 +20315,14 @@
       "spec": "ECMAScript",
       "text": "ArrayBufferByteLength ( arrayBuffer, order )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybufferbytelength"
+    }
+  },
+  "/structured-data#sec-arraybuffercopyanddetach": {
+    "current": {
+      "number": "25.1.3.3",
+      "spec": "ECMAScript",
+      "text": "ArrayBufferCopyAndDetach ( arrayBuffer, newLength, preserveResizability )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffercopyanddetach"
     }
   },
   "/structured-data#sec-atomiccompareexchangeinsharedblock": {
@@ -20443,7 +20479,7 @@
   },
   "/structured-data#sec-clonearraybuffer": {
     "current": {
-      "number": "25.1.3.5",
+      "number": "25.1.3.6",
       "spec": "ECMAScript",
       "text": "CloneArrayBuffer ( srcBuffer, srcByteOffset, srcLength )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-clonearraybuffer"
@@ -20667,7 +20703,7 @@
   },
   "/structured-data#sec-detacharraybuffer": {
     "current": {
-      "number": "25.1.3.4",
+      "number": "25.1.3.5",
       "spec": "ECMAScript",
       "text": "DetachArrayBuffer ( arrayBuffer [ , key ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer"
@@ -20737,9 +20773,17 @@
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.bytelength"
     }
   },
-  "/structured-data#sec-get-arraybuffer.prototype.maxbytelength": {
+  "/structured-data#sec-get-arraybuffer.prototype.detached": {
     "current": {
       "number": "25.1.6.3",
+      "spec": "ECMAScript",
+      "text": "get ArrayBuffer.prototype.detached",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.detached"
+    }
+  },
+  "/structured-data#sec-get-arraybuffer.prototype.maxbytelength": {
+    "current": {
+      "number": "25.1.6.4",
       "spec": "ECMAScript",
       "text": "get ArrayBuffer.prototype.maxByteLength",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.maxbytelength"
@@ -20747,7 +20791,7 @@
   },
   "/structured-data#sec-get-arraybuffer.prototype.resizable": {
     "current": {
-      "number": "25.1.6.4",
+      "number": "25.1.6.5",
       "spec": "ECMAScript",
       "text": "get ArrayBuffer.prototype.resizable",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable"
@@ -20803,7 +20847,7 @@
   },
   "/structured-data#sec-getarraybuffermaxbytelengthoption": {
     "current": {
-      "number": "25.1.3.6",
+      "number": "25.1.3.7",
       "spec": "ECMAScript",
       "text": "GetArrayBufferMaxByteLengthOption ( options )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getarraybuffermaxbytelengthoption"
@@ -20811,7 +20855,7 @@
   },
   "/structured-data#sec-getmodifysetvalueinbuffer": {
     "current": {
-      "number": "25.1.3.18",
+      "number": "25.1.3.19",
       "spec": "ECMAScript",
       "text": "GetModifySetValueInBuffer ( arrayBuffer, byteIndex, type, value, op )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getmodifysetvalueinbuffer"
@@ -20819,7 +20863,7 @@
   },
   "/structured-data#sec-getrawbytesfromsharedblock": {
     "current": {
-      "number": "25.1.3.14",
+      "number": "25.1.3.15",
       "spec": "ECMAScript",
       "text": "GetRawBytesFromSharedBlock ( block, byteIndex, type, isTypedArray, order )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getrawbytesfromsharedblock"
@@ -20827,7 +20871,7 @@
   },
   "/structured-data#sec-getvaluefrombuffer": {
     "current": {
-      "number": "25.1.3.15",
+      "number": "25.1.3.16",
       "spec": "ECMAScript",
       "text": "GetValueFromBuffer ( arrayBuffer, byteIndex, type, isTypedArray, order [ , isLittleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getvaluefrombuffer"
@@ -20875,7 +20919,7 @@
   },
   "/structured-data#sec-hostresizearraybuffer": {
     "current": {
-      "number": "25.1.3.7",
+      "number": "25.1.3.8",
       "spec": "ECMAScript",
       "text": "HostResizeArrayBuffer ( buffer, newByteLength )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-hostresizearraybuffer"
@@ -20891,7 +20935,7 @@
   },
   "/structured-data#sec-isbigintelementtype": {
     "current": {
-      "number": "25.1.3.11",
+      "number": "25.1.3.12",
       "spec": "ECMAScript",
       "text": "IsBigIntElementType ( type )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isbigintelementtype"
@@ -20899,7 +20943,7 @@
   },
   "/structured-data#sec-isdetachedbuffer": {
     "current": {
-      "number": "25.1.3.3",
+      "number": "25.1.3.4",
       "spec": "ECMAScript",
       "text": "IsDetachedBuffer ( arrayBuffer )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isdetachedbuffer"
@@ -20907,7 +20951,7 @@
   },
   "/structured-data#sec-isfixedlengtharraybuffer": {
     "current": {
-      "number": "25.1.3.8",
+      "number": "25.1.3.9",
       "spec": "ECMAScript",
       "text": "IsFixedLengthArrayBuffer ( arrayBuffer )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isfixedlengtharraybuffer"
@@ -20915,7 +20959,7 @@
   },
   "/structured-data#sec-isnotearconfiguration": {
     "current": {
-      "number": "25.1.3.12",
+      "number": "25.1.3.13",
       "spec": "ECMAScript",
       "text": "IsNoTearConfiguration ( type, order )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isnotearconfiguration"
@@ -20931,7 +20975,7 @@
   },
   "/structured-data#sec-isunclampedintegerelementtype": {
     "current": {
-      "number": "25.1.3.10",
+      "number": "25.1.3.11",
       "spec": "ECMAScript",
       "text": "IsUnclampedIntegerElementType ( type )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isunclampedintegerelementtype"
@@ -20939,7 +20983,7 @@
   },
   "/structured-data#sec-isunsignedelementtype": {
     "current": {
-      "number": "25.1.3.9",
+      "number": "25.1.3.10",
       "spec": "ECMAScript",
       "text": "IsUnsignedElementType ( type )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isunsignedelementtype"
@@ -21019,7 +21063,7 @@
   },
   "/structured-data#sec-numerictorawbytes": {
     "current": {
-      "number": "25.1.3.16",
+      "number": "25.1.3.17",
       "spec": "ECMAScript",
       "text": "NumericToRawBytes ( type, value, isLittleEndian )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-numerictorawbytes"
@@ -21107,7 +21151,7 @@
   },
   "/structured-data#sec-rawbytestonumeric": {
     "current": {
-      "number": "25.1.3.13",
+      "number": "25.1.3.14",
       "spec": "ECMAScript",
       "text": "RawBytesToNumeric ( type, rawBytes, isLittleEndian )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-rawbytestonumeric"
@@ -21171,7 +21215,7 @@
   },
   "/structured-data#sec-setvalueinbuffer": {
     "current": {
-      "number": "25.1.3.17",
+      "number": "25.1.3.18",
       "spec": "ECMAScript",
       "text": "SetValueInBuffer ( arrayBuffer, byteIndex, type, value, isTypedArray, order [ , isLittleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-setvalueinbuffer"
