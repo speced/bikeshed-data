@@ -2950,7 +2950,6 @@
     "MLArgMinMaxOptions",
     "MLAutoPad",
     "MLBatchNormalizationOptions",
-    "MLBufferResourceView",
     "MLBufferView",
     "MLClampOptions",
     "MLComputeResult",
@@ -11444,7 +11443,6 @@
     "instant scroll",
     "instantiate a config",
     "instantiate a promise of a module",
-    "instantiate a webassembly module",
     "instantiate counter",
     "instantiate the core of a webassembly module",
     "integer",
@@ -15029,6 +15027,7 @@
     "proof creation options",
     "proof generation",
     "proof graph",
+    "proof options",
     "proof purpose",
     "proof serialization algorithm",
     "proof type",
@@ -19072,6 +19071,7 @@
     "verifiable",
     "verifiable credential",
     "verifiable credential graph",
+    "verifiable credentials",
     "verifiable data registries",
     "verifiable data registry",
     "verifiable presentation",
@@ -36109,10 +36109,7 @@
   "ML": [
     "createContext()",
     "createContext(gpuDevice)",
-    "createContext(options)",
-    "createContextSync()",
-    "createContextSync(gpuDevice)",
-    "createContextSync(options)"
+    "createContext(options)"
   ],
   "ML/createContext()": [
     "options"
@@ -36121,15 +36118,6 @@
     "gpuDevice"
   ],
   "ML/createContext(options)": [
-    "options"
-  ],
-  "ML/createContextSync()": [
-    "options"
-  ],
-  "ML/createContextSync(gpuDevice)": [
-    "gpuDevice"
-  ],
-  "ML/createContextSync(options)": [
     "options"
   ],
   "MLActivation": [
@@ -36155,11 +36143,6 @@
     "epsilon",
     "scale"
   ],
-  "MLBufferResourceView": [
-    "offset",
-    "resource",
-    "size"
-  ],
   "MLClampOptions": [
     "maxValue",
     "minValue"
@@ -36172,15 +36155,9 @@
     "[[contextType]]",
     "[[deviceType]]",
     "[[powerPreference]]",
-    "compute(graph, inputs, outputs)",
-    "computeSync(graph, inputs, outputs)"
+    "compute(graph, inputs, outputs)"
   ],
   "MLContext/compute(graph, inputs, outputs)": [
-    "graph",
-    "inputs",
-    "outputs"
-  ],
-  "MLContext/computeSync(graph, inputs, outputs)": [
     "graph",
     "inputs",
     "outputs"
@@ -36264,7 +36241,6 @@
     "batchNormalization(input, mean, variance)",
     "batchNormalization(input, mean, variance, options)",
     "build(outputs)",
-    "buildSync(outputs)",
     "calculate matmul output sizes",
     "calculate padding output sizes",
     "calculate resample output sizes",
@@ -36450,9 +36426,6 @@
     "variance"
   ],
   "MLGraphBuilder/build(outputs)": [
-    "outputs"
-  ],
-  "MLGraphBuilder/buildSync(outputs)": [
     "outputs"
   ],
   "MLGraphBuilder/cast(input, type)": [
