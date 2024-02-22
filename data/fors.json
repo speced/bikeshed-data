@@ -1,4 +1,22 @@
 {
+  "%AsyncGeneratorPrototype%.next ( value )": [
+    "%AsyncGeneratorPrototype%.next(value)"
+  ],
+  "%AsyncGeneratorPrototype%.return ( value )": [
+    "%AsyncGeneratorPrototype%.return(value)"
+  ],
+  "%AsyncGeneratorPrototype%.throw ( exception )": [
+    "%AsyncGeneratorPrototype%.throw(exception)"
+  ],
+  "%GeneratorPrototype%.next ( value )": [
+    "%GeneratorPrototype%.next(value)"
+  ],
+  "%GeneratorPrototype%.return ( value )": [
+    "%GeneratorPrototype%.return(value)"
+  ],
+  "%GeneratorPrototype%.throw ( exception )": [
+    "%GeneratorPrototype%.throw(exception)"
+  ],
   "%TypedArray%": [
     "at(index)",
     "buffer",
@@ -143,6 +161,7 @@
     "%AsyncGeneratorFunction%",
     "%AsyncGeneratorFunction.prototype%",
     "%AsyncGeneratorFunction.prototype.prototype%",
+    "%AsyncGeneratorPrototype%",
     "%AsyncIteratorPrototype%",
     "%Atomics%",
     "%BigInt%",
@@ -168,6 +187,7 @@
     "%GeneratorFunction%",
     "%GeneratorFunction.prototype%",
     "%GeneratorFunction.prototype.prototype%",
+    "%GeneratorPrototype%",
     "%Int16Array%",
     "%Int32Array%",
     "%Int8Array%",
@@ -2722,6 +2742,7 @@
     "InputObject",
     "InstallErrorCause",
     "InstallErrorCause(O, options)",
+    "InstallEvent",
     "Instance",
     "InstanceofOperator",
     "InstanceofOperator(V, target)",
@@ -3893,6 +3914,11 @@
     "RotationMatrixType",
     "RoundMVResult",
     "RoundMVResult(n)",
+    "RouterCondition",
+    "RouterRule",
+    "RouterSource",
+    "RouterSourceDict",
+    "RouterSourceEnum",
     "RsaHashedImportParams",
     "RsaHashedKeyAlgorithm",
     "RsaHashedKeyGenParams",
@@ -3901,6 +3927,7 @@
     "RsaOaepParams",
     "RsaOtherPrimesInfo",
     "RsaPssParams",
+    "RunningStatus",
     "RuntimeError",
     "SFrameTransform",
     "SFrameTransformErrorEvent",
@@ -4303,6 +4330,7 @@
     "TextEncoderCommon",
     "TextEncoderEncodeIntoResult",
     "TextEncoderStream",
+    "TextEvent",
     "TextFormat",
     "TextFormatInit",
     "TextFormatUpdateEvent",
@@ -7110,6 +7138,7 @@
     "colleague",
     "collect Credentials from the credential store",
     "collect a sequence of code points",
+    "collect a single fordebuggingonly report",
     "collect a webvtt block",
     "collect a webvtt timestamp",
     "collect an http quoted string",
@@ -7943,6 +7972,7 @@
     "create brands",
     "create camera instance",
     "create client",
+    "create fetch event and dispatch",
     "create job",
     "create link options from element",
     "create mesh object",
@@ -8325,6 +8355,8 @@
     "deactivated",
     "dead key",
     "debug data type",
+    "debug report cooldown",
+    "debug report lockout until",
     "decentralized identifier",
     "decentralized identifiers",
     "decibels to linear gain unit",
@@ -10040,6 +10072,7 @@
     "forced paragraph break",
     "forced-color-adjust",
     "forcibly close",
+    "fordebuggingonly reports",
     "foreign content document",
     "foreign elements",
     "foreign resource",
@@ -10396,6 +10429,7 @@
     "get page source",
     "get registration",
     "get related browsing contexts",
+    "get router source",
     "get session history entries",
     "get session history entries for the navigation api",
     "get shared id for a node",
@@ -11697,6 +11731,7 @@
     "is closing",
     "is composing",
     "is currently stalled",
+    "is debugging only in cooldown or lockout",
     "is delaying load events",
     "is detached",
     "is document picture-in-picture",
@@ -12333,6 +12368,7 @@
     "locked to a reader",
     "locked to a writer",
     "locking the screen orientation",
+    "lockout period",
     "log event buffer",
     "log()",
     "logged-in",
@@ -12356,6 +12392,8 @@
     "long",
     "long animation frame",
     "long attribute values",
+    "long cooldown period",
+    "long cooldown rate",
     "long long",
     "long task",
     "longer",
@@ -12366,6 +12404,7 @@
     "look up per-buyer currency",
     "look up the key commitments",
     "look up the latest keys",
+    "lookup race response",
     "loop",
     "loop body",
     "loosely sorted by offset",
@@ -12580,6 +12619,7 @@
     "match filter values",
     "match filter values with negation",
     "match none",
+    "match router condition",
     "match service worker registration",
     "match url pattern",
     "matched capability serialization algorithm",
@@ -15253,6 +15293,7 @@
     "quotes",
     "qwerty",
     "r",
+    "race response",
     "radial-gradient()",
     "radialgradient",
     "radical elements",
@@ -16248,6 +16289,7 @@
     "same-permission",
     "samp",
     "sample",
+    "sample a debug report",
     "sample buffer size limit",
     "sample depth scaling",
     "sample interval",
@@ -16932,6 +16974,7 @@
     "settled",
     "setup cross-document view-transition",
     "setup packet",
+    "setup serviceworkerglobalscope",
     "setup stage",
     "setup the resource timing entry",
     "setup transition pseudo-elements",
@@ -17020,6 +17063,7 @@
     "shifted character",
     "shifted state",
     "short",
+    "short cooldown period",
     "short_name",
     "shortcut item",
     "shortcut item's",
@@ -18081,6 +18125,7 @@
     "textdirectiveprefix",
     "textdirectivestring",
     "textdirectivesuffix",
+    "textinput",
     "textpath",
     "textphone",
     "texture",
@@ -19131,6 +19176,7 @@
     "verify a miniapp zip container",
     "verify platform compatibility",
     "verify proof",
+    "verify router condition",
     "verify value category",
     "verifying",
     "verifying a miniapp zip container",
@@ -21547,11 +21593,6 @@
   "AsyncFunction": [
     "AsyncFunction(...parameterArgs, bodyArg)"
   ],
-  "AsyncGenerator": [
-    "next(value)",
-    "return(value)",
-    "throw(exception)"
-  ],
   "AsyncGeneratorFunction": [
     "AsyncGeneratorFunction(...parameterArgs, bodyArg)",
     "prototype"
@@ -22957,6 +22998,7 @@
     "adComponentsLimit",
     "bidCount",
     "dataVersion",
+    "forDebuggingOnlyInCooldownOrLockout",
     "joinCount",
     "prevWinsMs",
     "recency",
@@ -29093,7 +29135,6 @@
     "array indices",
     "array-like object",
     "array-like objects",
-    "asyncgenerator prototype object",
     "asyncgeneratorrequest",
     "asyncgeneratorrequests",
     "available named time zone",
@@ -29187,7 +29228,6 @@
     "function environment records",
     "function object",
     "function objects",
-    "generator prototype object",
     "global code",
     "global environment record",
     "global environment records",
@@ -32590,11 +32630,6 @@
     "group",
     "message"
   ],
-  "Generator": [
-    "next(value)",
-    "return(value)",
-    "throw(exception)"
-  ],
   "Generator Execution Contexts": [
     "generator"
   ],
@@ -35174,6 +35209,12 @@
     "pagePath",
     "referrerInfo"
   ],
+  "InstallEvent": [
+    "addRoutes(rules)"
+  ],
+  "InstallEvent/addRoutes(rules)": [
+    "rules"
+  ],
   "Instance": [
     "Instance(module)",
     "Instance(module, importObject)",
@@ -37082,6 +37123,7 @@
   ],
   "MLOperandDescriptor": [
     "byte length",
+    "check dimensions",
     "dataType",
     "dimensions"
   ],
@@ -43412,6 +43454,27 @@
     "fromElement()",
     "fromElement(element)"
   ],
+  "RouterCondition": [
+    "or",
+    "requestDestination",
+    "requestMethod",
+    "requestMode",
+    "runningStatus",
+    "urlPattern"
+  ],
+  "RouterRule": [
+    "condition",
+    "source"
+  ],
+  "RouterSourceDict": [
+    "cacheName"
+  ],
+  "RouterSourceEnum": [
+    "\"cache\"",
+    "\"fetch-event\"",
+    "\"network\"",
+    "\"race-network-and-fetch-handler\""
+  ],
   "RsaHashedImportParams": [
     "hash"
   ],
@@ -43439,6 +43502,10 @@
   ],
   "RsaPssParams": [
     "saltLength"
+  ],
+  "RunningStatus": [
+    "\"not-running\"",
+    "\"running\""
   ],
   "SFrameTransform": [
     "SFrameTransform()",
@@ -44152,6 +44219,7 @@
     "bidCurrency",
     "biddingDurationMsec",
     "dataVersion",
+    "forDebuggingOnlyInCooldownOrLockout",
     "interestGroupOwner",
     "renderURL",
     "topWindowHostname"
@@ -44640,6 +44708,7 @@
     "onpush",
     "onpushsubscriptionchange",
     "onsync",
+    "race response map",
     "registration",
     "service worker",
     "serviceWorker",
@@ -46092,6 +46161,49 @@
     "constructor()",
     "encoder",
     "pending high surrogate"
+  ],
+  "TextEvent": [
+    "data",
+    "initTextEvent(type)",
+    "initTextEvent(type, bubbles)",
+    "initTextEvent(type, bubbles, cancelable)",
+    "initTextEvent(type, bubbles, cancelable, view)",
+    "initTextEvent(type, bubbles, cancelable, view, data)"
+  ],
+  "TextEvent/initTextEvent(type)": [
+    "bubbles",
+    "cancelable",
+    "data",
+    "type",
+    "view"
+  ],
+  "TextEvent/initTextEvent(type, bubbles)": [
+    "bubbles",
+    "cancelable",
+    "data",
+    "type",
+    "view"
+  ],
+  "TextEvent/initTextEvent(type, bubbles, cancelable)": [
+    "bubbles",
+    "cancelable",
+    "data",
+    "type",
+    "view"
+  ],
+  "TextEvent/initTextEvent(type, bubbles, cancelable, view)": [
+    "bubbles",
+    "cancelable",
+    "data",
+    "type",
+    "view"
+  ],
+  "TextEvent/initTextEvent(type, bubbles, cancelable, view, data)": [
+    "bubbles",
+    "cancelable",
+    "data",
+    "type",
+    "view"
   ],
   "TextFormat": [
     "backgroundColor",
@@ -54179,6 +54291,7 @@
     "bid in seller currency",
     "bidder debug loss report url",
     "bidder debug win report url",
+    "component seller",
     "id",
     "interest group",
     "modeling signals",
@@ -56971,6 +57084,9 @@
     "match-parent",
     "none"
   ],
+  "race response": [
+    "value"
+  ],
   "radial-gradient()": [
     "<length [0,∞]>",
     "<length-percentage [0,∞]>{2}",
@@ -57741,6 +57857,7 @@
     "functional events",
     "global object",
     "lifecycle events",
+    "list of router rules",
     "registration",
     "running",
     "script resource",
