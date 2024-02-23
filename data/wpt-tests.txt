@@ -1,4 +1,4 @@
-sha: 2a023b35ecade9e3370800b430818c75af1819cb
+sha: 4fe095d9b3851b50129393089877c8a0f7d97096
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -741,6 +741,7 @@ crashtest editing/crashtests/delete-in-empty-editable-list-followed-by-non-edita
 crashtest editing/crashtests/designMode-document-will-be-blurred-by-focus-event-listener.html
 crashtest editing/crashtests/designMode-off-during-inserthorizontalrule.html
 crashtest editing/crashtests/designMode-on-of-lazy-loading-iframe.html
+crashtest editing/crashtests/enableInlineTableEditing-after-updating-selection-range-cross-shadow-dom-boundary.html
 crashtest editing/crashtests/execCommand-at-load-with-changing-editing-host.html
 crashtest editing/crashtests/execCommand-backcolor-and-hilitecolor-in-empty-iframe-in-designMode.html
 crashtest editing/crashtests/execCommand-without-selection-ranges.html
@@ -1033,6 +1034,7 @@ crashtest scroll-animations/view-timelines/subject-br-crash.html
 crashtest selection/crashtests/selectall-and-find-svg-text-on-selectstart.html
 crashtest selection/crashtests/selection-clip-crash.html
 crashtest selection/crashtests/selection-modify-around-input.html
+crashtest selection/crashtests/selection-modify-around-textarea.html
 crashtest selection/crashtests/selection-modify-line-next-to-textarea.html
 crashtest selection/crashtests/selection-modify-per-word-in-table-header-group.html
 crashtest selection/crashtests/table.html
@@ -5560,6 +5562,7 @@ reftest css/CSS2/borders/border-left-width-070.xht
 reftest css/CSS2/borders/border-left-width-071.xht
 reftest css/CSS2/borders/border-left-width-072.xht
 reftest css/CSS2/borders/border-left-width-073.xht
+reftest css/CSS2/borders/border-left-width-078.xht
 reftest css/CSS2/borders/border-left-width-079.xht
 reftest css/CSS2/borders/border-left-width-080.xht
 reftest css/CSS2/borders/border-left-width-081.xht
@@ -6220,6 +6223,7 @@ reftest css/CSS2/box/rtl-ib.xht
 reftest css/CSS2/box/rtl-linebreak.xht
 reftest css/CSS2/box/rtl-span-only-ib.xht
 reftest css/CSS2/box/rtl-span-only.xht
+reftest css/CSS2/cascade-import/cascade-import-001.xht
 reftest css/CSS2/cascade-import/cascade-import-dynamic-001.xht
 reftest css/CSS2/cascade-import/cascade-import-dynamic-002.xht
 reftest css/CSS2/cascade-import/cascade-import-dynamic-003.xht
@@ -7013,6 +7017,7 @@ reftest css/CSS2/fonts/font-size-093.xht
 reftest css/CSS2/fonts/font-size-100.xht
 reftest css/CSS2/fonts/font-size-101.xht
 reftest css/CSS2/fonts/font-size-102.xht
+reftest css/CSS2/fonts/font-size-119.xht
 reftest css/CSS2/fonts/font-size-120.xht
 reftest css/CSS2/fonts/font-size-121.xht
 reftest css/CSS2/fonts/font-size-122.xht
@@ -7483,9 +7488,11 @@ reftest css/CSS2/linebox/vertical-align-baseline-002.xht
 reftest css/CSS2/linebox/vertical-align-baseline-003.xht
 reftest css/CSS2/linebox/vertical-align-baseline-004a.xht
 reftest css/CSS2/linebox/vertical-align-baseline-005a.xht
+reftest css/CSS2/linebox/vertical-align-baseline-006.xht
 reftest css/CSS2/linebox/vertical-align-baseline-007.xht
 reftest css/CSS2/linebox/vertical-align-baseline-008.xht
 reftest css/CSS2/linebox/vertical-align-baseline-009.xht
+reftest css/CSS2/linebox/vertical-align-baseline-010.xht
 reftest css/CSS2/linebox/vertical-align-negative-leading-001.html
 reftest css/CSS2/linebox/vertical-align-nested-top-001.html
 reftest css/CSS2/linebox/vertical-align-sub-001.xht
@@ -7530,6 +7537,9 @@ reftest css/CSS2/lists/counter-increment-applies-to-012.xht
 reftest css/CSS2/lists/counter-increment-applies-to-013.xht
 reftest css/CSS2/lists/counter-increment-applies-to-014.xht
 reftest css/CSS2/lists/counter-increment-applies-to-015.xht
+reftest css/CSS2/lists/counter-increment-auto-reset-001.xht
+reftest css/CSS2/lists/counter-increment-display-001.xht
+reftest css/CSS2/lists/counter-increment-not-generated-001.xht
 reftest css/CSS2/lists/counter-increment-visibility-001.xht
 reftest css/CSS2/lists/counter-reset-005.xht
 reftest css/CSS2/lists/counter-reset-006.xht
@@ -7568,7 +7578,9 @@ reftest css/CSS2/lists/counter-reset-applies-to-012.xht
 reftest css/CSS2/lists/counter-reset-applies-to-013.xht
 reftest css/CSS2/lists/counter-reset-applies-to-014.xht
 reftest css/CSS2/lists/counter-reset-applies-to-015.xht
+reftest css/CSS2/lists/counter-reset-display-001.xht
 reftest css/CSS2/lists/counter-reset-increment-002.xht
+reftest css/CSS2/lists/counter-reset-not-generated-001.xht
 reftest css/CSS2/lists/counter-reset-visibility-001.xht
 reftest css/CSS2/lists/increment-counter-001.xht
 reftest css/CSS2/lists/list-style-019.xht
@@ -7704,6 +7716,7 @@ reftest css/CSS2/margin-padding-clear/margin-collapse-006.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-007.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-008.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-009.xht
+reftest css/CSS2/margin-padding-clear/margin-collapse-012.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-013.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-014.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-015.xht
@@ -7742,6 +7755,8 @@ reftest css/CSS2/margin-padding-clear/margin-collapse-138.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-155.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-156.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-159.xht
+reftest css/CSS2/margin-padding-clear/margin-collapse-clear-001.xht
+reftest css/CSS2/margin-padding-clear/margin-collapse-clear-007.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-min-height-001.xht
 reftest css/CSS2/margin-padding-clear/margin-collapse-min-height-002.xht
 reftest css/CSS2/margin-padding-clear/margin-em-inherit-001.xht
@@ -7804,6 +7819,7 @@ reftest css/CSS2/margin-padding-clear/margin-left-applies-to-004.xht
 reftest css/CSS2/margin-padding-clear/margin-left-applies-to-005.xht
 reftest css/CSS2/margin-padding-clear/margin-left-applies-to-006.xht
 reftest css/CSS2/margin-padding-clear/margin-left-applies-to-007.xht
+reftest css/CSS2/margin-padding-clear/margin-left-applies-to-008.xht
 reftest css/CSS2/margin-padding-clear/margin-left-applies-to-009.xht
 reftest css/CSS2/margin-padding-clear/margin-left-applies-to-012.xht
 reftest css/CSS2/margin-padding-clear/margin-left-applies-to-013.xht
@@ -7960,6 +7976,8 @@ reftest css/CSS2/margin-padding-clear/padding-applies-to-012.xht
 reftest css/CSS2/margin-padding-clear/padding-applies-to-013.xht
 reftest css/CSS2/margin-padding-clear/padding-applies-to-014.xht
 reftest css/CSS2/margin-padding-clear/padding-applies-to-015.xht
+reftest css/CSS2/margin-padding-clear/padding-applies-to-016.xht
+reftest css/CSS2/margin-padding-clear/padding-applies-to-017.xht
 reftest css/CSS2/margin-padding-clear/padding-background-001.xht
 reftest css/CSS2/margin-padding-clear/padding-bottom-001.xht
 reftest css/CSS2/margin-padding-clear/padding-bottom-002.xht
@@ -8429,6 +8447,7 @@ reftest css/CSS2/normal-flow/block-non-replaced-height-005.xht
 reftest css/CSS2/normal-flow/block-non-replaced-height-011.xht
 reftest css/CSS2/normal-flow/block-non-replaced-height-013.xht
 reftest css/CSS2/normal-flow/block-non-replaced-width-001.xht
+reftest css/CSS2/normal-flow/block-non-replaced-width-002.xht
 reftest css/CSS2/normal-flow/block-non-replaced-width-003.xht
 reftest css/CSS2/normal-flow/block-non-replaced-width-004.xht
 reftest css/CSS2/normal-flow/block-non-replaced-width-005.xht
@@ -8726,6 +8745,7 @@ reftest css/CSS2/normal-flow/max-width-006.xht
 reftest css/CSS2/normal-flow/max-width-007.xht
 reftest css/CSS2/normal-flow/max-width-012.xht
 reftest css/CSS2/normal-flow/max-width-013.xht
+reftest css/CSS2/normal-flow/max-width-014.xht
 reftest css/CSS2/normal-flow/max-width-015.xht
 reftest css/CSS2/normal-flow/max-width-016.xht
 reftest css/CSS2/normal-flow/max-width-017.xht
@@ -8896,6 +8916,7 @@ reftest css/CSS2/normal-flow/min-width-006.xht
 reftest css/CSS2/normal-flow/min-width-007.xht
 reftest css/CSS2/normal-flow/min-width-012.xht
 reftest css/CSS2/normal-flow/min-width-013.xht
+reftest css/CSS2/normal-flow/min-width-014.xht
 reftest css/CSS2/normal-flow/min-width-015.xht
 reftest css/CSS2/normal-flow/min-width-016.xht
 reftest css/CSS2/normal-flow/min-width-017.xht
@@ -8991,6 +9012,7 @@ reftest css/CSS2/normal-flow/width-006.xht
 reftest css/CSS2/normal-flow/width-007.xht
 reftest css/CSS2/normal-flow/width-012.xht
 reftest css/CSS2/normal-flow/width-013.xht
+reftest css/CSS2/normal-flow/width-014.xht
 reftest css/CSS2/normal-flow/width-015.xht
 reftest css/CSS2/normal-flow/width-016.xht
 reftest css/CSS2/normal-flow/width-017.xht
@@ -10107,6 +10129,8 @@ reftest css/CSS2/selectors/first-line-floats-004.xht
 reftest css/CSS2/selectors/first-line-inherit-001.xht
 reftest css/CSS2/selectors/first-line-inherit-002.xht
 reftest css/CSS2/selectors/first-line-inherit-003.xht
+reftest css/CSS2/selectors/first-line-pseudo-007.xht
+reftest css/CSS2/selectors/first-line-pseudo-008.xht
 reftest css/CSS2/selectors/first-line-pseudo-012.xht
 reftest css/CSS2/selectors/first-line-pseudo-013.xht
 reftest css/CSS2/selectors/first-line-pseudo-014.xht
@@ -10116,6 +10140,7 @@ reftest css/CSS2/selectors/first-line-pseudo-018.xht
 reftest css/CSS2/selectors/first-line-pseudo-019.xht
 reftest css/CSS2/selectors/first-line-pseudo-020.xht
 reftest css/CSS2/selectors/first-line-pseudo-021.xht
+reftest css/CSS2/selectors/first-line-selector-004.xht
 reftest css/CSS2/selectors/first-line-selector-010.xht
 reftest css/CSS2/selectors/first-line-selector-013.xht
 reftest css/CSS2/selectors/grouping-002.xht
@@ -10263,6 +10288,13 @@ reftest css/CSS2/syntax/case-sensitive-004.xht
 reftest css/CSS2/syntax/case-sensitive-005.xht
 reftest css/CSS2/syntax/case-sensitive-006.html
 reftest css/CSS2/syntax/case-sensitive-007.xht
+reftest css/CSS2/syntax/character-encoding-031.xht
+reftest css/CSS2/syntax/character-encoding-032.xht
+reftest css/CSS2/syntax/character-encoding-033.xht
+reftest css/CSS2/syntax/character-encoding-034.xht
+reftest css/CSS2/syntax/character-encoding-035.xht
+reftest css/CSS2/syntax/character-encoding-036.xht
+reftest css/CSS2/syntax/character-encoding-037.xht
 reftest css/CSS2/syntax/character-encoding-041.xht
 reftest css/CSS2/syntax/characters-0080-009F-001.xht
 reftest css/CSS2/syntax/charset-attr-001.xht
@@ -19936,6 +19968,8 @@ reftest css/css-tables/table-cell-baseline-static-position.html
 reftest css/css-tables/table-cell-child-overflow-measure.html
 reftest css/css-tables/table-cell-overflow-auto-scrolled.html
 reftest css/css-tables/table-cell-overflow-auto.html
+reftest css/css-tables/table-cell-overflow-explicit-height-001.html
+reftest css/css-tables/table-cell-overflow-explicit-height-002.html
 reftest css/css-tables/table-has-box-sizing-border-box-001.html
 reftest css/css-tables/table-has-box-sizing-border-box-002.html
 reftest css/css-tables/table_grid_size_col_colspan.html
@@ -35915,6 +35949,7 @@ testharness editing/other/delete-in-child-of-head.tentative.html
 testharness editing/other/delete-in-child-of-html.tentative.html
 testharness editing/other/delete-in-last-definition-list-item-when-parent-list-is-editing-host.html
 testharness editing/other/delete-in-last-list-item-when-parent-list-is-editing-host.html
+testharness editing/other/delete-in-shadow-hosted-in-body.html
 testharness editing/other/delete.html
 testharness editing/other/edit-in-textcontrol-immediately-after-hidden.tentative.html
 testharness editing/other/editable-state-and-focus-in-assigned-slot-dom.tentative.html
@@ -42735,6 +42770,7 @@ testharness html/semantics/forms/the-form-element/form-requestsubmit.html
 testharness html/semantics/forms/the-input-element/anchor-active-contenteditable.html
 testharness html/semantics/forms/the-input-element/anchor-contenteditable-navigate.html
 testharness html/semantics/forms/the-input-element/button.html
+testharness html/semantics/forms/the-input-element/change-to-empty-value.html
 testharness html/semantics/forms/the-input-element/checkable-active-onblur-with-click.html
 testharness html/semantics/forms/the-input-element/checkable-active-onblur.html
 testharness html/semantics/forms/the-input-element/checkable-active-space-key-being-disabled.html
@@ -42916,6 +42952,7 @@ testharness html/semantics/forms/the-selectlist-element/selectlist-validity.tent
 testharness html/semantics/forms/the-selectlist-element/selectlist-value-option.tentative.html
 testharness html/semantics/forms/the-selectlist-element/selectlist-value-selectedOption.tentative.html
 testharness html/semantics/forms/the-selectlist-element/tab-closes-listbox.tentative.html
+testharness html/semantics/forms/the-textarea-element/change-to-empty-value.html
 testharness html/semantics/forms/the-textarea-element/cloning-steps.html
 testharness html/semantics/forms/the-textarea-element/textarea-maxlength.html
 testharness html/semantics/forms/the-textarea-element/textarea-minlength.html
@@ -52687,7 +52724,6 @@ visual css/CSS2/borders/border-left-style-applies-to-014.xht
 visual css/CSS2/borders/border-left-style-applies-to-015.xht
 visual css/CSS2/borders/border-left-width-036.xht
 visual css/CSS2/borders/border-left-width-047.xht
-visual css/CSS2/borders/border-left-width-078.xht
 visual css/CSS2/borders/border-left-width-092.xht
 visual css/CSS2/borders/border-left-width-093.xht
 visual css/CSS2/borders/border-left-width-094.xht
@@ -52840,7 +52876,6 @@ visual css/CSS2/box-display/display-applies-to-001.xht
 visual css/CSS2/box-display/display-applies-to-002.xht
 visual css/CSS2/box-display/display-initial-001.xht
 visual css/CSS2/box-display/viewport-004.xht
-visual css/CSS2/cascade-import/cascade-import-001.xht
 visual css/CSS2/cascade-import/cascade-import-002.xht
 visual css/CSS2/cascade-import/cascade-import-003.xht
 visual css/CSS2/cascade-import/cascade-import-004.xht
@@ -53117,7 +53152,6 @@ visual css/CSS2/fonts/font-size-115.xht
 visual css/CSS2/fonts/font-size-116.xht
 visual css/CSS2/fonts/font-size-117.xht
 visual css/CSS2/fonts/font-size-118.xht
-visual css/CSS2/fonts/font-size-119.xht
 visual css/CSS2/fonts/font-size-applies-to-001.xht
 visual css/CSS2/fonts/font-size-applies-to-002.xht
 visual css/CSS2/fonts/font-size-applies-to-003.xht
@@ -53373,9 +53407,7 @@ visual css/CSS2/linebox/vertical-align-120.xht
 visual css/CSS2/linebox/vertical-align-applies-to-010.xht
 visual css/CSS2/linebox/vertical-align-baseline-004.xht
 visual css/CSS2/linebox/vertical-align-baseline-005.xht
-visual css/CSS2/linebox/vertical-align-baseline-006.xht
 visual css/CSS2/linebox/vertical-align-baseline-006a.xht
-visual css/CSS2/linebox/vertical-align-baseline-010.xht
 visual css/CSS2/linebox/vertical-align-boxes-001.xht
 visual css/CSS2/lists/counter-increment-003.xht
 visual css/CSS2/lists/counter-increment-004.xht
@@ -53406,13 +53438,10 @@ visual css/CSS2/lists/counter-increment-051.xht
 visual css/CSS2/lists/counter-increment-052.xht
 visual css/CSS2/lists/counter-increment-056.xht
 visual css/CSS2/lists/counter-increment-applies-to-010.xht
-visual css/CSS2/lists/counter-increment-auto-reset-001.xht
-visual css/CSS2/lists/counter-increment-display-001.xht
 visual css/CSS2/lists/counter-increment-display-002.xht
 visual css/CSS2/lists/counter-increment-display-003.xht
 visual css/CSS2/lists/counter-increment-display-004.xht
 visual css/CSS2/lists/counter-increment-multiple-001.xht
-visual css/CSS2/lists/counter-increment-not-generated-001.xht
 visual css/CSS2/lists/counter-increment-visibility-002.xht
 visual css/CSS2/lists/counter-increment-visibility-003.xht
 visual css/CSS2/lists/counter-increment-visibility-004.xht
@@ -53447,10 +53476,8 @@ visual css/CSS2/lists/counter-reset-053.xht
 visual css/CSS2/lists/counter-reset-054.xht
 visual css/CSS2/lists/counter-reset-056.xht
 visual css/CSS2/lists/counter-reset-applies-to-010.xht
-visual css/CSS2/lists/counter-reset-display-001.xht
 visual css/CSS2/lists/counter-reset-increment-001.xht
 visual css/CSS2/lists/counter-reset-multiple-001.xht
-visual css/CSS2/lists/counter-reset-not-generated-001.xht
 visual css/CSS2/lists/counter-reset-sibling-001.xht
 visual css/CSS2/lists/list-alignment-001.xht
 visual css/CSS2/lists/list-bidi-000.xht
@@ -53546,7 +53573,6 @@ visual css/CSS2/margin-padding-clear/margin-backgrounds-001.xht
 visual css/CSS2/margin-padding-clear/margin-bottom-applies-to-010.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-010.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-011.xht
-visual css/CSS2/margin-padding-clear/margin-collapse-012.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-029.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-030.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-032.xht
@@ -53576,12 +53602,9 @@ visual css/CSS2/margin-padding-clear/margin-collapse-154.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-162.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-163.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-clear-000.xht
-visual css/CSS2/margin-padding-clear/margin-collapse-clear-001.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-clear-004.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-clear-006.xht
-visual css/CSS2/margin-padding-clear/margin-collapse-clear-007.xht
 visual css/CSS2/margin-padding-clear/margin-collapse-clear-010.xht
-visual css/CSS2/margin-padding-clear/margin-left-applies-to-008.xht
 visual css/CSS2/margin-padding-clear/margin-left-applies-to-010.xht
 visual css/CSS2/margin-padding-clear/margin-percentage-undefined-001.xht
 visual css/CSS2/margin-padding-clear/margin-right-applies-to-008.xht
@@ -53589,8 +53612,6 @@ visual css/CSS2/margin-padding-clear/margin-right-applies-to-010.xht
 visual css/CSS2/margin-padding-clear/margin-top-applies-to-010.xht
 visual css/CSS2/margin-padding-clear/padding-applies-to-008.xht
 visual css/CSS2/margin-padding-clear/padding-applies-to-010.xht
-visual css/CSS2/margin-padding-clear/padding-applies-to-016.xht
-visual css/CSS2/margin-padding-clear/padding-applies-to-017.xht
 visual css/CSS2/margin-padding-clear/padding-bottom-036.xht
 visual css/CSS2/margin-padding-clear/padding-bottom-047.xht
 visual css/CSS2/margin-padding-clear/padding-bottom-applies-to-008.xht
@@ -53619,7 +53640,6 @@ visual css/CSS2/normal-flow/block-non-replaced-height-012.xht
 visual css/CSS2/normal-flow/block-non-replaced-height-014.xht
 visual css/CSS2/normal-flow/block-non-replaced-height-015.xht
 visual css/CSS2/normal-flow/block-non-replaced-height-016.xht
-visual css/CSS2/normal-flow/block-non-replaced-width-002.xht
 visual css/CSS2/normal-flow/block-non-replaced-width-008.xht
 visual css/CSS2/normal-flow/block-replaced-height-003.xht
 visual css/CSS2/normal-flow/block-replaced-width-001.xht
@@ -53659,7 +53679,6 @@ visual css/CSS2/normal-flow/max-height-applies-to-004.xht
 visual css/CSS2/normal-flow/max-height-applies-to-007.xht
 visual css/CSS2/normal-flow/max-height-applies-to-010.xht
 visual css/CSS2/normal-flow/max-height-max-width-001.xht
-visual css/CSS2/normal-flow/max-width-014.xht
 visual css/CSS2/normal-flow/max-width-108.xht
 visual css/CSS2/normal-flow/max-width-applies-to-010.xht
 visual css/CSS2/normal-flow/max-width-percentage-003.xht
@@ -53671,13 +53690,11 @@ visual css/CSS2/normal-flow/min-height-applies-to-003.xht
 visual css/CSS2/normal-flow/min-height-applies-to-004.xht
 visual css/CSS2/normal-flow/min-height-applies-to-007.xht
 visual css/CSS2/normal-flow/min-height-applies-to-010.xht
-visual css/CSS2/normal-flow/min-width-014.xht
 visual css/CSS2/normal-flow/min-width-applies-to-010.xht
 visual css/CSS2/normal-flow/min-width-percentage-003.xht
 visual css/CSS2/normal-flow/replaced-elements-001.xht
 visual css/CSS2/normal-flow/replaced-intrinsic-ratio-001.xht
 visual css/CSS2/normal-flow/replaced-min-max-001.xht
-visual css/CSS2/normal-flow/width-014.xht
 visual css/CSS2/normal-flow/width-applies-to-010.xht
 visual css/CSS2/normal-flow/width-replaced-element-001.xht
 visual css/CSS2/normal-flow/width-undefined-001.xht
@@ -53755,15 +53772,12 @@ visual css/CSS2/selectors/first-line-pseudo-001.xht
 visual css/CSS2/selectors/first-line-pseudo-002.xht
 visual css/CSS2/selectors/first-line-pseudo-004.xht
 visual css/CSS2/selectors/first-line-pseudo-005.xht
-visual css/CSS2/selectors/first-line-pseudo-007.xht
-visual css/CSS2/selectors/first-line-pseudo-008.xht
 visual css/CSS2/selectors/first-line-pseudo-010.xht
 visual css/CSS2/selectors/first-line-pseudo-011.xht
 visual css/CSS2/selectors/first-line-pseudo-017.xht
 visual css/CSS2/selectors/first-line-selector-001.xht
 visual css/CSS2/selectors/first-line-selector-002.xht
 visual css/CSS2/selectors/first-line-selector-003.xht
-visual css/CSS2/selectors/first-line-selector-004.xht
 visual css/CSS2/selectors/first-line-selector-006.xht
 visual css/CSS2/selectors/first-line-selector-007.xht
 visual css/CSS2/selectors/first-line-selector-008.xht
@@ -53774,13 +53788,6 @@ visual css/CSS2/selectors/first-line-selector-014.xht
 visual css/CSS2/selectors/first-line-selector-015.xht
 visual css/CSS2/selectors/first-line-selector-016.xht
 visual css/CSS2/syntax/case-sensitive-008.xht
-visual css/CSS2/syntax/character-encoding-031.xht
-visual css/CSS2/syntax/character-encoding-032.xht
-visual css/CSS2/syntax/character-encoding-033.xht
-visual css/CSS2/syntax/character-encoding-034.xht
-visual css/CSS2/syntax/character-encoding-035.xht
-visual css/CSS2/syntax/character-encoding-036.xht
-visual css/CSS2/syntax/character-encoding-037.xht
 visual css/CSS2/syntax/character-encoding-038.xht
 visual css/CSS2/syntax/character-representation-001.xht
 visual css/CSS2/tables/background-table-001.xht
