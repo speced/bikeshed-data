@@ -1,4 +1,4 @@
-sha: 0cc7291c1c3d1f3ec6ffee9cee78ba3d36b00818
+sha: e229b5718c9fd9e920d2443a9c74dfc205166032
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -17641,6 +17641,8 @@ reftest css/css-masking/clip-path/animations/clip-path-animation-forward-fill.ht
 reftest css/css-masking/clip-path/animations/clip-path-animation-fragmented.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-incompatible-shapes1.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-incompatible-shapes2.html
+reftest css/css-masking/clip-path/animations/clip-path-animation-inherit.html
+reftest css/css-masking/clip-path/animations/clip-path-animation-initial.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-missing-0-percent.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-mixed-interpolation.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-non-keyframe-timing-function.html
@@ -17649,10 +17651,13 @@ reftest css/css-masking/clip-path/animations/clip-path-animation-overflow.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-path.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-polygon-mixed-change.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-polygon.html
+reftest css/css-masking/clip-path/animations/clip-path-animation-revert-layer.html
+reftest css/css-masking/clip-path/animations/clip-path-animation-revert.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-svg-zoom.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-svg.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-three-keyframes1.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-three-keyframes2.html
+reftest css/css-masking/clip-path/animations/clip-path-animation-unset.html
 reftest css/css-masking/clip-path/animations/clip-path-animation-zoom.html
 reftest css/css-masking/clip-path/animations/clip-path-animation.html
 reftest css/css-masking/clip-path/animations/clip-path-path-interpolation-001.html
@@ -25751,6 +25756,9 @@ reftest html/canvas/element/layers/2d.layer.cross-layer-paths.html
 reftest html/canvas/element/layers/2d.layer.css-filters.blur-and-shadow.html
 reftest html/canvas/element/layers/2d.layer.css-filters.blur.html
 reftest html/canvas/element/layers/2d.layer.css-filters.shadow.html
+reftest html/canvas/element/layers/2d.layer.ctm.filter.html
+reftest html/canvas/element/layers/2d.layer.ctm.resetTransform.html
+reftest html/canvas/element/layers/2d.layer.ctm.setTransform.html
 reftest html/canvas/element/layers/2d.layer.drawImage.html
 reftest html/canvas/element/layers/2d.layer.flush-on-frame-presentation.html
 reftest html/canvas/element/layers/2d.layer.global-filter.html
@@ -25913,6 +25921,12 @@ reftest html/canvas/offscreen/layers/2d.layer.css-filters.blur.html
 reftest html/canvas/offscreen/layers/2d.layer.css-filters.blur.w.html
 reftest html/canvas/offscreen/layers/2d.layer.css-filters.shadow.html
 reftest html/canvas/offscreen/layers/2d.layer.css-filters.shadow.w.html
+reftest html/canvas/offscreen/layers/2d.layer.ctm.filter.html
+reftest html/canvas/offscreen/layers/2d.layer.ctm.filter.w.html
+reftest html/canvas/offscreen/layers/2d.layer.ctm.resetTransform.html
+reftest html/canvas/offscreen/layers/2d.layer.ctm.resetTransform.w.html
+reftest html/canvas/offscreen/layers/2d.layer.ctm.setTransform.html
+reftest html/canvas/offscreen/layers/2d.layer.ctm.setTransform.w.html
 reftest html/canvas/offscreen/layers/2d.layer.drawImage.html
 reftest html/canvas/offscreen/layers/2d.layer.drawImage.w.html
 reftest html/canvas/offscreen/layers/2d.layer.global-filter.html
@@ -38629,6 +38643,7 @@ testharness html/canvas/element/filters/2d.filter.canvasFilterObject.tentative.h
 testharness html/canvas/element/filters/2d.filter.canvasFilterObject.turbulence.inputTypes.tentative.html
 testharness html/canvas/element/filters/2d.filter.value.html
 testharness html/canvas/element/layers/2d.layer.beginLayer-options.html
+testharness html/canvas/element/layers/2d.layer.ctm.getTransform.html
 testharness html/canvas/element/layers/2d.layer.exceptions-are-no-op.html
 testharness html/canvas/element/layers/2d.layer.invalid-calls.beginLayer-reset-endLayer.html
 testharness html/canvas/element/layers/2d.layer.invalid-calls.beginLayer-restore.html
@@ -40117,6 +40132,8 @@ testharness html/canvas/offscreen/filters/2d.filter.value.html
 testharness html/canvas/offscreen/filters/2d.filter.value.worker.js
 testharness html/canvas/offscreen/layers/2d.layer.beginLayer-options.html
 testharness html/canvas/offscreen/layers/2d.layer.beginLayer-options.worker.js
+testharness html/canvas/offscreen/layers/2d.layer.ctm.getTransform.html
+testharness html/canvas/offscreen/layers/2d.layer.ctm.getTransform.worker.js
 testharness html/canvas/offscreen/layers/2d.layer.exceptions-are-no-op.html
 testharness html/canvas/offscreen/layers/2d.layer.exceptions-are-no-op.worker.js
 testharness html/canvas/offscreen/layers/2d.layer.invalid-calls.beginLayer-reset-endLayer.html
