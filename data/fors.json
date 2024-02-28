@@ -2975,7 +2975,6 @@
     "ML",
     "MLActivation",
     "MLArgMinMaxOptions",
-    "MLAutoPad",
     "MLBatchNormalizationOptions",
     "MLClampOptions",
     "MLComputeResult",
@@ -36236,11 +36235,6 @@
     "keepDimensions",
     "selectLastIndex"
   ],
-  "MLAutoPad": [
-    "\"explicit\"",
-    "\"same-lower\"",
-    "\"same-upper\""
-  ],
   "MLBatchNormalizationOptions": [
     "activation",
     "axis",
@@ -36279,7 +36273,6 @@
   ],
   "MLConv2dOptions": [
     "activation",
-    "autoPad",
     "bias",
     "dilations",
     "filterLayout",
@@ -36295,7 +36288,6 @@
   ],
   "MLConvTranspose2dOptions": [
     "activation",
-    "autoPad",
     "bias",
     "dilations",
     "filterLayout",
@@ -36346,8 +36338,14 @@
     "batchNormalization(input, mean, variance)",
     "batchNormalization(input, mean, variance, options)",
     "build(outputs)",
+    "calculate conv output size",
+    "calculate conv2d output sizes",
+    "calculate convtranspose output size",
+    "calculate convtranspose2d output sizes",
     "calculate matmul output sizes",
     "calculate padding output sizes",
+    "calculate pool2d output sizes",
+    "calculate reduction output sizes",
     "calculate resample output sizes",
     "cast(input, type)",
     "ceil(input)",
@@ -37152,7 +37150,6 @@
     "\"symmetric\""
   ],
   "MLPool2dOptions": [
-    "autoPad",
     "dilations",
     "layout",
     "outputSizes",
