@@ -1,4 +1,4 @@
-sha: 92e4dc90f3a6eab329baca2af1e0b3a73a2fc73e
+sha: af289de8f9e899171d69920260976eeb5437a362
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1070,6 +1070,7 @@ crashtest selection/crashtests/selection-clip-crash.html
 crashtest selection/crashtests/selection-modify-around-input.html
 crashtest selection/crashtests/selection-modify-around-textarea.html
 crashtest selection/crashtests/selection-modify-line-boundary-around-empty-details.html
+crashtest selection/crashtests/selection-modify-line-boundary-around-shadow.html
 crashtest selection/crashtests/selection-modify-line-next-to-textarea.html
 crashtest selection/crashtests/selection-modify-per-word-in-table-header-group.html
 crashtest selection/crashtests/table.html
@@ -35133,6 +35134,7 @@ testharness dom/ranges/Range-constructor.html
 testharness dom/ranges/Range-deleteContents.html
 testharness dom/ranges/Range-detach.html
 testharness dom/ranges/Range-extractContents.html
+testharness dom/ranges/Range-in-shadow-after-the-shadow-removed.html
 testharness dom/ranges/Range-insertNode.html
 testharness dom/ranges/Range-intersectsNode-2.html
 testharness dom/ranges/Range-intersectsNode-binding.html
@@ -45640,6 +45642,7 @@ testharness pointerevents/compat/pointerevent_mouse-pointer-updown-events.html
 testharness pointerevents/compat/pointerevent_mouseevent_key_pressed.html
 testharness pointerevents/compat/pointerevent_touch-action-verification.html
 testharness pointerevents/compat/pointerevent_touch-action_two-finger_interaction.html
+testharness pointerevents/compat/pointerevent_touch_target_after_pointerdown_target_removed.tentative.html
 testharness pointerevents/idlharness.https.window.js
 testharness pointerevents/inheritance.html
 testharness pointerevents/mouse-pointer-boundary-events-for-shadowdom.html
@@ -47667,6 +47670,9 @@ testharness selection/removeRange.html
 testharness selection/script-and-style-elements.html
 testharness selection/select-end-of-line-image.tentative.html
 testharness selection/selectAllChildren.html
+testharness selection/selection-range-after-editinghost-removed.html
+testharness selection/selection-range-after-textcontrol-removed.html
+testharness selection/selection-range-in-shadow-after-the-shadow-removed.tentative.html
 testharness selection/setBaseAndExtent.html
 testharness selection/stringifier.tentative.html
 testharness selection/textcontrols/focus.html
