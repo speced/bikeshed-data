@@ -1251,7 +1251,6 @@
     "Atomics",
     "AttestationConveyancePreference",
     "Attr",
-    "AttributeMatchList",
     "AttributionReportingRequestOptions",
     "AuctionAd",
     "AuctionAdConfig",
@@ -4046,8 +4045,13 @@
     "SameValueZero(x, y)",
     "SandboxProxy",
     "SandboxWindowProxy",
-    "Sanitizer",
+    "SanitizerAttribute",
+    "SanitizerAttributeNamespace",
     "SanitizerConfig",
+    "SanitizerElement",
+    "SanitizerElementNamespace",
+    "SanitizerElementNamespaceWithAttributes",
+    "SanitizerElementWithAttributes",
     "SaveFilePickerOptions",
     "Scheduler",
     "SchedulerPostTaskCallback",
@@ -4126,7 +4130,6 @@
     "SetFunctionLength(F, length)",
     "SetFunctionName",
     "SetFunctionName(F, name, prefix)",
-    "SetHTMLOptions",
     "SetImmutablePrototype",
     "SetImmutablePrototype(O, V)",
     "SetIntegrityLevel",
@@ -5346,7 +5349,6 @@
     "allocate motion vector textures for projection layers",
     "allocate the color textures for the secondary views",
     "allocate the depth textures for the secondary views",
-    "allow comments option",
     "allow new features",
     "allow-csp-from",
     "allow-list",
@@ -5786,16 +5788,11 @@
     "attr.prefix",
     "attr.value",
     "attribute",
-    "attribute allow list",
     "attribute caching",
     "attribute change steps",
-    "attribute drop list",
     "attribute getter",
     "attribute handle",
-    "attribute kind",
     "attribute list",
-    "attribute match list",
-    "attribute matches an attribute match list",
     "attribute name state",
     "attribute names",
     "attribute node selector",
@@ -6095,9 +6092,7 @@
     "baseline",
     "baseline alignment",
     "baseline alignment preference",
-    "baseline attribute allow list",
     "baseline content-alignment",
-    "baseline element allow list",
     "baseline of a cell",
     "baseline of a table-root",
     "baseline of the row",
@@ -6511,6 +6506,7 @@
     "build the list of related website sets",
     "build trusted bidding signals url",
     "build trusted scoring signals url",
+    "built-in default config",
     "built-in functions",
     "built-in input value",
     "built-in output value",
@@ -6665,12 +6661,15 @@
     "canonical unit",
     "canonicalization function",
     "canonicalization state",
+    "canonicalize a configuration",
     "canonicalize a hash",
     "canonicalize a hostname",
     "canonicalize a password",
     "canonicalize a pathname",
     "canonicalize a port",
     "canonicalize a protocol",
+    "canonicalize a sanitizer element list",
+    "canonicalize a sanitizer name",
     "canonicalize a search",
     "canonicalize a username",
     "canonicalize an ipv6 hostname",
@@ -7405,7 +7404,6 @@
     "config file",
     "configobus",
     "configuration descriptor",
-    "configuration dictionary",
     "configuration point",
     "configure the image decoder",
     "confirm",
@@ -7841,7 +7839,6 @@
     "create a cssunitvalue from a sum value item",
     "create a date object",
     "create a dependent abort signal",
-    "create a document fragment",
     "create a dommatrix from the 2d dictionary",
     "create a dommatrix from the dictionary",
     "create a dommatrixreadonly from the 2d dictionary",
@@ -7919,7 +7916,6 @@
     "create a reserved client",
     "create a restrictiontarget",
     "create a sandbox realm",
-    "create a sanitizer",
     "create a scheduler task queue",
     "create a session",
     "create a set iterator",
@@ -8433,7 +8429,6 @@
     "default button",
     "default classic script fetch options",
     "default clause",
-    "default configuration",
     "default control pipe",
     "default display mode",
     "default endpoint",
@@ -9123,8 +9118,6 @@
     "elapsed time",
     "elected groups",
     "element",
-    "element allow list",
-    "element block list",
     "element clear",
     "element click",
     "element click intercepted",
@@ -9135,14 +9128,11 @@
     "element displayed",
     "element displayed state",
     "element displayedness",
-    "element drop list",
     "element from point",
     "element has the focus",
     "element instance",
     "element interface",
-    "element kind",
     "element location strategy",
-    "element matches an element name",
     "element not interactable",
     "element queue",
     "element send keys",
@@ -10737,7 +10727,6 @@
     "handle fetch task source",
     "handle for an object",
     "handle functional event task source",
-    "handle funky elements",
     "handle input for editcontext",
     "handle media session action",
     "handle object map",
@@ -11985,7 +11974,9 @@
     "kin",
     "kind",
     "kind strings",
+    "known attributes",
     "known concept",
+    "known elements",
     "known prompt handling approaches table",
     "koi8-r",
     "koi8-u",
@@ -13341,6 +13332,7 @@
     "navigate to a fragment",
     "navigate to a javascript: url",
     "navigating to a fragment identifier",
+    "navigating url attributes list",
     "navigation and traversal task source",
     "navigation api",
     "navigation api id",
@@ -15276,7 +15268,6 @@
     "query set state",
     "query the \"bluetooth\" permission",
     "query the bluetooth cache",
-    "query the sanitizer config",
     "querying file system permission",
     "queue",
     "queue a bgfetch task",
@@ -16364,14 +16355,7 @@
     "sandboxing flags",
     "sandybrown",
     "sanitize",
-    "sanitize a document fragment",
-    "sanitize a node",
     "sanitize a url to send in a report",
-    "sanitize action",
-    "sanitize action for an attribute",
-    "sanitize action for an element",
-    "sanitizeandset",
-    "sanitizefor",
     "sans-serif",
     "satisfiable",
     "satisfiable recognizing d",
@@ -16907,6 +16891,7 @@
     "set an existing attribute value",
     "set an imagebitmaprenderingcontext's output bitmap",
     "set an os-support header",
+    "set and filter html",
     "set animator instance of worklet animation",
     "set attribution reporting headers",
     "set bitmap dimensions",
@@ -26932,6 +26917,18 @@
     "Link()",
     "LoadRequestedModules(hostDefined)"
   ],
+  "DOM/Document": [
+    "parsehtml",
+    "parsehtmlunsafe"
+  ],
+  "DOM/Element": [
+    "sethtml",
+    "sethtmlunsafe"
+  ],
+  "DOM/ShadowRoot": [
+    "sethtml",
+    "sethtmlunsafe"
+  ],
   "DOMException": [
     "ABORT_ERR",
     "DATA_CLONE_ERR",
@@ -28829,7 +28826,10 @@
     "page shown",
     "page unloaded",
     "page unloading",
+    "parseHTML(html)",
+    "parseHTML(html, config)",
     "parseHTMLUnsafe(html)",
+    "parseHTMLUnsafe(html, config)",
     "pending scroll event targets",
     "pending scrollend event targets",
     "pending text directives",
@@ -29013,6 +29013,22 @@
   "Document/measureText(text, styleMap)": [
     "styleMap",
     "text"
+  ],
+  "Document/parseHTML(html)": [
+    "config",
+    "html"
+  ],
+  "Document/parseHTML(html, config)": [
+    "config",
+    "html"
+  ],
+  "Document/parseHTMLUnsafe(html)": [
+    "config",
+    "html"
+  ],
+  "Document/parseHTMLUnsafe(html, config)": [
+    "config",
+    "html"
   ],
   "Document/requestStorageAccessFor(requestedOrigin)": [
     "requestedOrigin"
@@ -29653,9 +29669,10 @@
     "setAttributeNS(namespace, qualifiedName, value)",
     "setAttributeNode(attr)",
     "setAttributeNodeNS(attr)",
-    "setHTML(input)",
-    "setHTML(input, options)",
+    "setHTML(html)",
+    "setHTML(html, config)",
     "setHTMLUnsafe(html)",
+    "setHTMLUnsafe(html, config)",
     "setIdAttribute()",
     "setIdAttributeNS()",
     "setIdAttributeNode()",
@@ -29803,13 +29820,21 @@
   "Element/setAttributeNodeNS(attr)": [
     "attr"
   ],
-  "Element/setHTML(input)": [
-    "input",
-    "options"
+  "Element/setHTML(html)": [
+    "config",
+    "html"
   ],
-  "Element/setHTML(input, options)": [
-    "input",
-    "options"
+  "Element/setHTML(html, config)": [
+    "config",
+    "html"
+  ],
+  "Element/setHTMLUnsafe(html)": [
+    "config",
+    "html"
+  ],
+  "Element/setHTMLUnsafe(html, config)": [
+    "config",
+    "html"
   ],
   "Element/spatialNavigationSearch(dir)": [
     "dir",
@@ -44220,44 +44245,36 @@
     "SVG_ZOOMANDPAN_UNKNOWN",
     "zoomAndPan"
   ],
-  "Sanitizer": [
-    "Sanitizer()",
-    "Sanitizer(config)",
-    "constructor()",
-    "constructor(config)",
-    "getConfiguration()",
-    "getDefaultConfiguration()",
-    "sanitize(input)",
-    "sanitizeFor(element, input)"
-  ],
-  "Sanitizer/Sanitizer()": [
-    "config"
-  ],
-  "Sanitizer/Sanitizer(config)": [
-    "config"
-  ],
-  "Sanitizer/constructor()": [
-    "config"
-  ],
-  "Sanitizer/constructor(config)": [
-    "config"
-  ],
-  "Sanitizer/sanitize(input)": [
-    "input"
-  ],
-  "Sanitizer/sanitizeFor(element, input)": [
-    "element",
-    "input"
+  "SanitizerAttributeNamespace": [
+    "name",
+    "namespace"
   ],
   "SanitizerConfig": [
-    "allowAttributes",
-    "allowComments",
-    "allowCustomElements",
-    "allowElements",
-    "allowUnknownMarkup",
-    "blockElements",
-    "dropAttributes",
-    "dropElements"
+    "attributes",
+    "canonical",
+    "comments",
+    "contains",
+    "dataAttributes",
+    "elements",
+    "removeAttributes",
+    "removeElements",
+    "replaceWithChildrenElements",
+    "valid"
+  ],
+  "SanitizerElementNamespace": [
+    "name",
+    "namespace"
+  ],
+  "SanitizerElementNamespaceWithAttributes": [
+    "attributes",
+    "removeAttributes"
+  ],
+  "SanitizerNameList": [
+    "canonical",
+    "valid"
+  ],
+  "SanitizerNameWithAttributesList": [
+    "canonical"
   ],
   "SaveFilePickerOptions": [
     "suggestedName"
@@ -44862,9 +44879,6 @@
     "size",
     "values()"
   ],
-  "SetHTMLOptions": [
-    "sanitizer"
-  ],
   "ShadowAnimation": [
     "sourceAnimation"
   ],
@@ -44877,9 +44891,28 @@
     "host",
     "mode",
     "onslotchange",
+    "setHTML(html)",
+    "setHTML(html, config)",
     "setHTMLUnsafe(html)",
+    "setHTMLUnsafe(html, config)",
     "slot assignment",
     "slotAssignment"
+  ],
+  "ShadowRoot/setHTML(html)": [
+    "config",
+    "html"
+  ],
+  "ShadowRoot/setHTML(html, config)": [
+    "config",
+    "html"
+  ],
+  "ShadowRoot/setHTMLUnsafe(html)": [
+    "config",
+    "html"
+  ],
+  "ShadowRoot/setHTMLUnsafe(html, config)": [
+    "config",
+    "html"
   ],
   "ShadowRootInit": [
     "clonable",
@@ -58109,7 +58142,9 @@
     "append",
     "clone",
     "contain",
+    "difference",
     "empty",
+    "equal",
     "exist",
     "for each",
     "get the indices",

@@ -3942,24 +3942,6 @@
       "shortname": "webrtc-encoded-transform"
     }
   },
-  "Sanitizer()": {
-    "Sanitizer()": {
-      "args": [],
-      "for": [
-        "Sanitizer"
-      ],
-      "shortname": "sanitizer-api"
-    },
-    "Sanitizer(config)": {
-      "args": [
-        "config"
-      ],
-      "for": [
-        "Sanitizer"
-      ],
-      "shortname": "sanitizer-api"
-    }
-  },
   "ScrollTimeline()": {
     "ScrollTimeline()": {
       "args": [],
@@ -8738,7 +8720,6 @@
         "RemoteDocument",
         "Response",
         "SFrameTransform",
-        "Sanitizer",
         "ScrollTimeline",
         "SmartCardError",
         "SpeechGrammarList",
@@ -9032,15 +9013,6 @@
         "CSSColor"
       ],
       "shortname": "css-typed-om"
-    },
-    "constructor(config)": {
-      "args": [
-        "config"
-      ],
-      "for": [
-        "Sanitizer"
-      ],
-      "shortname": "sanitizer-api"
     },
     "constructor(configuration)": {
       "args": [
@@ -16648,10 +16620,9 @@
       "args": [],
       "for": [
         "MediaKeySystemAccess",
-        "RTCPeerConnection",
-        "Sanitizer"
+        "RTCPeerConnection"
       ],
-      "shortname": "sanitizer-api"
+      "shortname": "encrypted-media"
     }
   },
   "getConstraints()": {
@@ -16817,15 +16788,6 @@
         "Date"
       ],
       "shortname": "ecmascript"
-    }
-  },
-  "getDefaultConfiguration()": {
-    "getDefaultConfiguration()": {
-      "args": [],
-      "for": [
-        "Sanitizer"
-      ],
-      "shortname": "sanitizer-api"
     }
   },
   "getDepthInMeters()": {
@@ -23352,6 +23314,27 @@
       "shortname": "html"
     }
   },
+  "parseHTML()": {
+    "parseHTML(html)": {
+      "args": [
+        "html"
+      ],
+      "for": [
+        "Document"
+      ],
+      "shortname": "sanitizer-api"
+    },
+    "parseHTML(html, config)": {
+      "args": [
+        "html",
+        "config"
+      ],
+      "for": [
+        "Document"
+      ],
+      "shortname": "sanitizer-api"
+    }
+  },
   "parseHTMLUnsafe()": {
     "parseHTMLUnsafe(html)": {
       "args": [
@@ -23361,6 +23344,16 @@
         "Document"
       ],
       "shortname": "html"
+    },
+    "parseHTMLUnsafe(html, config)": {
+      "args": [
+        "html",
+        "config"
+      ],
+      "for": [
+        "Document"
+      ],
+      "shortname": "sanitizer-api"
     }
   },
   "parseInt()": {
@@ -26852,29 +26845,6 @@
       "shortname": "css-typed-om"
     }
   },
-  "sanitize()": {
-    "sanitize(input)": {
-      "args": [
-        "input"
-      ],
-      "for": [
-        "Sanitizer"
-      ],
-      "shortname": "sanitizer-api"
-    }
-  },
-  "sanitizeFor()": {
-    "sanitizeFor(element, input)": {
-      "args": [
-        "element",
-        "input"
-      ],
-      "for": [
-        "Sanitizer"
-      ],
-      "shortname": "sanitizer-api"
-    }
-  },
   "save()": {
     "save()": {
       "args": [],
@@ -28355,22 +28325,24 @@
     }
   },
   "setHTML()": {
-    "setHTML(input)": {
+    "setHTML(html)": {
       "args": [
-        "input"
+        "html"
       ],
       "for": [
-        "Element"
+        "Element",
+        "ShadowRoot"
       ],
       "shortname": "sanitizer-api"
     },
-    "setHTML(input, options)": {
+    "setHTML(html, config)": {
       "args": [
-        "input",
-        "options"
+        "html",
+        "config"
       ],
       "for": [
-        "Element"
+        "Element",
+        "ShadowRoot"
       ],
       "shortname": "sanitizer-api"
     }
@@ -28385,6 +28357,17 @@
         "ShadowRoot"
       ],
       "shortname": "html"
+    },
+    "setHTMLUnsafe(html, config)": {
+      "args": [
+        "html",
+        "config"
+      ],
+      "for": [
+        "Element",
+        "ShadowRoot"
+      ],
+      "shortname": "sanitizer-api"
     }
   },
   "setHeaderValue()": {
