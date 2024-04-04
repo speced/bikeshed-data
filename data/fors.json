@@ -7847,6 +7847,7 @@
     "create a cssunitvalue from a sum value item",
     "create a date object",
     "create a dependent abort signal",
+    "create a dependent task signal",
     "create a dommatrix from the 2d dictionary",
     "create a dommatrix from the dictionary",
     "create a dommatrixreadonly from the 2d dictionary",
@@ -8036,7 +8037,6 @@
     "creating a new session",
     "creating a notification",
     "creating a policy container from a fetch response",
-    "creating a scheduler task queue",
     "creating a sequence from an iterable",
     "creating a sum value",
     "creating an RTCIceCandidate",
@@ -10565,7 +10565,6 @@
     "getting the locator",
     "getting the property",
     "getting the property with default",
-    "getting the runnable task queues",
     "getting the service worker object",
     "getting the service worker registration object",
     "getusermedia prompt result",
@@ -15326,7 +15325,6 @@
     "queue timeline",
     "queue violation reports for accesses",
     "queue-timeline example definition",
-    "queuing a scheduler task",
     "queuing strategy",
     "quirks mode",
     "quotaexceedederror",
@@ -16410,7 +16408,6 @@
     "scheduler task",
     "scheduler task queue",
     "scheduler task sources",
-    "scheduling a posttask task",
     "schema.org boolean property",
     "scheme",
     "scheme fetch",
@@ -16672,7 +16669,6 @@
     "selecting a mapping",
     "selecting an unused gamepad index",
     "selecting the best candidate",
-    "selecting the scheduler task queue",
     "selecting the task queue of the next scheduler task",
     "selection",
     "selection bounds",
@@ -36523,6 +36519,8 @@
     "floor(input)",
     "gather(input, indices)",
     "gather(input, indices, options)",
+    "gelu()",
+    "gelu(input)",
     "gemm(a, b)",
     "gemm(a, b, options)",
     "graph",
@@ -36784,6 +36782,9 @@
     "indices",
     "input",
     "options"
+  ],
+  "MLGraphBuilder/gelu(input)": [
+    "input"
   ],
   "MLGraphBuilder/gemm(a, b)": [
     "a",
@@ -51520,6 +51521,7 @@
   ],
   "attribution rate-limit record": [
     "attribution destination",
+    "event-level report id",
     "expiry time",
     "reporting origin",
     "scope",
@@ -57434,7 +57436,8 @@
     "start offset"
   ],
   "rate-limit scope": [
-    "attribution",
+    "aggregatable-attribution",
+    "event-attribution",
     "source"
   ],
   "ray()": [
@@ -59634,13 +59637,14 @@
     "derivative_uniformity"
   ],
   "trigger debug data type": [
+    "trigger-aggregate-attributions-per-source-destination-limit",
     "trigger-aggregate-deduplicated",
     "trigger-aggregate-excessive-reports",
     "trigger-aggregate-insufficient-budget",
     "trigger-aggregate-no-contributions",
     "trigger-aggregate-report-window-passed",
     "trigger-aggregate-storage-limit",
-    "trigger-attributions-per-source-destination-limit",
+    "trigger-event-attributions-per-source-destination-limit",
     "trigger-event-deduplicated",
     "trigger-event-excessive-reports",
     "trigger-event-low-priority",
