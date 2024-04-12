@@ -4053,6 +4053,7 @@
     "SameValueZero(x, y)",
     "SandboxProxy",
     "SandboxWindowProxy",
+    "Sanitizer",
     "SanitizerAttribute",
     "SanitizerAttributeNamespace",
     "SanitizerConfig",
@@ -4138,6 +4139,7 @@
     "SetFunctionLength(F, length)",
     "SetFunctionName",
     "SetFunctionName(F, name, prefix)",
+    "SetHTMLOptions",
     "SetImmutablePrototype",
     "SetImmutablePrototype(O, V)",
     "SetIntegrityLevel",
@@ -18490,6 +18492,7 @@
     "trigger verification",
     "trigger verification metadata",
     "trigger-data matching mode",
+    "trigger-registration json key",
     "triggered",
     "triggering event",
     "triggering result",
@@ -29003,9 +29006,9 @@
     "page unloaded",
     "page unloading",
     "parseHTML(html)",
-    "parseHTML(html, config)",
+    "parseHTML(html, options)",
     "parseHTMLUnsafe(html)",
-    "parseHTMLUnsafe(html, config)",
+    "parseHTMLUnsafe(html, options)",
     "pending scroll event targets",
     "pending scrollend event targets",
     "pending snapchanged event targets",
@@ -29195,20 +29198,20 @@
     "text"
   ],
   "Document/parseHTML(html)": [
-    "config",
-    "html"
+    "html",
+    "options"
   ],
-  "Document/parseHTML(html, config)": [
-    "config",
-    "html"
+  "Document/parseHTML(html, options)": [
+    "html",
+    "options"
   ],
   "Document/parseHTMLUnsafe(html)": [
-    "config",
-    "html"
+    "html",
+    "options"
   ],
-  "Document/parseHTMLUnsafe(html, config)": [
-    "config",
-    "html"
+  "Document/parseHTMLUnsafe(html, options)": [
+    "html",
+    "options"
   ],
   "Document/requestStorageAccessFor(requestedOrigin)": [
     "requestedOrigin"
@@ -29852,9 +29855,9 @@
     "setAttributeNode(attr)",
     "setAttributeNodeNS(attr)",
     "setHTML(html)",
-    "setHTML(html, config)",
+    "setHTML(html, options)",
     "setHTMLUnsafe(html)",
-    "setHTMLUnsafe(html, config)",
+    "setHTMLUnsafe(html, options)",
     "setIdAttribute()",
     "setIdAttributeNS()",
     "setIdAttributeNode()",
@@ -30003,20 +30006,20 @@
     "attr"
   ],
   "Element/setHTML(html)": [
-    "config",
-    "html"
+    "html",
+    "options"
   ],
-  "Element/setHTML(html, config)": [
-    "config",
-    "html"
+  "Element/setHTML(html, options)": [
+    "html",
+    "options"
   ],
   "Element/setHTMLUnsafe(html)": [
-    "config",
-    "html"
+    "html",
+    "options"
   ],
-  "Element/setHTMLUnsafe(html, config)": [
-    "config",
-    "html"
+  "Element/setHTMLUnsafe(html, options)": [
+    "html",
+    "options"
   ],
   "Element/spatialNavigationSearch(dir)": [
     "dir",
@@ -44478,6 +44481,29 @@
     "SVG_ZOOMANDPAN_UNKNOWN",
     "zoomAndPan"
   ],
+  "Sanitizer": [
+    "Sanitizer()",
+    "Sanitizer(config)",
+    "constructor",
+    "constructor()",
+    "constructor(config)",
+    "get",
+    "get()",
+    "getUnsafe()",
+    "getunsafe"
+  ],
+  "Sanitizer/Sanitizer()": [
+    "config"
+  ],
+  "Sanitizer/Sanitizer(config)": [
+    "config"
+  ],
+  "Sanitizer/constructor()": [
+    "config"
+  ],
+  "Sanitizer/constructor(config)": [
+    "config"
+  ],
   "SanitizerAttributeNamespace": [
     "name",
     "namespace"
@@ -44489,6 +44515,7 @@
     "contains",
     "dataAttributes",
     "elements",
+    "get a sanitizer config from options",
     "removeAttributes",
     "removeElements",
     "replaceWithChildrenElements",
@@ -45112,6 +45139,9 @@
     "size",
     "values()"
   ],
+  "SetHTMLOptions": [
+    "sanitizer"
+  ],
   "ShadowAnimation": [
     "sourceAnimation"
   ],
@@ -45127,27 +45157,27 @@
     "onslotchange",
     "serializable",
     "setHTML(html)",
-    "setHTML(html, config)",
+    "setHTML(html, options)",
     "setHTMLUnsafe(html)",
-    "setHTMLUnsafe(html, config)",
+    "setHTMLUnsafe(html, options)",
     "slot assignment",
     "slotAssignment"
   ],
   "ShadowRoot/setHTML(html)": [
-    "config",
-    "html"
+    "html",
+    "options"
   ],
-  "ShadowRoot/setHTML(html, config)": [
-    "config",
-    "html"
+  "ShadowRoot/setHTML(html, options)": [
+    "html",
+    "options"
   ],
   "ShadowRoot/setHTMLUnsafe(html)": [
-    "config",
-    "html"
+    "html",
+    "options"
   ],
-  "ShadowRoot/setHTMLUnsafe(html, config)": [
-    "config",
-    "html"
+  "ShadowRoot/setHTMLUnsafe(html, options)": [
+    "html",
+    "options"
   ],
   "ShadowRootInit": [
     "clonable",
@@ -59839,6 +59869,26 @@
   "trigger-data matching mode": [
     "exact",
     "modulus"
+  ],
+  "trigger-registration JSON key": [
+    "aggregatable_deduplication_keys",
+    "aggregatable_source_registration_time",
+    "aggregatable_trigger_data",
+    "aggregatable_values",
+    "aggregation_coordinator_origin",
+    "debug_key",
+    "debug_reporting",
+    "deduplication_key",
+    "event_trigger_data",
+    "filters",
+    "key_piece",
+    "not_filters",
+    "priority",
+    "source_keys",
+    "trigger_context_id",
+    "trigger_data",
+    "value",
+    "values"
   ],
   "triggering result": [
     "debug data",

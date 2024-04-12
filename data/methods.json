@@ -3930,6 +3930,24 @@
       "shortname": "webrtc-encoded-transform"
     }
   },
+  "Sanitizer()": {
+    "Sanitizer()": {
+      "args": [],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
+    },
+    "Sanitizer(config)": {
+      "args": [
+        "config"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
+    }
+  },
   "ScrollTimeline()": {
     "ScrollTimeline()": {
       "args": [],
@@ -8708,6 +8726,7 @@
         "RemoteDocument",
         "Response",
         "SFrameTransform",
+        "Sanitizer",
         "ScrollTimeline",
         "SmartCardError",
         "SpeechGrammarList",
@@ -9000,6 +9019,15 @@
         "CSSColor"
       ],
       "shortname": "css-typed-om"
+    },
+    "constructor(config)": {
+      "args": [
+        "config"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
     },
     "constructor(configuration)": {
       "args": [
@@ -15879,7 +15907,8 @@
         "CookieStore",
         "CredentialsContainer",
         "MediaKeyStatusMap",
-        "NamedFlowMap"
+        "NamedFlowMap",
+        "Sanitizer"
       ],
       "shortname": "cookie-store"
     },
@@ -18795,6 +18824,15 @@
         "DataView"
       ],
       "shortname": "ecmascript"
+    }
+  },
+  "getUnsafe()": {
+    "getUnsafe()": {
+      "args": [],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
     }
   },
   "getUserData()": {
@@ -23414,10 +23452,10 @@
       ],
       "shortname": "sanitizer-api"
     },
-    "parseHTML(html, config)": {
+    "parseHTML(html, options)": {
       "args": [
         "html",
-        "config"
+        "options"
       ],
       "for": [
         "Document"
@@ -23435,10 +23473,10 @@
       ],
       "shortname": "html"
     },
-    "parseHTMLUnsafe(html, config)": {
+    "parseHTMLUnsafe(html, options)": {
       "args": [
         "html",
-        "config"
+        "options"
       ],
       "for": [
         "Document"
@@ -28425,10 +28463,10 @@
       ],
       "shortname": "sanitizer-api"
     },
-    "setHTML(html, config)": {
+    "setHTML(html, options)": {
       "args": [
         "html",
-        "config"
+        "options"
       ],
       "for": [
         "Element",
@@ -28448,10 +28486,10 @@
       ],
       "shortname": "html"
     },
-    "setHTMLUnsafe(html, config)": {
+    "setHTMLUnsafe(html, options)": {
       "args": [
         "html",
-        "config"
+        "options"
       ],
       "for": [
         "Element",
