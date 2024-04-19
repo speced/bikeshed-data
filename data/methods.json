@@ -3676,6 +3676,48 @@
       "shortname": "css-typed-om"
     }
   },
+  "RTCEncodedAudioFrame()": {
+    "RTCEncodedAudioFrame(originalFrame)": {
+      "args": [
+        "originalFrame"
+      ],
+      "for": [
+        "RTCEncodedAudioFrame"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    },
+    "RTCEncodedAudioFrame(originalFrame, options)": {
+      "args": [
+        "originalFrame",
+        "options"
+      ],
+      "for": [
+        "RTCEncodedAudioFrame"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    }
+  },
+  "RTCEncodedVideoFrame()": {
+    "RTCEncodedVideoFrame(originalFrame)": {
+      "args": [
+        "originalFrame"
+      ],
+      "for": [
+        "RTCEncodedVideoFrame"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    },
+    "RTCEncodedVideoFrame(originalFrame, options)": {
+      "args": [
+        "originalFrame",
+        "options"
+      ],
+      "for": [
+        "RTCEncodedVideoFrame"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    }
+  },
   "RTCRtpScriptTransform()": {
     "RTCRtpScriptTransform(worker)": {
       "args": [
@@ -8706,6 +8748,8 @@
         "PushSubscriptionChangeEvent",
         "RTCDTMFToneChangeEvent",
         "RTCDataChannelEvent",
+        "RTCEncodedAudioFrame",
+        "RTCEncodedVideoFrame",
         "RTCError",
         "RTCErrorEvent",
         "RTCIceCandidate",
@@ -9896,6 +9940,27 @@
         "XRRay"
       ],
       "shortname": "webxr-hit-test"
+    },
+    "constructor(originalFrame)": {
+      "args": [
+        "originalFrame"
+      ],
+      "for": [
+        "RTCEncodedAudioFrame",
+        "RTCEncodedVideoFrame"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    },
+    "constructor(originalFrame, options)": {
+      "args": [
+        "originalFrame",
+        "options"
+      ],
+      "for": [
+        "RTCEncodedAudioFrame",
+        "RTCEncodedVideoFrame"
+      ],
+      "shortname": "webrtc-encoded-transform"
     },
     "constructor(p1)": {
       "args": [
