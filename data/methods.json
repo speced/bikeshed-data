@@ -12864,6 +12864,27 @@
       "shortname": "webaudio"
     }
   },
+  "createWorklet()": {
+    "createWorklet(moduleURL)": {
+      "args": [
+        "moduleURL"
+      ],
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "shortname": "shared-storage"
+    },
+    "createWorklet(moduleURL, options)": {
+      "args": [
+        "moduleURL",
+        "options"
+      ],
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "shortname": "shared-storage"
+    }
+  },
   "createWritable()": {
     "createWritable()": {
       "args": [],
@@ -26912,30 +26933,12 @@
     }
   },
   "run()": {
-    "run(data)": {
-      "args": [
-        "data"
-      ],
-      "for": [
-        "SharedStorageRunOperation"
-      ],
-      "shortname": "shared-storage"
-    },
-    "run(data, urls)": {
-      "args": [
-        "data",
-        "urls"
-      ],
-      "for": [
-        "SharedStorageSelectURLOperation"
-      ],
-      "shortname": "shared-storage"
-    },
     "run(name)": {
       "args": [
         "name"
       ],
       "for": [
+        "SharedStorageWorklet",
         "WindowSharedStorage"
       ],
       "shortname": "shared-storage"
@@ -26946,6 +26949,7 @@
         "options"
       ],
       "for": [
+        "SharedStorageWorklet",
         "WindowSharedStorage"
       ],
       "shortname": "shared-storage"
@@ -27567,6 +27571,7 @@
         "urls"
       ],
       "for": [
+        "SharedStorageWorklet",
         "WindowSharedStorage"
       ],
       "shortname": "shared-storage"
@@ -27578,6 +27583,7 @@
         "options"
       ],
       "for": [
+        "SharedStorageWorklet",
         "WindowSharedStorage"
       ],
       "shortname": "shared-storage"

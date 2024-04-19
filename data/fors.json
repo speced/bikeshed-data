@@ -1093,6 +1093,7 @@
     "@left-top",
     "@media",
     "@namespace",
+    "@nest",
     "@page",
     "@position-try",
     "@property",
@@ -1500,6 +1501,7 @@
     "CSSMatrixComponentOptions",
     "CSSMediaRule",
     "CSSNamespaceRule",
+    "CSSNestRule",
     "CSSNumberish",
     "CSSNumericArray",
     "CSSNumericBaseType",
@@ -3934,6 +3936,7 @@
     "RsaOaepParams",
     "RsaOtherPrimesInfo",
     "RsaPssParams",
+    "RunFunctionForSharedStorageSelectURLOperation",
     "RunningStatus",
     "RuntimeError",
     "SFrameTransform",
@@ -4176,12 +4179,8 @@
     "SharedDataBlockEventSet",
     "SharedDataBlockEventSet(execution)",
     "SharedStorage",
-    "SharedStorageOperation",
-    "SharedStorageOperationConstructor",
     "SharedStorageResponse",
-    "SharedStorageRunOperation",
     "SharedStorageRunOperationMethodOptions",
-    "SharedStorageSelectURLOperation",
     "SharedStorageSetMethodOptions",
     "SharedStorageUrlWithMetadata",
     "SharedStorageWorklet",
@@ -5224,7 +5223,6 @@
     "additive environment blending",
     "additive light",
     "additive tuple",
-    "addmodule initiated",
     "address",
     "address spaces",
     "address type strings",
@@ -6894,7 +6892,7 @@
     "check if a scheme is suitable",
     "check if a text directive can be scrolled",
     "check if a window feature is set",
-    "check if addmodule is allowed and update status",
+    "check if addmodule is allowed and update state",
     "check if an access between two browsing contexts should be reported",
     "check if an attribution source can create aggregatable contributions",
     "check if an attribution source exceeds the time-based destination limits",
@@ -8721,7 +8719,8 @@
     "determine whether a script element should be blocked by Scripting Policy",
     "determine whether an event handler be blocked by Scripting Policy",
     "determine whether associating an issuer would exceed the top-level limit",
-    "determine whether shared storage is allowed",
+    "determine whether shared storage is allowed by context",
+    "determine whether shared storage is allowed by enrollment and user preference",
     "determine whether the user agent explicitly allows unpartitioned cookie access",
     "determine-compatibility",
     "determines the set of origins on which the public key credential may be exercised",
@@ -10804,12 +10803,10 @@
     "has dispatched scroll event",
     "has entries and events disabled",
     "has focus steps",
-    "has navigated",
     "has no style sheet that is blocking scripts",
     "has not shifted",
     "has proxy configuration",
     "has range limitations",
-    "has reported",
     "has scheduled selectionchange event",
     "has shifted",
     "has skipped observations",
@@ -11695,6 +11692,7 @@
     "invalid memory reference",
     "invalid pointer",
     "invalid reference",
+    "invalid rule error",
     "invalid selector",
     "invalid session id",
     "invalid store",
@@ -17115,8 +17113,10 @@
     "shared storage",
     "shared storage bucket",
     "shared storage database",
+    "shared storage navigation budget charged",
     "shared storage navigation budget table",
     "shared storage reporting budget",
+    "shared storage reporting budget charged",
     "shared storage shed",
     "shared utf-16 decoder",
     "shared worker",
@@ -24711,6 +24711,9 @@
     "namespaceURI",
     "prefix"
   ],
+  "CSSNestRule": [
+    "style"
+  ],
   "CSSNumericArray": [
     "length"
   ],
@@ -31398,6 +31401,7 @@
     "defaultpatchencoding",
     "entries",
     "entrycount",
+    "entryidstringdata",
     "format",
     "id",
     "uritemplate"
@@ -37534,6 +37538,7 @@
     "designspacecount",
     "designspacesegments",
     "entryiddelta",
+    "entryidstringlength",
     "featurecount",
     "featuretags",
     "formatflags",
@@ -43842,6 +43847,10 @@
   "RsaPssParams": [
     "saltLength"
   ],
+  "RunFunctionForSharedStorageSelectURLOperation": [
+    "data",
+    "urls"
+  ],
   "RunningStatus": [
     "\"not-running\"",
     "\"running\""
@@ -45244,26 +45253,10 @@
     "options",
     "value"
   ],
-  "SharedStorageOperationConstructor": [
-    "options"
-  ],
-  "SharedStorageRunOperation": [
-    "run(data)"
-  ],
-  "SharedStorageRunOperation/run(data)": [
-    "data"
-  ],
   "SharedStorageRunOperationMethodOptions": [
     "data",
     "keepAlive",
     "resolveToConfig"
-  ],
-  "SharedStorageSelectURLOperation": [
-    "run(data, urls)"
-  ],
-  "SharedStorageSelectURLOperation/run(data, urls)": [
-    "data",
-    "urls"
   ],
   "SharedStorageSetMethodOptions": [
     "ignoreIfPresent"
@@ -45271,6 +45264,33 @@
   "SharedStorageUrlWithMetadata": [
     "reportingMetadata",
     "url"
+  ],
+  "SharedStorageWorklet": [
+    "addmodule initiated",
+    "cross-origin worklet allowed",
+    "is cross-origin worklet",
+    "run(name)",
+    "run(name, options)",
+    "selectURL(name, urls)",
+    "selectURL(name, urls, options)"
+  ],
+  "SharedStorageWorklet/run(name)": [
+    "name",
+    "options"
+  ],
+  "SharedStorageWorklet/run(name, options)": [
+    "name",
+    "options"
+  ],
+  "SharedStorageWorklet/selectURL(name, urls)": [
+    "name",
+    "options",
+    "urls"
+  ],
+  "SharedStorageWorklet/selectURL(name, urls, options)": [
+    "name",
+    "options",
+    "urls"
   ],
   "SharedStorageWorkletGlobalScope": [
     "addmodule success",
@@ -49493,6 +49513,8 @@
     "append(key, value)",
     "clear all keys",
     "clear()",
+    "createWorklet(moduleURL)",
+    "createWorklet(moduleURL, options)",
     "delete a key",
     "delete(key)",
     "run(name)",
@@ -49502,6 +49524,14 @@
     "set a key-value pair",
     "set(key, value, options)",
     "worklet"
+  ],
+  "WindowSharedStorage/createWorklet(moduleURL)": [
+    "moduleURL",
+    "options"
+  ],
+  "WindowSharedStorage/createWorklet(moduleURL, options)": [
+    "moduleURL",
+    "options"
   ],
   "WindowSharedStorage/run(name)": [
     "name",

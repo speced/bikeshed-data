@@ -73,6 +73,16 @@ https://www.w3.org/TR/css-syntax-3/#typedef-rule-list
 1
 1
 -
+RunFunctionForSharedStorageSelectURLOperation
+callback
+shared-storage
+shared-storage
+1
+current
+https://wicg.github.io/shared-storage/#callbackdef-runfunctionforsharedstorageselecturloperation
+1
+1
+-
 RunningStatus
 enum
 service-workers
@@ -1517,27 +1527,16 @@ https://w3c.github.io/webdriver-bidi/#run-webdriver-bidi-preload-scripts
 1
 1
 -
-run(data)
+run(name)
 method
 shared-storage
 shared-storage
 1
 current
-https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperation-run
+https://wicg.github.io/shared-storage/#dom-sharedstorageworklet-run
 1
 1
-SharedStorageRunOperation
--
-run(data, urls)
-method
-shared-storage
-shared-storage
-1
-current
-https://wicg.github.io/shared-storage/#dom-sharedstorageselecturloperation-run
-1
-1
-SharedStorageSelectURLOperation
+SharedStorageWorklet
 -
 run(name)
 method
@@ -1549,6 +1548,17 @@ https://wicg.github.io/shared-storage/#dom-windowsharedstorage-run
 1
 1
 WindowSharedStorage
+-
+run(name, options)
+method
+shared-storage
+shared-storage
+1
+current
+https://wicg.github.io/shared-storage/#dom-sharedstorageworklet-run
+1
+1
+SharedStorageWorklet
 -
 run(name, options)
 method
