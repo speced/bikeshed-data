@@ -3867,6 +3867,8 @@
     "RemotePlayback",
     "RemotePlaybackAvailabilityCallback",
     "RemotePlaybackState",
+    "Remove Entries from Format 1 Patch Map",
+    "Remove Entries from Format 2 Patch Map",
     "RemoveWaiter",
     "RemoveWaiter(WL, waiterRecord)",
     "RemoveWaiters",
@@ -7967,6 +7969,7 @@
     "create a storage shelf",
     "create a sum value",
     "create a table object",
+    "create a task handle",
     "create a task scope",
     "create a type from a unit map",
     "create a unified platform version string",
@@ -16746,6 +16749,7 @@
     "select an unused gamepad index",
     "select the best candidate",
     "select the indicated part",
+    "select the next scheduler task queue from all schedulers",
     "select the scheduler task queue",
     "selected coordinate",
     "selected files",
@@ -16754,7 +16758,6 @@
     "selecting a mapping",
     "selecting an unused gamepad index",
     "selecting the best candidate",
-    "selecting the task queue of the next scheduler task",
     "selection",
     "selection bounds",
     "selection direction",
@@ -18114,6 +18117,7 @@
     "targets",
     "tashkil",
     "task",
+    "task handle",
     "task queues",
     "task scope",
     "task scope stack",
@@ -23788,8 +23792,8 @@
   ],
   "Brotli patch": [
     "brotlistream",
-    "format",
-    "id"
+    "compatibilityid",
+    "format"
   ],
   "BrowserCaptureMediaStreamTrack": [
     "clone()",
@@ -31481,20 +31485,20 @@
   ],
   "Format 1 Patch Map": [
     "appliedentriesbitmap",
+    "compatibilityid",
     "entrycount",
     "format",
     "glyphcount",
-    "id",
     "patchencoding",
     "uritemplate"
   ],
   "Format 2 Patch Map": [
+    "compatibilityid",
     "defaultpatchencoding",
     "entries",
     "entrycount",
     "entryidstringdata",
     "format",
-    "id",
     "uritemplate"
   ],
   "Fragment": [
@@ -33362,8 +33366,9 @@
   ],
   "Glyph keyed patch": [
     "brotlistream",
-    "format",
-    "id"
+    "compatibilityid",
+    "flags",
+    "format"
   ],
   "GlyphPatches": [
     "glyphcount",
@@ -40743,8 +40748,8 @@
     "salt"
   ],
   "Per table brotli patch": [
+    "compatibilityid",
     "format",
-    "id",
     "patches"
   ],
   "Performance": [
@@ -44680,7 +44685,6 @@
   ],
   "Scheduler": [
     "dynamic priority task queue map",
-    "next enqueue order",
     "postTask(callback)",
     "postTask(callback, options)",
     "static priority task queue map"
@@ -54012,6 +54016,9 @@
     "signal",
     "type"
   ],
+  "event loop": [
+    "next enqueue order"
+  ],
   "event-level report": [
     "attribution destinations",
     "event id",
@@ -58206,8 +58213,10 @@
     "older than"
   ],
   "scheduler task queue": [
+    "empty",
     "first runnable task",
     "priority",
+    "removal steps",
     "remove",
     "tasks"
   ],
@@ -59347,6 +59356,12 @@
   "task": [
     "parent task",
     "task attribution id"
+  ],
+  "task handle": [
+    "abort steps",
+    "queue",
+    "task",
+    "task complete steps"
   ],
   "task scope": [
     "task"
