@@ -2695,6 +2695,22 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getpossibleinstantsfor"
     }
   },
+  "#sec-temporal-getroundingincrementoption": {
+    "current": {
+      "number": "13.16",
+      "spec": "Temporal",
+      "text": "GetRoundingIncrementOption ( options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-getroundingincrementoption"
+    }
+  },
+  "#sec-temporal-getroundingmodeoption": {
+    "current": {
+      "number": "13.10",
+      "spec": "Temporal",
+      "text": "GetRoundingModeOption ( options, fallback )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-getroundingmodeoption"
+    }
+  },
   "#sec-temporal-gettemporalcalendarslotvaluewithisodefault": {
     "current": {
       "number": "12.2.29",
@@ -2703,12 +2719,76 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalcalendarslotvaluewithisodefault"
     }
   },
-  "#sec-temporal-gettemporalunit": {
+  "#sec-temporal-gettemporaldisambiguationoption": {
+    "current": {
+      "number": "13.9",
+      "spec": "Temporal",
+      "text": "GetTemporalDisambiguationOption ( options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporaldisambiguationoption"
+    }
+  },
+  "#sec-temporal-gettemporalfractionalseconddigitsoption": {
+    "current": {
+      "number": "13.18",
+      "spec": "Temporal",
+      "text": "GetTemporalFractionalSecondDigitsOption ( options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalfractionalseconddigitsoption"
+    }
+  },
+  "#sec-temporal-gettemporaloffsetoption": {
+    "current": {
+      "number": "13.12",
+      "spec": "Temporal",
+      "text": "GetTemporalOffsetOption ( options, fallback )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporaloffsetoption"
+    }
+  },
+  "#sec-temporal-gettemporaloverflowoption": {
+    "current": {
+      "number": "13.8",
+      "spec": "Temporal",
+      "text": "GetTemporalOverflowOption ( options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporaloverflowoption"
+    }
+  },
+  "#sec-temporal-gettemporalrelativetooption": {
+    "current": {
+      "number": "13.21",
+      "spec": "Temporal",
+      "text": "GetTemporalRelativeToOption ( options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalrelativetooption"
+    }
+  },
+  "#sec-temporal-gettemporalshowcalendarnameoption": {
+    "current": {
+      "number": "13.13",
+      "spec": "Temporal",
+      "text": "GetTemporalShowCalendarNameOption ( options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalshowcalendarnameoption"
+    }
+  },
+  "#sec-temporal-gettemporalshowoffsetoption": {
+    "current": {
+      "number": "13.15",
+      "spec": "Temporal",
+      "text": "GetTemporalShowOffsetOption ( options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalshowoffsetoption"
+    }
+  },
+  "#sec-temporal-gettemporalshowtimezonenameoption": {
+    "current": {
+      "number": "13.14",
+      "spec": "Temporal",
+      "text": "GetTemporalShowTimeZoneNameOption ( options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalshowtimezonenameoption"
+    }
+  },
+  "#sec-temporal-gettemporalunitvaluedoption": {
     "current": {
       "number": "13.20",
       "spec": "Temporal",
-      "text": "GetTemporalUnit ( normalizedOptions, key, unitGroup, default [ , extraValues ] )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalunit"
+      "text": "GetTemporalUnitValuedOption ( options, key, unitGroup, default [ , extraValues ] )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalunitvaluedoption"
     }
   },
   "#sec-temporal-getutcepochnanoseconds": {
@@ -3079,12 +3159,12 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativezoneddatetime"
     }
   },
-  "#sec-temporal-negatetemporalroundingmode": {
+  "#sec-temporal-negateroundingmode": {
     "current": {
       "number": "13.11",
       "spec": "Temporal",
-      "text": "NegateTemporalRoundingMode ( roundingMode )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-negatetemporalroundingmode"
+      "text": "NegateRoundingMode ( roundingMode )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-negateroundingmode"
     }
   },
   "#sec-temporal-normalized-duration-records": {
@@ -3831,22 +3911,6 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordlookup"
     }
   },
-  "#sec-temporal-tocalendarnameoption": {
-    "current": {
-      "number": "13.13",
-      "spec": "Temporal",
-      "text": "ToCalendarNameOption ( normalizedOptions )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-tocalendarnameoption"
-    }
-  },
-  "#sec-temporal-tofractionalseconddigits": {
-    "current": {
-      "number": "13.18",
-      "spec": "Temporal",
-      "text": "ToFractionalSecondDigits ( normalizedOptions )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-tofractionalseconddigits"
-    }
-  },
   "#sec-temporal-toisodayofweek": {
     "current": {
       "number": "12.2.48",
@@ -3871,28 +3935,12 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-toisoweekofyear"
     }
   },
-  "#sec-temporal-torelativetemporalobject": {
-    "current": {
-      "number": "13.21",
-      "spec": "Temporal",
-      "text": "ToRelativeTemporalObject ( options )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-torelativetemporalobject"
-    }
-  },
   "#sec-temporal-tosecondsstringprecisionrecord": {
     "current": {
       "number": "13.19",
       "spec": "Temporal",
       "text": "ToSecondsStringPrecisionRecord ( smallestUnit, fractionalDigitCount )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-tosecondsstringprecisionrecord"
-    }
-  },
-  "#sec-temporal-toshowoffsetoption": {
-    "current": {
-      "number": "13.15",
-      "spec": "Temporal",
-      "text": "ToShowOffsetOption ( normalizedOptions )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-toshowoffsetoption"
     }
   },
   "#sec-temporal-totemporalcalendaridentifier": {
@@ -3935,14 +3983,6 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaldatetime"
     }
   },
-  "#sec-temporal-totemporaldisambiguation": {
-    "current": {
-      "number": "13.9",
-      "spec": "Temporal",
-      "text": "ToTemporalDisambiguation ( options )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaldisambiguation"
-    }
-  },
   "#sec-temporal-totemporalduration": {
     "current": {
       "number": "7.5.12",
@@ -3975,44 +4015,12 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalmonthday"
     }
   },
-  "#sec-temporal-totemporaloffset": {
-    "current": {
-      "number": "13.12",
-      "spec": "Temporal",
-      "text": "ToTemporalOffset ( options, fallback )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaloffset"
-    }
-  },
-  "#sec-temporal-totemporaloverflow": {
-    "current": {
-      "number": "13.8",
-      "spec": "Temporal",
-      "text": "ToTemporalOverflow ( options )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaloverflow"
-    }
-  },
   "#sec-temporal-totemporalpartialdurationrecord": {
     "current": {
       "number": "7.5.17",
       "spec": "Temporal",
       "text": "ToTemporalPartialDurationRecord ( temporalDurationLike )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalpartialdurationrecord"
-    }
-  },
-  "#sec-temporal-totemporalroundingincrement": {
-    "current": {
-      "number": "13.16",
-      "spec": "Temporal",
-      "text": "ToTemporalRoundingIncrement ( normalizedOptions )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalroundingincrement"
-    }
-  },
-  "#sec-temporal-totemporalroundingmode": {
-    "current": {
-      "number": "13.10",
-      "spec": "Temporal",
-      "text": "ToTemporalRoundingMode ( normalizedOptions, fallback )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalroundingmode"
     }
   },
   "#sec-temporal-totemporaltime": {
@@ -4077,14 +4085,6 @@
       "spec": "Temporal",
       "text": "ToTemporalZonedDateTime ( item [ , options ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalzoneddatetime"
-    }
-  },
-  "#sec-temporal-totimezonenameoption": {
-    "current": {
-      "number": "13.14",
-      "spec": "Temporal",
-      "text": "ToTimeZoneNameOption ( normalizedOptions )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-totimezonenameoption"
     }
   },
   "#sec-temporal-unbalancedatedurationrelative": {
