@@ -5239,6 +5239,7 @@
     "adequate implementation experience",
     "adjoining",
     "adjoining margins",
+    "adjust bid list based on k-anonymity",
     "adjust foreign attributes",
     "adjust mathml attributes",
     "adjust svg attributes",
@@ -5594,6 +5595,7 @@
     "apply",
     "apply a default",
     "apply a position option",
+    "apply any component ads target to a bid",
     "apply any pending playback rate",
     "apply interest groups limits to prioritized list",
     "apply link options from parsed header attributes",
@@ -7733,6 +7735,7 @@
     "convert header names to a sorted-lowercase set",
     "convert line endings to native",
     "convert ndefrecord.data bytes",
+    "convert one or many generatebidoutputs to a list of generated bids",
     "convert to a list of name-value pairs",
     "convert to a string sequence",
     "convert to absolute url",
@@ -10344,7 +10347,6 @@
     "generalized rdf dataset",
     "generalized rdf graph",
     "generalized rdf triple",
-    "generate a bid",
     "generate a change password url",
     "generate a counter",
     "generate a counter representation",
@@ -10376,6 +10378,7 @@
     "generate masked tokens",
     "generate null reports",
     "generate null reports and assign private state tokens",
+    "generate potentially multiple bids",
     "generate test report",
     "generate the internal representation",
     "generateassertioncallback",
@@ -12507,6 +12510,7 @@
     "look up a custom element definition",
     "look up penultimate redemption",
     "look up per-buyer currency",
+    "look up per-buyer multi-bid limit",
     "look up the key commitments",
     "look up the latest keys",
     "lookup race response",
@@ -15688,11 +15692,11 @@
     "region flow content box",
     "region-fragment",
     "register",
-    "register a bid for fordebuggingonly reports",
     "register a custom property",
     "register a protocol handler",
     "register a system key press handler",
     "register an import map",
+    "register bids for fordebuggingonly reports",
     "register file handlers",
     "register reporting metadata",
     "registered",
@@ -18584,6 +18588,7 @@
     "try to consume a modifier token",
     "try to consume a regexp or wildcard token",
     "try to consume a token",
+    "try to reach component ads target considering k-anonymity",
     "try to scroll to the fragment",
     "try to upgrade an element",
     "trying",
@@ -21840,6 +21845,7 @@
     "perBuyerCurrencies",
     "perBuyerExperimentGroupIds",
     "perBuyerGroupLimits",
+    "perBuyerMultiBidLimits",
     "perBuyerPrioritySignals",
     "perBuyerSignals",
     "perBuyerTimeouts",
@@ -23179,6 +23185,7 @@
     "dataVersion",
     "forDebuggingOnlyInCooldownOrLockout",
     "joinCount",
+    "multiBidLimit",
     "prevWinsMs",
     "recency",
     "seller",
@@ -33005,7 +33012,9 @@
     "bid",
     "bidCurrency",
     "modelingSignals",
-    "render"
+    "numMandatoryAdComponents",
+    "render",
+    "targetNumAdComponents"
   ],
   "GenerateTestReportParameters": [
     "group",
@@ -35628,24 +35637,25 @@
     "fordebuggingonly"
   ],
   "InterestGroupBiddingScriptRunnerGlobalScope": [
-    "bid",
+    "bids",
     "expected currency",
     "group has ad components",
     "interest group",
     "is component auction",
+    "multi-bid limit",
     "priority",
     "priority signals",
     "setBid()",
-    "setBid(generateBidOutput)",
+    "setBid(oneOrManyBids)",
     "setPriority(priority)",
     "setPrioritySignalsOverride(key)",
     "setPrioritySignalsOverride(key, priority)"
   ],
   "InterestGroupBiddingScriptRunnerGlobalScope/setBid()": [
-    "generateBidOutput"
+    "oneOrManyBids"
   ],
-  "InterestGroupBiddingScriptRunnerGlobalScope/setBid(generateBidOutput)": [
-    "generateBidOutput"
+  "InterestGroupBiddingScriptRunnerGlobalScope/setBid(oneOrManyBids)": [
+    "oneOrManyBids"
   ],
   "InterestGroupBiddingScriptRunnerGlobalScope/setPriority(priority)": [
     "priority"
@@ -51934,6 +51944,7 @@
     "all buyers cumulative timeout",
     "all buyers currency",
     "all buyers group limit",
+    "all buyers multi-bid limit",
     "all buyers priority signals",
     "all buyers timeout",
     "all slots requested sizes",
@@ -51952,6 +51963,7 @@
     "per buyer currencies",
     "per buyer experiment group ids",
     "per buyer group limits",
+    "per buyer multi-bid limits",
     "per buyer priority signals",
     "per buyer signals",
     "per buyer timeouts",
@@ -52180,7 +52192,7 @@
     "bidder debug loss report url",
     "bidder debug win report url",
     "component seller",
-    "id",
+    "ids",
     "interest group owner",
     "seller debug loss report url",
     "seller debug win report url",
@@ -54929,7 +54941,9 @@
     "interest group",
     "modeling signals",
     "modified bid",
-    "provided as additional bid"
+    "number of mandatory ad components",
+    "provided as additional bid",
+    "target number of ad components"
   ],
   "getAssert": [
     "allowlist",
