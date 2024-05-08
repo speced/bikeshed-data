@@ -59,6 +59,7 @@
     "!",
     "\"@charset\"",
     "\"absolute-url\"",
+    "\"accelerometer\"",
     "\"all\"-named elements",
     "\"audio\"",
     "\"bluetooth\"",
@@ -74,6 +75,7 @@
     "\"flag\"",
     "\"gamepad\"",
     "\"geolocation\"",
+    "\"gyroscope\"",
     "\"idle-detection\"",
     "\"l1t1\"",
     "\"l1t2\"",
@@ -99,6 +101,7 @@
     "\"l3t3_key\"",
     "\"l3t3_key_shift\"",
     "\"l3t3h\"",
+    "\"magnetometer\"",
     "\"microphone\"",
     "\"midi\"",
     "\"mime\"",
@@ -9860,6 +9863,7 @@
     "find a list of descriptors for a configuration",
     "find a list of endpoint descriptors",
     "find a matching complete prefetch record",
+    "find a matching complete prerender record",
     "find a matching trigger spec",
     "find a potential indicated element",
     "find a range from a node list",
@@ -10542,7 +10546,6 @@
     "get the legacy windows version number",
     "get the lock request queue",
     "get the login status",
-    "get the matching prerendering navigable",
     "get the navigation api entry index",
     "get the navigation info",
     "get the network intercepts",
@@ -12289,6 +12292,7 @@
     "line-under",
     "linear acceleration",
     "linear acceleration sensor",
+    "linear device acceleration",
     "linear easing function",
     "linear easing point",
     "linear gain unit to decibel",
@@ -14923,6 +14927,7 @@
     "prepare to run script",
     "preparing the platform runtime",
     "prerender candidate",
+    "prerender record",
     "prerendering navigable",
     "prerendering traversable",
     "prescan a byte stream to determine its encoding",
@@ -15760,6 +15765,7 @@
     "relationship strings",
     "relationships",
     "relative color",
+    "relative device orientation",
     "relative high resolution coarse time",
     "relative high resolution time",
     "relative iri reference",
@@ -19460,6 +19466,7 @@
     "w3c working draft",
     "wait and queue a report for",
     "wait for a matching prefetch record",
+    "wait for a matching prerendering record",
     "wait for all",
     "wait for key",
     "wait for navigation to complete",
@@ -28703,6 +28710,11 @@
     "cornerPoints",
     "rawValue"
   ],
+  "Device Orientation": [
+    "x",
+    "y",
+    "z"
+  ],
   "DeviceChangeEvent": [
     "constructor()",
     "constructor(type)",
@@ -29134,8 +29146,8 @@
     "prefetch records",
     "prefetched signed exchanges for navigation",
     "prefetched subresource signed exchanges",
+    "prerender records",
     "prerendering",
-    "prerendering traversables map",
     "prerenderingchange",
     "previous document unload timing",
     "processed manifest",
@@ -57653,9 +57665,18 @@
   ],
   "prerender candidate": [
     "eagerness",
+    "no-vary-search hint",
     "referrer policy",
     "target navigable name hint",
     "url"
+  ],
+  "prerender record": [
+    "is expected to match a url",
+    "matches a url",
+    "no-vary-search hint",
+    "prerendering traversable",
+    "start time",
+    "starting url"
   ],
   "prerendering navigable": [
     "prerender-scoped accept-ch cache"
@@ -57663,7 +57684,9 @@
   "prerendering traversable": [
     "activate",
     "finalize activation",
-    "remove from referrer"
+    "prerender initial response search variance",
+    "remove from referrer",
+    "update the successor for activation"
   ],
   "prescan a byte stream to determine its encoding": [
     "end condition"
