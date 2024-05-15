@@ -1543,20 +1543,12 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddaystozoneddatetime"
     }
   },
-  "#sec-temporal-addduration": {
+  "#sec-temporal-adddurations": {
     "current": {
-      "number": "7.5.37",
+      "number": "7.5.46",
       "spec": "Temporal",
-      "text": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, calendarRec, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-addduration"
-    }
-  },
-  "#sec-temporal-adddurationtoorsubtractdurationfromduration": {
-    "current": {
-      "number": "7.5.47",
-      "spec": "Temporal",
-      "text": "AddDurationToOrSubtractDurationFromDuration ( operation, duration, other, options )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddurationtoorsubtractdurationfromduration"
+      "text": "AddDurations ( operation, duration, other, options )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-adddurations"
     }
   },
   "#sec-temporal-adddurationtoorsubtractdurationfrominstant": {
@@ -1697,7 +1689,7 @@
   },
   "#sec-temporal-bubblerelativeduration": {
     "current": {
-      "number": "7.5.44",
+      "number": "7.5.43",
       "spec": "Temporal",
       "text": "BubbleRelativeDuration ( sign, duration, nudgedEpochNs, dateTime, calendarRec, timeZoneRec, largestUnit, smallestUnit )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-bubblerelativeduration"
@@ -2377,7 +2369,7 @@
   },
   "#sec-temporal-daysuntil": {
     "current": {
-      "number": "7.5.38",
+      "number": "7.5.37",
       "spec": "Temporal",
       "text": "DaysUntil ( earlier, later )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-daysuntil"
@@ -2545,7 +2537,7 @@
   },
   "#sec-temporal-duration-nudge-result-records": {
     "current": {
-      "number": "7.5.40",
+      "number": "7.5.39",
       "spec": "Temporal",
       "text": "Duration Nudge Result Records",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-duration-nudge-result-records"
@@ -2639,22 +2631,6 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getdifferencesettings"
     }
   },
-  "#sec-temporal-getianatimezonenexttransition": {
-    "current": {
-      "number": "11.5.10",
-      "spec": "Temporal",
-      "text": "GetNamedTimeZoneNextTransition ( timeZoneIdentifier, epochNanoseconds )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-getianatimezonenexttransition"
-    }
-  },
-  "#sec-temporal-getianatimezoneprevioustransition": {
-    "current": {
-      "number": "11.5.11",
-      "spec": "Temporal",
-      "text": "GetNamedTimeZonePreviousTransition ( timeZoneIdentifier, epochNanoseconds )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-getianatimezoneprevioustransition"
-    }
-  },
   "#sec-temporal-getinstantfor": {
     "current": {
       "number": "11.5.22",
@@ -2669,6 +2645,22 @@
       "spec": "Temporal",
       "text": "GetISOPartsFromEpoch ( epochNanoseconds )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getisopartsfromepoch"
+    }
+  },
+  "#sec-temporal-getnamedtimezonenexttransition": {
+    "current": {
+      "number": "11.5.10",
+      "spec": "Temporal",
+      "text": "GetNamedTimeZoneNextTransition ( timeZoneIdentifier, epochNanoseconds )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-getnamedtimezonenexttransition"
+    }
+  },
+  "#sec-temporal-getnamedtimezoneprevioustransition": {
+    "current": {
+      "number": "11.5.11",
+      "spec": "Temporal",
+      "text": "GetNamedTimeZonePreviousTransition ( timeZoneIdentifier, epochNanoseconds )",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-getnamedtimezoneprevioustransition"
     }
   },
   "#sec-temporal-getoffsetnanosecondsfor": {
@@ -3265,7 +3257,7 @@
   },
   "#sec-temporal-nudgetocalendarunit": {
     "current": {
-      "number": "7.5.41",
+      "number": "7.5.40",
       "spec": "Temporal",
       "text": "NudgeToCalendarUnit ( sign, duration, destEpochNs, dateTime, calendarRec, timeZoneRec, increment, unit, roundingMode )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetocalendarunit"
@@ -3273,7 +3265,7 @@
   },
   "#sec-temporal-nudgetodayortime": {
     "current": {
-      "number": "7.5.43",
+      "number": "7.5.42",
       "spec": "Temporal",
       "text": "NudgeToDayOrTime ( duration, destEpochNs, largestUnit, increment, smallestUnit, roundingMode )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetodayortime"
@@ -3281,7 +3273,7 @@
   },
   "#sec-temporal-nudgetozonedtime": {
     "current": {
-      "number": "7.5.42",
+      "number": "7.5.41",
       "spec": "Temporal",
       "text": "NudgeToZonedTime ( sign, duration, dateTime, calendarRec, timeZoneRec, increment, unit, roundingMode )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetozonedtime"
@@ -3681,7 +3673,7 @@
   },
   "#sec-temporal-roundrelativeduration": {
     "current": {
-      "number": "7.5.45",
+      "number": "7.5.44",
       "spec": "Temporal",
       "text": "RoundRelativeDuration ( duration, destEpochNs, dateTime, calendarRec, timeZoneRec, largestUnit, increment, smallestUnit, roundingMode )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-roundrelativeduration"
@@ -3705,7 +3697,7 @@
   },
   "#sec-temporal-roundtimeduration": {
     "current": {
-      "number": "7.5.39",
+      "number": "7.5.38",
       "spec": "Temporal",
       "text": "RoundTimeDuration ( days, norm, increment, unit, roundingMode )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-roundtimeduration"
@@ -3785,7 +3777,7 @@
   },
   "#sec-temporal-temporaldurationtostring": {
     "current": {
-      "number": "7.5.46",
+      "number": "7.5.45",
       "spec": "Temporal",
       "text": "TemporalDurationToString ( years, months, weeks, days, hours, minutes, normSeconds, precision )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-temporaldurationtostring"
