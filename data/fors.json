@@ -1733,6 +1733,7 @@
     "ContentVisibilityAutoStateChangeEventInit",
     "ContentVisibilityAutoStateChangedEvent",
     "ContentVisibilityAutoStateChangedEventInit",
+    "ContinuationPriority",
     "ContinueDynamicImport",
     "ContinueDynamicImport(promiseCapability, moduleCompletion)",
     "ContinueModuleLoading",
@@ -4075,6 +4076,8 @@
     "Scheduler",
     "SchedulerPostTaskCallback",
     "SchedulerPostTaskOptions",
+    "SchedulerSignalInherit",
+    "SchedulerYieldOptions",
     "Scheduling",
     "ScoreAdOutput",
     "ScoringBrowserSignals",
@@ -7372,6 +7375,7 @@
     "compute the effective overload set",
     "compute the intersection",
     "compute the key hash of reporting id",
+    "compute the scheduling state from options",
     "compute the tick duration",
     "computed <image>",
     "computed color",
@@ -7885,6 +7889,7 @@
     "create a domrect from the dictionary",
     "create a domrectreadonly from the dictionary",
     "create a fixed length memory buffer",
+    "create a fixed priority unabortable task signal",
     "create a fresh top-level traversable",
     "create a frozen array",
     "create a global object",
@@ -8409,6 +8414,7 @@
     "dc:type",
     "dcterms:modified",
     "dd",
+    "de-percentify a calc-size calculation",
     "deactivate",
     "deactivate a document for a cross-document navigation",
     "deactivate a sensor object",
@@ -16472,13 +16478,15 @@
     "scf",
     "schedule a posttask task",
     "schedule a selectionchange event",
-    "schedule a task to invoke a callback",
+    "schedule a task to invoke an algorithm",
+    "schedule a yield continuation",
     "schedule job",
     "schedule user topics calculation",
     "scheduled event time",
     "scheduler task",
     "scheduler task queue",
     "scheduler task sources",
+    "scheduling state",
     "schema.org boolean property",
     "scheme",
     "scheme fetch",
@@ -17823,6 +17831,7 @@
     "substitute a var()",
     "substitute an attr()",
     "substitute an env()",
+    "substitute into a calc-size calculation",
     "substitution",
     "subsuperscriptgapmin",
     "subtag registry",
@@ -26793,6 +26802,12 @@
   "ContentVisibilityAutoStateChangedEventInit": [
     "skipped"
   ],
+  "ContinuationPriority": [
+    "\"background\"",
+    "\"inherit\"",
+    "\"user-blocking\"",
+    "\"user-visible\""
+  ],
   "ConvertCoordinateOptions": [
     "fromBox",
     "toBox"
@@ -28929,8 +28944,8 @@
     "discarded",
     "doctype",
     "document policy",
-    "document.write(...)",
-    "document.writeln(...)",
+    "document.write(...text)",
+    "document.writeln(...text)",
     "documentElement",
     "documentURI",
     "domConfig",
@@ -31598,6 +31613,7 @@
   "GPUAdapter": [
     "[[adapter]]",
     "features",
+    "info",
     "isFallbackAdapter",
     "limits",
     "requestAdapterInfo()",
@@ -31632,6 +31648,7 @@
     "layout"
   ],
   "GPUBindGroupEntry": [
+    "[[prevalidatedSize]]",
     "binding",
     "resource"
   ],
@@ -44687,7 +44704,9 @@
     "dynamic priority task queue map",
     "postTask(callback)",
     "postTask(callback, options)",
-    "static priority task queue map"
+    "static priority task queue map",
+    "yield()",
+    "yield(options)"
   ],
   "Scheduler/postTask(callback)": [
     "callback",
@@ -44697,8 +44716,21 @@
     "callback",
     "options"
   ],
+  "Scheduler/yield()": [
+    "options"
+  ],
+  "Scheduler/yield(options)": [
+    "options"
+  ],
   "SchedulerPostTaskOptions": [
     "delay",
+    "priority",
+    "signal"
+  ],
+  "SchedulerSignalInherit": [
+    "\"inherit\""
+  ],
+  "SchedulerYieldOptions": [
     "priority",
     "signal"
   ],
@@ -46451,7 +46483,6 @@
     "\"user-blocking\"",
     "\"user-visible\"",
     "background",
-    "less than",
     "user-blocking",
     "user-visible"
   ],
@@ -51232,7 +51263,9 @@
   ],
   "XRWebGLDepthInformation": [
     "getDepthInformation(view)",
-    "texture"
+    "imageIndex",
+    "texture",
+    "textureType"
   ],
   "XRWebGLLayer": [
     "XRWebGLLayer(session, context)",
@@ -52714,6 +52747,7 @@
   ],
   "calc-size()": [
     "any",
+    "percentage",
     "size"
   ],
   "calculation tree": [
@@ -54008,6 +54042,7 @@
     "type"
   ],
   "event loop": [
+    "current scheduling state",
     "next enqueue order"
   ],
   "event-level report": [
@@ -58244,12 +58279,18 @@
     "older than"
   ],
   "scheduler task queue": [
+    "effective priority",
     "empty",
     "first runnable task",
+    "is continuation",
     "priority",
     "removal steps",
     "remove",
     "tasks"
+  ],
+  "scheduling state": [
+    "abort source",
+    "priority source"
   ],
   "screen": [
     "advanced observable properties",
