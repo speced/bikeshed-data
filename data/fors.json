@@ -5302,12 +5302,14 @@
     "agent-status-request",
     "agent-status-response",
     "aggregatable contribution",
+    "aggregatable debug reporting config",
     "aggregatable dedup key",
     "aggregatable report",
     "aggregatable report cache",
     "aggregatable source registration time configuration",
     "aggregatable trigger data",
     "aggregatable values configuration",
+    "aggregatable-debug-reporting json key",
     "aggregation coordinator",
     "alert steps",
     "algorithm",
@@ -14310,6 +14312,7 @@
     "parse a smart-poster action record",
     "parse a smart-poster size record",
     "parse a smart-poster type record",
+    "parse a source aggregatable debug reporting config",
     "parse a speculation rule",
     "parse a srcset attribute",
     "parse a string into an abstract matrix",
@@ -14329,6 +14332,7 @@
     "parse a week string",
     "parse a yearless date component",
     "parse a yearless date string",
+    "parse aggregatable debug reporting data",
     "parse aggregatable dedup keys",
     "parse aggregatable key-values",
     "parse aggregatable trigger data",
@@ -14337,6 +14341,8 @@
     "parse an adrender ad size",
     "parse an adrender dimension value",
     "parse an advertising data filter",
+    "parse an aggregatable debug reporting config",
+    "parse an aggregation coordinator",
     "parse an aggregation key piece",
     "parse an asn.1 structure",
     "parse an attribution destination",
@@ -14890,6 +14896,8 @@
     "preferred height",
     "preferred inline size of a glyph stretched along the block axis",
     "preferred line height",
+    "preferred native depth sensing capability",
+    "preferred native depth sensing format",
     "preferred order",
     "preferred resolution",
     "preferred size",
@@ -18168,6 +18176,7 @@
     "testable assertion",
     "texel",
     "texel block",
+    "texel block byte offset",
     "texel block copy footprint",
     "texel block height",
     "texel block memory cost",
@@ -50271,7 +50280,8 @@
   ],
   "XRDepthDataFormat": [
     "\"float32\"",
-    "\"luminance-alpha\""
+    "\"luminance-alpha\"",
+    "\"unsigned-short\""
   ],
   "XRDepthInformation": [
     "depth buffer",
@@ -51437,6 +51447,11 @@
     "key",
     "value"
   ],
+  "aggregatable debug reporting config": [
+    "aggregation coordinator",
+    "debug data",
+    "key piece"
+  ],
   "aggregatable dedup key": [
     "dedup key",
     "filters",
@@ -51475,6 +51490,13 @@
     "filters",
     "negated filters",
     "values"
+  ],
+  "aggregatable-debug-reporting JSON key": [
+    "aggregation_coordinator_origin",
+    "debug_data",
+    "key_piece",
+    "types",
+    "value"
   ],
   "align-content": [
     "baseline",
@@ -51858,7 +51880,7 @@
     "trigger debug key"
   ],
   "attribution source": [
-    "aggregatable budget consumed",
+    "aggregatable debug reporting config",
     "aggregatable dedup keys",
     "aggregatable report window",
     "aggregation keys",
@@ -51880,6 +51902,8 @@
     "priority",
     "randomized response",
     "randomized trigger rate",
+    "remaining aggregatable attribution budget",
+    "remaining aggregatable debug budget",
     "reporting origin",
     "source identifier",
     "source origin",
@@ -51890,6 +51914,7 @@
     "trigger-data matching mode"
   ],
   "attribution trigger": [
+    "aggregatable debug reporting config",
     "aggregatable dedup keys",
     "aggregatable source registration time configuration",
     "aggregatable trigger data",
@@ -58843,8 +58868,10 @@
     "navigation"
   ],
   "source-registration JSON key": [
+    "aggregatable_debug_reporting",
     "aggregatable_report_window",
     "aggregation_keys",
+    "budget",
     "debug_key",
     "debug_reporting",
     "destination",
@@ -60116,6 +60143,7 @@
     "modulus"
   ],
   "trigger-registration JSON key": [
+    "aggregatable_debug_reporting",
     "aggregatable_deduplication_keys",
     "aggregatable_source_registration_time",
     "aggregatable_trigger_data",
