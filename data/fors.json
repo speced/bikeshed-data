@@ -1767,7 +1767,6 @@
     "Create a Permissions Policy for a navigable from response",
     "Create a Trusted Type",
     "Create a Trusted Type Policy",
-    "Create a Trusted Type from literal",
     "Create a new device-bound key record",
     "Create a new supplemental public key record",
     "CreateArrayFromList",
@@ -3519,7 +3518,6 @@
     "PreferenceManager",
     "PreferenceObject",
     "PremultiplyAlpha",
-    "Prepare the script URL and text",
     "Prepare the script text",
     "PrepareForOrdinaryCall",
     "PrepareForOrdinaryCall(F, newTarget)",
@@ -5301,11 +5299,16 @@
     "agent-info-response",
     "agent-status-request",
     "agent-status-response",
+    "aggregatable attribution report",
+    "aggregatable attribution report cache",
     "aggregatable contribution",
+    "aggregatable debug rate-limit cache",
+    "aggregatable debug rate-limit record",
+    "aggregatable debug rate-limit window",
+    "aggregatable debug report",
     "aggregatable debug reporting config",
     "aggregatable dedup key",
     "aggregatable report",
-    "aggregatable report cache",
     "aggregatable source registration time configuration",
     "aggregatable trigger data",
     "aggregatable values configuration",
@@ -5785,6 +5788,7 @@
     "attempt to deliver a debug report",
     "attempt to deliver a report",
     "attempt to deliver a verbose debug report",
+    "attempt to deliver an aggregatable debug report",
     "attempt to disconnect",
     "attempt to populate the history entry's document",
     "attempt to resume playback if necessary",
@@ -5824,7 +5828,6 @@
     "attribute selector",
     "attribute setter",
     "attribute type",
-    "attribute validation steps",
     "attribute value (double-quoted) state",
     "attribute value (single-quoted) state",
     "attribute value (unquoted) state",
@@ -5835,7 +5838,7 @@
     "attributes for form submission",
     "attribution",
     "attribution caches",
-    "attribution debug data",
+    "attribution debug info",
     "attribution destination website",
     "attribution rate-limit cache",
     "attribution rate-limit record",
@@ -6911,6 +6914,7 @@
     "check if a text directive can be scrolled",
     "check if a window feature is set",
     "check if addmodule is allowed and update state",
+    "check if aggregatable debug reporting should be blocked by rate-limit",
     "check if an access between two browsing contexts should be reported",
     "check if an attribution source can create aggregatable contributions",
     "check if an attribution source exceeds the time-based destination limits",
@@ -6918,6 +6922,7 @@
     "check if an attribution source should be blocked by reporting-origin per site limit",
     "check if an attribution trigger contains aggregatable data",
     "check if an origin is suitable",
+    "check if attribution debugging can be enabled",
     "check if attribution should be blocked by attribution rate limit",
     "check if attribution should be blocked by rate limits",
     "check if cookie-based debugging is allowed",
@@ -6944,7 +6949,6 @@
     "check soft navigation",
     "check soft navigation contentful paint",
     "check soft navigation same document commit",
-    "check templatedness",
     "check that a key could be injected into a value",
     "check the completion record",
     "check the layers state",
@@ -8520,7 +8524,6 @@
     "default pipeline layout",
     "default playback start position",
     "default pointer parameters",
-    "default policy",
     "default port",
     "default powerful feature",
     "default presentation request",
@@ -8717,7 +8720,7 @@
     "determine eligibility for an associated site",
     "determine if DTMF can be sent",
     "determine if a performance entry buffer is full",
-    "determine if a randomized null report is generated",
+    "determine if a randomized null attribution report is generated",
     "determine if a request has top-level storage access",
     "determine if dtmf can be sent",
     "determine navigation params policy container",
@@ -10374,6 +10377,7 @@
     "generate a validation error",
     "generate a verbose debug report url",
     "generate all implied end tags thoroughly",
+    "generate an aggregatable debug report url",
     "generate an attribution report url",
     "generate an id",
     "generate an internal error",
@@ -10385,8 +10389,8 @@
     "generate implied end tags",
     "generate key frame algorithm",
     "generate masked tokens",
-    "generate null reports",
-    "generate null reports and assign private state tokens",
+    "generate null attribution reports",
+    "generate null attribution reports and assign private state tokens",
     "generate potentially multiple bids",
     "generate test report",
     "generate the internal representation",
@@ -12195,7 +12199,6 @@
     "legacy factory function",
     "legacy name alias",
     "legacy platform objects",
-    "legacy positioning mode",
     "legacy selector alias",
     "legacy shorthand",
     "legacy-clone a traversable storage shed",
@@ -12787,13 +12790,15 @@
     "matrix object",
     "matrix3d()",
     "max",
-    "max aggregatable reports per attribution destination",
+    "max aggregatable attribution reports per attribution destination",
+    "max aggregatable debug budget per rate-limit window",
     "max aggregatable reports per source",
     "max aggregation keys per source registration",
     "max attribution reporting origins per rate-limit window",
     "max attributions per rate-limit window",
     "max batch size",
     "max bindings per shader stage",
+    "max contributions per aggregatable debug report",
     "max cross size",
     "max cross size property",
     "max destinations covered by unexpired sources",
@@ -13792,7 +13797,7 @@
     "obtain a local storage bottle map",
     "obtain a local storage shelf",
     "obtain a lock manager",
-    "obtain a null report",
+    "obtain a null attribution report",
     "obtain a physical form",
     "obtain a randomized response",
     "obtain a randomized source response",
@@ -13819,8 +13824,9 @@
     "obtain a worker memory attribution token",
     "obtain a worker/worklet agent",
     "obtain a worklet agent",
-    "obtain an aggregatable report",
-    "obtain an aggregatable report delivery time",
+    "obtain an aggregatable attribution report",
+    "obtain an aggregatable attribution report delivery time",
+    "obtain an aggregatable report body",
     "obtain an embedder policy",
     "obtain an event-level report",
     "obtain an event-level report body",
@@ -13829,13 +13835,17 @@
     "obtain and deliver a verbose debug report",
     "obtain and deliver a verbose debug report on source registration",
     "obtain and deliver a verbose debug report on trigger registration",
+    "obtain and deliver an aggregatable debug report",
+    "obtain and deliver an aggregatable debug report on registration",
+    "obtain and deliver an aggregatable debug report on source registration",
+    "obtain and deliver an aggregatable debug report on trigger registration",
     "obtain and deliver debug reports on os registrations",
     "obtain and deliver debug reports on registration header errors",
+    "obtain and deliver debug reports on source registration",
+    "obtain and deliver debug reports on trigger registration",
     "obtain camera",
     "obtain camera image",
     "obtain cpu depth information",
-    "obtain debug data body on trigger registration",
-    "obtain debug data on trigger registration",
     "obtain default effective windows",
     "obtain depth at coordinates",
     "obtain hit test results",
@@ -13847,6 +13857,8 @@
     "obtain the encrypted payload",
     "obtain the public key for encryption",
     "obtain their numeric values",
+    "obtain verbose debug data body on trigger registration",
+    "obtain verbose debug data on trigger registration",
     "obtain webgl depth information",
     "obtaining a window memory attribution token",
     "obtaining a worker memory attribution token",
@@ -15448,9 +15460,9 @@
     "random()",
     "random-caching key",
     "random-item()",
-    "randomized aggregatable report delay",
-    "randomized null report rate excluding source registration time",
-    "randomized null report rate including source registration time",
+    "randomized aggregatable attribution report delay",
+    "randomized null attribution report rate excluding source registration time",
+    "randomized null attribution report rate including source registration time",
     "randomized response output configuration",
     "randomized source response",
     "range",
@@ -15764,7 +15776,6 @@
     "rel",
     "related",
     "related application",
-    "related construct",
     "related member",
     "related website set",
     "relationship",
@@ -16899,8 +16910,10 @@
     "serialize a verbose debug report",
     "serialize a whitespace-separated list",
     "serialize an <an+b> value",
-    "serialize an aggregatable report",
+    "serialize an aggregatable attribution report",
+    "serialize an aggregatable debug report",
     "serialize an array-like",
+    "serialize an attribution debug info",
     "serialize an attribution report",
     "serialize an event-level report",
     "serialize an identifier",
@@ -19244,7 +19257,6 @@
     "validate reporting metadata",
     "validate share data",
     "validate the state of the xrwebglsubimage creation function",
-    "validate the string in context",
     "validate videoframeinit",
     "validateassertioncallback",
     "validating GPUDepthStencilState",
@@ -34303,8 +34315,6 @@
     "cite"
   ],
   "HTMLScriptElement": [
-    "[[ScriptText]]",
-    "[[ScriptURL]]",
     "async",
     "blocking",
     "charset",
@@ -47093,30 +47103,18 @@
   ],
   "TrustedHTML": [
     "data",
-    "fromLiteral(templateStringsArray)",
     "stringificationbehavior",
     "toJSON()"
-  ],
-  "TrustedHTML/fromLiteral(templateStringsArray)": [
-    "templateStringsArray"
   ],
   "TrustedScript": [
     "data",
-    "fromLiteral(templateStringsArray)",
     "stringificationbehavior",
     "toJSON()"
-  ],
-  "TrustedScript/fromLiteral(templateStringsArray)": [
-    "templateStringsArray"
   ],
   "TrustedScriptURL": [
     "data",
-    "fromLiteral(templateStringsArray)",
     "stringificationbehavior",
     "toJSON()"
-  ],
-  "TrustedScriptURL/fromLiteral(templateStringsArray)": [
-    "templateStringsArray"
   ],
   "TrustedTypePolicy": [
     "createHTML(input)",
@@ -51443,9 +51441,40 @@
   "agent": [
     "event loop"
   ],
+  "aggregatable attribution report": [
+    "aggregation coordinator",
+    "attribution debug info",
+    "contributions",
+    "effective attribution destination",
+    "is null report",
+    "report id",
+    "report time",
+    "reporting origin",
+    "required aggregatable budget",
+    "serialized private state token",
+    "shared info",
+    "source registration time configuration",
+    "source time",
+    "trigger context id"
+  ],
   "aggregatable contribution": [
     "key",
     "value"
+  ],
+  "aggregatable debug rate-limit record": [
+    "consumed budget",
+    "context site",
+    "reporting site",
+    "time"
+  ],
+  "aggregatable debug report": [
+    "aggregation coordinator",
+    "contributions",
+    "effective attribution destination",
+    "report id",
+    "report time",
+    "reporting origin",
+    "required aggregatable budget"
   ],
   "aggregatable debug reporting config": [
     "aggregation coordinator",
@@ -51462,19 +51491,12 @@
     "contributions",
     "debug mode",
     "effective attribution destination",
-    "is null report",
     "plaintext payload",
     "report id",
     "report time",
     "reporting origin",
     "required aggregatable budget",
-    "serialized private state token",
-    "shared info",
-    "source debug key",
-    "source registration time configuration",
-    "source time",
-    "trigger context id",
-    "trigger debug key"
+    "shared info"
   ],
   "aggregatable source registration time configuration": [
     "exclude",
@@ -51863,6 +51885,10 @@
     "vertex",
     "workgroup_size"
   ],
+  "attribution debug info": [
+    "source debug key",
+    "trigger debug key"
+  ],
   "attribution rate-limit record": [
     "attribution destination",
     "event-level report id",
@@ -51875,9 +51901,7 @@
   "attribution report": [
     "report id",
     "report time",
-    "reporting origin",
-    "source debug key",
-    "trigger debug key"
+    "reporting origin"
   ],
   "attribution source": [
     "aggregatable debug reporting config",
@@ -51897,7 +51921,8 @@
     "fenced",
     "filter data",
     "max number of event-level reports",
-    "number of aggregatable reports",
+    "number of aggregatable attribution reports",
+    "number of aggregatable debug reports",
     "number of event-level reports",
     "priority",
     "randomized response",
@@ -54023,6 +54048,7 @@
     "next enqueue order"
   ],
   "event-level report": [
+    "attribution debug info",
     "attribution destinations",
     "event id",
     "is lower-priority than",
@@ -54030,11 +54056,9 @@
     "report id",
     "report time",
     "reporting origin",
-    "source debug key",
     "source identifier",
     "source type",
     "trigger data",
-    "trigger debug key",
     "trigger priority",
     "trigger time"
   ],
@@ -54925,7 +54949,7 @@
   "generate an attribution report URL": [
     "isdebugreport"
   ],
-  "generate null reports and assign private state tokens": [
+  "generate null attribution reports and assign private state tokens": [
     "report"
   ],
   "generated bid": [
@@ -57017,14 +57041,14 @@
   "obtain an event-level report": [
     "triggerdebugkey"
   ],
-  "obtain and deliver a verbose debug report on trigger registration": [
+  "obtain and deliver debug reports on trigger registration": [
     "sourcetoattribute"
   ],
-  "obtain debug data body on trigger registration": [
+  "obtain verbose debug data body on trigger registration": [
     "report",
     "sourcetoattribute"
   ],
-  "obtain debug data on trigger registration": [
+  "obtain verbose debug data on trigger registration": [
     "report",
     "sourcetoattribute"
   ],
