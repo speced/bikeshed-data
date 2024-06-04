@@ -406,8 +406,6 @@
     "::view-transition-new()",
     "::view-transition-old()",
     ":active",
-    ":active-view-transition",
-    ":active-view-transition-type()",
     ":after",
     ":any-link",
     ":autofill",
@@ -906,8 +904,6 @@
     "<pseudo-compound-selector>",
     "<pseudo-element-selector>",
     "<pseudo-page>",
-    "<pt-class-selector>",
-    "<pt-name-and-class-selector>",
     "<pt-name-selector>",
     "<qualified-rule-list>",
     "<query-in-parens>",
@@ -1114,7 +1110,6 @@
     "@top-left-corner",
     "@top-right",
     "@top-right-corner",
-    "@view-transition",
     "@when",
     "ARIAMixin",
     "AacBitstreamFormat",
@@ -1557,7 +1552,6 @@
     "CSSUnparsedSegment",
     "CSSUnparsedValue",
     "CSSVariableReferenceValue",
-    "CSSViewTransitionRule",
     "Cache",
     "CacheQueryOptions",
     "CacheStorage",
@@ -4056,6 +4050,7 @@
     "SVGViewElement",
     "SVGZoomAndPan",
     "SameObject",
+    "SameSiteCookiesType",
     "SameValue",
     "SameValue(x, y)",
     "SameValueNonNumber",
@@ -4196,6 +4191,7 @@
     "SharedStorageWorkletGlobalScope",
     "SharedWorker",
     "SharedWorkerGlobalScope",
+    "SharedWorkerOptions",
     "Should Trusted Type policy creation be blocked by Content Security Policy?",
     "Should request be allowed to use feature?",
     "Should sink type mismatch violation be blocked by Content Security Policy?",
@@ -4255,7 +4251,6 @@
     "SpeechSynthesisUtterance",
     "SpeechSynthesisVoice",
     "StartInDirectory",
-    "StartViewTransitionOptions",
     "StatefulAnimator",
     "StatelessAnimator",
     "StaticRange",
@@ -4263,6 +4258,8 @@
     "StereoPannerNode",
     "StereoPannerOptions",
     "Storage",
+    "StorageAccessHandle",
+    "StorageAccessTypes",
     "StorageBucket",
     "StorageBucketManager",
     "StorageBucketOptions",
@@ -4668,8 +4665,6 @@
     "ViewTimeline",
     "ViewTimelineOptions",
     "ViewTransition",
-    "ViewTransitionNavigation",
-    "ViewTransitionTypeSet",
     "VirtualKeyboard",
     "VisibilityStateEntry",
     "VisualViewport",
@@ -13442,7 +13437,6 @@
     "navigation api state",
     "navigation budget epoch",
     "navigation budget lifetime",
-    "navigation can trigger a cross-document view-transition?",
     "navigation entropy allowance",
     "navigation entropy ledger",
     "navigation handler list",
@@ -16028,6 +16022,7 @@
     "request response list",
     "request routing",
     "request sensor access",
+    "request storage access",
     "request the \"usb\" permission",
     "request the xr permission",
     "request to close",
@@ -16098,7 +16093,6 @@
     "resolution",
     "resolvable private address resolution procedure",
     "resolve",
-    "resolve @view-transition rule",
     "resolve a blob url",
     "resolve a geolocation promise",
     "resolve a module integrity metadata",
@@ -16108,7 +16102,6 @@
     "resolve an imports match",
     "resolve an origin",
     "resolve get client promise",
-    "resolve inbound cross-document view-transition",
     "resolve indices",
     "resolve job promise",
     "resolve pending play promises",
@@ -17134,7 +17127,6 @@
     "settings",
     "settings dictionary",
     "settled",
-    "setup cross-document view-transition",
     "setup packet",
     "setup serviceworkerglobalscope",
     "setup stage",
@@ -18906,7 +18898,6 @@
     "update the navigation api entries for a same-document navigation",
     "update the navigation api entries for reactivation",
     "update the negotiation-needed flag",
-    "update the opt-in state for outbound transitions",
     "update the overlay area information",
     "update the pending layers state",
     "update the rendering",
@@ -19400,7 +19391,6 @@
     "view transition layer",
     "view transition name",
     "view transition page-visibility change steps",
-    "view transition params",
     "view transition pseudo-elements",
     "view transition tree",
     "view transitions",
@@ -19409,7 +19399,6 @@
     "view-timeline-axis",
     "view-timeline-inset",
     "view-timeline-name",
-    "view-transition-class",
     "view-transition-name",
     "viewer",
     "viewport",
@@ -21130,14 +21119,6 @@
     "inherits",
     "initial-value",
     "syntax"
-  ],
-  "@view-transition": [
-    "navigation",
-    "types"
-  ],
-  "@view-transition/navigation": [
-    "auto",
-    "none"
   ],
   "@viewport": [
     "viewport-fit"
@@ -25244,7 +25225,6 @@
     "PAGE_RULE",
     "STYLE_RULE",
     "SUPPORTS_RULE",
-    "VIEW_TRANSITION_RULE",
     "child css rules",
     "cssText",
     "parent css rule",
@@ -25634,10 +25614,6 @@
   "CSSVariableReferenceValue/constructor(variable, fallback)": [
     "fallback",
     "variable"
-  ],
-  "CSSViewTransitionRule": [
-    "navigation",
-    "types"
   ],
   "Cache": [
     "add(request)",
@@ -28946,6 +28922,7 @@
     "hasPrivateToken(issuer)",
     "hasRedemptionRecord(issuer)",
     "hasStorageAccess()",
+    "hasUnpartitionedCookieAccess()",
     "head",
     "hidden",
     "images",
@@ -29105,6 +29082,7 @@
     "renameNode()",
     "report-only permissions policy",
     "requestStorageAccess()",
+    "requestStorageAccess(types)",
     "requestStorageAccessFor(requestedOrigin)",
     "resizeObservers",
     "run the resize steps",
@@ -29117,7 +29095,6 @@
     "scrollingElement",
     "shown",
     "startViewTransition()",
-    "startViewTransition(callbackOptions)",
     "startViewTransition(updateCallback)",
     "strictErrorChecking",
     "timeline",
@@ -29285,15 +29262,14 @@
     "html",
     "options"
   ],
+  "Document/requestStorageAccess(types)": [
+    "types"
+  ],
   "Document/requestStorageAccessFor(requestedOrigin)": [
     "requestedOrigin"
   ],
   "Document/startViewTransition()": [
-    "callbackOptions",
     "updateCallback"
-  ],
-  "Document/startViewTransition(callbackOptions)": [
-    "callbackOptions"
   ],
   "Document/startViewTransition(updateCallback)": [
     "updateCallback"
@@ -44620,6 +44596,10 @@
     "SVG_ZOOMANDPAN_UNKNOWN",
     "zoomAndPan"
   ],
+  "SameSiteCookiesType": [
+    "\"all\"",
+    "\"none\""
+  ],
   "Sanitizer": [
     "Sanitizer()",
     "Sanitizer(config)",
@@ -45463,7 +45443,11 @@
     "constructor url",
     "credentials",
     "name",
-    "onconnect"
+    "onconnect",
+    "samesitecookies"
+  ],
+  "SharedWorkerOptions": [
+    "sameSiteCookies"
   ],
   "SlotAssignmentMode": [
     "\"manual\"",
@@ -45958,10 +45942,6 @@
     "name",
     "voiceURI"
   ],
-  "StartViewTransitionOptions": [
-    "types",
-    "update"
-  ],
   "StatefulAnimator": [
     "StatefulAnimator()",
     "StatefulAnimator(options)",
@@ -46033,6 +46013,53 @@
     "length",
     "removeItem(key)",
     "setItem(key, value)"
+  ],
+  "StorageAccessHandle": [
+    "BroadcastChannel(name)",
+    "SharedWorker(scriptURL)",
+    "SharedWorker(scriptURL, options)",
+    "caches",
+    "createObjectURL(obj)",
+    "estimate()",
+    "getDirectory()",
+    "indexedDB",
+    "localStorage",
+    "locks",
+    "revokeObjectURL(url)",
+    "sessionStorage",
+    "types"
+  ],
+  "StorageAccessHandle/BroadcastChannel(name)": [
+    "name"
+  ],
+  "StorageAccessHandle/SharedWorker(scriptURL)": [
+    "options",
+    "scriptURL"
+  ],
+  "StorageAccessHandle/SharedWorker(scriptURL, options)": [
+    "options",
+    "scriptURL"
+  ],
+  "StorageAccessHandle/createObjectURL(obj)": [
+    "obj"
+  ],
+  "StorageAccessHandle/revokeObjectURL(url)": [
+    "url"
+  ],
+  "StorageAccessTypes": [
+    "BroadcastChannel",
+    "SharedWorker",
+    "all",
+    "caches",
+    "cookies",
+    "createObjectURL",
+    "estimate",
+    "getDirectory",
+    "indexedDB",
+    "localStorage",
+    "locks",
+    "revokeObjectURL",
+    "sessionStorage"
   ],
   "StorageBucket": [
     "caches",
@@ -48694,26 +48721,19 @@
     "subject"
   ],
   "ViewTransition": [
-    "active types",
     "finished",
     "finished promise",
     "initial snapshot containing block size",
     "named elements",
-    "outbound post-capture steps",
     "phase",
     "process old state captured",
     "ready",
     "ready promise",
     "skipTransition()",
     "transition root pseudo-element",
-    "types",
     "update callback",
     "update callback done promise",
     "updateCallbackDone"
-  ],
-  "ViewTransitionNavigation": [
-    "\"auto\"",
-    "\"none\""
   ],
   "VirtualKeyboard": [
     "boundingRect",
@@ -52785,7 +52805,6 @@
     "top"
   ],
   "captured element": [
-    "class list",
     "group animation name rule",
     "group keyframes",
     "group styles rule",
@@ -53757,10 +53776,8 @@
   ],
   "document": [
     "active view transition",
-    "can initiate outbound view transition",
     "default document timeline",
     "dynamic view transition style sheet",
-    "inbound view transition params",
     "interaction task id to interaction data",
     "last interaction task id",
     "list of pending external speculation rule resources",
@@ -60445,10 +60462,6 @@
     "requested viewport scale",
     "viewport modifiable"
   ],
-  "view transition params": [
-    "initial snapshot containing block size",
-    "named elements"
-  ],
   "view-timeline-axis": [
     "block",
     "inline",
@@ -60460,10 +60473,6 @@
   ],
   "view-timeline-inset": [
     "auto"
-  ],
-  "view-transition-class": [
-    "<custom-ident>+",
-    "none"
   ],
   "view-transition-name": [
     "none"

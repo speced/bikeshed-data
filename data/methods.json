@@ -646,6 +646,17 @@
       "shortname": "ecmascript"
     }
   },
+  "BroadcastChannel()": {
+    "BroadcastChannel(name)": {
+      "args": [
+        "name"
+      ],
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "shortname": "saa-non-cookie-storage"
+    }
+  },
   "ByteLengthQueuingStrategy()": {
     "ByteLengthQueuingStrategy(init)": {
       "args": [
@@ -4097,13 +4108,23 @@
     }
   },
   "SharedWorker()": {
+    "SharedWorker(scriptURL)": {
+      "args": [
+        "scriptURL"
+      ],
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "shortname": "saa-non-cookie-storage"
+    },
     "SharedWorker(scriptURL, options)": {
       "args": [
         "scriptURL",
         "options"
       ],
       "for": [
-        "SharedWorker"
+        "SharedWorker",
+        "StorageAccessHandle"
       ],
       "shortname": "html"
     }
@@ -12391,9 +12412,10 @@
         "obj"
       ],
       "for": [
+        "StorageAccessHandle",
         "URL"
       ],
-      "shortname": "fileapi"
+      "shortname": "saa-non-cookie-storage"
     }
   },
   "createOffer!overload-1()": {
@@ -14658,10 +14680,11 @@
     "estimate()": {
       "args": [],
       "for": [
+        "StorageAccessHandle",
         "StorageBucket",
         "StorageManager"
       ],
-      "shortname": "storage"
+      "shortname": "saa-non-cookie-storage"
     }
   },
   "eval()": {
@@ -17042,6 +17065,7 @@
       "args": [],
       "for": [
         "FileSystemDirectoryEntry",
+        "StorageAccessHandle",
         "StorageBucket",
         "StorageManager"
       ],
@@ -19605,6 +19629,15 @@
         "Document"
       ],
       "shortname": "storage-access"
+    }
+  },
+  "hasUnpartitionedCookieAccess()": {
+    "hasUnpartitionedCookieAccess()": {
+      "args": [],
+      "for": [
+        "Document"
+      ],
+      "shortname": "saa-non-cookie-storage"
     }
   },
   "hide()": {
@@ -26304,6 +26337,15 @@
         "Document"
       ],
       "shortname": "storage-access"
+    },
+    "requestStorageAccess(types)": {
+      "args": [
+        "types"
+      ],
+      "for": [
+        "Document"
+      ],
+      "shortname": "saa-non-cookie-storage"
     }
   },
   "requestStorageAccessFor()": {
@@ -26684,9 +26726,10 @@
         "url"
       ],
       "for": [
+        "StorageAccessHandle",
         "URL"
       ],
-      "shortname": "fileapi"
+      "shortname": "saa-non-cookie-storage"
     }
   },
   "rex()": {
@@ -30584,15 +30627,6 @@
   "startViewTransition()": {
     "startViewTransition()": {
       "args": [],
-      "for": [
-        "Document"
-      ],
-      "shortname": "css-view-transitions"
-    },
-    "startViewTransition(callbackOptions)": {
-      "args": [
-        "callbackOptions"
-      ],
       "for": [
         "Document"
       ],
