@@ -245,6 +245,9 @@
   "#sec-abstract-operations-for-regexp-matching": [
     "/text-processing#sec-abstract-operations-for-regexp-matching"
   ],
+  "#sec-abstract-operations-for-set-objects": [
+    "/keyed-collections#sec-abstract-operations-for-set-objects"
+  ],
   "#sec-abstract-operations-for-sharedarraybuffer-objects": [
     "/structured-data#sec-abstract-operations-for-sharedarraybuffer-objects"
   ],
@@ -2362,6 +2365,9 @@
   ],
   "#sec-getrawbytesfromsharedblock": [
     "/structured-data#sec-getrawbytesfromsharedblock"
+  ],
+  "#sec-getsetrecord": [
+    "/keyed-collections#sec-getsetrecord"
   ],
   "#sec-getstringindex": [
     "/text-processing#sec-getstringindex"
@@ -4967,6 +4973,9 @@
   "#sec-set-objects": [
     "/keyed-collections#sec-set-objects"
   ],
+  "#sec-set-records": [
+    "/keyed-collections#sec-set-records"
+  ],
   "#sec-set.prototype": [
     "/keyed-collections#sec-set.prototype"
   ],
@@ -4988,6 +4997,9 @@
   "#sec-set.prototype.delete": [
     "/keyed-collections#sec-set.prototype.delete"
   ],
+  "#sec-set.prototype.difference": [
+    "/keyed-collections#sec-set.prototype.difference"
+  ],
   "#sec-set.prototype.entries": [
     "/keyed-collections#sec-set.prototype.entries"
   ],
@@ -4997,11 +5009,38 @@
   "#sec-set.prototype.has": [
     "/keyed-collections#sec-set.prototype.has"
   ],
+  "#sec-set.prototype.intersection": [
+    "/keyed-collections#sec-set.prototype.intersection"
+  ],
+  "#sec-set.prototype.isdisjointfrom": [
+    "/keyed-collections#sec-set.prototype.isdisjointfrom"
+  ],
+  "#sec-set.prototype.issubsetof": [
+    "/keyed-collections#sec-set.prototype.issubsetof"
+  ],
+  "#sec-set.prototype.issupersetof": [
+    "/keyed-collections#sec-set.prototype.issupersetof"
+  ],
   "#sec-set.prototype.keys": [
     "/keyed-collections#sec-set.prototype.keys"
   ],
+  "#sec-set.prototype.symmetricdifference": [
+    "/keyed-collections#sec-set.prototype.symmetricdifference"
+  ],
+  "#sec-set.prototype.union": [
+    "/keyed-collections#sec-set.prototype.union"
+  ],
   "#sec-set.prototype.values": [
     "/keyed-collections#sec-set.prototype.values"
+  ],
+  "#sec-setdatahas": [
+    "/keyed-collections#sec-setdatahas"
+  ],
+  "#sec-setdataindex": [
+    "/keyed-collections#sec-setdataindex"
+  ],
+  "#sec-setdatasize": [
+    "/keyed-collections#sec-setdatasize"
   ],
   "#sec-setdefaultglobalbindings": [
     "/executable-code-and-execution-contexts#sec-setdefaultglobalbindings"
@@ -15735,7 +15774,7 @@
   },
   "/keyed-collections#sec-%25setiteratorprototype%25-%40%40tostringtag": {
     "current": {
-      "number": "24.2.5.2.2",
+      "number": "24.2.6.2.2",
       "spec": "ECMAScript",
       "text": "%SetIteratorPrototype% [ @@toStringTag ]",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-%25setiteratorprototype%25-%40%40tostringtag"
@@ -15743,7 +15782,7 @@
   },
   "/keyed-collections#sec-%25setiteratorprototype%25-object": {
     "current": {
-      "number": "24.2.5.2",
+      "number": "24.2.6.2",
       "spec": "ECMAScript",
       "text": "The %SetIteratorPrototype% Object",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-%25setiteratorprototype%25-object"
@@ -15751,7 +15790,7 @@
   },
   "/keyed-collections#sec-%25setiteratorprototype%25.next": {
     "current": {
-      "number": "24.2.5.2.1",
+      "number": "24.2.6.2.1",
       "spec": "ECMAScript",
       "text": "%SetIteratorPrototype%.next ( )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-%25setiteratorprototype%25.next"
@@ -15763,6 +15802,14 @@
       "spec": "ECMAScript",
       "text": "Abstract Operations for Keyed Collections",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-abstract-operations-for-keyed-collections"
+    }
+  },
+  "/keyed-collections#sec-abstract-operations-for-set-objects": {
+    "current": {
+      "number": "24.2.1",
+      "spec": "ECMAScript",
+      "text": "Abstract Operations For Set Objects",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-abstract-operations-for-set-objects"
     }
   },
   "/keyed-collections#sec-add-entries-from-iterable": {
@@ -15791,7 +15838,7 @@
   },
   "/keyed-collections#sec-createsetiterator": {
     "current": {
-      "number": "24.2.5.1",
+      "number": "24.2.6.1",
       "spec": "ECMAScript",
       "text": "CreateSetIterator ( set, kind )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-createsetiterator"
@@ -15815,7 +15862,7 @@
   },
   "/keyed-collections#sec-get-set-%40%40species": {
     "current": {
-      "number": "24.2.2.2",
+      "number": "24.2.3.2",
       "spec": "ECMAScript",
       "text": "get Set [ @@species ]",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-get-set-%40%40species"
@@ -15823,10 +15870,18 @@
   },
   "/keyed-collections#sec-get-set.prototype.size": {
     "current": {
-      "number": "24.2.3.9",
+      "number": "24.2.4.14",
       "spec": "ECMAScript",
       "text": "get Set.prototype.size",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-get-set.prototype.size"
+    }
+  },
+  "/keyed-collections#sec-getsetrecord": {
+    "current": {
+      "number": "24.2.1.2",
+      "spec": "ECMAScript",
+      "text": "GetSetRecord ( obj )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-getsetrecord"
     }
   },
   "/keyed-collections#sec-keyed-collections": {
@@ -15991,7 +16046,7 @@
   },
   "/keyed-collections#sec-properties-of-set-instances": {
     "current": {
-      "number": "24.2.4",
+      "number": "24.2.5",
       "spec": "ECMAScript",
       "text": "Properties of Set Instances",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-set-instances"
@@ -16015,7 +16070,7 @@
   },
   "/keyed-collections#sec-properties-of-the-set-constructor": {
     "current": {
-      "number": "24.2.2",
+      "number": "24.2.3",
       "spec": "ECMAScript",
       "text": "Properties of the Set Constructor",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-constructor"
@@ -16023,7 +16078,7 @@
   },
   "/keyed-collections#sec-properties-of-the-set-prototype-object": {
     "current": {
-      "number": "24.2.3",
+      "number": "24.2.4",
       "spec": "ECMAScript",
       "text": "Properties of the Set Prototype Object",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
@@ -16079,7 +16134,7 @@
   },
   "/keyed-collections#sec-set-constructor": {
     "current": {
-      "number": "24.2.1",
+      "number": "24.2.2",
       "spec": "ECMAScript",
       "text": "The Set Constructor",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-constructor"
@@ -16087,7 +16142,7 @@
   },
   "/keyed-collections#sec-set-iterable": {
     "current": {
-      "number": "24.2.1.1",
+      "number": "24.2.2.1",
       "spec": "ECMAScript",
       "text": "Set ( [ iterable ] )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-iterable"
@@ -16095,7 +16150,7 @@
   },
   "/keyed-collections#sec-set-iterator-objects": {
     "current": {
-      "number": "24.2.5",
+      "number": "24.2.6",
       "spec": "ECMAScript",
       "text": "Set Iterator Objects",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-iterator-objects"
@@ -16109,9 +16164,17 @@
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-objects"
     }
   },
+  "/keyed-collections#sec-set-records": {
+    "current": {
+      "number": "24.2.1.1",
+      "spec": "ECMAScript",
+      "text": "Set Records",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-records"
+    }
+  },
   "/keyed-collections#sec-set.prototype": {
     "current": {
-      "number": "24.2.2.1",
+      "number": "24.2.3.1",
       "spec": "ECMAScript",
       "text": "Set.prototype",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype"
@@ -16119,7 +16182,7 @@
   },
   "/keyed-collections#sec-set.prototype-%40%40iterator": {
     "current": {
-      "number": "24.2.3.11",
+      "number": "24.2.4.18",
       "spec": "ECMAScript",
       "text": "Set.prototype [ @@iterator ] ( )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype-%40%40iterator"
@@ -16127,7 +16190,7 @@
   },
   "/keyed-collections#sec-set.prototype-%40%40tostringtag": {
     "current": {
-      "number": "24.2.3.12",
+      "number": "24.2.4.19",
       "spec": "ECMAScript",
       "text": "Set.prototype [ @@toStringTag ]",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype-%40%40tostringtag"
@@ -16135,7 +16198,7 @@
   },
   "/keyed-collections#sec-set.prototype.add": {
     "current": {
-      "number": "24.2.3.1",
+      "number": "24.2.4.1",
       "spec": "ECMAScript",
       "text": "Set.prototype.add ( value )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.add"
@@ -16143,7 +16206,7 @@
   },
   "/keyed-collections#sec-set.prototype.clear": {
     "current": {
-      "number": "24.2.3.2",
+      "number": "24.2.4.2",
       "spec": "ECMAScript",
       "text": "Set.prototype.clear ( )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.clear"
@@ -16151,7 +16214,7 @@
   },
   "/keyed-collections#sec-set.prototype.constructor": {
     "current": {
-      "number": "24.2.3.3",
+      "number": "24.2.4.3",
       "spec": "ECMAScript",
       "text": "Set.prototype.constructor",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.constructor"
@@ -16159,15 +16222,23 @@
   },
   "/keyed-collections#sec-set.prototype.delete": {
     "current": {
-      "number": "24.2.3.4",
+      "number": "24.2.4.4",
       "spec": "ECMAScript",
       "text": "Set.prototype.delete ( value )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.delete"
     }
   },
+  "/keyed-collections#sec-set.prototype.difference": {
+    "current": {
+      "number": "24.2.4.5",
+      "spec": "ECMAScript",
+      "text": "Set.prototype.difference ( other )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.difference"
+    }
+  },
   "/keyed-collections#sec-set.prototype.entries": {
     "current": {
-      "number": "24.2.3.5",
+      "number": "24.2.4.6",
       "spec": "ECMAScript",
       "text": "Set.prototype.entries ( )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.entries"
@@ -16175,7 +16246,7 @@
   },
   "/keyed-collections#sec-set.prototype.foreach": {
     "current": {
-      "number": "24.2.3.6",
+      "number": "24.2.4.7",
       "spec": "ECMAScript",
       "text": "Set.prototype.forEach ( callbackfn [ , thisArg ] )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.foreach"
@@ -16183,26 +16254,98 @@
   },
   "/keyed-collections#sec-set.prototype.has": {
     "current": {
-      "number": "24.2.3.7",
+      "number": "24.2.4.8",
       "spec": "ECMAScript",
       "text": "Set.prototype.has ( value )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.has"
     }
   },
+  "/keyed-collections#sec-set.prototype.intersection": {
+    "current": {
+      "number": "24.2.4.9",
+      "spec": "ECMAScript",
+      "text": "Set.prototype.intersection ( other )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.intersection"
+    }
+  },
+  "/keyed-collections#sec-set.prototype.isdisjointfrom": {
+    "current": {
+      "number": "24.2.4.10",
+      "spec": "ECMAScript",
+      "text": "Set.prototype.isDisjointFrom ( other )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.isdisjointfrom"
+    }
+  },
+  "/keyed-collections#sec-set.prototype.issubsetof": {
+    "current": {
+      "number": "24.2.4.11",
+      "spec": "ECMAScript",
+      "text": "Set.prototype.isSubsetOf ( other )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.issubsetof"
+    }
+  },
+  "/keyed-collections#sec-set.prototype.issupersetof": {
+    "current": {
+      "number": "24.2.4.12",
+      "spec": "ECMAScript",
+      "text": "Set.prototype.isSupersetOf ( other )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.issupersetof"
+    }
+  },
   "/keyed-collections#sec-set.prototype.keys": {
     "current": {
-      "number": "24.2.3.8",
+      "number": "24.2.4.13",
       "spec": "ECMAScript",
       "text": "Set.prototype.keys ( )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.keys"
     }
   },
+  "/keyed-collections#sec-set.prototype.symmetricdifference": {
+    "current": {
+      "number": "24.2.4.15",
+      "spec": "ECMAScript",
+      "text": "Set.prototype.symmetricDifference ( other )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.symmetricdifference"
+    }
+  },
+  "/keyed-collections#sec-set.prototype.union": {
+    "current": {
+      "number": "24.2.4.16",
+      "spec": "ECMAScript",
+      "text": "Set.prototype.union ( other )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.union"
+    }
+  },
   "/keyed-collections#sec-set.prototype.values": {
     "current": {
-      "number": "24.2.3.10",
+      "number": "24.2.4.17",
       "spec": "ECMAScript",
       "text": "Set.prototype.values ( )",
       "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.values"
+    }
+  },
+  "/keyed-collections#sec-setdatahas": {
+    "current": {
+      "number": "24.2.1.3",
+      "spec": "ECMAScript",
+      "text": "SetDataHas ( setData, value )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-setdatahas"
+    }
+  },
+  "/keyed-collections#sec-setdataindex": {
+    "current": {
+      "number": "24.2.1.4",
+      "spec": "ECMAScript",
+      "text": "SetDataIndex ( setData, value )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-setdataindex"
+    }
+  },
+  "/keyed-collections#sec-setdatasize": {
+    "current": {
+      "number": "24.2.1.5",
+      "spec": "ECMAScript",
+      "text": "SetDataSize ( setData )",
+      "url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-setdatasize"
     }
   },
   "/keyed-collections#sec-weakmap-constructor": {
