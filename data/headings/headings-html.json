@@ -1084,8 +1084,11 @@
   "#hostenqueuetimeoutjob": [
     "/webappapis#hostenqueuetimeoutjob"
   ],
-  "#hostensurecancompilestrings(realm)": [
-    "/webappapis#hostensurecancompilestrings(realm)"
+  "#hostensurecancompilestrings(realm%2C-parameterstrings%2C-bodystring%2C-codestring%2C-compilationtype%2C-parameterargs%2C-bodyarg)": [
+    "/webappapis#hostensurecancompilestrings(realm%2C-parameterstrings%2C-bodystring%2C-codestring%2C-compilationtype%2C-parameterargs%2C-bodyarg)"
+  ],
+  "#hostgetcodeforeval(argument)": [
+    "/webappapis#hostgetcodeforeval(argument)"
   ],
   "#hostgetimportmetaproperties": [
     "/webappapis#hostgetimportmetaproperties"
@@ -12168,7 +12171,7 @@
   },
   "/webappapis#hostcalljobcallback": {
     "current": {
-      "number": "8.1.6.4.1",
+      "number": "8.1.6.5.1",
       "spec": "HTML",
       "text": "HostCallJobCallback(callback, V, argumentsList)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostcalljobcallback"
@@ -12176,7 +12179,7 @@
   },
   "/webappapis#hostenqueuefinalizationregistrycleanupjob": {
     "current": {
-      "number": "8.1.6.4.2",
+      "number": "8.1.6.5.2",
       "spec": "HTML",
       "text": "HostEnqueueFinalizationRegistryCleanupJob(finalizationRegistry)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuefinalizationregistrycleanupjob"
@@ -12184,7 +12187,7 @@
   },
   "/webappapis#hostenqueuegenericjob": {
     "current": {
-      "number": "8.1.6.4.3",
+      "number": "8.1.6.5.3",
       "spec": "HTML",
       "text": "HostEnqueueGenericJob(job, realm)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuegenericjob"
@@ -12192,7 +12195,7 @@
   },
   "/webappapis#hostenqueuepromisejob": {
     "current": {
-      "number": "8.1.6.4.4",
+      "number": "8.1.6.5.4",
       "spec": "HTML",
       "text": "HostEnqueuePromiseJob(job, realm)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuepromisejob"
@@ -12200,23 +12203,31 @@
   },
   "/webappapis#hostenqueuetimeoutjob": {
     "current": {
-      "number": "8.1.6.4.5",
+      "number": "8.1.6.5.5",
       "spec": "HTML",
       "text": "HostEnqueueTimeoutJob(job, realm, milliseconds)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuetimeoutjob"
     }
   },
-  "/webappapis#hostensurecancompilestrings(realm)": {
+  "/webappapis#hostensurecancompilestrings(realm%2C-parameterstrings%2C-bodystring%2C-codestring%2C-compilationtype%2C-parameterargs%2C-bodyarg)": {
     "current": {
       "number": "8.1.6.2",
       "spec": "HTML",
-      "text": "HostEnsureCanCompileStrings(realm)",
-      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostensurecancompilestrings(realm)"
+      "text": "HostEnsureCanCompileStrings(realm, parameterStrings, bodyString, codeString, compilationType, parameterArgs, bodyArg)",
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostensurecancompilestrings(realm%2C-parameterstrings%2C-bodystring%2C-codestring%2C-compilationtype%2C-parameterargs%2C-bodyarg)"
+    }
+  },
+  "/webappapis#hostgetcodeforeval(argument)": {
+    "current": {
+      "number": "8.1.6.3",
+      "spec": "HTML",
+      "text": "HostGetCodeForEval(argument)",
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetcodeforeval(argument)"
     }
   },
   "/webappapis#hostgetimportmetaproperties": {
     "current": {
-      "number": "8.1.6.5.1",
+      "number": "8.1.6.6.1",
       "spec": "HTML",
       "text": "HostGetImportMetaProperties(moduleRecord)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties"
@@ -12224,7 +12235,7 @@
   },
   "/webappapis#hostgetsupportedimportattributes": {
     "current": {
-      "number": "8.1.6.5.2",
+      "number": "8.1.6.6.2",
       "spec": "HTML",
       "text": "HostGetSupportedImportAttributes()",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetsupportedimportattributes"
@@ -12232,7 +12243,7 @@
   },
   "/webappapis#hostloadimportedmodule": {
     "current": {
-      "number": "8.1.6.5.3",
+      "number": "8.1.6.6.3",
       "spec": "HTML",
       "text": "HostLoadImportedModule(referrer, moduleRequest, loadState, payload)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostloadimportedmodule"
@@ -12240,7 +12251,7 @@
   },
   "/webappapis#hostmakejobcallback": {
     "current": {
-      "number": "8.1.6.4.6",
+      "number": "8.1.6.5.6",
       "spec": "HTML",
       "text": "HostMakeJobCallback(callable)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#hostmakejobcallback"
@@ -12288,7 +12299,7 @@
   },
   "/webappapis#integration-with-javascript-jobs": {
     "current": {
-      "number": "8.1.6.4",
+      "number": "8.1.6.5",
       "spec": "HTML",
       "text": "Job-related host hooks",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-javascript-jobs"
@@ -12312,7 +12323,7 @@
   },
   "/webappapis#integration-with-the-javascript-module-system": {
     "current": {
-      "number": "8.1.6.5",
+      "number": "8.1.6.6",
       "spec": "HTML",
       "text": "Module-related host hooks",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system"
@@ -12432,7 +12443,7 @@
   },
   "/webappapis#the-hostpromiserejectiontracker-implementation": {
     "current": {
-      "number": "8.1.6.3",
+      "number": "8.1.6.4",
       "spec": "HTML",
       "text": "HostPromiseRejectionTracker(promise, operation)",
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#the-hostpromiserejectiontracker-implementation"
