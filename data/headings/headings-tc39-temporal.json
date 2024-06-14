@@ -1689,7 +1689,7 @@
   },
   "#sec-temporal-calendar-field-descriptor-record": {
     "current": {
-      "number": "13.48.1",
+      "number": "13.50.1",
       "spec": "Temporal",
       "text": "Calendar Field Descriptor Record",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-field-descriptor-record"
@@ -2379,7 +2379,7 @@
     "current": {
       "number": "5.5.12",
       "spec": "Temporal",
-      "text": "DifferencePlainDateTimeWithRounding ( plainDate1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendarRec, largestUnit, roundingIncrement, smallestUnit, roundingMode, resolvedOptions )",
+      "text": "DifferencePlainDateTimeWithRounding ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendarRec, largestUnit, roundingIncrement, smallestUnit, roundingMode, resolvedOptions )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-differenceplaindatetimewithrounding"
     }
   },
@@ -2585,7 +2585,7 @@
   },
   "#sec-temporal-getdifferencesettings": {
     "current": {
-      "number": "13.51",
+      "number": "13.53",
       "spec": "Temporal",
       "text": "GetDifferenceSettings ( operation, options, unitGroup, disallowedUnits, fallbackSmallestUnit, smallestLargestDefaultUnit )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-getdifferencesettings"
@@ -2911,12 +2911,36 @@
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-iso-date-records"
     }
   },
+  "#sec-temporal-iso-date-time-parse-records": {
+    "current": {
+      "number": "13.34",
+      "spec": "Temporal",
+      "text": "ISO Date-Time Parse Records",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-iso-date-time-parse-records"
+    }
+  },
   "#sec-temporal-iso-date-time-records": {
     "current": {
       "number": "5.5.1",
       "spec": "Temporal",
       "text": "ISO Date-Time Records",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-iso-date-time-records"
+    }
+  },
+  "#sec-temporal-iso-month-day-parse-records": {
+    "current": {
+      "number": "13.41",
+      "spec": "Temporal",
+      "text": "ISO Month-Day Parse Records",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-iso-month-day-parse-records"
+    }
+  },
+  "#sec-temporal-iso-string-time-zone-parse-records": {
+    "current": {
+      "number": "13.33",
+      "spec": "Temporal",
+      "text": "ISO String Time Zone Parse Records",
+      "url": "https://tc39.es/proposal-temporal/#sec-temporal-iso-string-time-zone-parse-records"
     }
   },
   "#sec-temporal-iso-year-month-records": {
@@ -3289,7 +3313,7 @@
   },
   "#sec-temporal-parseisodatetime": {
     "current": {
-      "number": "13.33",
+      "number": "13.35",
       "spec": "Temporal",
       "text": "ParseISODateTime ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parseisodatetime"
@@ -3297,23 +3321,15 @@
   },
   "#sec-temporal-parsetemporalcalendarstring": {
     "current": {
-      "number": "13.36",
+      "number": "13.38",
       "spec": "Temporal",
-      "text": "ParseTemporalCalendarString ( isoString )",
+      "text": "ParseTemporalCalendarString ( string )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalcalendarstring"
-    }
-  },
-  "#sec-temporal-parsetemporaldatestring": {
-    "current": {
-      "number": "13.37",
-      "spec": "Temporal",
-      "text": "ParseTemporalDateString ( isoString )",
-      "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldatestring"
     }
   },
   "#sec-temporal-parsetemporaldatetimestring": {
     "current": {
-      "number": "13.38",
+      "number": "13.39",
       "spec": "Temporal",
       "text": "ParseTemporalDateTimeString ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldatetimestring"
@@ -3321,7 +3337,7 @@
   },
   "#sec-temporal-parsetemporaldurationstring": {
     "current": {
-      "number": "13.39",
+      "number": "13.40",
       "spec": "Temporal",
       "text": "ParseTemporalDurationString ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldurationstring"
@@ -3329,7 +3345,7 @@
   },
   "#sec-temporal-parsetemporalinstantstring": {
     "current": {
-      "number": "13.34",
+      "number": "13.36",
       "spec": "Temporal",
       "text": "ParseTemporalInstantString ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalinstantstring"
@@ -3337,7 +3353,7 @@
   },
   "#sec-temporal-parsetemporalmonthdaystring": {
     "current": {
-      "number": "13.40",
+      "number": "13.42",
       "spec": "Temporal",
       "text": "ParseTemporalMonthDayString ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalmonthdaystring"
@@ -3345,7 +3361,7 @@
   },
   "#sec-temporal-parsetemporalrelativetostring": {
     "current": {
-      "number": "13.41",
+      "number": "13.43",
       "spec": "Temporal",
       "text": "ParseTemporalRelativeToString ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalrelativetostring"
@@ -3353,7 +3369,7 @@
   },
   "#sec-temporal-parsetemporaltimestring": {
     "current": {
-      "number": "13.42",
+      "number": "13.44",
       "spec": "Temporal",
       "text": "ParseTemporalTimeString ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaltimestring"
@@ -3361,7 +3377,7 @@
   },
   "#sec-temporal-parsetemporaltimezonestring": {
     "current": {
-      "number": "13.43",
+      "number": "13.45",
       "spec": "Temporal",
       "text": "ParseTemporalTimeZoneString ( timeZoneString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaltimezonestring"
@@ -3369,7 +3385,7 @@
   },
   "#sec-temporal-parsetemporalyearmonthstring": {
     "current": {
-      "number": "13.44",
+      "number": "13.46",
       "spec": "Temporal",
       "text": "ParseTemporalYearMonthString ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalyearmonthstring"
@@ -3377,7 +3393,7 @@
   },
   "#sec-temporal-parsetemporalzoneddatetimestring": {
     "current": {
-      "number": "13.35",
+      "number": "13.37",
       "spec": "Temporal",
       "text": "ParseTemporalZonedDateTimeString ( isoString )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalzoneddatetimestring"
@@ -3553,7 +3569,7 @@
   },
   "#sec-temporal-preparecalendarfields": {
     "current": {
-      "number": "13.50",
+      "number": "13.52",
       "spec": "Temporal",
       "text": "PrepareCalendarFields ( calendarRec, fields, calendarFieldNames, nonCalendarFieldNames, requiredFieldNames )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-preparecalendarfields"
@@ -3561,7 +3577,7 @@
   },
   "#sec-temporal-preparecalendarfieldsandfieldnames": {
     "current": {
-      "number": "13.49",
+      "number": "13.51",
       "spec": "Temporal",
       "text": "PrepareCalendarFieldsAndFieldNames ( calendarRec, fields, calendarFieldNames [ , nonCalendarFieldNames [ , requiredFieldNames ] ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-preparecalendarfieldsandfieldnames"
@@ -3569,7 +3585,7 @@
   },
   "#sec-temporal-preparetemporalfields": {
     "current": {
-      "number": "13.48",
+      "number": "13.50",
       "spec": "Temporal",
       "text": "PrepareTemporalFields ( fields, fieldNames, requiredFields [ , extraFieldDescriptors [ , duplicateBehaviour ] ] )",
       "url": "https://tc39.es/proposal-temporal/#sec-temporal-preparetemporalfields"
@@ -5865,7 +5881,7 @@
   },
   "#sec-tointegerifintegral": {
     "current": {
-      "number": "13.47",
+      "number": "13.49",
       "spec": "Temporal",
       "text": "ToIntegerIfIntegral ( argument )",
       "url": "https://tc39.es/proposal-temporal/#sec-tointegerifintegral"
@@ -5873,7 +5889,7 @@
   },
   "#sec-tointegerwithtruncation": {
     "current": {
-      "number": "13.46",
+      "number": "13.48",
       "spec": "Temporal",
       "text": "ToIntegerWithTruncation ( argument )",
       "url": "https://tc39.es/proposal-temporal/#sec-tointegerwithtruncation"
@@ -5889,7 +5905,7 @@
   },
   "#sec-topositiveintegerwithtruncation": {
     "current": {
-      "number": "13.45",
+      "number": "13.47",
       "spec": "Temporal",
       "text": "ToPositiveIntegerWithTruncation ( argument )",
       "url": "https://tc39.es/proposal-temporal/#sec-topositiveintegerwithtruncation"
