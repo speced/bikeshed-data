@@ -2804,6 +2804,15 @@
       "shortname": "portals"
     }
   },
+  "HandwritingStroke()": {
+    "HandwritingStroke()": {
+      "args": [],
+      "for": [
+        "HandwritingStroke"
+      ],
+      "shortname": "handwriting-recognition"
+    }
+  },
   "Headers()": {
     "Headers()": {
       "args": [],
@@ -5990,6 +5999,17 @@
       "shortname": "html"
     }
   },
+  "addPoint()": {
+    "addPoint(point)": {
+      "args": [
+        "point"
+      ],
+      "for": [
+        "HandwritingStroke"
+      ],
+      "shortname": "handwriting-recognition"
+    }
+  },
   "addRange()": {
     "addRange()": {
       "args": [],
@@ -6103,6 +6123,17 @@
         "MediaSource"
       ],
       "shortname": "media-source"
+    }
+  },
+  "addStroke()": {
+    "addStroke(stroke)": {
+      "args": [
+        "stroke"
+      ],
+      "for": [
+        "HandwritingDrawing"
+      ],
+      "shortname": "handwriting-recognition"
     }
   },
   "addTextTrack()": {
@@ -7756,6 +7787,8 @@
         "DataTransferItemList",
         "Document",
         "FontFaceSet",
+        "HandwritingDrawing",
+        "HandwritingStroke",
         "IDBObjectStore",
         "MIDIOutput",
         "Map",
@@ -8749,6 +8782,7 @@
         "HIDInputReportEvent",
         "HTMLFencedFrameElement",
         "HTMLPortalElement",
+        "HandwritingStroke",
         "Headers",
         "Highlight",
         "IdleDetector",
@@ -12195,6 +12229,17 @@
       "shortname": "dom"
     }
   },
+  "createHandwritingRecognizer()": {
+    "createHandwritingRecognizer(constraint)": {
+      "args": [
+        "constraint"
+      ],
+      "for": [
+        "Navigator"
+      ],
+      "shortname": "handwriting-recognition"
+    }
+  },
   "createIIRFilter()": {
     "createIIRFilter(feedforward, feedback)": {
       "args": [
@@ -15326,9 +15371,10 @@
       "for": [
         "Animation",
         "GPUCommandEncoder",
-        "GPURenderBundleEncoder"
+        "GPURenderBundleEncoder",
+        "HandwritingRecognizer"
       ],
-      "shortname": "web-animations"
+      "shortname": "handwriting-recognition"
     },
     "finish(descriptor)": {
       "args": [
@@ -18068,6 +18114,15 @@
       "shortname": "image-capture"
     }
   },
+  "getPoints()": {
+    "getPoints()": {
+      "args": [],
+      "for": [
+        "HandwritingStroke"
+      ],
+      "shortname": "handwriting-recognition"
+    }
+  },
   "getPorts()": {
     "getPorts()": {
       "args": [],
@@ -18105,6 +18160,15 @@
         "PointerEvent"
       ],
       "shortname": "pointerevents"
+    }
+  },
+  "getPrediction()": {
+    "getPrediction()": {
+      "args": [],
+      "for": [
+        "HandwritingDrawing"
+      ],
+      "shortname": "handwriting-recognition"
     }
   },
   "getPreferredCanvasFormat()": {
@@ -18640,6 +18704,15 @@
         "MediaKeys"
       ],
       "shortname": "encrypted-media"
+    }
+  },
+  "getStrokes()": {
+    "getStrokes()": {
+      "args": [],
+      "for": [
+        "HandwritingDrawing"
+      ],
+      "shortname": "handwriting-recognition"
     }
   },
   "getSubImage()": {
@@ -24419,6 +24492,17 @@
       "shortname": "turtledove"
     }
   },
+  "queryHandwritingRecognizer()": {
+    "queryHandwritingRecognizer(constraint)": {
+      "args": [
+        "constraint"
+      ],
+      "for": [
+        "Navigator"
+      ],
+      "shortname": "handwriting-recognition"
+    }
+  },
   "queryLocalFonts()": {
     "queryLocalFonts()": {
       "args": [],
@@ -25654,6 +25738,17 @@
         "MediaSource"
       ],
       "shortname": "media-source"
+    }
+  },
+  "removeStroke()": {
+    "removeStroke(stroke)": {
+      "args": [
+        "stroke"
+      ],
+      "for": [
+        "HandwritingDrawing"
+      ],
+      "shortname": "handwriting-recognition"
     }
   },
   "removeTrack()": {
@@ -30630,6 +30725,24 @@
         "AudioBufferSourceNode"
       ],
       "shortname": "webaudio"
+    }
+  },
+  "startDrawing()": {
+    "startDrawing()": {
+      "args": [],
+      "for": [
+        "HandwritingRecognizer"
+      ],
+      "shortname": "handwriting-recognition"
+    },
+    "startDrawing(hints)": {
+      "args": [
+        "hints"
+      ],
+      "for": [
+        "HandwritingRecognizer"
+      ],
+      "shortname": "handwriting-recognition"
     }
   },
   "startMessages()": {

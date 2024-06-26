@@ -396,6 +396,8 @@
     "::nth-fragment()",
     "::part()",
     "::placeholder",
+    "::scroll-marker",
+    "::scroll-marker-group",
     "::selection",
     "::shadow",
     "::slotted()",
@@ -2596,6 +2598,19 @@
     "Handle errors",
     "Handle failed font load",
     "Handle server response",
+    "HandwritingDrawing",
+    "HandwritingDrawingSegment",
+    "HandwritingHints",
+    "HandwritingHintsQueryResult",
+    "HandwritingInputType",
+    "HandwritingModelConstraint",
+    "HandwritingPoint",
+    "HandwritingPrediction",
+    "HandwritingRecognitionType",
+    "HandwritingRecognizer",
+    "HandwritingRecognizerQueryResult",
+    "HandwritingSegment",
+    "HandwritingStroke",
     "HardwareAcceleration",
     "HasEitherUnicodeFlag",
     "HasEitherUnicodeFlag(rer)",
@@ -7742,6 +7757,7 @@
     "controls of the window",
     "conversion to db",
     "conversionrank",
+    "convert",
     "convert a cssunitvalue",
     "convert a json-derived javascript value to an infra value",
     "convert a key to a value",
@@ -8086,6 +8102,7 @@
     "createanswer",
     "created",
     "created on",
+    "createhandwritingrecognizer(constraint)",
     "createoffer",
     "createproof",
     "creating a child filesystemdirectoryhandle",
@@ -9121,6 +9138,7 @@
     "draw a bounding box from the framebuffer",
     "draw a paint image",
     "draw command",
+    "drawing",
     "drawing model",
     "drawing states",
     "dropped entries count",
@@ -9660,6 +9678,9 @@
     "extract a key from a value using a key path",
     "extract a marked token",
     "extract a six-bit decimal value",
+    "extract a source map url from a webassembly source",
+    "extract a source map url from javascript through parsing",
+    "extract a source map url from javascript without parsing",
     "extract an action sequence",
     "extract any vcard data represented by those nodes",
     "extract any vevent data represented by those nodes",
@@ -9952,6 +9973,7 @@
     "finish event",
     "finish job",
     "finish notification steps",
+    "finish()",
     "finished",
     "finished promise",
     "fire a background fetch click event",
@@ -10860,6 +10882,7 @@
     "handling document loss of full activity",
     "handling document loss of visibility",
     "handling the certificate reference",
+    "handwriting recognizer",
     "hang",
     "hanging baseline",
     "hanging glyph",
@@ -12776,6 +12799,7 @@
     "match a selector against a pseudo-element",
     "match a selector against a tree",
     "match a selector against an element",
+    "match a source map url in a comment",
     "match an attribution source against a filter config",
     "match an attribution source against filters",
     "match an attribution source against filters and negated filters",
@@ -15455,6 +15479,7 @@
     "query set state",
     "query the \"bluetooth\" permission",
     "query the bluetooth cache",
+    "queryhandwritingrecognizer(constraint)",
     "querying file system permission",
     "queue",
     "queue a \"message\" event",
@@ -16693,6 +16718,8 @@
     "scroll completed",
     "scroll container",
     "scroll into view",
+    "scroll marker control",
+    "scroll marker group",
     "scroll offset",
     "scroll origin",
     "scroll origin position",
@@ -16722,6 +16749,7 @@
     "scroll-margin-left",
     "scroll-margin-right",
     "scroll-margin-top",
+    "scroll-marker-group",
     "scroll-padding",
     "scroll-padding-block",
     "scroll-padding-block-end",
@@ -16828,6 +16856,7 @@
     "segment break",
     "segment parser loop",
     "segment-completing close path",
+    "segmentation",
     "select",
     "select a css style sheet set",
     "select a mapping",
@@ -17668,6 +17697,7 @@
     "start with a number",
     "start with a windows drive letter",
     "start with an ident sequence",
+    "startdrawing(hints)",
     "starting a new parallel queue",
     "starting a presentation from a default presentation request",
     "starting point",
@@ -18770,6 +18800,7 @@
     "unable to report the battery status information",
     "unable to set cookie",
     "unadjustedtarget",
+    "unambiguously links to a source map",
     "unanimity",
     "unauthenticated response",
     "unavailable",
@@ -33812,6 +33843,7 @@
     "labels",
     "name",
     "reportValidity()",
+    "scrollTargetElement",
     "setCustomValidity(error)",
     "type",
     "validationMessage",
@@ -34719,6 +34751,93 @@
   ],
   "HTMLVideoElement/requestVideoFrameCallback(callback)": [
     "callback"
+  ],
+  "HandwritingDrawing": [
+    "addStroke(stroke)",
+    "clear()",
+    "getPrediction()",
+    "getStrokes()",
+    "recognizer",
+    "removeStroke(stroke)",
+    "strokes"
+  ],
+  "HandwritingDrawing/addStroke(stroke)": [
+    "stroke"
+  ],
+  "HandwritingDrawing/removeStroke(stroke)": [
+    "stroke"
+  ],
+  "HandwritingDrawingSegment": [
+    "beginPointIndex",
+    "endPointIndex",
+    "strokeIndex"
+  ],
+  "HandwritingHints": [
+    "alternatives",
+    "inputType",
+    "recognitionType",
+    "textContext"
+  ],
+  "HandwritingHintsQueryResult": [
+    "alternatives",
+    "inputType",
+    "recognitionType",
+    "textContext"
+  ],
+  "HandwritingInputType": [
+    "\"mouse\"",
+    "\"stylus\"",
+    "\"touch\""
+  ],
+  "HandwritingModelConstraint": [
+    "languages"
+  ],
+  "HandwritingPoint": [
+    "t",
+    "x",
+    "y"
+  ],
+  "HandwritingPrediction": [
+    "segmentationResult",
+    "text"
+  ],
+  "HandwritingRecognitionType": [
+    "\"per-character\"",
+    "\"text\""
+  ],
+  "HandwritingRecognizer": [
+    "active",
+    "finish()",
+    "startDrawing()",
+    "startDrawing(hints)"
+  ],
+  "HandwritingRecognizer/startDrawing()": [
+    "hints"
+  ],
+  "HandwritingRecognizer/startDrawing(hints)": [
+    "hints"
+  ],
+  "HandwritingRecognizerQueryResult": [
+    "hints",
+    "textAlternatives",
+    "textSegmentation"
+  ],
+  "HandwritingSegment": [
+    "beginIndex",
+    "drawingSegments",
+    "endIndex",
+    "grapheme"
+  ],
+  "HandwritingStroke": [
+    "HandwritingStroke()",
+    "addPoint(point)",
+    "clear()",
+    "constructor()",
+    "getPoints()",
+    "points"
+  ],
+  "HandwritingStroke/addPoint(point)": [
+    "point"
   ],
   "HardwareAcceleration": [
     "\"no-preference\"",
@@ -39652,6 +39771,8 @@
     "state"
   ],
   "Navigator": [
+    "3. feature query",
+    "4. create a handwriting recognizer",
     "[[BatteryManager]]",
     "[[BatteryPromise]]",
     "[[gamepads]]",
@@ -39669,6 +39790,7 @@
     "contacts",
     "contacts manager",
     "createAuctionNonce()",
+    "createHandwritingRecognizer(constraint)",
     "credentials",
     "deprecatedReplaceInURN(urnOrConfig, replacements)",
     "deprecatedRunAdAuctionEnforcesKAnonymity",
@@ -39703,6 +39825,7 @@
     "preferences",
     "presentation",
     "protectedAudience",
+    "queryHandwritingRecognizer(constraint)",
     "removeTrackingException()",
     "removeTrackingException(properties)",
     "requestMIDIAccess()",
@@ -39744,6 +39867,9 @@
     "interestGroupsToKeep",
     "owner"
   ],
+  "Navigator/createHandwritingRecognizer(constraint)": [
+    "constraint"
+  ],
   "Navigator/deprecatedReplaceInURN(urnOrConfig, replacements)": [
     "replacements",
     "urnOrConfig"
@@ -39773,6 +39899,9 @@
   ],
   "Navigator/leaveAdInterestGroup(group)": [
     "group"
+  ],
+  "Navigator/queryHandwritingRecognizer(constraint)": [
+    "constraint"
   ],
   "Navigator/runAdAuction(config)": [
     "config"
@@ -52890,6 +53019,7 @@
     "method",
     "name",
     "novalidate",
+    "scrolltarget",
     "target",
     "type",
     "value"
@@ -58689,6 +58819,11 @@
   "scroll-behavior": [
     "auto",
     "smooth"
+  ],
+  "scroll-marker-group": [
+    "after",
+    "before",
+    "none"
   ],
   "scroll-padding": [
     "auto"
