@@ -2217,6 +2217,8 @@
     "GPUCanvasAlphaMode",
     "GPUCanvasConfiguration",
     "GPUCanvasContext",
+    "GPUCanvasToneMapping",
+    "GPUCanvasToneMappingMode",
     "GPUColor",
     "GPUColorDict",
     "GPUColorTargetState",
@@ -13241,6 +13243,7 @@
     "minimum periodic sync interval across origins",
     "minimum periodic sync interval for any origin",
     "minimum readable text size",
+    "minimum role",
     "minimum size",
     "minimum value",
     "minimum width",
@@ -31967,6 +31970,7 @@
     "colorSpace",
     "device",
     "format",
+    "toneMapping",
     "usage",
     "viewFormats"
   ],
@@ -31982,6 +31986,13 @@
   ],
   "GPUCanvasContext/configure(configuration)": [
     "configuration"
+  ],
+  "GPUCanvasToneMapping": [
+    "mode"
+  ],
+  "GPUCanvasToneMappingMode": [
+    "\"extended\"",
+    "\"standard\""
   ],
   "GPUColor": [
     "a",
@@ -46601,6 +46612,7 @@
     "decrypt()",
     "decrypt(algorithm, key, data)",
     "deriveBits()",
+    "deriveBits(algorithm, baseKey)",
     "deriveBits(algorithm, baseKey, length)",
     "deriveKey()",
     "deriveKey(algorithm, baseKey, derivedKeyType, extractable, keyUsages)",
