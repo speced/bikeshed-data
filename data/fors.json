@@ -54,6 +54,12 @@
     "values()",
     "with(index, value)"
   ],
+  "%TypedArray%.prototype [ %Symbol.iterator% ] ( )": [
+    "%TypedArray%.prototype %Symbol.iterator% ()"
+  ],
+  "%TypedArray%.prototype [ %Symbol.toStringTag% ]": [
+    "get %TypedArray%.prototype [ %Symbol.toStringTag% ]"
+  ],
   "/": [
     "",
     "!",
@@ -221,7 +227,20 @@
     "%String.prototype%",
     "%StringIteratorPrototype%",
     "%Symbol%",
+    "%Symbol.asyncIterator%",
+    "%Symbol.hasInstance%",
+    "%Symbol.isConcatSpreadable%",
+    "%Symbol.iterator%",
+    "%Symbol.match%",
+    "%Symbol.matchAll%",
     "%Symbol.prototype%",
+    "%Symbol.replace%",
+    "%Symbol.search%",
+    "%Symbol.species%",
+    "%Symbol.split%",
+    "%Symbol.toPrimitive%",
+    "%Symbol.toStringTag%",
+    "%Symbol.unscopables%",
     "%SyntaxError%",
     "%ThrowTypeError%",
     "%TypeError%",
@@ -1068,23 +1087,10 @@
     ">",
     "?",
     "@-webkit-keyframes",
-    "@@asyncIterator",
-    "@@hasInstance",
     "@@hasinstance",
-    "@@isConcatSpreadable",
     "@@isconcatspreadable",
-    "@@iterator",
-    "@@match",
-    "@@matchAll",
-    "@@replace",
-    "@@search",
-    "@@species",
-    "@@split",
-    "@@toPrimitive",
-    "@@toStringTag",
     "@@toprimitive",
     "@@tostringtag",
-    "@@unscopables",
     "@bottom-center",
     "@bottom-left",
     "@bottom-left-corner",
@@ -12292,6 +12298,7 @@
     "level",
     "levelchange",
     "levels",
+    "levels of detail",
     "lexical form",
     "lexical space",
     "lexical-to-value mapping",
@@ -12562,6 +12569,7 @@
     "locked to a writer",
     "locking the screen orientation",
     "lockout period",
+    "lod",
     "log event buffer",
     "log()",
     "logged-in",
@@ -14922,6 +14930,7 @@
     "position state",
     "position-anchor",
     "position-try",
+    "position-try-fallbacks",
     "position-try-options",
     "position-try-order",
     "position-visibility",
@@ -21876,6 +21885,9 @@
     "values()",
     "with(index, value)"
   ],
+  "Array.prototype [ %Symbol.iterator% ] ( )": [
+    "Array.prototype %Symbol.iterator% ()"
+  ],
   "ArrayBuffer": [
     "ArrayBuffer(length, options)",
     "byteLength",
@@ -28737,6 +28749,9 @@
     "toUTCString()",
     "valueOf()"
   ],
+  "Date.prototype [ %Symbol.toPrimitive% ] ( hint )": [
+    "Date.prototype %Symbol.toPrimitive% (hint)"
+  ],
   "Declarative Environment Records": [
     "CreateImmutableBinding(N, S)",
     "CreateMutableBinding(N, D)",
@@ -31766,6 +31781,9 @@
     "GetThisBinding()",
     "HasSuperBinding()",
     "HasThisBinding()"
+  ],
+  "Function.prototype [ %Symbol.hasInstance% ] ( V )": [
+    "Function.prototype %Symbol.hasInstance% (V)"
   ],
   "GPU": [
     "getPreferredCanvasFormat()",
@@ -37897,6 +37915,9 @@
     "size",
     "values()"
   ],
+  "Map.prototype [ %Symbol.iterator% ] ( )": [
+    "Map.prototype %Symbol.iterator% ()"
+  ],
   "Mapping Entries": [
     "entries"
   ],
@@ -43812,6 +43833,21 @@
     "unicode",
     "unicodeSets"
   ],
+  "RegExp.prototype [ %Symbol.match% ] ( string )": [
+    "RegExp.prototype %Symbol.match% (string)"
+  ],
+  "RegExp.prototype [ %Symbol.matchAll% ] ( string )": [
+    "RegExp.prototype %Symbol.matchAll% (string)"
+  ],
+  "RegExp.prototype [ %Symbol.replace% ] ( string, replaceValue )": [
+    "RegExp.prototype %Symbol.replace% (string, replaceValue)"
+  ],
+  "RegExp.prototype [ %Symbol.search% ] ( string )": [
+    "RegExp.prototype %Symbol.search% (string)"
+  ],
+  "RegExp.prototype [ %Symbol.split% ] ( string, limit )": [
+    "RegExp.prototype %Symbol.split% (string, limit)"
+  ],
   "Region": [
     "getRegionFlowRanges()",
     "regionOverset"
@@ -45636,6 +45672,9 @@
     "union(other)",
     "values()"
   ],
+  "Set.prototype [ %Symbol.iterator% ] ( )": [
+    "Set.prototype %Symbol.iterator% ()"
+  ],
   "SetHTMLOptions": [
     "sanitizer"
   ],
@@ -46549,6 +46588,9 @@
     "trimStart()",
     "valueOf()"
   ],
+  "String.prototype [ %Symbol.iterator% ] ( )": [
+    "String.prototype %Symbol.iterator% ()"
+  ],
   "StructuredSerializeOptions": [
     "transfer"
   ],
@@ -46678,6 +46720,9 @@
     "toStringTag",
     "unscopables",
     "valueOf()"
+  ],
+  "Symbol.prototype [ %Symbol.toPrimitive% ] ( hint )": [
+    "Symbol.prototype %Symbol.toPrimitive% (hint)"
   ],
   "SyncEvent": [
     "SyncEvent(type, init)",
@@ -58045,8 +58090,16 @@
     "static",
     "sticky"
   ],
-  "position-try-options": [
+  "position-try-fallbacks": [
     "<'inset-area'>",
+    "<dashed-ident> || <try-tactic>",
+    "<try-tactic>",
+    "flip-block",
+    "flip-inline",
+    "flip-start",
+    "none"
+  ],
+  "position-try-options": [
     "<dashed-ident> || <try-tactic>",
     "<try-tactic>",
     "flip-block",
