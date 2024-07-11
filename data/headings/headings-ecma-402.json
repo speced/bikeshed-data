@@ -151,12 +151,12 @@
       "url": "https://tc39.es/ecma402/#sec-%25intlsegmentiteratorprototype%25-object"
     }
   },
-  "#sec-%25intlsegmentiteratorprototype%25.%40%40tostringtag": {
+  "#sec-%25intlsegmentiteratorprototype%25.%25symbol.tostringtag%25": {
     "current": {
       "number": "18.6.2.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "%IntlSegmentIteratorPrototype% [ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-%25intlsegmentiteratorprototype%25.%40%40tostringtag"
+      "text": "%IntlSegmentIteratorPrototype% [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-%25intlsegmentiteratorprototype%25.%25symbol.tostringtag%25"
     }
   },
   "#sec-%25intlsegmentiteratorprototype%25.next": {
@@ -167,12 +167,12 @@
       "url": "https://tc39.es/ecma402/#sec-%25intlsegmentiteratorprototype%25.next"
     }
   },
-  "#sec-%25intlsegmentsprototype%25-%40%40iterator": {
+  "#sec-%25intlsegmentsprototype%25-%25symbol.iterator%25": {
     "current": {
       "number": "18.5.2.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "%IntlSegmentsPrototype% [ @@iterator ] ( )",
-      "url": "https://tc39.es/ecma402/#sec-%25intlsegmentsprototype%25-%40%40iterator"
+      "text": "%IntlSegmentsPrototype% [ %Symbol.iterator% ] ( )",
+      "url": "https://tc39.es/ecma402/#sec-%25intlsegmentsprototype%25-%25symbol.iterator%25"
     }
   },
   "#sec-%25intlsegmentsprototype%25-object": {
@@ -215,14 +215,6 @@
       "url": "https://tc39.es/ecma402/#sec-FormatRelativeTimeToParts"
     }
   },
-  "#sec-Intl-toStringTag": {
-    "current": {
-      "number": "8.1.1",
-      "spec": "ECMAScript Internationalization API",
-      "text": "Intl[ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-Intl-toStringTag"
-    }
-  },
   "#sec-Intl.DateTimeFormat.prototype.formatRangeToParts": {
     "current": {
       "number": "11.3.6",
@@ -261,14 +253,6 @@
       "spec": "ECMAScript Internationalization API",
       "text": "Intl.DisplayNames.prototype",
       "url": "https://tc39.es/ecma402/#sec-Intl.DisplayNames.prototype"
-    }
-  },
-  "#sec-Intl.DisplayNames.prototype-%40%40tostringtag": {
-    "current": {
-      "number": "12.3.2",
-      "spec": "ECMAScript Internationalization API",
-      "text": "Intl.DisplayNames.prototype[ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-Intl.DisplayNames.prototype-%40%40tostringtag"
     }
   },
   "#sec-Intl.DisplayNames.prototype.constructor": {
@@ -331,7 +315,7 @@
     "current": {
       "number": "13.3.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "Intl.ListFormat.prototype [ @@toStringTag ]",
+      "text": "Intl.ListFormat.prototype [ %Symbol.toStringTag% ]",
       "url": "https://tc39.es/ecma402/#sec-Intl.ListFormat.prototype-toStringTag"
     }
   },
@@ -389,14 +373,6 @@
       "spec": "ECMAScript Internationalization API",
       "text": "Intl.Locale.prototype",
       "url": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype"
-    }
-  },
-  "#sec-Intl.Locale.prototype-%40%40tostringtag": {
-    "current": {
-      "number": "14.3.2",
-      "spec": "ECMAScript Internationalization API",
-      "text": "Intl.Locale.prototype[ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype-%40%40tostringtag"
     }
   },
   "#sec-Intl.Locale.prototype.baseName": {
@@ -539,7 +515,7 @@
     "current": {
       "number": "17.3.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "Intl.RelativeTimeFormat.prototype[ @@toStringTag ]",
+      "text": "Intl.RelativeTimeFormat.prototype [ %Symbol.toStringTag% ]",
       "url": "https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype-toStringTag"
     }
   },
@@ -903,14 +879,6 @@
       "url": "https://tc39.es/ecma402/#sec-datetimeformat-abstracts"
     }
   },
-  "#sec-datetimeformat-calendar-style-record": {
-    "current": {
-      "number": "11.2.3.5",
-      "spec": "ECMAScript Internationalization API",
-      "text": "DateTime Calendar Style Records",
-      "url": "https://tc39.es/ecma402/#sec-datetimeformat-calendar-style-record"
-    }
-  },
   "#sec-datetimeformat-connector-record": {
     "current": {
       "number": "11.2.3.7",
@@ -927,12 +895,12 @@
       "url": "https://tc39.es/ecma402/#sec-datetimeformat-date-range-record"
     }
   },
-  "#sec-datetimeformat-patterns-record": {
+  "#sec-datetimeformat-format-record": {
     "current": {
       "number": "11.2.3.1",
       "spec": "ECMAScript Internationalization API",
-      "text": "DateTimeFormat Patterns Records",
-      "url": "https://tc39.es/ecma402/#sec-datetimeformat-patterns-record"
+      "text": "DateTime Format Records",
+      "url": "https://tc39.es/ecma402/#sec-datetimeformat-format-record"
     }
   },
   "#sec-datetimeformat-range-pattern-format-record": {
@@ -973,6 +941,14 @@
       "spec": "ECMAScript Internationalization API",
       "text": "DateTime Style Records",
       "url": "https://tc39.es/ecma402/#sec-datetimeformat-style-record"
+    }
+  },
+  "#sec-datetimeformat-styles-record": {
+    "current": {
+      "number": "11.2.3.5",
+      "spec": "ECMAScript Internationalization API",
+      "text": "DateTime Styles Records",
+      "url": "https://tc39.es/ecma402/#sec-datetimeformat-styles-record"
     }
   },
   "#sec-datetimeformat-time-range-record": {
@@ -1287,6 +1263,14 @@
       "url": "https://tc39.es/ecma402/#sec-internationalization-localization-globalization"
     }
   },
+  "#sec-intl-%25symbol.tostringtag%25": {
+    "current": {
+      "number": "8.1.1",
+      "spec": "ECMAScript Internationalization API",
+      "text": "Intl [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-intl-%25symbol.tostringtag%25"
+    }
+  },
   "#sec-intl-collator-internal-slots": {
     "current": {
       "number": "10.2.3",
@@ -1431,12 +1415,12 @@
       "url": "https://tc39.es/ecma402/#sec-intl.collator.prototype"
     }
   },
-  "#sec-intl.collator.prototype-%40%40tostringtag": {
+  "#sec-intl.collator.prototype-%25symbol.tostringtag%25": {
     "current": {
       "number": "10.3.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "Intl.Collator.prototype [ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-intl.collator.prototype-%40%40tostringtag"
+      "text": "Intl.Collator.prototype [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-intl.collator.prototype-%25symbol.tostringtag%25"
     }
   },
   "#sec-intl.collator.prototype.compare": {
@@ -1503,12 +1487,12 @@
       "url": "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype"
     }
   },
-  "#sec-intl.datetimeformat.prototype-%40%40tostringtag": {
+  "#sec-intl.datetimeformat.prototype-%25symbol.tostringtag%25": {
     "current": {
       "number": "11.3.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "Intl.DateTimeFormat.prototype [ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype-%40%40tostringtag"
+      "text": "Intl.DateTimeFormat.prototype [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype-%25symbol.tostringtag%25"
     }
   },
   "#sec-intl.datetimeformat.prototype.constructor": {
@@ -1559,6 +1543,14 @@
       "url": "https://tc39.es/ecma402/#sec-intl.displaynames-intro"
     }
   },
+  "#sec-intl.displaynames.prototype-%25symbol.tostringtag%25": {
+    "current": {
+      "number": "12.3.2",
+      "spec": "ECMAScript Internationalization API",
+      "text": "Intl.DisplayNames.prototype [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-intl.displaynames.prototype-%25symbol.tostringtag%25"
+    }
+  },
   "#sec-intl.getcanonicallocales": {
     "current": {
       "number": "8.3.1",
@@ -1589,6 +1581,14 @@
       "spec": "ECMAScript Internationalization API",
       "text": "Intl.Locale ( . . . )",
       "url": "https://tc39.es/ecma402/#sec-intl.locale-intro"
+    }
+  },
+  "#sec-intl.locale.prototype-%25symbol.tostringtag%25": {
+    "current": {
+      "number": "14.3.2",
+      "spec": "ECMAScript Internationalization API",
+      "text": "Intl.Locale.prototype [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-intl.locale.prototype-%25symbol.tostringtag%25"
     }
   },
   "#sec-intl.numberformat": {
@@ -1623,12 +1623,12 @@
       "url": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype"
     }
   },
-  "#sec-intl.numberformat.prototype-%40%40tostringtag": {
+  "#sec-intl.numberformat.prototype-%25symbol.tostringtag%25": {
     "current": {
       "number": "15.3.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "Intl.NumberFormat.prototype [ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype-%40%40tostringtag"
+      "text": "Intl.NumberFormat.prototype [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype-%25symbol.tostringtag%25"
     }
   },
   "#sec-intl.numberformat.prototype.constructor": {
@@ -1719,12 +1719,12 @@
       "url": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype"
     }
   },
-  "#sec-intl.pluralrules.prototype-tostringtag": {
+  "#sec-intl.pluralrules.prototype-%25symbol.tostringtag%25": {
     "current": {
       "number": "16.3.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "Intl.PluralRules.prototype [ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype-tostringtag"
+      "text": "Intl.PluralRules.prototype [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype-%25symbol.tostringtag%25"
     }
   },
   "#sec-intl.pluralrules.prototype.constructor": {
@@ -1815,12 +1815,12 @@
       "url": "https://tc39.es/ecma402/#sec-intl.segmenter.prototype"
     }
   },
-  "#sec-intl.segmenter.prototype-%40%40tostringtag": {
+  "#sec-intl.segmenter.prototype-%25symbol.tostringtag%25": {
     "current": {
       "number": "18.3.2",
       "spec": "ECMAScript Internationalization API",
-      "text": "Intl.Segmenter.prototype [ @@toStringTag ]",
-      "url": "https://tc39.es/ecma402/#sec-intl.segmenter.prototype-%40%40tostringtag"
+      "text": "Intl.Segmenter.prototype [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/ecma402/#sec-intl.segmenter.prototype-%25symbol.tostringtag%25"
     }
   },
   "#sec-intl.segmenter.prototype.constructor": {
