@@ -7757,7 +7757,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gather-input-indi
 1
 1
 MLGraphBuilder/gather(input, indices, options)
-MLGraphBuilder/gather(input, indices)
 -
 indices
 argument
@@ -16745,18 +16744,18 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-abs-input-input
 1
 1
 MLGraphBuilder/abs(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-argmax-input-options-input
-1
-1
-MLGraphBuilder/argMax(input, options)
-MLGraphBuilder/argMax(input)
+MLGraphBuilder/ceil(input)
+MLGraphBuilder/cos(input)
+MLGraphBuilder/erf(input)
+MLGraphBuilder/exp(input)
+MLGraphBuilder/floor(input)
+MLGraphBuilder/identity(input)
+MLGraphBuilder/log(input)
+MLGraphBuilder/neg(input)
+MLGraphBuilder/reciprocal(input)
+MLGraphBuilder/sin(input)
+MLGraphBuilder/sqrt(input)
+MLGraphBuilder/tan(input)
 -
 input
 argument
@@ -16768,7 +16767,7 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-argmin-input-opti
 1
 1
 MLGraphBuilder/argMin(input, options)
-MLGraphBuilder/argMin(input)
+MLGraphBuilder/argMax(input, options)
 -
 input
 argument
@@ -16780,7 +16779,8 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-averagepool2d-inp
 1
 1
 MLGraphBuilder/averagePool2d(input, options)
-MLGraphBuilder/averagePool2d(input)
+MLGraphBuilder/l2Pool2d(input, options)
+MLGraphBuilder/maxPool2d(input, options)
 -
 input
 argument
@@ -16792,7 +16792,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-batchnormalizatio
 1
 1
 MLGraphBuilder/batchNormalization(input, mean, variance, options)
-MLGraphBuilder/batchNormalization(input, mean, variance)
 -
 input
 argument
@@ -16811,22 +16810,10 @@ webnn
 webnn
 1
 current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-ceil-input-input
-1
-1
-MLGraphBuilder/ceil(input)
--
-input
-argument
-webnn
-webnn
-1
-current
 https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-clamp-input-options-input
 1
 1
 MLGraphBuilder/clamp(input, options)
-MLGraphBuilder/clamp(input)
 -
 input
 argument
@@ -16838,7 +16825,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-conv2d-input-filt
 1
 1
 MLGraphBuilder/conv2d(input, filter, options)
-MLGraphBuilder/conv2d(input, filter)
 -
 input
 argument
@@ -16850,18 +16836,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-convtranspose2d-i
 1
 1
 MLGraphBuilder/convTranspose2d(input, filter, options)
-MLGraphBuilder/convTranspose2d(input, filter)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-cos-input-input
-1
-1
-MLGraphBuilder/cos(input)
 -
 input
 argument
@@ -16873,29 +16847,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu-input-options
 1
 1
 MLGraphBuilder/elu(input, options)
-MLGraphBuilder/elu(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-erf-input-input
-1
-1
-MLGraphBuilder/erf(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-exp-input-input
-1
-1
-MLGraphBuilder/exp(input)
 -
 input
 argument
@@ -16914,22 +16865,10 @@ webnn
 webnn
 1
 current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-floor-input-input
-1
-1
-MLGraphBuilder/floor(input)
--
-input
-argument
-webnn
-webnn
-1
-current
 https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gather-input-indices-options-input
 1
 1
 MLGraphBuilder/gather(input, indices, options)
-MLGraphBuilder/gather(input, indices)
 -
 input
 argument
@@ -16952,7 +16891,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gru-input-weight-
 1
 1
 MLGraphBuilder/gru(input, weight, recurrentWeight, steps, hiddenSize, options)
-MLGraphBuilder/gru(input, weight, recurrentWeight, steps, hiddenSize)
 -
 input
 argument
@@ -16964,7 +16902,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-grucell-input-wei
 1
 1
 MLGraphBuilder/gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize, options)
-MLGraphBuilder/gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize)
 -
 input
 argument
@@ -16976,7 +16913,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardsigmoid-input
 1
 1
 MLGraphBuilder/hardSigmoid(input, options)
-MLGraphBuilder/hardSigmoid(input)
 -
 input
 argument
@@ -16995,34 +16931,10 @@ webnn
 webnn
 1
 current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-identity-input-input
-1
-1
-MLGraphBuilder/identity(input)
--
-input
-argument
-webnn
-webnn
-1
-current
 https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-instancenormalization-input-options-input
 1
 1
 MLGraphBuilder/instanceNormalization(input, options)
-MLGraphBuilder/instanceNormalization(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-l2pool2d-input-options-input
-1
-1
-MLGraphBuilder/l2Pool2d(input, options)
-MLGraphBuilder/l2Pool2d(input)
 -
 input
 argument
@@ -17034,7 +16946,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-layernormalizatio
 1
 1
 MLGraphBuilder/layerNormalization(input, options)
-MLGraphBuilder/layerNormalization(input)
 -
 input
 argument
@@ -17046,7 +16957,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-leakyrelu-input-o
 1
 1
 MLGraphBuilder/leakyRelu(input, options)
-MLGraphBuilder/leakyRelu(input)
 -
 input
 argument
@@ -17058,18 +16968,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-linear-input-opti
 1
 1
 MLGraphBuilder/linear(input, options)
-MLGraphBuilder/linear(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-log-input-input
-1
-1
-MLGraphBuilder/log(input)
 -
 input
 argument
@@ -17081,7 +16979,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm-input-weight
 1
 1
 MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)
-MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)
 -
 input
 argument
@@ -17093,30 +16990,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell-input-we
 1
 1
 MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)
-MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-maxpool2d-input-options-input
-1
-1
-MLGraphBuilder/maxPool2d(input, options)
-MLGraphBuilder/maxPool2d(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-neg-input-input
-1
-1
-MLGraphBuilder/neg(input)
 -
 input
 argument
@@ -17128,7 +17001,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-pad-input-beginni
 1
 1
 MLGraphBuilder/pad(input, beginningPadding, endingPadding, options)
-MLGraphBuilder/pad(input, beginningPadding, endingPadding)
 -
 input
 argument
@@ -17147,130 +17019,19 @@ webnn
 webnn
 1
 current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reciprocal-input-input
-1
-1
-MLGraphBuilder/reciprocal(input)
--
-input
-argument
-webnn
-webnn
-1
-current
 https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducel1-input-options-input
 1
 1
 MLGraphBuilder/reduceL1(input, options)
-MLGraphBuilder/reduceL1(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducel2-input-options-input
-1
-1
 MLGraphBuilder/reduceL2(input, options)
-MLGraphBuilder/reduceL2(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducelogsum-input-options-input
-1
-1
 MLGraphBuilder/reduceLogSum(input, options)
-MLGraphBuilder/reduceLogSum(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducelogsumexp-input-options-input
-1
-1
 MLGraphBuilder/reduceLogSumExp(input, options)
-MLGraphBuilder/reduceLogSumExp(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemax-input-options-input
-1
-1
 MLGraphBuilder/reduceMax(input, options)
-MLGraphBuilder/reduceMax(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemean-input-options-input
-1
-1
 MLGraphBuilder/reduceMean(input, options)
-MLGraphBuilder/reduceMean(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemin-input-options-input
-1
-1
 MLGraphBuilder/reduceMin(input, options)
-MLGraphBuilder/reduceMin(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reduceproduct-input-options-input
-1
-1
 MLGraphBuilder/reduceProduct(input, options)
-MLGraphBuilder/reduceProduct(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducesum-input-options-input
-1
-1
 MLGraphBuilder/reduceSum(input, options)
-MLGraphBuilder/reduceSum(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducesumsquare-input-options-input
-1
-1
 MLGraphBuilder/reduceSumSquare(input, options)
-MLGraphBuilder/reduceSumSquare(input)
 -
 input
 argument
@@ -17293,7 +17054,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-resample2d-input-
 1
 1
 MLGraphBuilder/resample2d(input, options)
-MLGraphBuilder/resample2d(input)
 -
 input
 argument
@@ -17316,17 +17076,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sigmoid-input-inp
 1
 1
 MLGraphBuilder/sigmoid(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sin-input-input
-1
-1
-MLGraphBuilder/sin(input)
 -
 input
 argument
@@ -17382,29 +17131,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-split-input-split
 1
 1
 MLGraphBuilder/split(input, splits, options)
-MLGraphBuilder/split(input, splits)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sqrt-input-input
-1
-1
-MLGraphBuilder/sqrt(input)
--
-input
-argument
-webnn
-webnn
-1
-current
-https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tan-input-input
-1
-1
-MLGraphBuilder/tan(input)
 -
 input
 argument
@@ -17427,7 +17153,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-transpose-input-o
 1
 1
 MLGraphBuilder/transpose(input, options)
-MLGraphBuilder/transpose(input)
 -
 input
 argument
@@ -17439,7 +17164,6 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-triangular-input-
 1
 1
 MLGraphBuilder/triangular(input, options)
-MLGraphBuilder/triangular(input)
 -
 input
 dfn

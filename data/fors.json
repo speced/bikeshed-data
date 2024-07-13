@@ -680,6 +680,7 @@
     "<cs>",
     "<csc/>",
     "<csch/>",
+    "<css-type>",
     "<csymbol>",
     "<cubic-bezier-easing-function>",
     "<curl/>",
@@ -699,7 +700,6 @@
     "<declaration-value>",
     "<degree>",
     "<delim-token>",
-    "<dependency-list>",
     "<deprecated-color>",
     "<determinant/>",
     "<diff/>",
@@ -758,7 +758,10 @@
     "<forgiving-selector-list>",
     "<frequency-percentage>",
     "<frequency>",
+    "<function-dependency-list>",
     "<function-name>",
+    "<function-parameter-list>",
+    "<function-parameter>",
     "<function-token>",
     "<gcd/>",
     "<general-enclosed>",
@@ -921,8 +924,6 @@
     "<page-selector>",
     "<paint-box>",
     "<paint>",
-    "<parameter-list>",
-    "<parameter>",
     "<partialdiff/>",
     "<percentage-token>",
     "<percentage>",
@@ -1075,9 +1076,9 @@
     "<transpose/>",
     "<true/>",
     "<try-size>",
+    "<type()>",
     "<type-name>",
     "<type-selector>",
-    "<type>",
     "<unicode-range-token>",
     "<union/>",
     "<uplimit>",
@@ -36899,9 +36900,11 @@
     "options"
   ],
   "ML/createContext(gpuDevice)": [
-    "gpuDevice"
+    "gpuDevice",
+    "options"
   ],
   "ML/createContext(options)": [
+    "gpuDevice",
     "options"
   ],
   "MLActivation": [
@@ -37451,7 +37454,8 @@
     "input"
   ],
   "MLGraphBuilder/logicalNot(a)": [
-    "a"
+    "a",
+    "b"
   ],
   "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)": [
     "hiddenSize",
