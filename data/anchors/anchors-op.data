@@ -7357,19 +7357,7 @@ https://www.w3.org/TR/webnn/#dom-ml-createcontext-options-options
 1
 1
 ML/createContext(options)
-ML/createContext()
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmax-input-options-options
-1
-1
-MLGraphBuilder/argMax(input, options)
-MLGraphBuilder/argMax(input)
+ML/createContext(gpuDevice)
 -
 options
 argument
@@ -7381,7 +7369,7 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmin-input-options-options
 1
 1
 MLGraphBuilder/argMin(input, options)
-MLGraphBuilder/argMin(input)
+MLGraphBuilder/argMax(input, options)
 -
 options
 argument
@@ -7393,7 +7381,8 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-averagepool2d-input-options-opti
 1
 1
 MLGraphBuilder/averagePool2d(input, options)
-MLGraphBuilder/averagePool2d(input)
+MLGraphBuilder/l2Pool2d(input, options)
+MLGraphBuilder/maxPool2d(input, options)
 -
 options
 argument
@@ -7405,7 +7394,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-batchnormalization-input-mean-va
 1
 1
 MLGraphBuilder/batchNormalization(input, mean, variance, options)
-MLGraphBuilder/batchNormalization(input, mean, variance)
 -
 options
 argument
@@ -7417,7 +7405,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-clamp-input-options-options
 1
 1
 MLGraphBuilder/clamp(input, options)
-MLGraphBuilder/clamp(input)
 -
 options
 argument
@@ -7429,7 +7416,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-conv2d-input-filter-options-opti
 1
 1
 MLGraphBuilder/conv2d(input, filter, options)
-MLGraphBuilder/conv2d(input, filter)
 -
 options
 argument
@@ -7441,7 +7427,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-convtranspose2d-input-filter-opt
 1
 1
 MLGraphBuilder/convTranspose2d(input, filter, options)
-MLGraphBuilder/convTranspose2d(input, filter)
 -
 options
 argument
@@ -7453,7 +7438,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-elu-input-options-options
 1
 1
 MLGraphBuilder/elu(input, options)
-MLGraphBuilder/elu(input)
 -
 options
 argument
@@ -7465,7 +7449,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-elu-options-options
 1
 1
 MLGraphBuilder/elu(options)
-MLGraphBuilder/elu()
 -
 options
 argument
@@ -7477,7 +7460,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gather-input-indices-options-opt
 1
 1
 MLGraphBuilder/gather(input, indices, options)
-MLGraphBuilder/gather(input, indices)
 -
 options
 argument
@@ -7489,7 +7471,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gemm-a-b-options-options
 1
 1
 MLGraphBuilder/gemm(a, b, options)
-MLGraphBuilder/gemm(a, b)
 -
 options
 argument
@@ -7501,7 +7482,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gru-input-weight-recurrentweight
 1
 1
 MLGraphBuilder/gru(input, weight, recurrentWeight, steps, hiddenSize, options)
-MLGraphBuilder/gru(input, weight, recurrentWeight, steps, hiddenSize)
 -
 options
 argument
@@ -7513,7 +7493,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-grucell-input-weight-recurrentwe
 1
 1
 MLGraphBuilder/gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize, options)
-MLGraphBuilder/gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize)
 -
 options
 argument
@@ -7525,7 +7504,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-hardsigmoid-input-options-option
 1
 1
 MLGraphBuilder/hardSigmoid(input, options)
-MLGraphBuilder/hardSigmoid(input)
 -
 options
 argument
@@ -7537,7 +7515,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-hardsigmoid-options-options
 1
 1
 MLGraphBuilder/hardSigmoid(options)
-MLGraphBuilder/hardSigmoid()
 -
 options
 argument
@@ -7549,19 +7526,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-instancenormalization-input-opti
 1
 1
 MLGraphBuilder/instanceNormalization(input, options)
-MLGraphBuilder/instanceNormalization(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-l2pool2d-input-options-options
-1
-1
-MLGraphBuilder/l2Pool2d(input, options)
-MLGraphBuilder/l2Pool2d(input)
 -
 options
 argument
@@ -7573,7 +7537,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-layernormalization-input-options
 1
 1
 MLGraphBuilder/layerNormalization(input, options)
-MLGraphBuilder/layerNormalization(input)
 -
 options
 argument
@@ -7585,7 +7548,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-leakyrelu-input-options-options
 1
 1
 MLGraphBuilder/leakyRelu(input, options)
-MLGraphBuilder/leakyRelu(input)
 -
 options
 argument
@@ -7597,7 +7559,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-leakyrelu-options-options
 1
 1
 MLGraphBuilder/leakyRelu(options)
-MLGraphBuilder/leakyRelu()
 -
 options
 argument
@@ -7609,7 +7570,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-linear-input-options-options
 1
 1
 MLGraphBuilder/linear(input, options)
-MLGraphBuilder/linear(input)
 -
 options
 argument
@@ -7621,7 +7581,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-linear-options-options
 1
 1
 MLGraphBuilder/linear(options)
-MLGraphBuilder/linear()
 -
 options
 argument
@@ -7633,7 +7592,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-lstm-input-weight-recurrentweigh
 1
 1
 MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)
-MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)
 -
 options
 argument
@@ -7645,19 +7603,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-lstmcell-input-weight-recurrentw
 1
 1
 MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)
-MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-maxpool2d-input-options-options
-1
-1
-MLGraphBuilder/maxPool2d(input, options)
-MLGraphBuilder/maxPool2d(input)
 -
 options
 argument
@@ -7669,7 +7614,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-pad-input-beginningpadding-endin
 1
 1
 MLGraphBuilder/pad(input, beginningPadding, endingPadding, options)
-MLGraphBuilder/pad(input, beginningPadding, endingPadding)
 -
 options
 argument
@@ -7681,115 +7625,15 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducel1-input-options-options
 1
 1
 MLGraphBuilder/reduceL1(input, options)
-MLGraphBuilder/reduceL1(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducel2-input-options-options
-1
-1
 MLGraphBuilder/reduceL2(input, options)
-MLGraphBuilder/reduceL2(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducelogsum-input-options-options
-1
-1
 MLGraphBuilder/reduceLogSum(input, options)
-MLGraphBuilder/reduceLogSum(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducelogsumexp-input-options-options
-1
-1
 MLGraphBuilder/reduceLogSumExp(input, options)
-MLGraphBuilder/reduceLogSumExp(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducemax-input-options-options
-1
-1
 MLGraphBuilder/reduceMax(input, options)
-MLGraphBuilder/reduceMax(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducemean-input-options-options
-1
-1
 MLGraphBuilder/reduceMean(input, options)
-MLGraphBuilder/reduceMean(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducemin-input-options-options
-1
-1
 MLGraphBuilder/reduceMin(input, options)
-MLGraphBuilder/reduceMin(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reduceproduct-input-options-options
-1
-1
 MLGraphBuilder/reduceProduct(input, options)
-MLGraphBuilder/reduceProduct(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducesum-input-options-options
-1
-1
 MLGraphBuilder/reduceSum(input, options)
-MLGraphBuilder/reduceSum(input)
--
-options
-argument
-webnn
-webnn
-1
-snapshot
-https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducesumsquare-input-options-options
-1
-1
 MLGraphBuilder/reduceSumSquare(input, options)
-MLGraphBuilder/reduceSumSquare(input)
 -
 options
 argument
@@ -7801,7 +7645,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-resample2d-input-options-options
 1
 1
 MLGraphBuilder/resample2d(input, options)
-MLGraphBuilder/resample2d(input)
 -
 options
 argument
@@ -7813,7 +7656,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-split-input-splits-options-optio
 1
 1
 MLGraphBuilder/split(input, splits, options)
-MLGraphBuilder/split(input, splits)
 -
 options
 argument
@@ -7825,7 +7667,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-transpose-input-options-options
 1
 1
 MLGraphBuilder/transpose(input, options)
-MLGraphBuilder/transpose(input)
 -
 options
 argument
@@ -7837,7 +7678,6 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-triangular-input-options-options
 1
 1
 MLGraphBuilder/triangular(input, options)
-MLGraphBuilder/triangular(input)
 -
 options
 argument
