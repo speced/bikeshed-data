@@ -4241,12 +4241,14 @@
     "SharedDataBlockEventSet",
     "SharedDataBlockEventSet(execution)",
     "SharedStorage",
+    "SharedStorageDataOrigin",
     "SharedStorageResponse",
     "SharedStorageRunOperationMethodOptions",
     "SharedStorageSetMethodOptions",
     "SharedStorageUrlWithMetadata",
     "SharedStorageWorklet",
     "SharedStorageWorkletGlobalScope",
+    "SharedStorageWorkletOptions",
     "SharedWorker",
     "SharedWorkerGlobalScope",
     "SharedWorkerOptions",
@@ -45553,6 +45555,7 @@
   "SharedStorage": [
     "append(key, value)",
     "clear()",
+    "data partition origin",
     "delete(key)",
     "set(key, value)",
     "set(key, value, options)"
@@ -45574,6 +45577,10 @@
     "options",
     "value"
   ],
+  "SharedStorageDataOrigin": [
+    "\"context-origin\"",
+    "\"script-origin\""
+  ],
   "SharedStorageRunOperationMethodOptions": [
     "data",
     "keepAlive",
@@ -45588,8 +45595,8 @@
   ],
   "SharedStorageWorklet": [
     "addmodule initiated",
-    "cross-origin worklet allowed",
-    "is cross-origin worklet",
+    "data origin",
+    "has cross-origin data origin",
     "run(name)",
     "run(name, options)",
     "selectURL(name, urls)",
@@ -45625,6 +45632,9 @@
   "SharedStorageWorkletGlobalScope/register(name, operationCtor)": [
     "name",
     "operationCtor"
+  ],
+  "SharedStorageWorkletOptions": [
+    "dataOrigin"
   ],
   "SharedWorker": [
     "SharedWorker(scriptURL, options)",
