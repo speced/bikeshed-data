@@ -3031,7 +3031,6 @@
     "MIDIPortDeviceState",
     "MIDIPortType",
     "ML",
-    "MLActivation",
     "MLArgMinMaxOptions",
     "MLBatchNormalizationOptions",
     "MLClampOptions",
@@ -8081,7 +8080,6 @@
     "create an interface prototype object",
     "create an internal representation",
     "create an intrinsic sizes object",
-    "create an mlactivation",
     "create an mloperand",
     "create an offer",
     "create an opaque timing info",
@@ -36948,13 +36946,6 @@
     "gpuDevice",
     "options"
   ],
-  "MLActivation": [
-    "[[builder]]",
-    "[[name]]",
-    "[[operator]]",
-    "default activation validation steps",
-    "validation steps"
-  ],
   "MLArgMinMaxOptions": [
     "keepDimensions"
   ],
@@ -37088,10 +37079,8 @@
     "element-wise-binary-op",
     "element-wise-logical-op",
     "element-wise-unary-op",
-    "elu()",
     "elu(input)",
     "elu(input, options)",
-    "elu(options)",
     "equal(a, b)",
     "erf(input)",
     "exp(input)",
@@ -37099,7 +37088,6 @@
     "floor(input)",
     "gather(input, indices)",
     "gather(input, indices, options)",
-    "gelu()",
     "gelu(input)",
     "gemm(a, b)",
     "gemm(a, b, options)",
@@ -37110,11 +37098,8 @@
     "gru(input, weight, recurrentWeight, steps, hiddenSize, options)",
     "gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize)",
     "gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize, options)",
-    "hardSigmoid()",
     "hardSigmoid(input)",
     "hardSigmoid(input, options)",
-    "hardSigmoid(options)",
-    "hardSwish()",
     "hardSwish(input)",
     "identity(input)",
     "input(name, descriptor)",
@@ -37124,16 +37109,12 @@
     "l2Pool2d(input, options)",
     "layerNormalization(input)",
     "layerNormalization(input, options)",
-    "leakyRelu()",
     "leakyRelu(input)",
     "leakyRelu(input, options)",
-    "leakyRelu(options)",
     "lesser(a, b)",
     "lesserOrEqual(a, b)",
-    "linear()",
     "linear(input)",
     "linear(input, options)",
-    "linear(options)",
     "log(input)",
     "logicalNot(a)",
     "lstm(input, weight, recurrentWeight, steps, hiddenSize)",
@@ -37174,32 +37155,26 @@
     "reduceSum(input, options)",
     "reduceSumSquare(input)",
     "reduceSumSquare(input, options)",
-    "relu()",
     "relu(input)",
     "resample2d(input)",
     "resample2d(input, options)",
     "reshape(input, newShape)",
-    "sigmoid()",
     "sigmoid(input)",
     "sin(input)",
     "slice(input, starts, sizes)",
     "softmax(input, axis)",
-    "softplus()",
     "softplus(input)",
-    "softsign()",
     "softsign(input)",
     "split(input, splits)",
     "split(input, splits, options)",
     "sqrt(input)",
     "sub(a, b)",
     "tan(input)",
-    "tanh()",
     "tanh(input)",
     "transpose(input)",
     "transpose(input, options)",
     "triangular(input)",
     "triangular(input, options)",
-    "validate activation",
     "validate operand",
     "where(condition, trueValue, falseValue)"
   ],
@@ -37280,9 +37255,6 @@
     "input",
     "options"
   ],
-  "MLGraphBuilder/elu(options)": [
-    "options"
-  ],
   "MLGraphBuilder/equal(a, b)": [
     "a",
     "b"
@@ -37341,9 +37313,6 @@
     "input",
     "options"
   ],
-  "MLGraphBuilder/hardSigmoid(options)": [
-    "options"
-  ],
   "MLGraphBuilder/hardSwish(input)": [
     "input"
   ],
@@ -37370,9 +37339,6 @@
     "input",
     "options"
   ],
-  "MLGraphBuilder/leakyRelu(options)": [
-    "options"
-  ],
   "MLGraphBuilder/lesser(a, b)": [
     "a",
     "b"
@@ -37383,9 +37349,6 @@
   ],
   "MLGraphBuilder/linear(input, options)": [
     "input",
-    "options"
-  ],
-  "MLGraphBuilder/linear(options)": [
     "options"
   ],
   "MLGraphBuilder/log(input)": [
