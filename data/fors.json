@@ -3066,6 +3066,7 @@
     "MLOperand",
     "MLOperandDataType",
     "MLOperandDescriptor",
+    "MLOperatorOptions",
     "MLPadOptions",
     "MLPaddingMode",
     "MLPool2dOptions",
@@ -9710,6 +9711,7 @@
     "extract challenges",
     "extract container element attributes",
     "extract content-range values",
+    "extract error information",
     "extract header list values",
     "extract header values",
     "extract links from headers",
@@ -11342,7 +11344,6 @@
     "in collapsed-borders mode",
     "in column group",
     "in effect",
-    "in error reporting mode",
     "in fixed mode",
     "in flow",
     "in foreign content",
@@ -14007,6 +14008,7 @@
     "omin",
     "omit default flag",
     "omit graph flag",
+    "omiterror",
     "omitted",
     "on",
     "on document ready",
@@ -16070,7 +16072,6 @@
     "report a Scripting Policy violation",
     "report a private aggregation event",
     "report a warning to the console",
-    "report an error",
     "report an event",
     "report an exception",
     "report content security policy violations for request",
@@ -37048,7 +37049,9 @@
     "[[context]]",
     "[[hasBuilt]]",
     "abs(input)",
+    "abs(input, options)",
     "add(a, b)",
+    "add(a, b, options)",
     "argMax(input, axis)",
     "argMax(input, axis, options)",
     "argMin(input, axis)",
@@ -37069,11 +37072,14 @@
     "calculate reduction output sizes",
     "calculate resample output sizes",
     "cast(input, type)",
+    "cast(input, type, options)",
     "ceil(input)",
+    "ceil(input, options)",
     "check resample options",
     "clamp(input)",
     "clamp(input, options)",
     "concat(inputs, axis)",
+    "concat(inputs, axis, options)",
     "constant(descriptor, bufferView)",
     "constant(type, value)",
     "constructor(context)",
@@ -37082,25 +37088,35 @@
     "convTranspose2d(input, filter)",
     "convTranspose2d(input, filter, options)",
     "cos(input)",
+    "cos(input, options)",
     "div(a, b)",
+    "div(a, b, options)",
     "element-wise-binary-op",
     "element-wise-logical-op",
     "element-wise-unary-op",
     "elu(input)",
     "elu(input, options)",
     "equal(a, b)",
+    "equal(a, b, options)",
     "erf(input)",
+    "erf(input, options)",
     "exp(input)",
+    "exp(input, options)",
     "expand(input, newShape)",
+    "expand(input, newShape, options)",
     "floor(input)",
+    "floor(input, options)",
     "gather(input, indices)",
     "gather(input, indices, options)",
     "gelu(input)",
+    "gelu(input, options)",
     "gemm(a, b)",
     "gemm(a, b, options)",
     "graph",
     "greater(a, b)",
+    "greater(a, b, options)",
     "greaterOrEqual(a, b)",
+    "greaterOrEqual(a, b, options)",
     "gru(input, weight, recurrentWeight, steps, hiddenSize)",
     "gru(input, weight, recurrentWeight, steps, hiddenSize, options)",
     "gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize)",
@@ -37108,7 +37124,9 @@
     "hardSigmoid(input)",
     "hardSigmoid(input, options)",
     "hardSwish(input)",
+    "hardSwish(input, options)",
     "identity(input)",
+    "identity(input, options)",
     "input(name, descriptor)",
     "instanceNormalization(input)",
     "instanceNormalization(input, options)",
@@ -37119,28 +37137,40 @@
     "leakyRelu(input)",
     "leakyRelu(input, options)",
     "lesser(a, b)",
+    "lesser(a, b, options)",
     "lesserOrEqual(a, b)",
+    "lesserOrEqual(a, b, options)",
     "linear(input)",
     "linear(input, options)",
     "log(input)",
+    "log(input, options)",
     "logicalNot(a)",
+    "logicalNot(a, options)",
     "lstm(input, weight, recurrentWeight, steps, hiddenSize)",
     "lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
     "lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)",
     "lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
     "matmul(a, b)",
+    "matmul(a, b, options)",
     "max(a, b)",
+    "max(a, b, options)",
     "maxPool2d(input)",
     "maxPool2d(input, options)",
     "min(a, b)",
+    "min(a, b, options)",
     "mul(a, b)",
+    "mul(a, b, options)",
     "neg(input)",
+    "neg(input, options)",
     "pad(input, beginningPadding, endingPadding)",
     "pad(input, beginningPadding, endingPadding, options)",
     "pooling-op",
     "pow(a, b)",
+    "pow(a, b, options)",
     "prelu(input, slope)",
+    "prelu(input, slope, options)",
     "reciprocal(input)",
+    "reciprocal(input, options)",
     "reduce-op",
     "reduceL1(input)",
     "reduceL1(input, options)",
@@ -37163,34 +37193,56 @@
     "reduceSumSquare(input)",
     "reduceSumSquare(input, options)",
     "relu(input)",
+    "relu(input, options)",
     "resample2d(input)",
     "resample2d(input, options)",
     "reshape(input, newShape)",
+    "reshape(input, newShape, options)",
     "sigmoid(input)",
+    "sigmoid(input, options)",
     "sin(input)",
+    "sin(input, options)",
     "slice(input, starts, sizes)",
+    "slice(input, starts, sizes, options)",
     "softmax(input, axis)",
+    "softmax(input, axis, options)",
     "softplus(input)",
+    "softplus(input, options)",
     "softsign(input)",
+    "softsign(input, options)",
     "split(input, splits)",
     "split(input, splits, options)",
     "sqrt(input)",
+    "sqrt(input, options)",
     "sub(a, b)",
+    "sub(a, b, options)",
     "tan(input)",
+    "tan(input, options)",
     "tanh(input)",
+    "tanh(input, options)",
     "transpose(input)",
     "transpose(input, options)",
     "triangular(input)",
     "triangular(input, options)",
     "validate operand",
-    "where(condition, trueValue, falseValue)"
+    "where(condition, trueValue, falseValue)",
+    "where(condition, trueValue, falseValue, options)"
   ],
   "MLGraphBuilder/abs(input)": [
     "input"
   ],
+  "MLGraphBuilder/abs(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/add(a, b)": [
     "a",
     "b"
+  ],
+  "MLGraphBuilder/add(a, b, options)": [
+    "a",
+    "b",
+    "options"
   ],
   "MLGraphBuilder/argMax(input, axis, options)": [
     "axis",
@@ -37219,8 +37271,17 @@
     "input",
     "type"
   ],
+  "MLGraphBuilder/cast(input, type, options)": [
+    "input",
+    "options",
+    "type"
+  ],
   "MLGraphBuilder/ceil(input)": [
     "input"
+  ],
+  "MLGraphBuilder/ceil(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/clamp(input, options)": [
     "input",
@@ -37229,6 +37290,11 @@
   "MLGraphBuilder/concat(inputs, axis)": [
     "axis",
     "inputs"
+  ],
+  "MLGraphBuilder/concat(inputs, axis, options)": [
+    "axis",
+    "inputs",
+    "options"
   ],
   "MLGraphBuilder/constant(descriptor, bufferView)": [
     "bufferView",
@@ -37254,9 +37320,18 @@
   "MLGraphBuilder/cos(input)": [
     "input"
   ],
+  "MLGraphBuilder/cos(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/div(a, b)": [
     "a",
     "b"
+  ],
+  "MLGraphBuilder/div(a, b, options)": [
+    "a",
+    "b",
+    "options"
   ],
   "MLGraphBuilder/elu(input, options)": [
     "input",
@@ -37266,18 +37341,40 @@
     "a",
     "b"
   ],
+  "MLGraphBuilder/equal(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/erf(input)": [
     "input"
   ],
+  "MLGraphBuilder/erf(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/exp(input)": [
     "input"
+  ],
+  "MLGraphBuilder/exp(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/expand(input, newShape)": [
     "input",
     "newShape"
   ],
+  "MLGraphBuilder/expand(input, newShape, options)": [
+    "input",
+    "newShape",
+    "options"
+  ],
   "MLGraphBuilder/floor(input)": [
     "input"
+  ],
+  "MLGraphBuilder/floor(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/gather(input, indices, options)": [
     "indices",
@@ -37286,6 +37383,10 @@
   ],
   "MLGraphBuilder/gelu(input)": [
     "input"
+  ],
+  "MLGraphBuilder/gelu(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/gemm(a, b, options)": [
     "a",
@@ -37296,9 +37397,19 @@
     "a",
     "b"
   ],
+  "MLGraphBuilder/greater(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/greaterOrEqual(a, b)": [
     "a",
     "b"
+  ],
+  "MLGraphBuilder/greaterOrEqual(a, b, options)": [
+    "a",
+    "b",
+    "options"
   ],
   "MLGraphBuilder/gru(input, weight, recurrentWeight, steps, hiddenSize, options)": [
     "hiddenSize",
@@ -37323,8 +37434,16 @@
   "MLGraphBuilder/hardSwish(input)": [
     "input"
   ],
+  "MLGraphBuilder/hardSwish(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/identity(input)": [
     "input"
+  ],
+  "MLGraphBuilder/identity(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/input(name, descriptor)": [
     "descriptor",
@@ -37350,9 +37469,19 @@
     "a",
     "b"
   ],
+  "MLGraphBuilder/lesser(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/lesserOrEqual(a, b)": [
     "a",
     "b"
+  ],
+  "MLGraphBuilder/lesserOrEqual(a, b, options)": [
+    "a",
+    "b",
+    "options"
   ],
   "MLGraphBuilder/linear(input, options)": [
     "input",
@@ -37361,9 +37490,18 @@
   "MLGraphBuilder/log(input)": [
     "input"
   ],
+  "MLGraphBuilder/log(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/logicalNot(a)": [
     "a",
     "b"
+  ],
+  "MLGraphBuilder/logicalNot(a, options)": [
+    "a",
+    "b",
+    "options"
   ],
   "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)": [
     "hiddenSize",
@@ -37386,9 +37524,19 @@
     "a",
     "b"
   ],
+  "MLGraphBuilder/matmul(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/max(a, b)": [
     "a",
     "b"
+  ],
+  "MLGraphBuilder/max(a, b, options)": [
+    "a",
+    "b",
+    "options"
   ],
   "MLGraphBuilder/maxPool2d(input, options)": [
     "input",
@@ -37398,12 +37546,26 @@
     "a",
     "b"
   ],
+  "MLGraphBuilder/min(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/mul(a, b)": [
     "a",
     "b"
   ],
+  "MLGraphBuilder/mul(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/neg(input)": [
     "input"
+  ],
+  "MLGraphBuilder/neg(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/pad(input, beginningPadding, endingPadding, options)": [
     "beginningPadding",
@@ -37415,12 +37577,26 @@
     "a",
     "b"
   ],
+  "MLGraphBuilder/pow(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/prelu(input, slope)": [
     "input",
     "slope"
   ],
+  "MLGraphBuilder/prelu(input, slope, options)": [
+    "input",
+    "options",
+    "slope"
+  ],
   "MLGraphBuilder/reciprocal(input)": [
     "input"
+  ],
+  "MLGraphBuilder/reciprocal(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/reduceL1(input, options)": [
     "input",
@@ -37465,6 +37641,10 @@
   "MLGraphBuilder/relu(input)": [
     "input"
   ],
+  "MLGraphBuilder/relu(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/resample2d(input, options)": [
     "input",
     "options"
@@ -37473,14 +37653,33 @@
     "input",
     "newShape"
   ],
+  "MLGraphBuilder/reshape(input, newShape, options)": [
+    "input",
+    "newShape",
+    "options"
+  ],
   "MLGraphBuilder/sigmoid(input)": [
     "input"
+  ],
+  "MLGraphBuilder/sigmoid(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/sin(input)": [
     "input"
   ],
+  "MLGraphBuilder/sin(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/slice(input, starts, sizes)": [
     "input",
+    "sizes",
+    "starts"
+  ],
+  "MLGraphBuilder/slice(input, starts, sizes, options)": [
+    "input",
+    "options",
     "sizes",
     "starts"
   ],
@@ -37488,11 +37687,24 @@
     "axis",
     "input"
   ],
+  "MLGraphBuilder/softmax(input, axis, options)": [
+    "axis",
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/softplus(input)": [
     "input"
   ],
+  "MLGraphBuilder/softplus(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/softsign(input)": [
     "input"
+  ],
+  "MLGraphBuilder/softsign(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/split(input, splits, options)": [
     "input",
@@ -37502,15 +37714,32 @@
   "MLGraphBuilder/sqrt(input)": [
     "input"
   ],
+  "MLGraphBuilder/sqrt(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/sub(a, b)": [
     "a",
     "b"
   ],
+  "MLGraphBuilder/sub(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/tan(input)": [
     "input"
   ],
+  "MLGraphBuilder/tan(input, options)": [
+    "input",
+    "options"
+  ],
   "MLGraphBuilder/tanh(input)": [
     "input"
+  ],
+  "MLGraphBuilder/tanh(input, options)": [
+    "input",
+    "options"
   ],
   "MLGraphBuilder/transpose(input, options)": [
     "input",
@@ -37523,6 +37752,12 @@
   "MLGraphBuilder/where(condition, trueValue, falseValue)": [
     "condition",
     "falseValue",
+    "trueValue"
+  ],
+  "MLGraphBuilder/where(condition, trueValue, falseValue, options)": [
+    "condition",
+    "falseValue",
+    "options",
     "trueValue"
   ],
   "MLGruCellOptions": [
@@ -37628,6 +37863,9 @@
     "check dimensions",
     "dataType",
     "dimensions"
+  ],
+  "MLOperatorOptions": [
+    "label"
   ],
   "MLPadOptions": [
     "mode",
@@ -55332,6 +55570,7 @@
   ],
   "global object": [
     "csp list",
+    "in error reporting mode",
     "realm"
   ],
   "globalThis": [
@@ -57328,6 +57567,7 @@
     "atop",
     "in",
     "input",
+    "label",
     "lighter",
     "out",
     "output",
