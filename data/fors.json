@@ -1293,6 +1293,7 @@
     "AuctionAdConfig",
     "AuctionAdInterestGroup",
     "AuctionAdInterestGroupKey",
+    "AuctionRealTimeReportingConfig",
     "AudioBuffer",
     "AudioBufferOptions",
     "AudioBufferSourceNode",
@@ -3889,6 +3890,8 @@
     "ReadableStreamType",
     "ReadableWritablePair",
     "ReadyState",
+    "RealTimeContribution",
+    "RealTimeReporting",
     "RecordingState",
     "RedEyeReduction",
     "ReferenceError",
@@ -5258,6 +5261,7 @@
     "add a flag",
     "add a part",
     "add a performanceresourcetiming entry",
+    "add a platform contribution",
     "add a token",
     "add a token with default length",
     "add a token with default position and length",
@@ -5672,6 +5676,7 @@
     "apply interest groups limits to prioritized list",
     "apply link options from parsed header attributes",
     "apply orientation lock",
+    "apply rappor noise",
     "apply request modifiers from url value",
     "apply scroll margin to a scrollport",
     "apply source location",
@@ -6255,6 +6260,7 @@
     "bicameral",
     "bid debug reporting info",
     "bid with currency",
+    "bidding script failure bucket",
     "bidding signals per interest group data",
     "bidi",
     "bidi algorithm",
@@ -6293,6 +6299,7 @@
     "biquadfilteroptions",
     "bisque",
     "bit debit",
+    "bit pack",
     "bitmap",
     "bitmap data",
     "bitmap mode",
@@ -9467,6 +9474,7 @@
     "eof-in-tag",
     "eotf",
     "epatt",
+    "epsilon",
     "epub conformance checker",
     "epub container",
     "epub content document",
@@ -11661,6 +11669,7 @@
     "insert an element at the adjusted insertion location",
     "insert an html element",
     "insert children",
+    "insert entries to map",
     "inserted into a document",
     "insertion mode",
     "insertion point",
@@ -13837,7 +13846,9 @@
     "number of days in month month of year year",
     "number of nullable member types",
     "number of pixels to significance",
+    "number of platform buckets",
     "number of tokens",
+    "number of user buckets",
     "numerator",
     "numeric",
     "numeric character reference end state",
@@ -14816,6 +14827,8 @@
     "platform authenticators",
     "platform collector",
     "platform collector mapping",
+    "platform contribution buckets",
+    "platform contribution priority weight",
     "platform credential",
     "platform descriptor",
     "platform key-agreement key",
@@ -15698,6 +15711,8 @@
     "ready",
     "ready for post-load tasks",
     "ready to be parser-executed",
+    "real time reporting contribution",
+    "real time reporting contributions map",
     "real-world environment",
     "realm id",
     "reason",
@@ -16558,6 +16573,7 @@
     "sample buffer size limit",
     "sample depth scaling",
     "sample interval",
+    "sample real time contributions",
     "samplebufferfull",
     "sampled type",
     "sampler",
@@ -16656,6 +16672,7 @@
     "scoping limit",
     "scoping root",
     "score and rank a bid",
+    "scoring script failure bucket",
     "screen",
     "screen coordinate system",
     "screen ordering",
@@ -16926,12 +16943,14 @@
     "send a beacon",
     "send a disconnect request",
     "send a message",
+    "send a real time report",
     "send a response",
     "send a termination request",
     "send alert text",
     "send an error",
     "send an error response",
     "send click event",
+    "send real time reports",
     "send report",
     "send request key frame algorithm",
     "send select update notifications",
@@ -18709,7 +18728,9 @@
     "truecolor with alpha",
     "truncate",
     "trusted bidding signals batcher",
+    "trusted bidding signals failure bucket",
     "trusted immersive ui",
+    "trusted scoring signals failure bucket",
     "trusted type",
     "trusted ui",
     "trusted-types-directive",
@@ -22034,6 +22055,7 @@
     "perBuyerGroupLimits",
     "perBuyerMultiBidLimits",
     "perBuyerPrioritySignals",
+    "perBuyerRealTimeReportingConfig",
     "perBuyerSignals",
     "perBuyerTimeouts",
     "reportingTimeout",
@@ -22043,6 +22065,7 @@
     "seller",
     "sellerCurrency",
     "sellerExperimentGroupId",
+    "sellerRealTimeReportingConfig",
     "sellerSignals",
     "sellerTimeout",
     "signal",
@@ -22056,6 +22079,9 @@
   "AuctionAdInterestGroupKey": [
     "name",
     "owner"
+  ],
+  "AuctionRealTimeReportingConfig": [
+    "type"
   ],
   "AudioBuffer": [
     "AudioBuffer(options)",
@@ -35972,7 +35998,10 @@
     "debug loss report url",
     "debug win report url",
     "forDebuggingOnly",
-    "fordebuggingonly"
+    "fordebuggingonly",
+    "real time reporting contributions",
+    "realTimeReporting",
+    "realtimereporting"
   ],
   "InterestGroupBiddingScriptRunnerGlobalScope": [
     "bids",
@@ -43662,6 +43691,17 @@
     "closed",
     "ended",
     "open"
+  ],
+  "RealTimeContribution": [
+    "bucket",
+    "latencyThreshold",
+    "priorityWeight"
+  ],
+  "RealTimeReporting": [
+    "contributeToHistogram(contribution)"
+  ],
+  "RealTimeReporting/contributeToHistogram(contribution)": [
+    "contribution"
   ],
   "RecordingState": [
     "\"inactive\"",
@@ -52365,6 +52405,7 @@
     "per buyer group limits",
     "per buyer multi-bid limits",
     "per buyer priority signals",
+    "per buyer real time reporting config",
     "per buyer signals",
     "per buyer timeouts",
     "requested size",
@@ -52373,13 +52414,15 @@
     "seller",
     "seller currency",
     "seller experiment group id",
+    "seller real time reporting config",
     "seller signals",
     "seller timeout",
     "trusted scoring signals url"
   ],
   "auction report info": [
     "debug loss report urls",
-    "debug win report urls"
+    "debug win report urls",
+    "real time reporting contributions map"
   ],
   "audio": [
     "autoplay",
@@ -58275,6 +58318,11 @@
     "grid-order",
     "grid-rows",
     "normal"
+  ],
+  "real time reporting contribution": [
+    "bucket",
+    "latency threshold",
+    "priority weight"
   ],
   "realm": [
     "agent",
