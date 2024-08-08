@@ -24,32 +24,32 @@
     "byteOffset",
     "copyWithin(target, start, end)",
     "entries()",
-    "every(callbackfn, thisArg)",
+    "every(callback, thisArg)",
     "fill(value, start, end)",
-    "filter(callbackfn, thisArg)",
+    "filter(callback, thisArg)",
     "find(predicate, thisArg)",
     "findIndex(predicate, thisArg)",
     "findLast(predicate, thisArg)",
     "findLastIndex(predicate, thisArg)",
-    "forEach(callbackfn, thisArg)",
+    "forEach(callback, thisArg)",
     "includes(searchElement, fromIndex)",
     "indexOf(searchElement, fromIndex)",
     "join(separator)",
     "keys()",
     "lastIndexOf(searchElement, fromIndex)",
     "length",
-    "map(callbackfn, thisArg)",
-    "reduce(callbackfn, initialValue)",
-    "reduceRight(callbackfn, initialValue)",
+    "map(callback, thisArg)",
+    "reduce(callback, initialValue)",
+    "reduceRight(callback, initialValue)",
     "reverse()",
     "set(source, offset)",
     "slice(start, end)",
-    "some(callbackfn, thisArg)",
-    "sort(comparefn)",
+    "some(callback, thisArg)",
+    "sort(comparator)",
     "subarray(start, end)",
     "toLocaleString(reserved1, reserved2)",
     "toReversed()",
-    "toSorted(comparefn)",
+    "toSorted(comparator)",
     "toString()",
     "values()",
     "with(index, value)"
@@ -1177,6 +1177,7 @@
     "AddValueToKeyedGroup(groups, key, value)",
     "AddWaiter",
     "AddWaiter(WL, waiterRecord)",
+    "AddressErrors",
     "AdvanceStringIndex",
     "AdvanceStringIndex(S, index, unicode)",
     "AesCbcParams",
@@ -1234,7 +1235,7 @@
     "Apply per table brotli patch",
     "ApplyConstraints algorithm",
     "ApplyStringOrNumericBinaryOperator",
-    "ApplyStringOrNumericBinaryOperator(lval, opText, rval)",
+    "ApplyStringOrNumericBinaryOperator(lVal, opText, rVal)",
     "Array",
     "ArrayBuffer",
     "ArrayBufferByteLength",
@@ -1362,8 +1363,6 @@
     "AuthenticationExtensionsPRFOutputs",
     "AuthenticationExtensionsPRFValues",
     "AuthenticationExtensionsPaymentInputs",
-    "AuthenticationExtensionsSupplementalPubKeysInputs",
-    "AuthenticationExtensionsSupplementalPubKeysOutputs",
     "AuthenticationResponseJSON",
     "AuthenticatorAssertionResponse",
     "AuthenticatorAssertionResponseJSON",
@@ -1724,9 +1723,9 @@
     "ColorSpaceConversion",
     "Comment",
     "CompareArrayElements",
-    "CompareArrayElements(x, y, comparefn)",
+    "CompareArrayElements(x, y, comparator)",
     "CompareTypedArrayElements",
-    "CompareTypedArrayElements(x, y, comparefn)",
+    "CompareTypedArrayElements(x, y, comparator)",
     "CompileError",
     "CompletePropertyDescriptor",
     "CompletePropertyDescriptor(Desc)",
@@ -1773,7 +1772,6 @@
     "ContentVisibilityAutoStateChangeEventInit",
     "ContentVisibilityAutoStateChangedEvent",
     "ContentVisibilityAutoStateChangedEventInit",
-    "ContinuationPriority",
     "ContinueDynamicImport",
     "ContinueDynamicImport(promiseCapability, moduleCompletion)",
     "ContinueModuleLoading",
@@ -1806,7 +1804,6 @@
     "Create a Trusted Type",
     "Create a Trusted Type Policy",
     "Create a new device-bound key record",
-    "Create a new supplemental public key record",
     "CreateArrayFromList",
     "CreateArrayFromList(elements)",
     "CreateArrayIterator",
@@ -1832,10 +1829,10 @@
     "CreateHTMLCallback",
     "CreateIntrinsics",
     "CreateIntrinsics(realmRec)",
-    "CreateIterResultObject",
-    "CreateIterResultObject(value, done)",
     "CreateIteratorFromClosure",
     "CreateIteratorFromClosure(closure, generatorBrand, generatorPrototype)",
+    "CreateIteratorResultObject",
+    "CreateIteratorResultObject(value, done)",
     "CreateListFromArrayLike",
     "CreateListFromArrayLike(obj, elementTypes)",
     "CreateListIteratorRecord",
@@ -2417,7 +2414,7 @@
     "GeneratorValidate",
     "GeneratorValidate(generator, generatorBrand)",
     "GeneratorYield",
-    "GeneratorYield(iterNextObj)",
+    "GeneratorYield(iteratorResult)",
     "GenericTransformStream",
     "Geolocation",
     "GeolocationCoordinates",
@@ -2519,7 +2516,7 @@
     "GlobalState",
     "GravitySensor",
     "GroupBy",
-    "GroupBy(items, callbackfn, keyCoercion)",
+    "GroupBy(items, callback, keyCoercion)",
     "GroupEffect",
     "Gyroscope",
     "GyroscopeLocalCoordinateSystem",
@@ -2917,7 +2914,7 @@
     "IteratorClose",
     "IteratorClose(iteratorRecord, completion)",
     "IteratorComplete",
-    "IteratorComplete(iterResult)",
+    "IteratorComplete(iteratorResult)",
     "IteratorNext",
     "IteratorNext(iteratorRecord, value)",
     "IteratorStep",
@@ -2927,7 +2924,7 @@
     "IteratorToList",
     "IteratorToList(iteratorRecord)",
     "IteratorValue",
-    "IteratorValue(iterResult)",
+    "IteratorValue(iteratorResult)",
     "JSON",
     "JsonLd",
     "JsonLdContext",
@@ -3317,7 +3314,7 @@
     "NewObjectEnvironment",
     "NewObjectEnvironment(O, W, E)",
     "NewPrivateEnvironment",
-    "NewPrivateEnvironment(outerPrivEnv)",
+    "NewPrivateEnvironment(outerPrivateEnv)",
     "NewPromiseCapability",
     "NewPromiseCapability(C)",
     "NewPromiseReactionJob",
@@ -3468,6 +3465,7 @@
     "PasswordCredentialData",
     "PasswordCredentialInit",
     "Path2D",
+    "PayerErrors",
     "PaymentComplete",
     "PaymentCompleteDetails",
     "PaymentCredentialInstrument",
@@ -3483,6 +3481,7 @@
     "PaymentMethodChangeEvent",
     "PaymentMethodChangeEventInit",
     "PaymentMethodData",
+    "PaymentOptions",
     "PaymentRequest",
     "PaymentRequestDetailsUpdate",
     "PaymentRequestEvent",
@@ -3490,6 +3489,8 @@
     "PaymentRequestUpdateEvent",
     "PaymentRequestUpdateEventInit",
     "PaymentResponse",
+    "PaymentShippingOption",
+    "PaymentShippingType",
     "PaymentValidationErrors",
     "Pbkdf2Params",
     "PeekQueueValue",
@@ -3975,7 +3976,7 @@
     "ResolveBinding",
     "ResolveBinding(name, env)",
     "ResolvePrivateIdentifier",
-    "ResolvePrivateIdentifier(privEnv, identifier)",
+    "ResolvePrivateIdentifier(privateEnv, identifier)",
     "ResolveThisBinding",
     "ResolveThisBinding()",
     "Response",
@@ -4132,8 +4133,6 @@
     "Scheduler",
     "SchedulerPostTaskCallback",
     "SchedulerPostTaskOptions",
-    "SchedulerSignalInherit",
-    "SchedulerYieldOptions",
     "Scheduling",
     "ScoreAdOutput",
     "ScoringBrowserSignals",
@@ -6290,6 +6289,7 @@
     "big5 lead",
     "bigint",
     "biginteger",
+    "billing address",
     "binary data byte",
     "binary object store",
     "binding edge",
@@ -7298,6 +7298,7 @@
     "color-adjust",
     "color-interpolation",
     "color-interpolation-filters",
+    "color-layers()",
     "color-mix()",
     "color-rendering",
     "color-scheme",
@@ -7450,7 +7451,6 @@
     "compute the effective overload set",
     "compute the intersection",
     "compute the key hash of reporting id",
-    "compute the scheduling state from options",
     "compute the tick duration",
     "computed <image>",
     "computed color",
@@ -12130,7 +12130,6 @@
     "key session",
     "key string",
     "key system",
-    "key system(s)",
     "key value",
     "key(s)",
     "keyalgorithm",
@@ -14627,6 +14626,9 @@
     "pausing all input sources",
     "payee",
     "payer",
+    "payer detail changed algorithm",
+    "payer details",
+    "payerdetailchange",
     "payload field",
     "payload length field",
     "payment",
@@ -14642,6 +14644,7 @@
     "paymentmethodchange",
     "paymentrequest updated algorithm",
     "paymentrequest(methoddata, details)",
+    "paymentrequest(methoddata, details, options)",
     "paymentrequest.paymentrequest()",
     "pbkdf2params",
     "pcenchar",
@@ -17370,6 +17373,11 @@
     "shift_jis lead",
     "shifted character",
     "shifted state",
+    "shipping address",
+    "shipping address changed algorithm",
+    "shipping option changed algorithm",
+    "shippingaddresschange",
+    "shippingoptionchange",
     "short",
     "short cooldown period",
     "short_name",
@@ -18048,8 +18056,6 @@
     "superseded registry",
     "supplemental confidential council report",
     "supplemental content",
-    "supplemental public key",
-    "supplementalpubkeys",
     "supplementary character",
     "supplementary code point",
     "supplied mime type",
@@ -21551,6 +21557,18 @@
     "passive",
     "signal"
   ],
+  "AddressErrors": [
+    "addressLine",
+    "city",
+    "country",
+    "dependentLocality",
+    "organization",
+    "phone",
+    "postalCode",
+    "recipient",
+    "region",
+    "sortingCode"
+  ],
   "AesCbcParams": [
     "iv"
   ],
@@ -21926,38 +21944,38 @@
     "concat(...items)",
     "copyWithin(target, start, end)",
     "entries()",
-    "every(callbackfn, thisArg)",
+    "every(callback, thisArg)",
     "fill(value, start, end)",
-    "filter(callbackfn, thisArg)",
+    "filter(callback, thisArg)",
     "find(predicate, thisArg)",
     "findIndex(predicate, thisArg)",
     "findLast(predicate, thisArg)",
     "findLastIndex(predicate, thisArg)",
     "flat(depth)",
     "flatMap(mapperFunction, thisArg)",
-    "forEach(callbackfn, thisArg)",
-    "from(items, mapfn, thisArg)",
+    "forEach(callback, thisArg)",
+    "from(items, mapper, thisArg)",
     "includes(searchElement, fromIndex)",
     "indexOf(searchElement, fromIndex)",
     "isArray(arg)",
     "join(separator)",
     "keys()",
     "lastIndexOf(searchElement, fromIndex)",
-    "map(callbackfn, thisArg)",
+    "map(callback, thisArg)",
     "of(...items)",
     "pop()",
     "push(...items)",
-    "reduce(callbackfn, initialValue)",
-    "reduceRight(callbackfn, initialValue)",
+    "reduce(callback, initialValue)",
+    "reduceRight(callback, initialValue)",
     "reverse()",
     "shift()",
     "slice(start, end)",
-    "some(callbackfn, thisArg)",
-    "sort(comparefn)",
+    "some(callback, thisArg)",
+    "sort(comparator)",
     "splice(start, deleteCount, ...items)",
     "toLocaleString(reserved1, reserved2)",
     "toReversed()",
-    "toSorted(comparefn)",
+    "toSorted(comparator)",
     "toSpliced(start, skipCount, ...items)",
     "toString()",
     "unshift(...items)",
@@ -22899,7 +22917,6 @@
     "minPinLength",
     "payment",
     "prf",
-    "supplementalPubKeys",
     "uvm"
   ],
   "AuthenticationExtensionsClientOutputs": [
@@ -22911,7 +22928,6 @@
     "hmacGetSecret",
     "largeBlob",
     "prf",
-    "supplementalPubKeys",
     "uvm"
   ],
   "AuthenticationExtensionsDevicePublicKeyInputs": [
@@ -22951,14 +22967,6 @@
     "rpId",
     "topOrigin",
     "total"
-  ],
-  "AuthenticationExtensionsSupplementalPubKeysInputs": [
-    "attestation",
-    "attestationFormats",
-    "scopes"
-  ],
-  "AuthenticationExtensionsSupplementalPubKeysOutputs": [
-    "signatures"
   ],
   "AuthenticationResponseJSON": [
     "authenticatorAttachment",
@@ -27049,12 +27057,6 @@
   ],
   "ContentVisibilityAutoStateChangedEventInit": [
     "skipped"
-  ],
-  "ContinuationPriority": [
-    "\"background\"",
-    "\"inherit\"",
-    "\"user-blocking\"",
-    "\"user-visible\""
   ],
   "ConvertCoordinateOptions": [
     "fromBox",
@@ -37869,9 +37871,9 @@
     "clear()",
     "delete(key)",
     "entries()",
-    "forEach(callbackfn, thisArg)",
+    "forEach(callback, thisArg)",
     "get(key)",
-    "groupBy(items, callbackfn)",
+    "groupBy(items, callback)",
     "has(key)",
     "keys()",
     "set(key, value)",
@@ -40366,7 +40368,7 @@
     "getOwnPropertyNames(O)",
     "getOwnPropertySymbols(O)",
     "getPrototypeOf(O)",
-    "groupBy(items, callbackfn)",
+    "groupBy(items, callback)",
     "hasOwn(O, P)",
     "hasOwnProperty(V)",
     "is(value1, value2)",
@@ -40860,6 +40862,11 @@
     "Path2D(path)",
     "addPath(path, transform)"
   ],
+  "PayerErrors": [
+    "email",
+    "name",
+    "phone"
+  ],
   "Payment Method": [
     "additional data type"
   ],
@@ -40888,7 +40895,8 @@
   ],
   "PaymentDetailsBase": [
     "displayItems",
-    "modifiers"
+    "modifiers",
+    "shippingOptions"
   ],
   "PaymentDetailsInit": [
     "id",
@@ -40901,7 +40909,10 @@
     "total"
   ],
   "PaymentDetailsUpdate": [
+    "error",
+    "payerErrors",
     "paymentMethodErrors",
+    "shippingAddressErrors",
     "total"
   ],
   "PaymentHandlerResponse": [
@@ -40938,10 +40949,19 @@
     "data",
     "supportedMethods"
   ],
+  "PaymentOptions": [
+    "requestBillingAddress",
+    "requestPayerEmail",
+    "requestPayerName",
+    "requestPayerPhone",
+    "requestShipping",
+    "shippingType"
+  ],
   "PaymentRequest": [
     "[[acceptPromise]]",
     "[[details]]",
     "[[handler]]",
+    "[[options]]",
     "[[response]]",
     "[[serializedMethodData]]",
     "[[serializedModifierData]]",
@@ -40952,11 +40972,17 @@
     "closed",
     "constructor()",
     "constructor(methodData, details)",
+    "constructor(methodData, details, options)",
     "created",
     "id",
     "interactive",
     "isSecurePaymentConfirmationAvailable()",
     "onpaymentmethodchange",
+    "onshippingaddresschange",
+    "onshippingoptionchange",
+    "shippingAddress",
+    "shippingOption",
+    "shippingType",
     "show()",
     "show(detailsPromise)",
     "state"
@@ -41024,13 +41050,32 @@
     "complete(result, details)",
     "details",
     "methodName",
+    "onpayerdetailchange",
+    "payerEmail",
+    "payerName",
+    "payerPhone",
     "requestId",
     "retry()",
-    "retry(errorFields)"
+    "retry(errorFields)",
+    "shippingAddress",
+    "shippingOption"
+  ],
+  "PaymentShippingOption": [
+    "amount",
+    "id",
+    "label",
+    "selected"
+  ],
+  "PaymentShippingType": [
+    "delivery",
+    "pickup",
+    "shipping"
   ],
   "PaymentValidationErrors": [
     "error",
-    "paymentMethod"
+    "payer",
+    "paymentMethod",
+    "shippingAddress"
   ],
   "Pbkdf2Params": [
     "hash",
@@ -45026,21 +45071,8 @@
     "callback",
     "options"
   ],
-  "Scheduler/yield()": [
-    "options"
-  ],
-  "Scheduler/yield(options)": [
-    "options"
-  ],
   "SchedulerPostTaskOptions": [
     "delay",
-    "priority",
-    "signal"
-  ],
-  "SchedulerSignalInherit": [
-    "\"inherit\""
-  ],
-  "SchedulerYieldOptions": [
     "priority",
     "signal"
   ],
@@ -45621,7 +45653,7 @@
     "delete(value)",
     "difference(other)",
     "entries()",
-    "forEach(callbackfn, thisArg)",
+    "forEach(callback, thisArg)",
     "has(value)",
     "intersection(other)",
     "isDisjointFrom(other)",
@@ -46514,7 +46546,7 @@
     "concat(...args)",
     "endsWith(searchString, endPosition)",
     "fixed()",
-    "fontcolor(color)",
+    "fontcolor(colour)",
     "fontsize(size)",
     "fromCharCode(...codeUnits)",
     "fromCodePoint(...codePoints)",
@@ -53896,8 +53928,6 @@
     "id",
     "publicKey",
     "signCount",
-    "supplemental public key record",
-    "supplementalPubKeys",
     "transports",
     "type",
     "uvInitialized"
@@ -59565,13 +59595,6 @@
     "from-font",
     "normal"
   ],
-  "supplementalPubKeys record": [
-    "aaguid",
-    "attStmt",
-    "fmt",
-    "scope",
-    "spk"
-  ],
   "supported limits": [
     "maxBindGroups",
     "maxBindGroupsPlusVertexBuffers",
@@ -59973,21 +59996,17 @@
     "punctuation",
     "replace"
   ],
+  "text-box": [
+    "normal"
+  ],
   "text-box-edge": [
-    "alphabetic",
-    "auto",
-    "cap",
-    "ex",
-    "ideographic",
-    "ideographic-ink",
-    "leading",
-    "text"
+    "auto"
   ],
   "text-box-trim": [
-    "both",
-    "end",
     "none",
-    "start"
+    "trim-both",
+    "trim-end",
+    "trim-start"
   ],
   "text-combine-upright": [
     "all",
