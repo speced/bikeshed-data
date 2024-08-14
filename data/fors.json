@@ -1177,7 +1177,6 @@
     "AddValueToKeyedGroup(groups, key, value)",
     "AddWaiter",
     "AddWaiter(WL, waiterRecord)",
-    "AddressErrors",
     "AdvanceStringIndex",
     "AdvanceStringIndex(S, index, unicode)",
     "AesCbcParams",
@@ -3465,7 +3464,6 @@
     "PasswordCredentialData",
     "PasswordCredentialInit",
     "Path2D",
-    "PayerErrors",
     "PaymentComplete",
     "PaymentCompleteDetails",
     "PaymentCredentialInstrument",
@@ -3481,7 +3479,6 @@
     "PaymentMethodChangeEvent",
     "PaymentMethodChangeEventInit",
     "PaymentMethodData",
-    "PaymentOptions",
     "PaymentRequest",
     "PaymentRequestDetailsUpdate",
     "PaymentRequestEvent",
@@ -3489,8 +3486,6 @@
     "PaymentRequestUpdateEvent",
     "PaymentRequestUpdateEventInit",
     "PaymentResponse",
-    "PaymentShippingOption",
-    "PaymentShippingType",
     "PaymentValidationErrors",
     "Pbkdf2Params",
     "PeekQueueValue",
@@ -6291,7 +6286,6 @@
     "big5 lead",
     "bigint",
     "biginteger",
-    "billing address",
     "binary data byte",
     "binary object store",
     "binding edge",
@@ -6985,6 +6979,7 @@
     "check if aggregatable debug reporting should be blocked by rate-limit",
     "check if an access between two browsing contexts should be reported",
     "check if an aggregatable attribution report should be unconditionally sent",
+    "check if an attribution source and attribution trigger have matching attribution scopes",
     "check if an attribution source can create aggregatable contributions",
     "check if an attribution source exceeds the per day destination limits",
     "check if an attribution source exceeds the time-based destination limits",
@@ -7000,6 +6995,7 @@
     "check if hardware exposure is allowed",
     "check if negotiation is needed",
     "check if required seller capabilities are permitted",
+    "check if source has compatible attribution scope fields",
     "check if string-like",
     "check if the device is configured",
     "check if three code points would start a number",
@@ -9983,6 +9979,7 @@
     "find matching links",
     "find matching sources",
     "find slottables",
+    "find sources with common destinations and reporting origin",
     "find supported configuration combination",
     "find the alternate index",
     "find the alternate interface for the current alternate setting",
@@ -14630,9 +14627,6 @@
     "pausing all input sources",
     "payee",
     "payer",
-    "payer detail changed algorithm",
-    "payer details",
-    "payerdetailchange",
     "payload field",
     "payload length field",
     "payment",
@@ -14648,7 +14642,6 @@
     "paymentmethodchange",
     "paymentrequest updated algorithm",
     "paymentrequest(methoddata, details)",
-    "paymentrequest(methoddata, details, options)",
     "paymentrequest.paymentrequest()",
     "pbkdf2params",
     "pcenchar",
@@ -15522,7 +15515,6 @@
     "query k-anonymity count",
     "query percent-encode set",
     "query reporting id k-anonymity count",
-    "query set state",
     "query the \"bluetooth\" permission",
     "query the bluetooth cache",
     "queryhandwritingrecognizer(constraint)",
@@ -16032,13 +16024,17 @@
     "remove an element from the top layer immediately",
     "remove an event listener",
     "remove an input source",
+    "remove associated event-level reports and rate-limit records",
     "remove client hints from redirect if needed",
     "remove credential",
     "remove device from storage",
     "remove empty arrays",
     "remove event",
     "remove from the top layer immediately",
+    "remove or update sources with incompatible attribution scope fields",
     "remove replaced animations",
+    "remove sources with unselected attribution scopes",
+    "remove sources with unselected attribution scopes for destination",
     "remove the fragment directive",
     "remove the track",
     "remove virtual authenticator",
@@ -17378,11 +17374,6 @@
     "shift_jis lead",
     "shifted character",
     "shifted state",
-    "shipping address",
-    "shipping address changed algorithm",
-    "shipping option changed algorithm",
-    "shippingaddresschange",
-    "shippingoptionchange",
     "short",
     "short cooldown period",
     "short_name",
@@ -21563,18 +21554,6 @@
     "passive",
     "signal"
   ],
-  "AddressErrors": [
-    "addressLine",
-    "city",
-    "country",
-    "dependentLocality",
-    "organization",
-    "phone",
-    "postalCode",
-    "recipient",
-    "region",
-    "sortingCode"
-  ],
   "AesCbcParams": [
     "iv"
   ],
@@ -22115,6 +22094,7 @@
   ],
   "AuctionAdInterestGroup": [
     "additionalBidKey",
+    "lifetimeMs",
     "priority",
     "prioritySignalsOverrides"
   ],
@@ -32579,7 +32559,6 @@
   ],
   "GPUQuerySet": [
     "[[destroyed]]",
-    "[[state]]",
     "count",
     "destroy()",
     "type"
@@ -32914,7 +32893,6 @@
   ],
   "GPUTexture": [
     "[[destroyed]]",
-    "[[size]]",
     "[[viewFormats]]",
     "createView()",
     "createView(descriptor)",
@@ -33305,7 +33283,6 @@
     "biddingWasmHelperURL",
     "enableBiddingSignalsPrioritization",
     "executionMode",
-    "lifetimeMs",
     "maxTrustedBiddingSignalsURLLength",
     "name",
     "owner",
@@ -40869,11 +40846,6 @@
     "Path2D(path)",
     "addPath(path, transform)"
   ],
-  "PayerErrors": [
-    "email",
-    "name",
-    "phone"
-  ],
   "Payment Method": [
     "additional data type"
   ],
@@ -40902,8 +40874,7 @@
   ],
   "PaymentDetailsBase": [
     "displayItems",
-    "modifiers",
-    "shippingOptions"
+    "modifiers"
   ],
   "PaymentDetailsInit": [
     "id",
@@ -40916,10 +40887,7 @@
     "total"
   ],
   "PaymentDetailsUpdate": [
-    "error",
-    "payerErrors",
     "paymentMethodErrors",
-    "shippingAddressErrors",
     "total"
   ],
   "PaymentHandlerResponse": [
@@ -40956,19 +40924,10 @@
     "data",
     "supportedMethods"
   ],
-  "PaymentOptions": [
-    "requestBillingAddress",
-    "requestPayerEmail",
-    "requestPayerName",
-    "requestPayerPhone",
-    "requestShipping",
-    "shippingType"
-  ],
   "PaymentRequest": [
     "[[acceptPromise]]",
     "[[details]]",
     "[[handler]]",
-    "[[options]]",
     "[[response]]",
     "[[serializedMethodData]]",
     "[[serializedModifierData]]",
@@ -40979,17 +40938,11 @@
     "closed",
     "constructor()",
     "constructor(methodData, details)",
-    "constructor(methodData, details, options)",
     "created",
     "id",
     "interactive",
     "isSecurePaymentConfirmationAvailable()",
     "onpaymentmethodchange",
-    "onshippingaddresschange",
-    "onshippingoptionchange",
-    "shippingAddress",
-    "shippingOption",
-    "shippingType",
     "show()",
     "show(detailsPromise)",
     "state"
@@ -41057,32 +41010,13 @@
     "complete(result, details)",
     "details",
     "methodName",
-    "onpayerdetailchange",
-    "payerEmail",
-    "payerName",
-    "payerPhone",
     "requestId",
     "retry()",
-    "retry(errorFields)",
-    "shippingAddress",
-    "shippingOption"
-  ],
-  "PaymentShippingOption": [
-    "amount",
-    "id",
-    "label",
-    "selected"
-  ],
-  "PaymentShippingType": [
-    "delivery",
-    "pickup",
-    "shipping"
+    "retry(errorFields)"
   ],
   "PaymentValidationErrors": [
     "error",
-    "payer",
-    "paymentMethod",
-    "shippingAddress"
+    "paymentMethod"
   ],
   "Pbkdf2Params": [
     "hash",
@@ -58274,10 +58208,6 @@
   "qualifier": [
     "<interval>"
   ],
-  "query set state": [
-    "available",
-    "destroyed"
-  ],
   "queue": [
     "clone",
     "contain",
@@ -59313,6 +59243,7 @@
     "source-destination-limit-replaced",
     "source-destination-per-day-rate-limit",
     "source-destination-rate-limit",
+    "source-max-event-states-limit",
     "source-noised",
     "source-reporting-origin-limit",
     "source-reporting-origin-per-site-limit",
