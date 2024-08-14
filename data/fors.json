@@ -1177,6 +1177,7 @@
     "AddValueToKeyedGroup(groups, key, value)",
     "AddWaiter",
     "AddWaiter(WL, waiterRecord)",
+    "AddressErrors",
     "AdvanceStringIndex",
     "AdvanceStringIndex(S, index, unicode)",
     "AesCbcParams",
@@ -3464,6 +3465,7 @@
     "PasswordCredentialData",
     "PasswordCredentialInit",
     "Path2D",
+    "PayerErrors",
     "PaymentComplete",
     "PaymentCompleteDetails",
     "PaymentCredentialInstrument",
@@ -3479,6 +3481,7 @@
     "PaymentMethodChangeEvent",
     "PaymentMethodChangeEventInit",
     "PaymentMethodData",
+    "PaymentOptions",
     "PaymentRequest",
     "PaymentRequestDetailsUpdate",
     "PaymentRequestEvent",
@@ -3486,6 +3489,8 @@
     "PaymentRequestUpdateEvent",
     "PaymentRequestUpdateEventInit",
     "PaymentResponse",
+    "PaymentShippingOption",
+    "PaymentShippingType",
     "PaymentValidationErrors",
     "Pbkdf2Params",
     "PeekQueueValue",
@@ -6286,6 +6291,7 @@
     "big5 lead",
     "bigint",
     "biginteger",
+    "billing address",
     "binary data byte",
     "binary object store",
     "binding edge",
@@ -14627,6 +14633,9 @@
     "pausing all input sources",
     "payee",
     "payer",
+    "payer detail changed algorithm",
+    "payer details",
+    "payerdetailchange",
     "payload field",
     "payload length field",
     "payment",
@@ -14642,6 +14651,7 @@
     "paymentmethodchange",
     "paymentrequest updated algorithm",
     "paymentrequest(methoddata, details)",
+    "paymentrequest(methoddata, details, options)",
     "paymentrequest.paymentrequest()",
     "pbkdf2params",
     "pcenchar",
@@ -17374,6 +17384,11 @@
     "shift_jis lead",
     "shifted character",
     "shifted state",
+    "shipping address",
+    "shipping address changed algorithm",
+    "shipping option changed algorithm",
+    "shippingaddresschange",
+    "shippingoptionchange",
     "short",
     "short cooldown period",
     "short_name",
@@ -21553,6 +21568,18 @@
     "once",
     "passive",
     "signal"
+  ],
+  "AddressErrors": [
+    "addressLine",
+    "city",
+    "country",
+    "dependentLocality",
+    "organization",
+    "phone",
+    "postalCode",
+    "recipient",
+    "region",
+    "sortingCode"
   ],
   "AesCbcParams": [
     "iv"
@@ -40846,6 +40873,11 @@
     "Path2D(path)",
     "addPath(path, transform)"
   ],
+  "PayerErrors": [
+    "email",
+    "name",
+    "phone"
+  ],
   "Payment Method": [
     "additional data type"
   ],
@@ -40874,7 +40906,8 @@
   ],
   "PaymentDetailsBase": [
     "displayItems",
-    "modifiers"
+    "modifiers",
+    "shippingOptions"
   ],
   "PaymentDetailsInit": [
     "id",
@@ -40887,7 +40920,10 @@
     "total"
   ],
   "PaymentDetailsUpdate": [
+    "error",
+    "payerErrors",
     "paymentMethodErrors",
+    "shippingAddressErrors",
     "total"
   ],
   "PaymentHandlerResponse": [
@@ -40924,10 +40960,19 @@
     "data",
     "supportedMethods"
   ],
+  "PaymentOptions": [
+    "requestBillingAddress",
+    "requestPayerEmail",
+    "requestPayerName",
+    "requestPayerPhone",
+    "requestShipping",
+    "shippingType"
+  ],
   "PaymentRequest": [
     "[[acceptPromise]]",
     "[[details]]",
     "[[handler]]",
+    "[[options]]",
     "[[response]]",
     "[[serializedMethodData]]",
     "[[serializedModifierData]]",
@@ -40938,11 +40983,17 @@
     "closed",
     "constructor()",
     "constructor(methodData, details)",
+    "constructor(methodData, details, options)",
     "created",
     "id",
     "interactive",
     "isSecurePaymentConfirmationAvailable()",
     "onpaymentmethodchange",
+    "onshippingaddresschange",
+    "onshippingoptionchange",
+    "shippingAddress",
+    "shippingOption",
+    "shippingType",
     "show()",
     "show(detailsPromise)",
     "state"
@@ -41010,13 +41061,32 @@
     "complete(result, details)",
     "details",
     "methodName",
+    "onpayerdetailchange",
+    "payerEmail",
+    "payerName",
+    "payerPhone",
     "requestId",
     "retry()",
-    "retry(errorFields)"
+    "retry(errorFields)",
+    "shippingAddress",
+    "shippingOption"
+  ],
+  "PaymentShippingOption": [
+    "amount",
+    "id",
+    "label",
+    "selected"
+  ],
+  "PaymentShippingType": [
+    "delivery",
+    "pickup",
+    "shipping"
   ],
   "PaymentValidationErrors": [
     "error",
-    "paymentMethod"
+    "payer",
+    "paymentMethod",
+    "shippingAddress"
   ],
   "Pbkdf2Params": [
     "hash",
@@ -41487,6 +41557,7 @@
     "getPredictedEvents()",
     "height",
     "isPrimary",
+    "persistentDeviceId",
     "pointerId",
     "pointerType",
     "pressure",
@@ -41502,6 +41573,7 @@
     "coalescedEvents",
     "height",
     "isPrimary",
+    "persistentDeviceId",
     "pointerId",
     "pointerType",
     "predictedEvents",
