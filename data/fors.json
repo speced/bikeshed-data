@@ -1296,6 +1296,7 @@
     "AuctionAdConfig",
     "AuctionAdInterestGroup",
     "AuctionAdInterestGroupKey",
+    "AuctionAdInterestGroupSize",
     "AuctionRealTimeReportingConfig",
     "AudioBuffer",
     "AudioBufferOptions",
@@ -4734,6 +4735,7 @@
     "ViewTransition",
     "ViewTransitionNavigation",
     "ViewTransitionTypeSet",
+    "Viewport",
     "VirtualKeyboard",
     "VisibilityStateEntry",
     "VisualViewport",
@@ -22090,7 +22092,8 @@
     "buyerAndSellerReportingId",
     "buyerReportingId",
     "metadata",
-    "renderURL"
+    "renderURL",
+    "sizeGroup"
   ],
   "AuctionAdConfig": [
     "additionalBids",
@@ -22134,6 +22137,10 @@
   "AuctionAdInterestGroupKey": [
     "name",
     "owner"
+  ],
+  "AuctionAdInterestGroupSize": [
+    "height",
+    "width"
   ],
   "AuctionRealTimeReportingConfig": [
     "type"
@@ -29673,6 +29680,7 @@
   "DocumentPictureInPictureOptions": [
     "disallowReturnToOpener",
     "height",
+    "preferInitialWindowPlacement",
     "width"
   ],
   "DocumentTimeline": [
@@ -33311,6 +33319,7 @@
   ],
   "GenerateBidInterestGroup": [
     "adComponents",
+    "adSizes",
     "ads",
     "biddingLogicURL",
     "biddingWasmHelperURL",
@@ -33321,6 +33330,7 @@
     "owner",
     "priorityVector",
     "sellerCapabilities",
+    "sizeGroups",
     "trustedBiddingSignalsKeys",
     "trustedBiddingSignalsSlotSizeMode",
     "trustedBiddingSignalsURL",
@@ -49177,6 +49187,9 @@
     "\"auto\"",
     "\"none\""
   ],
+  "Viewport": [
+    "segments"
+  ],
   "VirtualKeyboard": [
     "boundingRect",
     "hide()",
@@ -49915,6 +49928,7 @@
     "trusted type policy factory",
     "unhandledrejection",
     "unload",
+    "viewport",
     "visualViewport",
     "window"
   ],
@@ -56335,6 +56349,7 @@
   ],
   "interest group": [
     "ad components",
+    "ad sizes",
     "additional bid key",
     "ads",
     "all sellers capabilities",
@@ -56358,6 +56373,7 @@
     "priority signals overrides",
     "priority vector",
     "seller capabilities",
+    "size groups",
     "trusted bidding signals keys",
     "trusted bidding signals slot size mode",
     "trusted bidding signals url",
@@ -56369,7 +56385,8 @@
     "buyer and seller reporting id",
     "buyer reporting id",
     "metadata",
-    "render url"
+    "render url",
+    "size group"
   ],
   "interest group descriptor": [
     "name",
