@@ -519,6 +519,7 @@
     ":snapped-y",
     ":stalled",
     ":start-of-page",
+    ":state()",
     ":target",
     ":target-within",
     ":user-invalid",
@@ -1298,6 +1299,8 @@
     "AuctionAdInterestGroupKey",
     "AuctionAdInterestGroupSize",
     "AuctionRealTimeReportingConfig",
+    "AuctionReportBuyerDebugModeConfig",
+    "AuctionReportBuyersConfig",
     "AudioBuffer",
     "AudioBufferOptions",
     "AudioBufferSourceNode",
@@ -1975,6 +1978,7 @@
     "DevicePostureType",
     "DigitalCredential",
     "DigitalCredentialRequestOptions",
+    "DigitalCredentialsProvider",
     "DigitalGoodsService",
     "DirectFromSellerSignalsForBuyer",
     "DirectFromSellerSignalsForSeller",
@@ -2732,7 +2736,6 @@
     "IdentityProviderRequestOptions",
     "IdentityProviderToken",
     "IdentityProviderWellKnown",
-    "IdentityRequestProvider",
     "IdentityUserInfo",
     "IdleDeadline",
     "IdleDetector",
@@ -3434,6 +3437,10 @@
     "OscillatorType",
     "OverSampleType",
     "OverconstrainedError",
+    "PADebugModeOptions",
+    "PAExtendedHistogramContribution",
+    "PAHistogramContribution",
+    "PASignalValue",
     "PackAndPostMessage",
     "PackAndPostMessageHandlingError",
     "Page",
@@ -3600,6 +3607,7 @@
     "Prevent Silent Access",
     "PreviousWin",
     "Printer",
+    "PrivateAggregation",
     "PrivateElementFind",
     "PrivateElementFind(O, P)",
     "PrivateFieldAdd",
@@ -3634,6 +3642,7 @@
     "PromptResponseObject",
     "PropertyDefinition",
     "ProtectedAudience",
+    "ProtectedAudiencePrivateAggregationConfig",
     "ProximitySensor",
     "Proxy",
     "ProxyCreate",
@@ -4250,6 +4259,7 @@
     "SharedDataBlockEventSet(execution)",
     "SharedStorage",
     "SharedStorageDataOrigin",
+    "SharedStoragePrivateAggregationConfig",
     "SharedStorageResponse",
     "SharedStorageRunOperationMethodOptions",
     "SharedStorageSetMethodOptions",
@@ -5380,11 +5390,13 @@
     "aggregatable dedup key",
     "aggregatable key value",
     "aggregatable report",
+    "aggregatable report cache",
     "aggregatable source registration time configuration",
     "aggregatable trigger data",
     "aggregatable values configuration",
     "aggregatable-debug-reporting json key",
     "aggregation coordinator",
+    "aggregation coordinator map",
     "alert steps",
     "algorithm",
     "algorithm for assigning header cells",
@@ -5443,6 +5455,7 @@
     "allow-list",
     "allow-list-value",
     "allowed aggregatable budget per source",
+    "allowed aggregation coordinator set",
     "allowed buffer usages",
     "allowed by sandboxing to navigate",
     "allowed in the body",
@@ -5631,6 +5644,7 @@
     "append",
     "append a request `origin` header",
     "append an attribute",
+    "append an entry to the contribution cache",
     "append client hints to request",
     "append error",
     "append or modify a request `sec-browsing-topics` header",
@@ -5863,6 +5877,7 @@
     "attempt to deliver an aggregatable debug report",
     "attempt to disconnect",
     "attempt to populate the history entry's document",
+    "attempt to queue reports for sending",
     "attempt to resume playback if necessary",
     "attempt to send an automatic beacon",
     "attempting to access the depth buffer",
@@ -6063,6 +6078,7 @@
     "automation event time",
     "automation events",
     "automation local testing mode",
+    "automation local testing mode enabled",
     "automation method",
     "autonomous custom element",
     "autoplay",
@@ -6216,6 +6232,7 @@
     "batch attestation",
     "batch cache operations",
     "batch or fetch trusted bidding signals",
+    "batching scope",
     "battery status task source",
     "bd_addr",
     "bday",
@@ -7636,6 +7653,7 @@
     "consume an html character reference",
     "consume an ident sequence",
     "consume an ident-like token",
+    "consume budget if permitted",
     "consume comments",
     "consume history-action user activation",
     "consume text",
@@ -7770,6 +7788,8 @@
     "contrast-color()",
     "contributes a script-blocking style sheet",
     "contributing factors",
+    "contribution cache",
+    "contribution cache entry",
     "control",
     "control barrier",
     "control bounds",
@@ -8518,8 +8538,11 @@
     "deactivated",
     "dead key",
     "debug data type",
+    "debug details",
     "debug report cooldown",
     "debug report lockout until",
+    "debug scope",
+    "debug scope map",
     "decentralized identifier",
     "decentralized identifiers",
     "decibels to linear gain unit",
@@ -8810,11 +8833,14 @@
     "detecting word boundaries",
     "detector curve",
     "determine a field's category",
+    "determine a signal's numeric value",
     "determine eligibility for an associated site",
     "determine if DTMF can be sent",
     "determine if a performance entry buffer is full",
     "determine if a randomized null attribution report is generated",
+    "determine if a report should be sent deterministically",
     "determine if a request has top-level storage access",
+    "determine if an origin is an aggregation coordinator",
     "determine if dtmf can be sent",
     "determine navigation params policy container",
     "determine nosniff",
@@ -8855,6 +8881,7 @@
     "determine-compatibility",
     "determines the set of origins on which the public key credential may be exercised",
     "determining the start page",
+    "deterministic operation timeout duration",
     "device",
     "device address",
     "device administrator",
@@ -9374,6 +9401,7 @@
     "encode",
     "encode a canvas as base64",
     "encode a canvas as base64 a canvas element",
+    "encode an integer for the payload",
     "encode an unsigned k-byte integer",
     "encode and enqueue a chunk",
     "encode and flush",
@@ -9389,6 +9417,7 @@
     "encoding-parse a url",
     "encoding-parse-and-serialize a url",
     "encrypt",
+    "encrypt the payload",
     "encrypted",
     "encrypted block encountered",
     "encrypted-media",
@@ -9922,6 +9951,8 @@
     "filename",
     "fill",
     "fill in a pending fenced frame config",
+    "fill in the contribution",
+    "fill in the signal value",
     "fill light mode",
     "fill mode",
     "fill painting area",
@@ -10528,6 +10559,7 @@
     "get a copy of the buffer source",
     "get a copy of the bytes held by the buffer source",
     "get a copy of the image contents of a context",
+    "get a debug details",
     "get a document layout definition",
     "get a domstringmap's name-value pairs",
     "get a final encoding",
@@ -10611,6 +10643,7 @@
     "get matching cookies",
     "get named cookie",
     "get newest worker",
+    "get or create a batching scope",
     "get or create a node reference",
     "get or create a sandbox realm",
     "get or create a shadow root reference",
@@ -10670,6 +10703,7 @@
     "get the parent",
     "get the parent navigable",
     "get the platform version",
+    "get the privateaggregation",
     "get the prompt handler",
     "get the protocol",
     "get the realm info",
@@ -12771,6 +12805,7 @@
     "margin-trim",
     "margin::of a box",
     "mark",
+    "mark a debug scope complete",
     "mark a promise as handled",
     "mark as handled",
     "mark as ready",
@@ -12995,6 +13030,7 @@
     "maximum move distance",
     "maximum number of actions",
     "maximum number of retries",
+    "maximum report contributions",
     "maximum size",
     "maximum value",
     "maximum width",
@@ -13007,6 +13043,7 @@
     "may receive data",
     "maybe add a part from the pending fixed value",
     "maybe defer and then complete trigger attribution",
+    "maybe obtain an interest group",
     "maybe replace event-level report",
     "maybe send pointerdown event",
     "maybe send pointerenter event",
@@ -13278,6 +13315,7 @@
     "minimum periodic sync interval across origins",
     "minimum periodic sync interval for any origin",
     "minimum readable text size",
+    "minimum report delay",
     "minimum role",
     "minimum size",
     "minimum value",
@@ -13929,6 +13967,9 @@
     "obtain a randomized response",
     "obtain a randomized source response",
     "obtain a randomized source response pick rate",
+    "obtain a report delivery time",
+    "obtain a report's shared info",
+    "obtain a reporting endpoint",
     "obtain a script runner agent",
     "obtain a service worker agent",
     "obtain a session storage bottle map",
@@ -13953,6 +13994,7 @@
     "obtain a worklet agent",
     "obtain an aggregatable attribution report",
     "obtain an aggregatable attribution report delivery time",
+    "obtain an aggregatable report",
     "obtain an aggregatable report body",
     "obtain an embedder policy",
     "obtain an event-level report",
@@ -13979,9 +14021,14 @@
     "obtain hit test results for transient input",
     "obtain permission",
     "obtain rounded source time",
+    "obtain the aggregation coordinator",
     "obtain the aggregation service payloads",
     "obtain the current device",
     "obtain the encrypted payload",
+    "obtain the plaintext payload",
+    "obtain the pre-specified report parameters",
+    "obtain the private aggregation coordinator",
+    "obtain the private aggregation coordinator from a string",
     "obtain the public key for encryption",
     "obtain their numeric values",
     "obtain verbose debug data body on trigger registration",
@@ -14041,6 +14088,8 @@
     "omitted",
     "on",
     "on document ready",
+    "on event contribution cache",
+    "on event contribution cache entry",
     "on response available",
     "on_reach_bottom_distance",
     "oncapturehandlechange",
@@ -14758,6 +14807,7 @@
     "permission store entry",
     "permissions",
     "permissions policy",
+    "permissions policy state",
     "permissions policy violation reports",
     "permissions rp id",
     "permissions task source",
@@ -15040,6 +15090,8 @@
     "pre-multiplied data type name",
     "pre-multiply",
     "pre-remove",
+    "pre-specified report parameters",
+    "pre-specified report parameters map",
     "preceding element",
     "precomposed",
     "preconnect",
@@ -15201,6 +15253,7 @@
     "private field values",
     "private network access check",
     "private network request",
+    "private-aggregation",
     "private-network-access-id",
     "private-network-access-name",
     "privatekey",
@@ -15247,6 +15300,7 @@
     "process blob parts",
     "process capabilities",
     "process close watchers",
+    "process contributions for a batching scope",
     "process cookie changes",
     "process document load for bounce tracking",
     "process dt or dd",
@@ -15303,6 +15357,7 @@
     "process the platform version's release_type member",
     "process the platform version's target_code member",
     "process the platform_version member",
+    "process the private aggregation contributions for an auction",
     "process the protocol_handlers member",
     "process the related_applications member",
     "process the removal of a remote track",
@@ -15612,6 +15667,7 @@
     "randomized aggregatable attribution report delay",
     "randomized null attribution report rate excluding source registration time",
     "randomized null attribution report rate including source registration time",
+    "randomized report delay",
     "randomized response output configuration",
     "randomized source response",
     "range",
@@ -15838,6 +15894,7 @@
     "reference",
     "reference blank node identifier",
     "reference box",
+    "reference combinator",
     "reference image",
     "reference pixel",
     "reference space is supported",
@@ -16118,6 +16175,7 @@
     "report an exception",
     "report content security policy violations for request",
     "report count tag",
+    "report creation and scheduling steps",
     "report descriptor",
     "report element timing",
     "report frame timing",
@@ -16698,6 +16756,7 @@
     "scoped selector",
     "scoped style rules",
     "scopes",
+    "scoping details",
     "scoping limit",
     "scoping root",
     "score and rank a bid",
@@ -17070,6 +17129,7 @@
     "serialize an <an+b> value",
     "serialize an aggregatable attribution report",
     "serialize an aggregatable debug report",
+    "serialize an aggregatable report",
     "serialize an array-like",
     "serialize an attribution debug info",
     "serialize an attribution report",
@@ -17230,6 +17290,7 @@
     "set storage access",
     "set text content",
     "set the Sec-Required-CSP header",
+    "set the aggregation coordinator for a batching scope",
     "set the application badge",
     "set the associated remote streams",
     "set the canceled flag",
@@ -17247,6 +17308,7 @@
     "set the muted state",
     "set the ongoing navigation",
     "set the playback rate",
+    "set the pre-specified report parameters for a batching scope",
     "set the required CSP",
     "set the search origin",
     "set the selection direction",
@@ -17451,6 +17513,7 @@
     "sign()",
     "signal a slot change",
     "signal a type change",
+    "signal base value",
     "signal slots",
     "signal to abort the request",
     "signaling state",
@@ -19982,6 +20045,7 @@
     "worklet animation",
     "worklet destination type",
     "worklet event loop",
+    "worklet function",
     "worklet global scope type",
     "worklet global scopes",
     "workshops",
@@ -22099,6 +22163,9 @@
     "additionalBids",
     "allSlotsRequestedSizes",
     "auctionNonce",
+    "auctionReportBuyerDebugModeConfig",
+    "auctionReportBuyerKeys",
+    "auctionReportBuyers",
     "auctionSignals",
     "componentAuctions",
     "decisionLogicURL",
@@ -22115,6 +22182,7 @@
     "perBuyerRealTimeReportingConfig",
     "perBuyerSignals",
     "perBuyerTimeouts",
+    "privateAggregationConfig",
     "reportingTimeout",
     "requestedSize",
     "requiredSellerCapabilities",
@@ -22132,7 +22200,8 @@
     "additionalBidKey",
     "lifetimeMs",
     "priority",
-    "prioritySignalsOverrides"
+    "prioritySignalsOverrides",
+    "privateAggregationConfig"
   ],
   "AuctionAdInterestGroupKey": [
     "name",
@@ -22144,6 +22213,14 @@
   ],
   "AuctionRealTimeReportingConfig": [
     "type"
+  ],
+  "AuctionReportBuyerDebugModeConfig": [
+    "debugKey",
+    "enabled"
+  ],
+  "AuctionReportBuyersConfig": [
+    "bucket",
+    "scale"
   ],
   "AudioBuffer": [
     "AudioBuffer(options)",
@@ -29105,6 +29182,10 @@
   "DigitalCredentialRequestOptions": [
     "providers"
   ],
+  "DigitalCredentialsProvider": [
+    "protocol",
+    "request"
+  ],
   "DigitalGoodsService": [
     "consume(purchaseToken)",
     "getDetails(itemIds)",
@@ -35721,10 +35802,6 @@
   "IdentityProviderWellKnown": [
     "provider_urls"
   ],
-  "IdentityRequestProvider": [
-    "protocol",
-    "request"
-  ],
   "IdentityUserInfo": [
     "email",
     "givenName",
@@ -35943,7 +36020,6 @@
     "param"
   ],
   "InkPresenter": [
-    "expectedImprovement",
     "presentationArea",
     "updateInkTrailStartPoint(event, style)"
   ],
@@ -36084,6 +36160,7 @@
     "priority"
   ],
   "InterestGroupReportingScriptRunnerGlobalScope": [
+    "interest group",
     "registerAdBeacon(map)",
     "registerAdMacro(name, value)",
     "report url",
@@ -36100,6 +36177,10 @@
   ],
   "InterestGroupReportingScriptRunnerGlobalScope/sendReportTo(url)": [
     "url"
+  ],
+  "InterestGroupScriptRunnerGlobalScope": [
+    "auction config",
+    "privateAggregation"
   ],
   "IntersectionObserver": [
     "IntersectionObserver(callback)",
@@ -40653,6 +40734,24 @@
     "deltaX",
     "deltaY"
   ],
+  "PADebugModeOptions": [
+    "debugKey"
+  ],
+  "PAExtendedHistogramContribution": [
+    "bucket",
+    "filteringId",
+    "value"
+  ],
+  "PAHistogramContribution": [
+    "bucket",
+    "filteringId",
+    "value"
+  ],
+  "PASignalValue": [
+    "baseValue",
+    "offset",
+    "scale"
+  ],
   "POST resource": [
     "request body",
     "request content-type"
@@ -41833,6 +41932,27 @@
     "adJSON",
     "timeDelta"
   ],
+  "PrivateAggregation": [
+    "allowed to use",
+    "contributeToHistogram(contribution)",
+    "contributeToHistogramOnEvent(event, contribution)",
+    "enableDebugMode()",
+    "enableDebugMode(options)",
+    "scoping details"
+  ],
+  "PrivateAggregation/contributeToHistogram(contribution)": [
+    "contribution"
+  ],
+  "PrivateAggregation/contributeToHistogramOnEvent(event, contribution)": [
+    "contribution",
+    "event"
+  ],
+  "PrivateAggregation/enableDebugMode()": [
+    "options"
+  ],
+  "PrivateAggregation/enableDebugMode(options)": [
+    "options"
+  ],
   "PrivateNetworkAccessPermissionDescriptor": [
     "id"
   ],
@@ -41941,6 +42061,9 @@
   ],
   "ProtectedAudience/queryFeatureSupport(feature)": [
     "feature"
+  ],
+  "ProtectedAudiencePrivateAggregationConfig": [
+    "aggregationCoordinatorOrigin"
   ],
   "ProtocolXError": [
     "error code"
@@ -45808,9 +45931,15 @@
     "\"context-origin\"",
     "\"script-origin\""
   ],
+  "SharedStoragePrivateAggregationConfig": [
+    "aggregationCoordinatorOrigin",
+    "contextId",
+    "filteringIdMaxBytes"
+  ],
   "SharedStorageRunOperationMethodOptions": [
     "data",
     "keepAlive",
+    "privateAggregationConfig",
     "resolveToConfig"
   ],
   "SharedStorageSetMethodOptions": [
@@ -45852,6 +45981,7 @@
     "check whether addmodule is finished",
     "operation map",
     "outside settings",
+    "privateAggregation",
     "register(name, operationCtor)",
     "sharedStorage",
     "sharedstorage getter"
@@ -51986,10 +52116,16 @@
   ],
   "aggregatable report": [
     "aggregation coordinator",
+    "api",
+    "context id",
     "contributions",
+    "debug details",
     "debug mode",
     "effective attribution destination",
+    "filtering id max bytes",
+    "original report time",
     "plaintext payload",
+    "queued",
     "report id",
     "report time",
     "reporting origin",
@@ -52476,7 +52612,11 @@
     "all buyers timeout",
     "all slots requested sizes",
     "auction nonce",
+    "auction report buyer debug details",
+    "auction report buyer keys",
+    "auction report buyers",
     "auction signals",
+    "batching scope map",
     "component auctions",
     "config idl",
     "decision logic url",
@@ -52495,12 +52635,15 @@
     "per buyer real time reporting config",
     "per buyer signals",
     "per buyer timeouts",
+    "per-bid or seller on event contribution cache",
+    "permissions policy state",
     "requested size",
     "required seller capabilities",
     "resolve to config",
     "seller",
     "seller currency",
     "seller experiment group id",
+    "seller private aggregation coordinator",
     "seller real time reporting config",
     "seller signals",
     "seller timeout",
@@ -53910,6 +54053,12 @@
     "wcag2",
     "wcag2()"
   ],
+  "contribution cache entry": [
+    "batching scope",
+    "contribution",
+    "debug details",
+    "debug scope"
+  ],
   "cookie": [
     "creation-time",
     "domain",
@@ -54089,6 +54238,10 @@
     "name",
     "upgrade transaction",
     "version"
+  ],
+  "debug details": [
+    "enabled",
+    "key"
   ],
   "declared policy": [
     "declarations",
@@ -56372,6 +56525,7 @@
     "priority",
     "priority signals overrides",
     "priority vector",
+    "private aggregation coordinator",
     "seller capabilities",
     "size groups",
     "trusted bidding signals keys",
@@ -57568,6 +57722,13 @@
     "a",
     "i"
   ],
+  "on event contribution cache entry": [
+    "batching scope",
+    "contribution",
+    "debug details",
+    "debug scope",
+    "worklet function"
+  ],
   "opacity": [
     "<opacity-value>"
   ],
@@ -57950,6 +58111,9 @@
     "declared policy",
     "inherited policy"
   ],
+  "permissions policy state": [
+    "private aggregation enabled"
+  ],
   "perms-param": [
     "permissions"
   ],
@@ -58175,6 +58339,10 @@
   ],
   "pre": [
     "width"
+  ],
+  "pre-specified report parameters": [
+    "context id",
+    "filtering id max bytes"
   ],
   "prefetch IP anonymization policy": [
     "requires anonymity"
@@ -58823,6 +58991,10 @@
     "abort source",
     "priority source"
   ],
+  "scoping details": [
+    "get batching scope steps",
+    "get debug scope steps"
+  ],
   "screen": [
     "advanced observable properties",
     "available height",
@@ -59303,6 +59475,13 @@
     "name",
     "short_name",
     "url"
+  ],
+  "signal base value": [
+    "bid-reject-reason",
+    "highest-scoring-other-bid",
+    "script-run-time",
+    "signals-fetch-time",
+    "winning-bid"
   ],
   "signed additional bid signature": [
     "key",
@@ -61133,6 +61312,12 @@
     "<length-percentage>",
     "<length>",
     "normal"
+  ],
+  "worklet function": [
+    "generate-bid",
+    "report-result",
+    "report-win",
+    "score-ad"
   ],
   "wrap-after": [
     "auto",
