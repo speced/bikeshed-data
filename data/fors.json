@@ -4825,7 +4825,6 @@
     "WindowPostMessageOptions",
     "WindowProxy",
     "WindowSessionStorage",
-    "WindowSharedStorage",
     "WordCharacters",
     "WordCharacters(rer)",
     "Worker",
@@ -4840,7 +4839,6 @@
     "WorkletGlobalScope",
     "WorkletGroupEffect",
     "WorkletOptions",
-    "WorkletSharedStorage",
     "WritableStream",
     "WritableStreamAbort",
     "WritableStreamAddWriteRequest",
@@ -6765,6 +6763,7 @@
     "candidate registry draft",
     "candidate registry snapshot",
     "candidate-attribute",
+    "canexcluderoot",
     "cannot be manually scrolled",
     "cannot be scrolled manually",
     "cannot be used together",
@@ -7679,6 +7678,7 @@
     "contain-intrinsic-inline-size",
     "contain-intrinsic-size",
     "contain-intrinsic-width",
+    "contained text auto directionality",
     "container",
     "container document",
     "container element",
@@ -16602,6 +16602,7 @@
     "run job",
     "run service worker",
     "run steps after a timeout",
+    "run the abort steps",
     "run the animation frame callbacks",
     "run the fullscreen steps",
     "run the resize steps",
@@ -45905,17 +45906,56 @@
   "SharedStorage": [
     "append(key, value)",
     "clear()",
+    "createWorklet(moduleURL)",
+    "createWorklet(moduleURL, options)",
     "data partition origin",
     "delete(key)",
+    "get(key)",
+    "length()",
+    "remainingBudget()",
+    "run(name)",
+    "run(name, options)",
+    "selectURL(name, urls)",
+    "selectURL(name, urls, options)",
     "set(key, value)",
-    "set(key, value, options)"
+    "set(key, value, options)",
+    "worklet"
   ],
   "SharedStorage/append(key, value)": [
     "key",
     "value"
   ],
+  "SharedStorage/createWorklet(moduleURL)": [
+    "moduleURL",
+    "options"
+  ],
+  "SharedStorage/createWorklet(moduleURL, options)": [
+    "moduleURL",
+    "options"
+  ],
   "SharedStorage/delete(key)": [
     "key"
+  ],
+  "SharedStorage/get(key)": [
+    "key"
+  ],
+  "SharedStorage/run(name)": [
+    "name",
+    "options"
+  ],
+  "SharedStorage/run(name, options)": [
+    "name",
+    "options"
+  ],
+  "SharedStorage/selectURL(name, urls)": [
+    "name",
+    "options",
+    "urls"
+  ],
+  "SharedStorage/selectURL(name, urls, options)": [
+    "name",
+    "options",
+    "urls"
   ],
   "SharedStorage/set(key, value)": [
     "key",
@@ -45930,6 +45970,12 @@
   "SharedStorageDataOrigin": [
     "\"context-origin\"",
     "\"script-origin\""
+  ],
+  "SharedStorageIterator": [
+    "asynchronous iterator initialization steps",
+    "error",
+    "get the next iteration result",
+    "pending entries"
   ],
   "SharedStoragePrivateAggregationConfig": [
     "aggregationCoordinatorOrigin",
@@ -50252,49 +50298,6 @@
   "WindowSessionStorage": [
     "sessionStorage"
   ],
-  "WindowSharedStorage": [
-    "append a key-value pair",
-    "append(key, value)",
-    "clear all keys",
-    "clear()",
-    "createWorklet(moduleURL)",
-    "createWorklet(moduleURL, options)",
-    "delete a key",
-    "delete(key)",
-    "run(name)",
-    "run(name, options)",
-    "selectURL(name, urls)",
-    "selectURL(name, urls, options)",
-    "set a key-value pair",
-    "set(key, value, options)",
-    "worklet"
-  ],
-  "WindowSharedStorage/createWorklet(moduleURL)": [
-    "moduleURL",
-    "options"
-  ],
-  "WindowSharedStorage/createWorklet(moduleURL, options)": [
-    "moduleURL",
-    "options"
-  ],
-  "WindowSharedStorage/run(name)": [
-    "name",
-    "options"
-  ],
-  "WindowSharedStorage/run(name, options)": [
-    "name",
-    "options"
-  ],
-  "WindowSharedStorage/selectURL(name, urls)": [
-    "name",
-    "options",
-    "urls"
-  ],
-  "WindowSharedStorage/selectURL(name, urls, options)": [
-    "name",
-    "options",
-    "urls"
-  ],
   "Worker": [
     "Worker(scriptURL, options)",
     "error",
@@ -50431,24 +50434,6 @@
   ],
   "WorkletOptions": [
     "credentials"
-  ],
-  "WorkletSharedStorage": [
-    "append(key, value)",
-    "clear()",
-    "delete(key)",
-    "get(key)",
-    "length()",
-    "remainingBudget()",
-    "set(key, value, options)"
-  ],
-  "WorkletSharedStorage/get(key)": [
-    "key"
-  ],
-  "WorkletSharedStorageIterator": [
-    "asynchronous iterator initialization steps",
-    "error",
-    "get the next iteration result",
-    "pending entries"
   ],
   "WritableStream": [
     "WritableStream()",
