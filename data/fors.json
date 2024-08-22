@@ -1167,6 +1167,8 @@
     "AcquireReadableStreamBYOBReader",
     "AcquireReadableStreamDefaultReader",
     "AcquireWritableStreamDefaultWriter",
+    "AdAuctionData",
+    "AdAuctionDataConfig",
     "AdRender",
     "AddEntriesFromIterable",
     "AddEntriesFromIterable(target, iterable, adder)",
@@ -14556,6 +14558,7 @@
     "parse an optional 64-bit unsigned integer",
     "parse an origin-bound one-time code message",
     "parse and validate a site",
+    "parse and validate server response",
     "parse and verify a bidding code or update url",
     "parse and verify a trusted signals url",
     "parse as a forgiving selector list",
@@ -17188,6 +17191,10 @@
     "serializing an infra value to json bytes",
     "serializing the calculation tree",
     "serif",
+    "server auction browser signals",
+    "server auction interest group",
+    "server auction previous win",
+    "server auction request context",
     "server-sent events",
     "server-side credential",
     "server-side credential storage modality",
@@ -21634,6 +21641,14 @@
   "AccelerometerSensorOptions": [
     "referenceFrame"
   ],
+  "AdAuctionData": [
+    "request",
+    "requestId"
+  ],
+  "AdAuctionDataConfig": [
+    "coordinatorOrigin",
+    "seller"
+  ],
   "AdRender": [
     "height",
     "url",
@@ -22187,6 +22202,7 @@
     "perBuyerTimeouts",
     "privateAggregationConfig",
     "reportingTimeout",
+    "requestId",
     "requestedSize",
     "requiredSellerCapabilities",
     "resolveToConfig",
@@ -22196,6 +22212,7 @@
     "sellerRealTimeReportingConfig",
     "sellerSignals",
     "sellerTimeout",
+    "serverResponse",
     "signal",
     "trustedScoringSignalsURL"
   ],
@@ -39929,6 +39946,7 @@
     "getBattery()",
     "getGamepads()",
     "getInstalledRelatedApps()",
+    "getInterestGroupAdAuctionData(config)",
     "getUserMedia()",
     "getUserMedia(constraints, successCallback, errorCallback)",
     "hid",
@@ -40013,6 +40031,9 @@
   ],
   "Navigator/getAutoplayPolicy(type)": [
     "type"
+  ],
+  "Navigator/getInterestGroupAdAuctionData(config)": [
+    "config"
   ],
   "Navigator/joinAdInterestGroup(group)": [
     "group"
@@ -43168,6 +43189,7 @@
   ],
   "RTCRtpEncodingParameters": [
     "active",
+    "codec",
     "maxBitrate",
     "maxFramerate",
     "networkPriority",
@@ -52634,6 +52656,8 @@
     "seller real time reporting config",
     "seller signals",
     "seller timeout",
+    "server response",
+    "server response id",
     "trusted scoring signals url"
   ],
   "auction report info": [
@@ -56522,6 +56546,7 @@
     "user bidding signals"
   ],
   "interest group ad": [
+    "ad render id",
     "allowed reporting origins",
     "buyer and seller reporting id",
     "buyer reporting id",
@@ -59283,6 +59308,28 @@
     "maximum sampling frequency",
     "minimum sampling frequency"
   ],
+  "server auction browser signals": [
+    "bid count",
+    "join count",
+    "previous wins",
+    "recency ms"
+  ],
+  "server auction interest group": [
+    "ads",
+    "bidding signals keys",
+    "browser signals",
+    "components",
+    "name",
+    "user bidding signals"
+  ],
+  "server auction previous win": [
+    "ad render id",
+    "time delta"
+  ],
+  "server auction request context": [
+    "request context",
+    "request id"
+  ],
   "service worker": [
     "all fetch listeners are empty flag",
     "classic scripts imported flag",
@@ -60752,6 +60799,7 @@
     "captured ad auction additional bids headers",
     "captured ad auction signals headers",
     "fenced frame config mapping",
+    "saved bidding and auction request context",
     "storage shed",
     "unfenced parent"
   ],
