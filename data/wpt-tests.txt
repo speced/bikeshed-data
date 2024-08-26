@@ -1,4 +1,4 @@
-sha: d988aeeb33edc4d452899921799b8bed69fff65d
+sha: 0cb2ae37c74f1509a03f3837fe80b2d7b5794e31
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -38604,10 +38604,18 @@ testharness html/browsers/the-window-object/garbage-collection-and-browsing-cont
 testharness html/browsers/the-window-object/historical.window.js
 testharness html/browsers/the-window-object/length-attribute.window.js
 testharness html/browsers/the-window-object/name-attribute.window.js
+testharness html/browsers/the-window-object/named-access-on-the-window-object/basics.html
+testharness html/browsers/the-window-object/named-access-on-the-window-object/changing.html
 testharness html/browsers/the-window-object/named-access-on-the-window-object/cross-global-npo.html
+testharness html/browsers/the-window-object/named-access-on-the-window-object/doc-no-window.html
+testharness html/browsers/the-window-object/named-access-on-the-window-object/existing-prop.html
+testharness html/browsers/the-window-object/named-access-on-the-window-object/multi-match.html
+testharness html/browsers/the-window-object/named-access-on-the-window-object/name-attribute-elements.html
 testharness html/browsers/the-window-object/named-access-on-the-window-object/named-objects.html
 testharness html/browsers/the-window-object/named-access-on-the-window-object/navigated-named-objects.window.js
+testharness html/browsers/the-window-object/named-access-on-the-window-object/nested-context.html
 testharness html/browsers/the-window-object/named-access-on-the-window-object/prototype.html
+testharness html/browsers/the-window-object/named-access-on-the-window-object/removing.html
 testharness html/browsers/the-window-object/named-access-on-the-window-object/strict-mode-redefine-readonly-property.html
 testharness html/browsers/the-window-object/named-access-on-the-window-object/window-named-properties.html
 testharness html/browsers/the-window-object/named-access-on-the-window-object/window-null-names.html
@@ -44402,6 +44410,14 @@ testharness html/semantics/text-level-semantics/the-time-element/001.html
 testharness html/semantics/the-link-element/attr-link-fetchpriority.html
 testharness html/syntax/charset/inheritance-bogus-meta-utf-8.html
 testharness html/syntax/charset/inheritance-bogus-meta.html
+testharness html/syntax/charset/meta-charset-double-quotes.html
+testharness html/syntax/charset/meta-charset-no-quotes.html
+testharness html/syntax/charset/meta-charset-single-quotes.html
+testharness html/syntax/charset/meta-commented-out.html
+testharness html/syntax/charset/meta-http-equiv-attribute-order.html
+testharness html/syntax/charset/meta-http-equiv-double-quotes.html
+testharness html/syntax/charset/meta-http-equiv-no-quotes.html
+testharness html/syntax/charset/meta-http-equiv-single-quotes.html
 testharness html/syntax/charset/with-inheritance.html
 testharness html/syntax/charset/without-inheritance.html
 testharness html/syntax/charset/xhr.html
@@ -53231,6 +53247,7 @@ testharness xhr/abort-event-loadend.any.js
 testharness xhr/abort-event-order.htm
 testharness xhr/abort-upload-event-abort.any.js
 testharness xhr/abort-upload-event-loadend.any.js
+testharness xhr/abort-with-error.any.js
 testharness xhr/access-control-and-redirects-async-same-origin.any.js
 testharness xhr/access-control-and-redirects-async.any.js
 testharness xhr/access-control-and-redirects.any.js
@@ -53310,6 +53327,7 @@ testharness xhr/formdata.html
 testharness xhr/formdata/append-formelement.html
 testharness xhr/formdata/append.any.js
 testharness xhr/formdata/constructor-formelement.html
+testharness xhr/formdata/constructor-submitter-coordinate.html
 testharness xhr/formdata/constructor-submitter.html
 testharness xhr/formdata/constructor.any.js
 testharness xhr/formdata/delete-formelement.html
