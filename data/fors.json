@@ -1198,6 +1198,7 @@
     "Algorithm",
     "AlgorithmIdentifier",
     "AlignSetting",
+    "AllAcceptedCredentialsOptions",
     "AllCharacters",
     "AllCharacters(rer)",
     "AllocateArrayBuffer",
@@ -1287,6 +1288,7 @@
     "AsyncModuleExecutionFulfilled(module)",
     "AsyncModuleExecutionRejected",
     "AsyncModuleExecutionRejected(module, error)",
+    "Asynchronous RP ID validation algorithm",
     "AtomicCompareExchangeInSharedBlock",
     "AtomicCompareExchangeInSharedBlock(block, byteIndexInBuffer, elementSize, expectedBytes, replacementBytes)",
     "AtomicReadModifyWrite",
@@ -1882,6 +1884,7 @@
     "CryptoKey",
     "CryptoKeyID",
     "CryptoKeyPair",
+    "CurrentUserDetailsOptions",
     "CursorCaptureConstraint",
     "CustomElementConstructor",
     "CustomElementRegistry",
@@ -4665,6 +4668,7 @@
     "UnicodeMatchProperty(rer, p)",
     "UnicodeMatchPropertyValue",
     "UnicodeMatchPropertyValue(p, v)",
+    "UnknownCredentialOptions",
     "UnknownError",
     "Unscopable",
     "UpdateCallback",
@@ -17537,6 +17541,7 @@
     "signal a slot change",
     "signal a type change",
     "signal base value",
+    "signal methods",
     "signal slots",
     "signal to abort the request",
     "signaling state",
@@ -21732,6 +21737,11 @@
     "function",
     "realm",
     "scriptormodule"
+  ],
+  "AllAcceptedCredentialsOptions": [
+    "allAcceptedCredentialIds",
+    "rpId",
+    "userId"
   ],
   "AllowedBluetoothDevice": [
     "[[device]]",
@@ -26635,12 +26645,18 @@
     "\"hybridTransport\"",
     "\"passkeyPlatformAuthenticator\"",
     "\"relatedOrigins\"",
+    "\"signalAllAcceptedCredentials\"",
+    "\"signalCurrentUserDetails\"",
+    "\"signalUnknownCredential\"",
     "\"userVerifyingPlatformAuthenticator\"",
     "conditionalCreate",
     "conditionalGet",
     "hybridTransport",
     "passkeyPlatformAuthenticator",
     "relatedOrigins",
+    "signalAllAcceptedCredentials",
+    "signalCurrentUserDetails",
+    "signalUnknownCredential",
     "userVerifyingPlatformAuthenticator"
   ],
   "ClientLifecycleState": [
@@ -27490,6 +27506,12 @@
   "CryptoKeyPair": [
     "privateKey",
     "publicKey"
+  ],
+  "CurrentUserDetailsOptions": [
+    "displayName",
+    "name",
+    "rpId",
+    "userId"
   ],
   "CursorCaptureConstraint": [
     "always",
@@ -33030,7 +33052,6 @@
     "maxComputeWorkgroupsPerDimension",
     "maxDynamicStorageBuffersPerPipelineLayout",
     "maxDynamicUniformBuffersPerPipelineLayout",
-    "maxInterStageShaderComponents",
     "maxInterStageShaderVariables",
     "maxSampledTexturesPerShaderStage",
     "maxSamplersPerShaderStage",
@@ -42156,6 +42177,9 @@
     "parseRequestOptionsFromJSON(options)",
     "rawId",
     "response",
+    "signalAllAcceptedCredentials(options)",
+    "signalCurrentUserDetails(options)",
+    "signalUnknownCredential(options)",
     "toJSON()"
   ],
   "PublicKeyCredential/[[Create]](origin, options, sameOriginWithAncestors)": [
@@ -42176,6 +42200,15 @@
     "options"
   ],
   "PublicKeyCredential/parseRequestOptionsFromJSON(options)": [
+    "options"
+  ],
+  "PublicKeyCredential/signalAllAcceptedCredentials(options)": [
+    "options"
+  ],
+  "PublicKeyCredential/signalCurrentUserDetails(options)": [
+    "options"
+  ],
+  "PublicKeyCredential/signalUnknownCredential(options)": [
     "options"
   ],
   "PublicKeyCredentialCreationOptions": [
@@ -48779,6 +48812,10 @@
   ],
   "UnderlyingSourceStartCallback": [
     "controller"
+  ],
+  "UnknownCredentialOptions": [
+    "credentialId",
+    "rpId"
   ],
   "UserActivation": [
     "hasBeenActive",
@@ -59561,6 +59598,16 @@
     "signals-fetch-time",
     "winning-bid"
   ],
+  "signal method": [
+    "authenticator actions"
+  ],
+  "signal method/authenticator action": [
+    "unknowncredentialid"
+  ],
+  "signal method/authenticator actions": [
+    "allacceptedcredentialids",
+    "currentuserdetails"
+  ],
   "signed additional bid signature": [
     "key",
     "signature"
@@ -59935,7 +59982,6 @@
     "maxComputeWorkgroupsPerDimension",
     "maxDynamicStorageBuffersPerPipelineLayout",
     "maxDynamicUniformBuffersPerPipelineLayout",
-    "maxInterStageShaderComponents",
     "maxInterStageShaderVariables",
     "maxSampledTexturesPerShaderStage",
     "maxSamplersPerShaderStage",
