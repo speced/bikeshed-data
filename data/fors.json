@@ -3008,6 +3008,7 @@
     "LinearAccelerationSensor",
     "LinkError",
     "LinkStyle",
+    "Listen for timeline event",
     "Load patch file",
     "LoadDocumentCallback",
     "LoadDocumentOptions",
@@ -3043,22 +3044,30 @@
     "ML",
     "MLArgMinMaxOptions",
     "MLBatchNormalizationOptions",
+    "MLBatchNormalizationSupportLimits",
+    "MLBinarySupportLimits",
     "MLClampOptions",
     "MLComputeResult",
+    "MLConcatSupportLimits",
     "MLContext",
     "MLContextOptions",
     "MLConv2dFilterOperandLayout",
     "MLConv2dOptions",
+    "MLConv2dSupportLimits",
     "MLConvTranspose2dFilterOperandLayout",
     "MLConvTranspose2dOptions",
     "MLDeviceType",
     "MLEluOptions",
     "MLGatherOptions",
+    "MLGatherSupportLimits",
     "MLGemmOptions",
+    "MLGemmSupportLimits",
     "MLGraph",
     "MLGraphBuilder",
     "MLGruCellOptions",
+    "MLGruCellSupportLimits",
     "MLGruOptions",
+    "MLGruSupportLimits",
     "MLGruWeightLayout",
     "MLHardSigmoidOptions",
     "MLInputOperandLayout",
@@ -3067,12 +3076,17 @@
     "MLLayerNormalizationOptions",
     "MLLeakyReluOptions",
     "MLLinearOptions",
+    "MLLogicalNotSupportLimits",
     "MLLstmCellOptions",
+    "MLLstmCellSupportLimits",
     "MLLstmOptions",
+    "MLLstmSupportLimits",
     "MLLstmWeightLayout",
     "MLNamedArrayBufferViews",
     "MLNamedOperands",
+    "MLNormalizationSupportLimits",
     "MLNumber",
+    "MLOpSupportLimits",
     "MLOperand",
     "MLOperandDataType",
     "MLOperandDescriptor",
@@ -3081,14 +3095,19 @@
     "MLPaddingMode",
     "MLPool2dOptions",
     "MLPowerPreference",
+    "MLPreluSupportLimits",
     "MLRecurrentNetworkActivation",
     "MLRecurrentNetworkDirection",
     "MLReduceOptions",
     "MLResample2dOptions",
     "MLRoundingType",
+    "MLSingleInputSupportLimits",
     "MLSplitOptions",
+    "MLSplitSupportLimits",
+    "MLSupportLimits",
     "MLTransposeOptions",
     "MLTriangularOptions",
+    "MLWhereSupportLimits",
     "Magnetometer",
     "MagnetometerLocalCoordinateSystem",
     "MagnetometerSensorOptions",
@@ -37331,6 +37350,19 @@
     "epsilon",
     "scale"
   ],
+  "MLBatchNormalizationSupportLimits": [
+    "bias",
+    "input",
+    "mean",
+    "output",
+    "scale",
+    "variance"
+  ],
+  "MLBinarySupportLimits": [
+    "a",
+    "b",
+    "output"
+  ],
   "MLClampOptions": [
     "maxValue",
     "minValue"
@@ -37339,11 +37371,16 @@
     "inputs",
     "outputs"
   ],
+  "MLConcatSupportLimits": [
+    "inputs",
+    "output"
+  ],
   "MLContext": [
     "[[contextType]]",
     "[[deviceType]]",
     "[[powerPreference]]",
-    "compute(graph, inputs, outputs)"
+    "compute(graph, inputs, outputs)",
+    "opSupportLimits()"
   ],
   "MLContext/compute(graph, inputs, outputs)": [
     "graph",
@@ -37368,6 +37405,12 @@
     "inputLayout",
     "padding",
     "strides"
+  ],
+  "MLConv2dSupportLimits": [
+    "bias",
+    "filter",
+    "input",
+    "output"
   ],
   "MLConvTranspose2dFilterOperandLayout": [
     "\"hwoi\"",
@@ -37399,12 +37442,23 @@
   "MLGatherOptions": [
     "axis"
   ],
+  "MLGatherSupportLimits": [
+    "indices",
+    "input",
+    "output"
+  ],
   "MLGemmOptions": [
     "aTranspose",
     "alpha",
     "bTranspose",
     "beta",
     "c"
+  ],
+  "MLGemmSupportLimits": [
+    "a",
+    "b",
+    "c",
+    "output"
   ],
   "MLGraph": [
     "[[context]]",
@@ -37985,6 +38039,15 @@
     "recurrentBias",
     "resetAfter"
   ],
+  "MLGruCellSupportLimits": [
+    "bias",
+    "hiddenState",
+    "input",
+    "output",
+    "recurrentBias",
+    "recurrentWeight",
+    "weight"
+  ],
   "MLGruOptions": [
     "activations",
     "bias",
@@ -37994,6 +38057,15 @@
     "recurrentBias",
     "resetAfter",
     "returnSequence"
+  ],
+  "MLGruSupportLimits": [
+    "bias",
+    "initialHiddenState",
+    "input",
+    "outputs",
+    "recurrentBias",
+    "recurrentWeight",
+    "weight"
   ],
   "MLGruWeightLayout": [
     "\"rzn\"",
@@ -38030,12 +38102,27 @@
     "alpha",
     "beta"
   ],
+  "MLLogicalNotSupportLimits": [
+    "a",
+    "output"
+  ],
   "MLLstmCellOptions": [
     "activations",
     "bias",
     "layout",
     "peepholeWeight",
     "recurrentBias"
+  ],
+  "MLLstmCellSupportLimits": [
+    "bias",
+    "cellState",
+    "hiddenState",
+    "input",
+    "output",
+    "peepholeWeight",
+    "recurrentBias",
+    "recurrentWeight",
+    "weight"
   ],
   "MLLstmOptions": [
     "activations",
@@ -38048,12 +38135,113 @@
     "recurrentBias",
     "returnSequence"
   ],
+  "MLLstmSupportLimits": [
+    "bias",
+    "initialCellState",
+    "initialHiddenState",
+    "input",
+    "outputs",
+    "peepholeWeight",
+    "recurrentBias",
+    "recurrentWeight",
+    "weight"
+  ],
   "MLLstmWeightLayout": [
     "\"ifgo\"",
     "\"iofg\""
   ],
   "MLNamedArrayBufferViews": [
     "transfer"
+  ],
+  "MLNormalizationSupportLimits": [
+    "bias",
+    "input",
+    "output",
+    "scale"
+  ],
+  "MLOpSupportLimits": [
+    "abs",
+    "add",
+    "argMax",
+    "argMin",
+    "averagePool2d",
+    "batchNormalization",
+    "cast",
+    "ceil",
+    "clamp",
+    "concat",
+    "constant",
+    "conv2d",
+    "convTranspose2d",
+    "cos",
+    "div",
+    "elu",
+    "equal",
+    "erf",
+    "exp",
+    "expand",
+    "floor",
+    "gather",
+    "gelu",
+    "gemm",
+    "greater",
+    "greaterOrEqual",
+    "gru",
+    "gruCell",
+    "hardSigmoid",
+    "hardSwish",
+    "identity",
+    "input",
+    "instanceNormalization",
+    "l2Pool2d",
+    "layerNormalization",
+    "leakyRelu",
+    "lesser",
+    "lesserOrEqual",
+    "linear",
+    "log",
+    "logicalNot",
+    "lstm",
+    "lstmCell",
+    "matmul",
+    "max",
+    "maxPool2d",
+    "min",
+    "mul",
+    "neg",
+    "output",
+    "pad",
+    "pow",
+    "preferredInputLayout",
+    "prelu",
+    "reciprocal",
+    "reduceL1",
+    "reduceL2",
+    "reduceLogSum",
+    "reduceLogSumExp",
+    "reduceMax",
+    "reduceMean",
+    "reduceMin",
+    "reduceProduct",
+    "reduceSum",
+    "reduceSumSquare",
+    "relu",
+    "resample2d",
+    "reshape",
+    "sigmoid",
+    "sin",
+    "slice",
+    "softmax",
+    "softplus",
+    "softsign",
+    "split",
+    "sqrt",
+    "sub",
+    "tan",
+    "tanh",
+    "transpose",
+    "triangular",
+    "where"
   ],
   "MLOperand": [
     "[[builder]]",
@@ -38112,6 +38300,11 @@
     "high-performance",
     "low-power"
   ],
+  "MLPreluSupportLimits": [
+    "input",
+    "output",
+    "slope"
+  ],
   "MLRecurrentNetworkActivation": [
     "\"relu\"",
     "\"sigmoid\"",
@@ -38136,8 +38329,19 @@
     "\"ceil\"",
     "\"floor\""
   ],
+  "MLSingleInputSupportLimits": [
+    "input",
+    "output"
+  ],
   "MLSplitOptions": [
     "axis"
+  ],
+  "MLSplitSupportLimits": [
+    "input",
+    "outputs"
+  ],
+  "MLSupportLimits": [
+    "dataTypes"
   ],
   "MLTransposeOptions": [
     "permutation"
@@ -38145,6 +38349,12 @@
   "MLTriangularOptions": [
     "diagonal",
     "upper"
+  ],
+  "MLWhereSupportLimits": [
+    "condition",
+    "falseValue",
+    "output",
+    "trueValue"
   ],
   "Magnetometer": [
     "Magnetometer()",
@@ -54530,6 +54740,7 @@
   "device": [
     "[[adapter]]",
     "[[content device]]",
+    "[[destroy started]]",
     "[[features]]",
     "[[limits]]"
   ],
