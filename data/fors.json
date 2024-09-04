@@ -987,6 +987,9 @@
     "<scalarproduct/>",
     "<scope-end>",
     "<scope-start>",
+    "<scroll-state-feature>",
+    "<scroll-state-in-parens>",
+    "<scroll-state-query>",
     "<scroller>",
     "<sdev/>",
     "<sec/>",
@@ -2126,8 +2129,6 @@
     "FenceEvent",
     "FenceReportingDestination",
     "FencedFrameConfig",
-    "FencedFrameConfigSize",
-    "FencedFrameConfigURL",
     "FetchEvent",
     "FetchEventInit",
     "File",
@@ -3631,6 +3632,7 @@
     "PressureUpdateCallback",
     "Prevent Silent Access",
     "PreviousWin",
+    "PreviousWinElement",
     "Printer",
     "PrivateAggregation",
     "PrivateElementFind",
@@ -7067,7 +7069,6 @@
     "check if hardware exposure is allowed",
     "check if negotiation is needed",
     "check if required seller capabilities are permitted",
-    "check if source has compatible attribution scope fields",
     "check if string-like",
     "check if the device is configured",
     "check if three code points would start a number",
@@ -7742,6 +7743,7 @@
     "container query length unit",
     "container resource",
     "container root url",
+    "container scroll-state query",
     "container size query",
     "container style query",
     "container-name",
@@ -16245,7 +16247,7 @@
     "remove extraneous line breaks before",
     "remove extraneous line breaks from",
     "remove from the top layer immediately",
-    "remove or update sources with incompatible attribution scope fields",
+    "remove or update sources for attribution scopes",
     "remove replaced animations",
     "remove sources with unselected attribution scopes",
     "remove sources with unselected attribution scopes for destination",
@@ -17037,6 +17039,7 @@
     "scroll-snap-stop",
     "scroll-snap-type",
     "scroll-start-target",
+    "scroll-state feature",
     "scroll-timeline",
     "scroll-timeline-axis",
     "scroll-timeline-name",
@@ -21359,11 +21362,40 @@
     "height",
     "inline-size",
     "orientation",
+    "overflowing",
+    "snapped",
+    "stuck",
     "width"
   ],
   "@container/orientation": [
     "landscape",
     "portrait"
+  ],
+  "@container/overflowing": [
+    "block-end",
+    "block-start",
+    "bottom",
+    "inline-end",
+    "inline-start",
+    "left",
+    "right",
+    "top"
+  ],
+  "@container/snapped": [
+    "block",
+    "inline",
+    "x",
+    "y"
+  ],
+  "@container/stuck": [
+    "block-end",
+    "block-start",
+    "bottom",
+    "inline-end",
+    "inline-start",
+    "left",
+    "right",
+    "top"
   ],
   "@counter-style": [
     "additive-symbols",
@@ -22377,6 +22409,7 @@
     "triggerEligible"
   ],
   "AuctionAd": [
+    "adRenderId",
     "allowedReportingOrigins",
     "buyerAndSellerReportingId",
     "buyerReportingId",
@@ -31302,10 +31335,6 @@
   "FencedFrameConfig": [
     "FencedFrameConfig(url)",
     "constructor(url)",
-    "containerHeight",
-    "containerWidth",
-    "contentHeight",
-    "contentWidth",
     "setSharedStorageContext(contextString)"
   ],
   "FencedFrameConfig/FencedFrameConfig(url)": [
@@ -42368,10 +42397,6 @@
     "fair",
     "nominal",
     "serious"
-  ],
-  "PreviousWin": [
-    "adJSON",
-    "timeDelta"
   ],
   "PrivateAggregation": [
     "allowed to use",
@@ -54023,6 +54048,9 @@
     "represented by the collection",
     "static collection"
   ],
+  "color serialization": [
+    "html-compatible serialization is requested"
+  ],
   "color()": [
     "a98-rgb",
     "alpha",
@@ -54431,6 +54459,7 @@
   "container-type": [
     "inline-size",
     "normal",
+    "scroll-state",
     "size"
   ],
   "content": [
@@ -55428,7 +55457,6 @@
     "space-warp"
   ],
   "fenced frame config": [
-    "container size",
     "content size",
     "cross-origin reporting allowed",
     "effective enabled permissions",
@@ -55443,7 +55471,6 @@
     "on navigate callback"
   ],
   "fenced frame config instance": [
-    "container size",
     "content size",
     "cross-origin reporting allowed",
     "effective enabled permissions",
@@ -55491,10 +55518,6 @@
     "width"
   ],
   "fencedframeconfig": [
-    "containerheight",
-    "containerwidth",
-    "contentheight",
-    "contentwidth",
     "sharedstoragecontext",
     "url",
     "urn",
@@ -58158,14 +58181,6 @@
   "obtain and deliver debug reports on trigger registration": [
     "sourcetoattribute"
   ],
-  "obtain verbose debug data body on trigger registration": [
-    "report",
-    "sourcetoattribute"
-  ],
-  "obtain verbose debug data on trigger registration": [
-    "report",
-    "sourcetoattribute"
-  ],
   "offset-anchor": [
     "auto"
   ],
@@ -58912,7 +58927,7 @@
     "timestamp"
   ],
   "previous win": [
-    "ad json",
+    "ad",
     "time"
   ],
   "primitiveUnits": [
