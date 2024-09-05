@@ -5033,6 +5033,7 @@
     "Yield",
     "Yield(value)",
     "[DelayWhilePrerendering]",
+    "[[activatedreaderlist]]",
     "[[codec implementation]]",
     "[[codec work queue]]",
     "[[constrainedbitspersecond]]",
@@ -5042,9 +5043,14 @@
     "[[datachannelpriority]]",
     "[[defaultproperties]]",
     "[[message queue blocked]]",
+    "[[pendingmakereadonly]]",
+    "[[pendingwrite]]",
+    "[[suspended]]",
     "[[videokeyframeintervalcount]]",
     "[[videokeyframeintervalduration]]",
     "[[window]]",
+    "[[writemessage]]",
+    "[[writeoptions]]",
     "_charset_",
     "`sec-purpose`",
     "a",
@@ -6131,12 +6137,12 @@
     "av1 image item",
     "av1 image item data",
     "av1 image sequence",
-    "av1 item configuration property",
     "av1 sample",
     "av1c",
     "av1codecconfigurationbox",
     "av1f",
     "av1forwardkeyframesamplegroupentry",
+    "av1itemconfigurationproperty",
     "av1layeredimageindexingproperty",
     "av1metadatasamplegroupentry",
     "av1multiframesamplegroupentry",
@@ -21736,11 +21742,9 @@
     "role"
   ],
   "AV1 Image Item Type": [
-    "av01",
-    "ma1a",
-    "ma1b"
+    "av01"
   ],
-  "AV1 Item Configuration Property": [
+  "AV1ItemConfigurationProperty": [
     "av1c"
   ],
   "AV1LayeredImageIndexingProperty": [
@@ -21754,6 +21758,12 @@
   ],
   "AV1SampleEntry": [
     "av01"
+  ],
+  "AVIF Advanced Profile": [
+    "ma1a"
+  ],
+  "AVIF Baseline Profile": [
+    "ma1b"
   ],
   "AVIF Image Sequence brand": [
     "avis"
@@ -40059,19 +40069,13 @@
     "records"
   ],
   "NDEFReader": [
-    "[[ActivatedReaderList]]",
-    "[[PendingMakeReadOnly]]",
-    "[[PendingWrite]]",
-    "[[Suspended]]",
-    "[[WriteMessage]]",
-    "[[WriteOptions]]",
     "constructor()",
     "makeReadOnly()",
-    "makeReadOnly(options)",
+    "makeReadOnly(, options)",
     "onreading",
     "onreadingerror",
     "scan()",
-    "scan(options)",
+    "scan(, options)",
     "write()",
     "write(message)",
     "write(message, options)"
