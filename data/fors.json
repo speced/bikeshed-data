@@ -834,11 +834,7 @@
     "<line-width>",
     "<linear-color-hint>",
     "<linear-color-stop>",
-    "<linear-easing-function>",
     "<linear-gradient-syntax>",
-    "<linear-stop-length>",
-    "<linear-stop-list>",
-    "<linear-stop>",
     "<link-param>",
     "<list>",
     "<ln/>",
@@ -1846,7 +1842,7 @@
     "CreateIteratorResultObject",
     "CreateIteratorResultObject(value, done)",
     "CreateListFromArrayLike",
-    "CreateListFromArrayLike(obj, elementTypes)",
+    "CreateListFromArrayLike(obj, requirePropertyKeys)",
     "CreateListIteratorRecord",
     "CreateListIteratorRecord(list)",
     "CreateMapIterator",
@@ -4151,6 +4147,8 @@
     "SVGZoomAndPan",
     "SameObject",
     "SameSiteCookiesType",
+    "SameType",
+    "SameType(x, y)",
     "SameValue",
     "SameValue(x, y)",
     "SameValueNonNumber",
@@ -6839,6 +6837,7 @@
     "canonicalize a configuration",
     "canonicalize a hash",
     "canonicalize a hostname",
+    "canonicalize a linear()",
     "canonicalize a password",
     "canonicalize a pathname",
     "canonicalize a port",
@@ -8076,7 +8075,6 @@
     "create a layout fragment",
     "create a legacy callback interface object",
     "create a legacy factory function",
-    "create a linear easing function",
     "create a link request",
     "create a map iterator",
     "create a mediacapabilitiesdecodinginfo",
@@ -12555,11 +12553,11 @@
     "linear acceleration sensor",
     "linear device acceleration",
     "linear easing function",
-    "linear easing point",
     "linear gain unit to decibel",
     "linear pcm",
     "linear timing function",
     "linear()",
+    "linear() canonicalization",
     "linear-acceleration virtual sensor type",
     "linear-gradient()",
     "lineargradient",
@@ -12964,6 +12962,7 @@
     "masonry box",
     "masonry container",
     "masonry layout",
+    "masonry-auto-tracks",
     "masonry-direction",
     "masonry-fill",
     "masonry-flow",
@@ -19632,6 +19631,7 @@
     "valid media query list",
     "valid mediaconfiguration",
     "valid mediadecodingconfiguration",
+    "valid midi message",
     "valid mime type string",
     "valid mime type string with no parameters",
     "valid module specifier map",
@@ -38174,7 +38174,7 @@
     "cellState",
     "hiddenState",
     "input",
-    "output",
+    "outputs",
     "peepholeWeight",
     "recurrentBias",
     "recurrentWeight",
@@ -55462,6 +55462,7 @@
     "space-warp"
   ],
   "fenced frame config": [
+    "container size",
     "content size",
     "cross-origin reporting allowed",
     "effective enabled permissions",
@@ -55476,6 +55477,7 @@
     "on navigate callback"
   ],
   "fenced frame config instance": [
+    "container size",
     "content size",
     "cross-origin reporting allowed",
     "effective enabled permissions",
@@ -57338,12 +57340,8 @@
     "none"
   ],
   "linear easing function": [
-    "points",
+    "control point",
     "serialized computed value"
-  ],
-  "linear easing point": [
-    "input",
-    "output"
   ],
   "linearGradient": [
     "gradienttransform",
