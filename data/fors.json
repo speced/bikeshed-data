@@ -1842,7 +1842,7 @@
     "CreateIteratorResultObject",
     "CreateIteratorResultObject(value, done)",
     "CreateListFromArrayLike",
-    "CreateListFromArrayLike(obj, requirePropertyKeys)",
+    "CreateListFromArrayLike(obj, validElementTypes)",
     "CreateListIteratorRecord",
     "CreateListIteratorRecord(list)",
     "CreateMapIterator",
@@ -1959,6 +1959,7 @@
     "DefinePropertyOrThrow(O, P, desc)",
     "DelayNode",
     "DelayOptions",
+    "DelegatedInkTrailPresenter",
     "DeletePropertyOrThrow",
     "DeletePropertyOrThrow(O, P)",
     "DeprecationReportBody",
@@ -2793,7 +2794,6 @@
     "InitializeTypedArrayFromTypedArray(O, srcArray)",
     "InitializeWritableStream",
     "Ink",
-    "InkPresenter",
     "InkPresenterParam",
     "InkTrailStyle",
     "InnerModuleEvaluation",
@@ -7453,6 +7453,7 @@
     "compacting",
     "compaction",
     "compacts",
+    "compare fragment",
     "compare media queries",
     "compare topics based on priority and count",
     "compare two keys",
@@ -12176,6 +12177,7 @@
     "italic correction",
     "item",
     "item data field",
+    "item groups",
     "item types",
     "itemref",
     "iterable",
@@ -12963,6 +12965,7 @@
     "mask-size",
     "mask-type",
     "masked",
+    "masonry",
     "masonry axis",
     "masonry box",
     "masonry container",
@@ -12971,6 +12974,7 @@
     "masonry-direction",
     "masonry-fill",
     "masonry-flow",
+    "masonry-slack",
     "masonry-template-areas",
     "masonry-template-tracks",
     "masonry-track",
@@ -15438,6 +15442,7 @@
     "process close watchers",
     "process contributions for a batching scope",
     "process cookie changes",
+    "process depth stencil",
     "process document load for bounce tracking",
     "process dt or dd",
     "process early hint headers",
@@ -16909,7 +16914,6 @@
     "scope-match a selectors string",
     "scope_patterns",
     "scoped context",
-    "scoped descendant combinator",
     "scoped selector",
     "scoped style rules",
     "scopes",
@@ -17494,6 +17498,7 @@
     "set up browsing context features",
     "set up the classic script request",
     "set up the module script request",
+    "set up the private aggregation scopes",
     "set user verified",
     "set window rect",
     "set-cookie state",
@@ -18197,7 +18202,6 @@
     "stroke-width",
     "stroked",
     "strong",
-    "strong scoping proximity",
     "strongly hidden",
     "struct",
     "structural element",
@@ -18241,6 +18245,7 @@
     "subjects",
     "subjects of the selector",
     "subkeys",
+    "submasonry",
     "submission appeals",
     "submission value",
     "submit",
@@ -19886,6 +19891,7 @@
     "virtual authenticators",
     "virtual browsing context group id",
     "virtual expandable separator",
+    "virtual masonry item",
     "virtual pressure source",
     "virtual pressure source mapping",
     "virtual screen arrangement",
@@ -19966,7 +19972,6 @@
     "wbr",
     "wd",
     "weak map",
-    "weak scoping proximity",
     "weaker inset",
     "web analytics",
     "web animations animation model",
@@ -29306,6 +29311,14 @@
     "delayTime",
     "maxDelayTime"
   ],
+  "DelegatedInkTrailPresenter": [
+    "presentationArea",
+    "updateInkTrailStartPoint(event, style)"
+  ],
+  "DelegatedInkTrailPresenter/updateInkTrailStartPoint(event, style)": [
+    "event",
+    "style"
+  ],
   "DeprecationReportBody": [
     "anticipatedRemoval",
     "anticipatedremoval",
@@ -32197,7 +32210,10 @@
     "colors",
     "coveragemask",
     "depth",
-    "destination"
+    "depthpassed",
+    "destination",
+    "frontfacing",
+    "stencilpassed"
   ],
   "FragmentDestination": [
     "position",
@@ -36312,14 +36328,6 @@
   ],
   "Ink/requestPresenter(param)": [
     "param"
-  ],
-  "InkPresenter": [
-    "presentationArea",
-    "updateInkTrailStartPoint(event, style)"
-  ],
-  "InkPresenter/updateInkTrailStartPoint(event, style)": [
-    "event",
-    "style"
   ],
   "InkPresenterParam": [
     "presentationArea"
@@ -57703,6 +57711,9 @@
     "objectboundingbox",
     "userspaceonuse"
   ],
+  "masonry": [
+    "tie threshold"
+  ],
   "masonry-direction": [
     "column",
     "column-reverse",
@@ -59246,6 +59257,7 @@
     "equals"
   ],
   "repeat()": [
+    "auto-areas",
     "auto-fill",
     "auto-fit"
   ],
