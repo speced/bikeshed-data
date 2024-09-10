@@ -3475,6 +3475,17 @@
       "shortname": "ecmascript"
     }
   },
+  "Observable()": {
+    "Observable(callback)": {
+      "args": [
+        "callback"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    }
+  },
   "OfflineAudioCompletionEvent()": {
     "OfflineAudioCompletionEvent(type, eventInitDict)": {
       "args": [
@@ -5643,7 +5654,7 @@
         "PasswordCredential",
         "PublicKeyCredential"
       ],
-      "shortname": "digital-identities"
+      "shortname": "digital-credentials"
     }
   },
   "[[DiscoverFromExternalSource]]()": {
@@ -5660,7 +5671,7 @@
         "OTPCredential",
         "PublicKeyCredential"
       ],
-      "shortname": "fedcm"
+      "shortname": "digital-credentials"
     }
   },
   "[[Store]]()": {
@@ -5676,7 +5687,7 @@
         "PasswordCredential",
         "PublicKeyCredential"
       ],
-      "shortname": "digital-identities"
+      "shortname": "digital-credentials"
     }
   },
   "[[preventSilentAccess]]()": {
@@ -6291,6 +6302,17 @@
         "HandwritingDrawing"
       ],
       "shortname": "handwriting-recognition"
+    }
+  },
+  "addTeardown()": {
+    "addTeardown(teardown)": {
+      "args": [
+        "teardown"
+      ],
+      "for": [
+        "Subscriber"
+      ],
+      "shortname": "observable"
     }
   },
   "addTextTrack()": {
@@ -7688,6 +7710,15 @@
     }
   },
   "catch()": {
+    "catch(callback)": {
+      "args": [
+        "callback"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
     "catch(onRejected)": {
       "args": [
         "onRejected"
@@ -8318,7 +8349,7 @@
         "WritableStream",
         "WritableStreamDefaultWriter"
       ],
-      "shortname": "fedcm"
+      "shortname": "fs"
     },
     "close(closeInfo)": {
       "args": [
@@ -8621,9 +8652,10 @@
     "complete()": {
       "args": [],
       "for": [
-        "PaymentResponse"
+        "PaymentResponse",
+        "Subscriber"
       ],
-      "shortname": "payment-request"
+      "shortname": "observable"
     },
     "complete(result)": {
       "args": [
@@ -9257,6 +9289,7 @@
       "for": [
         "IntersectionObserver",
         "MutationObserver",
+        "Observable",
         "PerformanceObserver",
         "PressureObserver",
         "ReportingObserver",
@@ -14453,6 +14486,17 @@
       "shortname": "webgpu"
     }
   },
+  "drop()": {
+    "drop(amount)": {
+      "args": [
+        "amount"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    }
+  },
   "dvb()": {
     "dvb(value)": {
       "args": [
@@ -14987,6 +15031,15 @@
       ],
       "shortname": "streams"
     },
+    "error(error)": {
+      "args": [
+        "error"
+      ],
+      "for": [
+        "Subscriber"
+      ],
+      "shortname": "observable"
+    },
     "error(reason)": {
       "args": [
         "reason"
@@ -15137,6 +15190,25 @@
         "Array"
       ],
       "shortname": "ecmascript"
+    },
+    "every(predicate)": {
+      "args": [
+        "predicate"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "every(predicate, options)": {
+      "args": [
+        "predicate",
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     }
   },
   "ex()": {
@@ -15635,9 +15707,27 @@
         "Array"
       ],
       "shortname": "ecmascript"
+    },
+    "filter(predicate)": {
+      "args": [
+        "predicate"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     }
   },
   "finally()": {
+    "finally(callback)": {
+      "args": [
+        "callback"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
     "finally(onFinally)": {
       "args": [
         "onFinally"
@@ -15649,6 +15739,25 @@
     }
   },
   "find()": {
+    "find(predicate)": {
+      "args": [
+        "predicate"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "find(predicate, options)": {
+      "args": [
+        "predicate",
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
     "find(predicate, thisArg)": {
       "args": [
         "predicate",
@@ -15733,6 +15842,24 @@
       "shortname": "webgpu"
     }
   },
+  "first()": {
+    "first()": {
+      "args": [],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "first(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    }
+  },
   "firstChild()": {
     "firstChild()": {
       "args": [],
@@ -15763,6 +15890,15 @@
     }
   },
   "flatMap()": {
+    "flatMap(mapper)": {
+      "args": [
+        "mapper"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
     "flatMap(mapperFunction, thisArg)": {
       "args": [
         "mapperFunction",
@@ -15945,6 +16081,25 @@
     }
   },
   "forEach()": {
+    "forEach(callback)": {
+      "args": [
+        "callback"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "forEach(callback, options)": {
+      "args": [
+        "callback",
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
     "forEach(callback, thisArg)": {
       "args": [
         "callback",
@@ -16070,6 +16225,15 @@
         "Array"
       ],
       "shortname": "ecmascript"
+    },
+    "from(value)": {
+      "args": [
+        "value"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     }
   },
   "fromCharCode()": {
@@ -21227,6 +21391,33 @@
       "shortname": "css-nesting"
     }
   },
+  "inspect()": {
+    "inspect()": {
+      "args": [],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "inspect(inspect_observer)": {
+      "args": [
+        "inspect_observer"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "inspect(inspector_union)": {
+      "args": [
+        "inspector_union"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    }
+  },
   "instanceNormalization()": {
     "instanceNormalization(input)": {
       "args": [
@@ -22057,6 +22248,24 @@
       "shortname": "webnn"
     }
   },
+  "last()": {
+    "last()": {
+      "args": [],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "last(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    }
+  },
   "lastChild()": {
     "lastChild()": {
       "args": [],
@@ -22709,6 +22918,15 @@
         "Array"
       ],
       "shortname": "ecmascript"
+    },
+    "map(mapper)": {
+      "args": [
+        "mapper"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     }
   },
   "mapAsync()": {
@@ -23396,6 +23614,17 @@
         "Profiler"
       ],
       "shortname": "js-self-profiling"
+    }
+  },
+  "next()": {
+    "next(value)": {
+      "args": [
+        "value"
+      ],
+      "for": [
+        "Subscriber"
+      ],
+      "shortname": "observable"
     }
   },
   "nextNode()": {
@@ -25310,6 +25539,36 @@
         "Array"
       ],
       "shortname": "ecmascript"
+    },
+    "reduce(reducer)": {
+      "args": [
+        "reducer"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "reduce(reducer, initialValue)": {
+      "args": [
+        "reducer",
+        "initialValue"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "reduce(reducer, initialValue, options)": {
+      "args": [
+        "reducer",
+        "initialValue",
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     }
   },
   "reduceL1()": {
@@ -30045,17 +30304,6 @@
       "shortname": "dom"
     }
   },
-  "setStatus()": {
-    "setStatus(status)": {
-      "args": [
-        "status"
-      ],
-      "for": [
-        "NavigatorLogin"
-      ],
-      "shortname": "fedcm"
-    }
-  },
   "setStdDeviation()": {
     "setStdDeviation(stdDeviationX, stdDeviationY)": {
       "args": [
@@ -30963,6 +31211,25 @@
         "Array"
       ],
       "shortname": "ecmascript"
+    },
+    "some(predicate)": {
+      "args": [
+        "predicate"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "some(predicate, options)": {
+      "args": [
+        "predicate",
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     }
   },
   "sort()": {
@@ -31647,9 +31914,29 @@
     "subscribe()": {
       "args": [],
       "for": [
+        "Observable",
         "PushManager"
       ],
-      "shortname": "push-api"
+      "shortname": "observable"
+    },
+    "subscribe(observer)": {
+      "args": [
+        "observer"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "subscribe(observer, options)": {
+      "args": [
+        "observer",
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     },
     "subscribe(options)": {
       "args": [
@@ -31850,6 +32137,17 @@
       "shortname": "css-typed-om"
     }
   },
+  "switchMap()": {
+    "switchMap(mapper)": {
+      "args": [
+        "mapper"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    }
+  },
   "symmetricDifference()": {
     "symmetricDifference(other)": {
       "args": [
@@ -31898,6 +32196,17 @@
       "shortname": "html"
     }
   },
+  "take()": {
+    "take(amount)": {
+      "args": [
+        "amount"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    }
+  },
   "takePhoto()": {
     "takePhoto()": {
       "args": [],
@@ -31927,6 +32236,17 @@
         "ReportingObserver"
       ],
       "shortname": "dom"
+    }
+  },
+  "takeUntil()": {
+    "takeUntil(notifier)": {
+      "args": [
+        "notifier"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     }
   },
   "tan()": {
@@ -32171,6 +32491,24 @@
         "CSSNumericValue"
       ],
       "shortname": "css-typed-om"
+    }
+  },
+  "toArray()": {
+    "toArray()": {
+      "args": [],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
+    },
+    "toArray(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "Observable"
+      ],
+      "shortname": "observable"
     }
   },
   "toBlob()": {
@@ -33908,6 +34246,27 @@
         "Element"
       ],
       "shortname": "dom"
+    }
+  },
+  "when()": {
+    "when(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "EventTarget"
+      ],
+      "shortname": "observable"
+    },
+    "when(type, options)": {
+      "args": [
+        "type",
+        "options"
+      ],
+      "for": [
+        "EventTarget"
+      ],
+      "shortname": "observable"
     }
   },
   "whenDefined()": {
