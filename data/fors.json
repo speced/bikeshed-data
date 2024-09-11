@@ -836,6 +836,9 @@
     "<linear-color-stop>",
     "<linear-easing-function>",
     "<linear-gradient-syntax>",
+    "<linear-stop-length>",
+    "<linear-stop-list>",
+    "<linear-stop>",
     "<link-param>",
     "<list>",
     "<ln/>",
@@ -3023,6 +3026,7 @@
     "LockOptions",
     "Logger",
     "Logical miplevel-specific texture extent",
+    "LoginStatus",
     "LoopContinues",
     "LoopContinues(completion, labelSet)",
     "MIDIAccess",
@@ -3316,6 +3320,7 @@
     "NavigatorID",
     "NavigatorLanguage",
     "NavigatorLocks",
+    "NavigatorLogin",
     "NavigatorML",
     "NavigatorManagedData",
     "NavigatorNetworkInformation",
@@ -8096,6 +8101,7 @@
     "create a layout fragment",
     "create a legacy callback interface object",
     "create a legacy factory function",
+    "create a linear easing function",
     "create a link request",
     "create a map iterator",
     "create a mediacapabilitiesdecodinginfo",
@@ -10783,6 +10789,7 @@
     "get the input state",
     "get the legacy windows version number",
     "get the lock request queue",
+    "get the login status",
     "get the navigable",
     "get the navigable info",
     "get the navigation api entry index",
@@ -12573,6 +12580,7 @@
     "linear acceleration sensor",
     "linear device acceleration",
     "linear easing function",
+    "linear easing point",
     "linear gain unit to decibel",
     "linear pcm",
     "linear timing function",
@@ -12766,6 +12774,8 @@
     "lod",
     "log event buffer",
     "log()",
+    "logged-in",
+    "logged-out",
     "logical",
     "logical combination pseudo-classes",
     "logical display surface",
@@ -12780,6 +12790,7 @@
     "logical width",
     "logically connected",
     "logicalsurface",
+    "login status map",
     "logo",
     "long",
     "long animation frame",
@@ -16833,6 +16844,7 @@
     "same-origin-referrer request",
     "same-party",
     "same-permission",
+    "same-site with its ancestors",
     "samp",
     "sample",
     "sample a debug report",
@@ -17493,6 +17505,7 @@
     "set the frozen base url",
     "set the high word",
     "set the inner text steps",
+    "set the login status",
     "set the muted state",
     "set the ongoing navigation",
     "set the playback rate",
@@ -17524,6 +17537,7 @@
     "set window rect",
     "set-cookie state",
     "set-dest",
+    "set-login",
     "set-mode",
     "set-site",
     "set-user",
@@ -20865,6 +20879,9 @@
     "block",
     "inline",
     "run-in"
+  ],
+  "<easing-function>": [
+    "linear"
   ],
   "<flex>": [
     "fr",
@@ -37359,6 +37376,10 @@
     "signal",
     "steal"
   ],
+  "LoginStatus": [
+    "\"logged-in\"",
+    "\"logged-out\""
+  ],
   "MIDIAccess": [
     "inputs",
     "onstatechange",
@@ -40357,6 +40378,7 @@
     "keyboard",
     "leaveAdInterestGroup()",
     "leaveAdInterestGroup(group)",
+    "login",
     "managed",
     "maxTouchPoints",
     "mediaCapabilities",
@@ -40493,6 +40515,12 @@
   ],
   "NavigatorLocks": [
     "locks"
+  ],
+  "NavigatorLogin": [
+    "setStatus(status)"
+  ],
+  "NavigatorLogin/setStatus(status)": [
+    "status"
   ],
   "NavigatorML": [
     "ml"
@@ -57504,6 +57532,14 @@
     "baseline",
     "contain",
     "none"
+  ],
+  "linear easing function": [
+    "points",
+    "serialized computed value"
+  ],
+  "linear easing point": [
+    "input",
+    "output"
   ],
   "linear()": [
     "control point"
