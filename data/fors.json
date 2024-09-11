@@ -834,6 +834,7 @@
     "<line-width>",
     "<linear-color-hint>",
     "<linear-color-stop>",
+    "<linear-easing-function>",
     "<linear-gradient-syntax>",
     "<link-param>",
     "<list>",
@@ -6785,7 +6786,6 @@
     "callee",
     "caller",
     "calling function",
-    "calling site",
     "callsitenorestriction",
     "callsiterequiredtobeuniform.s",
     "camera information can be exposed",
@@ -7046,7 +7046,7 @@
     "characters",
     "characterstring",
     "charge shared storage navigation budget",
-    "charge shared storage reporting budget",
+    "charge shared storage top-level traversable budgets",
     "chargingchange",
     "chargingtimechange",
     "charter",
@@ -8693,7 +8693,6 @@
     "default filtering id max bytes",
     "default filtering id value",
     "default graph",
-    "default index",
     "default initial value",
     "default inline xr device",
     "default iterator object",
@@ -8727,6 +8726,7 @@
     "default rule thickness",
     "default screen orientation",
     "default script fetch options",
+    "default selecturl index",
     "default sensor",
     "default single-line container name",
     "default sizing algorithm",
@@ -8931,7 +8931,6 @@
     "determine navigation params policy container",
     "determine nosniff",
     "determine remaining navigation budget",
-    "determine reporting budget to charge",
     "determine request's referrer",
     "determine the active editcontext",
     "determine the creation sandboxing flags",
@@ -10772,6 +10771,7 @@
     "get the cookie store",
     "get the current permission state",
     "get the current value of the event handler",
+    "get the default selecturl index",
     "get the descendant script fetch options",
     "get the element",
     "get the entry point",
@@ -12976,10 +12976,11 @@
     "mask-type",
     "masked",
     "masonry",
-    "masonry axis",
     "masonry box",
     "masonry container",
+    "masonry item",
     "masonry layout",
+    "masonry track",
     "masonry-auto-tracks",
     "masonry-direction",
     "masonry-fill",
@@ -14402,6 +14403,7 @@
     "outside of home tab scope",
     "outstanding rejected promises weak set",
     "over",
+    "overall page entropy allowance",
     "overall progress",
     "overbarextraascender",
     "overbarverticalgap",
@@ -14495,7 +14497,6 @@
     "page footer",
     "page group",
     "page header",
-    "page load",
     "page load strategy",
     "page loading strategy",
     "page margin",
@@ -16373,7 +16374,6 @@
     "report_to",
     "reporting cache",
     "reporting endpoint",
-    "reporting entropy allowance",
     "reporting frequency",
     "reporting group",
     "reporting observer",
@@ -17132,6 +17132,7 @@
     "sec-redemption-record",
     "sec-required-csp",
     "sec-required-document-policy",
+    "sec-shared-storage-data-origin",
     "sec-shared-storage-writable",
     "second-factor platform authenticator",
     "second-factor roaming authenticator",
@@ -17289,6 +17290,8 @@
     "serialize a group of selectors",
     "serialize a javascript value to a json string",
     "serialize a javascript value to json bytes",
+    "serialize a linear() control point",
+    "serialize a linear() function",
     "serialize a list of css page selectors",
     "serialize a list of reports to json",
     "serialize a local",
@@ -17617,10 +17620,7 @@
     "shared storage",
     "shared storage bucket",
     "shared storage database",
-    "shared storage navigation budget charged",
     "shared storage navigation budget table",
-    "shared storage reporting budget",
-    "shared storage reporting budget charged",
     "shared storage shed",
     "shared utf-16 decoder",
     "shared worker",
@@ -17754,6 +17754,7 @@
     "single-valued properties",
     "site",
     "site domain",
+    "site page entropy allowance",
     "site-specific",
     "site-triggered install prompt",
     "site-wide tracking status resource",
@@ -17970,6 +17971,7 @@
     "stackbottomshiftdown",
     "stackdisplaystylegapmin",
     "stackgapmin",
+    "stacking axis",
     "stacking context",
     "stacking contexts",
     "stacktopdisplaystyleshiftup",
@@ -20863,9 +20865,6 @@
     "block",
     "inline",
     "run-in"
-  ],
-  "<easing-function>": [
-    "linear"
   ],
   "<flex>": [
     "fr",
@@ -33597,7 +33596,8 @@
     "\"unorm16x2\"",
     "\"unorm16x4\"",
     "\"unorm8x2\"",
-    "\"unorm8x4\""
+    "\"unorm8x4\"",
+    "byteSize"
   ],
   "GPUVertexState": [
     "buffers"
@@ -54076,9 +54076,6 @@
   "callback function": [
     "parent task"
   ],
-  "calling site": [
-    "remaining navigation budget"
-  ],
   "canvas": [
     "height",
     "requiredextensions",
@@ -57508,9 +57505,8 @@
     "contain",
     "none"
   ],
-  "linear easing function": [
-    "control point",
-    "serialized computed value"
+  "linear()": [
+    "control point"
   ],
   "linearGradient": [
     "gradienttransform",
@@ -59977,9 +59973,6 @@
     "username",
     "work"
   ],
-  "selectURL": [
-    "input url list"
-  ],
   "selector": [
     "combinator",
     "subject",
@@ -60201,6 +60194,10 @@
     "shared storage database queue",
     "store an entry in the database"
   ],
+  "shared storage page budget": [
+    "overall budget",
+    "site budget map"
+  ],
   "she": [
     "directive state"
   ],
@@ -60254,6 +60251,7 @@
     "significant"
   ],
   "site": [
+    "remaining navigation budget",
     "same site"
   ],
   "size": [
@@ -61512,7 +61510,9 @@
     "captured ad auction additional bids headers",
     "captured ad auction signals headers",
     "fenced frame config mapping",
+    "page budget",
     "saved bidding and auction request context",
+    "shared storage page budget",
     "storage shed",
     "unfenced parent"
   ],
