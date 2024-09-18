@@ -1,4 +1,4 @@
-sha: efafea1c32a23818c75899703d2bf7913cdc5314
+sha: 4d67f35a4dcc96bc40de00102a150d925d9fca61
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -28198,7 +28198,10 @@ testharness WebCryptoAPI/historical.any.js
 testharness WebCryptoAPI/idlharness.https.any.js
 testharness WebCryptoAPI/import_export/crashtests/importKey-unsettled-promise.https.any.js
 testharness WebCryptoAPI/import_export/ec_importKey.https.any.js
-testharness WebCryptoAPI/import_export/okp_importKey.https.any.js
+testharness WebCryptoAPI/import_export/okp_importKey_Ed25519.https.any.js
+testharness WebCryptoAPI/import_export/okp_importKey_Ed448.https.any.js
+testharness WebCryptoAPI/import_export/okp_importKey_X25519.https.any.js
+testharness WebCryptoAPI/import_export/okp_importKey_X448.https.any.js
 testharness WebCryptoAPI/import_export/okp_importKey_failures_Ed25519.https.any.js
 testharness WebCryptoAPI/import_export/okp_importKey_failures_Ed448.https.any.js
 testharness WebCryptoAPI/import_export/okp_importKey_failures_X25519.https.any.js
@@ -28208,7 +28211,8 @@ testharness WebCryptoAPI/import_export/symmetric_importKey.https.any.js
 testharness WebCryptoAPI/randomUUID.https.any.js
 testharness WebCryptoAPI/secure_context/crypto-subtle-secure-context-available.https.sub.html
 testharness WebCryptoAPI/sign_verify/ecdsa.https.any.js
-testharness WebCryptoAPI/sign_verify/eddsa.https.any.js
+testharness WebCryptoAPI/sign_verify/eddsa_curve25519.https.any.js
+testharness WebCryptoAPI/sign_verify/eddsa_curve448.https.any.js
 testharness WebCryptoAPI/sign_verify/eddsa_small_order_points.https.any.js
 testharness WebCryptoAPI/sign_verify/hmac.https.any.js
 testharness WebCryptoAPI/sign_verify/rsa_pkcs.https.any.js
@@ -52004,7 +52008,10 @@ testharness webgl/idlharness.any.js
 testharness webgl/texImage2D.html
 testharness webgl/texSubImage2D.html
 testharness webgl/uniformMatrixNfv.html
-testharness webhid/idlharness.https.window.js
+testharness webhid/hid-allowed-by-permissions-policy-attribute-redirect-on-load.https.sub.html
+testharness webhid/hid-allowed-by-permissions-policy-attribute.https.sub.html
+testharness webhid/hid-allowed-by-permissions-policy.https.sub.html
+testharness webhid/idlharness.https.any.js
 testharness webhid/unload-iframe.https.window.js
 testharness webidl/current-realm.html
 testharness webidl/ecmascript-binding/allow-resizable.html
