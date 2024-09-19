@@ -1994,7 +1994,7 @@
     "DevicePostureType",
     "DigitalCredential",
     "DigitalCredentialRequestOptions",
-    "DigitalCredentialsProvider",
+    "DigitalCredentialsRequest",
     "DigitalGoodsService",
     "DirectFromSellerSignalsForBuyer",
     "DirectFromSellerSignalsForSeller",
@@ -3697,6 +3697,7 @@
     "PublicKeyCredentialDescriptor",
     "PublicKeyCredentialDescriptorJSON",
     "PublicKeyCredentialEntity",
+    "PublicKeyCredentialHint",
     "PublicKeyCredentialHints",
     "PublicKeyCredentialJSON",
     "PublicKeyCredentialParameters",
@@ -29572,11 +29573,11 @@
     "protocol"
   ],
   "DigitalCredentialRequestOptions": [
-    "providers"
+    "requests"
   ],
-  "DigitalCredentialsProvider": [
-    "protocol",
-    "request"
+  "DigitalCredentialsRequest": [
+    "data",
+    "protocol"
   ],
   "DigitalGoodsService": [
     "consume(purchaseToken)",
@@ -38444,7 +38445,6 @@
     "byte length",
     "check dimensions",
     "dataType",
-    "dimensions",
     "shape"
   ],
   "MLOperatorOptions": [
@@ -42862,6 +42862,14 @@
   ],
   "PublicKeyCredentialEntity": [
     "name"
+  ],
+  "PublicKeyCredentialHint": [
+    "\"client-device\"",
+    "\"hybrid\"",
+    "\"security-key\"",
+    "client-device",
+    "hybrid",
+    "security-key"
   ],
   "PublicKeyCredentialHints": [
     "\"client-device\"",
@@ -55119,7 +55127,8 @@
   ],
   "digital credential": [
     "exchange protocol",
-    "query"
+    "presentation request",
+    "request data"
   ],
   "direct from seller signals": [
     "auction signals",
