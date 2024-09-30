@@ -1178,6 +1178,7 @@
     "AcquireReadableStreamDefaultReader",
     "AcquireWritableStreamDefaultWriter",
     "AdAuctionData",
+    "AdAuctionDataBuyerConfig",
     "AdAuctionDataConfig",
     "AdRender",
     "AddEntriesFromIterable",
@@ -2461,6 +2462,7 @@
     "GetAnimationsOptions",
     "GetArrayBufferMaxByteLengthOption",
     "GetArrayBufferMaxByteLengthOption(options)",
+    "GetComposedRangesOptions",
     "GetFunctionRealm",
     "GetFunctionRealm(obj)",
     "GetGeneratorKind",
@@ -6013,6 +6015,8 @@
     "attribution-reporting-support",
     "auction",
     "auction config",
+    "auction data buyer config",
+    "auction data config",
     "auction nonce",
     "auction report info",
     "audience segmentation",
@@ -14755,6 +14759,7 @@
     "parse and validate server response",
     "parse and verify a bidding code or update url",
     "parse and verify a trusted signals url",
+    "parse and verify ad auction data config",
     "parse as a forgiving selector list",
     "parse as an integer",
     "parse attribution destinations",
@@ -14776,6 +14781,7 @@
     "parse json into infra values",
     "parse max event states",
     "parse orientation data reading",
+    "parse per buyer auction data configs",
     "parse records from bytes",
     "parse report windows",
     "parse response's Clear-Site-Data header",
@@ -20043,6 +20049,7 @@
     "wait for script body from a fetcher",
     "wait queue",
     "wait until configuration input promises resolve",
+    "wait until server response promise resolves",
     "waiting",
     "waiting asynchronously",
     "waiting for all",
@@ -22020,8 +22027,13 @@
     "request",
     "requestId"
   ],
+  "AdAuctionDataBuyerConfig": [
+    "targetSize"
+  ],
   "AdAuctionDataConfig": [
     "coordinatorOrigin",
+    "perBuyerConfig",
+    "requestSize",
     "seller"
   ],
   "AdRender": [
@@ -34019,6 +34031,9 @@
   "GetAnimationsOptions": [
     "subtree"
   ],
+  "GetComposedRangesOptions": [
+    "shadowRoots"
+  ],
   "GetHTMLOptions": [
     "serializableShadowRoots",
     "shadowRoots"
@@ -40476,6 +40491,7 @@
     "getGamepads()",
     "getInstalledRelatedApps()",
     "getInterestGroupAdAuctionData(config)",
+    "getInterestGroupAdAuctionData(configIDL)",
     "getUserMedia()",
     "getUserMedia(constraints, successCallback, errorCallback)",
     "hid",
@@ -46244,6 +46260,7 @@
     "focusNode",
     "focusOffset",
     "getComposedRanges()",
+    "getComposedRanges(options)",
     "getComposedRanges(shadowRoots)",
     "getRangeAt()",
     "getRangeAt(index)",
@@ -53448,6 +53465,15 @@
     "server response id",
     "trusted scoring signals url"
   ],
+  "auction data buyer config": [
+    "size"
+  ],
+  "auction data config": [
+    "coordinator",
+    "per buyer config",
+    "request size",
+    "seller"
+  ],
   "auction report info": [
     "debug loss report urls",
     "debug win report urls",
@@ -60247,6 +60273,7 @@
     "browser signals",
     "components",
     "name",
+    "priority",
     "user bidding signals"
   ],
   "server auction previous win": [
