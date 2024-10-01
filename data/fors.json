@@ -3214,10 +3214,7 @@
     "MediaSessionAction",
     "MediaSessionActionDetails",
     "MediaSessionActionHandler",
-    "MediaSessionCaptureActionDetails",
     "MediaSessionPlaybackState",
-    "MediaSessionSeekActionDetails",
-    "MediaSessionSeekToActionDetails",
     "MediaSettingsRange",
     "MediaSource",
     "MediaSourceHandle",
@@ -19040,6 +19037,7 @@
     "transfer function element attributes",
     "transfer steps",
     "transfer-receiving steps",
+    "transferToImageBitmap from WebGPU",
     "transferable object",
     "transferred size suggestion",
     "transform",
@@ -32645,6 +32643,7 @@
     "[[configuration]]",
     "[[currentTexture]]",
     "[[drawingBuffer]]",
+    "[[lastPresentedImage]]",
     "[[textureDescriptor]]",
     "canvas",
     "configure(configuration)",
@@ -39199,16 +39198,14 @@
     "isActivating"
   ],
   "MediaSessionActionDetails": [
-    "action"
+    "action",
+    "fastSeek",
+    "isActivating",
+    "seekOffset",
+    "seekTime"
   ],
   "MediaSessionActionHandler": [
     "details"
-  ],
-  "MediaSessionActionSeekToDetails": [
-    "fastSeek"
-  ],
-  "MediaSessionCaptureActionDetails": [
-    "isActivating"
   ],
   "MediaSessionPlaybackState": [
     "\"none\"",
@@ -39217,13 +39214,6 @@
     "none",
     "paused",
     "playing"
-  ],
-  "MediaSessionSeekActionDetails": [
-    "seekOffset"
-  ],
-  "MediaSessionSeekToActionDetails": [
-    "fastSeek",
-    "seekTime"
   ],
   "MediaSettingsRange": [
     "max",
@@ -46261,7 +46251,6 @@
     "focusOffset",
     "getComposedRanges()",
     "getComposedRanges(options)",
-    "getComposedRanges(shadowRoots)",
     "getRangeAt()",
     "getRangeAt(index)",
     "isCollapsed",
