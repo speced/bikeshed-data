@@ -3778,6 +3778,7 @@
     "RTCIceCandidateType",
     "RTCIceComponent",
     "RTCIceConnectionState",
+    "RTCIceCredentialType",
     "RTCIceGatherOptions",
     "RTCIceGathererState",
     "RTCIceGatheringState",
@@ -3821,10 +3822,10 @@
     "RTCRtcpParameters",
     "RTCRtpCapabilities",
     "RTCRtpCodec",
-    "RTCRtpCodecCapability",
     "RTCRtpCodecParameters",
     "RTCRtpCodingParameters",
     "RTCRtpContributingSource",
+    "RTCRtpDecodingParameters",
     "RTCRtpEncodingParameters",
     "RTCRtpHeaderExtensionCapability",
     "RTCRtpHeaderExtensionParameters",
@@ -5687,7 +5688,6 @@
     "annotation-syntax",
     "annotation-xml",
     "announce an RTCDataChannel as open",
-    "announce an rtcdatachannel as open",
     "announce the connection",
     "announce the rtcdatachannel as open",
     "anonca",
@@ -7418,8 +7418,6 @@
     "collection tag",
     "collection type",
     "collects",
-    "collectsenders",
-    "collecttransceivers",
     "color",
     "color functions",
     "color renderable format",
@@ -7695,7 +7693,6 @@
     "connection",
     "connection pool",
     "connection queue",
-    "connection state",
     "connection timing info",
     "connection type",
     "connection types",
@@ -8249,13 +8246,6 @@
     "create an mloperanddescriptor",
     "create an offer",
     "create an opaque timing info",
-    "create an rtcdatachannel",
-    "create an rtcdtmfsender",
-    "create an rtcicecandidate",
-    "create an rtcrtpreceiver",
-    "create an rtcrtpsender",
-    "create an rtcrtptransceiver",
-    "create an rtcsctptransport",
     "create and initialize a document object",
     "create and populate a resizeobserverentry",
     "create brands",
@@ -8318,7 +8308,6 @@
     "creating an offer",
     "creating an opaque timing info",
     "creating an operation function",
-    "creating an rtcicecandidate",
     "creating record objects",
     "creation",
     "creation-fixed footprint",
@@ -8976,7 +8965,6 @@
     "determine if a report should be sent deterministically",
     "determine if a request has top-level storage access",
     "determine if an origin is an aggregation coordinator",
-    "determine if dtmf can be sent",
     "determine navigation params policy container",
     "determine nosniff",
     "determine position fallback styles",
@@ -11387,8 +11375,6 @@
     "ibm866",
     "ice agent",
     "ice candidate pool size",
-    "ice connection state",
-    "ice gathering state",
     "ice servers list",
     "ice transports setting",
     "icecast header",
@@ -17810,7 +17796,6 @@
     "signal methods",
     "signal slots",
     "signal to abort the request",
-    "signaling state",
     "signature",
     "signature counter",
     "signatures",
@@ -18219,7 +18204,6 @@
     "stop or comma",
     "stop sending and receiving",
     "stop the RTCRtpTransceiver",
-    "stop the rtcrtptransceiver",
     "stop the sensor altogether",
     "stop the speculative html parser",
     "stopped",
@@ -19072,7 +19056,6 @@
     "trailing surrogate",
     "transaction",
     "transaction state",
-    "transceiver kind",
     "transcoder",
     "transcription",
     "transfer function",
@@ -19488,7 +19471,6 @@
     "update the editcontext",
     "update the event map",
     "update the file selection",
-    "update the ice gathering state",
     "update the image data",
     "update the navigation api entries for a same-document navigation",
     "update the navigation api entries for reactivation",
@@ -43481,6 +43463,9 @@
     "failed",
     "new"
   ],
+  "RTCIceCredentialType": [
+    "password"
+  ],
   "RTCIceGatherOptions": [
     "gatherPolicy",
     "iceServers"
@@ -43511,6 +43496,7 @@
   ],
   "RTCIceServer": [
     "credential",
+    "credentialType",
     "urls",
     "username"
   ],
@@ -43840,6 +43826,7 @@
     "url"
   ],
   "RTCPeerConnectionState": [
+    "",
     "closed",
     "connected",
     "connecting",
@@ -43899,12 +43886,6 @@
     "headerExtensions"
   ],
   "RTCRtpCodec": [
-    "channels",
-    "clockRate",
-    "mimeType",
-    "sdpFmtpLine"
-  ],
-  "RTCRtpCodecCapability": [
     "channels",
     "clockRate",
     "mimeType",
@@ -50500,6 +50481,7 @@
     "\"throughput\""
   ],
   "WebTransportConnectionStats": [
+    "atSendCapacity",
     "bytesLost",
     "bytesReceived",
     "bytesSent",
