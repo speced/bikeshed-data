@@ -2288,6 +2288,9 @@
     "GPUComputePassTimestampWrites",
     "GPUComputePipeline",
     "GPUComputePipelineDescriptor",
+    "GPUCopyExternalImageDestInfo",
+    "GPUCopyExternalImageSource",
+    "GPUCopyExternalImageSourceInfo",
     "GPUCullMode",
     "GPUDebugCommandsMixin",
     "GPUDepthBias",
@@ -2385,6 +2388,9 @@
     "GPUStoreOp",
     "GPUSupportedFeatures",
     "GPUSupportedLimits",
+    "GPUTexelCopyBufferInfo",
+    "GPUTexelCopyBufferLayout",
+    "GPUTexelCopyTextureInfo",
     "GPUTexture",
     "GPUTextureAspect",
     "GPUTextureBindingLayout",
@@ -7513,6 +7519,7 @@
     "commit a transaction",
     "commit computed styles",
     "commit early hints",
+    "commit private aggregation contributions",
     "committed promise",
     "committed-to entry",
     "common key systems",
@@ -9925,6 +9932,7 @@
     "extract header list values",
     "extract header values",
     "extract links from headers",
+    "extract private aggregation contributions",
     "extract the json fetch response",
     "extract the locale",
     "extract the microdata from those nodes into a json form",
@@ -10156,6 +10164,7 @@
     "finalize a same-document navigation",
     "finalize event timing",
     "finalize focus decision algorithm",
+    "finalize private aggregation debug info",
     "find",
     "find a list of configuration descriptors for the connected usb device",
     "find a list of descriptors for a configuration",
@@ -10988,6 +10997,7 @@
     "gpu error scope",
     "gpucomputepipeline",
     "gpurenderpipeline",
+    "gputexelcopytextureinfo physical subresource size",
     "gradient box",
     "gradient element",
     "gradient function",
@@ -14334,6 +14344,7 @@
     "on document ready",
     "on event contribution cache",
     "on event contribution cache entry",
+    "on event contribution entry",
     "on response available",
     "on_reach_bottom_distance",
     "oncapturehandlechange",
@@ -15403,6 +15414,7 @@
     "prepare an event",
     "prepare an image for presentation",
     "prepare append",
+    "prepare for private aggregation",
     "prepare lists",
     "prepare the platform runtime",
     "prepare the script element",
@@ -15516,6 +15528,7 @@
     "privacy policy",
     "privacypolicy",
     "private address",
+    "private aggregation contributions",
     "private field values",
     "private network access check",
     "private network request",
@@ -15628,6 +15641,7 @@
     "process the platform version's release_type member",
     "process the platform version's target_code member",
     "process the platform_version member",
+    "process the private aggregation contributions",
     "process the private aggregation contributions for an auction",
     "process the protocol_handlers member",
     "process the related_applications member",
@@ -16212,7 +16226,7 @@
     "register a protocol handler",
     "register a system key press handler",
     "register an import map",
-    "register bids for fordebuggingonly reports",
+    "register bids for reporting",
     "register file handlers",
     "register reporting metadata",
     "registered",
@@ -17348,7 +17362,6 @@
     "self-closing flag",
     "self-closing start tag state",
     "self-origin",
-    "self-property-list",
     "seller capability",
     "semantic",
     "semantic extension",
@@ -18791,6 +18804,7 @@
     "texel block memory cost",
     "texel block row",
     "texel block width",
+    "texel copy",
     "texel format",
     "texel image",
     "text",
@@ -19930,6 +19944,8 @@
     "validating GPUPrimitiveState",
     "validating GPUProgrammableStage",
     "validating GPURenderPipelineDescriptor",
+    "validating GPUTexelCopyBufferInfo",
+    "validating GPUTexelCopyTextureInfo",
     "validating GPUTextureDescriptor",
     "validating GPUVertexBufferLayout",
     "validating GPUVertexState",
@@ -32917,6 +32933,15 @@
   "GPUComputePipelineDescriptor": [
     "compute"
   ],
+  "GPUCopyExternalImageDestInfo": [
+    "colorSpace",
+    "premultipliedAlpha"
+  ],
+  "GPUCopyExternalImageSourceInfo": [
+    "flipY",
+    "origin",
+    "source"
+  ],
   "GPUCullMode": [
     "\"back\"",
     "\"front\"",
@@ -33573,6 +33598,20 @@
     "minStorageBufferOffsetAlignment",
     "minUniformBufferOffsetAlignment"
   ],
+  "GPUTexelCopyBufferInfo": [
+    "buffer"
+  ],
+  "GPUTexelCopyBufferLayout": [
+    "bytesPerRow",
+    "offset",
+    "rowsPerImage"
+  ],
+  "GPUTexelCopyTextureInfo": [
+    "aspect",
+    "mipLevel",
+    "origin",
+    "texture"
+  ],
   "GPUTexture": [
     "[[destroyed]]",
     "[[viewFormats]]",
@@ -33788,37 +33827,47 @@
     "stepMode"
   ],
   "GPUVertexFormat": [
+    "\"float16\"",
     "\"float16x2\"",
     "\"float16x4\"",
     "\"float32\"",
     "\"float32x2\"",
     "\"float32x3\"",
     "\"float32x4\"",
+    "\"sint16\"",
     "\"sint16x2\"",
     "\"sint16x4\"",
     "\"sint32\"",
     "\"sint32x2\"",
     "\"sint32x3\"",
     "\"sint32x4\"",
+    "\"sint8\"",
     "\"sint8x2\"",
     "\"sint8x4\"",
+    "\"snorm16\"",
     "\"snorm16x2\"",
     "\"snorm16x4\"",
+    "\"snorm8\"",
     "\"snorm8x2\"",
     "\"snorm8x4\"",
+    "\"uint16\"",
     "\"uint16x2\"",
     "\"uint16x4\"",
     "\"uint32\"",
     "\"uint32x2\"",
     "\"uint32x3\"",
     "\"uint32x4\"",
+    "\"uint8\"",
     "\"uint8x2\"",
     "\"uint8x4\"",
     "\"unorm10-10-10-2\"",
+    "\"unorm16\"",
     "\"unorm16x2\"",
     "\"unorm16x4\"",
+    "\"unorm8\"",
     "\"unorm8x2\"",
     "\"unorm8x4\"",
+    "\"unorm8x4-bgra\"",
     "byteSize"
   ],
   "GPUVertexState": [
@@ -36766,6 +36815,8 @@
   ],
   "InterestGroupScriptRunnerGlobalScope": [
     "auction config",
+    "on event contribution map",
+    "private aggregation",
     "privateAggregation"
   ],
   "IntersectionObserver": [
@@ -58814,6 +58865,12 @@
     "debug scope",
     "worklet function"
   ],
+  "on event contribution entry": [
+    "batching scope",
+    "contribution",
+    "debug details",
+    "debug scope"
+  ],
   "opacity": [
     "<opacity-value>"
   ],
@@ -59861,7 +59918,12 @@
     "generate-bid"
   ],
   "reporting context": [
-    "debug reporting info"
+    "debug reporting info",
+    "local leader info",
+    "private aggregation allowed",
+    "private aggregation batching scope map",
+    "private aggregation on event contributions",
+    "winner reporting id"
   ],
   "reporting destination info": [
     "reporting macro map",
