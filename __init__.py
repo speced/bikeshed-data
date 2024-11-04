@@ -4,6 +4,7 @@
 import datetime
 import json
 import os
+import re
 import subprocess
 
 import bikeshed
@@ -22,7 +23,7 @@ def updateAndCommit():
 
     try:
         with open(os.path.join(dataPath, "manifest.txt"), "r", encoding="utf-8") as fh:
-            oldDate, _, oldManifest = fh.read().partition("\n")
+            oldManifest = bikeshed.update.Manifest.fromString(fh.read())
     except:
         raise
 
@@ -30,24 +31,28 @@ def updateAndCommit():
 
     try:
         with open(os.path.join(dataPath, "manifest.txt"), "r", encoding="utf-8") as fh:
-            _, _, newManifest = fh.read().partition("\n")
+            newManifest = bikeshed.update.Manifest.fromString(fh.read())
     except:
         raise
-    if oldManifest == newManifest:
+    if str(oldManifest) == str(newManifest):
         # No change
         print(f"Manifest is unchanged since {oldDate}, nothing to be committed")
         return
 
-    diffFiles = diffManifest(oldManifest, newManifest)
+    diffData = diffManifests(oldManifest, newManifest)
 
     os.chdir(scriptPath)
     print(subprocess.check_output("git add data", shell=True))
-    print(
-        subprocess.check_output(
-            f"git commit -m 'update {len(diffFiles)} files: {', '.join(diffFiles)}'",
-            shell=True,
-        )
-    )
+
+    command = f"git commit -m 'updated {diffData['total']} files: "
+    commandBits = []
+    for category in ["added", "removed", "changed"]:
+        if diffData[category]:
+            commandBits.push(category + " " + ", ".join(diffData[category]))
+    command += "; ".join(commandBits)
+    command += "'"
+    print(subprocess.check_output(command, shell=True))
+
     print(subprocess.check_output("git push", shell=True))
 
 
@@ -58,12 +63,29 @@ def updateDataFiles(path):
         bikeshed.update.update(path=path, updateMode=mode)
 
 
-def diffManifest(old, new):
-    oldLines = set(old.split("\n"))
-    newLines = set(new.split("\n"))
-    diffLines = oldLines ^ newLines
-    diffFiles = set(line.partition(" ")[2] for line in diffLines)
-    return sorted(diffFiles)
+def diffManifests(old, new):
+    oldFiles = set(
+        (node.props["hash"], node.props["path"])
+        for node in old["manifest"].getAll("file")
+    )
+    newFiles = set(
+        (node.props["hash"], node.props["path"])
+        for node in new["manifest"].getAll("file")
+    )
+    oldPaths = set(file[1] for file in oldFiles)
+    newPaths = set(file[1] for file in newFiles)
+
+    removedPaths = oldPaths - newPaths
+    addedPaths = newPaths - oldPaths
+    persistingPaths = oldPaths & newPaths
+
+    changedPaths = set(file[1] for file in oldFiles ^ newFiles) & persistingPaths
+    return {
+        "added": sorted(addedPaths),
+        "removed": sorted(removedPaths),
+        "changed": sorted(changedPaths),
+        "total": len(addedPaths) + len(removedPaths) + len(changedPaths),
+    }
 
 
 if __name__ == "__main__":
