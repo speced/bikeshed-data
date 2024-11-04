@@ -53,7 +53,9 @@ def updateAndCommit():
 
 def updateDataFiles(path):
     bikeshed.constants.quiet = 0
-    bikeshed.update.update(path=path, manifestMode="skip")
+    mode = bikeshed.update.UpdateMode.MANIFEST | bikeshed.update.UpdateMode.FORCE
+    with bikeshed.messages.messagesSilent() as _:
+        bikeshed.update.update(path=path, updateMode=mode)
 
 
 def diffManifest(old, new):
