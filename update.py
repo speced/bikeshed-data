@@ -36,7 +36,7 @@ def updateAndCommit():
         raise
     if str(oldManifest) == str(newManifest):
         # No change
-        print(f"Manifest is unchanged since {oldDate}, nothing to be committed")
+        print(f"Manifest is unchanged since {old.dt}, nothing to be committed")
         return
 
     diffData = diffManifests(oldManifest, newManifest)
@@ -64,22 +64,16 @@ def updateDataFiles(path):
 
 
 def diffManifests(old, new):
-    oldFiles = set(
-        (node.props["hash"], node.props["path"])
-        for node in old["manifest"].getAll("file")
-    )
-    newFiles = set(
-        (node.props["hash"], node.props["path"])
-        for node in new["manifest"].getAll("file")
-    )
-    oldPaths = set(file[1] for file in oldFiles)
-    newPaths = set(file[1] for file in newFiles)
+    oldFiles = set(old.entries.items())
+    newFiles = set(new.entries.items())
+    oldPaths = set(old.entries.keys())
+    newPaths = set(new.entries.keys())
 
     removedPaths = oldPaths - newPaths
     addedPaths = newPaths - oldPaths
     persistingPaths = oldPaths & newPaths
 
-    changedPaths = set(file[1] for file in oldFiles ^ newFiles) & persistingPaths
+    changedPaths = set(file[0] for file in oldFiles ^ newFiles) & persistingPaths
     return {
         "added": sorted(addedPaths),
         "removed": sorted(removedPaths),
