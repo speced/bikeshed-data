@@ -15,7 +15,7 @@ def main():
 
 
 def updateAndCommit():
-    print(datetime.datetime.utcnow())
+    print(datetime.datetime.now(datetime.UTC))
     print(subprocess.check_output("git pull", shell=True).decode(encoding="utf-8"))
 
     scriptPath = os.path.dirname(os.path.realpath(__file__))
@@ -48,7 +48,7 @@ def updateAndCommit():
     commandBits = []
     for category in ["added", "removed", "changed"]:
         if diffData[category]:
-            commandBits.push(category + " " + ", ".join(diffData[category]))
+            commandBits.append(category + " " + ", ".join(diffData[category]))
     command += "; ".join(commandBits)
     command += "'"
     print(subprocess.check_output(command, shell=True))
@@ -58,7 +58,7 @@ def updateAndCommit():
 
 def updateDataFiles(path):
     bikeshed.constants.quiet = 0
-    mode = bikeshed.update.UpdateMode.MANIFEST | bikeshed.update.UpdateMode.FORCE
+    mode = bikeshed.update.UpdateMode.MANUAL | bikeshed.update.UpdateMode.FORCE
     with bikeshed.messages.messagesSilent() as _:
         pass
     bikeshed.update.update(path=path, updateMode=mode)
