@@ -36,7 +36,7 @@ def updateAndCommit():
         raise
     if str(oldManifest) == str(newManifest):
         # No change
-        print(f"Manifest is unchanged since {old.dt}, nothing to be committed")
+        print(f"Manifest is unchanged since {oldManifest.dt}, nothing to be committed")
         return
 
     diffData = diffManifests(oldManifest, newManifest)
