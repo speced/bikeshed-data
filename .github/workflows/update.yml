@@ -29,4 +29,4 @@ jobs:
         git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git checkout main
     - name: update
-      run: python __init__.py
+      run: python update.py
