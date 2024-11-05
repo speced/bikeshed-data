@@ -15,7 +15,7 @@ def main():
 
 
 def updateAndCommit():
-    print(datetime.datetime.now(datetime.UTC))
+    #print(datetime.datetime.now(datetime.UTC))
     print(subprocess.check_output("git pull", shell=True).decode(encoding="utf-8"))
 
     scriptPath = os.path.dirname(os.path.realpath(__file__))
