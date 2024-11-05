@@ -1,4 +1,5 @@
 "itf"
+"itf"
 enum-value
 shape-detection-api
 shape-detection-api
@@ -10,6 +11,7 @@ https://wicg.github.io/shape-detection-api/#dom-barcodeformat-itf
 BarcodeFormat
 -
 %Iterator%
+%Iterator%
 interface
 ecmascript
 ecmascript
@@ -19,6 +21,7 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-
 1
 1
 -
+%Iterator.prototype%
 %Iterator.prototype%
 interface
 ecmascript
@@ -30,6 +33,7 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25iterat
 1
 -
 %IteratorHelperPrototype%
+%IteratorHelperPrototype%
 interface
 ecmascript
 ecmascript
@@ -39,6 +43,29 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25iterat
 1
 1
 -
+it is appropriate to resolve percentage heights on direct children of a table-cell
+it is appropriate to resolve percentage heights on direct children of a table-cell
+dfn
+css-tables-3
+css-tables
+3
+current
+https://drafts.csswg.org/css-tables-3/#appropriateness-of-child-percentage-resolution
+
+1
+-
+it is appropriate to resolve percentage heights on direct children of a table-cell
+it is appropriate to resolve percentage heights on direct children of a table-cell
+dfn
+css-tables-3
+css-tables
+3
+snapshot
+https://www.w3.org/TR/css-tables-3/#appropriateness-of-child-percentage-resolution
+
+1
+-
+ItemDetails
 ItemDetails
 dictionary
 digital-goods
@@ -50,6 +77,7 @@ https://wicg.github.io/digital-goods/#dictdef-itemdetails
 1
 -
 ItemType
+ItemType
 enum
 digital-goods
 digital-goods
@@ -59,6 +87,7 @@ https://wicg.github.io/digital-goods/#enumdef-itemtype
 1
 1
 -
+Iterate over each dynamic binding offset
 Iterate over each dynamic binding offset
 abstract-op
 webgpu
@@ -70,6 +99,7 @@ https://gpuweb.github.io/gpuweb/#abstract-opdef-iterate-over-each-dynamic-bindin
 1
 -
 Iterate over each dynamic binding offset
+Iterate over each dynamic binding offset
 abstract-op
 webgpu
 webgpu
@@ -80,6 +110,7 @@ https://www.w3.org/TR/webgpu/#abstract-opdef-iterate-over-each-dynamic-binding-o
 1
 -
 IterationCompositeOperation
+IterationCompositeOperation
 enum
 web-animations-2
 web-animations
@@ -89,6 +120,18 @@ https://drafts.csswg.org/web-animations-2/#enumdef-iterationcompositeoperation
 1
 1
 -
+iterationcompositeoperation
+IterationCompositeOperation
+dfn
+web-animations-2
+web-animations
+2
+current
+https://drafts.csswg.org/web-animations-2/#iterationcompositeoperation
+
+1
+-
+IterationCompositeOperation
 IterationCompositeOperation
 enum
 web-animations-2
@@ -99,6 +142,18 @@ https://www.w3.org/TR/web-animations-2/#enumdef-iterationcompositeoperation
 1
 1
 -
+iterationcompositeoperation
+IterationCompositeOperation
+dfn
+web-animations-2
+web-animations
+2
+snapshot
+https://www.w3.org/TR/web-animations-2/#iterationcompositeoperation
+
+1
+-
+Iterator
 Iterator
 interface
 ecmascript
@@ -109,6 +164,55 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-
 1
 1
 -
+iterator helper object
+Iterator Helper object
+dfn
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-helper-objects
+1
+1
+ECMAScript
+-
+iterator helper objects
+Iterator Helper objects
+dfn
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-helper-objects
+1
+1
+ECMAScript
+-
+iterator record
+Iterator Record
+dfn
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iterator-records
+1
+1
+ECMAScript
+-
+iterator records
+Iterator Records
+dfn
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iterator-records
+1
+1
+ECMAScript
+-
+Iterator()
 Iterator()
 constructor
 ecmascript
@@ -121,6 +225,7 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator
 Iterator
 -
 Iterator.prototype %Symbol.iterator% ()
+Iterator.prototype %Symbol.iterator% ()
 method
 ecmascript
 ecmascript
@@ -132,6 +237,7 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.
 Iterator.prototype [ %Symbol.iterator% ] ( )
 -
 IteratorClose
+IteratorClose
 abstract-op
 ecmascript
 ecmascript
@@ -141,6 +247,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorclose
 1
 1
 -
+IteratorClose(iteratorRecord, completion)
 IteratorClose(iteratorRecord, completion)
 abstract-op
 ecmascript
@@ -152,6 +259,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorclose
 1
 -
 IteratorComplete
+IteratorComplete
 abstract-op
 ecmascript
 ecmascript
@@ -161,6 +269,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorcomplete
 1
 1
 -
+IteratorComplete(iteratorResult)
 IteratorComplete(iteratorResult)
 abstract-op
 ecmascript
@@ -172,6 +281,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorcomplete
 1
 -
 IteratorNext
+IteratorNext
 abstract-op
 ecmascript
 ecmascript
@@ -182,6 +292,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratornext
 1
 -
 IteratorNext(iteratorRecord, value)
+IteratorNext(iteratorRecord, value)
 abstract-op
 ecmascript
 ecmascript
@@ -191,6 +302,31 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratornext
 1
 1
 -
+iteratorresult interface
+IteratorResult interface
+dfn
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iteratorresult-interface
+1
+1
+ECMAScript
+-
+iteratorresult object,iteratorresult objects
+IteratorResult object,IteratorResult objects
+dfn
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iteratorresult-interface
+1
+1
+ECMAScript
+-
+IteratorStep
 IteratorStep
 abstract-op
 ecmascript
@@ -202,6 +338,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorstep
 1
 -
 IteratorStep(iteratorRecord)
+IteratorStep(iteratorRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -211,6 +348,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorstep
 1
 1
 -
+IteratorStepValue
 IteratorStepValue
 abstract-op
 ecmascript
@@ -222,6 +360,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorstepvalue
 1
 -
 IteratorStepValue(iteratorRecord)
+IteratorStepValue(iteratorRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -231,6 +370,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorstepvalue
 1
 1
 -
+IteratorToList
 IteratorToList
 abstract-op
 ecmascript
@@ -242,6 +382,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist
 1
 -
 IteratorToList(iteratorRecord)
+IteratorToList(iteratorRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -251,6 +392,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist
 1
 1
 -
+IteratorValue
 IteratorValue
 abstract-op
 ecmascript
@@ -262,6 +404,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorvalue
 1
 -
 IteratorValue(iteratorResult)
+IteratorValue(iteratorResult)
 abstract-op
 ecmascript
 ecmascript
@@ -271,26 +414,7 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorvalue
 1
 1
 -
-it is appropriate to resolve percentage heights on direct children of a table-cell
-dfn
-css-tables-3
-css-tables
-3
-current
-https://drafts.csswg.org/css-tables-3/#appropriateness-of-child-percentage-resolution
-
-1
--
-it is appropriate to resolve percentage heights on direct children of a table-cell
-dfn
-css-tables-3
-css-tables
-3
-snapshot
-https://www.w3.org/TR/css-tables-3/#appropriateness-of-child-percentage-resolution
-
-1
--
+italic
 italic
 value
 css-fonts-4
@@ -303,6 +427,7 @@ https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic
 font-style
 -
 italic
+italic
 value
 css22
 css
@@ -313,6 +438,7 @@ https://drafts.csswg.org/css2/#valdef-font-style-italic
 1
 font-style
 -
+italic
 italic
 value
 css-fonts-4
@@ -325,6 +451,7 @@ https://www.w3.org/TR/css-fonts-4/#valdef-font-style-italic
 font-style
 -
 italic correction
+italic correction
 dfn
 mathml-core
 mathml-core
@@ -334,6 +461,7 @@ https://w3c.github.io/mathml-core/#dfn-italic-correction
 
 1
 -
+italic correction
 italic correction
 dfn
 mathml-core
@@ -345,6 +473,7 @@ https://www.w3.org/TR/mathml-core/#dfn-italic-correction
 1
 -
 italics()
+italics()
 method
 ecmascript
 ecmascript
@@ -355,6 +484,7 @@ https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browser
 1
 String
 -
+item
 item
 argument
 console
@@ -369,6 +499,7 @@ console/dir(item)
 console/dir()
 -
 item
+item
 dfn
 html
 html
@@ -378,6 +509,7 @@ https://html.spec.whatwg.org/multipage/microdata.html#concept-item
 
 1
 -
+item
 item
 dfn
 infra
@@ -393,6 +525,7 @@ queue
 set
 -
 item
+item
 dfn
 infra
 infra
@@ -405,6 +538,7 @@ struct
 tuple
 -
 item
+item
 element
 epub-33
 epub
@@ -414,6 +548,7 @@ https://w3c.github.io/epub-specs/epub33/core/#dfn-item
 1
 1
 -
+item
 item
 element
 epub-33
@@ -425,6 +560,7 @@ https://www.w3.org/TR/epub-33/#dfn-item
 1
 -
 item data field
+item data field
 dfn
 webhid
 webhid
@@ -434,6 +570,7 @@ https://wicg.github.io/webhid/#dfn-item-data-field
 
 
 -
+item groups
 item groups
 dfn
 css-grid-3
@@ -445,6 +582,7 @@ https://drafts.csswg.org/css-grid-3/#item-groups
 1
 -
 item groups
+item groups
 dfn
 css-grid-3
 css-grid
@@ -455,6 +593,7 @@ https://www.w3.org/TR/css-grid-3/#item-groups
 1
 -
 item types
+item types
 dfn
 html
 html
@@ -464,6 +603,7 @@ https://html.spec.whatwg.org/multipage/microdata.html#item-types
 
 1
 -
+item()
 item()
 method
 touch-events
@@ -476,6 +616,7 @@ https://w3c.github.io/touch-events/#dom-touchlist-item
 TouchList
 -
 item(index)
+item(index)
 method
 dom
 dom
@@ -486,6 +627,7 @@ https://dom.spec.whatwg.org/#dom-domtokenlist-item
 1
 DOMTokenList
 -
+item(index)
 item(index)
 method
 dom
@@ -498,6 +640,7 @@ https://dom.spec.whatwg.org/#dom-htmlcollection-item
 HTMLCollection
 -
 item(index)
+item(index)
 method
 dom
 dom
@@ -508,6 +651,7 @@ https://dom.spec.whatwg.org/#dom-namednodemap-item
 1
 NamedNodeMap
 -
+item(index)
 item(index)
 method
 dom
@@ -520,6 +664,7 @@ https://dom.spec.whatwg.org/#dom-nodelist-item
 NodeList
 -
 item(index)
+item(index)
 method
 cssom-1
 cssom
@@ -530,6 +675,7 @@ https://drafts.csswg.org/cssom-1/#dom-cssrulelist-item
 1
 CSSRuleList
 -
+item(index)
 item(index)
 method
 cssom-1
@@ -542,6 +688,7 @@ https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-item
 CSSStyleDeclaration
 -
 item(index)
+item(index)
 method
 cssom-1
 cssom
@@ -552,6 +699,7 @@ https://drafts.csswg.org/cssom-1/#dom-medialist-item
 1
 MediaList
 -
+item(index)
 item(index)
 method
 cssom-1
@@ -564,6 +712,7 @@ https://drafts.csswg.org/cssom-1/#dom-stylesheetlist-item
 StyleSheetList
 -
 item(index)
+item(index)
 method
 web-animations-2
 web-animations
@@ -574,6 +723,7 @@ https://drafts.csswg.org/web-animations-2/#dom-animationnodelist-item
 1
 AnimationNodeList
 -
+item(index)
 item(index)
 method
 geometry-1
@@ -586,6 +736,7 @@ https://drafts.fxtf.org/geometry-1/#dom-domrectlist-item
 DOMRectList
 -
 item(index)
+item(index)
 method
 html
 html
@@ -596,6 +747,7 @@ https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-domstringl
 1
 DOMStringList
 -
+item(index)
 item(index)
 method
 html
@@ -608,6 +760,7 @@ https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-item
 HTMLSelectElement
 -
 item(index)
+item(index)
 method
 html
 html
@@ -618,6 +771,7 @@ https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-item
 1
 MimeTypeArray
 -
+item(index)
 item(index)
 method
 html
@@ -630,6 +784,7 @@ https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-item
 Plugin
 -
 item(index)
+item(index)
 method
 html
 html
@@ -640,6 +795,7 @@ https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-item
 1
 PluginArray
 -
+item(index)
 item(index)
 method
 fileapi
@@ -652,6 +808,7 @@ https://w3c.github.io/FileAPI/#dfn-item
 FileList
 -
 item(index)
+item(index)
 method
 touch-events
 touch-events
@@ -662,6 +819,7 @@ https://w3c.github.io/touch-events/#dom-touchlist-item
 1
 TouchList
 -
+item(index)
 item(index)
 method
 speech-api
@@ -674,6 +832,7 @@ https://wicg.github.io/speech-api/#dom-speechgrammarlist-item
 SpeechGrammarList
 -
 item(index)
+item(index)
 method
 speech-api
 speech-api
@@ -684,6 +843,7 @@ https://wicg.github.io/speech-api/#dom-speechrecognitionresult-item
 1
 SpeechRecognitionResult
 -
+item(index)
 item(index)
 method
 speech-api
@@ -696,6 +856,7 @@ https://wicg.github.io/speech-api/#dom-speechrecognitionresultlist-item
 SpeechRecognitionResultList
 -
 item(index)
+item(index)
 method
 fileapi
 fileapi
@@ -706,6 +867,7 @@ https://www.w3.org/TR/FileAPI/#dfn-item
 1
 FileList
 -
+item(index)
 item(index)
 method
 cssom-1
@@ -718,6 +880,7 @@ https://www.w3.org/TR/cssom-1/#dom-cssrulelist-item
 CSSRuleList
 -
 item(index)
+item(index)
 method
 cssom-1
 cssom
@@ -728,6 +891,7 @@ https://www.w3.org/TR/cssom-1/#dom-cssstyledeclaration-item
 1
 CSSStyleDeclaration
 -
+item(index)
 item(index)
 method
 cssom-1
@@ -740,6 +904,7 @@ https://www.w3.org/TR/cssom-1/#dom-medialist-item
 MediaList
 -
 item(index)
+item(index)
 method
 cssom-1
 cssom
@@ -750,6 +915,7 @@ https://www.w3.org/TR/cssom-1/#dom-stylesheetlist-item
 1
 StyleSheetList
 -
+item(index)
 item(index)
 method
 geometry-1
@@ -762,6 +928,7 @@ https://www.w3.org/TR/geometry-1/#dom-domrectlist-item
 DOMRectList
 -
 item(index)
+item(index)
 method
 web-animations-2
 web-animations
@@ -772,6 +939,7 @@ https://www.w3.org/TR/web-animations-2/#dom-animationnodelist-item
 1
 AnimationNodeList
 -
+item(nameOrIndex)
 item(nameOrIndex)
 method
 html
@@ -784,6 +952,7 @@ https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-htmlallcol
 HTMLAllCollection
 -
 itemId
+itemId
 dict-member
 digital-goods
 digital-goods
@@ -794,6 +963,7 @@ https://wicg.github.io/digital-goods/#dom-itemdetails-itemid
 1
 ItemDetails
 -
+itemId
 itemId
 dict-member
 digital-goods
@@ -806,6 +976,7 @@ https://wicg.github.io/digital-goods/#dom-purchasedetails-itemid
 PurchaseDetails
 -
 itemIds
+itemIds
 argument
 digital-goods
 digital-goods
@@ -816,6 +987,7 @@ https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-getdetails-itemids
 1
 DigitalGoodsService/getDetails(itemIds)
 -
+itemid
 itemid
 element-attr
 html
@@ -828,6 +1000,7 @@ https://html.spec.whatwg.org/multipage/microdata.html#attr-itemid
 html-global
 -
 itemprop
+itemprop
 element-attr
 html
 html
@@ -838,6 +1011,7 @@ https://html.spec.whatwg.org/multipage/microdata.html#names%3A-the-itemprop-attr
 1
 html-global
 -
+itemref
 itemref
 element-attr
 html
@@ -850,6 +1024,7 @@ https://html.spec.whatwg.org/multipage/microdata.html#attr-itemref
 html-global
 -
 itemref
+itemref
 element
 epub-33
 epub
@@ -859,6 +1034,7 @@ https://w3c.github.io/epub-specs/epub33/core/#dfn-itemref
 1
 1
 -
+itemref
 itemref
 element
 epub-33
@@ -870,6 +1046,7 @@ https://www.w3.org/TR/epub-33/#dfn-itemref
 1
 -
 items
+items
 attribute
 html
 html
@@ -880,6 +1057,7 @@ https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-items
 1
 DataTransfer
 -
+items
 items
 argument
 clipboard-apis
@@ -895,6 +1073,7 @@ ClipboardItem/ClipboardItem(items)
 ClipboardItem/constructor(items)
 -
 items
+items
 dict-member
 webhid
 webhid
@@ -905,6 +1084,7 @@ https://wicg.github.io/webhid/#dom-hidreportinfo-items
 1
 HIDReportInfo
 -
+items
 items
 argument
 clipboard-apis
@@ -920,6 +1100,7 @@ ClipboardItem/ClipboardItem(items)
 ClipboardItem/constructor(items)
 -
 itemscope
+itemscope
 element-attr
 html
 html
@@ -930,6 +1111,7 @@ https://html.spec.whatwg.org/multipage/microdata.html#attr-itemscope
 1
 html-global
 -
+itemtype
 itemtype
 element-attr
 html
@@ -942,6 +1124,7 @@ https://html.spec.whatwg.org/multipage/microdata.html#attr-itemtype
 html-global
 -
 iterable
+iterable
 dfn
 json-ld11-api
 json-ld-api
@@ -952,6 +1135,7 @@ https://w3c.github.io/json-ld-api/#dfn-iterable
 1
 RdfDataset
 -
+iterable
 iterable
 dfn
 json-ld11-api
@@ -964,6 +1148,7 @@ https://w3c.github.io/json-ld-api/#dfn-iterable-0
 RdfGraph
 -
 iterable
+iterable
 dfn
 webidl
 webidl
@@ -973,6 +1158,7 @@ https://webidl.spec.whatwg.org/#dfn-iterable
 1
 1
 -
+iterable
 iterable
 dfn
 json-ld11-api
@@ -985,6 +1171,7 @@ https://www.w3.org/TR/json-ld11-api/#dfn-iterable
 RdfDataset
 -
 iterable
+iterable
 dfn
 json-ld11-api
 json-ld-api
@@ -996,6 +1183,7 @@ https://www.w3.org/TR/json-ld11-api/#dfn-iterable-0
 RdfGraph
 -
 iterable declaration
+iterable declaration
 dfn
 webidl
 webidl
@@ -1005,6 +1193,7 @@ https://webidl.spec.whatwg.org/#dfn-iterable-declaration
 1
 1
 -
+iterable interface
 iterable interface
 dfn
 ecmascript
@@ -1017,6 +1206,7 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterable-
 ECMAScript
 -
 iterable,iterables,iterable object,iterable objects
+iterable,iterables,iterable object,iterable objects
 dfn
 ecmascript
 ecmascript
@@ -1027,6 +1217,7 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterable-
 1
 ECMAScript
 -
+iterate
 iterate
 dfn
 infra
@@ -1040,6 +1231,7 @@ list
 set
 -
 iterate
+iterate
 dfn
 infra
 infra
@@ -1051,6 +1243,7 @@ https://infra.spec.whatwg.org/#map-iterate
 map
 -
 iterate a cursor
+iterate a cursor
 dfn
 indexeddb-3
 indexeddb
@@ -1061,6 +1254,7 @@ https://w3c.github.io/IndexedDB/#iterate-a-cursor
 1
 -
 iterate a cursor
+iterate a cursor
 dfn
 indexeddb-3
 indexeddb
@@ -1070,6 +1264,7 @@ https://www.w3.org/TR/IndexedDB-3/#iterate-a-cursor
 
 1
 -
+iterateNext()
 iterateNext()
 method
 dom
@@ -1082,6 +1277,7 @@ https://dom.spec.whatwg.org/#dom-xpathresult-iteratenext
 XPathResult
 -
 iteration
+iteration
 dfn
 wgsl
 wgsl
@@ -1091,6 +1287,7 @@ https://gpuweb.github.io/gpuweb/wgsl/#iteration
 
 1
 -
+iteration
 iteration
 dfn
 wgsl
@@ -1102,6 +1299,7 @@ https://www.w3.org/TR/WGSL/#iteration
 1
 -
 iteration composite operation
+iteration composite operation
 dfn
 web-animations-2
 web-animations
@@ -1111,6 +1309,7 @@ https://drafts.csswg.org/web-animations-2/#iteration-composite-operation
 
 1
 -
+iteration composite operation
 iteration composite operation
 dfn
 web-animations-2
@@ -1122,6 +1321,7 @@ https://www.w3.org/TR/web-animations-2/#iteration-composite-operation
 1
 -
 iteration composite operation accumulate
+iteration composite operation accumulate
 dfn
 web-animations-2
 web-animations
@@ -1131,6 +1331,7 @@ https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumul
 
 1
 -
+iteration composite operation accumulate
 iteration composite operation accumulate
 dfn
 web-animations-2
@@ -1142,6 +1343,7 @@ https://www.w3.org/TR/web-animations-2/#iteration-composite-operation-accumulate
 1
 -
 iteration composite operation replace
+iteration composite operation replace
 dfn
 web-animations-2
 web-animations
@@ -1151,6 +1353,7 @@ https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-replace
 
 1
 -
+iteration composite operation replace
 iteration composite operation replace
 dfn
 web-animations-2
@@ -1162,6 +1365,7 @@ https://www.w3.org/TR/web-animations-2/#iteration-composite-operation-replace
 1
 -
 iteration count
+iteration count
 dfn
 web-animations-1
 web-animations
@@ -1171,6 +1375,7 @@ https://drafts.csswg.org/web-animations-1/#iteration-count
 
 1
 -
+iteration count
 iteration count
 dfn
 web-animations-1
@@ -1182,6 +1387,7 @@ https://www.w3.org/TR/web-animations-1/#iteration-count
 1
 -
 iteration duration
+iteration duration
 dfn
 web-animations-1
 web-animations
@@ -1191,6 +1397,7 @@ https://drafts.csswg.org/web-animations-1/#iteration-duration
 
 1
 -
+iteration duration
 iteration duration
 dfn
 web-animations-1
@@ -1202,6 +1409,7 @@ https://www.w3.org/TR/web-animations-1/#iteration-duration
 1
 -
 iteration index
+iteration index
 dfn
 web-animations-1
 web-animations
@@ -1211,6 +1419,7 @@ https://drafts.csswg.org/web-animations-1/#current-iteration-index
 
 1
 -
+iteration interval
 iteration interval
 dfn
 web-animations-1
@@ -1222,6 +1431,7 @@ https://drafts.csswg.org/web-animations-1/#iteration-interval
 1
 -
 iteration interval
+iteration interval
 dfn
 web-animations-1
 web-animations
@@ -1231,6 +1441,7 @@ https://www.w3.org/TR/web-animations-1/#iteration-interval
 
 1
 -
+iteration order
 iteration order
 dfn
 css-font-loading-3
@@ -1243,6 +1454,7 @@ https://drafts.csswg.org/css-font-loading-3/#fontfaceset-iteration-order
 FontFaceSet
 -
 iteration order
+iteration order
 dfn
 css-font-loading-3
 css-font-loading
@@ -1254,6 +1466,7 @@ https://www.w3.org/TR/css-font-loading-3/#fontfaceset-iteration-order
 FontFaceSet
 -
 iteration progress
+iteration progress
 dfn
 web-animations-1
 web-animations
@@ -1263,6 +1476,7 @@ https://drafts.csswg.org/web-animations-1/#iteration-progress
 
 1
 -
+iteration progress
 iteration progress
 dfn
 web-animations-1
@@ -1274,6 +1488,7 @@ https://www.w3.org/TR/web-animations-1/#iteration-progress
 1
 -
 iteration start
+iteration start
 dfn
 web-animations-1
 web-animations
@@ -1283,6 +1498,7 @@ https://drafts.csswg.org/web-animations-1/#iteration-start
 
 1
 -
+iteration start
 iteration start
 dfn
 web-animations-1
@@ -1294,6 +1510,7 @@ https://www.w3.org/TR/web-animations-1/#iteration-start
 1
 -
 iteration time
+iteration time
 dfn
 web-animations-1
 web-animations
@@ -1304,6 +1521,7 @@ https://drafts.csswg.org/web-animations-1/#iteration-time
 
 -
 iteration time space
+iteration time space
 dfn
 web-animations-1
 web-animations
@@ -1313,6 +1531,7 @@ https://drafts.csswg.org/web-animations-1/#iteration-time-space
 
 
 -
+iterationComposite
 iterationComposite
 attribute
 web-animations-2
@@ -1325,6 +1544,7 @@ https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite
 KeyframeEffect
 -
 iterationComposite
+iterationComposite
 dict-member
 web-animations-2
 web-animations
@@ -1335,6 +1555,7 @@ https://drafts.csswg.org/web-animations-2/#dom-keyframeeffectoptions-iterationco
 1
 KeyframeEffectOptions
 -
+iterationComposite
 iterationComposite
 attribute
 web-animations-2
@@ -1347,6 +1568,7 @@ https://www.w3.org/TR/web-animations-2/#dom-keyframeeffect-iterationcomposite
 KeyframeEffect
 -
 iterationComposite
+iterationComposite
 dict-member
 web-animations-2
 web-animations
@@ -1357,6 +1579,7 @@ https://www.w3.org/TR/web-animations-2/#dom-keyframeeffectoptions-iterationcompo
 1
 KeyframeEffectOptions
 -
+iterationStart
 iterationStart
 dict-member
 web-animations-1
@@ -1369,6 +1592,7 @@ https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterationstart
 EffectTiming
 -
 iterationStart
+iterationStart
 dict-member
 web-animations-1
 web-animations
@@ -1379,6 +1603,7 @@ https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterationsta
 1
 OptionalEffectTiming
 -
+iterationStart
 iterationStart
 dict-member
 web-animations-1
@@ -1391,6 +1616,7 @@ https://www.w3.org/TR/web-animations-1/#dom-effecttiming-iterationstart
 EffectTiming
 -
 iterationStart
+iterationStart
 dict-member
 web-animations-1
 web-animations
@@ -1401,26 +1627,7 @@ https://www.w3.org/TR/web-animations-1/#dom-optionaleffecttiming-iterationstart
 1
 OptionalEffectTiming
 -
-iterationcompositeoperation
-dfn
-web-animations-2
-web-animations
-2
-current
-https://drafts.csswg.org/web-animations-2/#iterationcompositeoperation
-
-1
--
-iterationcompositeoperation
-dfn
-web-animations-2
-web-animations
-2
-snapshot
-https://www.w3.org/TR/web-animations-2/#iterationcompositeoperation
-
-1
--
+iterations
 iterations
 dict-member
 web-animations-1
@@ -1433,6 +1640,7 @@ https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterations
 EffectTiming
 -
 iterations
+iterations
 dict-member
 web-animations-1
 web-animations
@@ -1443,6 +1651,7 @@ https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterations
 1
 OptionalEffectTiming
 -
+iterations
 iterations
 dict-member
 webcryptoapi
@@ -1455,6 +1664,7 @@ https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-iterations
 Pbkdf2Params
 -
 iterations
+iterations
 dfn
 webcryptoapi
 webcryptoapi
@@ -1464,6 +1674,7 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-Pbkdf2Params-iterations
 
 1
 -
+iterations
 iterations
 dict-member
 web-animations-1
@@ -1476,6 +1687,7 @@ https://www.w3.org/TR/web-animations-1/#dom-effecttiming-iterations
 EffectTiming
 -
 iterations
+iterations
 dict-member
 web-animations-1
 web-animations
@@ -1486,6 +1698,7 @@ https://www.w3.org/TR/web-animations-1/#dom-optionaleffecttiming-iterations
 1
 OptionalEffectTiming
 -
+iterator
 iterator
 attribute
 ecmascript
@@ -1498,6 +1711,7 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.iterator
 Symbol
 -
 iterator collection
+iterator collection
 dfn
 dom
 dom
@@ -1508,28 +1722,7 @@ https://dom.spec.whatwg.org/#iterator-collection
 1
 NodeIterator
 -
-iterator helper object
-dfn
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-helper-objects
-1
-1
-ECMAScript
--
-iterator helper objects
-dfn
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-helper-objects
-1
-1
-ECMAScript
--
+iterator interface
 iterator interface
 dfn
 ecmascript
@@ -1542,6 +1735,7 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-
 ECMAScript
 -
 iterator object,iterator objects,iterator,iterators
+iterator object,iterator objects,iterator,iterators
 dfn
 ecmascript
 ecmascript
@@ -1553,6 +1747,7 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-
 ECMAScript
 -
 iterator prototype object
+iterator prototype object
 dfn
 webidl
 webidl
@@ -1562,28 +1757,7 @@ https://webidl.spec.whatwg.org/#dfn-iterator-prototype-object
 1
 1
 -
-iterator record
-dfn
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iterator-records
-1
-1
-ECMAScript
--
-iterator records
-dfn
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iterator-records
-1
-1
-ECMAScript
--
+iterator result
 iterator result
 dfn
 webidl
@@ -1594,28 +1768,7 @@ https://webidl.spec.whatwg.org/#iterator-result
 
 1
 -
-iteratorresult interface
-dfn
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iteratorresult-interface
-1
-1
-ECMAScript
--
-iteratorresult object,iteratorresult objects
-dfn
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iteratorresult-interface
-1
-1
-ECMAScript
--
+itf
 itf
 enum-value
 shape-detection-api
