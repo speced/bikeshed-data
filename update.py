@@ -60,7 +60,8 @@ def updateDataFiles(path):
     bikeshed.constants.quiet = 0
     mode = bikeshed.update.UpdateMode.MANIFEST | bikeshed.update.UpdateMode.FORCE
     with bikeshed.messages.messagesSilent() as _:
-        bikeshed.update.update(path=path, updateMode=mode)
+        pass
+    bikeshed.update.update(path=path, updateMode=mode)
 
 
 def diffManifests(old, new):
