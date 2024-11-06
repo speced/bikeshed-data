@@ -34,12 +34,12 @@ def updateAndCommit():
             newManifest = bikeshed.update.Manifest.fromString(fh.read())
     except:
         raise
-    if str(oldManifest) == str(newManifest):
-        # No change
-        print(f"Manifest is unchanged since {oldManifest.dt}, nothing to be committed")
-        return
 
     diffData = diffManifests(oldManifest, newManifest)
+
+    if diffData["total"] == 0:
+        print(f"Manifest is unchanged since {oldManifest.dt}, nothing to be committed")
+        return
 
     os.chdir(scriptPath)
     print(subprocess.check_output("git add data", shell=True))
