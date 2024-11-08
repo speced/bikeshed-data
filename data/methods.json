@@ -7664,6 +7664,15 @@
       "shortname": "css-typed-om"
     }
   },
+  "capabilities()": {
+    "capabilities()": {
+      "args": [],
+      "for": [
+        "AISummarizerFactory"
+      ],
+      "shortname": "writing-assistance-apis"
+    }
+  },
   "captureEvents()": {
     "captureEvents()": {
       "args": [],
@@ -11826,9 +11835,10 @@
     "create()": {
       "args": [],
       "for": [
+        "AISummarizerFactory",
         "CredentialsContainer"
       ],
-      "shortname": "credential-management"
+      "shortname": "writing-assistance-apis"
     },
     "create(O, Properties)": {
       "args": [
@@ -11845,9 +11855,10 @@
         "options"
       ],
       "for": [
+        "AISummarizerFactory",
         "CredentialsContainer"
       ],
-      "shortname": "credential-management"
+      "shortname": "writing-assistance-apis"
     }
   },
   "createAnalyser()": {
@@ -12795,6 +12806,24 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "createOptionsAvailable()": {
+    "createOptionsAvailable()": {
+      "args": [],
+      "for": [
+        "AISummarizerCapabilities"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "createOptionsAvailable(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "AISummarizerCapabilities"
+      ],
+      "shortname": "writing-assistance-apis"
     }
   },
   "createOscillator()": {
@@ -13993,6 +14022,7 @@
     "destroy()": {
       "args": [],
       "for": [
+        "AISummarizer",
         "CloseWatcher",
         "GPUBuffer",
         "GPUDevice",
@@ -22319,6 +22349,17 @@
         "MLGraphBuilder"
       ],
       "shortname": "webnn"
+    }
+  },
+  "languageAvailable()": {
+    "languageAvailable(languageTag)": {
+      "args": [
+        "languageTag"
+      ],
+      "for": [
+        "AISummarizerCapabilities"
+      ],
+      "shortname": "writing-assistance-apis"
     }
   },
   "last()": {
@@ -32080,6 +32121,48 @@
         "CharacterData"
       ],
       "shortname": "dom"
+    }
+  },
+  "summarize()": {
+    "summarize(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "AISummarizer"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "summarize(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "AISummarizer"
+      ],
+      "shortname": "writing-assistance-apis"
+    }
+  },
+  "summarizeStreaming()": {
+    "summarizeStreaming(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "AISummarizer"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "summarizeStreaming(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "AISummarizer"
+      ],
+      "shortname": "writing-assistance-apis"
     }
   },
   "sup()": {
