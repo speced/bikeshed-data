@@ -6691,7 +6691,6 @@
     "SharedDataBlockEventSet",
     "SharedDataBlockEventSet(execution)",
     "SharedStorage",
-    "SharedStorageDataOrigin",
     "SharedStoragePrivateAggregationConfig",
     "SharedStorageResponse",
     "SharedStorageRunOperationMethodOptions",
@@ -7665,7 +7664,6 @@
     "ViewTimeline",
     "ViewTimelineOptions",
     "ViewTransition",
-    "ViewTransitionNavigation",
     "ViewTransitionTypeSet",
     "ViewTransitionUpdateCallback",
     "Viewport",
@@ -9814,6 +9812,9 @@
     "check clipboard read permission",
     "check clipboard write permission",
     "check created records",
+    "check for script and context origin match",
+    "check for trusted origin match",
+    "check for trusted origin match on a string",
     "check if COOP values require a browsing context group switch",
     "check if a popup window is requested",
     "check if a scheme is suitable",
@@ -19778,6 +19779,7 @@
     "trusted bidding signals batcher",
     "trusted bidding signals failure bucket",
     "trusted immersive UI",
+    "trusted origin type",
     "trusted scoring signals batcher",
     "trusted scoring signals failure bucket",
     "trusted scoring signals reply",
@@ -26355,7 +26357,6 @@
     "PAGE_RULE",
     "STYLE_RULE",
     "SUPPORTS_RULE",
-    "VIEW_TRANSITION_RULE",
     "child CSS rules",
     "cssText",
     "parent CSS rule",
@@ -28103,7 +28104,6 @@
     "silent"
   ],
   "CredentialPropertiesOutput": [
-    "authenticatorDisplayName",
     "client-side discoverable credential property",
     "resident key credential property",
     "rk"
@@ -39006,6 +39006,7 @@
     "codepoints",
     "copyCount",
     "copyIndices",
+    "copyModeAndCount",
     "designSpaceCount",
     "designSpaceSegments",
     "entryIdDelta",
@@ -47072,10 +47073,6 @@
     "options",
     "value"
   ],
-  "SharedStorageDataOrigin": [
-    "\"context-origin\"",
-    "\"script-origin\""
-  ],
   "SharedStorageIterator": [
     "asynchronous iterator initialization steps",
     "error",
@@ -50519,10 +50516,6 @@
     "update callback",
     "update callback done promise",
     "updateCallbackDone"
-  ],
-  "ViewTransitionNavigation": [
-    "\"auto\"",
-    "\"none\""
   ],
   "Viewport": [
     "segments"
@@ -54123,8 +54116,11 @@
     "up"
   ],
   "block-step-insert": [
+    "content-box",
     "margin",
-    "padding"
+    "margin-box",
+    "padding",
+    "padding-box"
   ],
   "blockquote": [
     "cite"
@@ -55324,7 +55320,6 @@
   "credential record": [
     "attestationClientDataJSON",
     "attestationObject",
-    "authenticatorDisplayName",
     "backupEligible",
     "backupState",
     "device-bound key record",
