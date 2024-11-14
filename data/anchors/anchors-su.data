@@ -121,7 +121,7 @@ WebTransportReliabilityMode
 "suspended"
 "suspended"
 enum-value
-webaudio
+webaudio-1.0
 webaudio
 1
 current
@@ -133,11 +133,11 @@ AudioContextState
 "suspended"
 "suspended"
 enum-value
-webaudio
+webaudio-1.1
 webaudio
 1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-audiocontextstate-suspended
+current
+https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended
 1
 1
 AudioContextState
@@ -997,7 +997,7 @@ https://w3c.github.io/web-nfc/#dfn-suspended
 [[suspended by user]]
 [[suspended by user]]
 attribute
-webaudio
+webaudio-1.0
 webaudio
 1
 current
@@ -1009,11 +1009,11 @@ AudioContext
 [[suspended by user]]
 [[suspended by user]]
 attribute
-webaudio
+webaudio-1.1
 webaudio
 1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-audiocontext-suspended-by-user-slot
+current
+https://webaudio.github.io/web-audio-api/#dom-audiocontext-suspended-by-user-slot
 1
 1
 AudioContext
@@ -1818,21 +1818,10 @@ https://drafts.csswg.org/css2/#subject
 subject (of selector)
 subject (of selector)
 dfn
-css2
+css21
 css
 1
 current
-https://www.w3.org/TR/CSS21/selector.html#subject
-1
-1
--
-subject (of selector)
-subject (of selector)
-dfn
-css2
-css
-1
-snapshot
 https://www.w3.org/TR/CSS21/selector.html#subject
 1
 1
@@ -3263,7 +3252,7 @@ https://www.w3.org/TR/webdriver2/#dfn-success
 successCallback
 successCallback
 argument
-webaudio
+webaudio-1.0
 webaudio
 1
 current
@@ -3277,7 +3266,33 @@ BaseAudioContext/decodeAudioData(audioData)
 successCallback
 successCallback
 argument
+webaudio-1.1
 webaudio
+1
+current
+https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-successcallback
+1
+1
+BaseAudioContext/decodeAudioData(audioData, successCallback, errorCallback)
+BaseAudioContext/decodeAudioData(audioData, successCallback)
+BaseAudioContext/decodeAudioData(audioData)
+-
+successCallback
+successCallback
+argument
+webaudio-1.0
+webaudio
+1
+current
+https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-decodeaudiodata-successcallback
+1
+1
+BaseAudioContext/decodeAudioData()
+-
+successCallback
+successCallback
+argument
+webaudio-1.1
 webaudio
 1
 current
@@ -3357,32 +3372,6 @@ https://wicg.github.io/entries-api/#dom-filesystemfileentry-file-successcallback
 1
 FileSystemFileEntry/file(successCallback, errorCallback)
 FileSystemFileEntry/file(successCallback)
--
-successCallback
-successCallback
-argument
-webaudio
-webaudio
-1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-successcallback
-1
-1
-BaseAudioContext/decodeAudioData(audioData, successCallback, errorCallback)
-BaseAudioContext/decodeAudioData(audioData, successCallback)
-BaseAudioContext/decodeAudioData(audioData)
--
-successCallback
-successCallback
-argument
-webaudio
-webaudio
-1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-decodeaudiodata-successcallback
-1
-1
-BaseAudioContext/decodeAudioData()
 -
 success_fraction
 success_fraction
@@ -5953,7 +5942,7 @@ https://w3c.github.io/web-nfc/#suspend-nfc
 suspend()
 suspend()
 method
-webaudio
+webaudio-1.0
 webaudio
 1
 current
@@ -5965,11 +5954,11 @@ AudioContext
 suspend()
 suspend()
 method
-webaudio
+webaudio-1.1
 webaudio
 1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-audiocontext-suspend
+current
+https://webaudio.github.io/web-audio-api/#dom-audiocontext-suspend
 1
 1
 AudioContext
@@ -5977,7 +5966,7 @@ AudioContext
 suspend(suspendTime)
 suspend(suspendTime)
 method
-webaudio
+webaudio-1.0
 webaudio
 1
 current
@@ -5989,11 +5978,11 @@ OfflineAudioContext
 suspend(suspendTime)
 suspend(suspendTime)
 method
-webaudio
+webaudio-1.1
 webaudio
 1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-suspend
+current
+https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-suspend
 1
 1
 OfflineAudioContext
@@ -6025,7 +6014,7 @@ SVGSVGElement
 suspendTime
 suspendTime
 argument
-webaudio
+webaudio-1.0
 webaudio
 1
 current
@@ -6037,7 +6026,19 @@ OfflineAudioContext/suspend()
 suspendTime
 suspendTime
 argument
+webaudio-1.1
 webaudio
+1
+current
+https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-suspend-suspendtime
+1
+1
+OfflineAudioContext/suspend()
+-
+suspendTime
+suspendTime
+argument
+webaudio-1.0
 webaudio
 1
 current
@@ -6049,23 +6050,11 @@ OfflineAudioContext/suspend(suspendTime)
 suspendTime
 suspendTime
 argument
-webaudio
-webaudio
-1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-suspend-suspendtime
-1
-1
-OfflineAudioContext/suspend()
--
-suspendTime
-suspendTime
-argument
-webaudio
+webaudio-1.1
 webaudio
 1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-suspend-suspendtime-suspendtime
+current
+https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-suspend-suspendtime-suspendtime
 1
 1
 OfflineAudioContext/suspend(suspendTime)
@@ -6095,7 +6084,7 @@ https://w3c.github.io/web-nfc/#nfc-suspended
 suspended
 suspended
 enum-value
-webaudio
+webaudio-1.0
 webaudio
 1
 current
@@ -6107,11 +6096,11 @@ AudioContextState
 suspended
 suspended
 enum-value
-webaudio
+webaudio-1.1
 webaudio
 1
-snapshot
-https://www.w3.org/TR/webaudio/#dom-audiocontextstate-suspended
+current
+https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended
 1
 1
 AudioContextState
