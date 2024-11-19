@@ -4043,6 +4043,7 @@
     "Icecast header",
     "Identifies",
     "Identity Resolving Key",
+    "IdentityAssertionResponse",
     "IdentityCredential",
     "IdentityCredentialDisconnectOptions",
     "IdentityCredentialRequestOptions",
@@ -4059,6 +4060,7 @@
     "IdentityProviderRequestOptions",
     "IdentityProviderToken",
     "IdentityProviderWellKnown",
+    "IdentityResolveOptions",
     "IdentityUserInfo",
     "Ideograph",
     "IdleDeadline",
@@ -18695,6 +18697,7 @@
     "should response to request be blocked due to nosniff",
     "should restart loading the page for critical client hints",
     "show",
+    "show a continuation dialog",
     "show an IDP login dialog",
     "show popover",
     "show poster flag",
@@ -22551,13 +22554,13 @@
     "oncancel",
     "onfinish",
     "onremove",
+    "overallProgress",
     "pause()",
     "pending",
     "persist()",
     "play()",
     "playState",
     "playbackRate",
-    "progress",
     "rangeEnd",
     "rangeStart",
     "ready",
@@ -33677,7 +33680,8 @@
   "GPURequestAdapterOptions": [
     "featureLevel",
     "forceFallbackAdapter",
-    "powerPreference"
+    "powerPreference",
+    "xrCompatible"
   ],
   "GPUSampler": [
     "[[descriptor]]",
@@ -36519,6 +36523,10 @@
   "ISOBMFF Brand": [
     "av01"
   ],
+  "IdentityAssertionResponse": [
+    "continue_on",
+    "token"
+  ],
   "IdentityCredential": [
     "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)",
     "disconnect()",
@@ -36557,10 +36565,20 @@
   ],
   "IdentityProvider": [
     "close()",
-    "getUserInfo(config)"
+    "getUserInfo(config)",
+    "resolve(token)",
+    "resolve(token, options)"
   ],
   "IdentityProvider/getUserInfo(config)": [
     "config"
+  ],
+  "IdentityProvider/resolve(token)": [
+    "options",
+    "token"
+  ],
+  "IdentityProvider/resolve(token, options)": [
+    "options",
+    "token"
   ],
   "IdentityProviderAPIConfig": [
     "accounts_endpoint",
@@ -36612,6 +36630,9 @@
   ],
   "IdentityProviderWellKnown": [
     "provider_urls"
+  ],
+  "IdentityResolveOptions": [
+    "accountId"
   ],
   "IdentityUserInfo": [
     "email",
@@ -53227,7 +53248,8 @@
     "[[fallback]]",
     "[[features]]",
     "[[limits]]",
-    "[[state]]"
+    "[[state]]",
+    "[[xrCompatible]]"
   ],
   "adapter/[[state]]": [
     "\"consumed\"",
@@ -53506,8 +53528,8 @@
     "current time",
     "document for timing",
     "hold time",
+    "overallProgress",
     "play state",
-    "progress",
     "relevant",
     "reset an animation's pending tasks",
     "set the associated effect of an animation",
