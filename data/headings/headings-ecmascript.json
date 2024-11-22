@@ -2813,6 +2813,9 @@
   "#sec-istimezoneoffsetstring": [
     "/numbers-and-dates#sec-istimezoneoffsetstring"
   ],
+  "#sec-istypedarrayfixedlength": [
+    "/ordinary-and-exotic-objects-behaviours#sec-istypedarrayfixedlength"
+  ],
   "#sec-istypedarrayoutofbounds": [
     "/ordinary-and-exotic-objects-behaviours#sec-istypedarrayoutofbounds"
   ],
@@ -6058,6 +6061,9 @@
   ],
   "#sec-typedarray-ownpropertykeys": [
     "/ordinary-and-exotic-objects-behaviours#sec-typedarray-ownpropertykeys"
+  ],
+  "#sec-typedarray-preventextensions": [
+    "/ordinary-and-exotic-objects-behaviours#sec-typedarray-preventextensions"
   ],
   "#sec-typedarray-set": [
     "/ordinary-and-exotic-objects-behaviours#sec-typedarray-set"
@@ -19352,7 +19358,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-isarraybufferviewoutofbounds": {
     "current": {
-      "number": "10.4.5.17",
+      "number": "10.4.5.19",
       "spec": "ECMAScript",
       "text": "IsArrayBufferViewOutOfBounds ( O )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isarraybufferviewoutofbounds"
@@ -19366,9 +19372,17 @@
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-iscompatiblepropertydescriptor"
     }
   },
+  "/ordinary-and-exotic-objects-behaviours#sec-istypedarrayfixedlength": {
+    "current": {
+      "number": "10.4.5.15",
+      "spec": "ECMAScript",
+      "text": "IsTypedArrayFixedLength ( O )",
+      "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-istypedarrayfixedlength"
+    }
+  },
   "/ordinary-and-exotic-objects-behaviours#sec-istypedarrayoutofbounds": {
     "current": {
-      "number": "10.4.5.13",
+      "number": "10.4.5.14",
       "spec": "ECMAScript",
       "text": "IsTypedArrayOutOfBounds ( taRecord )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-istypedarrayoutofbounds"
@@ -19376,7 +19390,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-isvalidintegerindex": {
     "current": {
-      "number": "10.4.5.14",
+      "number": "10.4.5.16",
       "spec": "ECMAScript",
       "text": "IsValidIntegerIndex ( O, index )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isvalidintegerindex"
@@ -19424,7 +19438,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-maketypedarraywithbufferwitnessrecord": {
     "current": {
-      "number": "10.4.5.9",
+      "number": "10.4.5.10",
       "spec": "ECMAScript",
       "text": "MakeTypedArrayWithBufferWitnessRecord ( obj, order )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-maketypedarraywithbufferwitnessrecord"
@@ -19992,7 +20006,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarray-defineownproperty": {
     "current": {
-      "number": "10.4.5.3",
+      "number": "10.4.5.4",
       "spec": "ECMAScript",
       "text": "[[DefineOwnProperty]] ( P, Desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-defineownproperty"
@@ -20000,7 +20014,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarray-delete": {
     "current": {
-      "number": "10.4.5.6",
+      "number": "10.4.5.7",
       "spec": "ECMAScript",
       "text": "[[Delete]] ( P )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-delete"
@@ -20016,7 +20030,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarray-get": {
     "current": {
-      "number": "10.4.5.4",
+      "number": "10.4.5.5",
       "spec": "ECMAScript",
       "text": "[[Get]] ( P, Receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-get"
@@ -20024,7 +20038,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarray-getownproperty": {
     "current": {
-      "number": "10.4.5.1",
+      "number": "10.4.5.2",
       "spec": "ECMAScript",
       "text": "[[GetOwnProperty]] ( P )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-getownproperty"
@@ -20032,7 +20046,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarray-hasproperty": {
     "current": {
-      "number": "10.4.5.2",
+      "number": "10.4.5.3",
       "spec": "ECMAScript",
       "text": "[[HasProperty]] ( P )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-hasproperty"
@@ -20040,15 +20054,23 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarray-ownpropertykeys": {
     "current": {
-      "number": "10.4.5.7",
+      "number": "10.4.5.8",
       "spec": "ECMAScript",
       "text": "[[OwnPropertyKeys]] ( )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-ownpropertykeys"
     }
   },
+  "/ordinary-and-exotic-objects-behaviours#sec-typedarray-preventextensions": {
+    "current": {
+      "number": "10.4.5.1",
+      "spec": "ECMAScript",
+      "text": "[[PreventExtensions]] ( )",
+      "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-preventextensions"
+    }
+  },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarray-set": {
     "current": {
-      "number": "10.4.5.5",
+      "number": "10.4.5.6",
       "spec": "ECMAScript",
       "text": "[[Set]] ( P, V, Receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-set"
@@ -20056,7 +20078,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarray-with-buffer-witness-records": {
     "current": {
-      "number": "10.4.5.8",
+      "number": "10.4.5.9",
       "spec": "ECMAScript",
       "text": "TypedArray With Buffer Witness Records",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-with-buffer-witness-records"
@@ -20064,7 +20086,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarraybytelength": {
     "current": {
-      "number": "10.4.5.11",
+      "number": "10.4.5.12",
       "spec": "ECMAScript",
       "text": "TypedArrayByteLength ( taRecord )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraybytelength"
@@ -20072,7 +20094,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarraycreate": {
     "current": {
-      "number": "10.4.5.10",
+      "number": "10.4.5.11",
       "spec": "ECMAScript",
       "text": "TypedArrayCreate ( prototype )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraycreate"
@@ -20080,7 +20102,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarraygetelement": {
     "current": {
-      "number": "10.4.5.15",
+      "number": "10.4.5.17",
       "spec": "ECMAScript",
       "text": "TypedArrayGetElement ( O, index )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraygetelement"
@@ -20088,7 +20110,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarraylength": {
     "current": {
-      "number": "10.4.5.12",
+      "number": "10.4.5.13",
       "spec": "ECMAScript",
       "text": "TypedArrayLength ( taRecord )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraylength"
@@ -20096,7 +20118,7 @@
   },
   "/ordinary-and-exotic-objects-behaviours#sec-typedarraysetelement": {
     "current": {
-      "number": "10.4.5.16",
+      "number": "10.4.5.18",
       "spec": "ECMAScript",
       "text": "TypedArraySetElement ( O, index, value )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraysetelement"
