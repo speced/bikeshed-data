@@ -4626,6 +4626,7 @@
     "MLLstmWeightLayout",
     "MLNamedArrayBufferViews",
     "MLNamedOperands",
+    "MLNamedTensors",
     "MLNormalizationSupportLimits",
     "MLNumber",
     "MLOpSupportLimits",
@@ -4647,6 +4648,8 @@
     "MLSplitOptions",
     "MLSplitSupportLimits",
     "MLSupportLimits",
+    "MLTensor",
+    "MLTensorDescriptor",
     "MLTransposeOptions",
     "MLTriangularOptions",
     "MLWhereSupportLimits",
@@ -10251,6 +10254,7 @@
     "computationally independent",
     "compute",
     "compute a certificate hash",
+    "compute a percentage metric",
     "compute a property value",
     "compute a speculative action referrer policy",
     "compute all hit test results",
@@ -10810,6 +10814,7 @@
     "create an IdentityCredential",
     "create an MLOperand",
     "create an MLOperandDescriptor",
+    "create an MLTensor",
     "create an RTCDTMFSender",
     "create an RTCDataChannel",
     "create an RTCIceCandidate",
@@ -16697,6 +16702,7 @@
     "preload key",
     "preload script map",
     "preloadable HSTS host",
+    "premultiplied",
     "premultiplied color values",
     "preparation-time document",
     "prepare an application context",
@@ -20341,6 +20347,7 @@
     "validate reporting metadata",
     "validate setting name",
     "validate share data",
+    "validate tensors with descriptors",
     "validate the state of the XRWebGLSubImage creation function",
     "validating GPUDepthStencilState",
     "validating GPUFragmentState",
@@ -38035,13 +38042,38 @@
     "[[contextType]]",
     "[[deviceType]]",
     "[[powerPreference]]",
+    "[[timeline]]",
     "compute(graph, inputs, outputs)",
-    "opSupportLimits()"
+    "createTensor(descriptor)",
+    "dispatch(graph, inputs, outputs)",
+    "opSupportLimits()",
+    "readTensor(tensor)",
+    "readTensor(tensor, outputData)",
+    "writeTensor(tensor, inputData)"
   ],
   "MLContext/compute(graph, inputs, outputs)": [
     "graph",
     "inputs",
     "outputs"
+  ],
+  "MLContext/createTensor(descriptor)": [
+    "descriptor"
+  ],
+  "MLContext/dispatch(graph, inputs, outputs)": [
+    "graph",
+    "inputs",
+    "outputs"
+  ],
+  "MLContext/readTensor(tensor)": [
+    "tensor"
+  ],
+  "MLContext/readTensor(tensor, outputData)": [
+    "outputData",
+    "tensor"
+  ],
+  "MLContext/writeTensor(tensor, inputData)": [
+    "inputData",
+    "tensor"
   ],
   "MLContextOptions": [
     "deviceType",
@@ -38996,6 +39028,21 @@
   ],
   "MLSupportLimits": [
     "dataTypes"
+  ],
+  "MLTensor": [
+    "[[context]]",
+    "[[data]]",
+    "[[descriptor]]",
+    "[[isDestroyed]]",
+    "dataType",
+    "destroy()",
+    "readable",
+    "shape",
+    "writable"
+  ],
+  "MLTensorDescriptor": [
+    "readable",
+    "writable"
   ],
   "MLTransposeOptions": [
     "permutation"
@@ -56118,7 +56165,8 @@
     "validityUrlBytes"
   ],
   "execution metrics": [
-    "code fetch time averager"
+    "code fetch time averager",
+    "script timed out"
   ],
   "exfiltration budget metadata": [
     "amount to debit",
@@ -59455,7 +59503,9 @@
   ],
   "per participant metrics": [
     "code fetch time averager",
-    "participating interest group count"
+    "participating interest group count",
+    "script executions attempted",
+    "script timeouts occurred"
   ],
   "periodic sync registration": [
     "anchor time",
@@ -60978,6 +61028,7 @@
     "bid-reject-reason",
     "highest-scoring-other-bid",
     "participating-ig-count",
+    "percent-scripts-timeout",
     "script-run-time",
     "signals-fetch-time",
     "winning-bid"

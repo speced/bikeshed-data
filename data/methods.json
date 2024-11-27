@@ -13235,6 +13235,17 @@
       "shortname": "html"
     }
   },
+  "createTensor()": {
+    "createTensor(descriptor)": {
+      "args": [
+        "descriptor"
+      ],
+      "for": [
+        "MLContext"
+      ],
+      "shortname": "webnn"
+    }
+  },
   "createTextNode()": {
     "createTextNode(data)": {
       "args": [
@@ -14025,6 +14036,7 @@
         "GPUDevice",
         "GPUQuerySet",
         "GPUTexture",
+        "MLTensor",
         "XRCompositionLayer"
       ],
       "shortname": "html"
@@ -14239,6 +14251,19 @@
         "AudioNode"
       ],
       "shortname": "webaudio"
+    }
+  },
+  "dispatch()": {
+    "dispatch(graph, inputs, outputs)": {
+      "args": [
+        "graph",
+        "inputs",
+        "outputs"
+      ],
+      "for": [
+        "MLContext"
+      ],
+      "shortname": "webnn"
     }
   },
   "dispatchEvent()": {
@@ -25541,6 +25566,27 @@
       "shortname": "entries-api"
     }
   },
+  "readTensor()": {
+    "readTensor(tensor)": {
+      "args": [
+        "tensor"
+      ],
+      "for": [
+        "MLContext"
+      ],
+      "shortname": "webnn"
+    },
+    "readTensor(tensor, outputData)": {
+      "args": [
+        "tensor",
+        "outputData"
+      ],
+      "for": [
+        "MLContext"
+      ],
+      "shortname": "webnn"
+    }
+  },
   "readText()": {
     "readText()": {
       "args": [],
@@ -34647,6 +34693,18 @@
         "GPUQueue"
       ],
       "shortname": "webgpu"
+    }
+  },
+  "writeTensor()": {
+    "writeTensor(tensor, inputData)": {
+      "args": [
+        "tensor",
+        "inputData"
+      ],
+      "for": [
+        "MLContext"
+      ],
+      "shortname": "webnn"
     }
   },
   "writeText()": {
