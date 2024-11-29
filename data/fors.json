@@ -2092,6 +2092,7 @@
     "Can attribution rate-limit record be removed",
     "CanBeHeldWeakly",
     "CanBeHeldWeakly(v)",
+    "CanCopyDataBlockBytes",
     "CanMakePaymentEvent",
     "CanPlayTypeResult",
     "CanTransferArrayBuffer",
@@ -6422,6 +6423,7 @@
     "SVGUseElementShadowRoot",
     "SVGViewElement",
     "SVGZoomAndPan",
+    "Safe and unsafe",
     "Same-permission",
     "SameObject",
     "SameSiteCookiesType",
@@ -9543,10 +9545,12 @@
     "build the list of related website sets",
     "build trusted bidding signals url",
     "build trusted scoring signals url",
-    "built-in default config",
     "built-in functions",
     "built-in input value",
     "built-in output value",
+    "built-in safe baseline configuration",
+    "built-in safe default configuration",
+    "built-in unsafe default configuration",
     "built-in value name-token",
     "built-in values",
     "builtin functions that compute a derivative",
@@ -9679,7 +9683,6 @@
     "canonical unit",
     "canonicalization function",
     "canonicalization state",
-    "canonicalize a configuration",
     "canonicalize a hash",
     "canonicalize a hostname",
     "canonicalize a linear()",
@@ -9687,7 +9690,9 @@
     "canonicalize a pathname",
     "canonicalize a port",
     "canonicalize a protocol",
-    "canonicalize a sanitizer element list",
+    "canonicalize a sanitizer attribute",
+    "canonicalize a sanitizer element",
+    "canonicalize a sanitizer element with attributes",
     "canonicalize a sanitizer name",
     "canonicalize a search",
     "canonicalize a username",
@@ -13211,6 +13216,7 @@
     "handle the result of selecting an index",
     "handle topics response",
     "handle transition frame",
+    "handleJavascriptNavigationUrls",
     "handleNewFrame",
     "handler",
     "handwriting recognition task source",
@@ -14190,8 +14196,6 @@
     "kin",
     "kind",
     "kind strings",
-    "known attributes",
-    "known elements",
     "known prompt handlers",
     "lab()",
     "label",
@@ -18065,6 +18069,7 @@
     "sandybrown",
     "sanitize",
     "sanitize a URL to send in a report",
+    "sanitize core",
     "sans-serif",
     "satisfiable",
     "satisfiable recognizing D",
@@ -21748,18 +21753,23 @@
     "top"
   ],
   "@container/scrollable": [
+    "block",
     "block-end",
     "block-start",
     "bottom",
+    "inline",
     "inline-end",
     "inline-start",
     "left",
     "none",
     "right",
-    "top"
+    "top",
+    "x",
+    "y"
   ],
   "@container/snapped": [
     "block",
+    "both",
     "inline",
     "none",
     "x",
@@ -46379,43 +46389,88 @@
   ],
   "Sanitizer": [
     "Sanitizer()",
-    "Sanitizer(config)",
+    "Sanitizer(configuration)",
+    "allow an attribute",
+    "allowAttribute",
+    "allowAttribute(attribute)",
+    "allowElement",
+    "allowElement(element)",
+    "configuration",
     "constructor",
     "constructor()",
-    "constructor(config)",
+    "constructor(configuration)",
     "get",
     "get()",
-    "getUnsafe",
-    "getUnsafe()"
+    "remove an attribute",
+    "remove an element",
+    "removeAttribute",
+    "removeAttribute(attribute)",
+    "removeElement",
+    "removeElement(element)",
+    "removeUnsafe",
+    "removeUnsafe()",
+    "replace an element with its children",
+    "replaceElementWithChildren",
+    "replaceElementWithChildren(element)",
+    "set a configuration",
+    "set comments",
+    "set data attributes",
+    "setComments",
+    "setComments(allow)",
+    "setDataAttributes",
+    "setDataAttributes(allow)"
   ],
   "Sanitizer/Sanitizer()": [
-    "config"
+    "configuration"
   ],
-  "Sanitizer/Sanitizer(config)": [
-    "config"
+  "Sanitizer/Sanitizer(configuration)": [
+    "configuration"
+  ],
+  "Sanitizer/allowAttribute(attribute)": [
+    "attribute"
+  ],
+  "Sanitizer/allowElement(element)": [
+    "element"
   ],
   "Sanitizer/constructor()": [
-    "config"
+    "configuration"
   ],
-  "Sanitizer/constructor(config)": [
-    "config"
+  "Sanitizer/constructor(configuration)": [
+    "configuration"
+  ],
+  "Sanitizer/removeAttribute(attribute)": [
+    "attribute"
+  ],
+  "Sanitizer/removeElement(element)": [
+    "element"
+  ],
+  "Sanitizer/replaceElementWithChildren(element)": [
+    "element"
+  ],
+  "Sanitizer/setComments(allow)": [
+    "allow"
+  ],
+  "Sanitizer/setDataAttributes(allow)": [
+    "allow"
   ],
   "SanitizerAttributeNamespace": [
     "name",
     "namespace"
   ],
   "SanitizerConfig": [
+    "add",
+    "allow an element",
     "attributes",
-    "canonical",
     "comments",
     "contains",
     "dataAttributes",
     "elements",
-    "get a sanitizer config from options",
+    "get a sanitizer instance from options",
+    "remove",
+    "remove unsafe",
     "removeAttributes",
     "removeElements",
-    "replaceWithChildrenElements",
-    "valid"
+    "replaceWithChildrenElements"
   ],
   "SanitizerElementNamespace": [
     "name",
@@ -46424,13 +46479,6 @@
   "SanitizerElementNamespaceWithAttributes": [
     "attributes",
     "removeAttributes"
-  ],
-  "SanitizerNameList": [
-    "canonical",
-    "valid"
-  ],
-  "SanitizerNameWithAttributesList": [
-    "canonical"
   ],
   "SaveFilePickerOptions": [
     "suggestedName"
@@ -60912,7 +60960,6 @@
     "append",
     "clone",
     "contain",
-    "difference",
     "empty",
     "equal",
     "exist",

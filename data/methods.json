@@ -4158,9 +4158,9 @@
       ],
       "shortname": "sanitizer-api"
     },
-    "Sanitizer(config)": {
+    "Sanitizer(configuration)": {
       "args": [
-        "config"
+        "configuration"
       ],
       "for": [
         "Sanitizer"
@@ -6532,6 +6532,28 @@
         "VideoFrame"
       ],
       "shortname": "webcodecs"
+    }
+  },
+  "allowAttribute()": {
+    "allowAttribute(attribute)": {
+      "args": [
+        "attribute"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
+    }
+  },
+  "allowElement()": {
+    "allowElement(element)": {
+      "args": [
+        "element"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
     }
   },
   "allowedFeatures()": {
@@ -9398,23 +9420,15 @@
       ],
       "shortname": "css-typed-om"
     },
-    "constructor(config)": {
-      "args": [
-        "config"
-      ],
-      "for": [
-        "Sanitizer"
-      ],
-      "shortname": "sanitizer-api"
-    },
     "constructor(configuration)": {
       "args": [
         "configuration"
       ],
       "for": [
-        "RTCPeerConnection"
+        "RTCPeerConnection",
+        "Sanitizer"
       ],
-      "shortname": "webrtc"
+      "shortname": "sanitizer-api"
     },
     "constructor(configuration, interfaceNumber)": {
       "args": [
@@ -19700,15 +19714,6 @@
       "shortname": "ecmascript"
     }
   },
-  "getUnsafe()": {
-    "getUnsafe()": {
-      "args": [],
-      "for": [
-        "Sanitizer"
-      ],
-      "shortname": "sanitizer-api"
-    }
-  },
   "getUserData()": {
     "getUserData()": {
       "args": [],
@@ -26337,6 +26342,15 @@
     }
   },
   "removeAttribute()": {
+    "removeAttribute(attribute)": {
+      "args": [
+        "attribute"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
+    },
     "removeAttribute(qualifiedName)": {
       "args": [
         "qualifiedName"
@@ -26390,6 +26404,17 @@
         "TextTrack"
       ],
       "shortname": "html"
+    }
+  },
+  "removeElement()": {
+    "removeElement(element)": {
+      "args": [
+        "element"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
     }
   },
   "removeEntry()": {
@@ -26624,6 +26649,15 @@
       "shortname": "tracking-dnt"
     }
   },
+  "removeUnsafe()": {
+    "removeUnsafe()": {
+      "args": [],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
+    }
+  },
   "renameNode()": {
     "renameNode()": {
       "args": [],
@@ -26753,6 +26787,17 @@
         "CharacterData"
       ],
       "shortname": "dom"
+    }
+  },
+  "replaceElementWithChildren()": {
+    "replaceElementWithChildren(element)": {
+      "args": [
+        "element"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
     }
   },
   "replaceState()": {
@@ -29352,6 +29397,17 @@
       "shortname": "webrtc"
     }
   },
+  "setComments()": {
+    "setComments(allow)": {
+      "args": [
+        "allow"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
+    }
+  },
   "setConfiguration()": {
     "setConfiguration()": {
       "args": [],
@@ -29415,6 +29471,17 @@
         "DataTransfer"
       ],
       "shortname": "html"
+    }
+  },
+  "setDataAttributes()": {
+    "setDataAttributes(allow)": {
+      "args": [
+        "allow"
+      ],
+      "for": [
+        "Sanitizer"
+      ],
+      "shortname": "sanitizer-api"
     }
   },
   "setDate()": {
