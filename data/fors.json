@@ -10098,6 +10098,7 @@
     "clone",
     "clone a node",
     "clone a policy container",
+    "clone a single node",
     "clone a track",
     "clone an object",
     "cloning steps",
@@ -10259,6 +10260,7 @@
     "commit computed styles",
     "commit early hints",
     "commit private aggregation contributions",
+    "commit server response private aggregation contributions",
     "committed promise",
     "committed-to entry",
     "common locale data repository",
@@ -11142,6 +11144,7 @@
     "custom element reaction queue",
     "custom element reactions",
     "custom element reactions stack",
+    "custom element registry",
     "custom function",
     "custom highlight",
     "custom highlight name",
@@ -13321,6 +13324,7 @@
     "handle native mouse up",
     "handle object map",
     "handle response end-of-body",
+    "handle server response private aggregation fields",
     "handle the result of selecting an index",
     "handle topics response",
     "handle transition frame",
@@ -18346,6 +18350,7 @@
     "scroll-behavior",
     "scroll-driven animations",
     "scroll-driven timelines",
+    "scroll-initial-target",
     "scroll-margin",
     "scroll-margin-block",
     "scroll-margin-block-end",
@@ -18626,6 +18631,7 @@
     "server auction debug report key",
     "server auction interest group",
     "server auction previous win",
+    "server auction private aggregation contribution key",
     "server auction reporting info",
     "server auction request context",
     "server auction response",
@@ -30329,7 +30335,7 @@
     "images",
     "implementation",
     "importNode(node)",
-    "importNode(node, deep)",
+    "importNode(node, subtree)",
     "in error",
     "inclusive ancestor navigables",
     "inclusive descendant navigables",
@@ -30630,12 +30636,12 @@
     "issuer"
   ],
   "Document/importNode(node)": [
-    "deep",
-    "node"
+    "node",
+    "subtree"
   ],
-  "Document/importNode(node, deep)": [
-    "deep",
-    "node"
+  "Document/importNode(node, subtree)": [
+    "node",
+    "subtree"
   ],
   "Document/measureElement(element)": [
     "element"
@@ -41380,7 +41386,7 @@
     "baseURI",
     "childNodes",
     "cloneNode()",
-    "cloneNode(deep)",
+    "cloneNode(subtree)",
     "compareDocumentPosition(other)",
     "contains(other)",
     "empty",
@@ -41423,10 +41429,10 @@
     "node"
   ],
   "Node/cloneNode()": [
-    "deep"
+    "subtree"
   ],
-  "Node/cloneNode(deep)": [
-    "deep"
+  "Node/cloneNode(subtree)": [
+    "subtree"
   ],
   "Node/compareDocumentPosition(other)": [
     "other"
@@ -55098,6 +55104,11 @@
     "objectBoundingBox",
     "userSpaceOnUse"
   ],
+  "clone a node": [
+    "document",
+    "parent",
+    "subtree"
+  ],
   "code point": [
     "UTF-8 percent-encode",
     "value"
@@ -60877,6 +60888,10 @@
     "auto",
     "smooth"
   ],
+  "scroll-initial-target": [
+    "nearest",
+    "none"
+  ],
   "scroll-marker-group": [
     "after",
     "before",
@@ -61082,6 +61097,11 @@
     "ad render ID",
     "time delta"
   ],
+  "server auction private aggregation contribution key": [
+    "coordinator",
+    "event",
+    "reporting origin"
+  ],
   "server auction reporting info": [
     "beacon urls",
     "reporting url"
@@ -61101,11 +61121,14 @@
     "buyer reporting id",
     "component seller reporting",
     "component win debugging only reports",
+    "component win private aggregation contributions",
     "interest group name",
     "interest group owner",
     "score",
     "selected buyer and seller reporting id",
     "server filtered debugging only reports",
+    "server filtered private aggregation non reserved contributions",
+    "server filtered private aggregation reserved contributions",
     "top level seller",
     "top level seller reporting",
     "update groups"
