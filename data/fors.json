@@ -9315,6 +9315,8 @@
     "biased fragment depth",
     "bid debug reporting info",
     "bid with currency",
+    "bidding compression group",
+    "bidding partition",
     "bidding script failure bucket",
     "bidding signals per interest group data",
     "bidi",
@@ -9604,12 +9606,15 @@
     "build a URLPattern object from a Web IDL value",
     "build a content range",
     "build an interest group passed to generateBid",
+    "build batched trusted key value scoring signals request body",
     "build batched trusted scoring signals url",
     "build bid generators map",
     "build not restored reasons for a top-level traversable and its descendants",
     "build not restored reasons for document state",
     "build the list of related website sets",
     "build trusted bidding signals url",
+    "build trusted key value bidding signals request body",
+    "build trusted key value scoring signals request body",
     "build trusted scoring signals url",
     "built-in functions",
     "built-in input value",
@@ -11041,6 +11046,7 @@
     "crossing gap width",
     "crossorigin",
     "crush",
+    "crypto task source",
     "cryptographic nonce",
     "cryptographic nonce metadata",
     "cryptographic suite",
@@ -12397,8 +12403,10 @@
     "fetch the config file and show an IDP login dialog",
     "fetch the current outstanding trusted signals batch",
     "fetch the descendants of and link",
+    "fetch the trusted key value signals batch",
     "fetch the web app manifest for a default payment app",
     "fetch timing info",
+    "fetch trusted key value signals",
     "fetch trusted scoring signals with batching",
     "fetch trusted signals",
     "fetching an image resource",
@@ -18274,6 +18282,8 @@
     "scoping limit",
     "scoping root",
     "score and rank a bid",
+    "scoring compression group",
+    "scoring partition",
     "scoring script failure bucket",
     "screen",
     "screen coordinate system",
@@ -22388,6 +22398,7 @@
     "ariaPosInSet",
     "ariaPressed",
     "ariaReadOnly",
+    "ariaRelevant",
     "ariaRequired",
     "ariaRoleDescription",
     "ariaRowCount",
@@ -23136,6 +23147,7 @@
     "sellerTimeout",
     "serverResponse",
     "signal",
+    "trustedScoringSignalsCoordinator",
     "trustedScoringSignalsURL"
   ],
   "AuctionAdInterestGroup": [
@@ -34443,6 +34455,7 @@
     "priorityVector",
     "sellerCapabilities",
     "sizeGroups",
+    "trustedBiddingSignalsCoordinator",
     "trustedBiddingSignalsKeys",
     "trustedBiddingSignalsSlotSizeMode",
     "trustedBiddingSignalsURL",
@@ -54156,6 +54169,7 @@
     "seller timeout",
     "server response",
     "server response id",
+    "trusted scoring signals coordinator",
     "trusted scoring signals url"
   ],
   "auction data buyer config": [
@@ -54434,8 +54448,17 @@
     "currency",
     "value"
   ],
+  "bidding compression group": [
+    "compression group id",
+    "partitions"
+  ],
+  "bidding partition": [
+    "id",
+    "metadata",
+    "namespace"
+  ],
   "bidding signals per interest group data": [
-    "updateIfOlderThanMs"
+    "update if older than ms"
   ],
   "binary": [
     "<minus/>",
@@ -58166,6 +58189,7 @@
     "priority vector",
     "seller capabilities",
     "size groups",
+    "trusted bidding signals coordinator",
     "trusted bidding signals keys",
     "trusted bidding signals slot size mode",
     "trusted bidding signals url",
@@ -60770,6 +60794,15 @@
     "get batching scope steps",
     "get debug scope steps"
   ],
+  "scoring compression group": [
+    "compression group id",
+    "partitions"
+  ],
+  "scoring partition": [
+    "id",
+    "metadata",
+    "namespace"
+  ],
   "screen": [
     "advanced observable properties",
     "available height",
@@ -62778,6 +62811,7 @@
     "all trusted bidding signals",
     "data versions",
     "ig names",
+    "key value interest groups",
     "keys",
     "length limit",
     "no signals flags"
@@ -62794,12 +62828,15 @@
   "trusted scoring signals request": [
     "ad component URLs",
     "base url",
+    "joining origin",
+    "owner origin",
     "policy container",
     "render URL",
     "reply",
     "seller",
     "seller experiment group id",
     "seller script fetcher",
+    "signal coordinator",
     "top level origin"
   ],
   "tspan": [
