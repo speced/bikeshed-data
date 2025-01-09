@@ -33,7 +33,7 @@ However, if the update process falls over,
 it can be run manually.
 To do so, install [Bikeshed](https://github.com/tabatkins/bikeshed) normally,
 then clone this repository
-and run `python __init__.py` in the folder.
+and run `python update.py` in the folder.
 
 This will invoke `git` on your system,
 so it'll only work if you have commit rights to this project;
