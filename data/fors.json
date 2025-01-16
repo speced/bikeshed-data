@@ -4628,6 +4628,7 @@
     "MLClampOptions",
     "MLConcatSupportLimits",
     "MLContext",
+    "MLContextLostInfo",
     "MLContextOptions",
     "MLConv2dFilterOperandLayout",
     "MLConv2dOptions",
@@ -6749,9 +6750,15 @@
     "SharedDataBlockEventSet",
     "SharedDataBlockEventSet(execution)",
     "SharedStorage",
+    "SharedStorageAppendMethod",
+    "SharedStorageClearMethod",
+    "SharedStorageDeleteMethod",
+    "SharedStorageModifierMethod",
+    "SharedStorageModifierMethodOptions",
     "SharedStoragePrivateAggregationConfig",
     "SharedStorageResponse",
     "SharedStorageRunOperationMethodOptions",
+    "SharedStorageSetMethod",
     "SharedStorageSetMethodOptions",
     "SharedStorageUrlWithMetadata",
     "SharedStorageWorklet",
@@ -12556,6 +12563,7 @@
     "fingerprinting surface",
     "fingerprints",
     "finish",
+    "finish a batch update",
     "finish an animation",
     "finish event",
     "finish notification steps",
@@ -13332,6 +13340,7 @@
     "handle an issue response",
     "handle any user prompts",
     "handle attribute changes",
+    "handle callback within a shared storage lock",
     "handle close events",
     "handle closing the TCPServerSocket readable stream",
     "handle closing the TCPSocket readable stream",
@@ -38318,10 +38327,16 @@
   "MLContext": [
     "[[contextType]]",
     "[[deviceType]]",
+    "[[lost]]",
     "[[powerPreference]]",
     "[[timeline]]",
     "createTensor(descriptor)",
+    "destroy()",
     "dispatch(graph, inputs, outputs)",
+    "is lost",
+    "is not lost",
+    "lose",
+    "lost",
     "opSupportLimits()",
     "readTensor(tensor)",
     "readTensor(tensor, outputData)",
@@ -38345,6 +38360,9 @@
   "MLContext/writeTensor(tensor, inputData)": [
     "inputData",
     "tensor"
+  ],
+  "MLContextLostInfo": [
+    "message"
   ],
   "MLContextOptions": [
     "deviceType",
@@ -38423,7 +38441,9 @@
     "[[context]]",
     "[[implementation]]",
     "[[inputDescriptors]]",
-    "[[outputDescriptors]]"
+    "[[isDestroyed]]",
+    "[[outputDescriptors]]",
+    "destroy()"
   ],
   "MLGraphBuilder": [
     "MLGraphBuilder(context)",
@@ -38452,6 +38472,8 @@
     "calculate pool2d output sizes",
     "calculate reduction output sizes",
     "calculate resample output sizes",
+    "can build",
+    "can not build",
     "cast(input, type)",
     "cast(input, type, options)",
     "ceil(input)",
@@ -47442,11 +47464,16 @@
   ],
   "SharedStorage": [
     "append(key, value)",
+    "append(key, value, options)",
+    "batchUpdate(methods)",
+    "batchUpdate(methods, options)",
     "clear()",
+    "clear(options)",
     "createWorklet(moduleURL)",
     "createWorklet(moduleURL, options)",
     "data partition origin",
     "delete(key)",
+    "delete(key, options)",
     "get(key)",
     "length()",
     "remainingBudget()",
@@ -47460,7 +47487,27 @@
   ],
   "SharedStorage/append(key, value)": [
     "key",
+    "options",
     "value"
+  ],
+  "SharedStorage/append(key, value, options)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorage/batchUpdate(methods)": [
+    "methods",
+    "options"
+  ],
+  "SharedStorage/batchUpdate(methods, options)": [
+    "methods",
+    "options"
+  ],
+  "SharedStorage/clear()": [
+    "options"
+  ],
+  "SharedStorage/clear(options)": [
+    "options"
   ],
   "SharedStorage/createWorklet(moduleURL)": [
     "moduleURL",
@@ -47471,7 +47518,12 @@
     "options"
   ],
   "SharedStorage/delete(key)": [
-    "key"
+    "key",
+    "options"
+  ],
+  "SharedStorage/delete(key, options)": [
+    "key",
+    "options"
   ],
   "SharedStorage/get(key)": [
     "key"
@@ -47504,11 +47556,86 @@
     "options",
     "value"
   ],
+  "SharedStorageAppendMethod": [
+    "SharedStorageAppendMethod(key, value)",
+    "SharedStorageAppendMethod(key, value, options)",
+    "constructor(key, value)",
+    "constructor(key, value, options)",
+    "key",
+    "value"
+  ],
+  "SharedStorageAppendMethod/SharedStorageAppendMethod(key, value)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorageAppendMethod/SharedStorageAppendMethod(key, value, options)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorageAppendMethod/constructor(key, value)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorageAppendMethod/constructor(key, value, options)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorageClearMethod": [
+    "SharedStorageClearMethod()",
+    "SharedStorageClearMethod(options)",
+    "constructor()",
+    "constructor(options)"
+  ],
+  "SharedStorageClearMethod/SharedStorageClearMethod()": [
+    "options"
+  ],
+  "SharedStorageClearMethod/SharedStorageClearMethod(options)": [
+    "options"
+  ],
+  "SharedStorageClearMethod/constructor()": [
+    "options"
+  ],
+  "SharedStorageClearMethod/constructor(options)": [
+    "options"
+  ],
+  "SharedStorageDeleteMethod": [
+    "SharedStorageDeleteMethod(key)",
+    "SharedStorageDeleteMethod(key, options)",
+    "constructor(key)",
+    "constructor(key, options)",
+    "key"
+  ],
+  "SharedStorageDeleteMethod/SharedStorageDeleteMethod(key)": [
+    "key",
+    "options"
+  ],
+  "SharedStorageDeleteMethod/SharedStorageDeleteMethod(key, options)": [
+    "key",
+    "options"
+  ],
+  "SharedStorageDeleteMethod/constructor(key)": [
+    "key",
+    "options"
+  ],
+  "SharedStorageDeleteMethod/constructor(key, options)": [
+    "key",
+    "options"
+  ],
   "SharedStorageIterator": [
     "asynchronous iterator initialization steps",
     "error",
     "get the next iteration result",
     "pending entries"
+  ],
+  "SharedStorageModifierMethod": [
+    "with lock"
+  ],
+  "SharedStorageModifierMethodOptions": [
+    "withLock"
   ],
   "SharedStoragePrivateAggregationConfig": [
     "aggregationCoordinatorOrigin",
@@ -47521,6 +47648,35 @@
     "privateAggregationConfig",
     "resolveToConfig",
     "savedQuery"
+  ],
+  "SharedStorageSetMethod": [
+    "SharedStorageSetMethod(key, value)",
+    "SharedStorageSetMethod(key, value, options)",
+    "constructor(key, value)",
+    "constructor(key, value, options)",
+    "ignore if present",
+    "key",
+    "value"
+  ],
+  "SharedStorageSetMethod/SharedStorageSetMethod(key, value)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorageSetMethod/SharedStorageSetMethod(key, value, options)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorageSetMethod/constructor(key, value)": [
+    "key",
+    "options",
+    "value"
+  ],
+  "SharedStorageSetMethod/constructor(key, value, options)": [
+    "key",
+    "options",
+    "value"
   ],
   "SharedStorageSetMethodOptions": [
     "ignoreIfPresent"

@@ -4281,6 +4281,91 @@
       "shortname": "ecmascript"
     }
   },
+  "SharedStorageAppendMethod()": {
+    "SharedStorageAppendMethod(key, value)": {
+      "args": [
+        "key",
+        "value"
+      ],
+      "for": [
+        "SharedStorageAppendMethod"
+      ],
+      "shortname": "shared-storage"
+    },
+    "SharedStorageAppendMethod(key, value, options)": {
+      "args": [
+        "key",
+        "value",
+        "options"
+      ],
+      "for": [
+        "SharedStorageAppendMethod"
+      ],
+      "shortname": "shared-storage"
+    }
+  },
+  "SharedStorageClearMethod()": {
+    "SharedStorageClearMethod()": {
+      "args": [],
+      "for": [
+        "SharedStorageClearMethod"
+      ],
+      "shortname": "shared-storage"
+    },
+    "SharedStorageClearMethod(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "SharedStorageClearMethod"
+      ],
+      "shortname": "shared-storage"
+    }
+  },
+  "SharedStorageDeleteMethod()": {
+    "SharedStorageDeleteMethod(key)": {
+      "args": [
+        "key"
+      ],
+      "for": [
+        "SharedStorageDeleteMethod"
+      ],
+      "shortname": "shared-storage"
+    },
+    "SharedStorageDeleteMethod(key, options)": {
+      "args": [
+        "key",
+        "options"
+      ],
+      "for": [
+        "SharedStorageDeleteMethod"
+      ],
+      "shortname": "shared-storage"
+    }
+  },
+  "SharedStorageSetMethod()": {
+    "SharedStorageSetMethod(key, value)": {
+      "args": [
+        "key",
+        "value"
+      ],
+      "for": [
+        "SharedStorageSetMethod"
+      ],
+      "shortname": "shared-storage"
+    },
+    "SharedStorageSetMethod(key, value, options)": {
+      "args": [
+        "key",
+        "value",
+        "options"
+      ],
+      "for": [
+        "SharedStorageSetMethod"
+      ],
+      "shortname": "shared-storage"
+    }
+  },
   "SharedWorker()": {
     "SharedWorker(scriptURL)": {
       "args": [
@@ -6708,6 +6793,17 @@
       ],
       "shortname": "shared-storage"
     },
+    "append(key, value, options)": {
+      "args": [
+        "key",
+        "value",
+        "options"
+      ],
+      "for": [
+        "SharedStorage"
+      ],
+      "shortname": "shared-storage"
+    },
     "append(name, blobValue)": {
       "args": [
         "name",
@@ -7247,6 +7343,27 @@
         "MLGraphBuilder"
       ],
       "shortname": "webnn"
+    }
+  },
+  "batchUpdate()": {
+    "batchUpdate(methods)": {
+      "args": [
+        "methods"
+      ],
+      "for": [
+        "SharedStorage"
+      ],
+      "shortname": "shared-storage"
+    },
+    "batchUpdate(methods, options)": {
+      "args": [
+        "methods",
+        "options"
+      ],
+      "for": [
+        "SharedStorage"
+      ],
+      "shortname": "shared-storage"
     }
   },
   "before()": {
@@ -8080,6 +8197,15 @@
         "console"
       ],
       "shortname": "console"
+    },
+    "clear(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "SharedStorage"
+      ],
+      "shortname": "shared-storage"
     }
   },
   "clearAppBadge()": {
@@ -9123,6 +9249,7 @@
         "SFrameTransform",
         "Sanitizer",
         "ScrollTimeline",
+        "SharedStorageClearMethod",
         "SmartCardError",
         "SpeechGrammarList",
         "SpeechRecognition",
@@ -9937,6 +10064,48 @@
       ],
       "shortname": "clipboard-apis"
     },
+    "constructor(key)": {
+      "args": [
+        "key"
+      ],
+      "for": [
+        "SharedStorageDeleteMethod"
+      ],
+      "shortname": "shared-storage"
+    },
+    "constructor(key, options)": {
+      "args": [
+        "key",
+        "options"
+      ],
+      "for": [
+        "SharedStorageDeleteMethod"
+      ],
+      "shortname": "shared-storage"
+    },
+    "constructor(key, value)": {
+      "args": [
+        "key",
+        "value"
+      ],
+      "for": [
+        "SharedStorageAppendMethod",
+        "SharedStorageSetMethod"
+      ],
+      "shortname": "shared-storage"
+    },
+    "constructor(key, value, options)": {
+      "args": [
+        "key",
+        "value",
+        "options"
+      ],
+      "for": [
+        "SharedStorageAppendMethod",
+        "SharedStorageSetMethod"
+      ],
+      "shortname": "shared-storage"
+    },
     "constructor(l, a, b)": {
       "args": [
         "l",
@@ -10257,6 +10426,7 @@
         "Profiler",
         "SFrameTransform",
         "ScrollTimeline",
+        "SharedStorageClearMethod",
         "SmartCardError",
         "TextFormat",
         "UDPSocket",
@@ -13693,6 +13863,16 @@
       ],
       "shortname": "ecmascript"
     },
+    "delete(key, options)": {
+      "args": [
+        "key",
+        "options"
+      ],
+      "for": [
+        "SharedStorage"
+      ],
+      "shortname": "shared-storage"
+    },
     "delete(name)": {
       "args": [
         "name"
@@ -14046,6 +14226,8 @@
         "GPUDevice",
         "GPUQuerySet",
         "GPUTexture",
+        "MLContext",
+        "MLGraph",
         "MLTensor",
         "XRCompositionLayer"
       ],
