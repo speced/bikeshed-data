@@ -1229,8 +1229,15 @@
     "AICapabilityAvailability",
     "AICreateMonitor",
     "AICreateMonitorCallback",
+    "AIRewriter",
+    "AIRewriterCreateCoreOptions",
+    "AIRewriterCreateOptions",
+    "AIRewriterFactory",
+    "AIRewriterFormat",
+    "AIRewriterLength",
+    "AIRewriterRewriteOptions",
+    "AIRewriterTone",
     "AISummarizer",
-    "AISummarizerCapabilities",
     "AISummarizerCreateCoreOptions",
     "AISummarizerCreateOptions",
     "AISummarizerFactory",
@@ -1238,6 +1245,14 @@
     "AISummarizerLength",
     "AISummarizerSummarizeOptions",
     "AISummarizerType",
+    "AIWriter",
+    "AIWriterCreateCoreOptions",
+    "AIWriterCreateOptions",
+    "AIWriterFactory",
+    "AIWriterFormat",
+    "AIWriterLength",
+    "AIWriterTone",
+    "AIWriterWriteOptions",
     "API URL parser",
     "API value",
     "ARIA attributes",
@@ -10371,6 +10386,7 @@
     "compute render extent",
     "compute shader grid",
     "compute shader stage",
+    "compute summarizer options availability",
     "compute the audio session type",
     "compute the channel capacity of a source",
     "compute the connected account key",
@@ -11138,8 +11154,6 @@
     "current session history step",
     "current settings object",
     "current stack trace",
-    "current summarizer create options availability",
-    "current summarizer language availabilities",
     "current target element",
     "current template insertion mode",
     "current text position",
@@ -12467,6 +12481,7 @@
     "fill in a pending fenced frame config",
     "fill in the contribution",
     "fill in the signal value",
+    "fill language availabilities",
     "fill mode",
     "fill painting area",
     "fill positioning area",
@@ -14367,6 +14382,7 @@
     "lang",
     "lang (pseudo-class)",
     "language",
+    "language availabilities",
     "language extension",
     "language map",
     "language mapping",
@@ -19479,6 +19495,8 @@
     "suitable sequentially focusable area",
     "summarization error information",
     "summarize",
+    "summarizer language availabilities",
+    "summarizer non-language options availability",
     "summary",
     "summary bucket",
     "summary bucket list",
@@ -20555,6 +20573,7 @@
     "validate a url macro",
     "validate aggregatable key-values value",
     "validate an ICE server URL",
+    "validate and canonicalize language tags",
     "validate and convert additional bids",
     "validate and convert auction ad config",
     "validate and extract",
@@ -22298,7 +22317,8 @@
   "AICapabilityAvailability": [
     "\"after-download\"",
     "\"no\"",
-    "\"readily\""
+    "\"readily\"",
+    "minimum availability"
   ],
   "AICreateMonitor": [
     "downloadprogress",
@@ -22307,13 +22327,99 @@
   "AICreateMonitorCallback": [
     "monitor"
   ],
+  "AIRewriter": [
+    "destroy()",
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "length",
+    "outputLanguage",
+    "rewrite(input)",
+    "rewrite(input, options)",
+    "rewriteStreaming(input)",
+    "rewriteStreaming(input, options)",
+    "sharedContext",
+    "tone"
+  ],
+  "AIRewriter/rewrite(input)": [
+    "input",
+    "options"
+  ],
+  "AIRewriter/rewrite(input, options)": [
+    "input",
+    "options"
+  ],
+  "AIRewriter/rewriteStreaming(input)": [
+    "input",
+    "options"
+  ],
+  "AIRewriter/rewriteStreaming(input, options)": [
+    "input",
+    "options"
+  ],
+  "AIRewriterCreateCoreOptions": [
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "length",
+    "outputLanguage",
+    "tone"
+  ],
+  "AIRewriterCreateOptions": [
+    "monitor",
+    "sharedContext",
+    "signal"
+  ],
+  "AIRewriterFactory": [
+    "available()",
+    "available(options)",
+    "create()",
+    "create(options)"
+  ],
+  "AIRewriterFactory/available()": [
+    "options"
+  ],
+  "AIRewriterFactory/available(options)": [
+    "options"
+  ],
+  "AIRewriterFactory/create()": [
+    "options"
+  ],
+  "AIRewriterFactory/create(options)": [
+    "options"
+  ],
+  "AIRewriterFormat": [
+    "\"as-is\"",
+    "\"markdown\"",
+    "\"plain-text\""
+  ],
+  "AIRewriterLength": [
+    "\"as-is\"",
+    "\"longer\"",
+    "\"shorter\""
+  ],
+  "AIRewriterRewriteOptions": [
+    "context",
+    "signal"
+  ],
+  "AIRewriterTone": [
+    "\"as-is\"",
+    "\"more-casual\"",
+    "\"more-formal\""
+  ],
   "AISummarizer": [
     "destroy",
     "destroy()",
     "destroyed",
     "destruction reason",
+    "expected context languages",
+    "expected input languages",
+    "expectedContextLanguages",
+    "expectedInputLanguages",
     "format",
     "length",
+    "output language",
+    "outputLanguage",
     "shared context",
     "sharedContext",
     "summarize(input)",
@@ -22341,27 +22447,12 @@
     "input",
     "options"
   ],
-  "AISummarizerCapabilities": [
-    "after-download available languages",
-    "available",
-    "available create options",
-    "createOptionsAvailable()",
-    "createOptionsAvailable(options)",
-    "languageAvailable(languageTag)",
-    "readily available languages"
-  ],
-  "AISummarizerCapabilities/createOptionsAvailable()": [
-    "options"
-  ],
-  "AISummarizerCapabilities/createOptionsAvailable(options)": [
-    "options"
-  ],
-  "AISummarizerCapabilities/languageAvailable(languageTag)": [
-    "languageTag"
-  ],
   "AISummarizerCreateCoreOptions": [
+    "expectedContextLanguages",
+    "expectedInputLanguages",
     "format",
     "length",
+    "outputLanguage",
     "type"
   ],
   "AISummarizerCreateOptions": [
@@ -22370,9 +22461,16 @@
     "signal"
   ],
   "AISummarizerFactory": [
-    "capabilities()",
+    "available()",
+    "available(options)",
     "create()",
     "create(options)"
+  ],
+  "AISummarizerFactory/available()": [
+    "options"
+  ],
+  "AISummarizerFactory/available(options)": [
+    "options"
   ],
   "AISummarizerFactory/create()": [
     "options"
@@ -22407,6 +22505,85 @@
     "key-points",
     "teaser",
     "tl;dr"
+  ],
+  "AIWriter": [
+    "destroy()",
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "length",
+    "outputLanguage",
+    "sharedContext",
+    "tone",
+    "write(writingTask)",
+    "write(writingTask, options)",
+    "writeStreaming(writingTask)",
+    "writeStreaming(writingTask, options)"
+  ],
+  "AIWriter/write(writingTask)": [
+    "options",
+    "writingTask"
+  ],
+  "AIWriter/write(writingTask, options)": [
+    "options",
+    "writingTask"
+  ],
+  "AIWriter/writeStreaming(writingTask)": [
+    "options",
+    "writingTask"
+  ],
+  "AIWriter/writeStreaming(writingTask, options)": [
+    "options",
+    "writingTask"
+  ],
+  "AIWriterCreateCoreOptions": [
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "length",
+    "outputLanguage",
+    "tone"
+  ],
+  "AIWriterCreateOptions": [
+    "monitor",
+    "sharedContext",
+    "signal"
+  ],
+  "AIWriterFactory": [
+    "available()",
+    "available(options)",
+    "create()",
+    "create(options)"
+  ],
+  "AIWriterFactory/available()": [
+    "options"
+  ],
+  "AIWriterFactory/available(options)": [
+    "options"
+  ],
+  "AIWriterFactory/create()": [
+    "options"
+  ],
+  "AIWriterFactory/create(options)": [
+    "options"
+  ],
+  "AIWriterFormat": [
+    "\"markdown\"",
+    "\"plain-text\""
+  ],
+  "AIWriterLength": [
+    "\"long\"",
+    "\"medium\"",
+    "\"short\""
+  ],
+  "AIWriterTone": [
+    "\"casual\"",
+    "\"formal\"",
+    "\"neutral\""
+  ],
+  "AIWriterWriteOptions": [
+    "context",
+    "signal"
   ],
   "ARIA": [
     "Property"
@@ -58607,6 +58784,14 @@
   ],
   "label": [
     "for"
+  ],
+  "language availabilities": [
+    "after-download available context languages",
+    "after-download available input languages",
+    "after-download available output languages",
+    "readily available context languages",
+    "readily available input languages",
+    "readily available output languages"
   ],
   "language_extension": [
     "packed_4x8_integer_dot_product",

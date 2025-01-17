@@ -7281,6 +7281,28 @@
       "shortname": "edit-context"
     }
   },
+  "available()": {
+    "available()": {
+      "args": [],
+      "for": [
+        "AIRewriterFactory",
+        "AISummarizerFactory",
+        "AIWriterFactory"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "available(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "AIRewriterFactory",
+        "AISummarizerFactory",
+        "AIWriterFactory"
+      ],
+      "shortname": "writing-assistance-apis"
+    }
+  },
   "averagePool2d()": {
     "averagePool2d(input)": {
       "args": [
@@ -7810,15 +7832,6 @@
         "CSS"
       ],
       "shortname": "css-typed-om"
-    }
-  },
-  "capabilities()": {
-    "capabilities()": {
-      "args": [],
-      "for": [
-        "AISummarizerFactory"
-      ],
-      "shortname": "writing-assistance-apis"
     }
   },
   "captureEvents()": {
@@ -12012,7 +12025,9 @@
     "create()": {
       "args": [],
       "for": [
+        "AIRewriterFactory",
         "AISummarizerFactory",
+        "AIWriterFactory",
         "CredentialsContainer"
       ],
       "shortname": "writing-assistance-apis"
@@ -12032,7 +12047,9 @@
         "options"
       ],
       "for": [
+        "AIRewriterFactory",
         "AISummarizerFactory",
+        "AIWriterFactory",
         "CredentialsContainer"
       ],
       "shortname": "writing-assistance-apis"
@@ -12983,24 +13000,6 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
-    }
-  },
-  "createOptionsAvailable()": {
-    "createOptionsAvailable()": {
-      "args": [],
-      "for": [
-        "AISummarizerCapabilities"
-      ],
-      "shortname": "writing-assistance-apis"
-    },
-    "createOptionsAvailable(options)": {
-      "args": [
-        "options"
-      ],
-      "for": [
-        "AISummarizerCapabilities"
-      ],
-      "shortname": "writing-assistance-apis"
     }
   },
   "createOscillator()": {
@@ -14220,7 +14219,9 @@
     "destroy()": {
       "args": [],
       "for": [
+        "AIRewriter",
         "AISummarizer",
+        "AIWriter",
         "CloseWatcher",
         "GPUBuffer",
         "GPUDevice",
@@ -22593,17 +22594,6 @@
       "shortname": "webnn"
     }
   },
-  "languageAvailable()": {
-    "languageAvailable(languageTag)": {
-      "args": [
-        "languageTag"
-      ],
-      "for": [
-        "AISummarizerCapabilities"
-      ],
-      "shortname": "writing-assistance-apis"
-    }
-  },
   "last()": {
     "last()": {
       "args": [],
@@ -28022,6 +28012,48 @@
         "URL"
       ],
       "shortname": "saa-non-cookie-storage"
+    }
+  },
+  "rewrite()": {
+    "rewrite(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "AIRewriter"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "rewrite(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "AIRewriter"
+      ],
+      "shortname": "writing-assistance-apis"
+    }
+  },
+  "rewriteStreaming()": {
+    "rewriteStreaming(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "AIRewriter"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "rewriteStreaming(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "AIRewriter"
+      ],
+      "shortname": "writing-assistance-apis"
     }
   },
   "rex()": {
@@ -34963,6 +34995,25 @@
         "NDEFReader"
       ],
       "shortname": "web-nfc"
+    },
+    "write(writingTask)": {
+      "args": [
+        "writingTask"
+      ],
+      "for": [
+        "AIWriter"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "write(writingTask, options)": {
+      "args": [
+        "writingTask",
+        "options"
+      ],
+      "for": [
+        "AIWriter"
+      ],
+      "shortname": "writing-assistance-apis"
     }
   },
   "writeBuffer()": {
@@ -35001,6 +35052,27 @@
         "GPUQueue"
       ],
       "shortname": "webgpu"
+    }
+  },
+  "writeStreaming()": {
+    "writeStreaming(writingTask)": {
+      "args": [
+        "writingTask"
+      ],
+      "for": [
+        "AIWriter"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "writeStreaming(writingTask, options)": {
+      "args": [
+        "writingTask",
+        "options"
+      ],
+      "for": [
+        "AIWriter"
+      ],
+      "shortname": "writing-assistance-apis"
     }
   },
   "writeTensor()": {
