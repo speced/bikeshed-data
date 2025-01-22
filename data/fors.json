@@ -6891,6 +6891,7 @@
     "SpeechRecognitionErrorEventInit",
     "SpeechRecognitionEvent",
     "SpeechRecognitionEventInit",
+    "SpeechRecognitionMode",
     "SpeechRecognitionResult",
     "SpeechRecognitionResultList",
     "SpeechSynthesis",
@@ -48259,10 +48260,13 @@
     "end",
     "error",
     "grammars",
+    "installOnDeviceSpeechRecognition(lang)",
     "interimResults",
     "lang",
     "maxAlternatives",
+    "mode",
     "nomatch",
+    "onDeviceWebSpeechAvailable(lang)",
     "onaudioend",
     "onaudiostart",
     "onend",
@@ -48281,7 +48285,17 @@
     "speechstart",
     "start",
     "start()",
+    "start(audioTrack)",
     "stop()"
+  ],
+  "SpeechRecognition/installOnDeviceSpeechRecognition(lang)": [
+    "lang"
+  ],
+  "SpeechRecognition/onDeviceWebSpeechAvailable(lang)": [
+    "lang"
+  ],
+  "SpeechRecognition/start(audioTrack)": [
+    "audioTrack"
   ],
   "SpeechRecognitionAlternative": [
     "confidence",
@@ -48332,6 +48346,11 @@
   "SpeechRecognitionEventInit": [
     "resultIndex",
     "results"
+  ],
+  "SpeechRecognitionMode": [
+    "\"cloud-only\"",
+    "\"ondevice-only\"",
+    "\"ondevice-preferred\""
   ],
   "SpeechRecognitionResult": [
     "isFinal",
