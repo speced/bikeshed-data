@@ -700,6 +700,7 @@
     "<contextual-alt-values>",
     "<control-point>",
     "<coord-box>",
+    "<corner-shape-value>",
     "<cos/>",
     "<cosh/>",
     "<cot/>",
@@ -1070,6 +1071,8 @@
     "<single-animation-iteration-count>",
     "<single-animation-play-state>",
     "<single-animation-timeline>",
+    "<single-animation-trigger-type>",
+    "<single-animation-trigger>",
     "<single-animation>",
     "<single-transition-property>",
     "<single-transition>",
@@ -7246,7 +7249,6 @@
     "TimeZoneString",
     "TimeZoneString(tv)",
     "Timeline-agnostic",
-    "TimelineRangeOffset",
     "TimeoutError",
     "TimerHandler",
     "Timing-Allow-Origin",
@@ -8753,6 +8755,9 @@
     "animation time to origin-relative time",
     "animation time to timeline time",
     "animation timing attributes",
+    "animation trigger",
+    "animation trigger state",
+    "animation trigger type",
     "animation value attributes",
     "animation-composition",
     "animation-delay",
@@ -8768,6 +8773,15 @@
     "animation-tainted",
     "animation-timeline",
     "animation-timing-function",
+    "animation-trigger",
+    "animation-trigger-exit-range",
+    "animation-trigger-exit-range-end",
+    "animation-trigger-exit-range-start",
+    "animation-trigger-range",
+    "animation-trigger-range-end",
+    "animation-trigger-range-start",
+    "animation-trigger-timeline",
+    "animation-trigger-type",
     "animator current time",
     "animator definition",
     "animator definitions",
@@ -10770,8 +10784,23 @@
     "core attributes",
     "core media type resource",
     "corner diagonal",
+    "corner-block-end-shape",
+    "corner-block-start-shape",
+    "corner-bottom-left-shape",
+    "corner-bottom-right-shape",
+    "corner-bottom-shape",
+    "corner-end-end-shape",
+    "corner-end-start-shape",
+    "corner-inline-end-shape",
+    "corner-inline-start-shape",
+    "corner-left-shape",
+    "corner-right-shape",
     "corner-shape",
-    "corners",
+    "corner-start-end-shape",
+    "corner-start-start-shape",
+    "corner-top-left-shape",
+    "corner-top-right-shape",
+    "corner-top-shape",
     "cornflowerblue",
     "cornsilk",
     "correctly rounded",
@@ -11379,6 +11408,7 @@
     "default port",
     "default powerful feature",
     "default presentation request",
+    "default range",
     "default reader",
     "default reading order",
     "default referrer policy",
@@ -12214,6 +12244,7 @@
     "exempt resource",
     "exit Picture-in-Picture algorithm",
     "exit fullscreen",
+    "exit range",
     "exit value",
     "exp()",
     "expand a storage partition spec",
@@ -18860,10 +18891,12 @@
     "setter",
     "setter steps",
     "setting a session description",
+    "setting a trigger of an animation",
     "setting the local session description",
     "setting the remote session description",
     "setting the search origin",
     "setting the space on a layer",
+    "setting timeline of animation trigger",
     "settings",
     "settings dictionary",
     "settings.getSettings command",
@@ -19527,6 +19560,9 @@
     "summary operator",
     "sunken initial",
     "sup",
+    "superellipse exponent",
+    "superellipse interpolation",
+    "superellipse()",
     "superscriptBaselineDropMax",
     "superscriptBottomMaxWithSubscript",
     "superscriptBottomMin",
@@ -20364,6 +20400,7 @@
     "update touchEvents",
     "updateend",
     "updatestart",
+    "updating animation trigger state",
     "updating the rendering of a WebGPU canvas",
     "updating the search origin",
     "updating touchEvents",
@@ -21341,6 +21378,14 @@
     "padding-box",
     "stroke-box",
     "view-box"
+  ],
+  "<corner-shape-value>": [
+    "bevel",
+    "notch",
+    "round",
+    "scoop",
+    "squircle",
+    "straight"
   ],
   "<counter-style-name>": [
     "arabic-indic",
@@ -23010,6 +23055,12 @@
     "smoothingTimeConstant"
   ],
   "Animatable": [
+    "AnimationPlaybackEvent",
+    "AnimationPlaybackEventInit",
+    "AnimationTrigger",
+    "AnimationTriggerOptions",
+    "AnimationTriggerType",
+    "TimelineRangeOffset",
     "animate(keyframes)",
     "animate(keyframes, options)",
     "getAnimations()",
@@ -23053,6 +23104,7 @@
     "reverse()",
     "startTime",
     "timeline",
+    "trigger",
     "updatePlaybackRate(playbackRate)"
   ],
   "Animation/Animation(effect, timeline)": [
@@ -23208,6 +23260,39 @@
   ],
   "AnimationTimeline/play(effect)": [
     "effect"
+  ],
+  "AnimationTrigger": [
+    "AnimationTrigger()",
+    "AnimationTrigger(options)",
+    "constructor()",
+    "constructor(options)",
+    "exitRangeEnd",
+    "exitRangeStart",
+    "rangeEnd",
+    "rangeStart",
+    "timeline",
+    "type"
+  ],
+  "AnimationTrigger/AnimationTrigger(options)": [
+    "options"
+  ],
+  "AnimationTriggerOptions": [
+    "exitRangeEnd",
+    "exitRangeStart",
+    "rangeEnd",
+    "rangeStart",
+    "timeline",
+    "type"
+  ],
+  "AnimationTriggerType": [
+    "\"alternate\"",
+    "\"once\"",
+    "\"repeat\"",
+    "\"state\"",
+    "alternate",
+    "once",
+    "repeat",
+    "state"
   ],
   "AnimationWorkletGlobalScope": [
     "registerAnimator(name, animatorCtor)"
@@ -38150,7 +38235,8 @@
     "id",
     "rangeEnd",
     "rangeStart",
-    "timeline"
+    "timeline",
+    "trigger"
   ],
   "KeyframeEffect": [
     "KeyframeEffect(source)",
@@ -54311,6 +54397,20 @@
     "idle phase",
     "playback rate"
   ],
+  "animation trigger": [
+    "active interval"
+  ],
+  "animation trigger state": [
+    "idle",
+    "inverse",
+    "primary"
+  ],
+  "animation trigger type": [
+    "alternate",
+    "once",
+    "repeat",
+    "state"
+  ],
   "animation-direction": [
     "alternate",
     "alternate-reverse",
@@ -54356,6 +54456,22 @@
     "entry-crossing",
     "exit",
     "exit-crossing"
+  ],
+  "animation-trigger-exit-range-end": [
+    "<timeline-range-name> <length-percentage>?",
+    "auto",
+    "normal"
+  ],
+  "animation-trigger-exit-range-start": [
+    "<timeline-range-name> <length-percentage>?",
+    "auto",
+    "normal"
+  ],
+  "animation-trigger-type": [
+    "alternate",
+    "once",
+    "repeat",
+    "state"
   ],
   "animator definition": [
     "stateful flag"
@@ -56125,10 +56241,6 @@
     "tabindex",
     "xml:space"
   ],
-  "corner-shape": [
-    "angle",
-    "round"
-  ],
   "counter()": [
     "list-item"
   ],
@@ -56745,6 +56857,10 @@
     "safe-area-inset-left",
     "safe-area-inset-right",
     "safe-area-inset-top",
+    "safe-area-max-inset-bottom",
+    "safe-area-max-inset-left",
+    "safe-area-max-inset-right",
+    "safe-area-max-inset-top",
     "viewport-segment-bottom",
     "viewport-segment-height",
     "viewport-segment-left",
