@@ -788,7 +788,6 @@
     "<forgiving-selector-list>",
     "<frequency-percentage>",
     "<frequency>",
-    "<function-dependency-list>",
     "<function-name>",
     "<function-parameter-list>",
     "<function-parameter>",
@@ -1375,6 +1374,8 @@
     "AdAuctionData",
     "AdAuctionDataBuyerConfig",
     "AdAuctionDataConfig",
+    "AdAuctionOneSeller",
+    "AdAuctionPerSellerData",
     "AdRender",
     "Add Cookie",
     "Add Credential",
@@ -2904,6 +2905,7 @@
     "Document language",
     "Document state",
     "Document tree",
+    "Document-Isolation-Policy allows credentials",
     "Document-Policy",
     "Document-Policy-Report-Only",
     "DocumentFragment",
@@ -3719,6 +3721,7 @@
     "GravitySensor",
     "GrayText",
     "GrdfD1",
+    "Grdfs14",
     "Gregorian calendar",
     "Greyscale",
     "Greyscale with alpha",
@@ -8823,6 +8826,7 @@
     "app_id",
     "appearance",
     "appearance of a cross-fade()",
+    "appears in",
     "append",
     "append a request `Origin` header",
     "append an attribute",
@@ -9060,6 +9064,7 @@
     "auction config",
     "auction data buyer config",
     "auction data config",
+    "auction data per seller result",
     "auction nonce",
     "auction report info",
     "audible element",
@@ -9309,6 +9314,7 @@
     "batch attestation",
     "batch or fetch trusted bidding signals",
     "battery status task source",
+    "bcg-coi-key",
     "bday",
     "bdi",
     "bdo",
@@ -10212,6 +10218,7 @@
     "codepoint rects",
     "codepoint rects start index",
     "coercion",
+    "coi-agent-cluster-key",
     "col",
     "colgroup",
     "collapse",
@@ -10804,6 +10811,12 @@
     "corner-top-shape",
     "cornflowerblue",
     "cornsilk",
+    "corp-check-allowed",
+    "corp-check-blocked",
+    "corp-check-blocked-coep",
+    "corp-check-blocked-coep-dip",
+    "corp-check-blocked-dip",
+    "corp-check-result",
     "correctly rounded",
     "correspond to",
     "corresponding animator instance",
@@ -11685,6 +11698,17 @@
     "dimension attribute source",
     "dimgray",
     "dimgrey",
+    "dip-header",
+    "dip-isolate-and-credentialless",
+    "dip-isolate-and-require-corp",
+    "dip-none",
+    "dip-report-only-endpoint",
+    "dip-report-only-header",
+    "dip-report-only-value",
+    "dip-reporting-endpoint",
+    "dip-struct",
+    "dip-struct-value",
+    "dip-value",
     "dir",
     "direct from seller signals",
     "direct from seller signals key",
@@ -12964,7 +12988,6 @@
     "function body",
     "function call",
     "function declaration",
-    "function dependency",
     "function key",
     "function parameter",
     "function scope",
@@ -15982,6 +16005,8 @@
     "obtain their numeric values",
     "obtain verbose debug data body on trigger registration",
     "obtain verbose debug data on trigger registration",
+    "obtain-coi-key",
+    "obtain-dip",
     "obtain-directive",
     "obtaining a window memory attribution token",
     "obtaining a worker memory attribution token",
@@ -16805,6 +16830,8 @@
     "policy request headers",
     "policy response headers",
     "policy value",
+    "policy-container-coi-key",
+    "policy-container-dip",
     "policy-controlled client hints features",
     "policy-controlled feature",
     "policy-token",
@@ -17392,6 +17419,7 @@
     "queue a cross-origin embedder policy inheritance violation",
     "queue a details toggle event task",
     "queue a dialog toggle event task",
+    "queue a document isolation policy CORP violation report",
     "queue a fetch task",
     "queue a global task",
     "queue a global task for GPUDevice",
@@ -17482,8 +17510,10 @@
     "rdfs11",
     "rdfs12",
     "rdfs13",
+    "rdfs14",
     "rdfs2",
     "rdfs3",
+    "rdfs4",
     "rdfs4a",
     "rdfs4b",
     "rdfs5",
@@ -22445,15 +22475,15 @@
     "signal"
   ],
   "AIRewriterFactory": [
-    "available()",
-    "available(options)",
+    "availability()",
+    "availability(options)",
     "create()",
     "create(options)"
   ],
-  "AIRewriterFactory/available()": [
+  "AIRewriterFactory/availability()": [
     "options"
   ],
-  "AIRewriterFactory/available(options)": [
+  "AIRewriterFactory/availability(options)": [
     "options"
   ],
   "AIRewriterFactory/create()": [
@@ -22535,15 +22565,15 @@
     "signal"
   ],
   "AISummarizerFactory": [
-    "available()",
-    "available(options)",
+    "availability()",
+    "availability(options)",
     "create()",
     "create(options)"
   ],
-  "AISummarizerFactory/available()": [
+  "AISummarizerFactory/availability()": [
     "options"
   ],
-  "AISummarizerFactory/available(options)": [
+  "AISummarizerFactory/availability(options)": [
     "options"
   ],
   "AISummarizerFactory/create()": [
@@ -22624,15 +22654,15 @@
     "signal"
   ],
   "AIWriterFactory": [
-    "available()",
-    "available(options)",
+    "availability()",
+    "availability(options)",
     "create()",
     "create(options)"
   ],
-  "AIWriterFactory/available()": [
+  "AIWriterFactory/availability()": [
     "options"
   ],
-  "AIWriterFactory/available(options)": [
+  "AIWriterFactory/availability(options)": [
     "options"
   ],
   "AIWriterFactory/create()": [
@@ -22866,7 +22896,8 @@
   ],
   "AdAuctionData": [
     "request",
-    "requestId"
+    "requestId",
+    "requests"
   ],
   "AdAuctionDataBuyerConfig": [
     "targetSize"
@@ -22875,6 +22906,16 @@
     "coordinatorOrigin",
     "perBuyerConfig",
     "requestSize",
+    "seller",
+    "sellers"
+  ],
+  "AdAuctionOneSeller": [
+    "coordinatorOrigin",
+    "seller"
+  ],
+  "AdAuctionPerSellerData": [
+    "error",
+    "request",
     "seller"
   ],
   "AdRender": [
@@ -41543,6 +41584,7 @@
     "getBattery()",
     "getGamepads()",
     "getInstalledRelatedApps()",
+    "getInterestGroupAdAuctionData()",
     "getInterestGroupAdAuctionData(config)",
     "getInterestGroupAdAuctionData(configIDL)",
     "getUserMedia()",
@@ -41628,6 +41670,9 @@
   ],
   "Navigator/getAutoplayPolicy(type)": [
     "type"
+  ],
+  "Navigator/getInterestGroupAdAuctionData()": [
+    "config"
   ],
   "Navigator/getInterestGroupAdAuctionData(config)": [
     "config"
@@ -54743,6 +54788,11 @@
     "per buyer config",
     "publisher",
     "request size",
+    "seller"
+  ],
+  "auction data per seller result": [
+    "error",
+    "request",
     "seller"
   ],
   "auction report info": [
