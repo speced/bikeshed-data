@@ -891,7 +891,6 @@
     "<mask-reference>",
     "<mask-source>",
     "<masking-mode>",
-    "<masonry-auto-track-list>",
     "<matrix/>",
     "<matrixrow/>",
     "<max/>",
@@ -3726,8 +3725,6 @@
     "Grid Layout Algorithm",
     "Grid Sizing Algorithm",
     "Grid track",
-    "Grid-independent Option",
-    "Grid-integrated Option",
     "Group Note",
     "GroupBy",
     "GroupBy(items, callback, keyCoercion)",
@@ -6557,6 +6554,7 @@
     "Scroll progress timelines",
     "ScrollAxis",
     "ScrollBehavior",
+    "ScrollIntoViewContainer",
     "ScrollIntoViewOptions",
     "ScrollLogicalPosition",
     "ScrollOptions",
@@ -14335,6 +14333,13 @@
     "item data field",
     "item groups",
     "item types",
+    "item-cross",
+    "item-direction",
+    "item-flow",
+    "item-pack",
+    "item-slack",
+    "item-track",
+    "item-wrap",
     "itemref",
     "iterable",
     "iterable declaration",
@@ -15014,21 +15019,10 @@
     "mask-size",
     "mask-type",
     "masked",
-    "masonry",
     "masonry box",
     "masonry container",
     "masonry item",
     "masonry track",
-    "masonry-auto-tracks",
-    "masonry-direction",
-    "masonry-fill",
-    "masonry-flow",
-    "masonry-slack",
-    "masonry-template-areas",
-    "masonry-template-tracks",
-    "masonry-track",
-    "masonry-track-end",
-    "masonry-track-start",
     "mat2x2f",
     "mat2x2h",
     "mat2x3f",
@@ -17062,14 +17056,17 @@
     "primary",
     "primary action",
     "primary affiliation",
+    "primary axis",
     "primary entry page",
     "primary filter primitive tree",
     "primary input source",
     "primary interface",
     "primary orientation",
+    "primary placement axis",
     "primary pointer",
     "primary squeeze action",
     "primary squeeze button",
+    "primary track axis",
     "primary trigger",
     "primary view",
     "primitive appearance",
@@ -47235,8 +47232,13 @@
     "\"instant\"",
     "\"smooth\""
   ],
+  "ScrollIntoViewContainer": [
+    "\"all\"",
+    "\"nearest\""
+  ],
   "ScrollIntoViewOptions": [
     "block",
+    "container",
     "inline"
   ],
   "ScrollLogicalPosition": [
@@ -56642,11 +56644,9 @@
     "inline-block",
     "inline-flex",
     "inline-grid",
-    "inline-masonry",
     "inline-table",
     "layout()",
     "list-item",
-    "masonry",
     "none",
     "ruby",
     "ruby-base",
@@ -58039,11 +58039,8 @@
   ],
   "grid-auto-flow": [
     "column",
-    "column-reverse",
     "dense",
-    "row",
-    "row-reverse",
-    "wrap-reverse"
+    "row"
   ],
   "grid-column-end": [
     "<grid-line>"
@@ -58875,6 +58872,45 @@
     "code point length",
     "length"
   ],
+  "item-cross": [
+    "auto",
+    "normal",
+    "nowrap",
+    "reverse",
+    "wrap",
+    "wrap-reverse"
+  ],
+  "item-direction": [
+    "auto",
+    "column",
+    "column-reverse",
+    "row",
+    "row-reverse"
+  ],
+  "item-pack": [
+    "balance",
+    "collapse",
+    "dense",
+    "normal"
+  ],
+  "item-slack": [
+    "infinite"
+  ],
+  "item-track": [
+    "auto",
+    "column",
+    "column-reverse",
+    "row",
+    "row-reverse"
+  ],
+  "item-wrap": [
+    "auto",
+    "normal",
+    "nowrap",
+    "reverse",
+    "wrap",
+    "wrap-reverse"
+  ],
   "iteration": [
     "break",
     "continue",
@@ -59516,21 +59552,6 @@
   ],
   "masonry": [
     "tie threshold"
-  ],
-  "masonry-direction": [
-    "column",
-    "column-reverse",
-    "row",
-    "row-reverse"
-  ],
-  "masonry-fill": [
-    "normal",
-    "reverse",
-    "tie-end",
-    "tie-start"
-  ],
-  "masonry-slack": [
-    "infinite"
   ],
   "match an attribution source against a filter config": [
     "isNegated"
@@ -62493,7 +62514,6 @@
     "compound_statement",
     "compute_attr",
     "const_assert",
-    "const_assert_statement",
     "const_attr",
     "continue_statement",
     "continuing_compound_statement",
