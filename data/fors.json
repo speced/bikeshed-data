@@ -4655,7 +4655,6 @@
     "MLConv2dSupportLimits",
     "MLConvTranspose2dFilterOperandLayout",
     "MLConvTranspose2dOptions",
-    "MLDeviceType",
     "MLEluOptions",
     "MLGatherOptions",
     "MLGatherSupportLimits",
@@ -6930,8 +6929,8 @@
     "Steps for when a user changes payment method",
     "Steps to check if a payment can be made",
     "Steps to respond to a payment request",
-    "Steps to silently determine if a credential is SPC-enabled",
     "Steps to silently determine if a credential is available for the current device",
+    "Steps to silently determine if an SPC Credential is third-party enabled",
     "Steps to validate payment method data",
     "StereoPannerNode",
     "StereoPannerOptions",
@@ -7219,6 +7218,7 @@
     "The undo command",
     "The unlink command",
     "The useCSS command",
+    "Third-party enabled SPC Credential",
     "ThisBigIntValue",
     "ThisBigIntValue(value)",
     "ThisBooleanValue",
@@ -7490,6 +7490,7 @@
     "USB",
     "USB blocklist",
     "USB device",
+    "USB task source",
     "USBAlternateInterface",
     "USBBlocklistEntry",
     "USBConfiguration",
@@ -17633,6 +17634,7 @@
     "record timing info for promise resolver",
     "record timing info for timer handler",
     "record timing info for user callback",
+    "record touches",
     "record type",
     "record(s) of license destruction",
     "record-namespace-loop",
@@ -18784,7 +18786,10 @@
     "server auction",
     "server auction browser signals",
     "server auction debug report key",
+    "server auction ghost winner",
+    "server auction ghost winner bid info",
     "server auction interest group",
+    "server auction join candidate",
     "server auction previous win",
     "server auction private aggregation contribution key",
     "server auction reporting info",
@@ -34756,9 +34761,11 @@
     "[[exposed]]",
     "[[hand]]",
     "[[hapticActuators]]",
+    "[[nextTouchId]]",
     "[[pose]]",
     "[[timestamp]]",
     "[[touchEvents]]",
+    "[[touches]]",
     "[[vibrationActuator]]",
     "axes",
     "buttons",
@@ -34771,6 +34778,7 @@
     "pose",
     "timestamp",
     "touchEvents",
+    "touches",
     "vibrationActuator"
   ],
   "GamepadButton": [
@@ -38683,7 +38691,6 @@
   ],
   "MLContext": [
     "[[contextType]]",
-    "[[deviceType]]",
     "[[lost]]",
     "[[powerPreference]]",
     "[[timeline]]",
@@ -38722,7 +38729,6 @@
     "message"
   ],
   "MLContextOptions": [
-    "deviceType",
     "powerPreference"
   ],
   "MLConv2dFilterOperandLayout": [
@@ -38761,14 +38767,6 @@
     "outputSizes",
     "padding",
     "strides"
-  ],
-  "MLDeviceType": [
-    "\"cpu\"",
-    "\"gpu\"",
-    "\"npu\"",
-    "cpu",
-    "gpu",
-    "npu"
   ],
   "MLEluOptions": [
     "alpha"
@@ -39425,7 +39423,9 @@
   ],
   "MLInterpolationMode": [
     "\"linear\"",
-    "\"nearest-neighbor\""
+    "\"nearest-neighbor\"",
+    "linear",
+    "nearest-neighbor"
   ],
   "MLLayerNormalizationOptions": [
     "axes",
@@ -61756,6 +61756,21 @@
     "from seller",
     "is debug win"
   ],
+  "server auction ghost winner": [
+    "candidate",
+    "ghost winner bid info",
+    "interest group name",
+    "interest group owner"
+  ],
+  "server auction ghost winner bid info": [
+    "ad components",
+    "ad metadata",
+    "ad render url",
+    "buyer and seller reporting id",
+    "buyer reporting id",
+    "modified bid",
+    "selected buyer and seller reporting id"
+  ],
   "server auction interest group": [
     "ads",
     "bidding signals keys",
@@ -61764,6 +61779,11 @@
     "name",
     "priority",
     "user bidding signals"
+  ],
+  "server auction join candidate": [
+    "ad component render url hashes",
+    "ad render url hash",
+    "reporting id hash"
   ],
   "server auction previous win": [
     "ad render ID",
@@ -61794,6 +61814,7 @@
     "component seller reporting",
     "component win debugging only reports",
     "component win private aggregation contributions",
+    "ghost winner",
     "interest group name",
     "interest group owner",
     "score",
@@ -61803,7 +61824,8 @@
     "server filtered private aggregation reserved contributions",
     "top level seller",
     "top level seller reporting",
-    "update groups"
+    "update groups",
+    "winner join candidate"
   ],
   "service worker": [
     "Functional events",
