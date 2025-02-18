@@ -664,8 +664,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declaration
 1
 1
 -
-CreateGlobalFunctionBinding(N, V, D)
-CreateGlobalFunctionBinding(N, V, D)
+CreateGlobalFunctionBinding
+CreateGlobalFunctionBinding
 abstract-op
 ecmascript
 ecmascript
@@ -674,10 +674,20 @@ current
 https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding
 1
 1
-Global Environment Records
 -
-CreateGlobalVarBinding(N, D)
-CreateGlobalVarBinding(N, D)
+CreateGlobalFunctionBinding(envRec, N, V, D)
+CreateGlobalFunctionBinding(envRec, N, V, D)
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding
+1
+1
+-
+CreateGlobalVarBinding
+CreateGlobalVarBinding
 abstract-op
 ecmascript
 ecmascript
@@ -686,7 +696,17 @@ current
 https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding
 1
 1
-Global Environment Records
+-
+CreateGlobalVarBinding(envRec, N, D)
+CreateGlobalVarBinding(envRec, N, D)
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding
+1
+1
 -
 CreateHTML
 CreateHTML
@@ -768,8 +788,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Object Environment Records
 -
-CreateImportBinding(N, M, N2)
-CreateImportBinding(N, M, N2)
+CreateImportBinding
+CreateImportBinding
 abstract-op
 ecmascript
 ecmascript
@@ -778,7 +798,17 @@ current
 https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createimportbinding
 1
 1
-Module Environment Records
+-
+CreateImportBinding(envRec, N, M, N2)
+CreateImportBinding(envRec, N, M, N2)
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createimportbinding
+1
+1
 -
 CreateIntrinsics
 CreateIntrinsics
