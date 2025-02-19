@@ -1313,6 +1313,9 @@
   "#sec-countleftcapturingparenswithin": [
     "/text-processing#sec-countleftcapturingparenswithin"
   ],
+  "#sec-create-default-export-synthetic-module": [
+    "/ecmascript-language-scripts-and-modules#sec-create-default-export-synthetic-module"
+  ],
   "#sec-createarrayfromlist": [
     "/abstract-operations#sec-createarrayfromlist"
   ],
@@ -4076,6 +4079,9 @@
   "#sec-parameter-lists-static-semantics-early-errors": [
     "/ecmascript-language-functions-and-classes#sec-parameter-lists-static-semantics-early-errors"
   ],
+  "#sec-parse-json-module": [
+    "/ecmascript-language-scripts-and-modules#sec-parse-json-module"
+  ],
   "#sec-parse-script": [
     "/ecmascript-language-scripts-and-modules#sec-parse-script"
   ],
@@ -5186,6 +5192,9 @@
   "#sec-setintegritylevel": [
     "/abstract-operations#sec-setintegritylevel"
   ],
+  "#sec-setsyntheticmoduleexport": [
+    "/ecmascript-language-scripts-and-modules#sec-setsyntheticmoduleexport"
+  ],
   "#sec-settypedarrayfromarraylike": [
     "/indexed-collections#sec-settypedarrayfromarraylike"
   ],
@@ -5236,6 +5245,24 @@
   ],
   "#sec-signed-right-shift-operator-runtime-semantics-evaluation": [
     "/ecmascript-language-expressions#sec-signed-right-shift-operator-runtime-semantics-evaluation"
+  ],
+  "#sec-smr-Evaluate": [
+    "/ecmascript-language-scripts-and-modules#sec-smr-Evaluate"
+  ],
+  "#sec-smr-Link": [
+    "/ecmascript-language-scripts-and-modules#sec-smr-Link"
+  ],
+  "#sec-smr-LoadRequestedModules": [
+    "/ecmascript-language-scripts-and-modules#sec-smr-LoadRequestedModules"
+  ],
+  "#sec-smr-getexportednames": [
+    "/ecmascript-language-scripts-and-modules#sec-smr-getexportednames"
+  ],
+  "#sec-smr-module-record-methods": [
+    "/ecmascript-language-scripts-and-modules#sec-smr-module-record-methods"
+  ],
+  "#sec-smr-resolveexport": [
+    "/ecmascript-language-scripts-and-modules#sec-smr-resolveexport"
   ],
   "#sec-sortindexedproperties": [
     "/indexed-collections#sec-sortindexedproperties"
@@ -5782,6 +5809,9 @@
   ],
   "#sec-syntax-directed-operations-scope-analysis": [
     "/syntax-directed-operations#sec-syntax-directed-operations-scope-analysis"
+  ],
+  "#sec-synthetic-module-records": [
+    "/ecmascript-language-scripts-and-modules#sec-synthetic-module-records"
   ],
   "#sec-systemtimezoneidentifier": [
     "/numbers-and-dates#sec-systemtimezoneidentifier"
@@ -11355,7 +11385,7 @@
   },
   "/ecmascript-language-scripts-and-modules#sec-AllImportAttributesSupported": {
     "current": {
-      "number": "16.2.1.11",
+      "number": "16.2.1.12",
       "spec": "ECMAScript",
       "text": "AllImportAttributesSupported ( attributes )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-AllImportAttributesSupported"
@@ -11371,7 +11401,7 @@
   },
   "/ecmascript-language-scripts-and-modules#sec-FinishLoadingImportedModule": {
     "current": {
-      "number": "16.2.1.10",
+      "number": "16.2.1.11",
       "spec": "ECMAScript",
       "text": "FinishLoadingImportedModule ( referrer, moduleRequest, payload, result )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-FinishLoadingImportedModule"
@@ -11379,7 +11409,7 @@
   },
   "/ecmascript-language-scripts-and-modules#sec-GetImportedModule": {
     "current": {
-      "number": "16.2.1.8",
+      "number": "16.2.1.9",
       "spec": "ECMAScript",
       "text": "GetImportedModule ( referrer, request )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-GetImportedModule"
@@ -11387,7 +11417,7 @@
   },
   "/ecmascript-language-scripts-and-modules#sec-HostLoadImportedModule": {
     "current": {
-      "number": "16.2.1.9",
+      "number": "16.2.1.10",
       "spec": "ECMAScript",
       "text": "HostLoadImportedModule ( referrer, moduleRequest, hostDefined, payload )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-HostLoadImportedModule"
@@ -11447,6 +11477,14 @@
       "spec": "ECMAScript",
       "text": "AsyncModuleExecutionRejected ( module, error )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-async-module-execution-rejected"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-create-default-export-synthetic-module": {
+    "current": {
+      "number": "16.2.1.8.1",
+      "spec": "ECMAScript",
+      "text": "CreateDefaultExportSyntheticModule ( defaultExport )",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-create-default-export-synthetic-module"
     }
   },
   "/ecmascript-language-scripts-and-modules#sec-cyclic-module-records": {
@@ -11523,7 +11561,7 @@
   },
   "/ecmascript-language-scripts-and-modules#sec-getmodulenamespace": {
     "current": {
-      "number": "16.2.1.12",
+      "number": "16.2.1.13",
       "spec": "ECMAScript",
       "text": "GetModuleNamespace ( module )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-getmodulenamespace"
@@ -11539,7 +11577,7 @@
   },
   "/ecmascript-language-scripts-and-modules#sec-hostgetsupportedimportattributes": {
     "current": {
-      "number": "16.2.1.11.1",
+      "number": "16.2.1.12.1",
       "spec": "ECMAScript",
       "text": "HostGetSupportedImportAttributes ( )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-hostgetsupportedimportattributes"
@@ -11587,7 +11625,7 @@
   },
   "/ecmascript-language-scripts-and-modules#sec-module-semantics-runtime-semantics-evaluation": {
     "current": {
-      "number": "16.2.1.13",
+      "number": "16.2.1.14",
       "spec": "ECMAScript",
       "text": "Runtime Semantics: Evaluation",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-module-semantics-runtime-semantics-evaluation"
@@ -11631,6 +11669,14 @@
       "spec": "ECMAScript",
       "text": "Modules",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-modules"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-parse-json-module": {
+    "current": {
+      "number": "16.2.1.8.2",
+      "spec": "ECMAScript",
+      "text": "ParseJSONModule ( source )",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-parse-json-module"
     }
   },
   "/ecmascript-language-scripts-and-modules#sec-parse-script": {
@@ -11703,6 +11749,62 @@
       "spec": "ECMAScript",
       "text": "Static Semantics: Early Errors",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-scripts-static-semantics-early-errors"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-setsyntheticmoduleexport": {
+    "current": {
+      "number": "16.2.1.8.3",
+      "spec": "ECMAScript",
+      "text": "SetSyntheticModuleExport ( module, exportName, exportValue )",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-setsyntheticmoduleexport"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-smr-Evaluate": {
+    "current": {
+      "number": "16.2.1.8.4.5",
+      "spec": "ECMAScript",
+      "text": "Evaluate ( )",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-smr-Evaluate"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-smr-Link": {
+    "current": {
+      "number": "16.2.1.8.4.4",
+      "spec": "ECMAScript",
+      "text": "Link ( )",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-smr-Link"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-smr-LoadRequestedModules": {
+    "current": {
+      "number": "16.2.1.8.4.1",
+      "spec": "ECMAScript",
+      "text": "LoadRequestedModules ( )",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-smr-LoadRequestedModules"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-smr-getexportednames": {
+    "current": {
+      "number": "16.2.1.8.4.2",
+      "spec": "ECMAScript",
+      "text": "GetExportedNames ( )",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-smr-getexportednames"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-smr-module-record-methods": {
+    "current": {
+      "number": "16.2.1.8.4",
+      "spec": "ECMAScript",
+      "text": "Implementation of Module Record Abstract Methods",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-smr-module-record-methods"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-smr-resolveexport": {
+    "current": {
+      "number": "16.2.1.8.4.3",
+      "spec": "ECMAScript",
+      "text": "ResolveExport ( exportName )",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-smr-resolveexport"
     }
   },
   "/ecmascript-language-scripts-and-modules#sec-source-text-module-record-execute-module": {
@@ -11791,6 +11893,14 @@
       "spec": "ECMAScript",
       "text": "Static Semantics: ReferencedBindings",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-static-semantics-referencedbindings"
+    }
+  },
+  "/ecmascript-language-scripts-and-modules#sec-synthetic-module-records": {
+    "current": {
+      "number": "16.2.1.8",
+      "spec": "ECMAScript",
+      "text": "Synthetic Module Records",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-synthetic-module-records"
     }
   },
   "/ecmascript-language-scripts-and-modules#sec-withclausetoattributes": {
