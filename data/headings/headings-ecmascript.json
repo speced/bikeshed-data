@@ -1436,6 +1436,9 @@
   "#sec-dataview.prototype.getbiguint64": [
     "/structured-data#sec-dataview.prototype.getbiguint64"
   ],
+  "#sec-dataview.prototype.getfloat16": [
+    "/structured-data#sec-dataview.prototype.getfloat16"
+  ],
   "#sec-dataview.prototype.getfloat32": [
     "/structured-data#sec-dataview.prototype.getfloat32"
   ],
@@ -1465,6 +1468,9 @@
   ],
   "#sec-dataview.prototype.setbiguint64": [
     "/structured-data#sec-dataview.prototype.setbiguint64"
+  ],
+  "#sec-dataview.prototype.setfloat16": [
+    "/structured-data#sec-dataview.prototype.setfloat16"
   ],
   "#sec-dataview.prototype.setfloat32": [
     "/structured-data#sec-dataview.prototype.setfloat32"
@@ -2029,6 +2035,9 @@
   ],
   "#sec-flattenintoarray": [
     "/indexed-collections#sec-flattenintoarray"
+  ],
+  "#sec-float16array": [
+    "/global-object#sec-float16array"
   ],
   "#sec-float32array": [
     "/global-object#sec-float32array"
@@ -3238,6 +3247,9 @@
   ],
   "#sec-math.expm1": [
     "/numbers-and-dates#sec-math.expm1"
+  ],
+  "#sec-math.f16round": [
+    "/numbers-and-dates#sec-math.f16round"
   ],
   "#sec-math.floor": [
     "/numbers-and-dates#sec-math.floor"
@@ -14804,7 +14816,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-function": {
     "current": {
-      "number": "19.3.15",
+      "number": "19.3.16",
       "spec": "ECMAScript",
       "text": "Function ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-function"
@@ -14812,7 +14824,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-iterator": {
     "current": {
-      "number": "19.3.19",
+      "number": "19.3.20",
       "spec": "ECMAScript",
       "text": "Iterator ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-iterator"
@@ -14820,7 +14832,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-number": {
     "current": {
-      "number": "19.3.21",
+      "number": "19.3.22",
       "spec": "ECMAScript",
       "text": "Number ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-number"
@@ -14828,7 +14840,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-object": {
     "current": {
-      "number": "19.3.22",
+      "number": "19.3.23",
       "spec": "ECMAScript",
       "text": "Object ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-object"
@@ -14836,7 +14848,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-promise": {
     "current": {
-      "number": "19.3.23",
+      "number": "19.3.24",
       "spec": "ECMAScript",
       "text": "Promise ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-promise"
@@ -14844,7 +14856,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-proxy": {
     "current": {
-      "number": "19.3.24",
+      "number": "19.3.25",
       "spec": "ECMAScript",
       "text": "Proxy ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-proxy"
@@ -14852,7 +14864,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-rangeerror": {
     "current": {
-      "number": "19.3.25",
+      "number": "19.3.26",
       "spec": "ECMAScript",
       "text": "RangeError ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-rangeerror"
@@ -14860,7 +14872,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-referenceerror": {
     "current": {
-      "number": "19.3.26",
+      "number": "19.3.27",
       "spec": "ECMAScript",
       "text": "ReferenceError ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-referenceerror"
@@ -14868,7 +14880,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-regexp": {
     "current": {
-      "number": "19.3.27",
+      "number": "19.3.28",
       "spec": "ECMAScript",
       "text": "RegExp ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-regexp"
@@ -14876,7 +14888,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-sharedarraybuffer": {
     "current": {
-      "number": "19.3.29",
+      "number": "19.3.30",
       "spec": "ECMAScript",
       "text": "SharedArrayBuffer ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-sharedarraybuffer"
@@ -14884,7 +14896,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-string": {
     "current": {
-      "number": "19.3.30",
+      "number": "19.3.31",
       "spec": "ECMAScript",
       "text": "String ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-string"
@@ -14892,7 +14904,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-symbol": {
     "current": {
-      "number": "19.3.31",
+      "number": "19.3.32",
       "spec": "ECMAScript",
       "text": "Symbol ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-symbol"
@@ -14900,7 +14912,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-syntaxerror": {
     "current": {
-      "number": "19.3.32",
+      "number": "19.3.33",
       "spec": "ECMAScript",
       "text": "SyntaxError ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-syntaxerror"
@@ -14908,7 +14920,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-typeerror": {
     "current": {
-      "number": "19.3.33",
+      "number": "19.3.34",
       "spec": "ECMAScript",
       "text": "TypeError ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-typeerror"
@@ -14916,7 +14928,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-urierror": {
     "current": {
-      "number": "19.3.38",
+      "number": "19.3.39",
       "spec": "ECMAScript",
       "text": "URIError ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-urierror"
@@ -14924,7 +14936,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-weakmap": {
     "current": {
-      "number": "19.3.39",
+      "number": "19.3.40",
       "spec": "ECMAScript",
       "text": "WeakMap ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-weakmap"
@@ -14932,7 +14944,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-weakref": {
     "current": {
-      "number": "19.3.40",
+      "number": "19.3.41",
       "spec": "ECMAScript",
       "text": "WeakRef ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-weakref"
@@ -14940,7 +14952,7 @@
   },
   "/global-object#sec-constructor-properties-of-the-global-object-weakset": {
     "current": {
-      "number": "19.3.41",
+      "number": "19.3.42",
       "spec": "ECMAScript",
       "text": "WeakSet ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-weakset"
@@ -15010,9 +15022,17 @@
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-evaldeclarationinstantiation"
     }
   },
-  "/global-object#sec-float32array": {
+  "/global-object#sec-float16array": {
     "current": {
       "number": "19.3.13",
+      "spec": "ECMAScript",
+      "text": "Float16Array ( . . . )",
+      "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-float16array"
+    }
+  },
+  "/global-object#sec-float32array": {
+    "current": {
+      "number": "19.3.14",
       "spec": "ECMAScript",
       "text": "Float32Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-float32array"
@@ -15020,7 +15040,7 @@
   },
   "/global-object#sec-float64array": {
     "current": {
-      "number": "19.3.14",
+      "number": "19.3.15",
       "spec": "ECMAScript",
       "text": "Float64Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-float64array"
@@ -15060,7 +15080,7 @@
   },
   "/global-object#sec-int16array": {
     "current": {
-      "number": "19.3.17",
+      "number": "19.3.18",
       "spec": "ECMAScript",
       "text": "Int16Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-int16array"
@@ -15068,7 +15088,7 @@
   },
   "/global-object#sec-int32array": {
     "current": {
-      "number": "19.3.18",
+      "number": "19.3.19",
       "spec": "ECMAScript",
       "text": "Int32Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-int32array"
@@ -15076,7 +15096,7 @@
   },
   "/global-object#sec-int8array": {
     "current": {
-      "number": "19.3.16",
+      "number": "19.3.17",
       "spec": "ECMAScript",
       "text": "Int8Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-int8array"
@@ -15108,7 +15128,7 @@
   },
   "/global-object#sec-map": {
     "current": {
-      "number": "19.3.20",
+      "number": "19.3.21",
       "spec": "ECMAScript",
       "text": "Map ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-map"
@@ -15172,7 +15192,7 @@
   },
   "/global-object#sec-set": {
     "current": {
-      "number": "19.3.28",
+      "number": "19.3.29",
       "spec": "ECMAScript",
       "text": "Set ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-set"
@@ -15180,7 +15200,7 @@
   },
   "/global-object#sec-uint16array": {
     "current": {
-      "number": "19.3.36",
+      "number": "19.3.37",
       "spec": "ECMAScript",
       "text": "Uint16Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint16array"
@@ -15188,7 +15208,7 @@
   },
   "/global-object#sec-uint32array": {
     "current": {
-      "number": "19.3.37",
+      "number": "19.3.38",
       "spec": "ECMAScript",
       "text": "Uint32Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint32array"
@@ -15196,7 +15216,7 @@
   },
   "/global-object#sec-uint8array": {
     "current": {
-      "number": "19.3.34",
+      "number": "19.3.35",
       "spec": "ECMAScript",
       "text": "Uint8Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint8array"
@@ -15204,7 +15224,7 @@
   },
   "/global-object#sec-uint8clampedarray": {
     "current": {
-      "number": "19.3.35",
+      "number": "19.3.36",
       "spec": "ECMAScript",
       "text": "Uint8ClampedArray ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint8clampedarray"
@@ -18570,6 +18590,14 @@
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.expm1"
     }
   },
+  "/numbers-and-dates#sec-math.f16round": {
+    "current": {
+      "number": "21.3.2.18",
+      "spec": "ECMAScript",
+      "text": "Math.f16round ( x )",
+      "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.f16round"
+    }
+  },
   "/numbers-and-dates#sec-math.floor": {
     "current": {
       "number": "21.3.2.16",
@@ -18588,7 +18616,7 @@
   },
   "/numbers-and-dates#sec-math.hypot": {
     "current": {
-      "number": "21.3.2.18",
+      "number": "21.3.2.19",
       "spec": "ECMAScript",
       "text": "Math.hypot ( ...args )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.hypot"
@@ -18596,7 +18624,7 @@
   },
   "/numbers-and-dates#sec-math.imul": {
     "current": {
-      "number": "21.3.2.19",
+      "number": "21.3.2.20",
       "spec": "ECMAScript",
       "text": "Math.imul ( x, y )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.imul"
@@ -18620,7 +18648,7 @@
   },
   "/numbers-and-dates#sec-math.log": {
     "current": {
-      "number": "21.3.2.20",
+      "number": "21.3.2.21",
       "spec": "ECMAScript",
       "text": "Math.log ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log"
@@ -18628,7 +18656,7 @@
   },
   "/numbers-and-dates#sec-math.log10": {
     "current": {
-      "number": "21.3.2.22",
+      "number": "21.3.2.23",
       "spec": "ECMAScript",
       "text": "Math.log10 ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log10"
@@ -18644,7 +18672,7 @@
   },
   "/numbers-and-dates#sec-math.log1p": {
     "current": {
-      "number": "21.3.2.21",
+      "number": "21.3.2.22",
       "spec": "ECMAScript",
       "text": "Math.log1p ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log1p"
@@ -18652,7 +18680,7 @@
   },
   "/numbers-and-dates#sec-math.log2": {
     "current": {
-      "number": "21.3.2.23",
+      "number": "21.3.2.24",
       "spec": "ECMAScript",
       "text": "Math.log2 ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log2"
@@ -18668,7 +18696,7 @@
   },
   "/numbers-and-dates#sec-math.max": {
     "current": {
-      "number": "21.3.2.24",
+      "number": "21.3.2.25",
       "spec": "ECMAScript",
       "text": "Math.max ( ...args )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.max"
@@ -18676,7 +18704,7 @@
   },
   "/numbers-and-dates#sec-math.min": {
     "current": {
-      "number": "21.3.2.25",
+      "number": "21.3.2.26",
       "spec": "ECMAScript",
       "text": "Math.min ( ...args )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.min"
@@ -18692,7 +18720,7 @@
   },
   "/numbers-and-dates#sec-math.pow": {
     "current": {
-      "number": "21.3.2.26",
+      "number": "21.3.2.27",
       "spec": "ECMAScript",
       "text": "Math.pow ( base, exponent )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.pow"
@@ -18700,7 +18728,7 @@
   },
   "/numbers-and-dates#sec-math.random": {
     "current": {
-      "number": "21.3.2.27",
+      "number": "21.3.2.28",
       "spec": "ECMAScript",
       "text": "Math.random ( )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.random"
@@ -18708,7 +18736,7 @@
   },
   "/numbers-and-dates#sec-math.round": {
     "current": {
-      "number": "21.3.2.28",
+      "number": "21.3.2.29",
       "spec": "ECMAScript",
       "text": "Math.round ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.round"
@@ -18716,7 +18744,7 @@
   },
   "/numbers-and-dates#sec-math.sign": {
     "current": {
-      "number": "21.3.2.29",
+      "number": "21.3.2.30",
       "spec": "ECMAScript",
       "text": "Math.sign ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sign"
@@ -18724,7 +18752,7 @@
   },
   "/numbers-and-dates#sec-math.sin": {
     "current": {
-      "number": "21.3.2.30",
+      "number": "21.3.2.31",
       "spec": "ECMAScript",
       "text": "Math.sin ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sin"
@@ -18732,7 +18760,7 @@
   },
   "/numbers-and-dates#sec-math.sinh": {
     "current": {
-      "number": "21.3.2.31",
+      "number": "21.3.2.32",
       "spec": "ECMAScript",
       "text": "Math.sinh ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sinh"
@@ -18740,7 +18768,7 @@
   },
   "/numbers-and-dates#sec-math.sqrt": {
     "current": {
-      "number": "21.3.2.32",
+      "number": "21.3.2.33",
       "spec": "ECMAScript",
       "text": "Math.sqrt ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sqrt"
@@ -18764,7 +18792,7 @@
   },
   "/numbers-and-dates#sec-math.tan": {
     "current": {
-      "number": "21.3.2.33",
+      "number": "21.3.2.34",
       "spec": "ECMAScript",
       "text": "Math.tan ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.tan"
@@ -18772,7 +18800,7 @@
   },
   "/numbers-and-dates#sec-math.tanh": {
     "current": {
-      "number": "21.3.2.34",
+      "number": "21.3.2.35",
       "spec": "ECMAScript",
       "text": "Math.tanh ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.tanh"
@@ -18780,7 +18808,7 @@
   },
   "/numbers-and-dates#sec-math.trunc": {
     "current": {
-      "number": "21.3.2.35",
+      "number": "21.3.2.36",
       "spec": "ECMAScript",
       "text": "Math.trunc ( x )",
       "url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.trunc"
@@ -21276,7 +21304,7 @@
   },
   "/structured-data#sec-dataview.prototype-%25symbol.tostringtag%25": {
     "current": {
-      "number": "25.3.4.25",
+      "number": "25.3.4.27",
       "spec": "ECMAScript",
       "text": "DataView.prototype [ %Symbol.toStringTag% ]",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype-%25symbol.tostringtag%25"
@@ -21306,9 +21334,17 @@
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getbiguint64"
     }
   },
-  "/structured-data#sec-dataview.prototype.getfloat32": {
+  "/structured-data#sec-dataview.prototype.getfloat16": {
     "current": {
       "number": "25.3.4.7",
+      "spec": "ECMAScript",
+      "text": "DataView.prototype.getFloat16 ( byteOffset [ , littleEndian ] )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getfloat16"
+    }
+  },
+  "/structured-data#sec-dataview.prototype.getfloat32": {
+    "current": {
+      "number": "25.3.4.8",
       "spec": "ECMAScript",
       "text": "DataView.prototype.getFloat32 ( byteOffset [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getfloat32"
@@ -21316,7 +21352,7 @@
   },
   "/structured-data#sec-dataview.prototype.getfloat64": {
     "current": {
-      "number": "25.3.4.8",
+      "number": "25.3.4.9",
       "spec": "ECMAScript",
       "text": "DataView.prototype.getFloat64 ( byteOffset [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getfloat64"
@@ -21324,7 +21360,7 @@
   },
   "/structured-data#sec-dataview.prototype.getint16": {
     "current": {
-      "number": "25.3.4.10",
+      "number": "25.3.4.11",
       "spec": "ECMAScript",
       "text": "DataView.prototype.getInt16 ( byteOffset [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getint16"
@@ -21332,7 +21368,7 @@
   },
   "/structured-data#sec-dataview.prototype.getint32": {
     "current": {
-      "number": "25.3.4.11",
+      "number": "25.3.4.12",
       "spec": "ECMAScript",
       "text": "DataView.prototype.getInt32 ( byteOffset [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getint32"
@@ -21340,7 +21376,7 @@
   },
   "/structured-data#sec-dataview.prototype.getint8": {
     "current": {
-      "number": "25.3.4.9",
+      "number": "25.3.4.10",
       "spec": "ECMAScript",
       "text": "DataView.prototype.getInt8 ( byteOffset )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getint8"
@@ -21348,7 +21384,7 @@
   },
   "/structured-data#sec-dataview.prototype.getuint16": {
     "current": {
-      "number": "25.3.4.13",
+      "number": "25.3.4.14",
       "spec": "ECMAScript",
       "text": "DataView.prototype.getUint16 ( byteOffset [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getuint16"
@@ -21356,7 +21392,7 @@
   },
   "/structured-data#sec-dataview.prototype.getuint32": {
     "current": {
-      "number": "25.3.4.14",
+      "number": "25.3.4.15",
       "spec": "ECMAScript",
       "text": "DataView.prototype.getUint32 ( byteOffset [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getuint32"
@@ -21364,7 +21400,7 @@
   },
   "/structured-data#sec-dataview.prototype.getuint8": {
     "current": {
-      "number": "25.3.4.12",
+      "number": "25.3.4.13",
       "spec": "ECMAScript",
       "text": "DataView.prototype.getUint8 ( byteOffset )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getuint8"
@@ -21372,7 +21408,7 @@
   },
   "/structured-data#sec-dataview.prototype.setbigint64": {
     "current": {
-      "number": "25.3.4.15",
+      "number": "25.3.4.16",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setBigInt64 ( byteOffset, value [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setbigint64"
@@ -21380,15 +21416,23 @@
   },
   "/structured-data#sec-dataview.prototype.setbiguint64": {
     "current": {
-      "number": "25.3.4.16",
+      "number": "25.3.4.17",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setBigUint64 ( byteOffset, value [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setbiguint64"
     }
   },
+  "/structured-data#sec-dataview.prototype.setfloat16": {
+    "current": {
+      "number": "25.3.4.18",
+      "spec": "ECMAScript",
+      "text": "DataView.prototype.setFloat16 ( byteOffset, value [ , littleEndian ] )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setfloat16"
+    }
+  },
   "/structured-data#sec-dataview.prototype.setfloat32": {
     "current": {
-      "number": "25.3.4.17",
+      "number": "25.3.4.19",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setFloat32 ( byteOffset, value [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setfloat32"
@@ -21396,7 +21440,7 @@
   },
   "/structured-data#sec-dataview.prototype.setfloat64": {
     "current": {
-      "number": "25.3.4.18",
+      "number": "25.3.4.20",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setFloat64 ( byteOffset, value [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setfloat64"
@@ -21404,7 +21448,7 @@
   },
   "/structured-data#sec-dataview.prototype.setint16": {
     "current": {
-      "number": "25.3.4.20",
+      "number": "25.3.4.22",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setInt16 ( byteOffset, value [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setint16"
@@ -21412,7 +21456,7 @@
   },
   "/structured-data#sec-dataview.prototype.setint32": {
     "current": {
-      "number": "25.3.4.21",
+      "number": "25.3.4.23",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setInt32 ( byteOffset, value [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setint32"
@@ -21420,7 +21464,7 @@
   },
   "/structured-data#sec-dataview.prototype.setint8": {
     "current": {
-      "number": "25.3.4.19",
+      "number": "25.3.4.21",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setInt8 ( byteOffset, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setint8"
@@ -21428,7 +21472,7 @@
   },
   "/structured-data#sec-dataview.prototype.setuint16": {
     "current": {
-      "number": "25.3.4.23",
+      "number": "25.3.4.25",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setUint16 ( byteOffset, value [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setuint16"
@@ -21436,7 +21480,7 @@
   },
   "/structured-data#sec-dataview.prototype.setuint32": {
     "current": {
-      "number": "25.3.4.24",
+      "number": "25.3.4.26",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setUint32 ( byteOffset, value [ , littleEndian ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setuint32"
@@ -21444,7 +21488,7 @@
   },
   "/structured-data#sec-dataview.prototype.setuint8": {
     "current": {
-      "number": "25.3.4.22",
+      "number": "25.3.4.24",
       "spec": "ECMAScript",
       "text": "DataView.prototype.setUint8 ( byteOffset, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setuint8"
