@@ -1853,6 +1853,9 @@
   "#sec-encode": [
     "/global-object#sec-encode"
   ],
+  "#sec-encodeforregexpescape": [
+    "/text-processing#sec-encodeforregexpescape"
+  ],
   "#sec-encodeuri-uri": [
     "/global-object#sec-encodeuri-uri"
   ],
@@ -2545,9 +2548,6 @@
   ],
   "#sec-hasrestrictedglobalproperty": [
     "/executable-code-and-execution-contexts#sec-hasrestrictedglobalproperty"
-  ],
-  "#sec-hasvardeclaration": [
-    "/executable-code-and-execution-contexts#sec-hasvardeclaration"
   ],
   "#sec-host-cleanup-finalization-registry": [
     "/executable-code-and-execution-contexts#sec-host-cleanup-finalization-registry"
@@ -4729,6 +4729,9 @@
   ],
   "#sec-regexp-string-iterator-objects": [
     "/text-processing#sec-regexp-string-iterator-objects"
+  ],
+  "#sec-regexp.escape": [
+    "/text-processing#sec-regexp.escape"
   ],
   "#sec-regexp.prototype": [
     "/text-processing#sec-regexp.prototype"
@@ -12761,7 +12764,7 @@
   },
   "/executable-code-and-execution-contexts#sec-candeclareglobalfunction": {
     "current": {
-      "number": "9.1.1.4.16",
+      "number": "9.1.1.4.15",
       "spec": "ECMAScript",
       "text": "CanDeclareGlobalFunction ( envRec, N )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalfunction"
@@ -12769,7 +12772,7 @@
   },
   "/executable-code-and-execution-contexts#sec-candeclareglobalvar": {
     "current": {
-      "number": "9.1.1.4.15",
+      "number": "9.1.1.4.14",
       "spec": "ECMAScript",
       "text": "CanDeclareGlobalVar ( envRec, N )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalvar"
@@ -12801,7 +12804,7 @@
   },
   "/executable-code-and-execution-contexts#sec-createglobalfunctionbinding": {
     "current": {
-      "number": "9.1.1.4.18",
+      "number": "9.1.1.4.17",
       "spec": "ECMAScript",
       "text": "CreateGlobalFunctionBinding ( envRec, N, V, D )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding"
@@ -12809,7 +12812,7 @@
   },
   "/executable-code-and-execution-contexts#sec-createglobalvarbinding": {
     "current": {
-      "number": "9.1.1.4.17",
+      "number": "9.1.1.4.16",
       "spec": "ECMAScript",
       "text": "CreateGlobalVarBinding ( envRec, N, D )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding"
@@ -13137,7 +13140,7 @@
   },
   "/executable-code-and-execution-contexts#sec-haslexicaldeclaration": {
     "current": {
-      "number": "9.1.1.4.13",
+      "number": "9.1.1.4.12",
       "spec": "ECMAScript",
       "text": "HasLexicalDeclaration ( envRec, N )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-haslexicaldeclaration"
@@ -13145,18 +13148,10 @@
   },
   "/executable-code-and-execution-contexts#sec-hasrestrictedglobalproperty": {
     "current": {
-      "number": "9.1.1.4.14",
+      "number": "9.1.1.4.13",
       "spec": "ECMAScript",
       "text": "HasRestrictedGlobalProperty ( envRec, N )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasrestrictedglobalproperty"
-    }
-  },
-  "/executable-code-and-execution-contexts#sec-hasvardeclaration": {
-    "current": {
-      "number": "9.1.1.4.12",
-      "spec": "ECMAScript",
-      "text": "HasVarDeclaration ( envRec, N )",
-      "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasvardeclaration"
     }
   },
   "/executable-code-and-execution-contexts#sec-host-cleanup-finalization-registry": {
@@ -22591,6 +22586,14 @@
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-emptymatcher"
     }
   },
+  "/text-processing#sec-encodeforregexpescape": {
+    "current": {
+      "number": "22.2.5.1.1",
+      "spec": "ECMAScript",
+      "text": "EncodeForRegExpEscape ( cp )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-encodeforregexpescape"
+    }
+  },
   "/text-processing#sec-escaperegexppattern": {
     "current": {
       "number": "22.2.6.13.1",
@@ -22601,7 +22604,7 @@
   },
   "/text-processing#sec-get-regexp-%25symbol.species%25": {
     "current": {
-      "number": "22.2.5.2",
+      "number": "22.2.5.3",
       "spec": "ECMAScript",
       "text": "get RegExp [ %Symbol.species% ]",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp-%25symbol.species%25"
@@ -22951,9 +22954,17 @@
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-string-iterator-objects"
     }
   },
-  "/text-processing#sec-regexp.prototype": {
+  "/text-processing#sec-regexp.escape": {
     "current": {
       "number": "22.2.5.1",
+      "spec": "ECMAScript",
+      "text": "RegExp.escape ( S )",
+      "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.escape"
+    }
+  },
+  "/text-processing#sec-regexp.prototype": {
+    "current": {
+      "number": "22.2.5.2",
       "spec": "ECMAScript",
       "text": "RegExp.prototype",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype"
