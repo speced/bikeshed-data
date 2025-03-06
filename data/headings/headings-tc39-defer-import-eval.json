@@ -7,19 +7,11 @@
       "url": "https://tc39.es/proposal-defer-import-eval/#sec-%25symbol.tostringtag%25"
     }
   },
-  "#sec-AllImportAttributesSupported": {
-    "current": {
-      "number": "16.2.1.7",
-      "spec": "Deferred Imports Evaluation",
-      "text": "AllImportAttributesSupported ( attributes )",
-      "url": "https://tc39.es/proposal-defer-import-eval/#sec-AllImportAttributesSupported"
-    }
-  },
   "#sec-ContinueDynamicImport": {
     "current": {
       "number": "13.3.10.4.1",
       "spec": "Deferred Imports Evaluation",
-      "text": "ContinueDynamicImport ( promiseCapability, payload, moduleCompletion )",
+      "text": "ContinueDynamicImport ( promiseCapability, moduleCompletion, phase )",
       "url": "https://tc39.es/proposal-defer-import-eval/#sec-ContinueDynamicImport"
     }
   },
@@ -29,6 +21,14 @@
       "spec": "Deferred Imports Evaluation",
       "text": "EvaluateSync ( module )",
       "url": "https://tc39.es/proposal-defer-import-eval/#sec-EvaluateSync"
+    }
+  },
+  "#sec-FinishLoadingImportedModule": {
+    "current": {
+      "number": "16.2.1.11",
+      "spec": "Deferred Imports Evaluation",
+      "text": "FinishLoadingImportedModule ( referrer, moduleRequest, payload, result )",
+      "url": "https://tc39.es/proposal-defer-import-eval/#sec-FinishLoadingImportedModule"
     }
   },
   "#sec-GatherAsynchronousTransitiveDependencies": {
@@ -161,18 +161,10 @@
   },
   "#sec-getmodulenamespace": {
     "current": {
-      "number": "16.2.1.10",
+      "number": "16.2.1.13",
       "spec": "Deferred Imports Evaluation",
       "text": "GetModuleNamespace ( module, phase )",
       "url": "https://tc39.es/proposal-defer-import-eval/#sec-getmodulenamespace"
-    }
-  },
-  "#sec-hostgetsupportedimportattributes": {
-    "current": {
-      "number": "16.2.1.7.1",
-      "spec": "Deferred Imports Evaluation",
-      "text": "HostGetSupportedImportAttributes ( )",
-      "url": "https://tc39.es/proposal-defer-import-eval/#sec-hostgetsupportedimportattributes"
     }
   },
   "#sec-import-call-runtime-semantics-EvaluateImportCallOptions": {
