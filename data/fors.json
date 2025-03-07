@@ -2728,6 +2728,7 @@
     "DOMError",
     "DOMErrorHandler",
     "DOMException",
+    "DOMException error information",
     "DOMException names table",
     "DOMFocusIn",
     "DOMFocusOut",
@@ -10860,6 +10861,7 @@
     "convert artwork algorithm",
     "convert code unit to scalar value",
     "convert data to a format suitable for ingestion into the target",
+    "convert error information into an exception object",
     "convert fetch timestamp",
     "convert from native entity type",
     "convert header names to a sorted-lowercase set",
@@ -15328,7 +15330,9 @@
     "mc",
     "me",
     "measurable properties",
+    "measure AI model input usage",
     "measure a conversion",
+    "measure summarizer input usage",
     "media",
     "media capabilities task source",
     "media capture mechanism",
@@ -17616,6 +17620,7 @@
     "queues a Presentation API task",
     "queuing strategy",
     "quirks mode",
+    "quota exceeded error information",
     "quotation mark system",
     "quote depth",
     "quotes",
@@ -22661,7 +22666,10 @@
     "expectedContextLanguages",
     "expectedInputLanguages",
     "format",
+    "inputQuota",
     "length",
+    "measureInputUsage(input)",
+    "measureInputUsage(input, options)",
     "outputLanguage",
     "rewrite(input)",
     "rewrite(input, options)",
@@ -22669,6 +22677,14 @@
     "rewriteStreaming(input, options)",
     "sharedContext",
     "tone"
+  ],
+  "AIRewriter/measureInputUsage(input)": [
+    "input",
+    "options"
+  ],
+  "AIRewriter/measureInputUsage(input, options)": [
+    "input",
+    "options"
   ],
   "AIRewriter/rewrite(input)": [
     "input",
@@ -22742,7 +22758,11 @@
     "expectedContextLanguages",
     "expectedInputLanguages",
     "format",
+    "input quota",
+    "inputQuota",
     "length",
+    "measureInputUsage(input)",
+    "measureInputUsage(input, options)",
     "output language",
     "outputLanguage",
     "shared context",
@@ -22755,6 +22775,14 @@
     "summary length",
     "summary type",
     "type"
+  ],
+  "AISummarizer/measureInputUsage(input)": [
+    "input",
+    "options"
+  ],
+  "AISummarizer/measureInputUsage(input, options)": [
+    "input",
+    "options"
   ],
   "AISummarizer/summarize(input)": [
     "input",
@@ -22835,7 +22863,10 @@
     "expectedContextLanguages",
     "expectedInputLanguages",
     "format",
+    "inputQuota",
     "length",
+    "measureInputUsage(input)",
+    "measureInputUsage(input, options)",
     "outputLanguage",
     "sharedContext",
     "tone",
@@ -22843,6 +22874,14 @@
     "write(writingTask, options)",
     "writeStreaming(writingTask)",
     "writeStreaming(writingTask, options)"
+  ],
+  "AIWriter/measureInputUsage(input)": [
+    "input",
+    "options"
+  ],
+  "AIWriter/measureInputUsage(input, options)": [
+    "input",
+    "options"
   ],
   "AIWriter/write(writingTask)": [
     "options",
@@ -29183,6 +29222,10 @@
     "constructor(message)",
     "constructor(message, name)",
     "message",
+    "name"
+  ],
+  "DOMException error information": [
+    "details",
     "name"
   ],
   "DOMException/DOMException()": [
@@ -57235,10 +57278,6 @@
     "unknown command",
     "unknown user intent"
   ],
-  "error information": [
-    "error information",
-    "error name"
-  ],
   "errors": [
     "invalid web extension",
     "no such client window",
@@ -61189,6 +61228,10 @@
     "sorting",
     "sorting in ascending order",
     "sorting in descending order"
+  ],
+  "quota exceeded error information": [
+    "quota",
+    "requested"
   ],
   "quotes": [
     "[<string> <string>]+",
