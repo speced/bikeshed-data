@@ -1022,6 +1022,7 @@
     "<radial-shape>",
     "<radial-size>",
     "<random-caching-options>",
+    "<random-value-sharing>",
     "<ratio>",
     "<rationals/>",
     "<ray-size>",
@@ -3377,6 +3378,7 @@
     "Function",
     "FunctionDeclarationInstantiation",
     "FunctionDeclarationInstantiation(func, argumentsList)",
+    "FunctionParameter",
     "FunctionStringCallback",
     "G",
     "GAP Interoperability Requirements",
@@ -6178,7 +6180,6 @@
     "Refresh",
     "Refresh state",
     "RefreshPolicy",
-    "Refreshing an existing session",
     "RegExp",
     "RegExpAlloc",
     "RegExpAlloc(newTarget)",
@@ -10275,7 +10276,6 @@
     "close a p element",
     "close a portal element",
     "close a presentation connection",
-    "close a session",
     "close a subscription",
     "close a worker",
     "close action",
@@ -12595,7 +12595,6 @@
     "fencedframe",
     "fencedtreeclick",
     "fetch",
-    "fetch Integration",
     "fetch WebAssembly",
     "fetch a CSS style sheet",
     "fetch a classic script",
@@ -18856,7 +18855,9 @@
     "serialize a CSS declaration",
     "serialize a CSS declaration block",
     "serialize a CSS rule",
+    "serialize a CSS type",
     "serialize a CSS value",
+    "serialize a CSSFunctionRule",
     "serialize a CSSKeywordValue",
     "serialize a CSSMathValue",
     "serialize a CSSMatrixComponent",
@@ -18885,6 +18886,7 @@
     "serialize a cubic-bezier() function",
     "serialize a currency tag",
     "serialize a device",
+    "serialize a function parameter",
     "serialize a group of selectors",
     "serialize a linear() control point",
     "serialize a linear() function",
@@ -19697,6 +19699,7 @@
     "stroke-width",
     "stroked",
     "strong",
+    "stronger inset",
     "strongly hidden",
     "struct",
     "structural element",
@@ -20527,6 +20530,7 @@
     "unoccupied",
     "unordered set of unique space-separated tokens",
     "unprefixed",
+    "unreachable scrollable overflow region",
     "unreasonable number of requests",
     "unrecognized",
     "unregister the system key press handler",
@@ -21033,6 +21037,7 @@
     "viewport coordinate system",
     "viewport overrides map",
     "viewport-based selection",
+    "viewport-fit",
     "viewport-percentage lengths",
     "violate",
     "violated",
@@ -26387,6 +26392,11 @@
   ],
   "CSSFunctionDescriptors": [
     "result"
+  ],
+  "CSSFunctionRule": [
+    "getParameters()",
+    "name",
+    "returnType"
   ],
   "CSSGroupingRule": [
     "cssRules",
@@ -33693,6 +33703,11 @@
   ],
   "Function.prototype [ %Symbol.hasInstance% ] ( V )": [
     "Function.prototype %Symbol.hasInstance% (V)"
+  ],
+  "FunctionParameter": [
+    "defaultValue",
+    "name",
+    "type"
   ],
   "GPU": [
     "getPreferredCanvasFormat()",
@@ -54576,7 +54591,8 @@
   ],
   "algorithms": [
     "identify a session",
-    "process a challenge"
+    "process a challenge",
+    "send a request"
   ],
   "align-content": [
     "baseline",
@@ -56868,8 +56884,10 @@
   "device bound session": [
     "cached challenge",
     "defer requests",
+    "expiration timestamp",
     "refresh url",
-    "session identifier"
+    "session identifier",
+    "session key"
   ],
   "device posture change steps": [
     "disallowRecursion",
@@ -61285,7 +61303,7 @@
     "xlink:href",
     "xlink:title"
   ],
-  "random()|<random-caching-options>": [
+  "random()|<random-value-sharing>": [
     "auto",
     "match-element"
   ],
@@ -61794,6 +61812,7 @@
     "priority source"
   ],
   "scope specification": [
+    "host",
     "path",
     "type"
   ],
@@ -62275,7 +62294,8 @@
     "session identifier"
   ],
   "session scope": [
-    "include site"
+    "include site",
+    "origin"
   ],
   "session-signal": [
     "DRAIN_WEBTRANSPORT_SESSION",
