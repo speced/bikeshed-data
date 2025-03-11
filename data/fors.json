@@ -6769,6 +6769,7 @@
     "Set Descriptor",
     "Set Explicitly",
     "Set Permission",
+    "Set Protected Audience K-Anonymity",
     "Set RPH Registration Mode",
     "Set Registration",
     "Set SPC Transaction Mode",
@@ -7978,6 +7979,7 @@
     "WebTransportConnectionStats",
     "WebTransportDatagramDuplexStream",
     "WebTransportDatagramStats",
+    "WebTransportDatagramsWritable",
     "WebTransportError",
     "WebTransportErrorOptions",
     "WebTransportErrorSource",
@@ -7987,6 +7989,7 @@
     "WebTransportReceiveStreamStats",
     "WebTransportReliabilityMode",
     "WebTransportSendGroup",
+    "WebTransportSendOptions",
     "WebTransportSendStream",
     "WebTransportSendStreamOptions",
     "WebTransportSendStreamStats",
@@ -10072,6 +10075,7 @@
     "check MIME type validity",
     "check a currency tag",
     "check a global object's embedder policy",
+    "check a k-anonymity record",
     "check a navigation response's adherence to `X-Frame-Options`",
     "check a navigation response's adherence to its embedder policy",
     "check ancestor for task",
@@ -14540,6 +14544,7 @@
     "k-anonymity cache",
     "k-anonymity duration",
     "k-anonymity key",
+    "k-anonymity overrides",
     "k-anonymity record",
     "k-anonymity server",
     "k-anonymity threshold",
@@ -18814,6 +18819,7 @@
     "send() algorithm",
     "send() flag",
     "send-algorithm",
+    "send-order rules",
     "sendDatagrams",
     "sendpendingreports",
     "sensing range",
@@ -52058,6 +52064,7 @@
     "createSendGroup()",
     "createUnidirectionalStream()",
     "createUnidirectionalStream(options)",
+    "createWritable()",
     "datagrams",
     "draining",
     "getStats()",
@@ -52145,6 +52152,8 @@
     "[[Readable]]",
     "[[Writable]]",
     "create",
+    "createWritable()",
+    "createWritable(options)",
     "creating",
     "incomingHighWaterMark",
     "incomingMaxAge",
@@ -52158,11 +52167,27 @@
     "readable",
     "writable"
   ],
+  "WebTransportDatagramDuplexStream/createWritable()": [
+    "options"
+  ],
+  "WebTransportDatagramDuplexStream/createWritable(options)": [
+    "options"
+  ],
   "WebTransportDatagramStats": [
     "droppedIncoming",
     "expiredIncoming",
     "expiredOutgoing",
     "lostOutgoing"
+  ],
+  "WebTransportDatagramsWritable": [
+    "[[OutgoingDatagramsQueue]]",
+    "[[SendGroup]]",
+    "[[SendOrder]]",
+    "[[Transport]]",
+    "create",
+    "creating",
+    "sendGroup",
+    "sendOrder"
   ],
   "WebTransportError": [
     "WebTransportError()",
@@ -52244,6 +52269,10 @@
     "create",
     "creating",
     "getStats()"
+  ],
+  "WebTransportSendOptions": [
+    "sendGroup",
+    "sendOrder"
   ],
   "WebTransportSendStream": [
     "[[AtomicWriteRequests]]",
