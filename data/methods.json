@@ -7227,9 +7227,9 @@
     "availability()": {
       "args": [],
       "for": [
-        "AIRewriterFactory",
-        "AISummarizerFactory",
-        "AIWriterFactory"
+        "Rewriter",
+        "Summarizer",
+        "Writer"
       ],
       "shortname": "writing-assistance-apis"
     },
@@ -7238,9 +7238,9 @@
         "options"
       ],
       "for": [
-        "AIRewriterFactory",
-        "AISummarizerFactory",
-        "AIWriterFactory"
+        "Rewriter",
+        "Summarizer",
+        "Writer"
       ],
       "shortname": "writing-assistance-apis"
     }
@@ -11978,10 +11978,10 @@
     "create()": {
       "args": [],
       "for": [
-        "AIRewriterFactory",
-        "AISummarizerFactory",
-        "AIWriterFactory",
-        "CredentialsContainer"
+        "CredentialsContainer",
+        "Rewriter",
+        "Summarizer",
+        "Writer"
       ],
       "shortname": "writing-assistance-apis"
     },
@@ -12000,10 +12000,10 @@
         "options"
       ],
       "for": [
-        "AIRewriterFactory",
-        "AISummarizerFactory",
-        "AIWriterFactory",
-        "CredentialsContainer"
+        "CredentialsContainer",
+        "Rewriter",
+        "Summarizer",
+        "Writer"
       ],
       "shortname": "writing-assistance-apis"
     }
@@ -14232,8 +14232,8 @@
     "destroy()": {
       "args": [],
       "for": [
-        "AIDestroyable",
         "CloseWatcher",
+        "DestroyableModel",
         "GPUBuffer",
         "GPUDevice",
         "GPUQuerySet",
@@ -23816,9 +23816,9 @@
         "input"
       ],
       "for": [
-        "AIRewriter",
-        "AISummarizer",
-        "AIWriter"
+        "Rewriter",
+        "Summarizer",
+        "Writer"
       ],
       "shortname": "writing-assistance-apis"
     },
@@ -23828,9 +23828,9 @@
         "options"
       ],
       "for": [
-        "AIRewriter",
-        "AISummarizer",
-        "AIWriter"
+        "Rewriter",
+        "Summarizer",
+        "Writer"
       ],
       "shortname": "writing-assistance-apis"
     }
@@ -28372,7 +28372,7 @@
         "input"
       ],
       "for": [
-        "AIRewriter"
+        "Rewriter"
       ],
       "shortname": "writing-assistance-apis"
     },
@@ -28382,7 +28382,7 @@
         "options"
       ],
       "for": [
-        "AIRewriter"
+        "Rewriter"
       ],
       "shortname": "writing-assistance-apis"
     }
@@ -28393,7 +28393,7 @@
         "input"
       ],
       "for": [
-        "AIRewriter"
+        "Rewriter"
       ],
       "shortname": "writing-assistance-apis"
     },
@@ -28403,7 +28403,7 @@
         "options"
       ],
       "for": [
-        "AIRewriter"
+        "Rewriter"
       ],
       "shortname": "writing-assistance-apis"
     }
@@ -32970,7 +32970,7 @@
         "input"
       ],
       "for": [
-        "AISummarizer"
+        "Summarizer"
       ],
       "shortname": "writing-assistance-apis"
     },
@@ -32980,7 +32980,7 @@
         "options"
       ],
       "for": [
-        "AISummarizer"
+        "Summarizer"
       ],
       "shortname": "writing-assistance-apis"
     }
@@ -32991,7 +32991,7 @@
         "input"
       ],
       "for": [
-        "AISummarizer"
+        "Summarizer"
       ],
       "shortname": "writing-assistance-apis"
     },
@@ -33001,7 +33001,7 @@
         "options"
       ],
       "for": [
-        "AISummarizer"
+        "Summarizer"
       ],
       "shortname": "writing-assistance-apis"
     }
@@ -35436,6 +35436,25 @@
       ],
       "shortname": "fs"
     },
+    "write(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "Writer"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
+    "write(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "Writer"
+      ],
+      "shortname": "writing-assistance-apis"
+    },
     "write(message)": {
       "args": [
         "message"
@@ -35454,25 +35473,6 @@
         "NDEFReader"
       ],
       "shortname": "web-nfc"
-    },
-    "write(writingTask)": {
-      "args": [
-        "writingTask"
-      ],
-      "for": [
-        "AIWriter"
-      ],
-      "shortname": "writing-assistance-apis"
-    },
-    "write(writingTask, options)": {
-      "args": [
-        "writingTask",
-        "options"
-      ],
-      "for": [
-        "AIWriter"
-      ],
-      "shortname": "writing-assistance-apis"
     }
   },
   "writeBuffer()": {
@@ -35514,22 +35514,22 @@
     }
   },
   "writeStreaming()": {
-    "writeStreaming(writingTask)": {
+    "writeStreaming(input)": {
       "args": [
-        "writingTask"
+        "input"
       ],
       "for": [
-        "AIWriter"
+        "Writer"
       ],
       "shortname": "writing-assistance-apis"
     },
-    "writeStreaming(writingTask, options)": {
+    "writeStreaming(input, options)": {
       "args": [
-        "writingTask",
+        "input",
         "options"
       ],
       "for": [
-        "AIWriter"
+        "Writer"
       ],
       "shortname": "writing-assistance-apis"
     }

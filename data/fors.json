@@ -1241,36 +1241,7 @@
     "AC Review",
     "AC representative",
     "AD structure",
-    "AI",
     "AI task source",
-    "AIAvailability",
-    "AICreateMonitor",
-    "AICreateMonitorCallback",
-    "AIDestroyable",
-    "AIRewriter",
-    "AIRewriterCreateCoreOptions",
-    "AIRewriterCreateOptions",
-    "AIRewriterFactory",
-    "AIRewriterFormat",
-    "AIRewriterLength",
-    "AIRewriterRewriteOptions",
-    "AIRewriterTone",
-    "AISummarizer",
-    "AISummarizerCreateCoreOptions",
-    "AISummarizerCreateOptions",
-    "AISummarizerFactory",
-    "AISummarizerFormat",
-    "AISummarizerLength",
-    "AISummarizerSummarizeOptions",
-    "AISummarizerType",
-    "AIWriter",
-    "AIWriterCreateCoreOptions",
-    "AIWriterCreateOptions",
-    "AIWriterFactory",
-    "AIWriterFormat",
-    "AIWriterLength",
-    "AIWriterTone",
-    "AIWriterWriteOptions",
     "API URL parser",
     "API value",
     "ARIA attributes",
@@ -1755,6 +1726,7 @@
     "AutomationRate",
     "AutoplayPolicy",
     "AutoplayPolicyMediaType",
+    "Availability",
     "Available Locales List",
     "AvailableNamedTimeZoneIdentifiers",
     "AvailableNamedTimeZoneIdentifiers()",
@@ -2614,6 +2586,8 @@
     "CreateMapIterator(map, kind)",
     "CreateMappedArgumentsObject",
     "CreateMappedArgumentsObject(func, formals, argumentsList, env)",
+    "CreateMonitor",
+    "CreateMonitorCallback",
     "CreateNonEnumerableDataPropertyOrThrow",
     "CreateNonEnumerableDataPropertyOrThrow(O, P, V)",
     "CreatePerIterationEnvironment",
@@ -2867,6 +2841,7 @@
     "Desktop focus event",
     "Destination rate-limit result",
     "Destination rate-limit window",
+    "DestroyableModel",
     "DetachArrayBuffer",
     "DetachArrayBuffer(arrayBuffer, key)",
     "Detaching from a media element",
@@ -6377,6 +6352,13 @@
     "Rewrite: quantifier",
     "Rewrite: restriction",
     "Rewrite: tendsto",
+    "Rewriter",
+    "RewriterCreateCoreOptions",
+    "RewriterCreateOptions",
+    "RewriterFormat",
+    "RewriterLength",
+    "RewriterRewriteOptions",
+    "RewriterTone",
     "Right Page",
     "Role",
     "Root WAI-ARIA node",
@@ -6688,6 +6670,7 @@
     "Sec-Session-Response",
     "Sec-Shared-Storage-Data-Origin",
     "Sec-Shared-Storage-Writable",
+    "Sec-Speculation-Tags",
     "SecFromTime",
     "SecFromTime(t)",
     "Second-factor platform authenticator",
@@ -7101,6 +7084,13 @@
     "Suffering from being too long",
     "Suffering from being too short",
     "Suitable origin",
+    "Summarizer",
+    "SummarizerCreateCoreOptions",
+    "SummarizerCreateOptions",
+    "SummarizerFormat",
+    "SummarizerLength",
+    "SummarizerSummarizeOptions",
+    "SummarizerType",
     "Summer Time",
     "Superseded Recommendation",
     "Superseded Registry",
@@ -8224,6 +8214,13 @@
     "WriteCharacteristicValue",
     "WriteCommandType",
     "WriteParams",
+    "Writer",
+    "WriterCreateCoreOptions",
+    "WriterCreateOptions",
+    "WriterFormat",
+    "WriterLength",
+    "WriterTone",
+    "WriterWriteOptions",
     "Writing content",
     "Writing system",
     "WrongDocumentError",
@@ -9099,6 +9096,7 @@
     "asynchronously instantiate a WebAssembly module",
     "asynchronously iterable declaration",
     "asynchronously wait",
+    "at least as eager",
     "at progress timeline boundary",
     "at risk",
     "at-keyword",
@@ -10371,6 +10369,7 @@
     "collect forDebuggingOnly reports",
     "collect nodes using accessibility attributes",
     "collect page topics calculation input data",
+    "collect tags for matching speculative load candidates",
     "collect topics caller domain",
     "collecting a sequence of code points",
     "collecting an HTTP quoted string",
@@ -10522,6 +10521,7 @@
     "computational graph",
     "computationally independent",
     "compute",
+    "compute AI model availability",
     "compute a certificate hash",
     "compute a percentage metric",
     "compute a property value",
@@ -14739,6 +14739,7 @@
     "lemonchiffon",
     "length",
     "length in bits",
+    "less eager",
     "less than",
     "let-declaration",
     "letter",
@@ -19449,6 +19450,7 @@
     "specifies a powerful feature",
     "speculation rule",
     "speculation rule set",
+    "speculation rules tag",
     "speculative HTML parser",
     "speculative fetch",
     "speculative load candidate",
@@ -19797,6 +19799,7 @@
     "suggestions source element",
     "suitable sequentially focusable area",
     "summarize",
+    "summarizer",
     "summarizer language availabilities",
     "summarizer non-language options availability",
     "summary",
@@ -22670,315 +22673,6 @@
   "@viewport": [
     "viewport-fit"
   ],
-  "AI": [
-    "summarizer",
-    "summarizer factory"
-  ],
-  "AIAvailability": [
-    "\"available\"",
-    "\"downloadable\"",
-    "\"downloading\"",
-    "\"unavailable\"",
-    "minimum availability"
-  ],
-  "AICreateMonitor": [
-    "downloadprogress",
-    "ondownloadprogress"
-  ],
-  "AICreateMonitorCallback": [
-    "monitor"
-  ],
-  "AIDestroyable": [
-    "destroy",
-    "destroy()",
-    "destruction abort controller"
-  ],
-  "AIRewriter": [
-    "expectedContextLanguages",
-    "expectedInputLanguages",
-    "format",
-    "inputQuota",
-    "length",
-    "measureInputUsage(input)",
-    "measureInputUsage(input, options)",
-    "outputLanguage",
-    "rewrite(input)",
-    "rewrite(input, options)",
-    "rewriteStreaming(input)",
-    "rewriteStreaming(input, options)",
-    "sharedContext",
-    "tone"
-  ],
-  "AIRewriter/measureInputUsage(input)": [
-    "input",
-    "options"
-  ],
-  "AIRewriter/measureInputUsage(input, options)": [
-    "input",
-    "options"
-  ],
-  "AIRewriter/rewrite(input)": [
-    "input",
-    "options"
-  ],
-  "AIRewriter/rewrite(input, options)": [
-    "input",
-    "options"
-  ],
-  "AIRewriter/rewriteStreaming(input)": [
-    "input",
-    "options"
-  ],
-  "AIRewriter/rewriteStreaming(input, options)": [
-    "input",
-    "options"
-  ],
-  "AIRewriterCreateCoreOptions": [
-    "expectedContextLanguages",
-    "expectedInputLanguages",
-    "format",
-    "length",
-    "outputLanguage",
-    "tone"
-  ],
-  "AIRewriterCreateOptions": [
-    "monitor",
-    "sharedContext",
-    "signal"
-  ],
-  "AIRewriterFactory": [
-    "availability()",
-    "availability(options)",
-    "create()",
-    "create(options)"
-  ],
-  "AIRewriterFactory/availability()": [
-    "options"
-  ],
-  "AIRewriterFactory/availability(options)": [
-    "options"
-  ],
-  "AIRewriterFactory/create()": [
-    "options"
-  ],
-  "AIRewriterFactory/create(options)": [
-    "options"
-  ],
-  "AIRewriterFormat": [
-    "\"as-is\"",
-    "\"markdown\"",
-    "\"plain-text\""
-  ],
-  "AIRewriterLength": [
-    "\"as-is\"",
-    "\"longer\"",
-    "\"shorter\""
-  ],
-  "AIRewriterRewriteOptions": [
-    "context",
-    "signal"
-  ],
-  "AIRewriterTone": [
-    "\"as-is\"",
-    "\"more-casual\"",
-    "\"more-formal\""
-  ],
-  "AISummarizer": [
-    "expected context languages",
-    "expected input languages",
-    "expectedContextLanguages",
-    "expectedInputLanguages",
-    "format",
-    "input quota",
-    "inputQuota",
-    "length",
-    "measureInputUsage(input)",
-    "measureInputUsage(input, options)",
-    "output language",
-    "outputLanguage",
-    "shared context",
-    "sharedContext",
-    "summarize(input)",
-    "summarize(input, options)",
-    "summarizeStreaming(input)",
-    "summarizeStreaming(input, options)",
-    "summary format",
-    "summary length",
-    "summary type",
-    "type"
-  ],
-  "AISummarizer/measureInputUsage(input)": [
-    "input",
-    "options"
-  ],
-  "AISummarizer/measureInputUsage(input, options)": [
-    "input",
-    "options"
-  ],
-  "AISummarizer/summarize(input)": [
-    "input",
-    "options"
-  ],
-  "AISummarizer/summarize(input, options)": [
-    "input",
-    "options"
-  ],
-  "AISummarizer/summarizeStreaming(input)": [
-    "input",
-    "options"
-  ],
-  "AISummarizer/summarizeStreaming(input, options)": [
-    "input",
-    "options"
-  ],
-  "AISummarizerCreateCoreOptions": [
-    "expectedContextLanguages",
-    "expectedInputLanguages",
-    "format",
-    "length",
-    "outputLanguage",
-    "type"
-  ],
-  "AISummarizerCreateOptions": [
-    "monitor",
-    "sharedContext",
-    "signal"
-  ],
-  "AISummarizerFactory": [
-    "availability()",
-    "availability(options)",
-    "create()",
-    "create(options)"
-  ],
-  "AISummarizerFactory/availability()": [
-    "options"
-  ],
-  "AISummarizerFactory/availability(options)": [
-    "options"
-  ],
-  "AISummarizerFactory/create()": [
-    "options"
-  ],
-  "AISummarizerFactory/create(options)": [
-    "options"
-  ],
-  "AISummarizerFormat": [
-    "\"markdown\"",
-    "\"plain-text\"",
-    "markdown",
-    "plain-text"
-  ],
-  "AISummarizerLength": [
-    "\"long\"",
-    "\"medium\"",
-    "\"short\"",
-    "long",
-    "medium",
-    "short"
-  ],
-  "AISummarizerSummarizeOptions": [
-    "context",
-    "signal"
-  ],
-  "AISummarizerType": [
-    "\"headline\"",
-    "\"key-points\"",
-    "\"teaser\"",
-    "\"tl;dr\"",
-    "headline",
-    "key-points",
-    "teaser",
-    "tl;dr"
-  ],
-  "AIWriter": [
-    "expectedContextLanguages",
-    "expectedInputLanguages",
-    "format",
-    "inputQuota",
-    "length",
-    "measureInputUsage(input)",
-    "measureInputUsage(input, options)",
-    "outputLanguage",
-    "sharedContext",
-    "tone",
-    "write(writingTask)",
-    "write(writingTask, options)",
-    "writeStreaming(writingTask)",
-    "writeStreaming(writingTask, options)"
-  ],
-  "AIWriter/measureInputUsage(input)": [
-    "input",
-    "options"
-  ],
-  "AIWriter/measureInputUsage(input, options)": [
-    "input",
-    "options"
-  ],
-  "AIWriter/write(writingTask)": [
-    "options",
-    "writingTask"
-  ],
-  "AIWriter/write(writingTask, options)": [
-    "options",
-    "writingTask"
-  ],
-  "AIWriter/writeStreaming(writingTask)": [
-    "options",
-    "writingTask"
-  ],
-  "AIWriter/writeStreaming(writingTask, options)": [
-    "options",
-    "writingTask"
-  ],
-  "AIWriterCreateCoreOptions": [
-    "expectedContextLanguages",
-    "expectedInputLanguages",
-    "format",
-    "length",
-    "outputLanguage",
-    "tone"
-  ],
-  "AIWriterCreateOptions": [
-    "monitor",
-    "sharedContext",
-    "signal"
-  ],
-  "AIWriterFactory": [
-    "availability()",
-    "availability(options)",
-    "create()",
-    "create(options)"
-  ],
-  "AIWriterFactory/availability()": [
-    "options"
-  ],
-  "AIWriterFactory/availability(options)": [
-    "options"
-  ],
-  "AIWriterFactory/create()": [
-    "options"
-  ],
-  "AIWriterFactory/create(options)": [
-    "options"
-  ],
-  "AIWriterFormat": [
-    "\"markdown\"",
-    "\"plain-text\""
-  ],
-  "AIWriterLength": [
-    "\"long\"",
-    "\"medium\"",
-    "\"short\""
-  ],
-  "AIWriterTone": [
-    "\"casual\"",
-    "\"formal\"",
-    "\"neutral\""
-  ],
-  "AIWriterWriteOptions": [
-    "context",
-    "signal"
-  ],
   "ARIA": [
     "Property"
   ],
@@ -24794,6 +24488,13 @@
     "\"mediaelement\"",
     "audiocontext",
     "mediaelement"
+  ],
+  "Availability": [
+    "\"available\"",
+    "\"downloadable\"",
+    "\"downloading\"",
+    "\"unavailable\"",
+    "minimum availability"
   ],
   "AvcBitstreamFormat": [
     "\"annexb\"",
@@ -29020,6 +28721,13 @@
     "arguments",
     "input"
   ],
+  "CreateMonitor": [
+    "downloadprogress",
+    "ondownloadprogress"
+  ],
+  "CreateMonitorCallback": [
+    "monitor"
+  ],
   "CreateScriptCallback": [
     "arguments",
     "input"
@@ -30723,6 +30431,11 @@
     "end",
     "start",
     "tag"
+  ],
+  "DestroyableModel": [
+    "destroy",
+    "destroy()",
+    "destruction abort controller"
   ],
   "DetectedBarcode": [
     "boundingBox",
@@ -46810,6 +46523,94 @@
     "fromElement()",
     "fromElement(element)"
   ],
+  "Rewriter": [
+    "availability()",
+    "availability(options)",
+    "create()",
+    "create(options)",
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "inputQuota",
+    "length",
+    "measureInputUsage(input)",
+    "measureInputUsage(input, options)",
+    "outputLanguage",
+    "rewrite(input)",
+    "rewrite(input, options)",
+    "rewriteStreaming(input)",
+    "rewriteStreaming(input, options)",
+    "sharedContext",
+    "tone"
+  ],
+  "Rewriter/availability()": [
+    "options"
+  ],
+  "Rewriter/availability(options)": [
+    "options"
+  ],
+  "Rewriter/create()": [
+    "options"
+  ],
+  "Rewriter/create(options)": [
+    "options"
+  ],
+  "Rewriter/measureInputUsage(input)": [
+    "input",
+    "options"
+  ],
+  "Rewriter/measureInputUsage(input, options)": [
+    "input",
+    "options"
+  ],
+  "Rewriter/rewrite(input)": [
+    "input",
+    "options"
+  ],
+  "Rewriter/rewrite(input, options)": [
+    "input",
+    "options"
+  ],
+  "Rewriter/rewriteStreaming(input)": [
+    "input",
+    "options"
+  ],
+  "Rewriter/rewriteStreaming(input, options)": [
+    "input",
+    "options"
+  ],
+  "RewriterCreateCoreOptions": [
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "length",
+    "outputLanguage",
+    "tone"
+  ],
+  "RewriterCreateOptions": [
+    "monitor",
+    "sharedContext",
+    "signal"
+  ],
+  "RewriterFormat": [
+    "\"as-is\"",
+    "\"markdown\"",
+    "\"plain-text\""
+  ],
+  "RewriterLength": [
+    "\"as-is\"",
+    "\"longer\"",
+    "\"shorter\""
+  ],
+  "RewriterRewriteOptions": [
+    "context",
+    "signal"
+  ],
+  "RewriterTone": [
+    "\"as-is\"",
+    "\"more-casual\"",
+    "\"more-formal\""
+  ],
   "RouterCondition": [
     "not",
     "or",
@@ -49469,6 +49270,111 @@
     "verify(algorithm, key, signature, data)",
     "wrapKey()",
     "wrapKey(format, key, wrappingKey, wrapAlgorithm)"
+  ],
+  "Summarizer": [
+    "availability()",
+    "availability(options)",
+    "create()",
+    "create(options)",
+    "expected context languages",
+    "expected input languages",
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "input quota",
+    "inputQuota",
+    "length",
+    "measureInputUsage(input)",
+    "measureInputUsage(input, options)",
+    "output language",
+    "outputLanguage",
+    "shared context",
+    "sharedContext",
+    "summarize(input)",
+    "summarize(input, options)",
+    "summarizeStreaming(input)",
+    "summarizeStreaming(input, options)",
+    "summary format",
+    "summary length",
+    "summary type",
+    "type"
+  ],
+  "Summarizer/availability()": [
+    "options"
+  ],
+  "Summarizer/availability(options)": [
+    "options"
+  ],
+  "Summarizer/create()": [
+    "options"
+  ],
+  "Summarizer/create(options)": [
+    "options"
+  ],
+  "Summarizer/measureInputUsage(input)": [
+    "input",
+    "options"
+  ],
+  "Summarizer/measureInputUsage(input, options)": [
+    "input",
+    "options"
+  ],
+  "Summarizer/summarize(input)": [
+    "input",
+    "options"
+  ],
+  "Summarizer/summarize(input, options)": [
+    "input",
+    "options"
+  ],
+  "Summarizer/summarizeStreaming(input)": [
+    "input",
+    "options"
+  ],
+  "Summarizer/summarizeStreaming(input, options)": [
+    "input",
+    "options"
+  ],
+  "SummarizerCreateCoreOptions": [
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "length",
+    "outputLanguage",
+    "type"
+  ],
+  "SummarizerCreateOptions": [
+    "monitor",
+    "sharedContext",
+    "signal"
+  ],
+  "SummarizerFormat": [
+    "\"markdown\"",
+    "\"plain-text\"",
+    "markdown",
+    "plain-text"
+  ],
+  "SummarizerLength": [
+    "\"long\"",
+    "\"medium\"",
+    "\"short\"",
+    "long",
+    "medium",
+    "short"
+  ],
+  "SummarizerSummarizeOptions": [
+    "context",
+    "signal"
+  ],
+  "SummarizerType": [
+    "\"headline\"",
+    "\"key-points\"",
+    "\"teaser\"",
+    "\"tl;dr\"",
+    "headline",
+    "key-points",
+    "teaser",
+    "tl;dr"
   ],
   "Supports-Loading-Mode": [
     "credentialed-prerender",
@@ -52878,8 +52784,6 @@
     "localStorage"
   ],
   "WindowOrWorkerGlobalScope": [
-    "AI namespace",
-    "ai",
     "atob(data)",
     "brands frozen array",
     "btoa(data)",
@@ -53206,6 +53110,93 @@
     "position",
     "size",
     "type"
+  ],
+  "Writer": [
+    "availability()",
+    "availability(options)",
+    "create()",
+    "create(options)",
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "inputQuota",
+    "length",
+    "measureInputUsage(input)",
+    "measureInputUsage(input, options)",
+    "outputLanguage",
+    "sharedContext",
+    "tone",
+    "write(input)",
+    "write(input, options)",
+    "writeStreaming(input)",
+    "writeStreaming(input, options)"
+  ],
+  "Writer/availability()": [
+    "options"
+  ],
+  "Writer/availability(options)": [
+    "options"
+  ],
+  "Writer/create()": [
+    "options"
+  ],
+  "Writer/create(options)": [
+    "options"
+  ],
+  "Writer/measureInputUsage(input)": [
+    "input",
+    "options"
+  ],
+  "Writer/measureInputUsage(input, options)": [
+    "input",
+    "options"
+  ],
+  "Writer/write(input)": [
+    "input",
+    "options"
+  ],
+  "Writer/write(input, options)": [
+    "input",
+    "options"
+  ],
+  "Writer/writeStreaming(input)": [
+    "input",
+    "options"
+  ],
+  "Writer/writeStreaming(input, options)": [
+    "input",
+    "options"
+  ],
+  "WriterCreateCoreOptions": [
+    "expectedContextLanguages",
+    "expectedInputLanguages",
+    "format",
+    "length",
+    "outputLanguage",
+    "tone"
+  ],
+  "WriterCreateOptions": [
+    "monitor",
+    "sharedContext",
+    "signal"
+  ],
+  "WriterFormat": [
+    "\"markdown\"",
+    "\"plain-text\""
+  ],
+  "WriterLength": [
+    "\"long\"",
+    "\"medium\"",
+    "\"short\""
+  ],
+  "WriterTone": [
+    "\"casual\"",
+    "\"formal\"",
+    "\"neutral\""
+  ],
+  "WriterWriteOptions": [
+    "context",
+    "signal"
   ],
   "XMLHttpRequest": [
     "DONE",
@@ -55936,6 +55927,7 @@
     "avoid-region"
   ],
   "browsing context": [
+    "compute the effective partition nonce",
     "fenced frame config instance",
     "required CSP",
     "top-level traversable"
@@ -61311,7 +61303,8 @@
     "sandboxing flag set",
     "source partition key",
     "start time",
-    "state"
+    "state",
+    "tags"
   ],
   "prerender candidate": [
     "target navigable name hint"
@@ -62801,6 +62794,7 @@
     "predicate",
     "referrer policy",
     "requirements",
+    "tags",
     "target navigable name hint"
   ],
   "speculation rule set": [
@@ -62811,7 +62805,9 @@
     "No-Vary-Search hint",
     "URL",
     "eagerness",
-    "referrer policy"
+    "redundant with",
+    "referrer policy",
+    "tags"
   ],
   "stack": [
     "clone",
