@@ -6519,6 +6519,7 @@ MLGraphBuilder/log(input, options)
 MLGraphBuilder/neg(input, options)
 MLGraphBuilder/reciprocal(input, options)
 MLGraphBuilder/sin(input, options)
+MLGraphBuilder/sign(input, options)
 MLGraphBuilder/sqrt(input, options)
 MLGraphBuilder/tan(input, options)
 -
@@ -6646,6 +6647,30 @@ webnn
 webnn
 1
 current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-cumulativesum-input-axis-options-options
+1
+1
+MLGraphBuilder/cumulativeSum(input, axis, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-dequantizelinear-input-scale-zeropoint-options-options
+1
+1
+MLGraphBuilder/dequantizeLinear(input, scale, zeroPoint, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
 https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu-input-options-options
 1
 1
@@ -6662,11 +6687,15 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-equal-a-b-options
 1
 1
 MLGraphBuilder/equal(a, b, options)
+MLGraphBuilder/notEqual(a, b, options)
 MLGraphBuilder/greater(a, b, options)
 MLGraphBuilder/greaterOrEqual(a, b, options)
 MLGraphBuilder/lesser(a, b, options)
 MLGraphBuilder/lesserOrEqual(a, b, options)
 MLGraphBuilder/logicalNot(a, options)
+MLGraphBuilder/logicalAnd(a, b, options)
+MLGraphBuilder/logicalOr(a, b, options)
+MLGraphBuilder/logicalXor(a, b, options)
 -
 options
 options
@@ -6691,6 +6720,30 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gather-input-indi
 1
 1
 MLGraphBuilder/gather(input, indices, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gatherelements-input-indices-options-options
+1
+1
+MLGraphBuilder/gatherElements(input, indices, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gathernd-input-indices-options-options
+1
+1
+MLGraphBuilder/gatherND(input, indices, options)
 -
 options
 options
@@ -6879,6 +6932,18 @@ webnn
 webnn
 1
 current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-quantizelinear-input-scale-zeropoint-options-options
+1
+1
+MLGraphBuilder/quantizeLinear(input, scale, zeroPoint, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
 https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducel1-input-options-options
 1
 1
@@ -6928,6 +6993,42 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reshape-input-new
 1
 1
 MLGraphBuilder/reshape(input, newShape, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reverse-input-options-options
+1
+1
+MLGraphBuilder/reverse(input, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-scatterelements-input-indices-updates-options-options
+1
+1
+MLGraphBuilder/scatterElements(input, indices, updates, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-scatternd-input-indices-updates-options-options
+1
+1
+MLGraphBuilder/scatterND(input, indices, updates, options)
 -
 options
 options
@@ -7012,6 +7113,18 @@ https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tanh-input-option
 1
 1
 MLGraphBuilder/tanh(input, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+current
+https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tile-input-repetitions-options-options
+1
+1
+MLGraphBuilder/tile(input, repetitions, options)
 -
 options
 options
@@ -10253,6 +10366,7 @@ MLGraphBuilder/log(input, options)
 MLGraphBuilder/neg(input, options)
 MLGraphBuilder/reciprocal(input, options)
 MLGraphBuilder/sin(input, options)
+MLGraphBuilder/sign(input, options)
 MLGraphBuilder/sqrt(input, options)
 MLGraphBuilder/tan(input, options)
 -
@@ -10380,6 +10494,30 @@ webnn
 webnn
 1
 snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cumulativesum-input-axis-options-options
+1
+1
+MLGraphBuilder/cumulativeSum(input, axis, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-dequantizelinear-input-scale-zeropoint-options-options
+1
+1
+MLGraphBuilder/dequantizeLinear(input, scale, zeroPoint, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
 https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-elu-input-options-options
 1
 1
@@ -10396,11 +10534,15 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal-a-b-options-options
 1
 1
 MLGraphBuilder/equal(a, b, options)
+MLGraphBuilder/notEqual(a, b, options)
 MLGraphBuilder/greater(a, b, options)
 MLGraphBuilder/greaterOrEqual(a, b, options)
 MLGraphBuilder/lesser(a, b, options)
 MLGraphBuilder/lesserOrEqual(a, b, options)
 MLGraphBuilder/logicalNot(a, options)
+MLGraphBuilder/logicalAnd(a, b, options)
+MLGraphBuilder/logicalOr(a, b, options)
+MLGraphBuilder/logicalXor(a, b, options)
 -
 options
 options
@@ -10425,6 +10567,30 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gather-input-indices-options-opt
 1
 1
 MLGraphBuilder/gather(input, indices, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gatherelements-input-indices-options-options
+1
+1
+MLGraphBuilder/gatherElements(input, indices, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gathernd-input-indices-options-options
+1
+1
+MLGraphBuilder/gatherND(input, indices, options)
 -
 options
 options
@@ -10613,6 +10779,18 @@ webnn
 webnn
 1
 snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-quantizelinear-input-scale-zeropoint-options-options
+1
+1
+MLGraphBuilder/quantizeLinear(input, scale, zeroPoint, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
 https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducel1-input-options-options
 1
 1
@@ -10662,6 +10840,42 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reshape-input-newshape-options-o
 1
 1
 MLGraphBuilder/reshape(input, newShape, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reverse-input-options-options
+1
+1
+MLGraphBuilder/reverse(input, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-scatterelements-input-indices-updates-options-options
+1
+1
+MLGraphBuilder/scatterElements(input, indices, updates, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-scatternd-input-indices-updates-options-options
+1
+1
+MLGraphBuilder/scatterND(input, indices, updates, options)
 -
 options
 options
@@ -10746,6 +10960,18 @@ https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tanh-input-options-options
 1
 1
 MLGraphBuilder/tanh(input, options)
+-
+options
+options
+argument
+webnn
+webnn
+1
+snapshot
+https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tile-input-repetitions-options-options
+1
+1
+MLGraphBuilder/tile(input, repetitions, options)
 -
 options
 options

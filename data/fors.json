@@ -4717,6 +4717,7 @@
     "MLConv2dSupportLimits",
     "MLConvTranspose2dFilterOperandLayout",
     "MLConvTranspose2dOptions",
+    "MLCumulativeSumOptions",
     "MLEluOptions",
     "MLGatherOptions",
     "MLGatherSupportLimits",
@@ -4756,12 +4757,17 @@
     "MLPool2dOptions",
     "MLPowerPreference",
     "MLPreluSupportLimits",
+    "MLQuantizationSupportLimits",
     "MLRecurrentNetworkActivation",
     "MLRecurrentNetworkDirection",
     "MLReduceOptions",
     "MLResample2dOptions",
+    "MLReverseOptions",
     "MLRoundingType",
+    "MLScatterOptions",
+    "MLScatterSupportLimits",
     "MLSingleInputSupportLimits",
+    "MLSliceOptions",
     "MLSplitOptions",
     "MLSplitSupportLimits",
     "MLSupportLimits",
@@ -9576,6 +9582,8 @@
     "blocklisted manufacturer data",
     "blocklisted manufacturer data filter",
     "blockquote",
+    "blockwise broadcastable",
+    "blockwise broadcasting",
     "blue",
     "blueviolet",
     "blur",
@@ -39066,6 +39074,10 @@
     "padding",
     "strides"
   ],
+  "MLCumulativeSumOptions": [
+    "exclusive",
+    "reversed"
+  ],
   "MLEluOptions": [
     "alpha"
   ],
@@ -39140,6 +39152,10 @@
     "cos(input)",
     "cos(input, options)",
     "create reduction operation",
+    "cumulativeSum(input, axis)",
+    "cumulativeSum(input, axis, options)",
+    "dequantizeLinear(input, scale, zeroPoint)",
+    "dequantizeLinear(input, scale, zeroPoint, options)",
     "div(a, b)",
     "div(a, b, options)",
     "element-wise-binary-op",
@@ -39159,6 +39175,10 @@
     "floor(input, options)",
     "gather(input, indices)",
     "gather(input, indices, options)",
+    "gatherElements(input, indices)",
+    "gatherElements(input, indices, options)",
+    "gatherND(input, indices)",
+    "gatherND(input, indices, options)",
     "gelu(input)",
     "gelu(input, options)",
     "gemm(a, b)",
@@ -39195,8 +39215,14 @@
     "linear(input, options)",
     "log(input)",
     "log(input, options)",
+    "logicalAnd(a, b)",
+    "logicalAnd(a, b, options)",
     "logicalNot(a)",
     "logicalNot(a, options)",
+    "logicalOr(a, b)",
+    "logicalOr(a, b, options)",
+    "logicalXor(a, b)",
+    "logicalXor(a, b, options)",
     "lstm(input, weight, recurrentWeight, steps, hiddenSize)",
     "lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
     "lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)",
@@ -39213,6 +39239,8 @@
     "mul(a, b, options)",
     "neg(input)",
     "neg(input, options)",
+    "notEqual(a, b)",
+    "notEqual(a, b, options)",
     "pad(input, beginningPadding, endingPadding)",
     "pad(input, beginningPadding, endingPadding, options)",
     "pooling-op",
@@ -39220,6 +39248,8 @@
     "pow(a, b, options)",
     "prelu(input, slope)",
     "prelu(input, slope, options)",
+    "quantizeLinear(input, scale, zeroPoint)",
+    "quantizeLinear(input, scale, zeroPoint, options)",
     "reciprocal(input)",
     "reciprocal(input, options)",
     "reduceL1(input)",
@@ -39248,8 +39278,16 @@
     "resample2d(input, options)",
     "reshape(input, newShape)",
     "reshape(input, newShape, options)",
+    "reverse(input)",
+    "reverse(input, options)",
+    "scatterElements(input, indices, updates)",
+    "scatterElements(input, indices, updates, options)",
+    "scatterND(input, indices, updates)",
+    "scatterND(input, indices, updates, options)",
     "sigmoid(input)",
     "sigmoid(input, options)",
+    "sign(input)",
+    "sign(input, options)",
     "sin(input)",
     "sin(input, options)",
     "slice(input, starts, sizes)",
@@ -39270,6 +39308,8 @@
     "tan(input, options)",
     "tanh(input)",
     "tanh(input, options)",
+    "tile(input, repetitions)",
+    "tile(input, repetitions, options)",
     "transpose(input)",
     "transpose(input, options)",
     "triangular(input)",
@@ -39353,6 +39393,17 @@
     "input",
     "options"
   ],
+  "MLGraphBuilder/cumulativeSum(input, axis, options)": [
+    "axis",
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/dequantizeLinear(input, scale, zeroPoint, options)": [
+    "input",
+    "options",
+    "scale",
+    "zeroPoint"
+  ],
   "MLGraphBuilder/div(a, b, options)": [
     "a",
     "b",
@@ -39385,6 +39436,16 @@
     "options"
   ],
   "MLGraphBuilder/gather(input, indices, options)": [
+    "indices",
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/gatherElements(input, indices, options)": [
+    "indices",
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/gatherND(input, indices, options)": [
     "indices",
     "input",
     "options"
@@ -39474,7 +39535,22 @@
     "input",
     "options"
   ],
+  "MLGraphBuilder/logicalAnd(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/logicalNot(a, options)": [
+    "a",
+    "b",
+    "options"
+  ],
+  "MLGraphBuilder/logicalOr(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
+  "MLGraphBuilder/logicalXor(a, b, options)": [
     "a",
     "b",
     "options"
@@ -39524,6 +39600,11 @@
     "input",
     "options"
   ],
+  "MLGraphBuilder/notEqual(a, b, options)": [
+    "a",
+    "b",
+    "options"
+  ],
   "MLGraphBuilder/pad(input, beginningPadding, endingPadding, options)": [
     "beginningPadding",
     "endingPadding",
@@ -39539,6 +39620,12 @@
     "input",
     "options",
     "slope"
+  ],
+  "MLGraphBuilder/quantizeLinear(input, scale, zeroPoint, options)": [
+    "input",
+    "options",
+    "scale",
+    "zeroPoint"
   ],
   "MLGraphBuilder/reciprocal(input, options)": [
     "input",
@@ -39597,7 +39684,27 @@
     "newShape",
     "options"
   ],
+  "MLGraphBuilder/reverse(input, options)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/scatterElements(input, indices, updates, options)": [
+    "indices",
+    "input",
+    "options",
+    "updates"
+  ],
+  "MLGraphBuilder/scatterND(input, indices, updates, options)": [
+    "indices",
+    "input",
+    "options",
+    "updates"
+  ],
   "MLGraphBuilder/sigmoid(input, options)": [
+    "input",
+    "options"
+  ],
+  "MLGraphBuilder/sign(input, options)": [
     "input",
     "options"
   ],
@@ -39645,6 +39752,11 @@
   "MLGraphBuilder/tanh(input, options)": [
     "input",
     "options"
+  ],
+  "MLGraphBuilder/tile(input, repetitions, options)": [
+    "input",
+    "options",
+    "repetitions"
   ],
   "MLGraphBuilder/transpose(input, options)": [
     "input",
@@ -39801,6 +39913,8 @@
     "conv2d",
     "convTranspose2d",
     "cos",
+    "cumulativeSum",
+    "dequantizeLinear",
     "div",
     "elu",
     "equal",
@@ -39809,6 +39923,8 @@
     "expand",
     "floor",
     "gather",
+    "gatherElements",
+    "gatherND",
     "gelu",
     "gemm",
     "greater",
@@ -39827,7 +39943,10 @@
     "lesserOrEqual",
     "linear",
     "log",
+    "logicalAnd",
     "logicalNot",
+    "logicalOr",
+    "logicalXor",
     "lstm",
     "lstmCell",
     "matmul",
@@ -39836,11 +39955,13 @@
     "min",
     "mul",
     "neg",
+    "notEqual",
     "output",
     "pad",
     "pow",
     "preferredInputLayout",
     "prelu",
+    "quantizeLinear",
     "reciprocal",
     "reduceL1",
     "reduceL2",
@@ -39855,7 +39976,11 @@
     "relu",
     "resample2d",
     "reshape",
+    "reverse",
+    "scatterElements",
+    "scatterND",
     "sigmoid",
+    "sign",
     "sin",
     "slice",
     "softmax",
@@ -39866,6 +39991,7 @@
     "sub",
     "tan",
     "tanh",
+    "tile",
     "transpose",
     "triangular",
     "where"
@@ -39931,6 +40057,12 @@
     "output",
     "slope"
   ],
+  "MLQuantizationSupportLimits": [
+    "input",
+    "output",
+    "scale",
+    "zeroPoint"
+  ],
   "MLRecurrentNetworkActivation": [
     "\"relu\"",
     "\"sigmoid\"",
@@ -39951,13 +40083,28 @@
     "scales",
     "sizes"
   ],
+  "MLReverseOptions": [
+    "axes"
+  ],
   "MLRoundingType": [
     "\"ceil\"",
     "\"floor\""
   ],
+  "MLScatterOptions": [
+    "axis"
+  ],
+  "MLScatterSupportLimits": [
+    "indices",
+    "input",
+    "output",
+    "updates"
+  ],
   "MLSingleInputSupportLimits": [
     "input",
     "output"
+  ],
+  "MLSliceOptions": [
+    "strides"
   ],
   "MLSplitOptions": [
     "axis"
