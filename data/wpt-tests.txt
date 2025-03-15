@@ -1,4 +1,4 @@
-sha: 804c7a10ec525f47d1d317fe714a70ac1db5453a
+sha: 49f733c764f45e53fe9533dec7983706e38ac097
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -883,17 +883,21 @@ crashtest editing/crashtests/delete-in-dd-editing-host-after-selectall-with-focu
 crashtest editing/crashtests/delete-in-dd-editing-host-after-selectall-without-focus.html
 crashtest editing/crashtests/delete-in-designMode-without-explicitly-setting-focus.html
 crashtest editing/crashtests/delete-in-empty-editable-list-followed-by-non-editable-listitem.html
+crashtest editing/crashtests/delete-selection-with-null-range.html
 crashtest editing/crashtests/delete-to-join-inline-blocks.html
+crashtest editing/crashtests/design-mode-textarea.html
 crashtest editing/crashtests/designMode-caret-change.html
 crashtest editing/crashtests/designMode-document-will-be-blurred-by-focus-event-listener.html
 crashtest editing/crashtests/designMode-off-during-inserthorizontalrule.html
 crashtest editing/crashtests/designMode-on-of-lazy-loading-iframe.html
 crashtest editing/crashtests/editing-on-newline-should-not-crash.html
+crashtest editing/crashtests/empty-editable.html
 crashtest editing/crashtests/enableInlineTableEditing-after-updating-selection-range-cross-shadow-dom-boundary.html
 crashtest editing/crashtests/execCommand-at-load-with-changing-editing-host.html
 crashtest editing/crashtests/execCommand-backcolor-and-hilitecolor-in-empty-iframe-in-designMode.html
 crashtest editing/crashtests/execCommand-fontsize-when-size-attr-invalid.html
 crashtest editing/crashtests/execCommand-without-selection-ranges.html
+crashtest editing/crashtests/first-letter-crossing-engine-boundary.html
 crashtest editing/crashtests/format-block-selection-containing-non-editable-list.html
 crashtest editing/crashtests/formatblock-when-root-is-editing-host.html
 crashtest editing/crashtests/forwarddelete-after-editable-slot-element-outside-body.html
@@ -985,10 +989,6 @@ crashtest editing/crashtests/textarea-will-be-blurred-by-focus-event-listener.ht
 crashtest editing/crashtests/unloading-editor-in-subdocument-containing-misspelled-word.html
 crashtest editing/crashtests/update-dom-during-undoing-in-textarea.html
 crashtest editing/crashtests/white-space-nowrap-to-pre-line.html
-crashtest editing/other/delete-selection-with-null-range-crash.html
-crashtest editing/other/design-mode-textarea-crash.html
-crashtest editing/run/empty-editable-crash.html
-crashtest editing/run/first-letter-crossing-engine-boundary-crash.html
 crashtest encoding/streams/stringification-crash.html
 crashtest fetch/api/crashtests/aborted-fetch-response.https.html
 crashtest fetch/api/crashtests/body-window-destroy.html
@@ -37775,6 +37775,7 @@ testharness dom/traversal/TreeWalker-traversal-skip.html
 testharness dom/traversal/TreeWalker-walking-outside-a-tree.html
 testharness dom/traversal/TreeWalker.html
 testharness dom/window-extends-event-target.html
+testharness dom/xslt/document-function.window.js
 testharness dom/xslt/functions.tentative.window.js
 testharness dom/xslt/transformToFragment.tentative.window.js
 testharness domparsing/DOMParser-parseFromString-encoding.html
@@ -50558,6 +50559,7 @@ testharness sanitizer-api/sanitizer-basic-filtering.tentative.html
 testharness sanitizer-api/sanitizer-boolean-defaults.tentative.html
 testharness sanitizer-api/sanitizer-config.tentative.html
 testharness sanitizer-api/sanitizer-names.tentative.html
+testharness sanitizer-api/sanitizer-removeUnsafe.tentative.html
 testharness sanitizer-api/sanitizer-unknown.tentative.html
 testharness sanitizer-api/sethtml-safety.tentative.html
 testharness sanitizer-api/sethtml-tree-construction.tentative.html
