@@ -33492,6 +33492,7 @@
     "architecture",
     "description",
     "device",
+    "isFallbackAdapter",
     "subgroupMaxSize",
     "subgroupMinSize",
     "vendor"
@@ -33729,6 +33730,10 @@
     "clearBuffer(buffer)",
     "clearBuffer(buffer, offset)",
     "clearBuffer(buffer, offset, size)",
+    "copyBufferToBuffer()",
+    "copyBufferToBuffer(source, destination)",
+    "copyBufferToBuffer(source, destination, size)",
+    "copyBufferToBuffer(source, sourceOffset, destination, destinationOffset)",
     "copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)",
     "copyBufferToTexture(source, destination, copySize)",
     "copyTextureToBuffer(source, destination, copySize)",
@@ -33747,6 +33752,16 @@
     "buffer",
     "offset",
     "size"
+  ],
+  "GPUCommandEncoder/copyBufferToBuffer(source, destination)": [
+    "destination",
+    "size",
+    "source"
+  ],
+  "GPUCommandEncoder/copyBufferToBuffer(source, destination, size)": [
+    "destination",
+    "size",
+    "source"
   ],
   "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)": [
     "destination",
