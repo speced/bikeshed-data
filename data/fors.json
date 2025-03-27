@@ -43376,6 +43376,7 @@
     "toJSON()"
   ],
   "PerformanceEventTiming": [
+    "Interaction",
     "associated Event",
     "cancelable",
     "interactionId",
@@ -45280,11 +45281,16 @@
   "RTCReceivedRtpStreamStats": [
     "jitter",
     "packetsLost",
-    "packetsReceived"
+    "packetsReceived",
+    "packetsReceivedWithCe",
+    "packetsReceivedWithEct1",
+    "packetsReportedAsLost",
+    "packetsReportedAsLostButRecovered"
   ],
   "RTCRemoteInboundRtpStreamStats": [
     "fractionLost",
     "localId",
+    "packetsWithBleachedEct1Marking",
     "roundTripTime",
     "roundTripTimeMeasurements",
     "totalRoundTripTime"
@@ -45536,7 +45542,8 @@
   ],
   "RTCSentRtpStreamStats": [
     "bytesSent",
-    "packetsSent"
+    "packetsSent",
+    "packetsSentWithEct1"
   ],
   "RTCSessionDescription": [
     "constructor()",
@@ -45605,6 +45612,8 @@
   "RTCTransportStats": [
     "bytesReceived",
     "bytesSent",
+    "ccfbMessagesReceived",
+    "ccfbMessagesSent",
     "dtlsCipher",
     "dtlsRole",
     "dtlsState",
