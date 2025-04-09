@@ -31,6 +31,22 @@
       "url": "https://tc39.es/ecma426/#sec-ComparePositions"
     }
   },
+  "#sec-DecodeGeneratedRange": {
+    "current": {
+      "number": "9.3.4.5",
+      "spec": "Source map format",
+      "text": "DecodeGeneratedRange ( rangeTree, state, names )",
+      "url": "https://tc39.es/ecma426/#sec-DecodeGeneratedRange"
+    }
+  },
+  "#sec-DecodeGeneratedRangeItem": {
+    "current": {
+      "number": "9.3.4.5.1",
+      "spec": "Source map format",
+      "text": "DecodeGeneratedRangeItem",
+      "url": "https://tc39.es/ecma426/#sec-DecodeGeneratedRangeItem"
+    }
+  },
   "#sec-DecodeIndexSourceMap": {
     "current": {
       "number": "10.1",
@@ -55,6 +71,38 @@
       "url": "https://tc39.es/ecma426/#sec-DecodeMappingsField"
     }
   },
+  "#sec-DecodeOriginalScope": {
+    "current": {
+      "number": "9.3.4.4",
+      "spec": "Source map format",
+      "text": "DecodeOriginalScope ( scopeTree, state, names )",
+      "url": "https://tc39.es/ecma426/#sec-DecodeOriginalScope"
+    }
+  },
+  "#sec-DecodeOriginalScopeItem": {
+    "current": {
+      "number": "9.3.4.4.1",
+      "spec": "Source map format",
+      "text": "DecodeOriginalScopeItem",
+      "url": "https://tc39.es/ecma426/#sec-DecodeOriginalScopeItem"
+    }
+  },
+  "#sec-DecodeScopesInfo": {
+    "current": {
+      "number": "9.3.4.3",
+      "spec": "Source map format",
+      "text": "DecodeScopesInfo ( scopes, names )",
+      "url": "https://tc39.es/ecma426/#sec-DecodeScopesInfo"
+    }
+  },
+  "#sec-DecodeScopesInfoItem": {
+    "current": {
+      "number": "9.3.4.3.1",
+      "spec": "Source map format",
+      "text": "DecodeScopesInfoItem",
+      "url": "https://tc39.es/ecma426/#sec-DecodeScopesInfoItem"
+    }
+  },
   "#sec-DecodeSourceMap": {
     "current": {
       "number": "9.1.2",
@@ -65,10 +113,18 @@
   },
   "#sec-DecodeSourceMapSources": {
     "current": {
-      "number": "9.3.1",
+      "number": "9.4.1",
       "spec": "Source map format",
-      "text": "DecodeSourceMapSources ( baseURL, sourceRoot, sources, sourcesContent, ignoreList )",
+      "text": "DecodeSourceMapSources ( baseURL, sourceRoot, sources, sourcesContent, ignoreList, scopes )",
       "url": "https://tc39.es/ecma426/#sec-DecodeSourceMapSources"
+    }
+  },
+  "#sec-DecodeSubRangeBinding": {
+    "current": {
+      "number": "9.3.4.5.2",
+      "spec": "Source map format",
+      "text": "DecodeSubRangeBinding",
+      "url": "https://tc39.es/ecma426/#sec-DecodeSubRangeBinding"
     }
   },
   "#sec-FetchSourceMap": {
@@ -207,12 +263,36 @@
       "url": "https://tc39.es/ecma426/#sec-base64-vlq"
     }
   },
+  "#sec-binding-record-type": {
+    "current": {
+      "number": "9.3.2.2",
+      "spec": "Source map format",
+      "text": "The Binding Record",
+      "url": "https://tc39.es/ecma426/#sec-binding-record-type"
+    }
+  },
   "#sec-conformance": {
     "current": {
       "number": "2",
       "spec": "Source map format",
       "text": "Conformance",
       "url": "https://tc39.es/ecma426/#sec-conformance"
+    }
+  },
+  "#sec-decode-scope-state-record-type": {
+    "current": {
+      "number": "9.3.4.2",
+      "spec": "Source map format",
+      "text": "Decode Scope State Record",
+      "url": "https://tc39.es/ecma426/#sec-decode-scope-state-record-type"
+    }
+  },
+  "#sec-decoding-scopes": {
+    "current": {
+      "number": "9.3.4",
+      "spec": "Source map format",
+      "text": "Decoding scopes",
+      "url": "https://tc39.es/ecma426/#sec-decoding-scopes"
     }
   },
   "#sec-decoding-source-maps": {
@@ -225,7 +305,7 @@
   },
   "#sec-extensions": {
     "current": {
-      "number": "9.4",
+      "number": "9.5",
       "spec": "Source map format",
       "text": "Extensions",
       "url": "https://tc39.es/ecma426/#sec-extensions"
@@ -237,6 +317,22 @@
       "spec": "Source map format",
       "text": "Fetching source maps",
       "url": "https://tc39.es/ecma426/#sec-fetching-source-maps"
+    }
+  },
+  "#sec-generated-range-grammar": {
+    "current": {
+      "number": "9.3.3.2",
+      "spec": "Source map format",
+      "text": "Generated range grammar",
+      "url": "https://tc39.es/ecma426/#sec-generated-range-grammar"
+    }
+  },
+  "#sec-generated-range-record-type": {
+    "current": {
+      "number": "9.3.2",
+      "spec": "Source map format",
+      "text": "Generated Range Record",
+      "url": "https://tc39.es/ecma426/#sec-generated-range-record-type"
     }
   },
   "#sec-grammar-notation": {
@@ -351,6 +447,22 @@
       "url": "https://tc39.es/ecma426/#sec-original-position-record-type"
     }
   },
+  "#sec-original-scope-grammar": {
+    "current": {
+      "number": "9.3.3.1",
+      "spec": "Source map format",
+      "text": "Original scope grammar",
+      "url": "https://tc39.es/ecma426/#sec-original-scope-grammar"
+    }
+  },
+  "#sec-original-scope-record-type": {
+    "current": {
+      "number": "9.3.1",
+      "spec": "Source map format",
+      "text": "Original Scope Record",
+      "url": "https://tc39.es/ecma426/#sec-original-scope-record-type"
+    }
+  },
   "#sec-position-record-type": {
     "current": {
       "number": "8.1",
@@ -407,6 +519,30 @@
       "url": "https://tc39.es/ecma426/#sec-scope"
     }
   },
+  "#sec-scope-info-record-type": {
+    "current": {
+      "number": "9.3.4.1",
+      "spec": "Source map format",
+      "text": "Scope Info Record",
+      "url": "https://tc39.es/ecma426/#sec-scope-info-record-type"
+    }
+  },
+  "#sec-scopes": {
+    "current": {
+      "number": "9.3",
+      "spec": "Source map format",
+      "text": "Scopes structure",
+      "url": "https://tc39.es/ecma426/#sec-scopes"
+    }
+  },
+  "#sec-scopes-grammar": {
+    "current": {
+      "number": "9.3.3",
+      "spec": "Source map format",
+      "text": "Scopes grammar",
+      "url": "https://tc39.es/ecma426/#sec-scopes-grammar"
+    }
+  },
   "#sec-source-map-format": {
     "current": {
       "number": "9",
@@ -417,10 +553,18 @@
   },
   "#sec-sources": {
     "current": {
-      "number": "9.3",
+      "number": "9.4",
       "spec": "Source map format",
       "text": "Resolving sources",
       "url": "https://tc39.es/ecma426/#sec-sources"
+    }
+  },
+  "#sec-sub-range-binding-record-type": {
+    "current": {
+      "number": "9.3.2.1",
+      "spec": "Source map format",
+      "text": "The Sub-Range Binding Record",
+      "url": "https://tc39.es/ecma426/#sec-sub-range-binding-record-type"
     }
   },
   "#sec-terms-and-definitions": {
@@ -429,6 +573,14 @@
       "spec": "Source map format",
       "text": "Terms and Definitions",
       "url": "https://tc39.es/ecma426/#sec-terms-and-definitions"
+    }
+  },
+  "#sec-unknown-item-grammar": {
+    "current": {
+      "number": "9.3.3.3",
+      "spec": "Source map format",
+      "text": "Unknown item grammar",
+      "url": "https://tc39.es/ecma426/#sec-unknown-item-grammar"
     }
   }
 }
