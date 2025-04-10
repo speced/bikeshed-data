@@ -4738,6 +4738,8 @@
     "MLConvTranspose2dFilterOperandLayout",
     "MLConvTranspose2dOptions",
     "MLCumulativeSumOptions",
+    "MLDataTypeLimits",
+    "MLDataTypeList",
     "MLEluOptions",
     "MLGatherOptions",
     "MLGatherSupportLimits",
@@ -4777,7 +4779,8 @@
     "MLPool2dOptions",
     "MLPowerPreference",
     "MLPreluSupportLimits",
-    "MLQuantizationSupportLimits",
+    "MLQuantizeDequantizeLinearSupportLimits",
+    "MLRankRange",
     "MLRecurrentNetworkActivation",
     "MLRecurrentNetworkDirection",
     "MLReduceOptions",
@@ -4790,9 +4793,9 @@
     "MLSliceOptions",
     "MLSplitOptions",
     "MLSplitSupportLimits",
-    "MLSupportLimits",
     "MLTensor",
     "MLTensorDescriptor",
+    "MLTensorLimits",
     "MLTransposeOptions",
     "MLTriangularOptions",
     "MLWhereSupportLimits",
@@ -39127,6 +39130,9 @@
     "exclusive",
     "reversed"
   ],
+  "MLDataTypeLimits": [
+    "dataTypes"
+  ],
   "MLEluOptions": [
     "alpha"
   ],
@@ -40001,6 +40007,7 @@
     "matmul",
     "max",
     "maxPool2d",
+    "maxTensorByteLength",
     "min",
     "mul",
     "neg",
@@ -40106,11 +40113,15 @@
     "output",
     "slope"
   ],
-  "MLQuantizationSupportLimits": [
+  "MLQuantizeDequantizeLinearSupportLimits": [
     "input",
     "output",
     "scale",
     "zeroPoint"
+  ],
+  "MLRankRange": [
+    "max",
+    "min"
   ],
   "MLRecurrentNetworkActivation": [
     "\"relu\"",
@@ -40162,9 +40173,6 @@
     "input",
     "outputs"
   ],
-  "MLSupportLimits": [
-    "dataTypes"
-  ],
   "MLTensor": [
     "[[context]]",
     "[[data]]",
@@ -40180,6 +40188,10 @@
   "MLTensorDescriptor": [
     "readable",
     "writable"
+  ],
+  "MLTensorLimits": [
+    "dataTypes",
+    "rankRange"
   ],
   "MLTransposeOptions": [
     "permutation"
