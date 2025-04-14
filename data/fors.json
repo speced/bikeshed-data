@@ -4237,6 +4237,7 @@
     "ImportAttribute Record",
     "ImportEntry Record",
     "ImportExportKind",
+    "ImportNodeOptions",
     "InLeapYear",
     "InLeapYear(t)",
     "InUseAttributeError",
@@ -11271,6 +11272,7 @@
     "create an attribution trigger",
     "create an element",
     "create an element for a token",
+    "create an element internal",
     "create an event",
     "create an exports object",
     "create an identity TransformStream",
@@ -11633,6 +11635,7 @@
     "decrypt",
     "dedicated media source failure steps",
     "deduct privacy budget",
+    "deep copy",
     "deep link",
     "deeppink",
     "deepskyblue",
@@ -12606,6 +12609,8 @@
     "exposure set intersection",
     "express intention",
     "expression",
+    "expression constraint",
+    "expression constraints",
     "expressions",
     "extended attribute",
     "extended navigation",
@@ -13009,6 +13014,7 @@
     "flagged as full",
     "flat tree",
     "flatmap process next value steps",
+    "flatten element creation options",
     "flattened",
     "flattened document form",
     "flattened element tree",
@@ -31026,6 +31032,7 @@
     "createTreeWalker(root, whatToShow)",
     "createTreeWalker(root, whatToShow, filter)",
     "currentScript",
+    "custom element registry",
     "defaultView",
     "descendant navigables",
     "designMode",
@@ -31080,7 +31087,7 @@
     "images",
     "implementation",
     "importNode(node)",
-    "importNode(node, subtree)",
+    "importNode(node, options)",
     "in error",
     "inclusive ancestor navigables",
     "inclusive descendant navigables",
@@ -31382,11 +31389,11 @@
   ],
   "Document/importNode(node)": [
     "node",
-    "subtree"
+    "options"
   ],
-  "Document/importNode(node, subtree)": [
+  "Document/importNode(node, options)": [
     "node",
-    "subtree"
+    "options"
   ],
   "Document/measureElement(element)": [
     "element"
@@ -31441,6 +31448,7 @@
   "DocumentOrShadowRoot": [
     "activeElement",
     "adoptedStyleSheets",
+    "customElementRegistry",
     "document or shadow root CSS style sheets",
     "final CSS style sheets",
     "fullscreenElement",
@@ -32016,7 +32024,9 @@
     "currentCSSZoom",
     "custom",
     "custom element definition",
+    "custom element registry",
     "custom element state",
+    "customElementRegistry",
     "defined",
     "elementTiming",
     "focusableAreas()",
@@ -32295,6 +32305,7 @@
     "virtualKeyboardPolicy"
   ],
   "ElementCreationOptions": [
+    "customElementRegistry",
     "is"
   ],
   "ElementDefinitionOptions": [
@@ -37886,6 +37897,10 @@
     "\"global\"",
     "\"memory\"",
     "\"table\""
+  ],
+  "ImportNodeOptions": [
+    "customElementRegistry",
+    "selfOnly"
   ],
   "Ink": [
     "requestPresenter()",
@@ -48430,12 +48445,14 @@
   "ShadowRoot": [
     "available to element internals",
     "clonable",
+    "custom element registry",
     "declarative",
     "delegates focus",
     "delegatesFocus",
     "getHTML(options)",
     "host",
     "innerHTML",
+    "keep custom element registry null",
     "mode",
     "onslotchange",
     "serializable",
@@ -48466,6 +48483,7 @@
   ],
   "ShadowRootInit": [
     "clonable",
+    "customElementRegistry",
     "delegatesFocus",
     "mode",
     "serializable",
@@ -56669,6 +56687,7 @@
   ],
   "clone a node": [
     "document",
+    "fallbackRegistry",
     "parent",
     "subtree"
   ],
