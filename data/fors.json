@@ -7048,6 +7048,8 @@
     "SpeechRecognitionEvent",
     "SpeechRecognitionEventInit",
     "SpeechRecognitionMode",
+    "SpeechRecognitionPhrase",
+    "SpeechRecognitionPhraseList",
     "SpeechRecognitionResult",
     "SpeechRecognitionResultList",
     "SpeechSynthesis",
@@ -49066,6 +49068,8 @@
   ],
   "SpeechRecognition": [
     "SpeechRecognition()",
+    "[[mode]]",
+    "[[phrases]]",
     "[[started]]",
     "abort()",
     "audioend",
@@ -49092,6 +49096,7 @@
     "onspeechend",
     "onspeechstart",
     "onstart",
+    "phrases",
     "result",
     "soundend",
     "soundstart",
@@ -49122,6 +49127,7 @@
     "\"network\"",
     "\"no-speech\"",
     "\"not-allowed\"",
+    "\"phrases-not-supported\"",
     "\"service-not-allowed\""
   ],
   "SpeechRecognitionErrorEvent": [
@@ -49164,6 +49170,56 @@
     "\"cloud-only\"",
     "\"ondevice-only\"",
     "\"ondevice-preferred\""
+  ],
+  "SpeechRecognitionPhrase": [
+    "SpeechRecognitionPhrase(phrase)",
+    "SpeechRecognitionPhrase(phrase, boost)",
+    "[[boost]]",
+    "[[phrase]]",
+    "boost",
+    "constructor(phrase)",
+    "constructor(phrase, boost)",
+    "phrase"
+  ],
+  "SpeechRecognitionPhrase/SpeechRecognitionPhrase(phrase)": [
+    "boost",
+    "phrase"
+  ],
+  "SpeechRecognitionPhrase/SpeechRecognitionPhrase(phrase, boost)": [
+    "boost",
+    "phrase"
+  ],
+  "SpeechRecognitionPhrase/constructor(phrase)": [
+    "boost",
+    "phrase"
+  ],
+  "SpeechRecognitionPhrase/constructor(phrase, boost)": [
+    "boost",
+    "phrase"
+  ],
+  "SpeechRecognitionPhraseList": [
+    "SpeechRecognitionPhraseList(phrases)",
+    "[[phrases]]",
+    "addItem(item)",
+    "constructor(phrases)",
+    "item(index)",
+    "length",
+    "removeItem(index)"
+  ],
+  "SpeechRecognitionPhraseList/SpeechRecognitionPhraseList(phrases)": [
+    "phrases"
+  ],
+  "SpeechRecognitionPhraseList/addItem(item)": [
+    "item"
+  ],
+  "SpeechRecognitionPhraseList/constructor(phrases)": [
+    "phrases"
+  ],
+  "SpeechRecognitionPhraseList/item(index)": [
+    "index"
+  ],
+  "SpeechRecognitionPhraseList/removeItem(index)": [
+    "index"
   ],
   "SpeechRecognitionResult": [
     "isFinal",
@@ -57498,7 +57554,7 @@
     "cached challenge",
     "defer requests",
     "expiration timestamp",
-    "refresh url",
+    "refresh URL",
     "session identifier",
     "session key"
   ],
@@ -62950,7 +63006,8 @@
   ],
   "session scope": [
     "include site",
-    "origin"
+    "origin",
+    "scope specifications"
   ],
   "session-signal": [
     "DRAIN_WEBTRANSPORT_SESSION",

@@ -4448,6 +4448,38 @@
       "shortname": "speech-api"
     }
   },
+  "SpeechRecognitionPhrase()": {
+    "SpeechRecognitionPhrase(phrase)": {
+      "args": [
+        "phrase"
+      ],
+      "for": [
+        "SpeechRecognitionPhrase"
+      ],
+      "shortname": "speech-api"
+    },
+    "SpeechRecognitionPhrase(phrase, boost)": {
+      "args": [
+        "phrase",
+        "boost"
+      ],
+      "for": [
+        "SpeechRecognitionPhrase"
+      ],
+      "shortname": "speech-api"
+    }
+  },
+  "SpeechRecognitionPhraseList()": {
+    "SpeechRecognitionPhraseList(phrases)": {
+      "args": [
+        "phrases"
+      ],
+      "for": [
+        "SpeechRecognitionPhraseList"
+      ],
+      "shortname": "speech-api"
+    }
+  },
   "SpeechSynthesisErrorEvent()": {
     "SpeechSynthesisErrorEvent(type, eventInitDict)": {
       "args": [
@@ -6187,6 +6219,17 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "addItem()": {
+    "addItem(item)": {
+      "args": [
+        "item"
+      ],
+      "for": [
+        "SpeechRecognitionPhraseList"
+      ],
+      "shortname": "speech-api"
     }
   },
   "addListener()": {
@@ -10511,6 +10554,34 @@
         "USBIsochronousInTransferResult"
       ],
       "shortname": "webusb"
+    },
+    "constructor(phrase)": {
+      "args": [
+        "phrase"
+      ],
+      "for": [
+        "SpeechRecognitionPhrase"
+      ],
+      "shortname": "speech-api"
+    },
+    "constructor(phrase, boost)": {
+      "args": [
+        "phrase",
+        "boost"
+      ],
+      "for": [
+        "SpeechRecognitionPhrase"
+      ],
+      "shortname": "speech-api"
+    },
+    "constructor(phrases)": {
+      "args": [
+        "phrases"
+      ],
+      "for": [
+        "SpeechRecognitionPhraseList"
+      ],
+      "shortname": "speech-api"
     },
     "constructor(position)": {
       "args": [
@@ -22586,6 +22657,7 @@
         "NodeList",
         "Plugin",
         "PluginArray",
+        "SpeechRecognitionPhraseList",
         "SpeechRecognitionResult",
         "SpeechRecognitionResultList",
         "StyleSheetList",
@@ -27045,6 +27117,15 @@
     }
   },
   "removeItem()": {
+    "removeItem(index)": {
+      "args": [
+        "index"
+      ],
+      "for": [
+        "SpeechRecognitionPhraseList"
+      ],
+      "shortname": "speech-api"
+    },
     "removeItem(key)": {
       "args": [
         "key"
