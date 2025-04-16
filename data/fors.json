@@ -6763,6 +6763,7 @@
     "Secure Payment Confirmation payment handler",
     "Secure connection establishment",
     "SecureContext",
+    "SecurePaymentConfirmationAvailability",
     "SecurePaymentConfirmationRequest",
     "SecurityError",
     "SecurityPolicyViolationEvent",
@@ -43495,10 +43496,10 @@
     "created",
     "id",
     "interactive",
-    "isSecurePaymentConfirmationAvailable()",
     "onpaymentmethodchange",
     "onshippingaddresschange",
     "onshippingoptionchange",
+    "securePaymentConfirmationAvailability()",
     "shippingAddress",
     "shippingOption",
     "shippingType",
@@ -48016,6 +48017,18 @@
   "Sec-Purpose prefetch": [
     "anonymous-client-ip",
     "prerender"
+  ],
+  "SecurePaymentConfirmationAvailability": [
+    "\"available\"",
+    "\"unavailable-feature-not-enabled\"",
+    "\"unavailable-no-permission-policy\"",
+    "\"unavailable-no-user-verifying-platform-authenticator\"",
+    "\"unavailable-unknown-reason\"",
+    "available",
+    "unavailable-feature-not-enabled",
+    "unavailable-no-permission-policy",
+    "unavailable-no-user-verifying-platform-authenticator",
+    "unavailable-unknown-reason"
   ],
   "SecurePaymentConfirmationRequest": [
     "challenge",
@@ -58752,9 +58765,11 @@
   ],
   "font-style": [
     "italic",
+    "left",
     "normal",
     "oblique",
     "oblique <angle [-90deg,90deg]>?",
+    "right",
     "small-caps"
   ],
   "font-synthesis-position": [
