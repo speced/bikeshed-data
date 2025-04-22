@@ -11162,6 +11162,7 @@
     "create a component match result",
     "create a connection",
     "create a connection between the RP and the IdP account",
+    "create a constant MLTensor",
     "create a constructed CSSStyleSheet",
     "create a context",
     "create a cookie",
@@ -39094,6 +39095,7 @@
     "[[lost]]",
     "[[powerPreference]]",
     "[[timeline]]",
+    "createConstantTensor(descriptor, inputData)",
     "createTensor(descriptor)",
     "destroy()",
     "dispatch(graph, inputs, outputs)",
@@ -39105,6 +39107,10 @@
     "readTensor(tensor)",
     "readTensor(tensor, outputData)",
     "writeTensor(tensor, inputData)"
+  ],
+  "MLContext/createConstantTensor(descriptor, inputData)": [
+    "descriptor",
+    "inputData"
   ],
   "MLContext/createTensor(descriptor)": [
     "descriptor"
@@ -39240,6 +39246,7 @@
     "concat(inputs, axis)",
     "concat(inputs, axis, options)",
     "constant(descriptor, buffer)",
+    "constant(tensor)",
     "constant(type, value)",
     "constructor(context)",
     "conv2d(input, filter)",
@@ -39468,6 +39475,9 @@
   "MLGraphBuilder/constant(descriptor, buffer)": [
     "buffer",
     "descriptor"
+  ],
+  "MLGraphBuilder/constant(tensor)": [
+    "tensor"
   ],
   "MLGraphBuilder/constant(type, value)": [
     "type",
@@ -40096,6 +40106,7 @@
   ],
   "MLOperand": [
     "[[builder]]",
+    "[[constantTensor]]",
     "[[descriptor]]",
     "[[name]]",
     "[[operator]]",
@@ -40219,8 +40230,10 @@
     "[[context]]",
     "[[data]]",
     "[[descriptor]]",
+    "[[isConstant]]",
     "[[isDestroyed]]",
     "[[pendingPromises]]",
+    "constant",
     "dataType",
     "destroy()",
     "readable",
