@@ -17,7 +17,7 @@
   },
   "#algo-add-debug-header": {
     "current": {
-      "number": "7.9",
+      "number": "7.10",
       "spec": "Device Bound Session Credentials",
       "text": "Add debug header",
       "url": "https://w3c.github.io/webappsec-dbsc/#algo-add-debug-header"
@@ -25,7 +25,7 @@
   },
   "#algo-create-session": {
     "current": {
-      "number": "7.8",
+      "number": "7.9",
       "spec": "Device Bound Session Credentials",
       "text": "Create session",
       "url": "https://w3c.github.io/webappsec-dbsc/#algo-create-session"
@@ -33,7 +33,7 @@
   },
   "#algo-host-pattern-matches": {
     "current": {
-      "number": "7.3",
+      "number": "7.4",
       "spec": "Device Bound Session Credentials",
       "text": "Identify if a host matches a pattern",
       "url": "https://w3c.github.io/webappsec-dbsc/#algo-host-pattern-matches"
@@ -41,7 +41,7 @@
   },
   "#algo-identify-missing-session-credential": {
     "current": {
-      "number": "7.5",
+      "number": "7.6",
       "spec": "Device Bound Session Credentials",
       "text": "Identify missing session credential",
       "url": "https://w3c.github.io/webappsec-dbsc/#algo-identify-missing-session-credential"
@@ -57,7 +57,7 @@
   },
   "#algo-identify-session-needing-refresh": {
     "current": {
-      "number": "7.4",
+      "number": "7.5",
       "spec": "Device Bound Session Credentials",
       "text": "Identify session needing refresh",
       "url": "https://w3c.github.io/webappsec-dbsc/#algo-identify-session-needing-refresh"
@@ -65,15 +65,23 @@
   },
   "#algo-process-challenge": {
     "current": {
-      "number": "7.6",
+      "number": "7.7",
       "spec": "Device Bound Session Credentials",
       "text": "Cache challenge",
       "url": "https://w3c.github.io/webappsec-dbsc/#algo-process-challenge"
     }
   },
+  "#algo-request-allows-refresh": {
+    "current": {
+      "number": "7.3",
+      "spec": "Device Bound Session Credentials",
+      "text": "Identify if a request is allowed to refresh",
+      "url": "https://w3c.github.io/webappsec-dbsc/#algo-request-allows-refresh"
+    }
+  },
   "#algo-session-request": {
     "current": {
-      "number": "7.7",
+      "number": "7.8",
       "spec": "Device Bound Session Credentials",
       "text": "Send request",
       "url": "https://w3c.github.io/webappsec-dbsc/#algo-session-request"
@@ -115,7 +123,7 @@
     "current": {
       "number": "8.2.1",
       "spec": "Device Bound Session Credentials",
-      "text": "Sec-Session-Challenge structured header serialization",
+      "text": "Secure-Session-Challenge structured header serialization",
       "url": "https://w3c.github.io/webappsec-dbsc/#challenge-structured-header-serialization"
     }
   },
@@ -271,6 +279,14 @@
       "url": "https://w3c.github.io/webappsec-dbsc/#framework-session-credential"
     }
   },
+  "#framework-session-store": {
+    "current": {
+      "number": "6.1",
+      "spec": "Device Bound Session Credentials",
+      "text": "Session store",
+      "url": "https://w3c.github.io/webappsec-dbsc/#framework-session-store"
+    }
+  },
   "#framework-sessions-id": {
     "current": {
       "number": "6.2",
@@ -279,44 +295,36 @@
       "url": "https://w3c.github.io/webappsec-dbsc/#framework-sessions-id"
     }
   },
-  "#framework-sessions-origin": {
-    "current": {
-      "number": "6.1",
-      "spec": "Device Bound Session Credentials",
-      "text": "Sessions by registrable domain",
-      "url": "https://w3c.github.io/webappsec-dbsc/#framework-sessions-origin"
-    }
-  },
-  "#header-sec-session-challenge": {
-    "current": {
-      "number": "8.2",
-      "spec": "Device Bound Session Credentials",
-      "text": "`Sec-Session-Challenge` HTTP Header Field",
-      "url": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-challenge"
-    }
-  },
-  "#header-sec-session-id": {
+  "#header-sec-secure-session-id": {
     "current": {
       "number": "8.4",
       "spec": "Device Bound Session Credentials",
-      "text": "Sec-Session-Id HTTP Header Field",
-      "url": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-id"
+      "text": "Sec-Secure-Session-Id HTTP Header Field",
+      "url": "https://w3c.github.io/webappsec-dbsc/#header-sec-secure-session-id"
     }
   },
-  "#header-sec-session-registration": {
+  "#header-secure-session-challenge": {
+    "current": {
+      "number": "8.2",
+      "spec": "Device Bound Session Credentials",
+      "text": "`Secure-Session-Challenge` HTTP Header Field",
+      "url": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-challenge"
+    }
+  },
+  "#header-secure-session-registration": {
     "current": {
       "number": "8.1",
       "spec": "Device Bound Session Credentials",
-      "text": "`Sec-Session-Registration` HTTP header field",
-      "url": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-registration"
+      "text": "`Secure-Session-Registration` HTTP header field",
+      "url": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-registration"
     }
   },
-  "#header-sec-session-response": {
+  "#header-secure-session-response": {
     "current": {
       "number": "8.3",
       "spec": "Device Bound Session Credentials",
-      "text": "Sec-Session-Response HTTP Header Field",
-      "url": "https://w3c.github.io/webappsec-dbsc/#header-sec-session-response"
+      "text": "Secure-Session-Response HTTP Header Field",
+      "url": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-response"
     }
   },
   "#header-secure-session-skipped": {
@@ -335,20 +343,28 @@
       "url": "https://w3c.github.io/webappsec-dbsc/#iana-considerations"
     }
   },
-  "#iana-sec-session-registration": {
+  "#iana-sec-secure-session-id": {
+    "current": {
+      "number": "10.2",
+      "spec": "Device Bound Session Credentials",
+      "text": "Sec-Secure-Session-Id",
+      "url": "https://w3c.github.io/webappsec-dbsc/#iana-sec-secure-session-id"
+    }
+  },
+  "#iana-secure-session-registration": {
     "current": {
       "number": "10.3",
       "spec": "Device Bound Session Credentials",
-      "text": "Sec-Session-Registration",
-      "url": "https://w3c.github.io/webappsec-dbsc/#iana-sec-session-registration"
+      "text": "Secure-Session-Registration",
+      "url": "https://w3c.github.io/webappsec-dbsc/#iana-secure-session-registration"
     }
   },
-  "#iana-sec-session-response": {
+  "#iana-secure-session-response": {
     "current": {
       "number": "10.4",
       "spec": "Device Bound Session Credentials",
-      "text": "Sec-Session-Response",
-      "url": "https://w3c.github.io/webappsec-dbsc/#iana-sec-session-response"
+      "text": "Secure-Session-Response",
+      "url": "https://w3c.github.io/webappsec-dbsc/#iana-secure-session-response"
     }
   },
   "#iana-secure-session-skipped": {
@@ -363,16 +379,8 @@
     "current": {
       "number": "10.1",
       "spec": "Device Bound Session Credentials",
-      "text": "Sec-Session-Challenge",
+      "text": "Secure-Session-Challenge",
       "url": "https://w3c.github.io/webappsec-dbsc/#iana-ses-session-challenge"
-    }
-  },
-  "#iana-ses-session-id": {
-    "current": {
-      "number": "10.2",
-      "spec": "Device Bound Session Credentials",
-      "text": "Sec-Session-Id",
-      "url": "https://w3c.github.io/webappsec-dbsc/#iana-ses-session-id"
     }
   },
   "#index": {
