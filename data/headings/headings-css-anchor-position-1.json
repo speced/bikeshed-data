@@ -21,7 +21,7 @@
       "url": "https://drafts.csswg.org/css-anchor-position-1/#accessibility"
     },
     "snapshot": {
-      "number": "3.7",
+      "number": "6",
       "spec": "CSS Anchor Positioning",
       "text": "Accessibility Implications",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#accessibility"
@@ -29,29 +29,29 @@
   },
   "#anchor-center": {
     "current": {
-      "number": "3.3",
+      "number": "3.2",
       "spec": "CSS Anchor Positioning",
-      "text": "Centering on the Anchor: the anchor-center value",
+      "text": "Centering on the Anchor: the anchor-center alignment value",
       "url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-center"
     },
     "snapshot": {
-      "number": "3.3",
+      "number": "3.2",
       "spec": "CSS Anchor Positioning",
-      "text": "Centering on the Anchor: the anchor-center value",
+      "text": "Centering on the Anchor: the anchor-center alignment value",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#anchor-center"
     }
   },
   "#anchor-pos": {
     "current": {
-      "number": "3.2",
+      "number": "3.3",
       "spec": "CSS Anchor Positioning",
-      "text": "The anchor() Function",
+      "text": "Anchor-relative Insets: the anchor() function",
       "url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-pos"
     },
     "snapshot": {
-      "number": "3.2",
+      "number": "3.3",
       "spec": "CSS Anchor Positioning",
-      "text": "The anchor() Function",
+      "text": "Anchor-relative Insets: the anchor() function",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#anchor-pos"
     }
   },
@@ -67,6 +67,20 @@
       "spec": "CSS Anchor Positioning",
       "text": "Anchor Relevance",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#anchor-relevance"
+    }
+  },
+  "#anchor-resolution": {
+    "current": {
+      "number": "3.3.1",
+      "spec": "CSS Anchor Positioning",
+      "text": "Resolution of anchor()",
+      "url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-resolution"
+    },
+    "snapshot": {
+      "number": "3.3.1",
+      "spec": "CSS Anchor Positioning",
+      "text": "Resolution of anchor()",
+      "url": "https://www.w3.org/TR/css-anchor-position-1/#anchor-resolution"
     }
   },
   "#anchor-scope": {
@@ -97,32 +111,18 @@
       "url": "https://www.w3.org/TR/css-anchor-position-1/#anchor-size-fn"
     }
   },
-  "#anchor-size-valid": {
+  "#anchor-size-resolution": {
     "current": {
-      "number": "4.2",
+      "number": "4.1.1",
       "spec": "CSS Anchor Positioning",
-      "text": "Validity",
-      "url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-size-valid"
+      "text": "Resolution of anchor-size()",
+      "url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-size-resolution"
     },
     "snapshot": {
-      "number": "4.2",
+      "number": "4.1.1",
       "spec": "CSS Anchor Positioning",
-      "text": "Validity",
-      "url": "https://www.w3.org/TR/css-anchor-position-1/#anchor-size-valid"
-    }
-  },
-  "#anchor-valid": {
-    "current": {
-      "number": "3.5",
-      "spec": "CSS Anchor Positioning",
-      "text": "Validity",
-      "url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-valid"
-    },
-    "snapshot": {
-      "number": "3.5",
-      "spec": "CSS Anchor Positioning",
-      "text": "Validity",
-      "url": "https://www.w3.org/TR/css-anchor-position-1/#anchor-valid"
+      "text": "Resolution of anchor-size()",
+      "url": "https://www.w3.org/TR/css-anchor-position-1/#anchor-size-resolution"
     }
   },
   "#changes": {
@@ -135,7 +135,7 @@
     "snapshot": {
       "number": "",
       "spec": "CSS Anchor Positioning",
-      "text": "10. Changes",
+      "text": "11. Changes",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#changes"
     }
   },
@@ -301,7 +301,7 @@
       "url": "https://drafts.csswg.org/css-anchor-position-1/#interfaces"
     },
     "snapshot": {
-      "number": "6",
+      "number": "7",
       "spec": "CSS Anchor Positioning",
       "text": "DOM Interfaces",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#interfaces"
@@ -315,7 +315,7 @@
       "url": "https://drafts.csswg.org/css-anchor-position-1/#interleaving"
     },
     "snapshot": {
-      "number": "7",
+      "number": "8",
       "spec": "CSS Anchor Positioning",
       "text": "Appendix: Style & Layout Interleaving",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#interleaving"
@@ -385,7 +385,7 @@
       "url": "https://drafts.csswg.org/css-anchor-position-1/#om-position-try"
     },
     "snapshot": {
-      "number": "6.1",
+      "number": "7.1",
       "spec": "CSS Anchor Positioning",
       "text": "The CSSPositionTryRule interface",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#om-position-try"
@@ -417,6 +417,62 @@
       "spec": "CSS Anchor Positioning",
       "text": "The position-area Property",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#position-area"
+    }
+  },
+  "#position-area-alignment": {
+    "current": {
+      "number": "3.1.4",
+      "spec": "CSS Anchor Positioning",
+      "text": "Area-specific Default Alignment",
+      "url": "https://drafts.csswg.org/css-anchor-position-1/#position-area-alignment"
+    },
+    "snapshot": {
+      "number": "3.1.4",
+      "spec": "CSS Anchor Positioning",
+      "text": "Area-specific Default Alignment",
+      "url": "https://www.w3.org/TR/css-anchor-position-1/#position-area-alignment"
+    }
+  },
+  "#position-area-computed": {
+    "current": {
+      "number": "3.1.3",
+      "spec": "CSS Anchor Positioning",
+      "text": "Computed Value and Serialization of <position-area>",
+      "url": "https://drafts.csswg.org/css-anchor-position-1/#position-area-computed"
+    },
+    "snapshot": {
+      "number": "3.1.3",
+      "spec": "CSS Anchor Positioning",
+      "text": "Computed Value and Serialization of <position-area>",
+      "url": "https://www.w3.org/TR/css-anchor-position-1/#position-area-computed"
+    }
+  },
+  "#position-area-grid-resolution": {
+    "current": {
+      "number": "3.1.1",
+      "spec": "CSS Anchor Positioning",
+      "text": "Resolving the Position Area Grid",
+      "url": "https://drafts.csswg.org/css-anchor-position-1/#position-area-grid-resolution"
+    },
+    "snapshot": {
+      "number": "3.1.1",
+      "spec": "CSS Anchor Positioning",
+      "text": "Resolving the Position Area Grid",
+      "url": "https://www.w3.org/TR/css-anchor-position-1/#position-area-grid-resolution"
+    }
+  },
+  "#position-area-syntax": {
+    "current": {
+      "number": "3.1.2",
+      "spec": "CSS Anchor Positioning",
+      "text": "Syntax of <position-area> Values",
+      "url": "https://drafts.csswg.org/css-anchor-position-1/#position-area-syntax"
+    },
+    "snapshot": {
+      "number": "3.1.2",
+      "spec": "CSS Anchor Positioning",
+      "text": "Syntax of <position-area> Values",
+      "url": "https://www.w3.org/TR/css-anchor-position-1/#position-area-syntax"
     }
   },
   "#position-try-fallbacks": {
@@ -463,13 +519,13 @@
   },
   "#position-visibility": {
     "current": {
-      "number": "3.6",
+      "number": "3.5",
       "spec": "CSS Anchor Positioning",
       "text": "Conditional Hiding: the position-visibility property",
       "url": "https://drafts.csswg.org/css-anchor-position-1/#position-visibility"
     },
     "snapshot": {
-      "number": "3.6",
+      "number": "3.5",
       "spec": "CSS Anchor Positioning",
       "text": "Conditional Hiding: the position-visibility property",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#position-visibility"
@@ -497,9 +553,9 @@
       "url": "https://drafts.csswg.org/css-anchor-position-1/#priv"
     },
     "snapshot": {
-      "number": "9",
+      "number": "",
       "spec": "CSS Anchor Positioning",
-      "text": "Privacy Considerations",
+      "text": "10. Privacy Considerations",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#priv"
     }
   },
@@ -531,20 +587,6 @@
       "url": "https://www.w3.org/TR/css-anchor-position-1/#references"
     }
   },
-  "#resolving-spans": {
-    "current": {
-      "number": "3.1.1",
-      "spec": "CSS Anchor Positioning",
-      "text": "Resolving <position-area>s",
-      "url": "https://drafts.csswg.org/css-anchor-position-1/#resolving-spans"
-    },
-    "snapshot": {
-      "number": "3.1.1",
-      "spec": "CSS Anchor Positioning",
-      "text": "Resolving <position-area>s",
-      "url": "https://www.w3.org/TR/css-anchor-position-1/#resolving-spans"
-    }
-  },
   "#scroll": {
     "current": {
       "number": "3.4",
@@ -567,7 +609,7 @@
       "url": "https://drafts.csswg.org/css-anchor-position-1/#sec"
     },
     "snapshot": {
-      "number": "8",
+      "number": "9",
       "spec": "CSS Anchor Positioning",
       "text": "Security Considerations",
       "url": "https://www.w3.org/TR/css-anchor-position-1/#sec"
