@@ -7270,22 +7270,25 @@
     "availability()": {
       "args": [],
       "for": [
+        "LanguageDetector",
         "Rewriter",
         "Summarizer",
         "Writer"
       ],
-      "shortname": "writing-assistance-apis"
+      "shortname": "translation-api"
     },
     "availability(options)": {
       "args": [
         "options"
       ],
       "for": [
+        "LanguageDetector",
         "Rewriter",
         "Summarizer",
+        "Translator",
         "Writer"
       ],
-      "shortname": "writing-assistance-apis"
+      "shortname": "translation-api"
     }
   },
   "availableOnDevice()": {
@@ -8364,7 +8367,7 @@
       "for": [
         "PreferenceObject"
       ],
-      "shortname": "web-preferences-api"
+      "shortname": "mediaqueries"
     }
   },
   "clearParameters()": {
@@ -12092,11 +12095,12 @@
       "args": [],
       "for": [
         "CredentialsContainer",
+        "LanguageDetector",
         "Rewriter",
         "Summarizer",
         "Writer"
       ],
-      "shortname": "writing-assistance-apis"
+      "shortname": "translation-api"
     },
     "create(O, Properties)": {
       "args": [
@@ -12114,11 +12118,13 @@
       ],
       "for": [
         "CredentialsContainer",
+        "LanguageDetector",
         "Rewriter",
         "Summarizer",
+        "Translator",
         "Writer"
       ],
-      "shortname": "writing-assistance-apis"
+      "shortname": "translation-api"
     }
   },
   "createAnalyser()": {
@@ -14402,6 +14408,25 @@
         "TextDetector"
       ],
       "shortname": "shape-detection-api"
+    },
+    "detect(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "LanguageDetector"
+      ],
+      "shortname": "translation-api"
+    },
+    "detect(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "LanguageDetector"
+      ],
+      "shortname": "translation-api"
     }
   },
   "difference()": {
@@ -23977,11 +24002,13 @@
         "input"
       ],
       "for": [
+        "LanguageDetector",
         "Rewriter",
         "Summarizer",
+        "Translator",
         "Writer"
       ],
-      "shortname": "writing-assistance-apis"
+      "shortname": "translation-api"
     },
     "measureInputUsage(input, options)": {
       "args": [
@@ -23989,11 +24016,13 @@
         "options"
       ],
       "for": [
+        "LanguageDetector",
         "Rewriter",
         "Summarizer",
+        "Translator",
         "Writer"
       ],
-      "shortname": "writing-assistance-apis"
+      "shortname": "translation-api"
     }
   },
   "measureText()": {
@@ -27938,7 +27967,7 @@
       "for": [
         "PreferenceObject"
       ],
-      "shortname": "web-preferences-api"
+      "shortname": "mediaqueries"
     }
   },
   "requestPermission()": {
@@ -34433,6 +34462,25 @@
       ],
       "shortname": "geometry"
     },
+    "translate(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "Translator"
+      ],
+      "shortname": "translation-api"
+    },
+    "translate(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "Translator"
+      ],
+      "shortname": "translation-api"
+    },
     "translate(tx)": {
       "args": [
         "tx"
@@ -34511,6 +34559,27 @@
         "DOMMatrix"
       ],
       "shortname": "geometry"
+    }
+  },
+  "translateStreaming()": {
+    "translateStreaming(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "Translator"
+      ],
+      "shortname": "translation-api"
+    },
+    "translateStreaming(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "Translator"
+      ],
+      "shortname": "translation-api"
     }
   },
   "transmit()": {

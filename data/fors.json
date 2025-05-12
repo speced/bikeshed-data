@@ -2931,7 +2931,9 @@
     "Digital credential",
     "Digital signature",
     "DigitalCredential",
-    "DigitalCredentialRequest",
+    "DigitalCredentialCreateRequest",
+    "DigitalCredentialCreationOptions",
+    "DigitalCredentialGetRequest",
     "DigitalCredentialRequestOptions",
     "DigitalGoodsService",
     "Dimension attributes",
@@ -4600,6 +4602,11 @@
     "Language tag",
     "Language tag extension",
     "Language tags",
+    "LanguageDetectionResult",
+    "LanguageDetector",
+    "LanguageDetectorCreateCoreOptions",
+    "LanguageDetectorCreateOptions",
+    "LanguageDetectorDetectOptions",
     "LargeBlobSupport",
     "LargestContentfulPaint",
     "Last Call for Review of Proposed Additions",
@@ -7572,6 +7579,10 @@
     "Transition Requests",
     "TransitionEvent",
     "TransitionEventInit",
+    "Translator",
+    "TranslatorCreateCoreOptions",
+    "TranslatorCreateOptions",
+    "TranslatorTranslateOptions",
     "Transliteration",
     "Transmission of request and response",
     "Trap",
@@ -10688,6 +10699,7 @@
     "compute hit test results for transient input",
     "compute interactionId",
     "compute language availability",
+    "compute language detector options availability",
     "compute missing keyframe offsets",
     "compute protocol matches a special scheme flag",
     "compute render extent",
@@ -10708,6 +10720,7 @@
     "compute the offset",
     "compute the scopes channel capacity of a source",
     "compute the tick duration",
+    "compute translator options availability",
     "compute writer options availability",
     "computed <image>",
     "computed MIME type",
@@ -11352,7 +11365,9 @@
     "create record objects",
     "create script entry point",
     "create the attribution",
+    "create the language detector object",
     "create the navigation timing entry",
+    "create the translator object",
     "create-document-policy",
     "create-for-browsingcontext",
     "create-nested-context-required-document-policy",
@@ -11606,6 +11621,8 @@
     "data model",
     "data processing",
     "data processor",
+    "data profile",
+    "data specification",
     "data stage",
     "data subject",
     "data transport",
@@ -11915,6 +11932,7 @@
     "details name group",
     "details notification task steps",
     "details toggle task tracker",
+    "detect languages",
     "detect phrase boundaries",
     "detect word boundaries",
     "detecting phrase boundaries",
@@ -12237,8 +12255,10 @@
     "down-mixing",
     "downlinkMax for an available interface",
     "download the hyperlink",
+    "download the language detector model",
     "download the rewriter model",
     "download the summarizer model",
+    "download the translation model",
     "download the writer model",
     "drag data store",
     "drag data store allowed effects state",
@@ -13362,8 +13382,10 @@
     "function tag",
     "functional keys",
     "functional notation",
+    "functional profile",
     "functional pseudo-class",
     "functional pseudo-element",
+    "functional specification",
     "functions in a shader stage",
     "further testing is needed",
     "furthest ancestral SVG viewport",
@@ -14349,6 +14371,7 @@
     "initialize the TCPSocket writable stream",
     "initialize the UDPSocket readable stream",
     "initialize the UDPSocket writable stream",
+    "initialize the language detector model",
     "initialize the navigable",
     "initialize the navigation API entries for a new document",
     "initialize the nested traversable",
@@ -14356,6 +14379,7 @@
     "initialize the rewriter model",
     "initialize the session",
     "initialize the summarizer model",
+    "initialize the translation model",
     "initialize the underlying source",
     "initialize the viewport",
     "initialize the writer model",
@@ -14859,6 +14883,7 @@
     "lang",
     "lang (pseudo-class)",
     "language",
+    "language arc",
     "language availabilities partition",
     "language availabilities triple",
     "language extension",
@@ -14867,6 +14892,7 @@
     "language range",
     "language tag",
     "language tag set completeness rules",
+    "language-detector",
     "language-range",
     "language-tagged string",
     "large viewport size",
@@ -15597,8 +15623,10 @@
     "measurable property",
     "measure AI model input usage",
     "measure a conversion",
+    "measure language detector input usage",
     "measure rewriter input usage",
     "measure summarizer input usage",
+    "measure translator input usage",
     "measure writer input usage",
     "media",
     "media capabilities task source",
@@ -17733,6 +17761,7 @@
     "product name",
     "product of two unit maps",
     "production",
+    "profile",
     "profile(s)",
     "profiles",
     "profiling session",
@@ -19323,6 +19352,7 @@
     "serializing an attribute value",
     "serializing the calculation tree",
     "serif",
+    "server",
     "server auction",
     "server auction browser signals",
     "server auction debug report key",
@@ -19812,6 +19842,7 @@
     "special-query percent-encode set",
     "special-scheme-missing-following-solidus",
     "specific type",
+    "specification",
     "specifications",
     "specificity",
     "specified command value",
@@ -20718,6 +20749,8 @@
     "translateZ()",
     "translation",
     "translation mode",
+    "translator",
+    "translator language arc availabilities",
     "transp",
     "transparent",
     "transparent background",
@@ -21277,9 +21310,11 @@
     "validate aggregatable key-values value",
     "validate an ICE server URL",
     "validate and canonicalize a single language tag",
+    "validate and canonicalize language detector options",
     "validate and canonicalize language tags",
     "validate and canonicalize rewriter options",
     "validate and canonicalize summarizer options",
+    "validate and canonicalize translator options",
     "validate and canonicalize writer options",
     "validate and convert additional bids",
     "validate and convert auction ad config",
@@ -29233,6 +29268,7 @@
     "password"
   ],
   "CredentialCreationOptions": [
+    "digital",
     "federated",
     "mediation",
     "password",
@@ -31053,7 +31089,14 @@
     "data",
     "protocol"
   ],
-  "DigitalCredentialRequest": [
+  "DigitalCredentialCreateRequest": [
+    "data",
+    "protocol"
+  ],
+  "DigitalCredentialCreationOptions": [
+    "requests"
+  ],
+  "DigitalCredentialGetRequest": [
     "data",
     "protocol"
   ],
@@ -38893,6 +38936,62 @@
     "eye",
     "mouth",
     "nose"
+  ],
+  "LanguageDetectionResult": [
+    "confidence",
+    "detectedLanguage"
+  ],
+  "LanguageDetector": [
+    "availability()",
+    "availability(options)",
+    "create()",
+    "create(options)",
+    "detect(input)",
+    "detect(input, options)",
+    "expected input languages",
+    "expectedInputLanguages",
+    "input quota",
+    "inputQuota",
+    "measureInputUsage(input)",
+    "measureInputUsage(input, options)"
+  ],
+  "LanguageDetector/availability()": [
+    "options"
+  ],
+  "LanguageDetector/availability(options)": [
+    "options"
+  ],
+  "LanguageDetector/create()": [
+    "options"
+  ],
+  "LanguageDetector/create(options)": [
+    "options"
+  ],
+  "LanguageDetector/detect(input)": [
+    "input",
+    "options"
+  ],
+  "LanguageDetector/detect(input, options)": [
+    "input",
+    "options"
+  ],
+  "LanguageDetector/measureInputUsage(input)": [
+    "input",
+    "options"
+  ],
+  "LanguageDetector/measureInputUsage(input, options)": [
+    "input",
+    "options"
+  ],
+  "LanguageDetectorCreateCoreOptions": [
+    "expectedInputLanguages"
+  ],
+  "LanguageDetectorCreateOptions": [
+    "monitor",
+    "signal"
+  ],
+  "LanguageDetectorDetectOptions": [
+    "signal"
   ],
   "LargeBlobSupport": [
     "\"preferred\"",
@@ -50887,6 +50986,63 @@
     "propertyName",
     "pseudoElement"
   ],
+  "Translator": [
+    "availability(options)",
+    "create(options)",
+    "input quota",
+    "inputQuota",
+    "measureInputUsage(input)",
+    "measureInputUsage(input, options)",
+    "source language",
+    "sourceLanguage",
+    "target language",
+    "targetLanguage",
+    "translate(input)",
+    "translate(input, options)",
+    "translateStreaming(input)",
+    "translateStreaming(input, options)"
+  ],
+  "Translator/availability(options)": [
+    "options"
+  ],
+  "Translator/create(options)": [
+    "options"
+  ],
+  "Translator/measureInputUsage(input)": [
+    "input",
+    "options"
+  ],
+  "Translator/measureInputUsage(input, options)": [
+    "input",
+    "options"
+  ],
+  "Translator/translate(input)": [
+    "input",
+    "options"
+  ],
+  "Translator/translate(input, options)": [
+    "input",
+    "options"
+  ],
+  "Translator/translateStreaming(input)": [
+    "input",
+    "options"
+  ],
+  "Translator/translateStreaming(input, options)": [
+    "input",
+    "options"
+  ],
+  "TranslatorCreateCoreOptions": [
+    "sourceLanguage",
+    "targetLanguage"
+  ],
+  "TranslatorCreateOptions": [
+    "monitor",
+    "signal"
+  ],
+  "TranslatorTranslateOptions": [
+    "signal"
+  ],
   "TreeWalker": [
     "current",
     "currentNode",
@@ -57799,12 +57955,23 @@
   ],
   "digital credential": [
     "Exchange protocol",
+    "Issuance protocol",
+    "Issuance request",
+    "Issuance response",
     "Presentation request",
     "Presentation response",
-    "protocol",
-    "request data",
-    "requests",
-    "response"
+    "exchange protocol",
+    "issuance",
+    "issuance protocol",
+    "issuance request data",
+    "presentation",
+    "presentation response",
+    "request data"
+  ],
+  "digital credentials registry": [
+    "Protocol identifier",
+    "Specification",
+    "Type"
   ],
   "direct from seller signals": [
     "auction signals",
@@ -60299,6 +60466,12 @@
   ],
   "label": [
     "for"
+  ],
+  "language arc": [
+    "can be fulfilled by the identity translation",
+    "overlaps",
+    "source language",
+    "target language"
   ],
   "language availabilities triple": [
     "context languages",
