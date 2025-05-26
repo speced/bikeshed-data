@@ -1091,7 +1091,7 @@
     "<single-animation-iteration-count>",
     "<single-animation-play-state>",
     "<single-animation-timeline>",
-    "<single-animation-trigger-type>",
+    "<single-animation-trigger-behavior>",
     "<single-animation-trigger>",
     "<single-animation>",
     "<single-transition-property>",
@@ -1503,8 +1503,8 @@
     "AnimationTimeOptions",
     "AnimationTimeline",
     "AnimationTrigger",
+    "AnimationTriggerBehavior",
     "AnimationTriggerOptions",
-    "AnimationTriggerType",
     "AnimationWorkletGlobalScope",
     "Animator",
     "Animator Effect",
@@ -5664,6 +5664,7 @@
     "PaymentDetailsInit",
     "PaymentDetailsModifier",
     "PaymentDetailsUpdate",
+    "PaymentEntityLogo",
     "PaymentHandlerResponse",
     "PaymentItem",
     "PaymentManager",
@@ -9100,8 +9101,8 @@
     "animation time to timeline time",
     "animation timing attributes",
     "animation trigger",
+    "animation trigger behavior",
     "animation trigger state",
-    "animation trigger type",
     "animation value attributes",
     "animation-composition",
     "animation-delay",
@@ -9118,6 +9119,7 @@
     "animation-timeline",
     "animation-timing-function",
     "animation-trigger",
+    "animation-trigger-behavior",
     "animation-trigger-exit-range",
     "animation-trigger-exit-range-end",
     "animation-trigger-exit-range-start",
@@ -9125,7 +9127,6 @@
     "animation-trigger-range-end",
     "animation-trigger-range-start",
     "animation-trigger-timeline",
-    "animation-trigger-type",
     "animator current time",
     "animator definition",
     "animator definitions",
@@ -11655,6 +11656,7 @@
     "currently defined authenticatorConfig subcommands",
     "currently focused area of a top-level traversable",
     "currently logged in user",
+    "currently relevant to the user",
     "currently running task",
     "cursive",
     "cursive script",
@@ -12153,6 +12155,7 @@
     "dictionary members",
     "did controller(s)",
     "did controllers",
+    "did trigger",
     "did-perform-automatic-track-selection",
     "didDocument",
     "didDocumentMetadata",
@@ -14833,6 +14836,7 @@
     "is auxiliary",
     "is closing",
     "is composing",
+    "is contextmenu triggered",
     "is created by web content",
     "is currently stalled",
     "is debugging only in cooldown or lockout",
@@ -21154,7 +21158,9 @@
     "update bid count",
     "update capture state algorithm",
     "update captured headers",
+    "update content relevancy for a document",
     "update cumulative buyer time metrics",
+    "update currently relevant to the user",
     "update debug report cooldown",
     "update document for history step application",
     "update document frozenness steps",
@@ -23874,27 +23880,19 @@
   "AnimationTrigger": [
     "AnimationTrigger()",
     "AnimationTrigger(options)",
+    "behavior",
     "constructor()",
     "constructor(options)",
     "exitRangeEnd",
     "exitRangeStart",
     "rangeEnd",
     "rangeStart",
-    "timeline",
-    "type"
+    "timeline"
   ],
   "AnimationTrigger/AnimationTrigger(options)": [
     "options"
   ],
-  "AnimationTriggerOptions": [
-    "exitRangeEnd",
-    "exitRangeStart",
-    "rangeEnd",
-    "rangeStart",
-    "timeline",
-    "type"
-  ],
-  "AnimationTriggerType": [
+  "AnimationTriggerBehavior": [
     "\"alternate\"",
     "\"once\"",
     "\"repeat\"",
@@ -23903,6 +23901,14 @@
     "once",
     "repeat",
     "state"
+  ],
+  "AnimationTriggerOptions": [
+    "behavior",
+    "exitRangeEnd",
+    "exitRangeStart",
+    "rangeEnd",
+    "rangeStart",
+    "timeline"
   ],
   "AnimationWorkletGlobalScope": [
     "registerAnimator(name, animatorCtor)"
@@ -25021,6 +25027,7 @@
     "isPayment",
     "payeeName",
     "payeeOrigin",
+    "paymentEntitiesLogos",
     "rpId",
     "topOrigin",
     "total"
@@ -28800,6 +28807,7 @@
     "instrument",
     "payeeName",
     "payeeOrigin",
+    "paymentEntitiesLogos",
     "rpId",
     "topOrigin",
     "total"
@@ -43843,6 +43851,10 @@
     "shippingAddressErrors",
     "total"
   ],
+  "PaymentEntityLogo": [
+    "label",
+    "url"
+  ],
   "PaymentHandlerResponse": [
     "details",
     "methodName",
@@ -48461,6 +48473,7 @@
     "locale",
     "payeeName",
     "payeeOrigin",
+    "paymentEntitiesLogos",
     "rpId",
     "showOptOut",
     "timeout"
@@ -56012,6 +56025,12 @@
     "exit",
     "exit-crossing"
   ],
+  "animation-trigger-behavior": [
+    "alternate",
+    "once",
+    "repeat",
+    "state"
+  ],
   "animation-trigger-exit-range-end": [
     "<timeline-range-name> <length-percentage>?",
     "auto",
@@ -56021,12 +56040,6 @@
     "<timeline-range-name> <length-percentage>?",
     "auto",
     "normal"
-  ],
-  "animation-trigger-type": [
-    "alternate",
-    "once",
-    "repeat",
-    "state"
   ],
   "animator definition": [
     "stateful flag"
