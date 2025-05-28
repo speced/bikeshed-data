@@ -7158,7 +7158,7 @@
     "SpeechRecognitionErrorEventInit",
     "SpeechRecognitionEvent",
     "SpeechRecognitionEventInit",
-    "SpeechRecognitionMode",
+    "SpeechRecognitionOptions",
     "SpeechRecognitionPhrase",
     "SpeechRecognitionPhraseList",
     "SpeechRecognitionResult",
@@ -9561,6 +9561,7 @@
     "av1f",
     "av1s",
     "availability",
+    "availability algorithm",
     "availability sources set",
     "available",
     "available block space",
@@ -16645,7 +16646,6 @@
     "on",
     "on document ready",
     "on response available",
-    "on-device availability algorithm",
     "on_reach_bottom_distance",
     "oncapturehandlechange",
     "one permitted sandboxed navigator",
@@ -49530,22 +49530,21 @@
   ],
   "SpeechRecognition": [
     "SpeechRecognition()",
-    "[[mode]]",
     "[[phrases]]",
+    "[[processLocally]]",
     "[[started]]",
     "abort()",
     "audioend",
     "audiostart",
-    "availableOnDevice(lang)",
+    "available(options)",
     "constructor()",
     "continuous",
     "end",
     "error",
-    "installOnDevice(lang)",
+    "install(options)",
     "interimResults",
     "lang",
     "maxAlternatives",
-    "mode",
     "nomatch",
     "onaudioend",
     "onaudiostart",
@@ -49559,6 +49558,7 @@
     "onspeechstart",
     "onstart",
     "phrases",
+    "processLocally",
     "result",
     "soundend",
     "soundstart",
@@ -49569,11 +49569,11 @@
     "start(audioTrack)",
     "stop()"
   ],
-  "SpeechRecognition/availableOnDevice(lang)": [
-    "lang"
+  "SpeechRecognition/available(options)": [
+    "options"
   ],
-  "SpeechRecognition/installOnDevice(lang)": [
-    "lang"
+  "SpeechRecognition/install(options)": [
+    "options"
   ],
   "SpeechRecognition/start(audioTrack)": [
     "audioTrack"
@@ -49628,10 +49628,9 @@
     "resultIndex",
     "results"
   ],
-  "SpeechRecognitionMode": [
-    "\"cloud-only\"",
-    "\"ondevice-only\"",
-    "\"ondevice-preferred\""
+  "SpeechRecognitionOptions": [
+    "langs",
+    "processLocally"
   ],
   "SpeechRecognitionPhrase": [
     "SpeechRecognitionPhrase(phrase)",
@@ -63078,6 +63077,12 @@
     "token",
     "token_count",
     "version"
+  ],
+  "save-impression": [
+    "conversion-sites",
+    "histogram-index",
+    "lifetime-days",
+    "match-value"
   ],
   "saved query data": [
     "callbacks",

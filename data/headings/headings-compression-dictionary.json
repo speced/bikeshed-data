@@ -1,10 +1,386 @@
 {
+  "#abstract": {
+    "current": {
+      "number": "",
+      "spec": "Compression Dictionary Transport",
+      "text": "Abstract",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-abstract"
+    }
+  },
   "#appendix-A": {
     "current": {
       "number": "",
       "spec": "Compression Dictionary Transport",
       "text": "Authors' Addresses",
       "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#appendix-A"
+    }
+  },
+  "#name-about-this-document": {
+    "current": {
+      "number": "",
+      "spec": "Compression Dictionary Transport",
+      "text": "About This Document",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-note.1"
+    }
+  },
+  "#name-accept-encoding": {
+    "current": {
+      "number": "6.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Accept-Encoding",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-6.1"
+    }
+  },
+  "#name-authors-addresses": {
+    "current": {
+      "number": "",
+      "spec": "Compression Dictionary Transport",
+      "text": "Authors' Addresses",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#appendix-A"
+    }
+  },
+  "#name-available-dictionary": {
+    "current": {
+      "number": "2.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Available-Dictionary",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2"
+    }
+  },
+  "#name-changing-content": {
+    "current": {
+      "number": "9.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Changing content",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.1"
+    }
+  },
+  "#name-common-content": {
+    "current": {
+      "number": "1.1.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Common Content",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-1.1.2"
+    }
+  },
+  "#name-compatibility-consideration": {
+    "current": {
+      "number": "8",
+      "spec": "Compression Dictionary Transport",
+      "text": "Compatibility Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-8"
+    }
+  },
+  "#name-content-encoding": {
+    "current": {
+      "number": "6.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Content-Encoding",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-6.2"
+    }
+  },
+  "#name-content-encoding-2": {
+    "current": {
+      "number": "7.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Content Encoding",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-7.1"
+    }
+  },
+  "#name-copyright-notice": {
+    "current": {
+      "number": "",
+      "spec": "Compression Dictionary Transport",
+      "text": "Copyright Notice",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-boilerplate.2"
+    }
+  },
+  "#name-cross-origin-protection": {
+    "current": {
+      "number": "9.3.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Cross-origin protection",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.1"
+    }
+  },
+  "#name-dictionary-compressed-brotl": {
+    "current": {
+      "number": "4",
+      "spec": "Compression Dictionary Transport",
+      "text": "Dictionary-Compressed Brotli",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-4"
+    }
+  },
+  "#name-dictionary-compressed-zstan": {
+    "current": {
+      "number": "5",
+      "spec": "Compression Dictionary Transport",
+      "text": "Dictionary-Compressed Zstandard",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-5"
+    }
+  },
+  "#name-dictionary-freshness-requir": {
+    "current": {
+      "number": "2.2.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Dictionary freshness requirement",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.1"
+    }
+  },
+  "#name-dictionary-id": {
+    "current": {
+      "number": "2.3",
+      "spec": "Compression Dictionary Transport",
+      "text": "Dictionary-ID",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.3"
+    }
+  },
+  "#name-dictionary-negotiation": {
+    "current": {
+      "number": "2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Dictionary Negotiation",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2"
+    }
+  },
+  "#name-dictionary-url-matching": {
+    "current": {
+      "number": "2.2.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Dictionary URL matching",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.2"
+    }
+  },
+  "#name-examples": {
+    "current": {
+      "number": "2.1.5",
+      "spec": "Compression Dictionary Transport",
+      "text": "Examples",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.5"
+    }
+  },
+  "#name-header-field-registration": {
+    "current": {
+      "number": "7.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Header Field Registration",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-7.2"
+    }
+  },
+  "#name-iana-considerations": {
+    "current": {
+      "number": "7",
+      "spec": "Compression Dictionary Transport",
+      "text": "IANA Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-7"
+    }
+  },
+  "#name-id": {
+    "current": {
+      "number": "2.1.3",
+      "spec": "Compression Dictionary Transport",
+      "text": "id",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.3"
+    }
+  },
+  "#name-informative-references": {
+    "current": {
+      "number": "11.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Informative References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-11.2"
+    }
+  },
+  "#name-introduction": {
+    "current": {
+      "number": "1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Introduction",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-1"
+    }
+  },
+  "#name-link-relation-registration": {
+    "current": {
+      "number": "7.3",
+      "spec": "Compression Dictionary Transport",
+      "text": "Link Relation Registration",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-7.3"
+    }
+  },
+  "#name-match": {
+    "current": {
+      "number": "2.1.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "match",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.1"
+    }
+  },
+  "#name-match-dest": {
+    "current": {
+      "number": "2.1.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "match-dest",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.2"
+    }
+  },
+  "#name-multiple-matching-dictionar": {
+    "current": {
+      "number": "2.2.3",
+      "spec": "Compression Dictionary Transport",
+      "text": "Multiple matching dictionaries",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2.3"
+    }
+  },
+  "#name-negotiating-the-content-enc": {
+    "current": {
+      "number": "6",
+      "spec": "Compression Dictionary Transport",
+      "text": "Negotiating the content encoding",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-6"
+    }
+  },
+  "#name-normative-references": {
+    "current": {
+      "number": "11.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Normative References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-11.1"
+    }
+  },
+  "#name-notational-conventions": {
+    "current": {
+      "number": "1.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Notational Conventions",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-1.2"
+    }
+  },
+  "#name-path-prefix": {
+    "current": {
+      "number": "2.1.5.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Path Prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.5.1"
+    }
+  },
+  "#name-privacy-considerations": {
+    "current": {
+      "number": "",
+      "spec": "Compression Dictionary Transport",
+      "text": "10. Privacy Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-10"
+    }
+  },
+  "#name-reading-content": {
+    "current": {
+      "number": "9.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Reading content",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.2"
+    }
+  },
+  "#name-references": {
+    "current": {
+      "number": "",
+      "spec": "Compression Dictionary Transport",
+      "text": "11. References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-11"
+    }
+  },
+  "#name-response-readability": {
+    "current": {
+      "number": "9.3.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Response readability",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.2"
+    }
+  },
+  "#name-security-considerations": {
+    "current": {
+      "number": "9",
+      "spec": "Compression Dictionary Transport",
+      "text": "Security Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9"
+    }
+  },
+  "#name-security-mitigations": {
+    "current": {
+      "number": "9.3",
+      "spec": "Compression Dictionary Transport",
+      "text": "Security Mitigations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3"
+    }
+  },
+  "#name-server-responsibility": {
+    "current": {
+      "number": "9.3.3",
+      "spec": "Compression Dictionary Transport",
+      "text": "Server Responsibility",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-9.3.3"
+    }
+  },
+  "#name-status-of-this-memo": {
+    "current": {
+      "number": "",
+      "spec": "Compression Dictionary Transport",
+      "text": "Status of This Memo",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-boilerplate.1"
+    }
+  },
+  "#name-table-of-contents": {
+    "current": {
+      "number": "",
+      "spec": "Compression Dictionary Transport",
+      "text": "Table of Contents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-toc.1"
+    }
+  },
+  "#name-the-compression-dictionary-": {
+    "current": {
+      "number": "3",
+      "spec": "Compression Dictionary Transport",
+      "text": "The 'compression-dictionary' Link Relation Type",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-3"
+    }
+  },
+  "#name-type": {
+    "current": {
+      "number": "2.1.4",
+      "spec": "Compression Dictionary Transport",
+      "text": "type",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.4"
+    }
+  },
+  "#name-use-as-dictionary": {
+    "current": {
+      "number": "2.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Use-As-Dictionary",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1"
+    }
+  },
+  "#name-use-cases": {
+    "current": {
+      "number": "1.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Use Cases",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-1.1"
+    }
+  },
+  "#name-version-upgrade": {
+    "current": {
+      "number": "1.1.1",
+      "spec": "Compression Dictionary Transport",
+      "text": "Version Upgrade",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-1.1.1"
+    }
+  },
+  "#name-versioned-directories": {
+    "current": {
+      "number": "2.1.5.2",
+      "spec": "Compression Dictionary Transport",
+      "text": "Versioned Directories",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1.5.2"
     }
   },
   "#section-1": {
