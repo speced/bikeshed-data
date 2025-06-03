@@ -1941,7 +1941,12 @@
     "Broadcasting to other browsing contexts",
     "Broken",
     "BrowserCaptureMediaStreamTrack",
+    "BrowserCommand",
+    "BrowserResult",
     "Browsing Profile",
+    "BrowsingContextCommand",
+    "BrowsingContextEvent",
+    "BrowsingContextResult",
     "BrowsingTopic",
     "BrowsingTopicsOptions",
     "Buffer Append",
@@ -2400,8 +2405,11 @@
     "Combinators",
     "Combining character",
     "Combining character sequence",
+    "Command",
+    "CommandData",
     "CommandEvent",
     "CommandEventInit",
+    "CommandResponse",
     "Comment",
     "Comment end bang state",
     "Comment end dash state",
@@ -3133,7 +3141,10 @@
     "Emoji Presentation Participating Code Points",
     "EmptyMatcher",
     "EmptyMatcher()",
+    "EmptyParams",
+    "EmptyResult",
     "Emulate Forced Colors Mode",
+    "EmulationCommand",
     "Encode",
     "Encode(string, extraUnescaped)",
     "EncodeForRegExpEscape",
@@ -3197,8 +3208,10 @@
     "Error",
     "Error Response",
     "ErrorCallback",
+    "ErrorCode",
     "ErrorEvent",
     "ErrorEventInit",
+    "ErrorResponse",
     "Escapable raw text elements",
     "EscapeRegExpPattern",
     "EscapeRegExpPattern(P, F)",
@@ -3227,6 +3240,7 @@
     "Event-level report",
     "Event-level trigger configuration",
     "EventCounts",
+    "EventData",
     "EventHandler",
     "EventHandlerNonNull",
     "EventInit",
@@ -3280,6 +3294,7 @@
     "Extended Inquiry Response",
     "Extended grapheme cluster",
     "Extended language range",
+    "Extensible",
     "Extension",
     "Extensions to the predefined set of link types",
     "Extern value cache",
@@ -4400,6 +4415,7 @@
     "InnerModuleLoading",
     "InnerModuleLoading(state, module)",
     "Input tag",
+    "InputCommand",
     "InputDeviceCapabilities",
     "InputDeviceCapabilitiesInit",
     "InputDeviceInfo",
@@ -4790,6 +4806,7 @@
     "LockManagerSnapshot",
     "LockMode",
     "LockOptions",
+    "LogEvent",
     "Logger",
     "Logical Maximum tag",
     "Logical Minimum tag",
@@ -5122,6 +5139,7 @@
     "MemoryMeasurement",
     "Menu",
     "MenuText",
+    "Message",
     "MessageChannel",
     "MessageEvent",
     "MessageEventInit",
@@ -5350,8 +5368,11 @@
     "Negative infinity",
     "Nemeth Braille",
     "Nested histories",
+    "NetworkCommand",
     "NetworkError",
+    "NetworkEvent",
     "NetworkInformation",
+    "NetworkResult",
     "New Session",
     "New Window",
     "NewDeclarativeEnvironment",
@@ -6530,6 +6551,7 @@
     "RestrictionTarget Production",
     "Restrictions for contents of script elements",
     "Result",
+    "ResultData",
     "ReturnCompletion",
     "ReturnCompletion(value)",
     "ReturnValueMayBeNonUniform",
@@ -6848,10 +6870,13 @@
     "Script data state",
     "Script fetch options",
     "Script-supporting elements",
+    "ScriptCommand",
     "ScriptEvaluation",
     "ScriptEvaluation(scriptRecord)",
+    "ScriptEvent",
     "ScriptInvokerType",
     "ScriptProcessorNode",
+    "ScriptResult",
     "ScriptWindowAttribution",
     "Scripting Policy",
     "Scripting Policy pair",
@@ -6994,6 +7019,8 @@
     "Session Closed",
     "Session ID",
     "Session history entries",
+    "SessionCommand",
+    "SessionResult",
     "Set",
     "Set Credential Properties",
     "Set Credential Properties Parameters",
@@ -7264,11 +7291,13 @@
     "StorageBucket",
     "StorageBucketManager",
     "StorageBucketOptions",
+    "StorageCommand",
     "StorageEstimate",
     "StorageEvent",
     "StorageEventInit",
     "StorageInterestGroup",
     "StorageManager",
+    "StorageResult",
     "Store a Credential",
     "Stored Permission",
     "StreamPipeOptions",
@@ -8208,6 +8237,7 @@
     "WebDriver BiDi auth required",
     "WebDriver BiDi before request sent",
     "WebDriver BiDi cache behavior",
+    "WebDriver BiDi download end",
     "WebDriver BiDi download started",
     "WebDriver BiDi fetch error",
     "WebDriver BiDi file dialog opened",
@@ -8229,6 +8259,8 @@
     "WebDriver BiDi user prompt opened",
     "WebDriver new session algorithms",
     "WebDriver node id",
+    "WebExtensionCommand",
+    "WebExtensionResult",
     "WebGL2RenderingContext",
     "WebGL2RenderingContextBase",
     "WebGL2RenderingContextOverloads",
@@ -10074,6 +10106,24 @@
     "browser chrome elements",
     "browser fingerprinting",
     "browser initiated remote playback",
+    "browser.ClientWindow",
+    "browser.ClientWindowInfo",
+    "browser.ClientWindowNamedState",
+    "browser.ClientWindowRectState",
+    "browser.Close",
+    "browser.CreateUserContext",
+    "browser.CreateUserContextParameters",
+    "browser.CreateUserContextResult",
+    "browser.GetClientWindows",
+    "browser.GetClientWindowsResult",
+    "browser.GetUserContexts",
+    "browser.GetUserContextsResult",
+    "browser.RemoveUserContext",
+    "browser.RemoveUserContextParameters",
+    "browser.SetClientWindowState",
+    "browser.SetClientWindowStateParameters",
+    "browser.UserContext",
+    "browser.UserContextInfo",
     "browsing context",
     "browsing context container",
     "browsing context group",
@@ -10085,6 +10135,80 @@
     "browsing topics task source",
     "browsing-context connected",
     "browsing-topics",
+    "browsingContext.AccessibilityLocator",
+    "browsingContext.Activate",
+    "browsingContext.ActivateParameters",
+    "browsingContext.BaseNavigationInfo",
+    "browsingContext.BoxClipRectangle",
+    "browsingContext.BrowsingContext",
+    "browsingContext.CaptureScreenshot",
+    "browsingContext.CaptureScreenshotParameters",
+    "browsingContext.CaptureScreenshotResult",
+    "browsingContext.ClipRectangle",
+    "browsingContext.Close",
+    "browsingContext.CloseParameters",
+    "browsingContext.ContextCreated",
+    "browsingContext.ContextDestroyed",
+    "browsingContext.ContextLocator",
+    "browsingContext.Create",
+    "browsingContext.CreateParameters",
+    "browsingContext.CreateResult",
+    "browsingContext.CreateType",
+    "browsingContext.CssLocator",
+    "browsingContext.DomContentLoaded",
+    "browsingContext.DownloadCanceledParams",
+    "browsingContext.DownloadCompleteParams",
+    "browsingContext.DownloadEnd",
+    "browsingContext.DownloadEndParams",
+    "browsingContext.DownloadWillBegin",
+    "browsingContext.DownloadWillBeginParams",
+    "browsingContext.ElementClipRectangle",
+    "browsingContext.FragmentNavigated",
+    "browsingContext.GetTree",
+    "browsingContext.GetTreeParameters",
+    "browsingContext.GetTreeResult",
+    "browsingContext.HandleUserPrompt",
+    "browsingContext.HandleUserPromptParameters",
+    "browsingContext.HistoryUpdated",
+    "browsingContext.HistoryUpdatedParameters",
+    "browsingContext.ImageFormat",
+    "browsingContext.Info",
+    "browsingContext.InfoList",
+    "browsingContext.InnerTextLocator",
+    "browsingContext.Load",
+    "browsingContext.LocateNodes",
+    "browsingContext.LocateNodesParameters",
+    "browsingContext.LocateNodesResult",
+    "browsingContext.Locator",
+    "browsingContext.Navigate",
+    "browsingContext.NavigateParameters",
+    "browsingContext.NavigateResult",
+    "browsingContext.Navigation",
+    "browsingContext.NavigationAborted",
+    "browsingContext.NavigationCommitted",
+    "browsingContext.NavigationFailed",
+    "browsingContext.NavigationInfo",
+    "browsingContext.NavigationStarted",
+    "browsingContext.Print",
+    "browsingContext.PrintMarginParameters",
+    "browsingContext.PrintPageParameters",
+    "browsingContext.PrintParameters",
+    "browsingContext.PrintResult",
+    "browsingContext.ReadinessState",
+    "browsingContext.Reload",
+    "browsingContext.ReloadParameters",
+    "browsingContext.SetViewport",
+    "browsingContext.SetViewportParameters",
+    "browsingContext.TraverseHistory",
+    "browsingContext.TraverseHistoryParameters",
+    "browsingContext.TraverseHistoryResult",
+    "browsingContext.UserPromptClosed",
+    "browsingContext.UserPromptClosedParameters",
+    "browsingContext.UserPromptOpened",
+    "browsingContext.UserPromptOpenedParameters",
+    "browsingContext.UserPromptType",
+    "browsingContext.Viewport",
+    "browsingContext.XPathLocator",
     "bstr",
     "bucket file system",
     "bucket map",
@@ -12624,6 +12748,10 @@
     "emulated forced colors theme data",
     "emulated native anchors",
     "emulated position data",
+    "emulation.GeolocationCoordinates",
+    "emulation.GeolocationPositionError",
+    "emulation.SetGeolocationOverride",
+    "emulation.SetGeolocationOverrideParameters",
     "enable a CSS style sheet set",
     "enable close watcher for request close",
     "enable directive",
@@ -14676,6 +14804,35 @@
     "input state map",
     "input stream",
     "input-security",
+    "input.ElementOrigin",
+    "input.FileDialogInfo",
+    "input.FileDialogOpened",
+    "input.KeyDownAction",
+    "input.KeySourceAction",
+    "input.KeySourceActions",
+    "input.KeyUpAction",
+    "input.NoneSourceAction",
+    "input.NoneSourceActions",
+    "input.Origin",
+    "input.PauseAction",
+    "input.PerformActions",
+    "input.PerformActionsParameters",
+    "input.PointerCommonProperties",
+    "input.PointerDownAction",
+    "input.PointerMoveAction",
+    "input.PointerParameters",
+    "input.PointerSourceAction",
+    "input.PointerSourceActions",
+    "input.PointerType",
+    "input.PointerUpAction",
+    "input.ReleaseActions",
+    "input.ReleaseActionsParameters",
+    "input.SetFiles",
+    "input.SetFilesParameters",
+    "input.SourceActions",
+    "input.WheelScrollAction",
+    "input.WheelSourceAction",
+    "input.WheelSourceActions",
     "inputreport",
     "inputs",
     "ins",
@@ -14734,7 +14891,6 @@
     "integrity",
     "integrity metadata",
     "integrity policy",
-    "integrity policy struct",
     "integrity verification algorithm",
     "integrity-metadata",
     "intended direction",
@@ -14997,6 +15153,8 @@
     "job",
     "job queue",
     "join-ad-interest-group",
+    "js-int",
+    "js-uint",
     "json-ld processor",
     "jsonldprocessor-compact-context",
     "jsonldprocessor-compact-input",
@@ -15478,6 +15636,13 @@
     "lod",
     "log event buffer",
     "log()",
+    "log.BaseLogEntry",
+    "log.ConsoleLogEntry",
+    "log.Entry",
+    "log.EntryAdded",
+    "log.GenericLogEntry",
+    "log.JavascriptLogEntry",
+    "log.Level",
     "logged-in",
     "logged-out",
     "logical",
@@ -16352,6 +16517,57 @@
     "network requests",
     "network revocation exemption map",
     "network revocation nonce set",
+    "network.AddIntercept",
+    "network.AddInterceptParameters",
+    "network.AddInterceptResult",
+    "network.AuthChallenge",
+    "network.AuthCredentials",
+    "network.AuthRequired",
+    "network.AuthRequiredParameters",
+    "network.Base64Value",
+    "network.BaseParameters",
+    "network.BeforeRequestSent",
+    "network.BeforeRequestSentParameters",
+    "network.BytesValue",
+    "network.ContinueRequest",
+    "network.ContinueRequestParameters",
+    "network.ContinueResponse",
+    "network.ContinueResponseParameters",
+    "network.ContinueWithAuth",
+    "network.ContinueWithAuthCredentials",
+    "network.ContinueWithAuthNoCredentials",
+    "network.ContinueWithAuthParameters",
+    "network.Cookie",
+    "network.CookieHeader",
+    "network.FailRequest",
+    "network.FailRequestParameters",
+    "network.FetchError",
+    "network.FetchErrorParameters",
+    "network.FetchTimingInfo",
+    "network.Header",
+    "network.Initiator",
+    "network.Intercept",
+    "network.InterceptPhase",
+    "network.ProvideResponse",
+    "network.ProvideResponseParameters",
+    "network.RemoveIntercept",
+    "network.RemoveInterceptParameters",
+    "network.Request",
+    "network.RequestData",
+    "network.ResponseCompleted",
+    "network.ResponseCompletedParameters",
+    "network.ResponseContent",
+    "network.ResponseData",
+    "network.ResponseStarted",
+    "network.ResponseStartedParameters",
+    "network.SameSite",
+    "network.SetCacheBehavior",
+    "network.SetCacheBehaviorParameters",
+    "network.SetCookieHeader",
+    "network.StringValue",
+    "network.UrlPattern",
+    "network.UrlPatternPattern",
+    "network.UrlPatternString",
     "network_reporting_endpoints",
     "networking task source",
     "neutral value for composition",
@@ -18671,7 +18887,6 @@
     "report element timing",
     "report image element timing",
     "report largest contentful paint",
-    "report only integrity policy",
     "report result",
     "report text element timing",
     "report the exception",
@@ -19240,10 +19455,102 @@
     "script-src-elem",
     "script-triggered",
     "script-visible",
+    "script.AddPreloadScript",
+    "script.AddPreloadScriptParameters",
+    "script.AddPreloadScriptResult",
+    "script.ArrayBufferRemoteValue",
+    "script.ArrayLocalValue",
+    "script.ArrayRemoteValue",
+    "script.AudioWorkletRealmInfo",
+    "script.BaseRealmInfo",
+    "script.BigIntValue",
+    "script.BooleanValue",
+    "script.CallFunction",
+    "script.CallFunctionParameters",
     "script.Channel",
+    "script.ChannelProperties",
+    "script.ChannelValue",
+    "script.ContextTarget",
+    "script.DateLocalValue",
+    "script.DateRemoteValue",
+    "script.DedicatedWorkerRealmInfo",
+    "script.Disown",
+    "script.DisownParameters",
+    "script.ErrorRemoteValue",
+    "script.Evaluate",
+    "script.EvaluateParameters",
+    "script.EvaluateResult",
+    "script.EvaluateResultException",
+    "script.EvaluateResultSuccess",
+    "script.ExceptionDetails",
+    "script.FunctionRemoteValue",
+    "script.GeneratorRemoteValue",
+    "script.GetRealms",
+    "script.GetRealmsParameters",
+    "script.GetRealmsResult",
+    "script.HTMLCollectionRemoteValue",
+    "script.Handle",
+    "script.InternalId",
+    "script.ListLocalValue",
+    "script.ListRemoteValue",
     "script.LocalValue",
+    "script.MapLocalValue",
+    "script.MapRemoteValue",
+    "script.MappingLocalValue",
+    "script.MappingRemoteValue",
+    "script.Message",
+    "script.MessageParameters",
+    "script.NodeListRemoteValue",
+    "script.NodeProperties",
+    "script.NodeRemoteValue",
+    "script.NullValue",
+    "script.NumberValue",
+    "script.ObjectLocalValue",
+    "script.ObjectRemoteValue",
+    "script.PaintWorkletRealmInfo",
+    "script.PreloadScript",
     "script.PrimitiveProtocolValue",
+    "script.PromiseRemoteValue",
+    "script.ProxyRemoteValue",
+    "script.Realm",
+    "script.RealmCreated",
+    "script.RealmDestroyed",
+    "script.RealmDestroyedParameters",
+    "script.RealmInfo",
+    "script.RealmTarget",
+    "script.RealmType",
+    "script.RegExpLocalValue",
+    "script.RegExpRemoteValue",
+    "script.RegExpValue",
+    "script.RemoteObjectReference",
     "script.RemoteReference",
+    "script.RemoteValue",
+    "script.RemovePreloadScript",
+    "script.RemovePreloadScriptParameters",
+    "script.ResultOwnership",
+    "script.SerializationOptions",
+    "script.ServiceWorkerRealmInfo",
+    "script.SetLocalValue",
+    "script.SetRemoteValue",
+    "script.SharedId",
+    "script.SharedReference",
+    "script.SharedWorkerRealmInfo",
+    "script.Source",
+    "script.SpecialNumber",
+    "script.StackFrame",
+    "script.StackTrace",
+    "script.StringValue",
+    "script.SymbolRemoteValue",
+    "script.Target",
+    "script.TypedArrayRemoteValue",
+    "script.UndefinedValue",
+    "script.WeakMapRemoteValue",
+    "script.WeakSetRemoteValue",
+    "script.WindowProxyProperties",
+    "script.WindowProxyRemoteValue",
+    "script.WindowRealmInfo",
+    "script.WorkerRealmInfo",
+    "script.WorkletRealmInfo",
     "scriptPercentScaleDown",
     "scriptScriptPercentScaleDown",
     "scriptable MIME type",
@@ -19623,6 +19930,31 @@
     "session storage holder",
     "session store",
     "session timeouts",
+    "session.AutodetectProxyConfiguration",
+    "session.CapabilitiesRequest",
+    "session.CapabilityRequest",
+    "session.DirectProxyConfiguration",
+    "session.End",
+    "session.ManualProxyConfiguration",
+    "session.New",
+    "session.NewParameters",
+    "session.NewResult",
+    "session.PacProxyConfiguration",
+    "session.ProxyConfiguration",
+    "session.SocksProxyConfiguration",
+    "session.Status",
+    "session.StatusResult",
+    "session.Subscribe",
+    "session.SubscribeResult",
+    "session.Subscription",
+    "session.SubscriptionRequest",
+    "session.SystemProxyConfiguration",
+    "session.Unsubscribe",
+    "session.UnsubscribeByAttributesRequest",
+    "session.UnsubscribeByIDRequest",
+    "session.UnsubscribeParameters",
+    "session.UserPromptHandler",
+    "session.UserPromptHandlerType",
     "session.new",
     "sessions",
     "sessions by id map",
@@ -20277,6 +20609,21 @@
     "storage-access",
     "storage-key-nonce",
     "storage-texel-formats",
+    "storage.BrowsingContextPartitionDescriptor",
+    "storage.CookieFilter",
+    "storage.DeleteCookies",
+    "storage.DeleteCookiesParameters",
+    "storage.DeleteCookiesResult",
+    "storage.GetCookies",
+    "storage.GetCookiesParameters",
+    "storage.GetCookiesResult",
+    "storage.PartialCookie",
+    "storage.PartitionDescriptor",
+    "storage.PartitionKey",
+    "storage.SetCookie",
+    "storage.SetCookieParameters",
+    "storage.SetCookieResult",
+    "storage.StorageKeyPartitionDescriptor",
     "storage:bucket-name",
     "storageaccess",
     "store a record into an object store",
@@ -21822,6 +22169,16 @@
     "web+ scheme prefix",
     "web-app-origin-association",
     "web-wide",
+    "webExtension.Extension",
+    "webExtension.ExtensionArchivePath",
+    "webExtension.ExtensionBase64Encoded",
+    "webExtension.ExtensionData",
+    "webExtension.ExtensionPath",
+    "webExtension.Install",
+    "webExtension.InstallParameters",
+    "webExtension.InstallResult",
+    "webExtension.Uninstall",
+    "webExtension.UninstallParameters",
     "webauthn",
     "webdriver",
     "webdriver-active flag",
@@ -28948,9 +29305,25 @@
     "default",
     "none"
   ],
+  "Command": [
+    "\"id\"",
+    "id"
+  ],
   "CommandEvent": [
     "command",
     "source"
+  ],
+  "CommandResponse": [
+    "\"id\"",
+    "\"result\"",
+    "\"type\"",
+    "id",
+    "result",
+    "type"
+  ],
+  "CommandResponse/type": [
+    "\"success\"",
+    "success"
   ],
   "Comment": [
     "Comment()",
@@ -32880,6 +33253,60 @@
   "ErrorCallback": [
     "err"
   ],
+  "ErrorCode": [
+    "\"invalid argument\"",
+    "\"invalid selector\"",
+    "\"invalid session id\"",
+    "\"invalid web extension\"",
+    "\"move target out of bounds\"",
+    "\"no such alert\"",
+    "\"no such element\"",
+    "\"no such frame\"",
+    "\"no such handle\"",
+    "\"no such history entry\"",
+    "\"no such intercept\"",
+    "\"no such node\"",
+    "\"no such request\"",
+    "\"no such script\"",
+    "\"no such storage partition\"",
+    "\"no such user context\"",
+    "\"no such web extension\"",
+    "\"session not created\"",
+    "\"unable to capture screen\"",
+    "\"unable to close browser\"",
+    "\"unable to set cookie\"",
+    "\"unable to set file input\"",
+    "\"underspecified storage partition\"",
+    "\"unknown command\"",
+    "\"unknown error\"",
+    "\"unsupported operation\"",
+    "invalid argument",
+    "invalid selector",
+    "invalid session id",
+    "invalid web extension",
+    "move target out of bounds",
+    "no such alert",
+    "no such element",
+    "no such frame",
+    "no such handle",
+    "no such history entry",
+    "no such intercept",
+    "no such node",
+    "no such request",
+    "no such script",
+    "no such storage partition",
+    "no such user context",
+    "no such web extension",
+    "session not created",
+    "unable to capture screen",
+    "unable to close browser",
+    "unable to set cookie",
+    "unable to set file input",
+    "underspecified storage partition",
+    "unknown command",
+    "unknown error",
+    "unsupported operation"
+  ],
   "ErrorEvent": [
     "colno",
     "error",
@@ -32887,7 +33314,24 @@
     "lineno",
     "message"
   ],
+  "ErrorResponse": [
+    "\"error\"",
+    "\"id\"",
+    "\"message\"",
+    "\"stacktrace\"",
+    "\"type\"",
+    "error",
+    "id",
+    "message",
+    "stacktrace",
+    "type"
+  ],
+  "ErrorResponse/type": [
+    "\"error\"",
+    "error"
+  ],
   "Event": [
+    "\"type\"",
     "AT_TARGET",
     "BUBBLING_PHASE",
     "CAPTURING_PHASE",
@@ -32971,6 +33415,10 @@
     "shadow-adjusted target",
     "slot-in-closed-tree",
     "touch target list"
+  ],
+  "Event/type": [
+    "\"event\"",
+    "event"
   ],
   "EventInit": [
     "bubbles",
@@ -53093,6 +53541,7 @@
     "error"
   ],
   "WebDriver BiDi navigation status": [
+    "downloadedFilepath",
     "id",
     "status",
     "suggestedFilename",
@@ -57063,6 +57512,146 @@
     "avoid-page",
     "avoid-region"
   ],
+  "browser.ClientWindowInfo": [
+    "\"active\"",
+    "\"clientWindow\"",
+    "\"height\"",
+    "\"state\"",
+    "\"width\"",
+    "\"x\"",
+    "\"y\"",
+    "active",
+    "clientWindow",
+    "height",
+    "state",
+    "width",
+    "x",
+    "y"
+  ],
+  "browser.ClientWindowInfo/state": [
+    "\"fullscreen\"",
+    "\"maximized\"",
+    "\"minimized\"",
+    "\"normal\"",
+    "fullscreen",
+    "maximized",
+    "minimized",
+    "normal"
+  ],
+  "browser.ClientWindowNamedState": [
+    "\"state\"",
+    "state"
+  ],
+  "browser.ClientWindowNamedState/state": [
+    "\"fullscreen\"",
+    "\"maximized\"",
+    "\"minimized\"",
+    "fullscreen",
+    "maximized",
+    "minimized"
+  ],
+  "browser.ClientWindowRectState": [
+    "\"height\"",
+    "\"state\"",
+    "\"width\"",
+    "\"x\"",
+    "\"y\"",
+    "height",
+    "state",
+    "width",
+    "x",
+    "y"
+  ],
+  "browser.ClientWindowRectState/state": [
+    "\"normal\"",
+    "normal"
+  ],
+  "browser.Close": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browser.Close/method": [
+    "\"browser.close\"",
+    "browser.close"
+  ],
+  "browser.CreateUserContext": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browser.CreateUserContext/method": [
+    "\"browser.createUserContext\"",
+    "browser.createUserContext"
+  ],
+  "browser.CreateUserContextParameters": [
+    "\"acceptInsecureCerts\"",
+    "\"proxy\"",
+    "acceptInsecureCerts",
+    "proxy"
+  ],
+  "browser.GetClientWindows": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browser.GetClientWindows/method": [
+    "\"browser.getClientWindows\"",
+    "browser.getClientWindows"
+  ],
+  "browser.GetClientWindowsResult": [
+    "\"clientWindows\"",
+    "clientWindows"
+  ],
+  "browser.GetUserContexts": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browser.GetUserContexts/method": [
+    "\"browser.getUserContexts\"",
+    "browser.getUserContexts"
+  ],
+  "browser.GetUserContextsResult": [
+    "\"userContexts\"",
+    "userContexts"
+  ],
+  "browser.RemoveUserContext": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browser.RemoveUserContext/method": [
+    "\"browser.removeUserContext\"",
+    "browser.removeUserContext"
+  ],
+  "browser.RemoveUserContextParameters": [
+    "\"userContext\"",
+    "userContext"
+  ],
+  "browser.SetClientWindowState": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browser.SetClientWindowState/method": [
+    "\"browser.setClientWindowState\"",
+    "browser.setClientWindowState"
+  ],
+  "browser.SetClientWindowStateParameters": [
+    "\"clientWindow\"",
+    "clientWindow"
+  ],
+  "browser.UserContextInfo": [
+    "\"userContext\"",
+    "userContext"
+  ],
   "browsing context": [
     "compute the effective partition nonce",
     "fenced frame config instance",
@@ -57086,6 +57675,636 @@
   ],
   "browsing-topic": [
     "code unit less than"
+  ],
+  "browsingContext.AccessibilityLocator": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "browsingContext.AccessibilityLocator/type": [
+    "\"accessibility\"",
+    "accessibility"
+  ],
+  "browsingContext.AccessibilityLocator/value": [
+    "\"name\"",
+    "\"role\"",
+    "name",
+    "role"
+  ],
+  "browsingContext.Activate": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.Activate/method": [
+    "\"browsingContext.activate\"",
+    "browsingContext.activate"
+  ],
+  "browsingContext.ActivateParameters": [
+    "\"context\"",
+    "context"
+  ],
+  "browsingContext.BaseNavigationInfo": [
+    "\"context\"",
+    "\"navigation\"",
+    "\"timestamp\"",
+    "\"url\"",
+    "context",
+    "navigation",
+    "timestamp",
+    "url"
+  ],
+  "browsingContext.BoxClipRectangle": [
+    "\"height\"",
+    "\"type\"",
+    "\"width\"",
+    "\"x\"",
+    "\"y\"",
+    "height",
+    "type",
+    "width",
+    "x",
+    "y"
+  ],
+  "browsingContext.BoxClipRectangle/type": [
+    "\"box\"",
+    "box"
+  ],
+  "browsingContext.CaptureScreenshot": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.CaptureScreenshot/method": [
+    "\"browsingContext.captureScreenshot\"",
+    "browsingContext.captureScreenshot"
+  ],
+  "browsingContext.CaptureScreenshotParameters": [
+    "\"clip\"",
+    "\"context\"",
+    "\"format\"",
+    "\"origin\"",
+    "clip",
+    "context",
+    "format",
+    "origin"
+  ],
+  "browsingContext.CaptureScreenshotParameters/origin": [
+    "\"document\"",
+    "\"viewport\"",
+    "document",
+    "viewport"
+  ],
+  "browsingContext.CaptureScreenshotResult": [
+    "\"data\"",
+    "data"
+  ],
+  "browsingContext.Close": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.Close/method": [
+    "\"browsingContext.close\"",
+    "browsingContext.close"
+  ],
+  "browsingContext.CloseParameters": [
+    "\"context\"",
+    "\"promptUnload\"",
+    "context",
+    "promptUnload"
+  ],
+  "browsingContext.ContextCreated": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.ContextCreated/method": [
+    "\"browsingContext.contextCreated\"",
+    "browsingContext.contextCreated"
+  ],
+  "browsingContext.ContextDestroyed": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.ContextDestroyed/method": [
+    "\"browsingContext.contextDestroyed\"",
+    "browsingContext.contextDestroyed"
+  ],
+  "browsingContext.ContextLocator": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "browsingContext.ContextLocator/type": [
+    "\"context\"",
+    "context"
+  ],
+  "browsingContext.ContextLocator/value": [
+    "\"context\"",
+    "context"
+  ],
+  "browsingContext.Create": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.Create/method": [
+    "\"browsingContext.create\"",
+    "browsingContext.create"
+  ],
+  "browsingContext.CreateParameters": [
+    "\"background\"",
+    "\"referenceContext\"",
+    "\"type\"",
+    "\"userContext\"",
+    "background",
+    "referenceContext",
+    "type",
+    "userContext"
+  ],
+  "browsingContext.CreateResult": [
+    "\"context\"",
+    "context"
+  ],
+  "browsingContext.CreateType": [
+    "\"tab\"",
+    "\"window\"",
+    "tab",
+    "window"
+  ],
+  "browsingContext.CssLocator": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "browsingContext.CssLocator/type": [
+    "\"css\"",
+    "css"
+  ],
+  "browsingContext.DomContentLoaded": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.DomContentLoaded/method": [
+    "\"browsingContext.domContentLoaded\"",
+    "browsingContext.domContentLoaded"
+  ],
+  "browsingContext.DownloadCanceledParams": [
+    "\"status\"",
+    "status"
+  ],
+  "browsingContext.DownloadCanceledParams/status": [
+    "\"canceled\"",
+    "canceled"
+  ],
+  "browsingContext.DownloadCompleteParams": [
+    "\"filepath\"",
+    "\"status\"",
+    "filepath",
+    "status"
+  ],
+  "browsingContext.DownloadCompleteParams/status": [
+    "\"complete\"",
+    "complete"
+  ],
+  "browsingContext.DownloadEnd": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.DownloadEnd/method": [
+    "\"browsingContext.downloadEnd\"",
+    "browsingContext.downloadEnd"
+  ],
+  "browsingContext.DownloadWillBegin": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.DownloadWillBegin/method": [
+    "\"browsingContext.downloadWillBegin\"",
+    "browsingContext.downloadWillBegin"
+  ],
+  "browsingContext.DownloadWillBeginParams": [
+    "\"suggestedFilename\"",
+    "suggestedFilename"
+  ],
+  "browsingContext.ElementClipRectangle": [
+    "\"element\"",
+    "\"type\"",
+    "element",
+    "type"
+  ],
+  "browsingContext.ElementClipRectangle/type": [
+    "\"element\"",
+    "element"
+  ],
+  "browsingContext.FragmentNavigated": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.FragmentNavigated/method": [
+    "\"browsingContext.fragmentNavigated\"",
+    "browsingContext.fragmentNavigated"
+  ],
+  "browsingContext.GetTree": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.GetTree/method": [
+    "\"browsingContext.getTree\"",
+    "browsingContext.getTree"
+  ],
+  "browsingContext.GetTreeParameters": [
+    "\"maxDepth\"",
+    "\"root\"",
+    "maxDepth",
+    "root"
+  ],
+  "browsingContext.GetTreeResult": [
+    "\"contexts\"",
+    "contexts"
+  ],
+  "browsingContext.HandleUserPrompt": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.HandleUserPrompt/method": [
+    "\"browsingContext.handleUserPrompt\"",
+    "browsingContext.handleUserPrompt"
+  ],
+  "browsingContext.HandleUserPromptParameters": [
+    "\"accept\"",
+    "\"context\"",
+    "\"userText\"",
+    "accept",
+    "context",
+    "userText"
+  ],
+  "browsingContext.HistoryUpdated": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.HistoryUpdated/method": [
+    "\"browsingContext.historyUpdated\"",
+    "browsingContext.historyUpdated"
+  ],
+  "browsingContext.HistoryUpdatedParameters": [
+    "\"context\"",
+    "\"url\"",
+    "context",
+    "url"
+  ],
+  "browsingContext.ImageFormat": [
+    "\"quality\"",
+    "\"type\"",
+    "quality",
+    "type"
+  ],
+  "browsingContext.Info": [
+    "\"children\"",
+    "\"clientWindow\"",
+    "\"context\"",
+    "\"originalOpener\"",
+    "\"parent\"",
+    "\"url\"",
+    "\"userContext\"",
+    "children",
+    "clientWindow",
+    "context",
+    "originalOpener",
+    "parent",
+    "url",
+    "userContext"
+  ],
+  "browsingContext.InnerTextLocator": [
+    "\"ignoreCase\"",
+    "\"matchType\"",
+    "\"maxDepth\"",
+    "\"type\"",
+    "\"value\"",
+    "ignoreCase",
+    "matchType",
+    "maxDepth",
+    "type",
+    "value"
+  ],
+  "browsingContext.InnerTextLocator/matchType": [
+    "\"full\"",
+    "\"partial\"",
+    "full",
+    "partial"
+  ],
+  "browsingContext.InnerTextLocator/type": [
+    "\"innerText\"",
+    "innerText"
+  ],
+  "browsingContext.Load": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.Load/method": [
+    "\"browsingContext.load\"",
+    "browsingContext.load"
+  ],
+  "browsingContext.LocateNodes": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.LocateNodes/method": [
+    "\"browsingContext.locateNodes\"",
+    "browsingContext.locateNodes"
+  ],
+  "browsingContext.LocateNodesParameters": [
+    "\"context\"",
+    "\"locator\"",
+    "\"maxNodeCount\"",
+    "\"serializationOptions\"",
+    "\"startNodes\"",
+    "context",
+    "locator",
+    "maxNodeCount",
+    "serializationOptions",
+    "startNodes"
+  ],
+  "browsingContext.LocateNodesResult": [
+    "\"nodes\"",
+    "nodes"
+  ],
+  "browsingContext.Navigate": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.Navigate/method": [
+    "\"browsingContext.navigate\"",
+    "browsingContext.navigate"
+  ],
+  "browsingContext.NavigateParameters": [
+    "\"context\"",
+    "\"url\"",
+    "\"wait\"",
+    "context",
+    "url",
+    "wait"
+  ],
+  "browsingContext.NavigateResult": [
+    "\"navigation\"",
+    "\"url\"",
+    "navigation",
+    "url"
+  ],
+  "browsingContext.NavigationAborted": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.NavigationAborted/method": [
+    "\"browsingContext.navigationAborted\"",
+    "browsingContext.navigationAborted"
+  ],
+  "browsingContext.NavigationCommitted": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.NavigationCommitted/method": [
+    "\"browsingContext.navigationCommitted\"",
+    "browsingContext.navigationCommitted"
+  ],
+  "browsingContext.NavigationFailed": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.NavigationFailed/method": [
+    "\"browsingContext.navigationFailed\"",
+    "browsingContext.navigationFailed"
+  ],
+  "browsingContext.NavigationStarted": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.NavigationStarted/method": [
+    "\"browsingContext.navigationStarted\"",
+    "browsingContext.navigationStarted"
+  ],
+  "browsingContext.Print": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.Print/method": [
+    "\"browsingContext.print\"",
+    "browsingContext.print"
+  ],
+  "browsingContext.PrintMarginParameters": [
+    "\"bottom\"",
+    "\"left\"",
+    "\"right\"",
+    "\"top\"",
+    "bottom",
+    "left",
+    "right",
+    "top"
+  ],
+  "browsingContext.PrintPageParameters": [
+    "\"height\"",
+    "\"width\"",
+    "height",
+    "width"
+  ],
+  "browsingContext.PrintParameters": [
+    "\"background\"",
+    "\"context\"",
+    "\"margin\"",
+    "\"orientation\"",
+    "\"page\"",
+    "\"pageRanges\"",
+    "\"scale\"",
+    "\"shrinkToFit\"",
+    "background",
+    "context",
+    "margin",
+    "orientation",
+    "page",
+    "pageRanges",
+    "scale",
+    "shrinkToFit"
+  ],
+  "browsingContext.PrintParameters/orientation": [
+    "\"landscape\"",
+    "\"portrait\"",
+    "landscape",
+    "portrait"
+  ],
+  "browsingContext.PrintResult": [
+    "\"data\"",
+    "data"
+  ],
+  "browsingContext.ReadinessState": [
+    "\"complete\"",
+    "\"interactive\"",
+    "\"none\"",
+    "complete",
+    "interactive",
+    "none"
+  ],
+  "browsingContext.Reload": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.Reload/method": [
+    "\"browsingContext.reload\"",
+    "browsingContext.reload"
+  ],
+  "browsingContext.ReloadParameters": [
+    "\"context\"",
+    "\"ignoreCache\"",
+    "\"wait\"",
+    "context",
+    "ignoreCache",
+    "wait"
+  ],
+  "browsingContext.SetViewport": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.SetViewport/method": [
+    "\"browsingContext.setViewport\"",
+    "browsingContext.setViewport"
+  ],
+  "browsingContext.SetViewportParameters": [
+    "\"context\"",
+    "\"devicePixelRatio\"",
+    "\"userContexts\"",
+    "\"viewport\"",
+    "context",
+    "devicePixelRatio",
+    "userContexts",
+    "viewport"
+  ],
+  "browsingContext.TraverseHistory": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.TraverseHistory/method": [
+    "\"browsingContext.traverseHistory\"",
+    "browsingContext.traverseHistory"
+  ],
+  "browsingContext.TraverseHistoryParameters": [
+    "\"context\"",
+    "\"delta\"",
+    "context",
+    "delta"
+  ],
+  "browsingContext.UserPromptClosed": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.UserPromptClosed/method": [
+    "\"browsingContext.userPromptClosed\"",
+    "browsingContext.userPromptClosed"
+  ],
+  "browsingContext.UserPromptClosedParameters": [
+    "\"accepted\"",
+    "\"context\"",
+    "\"type\"",
+    "\"userText\"",
+    "accepted",
+    "context",
+    "type",
+    "userText"
+  ],
+  "browsingContext.UserPromptOpened": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.UserPromptOpened/method": [
+    "\"browsingContext.userPromptOpened\"",
+    "browsingContext.userPromptOpened"
+  ],
+  "browsingContext.UserPromptOpenedParameters": [
+    "\"context\"",
+    "\"defaultValue\"",
+    "\"handler\"",
+    "\"message\"",
+    "\"type\"",
+    "context",
+    "defaultValue",
+    "handler",
+    "message",
+    "type"
+  ],
+  "browsingContext.UserPromptType": [
+    "\"alert\"",
+    "\"beforeunload\"",
+    "\"confirm\"",
+    "\"prompt\"",
+    "alert",
+    "beforeunload",
+    "confirm",
+    "prompt"
+  ],
+  "browsingContext.Viewport": [
+    "\"height\"",
+    "\"width\"",
+    "height",
+    "width"
+  ],
+  "browsingContext.XPathLocator": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "browsingContext.XPathLocator/type": [
+    "\"xpath\"",
+    "xpath"
   ],
   "built-in values": [
     "clip_distances",
@@ -58530,6 +59749,50 @@
   "empty-cells": [
     "hide",
     "show"
+  ],
+  "emulation.GeolocationCoordinates": [
+    "\"accuracy\"",
+    "\"altitude\"",
+    "\"altitudeAccuracy\"",
+    "\"heading\"",
+    "\"latitude\"",
+    "\"longitude\"",
+    "\"speed\"",
+    "accuracy",
+    "altitude",
+    "altitudeAccuracy",
+    "heading",
+    "latitude",
+    "longitude",
+    "speed"
+  ],
+  "emulation.GeolocationPositionError": [
+    "\"type\"",
+    "type"
+  ],
+  "emulation.GeolocationPositionError/type": [
+    "\"positionUnavailable\"",
+    "positionUnavailable"
+  ],
+  "emulation.SetGeolocationOverride": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "emulation.SetGeolocationOverride/method": [
+    "\"emulation.setGeolocationOverride\"",
+    "emulation.setGeolocationOverride"
+  ],
+  "emulation.SetGeolocationOverrideParameters": [
+    "\"contexts\"",
+    "\"coordinates\"",
+    "\"error\"",
+    "\"userContexts\"",
+    "contexts",
+    "coordinates",
+    "error",
+    "userContexts"
   ],
   "encoder state": [
     "ended",
@@ -60335,6 +61598,252 @@
     "auto",
     "none"
   ],
+  "input.ElementOrigin": [
+    "\"element\"",
+    "\"type\"",
+    "element",
+    "type"
+  ],
+  "input.ElementOrigin/type": [
+    "\"element\"",
+    "element"
+  ],
+  "input.FileDialogInfo": [
+    "\"context\"",
+    "\"element\"",
+    "\"multiple\"",
+    "context",
+    "element",
+    "multiple"
+  ],
+  "input.FileDialogOpened": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "input.FileDialogOpened/method": [
+    "\"input.fileDialogOpened\"",
+    "input.fileDialogOpened"
+  ],
+  "input.KeyDownAction": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "input.KeyDownAction/type": [
+    "\"keyDown\"",
+    "keyDown"
+  ],
+  "input.KeySourceActions": [
+    "\"actions\"",
+    "\"id\"",
+    "\"type\"",
+    "actions",
+    "id",
+    "type"
+  ],
+  "input.KeySourceActions/type": [
+    "\"key\"",
+    "key"
+  ],
+  "input.KeyUpAction": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "input.KeyUpAction/type": [
+    "\"keyUp\"",
+    "keyUp"
+  ],
+  "input.NoneSourceActions": [
+    "\"actions\"",
+    "\"id\"",
+    "\"type\"",
+    "actions",
+    "id",
+    "type"
+  ],
+  "input.NoneSourceActions/type": [
+    "\"none\"",
+    "none"
+  ],
+  "input.Origin": [
+    "\"pointer\"",
+    "\"viewport\"",
+    "pointer",
+    "viewport"
+  ],
+  "input.PauseAction": [
+    "\"duration\"",
+    "\"type\"",
+    "duration",
+    "type"
+  ],
+  "input.PauseAction/type": [
+    "\"pause\"",
+    "pause"
+  ],
+  "input.PerformActions": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "input.PerformActions/method": [
+    "\"input.performActions\"",
+    "input.performActions"
+  ],
+  "input.PerformActionsParameters": [
+    "\"actions\"",
+    "\"context\"",
+    "actions",
+    "context"
+  ],
+  "input.PointerCommonProperties": [
+    "\"altitudeAngle\"",
+    "\"azimuthAngle\"",
+    "\"height\"",
+    "\"pressure\"",
+    "\"tangentialPressure\"",
+    "\"twist\"",
+    "\"width\"",
+    "altitudeAngle",
+    "azimuthAngle",
+    "height",
+    "pressure",
+    "tangentialPressure",
+    "twist",
+    "width"
+  ],
+  "input.PointerDownAction": [
+    "\"button\"",
+    "\"type\"",
+    "button",
+    "type"
+  ],
+  "input.PointerDownAction/type": [
+    "\"pointerDown\"",
+    "pointerDown"
+  ],
+  "input.PointerMoveAction": [
+    "\"duration\"",
+    "\"origin\"",
+    "\"type\"",
+    "\"x\"",
+    "\"y\"",
+    "duration",
+    "origin",
+    "type",
+    "x",
+    "y"
+  ],
+  "input.PointerMoveAction/type": [
+    "\"pointerMove\"",
+    "pointerMove"
+  ],
+  "input.PointerParameters": [
+    "\"pointerType\"",
+    "pointerType"
+  ],
+  "input.PointerSourceActions": [
+    "\"actions\"",
+    "\"id\"",
+    "\"parameters\"",
+    "\"type\"",
+    "actions",
+    "id",
+    "parameters",
+    "type"
+  ],
+  "input.PointerSourceActions/type": [
+    "\"pointer\"",
+    "pointer"
+  ],
+  "input.PointerType": [
+    "\"mouse\"",
+    "\"pen\"",
+    "\"touch\"",
+    "mouse",
+    "pen",
+    "touch"
+  ],
+  "input.PointerUpAction": [
+    "\"button\"",
+    "\"type\"",
+    "button",
+    "type"
+  ],
+  "input.PointerUpAction/type": [
+    "\"pointerUp\"",
+    "pointerUp"
+  ],
+  "input.ReleaseActions": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "input.ReleaseActions/method": [
+    "\"input.releaseActions\"",
+    "input.releaseActions"
+  ],
+  "input.ReleaseActionsParameters": [
+    "\"context\"",
+    "context"
+  ],
+  "input.SetFiles": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "input.SetFiles/method": [
+    "\"input.setFiles\"",
+    "input.setFiles"
+  ],
+  "input.SetFilesParameters": [
+    "\"context\"",
+    "\"element\"",
+    "\"files\"",
+    "context",
+    "element",
+    "files"
+  ],
+  "input.WheelScrollAction": [
+    "\"deltaX\"",
+    "\"deltaY\"",
+    "\"duration\"",
+    "\"origin\"",
+    "\"type\"",
+    "\"x\"",
+    "\"y\"",
+    "deltaX",
+    "deltaY",
+    "duration",
+    "origin",
+    "type",
+    "x",
+    "y"
+  ],
+  "input.WheelScrollAction/type": [
+    "\"scroll\"",
+    "scroll"
+  ],
+  "input.WheelSourceActions": [
+    "\"actions\"",
+    "\"id\"",
+    "\"type\"",
+    "actions",
+    "id",
+    "type"
+  ],
+  "input.WheelSourceActions/type": [
+    "\"wheel\"",
+    "wheel"
+  ],
   "input/autocomplete": [
     "additional-name",
     "address-level1",
@@ -61092,6 +62601,62 @@
     "released promise",
     "waiting promise"
   ],
+  "log.BaseLogEntry": [
+    "\"level\"",
+    "\"source\"",
+    "\"stackTrace\"",
+    "\"text\"",
+    "\"timestamp\"",
+    "level",
+    "source",
+    "stackTrace",
+    "text",
+    "timestamp"
+  ],
+  "log.ConsoleLogEntry": [
+    "\"args\"",
+    "\"method\"",
+    "\"type\"",
+    "args",
+    "method",
+    "type"
+  ],
+  "log.ConsoleLogEntry/type": [
+    "\"console\"",
+    "console"
+  ],
+  "log.EntryAdded": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "log.EntryAdded/method": [
+    "\"log.entryAdded\"",
+    "log.entryAdded"
+  ],
+  "log.GenericLogEntry": [
+    "\"type\"",
+    "type"
+  ],
+  "log.JavascriptLogEntry": [
+    "\"type\"",
+    "type"
+  ],
+  "log.JavascriptLogEntry/type": [
+    "\"javascript\"",
+    "javascript"
+  ],
+  "log.Level": [
+    "\"debug\"",
+    "\"error\"",
+    "\"info\"",
+    "\"warn\"",
+    "debug",
+    "error",
+    "info",
+    "warn"
+  ],
   "logical-page": [
     "recto",
     "verso"
@@ -61598,6 +63163,506 @@
     "priority",
     "retry_after",
     "weight"
+  ],
+  "network.AddIntercept": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.AddIntercept/method": [
+    "\"network.addIntercept\"",
+    "network.addIntercept"
+  ],
+  "network.AddInterceptParameters": [
+    "\"contexts\"",
+    "\"phases\"",
+    "\"urlPatterns\"",
+    "contexts",
+    "phases",
+    "urlPatterns"
+  ],
+  "network.AddInterceptResult": [
+    "\"intercept\"",
+    "intercept"
+  ],
+  "network.AuthChallenge": [
+    "\"realm\"",
+    "\"scheme\"",
+    "realm",
+    "scheme"
+  ],
+  "network.AuthCredentials": [
+    "\"password\"",
+    "\"type\"",
+    "\"username\"",
+    "password",
+    "type",
+    "username"
+  ],
+  "network.AuthCredentials/type": [
+    "\"password\"",
+    "password"
+  ],
+  "network.AuthRequired": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.AuthRequired/method": [
+    "\"network.authRequired\"",
+    "network.authRequired"
+  ],
+  "network.AuthRequiredParameters": [
+    "\"response\"",
+    "response"
+  ],
+  "network.Base64Value": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "network.Base64Value/type": [
+    "\"base64\"",
+    "base64"
+  ],
+  "network.BaseParameters": [
+    "\"context\"",
+    "\"intercepts\"",
+    "\"isBlocked\"",
+    "\"navigation\"",
+    "\"redirectCount\"",
+    "\"request\"",
+    "\"timestamp\"",
+    "context",
+    "intercepts",
+    "isBlocked",
+    "navigation",
+    "redirectCount",
+    "request",
+    "timestamp"
+  ],
+  "network.BeforeRequestSent": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.BeforeRequestSent/method": [
+    "\"network.beforeRequestSent\"",
+    "network.beforeRequestSent"
+  ],
+  "network.BeforeRequestSentParameters": [
+    "\"initiator\"",
+    "initiator"
+  ],
+  "network.ContinueRequest": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.ContinueRequest/method": [
+    "\"network.continueRequest\"",
+    "network.continueRequest"
+  ],
+  "network.ContinueRequestParameters": [
+    "\"body\"",
+    "\"cookies\"",
+    "\"headers\"",
+    "\"method\"",
+    "\"request\"",
+    "\"url\"",
+    "body",
+    "cookies",
+    "headers",
+    "method",
+    "request",
+    "url"
+  ],
+  "network.ContinueResponse": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.ContinueResponse/method": [
+    "\"network.continueResponse\"",
+    "network.continueResponse"
+  ],
+  "network.ContinueResponseParameters": [
+    "\"cookies\"",
+    "\"credentials\"",
+    "\"headers\"",
+    "\"reasonPhrase\"",
+    "\"request\"",
+    "\"statusCode\"",
+    "cookies",
+    "credentials",
+    "headers",
+    "reasonPhrase",
+    "request",
+    "statusCode"
+  ],
+  "network.ContinueWithAuth": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.ContinueWithAuth/method": [
+    "\"network.continueWithAuth\"",
+    "network.continueWithAuth"
+  ],
+  "network.ContinueWithAuthCredentials": [
+    "\"action\"",
+    "\"credentials\"",
+    "action",
+    "credentials"
+  ],
+  "network.ContinueWithAuthCredentials/action": [
+    "\"provideCredentials\"",
+    "provideCredentials"
+  ],
+  "network.ContinueWithAuthNoCredentials": [
+    "\"action\"",
+    "action"
+  ],
+  "network.ContinueWithAuthNoCredentials/action": [
+    "\"cancel\"",
+    "\"default\"",
+    "cancel",
+    "default"
+  ],
+  "network.ContinueWithAuthParameters": [
+    "\"request\"",
+    "request"
+  ],
+  "network.Cookie": [
+    "\"domain\"",
+    "\"expiry\"",
+    "\"httpOnly\"",
+    "\"name\"",
+    "\"path\"",
+    "\"sameSite\"",
+    "\"secure\"",
+    "\"size\"",
+    "\"value\"",
+    "domain",
+    "expiry",
+    "httpOnly",
+    "name",
+    "path",
+    "sameSite",
+    "secure",
+    "size",
+    "value"
+  ],
+  "network.CookieHeader": [
+    "\"name\"",
+    "\"value\"",
+    "name",
+    "value"
+  ],
+  "network.FailRequest": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.FailRequest/method": [
+    "\"network.failRequest\"",
+    "network.failRequest"
+  ],
+  "network.FailRequestParameters": [
+    "\"request\"",
+    "request"
+  ],
+  "network.FetchError": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.FetchError/method": [
+    "\"network.fetchError\"",
+    "network.fetchError"
+  ],
+  "network.FetchErrorParameters": [
+    "\"errorText\"",
+    "errorText"
+  ],
+  "network.FetchTimingInfo": [
+    "\"connectEnd\"",
+    "\"connectStart\"",
+    "\"dnsEnd\"",
+    "\"dnsStart\"",
+    "\"fetchStart\"",
+    "\"redirectEnd\"",
+    "\"redirectStart\"",
+    "\"requestStart\"",
+    "\"requestTime\"",
+    "\"responseEnd\"",
+    "\"responseStart\"",
+    "\"timeOrigin\"",
+    "\"tlsStart\"",
+    "connectEnd",
+    "connectStart",
+    "dnsEnd",
+    "dnsStart",
+    "fetchStart",
+    "redirectEnd",
+    "redirectStart",
+    "requestStart",
+    "requestTime",
+    "responseEnd",
+    "responseStart",
+    "timeOrigin",
+    "tlsStart"
+  ],
+  "network.Header": [
+    "\"name\"",
+    "\"value\"",
+    "name",
+    "value"
+  ],
+  "network.Initiator": [
+    "\"columnNumber\"",
+    "\"lineNumber\"",
+    "\"request\"",
+    "\"stackTrace\"",
+    "\"type\"",
+    "columnNumber",
+    "lineNumber",
+    "request",
+    "stackTrace",
+    "type"
+  ],
+  "network.Initiator/type": [
+    "\"other\"",
+    "\"parser\"",
+    "\"preflight\"",
+    "\"script\"",
+    "other",
+    "parser",
+    "preflight",
+    "script"
+  ],
+  "network.InterceptPhase": [
+    "\"authRequired\"",
+    "\"beforeRequestSent\"",
+    "\"responseStarted\"",
+    "authRequired",
+    "beforeRequestSent",
+    "responseStarted"
+  ],
+  "network.ProvideResponse": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.ProvideResponse/method": [
+    "\"network.provideResponse\"",
+    "network.provideResponse"
+  ],
+  "network.ProvideResponseParameters": [
+    "\"body\"",
+    "\"cookies\"",
+    "\"headers\"",
+    "\"reasonPhrase\"",
+    "\"request\"",
+    "\"statusCode\"",
+    "body",
+    "cookies",
+    "headers",
+    "reasonPhrase",
+    "request",
+    "statusCode"
+  ],
+  "network.RemoveIntercept": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.RemoveIntercept/method": [
+    "\"network.removeIntercept\"",
+    "network.removeIntercept"
+  ],
+  "network.RemoveInterceptParameters": [
+    "\"intercept\"",
+    "intercept"
+  ],
+  "network.RequestData": [
+    "\"bodySize\"",
+    "\"cookies\"",
+    "\"destination\"",
+    "\"headers\"",
+    "\"headersSize\"",
+    "\"initiatorType\"",
+    "\"method\"",
+    "\"request\"",
+    "\"timings\"",
+    "\"url\"",
+    "bodySize",
+    "cookies",
+    "destination",
+    "headers",
+    "headersSize",
+    "initiatorType",
+    "method",
+    "request",
+    "timings",
+    "url"
+  ],
+  "network.ResponseCompleted": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.ResponseCompleted/method": [
+    "\"network.responseCompleted\"",
+    "network.responseCompleted"
+  ],
+  "network.ResponseCompletedParameters": [
+    "\"response\"",
+    "response"
+  ],
+  "network.ResponseContent": [
+    "\"size\"",
+    "size"
+  ],
+  "network.ResponseData": [
+    "\"authChallenges\"",
+    "\"bodySize\"",
+    "\"bytesReceived\"",
+    "\"content\"",
+    "\"fromCache\"",
+    "\"headers\"",
+    "\"headersSize\"",
+    "\"mimeType\"",
+    "\"protocol\"",
+    "\"status\"",
+    "\"statusText\"",
+    "\"url\"",
+    "authChallenges",
+    "bodySize",
+    "bytesReceived",
+    "content",
+    "fromCache",
+    "headers",
+    "headersSize",
+    "mimeType",
+    "protocol",
+    "status",
+    "statusText",
+    "url"
+  ],
+  "network.ResponseStarted": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.ResponseStarted/method": [
+    "\"network.responseStarted\"",
+    "network.responseStarted"
+  ],
+  "network.ResponseStartedParameters": [
+    "\"response\"",
+    "response"
+  ],
+  "network.SameSite": [
+    "\"lax\"",
+    "\"none\"",
+    "\"strict\"",
+    "lax",
+    "none",
+    "strict"
+  ],
+  "network.SetCacheBehavior": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.SetCacheBehavior/method": [
+    "\"network.setCacheBehavior\"",
+    "network.setCacheBehavior"
+  ],
+  "network.SetCacheBehaviorParameters": [
+    "\"cacheBehavior\"",
+    "\"contexts\"",
+    "cacheBehavior",
+    "contexts"
+  ],
+  "network.SetCacheBehaviorParameters/cacheBehavior": [
+    "\"bypass\"",
+    "\"default\"",
+    "bypass",
+    "default"
+  ],
+  "network.SetCookieHeader": [
+    "\"domain\"",
+    "\"expiry\"",
+    "\"httpOnly\"",
+    "\"maxAge\"",
+    "\"name\"",
+    "\"path\"",
+    "\"sameSite\"",
+    "\"secure\"",
+    "\"value\"",
+    "domain",
+    "expiry",
+    "httpOnly",
+    "maxAge",
+    "name",
+    "path",
+    "sameSite",
+    "secure",
+    "value"
+  ],
+  "network.StringValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "network.StringValue/type": [
+    "\"string\"",
+    "string"
+  ],
+  "network.UrlPatternPattern": [
+    "\"hostname\"",
+    "\"pathname\"",
+    "\"port\"",
+    "\"protocol\"",
+    "\"search\"",
+    "\"type\"",
+    "hostname",
+    "pathname",
+    "port",
+    "protocol",
+    "search",
+    "type"
+  ],
+  "network.UrlPatternPattern/type": [
+    "\"pattern\"",
+    "pattern"
+  ],
+  "network.UrlPatternString": [
+    "\"pattern\"",
+    "\"type\"",
+    "pattern",
+    "type"
+  ],
+  "network.UrlPatternString/type": [
+    "\"string\"",
+    "string"
   ],
   "network_reporting_endpoints": [
     "endpoints",
@@ -62360,7 +64425,9 @@
     "CSP list",
     "IP address space",
     "embedder policy",
-    "referrer policy"
+    "integrity policy",
+    "referrer policy",
+    "report only integrity policy"
   ],
   "policy-controlled feature": [
     "bluetooth",
@@ -63325,6 +65392,796 @@
     "start time",
     "window"
   ],
+  "script.AddPreloadScript": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.AddPreloadScript/method": [
+    "\"script.addPreloadScript\"",
+    "script.addPreloadScript"
+  ],
+  "script.AddPreloadScriptParameters": [
+    "\"arguments\"",
+    "\"contexts\"",
+    "\"functionDeclaration\"",
+    "\"sandbox\"",
+    "\"userContexts\"",
+    "arguments",
+    "contexts",
+    "functionDeclaration",
+    "sandbox",
+    "userContexts"
+  ],
+  "script.AddPreloadScriptResult": [
+    "\"script\"",
+    "script"
+  ],
+  "script.ArrayBufferRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.ArrayBufferRemoteValue/type": [
+    "\"arraybuffer\"",
+    "arraybuffer"
+  ],
+  "script.ArrayLocalValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.ArrayLocalValue/type": [
+    "\"array\"",
+    "array"
+  ],
+  "script.ArrayRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "\"value\"",
+    "handle",
+    "internalId",
+    "type",
+    "value"
+  ],
+  "script.ArrayRemoteValue/type": [
+    "\"array\"",
+    "array"
+  ],
+  "script.AudioWorkletRealmInfo": [
+    "\"type\"",
+    "type"
+  ],
+  "script.AudioWorkletRealmInfo/type": [
+    "\"audio-worklet\"",
+    "audio-worklet"
+  ],
+  "script.BaseRealmInfo": [
+    "\"origin\"",
+    "\"realm\"",
+    "origin",
+    "realm"
+  ],
+  "script.BigIntValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.BigIntValue/type": [
+    "\"bigint\"",
+    "bigint"
+  ],
+  "script.BooleanValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.BooleanValue/type": [
+    "\"boolean\"",
+    "boolean"
+  ],
+  "script.CallFunction": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.CallFunction/method": [
+    "\"script.callFunction\"",
+    "script.callFunction"
+  ],
+  "script.CallFunctionParameters": [
+    "\"arguments\"",
+    "\"awaitPromise\"",
+    "\"functionDeclaration\"",
+    "\"resultOwnership\"",
+    "\"serializationOptions\"",
+    "\"target\"",
+    "\"this\"",
+    "\"userActivation\"",
+    "arguments",
+    "awaitPromise",
+    "functionDeclaration",
+    "resultOwnership",
+    "serializationOptions",
+    "target",
+    "this",
+    "userActivation"
+  ],
+  "script.ChannelProperties": [
+    "\"channel\"",
+    "\"ownership\"",
+    "\"serializationOptions\"",
+    "channel",
+    "ownership",
+    "serializationOptions"
+  ],
+  "script.ChannelValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.ChannelValue/type": [
+    "\"channel\"",
+    "channel"
+  ],
+  "script.ContextTarget": [
+    "\"context\"",
+    "\"sandbox\"",
+    "context",
+    "sandbox"
+  ],
+  "script.DateLocalValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.DateLocalValue/type": [
+    "\"date\"",
+    "date"
+  ],
+  "script.DateRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "handle",
+    "internalId"
+  ],
+  "script.DedicatedWorkerRealmInfo": [
+    "\"owners\"",
+    "\"type\"",
+    "owners",
+    "type"
+  ],
+  "script.DedicatedWorkerRealmInfo/type": [
+    "\"dedicated-worker\"",
+    "dedicated-worker"
+  ],
+  "script.Disown": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.Disown/method": [
+    "\"script.disown\"",
+    "script.disown"
+  ],
+  "script.DisownParameters": [
+    "\"handles\"",
+    "\"target\"",
+    "handles",
+    "target"
+  ],
+  "script.ErrorRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.ErrorRemoteValue/type": [
+    "\"error\"",
+    "error"
+  ],
+  "script.Evaluate": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.Evaluate/method": [
+    "\"script.evaluate\"",
+    "script.evaluate"
+  ],
+  "script.EvaluateParameters": [
+    "\"awaitPromise\"",
+    "\"expression\"",
+    "\"resultOwnership\"",
+    "\"serializationOptions\"",
+    "\"target\"",
+    "\"userActivation\"",
+    "awaitPromise",
+    "expression",
+    "resultOwnership",
+    "serializationOptions",
+    "target",
+    "userActivation"
+  ],
+  "script.EvaluateResultException": [
+    "\"exceptionDetails\"",
+    "\"realm\"",
+    "\"type\"",
+    "exceptionDetails",
+    "realm",
+    "type"
+  ],
+  "script.EvaluateResultException/type": [
+    "\"exception\"",
+    "exception"
+  ],
+  "script.EvaluateResultSuccess": [
+    "\"realm\"",
+    "\"result\"",
+    "\"type\"",
+    "realm",
+    "result",
+    "type"
+  ],
+  "script.EvaluateResultSuccess/type": [
+    "\"success\"",
+    "success"
+  ],
+  "script.ExceptionDetails": [
+    "\"columnNumber\"",
+    "\"exception\"",
+    "\"lineNumber\"",
+    "\"stackTrace\"",
+    "\"text\"",
+    "columnNumber",
+    "exception",
+    "lineNumber",
+    "stackTrace",
+    "text"
+  ],
+  "script.FunctionRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.FunctionRemoteValue/type": [
+    "\"function\"",
+    "function"
+  ],
+  "script.GeneratorRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.GeneratorRemoteValue/type": [
+    "\"generator\"",
+    "generator"
+  ],
+  "script.GetRealms": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.GetRealms/method": [
+    "\"script.getRealms\"",
+    "script.getRealms"
+  ],
+  "script.GetRealmsParameters": [
+    "\"context\"",
+    "\"type\"",
+    "context",
+    "type"
+  ],
+  "script.GetRealmsResult": [
+    "\"realms\"",
+    "realms"
+  ],
+  "script.HTMLCollectionRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "\"value\"",
+    "handle",
+    "internalId",
+    "type",
+    "value"
+  ],
+  "script.HTMLCollectionRemoteValue/type": [
+    "\"htmlcollection\"",
+    "htmlcollection"
+  ],
+  "script.MapLocalValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.MapLocalValue/type": [
+    "\"map\"",
+    "map"
+  ],
+  "script.MapRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "\"value\"",
+    "handle",
+    "internalId",
+    "type",
+    "value"
+  ],
+  "script.MapRemoteValue/type": [
+    "\"map\"",
+    "map"
+  ],
+  "script.Message": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.Message/method": [
+    "\"script.message\"",
+    "script.message"
+  ],
+  "script.MessageParameters": [
+    "\"channel\"",
+    "\"data\"",
+    "\"source\"",
+    "channel",
+    "data",
+    "source"
+  ],
+  "script.NodeListRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "\"value\"",
+    "handle",
+    "internalId",
+    "type",
+    "value"
+  ],
+  "script.NodeListRemoteValue/type": [
+    "\"nodelist\"",
+    "nodelist"
+  ],
+  "script.NodeProperties": [
+    "\"attributes\"",
+    "\"childNodeCount\"",
+    "\"children\"",
+    "\"localName\"",
+    "\"mode\"",
+    "\"namespaceURI\"",
+    "\"nodeType\"",
+    "\"nodeValue\"",
+    "\"shadowRoot\"",
+    "attributes",
+    "childNodeCount",
+    "children",
+    "localName",
+    "mode",
+    "namespaceURI",
+    "nodeType",
+    "nodeValue",
+    "shadowRoot"
+  ],
+  "script.NodeProperties/mode": [
+    "\"closed\"",
+    "\"open\"",
+    "closed",
+    "open"
+  ],
+  "script.NodeRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"sharedId\"",
+    "\"type\"",
+    "\"value\"",
+    "handle",
+    "internalId",
+    "sharedId",
+    "type",
+    "value"
+  ],
+  "script.NodeRemoteValue/type": [
+    "\"node\"",
+    "node"
+  ],
+  "script.NullValue": [
+    "\"type\"",
+    "type"
+  ],
+  "script.NullValue/type": [
+    "\"null\"",
+    "null"
+  ],
+  "script.NumberValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.NumberValue/type": [
+    "\"number\"",
+    "number"
+  ],
+  "script.ObjectLocalValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.ObjectLocalValue/type": [
+    "\"object\"",
+    "object"
+  ],
+  "script.ObjectRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "\"value\"",
+    "handle",
+    "internalId",
+    "type",
+    "value"
+  ],
+  "script.ObjectRemoteValue/type": [
+    "\"object\"",
+    "object"
+  ],
+  "script.PaintWorkletRealmInfo": [
+    "\"type\"",
+    "type"
+  ],
+  "script.PaintWorkletRealmInfo/type": [
+    "\"paint-worklet\"",
+    "paint-worklet"
+  ],
+  "script.PromiseRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.PromiseRemoteValue/type": [
+    "\"promise\"",
+    "promise"
+  ],
+  "script.ProxyRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.ProxyRemoteValue/type": [
+    "\"proxy\"",
+    "proxy"
+  ],
+  "script.RealmCreated": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.RealmCreated/method": [
+    "\"script.realmCreated\"",
+    "script.realmCreated"
+  ],
+  "script.RealmDestroyed": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.RealmDestroyed/method": [
+    "\"script.realmDestroyed\"",
+    "script.realmDestroyed"
+  ],
+  "script.RealmDestroyedParameters": [
+    "\"realm\"",
+    "realm"
+  ],
+  "script.RealmTarget": [
+    "\"realm\"",
+    "realm"
+  ],
+  "script.RealmType": [
+    "\"audio-worklet\"",
+    "\"dedicated-worker\"",
+    "\"paint-worklet\"",
+    "\"service-worker\"",
+    "\"shared-worker\"",
+    "\"window\"",
+    "\"worker\"",
+    "\"worklet\"",
+    "audio-worklet",
+    "dedicated-worker",
+    "paint-worklet",
+    "service-worker",
+    "shared-worker",
+    "window",
+    "worker",
+    "worklet"
+  ],
+  "script.RegExpLocalValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.RegExpLocalValue/type": [
+    "\"regexp\"",
+    "regexp"
+  ],
+  "script.RegExpRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "handle",
+    "internalId"
+  ],
+  "script.RegExpValue": [
+    "\"flags\"",
+    "\"pattern\"",
+    "flags",
+    "pattern"
+  ],
+  "script.RemoteObjectReference": [
+    "\"handle\"",
+    "\"sharedId\"",
+    "handle",
+    "sharedId"
+  ],
+  "script.RemovePreloadScript": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "script.RemovePreloadScript/method": [
+    "\"script.removePreloadScript\"",
+    "script.removePreloadScript"
+  ],
+  "script.RemovePreloadScriptParameters": [
+    "\"script\"",
+    "script"
+  ],
+  "script.ResultOwnership": [
+    "\"none\"",
+    "\"root\"",
+    "none",
+    "root"
+  ],
+  "script.SerializationOptions": [
+    "\"includeShadowTree\"",
+    "\"maxDomDepth\"",
+    "\"maxObjectDepth\"",
+    "includeShadowTree",
+    "maxDomDepth",
+    "maxObjectDepth"
+  ],
+  "script.SerializationOptions/includeShadowTree": [
+    "\"all\"",
+    "\"none\"",
+    "\"open\"",
+    "all",
+    "none",
+    "open"
+  ],
+  "script.ServiceWorkerRealmInfo": [
+    "\"type\"",
+    "type"
+  ],
+  "script.ServiceWorkerRealmInfo/type": [
+    "\"service-worker\"",
+    "service-worker"
+  ],
+  "script.SetLocalValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.SetLocalValue/type": [
+    "\"set\"",
+    "set"
+  ],
+  "script.SetRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "\"value\"",
+    "handle",
+    "internalId",
+    "type",
+    "value"
+  ],
+  "script.SetRemoteValue/type": [
+    "\"set\"",
+    "set"
+  ],
+  "script.SharedReference": [
+    "\"handle\"",
+    "\"sharedId\"",
+    "handle",
+    "sharedId"
+  ],
+  "script.SharedWorkerRealmInfo": [
+    "\"type\"",
+    "type"
+  ],
+  "script.SharedWorkerRealmInfo/type": [
+    "\"shared-worker\"",
+    "shared-worker"
+  ],
+  "script.Source": [
+    "\"context\"",
+    "\"realm\"",
+    "context",
+    "realm"
+  ],
+  "script.SpecialNumber": [
+    "\"-0\"",
+    "\"-Infinity\"",
+    "\"Infinity\"",
+    "\"NaN\"",
+    "-0",
+    "-Infinity",
+    "Infinity",
+    "NaN"
+  ],
+  "script.StackFrame": [
+    "\"columnNumber\"",
+    "\"functionName\"",
+    "\"lineNumber\"",
+    "\"url\"",
+    "columnNumber",
+    "functionName",
+    "lineNumber",
+    "url"
+  ],
+  "script.StackTrace": [
+    "\"callFrames\"",
+    "callFrames"
+  ],
+  "script.StringValue": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "script.StringValue/type": [
+    "\"string\"",
+    "string"
+  ],
+  "script.SymbolRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.SymbolRemoteValue/type": [
+    "\"symbol\"",
+    "symbol"
+  ],
+  "script.TypedArrayRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.TypedArrayRemoteValue/type": [
+    "\"typedarray\"",
+    "typedarray"
+  ],
+  "script.UndefinedValue": [
+    "\"type\"",
+    "type"
+  ],
+  "script.UndefinedValue/type": [
+    "\"undefined\"",
+    "undefined"
+  ],
+  "script.WeakMapRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.WeakMapRemoteValue/type": [
+    "\"weakmap\"",
+    "weakmap"
+  ],
+  "script.WeakSetRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "handle",
+    "internalId",
+    "type"
+  ],
+  "script.WeakSetRemoteValue/type": [
+    "\"weakset\"",
+    "weakset"
+  ],
+  "script.WindowProxyProperties": [
+    "\"context\"",
+    "context"
+  ],
+  "script.WindowProxyRemoteValue": [
+    "\"handle\"",
+    "\"internalId\"",
+    "\"type\"",
+    "\"value\"",
+    "handle",
+    "internalId",
+    "type",
+    "value"
+  ],
+  "script.WindowProxyRemoteValue/type": [
+    "\"window\"",
+    "window"
+  ],
+  "script.WindowRealmInfo": [
+    "\"context\"",
+    "\"sandbox\"",
+    "\"type\"",
+    "context",
+    "sandbox",
+    "type"
+  ],
+  "script.WindowRealmInfo/type": [
+    "\"window\"",
+    "window"
+  ],
+  "script.WorkerRealmInfo": [
+    "\"type\"",
+    "type"
+  ],
+  "script.WorkerRealmInfo/type": [
+    "\"worker\"",
+    "worker"
+  ],
+  "script.WorkletRealmInfo": [
+    "\"type\"",
+    "type"
+  ],
+  "script.WorkletRealmInfo/type": [
+    "\"worklet\"",
+    "worklet"
+  ],
   "script/crossorigin": [
     "anonymous",
     "use-credentials"
@@ -63728,6 +66585,212 @@
     "DRAIN_WEBTRANSPORT_SESSION",
     "GOAWAY",
     "WT_DRAIN_SESSION"
+  ],
+  "session.AutodetectProxyConfiguration": [
+    "\"proxyType\"",
+    "proxyType"
+  ],
+  "session.AutodetectProxyConfiguration/proxyType": [
+    "\"autodetect\"",
+    "autodetect"
+  ],
+  "session.CapabilitiesRequest": [
+    "\"alwaysMatch\"",
+    "\"firstMatch\"",
+    "alwaysMatch",
+    "firstMatch"
+  ],
+  "session.CapabilityRequest": [
+    "\"acceptInsecureCerts\"",
+    "\"browserName\"",
+    "\"browserVersion\"",
+    "\"platformName\"",
+    "\"proxy\"",
+    "\"unhandledPromptBehavior\"",
+    "acceptInsecureCerts",
+    "browserName",
+    "browserVersion",
+    "platformName",
+    "proxy",
+    "unhandledPromptBehavior"
+  ],
+  "session.DirectProxyConfiguration": [
+    "\"proxyType\"",
+    "proxyType"
+  ],
+  "session.DirectProxyConfiguration/proxyType": [
+    "\"direct\"",
+    "direct"
+  ],
+  "session.End": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "session.End/method": [
+    "\"session.end\"",
+    "session.end"
+  ],
+  "session.ManualProxyConfiguration": [
+    "\"ftpProxy\"",
+    "\"httpProxy\"",
+    "\"noProxy\"",
+    "\"proxyType\"",
+    "\"sslProxy\"",
+    "ftpProxy",
+    "httpProxy",
+    "noProxy",
+    "proxyType",
+    "sslProxy"
+  ],
+  "session.ManualProxyConfiguration/proxyType": [
+    "\"manual\"",
+    "manual"
+  ],
+  "session.New": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "session.New/method": [
+    "\"session.new\"",
+    "session.new"
+  ],
+  "session.NewParameters": [
+    "\"capabilities\"",
+    "capabilities"
+  ],
+  "session.NewResult": [
+    "\"capabilities\"",
+    "\"sessionId\"",
+    "capabilities",
+    "sessionId"
+  ],
+  "session.NewResult/capabilities": [
+    "\"acceptInsecureCerts\"",
+    "\"browserName\"",
+    "\"browserVersion\"",
+    "\"platformName\"",
+    "\"proxy\"",
+    "\"setWindowRect\"",
+    "\"unhandledPromptBehavior\"",
+    "\"userAgent\"",
+    "\"webSocketUrl\"",
+    "acceptInsecureCerts",
+    "browserName",
+    "browserVersion",
+    "platformName",
+    "proxy",
+    "setWindowRect",
+    "unhandledPromptBehavior",
+    "userAgent",
+    "webSocketUrl"
+  ],
+  "session.PacProxyConfiguration": [
+    "\"proxyAutoconfigUrl\"",
+    "\"proxyType\"",
+    "proxyAutoconfigUrl",
+    "proxyType"
+  ],
+  "session.PacProxyConfiguration/proxyType": [
+    "\"pac\"",
+    "pac"
+  ],
+  "session.SocksProxyConfiguration": [
+    "\"socksProxy\"",
+    "\"socksVersion\"",
+    "socksProxy",
+    "socksVersion"
+  ],
+  "session.Status": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "session.Status/method": [
+    "\"session.status\"",
+    "session.status"
+  ],
+  "session.StatusResult": [
+    "\"message\"",
+    "\"ready\"",
+    "message",
+    "ready"
+  ],
+  "session.Subscribe": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "session.Subscribe/method": [
+    "\"session.subscribe\"",
+    "session.subscribe"
+  ],
+  "session.SubscribeResult": [
+    "\"subscription\"",
+    "subscription"
+  ],
+  "session.SubscriptionRequest": [
+    "\"contexts\"",
+    "\"events\"",
+    "\"userContexts\"",
+    "contexts",
+    "events",
+    "userContexts"
+  ],
+  "session.SystemProxyConfiguration": [
+    "\"proxyType\"",
+    "proxyType"
+  ],
+  "session.SystemProxyConfiguration/proxyType": [
+    "\"system\"",
+    "system"
+  ],
+  "session.Unsubscribe": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "session.Unsubscribe/method": [
+    "\"session.unsubscribe\"",
+    "session.unsubscribe"
+  ],
+  "session.UnsubscribeByAttributesRequest": [
+    "\"contexts\"",
+    "\"events\"",
+    "contexts",
+    "events"
+  ],
+  "session.UnsubscribeByIDRequest": [
+    "\"subscriptions\"",
+    "subscriptions"
+  ],
+  "session.UserPromptHandler": [
+    "\"alert\"",
+    "\"beforeUnload\"",
+    "\"confirm\"",
+    "\"default\"",
+    "\"file\"",
+    "\"prompt\"",
+    "alert",
+    "beforeUnload",
+    "confirm",
+    "default",
+    "file",
+    "prompt"
+  ],
+  "session.UserPromptHandlerType": [
+    "\"accept\"",
+    "\"dismiss\"",
+    "\"ignore\"",
+    "accept",
+    "dismiss",
+    "ignore"
   ],
   "set": [
     "append",
@@ -64161,6 +67224,134 @@
   ],
   "storage proxy map": [
     "backing map"
+  ],
+  "storage.BrowsingContextPartitionDescriptor": [
+    "\"context\"",
+    "\"type\"",
+    "context",
+    "type"
+  ],
+  "storage.BrowsingContextPartitionDescriptor/type": [
+    "\"context\"",
+    "context"
+  ],
+  "storage.CookieFilter": [
+    "\"domain\"",
+    "\"expiry\"",
+    "\"httpOnly\"",
+    "\"name\"",
+    "\"path\"",
+    "\"sameSite\"",
+    "\"secure\"",
+    "\"size\"",
+    "\"value\"",
+    "domain",
+    "expiry",
+    "httpOnly",
+    "name",
+    "path",
+    "sameSite",
+    "secure",
+    "size",
+    "value"
+  ],
+  "storage.DeleteCookies": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "storage.DeleteCookies/method": [
+    "\"storage.deleteCookies\"",
+    "storage.deleteCookies"
+  ],
+  "storage.DeleteCookiesParameters": [
+    "\"filter\"",
+    "\"partition\"",
+    "filter",
+    "partition"
+  ],
+  "storage.DeleteCookiesResult": [
+    "\"partitionKey\"",
+    "partitionKey"
+  ],
+  "storage.GetCookies": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "storage.GetCookies/method": [
+    "\"storage.getCookies\"",
+    "storage.getCookies"
+  ],
+  "storage.GetCookiesParameters": [
+    "\"filter\"",
+    "\"partition\"",
+    "filter",
+    "partition"
+  ],
+  "storage.GetCookiesResult": [
+    "\"cookies\"",
+    "\"partitionKey\"",
+    "cookies",
+    "partitionKey"
+  ],
+  "storage.PartialCookie": [
+    "\"domain\"",
+    "\"expiry\"",
+    "\"httpOnly\"",
+    "\"name\"",
+    "\"path\"",
+    "\"sameSite\"",
+    "\"secure\"",
+    "\"value\"",
+    "domain",
+    "expiry",
+    "httpOnly",
+    "name",
+    "path",
+    "sameSite",
+    "secure",
+    "value"
+  ],
+  "storage.PartitionKey": [
+    "\"sourceOrigin\"",
+    "\"userContext\"",
+    "sourceOrigin",
+    "userContext"
+  ],
+  "storage.SetCookie": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "storage.SetCookie/method": [
+    "\"storage.setCookie\"",
+    "storage.setCookie"
+  ],
+  "storage.SetCookieParameters": [
+    "\"cookie\"",
+    "\"partition\"",
+    "cookie",
+    "partition"
+  ],
+  "storage.SetCookieResult": [
+    "\"partitionKey\"",
+    "partitionKey"
+  ],
+  "storage.StorageKeyPartitionDescriptor": [
+    "\"sourceOrigin\"",
+    "\"type\"",
+    "\"userContext\"",
+    "sourceOrigin",
+    "type",
+    "userContext"
+  ],
+  "storage.StorageKeyPartitionDescriptor/type": [
+    "\"storageKey\"",
+    "storageKey"
   ],
   "stream": [
     "active",
@@ -65787,6 +68978,68 @@
   ],
   "wall clock": [
     "unsafe current time"
+  ],
+  "webExtension.ExtensionArchivePath": [
+    "\"path\"",
+    "\"type\"",
+    "path",
+    "type"
+  ],
+  "webExtension.ExtensionArchivePath/type": [
+    "\"archivePath\"",
+    "archivePath"
+  ],
+  "webExtension.ExtensionBase64Encoded": [
+    "\"type\"",
+    "\"value\"",
+    "type",
+    "value"
+  ],
+  "webExtension.ExtensionBase64Encoded/type": [
+    "\"base64\"",
+    "base64"
+  ],
+  "webExtension.ExtensionPath": [
+    "\"path\"",
+    "\"type\"",
+    "path",
+    "type"
+  ],
+  "webExtension.ExtensionPath/type": [
+    "\"path\"",
+    "path"
+  ],
+  "webExtension.Install": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "webExtension.Install/method": [
+    "\"webExtension.install\"",
+    "webExtension.install"
+  ],
+  "webExtension.InstallParameters": [
+    "\"extensionData\"",
+    "extensionData"
+  ],
+  "webExtension.InstallResult": [
+    "\"extension\"",
+    "extension"
+  ],
+  "webExtension.Uninstall": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "webExtension.Uninstall/method": [
+    "\"webExtension.uninstall\"",
+    "webExtension.uninstall"
+  ],
+  "webExtension.UninstallParameters": [
+    "\"extension\"",
+    "extension"
   ],
   "white-space": [
     "break-spaces",
