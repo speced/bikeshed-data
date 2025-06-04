@@ -1099,6 +1099,7 @@
     "<source-size-list>",
     "<source-size-value>",
     "<source-size>",
+    "<source>",
     "<spacing-trim>",
     "<specific-voice>",
     "<spread-shadow>",
@@ -1143,6 +1144,7 @@
     "<text-edge>",
     "<time-percentage>",
     "<time>",
+    "<timeline-range-center-subject>",
     "<timeline-range-name>",
     "<times/>",
     "<toggle()>",
@@ -5844,11 +5846,15 @@
     "Point2D",
     "Pointer Event types",
     "Pointer capture",
+    "Pointer progress timelines",
+    "PointerAxis",
     "PointerEvent",
     "PointerEventInit",
     "PointerLockOptions",
     "PointerParameterMayBeNonUniform",
     "PointerParameterNoRestriction",
+    "PointerTimeline",
+    "PointerTimelineOptions",
     "Points of interest",
     "Policies",
     "Pop tag",
@@ -8091,6 +8097,7 @@
     "ValidateNonRevokedProxy(proxy)",
     "ValidateTypedArray",
     "ValidateTypedArray(O, order)",
+    "Validated conversion options",
     "Validating GPUFragmentState's color attachment bytes per sample",
     "Validating GPURenderPassDescriptor's color attachment bytes per sample",
     "Validation",
@@ -9200,6 +9207,7 @@
     "animation model",
     "animation playback events",
     "animation property name to IDL attribute name",
+    "animation range center subject",
     "animation requested flag",
     "animation time to origin-relative time",
     "animation time to timeline time",
@@ -9217,6 +9225,7 @@
     "animation-name",
     "animation-play-state",
     "animation-range",
+    "animation-range-center",
     "animation-range-end",
     "animation-range-start",
     "animation-tainted",
@@ -16378,6 +16387,7 @@
     "named grid area",
     "named key attribute value",
     "named page",
+    "named pointer progress timelines",
     "named properties object",
     "named property deleter",
     "named property getter",
@@ -16729,6 +16739,7 @@
     "normalized TimeRanges object",
     "normalized Windows drive letter",
     "normalized identifier string",
+    "normalized inner corner hull",
     "normalized key value",
     "normalized superellipse half corner",
     "normalized value",
@@ -16994,6 +17005,7 @@
     "operation",
     "operations chain",
     "operators",
+    "opposite corner scale factor",
     "opt in",
     "opt out",
     "opt-in",
@@ -17719,14 +17731,21 @@
     "pointer input source",
     "pointer interaction value map",
     "pointer lock state",
+    "pointer offset",
     "pointer parameter tag",
+    "pointer range",
     "pointer type",
+    "pointer()",
+    "pointer-driven animations",
     "pointer-events",
     "pointer-interactable",
     "pointer-interactable element",
     "pointer-interactable paint tree",
     "pointer-lock options",
     "pointer-lock target",
+    "pointer-timeline",
+    "pointer-timeline-axis",
+    "pointer-timeline-name",
     "pointerCancel",
     "pointerDown",
     "pointerMove",
@@ -21890,6 +21909,7 @@
     "validate GPUExtent3D shape",
     "validate GPUOrigin2D shape",
     "validate GPUOrigin3D shape",
+    "validate PrivateAttributionConversionOptions",
     "validate a CSSNumberish time",
     "validate a URL-based payment method identifier",
     "validate a background attributionsrc eligibility",
@@ -45051,6 +45071,12 @@
     "x",
     "y"
   ],
+  "PointerAxis": [
+    "\"block\"",
+    "\"inline\"",
+    "\"x\"",
+    "\"y\""
+  ],
   "PointerEvent": [
     "altitudeAngle",
     "azimuthAngle",
@@ -45090,6 +45116,30 @@
   ],
   "PointerLockOptions": [
     "unadjustedMovement"
+  ],
+  "PointerTimeline": [
+    "PointerTimeline()",
+    "PointerTimeline(options)",
+    "axis",
+    "constructor()",
+    "constructor(options)",
+    "source"
+  ],
+  "PointerTimeline/PointerTimeline()": [
+    "options"
+  ],
+  "PointerTimeline/PointerTimeline(options)": [
+    "options"
+  ],
+  "PointerTimeline/constructor()": [
+    "options"
+  ],
+  "PointerTimeline/constructor(options)": [
+    "options"
+  ],
+  "PointerTimelineOptions": [
+    "axis",
+    "source"
   ],
   "PopStateEvent": [
     "hasUAVisualTransition",
@@ -56580,6 +56630,10 @@
     "paused",
     "running"
   ],
+  "animation-range-center": [
+    "<timeline-range-name> <length-percentage>?",
+    "normal"
+  ],
   "animation-range-end": [
     "<timeline-range-name> <length-percentage>?",
     "normal"
@@ -56598,7 +56652,9 @@
     "entry",
     "entry-crossing",
     "exit",
-    "exit-crossing"
+    "exit-crossing",
+    "fill",
+    "fit"
   ],
   "animation-trigger-behavior": [
     "alternate",
@@ -64417,9 +64473,27 @@
     "y coordinate",
     "z coordinate"
   ],
+  "pointer()": [
+    "block",
+    "inline",
+    "nearest",
+    "root",
+    "self",
+    "x",
+    "y"
+  ],
   "pointer-events": [
     "auto",
     "none"
+  ],
+  "pointer-timeline-axis": [
+    "block",
+    "inline",
+    "nearest",
+    "root",
+    "self",
+    "x",
+    "y"
   ],
   "policy": [
     "directive set",
@@ -68247,6 +68321,10 @@
   "timeline": [
     "current time"
   ],
+  "timeline-range-center-subject": [
+    "source",
+    "target"
+  ],
   "timeline-scope": [
     "all",
     "none"
@@ -68756,6 +68834,18 @@
     "contain",
     "none",
     "text"
+  ],
+  "validated conversion options": [
+    "Aggregation Service",
+    "Epsilon",
+    "Histogram Size",
+    "Impression Sites",
+    "Intermediary Sites",
+    "Logic",
+    "Lookback",
+    "Match Value",
+    "Max Value",
+    "Value"
   ],
   "value": [
     "maximum length"
