@@ -743,6 +743,7 @@
     "<declaration-list>",
     "<declaration-rule-list>",
     "<declaration-value>",
+    "<default-value>",
     "<degree>",
     "<delim-token>",
     "<deprecated-color>",
@@ -1725,6 +1726,7 @@
     "AuthenticationExtensionsPRFValues",
     "AuthenticationExtensionsPRFValuesJSON",
     "AuthenticationExtensionsPaymentInputs",
+    "AuthenticationExtensionsPaymentOutputs",
     "AuthenticationResponseJSON",
     "Authenticator",
     "Authenticator Attachment Modality",
@@ -1943,6 +1945,8 @@
     "Broadcasting",
     "Broadcasting to other browsing contexts",
     "Broken",
+    "Browser bound key",
+    "BrowserBoundSignature",
     "BrowserCaptureMediaStreamTrack",
     "BrowserCommand",
     "BrowserResult",
@@ -2395,6 +2399,7 @@
     "CollectSenders",
     "CollectTransceivers",
     "CollectedClientAdditionalPaymentData",
+    "CollectedClientAdditionalPaymentRegistrationData",
     "CollectedClientData",
     "CollectedClientPaymentData",
     "Collection tag",
@@ -4655,6 +4660,7 @@
     "Key Chunk",
     "Key Frame",
     "Key ID",
+    "Key Pair",
     "Key Session",
     "Key System",
     "KeyAlgorithm",
@@ -9864,6 +9870,7 @@
     "biguint",
     "billing address",
     "binary data byte",
+    "bind a key pair",
     "binding",
     "bindings",
     "biquadfilternode",
@@ -10113,6 +10120,7 @@
     "broadcastchannel-message",
     "brown",
     "browser",
+    "browser bound key store",
     "browser chrome",
     "browser chrome element",
     "browser chrome elements",
@@ -10136,6 +10144,7 @@
     "browser.SetClientWindowStateParameters",
     "browser.UserContext",
     "browser.UserContextInfo",
+    "browser_bound_map",
     "browsing context",
     "browsing context container",
     "browsing context group",
@@ -11562,6 +11571,7 @@
     "create a host function",
     "create a k-anon restricted deep copy of the interest group",
     "create a key input source",
+    "create a key pair",
     "create a layout API context",
     "create a layout constraints object",
     "create a layout fragment",
@@ -13774,6 +13784,7 @@
     "generalized RDF dataset",
     "generalized RDF graph",
     "generalized RDF triple",
+    "generate a browser bound signature",
     "generate a change password url",
     "generate a counter",
     "generate a counter representation",
@@ -13834,6 +13845,7 @@
     "get a BackgroundFetchRegistration instance",
     "get a DOMStringMap's name-value pairs",
     "get a WebElement origin",
+    "get a browser bound public key",
     "get a copy of the buffer source",
     "get a copy of the bytes held by the buffer source",
     "get a copy of the image contents of a context",
@@ -13906,6 +13918,7 @@
     "get navigables by ids",
     "get noopener for window open",
     "get or create a batching scope",
+    "get or create a browser bound key",
     "get or create a node reference",
     "get or create a sandbox realm",
     "get or create a shadow root reference",
@@ -15247,6 +15260,7 @@
     "keyframe-specific easing function",
     "keygen",
     "keypad",
+    "keypair_map",
     "keypress",
     "keystatuseschange",
     "keyup",
@@ -20845,11 +20859,11 @@
     "summary for its parent details",
     "sunken initial",
     "sup",
-    "super-ellipse()",
     "superclass",
     "superclasses",
     "superellipse interpolation",
     "superellipse parameter",
+    "superellipse()",
     "superscriptBaselineDropMax",
     "superscriptBottomMaxWithSubscript",
     "superscriptBottomMin",
@@ -25482,6 +25496,7 @@
     "hmacCreateSecret",
     "hmacGetSecret",
     "largeBlob",
+    "payment",
     "prf"
   ],
   "AuthenticationExtensionsClientOutputsJSON": [
@@ -25536,6 +25551,7 @@
     "second"
   ],
   "AuthenticationExtensionsPaymentInputs": [
+    "browserBoundPubKeyCredParams",
     "instrument",
     "isPayment",
     "payeeName",
@@ -25544,6 +25560,9 @@
     "rpId",
     "topOrigin",
     "total"
+  ],
+  "AuthenticationExtensionsPaymentOutputs": [
+    "browserBoundSignature"
   ],
   "AuthenticationResponseJSON": [
     "authenticatorAttachment",
@@ -26619,6 +26638,9 @@
     "onmessage",
     "onmessageerror",
     "postMessage(message)"
+  ],
+  "BrowserBoundSignature": [
+    "signature"
   ],
   "BrowserCaptureMediaStreamTrack": [
     "clone()",
@@ -29317,6 +29339,7 @@
     "unconfigured"
   ],
   "CollectedClientAdditionalPaymentData": [
+    "browserBoundPublicKey",
     "instrument",
     "payeeName",
     "payeeOrigin",
@@ -29324,6 +29347,9 @@
     "rpId",
     "topOrigin",
     "total"
+  ],
+  "CollectedClientAdditionalPaymentRegistrationData": [
+    "browserBoundPublicKey"
   ],
   "CollectedClientData": [
     "Hash of the serialized client data",
@@ -49110,6 +49136,7 @@
     "unavailable-unknown-reason"
   ],
   "SecurePaymentConfirmationRequest": [
+    "browserBoundPubKeyCredParams",
     "challenge",
     "credentialIds",
     "extensions",
@@ -62370,6 +62397,10 @@
   ],
   "key generator": [
     "current number"
+  ],
+  "key pair": [
+    "private key",
+    "public key"
   ],
   "key range": [
     "lower bound",
