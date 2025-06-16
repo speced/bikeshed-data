@@ -7247,6 +7247,8 @@
     "Specified Value",
     "Specified values",
     "Speculation-Rules",
+    "SpeechGrammar",
+    "SpeechGrammarList",
     "SpeechRecognition",
     "SpeechRecognitionAlternative",
     "SpeechRecognitionErrorCode",
@@ -12304,6 +12306,7 @@
     "determine if a randomized null attribution report is generated",
     "determine if a report should be sent deterministically",
     "determine if a request has top-level storage access",
+    "determine if an embedder-initiated fenced frame navigation should be blocked",
     "determine if an origin is an aggregation coordinator",
     "determine navigation params policy container",
     "determine nosniff",
@@ -50222,6 +50225,39 @@
     "candidates",
     "container"
   ],
+  "SpeechGrammar": [
+    "src",
+    "weight"
+  ],
+  "SpeechGrammarList": [
+    "SpeechGrammarList()",
+    "addFromString(string)",
+    "addFromString(string, weight)",
+    "addFromURI(src)",
+    "addFromURI(src, weight)",
+    "constructor()",
+    "item(index)",
+    "length"
+  ],
+  "SpeechGrammarList/addFromString(string)": [
+    "string",
+    "weight"
+  ],
+  "SpeechGrammarList/addFromString(string, weight)": [
+    "string",
+    "weight"
+  ],
+  "SpeechGrammarList/addFromURI(src)": [
+    "src",
+    "weight"
+  ],
+  "SpeechGrammarList/addFromURI(src, weight)": [
+    "src",
+    "weight"
+  ],
+  "SpeechGrammarList/item(index)": [
+    "index"
+  ],
   "SpeechRecognition": [
     "SpeechRecognition()",
     "[[phrases]]",
@@ -50235,6 +50271,7 @@
     "continuous",
     "end",
     "error",
+    "grammars",
     "install(options)",
     "interimResults",
     "lang",
