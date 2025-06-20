@@ -9126,6 +9126,7 @@
     "allocate depth textures",
     "allocate depth textures for projection layers",
     "allocate motion vector textures for projection layers",
+    "allocate size to record data",
     "allocate the color textures for the secondary views",
     "allocate the depth textures for the secondary views",
     "allow focus steps",
@@ -10801,6 +10802,7 @@
     "clone a single node",
     "clone a track",
     "clone an object",
+    "clone network response body",
     "cloning steps",
     "close",
     "close a database connection",
@@ -10891,6 +10893,7 @@
     "collect page topics calculation input data",
     "collect tags for matching speculative load candidates",
     "collect topics caller domain",
+    "collected network data",
     "collecting a sequence of code points",
     "collecting an HTTP quoted string",
     "collecting the first vCard subproperty",
@@ -13936,6 +13939,7 @@
     "get an output encoding",
     "get boundary point at index",
     "get buffer binding",
+    "get collected data",
     "get coordinates relative to an origin",
     "get current interaction data",
     "get current task",
@@ -13951,6 +13955,7 @@
     "get enabled state",
     "get exception details",
     "get matching cookies",
+    "get navigable for request",
     "get navigables by ids",
     "get noopener for window open",
     "get or create a batching scope",
@@ -15960,6 +15965,7 @@
     "match an mp3 header",
     "match any filter",
     "match capabilities",
+    "match collector for navigable",
     "match cookie",
     "match filter values",
     "match filter values with negation",
@@ -16018,6 +16024,7 @@
     "max shader stages per pipeline",
     "max size",
     "max size property",
+    "max total data size",
     "max track sizing function",
     "max width",
     "max()",
@@ -16065,7 +16072,9 @@
     "maxsize",
     "may have a guest browsing context",
     "may receive data",
+    "maybe abort network response body collection",
     "maybe add a part from the pending fixed value",
+    "maybe collect network response body",
     "maybe defer and then complete trigger attribution",
     "maybe replace event-level report",
     "maybe send pointerdown event",
@@ -16598,6 +16607,7 @@
     "nesting selector",
     "nesting style rule",
     "network byte order",
+    "network collectors",
     "network error",
     "network error report",
     "network error reports",
@@ -16610,6 +16620,9 @@
     "network requests",
     "network revocation exemption map",
     "network revocation nonce set",
+    "network.AddDataCollector",
+    "network.AddDataCollectorParameters",
+    "network.AddDataCollectorResult",
     "network.AddIntercept",
     "network.AddInterceptParameters",
     "network.AddInterceptResult",
@@ -16622,6 +16635,8 @@
     "network.BeforeRequestSent",
     "network.BeforeRequestSentParameters",
     "network.BytesValue",
+    "network.Collector",
+    "network.CollectorType",
     "network.ContinueRequest",
     "network.ContinueRequestParameters",
     "network.ContinueResponse",
@@ -16632,17 +16647,23 @@
     "network.ContinueWithAuthParameters",
     "network.Cookie",
     "network.CookieHeader",
+    "network.DataType",
+    "network.DisownData",
     "network.FailRequest",
     "network.FailRequestParameters",
     "network.FetchError",
     "network.FetchErrorParameters",
     "network.FetchTimingInfo",
+    "network.GetData",
+    "network.GetDataParameters",
     "network.Header",
     "network.Initiator",
     "network.Intercept",
     "network.InterceptPhase",
     "network.ProvideResponse",
     "network.ProvideResponseParameters",
+    "network.RemoveDataCollector",
+    "network.RemoveDataCollectorParameters",
     "network.RemoveIntercept",
     "network.RemoveInterceptParameters",
     "network.Request",
@@ -16661,6 +16682,7 @@
     "network.UrlPattern",
     "network.UrlPatternPattern",
     "network.UrlPatternString",
+    "network.disownDataParameters",
     "network_reporting_endpoints",
     "networking task source",
     "neutral value for composition",
@@ -18913,6 +18935,7 @@
     "remove an input source",
     "remove associated event-level reports and rate-limit records",
     "remove client hints from redirect if needed",
+    "remove collector from data",
     "remove device from storage",
     "remove empty arrays",
     "remove event",
@@ -19599,6 +19622,7 @@
     "script.ExceptionDetails",
     "script.FunctionRemoteValue",
     "script.GeneratorRemoteValue",
+    "script.GetDataResult",
     "script.GetRealms",
     "script.GetRealmsParameters",
     "script.GetRealmsResult",
@@ -33449,6 +33473,8 @@
     "\"no such handle\"",
     "\"no such history entry\"",
     "\"no such intercept\"",
+    "\"no such network collector\"",
+    "\"no such network data\"",
     "\"no such node\"",
     "\"no such request\"",
     "\"no such script\"",
@@ -33460,6 +33486,7 @@
     "\"unable to close browser\"",
     "\"unable to set cookie\"",
     "\"unable to set file input\"",
+    "\"unavailable network data\"",
     "\"underspecified storage partition\"",
     "\"unknown command\"",
     "\"unknown error\"",
@@ -33475,6 +33502,8 @@
     "no such handle",
     "no such history entry",
     "no such intercept",
+    "no such network collector",
+    "no such network data",
     "no such node",
     "no such request",
     "no such script",
@@ -33486,6 +33515,7 @@
     "unable to close browser",
     "unable to set cookie",
     "unable to set file input",
+    "unavailable network data",
     "underspecified storage partition",
     "unknown command",
     "unknown error",
@@ -59007,12 +59037,16 @@
     "input.performActions",
     "input.releaseActions",
     "input.setFiles",
+    "network.addDataCollector",
     "network.addIntercept",
     "network.continueRequest",
     "network.continueResponse",
     "network.continueWithAuth",
+    "network.disownData",
     "network.failRequest",
+    "network.getData",
     "network.provideResponse",
+    "network.removeDataCollector",
     "network.removeIntercept",
     "network.setCacheBehavior",
     "script.addPreloadScript",
@@ -60194,6 +60228,8 @@
     "no such handle",
     "no such history entry",
     "no such intercept",
+    "no such network collector",
+    "no such network data",
     "no such node",
     "no such request",
     "no such script",
@@ -60203,6 +60239,7 @@
     "unable to close browser",
     "unable to set cookie",
     "unable to set file input",
+    "unavailable network data",
     "underspecified storage partition"
   ],
   "event": [
@@ -63455,6 +63492,10 @@
     "value",
     "visibility"
   ],
+  "network": [
+    "collector",
+    "data"
+  ],
   "network partition key": [
     "nonce"
   ],
@@ -63463,6 +63504,32 @@
     "priority",
     "retry_after",
     "weight"
+  ],
+  "network.AddDataCollector": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.AddDataCollector/method": [
+    "\"network.addDataCollector\"",
+    "network.addDataCollector"
+  ],
+  "network.AddDataCollectorParameters": [
+    "\"collectorType\"",
+    "\"contexts\"",
+    "\"dataTypes\"",
+    "\"maxEncodedDataSize\"",
+    "\"userContexts\"",
+    "collectorType",
+    "contexts",
+    "dataTypes",
+    "maxEncodedDataSize",
+    "userContexts"
+  ],
+  "network.AddDataCollectorResult": [
+    "\"collector\"",
+    "collector"
   ],
   "network.AddIntercept": [
     "\"method\"",
@@ -63557,6 +63624,10 @@
   "network.BeforeRequestSentParameters": [
     "\"initiator\"",
     "initiator"
+  ],
+  "network.CollectorType": [
+    "\"blob\"",
+    "blob"
   ],
   "network.ContinueRequest": [
     "\"method\"",
@@ -63666,6 +63737,20 @@
     "name",
     "value"
   ],
+  "network.DataType": [
+    "\"response\"",
+    "response"
+  ],
+  "network.DisownData": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.DisownData/method": [
+    "\"network.disownData\"",
+    "network.disownData"
+  ],
   "network.FailRequest": [
     "\"method\"",
     "\"params\"",
@@ -63721,6 +63806,26 @@
     "responseStart",
     "timeOrigin",
     "tlsStart"
+  ],
+  "network.GetData": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.GetData/method": [
+    "\"network.getData\"",
+    "network.getData"
+  ],
+  "network.GetDataParameters": [
+    "\"collector\"",
+    "\"dataType\"",
+    "\"disown\"",
+    "\"request\"",
+    "collector",
+    "dataType",
+    "disown",
+    "request"
   ],
   "network.Header": [
     "\"name\"",
@@ -63781,6 +63886,20 @@
     "reasonPhrase",
     "request",
     "statusCode"
+  ],
+  "network.RemoveDataCollector": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "network.RemoveDataCollector/method": [
+    "\"network.removeDataCollector\"",
+    "network.removeDataCollector"
+  ],
+  "network.RemoveDataCollectorParameters": [
+    "\"collector\"",
+    "collector"
   ],
   "network.RemoveIntercept": [
     "\"method\"",
@@ -63963,6 +64082,14 @@
   "network.UrlPatternString/type": [
     "\"string\"",
     "string"
+  ],
+  "network.disownDataParameters": [
+    "\"collector\"",
+    "\"dataType\"",
+    "\"request\"",
+    "collector",
+    "dataType",
+    "request"
   ],
   "network_reporting_endpoints": [
     "endpoints",
@@ -65996,6 +66123,10 @@
   "script.GeneratorRemoteValue/type": [
     "\"generator\"",
     "generator"
+  ],
+  "script.GetDataResult": [
+    "\"bytes\"",
+    "bytes"
   ],
   "script.GetRealms": [
     "\"method\"",
