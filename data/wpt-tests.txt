@@ -1,4 +1,4 @@
-sha: e31f9c286103d03d14d21685f7f1cce546ac6bae
+sha: 9dbcb7d36a89f8859dcf52823688bef1c7b91945
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1385,6 +1385,7 @@ crashtest svg/extensibility/foreignObject/foreign-object-circular-filter-referen
 crashtest svg/extensibility/foreignObject/foreign-object-under-clip-path-crash.html
 crashtest svg/extensibility/foreignObject/foreign-object-under-defs-crash.html
 crashtest svg/painting/marker-with-mask-cycle-crash.html
+crashtest svg/struct/crashtests/chrome-bug-425405650.html
 crashtest svg/styling/cx-sibling-index-crash.html
 crashtest svg/styling/font-size-number-calc-crash.svg
 crashtest svg/svg-in-svg/svg-in-svg-circular-filter-reference-crash.html
@@ -31947,6 +31948,8 @@ testharness css/css-animations/parsing/animation-range-start-invalid.html
 testharness css/css-animations/parsing/animation-range-start-valid.html
 testharness css/css-animations/parsing/animation-shorthand.html
 testharness css/css-animations/parsing/animation-timing-function-invalid.html
+testharness css/css-animations/parsing/animation-trigger-behavior-computed.tentative.html
+testharness css/css-animations/parsing/animation-trigger-behavior-valid.tentative.html
 testharness css/css-animations/parsing/animation-trigger-exit-range-end-computed.html
 testharness css/css-animations/parsing/animation-trigger-exit-range-end-invalid.html
 testharness css/css-animations/parsing/animation-trigger-exit-range-end-valid.html
@@ -31963,9 +31966,7 @@ testharness css/css-animations/parsing/animation-trigger-range-start-invalid.htm
 testharness css/css-animations/parsing/animation-trigger-range-start-valid.html
 testharness css/css-animations/parsing/animation-trigger-shorthand.tentative.html
 testharness css/css-animations/parsing/animation-trigger-timeline-parsing.tentative.html
-testharness css/css-animations/parsing/animation-trigger-type-computed.tentative.html
 testharness css/css-animations/parsing/animation-trigger-type-invalid.tentative.html
-testharness css/css-animations/parsing/animation-trigger-type-valid.tentative.html
 testharness css/css-animations/parsing/animation-valid.html
 testharness css/css-animations/parsing/keyframe-selectors.html
 testharness css/css-animations/parsing/keyframes-allowed-properties.html
@@ -41404,6 +41405,8 @@ testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invali
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-3.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-4.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-5.html
+testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-6.html
+testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-7.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsla-1.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsla-2.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsla-3.html
@@ -41412,6 +41415,8 @@ testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invali
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-3.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-4.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-5.html
+testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-6.html
+testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-7.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgba-1.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgba-2.html
 testharness html/canvas/element/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgba-3.html
@@ -42800,6 +42805,10 @@ testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.inva
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-4.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-5.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-5.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-6.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-6.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-7.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsl-7.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsla-1.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsla-1.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-hsla-2.html
@@ -42816,6 +42825,10 @@ testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.inva
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-4.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-5.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-5.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-6.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-6.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-7.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgb-7.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgba-1.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgba-1.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.css-color-4-rgba-2.html
