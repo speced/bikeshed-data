@@ -2246,6 +2246,8 @@
     "CanvasTransform",
     "CanvasUserInterface",
     "Capabilities",
+    "CapabilitiesRequest",
+    "CapabilitiesRequestParameters",
     "Capability",
     "CaptionText",
     "Captions",
@@ -3317,6 +3319,7 @@
     "Extended language range",
     "Extensible",
     "Extension",
+    "ExtensionIntentParameters",
     "Extensions to the predefined set of link types",
     "Extern value cache",
     "External",
@@ -4461,6 +4464,12 @@
     "IntegrityViolationReportBody",
     "Intent Concept Dictionary",
     "Interaction data",
+    "InteractionCapturedOutputEvent",
+    "InteractionCapturedOutputParameters",
+    "InteractionCommand",
+    "InteractionEvent",
+    "InteractionUserIntentCommand",
+    "InteractionUserIntentParameters",
     "Interactive content",
     "Interest Group Note",
     "Interest Groups",
@@ -4680,6 +4689,7 @@
     "Key Session",
     "Key System",
     "KeyAlgorithm",
+    "KeyCombination",
     "KeyForSymbol",
     "KeyForSymbol(sym)",
     "KeyFormat",
@@ -5936,6 +5946,7 @@
     "PresentationReceiver",
     "PresentationRequest",
     "PresentationStyle",
+    "PressKeysIntentParameters",
     "Pressure states",
     "PressureObserver",
     "PressureObserver task source",
@@ -7056,6 +7067,8 @@
     "Session ID",
     "Session history entries",
     "SessionCommand",
+    "SessionNewCommand",
+    "SessionNewResult",
     "SessionResult",
     "Set",
     "Set Credential Properties",
@@ -7123,6 +7136,17 @@
     "Setting a property",
     "Setting pointer capture",
     "Settings",
+    "SettingsCommand",
+    "SettingsGetSettingsCommand",
+    "SettingsGetSettingsParameters",
+    "SettingsGetSettingsParametersItem",
+    "SettingsGetSettingsResult",
+    "SettingsGetSettingsResultItem",
+    "SettingsGetSupportedSettingsCommand",
+    "SettingsResult",
+    "SettingsSetSettingsCommand",
+    "SettingsSetSettingsParameters",
+    "SettingsSetSettingsParametersItem",
     "Setup ServiceWorkerGlobalScope",
     "Shader execution end",
     "Shader execution start",
@@ -29005,6 +29029,18 @@
     "drawFocusIfNeeded(element)",
     "drawFocusIfNeeded(path, element)"
   ],
+  "CapabilitiesRequest": [
+    "\"atName\"",
+    "\"atVersion\"",
+    "\"platformName\"",
+    "atName",
+    "atVersion",
+    "platformName"
+  ],
+  "CapabilitiesRequestParameters": [
+    "\"alwaysMatch\"",
+    "alwaysMatch"
+  ],
   "CaptureAction": [
     "first",
     "last",
@@ -33542,6 +33578,16 @@
     "stacktrace",
     "type"
   ],
+  "ErrorResponse/error": [
+    "\"invalid argument\"",
+    "\"session not created\"",
+    "\"unknown command\"",
+    "\"unknown error\"",
+    "invalid argument",
+    "session not created",
+    "unknown command",
+    "unknown error"
+  ],
   "ErrorResponse/type": [
     "\"error\"",
     "error"
@@ -33824,6 +33870,10 @@
     "origin",
     "ports",
     "source"
+  ],
+  "ExtensionIntentParameters": [
+    "\"name\"",
+    "name"
   ],
   "External": [
     "AddSearchProvider()",
@@ -39197,6 +39247,30 @@
     "destination",
     "documentURL",
     "reportOnly"
+  ],
+  "InteractionCapturedOutputEvent": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "InteractionCapturedOutputEvent/method": [
+    "\"interaction.capturedOutput\"",
+    "interaction.capturedOutput"
+  ],
+  "InteractionCapturedOutputParameters": [
+    "\"data\"",
+    "data"
+  ],
+  "InteractionUserIntentCommand": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "InteractionUserIntentCommand/method": [
+    "\"interaction.userIntent\"",
+    "interaction.userIntent"
   ],
   "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
     "debug loss report url",
@@ -45582,6 +45656,16 @@
     "\"inline\"",
     "\"unspecified\""
   ],
+  "PressKeysIntentParameters": [
+    "\"keys\"",
+    "\"name\"",
+    "keys",
+    "name"
+  ],
+  "PressKeysIntentParameters/name": [
+    "\"pressKeys\"",
+    "pressKeys"
+  ],
   "PressureObserver": [
     "[[AfterPenaltyRecordMap]]",
     "[[Callback]]",
@@ -49737,6 +49821,34 @@
   "SessionManager async iterator": [
     "current state"
   ],
+  "SessionNewCommand": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "SessionNewCommand/method": [
+    "\"session.new\"",
+    "session.new"
+  ],
+  "SessionNewCommand/params": [
+    "\"capabilities\"",
+    "capabilities"
+  ],
+  "SessionNewResult": [
+    "\"capabilities\"",
+    "\"sessionId\"",
+    "capabilities",
+    "sessionId"
+  ],
+  "SessionNewResult/capabilities": [
+    "\"atName\"",
+    "\"atVersion\"",
+    "\"platformName\"",
+    "atName",
+    "atVersion",
+    "platformName"
+  ],
   "Set": [
     "Set(iterable)",
     "add(value)",
@@ -49764,6 +49876,64 @@
   ],
   "SetHTMLUnsafeOptions": [
     "sanitizer"
+  ],
+  "SettingsGetSettingsCommand": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "SettingsGetSettingsCommand/method": [
+    "\"settings.getSettings\"",
+    "settings.getSettings"
+  ],
+  "SettingsGetSettingsParameters": [
+    "\"settings\"",
+    "settings"
+  ],
+  "SettingsGetSettingsParametersItem": [
+    "\"name\"",
+    "name"
+  ],
+  "SettingsGetSettingsResult": [
+    "\"settings\"",
+    "settings"
+  ],
+  "SettingsGetSettingsResultItem": [
+    "\"name\"",
+    "\"value\"",
+    "name",
+    "value"
+  ],
+  "SettingsGetSupportedSettingsCommand": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "SettingsGetSupportedSettingsCommand/method": [
+    "\"settings.getSupportedSettings\"",
+    "settings.getSupportedSettings"
+  ],
+  "SettingsSetSettingsCommand": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "SettingsSetSettingsCommand/method": [
+    "\"settings.setSettings\"",
+    "settings.setSettings"
+  ],
+  "SettingsSetSettingsParameters": [
+    "\"settings\"",
+    "settings"
+  ],
+  "SettingsSetSettingsParametersItem": [
+    "\"name\"",
+    "\"value\"",
+    "name",
+    "value"
   ],
   "ShadowAnimation": [
     "sourceAnimation"
