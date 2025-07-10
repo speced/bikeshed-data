@@ -6692,6 +6692,7 @@
     "SExt",
     "SExt,NonOverlapping",
     "SFM",
+    "SFrameCipherSuite",
     "SFrameTransform",
     "SFrameTransformErrorEvent",
     "SFrameTransformErrorEventInit",
@@ -46869,6 +46870,8 @@
     "nackCount",
     "pliCount",
     "powerEfficientEncoder",
+    "psnrMeasurements",
+    "psnrSum",
     "qpSum",
     "qualityLimitationDurations",
     "qualityLimitationReason",
@@ -47189,6 +47192,7 @@
   "RTCRtpScriptTransformer": [
     "generateKeyFrame()",
     "generateKeyFrame(rid)",
+    "onbandwidthestimate",
     "onkeyframerequest",
     "options",
     "readable",
@@ -48556,6 +48560,13 @@
     "\"not-running\"",
     "\"running\""
   ],
+  "SFrameCipherSuite": [
+    "\"AES_128_CTR_HMAC_SHA256_32\"",
+    "\"AES_128_CTR_HMAC_SHA256_64\"",
+    "\"AES_128_CTR_HMAC_SHA256_80\"",
+    "\"AES_128_GCM_SHA256_128\"",
+    "\"AES_256_GCM_SHA512_128\""
+  ],
   "SFrameTransform": [
     "SFrameTransform()",
     "SFrameTransform(options)",
@@ -48611,6 +48622,7 @@
     "\"syntax\""
   ],
   "SFrameTransformOptions": [
+    "cipherSuite",
     "role"
   ],
   "SFrameTransformRole": [
@@ -62453,10 +62465,13 @@
   "id_assertion_endpoint_request": [
     "account_id",
     "client_id",
+    "client_metadata_endpoint",
     "disclosure_shown_for",
     "disclosure_text_shown",
     "fields",
-    "nonce"
+    "is_auto_selected",
+    "nonce",
+    "params"
   ],
   "ieee754": [
     "Division by zero",
