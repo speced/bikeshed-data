@@ -1,0 +1,410 @@
+{
+  "#abstract": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Abstract",
+      "url": "https://wicg.github.io/signature-based-sri/#abstract"
+    }
+  },
+  "#append-accept-signature": {
+    "current": {
+      "number": "2.2.2.1",
+      "spec": "Signature-based Integrity",
+      "text": "Append Accept-Signature",
+      "url": "https://wicg.github.io/signature-based-sri/#append-accept-signature"
+    }
+  },
+  "#contents": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Table of Contents",
+      "url": "https://wicg.github.io/signature-based-sri/#toc"
+    }
+  },
+  "#csp-grammar": {
+    "current": {
+      "number": "2.3.1",
+      "spec": "Signature-based Integrity",
+      "text": "Grammar",
+      "url": "https://wicg.github.io/signature-based-sri/#csp-grammar"
+    }
+  },
+  "#csp-integrity-check": {
+    "current": {
+      "number": "2.3.2",
+      "spec": "Signature-based Integrity",
+      "text": "Matching Integrity Metadata",
+      "url": "https://wicg.github.io/signature-based-sri/#csp-integrity-check"
+    }
+  },
+  "#deployment": {
+    "current": {
+      "number": "4",
+      "spec": "Signature-based Integrity",
+      "text": "Deployment Considerations",
+      "url": "https://wicg.github.io/signature-based-sri/#deployment"
+    }
+  },
+  "#deployment-key-discovery": {
+    "current": {
+      "number": "4.3",
+      "spec": "Signature-based Integrity",
+      "text": "Key Discovery",
+      "url": "https://wicg.github.io/signature-based-sri/#deployment-key-discovery"
+    }
+  },
+  "#deployment-key-management": {
+    "current": {
+      "number": "4.1",
+      "spec": "Signature-based Integrity",
+      "text": "Key Management",
+      "url": "https://wicg.github.io/signature-based-sri/#deployment-key-management"
+    }
+  },
+  "#deployment-key-rotation": {
+    "current": {
+      "number": "4.2",
+      "spec": "Signature-based Integrity",
+      "text": "Key Rotation",
+      "url": "https://wicg.github.io/signature-based-sri/#deployment-key-rotation"
+    }
+  },
+  "#deployment-scenario-1p": {
+    "current": {
+      "number": "3.2",
+      "spec": "Signature-based Integrity",
+      "text": "Protecting first-party libraries",
+      "url": "https://wicg.github.io/signature-based-sri/#deployment-scenario-1p"
+    }
+  },
+  "#deployment-scenario-3p": {
+    "current": {
+      "number": "3.1",
+      "spec": "Signature-based Integrity",
+      "text": "Non-versioned third-party libraries",
+      "url": "https://wicg.github.io/signature-based-sri/#deployment-scenario-3p"
+    }
+  },
+  "#deployment-scenario-3p-notes": {
+    "current": {
+      "number": "3.1.1",
+      "spec": "Signature-based Integrity",
+      "text": "Architectural Notes",
+      "url": "https://wicg.github.io/signature-based-sri/#deployment-scenario-3p-notes"
+    }
+  },
+  "#deployment-scenarios": {
+    "current": {
+      "number": "3",
+      "spec": "Signature-based Integrity",
+      "text": "Deployment Scenarios",
+      "url": "https://wicg.github.io/signature-based-sri/#deployment-scenarios"
+    }
+  },
+  "#examples": {
+    "current": {
+      "number": "7",
+      "spec": "Signature-based Integrity",
+      "text": "An End-to-End Example",
+      "url": "https://wicg.github.io/signature-based-sri/#examples"
+    }
+  },
+  "#index": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Index",
+      "url": "https://wicg.github.io/signature-based-sri/#index"
+    }
+  },
+  "#index-defined-elsewhere": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Terms defined by reference",
+      "url": "https://wicg.github.io/signature-based-sri/#index-defined-elsewhere"
+    }
+  },
+  "#index-defined-here": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Terms defined by this specification",
+      "url": "https://wicg.github.io/signature-based-sri/#index-defined-here"
+    }
+  },
+  "#informative": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Informative References",
+      "url": "https://wicg.github.io/signature-based-sri/#informative"
+    }
+  },
+  "#intro": {
+    "current": {
+      "number": "1",
+      "spec": "Signature-based Integrity",
+      "text": "Introduction",
+      "url": "https://wicg.github.io/signature-based-sri/#intro"
+    }
+  },
+  "#issues-index": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Issues Index",
+      "url": "https://wicg.github.io/signature-based-sri/#issues-index"
+    }
+  },
+  "#matching": {
+    "current": {
+      "number": "2.1.3",
+      "spec": "Signature-based Integrity",
+      "text": "Do bytes and response match metadataList?",
+      "url": "https://wicg.github.io/signature-based-sri/#matching"
+    }
+  },
+  "#monkey-patch-csp": {
+    "current": {
+      "number": "2.3",
+      "spec": "Signature-based Integrity",
+      "text": "Patches to CSP",
+      "url": "https://wicg.github.io/signature-based-sri/#monkey-patch-csp"
+    }
+  },
+  "#monkey-patch-fetch": {
+    "current": {
+      "number": "2.2",
+      "spec": "Signature-based Integrity",
+      "text": "Patches to Fetch",
+      "url": "https://wicg.github.io/signature-based-sri/#monkey-patch-fetch"
+    }
+  },
+  "#monkey-patch-http-network-or-cache-fetch": {
+    "current": {
+      "number": "2.2.2",
+      "spec": "Signature-based Integrity",
+      "text": "HTTP-network-or-cache Fetch",
+      "url": "https://wicg.github.io/signature-based-sri/#monkey-patch-http-network-or-cache-fetch"
+    }
+  },
+  "#monkey-patch-main-fetch": {
+    "current": {
+      "number": "2.2.1",
+      "spec": "Signature-based Integrity",
+      "text": "Main Fetch",
+      "url": "https://wicg.github.io/signature-based-sri/#monkey-patch-main-fetch"
+    }
+  },
+  "#monkey-patch-sri": {
+    "current": {
+      "number": "2.1",
+      "spec": "Signature-based Integrity",
+      "text": "Patches to SRI",
+      "url": "https://wicg.github.io/signature-based-sri/#monkey-patch-sri"
+    }
+  },
+  "#monkey-patches": {
+    "current": {
+      "number": "2",
+      "spec": "Signature-based Integrity",
+      "text": "Monkey Patches",
+      "url": "https://wicg.github.io/signature-based-sri/#monkey-patches"
+    }
+  },
+  "#normative": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Normative References",
+      "url": "https://wicg.github.io/signature-based-sri/#normative"
+    }
+  },
+  "#parsing": {
+    "current": {
+      "number": "2.1.2",
+      "spec": "Signature-based Integrity",
+      "text": "Parse metadata.",
+      "url": "https://wicg.github.io/signature-based-sri/#parsing"
+    }
+  },
+  "#privacy": {
+    "current": {
+      "number": "6",
+      "spec": "Signature-based Integrity",
+      "text": "Privacy Considerations",
+      "url": "https://wicg.github.io/signature-based-sri/#privacy"
+    }
+  },
+  "#profile": {
+    "current": {
+      "number": "2.1.1",
+      "spec": "Signature-based Integrity",
+      "text": "The SRI HTTP Message Signature Profile",
+      "url": "https://wicg.github.io/signature-based-sri/#profile"
+    }
+  },
+  "#references": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "References",
+      "url": "https://wicg.github.io/signature-based-sri/#references"
+    }
+  },
+  "#security": {
+    "current": {
+      "number": "5",
+      "spec": "Signature-based Integrity",
+      "text": "Security Considerations",
+      "url": "https://wicg.github.io/signature-based-sri/#security"
+    }
+  },
+  "#security-provenance-not-content": {
+    "current": {
+      "number": "5.2",
+      "spec": "Signature-based Integrity",
+      "text": "Provenance, not Content",
+      "url": "https://wicg.github.io/signature-based-sri/#security-provenance-not-content"
+    }
+  },
+  "#security-redirection": {
+    "current": {
+      "number": "5.3.3",
+      "spec": "Signature-based Integrity",
+      "text": "Redirection",
+      "url": "https://wicg.github.io/signature-based-sri/#security-redirection"
+    }
+  },
+  "#security-replacement": {
+    "current": {
+      "number": "5.3.1",
+      "spec": "Signature-based Integrity",
+      "text": "Content Replacement",
+      "url": "https://wicg.github.io/signature-based-sri/#security-replacement"
+    }
+  },
+  "#security-rollback": {
+    "current": {
+      "number": "5.3.2",
+      "spec": "Signature-based Integrity",
+      "text": "Rollback Attacks",
+      "url": "https://wicg.github.io/signature-based-sri/#security-rollback"
+    }
+  },
+  "#security-secure-context": {
+    "current": {
+      "number": "5.1",
+      "spec": "Signature-based Integrity",
+      "text": "Secure Contexts",
+      "url": "https://wicg.github.io/signature-based-sri/#security-secure-context"
+    }
+  },
+  "#security-substitution": {
+    "current": {
+      "number": "5.3",
+      "spec": "Signature-based Integrity",
+      "text": "Substitution Attacks",
+      "url": "https://wicg.github.io/signature-based-sri/#security-substitution"
+    }
+  },
+  "#server-initiated": {
+    "current": {
+      "number": "2.4",
+      "spec": "Signature-based Integrity",
+      "text": "Server-Initiated Integrity Checks",
+      "url": "https://wicg.github.io/signature-based-sri/#server-initiated"
+    }
+  },
+  "#signature-enforcement": {
+    "current": {
+      "number": "2.4.2",
+      "spec": "Signature-based Integrity",
+      "text": "Signature and Signature-Input Enforcement",
+      "url": "https://wicg.github.io/signature-based-sri/#signature-enforcement"
+    }
+  },
+  "#signatures-vs-hashes": {
+    "current": {
+      "number": "1.1",
+      "spec": "Signature-based Integrity",
+      "text": "Signatures are not Hashes",
+      "url": "https://wicg.github.io/signature-based-sri/#signatures-vs-hashes"
+    }
+  },
+  "#status": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Status of this document",
+      "url": "https://wicg.github.io/signature-based-sri/#status"
+    }
+  },
+  "#threat-model": {
+    "current": {
+      "number": "1.2",
+      "spec": "Signature-based Integrity",
+      "text": "Overview and Threat Model",
+      "url": "https://wicg.github.io/signature-based-sri/#threat-model"
+    }
+  },
+  "#title": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Signature-based Integrity",
+      "url": "https://wicg.github.io/signature-based-sri/#title"
+    }
+  },
+  "#toc": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Table of Contents",
+      "url": "https://wicg.github.io/signature-based-sri/#toc"
+    }
+  },
+  "#unencoded-digest-validation": {
+    "current": {
+      "number": "2.4.1",
+      "spec": "Signature-based Integrity",
+      "text": "Unencoded-Digest Validation",
+      "url": "https://wicg.github.io/signature-based-sri/#unencoded-digest-validation"
+    }
+  },
+  "#unencoded-digest-validation-for-sri": {
+    "current": {
+      "number": "2.1.1.1",
+      "spec": "Signature-based Integrity",
+      "text": "Unencoded-Digest Validation for SRI",
+      "url": "https://wicg.github.io/signature-based-sri/#unencoded-digest-validation-for-sri"
+    }
+  },
+  "#validation": {
+    "current": {
+      "number": "2.1.4",
+      "spec": "Signature-based Integrity",
+      "text": "Validate a signature over response using algorithm and public key",
+      "url": "https://wicg.github.io/signature-based-sri/#validation"
+    }
+  },
+  "#w3c-conformance": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Conformance",
+      "url": "https://wicg.github.io/signature-based-sri/#w3c-conformance"
+    }
+  },
+  "#w3c-conventions": {
+    "current": {
+      "number": "",
+      "spec": "Signature-based Integrity",
+      "text": "Document conventions",
+      "url": "https://wicg.github.io/signature-based-sri/#w3c-conventions"
+    }
+  }
+}
