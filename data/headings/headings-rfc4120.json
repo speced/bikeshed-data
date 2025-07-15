@@ -1,0 +1,1058 @@
+{
+  "#appendix-A": {
+    "current": {
+      "number": "A",
+      "spec": "Kerberos",
+      "text": "ASN.1 module",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#appendix-A"
+    }
+  },
+  "#appendix-B": {
+    "current": {
+      "number": "B",
+      "spec": "Kerberos",
+      "text": "Changes since RFC 1510",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#appendix-B"
+    }
+  },
+  "#section-1": {
+    "current": {
+      "number": "1",
+      "spec": "Kerberos",
+      "text": "Introduction",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1"
+    }
+  },
+  "#section-1.1": {
+    "current": {
+      "number": "1.1",
+      "spec": "Kerberos",
+      "text": "The Kerberos Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.1"
+    }
+  },
+  "#section-1.2": {
+    "current": {
+      "number": "1.2",
+      "spec": "Kerberos",
+      "text": "Cross-Realm Operation",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.2"
+    }
+  },
+  "#section-1.3": {
+    "current": {
+      "number": "1.3",
+      "spec": "Kerberos",
+      "text": "Choosing a Principal with Which to Communicate",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.3"
+    }
+  },
+  "#section-1.4": {
+    "current": {
+      "number": "1.4",
+      "spec": "Kerberos",
+      "text": "Authorization",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.4"
+    }
+  },
+  "#section-1.5": {
+    "current": {
+      "number": "1.5",
+      "spec": "Kerberos",
+      "text": "Extending Kerberos without Breaking Interoperability",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.5"
+    }
+  },
+  "#section-1.5.1": {
+    "current": {
+      "number": "1.5.1",
+      "spec": "Kerberos",
+      "text": "Compatibility with RFC 1510",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.5.1"
+    }
+  },
+  "#section-1.5.2": {
+    "current": {
+      "number": "1.5.2",
+      "spec": "Kerberos",
+      "text": "Sending Extensible Messages",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.5.2"
+    }
+  },
+  "#section-1.6": {
+    "current": {
+      "number": "1.6",
+      "spec": "Kerberos",
+      "text": "Environmental Assumptions",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.6"
+    }
+  },
+  "#section-1.7": {
+    "current": {
+      "number": "1.7",
+      "spec": "Kerberos",
+      "text": "Glossary of Terms",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-1.7"
+    }
+  },
+  "#section-10": {
+    "current": {
+      "number": "10",
+      "spec": "Kerberos",
+      "text": "Security Considerations",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-10"
+    }
+  },
+  "#section-11": {
+    "current": {
+      "number": "11",
+      "spec": "Kerberos",
+      "text": "Acknowledgements",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-11"
+    }
+  },
+  "#section-2": {
+    "current": {
+      "number": "2",
+      "spec": "Kerberos",
+      "text": "Ticket Flag Uses and Requests",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2"
+    }
+  },
+  "#section-2.1": {
+    "current": {
+      "number": "2.1",
+      "spec": "Kerberos",
+      "text": "Initial, Pre-authenticated, and Hardware-Authenticated Tickets",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.1"
+    }
+  },
+  "#section-2.2": {
+    "current": {
+      "number": "2.2",
+      "spec": "Kerberos",
+      "text": "Invalid Tickets",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.2"
+    }
+  },
+  "#section-2.3": {
+    "current": {
+      "number": "2.3",
+      "spec": "Kerberos",
+      "text": "Renewable Tickets",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.3"
+    }
+  },
+  "#section-2.4": {
+    "current": {
+      "number": "2.4",
+      "spec": "Kerberos",
+      "text": "Postdated Tickets",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.4"
+    }
+  },
+  "#section-2.5": {
+    "current": {
+      "number": "2.5",
+      "spec": "Kerberos",
+      "text": "Proxiable and Proxy Tickets",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.5"
+    }
+  },
+  "#section-2.6": {
+    "current": {
+      "number": "2.6",
+      "spec": "Kerberos",
+      "text": "Forwardable Tickets",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.6"
+    }
+  },
+  "#section-2.7": {
+    "current": {
+      "number": "2.7",
+      "spec": "Kerberos",
+      "text": "Transited Policy Checking",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.7"
+    }
+  },
+  "#section-2.8": {
+    "current": {
+      "number": "2.8",
+      "spec": "Kerberos",
+      "text": "OK as Delegate",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.8"
+    }
+  },
+  "#section-2.9": {
+    "current": {
+      "number": "2.9",
+      "spec": "Kerberos",
+      "text": "Other KDC Options",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.9"
+    }
+  },
+  "#section-2.9.1": {
+    "current": {
+      "number": "2.9.1",
+      "spec": "Kerberos",
+      "text": "Renewable-OK",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.9.1"
+    }
+  },
+  "#section-2.9.2": {
+    "current": {
+      "number": "2.9.2",
+      "spec": "Kerberos",
+      "text": "ENC-TKT-IN-SKEY",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.9.2"
+    }
+  },
+  "#section-2.9.3": {
+    "current": {
+      "number": "2.9.3",
+      "spec": "Kerberos",
+      "text": "Passwordless Hardware Authentication",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-2.9.3"
+    }
+  },
+  "#section-3": {
+    "current": {
+      "number": "3",
+      "spec": "Kerberos",
+      "text": "Message Exchanges",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3"
+    }
+  },
+  "#section-3.1": {
+    "current": {
+      "number": "3.1",
+      "spec": "Kerberos",
+      "text": "The Authentication Service Exchange",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1"
+    }
+  },
+  "#section-3.1.1": {
+    "current": {
+      "number": "3.1.1",
+      "spec": "Kerberos",
+      "text": "Generation of KRB_AS_REQ Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.1"
+    }
+  },
+  "#section-3.1.2": {
+    "current": {
+      "number": "3.1.2",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_AS_REQ Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.2"
+    }
+  },
+  "#section-3.1.3": {
+    "current": {
+      "number": "3.1.3",
+      "spec": "Kerberos",
+      "text": "Generation of KRB_AS_REP Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.3"
+    }
+  },
+  "#section-3.1.4": {
+    "current": {
+      "number": "3.1.4",
+      "spec": "Kerberos",
+      "text": "Generation of KRB_ERROR Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.4"
+    }
+  },
+  "#section-3.1.5": {
+    "current": {
+      "number": "3.1.5",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_AS_REP Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.5"
+    }
+  },
+  "#section-3.1.6": {
+    "current": {
+      "number": "3.1.6",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_ERROR Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.1.6"
+    }
+  },
+  "#section-3.2": {
+    "current": {
+      "number": "3.2",
+      "spec": "Kerberos",
+      "text": "The Client/Server Authentication Exchange",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2"
+    }
+  },
+  "#section-3.2.1": {
+    "current": {
+      "number": "3.2.1",
+      "spec": "Kerberos",
+      "text": "The KRB_AP_REQ Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.1"
+    }
+  },
+  "#section-3.2.2": {
+    "current": {
+      "number": "3.2.2",
+      "spec": "Kerberos",
+      "text": "Generation of a KRB_AP_REQ Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.2"
+    }
+  },
+  "#section-3.2.3": {
+    "current": {
+      "number": "3.2.3",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_AP_REQ Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.3"
+    }
+  },
+  "#section-3.2.4": {
+    "current": {
+      "number": "3.2.4",
+      "spec": "Kerberos",
+      "text": "Generation of a KRB_AP_REP Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.4"
+    }
+  },
+  "#section-3.2.5": {
+    "current": {
+      "number": "3.2.5",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_AP_REP Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.5"
+    }
+  },
+  "#section-3.2.6": {
+    "current": {
+      "number": "3.2.6",
+      "spec": "Kerberos",
+      "text": "Using the Encryption Key",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.2.6"
+    }
+  },
+  "#section-3.3": {
+    "current": {
+      "number": "3.3",
+      "spec": "Kerberos",
+      "text": "The Ticket-Granting Service (TGS) Exchange",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3"
+    }
+  },
+  "#section-3.3.1": {
+    "current": {
+      "number": "3.3.1",
+      "spec": "Kerberos",
+      "text": "Generation of KRB_TGS_REQ Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.1"
+    }
+  },
+  "#section-3.3.2": {
+    "current": {
+      "number": "3.3.2",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_TGS_REQ Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.2"
+    }
+  },
+  "#section-3.3.3": {
+    "current": {
+      "number": "3.3.3",
+      "spec": "Kerberos",
+      "text": "Generation of KRB_TGS_REP Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.3"
+    }
+  },
+  "#section-3.3.3.1": {
+    "current": {
+      "number": "3.3.3.1",
+      "spec": "Kerberos",
+      "text": "Checking for Revoked Tickets",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.3.1"
+    }
+  },
+  "#section-3.3.3.2": {
+    "current": {
+      "number": "3.3.3.2",
+      "spec": "Kerberos",
+      "text": "Encoding the Transited Field",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.3.2"
+    }
+  },
+  "#section-3.3.4": {
+    "current": {
+      "number": "3.3.4",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_TGS_REP Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.3.4"
+    }
+  },
+  "#section-3.4": {
+    "current": {
+      "number": "3.4",
+      "spec": "Kerberos",
+      "text": "The KRB_SAFE Exchange",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.4"
+    }
+  },
+  "#section-3.4.1": {
+    "current": {
+      "number": "3.4.1",
+      "spec": "Kerberos",
+      "text": "Generation of a KRB_SAFE Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.4.1"
+    }
+  },
+  "#section-3.4.2": {
+    "current": {
+      "number": "3.4.2",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_SAFE Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.4.2"
+    }
+  },
+  "#section-3.5": {
+    "current": {
+      "number": "3.5",
+      "spec": "Kerberos",
+      "text": "The KRB_PRIV Exchange",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.5"
+    }
+  },
+  "#section-3.5.1": {
+    "current": {
+      "number": "3.5.1",
+      "spec": "Kerberos",
+      "text": "Generation of a KRB_PRIV Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.5.1"
+    }
+  },
+  "#section-3.5.2": {
+    "current": {
+      "number": "3.5.2",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_PRIV Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.5.2"
+    }
+  },
+  "#section-3.6": {
+    "current": {
+      "number": "3.6",
+      "spec": "Kerberos",
+      "text": "The KRB_CRED Exchange",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.6"
+    }
+  },
+  "#section-3.6.1": {
+    "current": {
+      "number": "3.6.1",
+      "spec": "Kerberos",
+      "text": "Generation of a KRB_CRED Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.6.1"
+    }
+  },
+  "#section-3.6.2": {
+    "current": {
+      "number": "3.6.2",
+      "spec": "Kerberos",
+      "text": "Receipt of KRB_CRED Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.6.2"
+    }
+  },
+  "#section-3.7": {
+    "current": {
+      "number": "3.7",
+      "spec": "Kerberos",
+      "text": "User-to-User Authentication Exchanges",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-3.7"
+    }
+  },
+  "#section-4": {
+    "current": {
+      "number": "4",
+      "spec": "Kerberos",
+      "text": "Encryption and Checksum Specifications",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-4"
+    }
+  },
+  "#section-5": {
+    "current": {
+      "number": "5",
+      "spec": "Kerberos",
+      "text": "Message Specifications",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5"
+    }
+  },
+  "#section-5.1": {
+    "current": {
+      "number": "5.1",
+      "spec": "Kerberos",
+      "text": "Specific Compatibility Notes on ASN.1",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1"
+    }
+  },
+  "#section-5.1.1": {
+    "current": {
+      "number": "5.1.1",
+      "spec": "Kerberos",
+      "text": "ASN.1 Distinguished Encoding Rules",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.1"
+    }
+  },
+  "#section-5.1.2": {
+    "current": {
+      "number": "5.1.2",
+      "spec": "Kerberos",
+      "text": "Optional Integer Fields",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.2"
+    }
+  },
+  "#section-5.1.3": {
+    "current": {
+      "number": "5.1.3",
+      "spec": "Kerberos",
+      "text": "Empty SEQUENCE OF Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.3"
+    }
+  },
+  "#section-5.1.4": {
+    "current": {
+      "number": "5.1.4",
+      "spec": "Kerberos",
+      "text": "Unrecognized Tag Numbers",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.4"
+    }
+  },
+  "#section-5.1.5": {
+    "current": {
+      "number": "5.1.5",
+      "spec": "Kerberos",
+      "text": "Tag Numbers Greater Than 30",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.1.5"
+    }
+  },
+  "#section-5.10": {
+    "current": {
+      "number": "5.10",
+      "spec": "Kerberos",
+      "text": "Application Tag Numbers",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.10"
+    }
+  },
+  "#section-5.2": {
+    "current": {
+      "number": "5.2",
+      "spec": "Kerberos",
+      "text": "Basic Kerberos Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2"
+    }
+  },
+  "#section-5.2.1": {
+    "current": {
+      "number": "5.2.1",
+      "spec": "Kerberos",
+      "text": "KerberosString",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.1"
+    }
+  },
+  "#section-5.2.2": {
+    "current": {
+      "number": "5.2.2",
+      "spec": "Kerberos",
+      "text": "Realm and PrincipalName",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.2"
+    }
+  },
+  "#section-5.2.3": {
+    "current": {
+      "number": "5.2.3",
+      "spec": "Kerberos",
+      "text": "KerberosTime",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.3"
+    }
+  },
+  "#section-5.2.4": {
+    "current": {
+      "number": "5.2.4",
+      "spec": "Kerberos",
+      "text": "Constrained Integer Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.4"
+    }
+  },
+  "#section-5.2.5": {
+    "current": {
+      "number": "5.2.5",
+      "spec": "Kerberos",
+      "text": "HostAddress and HostAddresses",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.5"
+    }
+  },
+  "#section-5.2.6": {
+    "current": {
+      "number": "5.2.6",
+      "spec": "Kerberos",
+      "text": "AuthorizationData",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6"
+    }
+  },
+  "#section-5.2.6.1": {
+    "current": {
+      "number": "5.2.6.1",
+      "spec": "Kerberos",
+      "text": "IF-RELEVANT",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6.1"
+    }
+  },
+  "#section-5.2.6.2": {
+    "current": {
+      "number": "5.2.6.2",
+      "spec": "Kerberos",
+      "text": "KDCIssued",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6.2"
+    }
+  },
+  "#section-5.2.6.3": {
+    "current": {
+      "number": "5.2.6.3",
+      "spec": "Kerberos",
+      "text": "AND-OR",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6.3"
+    }
+  },
+  "#section-5.2.6.4": {
+    "current": {
+      "number": "5.2.6.4",
+      "spec": "Kerberos",
+      "text": "MANDATORY-FOR-KDC",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.6.4"
+    }
+  },
+  "#section-5.2.7": {
+    "current": {
+      "number": "5.2.7",
+      "spec": "Kerberos",
+      "text": "PA-DATA",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7"
+    }
+  },
+  "#section-5.2.7.1": {
+    "current": {
+      "number": "5.2.7.1",
+      "spec": "Kerberos",
+      "text": "PA-TGS-REQ",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.1"
+    }
+  },
+  "#section-5.2.7.2": {
+    "current": {
+      "number": "5.2.7.2",
+      "spec": "Kerberos",
+      "text": "Encrypted Timestamp Pre-authentication",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.2"
+    }
+  },
+  "#section-5.2.7.3": {
+    "current": {
+      "number": "5.2.7.3",
+      "spec": "Kerberos",
+      "text": "PA-PW-SALT",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.3"
+    }
+  },
+  "#section-5.2.7.4": {
+    "current": {
+      "number": "5.2.7.4",
+      "spec": "Kerberos",
+      "text": "PA-ETYPE-INFO",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.4"
+    }
+  },
+  "#section-5.2.7.5": {
+    "current": {
+      "number": "5.2.7.5",
+      "spec": "Kerberos",
+      "text": "PA-ETYPE-INFO2",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.7.5"
+    }
+  },
+  "#section-5.2.8": {
+    "current": {
+      "number": "5.2.8",
+      "spec": "Kerberos",
+      "text": "KerberosFlags",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.8"
+    }
+  },
+  "#section-5.2.9": {
+    "current": {
+      "number": "5.2.9",
+      "spec": "Kerberos",
+      "text": "Cryptosystem-Related Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.2.9"
+    }
+  },
+  "#section-5.3": {
+    "current": {
+      "number": "5.3",
+      "spec": "Kerberos",
+      "text": "Tickets",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.3"
+    }
+  },
+  "#section-5.4": {
+    "current": {
+      "number": "5.4",
+      "spec": "Kerberos",
+      "text": "Specifications for the AS and TGS Exchanges",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.4"
+    }
+  },
+  "#section-5.4.1": {
+    "current": {
+      "number": "5.4.1",
+      "spec": "Kerberos",
+      "text": "KRB_KDC_REQ Definition",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.4.1"
+    }
+  },
+  "#section-5.4.2": {
+    "current": {
+      "number": "5.4.2",
+      "spec": "Kerberos",
+      "text": "KRB_KDC_REP Definition",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.4.2"
+    }
+  },
+  "#section-5.5": {
+    "current": {
+      "number": "5.5",
+      "spec": "Kerberos",
+      "text": "Client/Server (CS) Message Specifications",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.5"
+    }
+  },
+  "#section-5.5.1": {
+    "current": {
+      "number": "5.5.1",
+      "spec": "Kerberos",
+      "text": "KRB_AP_REQ Definition",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.5.1"
+    }
+  },
+  "#section-5.5.2": {
+    "current": {
+      "number": "5.5.2",
+      "spec": "Kerberos",
+      "text": "KRB_AP_REP Definition",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.5.2"
+    }
+  },
+  "#section-5.5.3": {
+    "current": {
+      "number": "5.5.3",
+      "spec": "Kerberos",
+      "text": "Error Message Reply",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.5.3"
+    }
+  },
+  "#section-5.6": {
+    "current": {
+      "number": "5.6",
+      "spec": "Kerberos",
+      "text": "KRB_SAFE Message Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.6"
+    }
+  },
+  "#section-5.6.1": {
+    "current": {
+      "number": "5.6.1",
+      "spec": "Kerberos",
+      "text": "KRB_SAFE definition",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.6.1"
+    }
+  },
+  "#section-5.7": {
+    "current": {
+      "number": "5.7",
+      "spec": "Kerberos",
+      "text": "KRB_PRIV Message Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.7"
+    }
+  },
+  "#section-5.7.1": {
+    "current": {
+      "number": "5.7.1",
+      "spec": "Kerberos",
+      "text": "KRB_PRIV Definition",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.7.1"
+    }
+  },
+  "#section-5.8": {
+    "current": {
+      "number": "5.8",
+      "spec": "Kerberos",
+      "text": "KRB_CRED Message Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.8"
+    }
+  },
+  "#section-5.8.1": {
+    "current": {
+      "number": "5.8.1",
+      "spec": "Kerberos",
+      "text": "KRB_CRED Definition",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.8.1"
+    }
+  },
+  "#section-5.9": {
+    "current": {
+      "number": "5.9",
+      "spec": "Kerberos",
+      "text": "Error Message Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.9"
+    }
+  },
+  "#section-5.9.1": {
+    "current": {
+      "number": "5.9.1",
+      "spec": "Kerberos",
+      "text": "KRB_ERROR Definition",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-5.9.1"
+    }
+  },
+  "#section-6": {
+    "current": {
+      "number": "6",
+      "spec": "Kerberos",
+      "text": "Naming Constraints",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-6"
+    }
+  },
+  "#section-6.1": {
+    "current": {
+      "number": "6.1",
+      "spec": "Kerberos",
+      "text": "Realm Names",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-6.1"
+    }
+  },
+  "#section-6.2": {
+    "current": {
+      "number": "6.2",
+      "spec": "Kerberos",
+      "text": "Principal Names",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-6.2"
+    }
+  },
+  "#section-6.2.1": {
+    "current": {
+      "number": "6.2.1",
+      "spec": "Kerberos",
+      "text": "Name of Server Principals",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-6.2.1"
+    }
+  },
+  "#section-7": {
+    "current": {
+      "number": "7",
+      "spec": "Kerberos",
+      "text": "Constants and Other Defined Values",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7"
+    }
+  },
+  "#section-7.1": {
+    "current": {
+      "number": "7.1",
+      "spec": "Kerberos",
+      "text": "Host Address Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.1"
+    }
+  },
+  "#section-7.2": {
+    "current": {
+      "number": "7.2",
+      "spec": "Kerberos",
+      "text": "KDC Messaging: IP Transports",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2"
+    }
+  },
+  "#section-7.2.1": {
+    "current": {
+      "number": "7.2.1",
+      "spec": "Kerberos",
+      "text": "UDP/IP transport",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.1"
+    }
+  },
+  "#section-7.2.2": {
+    "current": {
+      "number": "7.2.2",
+      "spec": "Kerberos",
+      "text": "TCP/IP Transport",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.2"
+    }
+  },
+  "#section-7.2.3": {
+    "current": {
+      "number": "7.2.3",
+      "spec": "Kerberos",
+      "text": "KDC Discovery on IP Networks",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.3"
+    }
+  },
+  "#section-7.2.3.1": {
+    "current": {
+      "number": "7.2.3.1",
+      "spec": "Kerberos",
+      "text": "DNS vs. Kerberos: Case Sensitivity of Realm Names",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.3.1"
+    }
+  },
+  "#section-7.2.3.2": {
+    "current": {
+      "number": "7.2.3.2",
+      "spec": "Kerberos",
+      "text": "Specifying KDC Location Information with DNS SRV records",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.3.2"
+    }
+  },
+  "#section-7.2.3.3": {
+    "current": {
+      "number": "7.2.3.3",
+      "spec": "Kerberos",
+      "text": "KDC Discovery for Domain Style Realm Names on IP Networks",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.2.3.3"
+    }
+  },
+  "#section-7.3": {
+    "current": {
+      "number": "7.3",
+      "spec": "Kerberos",
+      "text": "Name of the TGS",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.3"
+    }
+  },
+  "#section-7.4": {
+    "current": {
+      "number": "7.4",
+      "spec": "Kerberos",
+      "text": "OID Arc for KerberosV5",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.4"
+    }
+  },
+  "#section-7.5": {
+    "current": {
+      "number": "7.5",
+      "spec": "Kerberos",
+      "text": "Protocol Constants and Associated Values",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5"
+    }
+  },
+  "#section-7.5.1": {
+    "current": {
+      "number": "7.5.1",
+      "spec": "Kerberos",
+      "text": "Key Usage Numbers",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.1"
+    }
+  },
+  "#section-7.5.2": {
+    "current": {
+      "number": "7.5.2",
+      "spec": "Kerberos",
+      "text": "PreAuthentication Data Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.2"
+    }
+  },
+  "#section-7.5.3": {
+    "current": {
+      "number": "7.5.3",
+      "spec": "Kerberos",
+      "text": "Address Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.3"
+    }
+  },
+  "#section-7.5.4": {
+    "current": {
+      "number": "7.5.4",
+      "spec": "Kerberos",
+      "text": "Authorization Data Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.4"
+    }
+  },
+  "#section-7.5.5": {
+    "current": {
+      "number": "7.5.5",
+      "spec": "Kerberos",
+      "text": "Transited Encoding Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.5"
+    }
+  },
+  "#section-7.5.6": {
+    "current": {
+      "number": "7.5.6",
+      "spec": "Kerberos",
+      "text": "Protocol Version Number",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.6"
+    }
+  },
+  "#section-7.5.7": {
+    "current": {
+      "number": "7.5.7",
+      "spec": "Kerberos",
+      "text": "Kerberos Message Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.7"
+    }
+  },
+  "#section-7.5.8": {
+    "current": {
+      "number": "7.5.8",
+      "spec": "Kerberos",
+      "text": "Name Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.8"
+    }
+  },
+  "#section-7.5.9": {
+    "current": {
+      "number": "7.5.9",
+      "spec": "Kerberos",
+      "text": "Error Codes",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-7.5.9"
+    }
+  },
+  "#section-8": {
+    "current": {
+      "number": "8",
+      "spec": "Kerberos",
+      "text": "Interoperability Requirements",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-8"
+    }
+  },
+  "#section-8.1": {
+    "current": {
+      "number": "8.1",
+      "spec": "Kerberos",
+      "text": "Specification 2",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-8.1"
+    }
+  },
+  "#section-8.2": {
+    "current": {
+      "number": "8.2",
+      "spec": "Kerberos",
+      "text": "Recommended KDC Values",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-8.2"
+    }
+  },
+  "#section-9": {
+    "current": {
+      "number": "9",
+      "spec": "Kerberos",
+      "text": "IANA Considerations",
+      "url": "https://www.rfc-editor.org/rfc/rfc4120#section-9"
+    }
+  }
+}

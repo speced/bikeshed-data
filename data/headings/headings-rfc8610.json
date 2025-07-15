@@ -1,1 +1,490 @@
-{}
+{
+  "#appendix-A": {
+    "current": {
+      "number": "Appendix A",
+      "spec": "CDDL",
+      "text": "Parsing Expression Grammars (PEGs)",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-A"
+    }
+  },
+  "#appendix-B": {
+    "current": {
+      "number": "Appendix B",
+      "spec": "CDDL",
+      "text": "ABNF Grammar",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-B"
+    }
+  },
+  "#appendix-C": {
+    "current": {
+      "number": "Appendix C",
+      "spec": "CDDL",
+      "text": "Matching Rules",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-C"
+    }
+  },
+  "#appendix-E": {
+    "current": {
+      "number": "Appendix E",
+      "spec": "CDDL",
+      "text": "Use with JSON",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-E"
+    }
+  },
+  "#appendix-F": {
+    "current": {
+      "number": "Appendix F",
+      "spec": "CDDL",
+      "text": "A CDDL Tool",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-F"
+    }
+  },
+  "#appendix-G": {
+    "current": {
+      "number": "Appendix G",
+      "spec": "CDDL",
+      "text": "Extended Diagnostic Notation",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G"
+    }
+  },
+  "#appendix-G.1": {
+    "current": {
+      "number": "G.1",
+      "spec": "CDDL",
+      "text": "Whitespace in Byte String Notation",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.1"
+    }
+  },
+  "#appendix-G.2": {
+    "current": {
+      "number": "G.2",
+      "spec": "CDDL",
+      "text": "Text in Byte String Notation",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.2"
+    }
+  },
+  "#appendix-G.3": {
+    "current": {
+      "number": "G.3",
+      "spec": "CDDL",
+      "text": "Embedded CBOR and CBOR Sequences in Byte Strings",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.3"
+    }
+  },
+  "#appendix-G.4": {
+    "current": {
+      "number": "G.4",
+      "spec": "CDDL",
+      "text": "Concatenated Strings",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.4"
+    }
+  },
+  "#appendix-G.5": {
+    "current": {
+      "number": "G.5",
+      "spec": "CDDL",
+      "text": "Hexadecimal, Octal, and Binary Numbers",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.5"
+    }
+  },
+  "#appendix-G.6": {
+    "current": {
+      "number": "G.6",
+      "spec": "CDDL",
+      "text": "Comments",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-G.6"
+    }
+  },
+  "#appendix-H": {
+    "current": {
+      "number": "Appendix H",
+      "spec": "CDDL",
+      "text": "Examples",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#appendix-H"
+    }
+  },
+  "#section-1": {
+    "current": {
+      "number": "1",
+      "spec": "CDDL",
+      "text": "Introduction",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-1"
+    }
+  },
+  "#section-1.1": {
+    "current": {
+      "number": "1.1",
+      "spec": "CDDL",
+      "text": "Requirements Notation",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-1.1"
+    }
+  },
+  "#section-1.2": {
+    "current": {
+      "number": "1.2",
+      "spec": "CDDL",
+      "text": "Terminology",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-1.2"
+    }
+  },
+  "#section-2": {
+    "current": {
+      "number": "2",
+      "spec": "CDDL",
+      "text": "The Style of Data Structure Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2"
+    }
+  },
+  "#section-2.1": {
+    "current": {
+      "number": "2.1",
+      "spec": "CDDL",
+      "text": "Groups and Composition in CDDL",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.1"
+    }
+  },
+  "#section-2.1.1": {
+    "current": {
+      "number": "2.1.1",
+      "spec": "CDDL",
+      "text": "Usage",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.1.1"
+    }
+  },
+  "#section-2.1.2": {
+    "current": {
+      "number": "2.1.2",
+      "spec": "CDDL",
+      "text": "Syntax",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.1.2"
+    }
+  },
+  "#section-2.2": {
+    "current": {
+      "number": "2.2",
+      "spec": "CDDL",
+      "text": "Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2"
+    }
+  },
+  "#section-2.2.1": {
+    "current": {
+      "number": "2.2.1",
+      "spec": "CDDL",
+      "text": "Values",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.1"
+    }
+  },
+  "#section-2.2.2": {
+    "current": {
+      "number": "2.2.2",
+      "spec": "CDDL",
+      "text": "Choices",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.2"
+    }
+  },
+  "#section-2.2.2.1": {
+    "current": {
+      "number": "2.2.2.1",
+      "spec": "CDDL",
+      "text": "Ranges",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.2.1"
+    }
+  },
+  "#section-2.2.2.2": {
+    "current": {
+      "number": "2.2.2.2",
+      "spec": "CDDL",
+      "text": "Turning a Group into a Choice",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.2.2"
+    }
+  },
+  "#section-2.2.3": {
+    "current": {
+      "number": "2.2.3",
+      "spec": "CDDL",
+      "text": "Representation Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.3"
+    }
+  },
+  "#section-2.2.4": {
+    "current": {
+      "number": "2.2.4",
+      "spec": "CDDL",
+      "text": "Root Type",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-2.2.4"
+    }
+  },
+  "#section-3": {
+    "current": {
+      "number": "3",
+      "spec": "CDDL",
+      "text": "Syntax",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3"
+    }
+  },
+  "#section-3.1": {
+    "current": {
+      "number": "3.1",
+      "spec": "CDDL",
+      "text": "General Conventions",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.1"
+    }
+  },
+  "#section-3.10": {
+    "current": {
+      "number": "3.10",
+      "spec": "CDDL",
+      "text": "Generics",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.10"
+    }
+  },
+  "#section-3.11": {
+    "current": {
+      "number": "3.11",
+      "spec": "CDDL",
+      "text": "Operator Precedence",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.11"
+    }
+  },
+  "#section-3.2": {
+    "current": {
+      "number": "3.2",
+      "spec": "CDDL",
+      "text": "Occurrence",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.2"
+    }
+  },
+  "#section-3.3": {
+    "current": {
+      "number": "3.3",
+      "spec": "CDDL",
+      "text": "Predefined Names for Types",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.3"
+    }
+  },
+  "#section-3.4": {
+    "current": {
+      "number": "3.4",
+      "spec": "CDDL",
+      "text": "Arrays",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.4"
+    }
+  },
+  "#section-3.5": {
+    "current": {
+      "number": "3.5",
+      "spec": "CDDL",
+      "text": "Maps",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5"
+    }
+  },
+  "#section-3.5.1": {
+    "current": {
+      "number": "3.5.1",
+      "spec": "CDDL",
+      "text": "Structs",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5.1"
+    }
+  },
+  "#section-3.5.2": {
+    "current": {
+      "number": "3.5.2",
+      "spec": "CDDL",
+      "text": "Tables",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5.2"
+    }
+  },
+  "#section-3.5.3": {
+    "current": {
+      "number": "3.5.3",
+      "spec": "CDDL",
+      "text": "Non-deterministic Order",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5.3"
+    }
+  },
+  "#section-3.5.4": {
+    "current": {
+      "number": "3.5.4",
+      "spec": "CDDL",
+      "text": "Cuts in Maps",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.5.4"
+    }
+  },
+  "#section-3.6": {
+    "current": {
+      "number": "3.6",
+      "spec": "CDDL",
+      "text": "Tags",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.6"
+    }
+  },
+  "#section-3.7": {
+    "current": {
+      "number": "3.7",
+      "spec": "CDDL",
+      "text": "Unwrapping",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.7"
+    }
+  },
+  "#section-3.8": {
+    "current": {
+      "number": "3.8",
+      "spec": "CDDL",
+      "text": "Controls",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8"
+    }
+  },
+  "#section-3.8.1": {
+    "current": {
+      "number": "3.8.1",
+      "spec": "CDDL",
+      "text": "Control Operator .size",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.1"
+    }
+  },
+  "#section-3.8.2": {
+    "current": {
+      "number": "3.8.2",
+      "spec": "CDDL",
+      "text": "Control Operator .bits",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.2"
+    }
+  },
+  "#section-3.8.3": {
+    "current": {
+      "number": "3.8.3",
+      "spec": "CDDL",
+      "text": "Control Operator .regexp",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.3"
+    }
+  },
+  "#section-3.8.3.1": {
+    "current": {
+      "number": "3.8.3.1",
+      "spec": "CDDL",
+      "text": "Usage Considerations",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.3.1"
+    }
+  },
+  "#section-3.8.3.2": {
+    "current": {
+      "number": "3.8.3.2",
+      "spec": "CDDL",
+      "text": "Discussion",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.3.2"
+    }
+  },
+  "#section-3.8.4": {
+    "current": {
+      "number": "3.8.4",
+      "spec": "CDDL",
+      "text": "Control Operators .cbor and .cborseq",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.4"
+    }
+  },
+  "#section-3.8.5": {
+    "current": {
+      "number": "3.8.5",
+      "spec": "CDDL",
+      "text": "Control Operators .within and .and",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.5"
+    }
+  },
+  "#section-3.8.6": {
+    "current": {
+      "number": "3.8.6",
+      "spec": "CDDL",
+      "text": "Control Operators .lt, .le, .gt, .ge, .eq, .ne, and .default",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.8.6"
+    }
+  },
+  "#section-3.9": {
+    "current": {
+      "number": "3.9",
+      "spec": "CDDL",
+      "text": "Socket/Plug",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-3.9"
+    }
+  },
+  "#section-4": {
+    "current": {
+      "number": "4",
+      "spec": "CDDL",
+      "text": "Making Use of CDDL",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-4"
+    }
+  },
+  "#section-4.1": {
+    "current": {
+      "number": "4.1",
+      "spec": "CDDL",
+      "text": "As a Guide for a Human User",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-4.1"
+    }
+  },
+  "#section-4.2": {
+    "current": {
+      "number": "4.2",
+      "spec": "CDDL",
+      "text": "For Automated Checking of CBOR Data Structures",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-4.2"
+    }
+  },
+  "#section-4.3": {
+    "current": {
+      "number": "4.3",
+      "spec": "CDDL",
+      "text": "For Data Analysis Tools",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-4.3"
+    }
+  },
+  "#section-5": {
+    "current": {
+      "number": "5",
+      "spec": "CDDL",
+      "text": "Security Considerations",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-5"
+    }
+  },
+  "#section-6": {
+    "current": {
+      "number": "6",
+      "spec": "CDDL",
+      "text": "IANA Considerations",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-6"
+    }
+  },
+  "#section-6.1": {
+    "current": {
+      "number": "6.1",
+      "spec": "CDDL",
+      "text": "CDDL Control Operators Registry",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-6.1"
+    }
+  },
+  "#section-7": {
+    "current": {
+      "number": "7",
+      "spec": "CDDL",
+      "text": "References",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-7"
+    }
+  },
+  "#section-7.1": {
+    "current": {
+      "number": "7.1",
+      "spec": "CDDL",
+      "text": "Normative References",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-7.1"
+    }
+  },
+  "#section-7.2": {
+    "current": {
+      "number": "7.2",
+      "spec": "CDDL",
+      "text": "Informative References",
+      "url": "https://www.rfc-editor.org/rfc/rfc8610#section-7.2"
+    }
+  }
+}
