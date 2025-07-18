@@ -37810,6 +37810,66 @@ https://wg21.link/lwg4264
 
 Tomasz Kamiński
 -
+d:lwg4265
+LWG4265
+
+New
+std::midpoint should not accept const bool
+https://wg21.link/lwg4265
+
+
+
+
+Jan Schultke
+-
+d:lwg4266
+LWG4266
+
+Tentatively Ready
+layout_stride::mapping should treat empty mappings as exhaustive
+https://wg21.link/lwg4266
+
+
+
+
+Tomasz Kamiński
+-
+d:lwg4267
+LWG4267
+
+New
+Uses-allocator construction is meaningless for tuple of references
+https://wg21.link/lwg4267
+
+
+
+
+Jiang An
+-
+d:lwg4268
+LWG4268
+
+New
+function<void()> suppresses nodiscard warnings
+https://wg21.link/lwg4268
+
+
+
+
+Jonathan Wakely
+-
+d:lwg4269
+LWG4269
+
+New
+unique_copy passes arguments to its predicate backwards
+https://wg21.link/lwg4269
+
+
+
+
+Jonathan Wakely
+-
 d:lwg427
 LWG427
 
@@ -37821,6 +37881,126 @@ https://wg21.link/lwg427
 
 
 Martin Sebor
+-
+d:lwg4270
+LWG4270
+
+New
+Diagnose misuse of std::projected::operator*
+https://wg21.link/lwg4270
+
+
+
+
+Jiang An
+-
+d:lwg4271
+LWG4271
+
+New
+Caching range views claim amortized amortized 𝒪(1) runtime complexity for algorithms that are in fact 𝒪(n)
+https://wg21.link/lwg4271
+
+
+
+
+Andreas Weis
+-
+d:lwg4272
+LWG4272
+
+New
+For rank == 0, layout_stride is atypically convertible
+https://wg21.link/lwg4272
+
+
+
+
+Luc Grosheintz
+-
+d:lwg4273
+LWG4273
+
+New
+Standard execution policy types should be conventional tag class types
+https://wg21.link/lwg4273
+
+
+
+
+Jiang An
+-
+d:lwg4274
+LWG4274
+
+Tentatively Ready
+The chrono::hh_mm_ss constructor is ill-formed for unsigned durations
+https://wg21.link/lwg4274
+
+
+
+
+Michael Welsh Duggan
+-
+d:lwg4275
+LWG4275
+
+New
+std::dynamic_extent should also be defined in <mdspan>
+https://wg21.link/lwg4275
+
+
+
+
+Aiden Grossman
+-
+d:lwg4276
+LWG4276
+
+New
+front() and back() are not hardened for zero-length std::arrays
+https://wg21.link/lwg4276
+
+
+
+
+Jan Schultke
+-
+d:lwg4277
+LWG4277
+
+New
+§[algorithms.requirements] It is unclear what an algorithm is
+https://wg21.link/lwg4277
+
+
+
+
+Jan Schultke
+-
+d:lwg4278
+LWG4278
+
+New
+Consider changing how get-domain-early(sndr) works
+https://wg21.link/lwg4278
+
+
+
+
+Jonathan Wakely
+-
+d:lwg4279
+LWG4279
+
+New
+§[fs.op.absolute] Non-normative encouragement should be Recommended practice
+https://wg21.link/lwg4279
+
+
+
+
+Jonathan Wakely
 -
 d:lwg428
 LWG428
@@ -37834,6 +38014,126 @@ https://wg21.link/lwg428
 
 Martin Sebor
 -
+d:lwg4280
+LWG4280
+
+New
+simd::partial_load uses undefined identifier T
+https://wg21.link/lwg4280
+
+
+
+
+Tim Song
+-
+d:lwg4281
+LWG4281
+
+New
+Inconsistency between value_or() and error_or() in std::expected
+https://wg21.link/lwg4281
+
+
+
+
+Hiroaki Ando
+-
+d:lwg4282
+LWG4282
+
+New
+Imprecise Throws: clause in std::relocate
+https://wg21.link/lwg4282
+
+
+
+
+Giuseppe D'Angelo
+-
+d:lwg4283
+LWG4283
+
+New
+std::trivially_relocate needs stronger preconditions on "nested" objects with dynamic lifetime
+https://wg21.link/lwg4283
+
+
+
+
+Giuseppe D'Angelo
+-
+d:lwg4284
+LWG4284
+
+New
+Integer-class types should be formattable
+https://wg21.link/lwg4284
+
+
+
+
+Jiang An
+-
+d:lwg4285
+LWG4285
+
+New
+time_get::do_get_date is problematic even after LWG 461
+https://wg21.link/lwg4285
+
+
+
+
+S. B. Tam
+-
+d:lwg4286
+LWG4286
+
+New
+Some more feature-test macros for fully freestanding features are not marked freestanding
+https://wg21.link/lwg4286
+
+
+
+
+Yihe Li
+-
+d:lwg4287
+LWG4287
+
+New
+§[locale.codecvt.virtuals] do_in and do_out could do with better specification
+https://wg21.link/lwg4287
+
+
+
+
+S. B. Tam
+-
+d:lwg4288
+LWG4288
+
+New
+The Constraints: element in [time.clock.system.members] is probably wrong
+https://wg21.link/lwg4288
+
+
+
+
+Jiang An
+-
+d:lwg4289
+LWG4289
+
+New
+Seed sequence is overspecified
+https://wg21.link/lwg4289
+
+
+
+
+Magnus Fromreide
+-
 d:lwg429
 LWG429
 
@@ -37845,6 +38145,78 @@ https://wg21.link/lwg429
 
 
 Martin Sebor
+-
+d:lwg4290
+LWG4290
+
+New
+Missing Mandates clauses on is_sufficiently_aligned
+https://wg21.link/lwg4290
+
+
+
+
+Damien Lebrun-Grandie
+-
+d:lwg4291
+LWG4291
+
+New
+explicit map(const Allocator&) should be constexpr
+https://wg21.link/lwg4291
+
+
+
+
+Jonathan Wakely
+-
+d:lwg4292
+LWG4292
+
+New
+Unordered container local iterators should be constexpr iterators
+https://wg21.link/lwg4292
+
+
+
+
+Jonathan Wakely
+-
+d:lwg4293
+LWG4293
+
+New
+span::subspan/first/last chooses wrong constructor when T is const-qualified bool
+https://wg21.link/lwg4293
+
+
+
+
+Yuhan Liu
+-
+d:lwg4294
+LWG4294
+
+New
+bitset(const CharT*) constructor needs to be constrained
+https://wg21.link/lwg4294
+
+
+
+
+Jonathan Wakely
+-
+d:lwg4295
+LWG4295
+
+New
+[fund.ts.v3] experimental::observer_ptr should have more constexpr
+https://wg21.link/lwg4295
+
+
+
+
+Jonathan Wakely
 -
 d:lwg43
 LWG43
