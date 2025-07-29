@@ -3055,6 +3055,7 @@
     "Default trigger data cardinality",
     "DefaultClause",
     "DefaultValue",
+    "DeferredRequestInit",
     "Define an inherited policy for feature in container at origin",
     "DefineField",
     "DefineField(receiver, fieldRecord)",
@@ -3515,6 +3516,7 @@
     "Fetch directives",
     "FetchEvent",
     "FetchEventInit",
+    "FetchLaterResult",
     "Field-based formats",
     "FieldDefinition",
     "File",
@@ -10138,6 +10140,7 @@
     "availability sources set",
     "available",
     "available block space",
+    "available deferred-fetch quota",
     "available font faces",
     "available grid space",
     "available height",
@@ -12661,6 +12664,9 @@
     "default-src",
     "default/on",
     "defaultColorSpace",
+    "deferred fetch record",
+    "deferred fetch task source",
+    "deferred-fetch control document",
     "define an algorithm",
     "define the asynchronous iteration methods",
     "define the attributes",
@@ -13760,6 +13766,7 @@
     "fetch client",
     "fetch controller",
     "fetch destination from module type",
+    "fetch group",
     "fetch image algorithm",
     "fetch index",
     "fetch metadata headers",
@@ -13767,6 +13774,7 @@
     "fetch payment method manifests",
     "fetch priority",
     "fetch priority attribute",
+    "fetch record",
     "fetch request",
     "fetch response handover",
     "fetch scheme",
@@ -18476,6 +18484,7 @@
     "potentially active",
     "potentially add a LargestContentfulPaint entry",
     "potentially delays the load event",
+    "potentially free deferred-fetch quota",
     "potentially process scroll behavior",
     "potentially render-blocking",
     "potentially reset the focus",
@@ -18681,6 +18690,7 @@
     "process a Web Authentication assertion for bounce tracking mitigations",
     "process a base URL string",
     "process a color member",
+    "process a deferred fetch",
     "process a fetch storage access for bounce tracking mitigations",
     "process a file handler item",
     "process a key action",
@@ -18719,6 +18729,7 @@
     "process color attachments",
     "process contributions for a batching scope",
     "process cookie changes",
+    "process deferred fetches",
     "process depth stencil",
     "process document load for bounce tracking",
     "process dt or dd",
@@ -19018,6 +19029,7 @@
     "queue a cross-origin embedder policy CORP violation report",
     "queue a cross-origin embedder policy inheritance violation",
     "queue a database task",
+    "queue a deferred fetch",
     "queue a details toggle event task",
     "queue a dialog toggle event task",
     "queue a document isolation policy CORP violation report",
@@ -19062,6 +19074,7 @@
     "queuing strategy",
     "quirks mode",
     "quota exceeded error information",
+    "quota reserved for deferred-fetch-minimal",
     "quotation mark system",
     "quote depth",
     "quotes",
@@ -19639,7 +19652,9 @@
     "requires-directive",
     "reregisteredWhileFiring",
     "reserialized",
+    "reserve deferred-fetch quota",
     "reserved character escape sequence",
+    "reserved deferred-fetch quota",
     "reserved environment",
     "reserved identifiers",
     "reserved word",
@@ -22036,6 +22051,7 @@
     "topmost script-having execution context",
     "total horizontal border spacing",
     "total length",
+    "total request length",
     "total retrieved font size",
     "total video frame count",
     "touch point",
@@ -32425,6 +32441,9 @@
     "postMessage(message, transfer)",
     "rtctransform"
   ],
+  "DeferredRequestInit": [
+    "activateAfter"
+  ],
   "DelayNode": [
     "DelayNode(context)",
     "DelayNode(context, options)",
@@ -34713,6 +34732,10 @@
     "replacesClientId",
     "request",
     "resultingClientId"
+  ],
+  "FetchLaterResult": [
+    "activated",
+    "activated getter steps"
   ],
   "File": [
     "File(fileBits, fileName)",
@@ -45983,6 +46006,8 @@
     "allowedFeatures()",
     "allowsFeature(feature)",
     "allowsFeature(feature, origin)",
+    "deferred-fetch",
+    "deferred-fetch-minimal",
     "features()",
     "fenced-unpartitioned-storage-read",
     "getAllowlistForFeature(feature)",
@@ -55269,6 +55294,8 @@
     "eventCounts",
     "external",
     "fence",
+    "fetchLater(input)",
+    "fetchLater(input, init)",
     "focus",
     "focus()",
     "frameElement",
@@ -55456,6 +55483,14 @@
     "viewport",
     "visualViewport",
     "window"
+  ],
+  "Window/fetchLater(input)": [
+    "init",
+    "input"
+  ],
+  "Window/fetchLater(input, init)": [
+    "init",
+    "input"
   ],
   "Window/getComputedStyle(elt)": [
     "elt",
@@ -61143,6 +61178,11 @@
     "kind",
     "target"
   ],
+  "deferred fetch record": [
+    "invoke state",
+    "notify invoked",
+    "request"
+  ],
   "del": [
     "cite",
     "datetime"
@@ -61716,6 +61756,7 @@
     "current monotonic time",
     "current relative timestamp",
     "current wall time",
+    "fetch group",
     "global object",
     "has cross-site ancestor",
     "meaningfully mitigate injection attacks",
@@ -62137,7 +62178,6 @@
     "substitute macros"
   ],
   "fetch": [
-    "fetch group",
     "processEarlyHintsResponse",
     "processRequestBodyChunkLength",
     "processRequestEndOfBody",
@@ -62161,7 +62201,8 @@
     "terminate"
   ],
   "fetch group": [
-    "fetch record",
+    "deferred fetch records",
+    "fetch records",
     "terminated"
   ],
   "fetch identity assertion": [
@@ -67121,6 +67162,10 @@
   ],
   "request/destination": [
     "script-like"
+  ],
+  "reserved deferred-fetch quota": [
+    "minimal quota",
+    "normal quota"
   ],
   "response": [
     "CORS-exposed header-name list",
