@@ -4403,12 +4403,14 @@
     "IDBDatabase",
     "IDBDatabaseInfo",
     "IDBFactory",
+    "IDBGetAllOptions",
     "IDBIndex",
     "IDBIndexParameters",
     "IDBKeyRange",
     "IDBObjectStore",
     "IDBObjectStoreParameters",
     "IDBOpenDBRequest",
+    "IDBRecord",
     "IDBRequest",
     "IDBRequestReadyState",
     "IDBTransaction",
@@ -12146,6 +12148,7 @@
     "create a reference space",
     "create a report request",
     "create a reporting context map",
+    "create a request to retrieve multiple items",
     "create a reserved client",
     "create a resizable memory buffer",
     "create a rewriter object",
@@ -15674,6 +15677,7 @@
     "is a pathname start",
     "is a platform object",
     "is a port prefix",
+    "is a potentially valid key range",
     "is a protocol suffix",
     "is a registrable domain suffix of or is equal to",
     "is a search prefix",
@@ -18502,6 +18506,7 @@
     "potentially scrollable",
     "potentially trustworthy URL",
     "potentially trustworthy origin",
+    "potentially valid key range",
     "pow()",
     "powderblue",
     "power efficient",
@@ -19244,6 +19249,7 @@
     "record pause duration",
     "record redemption timestamp",
     "record rendering time",
+    "record snapshot",
     "record task end time",
     "record task start time",
     "record the internal error event result",
@@ -19784,6 +19790,8 @@
     "retrieve a token",
     "retrieve a value from an index",
     "retrieve a value from an object store",
+    "retrieve multiple items from an index",
+    "retrieve multiple items from an object store",
     "retrieve multiple keys from an object store",
     "retrieve multiple referenced values from an index",
     "retrieve multiple values from an index",
@@ -39050,6 +39058,11 @@
     "name",
     "version"
   ],
+  "IDBGetAllOptions": [
+    "count",
+    "direction",
+    "query"
+  ],
   "IDBIndex": [
     "count()",
     "count(query)",
@@ -39057,9 +39070,15 @@
     "getAll()",
     "getAll(query)",
     "getAll(query, count)",
+    "getAll(queryOrOptions)",
+    "getAll(queryOrOptions, count)",
     "getAllKeys()",
     "getAllKeys(query)",
     "getAllKeys(query, count)",
+    "getAllKeys(queryOrOptions)",
+    "getAllKeys(queryOrOptions, count)",
+    "getAllRecords()",
+    "getAllRecords(options)",
     "getKey(query)",
     "keyPath",
     "multiEntry",
@@ -39084,7 +39103,8 @@
   ],
   "IDBIndex/getAll()": [
     "count",
-    "query"
+    "query",
+    "queryOrOptions"
   ],
   "IDBIndex/getAll(query)": [
     "count",
@@ -39094,9 +39114,18 @@
     "count",
     "query"
   ],
+  "IDBIndex/getAll(queryOrOptions)": [
+    "count",
+    "queryOrOptions"
+  ],
+  "IDBIndex/getAll(queryOrOptions, count)": [
+    "count",
+    "queryOrOptions"
+  ],
   "IDBIndex/getAllKeys()": [
     "count",
-    "query"
+    "query",
+    "queryOrOptions"
   ],
   "IDBIndex/getAllKeys(query)": [
     "count",
@@ -39105,6 +39134,20 @@
   "IDBIndex/getAllKeys(query, count)": [
     "count",
     "query"
+  ],
+  "IDBIndex/getAllKeys(queryOrOptions)": [
+    "count",
+    "queryOrOptions"
+  ],
+  "IDBIndex/getAllKeys(queryOrOptions, count)": [
+    "count",
+    "queryOrOptions"
+  ],
+  "IDBIndex/getAllRecords()": [
+    "options"
+  ],
+  "IDBIndex/getAllRecords(options)": [
+    "options"
   ],
   "IDBIndex/getKey(query)": [
     "query"
@@ -39207,9 +39250,15 @@
     "getAll()",
     "getAll(query)",
     "getAll(query, count)",
+    "getAll(queryOrOptions)",
+    "getAll(queryOrOptions, count)",
     "getAllKeys()",
     "getAllKeys(query)",
     "getAllKeys(query, count)",
+    "getAllKeys(queryOrOptions)",
+    "getAllKeys(queryOrOptions, count)",
+    "getAllRecords()",
+    "getAllRecords(options)",
     "getKey(query)",
     "index(name)",
     "indexNames",
@@ -39260,7 +39309,8 @@
   ],
   "IDBObjectStore/getAll()": [
     "count",
-    "query"
+    "query",
+    "queryOrOptions"
   ],
   "IDBObjectStore/getAll(query)": [
     "count",
@@ -39270,9 +39320,18 @@
     "count",
     "query"
   ],
+  "IDBObjectStore/getAll(queryOrOptions)": [
+    "count",
+    "queryOrOptions"
+  ],
+  "IDBObjectStore/getAll(queryOrOptions, count)": [
+    "count",
+    "queryOrOptions"
+  ],
   "IDBObjectStore/getAllKeys()": [
     "count",
-    "query"
+    "query",
+    "queryOrOptions"
   ],
   "IDBObjectStore/getAllKeys(query)": [
     "count",
@@ -39281,6 +39340,20 @@
   "IDBObjectStore/getAllKeys(query, count)": [
     "count",
     "query"
+  ],
+  "IDBObjectStore/getAllKeys(queryOrOptions)": [
+    "count",
+    "queryOrOptions"
+  ],
+  "IDBObjectStore/getAllKeys(queryOrOptions, count)": [
+    "count",
+    "queryOrOptions"
+  ],
+  "IDBObjectStore/getAllRecords()": [
+    "options"
+  ],
+  "IDBObjectStore/getAllRecords(options)": [
+    "options"
   ],
   "IDBObjectStore/getKey(query)": [
     "query"
@@ -39329,6 +39402,11 @@
     "onblocked",
     "onupgradeneeded",
     "upgradeneeded"
+  ],
+  "IDBRecord": [
+    "key",
+    "primaryKey",
+    "value"
   ],
   "IDBRequest": [
     "error",
@@ -47529,6 +47607,7 @@
     "mediaSourceId",
     "mid",
     "nackCount",
+    "packetsSentWithEct1",
     "pliCount",
     "powerEfficientEncoder",
     "psnrMeasurements",
@@ -66918,6 +66997,11 @@
     "global object",
     "is global prototype chain mutable",
     "settings object"
+  ],
+  "record snapshot": [
+    "key",
+    "primary key",
+    "value"
   ],
   "rect": [
     "requiredExtensions",
