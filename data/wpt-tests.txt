@@ -1,4 +1,4 @@
-sha: 12025aa310d3e3e562c613d40101a381d5709d48
+sha: f7d92b3baa02c756eb5c7bf07b096f087e03f94e
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1127,6 +1127,8 @@ crashtest html/rendering/replaced-elements/attributes-for-embedded-content-and-i
 crashtest html/rendering/the-details-element/details-autofocus-crash.html
 crashtest html/rendering/the-details-element/details-crash.html
 crashtest html/rendering/the-details-element/empty-crash.html
+crashtest html/rendering/the-details-element/firefox-bug-1928736-1-crash.html
+crashtest html/rendering/the-details-element/firefox-bug-1928736-2-crash.html
 crashtest html/rendering/the-details-element/two-summaries-removal-crash.html
 crashtest html/rendering/widgets/button-layout/input-fragmentation-crash.html
 crashtest html/rendering/widgets/input-checkbox-appearance-none-dynamic-crash.html
@@ -47569,14 +47571,12 @@ testharness html/syntax/speculative-parsing/generated/document-write/picture-sou
 testharness html/syntax/speculative-parsing/generated/document-write/script-src-async.tentative.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/script-src-crossorigin.tentative.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/script-src-defer.tentative.sub.html
-testharness html/syntax/speculative-parsing/generated/document-write/script-src-event-handler.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/script-src-integrity.tentative.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/script-src-module.tentative.sub.html
-testharness html/syntax/speculative-parsing/generated/document-write/script-src-nomodule.sub.html
+testharness html/syntax/speculative-parsing/generated/document-write/script-src-nomodule.tentative.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/script-src-referrerpolicy-no-referrer.tentative.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/script-src-type-application-ecmascript.tentative.sub.html
-testharness html/syntax/speculative-parsing/generated/document-write/script-src-unsupported-language.sub.html
-testharness html/syntax/speculative-parsing/generated/document-write/script-src-unsupported-type.sub.html
+testharness html/syntax/speculative-parsing/generated/document-write/script-src-unsupported-type.tentative.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/script-src.tentative.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/svg-image-href.tentative.sub.html
 testharness html/syntax/speculative-parsing/generated/document-write/svg-image-src.tentative.sub.html
@@ -47631,14 +47631,12 @@ testharness html/syntax/speculative-parsing/generated/page-load/picture-source-u
 testharness html/syntax/speculative-parsing/generated/page-load/script-src-async.tentative.html
 testharness html/syntax/speculative-parsing/generated/page-load/script-src-crossorigin.tentative.html
 testharness html/syntax/speculative-parsing/generated/page-load/script-src-defer.tentative.html
-testharness html/syntax/speculative-parsing/generated/page-load/script-src-event-handler.html
 testharness html/syntax/speculative-parsing/generated/page-load/script-src-integrity.tentative.html
 testharness html/syntax/speculative-parsing/generated/page-load/script-src-module.tentative.html
-testharness html/syntax/speculative-parsing/generated/page-load/script-src-nomodule.html
+testharness html/syntax/speculative-parsing/generated/page-load/script-src-nomodule.tentative.html
 testharness html/syntax/speculative-parsing/generated/page-load/script-src-referrerpolicy-no-referrer.tentative.html
 testharness html/syntax/speculative-parsing/generated/page-load/script-src-type-application-ecmascript.tentative.html
-testharness html/syntax/speculative-parsing/generated/page-load/script-src-unsupported-language.html
-testharness html/syntax/speculative-parsing/generated/page-load/script-src-unsupported-type.html
+testharness html/syntax/speculative-parsing/generated/page-load/script-src-unsupported-type.tentative.html
 testharness html/syntax/speculative-parsing/generated/page-load/script-src.tentative.html
 testharness html/syntax/speculative-parsing/generated/page-load/svg-image-href.tentative.html
 testharness html/syntax/speculative-parsing/generated/page-load/svg-image-src.tentative.html
@@ -47770,6 +47768,7 @@ testharness html/webappapis/dynamic-markup-insertion/document-write/module-tla-i
 testharness html/webappapis/dynamic-markup-insertion/document-write/module-tla-import.html
 testharness html/webappapis/dynamic-markup-insertion/document-write/module-tla-promise.html
 testharness html/webappapis/dynamic-markup-insertion/document-write/module.html
+testharness html/webappapis/dynamic-markup-insertion/document-write/mutation-observer.html
 testharness html/webappapis/dynamic-markup-insertion/document-write/script_001.html
 testharness html/webappapis/dynamic-markup-insertion/document-write/script_002.html
 testharness html/webappapis/dynamic-markup-insertion/document-write/script_003.html
@@ -47858,6 +47857,8 @@ testharness html/webappapis/microtask-queuing/queue-microtask.any.js
 testharness html/webappapis/microtask-queuing/queue-microtask.window.js
 testharness html/webappapis/scripting/event-loops/microtask_after_raf.html
 testharness html/webappapis/scripting/event-loops/microtask_after_script.html
+testharness html/webappapis/scripting/event-loops/microtask_before_prepare_the_script_element-01.html
+testharness html/webappapis/scripting/event-loops/microtask_before_prepare_the_script_element-02.xhtml
 testharness html/webappapis/scripting/event-loops/new-scroll-event-dispatched-at-next-updating-rendering-time.html
 testharness html/webappapis/scripting/event-loops/task_microtask_ordering.html
 testharness html/webappapis/scripting/event-loops/update-the-rendering-resize-autofocus.html
@@ -50165,6 +50166,7 @@ testharness pointerevents/pointerevent_after_target_removed_interleaved.tentativ
 testharness pointerevents/pointerevent_attributes.html
 testharness pointerevents/pointerevent_auxclick_is_a_pointerevent.html
 testharness pointerevents/pointerevent_boundary_events_at_implicit_release_hoverable_pointers.html
+testharness pointerevents/pointerevent_boundary_events_attributes_during_drag.html
 testharness pointerevents/pointerevent_boundary_events_before_pointerrawupdate.https.html
 testharness pointerevents/pointerevent_boundary_events_in_capturing.html
 testharness pointerevents/pointerevent_boundary_events_modifier_no_pointer_movement.html
