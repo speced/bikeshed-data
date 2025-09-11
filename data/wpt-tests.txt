@@ -1,4 +1,4 @@
-sha: 78ff84bd57bcf4fe87a1f8a6884924d5e6a33230
+sha: 6fa5f523d426ecab7cceb88021d1ba95882f1ee2
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -953,6 +953,7 @@ crashtest dom/xslt/invalid-output-encoding-crash.html
 crashtest dom/xslt/strip-space-crash.xml
 crashtest dom/xslt/transformToFragment-on-node-from-inactive-document-crash.html
 crashtest domparsing/createContextualFragment-in-detached-xml-document-crash.html
+crashtest domparsing/insert_adjacent_html-001-crash.html
 crashtest domxpath/xpath-evaluate-crash.html
 crashtest editing/crashtests/backcolor-in-nested-editing-host-td-from-DOMAttrModified.html
 crashtest editing/crashtests/blur-from-rtl-editing-host-containing-big-video.html
@@ -3498,7 +3499,6 @@ manual html/semantics/embedded-content/media-elements/video_muted_overriding_vol
 manual html/semantics/embedded-content/media-elements/video_muted_present-manual.html
 manual html/semantics/embedded-content/media-elements/video_volume_loudest-manual.html
 manual html/semantics/embedded-content/media-elements/video_volume_silent-manual.html
-manual html/semantics/embedded-content/the-iframe-element/iframe_sandbox_allow_top_navigation_by_user_activation-manual.html
 manual html/semantics/embedded-content/the-iframe-element/sandbox_003-manual.htm
 manual html/semantics/embedded-content/the-iframe-element/sandbox_006-manual.htm
 manual html/semantics/embedded-content/the-iframe-element/sandbox_007-manual.htm
@@ -46162,6 +46162,7 @@ testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_al
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_allow_top_navigation-1.html
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_allow_top_navigation-2.html
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_allow_top_navigation-3.html
+testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_allow_top_navigation_by_user_activation_with_user_gesture.html
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_allow_top_navigation_by_user_activation_without_user_gesture.html
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_anchor_download_allow_downloads.tentative.html
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_anchor_download_block_downloads.tentative.html
@@ -46187,6 +46188,11 @@ testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_po
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_popups_nonescaping-3.html
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_window_open_download_allow_downloads.tentative.html
 testharness html/semantics/embedded-content/the-iframe-element/iframe_sandbox_window_open_download_block_downloads.tentative.html
+testharness html/semantics/embedded-content/the-iframe-element/iframe_top_navigation_with_user_gesture.tentative.html
+testharness html/semantics/embedded-content/the-iframe-element/iframe_top_navigation_with_user_gesture_after_failure.tentative.html
+testharness html/semantics/embedded-content/the-iframe-element/iframe_top_navigation_without_user_gesture.tentative.html
+testharness html/semantics/embedded-content/the-iframe-element/iframe_top_navigation_without_user_gesture_nested_same_site.tentative.html
+testharness html/semantics/embedded-content/the-iframe-element/iframe_top_navigation_without_user_gesture_same_site.tentative.html
 testharness html/semantics/embedded-content/the-iframe-element/move-node-local-root-events-still-fire.html
 testharness html/semantics/embedded-content/the-iframe-element/move-node-local-root.html
 testharness html/semantics/embedded-content/the-iframe-element/move_iframe_in_dom_01.html
