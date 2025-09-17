@@ -1513,6 +1513,9 @@
     "AddWaiter(WL, waiterRecord)",
     "AdditiveExpression",
     "AddressErrors",
+    "AddressType",
+    "AddressValue",
+    "AddressValueToU64",
     "AdjustedRadicalKernAfterDegree",
     "AdjustedRadicalKernBeforeDegree",
     "Adopted Draft",
@@ -2491,6 +2494,7 @@
     "ChapterInformation",
     "ChapterInformationInit",
     "Chapters metadata",
+    "CharCodeAt",
     "Character",
     "Character Identifier",
     "Character Information Item",
@@ -3571,7 +3575,10 @@
     "Evidence of user interaction",
     "Examples",
     "Examples of these types",
+    "Exception",
+    "Exception object cache",
     "Exception objects",
+    "ExceptionOptions",
     "Exchange",
     "Exchange MTU",
     "Exchange Signature",
@@ -3602,6 +3609,8 @@
     "ExportSpecifier",
     "Exported Function",
     "Exported Function cache",
+    "Exported GC Object",
+    "Exported GC Object cache",
     "ExportsList",
     "Expose",
     "Exposed",
@@ -3812,6 +3821,7 @@
     "FrameType",
     "Framebuffer coordinates",
     "Framing",
+    "FromCharCode",
     "FromClause",
     "FromPropertyDescriptor",
     "FromPropertyDescriptor(Desc)",
@@ -4493,6 +4503,7 @@
     "HmacKeyAlgorithm",
     "HmacKeyGenParams",
     "HoistableDeclaration",
+    "Host value cache",
     "HostCallJobCallback",
     "HostCallJobCallback(jobCallback, V, argumentsList)",
     "HostEnqueueFinalizationRegistryCleanupJob",
@@ -5039,6 +5050,7 @@
     "JavaScript MIME type",
     "JavaScript MIME type essence match",
     "JavaScript engine task source",
+    "JavaScript exception tag",
     "JavaScript module script",
     "JavaScript string",
     "JsonLd",
@@ -8066,10 +8078,13 @@
     "TableDescriptor",
     "TableKind",
     "TablePatch",
+    "Tag",
     "Tag Name",
     "Tag name state",
+    "Tag object cache",
     "Tag omission in text/html",
     "Tag open state",
+    "TagType",
     "Tags",
     "Take Element Screenshot",
     "Take Screenshot",
@@ -8486,6 +8501,7 @@
     "Typographic character unit",
     "Typographic letter unit",
     "U",
+    "U64ToAddressValue",
     "UA",
     "UA origin",
     "UA style sheet",
@@ -8684,6 +8700,7 @@
     "Unscopable",
     "Unsigned extension outputs",
     "Unwanted information",
+    "UnwrapString",
     "Upcoming non-traverse API method tracker",
     "Upcoming traverse API method trackers",
     "Update",
@@ -8918,6 +8935,7 @@
     "Web-exposed screen area",
     "WebAssembly",
     "WebAssembly module script",
+    "WebAssemblyCompileOptions",
     "WebAssemblyInstantiatedSource",
     "WebAuthn Authenticator",
     "WebAuthn Client",
@@ -8933,6 +8951,7 @@
     "WebDriver BiDi cache behavior",
     "WebDriver BiDi download end",
     "WebDriver BiDi download started",
+    "WebDriver BiDi download will begin",
     "WebDriver BiDi emulated User-Agent",
     "WebDriver BiDi fetch error",
     "WebDriver BiDi file dialog opened",
@@ -9453,8 +9472,19 @@
     "[[CrossOriginPropertyDescriptorMap]]",
     "[[DataChannelPriority]]",
     "[[DefaultProperties]]",
+    "[[DefineOwnProperty]] internal method of an Exported GC Object",
+    "[[Delete]] internal method of an Exported GC Object",
+    "[[GetOwnProperty]] internal method of an Exported GC Object",
+    "[[GetPrototypeOf]] internal method of an Exported GC Object",
+    "[[Get]] internal method of an Exported GC Object",
+    "[[HasProperty]] internal method of an Exported GC Object",
+    "[[IsExtensible]] internal method of an Exported GC Object",
+    "[[OwnPropertyKeys]] internal method of an Exported GC Object",
     "[[PendingMakeReadOnly]]",
     "[[PendingWrite]]",
+    "[[PreventExtensions]] internal method of an Exported GC Object",
+    "[[SetPrototypeOf]] internal method of an Exported GC Object",
+    "[[Set]] internal method of an Exported GC Object",
     "[[Suspended]]",
     "[[VideoKeyFrameIntervalCount]]",
     "[[VideoKeyFrameIntervalDuration]]",
@@ -9469,6 +9499,7 @@
     "a",
     "a known definite encoding",
     "a new Exported Function",
+    "a new Exported GC Object",
     "a new device",
     "a new promise",
     "a plausible language",
@@ -10932,6 +10963,9 @@
     "browser.CreateUserContext",
     "browser.CreateUserContextParameters",
     "browser.CreateUserContextResult",
+    "browser.DownloadBehavior",
+    "browser.DownloadBehaviorAllowed",
+    "browser.DownloadBehaviorDenied",
     "browser.GetClientWindows",
     "browser.GetClientWindowsResult",
     "browser.GetUserContexts",
@@ -10940,6 +10974,8 @@
     "browser.RemoveUserContextParameters",
     "browser.SetClientWindowState",
     "browser.SetClientWindowStateParameters",
+    "browser.SetDownloadBehavior",
+    "browser.SetDownloadBehaviorParameters",
     "browser.UserContext",
     "browser.UserContextInfo",
     "browser_bound_map",
@@ -12404,10 +12440,12 @@
     "create a PermissionStatus",
     "create a PointerEvent",
     "create a RestrictionTarget",
+    "create a Tag object",
     "create a Uint8Array object",
     "create a WebAssembly module script",
     "create a WebGL depth information instance",
     "create a brand-version list",
+    "create a builtin function",
     "create a cancelable MouseEvent",
     "create a channel",
     "create a classic script",
@@ -12514,6 +12552,7 @@
     "create aggregatable contributions",
     "create aggregatable contributions from aggregation keys and aggregatable values",
     "create an AI model object",
+    "create an Exception object",
     "create an IdentityCredential",
     "create an IdentityCredentialError",
     "create an MLOperand",
@@ -13502,6 +13541,8 @@
     "down-event",
     "down-mixing",
     "downlinkMax for an available interface",
+    "download behavior",
+    "download behavior struct",
     "download the hyperlink",
     "download the language detector model",
     "download the rewriter model",
@@ -14263,6 +14304,7 @@
     "finalize focus decision algorithm",
     "finalize private aggregation debug info",
     "find",
+    "find a builtin",
     "find a list of configuration descriptors for the connected USB device",
     "find a list of descriptors for a configuration",
     "find a list of endpoint descriptors",
@@ -14862,6 +14904,7 @@
     "get direct from seller signals",
     "get direct from seller signals for a buyer",
     "get direct from seller signals for a seller",
+    "get download behavior",
     "get element origin",
     "get emulated forced colors theme data",
     "get emulated position data",
@@ -14894,7 +14937,9 @@
     "get the \"all\"-indexed or named element(s)",
     "get the \"all\"-named element(s)",
     "get the BluetoothDevice representing",
+    "get the JavaScript exception tag",
     "get the active user prompt",
+    "get the builtins for a builtin set",
     "get the canonical URL string if valid",
     "get the child navigables",
     "get the client window info",
@@ -15697,6 +15742,7 @@
     "initialize a MouseEvent",
     "initialize a PerformanceEntry",
     "initialize a PointerEvent",
+    "initialize a Tag object",
     "initialize a UIEvent",
     "initialize a cylinder layer",
     "initialize a equirect layer",
@@ -15709,6 +15755,7 @@
     "initialize a response",
     "initialize a table object",
     "initialize a worker global scope's policy container",
+    "initialize an Exception object",
     "initialize an ImageData object",
     "initialize an active buffer mapping",
     "initialize an instance object",
@@ -15905,9 +15952,11 @@
     "instance root",
     "instancesOf expression",
     "instant scroll",
+    "instantiate a builtin set",
     "instantiate a config",
     "instantiate a promise of a module",
     "instantiate counter",
+    "instantiate imported strings",
     "instantiate the core of a WebAssembly module",
     "int",
     "integer",
@@ -20304,6 +20353,7 @@
     "retrieve multiple items from an index",
     "retrieve multiple items from an object store",
     "retrieving a MiniApp ZIP container",
+    "retrieving a host value",
     "retrieving a preferred prefix string",
     "retrieving an extern value",
     "return state",
@@ -22343,6 +22393,7 @@
     "tag",
     "tag name",
     "tag-terminating byte",
+    "tag_alloc",
     "tagged image",
     "tagging",
     "tags",
@@ -23312,6 +23363,7 @@
     "validate a url macro",
     "validate aggregatable key-values value",
     "validate an ICE server URL",
+    "validate an import for builtins",
     "validate and canonicalize a single language tag",
     "validate and canonicalize language detector options",
     "validate and canonicalize language tags",
@@ -23325,6 +23377,8 @@
     "validate and normalize",
     "validate and parse the payment method manifest",
     "validate buffer with descriptor",
+    "validate builtin set names",
+    "validate builtins and imported string for a WebAssembly module",
     "validate capabilities",
     "validate external type",
     "validate fetching response",
@@ -25453,6 +25507,10 @@
     "recipient",
     "region",
     "sortingCode"
+  ],
+  "AddressType": [
+    "\"i32\"",
+    "\"i64\""
   ],
   "AeadParams": [
     "additionalData",
@@ -35134,6 +35192,44 @@
     "options",
     "type"
   ],
+  "Exception": [
+    "Exception(exceptionTag, payload)",
+    "Exception(exceptionTag, payload, options)",
+    "constructor(exceptionTag, payload)",
+    "constructor(exceptionTag, payload, options)",
+    "getArg(index)",
+    "is(exceptionTag)",
+    "stack"
+  ],
+  "Exception/Exception(exceptionTag, payload)": [
+    "exceptionTag",
+    "options",
+    "payload"
+  ],
+  "Exception/Exception(exceptionTag, payload, options)": [
+    "exceptionTag",
+    "options",
+    "payload"
+  ],
+  "Exception/constructor(exceptionTag, payload)": [
+    "exceptionTag",
+    "options",
+    "payload"
+  ],
+  "Exception/constructor(exceptionTag, payload, options)": [
+    "exceptionTag",
+    "options",
+    "payload"
+  ],
+  "Exception/getArg(index)": [
+    "index"
+  ],
+  "Exception/is(exceptionTag)": [
+    "exceptionTag"
+  ],
+  "ExceptionOptions": [
+    "traceStack"
+  ],
   "ExtendableCookieChangeEvent": [
     "ExtendableCookieChangeEvent(type)",
     "ExtendableCookieChangeEvent(type, eventInitDict)",
@@ -40500,7 +40596,8 @@
     "\"function\"",
     "\"global\"",
     "\"memory\"",
-    "\"table\""
+    "\"table\"",
+    "\"tag\""
   ],
   "ImportNodeOptions": [
     "customElementRegistry",
@@ -44015,6 +44112,7 @@
     "types"
   ],
   "MemoryDescriptor": [
+    "address",
     "initial",
     "maximum"
   ],
@@ -44126,7 +44224,9 @@
   ],
   "Module": [
     "Module(bytes)",
+    "Module(bytes, options)",
     "constructor(bytes)",
+    "constructor(bytes, options)",
     "customSections(moduleObject, sectionName)",
     "exports(moduleObject)",
     "imports(moduleObject)"
@@ -44138,10 +44238,20 @@
     "HasThisBinding()"
   ],
   "Module/Module(bytes)": [
-    "bytes"
+    "bytes",
+    "options"
+  ],
+  "Module/Module(bytes, options)": [
+    "bytes",
+    "options"
   ],
   "Module/constructor(bytes)": [
-    "bytes"
+    "bytes",
+    "options"
+  ],
+  "Module/constructor(bytes, options)": [
+    "bytes",
+    "options"
   ],
   "Module/customSections(moduleObject, sectionName)": [
     "moduleObject",
@@ -50593,6 +50703,7 @@
     "allowAttribute(attribute)",
     "allowElement",
     "allowElement(element)",
+    "canonicalize the configuration",
     "configuration",
     "constructor",
     "constructor()",
@@ -50664,11 +50775,14 @@
     "dataAttributes",
     "elements",
     "get a sanitizer instance from options",
+    "has dupes",
+    "intersection",
     "remove",
     "remove unsafe",
     "removeAttributes",
     "removeElements",
-    "replaceWithChildrenElements"
+    "replaceWithChildrenElements",
+    "valid"
   ],
   "SanitizerElementNamespace": [
     "name",
@@ -53005,6 +53119,7 @@
     "value"
   ],
   "TableDescriptor": [
+    "address",
     "element",
     "initial",
     "maximum"
@@ -53018,6 +53133,19 @@
     "flags",
     "maxUncompressedLength",
     "tag"
+  ],
+  "Tag": [
+    "Tag(type)",
+    "constructor(type)"
+  ],
+  "Tag/Tag(type)": [
+    "type"
+  ],
+  "Tag/constructor(type)": [
+    "type"
+  ],
+  "TagType": [
+    "parameters"
   ],
   "TaskAttributionTiming": [
     "containerId",
@@ -55506,29 +55634,52 @@
     "WhiteSpaceSequence"
   ],
   "WebAssembly": [
+    "JSTag",
     "compile(bytes)",
+    "compile(bytes, options)",
     "compileStreaming(source)",
+    "compileStreaming(source, options)",
     "instantiate(bytes)",
     "instantiate(bytes, importObject)",
+    "instantiate(bytes, importObject, options)",
     "instantiate(moduleObject)",
     "instantiate(moduleObject, importObject)",
     "instantiateStreaming(source)",
     "instantiateStreaming(source, importObject)",
-    "validate(bytes)"
+    "instantiateStreaming(source, importObject, options)",
+    "validate(bytes)",
+    "validate(bytes, options)"
   ],
   "WebAssembly/compile(bytes)": [
-    "bytes"
+    "bytes",
+    "options"
+  ],
+  "WebAssembly/compile(bytes, options)": [
+    "bytes",
+    "options"
   ],
   "WebAssembly/compileStreaming(source)": [
+    "options",
+    "source"
+  ],
+  "WebAssembly/compileStreaming(source, options)": [
+    "options",
     "source"
   ],
   "WebAssembly/instantiate(bytes)": [
     "bytes",
-    "importObject"
+    "importObject",
+    "options"
   ],
   "WebAssembly/instantiate(bytes, importObject)": [
     "bytes",
-    "importObject"
+    "importObject",
+    "options"
+  ],
+  "WebAssembly/instantiate(bytes, importObject, options)": [
+    "bytes",
+    "importObject",
+    "options"
   ],
   "WebAssembly/instantiate(moduleObject)": [
     "importObject",
@@ -55540,14 +55691,30 @@
   ],
   "WebAssembly/instantiateStreaming(source)": [
     "importObject",
+    "options",
     "source"
   ],
   "WebAssembly/instantiateStreaming(source, importObject)": [
     "importObject",
+    "options",
+    "source"
+  ],
+  "WebAssembly/instantiateStreaming(source, importObject, options)": [
+    "importObject",
+    "options",
     "source"
   ],
   "WebAssembly/validate(bytes)": [
-    "bytes"
+    "bytes",
+    "options"
+  ],
+  "WebAssembly/validate(bytes, options)": [
+    "bytes",
+    "options"
+  ],
+  "WebAssemblyCompileOptions": [
+    "builtins",
+    "importedStringConstants"
   ],
   "WebAssemblyInstantiatedSource": [
     "instance",
@@ -60209,6 +60376,24 @@
     "proxy",
     "unhandledPromptBehavior"
   ],
+  "browser.DownloadBehaviorAllowed": [
+    "\"destinationFolder\"",
+    "\"type\"",
+    "destinationFolder",
+    "type"
+  ],
+  "browser.DownloadBehaviorAllowed/type": [
+    "\"allowed\"",
+    "allowed"
+  ],
+  "browser.DownloadBehaviorDenied": [
+    "\"type\"",
+    "type"
+  ],
+  "browser.DownloadBehaviorDenied/type": [
+    "\"denied\"",
+    "denied"
+  ],
   "browser.GetClientWindows": [
     "\"method\"",
     "\"params\"",
@@ -60264,6 +60449,22 @@
   "browser.SetClientWindowStateParameters": [
     "\"clientWindow\"",
     "clientWindow"
+  ],
+  "browser.SetDownloadBehavior": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browser.SetDownloadBehavior/method": [
+    "\"browser.setDownloadBehavior\"",
+    "browser.setDownloadBehavior"
+  ],
+  "browser.SetDownloadBehaviorParameters": [
+    "\"downloadBehavior\"",
+    "\"userContexts\"",
+    "downloadBehavior",
+    "userContexts"
   ],
   "browser.UserContextInfo": [
     "\"userContext\"",
@@ -60942,6 +61143,10 @@
     "subgroup_size",
     "vertex_index",
     "workgroup_id"
+  ],
+  "builtin-set": [
+    "name",
+    "qualified name"
   ],
   "button": [
     "action",
@@ -62291,6 +62496,14 @@
     "middle",
     "text-bottom",
     "text-top"
+  ],
+  "download behavior": [
+    "default download behavior",
+    "user context download behavior"
+  ],
+  "download-behavior-struct": [
+    "allowed",
+    "destinationFolder"
   ],
   "dynamic-range-limit": [
     "constrained",
@@ -65573,6 +65786,7 @@
     "clone",
     "contain",
     "entry",
+    "equal",
     "exist",
     "for each",
     "get",

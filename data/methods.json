@@ -2329,6 +2329,29 @@
       "shortname": "dom"
     }
   },
+  "Exception()": {
+    "Exception(exceptionTag, payload)": {
+      "args": [
+        "exceptionTag",
+        "payload"
+      ],
+      "for": [
+        "Exception"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "Exception(exceptionTag, payload, options)": {
+      "args": [
+        "exceptionTag",
+        "payload",
+        "options"
+      ],
+      "for": [
+        "Exception"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
   "ExtendableCookieChangeEvent()": {
     "ExtendableCookieChangeEvent(type)": {
       "args": [
@@ -3445,6 +3468,16 @@
     "Module(bytes)": {
       "args": [
         "bytes"
+      ],
+      "for": [
+        "Module"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "Module(bytes, options)": {
+      "args": [
+        "bytes",
+        "options"
       ],
       "for": [
         "Module"
@@ -4742,6 +4775,17 @@
       ],
       "for": [
         "Table"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
+  "Tag()": {
+    "Tag(type)": {
+      "args": [
+        "type"
+      ],
+      "for": [
+        "Tag"
       ],
       "shortname": "wasm-js-api"
     }
@@ -8927,6 +8971,16 @@
       ],
       "shortname": "wasm-js-api"
     },
+    "compile(bytes, options)": {
+      "args": [
+        "bytes",
+        "options"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
+    },
     "compile(pattern, flags)": {
       "args": [
         "pattern",
@@ -8942,6 +8996,16 @@
     "compileStreaming(source)": {
       "args": [
         "source"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-web-api"
+    },
+    "compileStreaming(source, options)": {
+      "args": [
+        "source",
+        "options"
       ],
       "for": [
         "WebAssembly"
@@ -9618,6 +9682,16 @@
       ],
       "shortname": "wasm-js-api"
     },
+    "constructor(bytes, options)": {
+      "args": [
+        "bytes",
+        "options"
+      ],
+      "for": [
+        "Module"
+      ],
+      "shortname": "wasm-js-api"
+    },
     "constructor(callback)": {
       "args": [
         "callback"
@@ -9928,6 +10002,27 @@
         "Animation"
       ],
       "shortname": "web-animations"
+    },
+    "constructor(exceptionTag, payload)": {
+      "args": [
+        "exceptionTag",
+        "payload"
+      ],
+      "for": [
+        "Exception"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "constructor(exceptionTag, payload, options)": {
+      "args": [
+        "exceptionTag",
+        "payload",
+        "options"
+      ],
+      "for": [
+        "Exception"
+      ],
+      "shortname": "wasm-js-api"
     },
     "constructor(faceDetectorOptions)": {
       "args": [
@@ -11127,6 +11222,7 @@
         "RTCPeerConnectionIceEvent",
         "SecurityPolicyViolationEvent",
         "SnapEvent",
+        "Tag",
         "TextFormatUpdateEvent",
         "TextUpdateEvent",
         "TouchEvent",
@@ -17765,6 +17861,17 @@
       "shortname": "device-attributes"
     }
   },
+  "getArg()": {
+    "getArg(index)": {
+      "args": [
+        "index"
+      ],
+      "for": [
+        "Exception"
+      ],
+      "shortname": "wasm-js-api"
+    }
+  },
   "getAsFile()": {
     "getAsFile()": {
       "args": [],
@@ -22453,6 +22560,17 @@
       ],
       "shortname": "wasm-js-api"
     },
+    "instantiate(bytes, importObject, options)": {
+      "args": [
+        "bytes",
+        "importObject",
+        "options"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
+    },
     "instantiate(moduleObject)": {
       "args": [
         "moduleObject"
@@ -22487,6 +22605,17 @@
       "args": [
         "source",
         "importObject"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-web-api"
+    },
+    "instantiateStreaming(source, importObject, options)": {
+      "args": [
+        "source",
+        "importObject",
+        "options"
       ],
       "for": [
         "WebAssembly"
@@ -22564,6 +22693,15 @@
     }
   },
   "is()": {
+    "is(exceptionTag)": {
+      "args": [
+        "exceptionTag"
+      ],
+      "for": [
+        "Exception"
+      ],
+      "shortname": "wasm-js-api"
+    },
     "is(value1, value2)": {
       "args": [
         "value1",
@@ -35794,6 +35932,16 @@
     "validate(bytes)": {
       "args": [
         "bytes"
+      ],
+      "for": [
+        "WebAssembly"
+      ],
+      "shortname": "wasm-js-api"
+    },
+    "validate(bytes, options)": {
+      "args": [
+        "bytes",
+        "options"
       ],
       "for": [
         "WebAssembly"
