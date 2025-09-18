@@ -38470,6 +38470,78 @@ https://wg21.link/lwg4313
 
 Jiang An
 -
+d:lwg4314
+LWG4314
+
+New
+Missing move in mdspan layout mapping::operator()
+https://wg21.link/lwg4314
+
+
+
+
+Luc Grosheintz
+-
+d:lwg4315
+LWG4315
+
+New
+Insufficient specification of vector_two_norm and matrix_frob_norm
+https://wg21.link/lwg4315
+
+
+
+
+Mark Hoemmen
+-
+d:lwg4316
+LWG4316
+
+New
+{can_}substitute specification is ill-formed
+https://wg21.link/lwg4316
+
+
+
+
+Matthias Wippich
+-
+d:lwg4317
+LWG4317
+
+New
+The meaning of "resource" in the Cpp17Destructible requirements is undefined
+https://wg21.link/lwg4317
+
+
+
+
+Jiang An
+-
+d:lwg4318
+LWG4318
+
+Tentatively Ready
+Have hive::erase_if reevaluate end() to avoid UB
+https://wg21.link/lwg4318
+
+
+
+
+Frank Birbacher
+-
+d:lwg4319
+LWG4319
+
+New
+Supporting copy-elision in function wrappers
+https://wg21.link/lwg4319
+
+
+
+
+Tomasz Kamiński
+-
 d:lwg432
 LWG432
 
@@ -38481,6 +38553,126 @@ https://wg21.link/lwg432
 
 
 Christian W Brock
+-
+d:lwg4320
+LWG4320
+
+New
+hive operations involving insertion/erasure should have 𝒪(log n) time complexity
+https://wg21.link/lwg4320
+
+
+
+
+Matt Bentley
+-
+d:lwg4321
+LWG4321
+
+New
+How are evaluations occurring within a store and a load operation ordered where the store synchronized with the load
+https://wg21.link/lwg4321
+
+
+
+
+jim x
+-
+d:lwg4322
+LWG4322
+
+New
+Problematic Constraints on incomplete types in indirect and polymorphic
+https://wg21.link/lwg4322
+
+
+
+
+Jonathan B. Coe
+-
+d:lwg4323
+LWG4323
+
+New
+hive::unique time complexity should incorporate potential block removal complexity
+https://wg21.link/lwg4323
+
+
+
+
+Matt Bentley
+-
+d:lwg4324
+LWG4324
+
+New
+unique_ptr<void>::operator* is not SFINAE-friendly
+https://wg21.link/lwg4324
+
+
+
+
+Hewill Kang
+-
+d:lwg4325
+LWG4325
+
+New
+std::indirect's operator== still does not support incomplete types
+https://wg21.link/lwg4325
+
+
+
+
+Hewill Kang
+-
+d:lwg4326
+LWG4326
+
+New
+Standard defined queries can't customize forwarding_query_t by inheriting from it
+https://wg21.link/lwg4326
+
+
+
+
+Lewis Baker
+-
+d:lwg4327
+LWG4327
+
+New
+Equal schedulers should be required to have same behaviour
+https://wg21.link/lwg4327
+
+
+
+
+Lewis Baker
+-
+d:lwg4328
+LWG4328
+
+New
+Remove note in §[exec.sched] regarding waiting for completion of scheduled operations
+https://wg21.link/lwg4328
+
+
+
+
+Lewis Baker
+-
+d:lwg4329
+LWG4329
+
+New
+Customising affine_on for other algorithms
+https://wg21.link/lwg4329
+
+
+
+
+Dietmar Kühl
 -
 d:lwg433
 LWG433
@@ -38494,6 +38686,126 @@ https://wg21.link/lwg433
 
 Vyatcheslav Sysoltsev
 -
+d:lwg4330
+LWG4330
+
+New
+affine_on semantics
+https://wg21.link/lwg4330
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4331
+LWG4331
+
+New
+affine_on shape may be wrong
+https://wg21.link/lwg4331
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4332
+LWG4332
+
+New
+affine_on shouldn't forward the stop token to the scheduling operation
+https://wg21.link/lwg4332
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4333
+LWG4333
+
+New
+task uses unusual allocator customisation
+https://wg21.link/lwg4333
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4334
+LWG4334
+
+New
+task<...>::promise_type supports arbitrary allocator_arg position
+https://wg21.link/lwg4334
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4335
+LWG4335
+
+New
+task shadows the environment's allocator
+https://wg21.link/lwg4335
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4336
+LWG4336
+
+New
+bulk vs. task_scheduler
+https://wg21.link/lwg4336
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4337
+LWG4337
+
+New
+co_await change_coroutine_scheduler(s) requires assignable
+https://wg21.link/lwg4337
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4338
+LWG4338
+
+New
+sender unaware coroutines should be able to co_await a task
+https://wg21.link/lwg4338
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4339
+LWG4339
+
+New
+task's coroutine frame may be released late
+https://wg21.link/lwg4339
+
+
+
+
+Dietmar Kühl
+-
 d:lwg434
 LWG434
 
@@ -38505,6 +38817,126 @@ https://wg21.link/lwg434
 
 
 Martin Sebor
+-
+d:lwg4340
+LWG4340
+
+New
+task::promise_type::unhandled_stopped() should be noexcept
+https://wg21.link/lwg4340
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4341
+LWG4341
+
+New
+Missing rvalue reference qualification for task::connect()
+https://wg21.link/lwg4341
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4342
+LWG4342
+
+New
+Missing rvalue reference qualification for task_scheduler::ts-sender::connect()
+https://wg21.link/lwg4342
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4343
+LWG4343
+
+New
+Missing default template arguments for task
+https://wg21.link/lwg4343
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4344
+LWG4344
+
+New
+affine_on has no specification for the default
+https://wg21.link/lwg4344
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4345
+LWG4345
+
+New
+task::promise_type::return_value default template parameter
+https://wg21.link/lwg4345
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4346
+LWG4346
+
+New
+task::promise_type::return_void/value lack a specification
+https://wg21.link/lwg4346
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4347
+LWG4347
+
+New
+task's stop source is always created
+https://wg21.link/lwg4347
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4348
+LWG4348
+
+New
+task doesn't support symmetric transfer
+https://wg21.link/lwg4348
+
+
+
+
+Dietmar Kühl
+-
+d:lwg4349
+LWG4349
+
+New
+task is not actually started lazily
+https://wg21.link/lwg4349
+
+
+
+
+Dietmar Kühl
 -
 d:lwg435
 LWG435
@@ -38518,6 +38950,126 @@ https://wg21.link/lwg435
 
 Martin Sebor
 -
+d:lwg4350
+LWG4350
+
+New
+Should flat adaptors use insert_range when available?
+https://wg21.link/lwg4350
+
+
+
+
+Jonathan Wakely
+-
+d:lwg4351
+LWG4351
+
+New
+integral-constant-like needs more remove_cvref_t
+https://wg21.link/lwg4351
+
+
+
+
+Jonathan Wakely
+-
+d:lwg4352
+LWG4352
+
+New
+"operations on flat_multimap are equivalent to those of flat_map"
+https://wg21.link/lwg4352
+
+
+
+
+Jonathan Wakely
+-
+d:lwg4353
+LWG4353
+
+New
+Uses of MANDATE-NOTHROW in CPOs should not enclose CPO argument sub-expressions
+https://wg21.link/lwg4353
+
+
+
+
+Lewis Baker
+-
+d:lwg4354
+LWG4354
+
+New
+Reconsider weakly_parallel as the default forward_progress_guarantee
+https://wg21.link/lwg4354
+
+
+
+
+Lewis Baker
+-
+d:lwg4355
+LWG4355
+
+New
+connect-awaitable() should mandate rcvr can receive all completion-signals rather than using constraints
+https://wg21.link/lwg4355
+
+
+
+
+Lewis Baker
+-
+d:lwg4356
+LWG4356
+
+New
+connect() should use get_allocator(get_env(rcvr)) to allocate the coroutine-state for a connect-awaitable coroutine
+https://wg21.link/lwg4356
+
+
+
+
+Lewis Baker
+-
+d:lwg4357
+LWG4357
+
+New
+connect-awaitable should use is_void_v to check for result-type of co_await expression instead of same_as<void>
+https://wg21.link/lwg4357
+
+
+
+
+Lewis Baker
+-
+d:lwg4358
+LWG4358
+
+New
+§[exec.as.awaitable] is using "Preconditions:" when it should probably be described in the constraint
+https://wg21.link/lwg4358
+
+
+
+
+Lewis Baker
+-
+d:lwg4359
+LWG4359
+
+New
+as_awaitable(expr, p) does not define semantics of call if p is not an lvalue
+https://wg21.link/lwg4359
+
+
+
+
+Lewis Baker
+-
 d:lwg436
 LWG436
 
@@ -38530,6 +39082,126 @@ https://wg21.link/lwg436
 
 Martin Sebor
 -
+d:lwg4360
+LWG4360
+
+New
+awaitable-sender concept should qualify use of awaitable-receiver type
+https://wg21.link/lwg4360
+
+
+
+
+Lewis Baker
+-
+d:lwg4361
+LWG4361
+
+New
+awaitable-receiver::set_value should use Mandates instead of constraints
+https://wg21.link/lwg4361
+
+
+
+
+Lewis Baker
+-
+d:lwg4362
+LWG4362
+
+New
+Inconsistent usage of constexpr for inplace_stop_token and inplace_stop_source
+https://wg21.link/lwg4362
+
+
+
+
+Lewis Baker
+-
+d:lwg4363
+LWG4363
+
+New
+transform_sender comparing types ignoring cv-qualifiers doesn't take into account differences in value category
+https://wg21.link/lwg4363
+
+
+
+
+Lewis Baker
+-
+d:lwg4364
+LWG4364
+
+New
+SFINAE-friendliness on operator<< and operator>> for unspecified I/O manipulators
+https://wg21.link/lwg4364
+
+
+
+
+Jiang An
+-
+d:lwg4365
+LWG4365
+
+New
+boyer_moore_searcher and boyer_moore_horspool_searcher should be constexpr-friendly
+https://wg21.link/lwg4365
+
+
+
+
+Hewill Kang
+-
+d:lwg4366
+LWG4366
+
+New
+Heterogeneous comparison of expected may be ill-formed
+https://wg21.link/lwg4366
+
+
+
+
+Hewill Kang
+-
+d:lwg4367
+LWG4367
+
+New
+Improve optional<T&>::or_else
+https://wg21.link/lwg4367
+
+
+
+
+Hewill Kang
+-
+d:lwg4368
+LWG4368
+
+New
+Potential dangling reference returned from transform_sender
+https://wg21.link/lwg4368
+
+
+
+
+Eric Niebler
+-
+d:lwg4369
+LWG4369
+
+New
+check-types function for upon_error and upon_stopped is wrong
+https://wg21.link/lwg4369
+
+
+
+
+Eric Niebler
+-
 d:lwg437
 LWG437
 
@@ -38541,6 +39213,30 @@ https://wg21.link/lwg437
 
 
 Ivan Godard
+-
+d:lwg4370
+LWG4370
+
+New
+Comparison of optional<T> to T may be ill-formed
+https://wg21.link/lwg4370
+
+
+
+
+Hewill Kang
+-
+d:lwg4371
+LWG4371
+
+New
+Container adaptor's empty/size should be noexcept
+https://wg21.link/lwg4371
+
+
+
+
+Hewill Kang
 -
 d:lwg438
 LWG438
