@@ -299,6 +299,9 @@
   "#sec-abstract-operations-for-typedarray-objects": [
     "/indexed-collections#sec-abstract-operations-for-typedarray-objects"
   ],
+  "#sec-abstract-operations-for-uint8array-objects": [
+    "/indexed-collections#sec-abstract-operations-for-uint8array-objects"
+  ],
   "#sec-add-entries-from-iterable": [
     "/keyed-collections#sec-add-entries-from-iterable"
   ],
@@ -310,6 +313,12 @@
   ],
   "#sec-addition-operator-plus-runtime-semantics-evaluation": [
     "/ecmascript-language-expressions#sec-addition-operator-plus-runtime-semantics-evaluation"
+  ],
+  "#sec-additional-properties-of-the-uint8array-constructor": [
+    "/indexed-collections#sec-additional-properties-of-the-uint8array-constructor"
+  ],
+  "#sec-additional-properties-of-the-uint8array-prototype-object": [
+    "/indexed-collections#sec-additional-properties-of-the-uint8array-prototype-object"
   ],
   "#sec-additive-operators": [
     "/ecmascript-language-expressions#sec-additive-operators"
@@ -1283,6 +1292,9 @@
   "#sec-constructor-properties-of-the-global-object-typeerror": [
     "/global-object#sec-constructor-properties-of-the-global-object-typeerror"
   ],
+  "#sec-constructor-properties-of-the-global-object-uint8array": [
+    "/global-object#sec-constructor-properties-of-the-global-object-uint8array"
+  ],
   "#sec-constructor-properties-of-the-global-object-urierror": [
     "/global-object#sec-constructor-properties-of-the-global-object-urierror"
   ],
@@ -1730,6 +1742,12 @@
   "#sec-decode": [
     "/global-object#sec-decode"
   ],
+  "#sec-decodefinalbase64chunk": [
+    "/indexed-collections#sec-decodefinalbase64chunk"
+  ],
+  "#sec-decodefulllengthbase64chunk": [
+    "/indexed-collections#sec-decodefulllengthbase64chunk"
+  ],
   "#sec-decodeuri-encodeduri": [
     "/global-object#sec-decodeuri-encodeduri"
   ],
@@ -2087,6 +2105,12 @@
   "#sec-forward-progress": [
     "/executable-code-and-execution-contexts#sec-forward-progress"
   ],
+  "#sec-frombase64": [
+    "/indexed-collections#sec-frombase64"
+  ],
+  "#sec-fromhex": [
+    "/indexed-collections#sec-fromhex"
+  ],
   "#sec-frompropertydescriptor": [
     "/ecmascript-data-types-and-values#sec-frompropertydescriptor"
   ],
@@ -2429,6 +2453,9 @@
   "#sec-getnewtarget": [
     "/executable-code-and-execution-contexts#sec-getnewtarget"
   ],
+  "#sec-getoptionsobject": [
+    "/abstract-operations#sec-getoptionsobject"
+  ],
   "#sec-getownpropertykeys": [
     "/fundamental-objects#sec-getownpropertykeys"
   ],
@@ -2464,6 +2491,9 @@
   ],
   "#sec-getthisvalue": [
     "/ecmascript-data-types-and-values#sec-getthisvalue"
+  ],
+  "#sec-getuint8arraybytes": [
+    "/indexed-collections#sec-getuint8arraybytes"
   ],
   "#sec-getutcepochnanoseconds": [
     "/numbers-and-dates#sec-getutcepochnanoseconds"
@@ -5240,6 +5270,9 @@
   "#sec-settypedarrayfromtypedarray": [
     "/indexed-collections#sec-settypedarrayfromtypedarray"
   ],
+  "#sec-setuint8arraybytes": [
+    "/indexed-collections#sec-setuint8arraybytes"
+  ],
   "#sec-setvalueinbuffer": [
     "/structured-data#sec-setvalueinbuffer"
   ],
@@ -5284,6 +5317,9 @@
   ],
   "#sec-signed-right-shift-operator-runtime-semantics-evaluation": [
     "/ecmascript-language-expressions#sec-signed-right-shift-operator-runtime-semantics-evaluation"
+  ],
+  "#sec-skipasciiwhitespace": [
+    "/indexed-collections#sec-skipasciiwhitespace"
   ],
   "#sec-smr-Evaluate": [
     "/ecmascript-language-scripts-and-modules#sec-smr-Evaluate"
@@ -6213,7 +6249,25 @@
     "/global-object#sec-uint32array"
   ],
   "#sec-uint8array": [
-    "/global-object#sec-uint8array"
+    "/indexed-collections#sec-uint8array"
+  ],
+  "#sec-uint8array.frombase64": [
+    "/indexed-collections#sec-uint8array.frombase64"
+  ],
+  "#sec-uint8array.fromhex": [
+    "/indexed-collections#sec-uint8array.fromhex"
+  ],
+  "#sec-uint8array.prototype.setfrombase64": [
+    "/indexed-collections#sec-uint8array.prototype.setfrombase64"
+  ],
+  "#sec-uint8array.prototype.setfromhex": [
+    "/indexed-collections#sec-uint8array.prototype.setfromhex"
+  ],
+  "#sec-uint8array.prototype.tobase64": [
+    "/indexed-collections#sec-uint8array.prototype.tobase64"
+  ],
+  "#sec-uint8array.prototype.tohex": [
+    "/indexed-collections#sec-uint8array.prototype.tohex"
   ],
   "#sec-uint8clampedarray": [
     "/global-object#sec-uint8clampedarray"
@@ -6298,6 +6352,9 @@
   ],
   "#sec-validatetypedarray": [
     "/indexed-collections#sec-validatetypedarray"
+  ],
+  "#sec-validateuint8array": [
+    "/indexed-collections#sec-validateuint8array"
   ],
   "#sec-value-notation": [
     "/notational-conventions#sec-value-notation"
@@ -6478,7 +6535,7 @@
   ],
   "/abstract-operations#sec-SetterThatIgnoresPrototypeProperties": {
     "current": {
-      "number": "7.3.36",
+      "number": "7.3.37",
       "spec": "ECMAScript",
       "text": "SetterThatIgnoresPrototypeProperties ( thisValue, home, p, v )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-SetterThatIgnoresPrototypeProperties"
@@ -6682,6 +6739,14 @@
       "spec": "ECMAScript",
       "text": "GetMethod ( V, P )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod"
+    }
+  },
+  "/abstract-operations#sec-getoptionsobject": {
+    "current": {
+      "number": "7.3.36",
+      "spec": "ECMAScript",
+      "text": "GetOptionsObject ( options )",
+      "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getoptionsobject"
     }
   },
   "/abstract-operations#sec-getv": {
@@ -15004,6 +15069,14 @@
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-typeerror"
     }
   },
+  "/global-object#sec-constructor-properties-of-the-global-object-uint8array": {
+    "current": {
+      "number": "19.3.35",
+      "spec": "ECMAScript",
+      "text": "Uint8Array ( . . . )",
+      "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-uint8array"
+    }
+  },
   "/global-object#sec-constructor-properties-of-the-global-object-urierror": {
     "current": {
       "number": "19.3.39",
@@ -15290,14 +15363,6 @@
       "spec": "ECMAScript",
       "text": "Uint32Array ( . . . )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint32array"
-    }
-  },
-  "/global-object#sec-uint8array": {
-    "current": {
-      "number": "19.3.35",
-      "spec": "ECMAScript",
-      "text": "Uint8Array ( . . . )",
-      "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint8array"
     }
   },
   "/global-object#sec-uint8clampedarray": {
@@ -15682,6 +15747,30 @@
       "spec": "ECMAScript",
       "text": "Abstract Operations for TypedArray Objects",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-abstract-operations-for-typedarray-objects"
+    }
+  },
+  "/indexed-collections#sec-abstract-operations-for-uint8array-objects": {
+    "current": {
+      "number": "23.3.3",
+      "spec": "ECMAScript",
+      "text": "Abstract Operations for Uint8Array Objects",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-abstract-operations-for-uint8array-objects"
+    }
+  },
+  "/indexed-collections#sec-additional-properties-of-the-uint8array-constructor": {
+    "current": {
+      "number": "23.3.1",
+      "spec": "ECMAScript",
+      "text": "Additional Properties of the Uint8Array Constructor",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-additional-properties-of-the-uint8array-constructor"
+    }
+  },
+  "/indexed-collections#sec-additional-properties-of-the-uint8array-prototype-object": {
+    "current": {
+      "number": "23.3.2",
+      "spec": "ECMAScript",
+      "text": "Additional Properties of the Uint8Array Prototype Object",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-additional-properties-of-the-uint8array-prototype-object"
     }
   },
   "/indexed-collections#sec-allocatetypedarray": {
@@ -16116,6 +16205,22 @@
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-createarrayiterator"
     }
   },
+  "/indexed-collections#sec-decodefinalbase64chunk": {
+    "current": {
+      "number": "23.3.3.5",
+      "spec": "ECMAScript",
+      "text": "DecodeFinalBase64Chunk ( chunk, throwOnExtraBits )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-decodefinalbase64chunk"
+    }
+  },
+  "/indexed-collections#sec-decodefulllengthbase64chunk": {
+    "current": {
+      "number": "23.3.3.6",
+      "spec": "ECMAScript",
+      "text": "DecodeFullLengthBase64Chunk ( chunk )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-decodefulllengthbase64chunk"
+    }
+  },
   "/indexed-collections#sec-findviapredicate": {
     "current": {
       "number": "23.1.3.12.1",
@@ -16130,6 +16235,22 @@
       "spec": "ECMAScript",
       "text": "FlattenIntoArray ( target, source, sourceLen, start, depth [ , mapperFunction [ , thisArg ] ] )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-flattenintoarray"
+    }
+  },
+  "/indexed-collections#sec-frombase64": {
+    "current": {
+      "number": "23.3.3.7",
+      "spec": "ECMAScript",
+      "text": "FromBase64 ( string, alphabet, lastChunkHandling [ , maxLength ] )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-frombase64"
+    }
+  },
+  "/indexed-collections#sec-fromhex": {
+    "current": {
+      "number": "23.3.3.8",
+      "spec": "ECMAScript",
+      "text": "FromHex ( string [ , maxLength ] )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-fromhex"
     }
   },
   "/indexed-collections#sec-get-%25typedarray%25-%25symbol.species%25": {
@@ -16186,6 +16307,14 @@
       "spec": "ECMAScript",
       "text": "get Array [ %Symbol.species% ]",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-array-%25symbol.species%25"
+    }
+  },
+  "/indexed-collections#sec-getuint8arraybytes": {
+    "current": {
+      "number": "23.3.3.2",
+      "spec": "ECMAScript",
+      "text": "GetUint8ArrayBytes ( ta )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-getuint8arraybytes"
     }
   },
   "/indexed-collections#sec-indexed-collections": {
@@ -16332,6 +16461,22 @@
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-settypedarrayfromtypedarray"
     }
   },
+  "/indexed-collections#sec-setuint8arraybytes": {
+    "current": {
+      "number": "23.3.3.3",
+      "spec": "ECMAScript",
+      "text": "SetUint8ArrayBytes ( into, bytes )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-setuint8arraybytes"
+    }
+  },
+  "/indexed-collections#sec-skipasciiwhitespace": {
+    "current": {
+      "number": "23.3.3.4",
+      "spec": "ECMAScript",
+      "text": "SkipAsciiWhitespace ( string, index )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-skipasciiwhitespace"
+    }
+  },
   "/indexed-collections#sec-sortindexedproperties": {
     "current": {
       "number": "23.1.3.30.1",
@@ -16428,12 +16573,76 @@
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementtype"
     }
   },
+  "/indexed-collections#sec-uint8array": {
+    "current": {
+      "number": "23.3",
+      "spec": "ECMAScript",
+      "text": "Uint8Array Objects",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array"
+    }
+  },
+  "/indexed-collections#sec-uint8array.frombase64": {
+    "current": {
+      "number": "23.3.1.1",
+      "spec": "ECMAScript",
+      "text": "Uint8Array.fromBase64 ( string [ , options ] )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.frombase64"
+    }
+  },
+  "/indexed-collections#sec-uint8array.fromhex": {
+    "current": {
+      "number": "23.3.1.2",
+      "spec": "ECMAScript",
+      "text": "Uint8Array.fromHex ( string )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.fromhex"
+    }
+  },
+  "/indexed-collections#sec-uint8array.prototype.setfrombase64": {
+    "current": {
+      "number": "23.3.2.1",
+      "spec": "ECMAScript",
+      "text": "Uint8Array.prototype.setFromBase64 ( string [ , options ] )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.prototype.setfrombase64"
+    }
+  },
+  "/indexed-collections#sec-uint8array.prototype.setfromhex": {
+    "current": {
+      "number": "23.3.2.2",
+      "spec": "ECMAScript",
+      "text": "Uint8Array.prototype.setFromHex ( string )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.prototype.setfromhex"
+    }
+  },
+  "/indexed-collections#sec-uint8array.prototype.tobase64": {
+    "current": {
+      "number": "23.3.2.3",
+      "spec": "ECMAScript",
+      "text": "Uint8Array.prototype.toBase64 ( [ options ] )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.prototype.tobase64"
+    }
+  },
+  "/indexed-collections#sec-uint8array.prototype.tohex": {
+    "current": {
+      "number": "23.3.2.4",
+      "spec": "ECMAScript",
+      "text": "Uint8Array.prototype.toHex ( )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.prototype.tohex"
+    }
+  },
   "/indexed-collections#sec-validatetypedarray": {
     "current": {
       "number": "23.2.4.4",
       "spec": "ECMAScript",
       "text": "ValidateTypedArray ( O, order )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validatetypedarray"
+    }
+  },
+  "/indexed-collections#sec-validateuint8array": {
+    "current": {
+      "number": "23.3.3.1",
+      "spec": "ECMAScript",
+      "text": "ValidateUint8Array ( ta )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validateuint8array"
     }
   },
   "/indexed-collections#typedarray-species-create": {
