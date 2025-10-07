@@ -8988,6 +8988,7 @@
     "WebDriver BiDi navigation failed",
     "WebDriver BiDi navigation started",
     "WebDriver BiDi navigation status",
+    "WebDriver BiDi network is offline",
     "WebDriver BiDi page show",
     "WebDriver BiDi pop state",
     "WebDriver BiDi response completed",
@@ -10131,6 +10132,7 @@
     "apply any pending playback rate",
     "apply extended scope",
     "apply link options from parsed header attributes",
+    "apply network conditions",
     "apply orientation lock",
     "apply request modifiers from URL value",
     "apply scroll margin to a scrollport",
@@ -13759,10 +13761,13 @@
     "empty-cells",
     "emulated forced colors theme data",
     "emulated native anchors",
+    "emulated network conditions struct",
     "emulated position data",
     "emulation.ForcedColorsModeTheme",
     "emulation.GeolocationCoordinates",
     "emulation.GeolocationPositionError",
+    "emulation.NetworkConditions",
+    "emulation.NetworkConditionsOffline",
     "emulation.ScreenOrientation",
     "emulation.ScreenOrientationNatural",
     "emulation.ScreenOrientationType",
@@ -13775,6 +13780,7 @@
     "emulation.SetLocaleOverride",
     "emulation.SetLocaleOverrideParameters",
     "emulation.SetLocaleOverrideResult",
+    "emulation.SetNetworkConditions",
     "emulation.SetScreenOrientationOverride",
     "emulation.SetScreenOrientationOverrideParameters",
     "emulation.SetScreenOrientationOverrideResult",
@@ -13787,6 +13793,7 @@
     "emulation.SetUserAgentOverride",
     "emulation.SetUserAgentOverrideParameters",
     "emulation.SetUserAgentOverrideResult",
+    "emulation.setNetworkConditionsParameters",
     "enable a CSS style sheet set",
     "enable close watcher for request close",
     "enable directive",
@@ -14954,6 +14961,7 @@
     "get download behavior",
     "get element origin",
     "get emulated forced colors theme data",
+    "get emulated network conditions",
     "get emulated position data",
     "get enabled state",
     "get exception details",
@@ -61744,6 +61752,7 @@
     "emulation.setForcedColorsModeThemeOverride",
     "emulation.setGeolocationOverride",
     "emulation.setLocaleOverride",
+    "emulation.setNetworkConditions",
     "emulation.setScreenOrientationOverride",
     "emulation.setScriptingEnabled",
     "emulation.setTimezoneOverride",
@@ -62774,10 +62783,18 @@
     "hide",
     "show"
   ],
+  "emulated network conditions": [
+    "default network conditions",
+    "navigable network conditions",
+    "user context network conditions"
+  ],
   "emulated user agent": [
     "default user agent",
     "navigable user agent",
     "user context user agent"
+  ],
+  "emulated-network-conditions-struct": [
+    "offline"
   ],
   "emulation.ForcedColorsModeTheme": [
     "\"dark\"",
@@ -62808,6 +62825,14 @@
   "emulation.GeolocationPositionError/type": [
     "\"positionUnavailable\"",
     "positionUnavailable"
+  ],
+  "emulation.NetworkConditionsOffline": [
+    "\"type\"",
+    "type"
+  ],
+  "emulation.NetworkConditionsOffline/type": [
+    "\"offline\"",
+    "offline"
   ],
   "emulation.ScreenOrientation": [
     "\"natural\"",
@@ -62887,6 +62912,16 @@
     "locale",
     "userContexts"
   ],
+  "emulation.SetNetworkConditions": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "emulation.SetNetworkConditions/method": [
+    "\"emulation.setNetworkConditions\"",
+    "emulation.setNetworkConditions"
+  ],
   "emulation.SetScreenOrientationOverride": [
     "\"method\"",
     "\"params\"",
@@ -62957,6 +62992,14 @@
     "\"userContexts\"",
     "contexts",
     "userAgent",
+    "userContexts"
+  ],
+  "emulation.setNetworkConditionsParameters": [
+    "\"contexts\"",
+    "\"networkConditions\"",
+    "\"userContexts\"",
+    "contexts",
+    "networkConditions",
     "userContexts"
   ],
   "encoder state": [
@@ -69968,6 +70011,7 @@
     "create an outgoing unidirectional stream",
     "drain",
     "draining",
+    "emulated network conditions",
     "emulated user agent",
     "establish",
     "extra headers",
