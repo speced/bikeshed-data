@@ -1,0 +1,1370 @@
+{
+  "#abstract": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Abstract",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-abstract"
+    }
+  },
+  "#appendix-A": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Authors' Addresses",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#appendix-A"
+    }
+  },
+  "#name-abnf": {
+    "current": {
+      "number": "2.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "ABNF",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2.2"
+    }
+  },
+  "#name-about-this-document": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "About This Document",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-note.1"
+    }
+  },
+  "#name-acknowledgements": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Acknowledgements",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-11"
+    }
+  },
+  "#name-ambient-authority": {
+    "current": {
+      "number": "8.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Ambient Authority",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.2"
+    }
+  },
+  "#name-application-programming-int": {
+    "current": {
+      "number": "6.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Application Programming Interfaces",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6.2"
+    }
+  },
+  "#name-authors-addresses": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Authors' Addresses",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#appendix-A"
+    }
+  },
+  "#name-changes": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "10. Changes",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-10"
+    }
+  },
+  "#name-clear-text": {
+    "current": {
+      "number": "8.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Clear Text",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.3"
+    }
+  },
+  "#name-conventions": {
+    "current": {
+      "number": "2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Conventions",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2"
+    }
+  },
+  "#name-cookie": {
+    "current": {
+      "number": "4.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2"
+    }
+  },
+  "#name-cookie-2": {
+    "current": {
+      "number": "9.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9.1"
+    }
+  },
+  "#name-cookie-concepts": {
+    "current": {
+      "number": "5.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Concepts",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1"
+    }
+  },
+  "#name-cookie-consuming-implementa": {
+    "current": {
+      "number": "3.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Consuming Implementations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.2"
+    }
+  },
+  "#name-cookie-default-path": {
+    "current": {
+      "number": "5.3.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Default Path",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.3"
+    }
+  },
+  "#name-cookie-name-prefixes": {
+    "current": {
+      "number": "4.1.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Name Prefixes",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3"
+    }
+  },
+  "#name-cookie-policy": {
+    "current": {
+      "number": "7.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Policy",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.2"
+    }
+  },
+  "#name-cookie-producing-implementa": {
+    "current": {
+      "number": "3.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Producing Implementations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.1"
+    }
+  },
+  "#name-cookie-store-and-limits": {
+    "current": {
+      "number": "5.1.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Store And Limits",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.1"
+    }
+  },
+  "#name-cookie-store-eviction": {
+    "current": {
+      "number": "5.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Store Eviction",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2"
+    }
+  },
+  "#name-cookie-store-eviction-for-n": {
+    "current": {
+      "number": "5.5.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Store Eviction for Non-Browser User Agents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.3"
+    }
+  },
+  "#name-cookie-struct": {
+    "current": {
+      "number": "5.1.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Struct",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.2"
+    }
+  },
+  "#name-cookie-struct-miscellaneous": {
+    "current": {
+      "number": "5.1.2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Struct Miscellaneous",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.2.1"
+    }
+  },
+  "#name-copyright-notice": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Copyright Notice",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-boilerplate.2"
+    }
+  },
+  "#name-domain-matching": {
+    "current": {
+      "number": "5.3.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Domain Matching",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.2"
+    }
+  },
+  "#name-examples": {
+    "current": {
+      "number": "1.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Examples",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-1.1"
+    }
+  },
+  "#name-expiration-dates": {
+    "current": {
+      "number": "7.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Expiration Dates",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.4"
+    }
+  },
+  "#name-garbage-collect-cookies": {
+    "current": {
+      "number": "5.4.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Garbage Collect Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4"
+    }
+  },
+  "#name-iana-considerations": {
+    "current": {
+      "number": "9",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "IANA Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9"
+    }
+  },
+  "#name-implementation-consideratio": {
+    "current": {
+      "number": "6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Implementation Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6"
+    }
+  },
+  "#name-informative-references": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Informative References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12.2"
+    }
+  },
+  "#name-introduction": {
+    "current": {
+      "number": "1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Introduction",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-1"
+    }
+  },
+  "#name-limits": {
+    "current": {
+      "number": "6.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Limits",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6.1"
+    }
+  },
+  "#name-main-algorithms": {
+    "current": {
+      "number": "5.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Main Algorithms",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4"
+    }
+  },
+  "#name-normative-references": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Normative References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12.1"
+    }
+  },
+  "#name-overview": {
+    "current": {
+      "number": "8.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Overview",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.1"
+    }
+  },
+  "#name-parse-a-cookie": {
+    "current": {
+      "number": "5.4.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Parse a Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2"
+    }
+  },
+  "#name-parse-a-date": {
+    "current": {
+      "number": "5.3.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Parse a Date",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1"
+    }
+  },
+  "#name-parse-and-store-a-cookie": {
+    "current": {
+      "number": "5.4.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Parse and Store a Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.1"
+    }
+  },
+  "#name-path-matching": {
+    "current": {
+      "number": "5.3.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Path Matching",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4"
+    }
+  },
+  "#name-privacy-considerations": {
+    "current": {
+      "number": "7",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Privacy Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7"
+    }
+  },
+  "#name-programming-languages-softw": {
+    "current": {
+      "number": "3.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Programming Languages & Software Frameworks",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.3"
+    }
+  },
+  "#name-references": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12"
+    }
+  },
+  "#name-reliance-on-dns": {
+    "current": {
+      "number": "8.7",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Reliance on DNS",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.7"
+    }
+  },
+  "#name-remove-excess-cookies-for-a": {
+    "current": {
+      "number": "5.2.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Remove Excess Cookies for a Host",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2"
+    }
+  },
+  "#name-remove-expired-cookies": {
+    "current": {
+      "number": "5.2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Remove Expired Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.1"
+    }
+  },
+  "#name-remove-global-excess-cookie": {
+    "current": {
+      "number": "5.2.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Remove Global Excess Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3"
+    }
+  },
+  "#name-requirements-specific-to-br": {
+    "current": {
+      "number": "5.6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Requirements Specific to Browser User Agents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.6"
+    }
+  },
+  "#name-requirements-specific-to-no": {
+    "current": {
+      "number": "5.5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Requirements Specific to Non-Browser User Agents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5"
+    }
+  },
+  "#name-retrieve-cookies": {
+    "current": {
+      "number": "5.4.5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Retrieve Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5"
+    }
+  },
+  "#name-samesite-cookies": {
+    "current": {
+      "number": "8.8",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "SameSite Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.8"
+    }
+  },
+  "#name-security-considerations": {
+    "current": {
+      "number": "8",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Security Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8"
+    }
+  },
+  "#name-semantics": {
+    "current": {
+      "number": "4.2.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Semantics",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2.2"
+    }
+  },
+  "#name-semantics-non-normative": {
+    "current": {
+      "number": "4.1.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Semantics (Non-Normative)",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2"
+    }
+  },
+  "#name-serialize-cookies": {
+    "current": {
+      "number": "5.4.6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Serialize Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6"
+    }
+  },
+  "#name-server-requirements": {
+    "current": {
+      "number": "4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Server Requirements",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4"
+    }
+  },
+  "#name-session-identifiers": {
+    "current": {
+      "number": "8.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Session Identifiers",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.4"
+    }
+  },
+  "#name-set-cookie": {
+    "current": {
+      "number": "4.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Set-Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1"
+    }
+  },
+  "#name-set-cookie-2": {
+    "current": {
+      "number": "9.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Set-Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9.2"
+    }
+  },
+  "#name-status-of-this-memo": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Status of This Memo",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-boilerplate.1"
+    }
+  },
+  "#name-store-a-cookie": {
+    "current": {
+      "number": "5.4.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Store a Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3"
+    }
+  },
+  "#name-subcomponent-algorithms": {
+    "current": {
+      "number": "5.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Subcomponent Algorithms",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3"
+    }
+  },
+  "#name-syntax": {
+    "current": {
+      "number": "4.1.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Syntax",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.1"
+    }
+  },
+  "#name-syntax-2": {
+    "current": {
+      "number": "4.2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Syntax",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2.1"
+    }
+  },
+  "#name-table-of-contents": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Table of Contents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-toc.1"
+    }
+  },
+  "#name-terminology": {
+    "current": {
+      "number": "2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Terminology",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2.1"
+    }
+  },
+  "#name-the-__host-http-prefix": {
+    "current": {
+      "number": "4.1.3.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The \"__Host-Http-\" prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.4"
+    }
+  },
+  "#name-the-__host-prefix": {
+    "current": {
+      "number": "4.1.3.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The \"__Host-\" Prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.2"
+    }
+  },
+  "#name-the-__http-prefix": {
+    "current": {
+      "number": "4.1.3.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The \"__Http-\" Prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.3"
+    }
+  },
+  "#name-the-__secure-prefix": {
+    "current": {
+      "number": "4.1.3.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The \"__Secure-\" Prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.1"
+    }
+  },
+  "#name-the-cookie-header-field": {
+    "current": {
+      "number": "5.5.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Cookie Header Field",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2"
+    }
+  },
+  "#name-the-domain-attribute": {
+    "current": {
+      "number": "4.1.2.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Domain Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.3"
+    }
+  },
+  "#name-the-expires-attribute": {
+    "current": {
+      "number": "4.1.2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Expires Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.1"
+    }
+  },
+  "#name-the-httponly-attribute": {
+    "current": {
+      "number": "4.1.2.6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The HttpOnly Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.6"
+    }
+  },
+  "#name-the-max-age-attribute": {
+    "current": {
+      "number": "4.1.2.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Max-Age Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.2"
+    }
+  },
+  "#name-the-path-attribute": {
+    "current": {
+      "number": "4.1.2.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Path Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.4"
+    }
+  },
+  "#name-the-samesite-attribute": {
+    "current": {
+      "number": "4.1.2.7",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The SameSite Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.7"
+    }
+  },
+  "#name-the-secure-attribute": {
+    "current": {
+      "number": "4.1.2.5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Secure Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.5"
+    }
+  },
+  "#name-the-set-cookie-header-field": {
+    "current": {
+      "number": "5.5.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Set-Cookie Header Field",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1"
+    }
+  },
+  "#name-third-party-cookies": {
+    "current": {
+      "number": "7.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Third-Party Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.1"
+    }
+  },
+  "#name-user-agent-requirements": {
+    "current": {
+      "number": "5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "User Agent Requirements",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5"
+    }
+  },
+  "#name-user-controls": {
+    "current": {
+      "number": "7.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "User Controls",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.3"
+    }
+  },
+  "#name-weak-confidentiality": {
+    "current": {
+      "number": "8.5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Weak Confidentiality",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.5"
+    }
+  },
+  "#name-weak-integrity": {
+    "current": {
+      "number": "8.6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Weak Integrity",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.6"
+    }
+  },
+  "#name-which-requirements-to-imple": {
+    "current": {
+      "number": "3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Which Requirements to Implement",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3"
+    }
+  },
+  "#section-1": {
+    "current": {
+      "number": "1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Introduction",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-1"
+    }
+  },
+  "#section-1.1": {
+    "current": {
+      "number": "1.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Examples",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-1.1"
+    }
+  },
+  "#section-10": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "10. Changes",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-10"
+    }
+  },
+  "#section-11": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Acknowledgements",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-11"
+    }
+  },
+  "#section-12": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12"
+    }
+  },
+  "#section-12.1": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Normative References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12.1"
+    }
+  },
+  "#section-12.2": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Informative References",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12.2"
+    }
+  },
+  "#section-2": {
+    "current": {
+      "number": "2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Conventions",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2"
+    }
+  },
+  "#section-2.1": {
+    "current": {
+      "number": "2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Terminology",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2.1"
+    }
+  },
+  "#section-2.2": {
+    "current": {
+      "number": "2.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "ABNF",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2.2"
+    }
+  },
+  "#section-3": {
+    "current": {
+      "number": "3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Which Requirements to Implement",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3"
+    }
+  },
+  "#section-3.1": {
+    "current": {
+      "number": "3.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Producing Implementations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.1"
+    }
+  },
+  "#section-3.2": {
+    "current": {
+      "number": "3.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Consuming Implementations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.2"
+    }
+  },
+  "#section-3.3": {
+    "current": {
+      "number": "3.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Programming Languages & Software Frameworks",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.3"
+    }
+  },
+  "#section-4": {
+    "current": {
+      "number": "4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Server Requirements",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4"
+    }
+  },
+  "#section-4.1": {
+    "current": {
+      "number": "4.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Set-Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1"
+    }
+  },
+  "#section-4.1.1": {
+    "current": {
+      "number": "4.1.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Syntax",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.1"
+    }
+  },
+  "#section-4.1.2": {
+    "current": {
+      "number": "4.1.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Semantics (Non-Normative)",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2"
+    }
+  },
+  "#section-4.1.2.1": {
+    "current": {
+      "number": "4.1.2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Expires Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.1"
+    }
+  },
+  "#section-4.1.2.2": {
+    "current": {
+      "number": "4.1.2.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Max-Age Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.2"
+    }
+  },
+  "#section-4.1.2.3": {
+    "current": {
+      "number": "4.1.2.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Domain Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.3"
+    }
+  },
+  "#section-4.1.2.4": {
+    "current": {
+      "number": "4.1.2.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Path Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.4"
+    }
+  },
+  "#section-4.1.2.5": {
+    "current": {
+      "number": "4.1.2.5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Secure Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.5"
+    }
+  },
+  "#section-4.1.2.6": {
+    "current": {
+      "number": "4.1.2.6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The HttpOnly Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.6"
+    }
+  },
+  "#section-4.1.2.7": {
+    "current": {
+      "number": "4.1.2.7",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The SameSite Attribute",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.7"
+    }
+  },
+  "#section-4.1.3": {
+    "current": {
+      "number": "4.1.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Name Prefixes",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3"
+    }
+  },
+  "#section-4.1.3.1": {
+    "current": {
+      "number": "4.1.3.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The \"__Secure-\" Prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.1"
+    }
+  },
+  "#section-4.1.3.2": {
+    "current": {
+      "number": "4.1.3.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The \"__Host-\" Prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.2"
+    }
+  },
+  "#section-4.1.3.3": {
+    "current": {
+      "number": "4.1.3.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The \"__Http-\" Prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.3"
+    }
+  },
+  "#section-4.1.3.4": {
+    "current": {
+      "number": "4.1.3.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The \"__Host-Http-\" prefix",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.4"
+    }
+  },
+  "#section-4.2": {
+    "current": {
+      "number": "4.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2"
+    }
+  },
+  "#section-4.2.1": {
+    "current": {
+      "number": "4.2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Syntax",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2.1"
+    }
+  },
+  "#section-4.2.2": {
+    "current": {
+      "number": "4.2.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Semantics",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2.2"
+    }
+  },
+  "#section-5": {
+    "current": {
+      "number": "5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "User Agent Requirements",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5"
+    }
+  },
+  "#section-5.1": {
+    "current": {
+      "number": "5.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Concepts",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1"
+    }
+  },
+  "#section-5.1.1": {
+    "current": {
+      "number": "5.1.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Store And Limits",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.1"
+    }
+  },
+  "#section-5.1.2": {
+    "current": {
+      "number": "5.1.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Struct",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.2"
+    }
+  },
+  "#section-5.1.2.1": {
+    "current": {
+      "number": "5.1.2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Struct Miscellaneous",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.2.1"
+    }
+  },
+  "#section-5.2": {
+    "current": {
+      "number": "5.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Store Eviction",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2"
+    }
+  },
+  "#section-5.2.1": {
+    "current": {
+      "number": "5.2.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Remove Expired Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.1"
+    }
+  },
+  "#section-5.2.2": {
+    "current": {
+      "number": "5.2.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Remove Excess Cookies for a Host",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2"
+    }
+  },
+  "#section-5.2.3": {
+    "current": {
+      "number": "5.2.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Remove Global Excess Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3"
+    }
+  },
+  "#section-5.3": {
+    "current": {
+      "number": "5.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Subcomponent Algorithms",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3"
+    }
+  },
+  "#section-5.3.1": {
+    "current": {
+      "number": "5.3.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Parse a Date",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1"
+    }
+  },
+  "#section-5.3.2": {
+    "current": {
+      "number": "5.3.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Domain Matching",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.2"
+    }
+  },
+  "#section-5.3.3": {
+    "current": {
+      "number": "5.3.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Default Path",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.3"
+    }
+  },
+  "#section-5.3.4": {
+    "current": {
+      "number": "5.3.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Path Matching",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4"
+    }
+  },
+  "#section-5.4": {
+    "current": {
+      "number": "5.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Main Algorithms",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4"
+    }
+  },
+  "#section-5.4.1": {
+    "current": {
+      "number": "5.4.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Parse and Store a Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.1"
+    }
+  },
+  "#section-5.4.2": {
+    "current": {
+      "number": "5.4.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Parse a Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2"
+    }
+  },
+  "#section-5.4.3": {
+    "current": {
+      "number": "5.4.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Store a Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3"
+    }
+  },
+  "#section-5.4.4": {
+    "current": {
+      "number": "5.4.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Garbage Collect Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4"
+    }
+  },
+  "#section-5.4.5": {
+    "current": {
+      "number": "5.4.5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Retrieve Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5"
+    }
+  },
+  "#section-5.4.6": {
+    "current": {
+      "number": "5.4.6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Serialize Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6"
+    }
+  },
+  "#section-5.5": {
+    "current": {
+      "number": "5.5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Requirements Specific to Non-Browser User Agents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5"
+    }
+  },
+  "#section-5.5.1": {
+    "current": {
+      "number": "5.5.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Set-Cookie Header Field",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1"
+    }
+  },
+  "#section-5.5.2": {
+    "current": {
+      "number": "5.5.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "The Cookie Header Field",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2"
+    }
+  },
+  "#section-5.5.3": {
+    "current": {
+      "number": "5.5.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Store Eviction for Non-Browser User Agents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.3"
+    }
+  },
+  "#section-5.6": {
+    "current": {
+      "number": "5.6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Requirements Specific to Browser User Agents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.6"
+    }
+  },
+  "#section-6": {
+    "current": {
+      "number": "6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Implementation Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6"
+    }
+  },
+  "#section-6.1": {
+    "current": {
+      "number": "6.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Limits",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6.1"
+    }
+  },
+  "#section-6.2": {
+    "current": {
+      "number": "6.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Application Programming Interfaces",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6.2"
+    }
+  },
+  "#section-7": {
+    "current": {
+      "number": "7",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Privacy Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7"
+    }
+  },
+  "#section-7.1": {
+    "current": {
+      "number": "7.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Third-Party Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.1"
+    }
+  },
+  "#section-7.2": {
+    "current": {
+      "number": "7.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie Policy",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.2"
+    }
+  },
+  "#section-7.3": {
+    "current": {
+      "number": "7.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "User Controls",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.3"
+    }
+  },
+  "#section-7.4": {
+    "current": {
+      "number": "7.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Expiration Dates",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.4"
+    }
+  },
+  "#section-8": {
+    "current": {
+      "number": "8",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Security Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8"
+    }
+  },
+  "#section-8.1": {
+    "current": {
+      "number": "8.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Overview",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.1"
+    }
+  },
+  "#section-8.2": {
+    "current": {
+      "number": "8.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Ambient Authority",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.2"
+    }
+  },
+  "#section-8.3": {
+    "current": {
+      "number": "8.3",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Clear Text",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.3"
+    }
+  },
+  "#section-8.4": {
+    "current": {
+      "number": "8.4",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Session Identifiers",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.4"
+    }
+  },
+  "#section-8.5": {
+    "current": {
+      "number": "8.5",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Weak Confidentiality",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.5"
+    }
+  },
+  "#section-8.6": {
+    "current": {
+      "number": "8.6",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Weak Integrity",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.6"
+    }
+  },
+  "#section-8.7": {
+    "current": {
+      "number": "8.7",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Reliance on DNS",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.7"
+    }
+  },
+  "#section-8.8": {
+    "current": {
+      "number": "8.8",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "SameSite Cookies",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.8"
+    }
+  },
+  "#section-9": {
+    "current": {
+      "number": "9",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "IANA Considerations",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9"
+    }
+  },
+  "#section-9.1": {
+    "current": {
+      "number": "9.1",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9.1"
+    }
+  },
+  "#section-9.2": {
+    "current": {
+      "number": "9.2",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Set-Cookie",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9.2"
+    }
+  },
+  "#section-abstract": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Abstract",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-abstract"
+    }
+  },
+  "#section-boilerplate.1": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Status of This Memo",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-boilerplate.1"
+    }
+  },
+  "#section-boilerplate.2": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Copyright Notice",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-boilerplate.2"
+    }
+  },
+  "#section-note.1": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "About This Document",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-note.1"
+    }
+  },
+  "#section-toc.1": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Table of Contents",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-toc.1"
+    }
+  },
+  "#title": {
+    "current": {
+      "number": "",
+      "spec": "Cookies: HTTP State Management Mechanism",
+      "text": "Cookies: HTTP State Management Mechanism",
+      "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#title"
+    }
+  }
+}
