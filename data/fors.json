@@ -696,6 +696,7 @@
     "<angular-color-stop-list>",
     "<angular-color-stop>",
     "<animateable-feature>",
+    "<animation-action>",
     "<antecedent>",
     "<any-value>",
     "<apply>",
@@ -880,6 +881,7 @@
     "<eq/>",
     "<equivalent/>",
     "<eulergamma/>",
+    "<event-trigger-event>",
     "<exists/>",
     "<exp/>",
     "<explicit-track-list>",
@@ -1200,8 +1202,6 @@
     "<single-animation-iteration-count>",
     "<single-animation-play-state>",
     "<single-animation-timeline>",
-    "<single-animation-trigger-behavior>",
-    "<single-animation-trigger>",
     "<single-animation>",
     "<single-transition-property>",
     "<single-transition>",
@@ -10038,14 +10038,6 @@
     "animation-timeline",
     "animation-timing-function",
     "animation-trigger",
-    "animation-trigger-behavior",
-    "animation-trigger-exit-range",
-    "animation-trigger-exit-range-end",
-    "animation-trigger-exit-range-start",
-    "animation-trigger-range",
-    "animation-trigger-range-end",
-    "animation-trigger-range-start",
-    "animation-trigger-timeline",
     "animator current time",
     "animator definition",
     "animator definitions",
@@ -14002,9 +13994,13 @@
     "event name",
     "event parameters",
     "event target",
+    "event trigger",
     "event type",
     "event-level report cache",
     "event-level-report-replacement result",
+    "event-trigger",
+    "event-trigger-name",
+    "event-trigger-source",
     "eventTarget",
     "events",
     "events-from-layout-changes",
@@ -22713,7 +22709,17 @@
     "timeline duration",
     "timeline offset",
     "timeline time to origin-relative time",
+    "timeline trigger",
     "timeline-scope",
+    "timeline-trigger",
+    "timeline-trigger-exit-range",
+    "timeline-trigger-exit-range-end",
+    "timeline-trigger-exit-range-start",
+    "timeline-trigger-name",
+    "timeline-trigger-range",
+    "timeline-trigger-range-end",
+    "timeline-trigger-range-start",
+    "timeline-trigger-source",
     "timelinebegin",
     "timeout",
     "timeouts configuration",
@@ -22897,6 +22903,7 @@
     "trigger-data matching mode",
     "trigger-registration JSON key",
     "triggered",
+    "triggered animation",
     "triggering event",
     "triggering status",
     "trinary",
@@ -23975,6 +23982,15 @@
     "grad",
     "rad",
     "turn"
+  ],
+  "<animation-action>": [
+    "none",
+    "pause",
+    "play",
+    "play-backwards",
+    "play-forwards",
+    "replay",
+    "reset"
   ],
   "<auto-repeat-line-color>": [
     "repeat()"
@@ -28564,6 +28580,7 @@
     "tokenize",
     "tree-scoped name",
     "tree-scoped reference",
+    "triggers",
     "turn(value)",
     "value definition syntax",
     "vb(value)",
@@ -59170,21 +59187,9 @@
     "fill",
     "fit"
   ],
-  "animation-trigger-behavior": [
-    "alternate",
-    "once",
-    "repeat",
-    "state"
-  ],
-  "animation-trigger-exit-range-end": [
-    "<timeline-range-name> <length-percentage>?",
-    "auto",
-    "normal"
-  ],
-  "animation-trigger-exit-range-start": [
-    "<timeline-range-name> <length-percentage>?",
-    "auto",
-    "normal"
+  "animation-trigger": [
+    "[ <dashed-ident> <animation-action>+ ]+",
+    "none"
   ],
   "animator definition": [
     "stateful flag"
@@ -63262,6 +63267,9 @@
     "add-new-report",
     "drop-new-report-low-priority",
     "drop-new-report-none-to-replace"
+  ],
+  "event-trigger": [
+    "none"
   ],
   "exception": [
     "create",
@@ -71752,6 +71760,13 @@
   "timeline": [
     "current time"
   ],
+  "timeline trigger": [
+    "enter action",
+    "enter range",
+    "exit action",
+    "exit range",
+    "trigger state"
+  ],
   "timeline-range-center-subject": [
     "source",
     "target"
@@ -71759,6 +71774,18 @@
   "timeline-scope": [
     "all",
     "none"
+  ],
+  "timeline-trigger": [
+    "none"
+  ],
+  "timeline-trigger-exit-range": [
+    "auto"
+  ],
+  "timeline-trigger-exit-range-end": [
+    "auto"
+  ],
+  "timeline-trigger-exit-range-start": [
+    "auto"
   ],
   "timeouts": [
     "implicit wait timeout",
