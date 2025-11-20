@@ -8985,7 +8985,9 @@
     "WebDriver BiDi download started",
     "WebDriver BiDi download will begin",
     "WebDriver BiDi emulated User-Agent",
+    "WebDriver BiDi emulated available screen area",
     "WebDriver BiDi emulated language",
+    "WebDriver BiDi emulated total screen area",
     "WebDriver BiDi fetch error",
     "WebDriver BiDi file dialog opened",
     "WebDriver BiDi file picker options",
@@ -13799,6 +13801,7 @@
     "emulation.GeolocationPositionError",
     "emulation.NetworkConditions",
     "emulation.NetworkConditionsOffline",
+    "emulation.ScreenArea",
     "emulation.ScreenOrientation",
     "emulation.ScreenOrientationNatural",
     "emulation.ScreenOrientationType",
@@ -13816,6 +13819,9 @@
     "emulation.SetScreenOrientationOverride",
     "emulation.SetScreenOrientationOverrideParameters",
     "emulation.SetScreenOrientationOverrideResult",
+    "emulation.SetScreenSettingsOverride",
+    "emulation.SetScreenSettingsOverrideParameters",
+    "emulation.SetScreenSettingsOverrideResult",
     "emulation.SetScriptingEnabled",
     "emulation.SetScriptingEnabledParameters",
     "emulation.SetScriptingEnabledResult",
@@ -20816,6 +20822,8 @@
     "screen orientation values lists",
     "screen orientations",
     "screen reader",
+    "screen settings",
+    "screen settings overrides",
     "screen wake lock",
     "screen wake lock task source",
     "screenPixelRatio",
@@ -31682,9 +31690,9 @@
   ],
   "CrashReportBody": [
     "is_top_level",
-    "page_visibility",
     "reason",
-    "stack"
+    "stack",
+    "visibility_state"
   ],
   "CreateHTMLCallback": [
     "arguments",
@@ -61888,6 +61896,7 @@
     "emulation.setLocaleOverride",
     "emulation.setNetworkConditions",
     "emulation.setScreenOrientationOverride",
+    "emulation.setScreenSettingsOverride",
     "emulation.setScriptingEnabled",
     "emulation.setTimezoneOverride",
     "emulation.setUserAgentOverride",
@@ -62975,6 +62984,12 @@
     "\"offline\"",
     "offline"
   ],
+  "emulation.ScreenArea": [
+    "\"height\"",
+    "\"width\"",
+    "height",
+    "width"
+  ],
   "emulation.ScreenOrientation": [
     "\"natural\"",
     "\"type\"",
@@ -63079,6 +63094,24 @@
     "\"userContexts\"",
     "contexts",
     "screenOrientation",
+    "userContexts"
+  ],
+  "emulation.SetScreenSettingsOverride": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "emulation.SetScreenSettingsOverride/method": [
+    "\"emulation.setScreenSettingsOverride\"",
+    "emulation.setScreenSettingsOverride"
+  ],
+  "emulation.SetScreenSettingsOverrideParameters": [
+    "\"contexts\"",
+    "\"screenArea\"",
+    "\"userContexts\"",
+    "contexts",
+    "screenArea",
     "userContexts"
   ],
   "emulation.SetScriptingEnabled": [
@@ -68940,6 +68973,16 @@
   "screen orientation override": [
     "natural",
     "type"
+  ],
+  "screen settings": [
+    "height",
+    "width",
+    "x",
+    "y"
+  ],
+  "screen settings overrides": [
+    "navigable screen settings",
+    "user context screen settings"
   ],
   "script": [
     "Fetch options",
