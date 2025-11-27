@@ -592,6 +592,7 @@
     ":last-of-type",
     ":left",
     ":link",
+    ":link-to()",
     ":local-link",
     ":low-value",
     ":matches()",
@@ -968,6 +969,9 @@
     "<inflexible-breadth>",
     "<inherit()>",
     "<inherit-args>",
+    "<init-descriptor-name>",
+    "<init-descriptor>",
+    "<init-descriptors>",
     "<int/>",
     "<integer>",
     "<integers/>",
@@ -1014,6 +1018,8 @@
     "<linear-stop-length>",
     "<linear-stop-list>",
     "<linear-stop>",
+    "<link-condition-base>",
+    "<link-condition>",
     "<list>",
     "<ln/>",
     "<log/>",
@@ -1070,6 +1076,17 @@
     "<namespace-attr>",
     "<namespace-prefix>",
     "<naturalnumbers/>",
+    "<navigation-condition>",
+    "<navigation-in-parens>",
+    "<navigation-keyword>",
+    "<navigation-location>",
+    "<navigation-param-and>",
+    "<navigation-param-expression>",
+    "<navigation-param-function>",
+    "<navigation-param-key-value>",
+    "<navigation-param-or>",
+    "<navigation-param>",
+    "<navigation-test>",
     "<ndash-dimension>",
     "<ndashdigit-dimension>",
     "<ndashdigit-ident>",
@@ -1099,6 +1116,8 @@
     "<paint-box>",
     "<paint>",
     "<partialdiff/>",
+    "<pattern-descriptor>",
+    "<pattern-descriptors>",
     "<percentage-token>",
     "<percentage>",
     "<pi/>",
@@ -1168,6 +1187,7 @@
     "<reversed-counter-name>",
     "<right>",
     "<rounding-strategy>",
+    "<route-name>",
     "<rule-list>",
     "<scalarproduct/>",
     "<scope-end>",
@@ -1342,12 +1362,14 @@
     "@media",
     "@mixin",
     "@namespace",
+    "@navigation",
     "@page",
     "@position-try",
     "@property",
     "@right-bottom",
     "@right-middle",
     "@right-top",
+    "@route",
     "@scope",
     "@starting-style",
     "@supports",
@@ -9437,12 +9459,7 @@
     "XRMediaLayerInit",
     "XRMediaQuadLayerInit",
     "XRMesh",
-    "XRMeshBlock",
-    "XRMeshQuality",
     "XRMeshSet",
-    "XRMetadata",
-    "XRNearMesh",
-    "XRNearMeshFeature",
     "XRPermissionDescriptor",
     "XRPermissionStatus",
     "XRPlane",
@@ -9490,8 +9507,6 @@
     "XRWebGLLayerInit",
     "XRWebGLRenderingContext",
     "XRWebGLSubImage",
-    "XRWorldMesh",
-    "XRWorldMeshFeature",
     "XSLTProcessor",
     "YearFromTime",
     "YearFromTime(t)",
@@ -12508,6 +12523,7 @@
     "create a PointerEvent",
     "create a RestrictionTarget",
     "create a Tag object",
+    "create a URL pattern for url-pattern()",
     "create a Uint8Array object",
     "create a WebAssembly module script",
     "create a WebGL depth information instance",
@@ -12819,6 +12835,7 @@
     "current focus chain of a top-level traversable",
     "current frame timing info",
     "current frequency data",
+    "current from URL",
     "current global object",
     "current high resolution time",
     "current input character",
@@ -12848,6 +12865,7 @@
     "current template insertion mode",
     "current text position",
     "current time-domain data",
+    "current to URL",
     "current top-level browsing context",
     "current transaction automation mode",
     "current transformation matrix",
@@ -13582,6 +13600,7 @@
     "document white space characters",
     "document write steps",
     "document's body element",
+    "document's navigation API",
     "document-scoped view transition group",
     "document-scoped view transition name",
     "document-tree child navigable target name property set",
@@ -17715,9 +17734,11 @@
     "navigation entropy allowance",
     "navigation entropy ledger",
     "navigation handler list",
+    "navigation location URL pattern",
     "navigation object",
     "navigation params",
     "navigation precommit handler list",
+    "navigation queries",
     "navigation request",
     "navigation style values",
     "navigation task",
@@ -21235,6 +21256,7 @@
     "serialize a simple selector",
     "serialize a steps() functions",
     "serialize a string",
+    "serialize a url-pattern() function",
     "serialize a verbose debug report",
     "serialize a whitespace-separated list",
     "serialize an <an+b> value",
@@ -23299,6 +23321,7 @@
     "url",
     "url parameter",
     "url()",
+    "url-pattern()",
     "urlencoded parser",
     "urlencoded serializer",
     "urlencoded string parser",
@@ -25463,6 +25486,9 @@
   ],
   "@viewport": [
     "viewport-fit"
+  ],
+  "@when": [
+    "navigation()"
   ],
   "ARIA": [
     "Property"
@@ -57790,7 +57816,6 @@
     "getViewerPose(referenceSpace)",
     "map of hit test sources to hit test results",
     "map of hit test sources to hit test results for transient input",
-    "metaData",
     "predictedDisplayTime",
     "session",
     "time",
@@ -58111,26 +58136,6 @@
     "native entity",
     "semanticLabel",
     "vertices"
-  ],
-  "XRMeshBlock": [
-    "indices",
-    "normals",
-    "vertices"
-  ],
-  "XRMeshQuality": [
-    "\"high\"",
-    "\"low\"",
-    "\"medium\""
-  ],
-  "XRMetadata": [
-    "nearMesh",
-    "worldMesh"
-  ],
-  "XRNearMeshFeature": [
-    "quality"
-  ],
-  "XRNearMeshFeature/quality": [
-    "quality"
   ],
   "XRPermissionDescriptor": [
     "mode",
@@ -58775,24 +58780,6 @@
     "motionVectorTexture",
     "motionVectorTextureHeight",
     "motionVectorTextureWidth"
-  ],
-  "XRWorldMeshFeature": [
-    "breadth",
-    "height",
-    "quality",
-    "width"
-  ],
-  "XRWorldMeshFeature/breadth": [
-    "breadth"
-  ],
-  "XRWorldMeshFeature/height": [
-    "height"
-  ],
-  "XRWorldMeshFeature/quality": [
-    "quality"
-  ],
-  "XRWorldMeshFeature/width": [
-    "width"
   ],
   "XSLTProcessor": [
     "XSLTProcessor()",
@@ -64802,7 +64789,8 @@
     "trailing significand field"
   ],
   "if()": [
-    "else"
+    "else",
+    "navigation()"
   ],
   "iframe": [
     "adauctionheaders",
