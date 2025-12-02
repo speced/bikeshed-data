@@ -2939,6 +2939,9 @@
   "#sec-iterator-records": [
     "/abstract-operations#sec-iterator-records"
   ],
+  "#sec-iterator.concat": [
+    "/control-abstraction-objects#sec-iterator.concat"
+  ],
   "#sec-iterator.from": [
     "/control-abstraction-objects#sec-iterator.from"
   ],
@@ -2989,6 +2992,9 @@
   ],
   "#sec-iteratorclose": [
     "/abstract-operations#sec-iteratorclose"
+  ],
+  "#sec-iteratorcloseall": [
+    "/abstract-operations#sec-iteratorcloseall"
   ],
   "#sec-iteratorcomplete": [
     "/abstract-operations#sec-iteratorcomplete"
@@ -4306,9 +4312,6 @@
   ],
   "#sec-promise.all": [
     "/control-abstraction-objects#sec-promise.all"
-  ],
-  "#sec-promise.all-resolve-element-functions": [
-    "/control-abstraction-objects#sec-promise.all-resolve-element-functions"
   ],
   "#sec-promise.allsettled": [
     "/control-abstraction-objects#sec-promise.allsettled"
@@ -6559,7 +6562,7 @@
   },
   "/abstract-operations#sec-asynciteratorclose": {
     "current": {
-      "number": "7.4.13",
+      "number": "7.4.14",
       "spec": "ECMAScript",
       "text": "AsyncIteratorClose ( iteratorRecord, completion )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-asynciteratorclose"
@@ -6623,7 +6626,7 @@
   },
   "/abstract-operations#sec-createiterresultobject": {
     "current": {
-      "number": "7.4.14",
+      "number": "7.4.15",
       "spec": "ECMAScript",
       "text": "CreateIteratorResultObject ( value, done )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createiterresultobject"
@@ -6639,7 +6642,7 @@
   },
   "/abstract-operations#sec-createlistiteratorRecord": {
     "current": {
-      "number": "7.4.15",
+      "number": "7.4.16",
       "spec": "ECMAScript",
       "text": "CreateListIteratorRecord ( list )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createlistiteratorRecord"
@@ -6791,7 +6794,7 @@
   },
   "/abstract-operations#sec-ifabruptcloseiterator": {
     "current": {
-      "number": "7.4.12",
+      "number": "7.4.13",
       "spec": "ECMAScript",
       "text": "IfAbruptCloseIterator ( value, iteratorRecord )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ifabruptcloseiterator"
@@ -6901,6 +6904,14 @@
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorclose"
     }
   },
+  "/abstract-operations#sec-iteratorcloseall": {
+    "current": {
+      "number": "7.4.12",
+      "spec": "ECMAScript",
+      "text": "IteratorCloseAll ( iters, completion )",
+      "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorcloseall"
+    }
+  },
   "/abstract-operations#sec-iteratorcomplete": {
     "current": {
       "number": "7.4.7",
@@ -6935,7 +6946,7 @@
   },
   "/abstract-operations#sec-iteratortolist": {
     "current": {
-      "number": "7.4.16",
+      "number": "7.4.17",
       "spec": "ECMAScript",
       "text": "IteratorToList ( iteratorRecord )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist"
@@ -7463,7 +7474,7 @@
   },
   "/control-abstraction-objects#sec-%25wrapforvaliditeratorprototype%25-object": {
     "current": {
-      "number": "27.1.3.2.1.1",
+      "number": "27.1.3.2.2.1",
       "spec": "ECMAScript",
       "text": "The %WrapForValidIteratorPrototype% Object",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25wrapforvaliditeratorprototype%25-object"
@@ -7471,7 +7482,7 @@
   },
   "/control-abstraction-objects#sec-%25wrapforvaliditeratorprototype%25.next": {
     "current": {
-      "number": "27.1.3.2.1.1.1",
+      "number": "27.1.3.2.2.1.1",
       "spec": "ECMAScript",
       "text": "%WrapForValidIteratorPrototype%.next ( )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25wrapforvaliditeratorprototype%25.next"
@@ -7479,7 +7490,7 @@
   },
   "/control-abstraction-objects#sec-%25wrapforvaliditeratorprototype%25.return": {
     "current": {
-      "number": "27.1.3.2.1.1.2",
+      "number": "27.1.3.2.2.1.2",
       "spec": "ECMAScript",
       "text": "%WrapForValidIteratorPrototype%.return ( )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25wrapforvaliditeratorprototype%25.return"
@@ -8213,9 +8224,17 @@
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-objects"
     }
   },
-  "/control-abstraction-objects#sec-iterator.from": {
+  "/control-abstraction-objects#sec-iterator.concat": {
     "current": {
       "number": "27.1.3.2.1",
+      "spec": "ECMAScript",
+      "text": "Iterator.concat ( ...items )",
+      "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.concat"
+    }
+  },
+  "/control-abstraction-objects#sec-iterator.from": {
+    "current": {
+      "number": "27.1.3.2.2",
       "spec": "ECMAScript",
       "text": "Iterator.from ( O )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.from"
@@ -8223,7 +8242,7 @@
   },
   "/control-abstraction-objects#sec-iterator.prototype": {
     "current": {
-      "number": "27.1.3.2.2",
+      "number": "27.1.3.2.3",
       "spec": "ECMAScript",
       "text": "Iterator.prototype",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype"
@@ -8483,14 +8502,6 @@
       "spec": "ECMAScript",
       "text": "Promise.all ( iterable )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.all"
-    }
-  },
-  "/control-abstraction-objects#sec-promise.all-resolve-element-functions": {
-    "current": {
-      "number": "27.2.4.1.3",
-      "spec": "ECMAScript",
-      "text": "Promise.all Resolve Element Functions",
-      "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.all-resolve-element-functions"
     }
   },
   "/control-abstraction-objects#sec-promise.allsettled": {
