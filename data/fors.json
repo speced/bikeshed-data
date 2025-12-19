@@ -6805,10 +6805,12 @@
     "RTCRtpParameters",
     "RTCRtpReceiveParameters",
     "RTCRtpReceiver",
+    "RTCRtpReceiverTransform",
     "RTCRtpScriptTransform",
     "RTCRtpScriptTransformer",
     "RTCRtpSendParameters",
     "RTCRtpSender",
+    "RTCRtpSenderTransform",
     "RTCRtpStreamStats",
     "RTCRtpSynchronizationSource",
     "RTCRtpTransceiver",
@@ -7262,9 +7264,13 @@
     "SFrame initialization algorithm",
     "SFrame transform algorithm",
     "SFrameCipherSuite",
+    "SFrameDecrypterManager",
     "SFrameDecrypterStream",
+    "SFrameEncrypterManager",
     "SFrameEncrypterStream",
     "SFrameKeyManagement",
+    "SFrameReceiverTransform",
+    "SFrameSenderTransform",
     "SFrameTransform",
     "SFrameTransformErrorEvent",
     "SFrameTransformErrorEventInit",
@@ -9554,6 +9560,8 @@
     "[[codec work queue]]",
     "[[control message queue]]",
     "[[message queue blocked]]",
+    "[[processedFramesQueue]]",
+    "[[transformFrameAlgorithm]]",
     "_charset_",
     "a",
     "a known definite encoding",
@@ -13228,6 +13236,7 @@
     "density-corrected natural width and height",
     "deny a wake lock",
     "deny wake lock",
+    "depacketizer",
     "dependency",
     "deprecate",
     "deprecated",
@@ -13891,6 +13900,7 @@
     "encode and flush",
     "encode or fail",
     "encode trusted signals keys",
+    "encoded frames",
     "encoded-cbor",
     "encoder",
     "encoder state",
@@ -18529,6 +18539,7 @@
     "p",
     "package",
     "package document",
+    "packetizer",
     "padding",
     "padding (of a box)",
     "padding area",
@@ -18843,6 +18854,7 @@
     "pass-through",
     "passes rate obfuscation test",
     "passes rate test",
+    "passthrough algorithm",
     "past names map",
     "patch application algorithm",
     "patch format",
@@ -49017,6 +49029,7 @@
     "RTCRtpScriptTransform(worker)",
     "RTCRtpScriptTransform(worker, options)",
     "RTCRtpScriptTransform(worker, options, transfer)",
+    "[[worker]]",
     "constructor(worker)",
     "constructor(worker, options)",
     "constructor(worker, options, transfer)"
@@ -49052,6 +49065,14 @@
     "worker"
   ],
   "RTCRtpScriptTransformer": [
+    "[[frameSource]]",
+    "[[lastEnqueuedFrameCounter]]",
+    "[[lastReceivedFrameCounter]]",
+    "[[options]]",
+    "[[readable]]",
+    "[[writable]]",
+    "create",
+    "creating",
     "generateKeyFrame()",
     "generateKeyFrame(rid)",
     "onbandwidthestimate",
@@ -49141,7 +49162,9 @@
     "streams"
   ],
   "RTCRtpTransform": [
-    "association steps"
+    "association algorithm",
+    "association steps",
+    "disassociation algorithm"
   ],
   "RTCSctpTransport": [
     "[[MaxChannels]]",
@@ -50425,6 +50448,18 @@
     "\"AES_128_GCM_SHA256_128\"",
     "\"AES_256_GCM_SHA512_128\""
   ],
+  "SFrameDecrypterManager": [
+    "addDecryptionKey(key, keyId)",
+    "onerror",
+    "removeDecryptionKey(keyId)"
+  ],
+  "SFrameDecrypterManager/addDecryptionKey(key, keyId)": [
+    "key",
+    "keyId"
+  ],
+  "SFrameDecrypterManager/removeDecryptionKey(keyId)": [
+    "keyId"
+  ],
   "SFrameDecrypterStream": [
     "SFrameDecrypterStream()",
     "SFrameDecrypterStream(options)",
@@ -50442,6 +50477,14 @@
   ],
   "SFrameDecrypterStream/constructor(options)": [
     "options"
+  ],
+  "SFrameEncrypterManager": [
+    "onerror",
+    "setEncryptionKey(key, keyId)"
+  ],
+  "SFrameEncrypterManager/setEncryptionKey(key, keyId)": [
+    "key",
+    "keyId"
   ],
   "SFrameEncrypterStream": [
     "SFrameEncrypterStream()",
@@ -50473,6 +50516,42 @@
   "SFrameKeyManagement/setEncryptionKey(key, keyID)": [
     "key",
     "keyID"
+  ],
+  "SFrameReceiverTransform": [
+    "SFrameReceiverTransform()",
+    "SFrameReceiverTransform(options)",
+    "constructor()",
+    "constructor(options)"
+  ],
+  "SFrameReceiverTransform/SFrameReceiverTransform()": [
+    "options"
+  ],
+  "SFrameReceiverTransform/SFrameReceiverTransform(options)": [
+    "options"
+  ],
+  "SFrameReceiverTransform/constructor()": [
+    "options"
+  ],
+  "SFrameReceiverTransform/constructor(options)": [
+    "options"
+  ],
+  "SFrameSenderTransform": [
+    "SFrameSenderTransform()",
+    "SFrameSenderTransform(options)",
+    "constructor()",
+    "constructor(options)"
+  ],
+  "SFrameSenderTransform/SFrameSenderTransform()": [
+    "options"
+  ],
+  "SFrameSenderTransform/SFrameSenderTransform(options)": [
+    "options"
+  ],
+  "SFrameSenderTransform/constructor()": [
+    "options"
+  ],
+  "SFrameSenderTransform/constructor(options)": [
+    "options"
   ],
   "SFrameTransform": [
     "SFrameTransform()",
