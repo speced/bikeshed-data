@@ -449,6 +449,9 @@
   "#sec-array.from": [
     "/indexed-collections#sec-array.from"
   ],
+  "#sec-array.fromasync": [
+    "/indexed-collections#sec-array.fromasync"
+  ],
   "#sec-array.isarray": [
     "/indexed-collections#sec-array.isarray"
   ],
@@ -2695,6 +2698,9 @@
   ],
   "#sec-if-statement-static-semantics-early-errors": [
     "/ecmascript-language-statements-and-declarations#sec-if-statement-static-semantics-early-errors"
+  ],
+  "#sec-ifabruptcloseasynciterator": [
+    "/abstract-operations#sec-ifabruptcloseasynciterator"
   ],
   "#sec-ifabruptcloseiterator": [
     "/abstract-operations#sec-ifabruptcloseiterator"
@@ -6611,7 +6617,7 @@
   },
   "/abstract-operations#sec-createiterresultobject": {
     "current": {
-      "number": "7.4.15",
+      "number": "7.4.16",
       "spec": "ECMAScript",
       "text": "CreateIteratorResultObject ( value, done )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createiterresultobject"
@@ -6627,7 +6633,7 @@
   },
   "/abstract-operations#sec-createlistiteratorRecord": {
     "current": {
-      "number": "7.4.16",
+      "number": "7.4.17",
       "spec": "ECMAScript",
       "text": "CreateListIteratorRecord ( list )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createlistiteratorRecord"
@@ -6775,6 +6781,14 @@
       "spec": "ECMAScript",
       "text": "HostEnsureCanAddPrivateElement ( O )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hostensurecanaddprivateelement"
+    }
+  },
+  "/abstract-operations#sec-ifabruptcloseasynciterator": {
+    "current": {
+      "number": "7.4.15",
+      "spec": "ECMAScript",
+      "text": "IfAbruptCloseAsyncIterator ( value, iteratorRecord )",
+      "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ifabruptcloseasynciterator"
     }
   },
   "/abstract-operations#sec-ifabruptcloseiterator": {
@@ -6931,7 +6945,7 @@
   },
   "/abstract-operations#sec-iteratortolist": {
     "current": {
-      "number": "7.4.17",
+      "number": "7.4.18",
       "spec": "ECMAScript",
       "text": "IteratorToList ( iteratorRecord )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist"
@@ -15777,9 +15791,17 @@
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.from"
     }
   },
-  "/indexed-collections#sec-array.isarray": {
+  "/indexed-collections#sec-array.fromasync": {
     "current": {
       "number": "23.1.2.2",
+      "spec": "ECMAScript",
+      "text": "Array.fromAsync ( items [ , mapper [ , thisArg ] ] )",
+      "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.fromasync"
+    }
+  },
+  "/indexed-collections#sec-array.isarray": {
+    "current": {
+      "number": "23.1.2.3",
       "spec": "ECMAScript",
       "text": "Array.isArray ( arg )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.isarray"
@@ -15787,7 +15809,7 @@
   },
   "/indexed-collections#sec-array.of": {
     "current": {
-      "number": "23.1.2.3",
+      "number": "23.1.2.4",
       "spec": "ECMAScript",
       "text": "Array.of ( ...items )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.of"
@@ -15795,7 +15817,7 @@
   },
   "/indexed-collections#sec-array.prototype": {
     "current": {
-      "number": "23.1.2.4",
+      "number": "23.1.2.5",
       "spec": "ECMAScript",
       "text": "Array.prototype",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype"
@@ -16251,7 +16273,7 @@
   },
   "/indexed-collections#sec-get-array-%25symbol.species%25": {
     "current": {
-      "number": "23.1.2.5",
+      "number": "23.1.2.6",
       "spec": "ECMAScript",
       "text": "get Array [ %Symbol.species% ]",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-array-%25symbol.species%25"
