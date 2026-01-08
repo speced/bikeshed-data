@@ -1884,6 +1884,7 @@
     "AudioParam",
     "AudioParamDescriptor",
     "AudioParamMap",
+    "AudioPlaybackStats",
     "AudioPlayoutStats",
     "AudioProcessingEvent",
     "AudioProcessingEventInit",
@@ -4406,6 +4407,7 @@
     "HTMLMetaElement",
     "HTMLMeterElement",
     "HTMLModElement",
+    "HTMLModelElement",
     "HTMLOListElement",
     "HTMLObjectElement",
     "HTMLOptGroupElement",
@@ -23199,6 +23201,8 @@
     "underlying sink",
     "underlying source",
     "underlying value",
+    "underrun event",
+    "underrun frame",
     "undisplay",
     "undistributable space",
     "unescape URL pattern",
@@ -26669,6 +26673,7 @@
     "AudioContext()",
     "AudioContext(contextOptions)",
     "[[pending resume promises]]",
+    "[[playback stats]]",
     "[[playout stats]]",
     "[[sink ID at construction]]",
     "[[sink ID]]",
@@ -26688,6 +26693,7 @@
     "onerror",
     "onsinkchange",
     "outputLatency",
+    "playbackStats",
     "playoutStats",
     "renderCapacity",
     "resume()",
@@ -27104,6 +27110,25 @@
     "maxValue",
     "minValue",
     "name"
+  ],
+  "AudioPlaybackStats": [
+    "[[audio context]]",
+    "[[average latency]]",
+    "[[latency reset time]]",
+    "[[maximum latency]]",
+    "[[minimum latency]]",
+    "[[total duration]]",
+    "[[underrun duration]]",
+    "[[underrun events]]",
+    "averageLatency",
+    "currently tracked interval",
+    "maximumLatency",
+    "minimumLatency",
+    "resetLatency()",
+    "toJSON()",
+    "totalDuration",
+    "underrunDuration",
+    "underrunEvents"
   ],
   "AudioPlayoutStats": [
     "[[audio context]]",
@@ -39501,6 +39526,12 @@
   "HTMLModElement": [
     "cite",
     "dateTime"
+  ],
+  "HTMLModelElement": [
+    "boundingBoxCenter",
+    "boundingBoxExtents",
+    "entityTransform",
+    "ready"
   ],
   "HTMLOListElement": [
     "compact",
