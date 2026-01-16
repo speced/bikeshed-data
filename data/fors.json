@@ -8822,6 +8822,7 @@
     "User-supplied value",
     "User-verifying platform authenticator",
     "UserActivation",
+    "UserAgentClientHintsCommand",
     "UserDataHandler",
     "UserIdleState",
     "UserVerificationRequirement",
@@ -11018,6 +11019,7 @@
     "box::padding",
     "br",
     "branches of a readable stream tee",
+    "brand version",
     "break",
     "break calibration",
     "break-after",
@@ -13853,10 +13855,14 @@
     "empty user context",
     "empty value default",
     "empty-cells",
+    "emulated UA Client Hints",
+    "emulated client hints",
     "emulated forced colors theme data",
     "emulated native anchors",
     "emulated network conditions struct",
     "emulated position data",
+    "emulation.BrandVersion",
+    "emulation.ClientHintsMetadata",
     "emulation.ForcedColorsModeTheme",
     "emulation.GeolocationCoordinates",
     "emulation.GeolocationPositionError",
@@ -13866,6 +13872,8 @@
     "emulation.ScreenOrientation",
     "emulation.ScreenOrientationNatural",
     "emulation.ScreenOrientationType",
+    "emulation.SetClientHintsOverrideCommand",
+    "emulation.SetClientHintsOverrideResult",
     "emulation.SetForcedColorsModeThemeOverride",
     "emulation.SetForcedColorsModeThemeOverrideParameters",
     "emulation.SetForcedColorsModeThemeOverrideResult",
@@ -23489,6 +23497,7 @@
     "user activation",
     "user activation map",
     "user agent",
+    "user agent client hints",
     "user agent duties",
     "user agents",
     "user consent",
@@ -60877,6 +60886,10 @@
   "br": [
     "clear"
   ],
+  "brand version": [
+    "brand",
+    "version"
+  ],
   "break-after": [
     "all",
     "always",
@@ -62194,6 +62207,7 @@
     "browsingContext.reload",
     "browsingContext.setViewport",
     "browsingContext.traverseHistory",
+    "emulation.setClientHintsOverride",
     "emulation.setForcedColorsModeThemeOverride",
     "emulation.setGeolocationOverride",
     "emulation.setLocaleOverride",
@@ -63243,6 +63257,11 @@
     "hide",
     "show"
   ],
+  "emulated client hints": [
+    "default emulated client hints",
+    "emulated client hints per navigables",
+    "emulated client hints per user contexts"
+  ],
   "emulated maxTouchPoints": [
     "default",
     "navigables",
@@ -63260,6 +63279,34 @@
   ],
   "emulated-network-conditions-struct": [
     "offline"
+  ],
+  "emulation.BrandVersion": [
+    "\"brand\"",
+    "\"version\"",
+    "brand",
+    "version"
+  ],
+  "emulation.ClientHintsMetadata": [
+    "\"architecture\"",
+    "\"bitness\"",
+    "\"brands\"",
+    "\"formFactors\"",
+    "\"fullVersionList\"",
+    "\"mobile\"",
+    "\"model\"",
+    "\"platform\"",
+    "\"platformVersion\"",
+    "\"wow64\"",
+    "architecture",
+    "bitness",
+    "brands",
+    "formFactors",
+    "fullVersionList",
+    "mobile",
+    "model",
+    "platform",
+    "platformVersion",
+    "wow64"
   ],
   "emulation.ForcedColorsModeTheme": [
     "\"dark\"",
@@ -63326,6 +63373,24 @@
     "landscape-secondary",
     "portrait-primary",
     "portrait-secondary"
+  ],
+  "emulation.SetClientHintsOverrideCommand": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "emulation.SetClientHintsOverrideCommand/method": [
+    "\"emulation.setClientHintsOverride\"",
+    "emulation.setClientHintsOverride"
+  ],
+  "emulation.SetClientHintsOverrideCommand/params": [
+    "\"clientHints\"",
+    "\"contexts\"",
+    "\"userContexts\"",
+    "clientHints",
+    "contexts",
+    "userContexts"
   ],
   "emulation.SetForcedColorsModeThemeOverride": [
     "\"method\"",
@@ -72838,6 +72903,18 @@
     "topics history storage",
     "user topics state",
     "wow64-ness"
+  ],
+  "user agent client hints": [
+    "architecture",
+    "bitness",
+    "brands",
+    "full version",
+    "full version list",
+    "mobile",
+    "model",
+    "platform",
+    "platform version",
+    "wow64"
   ],
   "user contact": [
     "addresses",
