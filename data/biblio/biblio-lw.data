@@ -28921,7 +28921,7 @@ Jonathan Wakely
 d:lwg3599
 LWG3599
 
-New
+Ready
 The const overload of lazy_split_view::begin should be constrained by const Pattern
 https://wg21.link/lwg3599
 
@@ -35485,7 +35485,7 @@ Nathan Myers
 d:lwg4090
 LWG4090
 
-Open
+Tentatively Ready
 Underspecified use of locale facets for locale-dependent std::format
 https://wg21.link/lwg4090
 
@@ -39841,7 +39841,7 @@ Jiang An
 d:lwg4417
 LWG4417
 
-New
+Tentatively NAD
 views::indices is underconstrained
 https://wg21.link/lwg4417
 
@@ -40369,7 +40369,7 @@ Jonathan Wakely
 d:lwg4457
 LWG4457
 
-New
+Tentatively Ready
 freestanding for stable_sort, stable_partition and inplace_merge
 https://wg21.link/lwg4457
 
@@ -40525,7 +40525,7 @@ Jiang An
 d:lwg4469
 LWG4469
 
-New
+Ready
 Names of parameters of addressable function shall remain unspecified
 https://wg21.link/lwg4469
 
@@ -40597,7 +40597,7 @@ Jan Schultke
 d:lwg4474
 LWG4474
 
-New
+Tentatively Ready
 "round_to_nearest" rounding mode is unclear
 https://wg21.link/lwg4474
 
@@ -40609,7 +40609,7 @@ Jan Schultke
 d:lwg4475
 LWG4475
 
-New
+Tentatively NAD
 The description to single total order in [thread.mutex.requirements.mutex.general] is hollow
 https://wg21.link/lwg4475
 
@@ -40693,7 +40693,7 @@ Jiang An
 d:lwg4481
 LWG4481
 
-New
+Tentatively Ready
 Disallow chrono::duration<const T, P>
 https://wg21.link/lwg4481
 
@@ -40741,7 +40741,7 @@ Jiang An
 d:lwg4485
 LWG4485
 
-New
+Tentatively Ready
 Move specification for task::stop_token_type
 https://wg21.link/lwg4485
 
@@ -40762,6 +40762,42 @@ https://wg21.link/lwg4486
 
 Jonathan Wakely
 -
+d:lwg4487
+LWG4487
+
+New
+Is member is_steady of a Cpp17Clock type required to be usable in constant expressions?
+https://wg21.link/lwg4487
+
+
+
+
+Jiang An
+-
+d:lwg4488
+LWG4488
+
+New
+Undesired status for some functions in <cmath>
+https://wg21.link/lwg4488
+
+
+
+
+Jiang An
+-
+d:lwg4489
+LWG4489
+
+New
+concat_view::iterator's iter_swap has tautologically false noexcept specification
+https://wg21.link/lwg4489
+
+
+
+
+Nhat Nguyen
+-
 d:lwg449
 LWG449
 
@@ -40773,6 +40809,126 @@ https://wg21.link/lwg449
 
 
 Pete Becker
+-
+d:lwg4490
+LWG4490
+
+New
+Allow calling std::ranges::size in ranges algorithms
+https://wg21.link/lwg4490
+
+
+
+
+Ruslan Arutyunyan
+-
+d:lwg4491
+LWG4491
+
+Tentatively Ready
+Rename submdspan_extents and submdspan_canonicalize_slices
+https://wg21.link/lwg4491
+
+
+
+
+Tomasz Kamiński
+-
+d:lwg4492
+LWG4492
+
+New
+std::generate and std::ranges::generate wording is unclear for parallel algorithms
+https://wg21.link/lwg4492
+
+
+
+
+Ruslan Arutyunyan
+-
+d:lwg4493
+LWG4493
+
+New
+Specification for some functions of bit reference types seems missing
+https://wg21.link/lwg4493
+
+
+
+
+Jiang An
+-
+d:lwg4494
+LWG4494
+
+New
+Add consteval to std::meta::exception defaulted member functions
+https://wg21.link/lwg4494
+
+
+
+
+Marek Polacek
+-
+d:lwg4495
+LWG4495
+
+New
+§[meta.reflection.queries] is_deleted on function templates
+https://wg21.link/lwg4495
+
+
+
+
+Jakub Jelinek
+-
+d:lwg4496
+LWG4496
+
+New
+Precedes vs Reachable in [meta.reflection]
+https://wg21.link/lwg4496
+
+
+
+
+Daniel Katz
+-
+d:lwg4497
+LWG4497
+
+New
+std::nullopt_t should be comparable
+https://wg21.link/lwg4497
+
+
+
+
+Barry Revzin
+-
+d:lwg4498
+LWG4498
+
+New
+§[atomics.order] The total order should be intended to be a strict total order
+https://wg21.link/lwg4498
+
+
+
+
+jim x
+-
+d:lwg4499
+LWG4499
+
+New
+flat_set::insert_range specification may be problematic
+https://wg21.link/lwg4499
+
+
+
+
+Hewill Kang
 -
 d:lwg45
 LWG45
@@ -40798,6 +40954,126 @@ https://wg21.link/lwg450
 
 Bill Plauger
 -
+d:lwg4500
+LWG4500
+
+Tentatively Ready
+constant_wrapper wording problems
+https://wg21.link/lwg4500
+
+
+
+
+Matthias Wippich
+-
+d:lwg4501
+LWG4501
+
+New
+std::execution::let_* Unconditionally Potentially Evaluates std::execution::set_error
+https://wg21.link/lwg4501
+
+
+
+
+Robert Leahy
+-
+d:lwg4502
+LWG4502
+
+New
+std::execution::when_all Is Never Nothrow Connectable
+https://wg21.link/lwg4502
+
+
+
+
+Robert Leahy
+-
+d:lwg4503
+LWG4503
+
+New
+Use of std::common_reference_with in std::assignable_from seems incorrect
+https://wg21.link/lwg4503
+
+
+
+
+Jiang An
+-
+d:lwg4504
+LWG4504
+
+New
+Wording problem in {simple_}counting_scope
+https://wg21.link/lwg4504
+
+
+
+
+Ian Petersen
+-
+d:lwg4505
+LWG4505
+
+New
+The std::make_optional overload taking std::initializer_list should not accept a reference type as its template argument
+https://wg21.link/lwg4505
+
+
+
+
+Jiang An
+-
+d:lwg4506
+LWG4506
+
+New
+source_location is explicitly unspecified if is constexpr or not
+https://wg21.link/lwg4506
+
+
+
+
+Hana Dusíková
+-
+d:lwg4507
+LWG4507
+
+New
+The order of side effects initiated by I/O functions is not described by happen-before
+https://wg21.link/lwg4507
+
+
+
+
+jim x
+-
+d:lwg4508
+LWG4508
+
+New
+Meaning of "compatible" and C++ desire for C23 changes unclear for va_arg
+https://wg21.link/lwg4508
+
+
+
+
+Hubert Tong
+-
+d:lwg4509
+LWG4509
+
+New
+std::optional<T>::transform cannot be implemented while supporting program-defined specializations
+https://wg21.link/lwg4509
+
+
+
+
+Rasheeq Azad
+-
 d:lwg451
 LWG451
 
@@ -40809,6 +41085,42 @@ https://wg21.link/lwg451
 
 
 Bill Plauger
+-
+d:lwg4510
+LWG4510
+
+New
+Ambiguity of std::ranges::advance and std::ranges::next when the difference type is also a sentinel type
+https://wg21.link/lwg4510
+
+
+
+
+Jiang An
+-
+d:lwg4511
+LWG4511
+
+New
+Inconsistency between the deduction guide of std::mdspan taking (data_handle_type, mapping_type, accessor_type) and the corresponding constructor
+https://wg21.link/lwg4511
+
+
+
+
+Jiang An
+-
+d:lwg4512
+LWG4512
+
+New
+The system_encoded_string() and generic_system_encoded_string() member functions of std::filesystem::path are misnamed
+https://wg21.link/lwg4512
+
+
+
+
+Tom Honermann
 -
 d:lwg452
 LWG452
