@@ -2301,6 +2301,8 @@
     "CSS-connected",
     "CSS-wide keywords",
     "CSSAnimation",
+    "CSSApplyBlockRule",
+    "CSSApplyStatementRule",
     "CSSBoxType",
     "CSSColor",
     "CSSColorAngle",
@@ -2311,6 +2313,8 @@
     "CSSColorValue",
     "CSSConditionRule",
     "CSSContainerRule",
+    "CSSContentsBlockRule",
+    "CSSContentsStatementRule",
     "CSSCounterStyleRule",
     "CSSCustomMediaRule",
     "CSSFontFaceDescriptors",
@@ -2347,6 +2351,7 @@
     "CSSMatrixComponent",
     "CSSMatrixComponentOptions",
     "CSSMediaRule",
+    "CSSMixinRule",
     "CSSNamespaceRule",
     "CSSNestedDeclarations",
     "CSSNumberish",
@@ -3311,6 +3316,7 @@
     "DigitalCredentialCreateRequest",
     "DigitalCredentialCreationOptions",
     "DigitalCredentialGetRequest",
+    "DigitalCredentialPresentationProtocol",
     "DigitalCredentialRequestOptions",
     "DigitalGoodsService",
     "Dimension attributes",
@@ -8146,6 +8152,7 @@
     "Table of maximum downlink speeds",
     "Table of provisional permissions",
     "Table of standardized permissions of the web platform",
+    "Table of supported presentation and issuance protocols",
     "TableDescriptor",
     "TableKind",
     "TablePatch",
@@ -14290,6 +14297,7 @@
     "fallback alignment",
     "fallback base URL",
     "fallback base styles",
+    "fallback block",
     "fallback chain",
     "fallback content",
     "fallback event",
@@ -21336,10 +21344,15 @@
     "serialize a CSS rule",
     "serialize a CSS type",
     "serialize a CSS value",
+    "serialize a CSSApplyBlockRule",
+    "serialize a CSSApplyStatementRule",
+    "serialize a CSSContentsBlockRule",
+    "serialize a CSSContentsStatementRule",
     "serialize a CSSFunctionRule",
     "serialize a CSSKeywordValue",
     "serialize a CSSMathValue",
     "serialize a CSSMatrixComponent",
+    "serialize a CSSMixinRule",
     "serialize a CSSNumericValue",
     "serialize a CSSPerspective",
     "serialize a CSSPropertyRule",
@@ -21365,6 +21378,7 @@
     "serialize a cubic-bezier() function",
     "serialize a currency tag",
     "serialize a device",
+    "serialize a function argument",
     "serialize a function parameter",
     "serialize a group of selectors",
     "serialize a linear() control point",
@@ -21385,6 +21399,7 @@
     "serialize a verbose debug report",
     "serialize a whitespace-separated list",
     "serialize an <an+b> value",
+    "serialize an @apply prelude",
     "serialize an Array-like",
     "serialize an Infra value to JSON bytes",
     "serialize an Infra value to a JSON string",
@@ -29154,6 +29169,14 @@
   "CSSAnimation": [
     "animationName"
   ],
+  "CSSApplyBlockRule": [
+    "getArguments()",
+    "name"
+  ],
+  "CSSApplyStatementRule": [
+    "getArguments()",
+    "name"
+  ],
   "CSSBoxType": [
     "\"border\"",
     "\"content\"",
@@ -29685,6 +29708,11 @@
   "CSSMediaRule": [
     "matches",
     "media"
+  ],
+  "CSSMixinRule": [
+    "contents",
+    "getParameters()",
+    "name"
   ],
   "CSSNamespaceRule": [
     "namespaceURI",
@@ -33845,6 +33873,12 @@
   "DigitalCredentialGetRequest": [
     "data",
     "protocol"
+  ],
+  "DigitalCredentialPresentationProtocol": [
+    "openid4vp-v1-multisigned",
+    "openid4vp-v1-signed",
+    "openid4vp-v1-unsigned",
+    "org-iso-mdoc"
   ],
   "DigitalCredentialRequestOptions": [
     "requests"
