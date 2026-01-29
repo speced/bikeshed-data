@@ -9497,6 +9497,9 @@
     "XRMeshSet",
     "XRPermissionDescriptor",
     "XRPermissionStatus",
+    "XRPlane",
+    "XRPlaneOrientation",
+    "XRPlaneSet",
     "XRPose",
     "XRProjectionLayer",
     "XRProjectionLayerInit",
@@ -12734,6 +12737,7 @@
     "create nested configs",
     "create new anchor object",
     "create or override the cached client hints set",
+    "create plane object",
     "create record objects",
     "create script entry point",
     "create the attribution",
@@ -17781,6 +17785,8 @@
     "native hit test results",
     "native mesh detection",
     "native mesh objects",
+    "native plane detection",
+    "native plane objects",
     "native render",
     "natively render",
     "natural aspect ratio",
@@ -19113,6 +19119,7 @@
     "plaintext",
     "plan to navigate",
     "planar",
+    "plane-detection",
     "planned navigation",
     "platform",
     "platform attachment",
@@ -21277,6 +21284,7 @@
     "sells",
     "semantic",
     "semantic extension",
+    "semantic label",
     "semantically",
     "semantics",
     "semantics of an expression",
@@ -23406,6 +23414,8 @@
     "update meshes",
     "update metadata algorithm",
     "update only",
+    "update plane object",
+    "update planes",
     "update playout stats",
     "update previous wins",
     "update pseudo-element styles",
@@ -57911,6 +57921,7 @@
     "index"
   ],
   "XR device": [
+    "room capture method",
     "set of granted features"
   ],
   "XRAnchor": [
@@ -58156,6 +58167,7 @@
     "body",
     "createAnchor(pose, space)",
     "detectedMeshes",
+    "detectedPlanes",
     "fillJointRadii(jointSpaces, radii)",
     "fillPoses(spaces, baseSpace, transforms)",
     "getDepthInformation(view)",
@@ -58496,6 +58508,19 @@
   "XRPermissionStatus": [
     "granted"
   ],
+  "XRPlane": [
+    "frame",
+    "lastChangedTime",
+    "native entity",
+    "orientation",
+    "planeSpace",
+    "polygon",
+    "semanticLabel"
+  ],
+  "XRPlaneOrientation": [
+    "\"horizontal\"",
+    "\"vertical\""
+  ],
   "XRPose": [
     "angularVelocity",
     "computed offset",
@@ -58702,6 +58727,7 @@
     "environmentBlendMode",
     "frameRate",
     "frameratechange",
+    "initiateRoomCapture()",
     "inputSources",
     "inputsourceschange",
     "interactionMode",
@@ -58738,6 +58764,7 @@
     "requestReferenceSpace(type)",
     "restorePersistentAnchor(uuid)",
     "resumeDepthSensing()",
+    "room capture completed",
     "select",
     "selectend",
     "selectstart",
@@ -58746,6 +58773,7 @@
     "set of granted features",
     "set of tracked anchors",
     "set of tracked meshes",
+    "set of tracked planes",
     "squeeze",
     "squeezeend",
     "squeezestart",
