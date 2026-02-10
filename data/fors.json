@@ -159,6 +159,7 @@
     "\"xr-session-supported\"",
     "\"xr-standard\" Gamepad Mapping",
     "#",
+    "#serialization",
     "%AggregateError%",
     "%AggregateError.prototype%",
     "%Array%",
@@ -3058,6 +3059,7 @@
     "DAPT Extension",
     "DAPT Origin Timecode",
     "DAPT Script",
+    "DAPT#serialization",
     "DBSC proof",
     "DELEGATED_CAPABILITY_TIMESTAMPS",
     "DID",
@@ -13894,8 +13896,6 @@
     "emulated native anchors",
     "emulated network conditions struct",
     "emulated position data",
-    "emulation.BrandVersion",
-    "emulation.ClientHintsMetadata",
     "emulation.ForcedColorsModeTheme",
     "emulation.GeolocationCoordinates",
     "emulation.GeolocationPositionError",
@@ -13905,8 +13905,6 @@
     "emulation.ScreenOrientation",
     "emulation.ScreenOrientationNatural",
     "emulation.ScreenOrientationType",
-    "emulation.SetClientHintsOverrideCommand",
-    "emulation.SetClientHintsOverrideResult",
     "emulation.SetForcedColorsModeThemeOverride",
     "emulation.SetForcedColorsModeThemeOverrideParameters",
     "emulation.SetForcedColorsModeThemeOverrideResult",
@@ -23596,6 +23594,10 @@
     "user-manipulable text",
     "user-origin",
     "user-select",
+    "userAgentClientHints.BrandVersion",
+    "userAgentClientHints.ClientHintsMetadata",
+    "userAgentClientHints.SetClientHintsOverrideCommand",
+    "userAgentClientHints.SetClientHintsOverrideResult",
     "userInvolvement",
     "userVerificationOptional",
     "userVerificationOptionalWithCredentialIDList",
@@ -62343,7 +62345,6 @@
     "browsingContext.reload",
     "browsingContext.setViewport",
     "browsingContext.traverseHistory",
-    "emulation.setClientHintsOverride",
     "emulation.setForcedColorsModeThemeOverride",
     "emulation.setGeolocationOverride",
     "emulation.setLocaleOverride",
@@ -62384,6 +62385,7 @@
     "storage.deleteCookies",
     "storage.getCookies",
     "storage.setCookie",
+    "userAgentClientHints.setClientHintsOverride",
     "webExtension.install",
     "webExtension.uninstall"
   ],
@@ -63417,34 +63419,6 @@
   "emulated-network-conditions-struct": [
     "offline"
   ],
-  "emulation.BrandVersion": [
-    "\"brand\"",
-    "\"version\"",
-    "brand",
-    "version"
-  ],
-  "emulation.ClientHintsMetadata": [
-    "\"architecture\"",
-    "\"bitness\"",
-    "\"brands\"",
-    "\"formFactors\"",
-    "\"fullVersionList\"",
-    "\"mobile\"",
-    "\"model\"",
-    "\"platform\"",
-    "\"platformVersion\"",
-    "\"wow64\"",
-    "architecture",
-    "bitness",
-    "brands",
-    "formFactors",
-    "fullVersionList",
-    "mobile",
-    "model",
-    "platform",
-    "platformVersion",
-    "wow64"
-  ],
   "emulation.ForcedColorsModeTheme": [
     "\"dark\"",
     "\"light\"",
@@ -63510,24 +63484,6 @@
     "landscape-secondary",
     "portrait-primary",
     "portrait-secondary"
-  ],
-  "emulation.SetClientHintsOverrideCommand": [
-    "\"method\"",
-    "\"params\"",
-    "method",
-    "params"
-  ],
-  "emulation.SetClientHintsOverrideCommand/method": [
-    "\"emulation.setClientHintsOverride\"",
-    "emulation.setClientHintsOverride"
-  ],
-  "emulation.SetClientHintsOverrideCommand/params": [
-    "\"clientHints\"",
-    "\"contexts\"",
-    "\"userContexts\"",
-    "clientHints",
-    "contexts",
-    "userContexts"
   ],
   "emulation.SetForcedColorsModeThemeOverride": [
     "\"method\"",
@@ -73083,6 +73039,52 @@
     "contain",
     "none",
     "text"
+  ],
+  "userAgentClientHints.BrandVersion": [
+    "\"brand\"",
+    "\"version\"",
+    "brand",
+    "version"
+  ],
+  "userAgentClientHints.ClientHintsMetadata": [
+    "\"architecture\"",
+    "\"bitness\"",
+    "\"brands\"",
+    "\"formFactors\"",
+    "\"fullVersionList\"",
+    "\"mobile\"",
+    "\"model\"",
+    "\"platform\"",
+    "\"platformVersion\"",
+    "\"wow64\"",
+    "architecture",
+    "bitness",
+    "brands",
+    "formFactors",
+    "fullVersionList",
+    "mobile",
+    "model",
+    "platform",
+    "platformVersion",
+    "wow64"
+  ],
+  "userAgentClientHints.SetClientHintsOverrideCommand": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "userAgentClientHints.SetClientHintsOverrideCommand/method": [
+    "\"userAgentClientHints.setClientHintsOverride\"",
+    "userAgentClientHints.setClientHintsOverride"
+  ],
+  "userAgentClientHints.SetClientHintsOverrideCommand/params": [
+    "\"clientHints\"",
+    "\"contexts\"",
+    "\"userContexts\"",
+    "clientHints",
+    "contexts",
+    "userContexts"
   ],
   "validated conversion options": [
     "Aggregation Service",
