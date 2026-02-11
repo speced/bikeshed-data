@@ -9582,6 +9582,7 @@
         "MediaSource",
         "MediaStream",
         "MediaStreamTrackEvent",
+        "MouseEvent",
         "NDEFMessage",
         "NDEFReader",
         "NDEFReadingEvent",
@@ -9662,6 +9663,7 @@
         "VideoTrackGenerator",
         "ViewTimeline",
         "WebTransportError",
+        "WheelEvent",
         "WindowControlsOverlayGeometryChangeEvent",
         "WritableStream",
         "XMLHttpRequest",
@@ -19654,9 +19656,10 @@
     "getModifierState()": {
       "args": [],
       "for": [
+        "MouseEvent",
         "TouchEvent"
       ],
-      "shortname": "touch-events"
+      "shortname": "pointerevents"
     },
     "getModifierState(keyArg)": {
       "args": [
@@ -19667,7 +19670,7 @@
         "MouseEvent",
         "TouchEvent"
       ],
-      "shortname": "touch-events"
+      "shortname": "pointerevents"
     }
   },
   "getMonth()": {
@@ -22165,6 +22168,13 @@
     }
   },
   "initMouseEvent()": {
+    "initMouseEvent()": {
+      "args": [],
+      "for": [
+        "MouseEvent"
+      ],
+      "shortname": "pointerevents"
+    },
     "initMouseEvent(typeArg)": {
       "args": [
         "typeArg"
@@ -22172,7 +22182,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg)": {
       "args": [
@@ -22182,7 +22192,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg)": {
       "args": [
@@ -22193,7 +22203,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg)": {
       "args": [
@@ -22205,7 +22215,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg)": {
       "args": [
@@ -22218,7 +22228,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg)": {
       "args": [
@@ -22232,7 +22242,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg)": {
       "args": [
@@ -22247,7 +22257,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg)": {
       "args": [
@@ -22263,7 +22273,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg)": {
       "args": [
@@ -22280,7 +22290,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg)": {
       "args": [
@@ -22298,7 +22308,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg)": {
       "args": [
@@ -22317,7 +22327,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg)": {
       "args": [
@@ -22337,7 +22347,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg)": {
       "args": [
@@ -22358,7 +22368,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg)": {
       "args": [
@@ -22380,7 +22390,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     },
     "initMouseEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg, screenXArg, screenYArg, clientXArg, clientYArg, ctrlKeyArg, altKeyArg, shiftKeyArg, metaKeyArg, buttonArg, relatedTargetArg)": {
       "args": [
@@ -22403,7 +22413,7 @@
       "for": [
         "MouseEvent"
       ],
-      "shortname": "uievents"
+      "shortname": "pointerevents"
     }
   },
   "initStorageEvent()": {
