@@ -13,6 +13,14 @@
       "url": "https://www.w3.org/TR/wai-aria-1.2/#ARIAMixin"
     }
   },
+  "#ARIANotifyMixin": {
+    "current": {
+      "number": "10.2",
+      "spec": "WAI-ARIA",
+      "text": "Interface Mixin ARIANotifyMixin",
+      "url": "https://w3c.github.io/aria/#ARIANotifyMixin"
+    }
+  },
   "#Properties": {
     "current": {
       "number": "5.2",
@@ -71,7 +79,7 @@
   },
   "#accessibilityroleandproperties-correspondence": {
     "current": {
-      "number": "10.2",
+      "number": "10.3",
       "spec": "WAI-ARIA",
       "text": "ARIA Attribute Correspondence",
       "url": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
@@ -145,6 +153,14 @@
       "spec": "WAI-ARIA",
       "text": "ARIA Attributes",
       "url": "https://www.w3.org/TR/wai-aria-1.2/#aria-attributes"
+    }
+  },
+  "#arianotify-permissions-policy": {
+    "current": {
+      "number": "10.2.1",
+      "spec": "WAI-ARIA",
+      "text": "Permissions Policy Integration",
+      "url": "https://w3c.github.io/aria/#arianotify-permissions-policy"
     }
   },
   "#at_support": {
@@ -717,7 +733,7 @@
     "current": {
       "number": "",
       "spec": "WAI-ARIA",
-      "text": "10. IDL Interface",
+      "text": "10. IDL Interfaces",
       "url": "https://w3c.github.io/aria/#idl-interface"
     },
     "snapshot": {
@@ -743,7 +759,7 @@
   },
   "#idl_attr_disambiguation": {
     "current": {
-      "number": "10.2.1",
+      "number": "10.3.1",
       "spec": "WAI-ARIA",
       "text": "Disambiguation Pattern",
       "url": "https://w3c.github.io/aria/#idl_attr_disambiguation"
@@ -757,7 +773,7 @@
   },
   "#idl_attr_exceptions": {
     "current": {
-      "number": "10.2.2",
+      "number": "10.3.2",
       "spec": "WAI-ARIA",
       "text": "IDL Attribute Name Notes or Exceptions",
       "url": "https://w3c.github.io/aria/#idl_attr_exceptions"
@@ -779,7 +795,7 @@
   },
   "#idl_example_usage": {
     "current": {
-      "number": "10.3",
+      "number": "10.4",
       "spec": "WAI-ARIA",
       "text": "Example IDL Attribute Usage",
       "url": "https://w3c.github.io/aria/#idl_example_usage"
@@ -1906,12 +1922,6 @@
     }
   },
   "#x10-2-1-disambiguation-pattern": {
-    "current": {
-      "number": "10.2.1",
-      "spec": "WAI-ARIA",
-      "text": "Disambiguation Pattern",
-      "url": "https://w3c.github.io/aria/#idl_attr_disambiguation"
-    },
     "snapshot": {
       "number": "10.2.1",
       "spec": "WAI-ARIA",
@@ -1919,13 +1929,15 @@
       "url": "https://www.w3.org/TR/wai-aria-1.2/#idl_attr_disambiguation"
     }
   },
-  "#x10-2-2-idl-attribute-name-notes-or-exceptions": {
+  "#x10-2-1-permissions-policy-integration": {
     "current": {
-      "number": "10.2.2",
+      "number": "10.2.1",
       "spec": "WAI-ARIA",
-      "text": "IDL Attribute Name Notes or Exceptions",
-      "url": "https://w3c.github.io/aria/#idl_attr_exceptions"
-    },
+      "text": "Permissions Policy Integration",
+      "url": "https://w3c.github.io/aria/#arianotify-permissions-policy"
+    }
+  },
+  "#x10-2-2-idl-attribute-name-notes-or-exceptions": {
     "snapshot": {
       "number": "10.2.2",
       "spec": "WAI-ARIA",
@@ -1934,17 +1946,43 @@
     }
   },
   "#x10-2-aria-attribute-correspondence": {
-    "current": {
-      "number": "10.2",
-      "spec": "WAI-ARIA",
-      "text": "ARIA Attribute Correspondence",
-      "url": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
-    },
     "snapshot": {
       "number": "10.2",
       "spec": "WAI-ARIA",
       "text": "ARIA Attribute Correspondence",
       "url": "https://www.w3.org/TR/wai-aria-1.2/#accessibilityroleandproperties-correspondence"
+    }
+  },
+  "#x10-2-interface-mixin-arianotifymixin": {
+    "current": {
+      "number": "10.2",
+      "spec": "WAI-ARIA",
+      "text": "Interface Mixin ARIANotifyMixin",
+      "url": "https://w3c.github.io/aria/#ARIANotifyMixin"
+    }
+  },
+  "#x10-3-1-disambiguation-pattern": {
+    "current": {
+      "number": "10.3.1",
+      "spec": "WAI-ARIA",
+      "text": "Disambiguation Pattern",
+      "url": "https://w3c.github.io/aria/#idl_attr_disambiguation"
+    }
+  },
+  "#x10-3-2-idl-attribute-name-notes-or-exceptions": {
+    "current": {
+      "number": "10.3.2",
+      "spec": "WAI-ARIA",
+      "text": "IDL Attribute Name Notes or Exceptions",
+      "url": "https://w3c.github.io/aria/#idl_attr_exceptions"
+    }
+  },
+  "#x10-3-aria-attribute-correspondence": {
+    "current": {
+      "number": "10.3",
+      "spec": "WAI-ARIA",
+      "text": "ARIA Attribute Correspondence",
+      "url": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
     }
   },
   "#x10-3-ariamixin-mixed-in-to-element": {
@@ -1955,15 +1993,13 @@
       "url": "https://www.w3.org/TR/wai-aria-1.2/#idl_element"
     }
   },
-  "#x10-3-example-idl-attribute-usage": {
+  "#x10-4-example-idl-attribute-usage": {
     "current": {
-      "number": "10.3",
+      "number": "10.4",
       "spec": "WAI-ARIA",
       "text": "Example IDL Attribute Usage",
       "url": "https://w3c.github.io/aria/#idl_example_usage"
-    }
-  },
-  "#x10-4-example-idl-attribute-usage": {
+    },
     "snapshot": {
       "number": "10.4",
       "spec": "WAI-ARIA",
@@ -1972,17 +2008,19 @@
     }
   },
   "#x10-idl-interface": {
-    "current": {
-      "number": "",
-      "spec": "WAI-ARIA",
-      "text": "10. IDL Interface",
-      "url": "https://w3c.github.io/aria/#idl-interface"
-    },
     "snapshot": {
       "number": "",
       "spec": "WAI-ARIA",
       "text": "10. IDL Interface",
       "url": "https://www.w3.org/TR/wai-aria-1.2/#idl-interface"
+    }
+  },
+  "#x10-idl-interfaces": {
+    "current": {
+      "number": "",
+      "spec": "WAI-ARIA",
+      "text": "10. IDL Interfaces",
+      "url": "https://w3c.github.io/aria/#idl-interface"
     }
   },
   "#x11-privacy-and-security-considerations": {
