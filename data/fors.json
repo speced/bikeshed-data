@@ -8629,6 +8629,7 @@
     "UIEventInit",
     "ULP",
     "ULongRange",
+    "UNION",
     "UPC-A",
     "URDNA2015",
     "URGNA2012",
@@ -10220,6 +10221,7 @@
     "apply extended scope",
     "apply link options from parsed header attributes",
     "apply network conditions",
+    "apply offsets to a segment",
     "apply orientation lock",
     "apply request modifiers from URL value",
     "apply scroll margin to a scrollport",
@@ -12120,6 +12122,7 @@
     "conformance",
     "conformance check",
     "conformance checking",
+    "conformance scope",
     "conformant server",
     "conformant user agent",
     "conforming COSE document",
@@ -12768,6 +12771,7 @@
     "create plane object",
     "create record objects",
     "create script entry point",
+    "create segment endpoints for a gap",
     "create the attribution",
     "create the language detector object",
     "create the navigation timing entry",
@@ -13407,6 +13411,7 @@
     "determine if an origin is an aggregation coordinator",
     "determine navigation params policy container",
     "determine nosniff",
+    "determine painted segments",
     "determine pairs of gap decoration endpoints",
     "determine position fallback styles",
     "determine remaining navigation budget",
@@ -13417,6 +13422,7 @@
     "determine the device pixel ratio",
     "determine the effective FedCM connection status",
     "determine the fallback encoding",
+    "determine the gap decoration segments",
     "determine the initial storage-access eligibility",
     "determine the intrinsic sizes",
     "determine the layout attribute",
@@ -13792,7 +13798,7 @@
     "eb64url",
     "ebuttm",
     "echoCancellation",
-    "edge gap intersection point",
+    "edge segment endpoint",
     "editable",
     "editable context",
     "editable element",
@@ -13993,6 +13999,7 @@
     "end endpoint",
     "end of iteration",
     "end page value",
+    "end segment endpoint",
     "end the session",
     "end the transaction",
     "end time",
@@ -14661,6 +14668,7 @@
     "fixed-positioned box",
     "fixed-size array",
     "flagged as full",
+    "flanked by spanning items",
     "flash",
     "flashes",
     "flashing",
@@ -14986,7 +14994,9 @@
     "gamut-map",
     "gap",
     "gap decoration",
+    "gap decoration segment",
     "gap intersection point",
+    "gap junction",
     "garbage-collect the connection",
     "gather active observations at depth",
     "gather active resize observations",
@@ -16270,8 +16280,8 @@
     "interface object",
     "interface of a shader",
     "interface prototype object",
-    "interior gap intersection point",
     "interior nodes",
+    "interior segment endpoint",
     "interlaced PNG image",
     "interleaved",
     "interlinear annotations",
@@ -21280,6 +21290,7 @@
     "seek",
     "seek and get the next code point",
     "segment break",
+    "segment endpoint",
     "segment interpolation progress",
     "segment-completing close path",
     "select",
@@ -22292,6 +22303,7 @@
     "start page",
     "start page value",
     "start pages",
+    "start segment endpoint",
     "start session algorithm",
     "start the NFC make read-only",
     "start the NFC write",
@@ -47241,12 +47253,18 @@
     "salt"
   ],
   "Performance": [
+    "Performance",
+    "add a PerformanceResourceTiming entry",
+    "can add resource timing entry",
     "clearMarks()",
     "clearMarks(markName)",
     "clearMeasures()",
     "clearMeasures(measureName)",
+    "clearResourceTimings",
     "clearResourceTimings()",
+    "copy secondary buffer",
     "eventCounts",
+    "fire a buffer full event",
     "getEntries()",
     "getEntriesByName()",
     "getEntriesByName(name)",
@@ -47265,11 +47283,20 @@
     "navigation",
     "now()",
     "onresourcetimingbufferfull",
+    "resource timing buffer current size",
+    "resource timing buffer full event pending flag",
+    "resource timing buffer size limit",
+    "resource timing secondary buffer",
+    "resource timing secondary buffer current size",
+    "setResourceTimingBufferSize",
     "setResourceTimingBufferSize()",
     "setResourceTimingBufferSize(maxSize)",
     "timeOrigin",
     "timing",
     "toJSON()"
+  ],
+  "Performance/setResourceTimingBufferSize(maxSize)": [
+    "maxSize"
   ],
   "PerformanceElementTiming": [
     "element",
@@ -47401,11 +47428,13 @@
     "toJSON()"
   ],
   "PerformanceResourceTiming": [
+    "cache mode",
     "connectEnd",
     "connectStart",
     "contentEncoding",
     "contentType",
     "decodedBodySize",
+    "delivery type",
     "deliveryType",
     "domainLookupEnd",
     "domainLookupStart",
@@ -47413,17 +47442,24 @@
     "fetchStart",
     "finalResponseHeadersStart",
     "firstInterimResponseStart",
+    "initiator type",
     "initiatorType",
     "nextHopProtocol",
     "redirectEnd",
     "redirectStart",
+    "render-blocking status",
     "renderBlockingStatus",
     "requestStart",
+    "requested URL",
+    "resource info",
+    "response status",
     "responseEnd",
     "responseStart",
     "responseStatus",
     "secureConnectionStart",
     "serverTiming",
+    "timing info",
+    "toJSON",
     "toJSON()",
     "transferSize",
     "workerCacheLookupStart",
@@ -50262,6 +50298,8 @@
     "disconnected"
   ],
   "RenderBlockingStatusType": [
+    "\"blocking\"",
+    "\"non-blocking\"",
     "blocking",
     "non-blocking"
   ],
@@ -60318,9 +60356,7 @@
   ],
   "block-step-insert": [
     "content-box",
-    "margin",
     "margin-box",
-    "padding",
     "padding-box"
   ],
   "blockquote": [
@@ -61308,10 +61344,12 @@
     "\"navigation\"",
     "\"timestamp\"",
     "\"url\"",
+    "\"userContext\"",
     "context",
     "navigation",
     "timestamp",
-    "url"
+    "url",
+    "userContext"
   ],
   "browsingContext.BoxClipRectangle": [
     "\"height\"",
@@ -61431,7 +61469,9 @@
   ],
   "browsingContext.CreateResult": [
     "\"context\"",
-    "context"
+    "\"userContext\"",
+    "context",
+    "userContext"
   ],
   "browsingContext.CreateType": [
     "\"tab\"",
@@ -61573,9 +61613,11 @@
     "\"context\"",
     "\"timestamp\"",
     "\"url\"",
+    "\"userContext\"",
     "context",
     "timestamp",
-    "url"
+    "url",
+    "userContext"
   ],
   "browsingContext.ImageFormat": [
     "\"quality\"",
@@ -61851,10 +61893,12 @@
     "\"accepted\"",
     "\"context\"",
     "\"type\"",
+    "\"userContext\"",
     "\"userText\"",
     "accepted",
     "context",
     "type",
+    "userContext",
     "userText"
   ],
   "browsingContext.UserPromptOpened": [
@@ -61873,11 +61917,13 @@
     "\"handler\"",
     "\"message\"",
     "\"type\"",
+    "\"userContext\"",
     "context",
     "defaultValue",
     "handler",
     "message",
-    "type"
+    "type",
+    "userContext"
   ],
   "browsingContext.UserPromptType": [
     "\"alert\"",
@@ -65567,9 +65613,11 @@
     "\"context\"",
     "\"element\"",
     "\"multiple\"",
+    "\"userContext\"",
     "context",
     "element",
-    "multiple"
+    "multiple",
+    "userContext"
   ],
   "input.FileDialogOpened": [
     "\"method\"",
@@ -67317,13 +67365,15 @@
     "\"redirectCount\"",
     "\"request\"",
     "\"timestamp\"",
+    "\"userContext\"",
     "context",
     "intercepts",
     "isBlocked",
     "navigation",
     "redirectCount",
     "request",
-    "timestamp"
+    "timestamp",
+    "userContext"
   ],
   "network.BeforeRequestSent": [
     "\"method\"",
@@ -70272,8 +70322,10 @@
   "script.Source": [
     "\"context\"",
     "\"realm\"",
+    "\"userContext\"",
     "context",
-    "realm"
+    "realm",
+    "userContext"
   ],
   "script.SpecialNumber": [
     "\"-0\"",
@@ -70387,9 +70439,11 @@
     "\"context\"",
     "\"sandbox\"",
     "\"type\"",
+    "\"userContext\"",
     "context",
     "sandbox",
-    "type"
+    "type",
+    "userContext"
   ],
   "script.WindowRealmInfo/type": [
     "\"window\"",
