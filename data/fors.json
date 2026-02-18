@@ -1401,6 +1401,7 @@
     "AC Review",
     "AC representative",
     "AD structure",
+    "AI platform",
     "AI task source",
     "API URL parser",
     "API value",
@@ -5754,6 +5755,10 @@
     "MockCapturePromptResult",
     "MockCapturePromptResultConfiguration",
     "MockMicrophoneConfiguration",
+    "ModelContext",
+    "ModelContextClient",
+    "ModelContextOptions",
+    "ModelContextTool",
     "Modifiers Population Algorithm",
     "Module",
     "ModuleBody",
@@ -8477,6 +8482,8 @@
     "TokenVersion",
     "Tokenization",
     "TooManyReads",
+    "ToolAnnotations",
+    "ToolExecuteCallback",
     "Tooltip attribute",
     "Top-level collections",
     "TopLevelStorageAccessPermissionDescriptor",
@@ -8867,6 +8874,7 @@
     "UserAgentClientHintsCommand",
     "UserDataHandler",
     "UserIdleState",
+    "UserInteractionCallback",
     "UserVerificationRequirement",
     "Username",
     "Using the a element to define a command",
@@ -11083,6 +11091,7 @@
     "browser chrome elements",
     "browser fingerprinting",
     "browser initiated remote playback",
+    "browser's agent",
     "browser.ClientWindow",
     "browser.ClientWindowInfo",
     "browser.ClientWindowNamedState",
@@ -44957,6 +44966,41 @@
   "MockMicrophoneConfiguration": [
     "defaultSampleRate"
   ],
+  "ModelContext": [
+    "clearContext()",
+    "provideContext()",
+    "provideContext(options)",
+    "registerTool(tool)",
+    "unregisterTool(name)"
+  ],
+  "ModelContext/provideContext()": [
+    "options"
+  ],
+  "ModelContext/provideContext(options)": [
+    "options"
+  ],
+  "ModelContext/registerTool(tool)": [
+    "tool"
+  ],
+  "ModelContext/unregisterTool(name)": [
+    "name"
+  ],
+  "ModelContextClient": [
+    "requestUserInteraction(callback)"
+  ],
+  "ModelContextClient/requestUserInteraction(callback)": [
+    "callback"
+  ],
+  "ModelContextOptions": [
+    "tools"
+  ],
+  "ModelContextTool": [
+    "annotations",
+    "description",
+    "execute",
+    "inputSchema",
+    "name"
+  ],
   "Module": [
     "Module(bytes)",
     "Module(bytes, options)",
@@ -45777,6 +45821,7 @@
     "mediaCapabilities",
     "mediaDevices",
     "mediaSession",
+    "modelContext",
     "permissions",
     "preferences",
     "presentation",
@@ -54382,6 +54427,13 @@
   ],
   "TokenVersion": [
     "\"1\""
+  ],
+  "ToolAnnotations": [
+    "readOnlyHint"
+  ],
+  "ToolExecuteCallback": [
+    "client",
+    "input"
   ],
   "TopLevelStorageAccessPermissionDescriptor": [
     "requestedOrigin"

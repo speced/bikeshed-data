@@ -8282,7 +8282,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "changePaymentMethod(methodName)": {
       "args": [
@@ -8291,7 +8291,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "changePaymentMethod(methodName, methodDetails)": {
       "args": [
@@ -8301,7 +8301,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     }
   },
   "changeShippingAddress()": {
@@ -8310,7 +8310,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "changeShippingAddress(shippingAddress)": {
       "args": [
@@ -8319,7 +8319,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     }
   },
   "changeShippingOption()": {
@@ -8328,7 +8328,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "changeShippingOption(shippingOption)": {
       "args": [
@@ -8337,7 +8337,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     }
   },
   "changeType()": {
@@ -8566,6 +8566,15 @@
         "GPUCommandEncoder"
       ],
       "shortname": "webgpu"
+    }
+  },
+  "clearContext()": {
+    "clearContext()": {
+      "args": [],
+      "for": [
+        "ModelContext"
+      ],
+      "shortname": "webmcp"
     }
   },
   "clearData()": {
@@ -15612,7 +15621,7 @@
       "for": [
         "PaymentManager"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "enableDelegations(delegations)": {
       "args": [
@@ -15621,7 +15630,7 @@
       "for": [
         "PaymentManager"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     }
   },
   "encapsulateBits()": {
@@ -25756,7 +25765,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "openWindow(url)": {
       "args": [
@@ -25766,7 +25775,7 @@
         "Clients",
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "service-workers"
     }
   },
   "or()": {
@@ -26658,6 +26667,24 @@
         "Object"
       ],
       "shortname": "ecmascript"
+    }
+  },
+  "provideContext()": {
+    "provideContext()": {
+      "args": [],
+      "for": [
+        "ModelContext"
+      ],
+      "shortname": "webmcp"
+    },
+    "provideContext(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "ModelContext"
+      ],
+      "shortname": "webmcp"
     }
   },
   "pseudo()": {
@@ -27777,6 +27804,17 @@
         "NavigatorContentUtils"
       ],
       "shortname": "html"
+    }
+  },
+  "registerTool()": {
+    "registerTool(tool)": {
+      "args": [
+        "tool"
+      ],
+      "for": [
+        "ModelContext"
+      ],
+      "shortname": "webmcp"
     }
   },
   "reject()": {
@@ -29048,6 +29086,17 @@
       "shortname": "html"
     }
   },
+  "requestUserInteraction()": {
+    "requestUserInteraction(callback)": {
+      "args": [
+        "callback"
+      ],
+      "for": [
+        "ModelContextClient"
+      ],
+      "shortname": "webmcp"
+    }
+  },
   "requestVideoFrameCallback()": {
     "requestVideoFrameCallback(callback)": {
       "args": [
@@ -29285,7 +29334,7 @@
         "CanMakePaymentEvent",
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "respondWith(canMakePaymentResponse)": {
       "args": [
@@ -29294,7 +29343,7 @@
       "for": [
         "CanMakePaymentEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "respondWith(handlerResponsePromise)": {
       "args": [
@@ -29303,7 +29352,7 @@
       "for": [
         "PaymentRequestEvent"
       ],
-      "shortname": "payment-handler"
+      "shortname": "web-based-payment-handler"
     },
     "respondWith(r)": {
       "args": [
@@ -35968,6 +36017,17 @@
         "NavigatorContentUtils"
       ],
       "shortname": "html"
+    }
+  },
+  "unregisterTool()": {
+    "unregisterTool(name)": {
+      "args": [
+        "name"
+      ],
+      "for": [
+        "ModelContext"
+      ],
+      "shortname": "webmcp"
     }
   },
   "unshift()": {
