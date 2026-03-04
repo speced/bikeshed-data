@@ -499,6 +499,7 @@
     ":active-view-transition",
     ":active-view-transition-type()",
     ":after",
+    ":animated-image",
     ":any-link",
     ":autofill",
     ":before",
@@ -699,6 +700,7 @@
     "<angular-color-stop-list>",
     "<angular-color-stop>",
     "<animateable-feature>",
+    "<animation-action>",
     "<antecedent>",
     "<any-value>",
     "<apply>",
@@ -885,6 +887,7 @@
     "<eq/>",
     "<equivalent/>",
     "<eulergamma/>",
+    "<event-trigger-event>",
     "<exists/>",
     "<exp/>",
     "<explicit-track-list>",
@@ -1512,6 +1515,8 @@
     "Activate a sensor object",
     "Activate-Storage-Access",
     "Activation behavior",
+    "ActivationBlockersMixin",
+    "ActivationBlockersMixinBlockerReason",
     "Active Area",
     "Active Scanning",
     "Active Track Buffers",
@@ -4441,7 +4446,6 @@
     "HTMLOutputElement",
     "HTMLParagraphElement",
     "HTMLParamElement",
-    "HTMLPermissionElement",
     "HTMLPictureElement",
     "HTMLPortalElement",
     "HTMLPreElement",
@@ -4824,8 +4828,6 @@
     "In-Scope Threats",
     "InLeapYear",
     "InLeapYear(t)",
-    "InPagePermissionMixin",
-    "InPagePermissionMixinBlockerReason",
     "InUseAttributeError",
     "Inactivate the recorder",
     "InactiveBorder",
@@ -6493,6 +6495,7 @@
     "PostAsteriskCommentChars",
     "Posture values table",
     "Potentially report hash",
+    "PowerfulFeatureObserver",
     "Pre-base vowel",
     "Pre-binding of variables",
     "Pre-recording Script",
@@ -10138,6 +10141,7 @@
     "animation-tainted",
     "animation-timeline",
     "animation-timing-function",
+    "animation-trigger",
     "animator current time",
     "animator definition",
     "animator definitions",
@@ -12329,6 +12333,7 @@
     "content document",
     "content edge",
     "content height",
+    "content image",
     "content index entry",
     "content language",
     "content plane",
@@ -13161,6 +13166,7 @@
     "decorated bounding box",
     "decorating box",
     "decorative",
+    "decorative image",
     "decreasing",
     "decrement statement",
     "dedicated media source failure steps",
@@ -14164,9 +14170,13 @@
     "event name",
     "event parameters",
     "event target",
+    "event trigger",
     "event type",
     "event-level report cache",
     "event-level-report-replacement result",
+    "event-trigger",
+    "event-trigger-name",
+    "event-trigger-source",
     "eventTarget",
     "events",
     "events-from-layout-changes",
@@ -15772,6 +15782,7 @@
     "image type",
     "image type pattern matching algorithm",
     "image()",
+    "image-animation",
     "image-orientation",
     "image-rendering",
     "image-rendering rectangle",
@@ -18858,7 +18869,6 @@
     "parse a time string",
     "parse a time-zone offset component",
     "parse a time-zone offset string",
-    "parse a type string",
     "parse a url",
     "parse a vint",
     "parse a week string",
@@ -19094,7 +19104,6 @@
     "permanently de-identified",
     "permissible",
     "permission",
-    "permission elements attributes",
     "permission key",
     "permission request algorithm",
     "permission resource",
@@ -19737,6 +19746,7 @@
     "profiles",
     "profiling session",
     "program error",
+    "programmatic image",
     "programmatically",
     "programmatically associated",
     "programmatically detectable",
@@ -23003,7 +23013,17 @@
     "timeline duration",
     "timeline offset",
     "timeline time to origin-relative time",
+    "timeline trigger",
     "timeline-scope",
+    "timeline-trigger",
+    "timeline-trigger-activation-range",
+    "timeline-trigger-activation-range-end",
+    "timeline-trigger-activation-range-start",
+    "timeline-trigger-active-range",
+    "timeline-trigger-active-range-end",
+    "timeline-trigger-active-range-start",
+    "timeline-trigger-name",
+    "timeline-trigger-source",
     "timelinebegin",
     "timeout",
     "timeouts configuration",
@@ -23188,7 +23208,9 @@
     "trigger event-level attribution",
     "trigger-data matching mode",
     "trigger-registration JSON key",
+    "trigger-scope",
     "triggered",
+    "triggered animation",
     "triggering event",
     "triggering status",
     "trinary",
@@ -24300,6 +24322,16 @@
     "grad",
     "rad",
     "turn"
+  ],
+  "<animation-action>": [
+    "none",
+    "pause",
+    "play",
+    "play-backwards",
+    "play-forwards",
+    "play-once",
+    "replay",
+    "reset"
   ],
   "<auto-repeat-line-color>": [
     "repeat()"
@@ -25968,6 +26000,41 @@
   ],
   "AccelerometerSensorOptions": [
     "referenceFrame"
+  ],
+  "ActivationBlockersMixin": [
+    "ActivationBlockersMixin attributes",
+    "IntersectionObserver callback",
+    "[[BlockerList]]",
+    "[[IntersectionObserver]]",
+    "[[IntersectionRect]]",
+    "[[LastNotifiedInvalidReason]]",
+    "[[LastNotifiedValidState]]",
+    "add a blocker",
+    "add a permanent blocker",
+    "add a temporary blocker",
+    "add an expiring blocker",
+    "blocker",
+    "blocker delay",
+    "blocker ordering",
+    "blocker reason",
+    "blocker timestamp",
+    "blocking",
+    "invalidReason",
+    "isValid",
+    "maybe dispatch onvalidstatechange",
+    "onvalidationstatuschange",
+    "remove blockers"
+  ],
+  "ActivationBlockersMixinBlockerReason": [
+    "\"\"",
+    "\"illegal_subframe\"",
+    "\"intersection_changed\"",
+    "\"intersection_occluded_or_distorted\"",
+    "\"intersection_out_of_viewport_or_clipped\"",
+    "\"recently_attached\"",
+    "\"style_invalid\"",
+    "\"type_invalid\"",
+    "\"unsuccessful_registration\""
   ],
   "AdAuctionData": [
     "request",
@@ -28982,6 +29049,9 @@
     "tokenize",
     "tree-scoped name",
     "tree-scoped reference",
+    "trigger",
+    "trigger instance",
+    "trigger name",
     "turn(value)",
     "value definition syntax",
     "vb(value)",
@@ -39412,9 +39482,12 @@
     "constructor()",
     "error",
     "fetch location",
+    "insertion steps",
     "maybe autolocate",
     "onlocation",
     "position",
+    "recheck type permissibility",
+    "type permissible",
     "watch"
   ],
   "HTMLHRElement": [
@@ -39805,20 +39878,6 @@
     "type",
     "value",
     "valueType"
-  ],
-  "HTMLPermissionElement": [
-    "HTMLPermissionElement()",
-    "IntersectionObserver callback",
-    "build a permission descriptor",
-    "constructor()",
-    "get the current permission state",
-    "isTypeSupported(type)",
-    "recheck type permissibility",
-    "type",
-    "type permissible"
-  ],
-  "HTMLPermissionElement/isTypeSupported(type)": [
-    "type"
   ],
   "HTMLPortalElement": [
     "HTMLPortalElement()",
@@ -41266,48 +41325,6 @@
   "ImportNodeOptions": [
     "customElementRegistry",
     "selfOnly"
-  ],
-  "InPagePermissionMixin": [
-    "[[BlockerList]]",
-    "[[Features]]",
-    "[[InitialPermissionStatus]]",
-    "[[IntersectionObserver]]",
-    "[[IntersectionRect]]",
-    "[[LastNotifiedInvalidReason]]",
-    "[[LastNotifiedValidState]]",
-    "add a blocker",
-    "add a permanent blocker",
-    "add a temporary blocker",
-    "add an expiring blocker",
-    "blocker",
-    "blocker delay",
-    "blocker ordering",
-    "blocker reason",
-    "blocker timestamp",
-    "blocking",
-    "dispatch onpromptaction",
-    "dispatch onpromptdismiss",
-    "get the current permission state",
-    "initialPermissionStatus",
-    "invalidReason",
-    "isValid",
-    "maybe dispatch onvalidstatechange",
-    "onpromptaction",
-    "onpromptdismiss",
-    "onvalidationstatuschange",
-    "permissionStatus",
-    "remove blockers"
-  ],
-  "InPagePermissionMixinBlockerReason": [
-    "\"\"",
-    "\"illegal_subframe\"",
-    "\"intersection_changed\"",
-    "\"intersection_occluded_or_distorted\"",
-    "\"intersection_out_of_viewport_or_clipped\"",
-    "\"recently_attached\"",
-    "\"style_invalid\"",
-    "\"type_invalid\"",
-    "\"unsuccesful_registration\""
   ],
   "Ink": [
     "requestPresenter()",
@@ -47721,6 +47738,21 @@
     "enableHighAccuracy",
     "maximumAge",
     "timeout"
+  ],
+  "PowerfulFeatureObserver": [
+    "PowerfulFeatureObserver attributes",
+    "[[Features]]",
+    "[[InitialPermissionStatus]]",
+    "build a permission descriptor",
+    "dispatch onpromptaction",
+    "dispatch onpromptdismiss",
+    "get the current permission state",
+    "initialPermissionStatus",
+    "initialization steps",
+    "insertion steps",
+    "onpromptaction",
+    "onpromptdismiss",
+    "permissionStatus"
   ],
   "PredefinedColorSpace": [
     "display-p3",
@@ -59603,6 +59635,10 @@
     "fit",
     "scroll"
   ],
+  "animation-trigger": [
+    "[ <dashed-ident> <animation-action>+ ]+",
+    "none"
+  ],
   "animator definition": [
     "stateful flag"
   ],
@@ -63765,6 +63801,13 @@
     "current continuation state",
     "next enqueue order"
   ],
+  "event trigger": [
+    "enter action",
+    "enter event",
+    "exit action",
+    "exit event",
+    "trigger state"
+  ],
   "event-level report": [
     "attribution debug info",
     "attribution destinations",
@@ -63792,6 +63835,13 @@
     "add-new-report",
     "drop-new-report-low-priority",
     "drop-new-report-none-to-replace"
+  ],
+  "event-trigger": [
+    "none"
+  ],
+  "event-trigger-source": [
+    "<event-trigger-event>+ [ / <event-trigger-event>+ ]?",
+    "none"
   ],
   "exception": [
     "create",
@@ -65266,6 +65316,11 @@
     "sizes",
     "src",
     "type"
+  ],
+  "image-animation": [
+    "normal",
+    "paused",
+    "running"
   ],
   "image-orientation": [
     "<angle>",
@@ -67049,7 +67104,7 @@
     "negated filters"
   ],
   "navigable": [
-    "[[PermissionElements]]",
+    "[[ActivationBlockableElements]]",
     "active browsing context",
     "active document",
     "active window",
@@ -68380,11 +68435,9 @@
     "\"prompt\"",
     "denied",
     "granted",
-    "lang",
     "lifetime",
     "prompt",
-    "states",
-    "type"
+    "states"
   ],
   "permission key": [
     "is equal to",
@@ -72410,9 +72463,28 @@
   "timeline": [
     "current time"
   ],
+  "timeline trigger": [
+    "activation range",
+    "active range",
+    "entry action",
+    "exit action",
+    "trigger state"
+  ],
   "timeline-scope": [
     "all",
     "none"
+  ],
+  "timeline-trigger": [
+    "none"
+  ],
+  "timeline-trigger-active-range": [
+    "auto"
+  ],
+  "timeline-trigger-active-range-end": [
+    "auto"
+  ],
+  "timeline-trigger-active-range-start": [
+    "auto"
   ],
   "timeouts": [
     "implicit wait timeout",
@@ -72728,6 +72800,10 @@
     "trigger_data",
     "value",
     "values"
+  ],
+  "trigger-scope": [
+    "all",
+    "none"
   ],
   "triggering result": [
     "debug data",
