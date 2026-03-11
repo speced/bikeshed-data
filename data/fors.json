@@ -6398,6 +6398,7 @@
     "PerformanceLongTaskTiming",
     "PerformanceMark",
     "PerformanceMark Constructor",
+    "PerformanceMark constructor",
     "PerformanceMarkOptions",
     "PerformanceMeasure",
     "PerformanceMeasureOptions",
@@ -13449,6 +13450,7 @@
     "determine the device pixel ratio",
     "determine the effective FedCM connection status",
     "determine the fallback encoding",
+    "determine the iframe element referrer policy",
     "determine the initial storage-access eligibility",
     "determine the intrinsic sizes",
     "determine the layout attribute",
@@ -15759,6 +15761,7 @@
     "if expression",
     "if()",
     "iframe",
+    "iframe element referrer policy",
     "iframe fullscreen flag",
     "iframe load event steps",
     "iframe load in progress",
@@ -28893,7 +28896,9 @@
   "CSP list": [
     "intersection",
     "meaningfully mitigate UI Redressing attacks",
-    "meaningfully mitigate injection attacks"
+    "meaningfully mitigate injection attacks",
+    "policies",
+    "self-origin"
   ],
   "CSPViolationReportBody": [
     "blockedURL",
@@ -45582,6 +45587,7 @@
     "runAdAuction(config)",
     "scheduling",
     "sendBeacon()",
+    "sendBeacon() Method",
     "sendBeacon(url)",
     "sendBeacon(url, data)",
     "serial",
@@ -45658,6 +45664,14 @@
   ],
   "Navigator/runAdAuction(config)": [
     "config"
+  ],
+  "Navigator/sendBeacon(url)": [
+    "data",
+    "url"
+  ],
+  "Navigator/sendBeacon(url, data)": [
+    "data",
+    "url"
   ],
   "NavigatorAutomationInformation": [
     "webdriver"
@@ -47088,6 +47102,18 @@
     "timing",
     "toJSON()"
   ],
+  "Performance/clearMarks()": [
+    "markName"
+  ],
+  "Performance/clearMarks(markName)": [
+    "markName"
+  ],
+  "Performance/clearMeasures()": [
+    "measureName"
+  ],
+  "Performance/clearMeasures(measureName)": [
+    "measureName"
+  ],
   "Performance/getEntriesByName(name)": [
     "name",
     "type"
@@ -47098,6 +47124,29 @@
   ],
   "Performance/getEntriesByType(type)": [
     "type"
+  ],
+  "Performance/mark(markName)": [
+    "markName",
+    "markOptions"
+  ],
+  "Performance/mark(markName, markOptions)": [
+    "markName",
+    "markOptions"
+  ],
+  "Performance/measure(measureName)": [
+    "endMark",
+    "measureName",
+    "startOrMeasureOptions"
+  ],
+  "Performance/measure(measureName, startOrMeasureOptions)": [
+    "endMark",
+    "measureName",
+    "startOrMeasureOptions"
+  ],
+  "Performance/measure(measureName, startOrMeasureOptions, endMark)": [
+    "endMark",
+    "measureName",
+    "startOrMeasureOptions"
   ],
   "Performance/setResourceTimingBufferSize(maxSize)": [
     "maxSize"
@@ -47157,19 +47206,45 @@
     "toJSON()"
   ],
   "PerformanceMark": [
+    "PerformanceMark",
+    "PerformanceMark(markName)",
+    "PerformanceMark(markName, markOptions)",
+    "The PerformanceMark Interface",
     "constructor()",
     "constructor(markName)",
     "constructor(markName, markOptions)",
     "detail"
   ],
+  "PerformanceMark/PerformanceMark(markName)": [
+    "markName",
+    "markOptions"
+  ],
+  "PerformanceMark/PerformanceMark(markName, markOptions)": [
+    "markName",
+    "markOptions"
+  ],
+  "PerformanceMark/constructor(markName)": [
+    "markName",
+    "markOptions"
+  ],
+  "PerformanceMark/constructor(markName, markOptions)": [
+    "markName",
+    "markOptions"
+  ],
   "PerformanceMarkOptions": [
+    "PerformanceMarkOptions",
+    "PerformanceMarkOptions dictionary",
     "detail",
     "startTime"
   ],
   "PerformanceMeasure": [
+    "PerformanceMeasure",
+    "The PerformanceMeasure Interface",
     "detail"
   ],
   "PerformanceMeasureOptions": [
+    "PerformanceMeasureOptions",
+    "PerformanceMeasureOptions dictionary",
     "detail",
     "duration",
     "end",
@@ -67197,6 +67272,7 @@
     "fetch controller",
     "final sandboxing flag set",
     "id",
+    "iframe element referrer policy",
     "navigable",
     "navigation timing type",
     "navigationSourceEligible",
