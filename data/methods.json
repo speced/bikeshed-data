@@ -5422,6 +5422,28 @@
       "shortname": "magnetometer"
     }
   },
+  "VTTCue()": {
+    "VTTCue(startTime, endTime, text)": {
+      "args": [
+        "startTime",
+        "endTime",
+        "text"
+      ],
+      "for": [
+        "VTTCue"
+      ],
+      "shortname": "webvtt"
+    }
+  },
+  "VTTRegion()": {
+    "VTTRegion()": {
+      "args": [],
+      "for": [
+        "VTTRegion"
+      ],
+      "shortname": "webvtt"
+    }
+  },
   "ValueEvent()": {
     "ValueEvent(type)": {
       "args": [
@@ -9626,6 +9648,7 @@
         "URLPattern",
         "URLSearchParams",
         "UncalibratedMagnetometer",
+        "VTTRegion",
         "VideoColorSpace",
         "VideoTrackGenerator",
         "ViewTimeline",
@@ -11101,6 +11124,17 @@
         "KeyframeEffect"
       ],
       "shortname": "web-animations"
+    },
+    "constructor(startTime, endTime, text)": {
+      "args": [
+        "startTime",
+        "endTime",
+        "text"
+      ],
+      "for": [
+        "VTTCue"
+      ],
+      "shortname": "webvtt"
     },
     "constructor(startTime, endTime, value)": {
       "args": [
@@ -18613,6 +18647,15 @@
         "RTCRtpReceiver"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "getCueAsHTML()": {
+    "getCueAsHTML()": {
+      "args": [],
+      "for": [
+        "VTTCue"
+      ],
+      "shortname": "webvtt"
     }
   },
   "getCueById()": {
