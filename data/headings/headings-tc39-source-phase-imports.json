@@ -55,14 +55,6 @@
       "url": "https://tc39.es/proposal-source-phase-imports/#sec-FinishLoadingImportedModule"
     }
   },
-  "#sec-HostGetModuleSourceModuleRecord": {
-    "current": {
-      "number": "16.1.1.9",
-      "spec": "Source Phase Imports",
-      "text": "HostGetModuleSourceModuleRecord ( specifier )",
-      "url": "https://tc39.es/proposal-source-phase-imports/#sec-HostGetModuleSourceModuleRecord"
-    }
-  },
   "#sec-HostLoadImportedModule": {
     "current": {
       "number": "16.1.1.7",
@@ -151,12 +143,20 @@
       "url": "https://tc39.es/proposal-source-phase-imports/#sec-evaluate-import-call"
     }
   },
-  "#sec-get-%25abstractmodulesource%25.prototype.%40%40tostringtag": {
+  "#sec-get-%25abstractmodulesource%25.prototype-%25symbol.tostringtag%25": {
     "current": {
       "number": "28.1.3.2",
       "spec": "Source Phase Imports",
-      "text": "get %AbstractModuleSource%.prototype [ @@toStringTag ]",
-      "url": "https://tc39.es/proposal-source-phase-imports/#sec-get-%25abstractmodulesource%25.prototype.%40%40tostringtag"
+      "text": "get %AbstractModuleSource%.prototype [ %Symbol.toStringTag% ]",
+      "url": "https://tc39.es/proposal-source-phase-imports/#sec-get-%25abstractmodulesource%25.prototype-%25symbol.tostringtag%25"
+    }
+  },
+  "#sec-hostgetmodulesourcemodulerecord": {
+    "current": {
+      "number": "16.1.1.9",
+      "spec": "Source Phase Imports",
+      "text": "HostGetModuleSourceModuleRecord ( specifier )",
+      "url": "https://tc39.es/proposal-source-phase-imports/#sec-hostgetmodulesourcemodulerecord"
     }
   },
   "#sec-import-call-runtime-semantics-evaluation": {
@@ -177,10 +177,18 @@
   },
   "#sec-imports": {
     "current": {
-      "number": "16.2",
+      "number": "16.3",
       "spec": "Source Phase Imports",
       "text": "Imports",
       "url": "https://tc39.es/proposal-source-phase-imports/#sec-imports"
+    }
+  },
+  "#sec-imports-static-semantics-boundnames": {
+    "current": {
+      "number": "16.3.1",
+      "spec": "Source Phase Imports",
+      "text": "Static Semantics: BoundNames",
+      "url": "https://tc39.es/proposal-source-phase-imports/#sec-imports-static-semantics-boundnames"
     }
   },
   "#sec-innermoduleevaluation": {
@@ -255,6 +263,14 @@
       "url": "https://tc39.es/proposal-source-phase-imports/#sec-object-type"
     }
   },
+  "#sec-parsemodule": {
+    "current": {
+      "number": "16.2",
+      "spec": "Source Phase Imports",
+      "text": "ParseModule ( sourceText, realm, hostDefined )",
+      "url": "https://tc39.es/proposal-source-phase-imports/#sec-parsemodule"
+    }
+  },
   "#sec-properties-of-the-%25abstractmodulesource%25-intrinsic-object": {
     "current": {
       "number": "28.1.2",
@@ -279,9 +295,17 @@
       "url": "https://tc39.es/proposal-source-phase-imports/#sec-reflection"
     }
   },
-  "#sec-source-text-module-record-initialize-environment": {
+  "#sec-resolveexport": {
     "current": {
       "number": "16.1.1.6.1",
+      "spec": "Source Phase Imports",
+      "text": "ResolveExport ( exportName [ , resolveSet ] )",
+      "url": "https://tc39.es/proposal-source-phase-imports/#sec-resolveexport"
+    }
+  },
+  "#sec-source-text-module-record-initialize-environment": {
+    "current": {
+      "number": "16.1.1.6.2",
       "spec": "Source Phase Imports",
       "text": "InitializeEnvironment ( )",
       "url": "https://tc39.es/proposal-source-phase-imports/#sec-source-text-module-record-initialize-environment"
@@ -297,7 +321,7 @@
   },
   "#sec-static-semantics-importentries": {
     "current": {
-      "number": "16.2.1",
+      "number": "16.3.2",
       "spec": "Source Phase Imports",
       "text": "Static Semantics: ImportEntries ( )",
       "url": "https://tc39.es/proposal-source-phase-imports/#sec-static-semantics-importentries"
