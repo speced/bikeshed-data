@@ -5773,6 +5773,7 @@
     "MockMicrophoneConfiguration",
     "ModelContext",
     "ModelContextClient",
+    "ModelContextRegisterToolOptions",
     "ModelContextTool",
     "Modifiers Population Algorithm",
     "Module",
@@ -6866,6 +6867,7 @@
     "RTCRtpReceiver",
     "RTCRtpReceiverTransform",
     "RTCRtpScriptTransform",
+    "RTCRtpScriptTransformType",
     "RTCRtpScriptTransformer",
     "RTCRtpSendParameters",
     "RTCRtpSender",
@@ -6877,6 +6879,7 @@
     "RTCRtpTransceiverInit",
     "RTCSFrameReceiverTransform",
     "RTCSFrameSenderTransform",
+    "RTCSFrameSenderTransformOptions",
     "RTCSctpTransport",
     "RTCSctpTransportState",
     "RTCSdpType",
@@ -7313,6 +7316,7 @@
     "Rule body element",
     "Rule dependency",
     "Rule head",
+    "Rule imports",
     "Rule set",
     "Run CSP initialization for a Document",
     "Run CSP initialization for a global object",
@@ -7341,6 +7345,7 @@
     "SFrameTransformErrorEventInit",
     "SFrameTransformErrorEventType",
     "SFrameTransformOptions",
+    "SFrameType",
     "SHACL Renderer",
     "SHACL SPARQL function expression",
     "SHACL class",
@@ -9385,11 +9390,13 @@
     "WordCharacters(rer)",
     "Words",
     "Worker",
+    "WorkerAndParameters",
     "WorkerGlobalScope",
     "WorkerGlobalScope object",
     "WorkerLocation",
     "WorkerNavigator",
     "WorkerOptions",
+    "WorkerOrWorkerAndParameters",
     "WorkerType",
     "Workgroup uniformity scope",
     "Working Draft",
@@ -20081,6 +20088,7 @@
     "rdfs12",
     "rdfs13",
     "rdfs14",
+    "rdfs14a",
     "rdfs2",
     "rdfs3",
     "rdfs4",
@@ -20875,6 +20883,7 @@
     "rule body element",
     "rule element",
     "rule head",
+    "rule imports",
     "rule set",
     "rule-break",
     "rule-color",
@@ -45063,19 +45072,24 @@
   "ModelContext": [
     "internal context",
     "registerTool(tool)",
-    "unregisterTool(name)"
+    "registerTool(tool, options)"
   ],
   "ModelContext/registerTool(tool)": [
+    "options",
     "tool"
   ],
-  "ModelContext/unregisterTool(name)": [
-    "name"
+  "ModelContext/registerTool(tool, options)": [
+    "options",
+    "tool"
   ],
   "ModelContextClient": [
     "requestUserInteraction(callback)"
   ],
   "ModelContextClient/requestUserInteraction(callback)": [
     "callback"
+  ],
+  "ModelContextRegisterToolOptions": [
+    "signal"
   ],
   "ModelContextTool": [
     "annotations",
@@ -49415,10 +49429,16 @@
     "RTCRtpScriptTransform(worker)",
     "RTCRtpScriptTransform(worker, options)",
     "RTCRtpScriptTransform(worker, options, transfer)",
+    "RTCRtpScriptTransform(workerOrWorkerAndParameters)",
+    "RTCRtpScriptTransform(workerOrWorkerAndParameters, options)",
+    "RTCRtpScriptTransform(workerOrWorkerAndParameters, options, transfer)",
     "[[worker]]",
     "constructor(worker)",
     "constructor(worker, options)",
-    "constructor(worker, options, transfer)"
+    "constructor(worker, options, transfer)",
+    "constructor(workerOrWorkerAndParameters)",
+    "constructor(workerOrWorkerAndParameters, options)",
+    "constructor(workerOrWorkerAndParameters, options, transfer)"
   ],
   "RTCRtpScriptTransform/RTCRtpScriptTransform(worker)": [
     "options",
@@ -49435,6 +49455,21 @@
     "transfer",
     "worker"
   ],
+  "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters)": [
+    "options",
+    "transfer",
+    "workerOrWorkerAndParameters"
+  ],
+  "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options)": [
+    "options",
+    "transfer",
+    "workerOrWorkerAndParameters"
+  ],
+  "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options, transfer)": [
+    "options",
+    "transfer",
+    "workerOrWorkerAndParameters"
+  ],
   "RTCRtpScriptTransform/constructor(worker)": [
     "options",
     "transfer",
@@ -49449,6 +49484,24 @@
     "options",
     "transfer",
     "worker"
+  ],
+  "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters)": [
+    "options",
+    "transfer",
+    "workerOrWorkerAndParameters"
+  ],
+  "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters, options)": [
+    "options",
+    "transfer",
+    "workerOrWorkerAndParameters"
+  ],
+  "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters, options, transfer)": [
+    "options",
+    "transfer",
+    "workerOrWorkerAndParameters"
+  ],
+  "RTCRtpScriptTransformType": [
+    "\"sframe\""
   ],
   "RTCRtpScriptTransformer": [
     "[[frameSource]]",
@@ -49586,6 +49639,9 @@
   ],
   "RTCSFrameSenderTransform/constructor(options)": [
     "options"
+  ],
+  "RTCSFrameSenderTransformOptions": [
+    "type"
   ],
   "RTCSctpTransport": [
     "[[MaxChannels]]",
@@ -50950,6 +51006,10 @@
   ],
   "SFrameTransformOptions": [
     "cipherSuite"
+  ],
+  "SFrameType": [
+    "\"per-frame\"",
+    "\"per-packet\""
   ],
   "SVGAElement": [
     "download",
@@ -57489,6 +57549,10 @@
     "postMessage(message, options)",
     "postMessage(message, transfer)",
     "terminate()"
+  ],
+  "WorkerAndParameters": [
+    "type",
+    "worker"
   ],
   "WorkerGlobalScope": [
     "closing",
@@ -67270,7 +67334,8 @@
     "supports"
   ],
   "model context": [
-    "tool map"
+    "tool map",
+    "unregister a tool"
   ],
   "module": [
     "module name"
