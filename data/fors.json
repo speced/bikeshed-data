@@ -860,6 +860,7 @@
     "<declaration-list>",
     "<declaration-rule-list>",
     "<declaration-value>",
+    "<declaration>",
     "<default-value>",
     "<degree>",
     "<delim-token>",
@@ -1272,6 +1273,7 @@
     "<supports-condition-name>",
     "<supports-condition>",
     "<supports-decl>",
+    "<supports-env-fn>",
     "<supports-feature>",
     "<supports-font-format-fn>",
     "<supports-font-tech-fn>",
@@ -2784,7 +2786,6 @@
     "Computed values",
     "ComputedEffectTiming",
     "ComputedPropertyName",
-    "Computing Device Memory Value",
     "Computing a block of audio",
     "Computing the envelope rate",
     "Computing the makeup gain",
@@ -3650,7 +3651,6 @@
     "EventSourceInit",
     "EventTarget",
     "Evidence of user interaction",
-    "Examples",
     "Examples of these types",
     "Exception",
     "Exception object cache",
@@ -5930,7 +5930,6 @@
     "NavigatorConcurrentHardware",
     "NavigatorContentUtils",
     "NavigatorCookies",
-    "NavigatorDeviceMemory",
     "NavigatorGPU",
     "NavigatorID",
     "NavigatorLanguage",
@@ -23253,6 +23252,7 @@
     "tree construction dispatcher",
     "tree context",
     "tree order",
+    "tree-counting functions",
     "triangle",
     "trigger a gatt connection attempted event",
     "trigger a prefetch status updated event",
@@ -25842,7 +25842,11 @@
     "syntax"
   ],
   "@supports": [
-    "env()"
+    "at-rule()",
+    "env()",
+    "font-format()",
+    "font-tech()",
+    "named-feature()"
   ],
   "@view-transition": [
     "navigation",
@@ -29099,9 +29103,15 @@
     "support a font format",
     "support a font tech",
     "support a named condition",
+    "support a named feature",
     "support an at-rule",
     "support an environment variable",
-    "support an named feature",
+    "support the at-rule",
+    "support the environment variable",
+    "support the font format",
+    "support the font tech",
+    "support the named condition",
+    "support the named feature",
     "supported syntax component name",
     "supports(conditionText)",
     "supports(property, value)",
@@ -43802,6 +43812,7 @@
     "byte length",
     "check dimensions",
     "dataType",
+    "element count",
     "equal",
     "shape"
   ],
@@ -45770,9 +45781,6 @@
   ],
   "NavigatorCookies": [
     "cookieEnabled"
-  ],
-  "NavigatorDeviceMemory": [
-    "deviceMemory"
   ],
   "NavigatorGPU": [
     "gpu"
@@ -59600,7 +59608,6 @@
     "stretch"
   ],
   "align-items": [
-    "anchor-center",
     "auto",
     "baseline",
     "center",
@@ -66369,7 +66376,6 @@
     "stretch"
   ],
   "justify-items": [
-    "anchor-center",
     "baseline",
     "first",
     "first baseline",
@@ -68887,6 +68893,7 @@
   "position-anchor": [
     "<anchor-name>",
     "auto",
+    "match-parent",
     "none",
     "normal"
   ],
@@ -73010,7 +73017,15 @@
     "global",
     "local",
     "loosely matched",
-    "strictly matched"
+    "loosely-matched",
+    "strictly matched",
+    "strictly-matched"
+  ],
+  "tree-scoped reference": [
+    "loosely matched",
+    "loosely-matched",
+    "strictly matched",
+    "strictly-matched"
   ],
   "trigger": [
     "derivative_uniformity",
