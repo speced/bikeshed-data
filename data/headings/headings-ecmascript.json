@@ -1385,6 +1385,9 @@
   "#sec-createiterresultobject": [
     "/abstract-operations#sec-createiterresultobject"
   ],
+  "#sec-createjsonparserecord": [
+    "/structured-data#sec-createjsonparserecord"
+  ],
   "#sec-createlistfromarraylike": [
     "/abstract-operations#sec-createlistfromarraylike"
   ],
@@ -3041,11 +3044,20 @@
   "#sec-json-object": [
     "/structured-data#sec-json-object"
   ],
+  "#sec-json-parse-record": [
+    "/structured-data#sec-json-parse-record"
+  ],
   "#sec-json-serialization-record": [
     "/structured-data#sec-json-serialization-record"
   ],
+  "#sec-json.israwjson": [
+    "/structured-data#sec-json.israwjson"
+  ],
   "#sec-json.parse": [
     "/structured-data#sec-json.parse"
+  ],
+  "#sec-json.rawjson": [
+    "/structured-data#sec-json.rawjson"
   ],
   "#sec-json.stringify": [
     "/structured-data#sec-json.stringify"
@@ -5282,6 +5294,9 @@
   "#sec-setviewvalue": [
     "/structured-data#sec-setviewvalue"
   ],
+  "#sec-shallowestcontainedjsonvalue": [
+    "/structured-data#sec-shallowestcontainedjsonvalue"
+  ],
   "#sec-shared-memory-guidelines": [
     "/memory-model#sec-shared-memory-guidelines"
   ],
@@ -5498,6 +5513,9 @@
   "#sec-static-semantics-isstatic": [
     "/ecmascript-language-functions-and-classes#sec-static-semantics-isstatic"
   ],
+  "#sec-static-semantics-jsonarrayliteralcontentnodes": [
+    "/structured-data#sec-static-semantics-jsonarrayliteralcontentnodes"
+  ],
   "#sec-static-semantics-lexicallydeclarednames": [
     "/syntax-directed-operations#sec-static-semantics-lexicallydeclarednames"
   ],
@@ -5518,6 +5536,9 @@
   ],
   "#sec-static-semantics-privateboundidentifiers": [
     "/ecmascript-language-functions-and-classes#sec-static-semantics-privateboundidentifiers"
+  ],
+  "#sec-static-semantics-propertydefinitionnodes": [
+    "/ecmascript-language-expressions#sec-static-semantics-propertydefinitionnodes"
   ],
   "#sec-static-semantics-propertynamelist": [
     "/ecmascript-language-expressions#sec-static-semantics-propertynamelist"
@@ -10099,7 +10120,7 @@
   },
   "/ecmascript-language-expressions#sec-object-initializer-runtime-semantics-evaluation": {
     "current": {
-      "number": "13.2.5.4",
+      "number": "13.2.5.5",
       "spec": "ECMAScript",
       "text": "Runtime Semantics: Evaluation",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-object-initializer-runtime-semantics-evaluation"
@@ -10315,7 +10336,7 @@
   },
   "/ecmascript-language-expressions#sec-runtime-semantics-propertydefinitionevaluation": {
     "current": {
-      "number": "13.2.5.5",
+      "number": "13.2.5.6",
       "spec": "ECMAScript",
       "text": "Runtime Semantics: PropertyDefinitionEvaluation",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-runtime-semantics-propertydefinitionevaluation"
@@ -10377,9 +10398,17 @@
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-static-semantics-iscomputedpropertykey"
     }
   },
-  "/ecmascript-language-expressions#sec-static-semantics-propertynamelist": {
+  "/ecmascript-language-expressions#sec-static-semantics-propertydefinitionnodes": {
     "current": {
       "number": "13.2.5.3",
+      "spec": "ECMAScript",
+      "text": "Static Semantics: PropertyDefinitionNodes",
+      "url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-static-semantics-propertydefinitionnodes"
+    }
+  },
+  "/ecmascript-language-expressions#sec-static-semantics-propertynamelist": {
+    "current": {
+      "number": "13.2.5.4",
       "spec": "ECMAScript",
       "text": "Static Semantics: PropertyNameList",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-static-semantics-propertynamelist"
@@ -21275,7 +21304,7 @@
   },
   "/structured-data#sec-ParseJSON": {
     "current": {
-      "number": "25.5.1.1",
+      "number": "25.5.2.1",
       "spec": "ECMAScript",
       "text": "ParseJSON ( text )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-ParseJSON"
@@ -21607,6 +21636,14 @@
       "spec": "ECMAScript",
       "text": "CloneArrayBuffer ( srcBuffer, srcByteOffset, srcLength )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-clonearraybuffer"
+    }
+  },
+  "/structured-data#sec-createjsonparserecord": {
+    "current": {
+      "number": "25.5.2.3",
+      "spec": "ECMAScript",
+      "text": "CreateJSONParseRecord ( parseNode, key, val )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-createjsonparserecord"
     }
   },
   "/structured-data#sec-dataview-buffer-byteoffset-bytelength": {
@@ -22067,9 +22104,9 @@
   },
   "/structured-data#sec-internalizejsonproperty": {
     "current": {
-      "number": "25.5.1.2",
+      "number": "25.5.2.4",
       "spec": "ECMAScript",
-      "text": "InternalizeJSONProperty ( holder, name, reviver )",
+      "text": "InternalizeJSONProperty ( holder, name, reviver, parseRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-internalizejsonproperty"
     }
   },
@@ -22147,7 +22184,7 @@
   },
   "/structured-data#sec-json-%25symbol.tostringtag%25": {
     "current": {
-      "number": "25.5.3",
+      "number": "25.5.5",
       "spec": "ECMAScript",
       "text": "JSON [ %Symbol.toStringTag% ]",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-%25symbol.tostringtag%25"
@@ -22161,25 +22198,49 @@
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-object"
     }
   },
+  "/structured-data#sec-json-parse-record": {
+    "current": {
+      "number": "25.5.2.2",
+      "spec": "ECMAScript",
+      "text": "JSON Parse Record",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-parse-record"
+    }
+  },
   "/structured-data#sec-json-serialization-record": {
     "current": {
-      "number": "25.5.2.1",
+      "number": "25.5.4.1",
       "spec": "ECMAScript",
       "text": "JSON Serialization Record",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-serialization-record"
     }
   },
-  "/structured-data#sec-json.parse": {
+  "/structured-data#sec-json.israwjson": {
     "current": {
       "number": "25.5.1",
+      "spec": "ECMAScript",
+      "text": "JSON.isRawJSON ( O )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.israwjson"
+    }
+  },
+  "/structured-data#sec-json.parse": {
+    "current": {
+      "number": "25.5.2",
       "spec": "ECMAScript",
       "text": "JSON.parse ( text [ , reviver ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.parse"
     }
   },
+  "/structured-data#sec-json.rawjson": {
+    "current": {
+      "number": "25.5.3",
+      "spec": "ECMAScript",
+      "text": "JSON.rawJSON ( text )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.rawjson"
+    }
+  },
   "/structured-data#sec-json.stringify": {
     "current": {
-      "number": "25.5.2",
+      "number": "25.5.4",
       "spec": "ECMAScript",
       "text": "JSON.stringify ( value [ , replacer [ , space ] ] )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.stringify"
@@ -22291,7 +22352,7 @@
   },
   "/structured-data#sec-quotejsonstring": {
     "current": {
-      "number": "25.5.2.3",
+      "number": "25.5.4.3",
       "spec": "ECMAScript",
       "text": "QuoteJSONString ( value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-quotejsonstring"
@@ -22339,7 +22400,7 @@
   },
   "/structured-data#sec-serializejsonarray": {
     "current": {
-      "number": "25.5.2.6",
+      "number": "25.5.4.6",
       "spec": "ECMAScript",
       "text": "SerializeJSONArray ( state, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonarray"
@@ -22347,7 +22408,7 @@
   },
   "/structured-data#sec-serializejsonobject": {
     "current": {
-      "number": "25.5.2.5",
+      "number": "25.5.4.5",
       "spec": "ECMAScript",
       "text": "SerializeJSONObject ( state, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonobject"
@@ -22355,7 +22416,7 @@
   },
   "/structured-data#sec-serializejsonproperty": {
     "current": {
-      "number": "25.5.2.2",
+      "number": "25.5.4.2",
       "spec": "ECMAScript",
       "text": "SerializeJSONProperty ( state, key, holder )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonproperty"
@@ -22375,6 +22436,14 @@
       "spec": "ECMAScript",
       "text": "SetViewValue ( view, requestIndex, isLittleEndian, type, value )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-setviewvalue"
+    }
+  },
+  "/structured-data#sec-shallowestcontainedjsonvalue": {
+    "current": {
+      "number": "25.5.2.5",
+      "spec": "ECMAScript",
+      "text": "Static Semantics: ShallowestContainedJSONValue ( root )",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-shallowestcontainedjsonvalue"
     }
   },
   "/structured-data#sec-sharedarraybuffer-%25symbol.species%25": {
@@ -22449,6 +22518,14 @@
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype.slice"
     }
   },
+  "/structured-data#sec-static-semantics-jsonarrayliteralcontentnodes": {
+    "current": {
+      "number": "25.5.2.6",
+      "spec": "ECMAScript",
+      "text": "Static Semantics: JSONArrayLiteralContentNodes",
+      "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-static-semantics-jsonarrayliteralcontentnodes"
+    }
+  },
   "/structured-data#sec-structured-data": {
     "current": {
       "number": "25",
@@ -22467,7 +22544,7 @@
   },
   "/structured-data#sec-unicodeescape": {
     "current": {
-      "number": "25.5.2.4",
+      "number": "25.5.4.4",
       "spec": "ECMAScript",
       "text": "UnicodeEscape ( C )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-unicodeescape"

@@ -2973,6 +2973,8 @@
     "CreateIteratorFromClosure(closure, generatorBrand, generatorPrototype, extraSlots)",
     "CreateIteratorResultObject",
     "CreateIteratorResultObject(value, done)",
+    "CreateJSONParseRecord",
+    "CreateJSONParseRecord(parseNode, key, val)",
     "CreateListFromArrayLike",
     "CreateListFromArrayLike(obj, validElementTypes)",
     "CreateListIteratorRecord",
@@ -4964,7 +4966,7 @@
     "Internal Representation",
     "Internal resource links",
     "InternalizeJSONProperty",
-    "InternalizeJSONProperty(holder, name, reviver)",
+    "InternalizeJSONProperty(holder, name, reviver, parseRecord)",
     "International preferences",
     "Internationalization",
     "Internationalization Components for Unicode (ICU) library",
@@ -34908,6 +34910,8 @@
     "Iterator Records",
     "IteratorResult interface",
     "IteratorResult object,IteratorResult objects",
+    "JSON Parse Record",
+    "JSON Parse Records",
     "JSON Serialization Record",
     "JSON Serialization Records",
     "Job",
@@ -41840,7 +41844,9 @@
     "type"
   ],
   "JSON": [
+    "isRawJSON(O)",
     "parse(text, reviver)",
+    "rawJSON(text)",
     "stringify(value, replacer, space)"
   ],
   "JSON session credential": [
