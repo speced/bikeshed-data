@@ -7530,7 +7530,9 @@
     "SanitizerElementNamespace",
     "SanitizerElementNamespaceWithAttributes",
     "SanitizerElementWithAttributes",
+    "SanitizerPI",
     "SanitizerPresets",
+    "SanitizerProcessingInstruction",
     "Save-Data",
     "Save-Impression",
     "SaveFilePickerOptions",
@@ -11448,6 +11450,7 @@
     "canonicalize a sanitizer element",
     "canonicalize a sanitizer element with attributes",
     "canonicalize a sanitizer name",
+    "canonicalize a sanitizer processing instruction",
     "canonicalize a search",
     "canonicalize a username",
     "canonicalize an IPv6 hostname",
@@ -22379,6 +22382,7 @@
     "start page",
     "start page value",
     "start pages",
+    "start recording task time if needed",
     "start segment endpoint",
     "start session algorithm",
     "start the NFC make read-only",
@@ -51617,6 +51621,7 @@
     "Sanitizer(configuration)",
     "allowAttribute(attribute)",
     "allowElement(element)",
+    "allowProcessingInstruction(pi)",
     "canonicalize the configuration",
     "configuration",
     "constructor()",
@@ -51626,6 +51631,7 @@
     "remove an element",
     "removeAttribute(attribute)",
     "removeElement(element)",
+    "removeProcessingInstruction(pi)",
     "removeUnsafe()",
     "replaceElementWithChildren(element)",
     "set a configuration",
@@ -51644,6 +51650,9 @@
   "Sanitizer/allowElement(element)": [
     "element"
   ],
+  "Sanitizer/allowProcessingInstruction(pi)": [
+    "pi"
+  ],
   "Sanitizer/constructor()": [
     "configuration"
   ],
@@ -51655,6 +51664,9 @@
   ],
   "Sanitizer/removeElement(element)": [
     "element"
+  ],
+  "Sanitizer/removeProcessingInstruction(pi)": [
+    "pi"
   ],
   "Sanitizer/replaceElementWithChildren(element)": [
     "element"
@@ -51674,17 +51686,21 @@
     "attributes",
     "comments",
     "contains",
+    "contains a target",
     "dataAttributes",
     "elements",
     "get a sanitizer instance from options",
+    "has duplicate targets",
     "has duplicates",
     "intersection",
     "less than item",
+    "processingInstructions",
     "remove",
     "remove duplicates",
     "remove unsafe",
     "removeAttributes",
     "removeElements",
+    "removeProcessingInstructions",
     "replaceWithChildrenElements",
     "valid"
   ],
@@ -51698,6 +51714,9 @@
   ],
   "SanitizerPresets": [
     "\"default\""
+  ],
+  "SanitizerProcessingInstruction": [
+    "target"
   ],
   "SaveFilePickerOptions": [
     "suggestedName"
@@ -65039,6 +65058,7 @@
     "end time",
     "first ui event timestamp",
     "pending script",
+    "script initiated",
     "scripts",
     "start time",
     "style and layout start time",
