@@ -4944,10 +4944,10 @@
     "Inter-Stage Builtins",
     "Interaction Affordance",
     "Interaction Model",
-    "Interaction data",
     "InteractionCapturedOutputEvent",
     "InteractionCapturedOutputParameters",
     "InteractionCommand",
+    "InteractionContentfulPaint",
     "InteractionEvent",
     "InteractionUserIntentCommand",
     "InteractionUserIntentParameters",
@@ -9643,7 +9643,6 @@
     "Zone offset",
     "Zoom",
     "[DelayWhilePrerendering]",
-    "[[ActivatedReaderList]]",
     "[[ConstrainedBitsPerSecond]]",
     "[[ConstrainedMimeType]]",
     "[[CrossOriginPropertyDescriptorMap]]",
@@ -9657,17 +9656,12 @@
     "[[HasProperty]] internal method of an Exported GC Object",
     "[[IsExtensible]] internal method of an Exported GC Object",
     "[[OwnPropertyKeys]] internal method of an Exported GC Object",
-    "[[PendingMakeReadOnly]]",
-    "[[PendingWrite]]",
     "[[PreventExtensions]] internal method of an Exported GC Object",
     "[[SetPrototypeOf]] internal method of an Exported GC Object",
     "[[Set]] internal method of an Exported GC Object",
-    "[[Suspended]]",
     "[[VideoKeyFrameIntervalCount]]",
     "[[VideoKeyFrameIntervalDuration]]",
     "[[Window]]",
-    "[[WriteMessage]]",
-    "[[WriteOptions]]",
     "[[codec implementation]]",
     "[[codec work queue]]",
     "[[control message queue]]",
@@ -11610,8 +11604,6 @@
     "check a k-anonymity record",
     "check a navigation response's adherence to `X-Frame-Options`",
     "check a navigation response's adherence to its embedder policy",
-    "check ancestor for task",
-    "check ancestor set for task",
     "check and canonicalize amount",
     "check and canonicalize total amount",
     "check clipboard read permission",
@@ -11664,9 +11656,6 @@
     "check parsed records",
     "check permissions for device",
     "check popover validity",
-    "check soft navigation",
-    "check soft navigation contentful paint",
-    "check soft navigation same document commit",
     "check support for an algorithm",
     "check that a key could be injected into a value",
     "check that keyboard interaction can be simulated",
@@ -12774,7 +12763,6 @@
     "create a summarizer object",
     "create a table object",
     "create a task handle",
-    "create a task scope",
     "create a text module script",
     "create a trusted scoring signals batcher",
     "create a trusted type",
@@ -12819,6 +12807,7 @@
     "create an inheritance stack",
     "create an input source",
     "create an input state",
+    "create an interaction contentful paint entry",
     "create an interface object",
     "create an interface prototype object",
     "create an internal representation",
@@ -13967,6 +13956,7 @@
     "emergency",
     "emit a script message",
     "emit an event",
+    "emit interaction contentful paint entry",
     "emit soft navigation entry",
     "empty",
     "empty ISD",
@@ -14209,6 +14199,7 @@
     "evaluate a script",
     "evaluate function body",
     "evaluate media queries and report changes",
+    "evaluate soft navigation emission",
     "evaluating a selector",
     "evaluation",
     "evaluation failure",
@@ -15212,9 +15203,7 @@
     "get boundary point at index",
     "get collected data",
     "get coordinates relative to an origin",
-    "get current interaction data",
-    "get current task",
-    "get current task id",
+    "get current interaction context",
     "get deadline time",
     "get descendant topics",
     "get direct from seller signals",
@@ -15239,6 +15228,7 @@
     "get or create a shadow root reference",
     "get or create a web element reference",
     "get or create an input source",
+    "get or create context for interaction",
     "get or expire a bucket",
     "get registration info from a header list",
     "get related navigables",
@@ -15291,6 +15281,7 @@
     "get the navigation info",
     "get the network intercepts",
     "get the next code point",
+    "get the next interactionId",
     "get the next internal ID",
     "get the next iteration result",
     "get the notifications permission state",
@@ -15542,7 +15533,6 @@
     "handle closing the writable stream",
     "handle content codings",
     "handle errors",
-    "handle event callback",
     "handle fetch task source",
     "handle for an object",
     "handle functional event task source",
@@ -16332,6 +16322,8 @@
     "inter-segment white space",
     "interactable",
     "interactable element",
+    "interaction event processing start",
+    "interaction event timing processing end",
     "interaction.userIntent",
     "interactive element",
     "interactive-widget",
@@ -17971,6 +17963,7 @@
     "navigation entropy allowance",
     "navigation entropy ledger",
     "navigation handler list",
+    "navigation id",
     "navigation location URL pattern",
     "navigation object",
     "navigation params",
@@ -17978,7 +17971,6 @@
     "navigation queries",
     "navigation request",
     "navigation style values",
-    "navigation task",
     "navigation type",
     "navigation-canceled",
     "navigation-credentialless",
@@ -19715,6 +19707,7 @@
     "process protocol for init",
     "process remote tracks",
     "process response received for bounce tracking",
+    "process same document commit",
     "process scoreAd output",
     "process scroll behavior",
     "process search for init",
@@ -22072,6 +22065,7 @@
     "snapshot the lock state",
     "sniff-scriptable flag",
     "snow",
+    "soft navigation",
     "soft wrap break",
     "soft wrap opportunity",
     "solid",
@@ -22901,14 +22895,11 @@
     "task flow",
     "task handle",
     "task queues",
-    "task scope",
-    "task scope stack",
     "task source",
     "tbody",
     "td",
     "tdate",
     "teal",
-    "tear down a task scope",
     "technical agreement",
     "technologies",
     "technology",
@@ -22930,7 +22921,6 @@
     "terminate a worker",
     "terminate a worklet global scope",
     "terminate an algorithm",
-    "terminate event callback handling",
     "terminate remaining locks and requests",
     "terminate the algorithm",
     "terminate this algorithm",
@@ -23571,6 +23561,7 @@
     "update headers",
     "update highest scoring other bid",
     "update href",
+    "update interaction contexts for event",
     "update k-anonymity cache for interest group",
     "update k-anonymity cache for key",
     "update mesh object",
@@ -41612,6 +41603,31 @@
     "\"data\"",
     "data"
   ],
+  "InteractionContentfulPaint": [
+    "element",
+    "id",
+    "interactionId",
+    "loadTime",
+    "renderTime",
+    "size",
+    "toJSON()",
+    "url"
+  ],
+  "InteractionContext": [
+    "InteractionContext",
+    "emitted",
+    "first URL update timestamp",
+    "first URL value",
+    "first contentful paint",
+    "first input timestamp",
+    "first scroll timestamp",
+    "id",
+    "largest contentful paint",
+    "last URL value",
+    "navigation type",
+    "start time",
+    "total painted area"
+  ],
   "InteractionUserIntentCommand": [
     "\"method\"",
     "\"params\"",
@@ -44798,11 +44814,15 @@
     "MediaStreamTrackProcessor(init)",
     "[[isClosed]]",
     "[[maxBufferSize]]",
+    "[[numDiscardedFrames]]",
     "[[numPendingReads]]",
+    "[[numTotalFrames]]",
     "[[queue]]",
     "[[track]]",
     "constructor(init)",
-    "readable"
+    "discardedFrames",
+    "readable",
+    "totalFrames"
   ],
   "MediaStreamTrackProcessor/MediaStreamTrackProcessor(init)": [
     "init"
@@ -45345,13 +45365,19 @@
     "records"
   ],
   "NDEFReader": [
+    "[[ActivatedReaderList]]",
+    "[[PendingMakeReadOnly]]",
+    "[[PendingWrite]]",
+    "[[Suspended]]",
+    "[[WriteMessage]]",
+    "[[WriteOptions]]",
     "constructor()",
     "makeReadOnly()",
-    "makeReadOnly(, options)",
+    "makeReadOnly(options)",
     "onreading",
     "onreadingerror",
     "scan()",
-    "scan(, options)",
+    "scan(options)",
     "write()",
     "write(message)",
     "write(message, options)"
@@ -47305,6 +47331,7 @@
     "entryType",
     "id",
     "name",
+    "navigation id",
     "navigationId",
     "startTime",
     "toJSON",
@@ -53021,6 +53048,11 @@
   "SocketDnsQueryType": [
     "ipv4",
     "ipv6"
+  ],
+  "SoftNavigationEntry": [
+    "interactionId",
+    "largestInteractionContentfulPaint",
+    "navigationType"
   ],
   "Source Text Module Records": [
     "GetExportedNames(exportStarSet)",
@@ -62315,9 +62347,6 @@
     "calc-operator nodes",
     "operator nodes"
   ],
-  "callback function": [
-    "parent task"
-  ],
   "calling context": [
     "root element"
   ],
@@ -63494,18 +63523,16 @@
     "compact"
   ],
   "document": [
+    "active soft navigation candidate",
     "active view transition",
     "can initiate outbound view transition",
     "default document timeline",
     "dynamic view transition style sheet",
     "inbound view transition params",
-    "interaction task id to interaction data",
-    "last interaction task id",
-    "potential soft navigation task ids",
+    "interaction id to interaction context",
     "rendering suppression for view transitions",
     "scripting policy",
     "show view transition tree",
-    "task id to interaction task id",
     "text directive user activation",
     "update callback queue",
     "wait until promise count"
@@ -65183,6 +65210,7 @@
   ],
   "global object": [
     "CSP list",
+    "current navigation id",
     "in error reporting mode",
     "realm"
   ],
@@ -66244,13 +66272,6 @@
   "intent": [
     "application",
     "number"
-  ],
-  "interaction data": [
-    "contentful paint",
-    "emitted",
-    "same document commit",
-    "start time",
-    "url"
   ],
   "interactivity": [
     "auto",
@@ -68164,7 +68185,7 @@
     "no-composite"
   ],
   "node": [
-    "appended by soft navigation",
+    "associated interaction context",
     "context origin"
   ],
   "non-fetch scheme navigation params": [
@@ -69925,7 +69946,6 @@
     "integrity",
     "language",
     "nomodule",
-    "parent task",
     "parse error",
     "parser-inserted",
     "record",
@@ -72368,18 +72388,11 @@
     "auto",
     "fixed"
   ],
-  "task": [
-    "parent task",
-    "task attribution ID"
-  ],
   "task handle": [
     "abort steps",
     "queue",
     "task",
     "task complete steps"
-  ],
-  "task scope": [
-    "task"
   ],
   "tbody": [
     "align",
