@@ -99,7 +99,7 @@
   },
   "#effective-directive": {
     "current": {
-      "number": "3.1.4.1",
+      "number": "3.1.5.1",
       "spec": "Content Security Policy: Embedded Enforcement",
       "text": "Effective Directive Value",
       "url": "https://w3c.github.io/webappsec-cspee/#effective-directive"
@@ -154,12 +154,6 @@
     }
   },
   "#header-injection": {
-    "current": {
-      "number": "5.2",
-      "spec": "Content Security Policy: Embedded Enforcement",
-      "text": "Header Injection",
-      "url": "https://w3c.github.io/webappsec-cspee/#header-injection"
-    },
     "snapshot": {
       "number": "5.2",
       "spec": "Content Security Policy: Embedded Enforcement",
@@ -182,17 +176,19 @@
     }
   },
   "#header-reflection": {
-    "current": {
-      "number": "5.3",
-      "spec": "Content Security Policy: Embedded Enforcement",
-      "text": "Header Reflection",
-      "url": "https://w3c.github.io/webappsec-cspee/#header-reflection"
-    },
     "snapshot": {
       "number": "5.3",
       "spec": "Content Security Policy: Embedded Enforcement",
       "text": "Header Reflection",
       "url": "https://www.w3.org/TR/csp-embedded-enforcement/#header-reflection"
+    }
+  },
+  "#header-reflection-and-injection": {
+    "current": {
+      "number": "5.3",
+      "spec": "Content Security Policy: Embedded Enforcement",
+      "text": "Header Reflection",
+      "url": "https://w3c.github.io/webappsec-cspee/#header-reflection-and-injection"
     }
   },
   "#html-integration": {
@@ -309,7 +305,7 @@
   },
   "#intersection-helpers": {
     "current": {
-      "number": "3.1.4",
+      "number": "3.1.5",
       "spec": "Content Security Policy: Embedded Enforcement",
       "text": "Intersection Helpers",
       "url": "https://w3c.github.io/webappsec-cspee/#intersection-helpers"
@@ -339,7 +335,7 @@
     "current": {
       "number": "3.1.1",
       "spec": "Content Security Policy: Embedded Enforcement",
-      "text": "CSP List intersection",
+      "text": "CSP List intersectioni",
       "url": "https://w3c.github.io/webappsec-cspee/#intersection-policy-list"
     },
     "snapshot": {
@@ -349,13 +345,23 @@
       "url": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-policy-list"
     }
   },
-  "#intersection-source-expressions": {
+  "#intersection-source-expression": {
     "current": {
-      "number": "4.2.1",
+      "number": "3.1.4",
       "spec": "Content Security Policy: Embedded Enforcement",
-      "text": "What is an intersection of two expressions matching scheme-source or host-source grammar A and B?",
-      "url": "https://w3c.github.io/webappsec-cspee/#intersection-source-expressions"
-    },
+      "text": "Source Expression Intersection",
+      "url": "https://w3c.github.io/webappsec-cspee/#intersection-source-expression"
+    }
+  },
+  "#intersection-source-expression-scheme-and-host": {
+    "current": {
+      "number": "3.1.4.1",
+      "spec": "Content Security Policy: Embedded Enforcement",
+      "text": "scheme-source and host-source intersections",
+      "url": "https://w3c.github.io/webappsec-cspee/#intersection-source-expression-scheme-and-host"
+    }
+  },
+  "#intersection-source-expressions": {
     "snapshot": {
       "number": "4.2.1",
       "spec": "Content Security Policy: Embedded Enforcement",
@@ -435,7 +441,7 @@
   },
   "#policy-enforcement": {
     "current": {
-      "number": "5.1",
+      "number": "5.2",
       "spec": "Content Security Policy: Embedded Enforcement",
       "text": "Policy Enforcement",
       "url": "https://w3c.github.io/webappsec-cspee/#policy-enforcement"
@@ -533,7 +539,7 @@
   },
   "#rewrite-self": {
     "current": {
-      "number": "4.2.2",
+      "number": "4.2.1",
       "spec": "Content Security Policy: Embedded Enforcement",
       "text": "Rewrite 'self' into a host-source expression for origin.",
       "url": "https://w3c.github.io/webappsec-cspee/#rewrite-self"
@@ -561,7 +567,7 @@
   },
   "#similarity-source-expressions": {
     "current": {
-      "number": "3.1.4.3",
+      "number": "3.1.5.3",
       "spec": "Content Security Policy: Embedded Enforcement",
       "text": "Source Expression Similarity",
       "url": "https://w3c.github.io/webappsec-cspee/#similarity-source-expressions"
@@ -587,11 +593,19 @@
       "url": "https://www.w3.org/TR/csp-embedded-enforcement/#sotd"
     }
   },
+  "#subsume-csp-list": {
+    "current": {
+      "number": "3.2.1",
+      "spec": "Content Security Policy: Embedded Enforcement",
+      "text": "CSP List Subsumption",
+      "url": "https://w3c.github.io/webappsec-cspee/#subsume-csp-list"
+    }
+  },
   "#subsume-policy": {
     "current": {
-      "number": "4.2.5",
+      "number": "3.2.2",
       "spec": "Content Security Policy: Embedded Enforcement",
-      "text": "Does content security policy object A subsume content security policy object B given their respective origins?",
+      "text": "Policy Subsumption",
       "url": "https://w3c.github.io/webappsec-cspee/#subsume-policy"
     },
     "snapshot": {
@@ -602,12 +616,6 @@
     }
   },
   "#subsume-policy-list": {
-    "current": {
-      "number": "4.3",
-      "spec": "Content Security Policy: Embedded Enforcement",
-      "text": "Does subsuming policy subsume policy list given their respective origins?",
-      "url": "https://w3c.github.io/webappsec-cspee/#subsume-policy-list"
-    },
     "snapshot": {
       "number": "4.3",
       "spec": "Content Security Policy: Embedded Enforcement",
@@ -617,9 +625,9 @@
   },
   "#subsume-source-expressions": {
     "current": {
-      "number": "4.2.3",
+      "number": "3.2.4",
       "spec": "Content Security Policy: Embedded Enforcement",
-      "text": "Does source expression A subsume source expression B?",
+      "text": "Source expression subsumption",
       "url": "https://w3c.github.io/webappsec-cspee/#subsume-source-expressions"
     },
     "snapshot": {
@@ -631,9 +639,9 @@
   },
   "#subsume-source-list": {
     "current": {
-      "number": "4.2.4",
+      "number": "3.2.3",
       "spec": "Content Security Policy: Embedded Enforcement",
-      "text": "Does source list A subsume source listB given their respective origins and directive names?",
+      "text": "Source List Subsumption",
       "url": "https://w3c.github.io/webappsec-cspee/#subsume-source-list"
     },
     "snapshot": {
@@ -659,7 +667,7 @@
   },
   "#the-effective-source-list": {
     "current": {
-      "number": "3.1.4.2",
+      "number": "3.1.5.2",
       "spec": "Content Security Policy: Embedded Enforcement",
       "text": "Effective Source List",
       "url": "https://w3c.github.io/webappsec-cspee/#the-effective-source-list"
@@ -669,6 +677,14 @@
       "spec": "Content Security Policy: Embedded Enforcement",
       "text": "Effective Source List",
       "url": "https://www.w3.org/TR/csp-embedded-enforcement/#the-effective-source-list"
+    }
+  },
+  "#threat-model": {
+    "current": {
+      "number": "5.1",
+      "spec": "Content Security Policy: Embedded Enforcement",
+      "text": "Threat Model",
+      "url": "https://w3c.github.io/webappsec-cspee/#threat-model"
     }
   },
   "#toc": {
