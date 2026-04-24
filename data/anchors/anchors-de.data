@@ -2840,8 +2840,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-definepropertyort
 1
 1
 -
-DefinePropertyOrThrow(O, P, desc)
-DefinePropertyOrThrow(O, P, desc)
+DefinePropertyOrThrow(obj, propertyKey, desc)
+DefinePropertyOrThrow(obj, propertyKey, desc)
 abstract-op
 ecmascript
 ecmascript
@@ -3278,8 +3278,8 @@ https://www.w3.org/TR/webdriver2/#dfn-delete-session
 
 1
 -
-DeleteBinding(N)
-DeleteBinding(N)
+DeleteBinding(name)
+DeleteBinding(name)
 abstract-op
 ecmascript
 ecmascript
@@ -3290,8 +3290,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Declarative Environment Records
 -
-DeleteBinding(N)
-DeleteBinding(N)
+DeleteBinding(name)
+DeleteBinding(name)
 abstract-op
 ecmascript
 ecmascript
@@ -3302,8 +3302,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Global Environment Records
 -
-DeleteBinding(N)
-DeleteBinding(N)
+DeleteBinding(name)
+DeleteBinding(name)
 abstract-op
 ecmascript
 ecmascript
@@ -3314,8 +3314,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Module Environment Records
 -
-DeleteBinding(N)
-DeleteBinding(N)
+DeleteBinding(name)
+DeleteBinding(name)
 abstract-op
 ecmascript
 ecmascript
@@ -3337,8 +3337,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-deletepropertyort
 1
 1
 -
-DeletePropertyOrThrow(O, P)
-DeletePropertyOrThrow(O, P)
+DeletePropertyOrThrow(obj, propertyKey)
+DeletePropertyOrThrow(obj, propertyKey)
 abstract-op
 ecmascript
 ecmascript
@@ -11745,8 +11745,8 @@ https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementreg
 1
 CustomElementRegistry
 -
-defineProperties(O, Properties)
-defineProperties(O, Properties)
+defineProperties(obj, properties)
+defineProperties(obj, properties)
 method
 ecmascript
 ecmascript
@@ -11757,8 +11757,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineprop
 1
 Object
 -
-defineProperty(O, P, Attributes)
-defineProperty(O, P, Attributes)
+defineProperty(obj, propertyKey, attributes)
+defineProperty(obj, propertyKey, attributes)
 method
 ecmascript
 ecmascript
@@ -16538,6 +16538,17 @@ https://tc39.es/ecma262/multipage/managing-memory.html#sec-weak-ref.prototype.de
 1
 1
 WeakRef
+-
+dereferencing cycle
+dereferencing cycle
+dfn
+did-resolution
+did-resolution
+1
+current
+https://w3c.github.io/did-resolution/#dfn-dereferencing-cycle
+
+
 -
 dereferencingmetadata
 dereferencingMetadata

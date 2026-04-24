@@ -4792,8 +4792,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-string-iterato
 1
 ECMAScript
 -
-RegExp(pattern, flags)
-RegExp(pattern, flags)
+RegExp(patternOrRegexp, flags)
+RegExp(patternOrRegexp, flags)
 constructor
 ecmascript
 ecmascript
@@ -4897,8 +4897,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec
 1
 1
 -
-RegExpBuiltinExec(R, S)
-RegExpBuiltinExec(R, S)
+RegExpBuiltinExec(regexp, str)
+RegExpBuiltinExec(regexp, str)
 abstract-op
 ecmascript
 ecmascript
@@ -4919,8 +4919,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpcreate
 1
 1
 -
-RegExpCreate(P, F)
-RegExpCreate(P, F)
+RegExpCreate(pattern, flags)
+RegExpCreate(pattern, flags)
 abstract-op
 ecmascript
 ecmascript
@@ -4941,8 +4941,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpexec
 1
 1
 -
-RegExpExec(R, S)
-RegExpExec(R, S)
+RegExpExec(regexp, str)
+RegExpExec(regexp, str)
 abstract-op
 ecmascript
 ecmascript
@@ -4963,8 +4963,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-regexphasflag
 1
 1
 -
-RegExpHasFlag(R, codeUnit)
-RegExpHasFlag(R, codeUnit)
+RegExpHasFlag(regexp, codeUnit)
+RegExpHasFlag(regexp, codeUnit)
 abstract-op
 ecmascript
 ecmascript
@@ -6236,8 +6236,8 @@ https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter
 1
 1
 -
-RemoveWaiter(WL, waiterRecord)
-RemoveWaiter(WL, waiterRecord)
+RemoveWaiter(waiterList, waiterRecord)
+RemoveWaiter(waiterList, waiterRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -6258,8 +6258,8 @@ https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiters
 1
 1
 -
-RemoveWaiters(WL, c)
-RemoveWaiters(WL, c)
+RemoveWaiters(waiterList, count)
+RemoveWaiters(waiterList, count)
 abstract-op
 ecmascript
 ecmascript
@@ -6379,8 +6379,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-rep
 1
 1
 -
-RepeatMatcher(m, min, max, greedy, x, c, parenIndex, parenCount)
-RepeatMatcher(m, min, max, greedy, x, c, parenIndex, parenCount)
+RepeatMatcher(m, min, max, greedy, matchState, continue, parenIndex, parenCount)
+RepeatMatcher(m, min, max, greedy, matchState, continue, parenIndex, parenCount)
 abstract-op
 ecmascript
 ecmascript
@@ -7100,8 +7100,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-RequireInternalSlot(O, internalSlot)
-RequireInternalSlot(O, internalSlot)
+RequireInternalSlot(obj, internalSlot)
+RequireInternalSlot(obj, internalSlot)
 abstract-op
 ecmascript
 ecmascript
@@ -23190,8 +23190,8 @@ https://html.spec.whatwg.org/multipage/nav-history-apis.html#reject-the-finished
 
 1
 -
-reject(r)
-reject(r)
+reject(reason)
+reject(reason)
 method
 ecmascript
 ecmascript
@@ -40798,17 +40798,6 @@ dfn
 did-resolution
 did-resolution
 1
-current
-https://w3c.github.io/did-resolution/#dfn-resolution-cycle
-
-
--
-resolution cycle
-resolution cycle
-dfn
-did-resolution
-did-resolution
-1
 snapshot
 https://www.w3.org/TR/did-resolution/#dfn-resolution-cycle
 
@@ -41268,32 +41257,8 @@ https://fs.spec.whatwg.org/#dom-filesystemdirectoryhandle-resolve
 1
 FileSystemDirectoryHandle
 -
-resolve(token)
-resolve(token)
-method
-fedcm-1
-fedcm
-1
-current
-https://w3c-fedid.github.io/FedCM/#dom-identityprovider-resolve
-1
-1
-IdentityProvider
--
-resolve(token, options)
-resolve(token, options)
-method
-fedcm-1
-fedcm
-1
-current
-https://w3c-fedid.github.io/FedCM/#dom-identityprovider-resolve
-1
-1
-IdentityProvider
--
-resolve(x)
-resolve(x)
+resolve(resolution)
+resolve(resolution)
 method
 ecmascript
 ecmascript
@@ -41303,6 +41268,30 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.r
 1
 1
 Promise
+-
+resolve(token)
+resolve(token)
+method
+fedcm-1
+fedcm
+1
+current
+https://w3c-fedid.github.io/FedCM/#dom-identityprovider-resolve
+1
+1
+IdentityProvider
+-
+resolve(token, options)
+resolve(token, options)
+method
+fedcm-1
+fedcm
+1
+current
+https://w3c-fedid.github.io/FedCM/#dom-identityprovider-resolve
+1
+1
+IdentityProvider
 -
 resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)
 resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)

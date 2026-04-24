@@ -1068,8 +1068,8 @@ https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasy
 1
 1
 -
-EnqueueAtomicsWaitAsyncTimeoutJob(WL, waiterRecord)
-EnqueueAtomicsWaitAsyncTimeoutJob(WL, waiterRecord)
+EnqueueAtomicsWaitAsyncTimeoutJob(waiterList, waiterRecord)
+EnqueueAtomicsWaitAsyncTimeoutJob(waiterList, waiterRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -1266,8 +1266,8 @@ https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection
 1
 1
 -
-EnterCriticalSection(WL)
-EnterCriticalSection(WL)
+EnterCriticalSection(waiterList)
+EnterCriticalSection(waiterList)
 abstract-op
 ecmascript
 ecmascript
@@ -1398,8 +1398,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-enumerableownprop
 1
 1
 -
-EnumerableOwnProperties(O, kind)
-EnumerableOwnProperties(O, kind)
+EnumerableOwnProperties(obj, kind)
+EnumerableOwnProperties(obj, kind)
 abstract-op
 ecmascript
 ecmascript
@@ -1420,8 +1420,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declaration
 1
 1
 -
-EnumerateObjectProperties(O)
-EnumerateObjectProperties(O)
+EnumerateObjectProperties(obj)
+EnumerateObjectProperties(obj)
 abstract-op
 ecmascript
 ecmascript
@@ -7465,8 +7465,8 @@ https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.entri
 1
 Set
 -
-entries(O)
-entries(O)
+entries(obj)
+entries(obj)
 method
 ecmascript
 ecmascript

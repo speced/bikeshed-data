@@ -4367,17 +4367,6 @@ https://www.w3.org/TR/generic-sensor/#set-sensor-settings
 1
 1
 -
-Set(O, P, V, Throw)
-Set(O, P, V, Throw)
-abstract-op
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/abstract-operations.html#sec-set-o-p-v-throw
-1
-1
--
 Set(iterable)
 Set(iterable)
 constructor
@@ -4389,6 +4378,17 @@ https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-iterable
 1
 1
 Set
+-
+Set(obj, propertyKey, value, throw)
+Set(obj, propertyKey, value, throw)
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/abstract-operations.html#sec-set-o-p-v-throw
+1
+1
 -
 set-cookie state
 Set-Cookie state
@@ -4534,8 +4534,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-SetFunctionLength(F, length)
-SetFunctionLength(F, length)
+SetFunctionLength(func, length)
+SetFunctionLength(func, length)
 abstract-op
 ecmascript
 ecmascript
@@ -4556,8 +4556,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-SetFunctionName(F, name, prefix)
-SetFunctionName(F, name, prefix)
+SetFunctionName(func, name, prefix)
+SetFunctionName(func, name, prefix)
 abstract-op
 ecmascript
 ecmascript
@@ -4600,8 +4600,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-SetImmutablePrototype(O, V)
-SetImmutablePrototype(O, V)
+SetImmutablePrototype(obj, proto)
+SetImmutablePrototype(obj, proto)
 abstract-op
 ecmascript
 ecmascript
@@ -4622,8 +4622,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel
 1
 1
 -
-SetIntegrityLevel(O, level)
-SetIntegrityLevel(O, level)
+SetIntegrityLevel(obj, level)
+SetIntegrityLevel(obj, level)
 abstract-op
 ecmascript
 ecmascript
@@ -4633,8 +4633,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel
 1
 1
 -
-SetMutableBinding(N, V, S)
-SetMutableBinding(N, V, S)
+SetMutableBinding(name, value, strict)
+SetMutableBinding(name, value, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -4645,8 +4645,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Declarative Environment Records
 -
-SetMutableBinding(N, V, S)
-SetMutableBinding(N, V, S)
+SetMutableBinding(name, value, strict)
+SetMutableBinding(name, value, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -4657,8 +4657,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Global Environment Records
 -
-SetMutableBinding(N, V, S)
-SetMutableBinding(N, V, S)
+SetMutableBinding(name, value, strict)
+SetMutableBinding(name, value, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -4955,8 +4955,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-SetterThatIgnores
 1
 1
 -
-SetterThatIgnoresPrototypeProperties(thisValue, home, p, v)
-SetterThatIgnoresPrototypeProperties(thisValue, home, p, v)
+SetterThatIgnoresPrototypeProperties(thisValue, home, propertyKey, value)
+SetterThatIgnoresPrototypeProperties(thisValue, home, propertyKey, value)
 abstract-op
 ecmascript
 ecmascript
@@ -5827,8 +5827,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-seagreen
 <color>
 <named-color>
 -
-seal(O)
-seal(O)
+seal(obj)
+seal(obj)
 method
 ecmascript
 ecmascript
@@ -6100,8 +6100,8 @@ https://www.w3.org/TR/css-nav-1/#search-origin
 
 1
 -
-search(regexp)
-search(regexp)
+search(regexpOrPattern)
+search(regexpOrPattern)
 method
 ecmascript
 ecmascript
@@ -22912,8 +22912,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.
 1
 %TypedArray%
 -
-set(target, propertyKey, V, receiver)
-set(target, propertyKey, V, receiver)
+set(target, propertyKey, value, receiver)
+set(target, propertyKey, value, receiver)
 method
 ecmascript
 ecmascript
@@ -25393,8 +25393,8 @@ https://www.w3.org/TR/cssom-1/#dom-cssstyledeclaration-setproperty
 1
 CSSStyleDeclaration
 -
-setPrototypeOf(O, proto)
-setPrototypeOf(O, proto)
+setPrototypeOf(obj, proto)
+setPrototypeOf(obj, proto)
 method
 ecmascript
 ecmascript

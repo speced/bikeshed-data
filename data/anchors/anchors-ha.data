@@ -1367,8 +1367,8 @@ https://www.w3.org/TR/webcodecs/#enumdef-hardwareacceleration
 1
 1
 -
-HasBinding(N)
-HasBinding(N)
+HasBinding(name)
+HasBinding(name)
 abstract-op
 ecmascript
 ecmascript
@@ -1379,8 +1379,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Declarative Environment Records
 -
-HasBinding(N)
-HasBinding(N)
+HasBinding(name)
+HasBinding(name)
 abstract-op
 ecmascript
 ecmascript
@@ -1391,8 +1391,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Global Environment Records
 -
-HasBinding(N)
-HasBinding(N)
+HasBinding(name)
+HasBinding(name)
 abstract-op
 ecmascript
 ecmascript
@@ -1414,8 +1414,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-has
 1
 1
 -
-HasEitherUnicodeFlag(rer)
-HasEitherUnicodeFlag(rer)
+HasEitherUnicodeFlag(regexpRecord)
+HasEitherUnicodeFlag(regexpRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -1436,8 +1436,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-HasLexicalDeclaration(envRec, N)
-HasLexicalDeclaration(envRec, N)
+HasLexicalDeclaration(envRec, name)
+HasLexicalDeclaration(envRec, name)
 abstract-op
 ecmascript
 ecmascript
@@ -1458,8 +1458,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasownproperty
 1
 1
 -
-HasOwnProperty(O, P)
-HasOwnProperty(O, P)
+HasOwnProperty(obj, propertyKey)
+HasOwnProperty(obj, propertyKey)
 abstract-op
 ecmascript
 ecmascript
@@ -1480,8 +1480,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasproperty
 1
 1
 -
-HasProperty(O, P)
-HasProperty(O, P)
+HasProperty(obj, propertyKey)
+HasProperty(obj, propertyKey)
 abstract-op
 ecmascript
 ecmascript
@@ -1502,8 +1502,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-HasRestrictedGlobalProperty(envRec, N)
-HasRestrictedGlobalProperty(envRec, N)
+HasRestrictedGlobalProperty(envRec, name)
+HasRestrictedGlobalProperty(envRec, name)
 abstract-op
 ecmascript
 ecmascript
@@ -5578,8 +5578,8 @@ https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-hasorientation
 1
 GamepadPose
 -
-hasOwn(O, P)
-hasOwn(O, P)
+hasOwn(obj, propertyKey)
+hasOwn(obj, propertyKey)
 method
 ecmascript
 ecmascript
@@ -5590,8 +5590,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown
 1
 Object
 -
-hasOwnProperty(V)
-hasOwnProperty(V)
+hasOwnProperty(value)
+hasOwnProperty(value)
 method
 ecmascript
 ecmascript

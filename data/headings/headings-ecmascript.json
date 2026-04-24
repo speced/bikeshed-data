@@ -6570,7 +6570,7 @@
     "current": {
       "number": "7.3.37",
       "spec": "ECMAScript",
-      "text": "SetterThatIgnoresPrototypeProperties ( thisValue, home, p, v )",
+      "text": "SetterThatIgnoresPrototypeProperties ( thisValue, home, propertyKey, value )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-SetterThatIgnoresPrototypeProperties"
     }
   },
@@ -6602,7 +6602,7 @@
     "current": {
       "number": "7.3.13",
       "spec": "ECMAScript",
-      "text": "Call ( F, V [ , argumentsList ] )",
+      "text": "Call ( func, thisValue [ , argumentsList ] )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call"
     }
   },
@@ -6618,7 +6618,7 @@
     "current": {
       "number": "7.3.14",
       "spec": "ECMAScript",
-      "text": "Construct ( F [ , argumentsList [ , newTarget ] ] )",
+      "text": "Construct ( constructor [ , argumentsList [ , newTarget ] ] )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct"
     }
   },
@@ -6642,7 +6642,7 @@
     "current": {
       "number": "7.3.5",
       "spec": "ECMAScript",
-      "text": "CreateDataProperty ( O, P, V )",
+      "text": "CreateDataProperty ( obj, propertyKey, value )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty"
     }
   },
@@ -6650,7 +6650,7 @@
     "current": {
       "number": "7.3.6",
       "spec": "ECMAScript",
-      "text": "CreateDataPropertyOrThrow ( O, P, V )",
+      "text": "CreateDataPropertyOrThrow ( obj, propertyKey, value )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow"
     }
   },
@@ -6682,7 +6682,7 @@
     "current": {
       "number": "7.3.7",
       "spec": "ECMAScript",
-      "text": "CreateNonEnumerableDataPropertyOrThrow ( O, P, V )",
+      "text": "CreateNonEnumerableDataPropertyOrThrow ( obj, propertyKey, value )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createnonenumerabledatapropertyorthrow"
     }
   },
@@ -6698,7 +6698,7 @@
     "current": {
       "number": "7.3.8",
       "spec": "ECMAScript",
-      "text": "DefinePropertyOrThrow ( O, P, desc )",
+      "text": "DefinePropertyOrThrow ( obj, propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-definepropertyorthrow"
     }
   },
@@ -6706,7 +6706,7 @@
     "current": {
       "number": "7.3.9",
       "spec": "ECMAScript",
-      "text": "DeletePropertyOrThrow ( O, P )",
+      "text": "DeletePropertyOrThrow ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-deletepropertyorthrow"
     }
   },
@@ -6714,7 +6714,7 @@
     "current": {
       "number": "7.3.23",
       "spec": "ECMAScript",
-      "text": "EnumerableOwnProperties ( O, kind )",
+      "text": "EnumerableOwnProperties ( obj, kind )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-enumerableownproperties"
     }
   },
@@ -6722,7 +6722,7 @@
     "current": {
       "number": "7.3.2",
       "spec": "ECMAScript",
-      "text": "Get ( O, P )",
+      "text": "Get ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p"
     }
   },
@@ -6730,7 +6730,7 @@
     "current": {
       "number": "7.3.24",
       "spec": "ECMAScript",
-      "text": "GetFunctionRealm ( obj )",
+      "text": "GetFunctionRealm ( func )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getfunctionrealm"
     }
   },
@@ -6770,7 +6770,7 @@
     "current": {
       "number": "7.3.10",
       "spec": "ECMAScript",
-      "text": "GetMethod ( V, P )",
+      "text": "GetMethod ( value, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod"
     }
   },
@@ -6786,7 +6786,7 @@
     "current": {
       "number": "7.3.3",
       "spec": "ECMAScript",
-      "text": "GetV ( V, P )",
+      "text": "GetV ( value, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getv"
     }
   },
@@ -6802,7 +6802,7 @@
     "current": {
       "number": "7.3.12",
       "spec": "ECMAScript",
-      "text": "HasOwnProperty ( O, P )",
+      "text": "HasOwnProperty ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasownproperty"
     }
   },
@@ -6810,7 +6810,7 @@
     "current": {
       "number": "7.3.11",
       "spec": "ECMAScript",
-      "text": "HasProperty ( O, P )",
+      "text": "HasProperty ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasproperty"
     }
   },
@@ -6818,7 +6818,7 @@
     "current": {
       "number": "7.3.29",
       "spec": "ECMAScript",
-      "text": "HostEnsureCanAddPrivateElement ( O )",
+      "text": "HostEnsureCanAddPrivateElement ( obj )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hostensurecanaddprivateelement"
     }
   },
@@ -6842,7 +6842,7 @@
     "current": {
       "number": "7.3.33",
       "spec": "ECMAScript",
-      "text": "InitializeInstanceElements ( O, constructor )",
+      "text": "InitializeInstanceElements ( obj, constructor )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-initializeinstanceelements"
     }
   },
@@ -6850,7 +6850,7 @@
     "current": {
       "number": "7.3.20",
       "spec": "ECMAScript",
-      "text": "Invoke ( V, P [ , argumentsList ] )",
+      "text": "Invoke ( value, propertyKey [ , argumentsList ] )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-invoke"
     }
   },
@@ -6882,7 +6882,7 @@
     "current": {
       "number": "7.2.5",
       "spec": "ECMAScript",
-      "text": "IsExtensible ( O )",
+      "text": "IsExtensible ( obj )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isextensible-o"
     }
   },
@@ -6890,7 +6890,7 @@
     "current": {
       "number": "7.2.12",
       "spec": "ECMAScript",
-      "text": "IsLessThan ( x, y, LeftFirst )",
+      "text": "IsLessThan ( x, y, leftFirst )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-islessthan"
     }
   },
@@ -7034,7 +7034,7 @@
     "current": {
       "number": "7.3.21",
       "spec": "ECMAScript",
-      "text": "OrdinaryHasInstance ( C, O )",
+      "text": "OrdinaryHasInstance ( constructor, instance )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinaryhasinstance"
     }
   },
@@ -7042,7 +7042,7 @@
     "current": {
       "number": "7.1.1.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryToPrimitive ( O, hint )",
+      "text": "OrdinaryToPrimitive ( obj, hint )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinarytoprimitive"
     }
   },
@@ -7050,7 +7050,7 @@
     "current": {
       "number": "7.3.26",
       "spec": "ECMAScript",
-      "text": "PrivateElementFind ( O, P )",
+      "text": "PrivateElementFind ( obj, privateName )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateelementfind"
     }
   },
@@ -7058,7 +7058,7 @@
     "current": {
       "number": "7.3.27",
       "spec": "ECMAScript",
-      "text": "PrivateFieldAdd ( O, P, value )",
+      "text": "PrivateFieldAdd ( obj, privateName, value )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privatefieldadd"
     }
   },
@@ -7066,7 +7066,7 @@
     "current": {
       "number": "7.3.30",
       "spec": "ECMAScript",
-      "text": "PrivateGet ( O, P )",
+      "text": "PrivateGet ( obj, privateName )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateget"
     }
   },
@@ -7074,7 +7074,7 @@
     "current": {
       "number": "7.3.28",
       "spec": "ECMAScript",
-      "text": "PrivateMethodOrAccessorAdd ( O, method )",
+      "text": "PrivateMethodOrAccessorAdd ( obj, method )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privatemethodoraccessoradd"
     }
   },
@@ -7082,7 +7082,7 @@
     "current": {
       "number": "7.3.31",
       "spec": "ECMAScript",
-      "text": "PrivateSet ( O, P, value )",
+      "text": "PrivateSet ( obj, privateName, value )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateset"
     }
   },
@@ -7154,7 +7154,7 @@
     "current": {
       "number": "7.3.4",
       "spec": "ECMAScript",
-      "text": "Set ( O, P, V, Throw )",
+      "text": "Set ( obj, propertyKey, value, throw )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-set-o-p-v-throw"
     }
   },
@@ -7162,7 +7162,7 @@
     "current": {
       "number": "7.3.15",
       "spec": "ECMAScript",
-      "text": "SetIntegrityLevel ( O, level )",
+      "text": "SetIntegrityLevel ( obj, level )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel"
     }
   },
@@ -7170,7 +7170,7 @@
     "current": {
       "number": "7.3.22",
       "spec": "ECMAScript",
-      "text": "SpeciesConstructor ( O, defaultConstructor )",
+      "text": "SpeciesConstructor ( obj, defaultConstructor )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-speciesconstructor"
     }
   },
@@ -7210,7 +7210,7 @@
     "current": {
       "number": "7.3.16",
       "spec": "ECMAScript",
-      "text": "TestIntegrityLevel ( O, level )",
+      "text": "TestIntegrityLevel ( obj, level )",
       "url": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-testintegritylevel"
     }
   },
@@ -8202,7 +8202,7 @@
     "current": {
       "number": "27.2.1.6",
       "spec": "ECMAScript",
-      "text": "IsPromise ( x )",
+      "text": "IsPromise ( value )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-ispromise"
     }
   },
@@ -8274,7 +8274,7 @@
     "current": {
       "number": "27.1.3.2.2",
       "spec": "ECMAScript",
-      "text": "Iterator.from ( O )",
+      "text": "Iterator.from ( obj )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.from"
     }
   },
@@ -8410,7 +8410,7 @@
     "current": {
       "number": "27.2.1.5",
       "spec": "ECMAScript",
-      "text": "NewPromiseCapability ( C )",
+      "text": "NewPromiseCapability ( constructor )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisecapability"
     }
   },
@@ -8514,7 +8514,7 @@
     "current": {
       "number": "27.2.4.7.1",
       "spec": "ECMAScript",
-      "text": "PromiseResolve ( C, x )",
+      "text": "PromiseResolve ( constructor, resolution )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-resolve"
     }
   },
@@ -8602,7 +8602,7 @@
     "current": {
       "number": "27.2.4.6",
       "spec": "ECMAScript",
-      "text": "Promise.reject ( r )",
+      "text": "Promise.reject ( reason )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.reject"
     }
   },
@@ -8610,7 +8610,7 @@
     "current": {
       "number": "27.2.4.7",
       "spec": "ECMAScript",
-      "text": "Promise.resolve ( x )",
+      "text": "Promise.resolve ( resolution )",
       "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.resolve"
     }
   },
@@ -8850,7 +8850,7 @@
     "current": {
       "number": "6.2.6.6",
       "spec": "ECMAScript",
-      "text": "CompletePropertyDescriptor ( Desc )",
+      "text": "CompletePropertyDescriptor ( desc )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-completepropertydescriptor"
     }
   },
@@ -8986,7 +8986,7 @@
     "current": {
       "number": "6.2.6.4",
       "spec": "ECMAScript",
-      "text": "FromPropertyDescriptor ( Desc )",
+      "text": "FromPropertyDescriptor ( desc )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-frompropertydescriptor"
     }
   },
@@ -8994,7 +8994,7 @@
     "current": {
       "number": "6.2.5.7",
       "spec": "ECMAScript",
-      "text": "GetThisValue ( V )",
+      "text": "GetThisValue ( referenceRecord )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getthisvalue"
     }
   },
@@ -9002,7 +9002,7 @@
     "current": {
       "number": "6.2.5.5",
       "spec": "ECMAScript",
-      "text": "GetValue ( V )",
+      "text": "GetValue ( referenceRecord )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getvalue"
     }
   },
@@ -9010,7 +9010,7 @@
     "current": {
       "number": "6.2.5.8",
       "spec": "ECMAScript",
-      "text": "InitializeReferencedBinding ( V, W )",
+      "text": "InitializeReferencedBinding ( referenceRecord, value )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-initializereferencedbinding"
     }
   },
@@ -9026,7 +9026,7 @@
     "current": {
       "number": "6.2.6.1",
       "spec": "ECMAScript",
-      "text": "IsAccessorDescriptor ( Desc )",
+      "text": "IsAccessorDescriptor ( desc )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isaccessordescriptor"
     }
   },
@@ -9034,7 +9034,7 @@
     "current": {
       "number": "6.2.6.2",
       "spec": "ECMAScript",
-      "text": "IsDataDescriptor ( Desc )",
+      "text": "IsDataDescriptor ( desc )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isdatadescriptor"
     }
   },
@@ -9042,7 +9042,7 @@
     "current": {
       "number": "6.2.6.3",
       "spec": "ECMAScript",
-      "text": "IsGenericDescriptor ( Desc )",
+      "text": "IsGenericDescriptor ( desc )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isgenericdescriptor"
     }
   },
@@ -9050,7 +9050,7 @@
     "current": {
       "number": "6.2.5.4",
       "spec": "ECMAScript",
-      "text": "IsPrivateReference ( V )",
+      "text": "IsPrivateReference ( referenceRecord )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isprivatereference"
     }
   },
@@ -9058,7 +9058,7 @@
     "current": {
       "number": "6.2.5.1",
       "spec": "ECMAScript",
-      "text": "IsPropertyReference ( V )",
+      "text": "IsPropertyReference ( referenceRecord )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-ispropertyreference"
     }
   },
@@ -9066,7 +9066,7 @@
     "current": {
       "number": "6.2.5.3",
       "spec": "ECMAScript",
-      "text": "IsSuperReference ( V )",
+      "text": "IsSuperReference ( referenceRecord )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-issuperreference"
     }
   },
@@ -9074,7 +9074,7 @@
     "current": {
       "number": "6.2.5.2",
       "spec": "ECMAScript",
-      "text": "IsUnresolvableReference ( V )",
+      "text": "IsUnresolvableReference ( referenceRecord )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isunresolvablereference"
     }
   },
@@ -9466,7 +9466,7 @@
     "current": {
       "number": "6.2.5.6",
       "spec": "ECMAScript",
-      "text": "PutValue ( V, W )",
+      "text": "PutValue ( referenceRecord, value )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-putvalue"
     }
   },
@@ -9522,7 +9522,7 @@
     "current": {
       "number": "6.2.6.5",
       "spec": "ECMAScript",
-      "text": "ToPropertyDescriptor ( Obj )",
+      "text": "ToPropertyDescriptor ( obj )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-topropertydescriptor"
     }
   },
@@ -9986,7 +9986,7 @@
     "current": {
       "number": "13.10.2",
       "spec": "ECMAScript",
-      "text": "InstanceofOperator ( V, target )",
+      "text": "InstanceofOperator ( value, target )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-instanceofoperator"
     }
   },
@@ -12370,7 +12370,7 @@
     "current": {
       "number": "14.7.5.9",
       "spec": "ECMAScript",
-      "text": "EnumerateObjectProperties ( O )",
+      "text": "EnumerateObjectProperties ( obj )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-enumerate-object-properties"
     }
   },
@@ -12586,7 +12586,7 @@
     "current": {
       "number": "14.12.3",
       "spec": "ECMAScript",
-      "text": "CaseClauseIsSelected ( C, input )",
+      "text": "CaseClauseIsSelected ( constructor, input )",
       "url": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-runtime-semantics-caseclauseisselected"
     }
   },
@@ -12906,7 +12906,7 @@
     "current": {
       "number": "9.1.1.3.1",
       "spec": "ECMAScript",
-      "text": "BindThisValue ( envRec, V )",
+      "text": "BindThisValue ( envRec, value )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-bindthisvalue"
     }
   },
@@ -12922,7 +12922,7 @@
     "current": {
       "number": "9.1.1.4.15",
       "spec": "ECMAScript",
-      "text": "CanDeclareGlobalFunction ( envRec, N )",
+      "text": "CanDeclareGlobalFunction ( envRec, name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalfunction"
     }
   },
@@ -12930,7 +12930,7 @@
     "current": {
       "number": "9.1.1.4.14",
       "spec": "ECMAScript",
-      "text": "CanDeclareGlobalVar ( envRec, N )",
+      "text": "CanDeclareGlobalVar ( envRec, name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalvar"
     }
   },
@@ -12962,7 +12962,7 @@
     "current": {
       "number": "9.1.1.4.17",
       "spec": "ECMAScript",
-      "text": "CreateGlobalFunctionBinding ( envRec, N, V, D )",
+      "text": "CreateGlobalFunctionBinding ( envRec, name, value, deletable )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding"
     }
   },
@@ -12970,7 +12970,7 @@
     "current": {
       "number": "9.1.1.4.16",
       "spec": "ECMAScript",
-      "text": "CreateGlobalVarBinding ( envRec, N, D )",
+      "text": "CreateGlobalVarBinding ( envRec, name, deletable )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding"
     }
   },
@@ -12978,7 +12978,7 @@
     "current": {
       "number": "9.1.1.5.5",
       "spec": "ECMAScript",
-      "text": "CreateImportBinding ( envRec, N, M, N2 )",
+      "text": "CreateImportBinding ( envRec, name, targetModule, targetName )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createimportbinding"
     }
   },
@@ -13002,7 +13002,7 @@
     "current": {
       "number": "9.1.1.1.3",
       "spec": "ECMAScript",
-      "text": "CreateImmutableBinding ( N, S )",
+      "text": "CreateImmutableBinding ( name, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-createimmutablebinding-n-s"
     }
   },
@@ -13010,7 +13010,7 @@
     "current": {
       "number": "9.1.1.1.2",
       "spec": "ECMAScript",
-      "text": "CreateMutableBinding ( N, D )",
+      "text": "CreateMutableBinding ( name, deletable )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-createmutablebinding-n-d"
     }
   },
@@ -13018,7 +13018,7 @@
     "current": {
       "number": "9.1.1.1.7",
       "spec": "ECMAScript",
-      "text": "DeleteBinding ( N )",
+      "text": "DeleteBinding ( name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-deletebinding-n"
     }
   },
@@ -13026,7 +13026,7 @@
     "current": {
       "number": "9.1.1.1.6",
       "spec": "ECMAScript",
-      "text": "GetBindingValue ( N, S )",
+      "text": "GetBindingValue ( name, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-getbindingvalue-n-s"
     }
   },
@@ -13042,7 +13042,7 @@
     "current": {
       "number": "9.1.1.1.1",
       "spec": "ECMAScript",
-      "text": "HasBinding ( N )",
+      "text": "HasBinding ( name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-hasbinding-n"
     }
   },
@@ -13066,7 +13066,7 @@
     "current": {
       "number": "9.1.1.1.4",
       "spec": "ECMAScript",
-      "text": "InitializeBinding ( N, V )",
+      "text": "InitializeBinding ( name, value )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-initializebinding-n-v"
     }
   },
@@ -13074,7 +13074,7 @@
     "current": {
       "number": "9.1.1.1.5",
       "spec": "ECMAScript",
-      "text": "SetMutableBinding ( N, V, S )",
+      "text": "SetMutableBinding ( name, value, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-setmutablebinding-n-v-s"
     }
   },
@@ -13218,7 +13218,7 @@
     "current": {
       "number": "9.1.1.4.3",
       "spec": "ECMAScript",
-      "text": "CreateImmutableBinding ( N, S )",
+      "text": "CreateImmutableBinding ( name, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-createimmutablebinding-n-s"
     }
   },
@@ -13226,7 +13226,7 @@
     "current": {
       "number": "9.1.1.4.2",
       "spec": "ECMAScript",
-      "text": "CreateMutableBinding ( N, D )",
+      "text": "CreateMutableBinding ( name, deletable )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-createmutablebinding-n-d"
     }
   },
@@ -13234,7 +13234,7 @@
     "current": {
       "number": "9.1.1.4.7",
       "spec": "ECMAScript",
-      "text": "DeleteBinding ( N )",
+      "text": "DeleteBinding ( name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-deletebinding-n"
     }
   },
@@ -13242,7 +13242,7 @@
     "current": {
       "number": "9.1.1.4.6",
       "spec": "ECMAScript",
-      "text": "GetBindingValue ( N, S )",
+      "text": "GetBindingValue ( name, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-getbindingvalue-n-s"
     }
   },
@@ -13258,7 +13258,7 @@
     "current": {
       "number": "9.1.1.4.1",
       "spec": "ECMAScript",
-      "text": "HasBinding ( N )",
+      "text": "HasBinding ( name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-hasbinding-n"
     }
   },
@@ -13282,7 +13282,7 @@
     "current": {
       "number": "9.1.1.4.4",
       "spec": "ECMAScript",
-      "text": "InitializeBinding ( N, V )",
+      "text": "InitializeBinding ( name, value )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-initializebinding-n-v"
     }
   },
@@ -13290,7 +13290,7 @@
     "current": {
       "number": "9.1.1.4.5",
       "spec": "ECMAScript",
-      "text": "SetMutableBinding ( N, V, S )",
+      "text": "SetMutableBinding ( name, value, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-setmutablebinding-n-v-s"
     }
   },
@@ -13306,7 +13306,7 @@
     "current": {
       "number": "9.1.1.4.12",
       "spec": "ECMAScript",
-      "text": "HasLexicalDeclaration ( envRec, N )",
+      "text": "HasLexicalDeclaration ( envRec, name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-haslexicaldeclaration"
     }
   },
@@ -13314,7 +13314,7 @@
     "current": {
       "number": "9.1.1.4.13",
       "spec": "ECMAScript",
-      "text": "HasRestrictedGlobalProperty ( envRec, N )",
+      "text": "HasRestrictedGlobalProperty ( envRec, name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasrestrictedglobalproperty"
     }
   },
@@ -13330,7 +13330,7 @@
     "current": {
       "number": "9.5.3",
       "spec": "ECMAScript",
-      "text": "HostCallJobCallback ( jobCallback, V, argumentsList )",
+      "text": "HostCallJobCallback ( jobCallback, value, argumentsList )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostcalljobcallback"
     }
   },
@@ -13410,7 +13410,7 @@
     "current": {
       "number": "9.1.1.5.2",
       "spec": "ECMAScript",
-      "text": "DeleteBinding ( N )",
+      "text": "DeleteBinding ( name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-module-environment-records-deletebinding-n"
     }
   },
@@ -13418,7 +13418,7 @@
     "current": {
       "number": "9.1.1.5.1",
       "spec": "ECMAScript",
-      "text": "GetBindingValue ( N, S )",
+      "text": "GetBindingValue ( name, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-module-environment-records-getbindingvalue-n-s"
     }
   },
@@ -13442,7 +13442,7 @@
     "current": {
       "number": "9.1.2.2",
       "spec": "ECMAScript",
-      "text": "NewDeclarativeEnvironment ( E )",
+      "text": "NewDeclarativeEnvironment ( outerEnv )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newdeclarativeenvironment"
     }
   },
@@ -13450,7 +13450,7 @@
     "current": {
       "number": "9.1.2.4",
       "spec": "ECMAScript",
-      "text": "NewFunctionEnvironment ( F, newTarget )",
+      "text": "NewFunctionEnvironment ( func, newTarget )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newfunctionenvironment"
     }
   },
@@ -13458,7 +13458,7 @@
     "current": {
       "number": "9.1.2.5",
       "spec": "ECMAScript",
-      "text": "NewGlobalEnvironment ( G, thisValue )",
+      "text": "NewGlobalEnvironment ( obj, thisValue )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newglobalenvironment"
     }
   },
@@ -13466,7 +13466,7 @@
     "current": {
       "number": "9.1.2.6",
       "spec": "ECMAScript",
-      "text": "NewModuleEnvironment ( E )",
+      "text": "NewModuleEnvironment ( outerEnv )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newmoduleenvironment"
     }
   },
@@ -13474,7 +13474,7 @@
     "current": {
       "number": "9.1.2.3",
       "spec": "ECMAScript",
-      "text": "NewObjectEnvironment ( O, W, E )",
+      "text": "NewObjectEnvironment ( obj, isWithEnvironment, outerEnv )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newobjectenvironment"
     }
   },
@@ -13498,7 +13498,7 @@
     "current": {
       "number": "9.1.1.2.3",
       "spec": "ECMAScript",
-      "text": "CreateImmutableBinding ( N, S )",
+      "text": "CreateImmutableBinding ( name, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-createimmutablebinding-n-s"
     }
   },
@@ -13506,7 +13506,7 @@
     "current": {
       "number": "9.1.1.2.2",
       "spec": "ECMAScript",
-      "text": "CreateMutableBinding ( N, D )",
+      "text": "CreateMutableBinding ( name, deletable )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-createmutablebinding-n-d"
     }
   },
@@ -13514,7 +13514,7 @@
     "current": {
       "number": "9.1.1.2.7",
       "spec": "ECMAScript",
-      "text": "DeleteBinding ( N )",
+      "text": "DeleteBinding ( name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-deletebinding-n"
     }
   },
@@ -13522,7 +13522,7 @@
     "current": {
       "number": "9.1.1.2.6",
       "spec": "ECMAScript",
-      "text": "GetBindingValue ( N, S )",
+      "text": "GetBindingValue ( name, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-getbindingvalue-n-s"
     }
   },
@@ -13538,7 +13538,7 @@
     "current": {
       "number": "9.1.1.2.1",
       "spec": "ECMAScript",
-      "text": "HasBinding ( N )",
+      "text": "HasBinding ( name )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-hasbinding-n"
     }
   },
@@ -13562,7 +13562,7 @@
     "current": {
       "number": "9.1.1.2.4",
       "spec": "ECMAScript",
-      "text": "InitializeBinding ( N, V )",
+      "text": "InitializeBinding ( name, value )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-initializebinding-n-v"
     }
   },
@@ -13570,7 +13570,7 @@
     "current": {
       "number": "9.1.1.2.5",
       "spec": "ECMAScript",
-      "text": "SetMutableBinding ( N, V, S )",
+      "text": "SetMutableBinding ( name, value, strict )",
       "url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-setmutablebinding-n-v-s"
     }
   },
@@ -13946,7 +13946,7 @@
     "current": {
       "number": "20.2.3.6",
       "spec": "ECMAScript",
-      "text": "Function.prototype [ %Symbol.hasInstance% ] ( V )",
+      "text": "Function.prototype [ %Symbol.hasInstance% ] ( value )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function.prototype-%25symbol.hasinstance%25"
     }
   },
@@ -14010,7 +14010,7 @@
     "current": {
       "number": "20.1.2.11.1",
       "spec": "ECMAScript",
-      "text": "GetOwnPropertyKeys ( O, type )",
+      "text": "GetOwnPropertyKeys ( value, type )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-getownpropertykeys"
     }
   },
@@ -14026,7 +14026,7 @@
     "current": {
       "number": "20.5.8.1",
       "spec": "ECMAScript",
-      "text": "InstallErrorCause ( O, options )",
+      "text": "InstallErrorCause ( obj, options )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause"
     }
   },
@@ -14186,7 +14186,7 @@
     "current": {
       "number": "20.1.2.2",
       "spec": "ECMAScript",
-      "text": "Object.create ( O, Properties )",
+      "text": "Object.create ( proto, properties )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.create"
     }
   },
@@ -14194,7 +14194,7 @@
     "current": {
       "number": "20.1.2.3",
       "spec": "ECMAScript",
-      "text": "Object.defineProperties ( O, Properties )",
+      "text": "Object.defineProperties ( obj, properties )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperties"
     }
   },
@@ -14202,7 +14202,7 @@
     "current": {
       "number": "20.1.2.4",
       "spec": "ECMAScript",
-      "text": "Object.defineProperty ( O, P, Attributes )",
+      "text": "Object.defineProperty ( obj, propertyKey, attributes )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperty"
     }
   },
@@ -14210,7 +14210,7 @@
     "current": {
       "number": "20.1.2.5",
       "spec": "ECMAScript",
-      "text": "Object.entries ( O )",
+      "text": "Object.entries ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.entries"
     }
   },
@@ -14218,7 +14218,7 @@
     "current": {
       "number": "20.1.2.6",
       "spec": "ECMAScript",
-      "text": "Object.freeze ( O )",
+      "text": "Object.freeze ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.freeze"
     }
   },
@@ -14234,7 +14234,7 @@
     "current": {
       "number": "20.1.2.8",
       "spec": "ECMAScript",
-      "text": "Object.getOwnPropertyDescriptor ( O, P )",
+      "text": "Object.getOwnPropertyDescriptor ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptor"
     }
   },
@@ -14242,7 +14242,7 @@
     "current": {
       "number": "20.1.2.9",
       "spec": "ECMAScript",
-      "text": "Object.getOwnPropertyDescriptors ( O )",
+      "text": "Object.getOwnPropertyDescriptors ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptors"
     }
   },
@@ -14250,7 +14250,7 @@
     "current": {
       "number": "20.1.2.10",
       "spec": "ECMAScript",
-      "text": "Object.getOwnPropertyNames ( O )",
+      "text": "Object.getOwnPropertyNames ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertynames"
     }
   },
@@ -14258,7 +14258,7 @@
     "current": {
       "number": "20.1.2.11",
       "spec": "ECMAScript",
-      "text": "Object.getOwnPropertySymbols ( O )",
+      "text": "Object.getOwnPropertySymbols ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertysymbols"
     }
   },
@@ -14266,7 +14266,7 @@
     "current": {
       "number": "20.1.2.12",
       "spec": "ECMAScript",
-      "text": "Object.getPrototypeOf ( O )",
+      "text": "Object.getPrototypeOf ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getprototypeof"
     }
   },
@@ -14282,7 +14282,7 @@
     "current": {
       "number": "20.1.2.14",
       "spec": "ECMAScript",
-      "text": "Object.hasOwn ( O, P )",
+      "text": "Object.hasOwn ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown"
     }
   },
@@ -14298,7 +14298,7 @@
     "current": {
       "number": "20.1.2.16",
       "spec": "ECMAScript",
-      "text": "Object.isExtensible ( O )",
+      "text": "Object.isExtensible ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isextensible"
     }
   },
@@ -14306,7 +14306,7 @@
     "current": {
       "number": "20.1.2.17",
       "spec": "ECMAScript",
-      "text": "Object.isFrozen ( O )",
+      "text": "Object.isFrozen ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isfrozen"
     }
   },
@@ -14314,7 +14314,7 @@
     "current": {
       "number": "20.1.2.18",
       "spec": "ECMAScript",
-      "text": "Object.isSealed ( O )",
+      "text": "Object.isSealed ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.issealed"
     }
   },
@@ -14322,7 +14322,7 @@
     "current": {
       "number": "20.1.2.19",
       "spec": "ECMAScript",
-      "text": "Object.keys ( O )",
+      "text": "Object.keys ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.keys"
     }
   },
@@ -14330,7 +14330,7 @@
     "current": {
       "number": "20.1.2.20",
       "spec": "ECMAScript",
-      "text": "Object.preventExtensions ( O )",
+      "text": "Object.preventExtensions ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.preventextensions"
     }
   },
@@ -14354,7 +14354,7 @@
     "current": {
       "number": "20.1.3.9.1",
       "spec": "ECMAScript",
-      "text": "Object.prototype.__defineGetter__ ( P, getter )",
+      "text": "Object.prototype.__defineGetter__ ( propertyKey, getter )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__defineGetter__"
     }
   },
@@ -14362,7 +14362,7 @@
     "current": {
       "number": "20.1.3.9.2",
       "spec": "ECMAScript",
-      "text": "Object.prototype.__defineSetter__ ( P, setter )",
+      "text": "Object.prototype.__defineSetter__ ( propertyKey, setter )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__defineSetter__"
     }
   },
@@ -14370,7 +14370,7 @@
     "current": {
       "number": "20.1.3.9.3",
       "spec": "ECMAScript",
-      "text": "Object.prototype.__lookupGetter__ ( P )",
+      "text": "Object.prototype.__lookupGetter__ ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__lookupGetter__"
     }
   },
@@ -14378,7 +14378,7 @@
     "current": {
       "number": "20.1.3.9.4",
       "spec": "ECMAScript",
-      "text": "Object.prototype.__lookupSetter__ ( P )",
+      "text": "Object.prototype.__lookupSetter__ ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__lookupSetter__"
     }
   },
@@ -14402,7 +14402,7 @@
     "current": {
       "number": "20.1.3.2",
       "spec": "ECMAScript",
-      "text": "Object.prototype.hasOwnProperty ( V )",
+      "text": "Object.prototype.hasOwnProperty ( value )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.hasownproperty"
     }
   },
@@ -14410,7 +14410,7 @@
     "current": {
       "number": "20.1.3.3",
       "spec": "ECMAScript",
-      "text": "Object.prototype.isPrototypeOf ( V )",
+      "text": "Object.prototype.isPrototypeOf ( value )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.isprototypeof"
     }
   },
@@ -14418,7 +14418,7 @@
     "current": {
       "number": "20.1.3.4",
       "spec": "ECMAScript",
-      "text": "Object.prototype.propertyIsEnumerable ( V )",
+      "text": "Object.prototype.propertyIsEnumerable ( value )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.propertyisenumerable"
     }
   },
@@ -14450,7 +14450,7 @@
     "current": {
       "number": "20.1.2.22",
       "spec": "ECMAScript",
-      "text": "Object.seal ( O )",
+      "text": "Object.seal ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.seal"
     }
   },
@@ -14458,7 +14458,7 @@
     "current": {
       "number": "20.1.2.23",
       "spec": "ECMAScript",
-      "text": "Object.setPrototypeOf ( O, proto )",
+      "text": "Object.setPrototypeOf ( obj, proto )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.setprototypeof"
     }
   },
@@ -14466,7 +14466,7 @@
     "current": {
       "number": "20.1.2.24",
       "spec": "ECMAScript",
-      "text": "Object.values ( O )",
+      "text": "Object.values ( obj )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.values"
     }
   },
@@ -14474,7 +14474,7 @@
     "current": {
       "number": "20.1.2.3.1",
       "spec": "ECMAScript",
-      "text": "ObjectDefineProperties ( O, Properties )",
+      "text": "ObjectDefineProperties ( obj, properties )",
       "url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-objectdefineproperties"
     }
   },
@@ -15186,7 +15186,7 @@
     "current": {
       "number": "19.2.1",
       "spec": "ECMAScript",
-      "text": "eval ( x )",
+      "text": "eval ( source )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-eval-x"
     }
   },
@@ -15354,7 +15354,7 @@
     "current": {
       "number": "19.2.1.1",
       "spec": "ECMAScript",
-      "text": "PerformEval ( x, strictCaller, direct )",
+      "text": "PerformEval ( source, strictCaller, direct )",
       "url": "https://tc39.es/ecma262/multipage/global-object.html#sec-performeval"
     }
   },
@@ -15810,7 +15810,7 @@
     "current": {
       "number": "23.2.5.1.6",
       "spec": "ECMAScript",
-      "text": "AllocateTypedArrayBuffer ( O, length )",
+      "text": "AllocateTypedArrayBuffer ( obj, length )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-allocatetypedarraybuffer"
     }
   },
@@ -16258,7 +16258,7 @@
     "current": {
       "number": "23.1.3.12.1",
       "spec": "ECMAScript",
-      "text": "FindViaPredicate ( O, len, direction, predicate, thisArg )",
+      "text": "FindViaPredicate ( obj, len, direction, predicate, thisArg )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-findviapredicate"
     }
   },
@@ -16362,7 +16362,7 @@
     "current": {
       "number": "23.2.5.1.3",
       "spec": "ECMAScript",
-      "text": "InitializeTypedArrayFromArrayBuffer ( O, buffer, byteOffset, length )",
+      "text": "InitializeTypedArrayFromArrayBuffer ( obj, buffer, byteOffset, length )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromarraybuffer"
     }
   },
@@ -16370,7 +16370,7 @@
     "current": {
       "number": "23.2.5.1.5",
       "spec": "ECMAScript",
-      "text": "InitializeTypedArrayFromArrayLike ( O, arrayLike )",
+      "text": "InitializeTypedArrayFromArrayLike ( obj, arrayLike )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromarraylike"
     }
   },
@@ -16378,7 +16378,7 @@
     "current": {
       "number": "23.2.5.1.4",
       "spec": "ECMAScript",
-      "text": "InitializeTypedArrayFromList ( O, values )",
+      "text": "InitializeTypedArrayFromList ( obj, values )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromlist"
     }
   },
@@ -16386,7 +16386,7 @@
     "current": {
       "number": "23.2.5.1.2",
       "spec": "ECMAScript",
-      "text": "InitializeTypedArrayFromTypedArray ( O, srcArray )",
+      "text": "InitializeTypedArrayFromTypedArray ( obj, srcArray )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromtypedarray"
     }
   },
@@ -16394,7 +16394,7 @@
     "current": {
       "number": "23.1.3.2.1",
       "spec": "ECMAScript",
-      "text": "IsConcatSpreadable ( O )",
+      "text": "IsConcatSpreadable ( obj )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-isconcatspreadable"
     }
   },
@@ -16514,7 +16514,7 @@
     "current": {
       "number": "23.1.3.30.1",
       "spec": "ECMAScript",
-      "text": "SortIndexedProperties ( obj, len, SortCompare, holes )",
+      "text": "SortIndexedProperties ( obj, len, sortCompare, holes )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-sortindexedproperties"
     }
   },
@@ -16594,7 +16594,7 @@
     "current": {
       "number": "23.2.4.5",
       "spec": "ECMAScript",
-      "text": "TypedArrayElementSize ( O )",
+      "text": "TypedArrayElementSize ( obj )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementsize"
     }
   },
@@ -16602,7 +16602,7 @@
     "current": {
       "number": "23.2.4.6",
       "spec": "ECMAScript",
-      "text": "TypedArrayElementType ( O )",
+      "text": "TypedArrayElementType ( obj )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementtype"
     }
   },
@@ -16666,7 +16666,7 @@
     "current": {
       "number": "23.2.4.4",
       "spec": "ECMAScript",
-      "text": "ValidateTypedArray ( O, order )",
+      "text": "ValidateTypedArray ( obj, order )",
       "url": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validatetypedarray"
     }
   },
@@ -17714,7 +17714,7 @@
     "current": {
       "number": "29.5.4",
       "spec": "ECMAScript",
-      "text": "ComposeWriteEventBytes ( execution, byteIndex, Ws )",
+      "text": "ComposeWriteEventBytes ( execution, byteIndex, writes )",
       "url": "https://tc39.es/ecma262/multipage/memory-model.html#sec-composewriteeventbytes"
     }
   },
@@ -17882,7 +17882,7 @@
     "current": {
       "number": "29.5.5",
       "spec": "ECMAScript",
-      "text": "ValueOfReadEvent ( execution, R )",
+      "text": "ValueOfReadEvent ( execution, readEvent )",
       "url": "https://tc39.es/ecma262/multipage/memory-model.html#sec-valueofreadevent"
     }
   },
@@ -19674,7 +19674,7 @@
     "current": {
       "number": "10.2.4",
       "spec": "ECMAScript",
-      "text": "AddRestrictedFunctionProperties ( F, realm )",
+      "text": "AddRestrictedFunctionProperties ( func, realm )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-addrestrictedfunctionproperties"
     }
   },
@@ -19690,7 +19690,7 @@
     "current": {
       "number": "10.4.4.2",
       "spec": "ECMAScript",
-      "text": "[[DefineOwnProperty]] ( P, Desc )",
+      "text": "[[DefineOwnProperty]] ( propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects-defineownproperty-p-desc"
     }
   },
@@ -19698,7 +19698,7 @@
     "current": {
       "number": "10.4.4.5",
       "spec": "ECMAScript",
-      "text": "[[Delete]] ( P )",
+      "text": "[[Delete]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects-delete-p"
     }
   },
@@ -19706,7 +19706,7 @@
     "current": {
       "number": "10.4.4.3",
       "spec": "ECMAScript",
-      "text": "[[Get]] ( P, Receiver )",
+      "text": "[[Get]] ( propertyKey, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects-get-p-receiver"
     }
   },
@@ -19714,7 +19714,7 @@
     "current": {
       "number": "10.4.4.1",
       "spec": "ECMAScript",
-      "text": "[[GetOwnProperty]] ( P )",
+      "text": "[[GetOwnProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects-getownproperty-p"
     }
   },
@@ -19722,7 +19722,7 @@
     "current": {
       "number": "10.4.4.4",
       "spec": "ECMAScript",
-      "text": "[[Set]] ( P, V, Receiver )",
+      "text": "[[Set]] ( propertyKey, value, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects-set-p-v-receiver"
     }
   },
@@ -19738,7 +19738,7 @@
     "current": {
       "number": "10.4.2.1",
       "spec": "ECMAScript",
-      "text": "[[DefineOwnProperty]] ( P, Desc )",
+      "text": "[[DefineOwnProperty]] ( propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-array-exotic-objects-defineownproperty-p-desc"
     }
   },
@@ -19754,7 +19754,7 @@
     "current": {
       "number": "10.4.2.4",
       "spec": "ECMAScript",
-      "text": "ArraySetLength ( A, Desc )",
+      "text": "ArraySetLength ( array, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arraysetlength"
     }
   },
@@ -19834,7 +19834,7 @@
     "current": {
       "number": "10.3.3",
       "spec": "ECMAScript",
-      "text": "BuiltinCallOrConstruct ( F, thisArgument, argumentsList, newTarget )",
+      "text": "BuiltinCallOrConstruct ( func, thisArgument, argumentsList, newTarget )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-builtincallorconstruct"
     }
   },
@@ -19922,7 +19922,7 @@
     "current": {
       "number": "10.4.7.1",
       "spec": "ECMAScript",
-      "text": "[[SetPrototypeOf]] ( V )",
+      "text": "[[SetPrototypeOf]] ( proto )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-immutable-prototype-exotic-objects-setprototypeof-v"
     }
   },
@@ -19930,7 +19930,7 @@
     "current": {
       "number": "10.4.5.19",
       "spec": "ECMAScript",
-      "text": "IsArrayBufferViewOutOfBounds ( O )",
+      "text": "IsArrayBufferViewOutOfBounds ( obj )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isarraybufferviewoutofbounds"
     }
   },
@@ -19938,7 +19938,7 @@
     "current": {
       "number": "10.1.6.2",
       "spec": "ECMAScript",
-      "text": "IsCompatiblePropertyDescriptor ( Extensible, Desc, Current )",
+      "text": "IsCompatiblePropertyDescriptor ( extensible, desc, current )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-iscompatiblepropertydescriptor"
     }
   },
@@ -19946,7 +19946,7 @@
     "current": {
       "number": "10.4.5.15",
       "spec": "ECMAScript",
-      "text": "IsTypedArrayFixedLength ( O )",
+      "text": "IsTypedArrayFixedLength ( obj )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-istypedarrayfixedlength"
     }
   },
@@ -19962,7 +19962,7 @@
     "current": {
       "number": "10.4.5.16",
       "spec": "ECMAScript",
-      "text": "IsValidIntegerIndex ( O, index )",
+      "text": "IsValidIntegerIndex ( obj, index )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isvalidintegerindex"
     }
   },
@@ -19986,7 +19986,7 @@
     "current": {
       "number": "10.2.6",
       "spec": "ECMAScript",
-      "text": "MakeClassConstructor ( F )",
+      "text": "MakeClassConstructor ( func )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeclassconstructor"
     }
   },
@@ -19994,7 +19994,7 @@
     "current": {
       "number": "10.2.5",
       "spec": "ECMAScript",
-      "text": "MakeConstructor ( F [ , writablePrototype [ , prototype ] ] )",
+      "text": "MakeConstructor ( func [ , writablePrototype [ , prototype ] ] )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeconstructor"
     }
   },
@@ -20002,7 +20002,7 @@
     "current": {
       "number": "10.2.7",
       "spec": "ECMAScript",
-      "text": "MakeMethod ( F, homeObject )",
+      "text": "MakeMethod ( func, homeObject )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makemethod"
     }
   },
@@ -20026,7 +20026,7 @@
     "current": {
       "number": "10.4.6.6",
       "spec": "ECMAScript",
-      "text": "[[DefineOwnProperty]] ( P, Desc )",
+      "text": "[[DefineOwnProperty]] ( propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-module-namespace-exotic-objects-defineownproperty-p-desc"
     }
   },
@@ -20034,7 +20034,7 @@
     "current": {
       "number": "10.4.6.10",
       "spec": "ECMAScript",
-      "text": "[[Delete]] ( P )",
+      "text": "[[Delete]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-module-namespace-exotic-objects-delete-p"
     }
   },
@@ -20042,7 +20042,7 @@
     "current": {
       "number": "10.4.6.8",
       "spec": "ECMAScript",
-      "text": "[[Get]] ( P, Receiver )",
+      "text": "[[Get]] ( propertyKey, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-module-namespace-exotic-objects-get-p-receiver"
     }
   },
@@ -20050,7 +20050,7 @@
     "current": {
       "number": "10.4.6.5",
       "spec": "ECMAScript",
-      "text": "[[GetOwnProperty]] ( P )",
+      "text": "[[GetOwnProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-module-namespace-exotic-objects-getownproperty-p"
     }
   },
@@ -20066,7 +20066,7 @@
     "current": {
       "number": "10.4.6.7",
       "spec": "ECMAScript",
-      "text": "[[HasProperty]] ( P )",
+      "text": "[[HasProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-module-namespace-exotic-objects-hasproperty-p"
     }
   },
@@ -20098,7 +20098,7 @@
     "current": {
       "number": "10.4.6.9",
       "spec": "ECMAScript",
-      "text": "[[Set]] ( P, V, Receiver )",
+      "text": "[[Set]] ( propertyKey, value, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-module-namespace-exotic-objects-set-p-v-receiver"
     }
   },
@@ -20106,7 +20106,7 @@
     "current": {
       "number": "10.4.6.2",
       "spec": "ECMAScript",
-      "text": "[[SetPrototypeOf]] ( V )",
+      "text": "[[SetPrototypeOf]] ( proto )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-module-namespace-exotic-objects-setprototypeof-v"
     }
   },
@@ -20138,7 +20138,7 @@
     "current": {
       "number": "10.1.6",
       "spec": "ECMAScript",
-      "text": "[[DefineOwnProperty]] ( P, Desc )",
+      "text": "[[DefineOwnProperty]] ( propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc"
     }
   },
@@ -20146,7 +20146,7 @@
     "current": {
       "number": "10.1.10",
       "spec": "ECMAScript",
-      "text": "[[Delete]] ( P )",
+      "text": "[[Delete]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinary-object-internal-methods-and-internal-slots-delete-p"
     }
   },
@@ -20154,7 +20154,7 @@
     "current": {
       "number": "10.1.8",
       "spec": "ECMAScript",
-      "text": "[[Get]] ( P, Receiver )",
+      "text": "[[Get]] ( propertyKey, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinary-object-internal-methods-and-internal-slots-get-p-receiver"
     }
   },
@@ -20162,7 +20162,7 @@
     "current": {
       "number": "10.1.5",
       "spec": "ECMAScript",
-      "text": "[[GetOwnProperty]] ( P )",
+      "text": "[[GetOwnProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinary-object-internal-methods-and-internal-slots-getownproperty-p"
     }
   },
@@ -20178,7 +20178,7 @@
     "current": {
       "number": "10.1.7",
       "spec": "ECMAScript",
-      "text": "[[HasProperty]] ( P )",
+      "text": "[[HasProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinary-object-internal-methods-and-internal-slots-hasproperty-p"
     }
   },
@@ -20210,7 +20210,7 @@
     "current": {
       "number": "10.1.9",
       "spec": "ECMAScript",
-      "text": "[[Set]] ( P, V, Receiver )",
+      "text": "[[Set]] ( propertyKey, value, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinary-object-internal-methods-and-internal-slots-set-p-v-receiver"
     }
   },
@@ -20218,7 +20218,7 @@
     "current": {
       "number": "10.1.2",
       "spec": "ECMAScript",
-      "text": "[[SetPrototypeOf]] ( V )",
+      "text": "[[SetPrototypeOf]] ( proto )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinary-object-internal-methods-and-internal-slots-setprototypeof-v"
     }
   },
@@ -20226,7 +20226,7 @@
     "current": {
       "number": "10.2.1.2",
       "spec": "ECMAScript",
-      "text": "OrdinaryCallBindThis ( F, calleeContext, thisArgument )",
+      "text": "OrdinaryCallBindThis ( func, calleeContext, thisArgument )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycallbindthis"
     }
   },
@@ -20234,7 +20234,7 @@
     "current": {
       "number": "10.2.1.4",
       "spec": "ECMAScript",
-      "text": "OrdinaryCallEvaluateBody ( F, argumentsList )",
+      "text": "OrdinaryCallEvaluateBody ( func, argumentsList )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycallevaluatebody"
     }
   },
@@ -20250,7 +20250,7 @@
     "current": {
       "number": "10.1.6.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryDefineOwnProperty ( O, P, Desc )",
+      "text": "OrdinaryDefineOwnProperty ( obj, propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarydefineownproperty"
     }
   },
@@ -20258,7 +20258,7 @@
     "current": {
       "number": "10.1.10.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryDelete ( O, P )",
+      "text": "OrdinaryDelete ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarydelete"
     }
   },
@@ -20266,7 +20266,7 @@
     "current": {
       "number": "10.2.3",
       "spec": "ECMAScript",
-      "text": "OrdinaryFunctionCreate ( functionPrototype, sourceText, ParameterList, Body, thisMode, env, privateEnv )",
+      "text": "OrdinaryFunctionCreate ( functionPrototype, sourceText, parameterList, body, thisMode, env, privateEnv )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryfunctioncreate"
     }
   },
@@ -20274,7 +20274,7 @@
     "current": {
       "number": "10.1.8.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryGet ( O, P, Receiver )",
+      "text": "OrdinaryGet ( obj, propertyKey, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryget"
     }
   },
@@ -20282,7 +20282,7 @@
     "current": {
       "number": "10.1.5.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryGetOwnProperty ( O, P )",
+      "text": "OrdinaryGetOwnProperty ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarygetownproperty"
     }
   },
@@ -20290,7 +20290,7 @@
     "current": {
       "number": "10.1.1.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryGetPrototypeOf ( O )",
+      "text": "OrdinaryGetPrototypeOf ( obj )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarygetprototypeof"
     }
   },
@@ -20298,7 +20298,7 @@
     "current": {
       "number": "10.1.7.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryHasProperty ( O, P )",
+      "text": "OrdinaryHasProperty ( obj, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryhasproperty"
     }
   },
@@ -20306,7 +20306,7 @@
     "current": {
       "number": "10.1.3.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryIsExtensible ( O )",
+      "text": "OrdinaryIsExtensible ( obj )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryisextensible"
     }
   },
@@ -20322,7 +20322,7 @@
     "current": {
       "number": "10.1.11.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryOwnPropertyKeys ( O )",
+      "text": "OrdinaryOwnPropertyKeys ( obj )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryownpropertykeys"
     }
   },
@@ -20330,7 +20330,7 @@
     "current": {
       "number": "10.1.4.1",
       "spec": "ECMAScript",
-      "text": "OrdinaryPreventExtensions ( O )",
+      "text": "OrdinaryPreventExtensions ( obj )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarypreventextensions"
     }
   },
@@ -20338,7 +20338,7 @@
     "current": {
       "number": "10.1.9.1",
       "spec": "ECMAScript",
-      "text": "OrdinarySet ( O, P, V, Receiver )",
+      "text": "OrdinarySet ( obj, propertyKey, value, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryset"
     }
   },
@@ -20346,7 +20346,7 @@
     "current": {
       "number": "10.1.2.1",
       "spec": "ECMAScript",
-      "text": "OrdinarySetPrototypeOf ( O, V )",
+      "text": "OrdinarySetPrototypeOf ( obj, proto )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarysetprototypeof"
     }
   },
@@ -20354,7 +20354,7 @@
     "current": {
       "number": "10.1.9.2",
       "spec": "ECMAScript",
-      "text": "OrdinarySetWithOwnDescriptor ( O, P, V, Receiver, ownDesc )",
+      "text": "OrdinarySetWithOwnDescriptor ( obj, propertyKey, value, receiver, ownDesc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarysetwithowndescriptor"
     }
   },
@@ -20362,7 +20362,7 @@
     "current": {
       "number": "10.2.1.1",
       "spec": "ECMAScript",
-      "text": "PrepareForOrdinaryCall ( F, newTarget )",
+      "text": "PrepareForOrdinaryCall ( func, newTarget )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-prepareforordinarycall"
     }
   },
@@ -20394,7 +20394,7 @@
     "current": {
       "number": "10.5.6",
       "spec": "ECMAScript",
-      "text": "[[DefineOwnProperty]] ( P, Desc )",
+      "text": "[[DefineOwnProperty]] ( propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-defineownproperty-p-desc"
     }
   },
@@ -20402,7 +20402,7 @@
     "current": {
       "number": "10.5.10",
       "spec": "ECMAScript",
-      "text": "[[Delete]] ( P )",
+      "text": "[[Delete]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-delete-p"
     }
   },
@@ -20410,7 +20410,7 @@
     "current": {
       "number": "10.5.8",
       "spec": "ECMAScript",
-      "text": "[[Get]] ( P, Receiver )",
+      "text": "[[Get]] ( propertyKey, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-get-p-receiver"
     }
   },
@@ -20418,7 +20418,7 @@
     "current": {
       "number": "10.5.5",
       "spec": "ECMAScript",
-      "text": "[[GetOwnProperty]] ( P )",
+      "text": "[[GetOwnProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-getownproperty-p"
     }
   },
@@ -20434,7 +20434,7 @@
     "current": {
       "number": "10.5.7",
       "spec": "ECMAScript",
-      "text": "[[HasProperty]] ( P )",
+      "text": "[[HasProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p"
     }
   },
@@ -20466,7 +20466,7 @@
     "current": {
       "number": "10.5.9",
       "spec": "ECMAScript",
-      "text": "[[Set]] ( P, V, Receiver )",
+      "text": "[[Set]] ( propertyKey, value, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-set-p-v-receiver"
     }
   },
@@ -20474,7 +20474,7 @@
     "current": {
       "number": "10.5.2",
       "spec": "ECMAScript",
-      "text": "[[SetPrototypeOf]] ( V )",
+      "text": "[[SetPrototypeOf]] ( proto )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-setprototypeof-v"
     }
   },
@@ -20490,7 +20490,7 @@
     "current": {
       "number": "10.1.15",
       "spec": "ECMAScript",
-      "text": "RequireInternalSlot ( O, internalSlot )",
+      "text": "RequireInternalSlot ( obj, internalSlot )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-requireinternalslot"
     }
   },
@@ -20506,7 +20506,7 @@
     "current": {
       "number": "10.4.7.2",
       "spec": "ECMAScript",
-      "text": "SetImmutablePrototype ( O, V )",
+      "text": "SetImmutablePrototype ( obj, proto )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-set-immutable-prototype"
     }
   },
@@ -20514,7 +20514,7 @@
     "current": {
       "number": "10.2.10",
       "spec": "ECMAScript",
-      "text": "SetFunctionLength ( F, length )",
+      "text": "SetFunctionLength ( func, length )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength"
     }
   },
@@ -20522,7 +20522,7 @@
     "current": {
       "number": "10.2.9",
       "spec": "ECMAScript",
-      "text": "SetFunctionName ( F, name [ , prefix ] )",
+      "text": "SetFunctionName ( func, name [ , prefix ] )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname"
     }
   },
@@ -20538,7 +20538,7 @@
     "current": {
       "number": "10.4.3.2",
       "spec": "ECMAScript",
-      "text": "[[DefineOwnProperty]] ( P, Desc )",
+      "text": "[[DefineOwnProperty]] ( propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-string-exotic-objects-defineownproperty-p-desc"
     }
   },
@@ -20546,7 +20546,7 @@
     "current": {
       "number": "10.4.3.1",
       "spec": "ECMAScript",
-      "text": "[[GetOwnProperty]] ( P )",
+      "text": "[[GetOwnProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-string-exotic-objects-getownproperty-p"
     }
   },
@@ -20570,7 +20570,7 @@
     "current": {
       "number": "10.4.3.5",
       "spec": "ECMAScript",
-      "text": "StringGetOwnProperty ( S, P )",
+      "text": "StringGetOwnProperty ( str, propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-stringgetownproperty"
     }
   },
@@ -20578,7 +20578,7 @@
     "current": {
       "number": "10.4.5.4",
       "spec": "ECMAScript",
-      "text": "[[DefineOwnProperty]] ( P, Desc )",
+      "text": "[[DefineOwnProperty]] ( propertyKey, desc )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-defineownproperty"
     }
   },
@@ -20586,7 +20586,7 @@
     "current": {
       "number": "10.4.5.7",
       "spec": "ECMAScript",
-      "text": "[[Delete]] ( P )",
+      "text": "[[Delete]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-delete"
     }
   },
@@ -20602,7 +20602,7 @@
     "current": {
       "number": "10.4.5.5",
       "spec": "ECMAScript",
-      "text": "[[Get]] ( P, Receiver )",
+      "text": "[[Get]] ( propertyKey, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-get"
     }
   },
@@ -20610,7 +20610,7 @@
     "current": {
       "number": "10.4.5.2",
       "spec": "ECMAScript",
-      "text": "[[GetOwnProperty]] ( P )",
+      "text": "[[GetOwnProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-getownproperty"
     }
   },
@@ -20618,7 +20618,7 @@
     "current": {
       "number": "10.4.5.3",
       "spec": "ECMAScript",
-      "text": "[[HasProperty]] ( P )",
+      "text": "[[HasProperty]] ( propertyKey )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-hasproperty"
     }
   },
@@ -20642,7 +20642,7 @@
     "current": {
       "number": "10.4.5.6",
       "spec": "ECMAScript",
-      "text": "[[Set]] ( P, V, Receiver )",
+      "text": "[[Set]] ( propertyKey, value, receiver )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-set"
     }
   },
@@ -20674,7 +20674,7 @@
     "current": {
       "number": "10.4.5.17",
       "spec": "ECMAScript",
-      "text": "TypedArrayGetElement ( O, index )",
+      "text": "TypedArrayGetElement ( obj, index )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraygetelement"
     }
   },
@@ -20690,7 +20690,7 @@
     "current": {
       "number": "10.4.5.18",
       "spec": "ECMAScript",
-      "text": "TypedArraySetElement ( O, index, value )",
+      "text": "TypedArraySetElement ( obj, index, value )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraysetelement"
     }
   },
@@ -20698,7 +20698,7 @@
     "current": {
       "number": "10.1.6.3",
       "spec": "ECMAScript",
-      "text": "ValidateAndApplyPropertyDescriptor ( O, P, extensible, Desc, current )",
+      "text": "ValidateAndApplyPropertyDescriptor ( obj, propertyKey, extensible, desc, current )",
       "url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-validateandapplypropertydescriptor"
     }
   },
@@ -21274,7 +21274,7 @@
     "current": {
       "number": "28.1.12",
       "spec": "ECMAScript",
-      "text": "Reflect.set ( target, propertyKey, V [ , receiver ] )",
+      "text": "Reflect.set ( target, propertyKey, value [ , receiver ] )",
       "url": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.set"
     }
   },
@@ -21346,7 +21346,7 @@
     "current": {
       "number": "25.4.3.8",
       "spec": "ECMAScript",
-      "text": "AddWaiter ( WL, waiterRecord )",
+      "text": "AddWaiter ( waiterList, waiterRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-addwaiter"
     }
   },
@@ -21898,7 +21898,7 @@
     "current": {
       "number": "25.4.3.15",
       "spec": "ECMAScript",
-      "text": "EnqueueAtomicsWaitAsyncTimeoutJob ( WL, waiterRecord )",
+      "text": "EnqueueAtomicsWaitAsyncTimeoutJob ( waiterList, waiterRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasynctimeoutjob"
     }
   },
@@ -21914,7 +21914,7 @@
     "current": {
       "number": "25.4.3.6",
       "spec": "ECMAScript",
-      "text": "EnterCriticalSection ( WL )",
+      "text": "EnterCriticalSection ( waiterList )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection"
     }
   },
@@ -22218,7 +22218,7 @@
     "current": {
       "number": "25.5.1",
       "spec": "ECMAScript",
-      "text": "JSON.isRawJSON ( O )",
+      "text": "JSON.isRawJSON ( obj )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.israwjson"
     }
   },
@@ -22250,7 +22250,7 @@
     "current": {
       "number": "25.4.3.7",
       "spec": "ECMAScript",
-      "text": "LeaveCriticalSection ( WL )",
+      "text": "LeaveCriticalSection ( waiterList )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-leavecriticalsection"
     }
   },
@@ -22266,7 +22266,7 @@
     "current": {
       "number": "25.4.3.12",
       "spec": "ECMAScript",
-      "text": "NotifyWaiter ( WL, waiterRecord )",
+      "text": "NotifyWaiter ( waiterList, waiterRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-notifywaiter"
     }
   },
@@ -22370,7 +22370,7 @@
     "current": {
       "number": "25.4.3.9",
       "spec": "ECMAScript",
-      "text": "RemoveWaiter ( WL, waiterRecord )",
+      "text": "RemoveWaiter ( waiterList, waiterRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter"
     }
   },
@@ -22378,7 +22378,7 @@
     "current": {
       "number": "25.4.3.10",
       "spec": "ECMAScript",
-      "text": "RemoveWaiters ( WL, c )",
+      "text": "RemoveWaiters ( waiterList, count )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiters"
     }
   },
@@ -22538,7 +22538,7 @@
     "current": {
       "number": "25.4.3.11",
       "spec": "ECMAScript",
-      "text": "SuspendThisAgent ( WL, waiterRecord )",
+      "text": "SuspendThisAgent ( waiterList, waiterRecord )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendthisagent"
     }
   },
@@ -22546,7 +22546,7 @@
     "current": {
       "number": "25.5.4.4",
       "spec": "ECMAScript",
-      "text": "UnicodeEscape ( C )",
+      "text": "UnicodeEscape ( constructor )",
       "url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-unicodeescape"
     }
   },
@@ -22930,7 +22930,7 @@
     "current": {
       "number": "22.2.7.3",
       "spec": "ECMAScript",
-      "text": "AdvanceStringIndex ( S, index, unicode )",
+      "text": "AdvanceStringIndex ( str, index, unicode )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-advancestringindex"
     }
   },
@@ -22938,7 +22938,7 @@
     "current": {
       "number": "22.2.2.9.4",
       "spec": "ECMAScript",
-      "text": "AllCharacters ( rer )",
+      "text": "AllCharacters ( regexpRecord )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-allcharacters"
     }
   },
@@ -22946,7 +22946,7 @@
     "current": {
       "number": "22.2.2.7.2",
       "spec": "ECMAScript",
-      "text": "BackreferenceMatcher ( rer, ns, direction )",
+      "text": "BackreferenceMatcher ( regexpRecord, ns, direction )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-backreference-matcher"
     }
   },
@@ -22954,7 +22954,7 @@
     "current": {
       "number": "22.2.2.9.6",
       "spec": "ECMAScript",
-      "text": "CharacterComplement ( rer, S )",
+      "text": "CharacterComplement ( regexpRecord, complement )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-charactercomplement"
     }
   },
@@ -23050,7 +23050,7 @@
     "current": {
       "number": "22.2.9.1",
       "spec": "ECMAScript",
-      "text": "CreateRegExpStringIterator ( R, S, global, fullUnicode )",
+      "text": "CreateRegExpStringIterator ( regexp, str, global, fullUnicode )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-createregexpstringiterator"
     }
   },
@@ -23074,7 +23074,7 @@
     "current": {
       "number": "22.2.6.13.1",
       "spec": "ECMAScript",
-      "text": "EscapeRegExpPattern ( P, F )",
+      "text": "EscapeRegExpPattern ( pattern, flags )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-escaperegexppattern"
     }
   },
@@ -23170,7 +23170,7 @@
     "current": {
       "number": "22.2.7.7",
       "spec": "ECMAScript",
-      "text": "GetMatchIndexPair ( S, match )",
+      "text": "GetMatchIndexPair ( str, match )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchindexpair"
     }
   },
@@ -23178,7 +23178,7 @@
     "current": {
       "number": "22.2.7.6",
       "spec": "ECMAScript",
-      "text": "GetMatchString ( S, match )",
+      "text": "GetMatchString ( str, match )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchstring"
     }
   },
@@ -23186,7 +23186,7 @@
     "current": {
       "number": "22.2.7.4",
       "spec": "ECMAScript",
-      "text": "GetStringIndex ( S, codePointIndex )",
+      "text": "GetStringIndex ( str, codePointIndex )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getstringindex"
     }
   },
@@ -23218,7 +23218,7 @@
     "current": {
       "number": "22.2.7.8",
       "spec": "ECMAScript",
-      "text": "MakeMatchIndicesIndexPairArray ( S, indices, groupNames, hasGroups )",
+      "text": "MakeMatchIndicesIndexPairArray ( str, indices, groupNames, hasGroups )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-makematchindicesindexpairarray"
     }
   },
@@ -23250,7 +23250,7 @@
     "current": {
       "number": "22.2.2.9.5",
       "spec": "ECMAScript",
-      "text": "MaybeSimpleCaseFolding ( rer, A )",
+      "text": "MaybeSimpleCaseFolding ( regexpRecord, charSet )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefolding"
     }
   },
@@ -23402,7 +23402,7 @@
     "current": {
       "number": "22.2.4.1",
       "spec": "ECMAScript",
-      "text": "RegExp ( pattern, flags )",
+      "text": "RegExp ( patternOrRegexp, flags )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-pattern-flags"
     }
   },
@@ -23442,7 +23442,7 @@
     "current": {
       "number": "22.2.5.1",
       "spec": "ECMAScript",
-      "text": "RegExp.escape ( S )",
+      "text": "RegExp.escape ( str )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.escape"
     }
   },
@@ -23506,7 +23506,7 @@
     "current": {
       "number": "22.2.6.16",
       "spec": "ECMAScript",
-      "text": "RegExp.prototype.test ( S )",
+      "text": "RegExp.prototype.test ( str )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype.test"
     }
   },
@@ -23530,7 +23530,7 @@
     "current": {
       "number": "22.2.7.2",
       "spec": "ECMAScript",
-      "text": "RegExpBuiltinExec ( R, S )",
+      "text": "RegExpBuiltinExec ( regexp, str )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec"
     }
   },
@@ -23538,7 +23538,7 @@
     "current": {
       "number": "22.2.3.1",
       "spec": "ECMAScript",
-      "text": "RegExpCreate ( P, F )",
+      "text": "RegExpCreate ( pattern, flags )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpcreate"
     }
   },
@@ -23546,7 +23546,7 @@
     "current": {
       "number": "22.2.7.1",
       "spec": "ECMAScript",
-      "text": "RegExpExec ( R, S )",
+      "text": "RegExpExec ( regexp, str )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpexec"
     }
   },
@@ -23554,7 +23554,7 @@
     "current": {
       "number": "22.2.6.4.1",
       "spec": "ECMAScript",
-      "text": "RegExpHasFlag ( R, codeUnit )",
+      "text": "RegExpHasFlag ( regexp, codeUnit )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexphasflag"
     }
   },
@@ -23586,7 +23586,7 @@
     "current": {
       "number": "22.2.2.7.3",
       "spec": "ECMAScript",
-      "text": "Canonicalize ( rer, ch )",
+      "text": "Canonicalize ( regexpRecord, ch )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch"
     }
   },
@@ -23594,7 +23594,7 @@
     "current": {
       "number": "22.2.2.9.1",
       "spec": "ECMAScript",
-      "text": "CharacterRange ( A, B )",
+      "text": "CharacterRange ( charSet, otherSet )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-characterrange-abstract-operation"
     }
   },
@@ -23602,7 +23602,7 @@
     "current": {
       "number": "22.2.2.7.1",
       "spec": "ECMAScript",
-      "text": "CharacterSetMatcher ( rer, A, invert, direction )",
+      "text": "CharacterSetMatcher ( regexpRecord, charSet, invert, direction )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-charactersetmatcher-abstract-operation"
     }
   },
@@ -23610,7 +23610,7 @@
     "current": {
       "number": "22.2.2.9.2",
       "spec": "ECMAScript",
-      "text": "HasEitherUnicodeFlag ( rer )",
+      "text": "HasEitherUnicodeFlag ( regexpRecord )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-haseitherunicodeflag-abstract-operation"
     }
   },
@@ -23618,7 +23618,7 @@
     "current": {
       "number": "22.2.2.4.1",
       "spec": "ECMAScript",
-      "text": "IsWordChar ( rer, Input, e )",
+      "text": "IsWordChar ( regexpRecord, input, e )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-iswordchar-abstract-operation"
     }
   },
@@ -23626,7 +23626,7 @@
     "current": {
       "number": "22.2.2.3.1",
       "spec": "ECMAScript",
-      "text": "RepeatMatcher ( m, min, max, greedy, x, c, parenIndex, parenCount )",
+      "text": "RepeatMatcher ( m, min, max, greedy, matchState, continue, parenIndex, parenCount )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-repeatmatcher-abstract-operation"
     }
   },
@@ -23634,7 +23634,7 @@
     "current": {
       "number": "22.2.2.9.7",
       "spec": "ECMAScript",
-      "text": "UnicodeMatchProperty ( rer, p )",
+      "text": "UnicodeMatchProperty ( regexpRecord, p )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p"
     }
   },
@@ -23826,7 +23826,7 @@
     "current": {
       "number": "22.1.3.13",
       "spec": "ECMAScript",
-      "text": "String.prototype.match ( regexp )",
+      "text": "String.prototype.match ( regexpOrPattern )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.match"
     }
   },
@@ -23834,7 +23834,7 @@
     "current": {
       "number": "22.1.3.14",
       "spec": "ECMAScript",
-      "text": "String.prototype.matchAll ( regexp )",
+      "text": "String.prototype.matchAll ( regexpOrPattern )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.matchall"
     }
   },
@@ -23890,7 +23890,7 @@
     "current": {
       "number": "22.1.3.21",
       "spec": "ECMAScript",
-      "text": "String.prototype.search ( regexp )",
+      "text": "String.prototype.search ( regexpOrPattern )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.search"
     }
   },
@@ -24018,7 +24018,7 @@
     "current": {
       "number": "22.1.3.17.2",
       "spec": "ECMAScript",
-      "text": "StringPad ( S, maxLength, fillString, placement )",
+      "text": "StringPad ( str, maxLength, fillString, placement )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad"
     }
   },
@@ -24026,7 +24026,7 @@
     "current": {
       "number": "22.1.3.17.1",
       "spec": "ECMAScript",
-      "text": "StringPaddingBuiltinsImpl ( O, maxLength, fillString, placement )",
+      "text": "StringPaddingBuiltinsImpl ( thisValue, maxLength, fillString, placement )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpaddingbuiltinsimpl"
     }
   },
@@ -24066,7 +24066,7 @@
     "current": {
       "number": "22.2.2.7.4",
       "spec": "ECMAScript",
-      "text": "UpdateModifiers ( rer, add, remove )",
+      "text": "UpdateModifiers ( regexpRecord, add, remove )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-updatemodifiers"
     }
   },
@@ -24074,7 +24074,7 @@
     "current": {
       "number": "22.2.2.9.3",
       "spec": "ECMAScript",
-      "text": "WordCharacters ( rer )",
+      "text": "WordCharacters ( regexpRecord )",
       "url": "https://tc39.es/ecma262/multipage/text-processing.html#sec-wordcharacters"
     }
   }

@@ -1420,8 +1420,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-MakeClassConstructor(F)
-MakeClassConstructor(F)
+MakeClassConstructor(func)
+MakeClassConstructor(func)
 abstract-op
 ecmascript
 ecmascript
@@ -1442,8 +1442,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-MakeConstructor(F, writablePrototype, prototype)
-MakeConstructor(F, writablePrototype, prototype)
+MakeConstructor(func, writablePrototype, prototype)
+MakeConstructor(func, writablePrototype, prototype)
 abstract-op
 ecmascript
 ecmascript
@@ -1552,8 +1552,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-makematchindicesindex
 1
 1
 -
-MakeMatchIndicesIndexPairArray(S, indices, groupNames, hasGroups)
-MakeMatchIndicesIndexPairArray(S, indices, groupNames, hasGroups)
+MakeMatchIndicesIndexPairArray(str, indices, groupNames, hasGroups)
+MakeMatchIndicesIndexPairArray(str, indices, groupNames, hasGroups)
 abstract-op
 ecmascript
 ecmascript
@@ -1574,8 +1574,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-MakeMethod(F, homeObject)
-MakeMethod(F, homeObject)
+MakeMethod(func, homeObject)
+MakeMethod(func, homeObject)
 abstract-op
 ecmascript
 ecmascript
@@ -3085,8 +3085,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefoldin
 1
 1
 -
-MaybeSimpleCaseFolding(rer, A)
-MaybeSimpleCaseFolding(rer, A)
+MaybeSimpleCaseFolding(regexpRecord, charSet)
+MaybeSimpleCaseFolding(regexpRecord, charSet)
 abstract-op
 ecmascript
 ecmascript
@@ -10493,8 +10493,8 @@ https://www.w3.org/TR/css-typed-om-1/#cssstylevalue-match-a-grammar
 1
 CSSStyleValue
 -
-match(regexp)
-match(regexp)
+match(regexpOrPattern)
+match(regexpOrPattern)
 method
 ecmascript
 ecmascript
@@ -11033,8 +11033,8 @@ https://www.w3.org/TR/service-workers/#dom-clients-matchall
 1
 Clients
 -
-matchAll(regexp)
-matchAll(regexp)
+matchAll(regexpOrPattern)
+matchAll(regexpOrPattern)
 method
 ecmascript
 ecmascript

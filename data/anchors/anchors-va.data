@@ -1337,8 +1337,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-ValidateAndApplyPropertyDescriptor(O, P, extensible, Desc, current)
-ValidateAndApplyPropertyDescriptor(O, P, extensible, Desc, current)
+ValidateAndApplyPropertyDescriptor(obj, propertyKey, extensible, desc, current)
+ValidateAndApplyPropertyDescriptor(obj, propertyKey, extensible, desc, current)
 abstract-op
 ecmascript
 ecmascript
@@ -1469,8 +1469,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validatetypedarra
 1
 1
 -
-ValidateTypedArray(O, order)
-ValidateTypedArray(O, order)
+ValidateTypedArray(obj, order)
+ValidateTypedArray(obj, order)
 abstract-op
 ecmascript
 ecmascript
@@ -1825,8 +1825,8 @@ https://tc39.es/ecma262/multipage/memory-model.html#sec-valueofreadevent
 1
 1
 -
-ValueOfReadEvent(execution, R)
-ValueOfReadEvent(execution, R)
+ValueOfReadEvent(execution, readEvent)
+ValueOfReadEvent(execution, readEvent)
 abstract-op
 ecmascript
 ecmascript
@@ -12618,8 +12618,8 @@ https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.value
 1
 Set
 -
-values(O)
-values(O)
+values(obj)
+values(obj)
 method
 ecmascript
 ecmascript

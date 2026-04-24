@@ -711,8 +711,8 @@ https://www.w3.org/policies/process/#reviewform
 
 1
 -
-Call(F, V, argumentsList)
-Call(F, V, argumentsList)
+Call(func, thisValue, argumentsList)
+Call(func, thisValue, argumentsList)
 abstract-op
 ecmascript
 ecmascript
@@ -876,8 +876,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-CanDeclareGlobalFunction(envRec, N)
-CanDeclareGlobalFunction(envRec, N)
+CanDeclareGlobalFunction(envRec, name)
+CanDeclareGlobalFunction(envRec, name)
 abstract-op
 ecmascript
 ecmascript
@@ -898,8 +898,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-CanDeclareGlobalVar(envRec, N)
-CanDeclareGlobalVar(envRec, N)
+CanDeclareGlobalVar(envRec, name)
+CanDeclareGlobalVar(envRec, name)
 abstract-op
 ecmascript
 ecmascript
@@ -1129,8 +1129,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-can
 1
 1
 -
-Canonicalize(rer, ch)
-Canonicalize(rer, ch)
+Canonicalize(regexpRecord, ch)
+Canonicalize(regexpRecord, ch)
 abstract-op
 ecmascript
 ecmascript
@@ -2232,8 +2232,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declaration
 1
 1
 -
-CaseClauseIsSelected(C, input)
-CaseClauseIsSelected(C, input)
+CaseClauseIsSelected(constructor, input)
+CaseClauseIsSelected(constructor, input)
 abstract-op
 ecmascript
 ecmascript

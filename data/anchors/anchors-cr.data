@@ -627,8 +627,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropert
 1
 1
 -
-CreateDataProperty(O, P, V)
-CreateDataProperty(O, P, V)
+CreateDataProperty(obj, propertyKey, value)
+CreateDataProperty(obj, propertyKey, value)
 abstract-op
 ecmascript
 ecmascript
@@ -649,8 +649,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropert
 1
 1
 -
-CreateDataPropertyOrThrow(O, P, V)
-CreateDataPropertyOrThrow(O, P, V)
+CreateDataPropertyOrThrow(obj, propertyKey, value)
+CreateDataPropertyOrThrow(obj, propertyKey, value)
 abstract-op
 ecmascript
 ecmascript
@@ -737,8 +737,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-CreateGlobalFunctionBinding(envRec, N, V, D)
-CreateGlobalFunctionBinding(envRec, N, V, D)
+CreateGlobalFunctionBinding(envRec, name, value, deletable)
+CreateGlobalFunctionBinding(envRec, name, value, deletable)
 abstract-op
 ecmascript
 ecmascript
@@ -759,8 +759,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-CreateGlobalVarBinding(envRec, N, D)
-CreateGlobalVarBinding(envRec, N, D)
+CreateGlobalVarBinding(envRec, name, deletable)
+CreateGlobalVarBinding(envRec, name, deletable)
 abstract-op
 ecmascript
 ecmascript
@@ -781,8 +781,8 @@ https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browser
 1
 1
 -
-CreateHTML(string, tag, attribute, value)
-CreateHTML(string, tag, attribute, value)
+CreateHTML(contents, tag, attribute, attrValue)
+CreateHTML(contents, tag, attribute, attrValue)
 abstract-op
 ecmascript
 ecmascript
@@ -814,8 +814,8 @@ https://www.w3.org/TR/trusted-types/#callbackdef-createhtmlcallback
 1
 1
 -
-CreateImmutableBinding(N, S)
-CreateImmutableBinding(N, S)
+CreateImmutableBinding(name, strict)
+CreateImmutableBinding(name, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -826,8 +826,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Declarative Environment Records
 -
-CreateImmutableBinding(N, S)
-CreateImmutableBinding(N, S)
+CreateImmutableBinding(name, strict)
+CreateImmutableBinding(name, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -838,8 +838,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Global Environment Records
 -
-CreateImmutableBinding(N, S)
-CreateImmutableBinding(N, S)
+CreateImmutableBinding(name, strict)
+CreateImmutableBinding(name, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -861,8 +861,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-CreateImportBinding(envRec, N, M, N2)
-CreateImportBinding(envRec, N, M, N2)
+CreateImportBinding(envRec, name, targetModule, targetName)
+CreateImportBinding(envRec, name, targetModule, targetName)
 abstract-op
 ecmascript
 ecmascript
@@ -1070,8 +1070,8 @@ https://webmachinelearning.github.io/writing-assistance-apis/#callbackdef-create
 1
 1
 -
-CreateMutableBinding(N, D)
-CreateMutableBinding(N, D)
+CreateMutableBinding(name, deletable)
+CreateMutableBinding(name, deletable)
 abstract-op
 ecmascript
 ecmascript
@@ -1082,8 +1082,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Declarative Environment Records
 -
-CreateMutableBinding(N, D)
-CreateMutableBinding(N, D)
+CreateMutableBinding(name, deletable)
+CreateMutableBinding(name, deletable)
 abstract-op
 ecmascript
 ecmascript
@@ -1094,8 +1094,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Global Environment Records
 -
-CreateMutableBinding(N, D)
-CreateMutableBinding(N, D)
+CreateMutableBinding(name, deletable)
+CreateMutableBinding(name, deletable)
 abstract-op
 ecmascript
 ecmascript
@@ -1117,8 +1117,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createnonenumerab
 1
 1
 -
-CreateNonEnumerableDataPropertyOrThrow(O, P, V)
-CreateNonEnumerableDataPropertyOrThrow(O, P, V)
+CreateNonEnumerableDataPropertyOrThrow(obj, propertyKey, value)
+CreateNonEnumerableDataPropertyOrThrow(obj, propertyKey, value)
 abstract-op
 ecmascript
 ecmascript
@@ -1183,8 +1183,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-createregexpstringite
 1
 1
 -
-CreateRegExpStringIterator(R, S, global, fullUnicode)
-CreateRegExpStringIterator(R, S, global, fullUnicode)
+CreateRegExpStringIterator(regexp, str, global, fullUnicode)
+CreateRegExpStringIterator(regexp, str, global, fullUnicode)
 abstract-op
 ecmascript
 ecmascript
@@ -6622,18 +6622,6 @@ https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-create
 1
 CredentialsContainer
 -
-create(O, Properties)
-create(O, Properties)
-method
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.create
-1
-1
-Object
--
 create(options)
 create(options)
 method
@@ -6729,6 +6717,18 @@ https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-create
 1
 1
 CredentialsContainer
+-
+create(proto, properties)
+create(proto, properties)
+method
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.create
+1
+1
+Object
 -
 create-document-policy
 create-document-policy

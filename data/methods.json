@@ -2696,12 +2696,12 @@
     }
   },
   "Function.prototype %Symbol.hasInstance% ()": {
-    "Function.prototype %Symbol.hasInstance% (V)": {
+    "Function.prototype %Symbol.hasInstance% (value)": {
       "args": [
-        "V"
+        "value"
       ],
       "for": [
-        "Function.prototype [ %Symbol.hasInstance% ] ( V )"
+        "Function.prototype [ %Symbol.hasInstance% ] ( value )"
       ],
       "shortname": "ecmascript"
     }
@@ -4140,9 +4140,9 @@
     }
   },
   "RegExp()": {
-    "RegExp(pattern, flags)": {
+    "RegExp(patternOrRegexp, flags)": {
       "args": [
-        "pattern",
+        "patternOrRegexp",
         "flags"
       ],
       "for": [
@@ -12492,16 +12492,6 @@
       ],
       "shortname": "translation-api"
     },
-    "create(O, Properties)": {
-      "args": [
-        "O",
-        "Properties"
-      ],
-      "for": [
-        "Object"
-      ],
-      "shortname": "ecmascript"
-    },
     "create(options)": {
       "args": [
         "options"
@@ -12516,6 +12506,16 @@
         "Writer"
       ],
       "shortname": "translation-api"
+    },
+    "create(proto, properties)": {
+      "args": [
+        "proto",
+        "properties"
+      ],
+      "for": [
+        "Object"
+      ],
+      "shortname": "ecmascript"
     }
   },
   "createAnalyser()": {
@@ -14345,10 +14345,10 @@
     }
   },
   "defineProperties()": {
-    "defineProperties(O, Properties)": {
+    "defineProperties(obj, properties)": {
       "args": [
-        "O",
-        "Properties"
+        "obj",
+        "properties"
       ],
       "for": [
         "Object"
@@ -14357,11 +14357,11 @@
     }
   },
   "defineProperty()": {
-    "defineProperty(O, P, Attributes)": {
+    "defineProperty(obj, propertyKey, attributes)": {
       "args": [
-        "O",
-        "P",
-        "Attributes"
+        "obj",
+        "propertyKey",
+        "attributes"
       ],
       "for": [
         "Object"
@@ -15877,9 +15877,9 @@
       ],
       "shortname": "html"
     },
-    "entries(O)": {
+    "entries(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -16021,15 +16021,6 @@
     }
   },
   "escape()": {
-    "escape(S)": {
-      "args": [
-        "S"
-      ],
-      "for": [
-        "RegExp"
-      ],
-      "shortname": "ecmascript"
-    },
     "escape(ident)": {
       "args": [
         "ident"
@@ -16038,6 +16029,15 @@
         "CSS"
       ],
       "shortname": "cssom"
+    },
+    "escape(str)": {
+      "args": [
+        "str"
+      ],
+      "for": [
+        "RegExp"
+      ],
+      "shortname": "ecmascript"
     },
     "escape(string)": {
       "args": [
@@ -16070,9 +16070,9 @@
     }
   },
   "eval()": {
-    "eval(x)": {
+    "eval(source)": {
       "args": [
-        "x"
+        "source"
       ],
       "for": [
         "globalThis"
@@ -17270,9 +17270,9 @@
     }
   },
   "freeze()": {
-    "freeze(O)": {
+    "freeze(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -17281,15 +17281,6 @@
     }
   },
   "from()": {
-    "from(O)": {
-      "args": [
-        "O"
-      ],
-      "for": [
-        "Iterator"
-      ],
-      "shortname": "ecmascript"
-    },
     "from(asyncIterable)": {
       "args": [
         "asyncIterable"
@@ -17307,6 +17298,15 @@
       ],
       "for": [
         "Array"
+      ],
+      "shortname": "ecmascript"
+    },
+    "from(obj)": {
+      "args": [
+        "obj"
+      ],
+      "for": [
+        "Iterator"
       ],
       "shortname": "ecmascript"
     },
@@ -19782,10 +19782,10 @@
     }
   },
   "getOwnPropertyDescriptor()": {
-    "getOwnPropertyDescriptor(O, P)": {
+    "getOwnPropertyDescriptor(obj, propertyKey)": {
       "args": [
-        "O",
-        "P"
+        "obj",
+        "propertyKey"
       ],
       "for": [
         "Object"
@@ -19804,9 +19804,9 @@
     }
   },
   "getOwnPropertyDescriptors()": {
-    "getOwnPropertyDescriptors(O)": {
+    "getOwnPropertyDescriptors(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -19815,9 +19815,9 @@
     }
   },
   "getOwnPropertyNames()": {
-    "getOwnPropertyNames(O)": {
+    "getOwnPropertyNames(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -19826,9 +19826,9 @@
     }
   },
   "getOwnPropertySymbols()": {
-    "getOwnPropertySymbols(O)": {
+    "getOwnPropertySymbols(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -20065,9 +20065,9 @@
     }
   },
   "getPrototypeOf()": {
-    "getPrototypeOf(O)": {
+    "getPrototypeOf(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -21493,10 +21493,10 @@
     }
   },
   "hasOwn()": {
-    "hasOwn(O, P)": {
+    "hasOwn(obj, propertyKey)": {
       "args": [
-        "O",
-        "P"
+        "obj",
+        "propertyKey"
       ],
       "for": [
         "Object"
@@ -21505,9 +21505,9 @@
     }
   },
   "hasOwnProperty()": {
-    "hasOwnProperty(V)": {
+    "hasOwnProperty(value)": {
       "args": [
-        "V"
+        "value"
       ],
       "for": [
         "Object"
@@ -23067,9 +23067,9 @@
     }
   },
   "isExtensible()": {
-    "isExtensible(O)": {
+    "isExtensible(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -23099,9 +23099,9 @@
     }
   },
   "isFrozen()": {
-    "isFrozen(O)": {
+    "isFrozen(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -23273,9 +23273,9 @@
     }
   },
   "isPrototypeOf()": {
-    "isPrototypeOf(V)": {
+    "isPrototypeOf(value)": {
       "args": [
-        "V"
+        "value"
       ],
       "for": [
         "Object"
@@ -23284,9 +23284,9 @@
     }
   },
   "isRawJSON()": {
-    "isRawJSON(O)": {
+    "isRawJSON(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "JSON"
@@ -23372,9 +23372,9 @@
     }
   },
   "isSealed()": {
-    "isSealed(O)": {
+    "isSealed(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -23689,9 +23689,9 @@
       ],
       "shortname": "ecmascript"
     },
-    "keys(O)": {
+    "keys(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -24578,9 +24578,9 @@
     }
   },
   "match()": {
-    "match(regexp)": {
+    "match(regexpOrPattern)": {
       "args": [
-        "regexp"
+        "regexpOrPattern"
       ],
       "for": [
         "String"
@@ -24630,9 +24630,9 @@
       ],
       "shortname": "service-workers"
     },
-    "matchAll(regexp)": {
+    "matchAll(regexpOrPattern)": {
       "args": [
-        "regexp"
+        "regexpOrPattern"
       ],
       "for": [
         "String"
@@ -26563,9 +26563,9 @@
     }
   },
   "preventExtensions()": {
-    "preventExtensions(O)": {
+    "preventExtensions(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -26640,9 +26640,9 @@
     }
   },
   "propertyIsEnumerable()": {
-    "propertyIsEnumerable(V)": {
+    "propertyIsEnumerable(value)": {
       "args": [
-        "V"
+        "value"
       ],
       "for": [
         "Object"
@@ -27802,9 +27802,9 @@
     }
   },
   "reject()": {
-    "reject(r)": {
+    "reject(reason)": {
       "args": [
-        "r"
+        "reason"
       ],
       "for": [
         "Promise"
@@ -29267,6 +29267,15 @@
       ],
       "shortname": "fs"
     },
+    "resolve(resolution)": {
+      "args": [
+        "resolution"
+      ],
+      "for": [
+        "Promise"
+      ],
+      "shortname": "ecmascript"
+    },
     "resolve(token)": {
       "args": [
         "token"
@@ -29285,15 +29294,6 @@
         "IdentityProvider"
       ],
       "shortname": "fedcm"
-    },
-    "resolve(x)": {
-      "args": [
-        "x"
-      ],
-      "for": [
-        "Promise"
-      ],
-      "shortname": "ecmascript"
     }
   },
   "resolveQuerySet()": {
@@ -30430,9 +30430,9 @@
     }
   },
   "seal()": {
-    "seal(O)": {
+    "seal(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"
@@ -30441,9 +30441,9 @@
     }
   },
   "search()": {
-    "search(regexp)": {
+    "search(regexpOrPattern)": {
       "args": [
-        "regexp"
+        "regexpOrPattern"
       ],
       "for": [
         "String"
@@ -30965,11 +30965,11 @@
       ],
       "shortname": "ecmascript"
     },
-    "set(target, propertyKey, V, receiver)": {
+    "set(target, propertyKey, value, receiver)": {
       "args": [
         "target",
         "propertyKey",
-        "V",
+        "value",
         "receiver"
       ],
       "for": [
@@ -32151,9 +32151,9 @@
     }
   },
   "setPrototypeOf()": {
-    "setPrototypeOf(O, proto)": {
+    "setPrototypeOf(obj, proto)": {
       "args": [
-        "O",
+        "obj",
         "proto"
       ],
       "for": [
@@ -34615,15 +34615,6 @@
       ],
       "shortname": "urlpattern"
     },
-    "test(S)": {
-      "args": [
-        "S"
-      ],
-      "for": [
-        "RegExp"
-      ],
-      "shortname": "ecmascript"
-    },
     "test(input)": {
       "args": [
         "input"
@@ -34642,6 +34633,15 @@
         "URLPattern"
       ],
       "shortname": "urlpattern"
+    },
+    "test(str)": {
+      "args": [
+        "str"
+      ],
+      "for": [
+        "RegExp"
+      ],
+      "shortname": "ecmascript"
     }
   },
   "texImage2D()": {
@@ -36415,9 +36415,9 @@
       ],
       "shortname": "ecmascript"
     },
-    "values(O)": {
+    "values(obj)": {
       "args": [
-        "O"
+        "obj"
       ],
       "for": [
         "Object"

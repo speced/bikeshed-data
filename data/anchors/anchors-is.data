@@ -686,8 +686,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isac
 1
 1
 -
-IsAccessorDescriptor(Desc)
-IsAccessorDescriptor(Desc)
+IsAccessorDescriptor(desc)
+IsAccessorDescriptor(desc)
 abstract-op
 ecmascript
 ecmascript
@@ -730,8 +730,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-IsArrayBufferViewOutOfBounds(O)
-IsArrayBufferViewOutOfBounds(O)
+IsArrayBufferViewOutOfBounds(obj)
+IsArrayBufferViewOutOfBounds(obj)
 abstract-op
 ecmascript
 ecmascript
@@ -796,8 +796,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-IsCompatiblePropertyDescriptor(Extensible, Desc, Current)
-IsCompatiblePropertyDescriptor(Extensible, Desc, Current)
+IsCompatiblePropertyDescriptor(extensible, desc, current)
+IsCompatiblePropertyDescriptor(extensible, desc, current)
 abstract-op
 ecmascript
 ecmascript
@@ -818,8 +818,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-isconcatspreadabl
 1
 1
 -
-IsConcatSpreadable(O)
-IsConcatSpreadable(O)
+IsConcatSpreadable(obj)
+IsConcatSpreadable(obj)
 abstract-op
 ecmascript
 ecmascript
@@ -862,8 +862,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isda
 1
 1
 -
-IsDataDescriptor(Desc)
-IsDataDescriptor(Desc)
+IsDataDescriptor(desc)
+IsDataDescriptor(desc)
 abstract-op
 ecmascript
 ecmascript
@@ -906,8 +906,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isextensible-o
 1
 1
 -
-IsExtensible(O)
-IsExtensible(O)
+IsExtensible(obj)
+IsExtensible(obj)
 abstract-op
 ecmascript
 ecmascript
@@ -950,8 +950,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isge
 1
 1
 -
-IsGenericDescriptor(Desc)
-IsGenericDescriptor(Desc)
+IsGenericDescriptor(desc)
+IsGenericDescriptor(desc)
 abstract-op
 ecmascript
 ecmascript
@@ -1005,8 +1005,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-islessthan
 1
 1
 -
-IsLessThan(x, y, LeftFirst)
-IsLessThan(x, y, LeftFirst)
+IsLessThan(x, y, leftFirst)
+IsLessThan(x, y, leftFirst)
 abstract-op
 ecmascript
 ecmascript
@@ -1093,8 +1093,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-ispr
 1
 1
 -
-IsPrivateReference(V)
-IsPrivateReference(V)
+IsPrivateReference(referenceRecord)
+IsPrivateReference(referenceRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -1115,8 +1115,8 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-ispromise
 1
 1
 -
-IsPromise(x)
-IsPromise(x)
+IsPromise(value)
+IsPromise(value)
 abstract-op
 ecmascript
 ecmascript
@@ -1137,8 +1137,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-ispr
 1
 1
 -
-IsPropertyReference(V)
-IsPropertyReference(V)
+IsPropertyReference(referenceRecord)
+IsPropertyReference(referenceRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -1248,8 +1248,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-issu
 1
 1
 -
-IsSuperReference(V)
-IsSuperReference(V)
+IsSuperReference(referenceRecord)
+IsSuperReference(referenceRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -1292,8 +1292,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-IsTypedArrayFixedLength(O)
-IsTypedArrayFixedLength(O)
+IsTypedArrayFixedLength(obj)
+IsTypedArrayFixedLength(obj)
 abstract-op
 ecmascript
 ecmascript
@@ -1358,8 +1358,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isun
 1
 1
 -
-IsUnresolvableReference(V)
-IsUnresolvableReference(V)
+IsUnresolvableReference(referenceRecord)
+IsUnresolvableReference(referenceRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -1402,8 +1402,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-IsValidIntegerIndex(O, index)
-IsValidIntegerIndex(O, index)
+IsValidIntegerIndex(obj, index)
+IsValidIntegerIndex(obj, index)
 abstract-op
 ecmascript
 ecmascript
@@ -1446,8 +1446,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-isw
 1
 1
 -
-IsWordChar(rer, Input, e)
-IsWordChar(rer, Input, e)
+IsWordChar(regexpRecord, input, e)
+IsWordChar(regexpRecord, input, e)
 abstract-op
 ecmascript
 ecmascript
@@ -4125,8 +4125,8 @@ https://www.w3.org/TR/window-management/#dom-screen-isextended
 1
 Screen
 -
-isExtensible(O)
-isExtensible(O)
+isExtensible(obj)
+isExtensible(obj)
 method
 ecmascript
 ecmascript
@@ -4245,8 +4245,8 @@ https://www.w3.org/TR/webxr-ar-module-1/#dom-xrview-isfirstpersonobserver
 1
 XRView
 -
-isFrozen(O)
-isFrozen(O)
+isFrozen(obj)
+isFrozen(obj)
 method
 ecmascript
 ecmascript
@@ -4905,8 +4905,8 @@ https://www.w3.org/TR/window-management/#dom-screendetailed-isprimary
 1
 ScreenDetailed
 -
-isPrototypeOf(V)
-isPrototypeOf(V)
+isPrototypeOf(value)
+isPrototypeOf(value)
 method
 ecmascript
 ecmascript
@@ -4929,8 +4929,8 @@ https://wicg.github.io/webhid/#dom-hidreportitem-isrange
 1
 HIDReportItem
 -
-isRawJSON(O)
-isRawJSON(O)
+isRawJSON(obj)
+isRawJSON(obj)
 method
 ecmascript
 ecmascript
@@ -5072,8 +5072,8 @@ https://www.w3.org/TR/trusted-types/#dom-trustedtypepolicyfactory-isscripturl
 1
 TrustedTypePolicyFactory
 -
-isSealed(O)
-isSealed(O)
+isSealed(obj)
+isSealed(obj)
 method
 ecmascript
 ecmascript

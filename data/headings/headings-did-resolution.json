@@ -153,6 +153,14 @@
       "url": "https://www.w3.org/TR/did-resolution/#caching"
     }
   },
+  "#canonicalization-by-did-method": {
+    "current": {
+      "number": "3.2.3",
+      "spec": "DID Resolution",
+      "text": "Canonicalization by DID Method",
+      "url": "https://w3c.github.io/did-resolution/#canonicalization-by-did-method"
+    }
+  },
   "#conformance": {
     "current": {
       "number": "1.2",
@@ -403,6 +411,14 @@
       "spec": "DID Resolution",
       "text": "DID URL Dereferencing Result",
       "url": "https://www.w3.org/TR/did-resolution/#did-url-dereferencing-result"
+    }
+  },
+  "#duplicate-parameter-handling": {
+    "current": {
+      "number": "3.2.2",
+      "spec": "DID Resolution",
+      "text": "Duplicate Parameter Handling",
+      "url": "https://w3c.github.io/did-resolution/#duplicate-parameter-handling"
     }
   },
   "#errors": {
@@ -657,6 +673,14 @@
       "url": "https://www.w3.org/TR/did-resolution/#method-specific-considerations"
     }
   },
+  "#normalization-inconsistency-cache-bypass": {
+    "current": {
+      "number": "12.7.2",
+      "spec": "DID Resolution",
+      "text": "Normalization Inconsistency as a Cache Bypass Vector",
+      "url": "https://w3c.github.io/did-resolution/#normalization-inconsistency-cache-bypass"
+    }
+  },
   "#normative-references": {
     "current": {
       "number": "C.1",
@@ -669,6 +693,30 @@
       "spec": "DID Resolution",
       "text": "Normative references",
       "url": "https://www.w3.org/TR/did-resolution/#normative-references"
+    }
+  },
+  "#parameter-injection-via-concatenation": {
+    "current": {
+      "number": "12.7.3",
+      "spec": "DID Resolution",
+      "text": "Parameter Injection via Concatenation",
+      "url": "https://w3c.github.io/did-resolution/#parameter-injection-via-concatenation"
+    }
+  },
+  "#path-traversal-via-relativeref": {
+    "current": {
+      "number": "12.7.1",
+      "spec": "DID Resolution",
+      "text": "Path Traversal via relativeRef",
+      "url": "https://w3c.github.io/did-resolution/#path-traversal-via-relativeref"
+    }
+  },
+  "#percent-encoding-normalization": {
+    "current": {
+      "number": "3.2.1",
+      "spec": "DID Resolution",
+      "text": "Percent-Encoding Normalization",
+      "url": "https://w3c.github.io/did-resolution/#percent-encoding-normalization"
     }
   },
   "#privacy-considerations": {
@@ -697,6 +745,14 @@
       "spec": "DID Resolution",
       "text": "Profiling of DID Resolution and Dereferencing Requesters",
       "url": "https://www.w3.org/TR/did-resolution/#profiling-requesters"
+    }
+  },
+  "#query-normalization": {
+    "current": {
+      "number": "3.2",
+      "spec": "DID Resolution",
+      "text": "Query Normalization",
+      "url": "https://w3c.github.io/did-resolution/#query-normalization"
     }
   },
   "#references": {
@@ -825,18 +881,28 @@
       "url": "https://www.w3.org/TR/did-resolution/#security-considerations"
     }
   },
-  "#security-cycles-resolution": {
+  "#security-cycles-dereferencing": {
     "current": {
       "number": "12.6",
       "spec": "DID Resolution",
-      "text": "Resolution Cycles",
-      "url": "https://w3c.github.io/did-resolution/#security-cycles-resolution"
-    },
+      "text": "Dereferencing Cycles",
+      "url": "https://w3c.github.io/did-resolution/#security-cycles-dereferencing"
+    }
+  },
+  "#security-cycles-resolution": {
     "snapshot": {
       "number": "12.6",
       "spec": "DID Resolution",
       "text": "Resolution Cycles",
       "url": "https://www.w3.org/TR/did-resolution/#security-cycles-resolution"
+    }
+  },
+  "#security-query-string-normalization-and-injection-risks": {
+    "current": {
+      "number": "12.7",
+      "spec": "DID Resolution",
+      "text": "Query String Normalization and Injection Risks",
+      "url": "https://w3c.github.io/did-resolution/#security-query-string-normalization-and-injection-risks"
     }
   },
   "#subtitle": {
@@ -1217,18 +1283,52 @@
       "url": "https://www.w3.org/TR/did-resolution/#vdr-forks"
     }
   },
-  "#x12-6-resolution-cycles": {
+  "#x12-6-dereferencing-cycles": {
     "current": {
       "number": "12.6",
       "spec": "DID Resolution",
-      "text": "Resolution Cycles",
-      "url": "https://w3c.github.io/did-resolution/#security-cycles-resolution"
-    },
+      "text": "Dereferencing Cycles",
+      "url": "https://w3c.github.io/did-resolution/#security-cycles-dereferencing"
+    }
+  },
+  "#x12-6-resolution-cycles": {
     "snapshot": {
       "number": "12.6",
       "spec": "DID Resolution",
       "text": "Resolution Cycles",
       "url": "https://www.w3.org/TR/did-resolution/#security-cycles-resolution"
+    }
+  },
+  "#x12-7-1-path-traversal-via-relativeref": {
+    "current": {
+      "number": "12.7.1",
+      "spec": "DID Resolution",
+      "text": "Path Traversal via relativeRef",
+      "url": "https://w3c.github.io/did-resolution/#path-traversal-via-relativeref"
+    }
+  },
+  "#x12-7-2-normalization-inconsistency-as-a-cache-bypass-vector": {
+    "current": {
+      "number": "12.7.2",
+      "spec": "DID Resolution",
+      "text": "Normalization Inconsistency as a Cache Bypass Vector",
+      "url": "https://w3c.github.io/did-resolution/#normalization-inconsistency-cache-bypass"
+    }
+  },
+  "#x12-7-3-parameter-injection-via-concatenation": {
+    "current": {
+      "number": "12.7.3",
+      "spec": "DID Resolution",
+      "text": "Parameter Injection via Concatenation",
+      "url": "https://w3c.github.io/did-resolution/#parameter-injection-via-concatenation"
+    }
+  },
+  "#x12-7-query-string-normalization-and-injection-risks": {
+    "current": {
+      "number": "12.7",
+      "spec": "DID Resolution",
+      "text": "Query String Normalization and Injection Risks",
+      "url": "https://w3c.github.io/did-resolution/#security-query-string-normalization-and-injection-risks"
     }
   },
   "#x12-security-considerations": {
@@ -1313,6 +1413,38 @@
       "spec": "DID Resolution",
       "text": "Datetime",
       "url": "https://www.w3.org/TR/did-resolution/#datetime"
+    }
+  },
+  "#x3-2-1-percent-encoding-normalization": {
+    "current": {
+      "number": "3.2.1",
+      "spec": "DID Resolution",
+      "text": "Percent-Encoding Normalization",
+      "url": "https://w3c.github.io/did-resolution/#percent-encoding-normalization"
+    }
+  },
+  "#x3-2-2-duplicate-parameter-handling": {
+    "current": {
+      "number": "3.2.2",
+      "spec": "DID Resolution",
+      "text": "Duplicate Parameter Handling",
+      "url": "https://w3c.github.io/did-resolution/#duplicate-parameter-handling"
+    }
+  },
+  "#x3-2-3-canonicalization-by-did-method": {
+    "current": {
+      "number": "3.2.3",
+      "spec": "DID Resolution",
+      "text": "Canonicalization by DID Method",
+      "url": "https://w3c.github.io/did-resolution/#canonicalization-by-did-method"
+    }
+  },
+  "#x3-2-query-normalization": {
+    "current": {
+      "number": "3.2",
+      "spec": "DID Resolution",
+      "text": "Query Normalization",
+      "url": "https://w3c.github.io/did-resolution/#query-normalization"
     }
   },
   "#x3-did-parameters": {

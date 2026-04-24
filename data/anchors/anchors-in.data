@@ -4045,8 +4045,8 @@ https://www.w3.org/TR/generic-sensor/#initialize-a-sensor-object
 1
 1
 -
-InitializeBinding(N, V)
-InitializeBinding(N, V)
+InitializeBinding(name, value)
+InitializeBinding(name, value)
 abstract-op
 ecmascript
 ecmascript
@@ -4057,8 +4057,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Declarative Environment Records
 -
-InitializeBinding(N, V)
-InitializeBinding(N, V)
+InitializeBinding(name, value)
+InitializeBinding(name, value)
 abstract-op
 ecmascript
 ecmascript
@@ -4069,8 +4069,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Global Environment Records
 -
-InitializeBinding(N, V)
-InitializeBinding(N, V)
+InitializeBinding(name, value)
+InitializeBinding(name, value)
 abstract-op
 ecmascript
 ecmascript
@@ -4148,8 +4148,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-initializeinstanc
 1
 1
 -
-InitializeInstanceElements(O, constructor)
-InitializeInstanceElements(O, constructor)
+InitializeInstanceElements(obj, constructor)
+InitializeInstanceElements(obj, constructor)
 abstract-op
 ecmascript
 ecmascript
@@ -4181,8 +4181,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-init
 1
 1
 -
-InitializeReferencedBinding(V, W)
-InitializeReferencedBinding(V, W)
+InitializeReferencedBinding(referenceRecord, value)
+InitializeReferencedBinding(referenceRecord, value)
 abstract-op
 ecmascript
 ecmascript
@@ -4214,8 +4214,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedar
 1
 1
 -
-InitializeTypedArrayFromArrayBuffer(O, buffer, byteOffset, length)
-InitializeTypedArrayFromArrayBuffer(O, buffer, byteOffset, length)
+InitializeTypedArrayFromArrayBuffer(obj, buffer, byteOffset, length)
+InitializeTypedArrayFromArrayBuffer(obj, buffer, byteOffset, length)
 abstract-op
 ecmascript
 ecmascript
@@ -4236,8 +4236,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedar
 1
 1
 -
-InitializeTypedArrayFromArrayLike(O, arrayLike)
-InitializeTypedArrayFromArrayLike(O, arrayLike)
+InitializeTypedArrayFromArrayLike(obj, arrayLike)
+InitializeTypedArrayFromArrayLike(obj, arrayLike)
 abstract-op
 ecmascript
 ecmascript
@@ -4258,8 +4258,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedar
 1
 1
 -
-InitializeTypedArrayFromList(O, values)
-InitializeTypedArrayFromList(O, values)
+InitializeTypedArrayFromList(obj, values)
+InitializeTypedArrayFromList(obj, values)
 abstract-op
 ecmascript
 ecmascript
@@ -4280,8 +4280,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedar
 1
 1
 -
-InitializeTypedArrayFromTypedArray(O, srcArray)
-InitializeTypedArrayFromTypedArray(O, srcArray)
+InitializeTypedArrayFromTypedArray(obj, srcArray)
+InitializeTypedArrayFromTypedArray(obj, srcArray)
 abstract-op
 ecmascript
 ecmascript
@@ -4846,8 +4846,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause
 1
 1
 -
-InstallErrorCause(O, options)
-InstallErrorCause(O, options)
+InstallErrorCause(obj, options)
+InstallErrorCause(obj, options)
 abstract-op
 ecmascript
 ecmascript
@@ -5087,8 +5087,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-insta
 1
 1
 -
-InstanceofOperator(V, target)
-InstanceofOperator(V, target)
+InstanceofOperator(value, target)
+InstanceofOperator(value, target)
 abstract-op
 ecmascript
 ecmascript
@@ -6681,8 +6681,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-invoke
 1
 1
 -
-Invoke(V, P, argumentsList)
-Invoke(V, P, argumentsList)
+Invoke(value, propertyKey, argumentsList)
+Invoke(value, propertyKey, argumentsList)
 abstract-op
 ecmascript
 ecmascript

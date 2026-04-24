@@ -1459,8 +1459,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-PrepareForOrdinaryCall(F, newTarget)
-PrepareForOrdinaryCall(F, newTarget)
+PrepareForOrdinaryCall(func, newTarget)
+PrepareForOrdinaryCall(func, newTarget)
 abstract-op
 ecmascript
 ecmascript
@@ -2594,8 +2594,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateelementfin
 1
 1
 -
-PrivateElementFind(O, P)
-PrivateElementFind(O, P)
+PrivateElementFind(obj, privateName)
+PrivateElementFind(obj, privateName)
 abstract-op
 ecmascript
 ecmascript
@@ -2664,8 +2664,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privatefieldadd
 1
 1
 -
-PrivateFieldAdd(O, P, value)
-PrivateFieldAdd(O, P, value)
+PrivateFieldAdd(obj, privateName, value)
+PrivateFieldAdd(obj, privateName, value)
 abstract-op
 ecmascript
 ecmascript
@@ -2686,8 +2686,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateget
 1
 1
 -
-PrivateGet(O, P)
-PrivateGet(O, P)
+PrivateGet(obj, privateName)
+PrivateGet(obj, privateName)
 abstract-op
 ecmascript
 ecmascript
@@ -2719,8 +2719,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privatemethodorac
 1
 1
 -
-PrivateMethodOrAccessorAdd(O, method)
-PrivateMethodOrAccessorAdd(O, method)
+PrivateMethodOrAccessorAdd(obj, method)
+PrivateMethodOrAccessorAdd(obj, method)
 abstract-op
 ecmascript
 ecmascript
@@ -2741,8 +2741,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateset
 1
 1
 -
-PrivateSet(O, P, value)
-PrivateSet(O, P, value)
+PrivateSet(obj, privateName, value)
+PrivateSet(obj, privateName, value)
 abstract-op
 ecmascript
 ecmascript
@@ -3661,8 +3661,8 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-r
 1
 1
 -
-PromiseResolve(C, x)
-PromiseResolve(C, x)
+PromiseResolve(constructor, resolution)
+PromiseResolve(constructor, resolution)
 abstract-op
 ecmascript
 ecmascript
@@ -10386,8 +10386,8 @@ https://dom.spec.whatwg.org/#dom-event-preventdefault
 1
 Event
 -
-preventExtensions(O)
-preventExtensions(O)
+preventExtensions(obj)
+preventExtensions(obj)
 method
 ecmascript
 ecmascript
@@ -20926,8 +20926,8 @@ https://www.w3.org/TR/json-ld11/#dfn-property-scoped-context
 
 
 -
-propertyIsEnumerable(V)
-propertyIsEnumerable(V)
+propertyIsEnumerable(value)
+propertyIsEnumerable(value)
 method
 ecmascript
 ecmascript

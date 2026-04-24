@@ -2013,8 +2013,8 @@ https://www.w3.org/TR/generic-sensor/#get-value-from-latest-reading
 1
 1
 -
-Get(O, P)
-Get(O, P)
+Get(obj, propertyKey)
+Get(obj, propertyKey)
 abstract-op
 ecmascript
 ecmascript
@@ -2090,8 +2090,8 @@ https://tc39.es/ecma262/multipage/structured-data.html#sec-getarraybuffermaxbyte
 1
 1
 -
-GetBindingValue(N, S)
-GetBindingValue(N, S)
+GetBindingValue(name, strict)
+GetBindingValue(name, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -2102,8 +2102,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Declarative Environment Records
 -
-GetBindingValue(N, S)
-GetBindingValue(N, S)
+GetBindingValue(name, strict)
+GetBindingValue(name, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -2114,8 +2114,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Global Environment Records
 -
-GetBindingValue(N, S)
-GetBindingValue(N, S)
+GetBindingValue(name, strict)
+GetBindingValue(name, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -2126,8 +2126,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 Module Environment Records
 -
-GetBindingValue(N, S)
-GetBindingValue(N, S)
+GetBindingValue(name, strict)
+GetBindingValue(name, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -2195,8 +2195,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getfunctionrealm
 1
 1
 -
-GetFunctionRealm(obj)
-GetFunctionRealm(obj)
+GetFunctionRealm(func)
+GetFunctionRealm(func)
 abstract-op
 ecmascript
 ecmascript
@@ -2437,8 +2437,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchindexpair
 1
 1
 -
-GetMatchIndexPair(S, match)
-GetMatchIndexPair(S, match)
+GetMatchIndexPair(str, match)
+GetMatchIndexPair(str, match)
 abstract-op
 ecmascript
 ecmascript
@@ -2459,8 +2459,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchstring
 1
 1
 -
-GetMatchString(S, match)
-GetMatchString(S, match)
+GetMatchString(str, match)
+GetMatchString(str, match)
 abstract-op
 ecmascript
 ecmascript
@@ -2481,8 +2481,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod
 1
 1
 -
-GetMethod(V, P)
-GetMethod(V, P)
+GetMethod(value, propertyKey)
+GetMethod(value, propertyKey)
 abstract-op
 ecmascript
 ecmascript
@@ -2658,8 +2658,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-getownpropertykey
 1
 1
 -
-GetOwnPropertyKeys(O, type)
-GetOwnPropertyKeys(O, type)
+GetOwnPropertyKeys(value, type)
+GetOwnPropertyKeys(value, type)
 abstract-op
 ecmascript
 ecmascript
@@ -2801,8 +2801,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-getstringindex
 1
 1
 -
-GetStringIndex(S, codePointIndex)
-GetStringIndex(S, codePointIndex)
+GetStringIndex(str, codePointIndex)
+GetStringIndex(str, codePointIndex)
 abstract-op
 ecmascript
 ecmascript
@@ -2993,8 +2993,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-gett
 1
 1
 -
-GetThisValue(V)
-GetThisValue(V)
+GetThisValue(referenceRecord)
+GetThisValue(referenceRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -3059,8 +3059,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getv
 1
 1
 -
-GetV(V, P)
-GetV(V, P)
+GetV(value, propertyKey)
+GetV(value, propertyKey)
 abstract-op
 ecmascript
 ecmascript
@@ -3081,8 +3081,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getv
 1
 1
 -
-GetValue(V)
-GetValue(V)
+GetValue(referenceRecord)
+GetValue(referenceRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -13977,8 +13977,8 @@ https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-getoutputtimestamp
 1
 AudioContext
 -
-getOwnPropertyDescriptor(O, P)
-getOwnPropertyDescriptor(O, P)
+getOwnPropertyDescriptor(obj, propertyKey)
+getOwnPropertyDescriptor(obj, propertyKey)
 method
 ecmascript
 ecmascript
@@ -14001,8 +14001,8 @@ https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.getownpropertydesc
 1
 Reflect
 -
-getOwnPropertyDescriptors(O)
-getOwnPropertyDescriptors(O)
+getOwnPropertyDescriptors(obj)
+getOwnPropertyDescriptors(obj)
 method
 ecmascript
 ecmascript
@@ -14013,8 +14013,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownprop
 1
 Object
 -
-getOwnPropertyNames(O)
-getOwnPropertyNames(O)
+getOwnPropertyNames(obj)
+getOwnPropertyNames(obj)
 method
 ecmascript
 ecmascript
@@ -14025,8 +14025,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownprop
 1
 Object
 -
-getOwnPropertySymbols(O)
-getOwnPropertySymbols(O)
+getOwnPropertySymbols(obj)
+getOwnPropertySymbols(obj)
 method
 ecmascript
 ecmascript
@@ -14565,8 +14565,8 @@ https://www.w3.org/TR/cssom-1/#dom-cssstyledeclaration-getpropertyvalue
 1
 CSSStyleDeclaration
 -
-getPrototypeOf(O)
-getPrototypeOf(O)
+getPrototypeOf(obj)
+getPrototypeOf(obj)
 method
 ecmascript
 ecmascript
