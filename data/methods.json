@@ -4485,91 +4485,6 @@
       "shortname": "ecmascript"
     }
   },
-  "SharedStorageAppendMethod()": {
-    "SharedStorageAppendMethod(key, value)": {
-      "args": [
-        "key",
-        "value"
-      ],
-      "for": [
-        "SharedStorageAppendMethod"
-      ],
-      "shortname": "shared-storage"
-    },
-    "SharedStorageAppendMethod(key, value, options)": {
-      "args": [
-        "key",
-        "value",
-        "options"
-      ],
-      "for": [
-        "SharedStorageAppendMethod"
-      ],
-      "shortname": "shared-storage"
-    }
-  },
-  "SharedStorageClearMethod()": {
-    "SharedStorageClearMethod()": {
-      "args": [],
-      "for": [
-        "SharedStorageClearMethod"
-      ],
-      "shortname": "shared-storage"
-    },
-    "SharedStorageClearMethod(options)": {
-      "args": [
-        "options"
-      ],
-      "for": [
-        "SharedStorageClearMethod"
-      ],
-      "shortname": "shared-storage"
-    }
-  },
-  "SharedStorageDeleteMethod()": {
-    "SharedStorageDeleteMethod(key)": {
-      "args": [
-        "key"
-      ],
-      "for": [
-        "SharedStorageDeleteMethod"
-      ],
-      "shortname": "shared-storage"
-    },
-    "SharedStorageDeleteMethod(key, options)": {
-      "args": [
-        "key",
-        "options"
-      ],
-      "for": [
-        "SharedStorageDeleteMethod"
-      ],
-      "shortname": "shared-storage"
-    }
-  },
-  "SharedStorageSetMethod()": {
-    "SharedStorageSetMethod(key, value)": {
-      "args": [
-        "key",
-        "value"
-      ],
-      "for": [
-        "SharedStorageSetMethod"
-      ],
-      "shortname": "shared-storage"
-    },
-    "SharedStorageSetMethod(key, value, options)": {
-      "args": [
-        "key",
-        "value",
-        "options"
-      ],
-      "for": [
-        "SharedStorageSetMethod"
-      ],
-      "shortname": "shared-storage"
-    }
-  },
   "SharedWorker()": {
     "SharedWorker(scriptURL)": {
       "args": [
@@ -7010,26 +6925,24 @@
       ],
       "shortname": "dom"
     },
-    "append(key, value)": {
+    "append(input)": {
       "args": [
-        "key",
-        "value"
+        "input"
       ],
       "for": [
-        "SharedStorage"
+        "LanguageModel"
       ],
-      "shortname": "shared-storage"
+      "shortname": "prompt-api"
     },
-    "append(key, value, options)": {
+    "append(input, options)": {
       "args": [
-        "key",
-        "value",
+        "input",
         "options"
       ],
       "for": [
-        "SharedStorage"
+        "LanguageModel"
       ],
-      "shortname": "shared-storage"
+      "shortname": "prompt-api"
     },
     "append(name, blobValue)": {
       "args": [
@@ -7541,11 +7454,12 @@
       "args": [],
       "for": [
         "LanguageDetector",
+        "LanguageModel",
         "Rewriter",
         "Summarizer",
         "Writer"
       ],
-      "shortname": "translation-api"
+      "shortname": "prompt-api"
     },
     "availability(options)": {
       "args": [
@@ -7553,13 +7467,14 @@
       ],
       "for": [
         "LanguageDetector",
+        "LanguageModel",
         "Rewriter",
         "Summarizer",
         "TextDetector",
         "Translator",
         "Writer"
       ],
-      "shortname": "translation-api"
+      "shortname": "prompt-api"
     }
   },
   "available()": {
@@ -7635,27 +7550,6 @@
         "MLGraphBuilder"
       ],
       "shortname": "webnn"
-    }
-  },
-  "batchUpdate()": {
-    "batchUpdate(methods)": {
-      "args": [
-        "methods"
-      ],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
-    },
-    "batchUpdate(methods, options)": {
-      "args": [
-        "methods",
-        "options"
-      ],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
     }
   },
   "before()": {
@@ -7846,24 +7740,6 @@
       "shortname": "indexeddb"
     }
   },
-  "browsingTopics()": {
-    "browsingTopics()": {
-      "args": [],
-      "for": [
-        "Document"
-      ],
-      "shortname": "topics"
-    },
-    "browsingTopics(options)": {
-      "args": [
-        "options"
-      ],
-      "for": [
-        "Document"
-      ],
-      "shortname": "topics"
-    }
-  },
   "btoa()": {
     "btoa(data)": {
       "args": [
@@ -7907,15 +7783,6 @@
         "Function"
       ],
       "shortname": "ecmascript"
-    }
-  },
-  "canLoadAdAuctionFencedFrame()": {
-    "canLoadAdAuctionFencedFrame()": {
-      "args": [],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
     }
   },
   "canMakePayment()": {
@@ -8485,21 +8352,11 @@
         "MIDIOutput",
         "Map",
         "Set",
-        "SharedStorage",
         "Storage",
         "StylePropertyMap",
         "console"
       ],
       "shortname": "console"
-    },
-    "clear(options)": {
-      "args": [
-        "options"
-      ],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
     }
   },
   "clearAppBadge()": {
@@ -8622,27 +8479,6 @@
       "shortname": "user-timing"
     }
   },
-  "clearOriginJoinedAdInterestGroups()": {
-    "clearOriginJoinedAdInterestGroups(owner)": {
-      "args": [
-        "owner"
-      ],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
-    },
-    "clearOriginJoinedAdInterestGroups(owner, interestGroupsToKeep)": {
-      "args": [
-        "owner",
-        "interestGroupsToKeep"
-      ],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
-    }
-  },
   "clearOverride()": {
     "clearOverride()": {
       "args": [],
@@ -8750,6 +8586,7 @@
         "AudioData",
         "BrowserCaptureMediaStreamTrack",
         "GroupEffect",
+        "LanguageModel",
         "MediaStream",
         "MediaStreamTrack",
         "Request",
@@ -8758,6 +8595,15 @@
         "VideoFrame"
       ],
       "shortname": "fetch"
+    },
+    "clone(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "LanguageModel"
+      ],
+      "shortname": "prompt-api"
     }
   },
   "cloneContents()": {
@@ -9613,7 +9459,6 @@
         "Response",
         "Sanitizer",
         "ScrollTimeline",
-        "SharedStorageClearMethod",
         "SmartCardError",
         "SpeechGrammarList",
         "SpeechRecognition",
@@ -10459,48 +10304,6 @@
       ],
       "shortname": "clipboard-apis"
     },
-    "constructor(key)": {
-      "args": [
-        "key"
-      ],
-      "for": [
-        "SharedStorageDeleteMethod"
-      ],
-      "shortname": "shared-storage"
-    },
-    "constructor(key, options)": {
-      "args": [
-        "key",
-        "options"
-      ],
-      "for": [
-        "SharedStorageDeleteMethod"
-      ],
-      "shortname": "shared-storage"
-    },
-    "constructor(key, value)": {
-      "args": [
-        "key",
-        "value"
-      ],
-      "for": [
-        "SharedStorageAppendMethod",
-        "SharedStorageSetMethod"
-      ],
-      "shortname": "shared-storage"
-    },
-    "constructor(key, value, options)": {
-      "args": [
-        "key",
-        "value",
-        "options"
-      ],
-      "for": [
-        "SharedStorageAppendMethod",
-        "SharedStorageSetMethod"
-      ],
-      "shortname": "shared-storage"
-    },
     "constructor(l, a, b)": {
       "args": [
         "l",
@@ -10829,7 +10632,6 @@
         "SFrameDecrypterStream",
         "SFrameEncrypterStream",
         "ScrollTimeline",
-        "SharedStorageClearMethod",
         "SmartCardError",
         "TextFormat",
         "UDPSocket",
@@ -11938,30 +11740,6 @@
       "shortname": "indexeddb"
     }
   },
-  "contributeToHistogram()": {
-    "contributeToHistogram(contribution)": {
-      "args": [
-        "contribution"
-      ],
-      "for": [
-        "PrivateAggregation",
-        "RealTimeReporting"
-      ],
-      "shortname": "private-aggregation-api"
-    }
-  },
-  "contributeToHistogramOnEvent()": {
-    "contributeToHistogramOnEvent(event, contribution)": {
-      "args": [
-        "event",
-        "contribution"
-      ],
-      "for": [
-        "PrivateAggregation"
-      ],
-      "shortname": "private-aggregation-api"
-    }
-  },
   "control()": {
     "control()": {
       "args": [],
@@ -12485,12 +12263,13 @@
       "for": [
         "CredentialsContainer",
         "LanguageDetector",
+        "LanguageModel",
         "Rewriter",
         "Summarizer",
         "TextDetector",
         "Writer"
       ],
-      "shortname": "translation-api"
+      "shortname": "prompt-api"
     },
     "create(options)": {
       "args": [
@@ -12499,13 +12278,14 @@
       "for": [
         "CredentialsContainer",
         "LanguageDetector",
+        "LanguageModel",
         "Rewriter",
         "Summarizer",
         "TextDetector",
         "Translator",
         "Writer"
       ],
-      "shortname": "translation-api"
+      "shortname": "prompt-api"
     },
     "create(proto, properties)": {
       "args": [
@@ -12604,15 +12384,6 @@
         "Document"
       ],
       "shortname": "dom"
-    }
-  },
-  "createAuctionNonce()": {
-    "createAuctionNonce()": {
-      "args": [],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
     }
   },
   "createBidirectionalStream()": {
@@ -13999,27 +13770,6 @@
       "shortname": "webaudio"
     }
   },
-  "createWorklet()": {
-    "createWorklet(moduleURL)": {
-      "args": [
-        "moduleURL"
-      ],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
-    },
-    "createWorklet(moduleURL, options)": {
-      "args": [
-        "moduleURL",
-        "options"
-      ],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
-    }
-  },
   "createWritable()": {
     "createWritable()": {
       "args": [],
@@ -14280,17 +14030,6 @@
       "shortname": "ecmascript"
     }
   },
-  "decodeUtf8()": {
-    "decodeUtf8(bytes)": {
-      "args": [
-        "bytes"
-      ],
-      "for": [
-        "ProtectedAudienceUtilities"
-      ],
-      "shortname": "turtledove"
-    }
-  },
   "decodingInfo()": {
     "decodingInfo(configuration)": {
       "args": [
@@ -14435,20 +14174,9 @@
       "for": [
         "CrashReportContext",
         "Map",
-        "SharedStorage",
         "WeakMap"
       ],
       "shortname": "ecmascript"
-    },
-    "delete(key, options)": {
-      "args": [
-        "key",
-        "options"
-      ],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
     },
     "delete(name)": {
       "args": [
@@ -15560,24 +15288,6 @@
       "shortname": "service-workers"
     }
   },
-  "enableDebugMode()": {
-    "enableDebugMode()": {
-      "args": [],
-      "for": [
-        "PrivateAggregation"
-      ],
-      "shortname": "private-aggregation-api"
-    },
-    "enableDebugMode(options)": {
-      "args": [
-        "options"
-      ],
-      "for": [
-        "PrivateAggregation"
-      ],
-      "shortname": "private-aggregation-api"
-    }
-  },
   "enableDelegations()": {
     "enableDelegations()": {
       "args": [],
@@ -15728,17 +15438,6 @@
         "globalThis"
       ],
       "shortname": "ecmascript"
-    }
-  },
-  "encodeUtf8()": {
-    "encodeUtf8(input)": {
-      "args": [
-        "input"
-      ],
-      "for": [
-        "ProtectedAudienceUtilities"
-      ],
-      "shortname": "turtledove"
     }
   },
   "encodingInfo()": {
@@ -17813,7 +17512,6 @@
       ],
       "for": [
         "Map",
-        "SharedStorage",
         "WeakMap",
         "XRBody",
         "XRHand"
@@ -19430,33 +19128,6 @@
         "DataView"
       ],
       "shortname": "ecmascript"
-    }
-  },
-  "getInterestGroupAdAuctionData()": {
-    "getInterestGroupAdAuctionData()": {
-      "args": [],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
-    },
-    "getInterestGroupAdAuctionData(config)": {
-      "args": [
-        "config"
-      ],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
-    },
-    "getInterestGroupAdAuctionData(configIDL)": {
-      "args": [
-        "configIDL"
-      ],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
     }
   },
   "getItem()": {
@@ -22890,15 +22561,6 @@
       "shortname": "html"
     }
   },
-  "interestGroups()": {
-    "interestGroups()": {
-      "args": [],
-      "for": [
-        "SharedStorageWorkletGlobalScope"
-      ],
-      "shortname": "shared-storage"
-    }
-  },
   "intersection()": {
     "intersection(other)": {
       "args": [
@@ -23574,17 +23236,6 @@
       "shortname": "ecmascript"
     }
   },
-  "joinAdInterestGroup()": {
-    "joinAdInterestGroup(group)": {
-      "args": [
-        "group"
-      ],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
-    }
-  },
   "joinGroup()": {
     "joinGroup()": {
       "args": [],
@@ -23843,24 +23494,6 @@
       "shortname": "webnn"
     }
   },
-  "leaveAdInterestGroup()": {
-    "leaveAdInterestGroup()": {
-      "args": [],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
-    },
-    "leaveAdInterestGroup(group)": {
-      "args": [
-        "group"
-      ],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
-    }
-  },
   "leaveGroup()": {
     "leaveGroup()": {
       "args": [],
@@ -23887,15 +23520,6 @@
         "MulticastController"
       ],
       "shortname": "direct-sockets"
-    }
-  },
-  "length()": {
-    "length()": {
-      "args": [],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
     }
   },
   "lesser()": {
@@ -24832,6 +24456,27 @@
       "shortname": "user-timing"
     }
   },
+  "measureContextUsage()": {
+    "measureContextUsage(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "LanguageModel"
+      ],
+      "shortname": "prompt-api"
+    },
+    "measureContextUsage(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "LanguageModel"
+      ],
+      "shortname": "prompt-api"
+    }
+  },
   "measureConversion()": {
     "measureConversion(options)": {
       "args": [
@@ -24861,12 +24506,13 @@
       ],
       "for": [
         "LanguageDetector",
+        "LanguageModel",
         "Rewriter",
         "Summarizer",
         "Translator",
         "Writer"
       ],
-      "shortname": "translation-api"
+      "shortname": "prompt-api"
     },
     "measureInputUsage(input, options)": {
       "args": [
@@ -24875,12 +24521,13 @@
       ],
       "for": [
         "LanguageDetector",
+        "LanguageModel",
         "Rewriter",
         "Summarizer",
         "Translator",
         "Writer"
       ],
-      "shortname": "translation-api"
+      "shortname": "prompt-api"
     }
   },
   "measureText()": {
@@ -25843,6 +25490,15 @@
       "shortname": "ecmascript"
     }
   },
+  "params()": {
+    "params()": {
+      "args": [],
+      "for": [
+        "LanguageModel"
+      ],
+      "shortname": "prompt-api"
+    }
+  },
   "parentNode()": {
     "parentNode()": {
       "args": [],
@@ -26628,6 +26284,25 @@
       ],
       "shortname": "manifest-incubations"
     },
+    "prompt(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "LanguageModel"
+      ],
+      "shortname": "prompt-api"
+    },
+    "prompt(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "LanguageModel"
+      ],
+      "shortname": "prompt-api"
+    },
     "prompt(message, default)": {
       "args": [
         "message",
@@ -26637,6 +26312,27 @@
         "Window"
       ],
       "shortname": "html"
+    }
+  },
+  "promptStreaming()": {
+    "promptStreaming(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "LanguageModel"
+      ],
+      "shortname": "prompt-api"
+    },
+    "promptStreaming(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "LanguageModel"
+      ],
+      "shortname": "prompt-api"
     }
   },
   "propertyIsEnumerable()": {
@@ -26864,17 +26560,6 @@
         "Permissions"
       ],
       "shortname": "permissions"
-    }
-  },
-  "queryFeatureSupport()": {
-    "queryFeatureSupport(feature)": {
-      "args": [
-        "feature"
-      ],
-      "for": [
-        "ProtectedAudience"
-      ],
-      "shortname": "turtledove"
     }
   },
   "queryHandwritingRecognizer()": {
@@ -27625,16 +27310,6 @@
       ],
       "shortname": "webrtc-identity"
     },
-    "register(name, operationCtor)": {
-      "args": [
-        "name",
-        "operationCtor"
-      ],
-      "for": [
-        "SharedStorageWorkletGlobalScope"
-      ],
-      "shortname": "shared-storage"
-    },
     "register(scriptURL)": {
       "args": [
         "scriptURL"
@@ -27684,29 +27359,6 @@
         "FinalizationRegistry"
       ],
       "shortname": "ecmascript"
-    }
-  },
-  "registerAdBeacon()": {
-    "registerAdBeacon(map)": {
-      "args": [
-        "map"
-      ],
-      "for": [
-        "InterestGroupReportingScriptRunnerGlobalScope"
-      ],
-      "shortname": "turtledove"
-    }
-  },
-  "registerAdMacro()": {
-    "registerAdMacro(name, value)": {
-      "args": [
-        "name",
-        "value"
-      ],
-      "for": [
-        "InterestGroupReportingScriptRunnerGlobalScope"
-      ],
-      "shortname": "turtledove"
     }
   },
   "registerAnimator()": {
@@ -27919,15 +27571,6 @@
         "CSS"
       ],
       "shortname": "css-typed-om"
-    }
-  },
-  "remainingBudget()": {
-    "remainingBudget()": {
-      "args": [],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
     }
   },
   "remove()": {
@@ -28532,28 +28175,6 @@
       "shortname": "dom"
     }
   },
-  "reportAdAuctionLoss()": {
-    "reportAdAuctionLoss(url)": {
-      "args": [
-        "url"
-      ],
-      "for": [
-        "ForDebuggingOnly"
-      ],
-      "shortname": "turtledove"
-    }
-  },
-  "reportAdAuctionWin()": {
-    "reportAdAuctionWin(url)": {
-      "args": [
-        "url"
-      ],
-      "for": [
-        "ForDebuggingOnly"
-      ],
-      "shortname": "turtledove"
-    }
-  },
   "reportError()": {
     "reportError(e)": {
       "args": [
@@ -29066,17 +28687,6 @@
         "Document"
       ],
       "shortname": "saa-non-cookie-storage"
-    }
-  },
-  "requestStorageAccessFor()": {
-    "requestStorageAccessFor(requestedOrigin)": {
-      "args": [
-        "requestedOrigin"
-      ],
-      "for": [
-        "Document"
-      ],
-      "shortname": "requeststorageaccessfor"
     }
   },
   "requestSubmit()": {
@@ -29897,40 +29507,6 @@
       "shortname": "html"
     }
   },
-  "run()": {
-    "run(name)": {
-      "args": [
-        "name"
-      ],
-      "for": [
-        "SharedStorage",
-        "SharedStorageWorklet"
-      ],
-      "shortname": "shared-storage"
-    },
-    "run(name, options)": {
-      "args": [
-        "name",
-        "options"
-      ],
-      "for": [
-        "SharedStorage",
-        "SharedStorageWorklet"
-      ],
-      "shortname": "shared-storage"
-    }
-  },
-  "runAdAuction()": {
-    "runAdAuction(config)": {
-      "args": [
-        "config"
-      ],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
-    }
-  },
   "s()": {
     "s(value)": {
       "args": [
@@ -30590,31 +30166,6 @@
       "shortname": "dom"
     }
   },
-  "selectURL()": {
-    "selectURL(name, urls)": {
-      "args": [
-        "name",
-        "urls"
-      ],
-      "for": [
-        "SharedStorage",
-        "SharedStorageWorklet"
-      ],
-      "shortname": "shared-storage"
-    },
-    "selectURL(name, urls, options)": {
-      "args": [
-        "name",
-        "urls",
-        "options"
-      ],
-      "for": [
-        "SharedStorage",
-        "SharedStorageWorklet"
-      ],
-      "shortname": "shared-storage"
-    }
-  },
   "send!overload-1()": {
     "send!overload-1()": {
       "args": [],
@@ -30819,17 +30370,6 @@
       "shortname": "webhid"
     }
   },
-  "sendReportTo()": {
-    "sendReportTo(url)": {
-      "args": [
-        "url"
-      ],
-      "for": [
-        "InterestGroupReportingScriptRunnerGlobalScope"
-      ],
-      "shortname": "turtledove"
-    }
-  },
   "serializeToString()": {
     "serializeToString(root)": {
       "args": [
@@ -30886,21 +30426,9 @@
       "for": [
         "CrashReportContext",
         "Map",
-        "SharedStorage",
         "WeakMap"
       ],
       "shortname": "ecmascript"
-    },
-    "set(key, value, options)": {
-      "args": [
-        "key",
-        "value",
-        "options"
-      ],
-      "for": [
-        "SharedStorage"
-      ],
-      "shortname": "shared-storage"
     },
     "set(name, blobValue)": {
       "args": [
@@ -31081,17 +30609,6 @@
       "shortname": "dom"
     }
   },
-  "setAttributionReporting()": {
-    "setAttributionReporting(options)": {
-      "args": [
-        "options"
-      ],
-      "for": [
-        "XMLHttpRequest"
-      ],
-      "shortname": "attribution-reporting-api"
-    }
-  },
   "setBaseAndExtent()": {
     "setBaseAndExtent()": {
       "args": [],
@@ -31111,24 +30628,6 @@
         "Selection"
       ],
       "shortname": "selection-api"
-    }
-  },
-  "setBid()": {
-    "setBid()": {
-      "args": [],
-      "for": [
-        "InterestGroupBiddingScriptRunnerGlobalScope"
-      ],
-      "shortname": "turtledove"
-    },
-    "setBid(oneOrManyBids)": {
-      "args": [
-        "oneOrManyBids"
-      ],
-      "for": [
-        "InterestGroupBiddingScriptRunnerGlobalScope"
-      ],
-      "shortname": "turtledove"
     }
   },
   "setBigInt64()": {
@@ -32098,31 +31597,9 @@
         "priority"
       ],
       "for": [
-        "InterestGroupBiddingScriptRunnerGlobalScope",
         "TaskController"
       ],
       "shortname": "scheduling-apis"
-    }
-  },
-  "setPrioritySignalsOverride()": {
-    "setPrioritySignalsOverride(key)": {
-      "args": [
-        "key"
-      ],
-      "for": [
-        "InterestGroupBiddingScriptRunnerGlobalScope"
-      ],
-      "shortname": "turtledove"
-    },
-    "setPrioritySignalsOverride(key, priority)": {
-      "args": [
-        "key",
-        "priority"
-      ],
-      "for": [
-        "InterestGroupBiddingScriptRunnerGlobalScope"
-      ],
-      "shortname": "turtledove"
     }
   },
   "setPrivateToken()": {
@@ -36095,15 +35572,6 @@
         "IDBCursor"
       ],
       "shortname": "indexeddb"
-    }
-  },
-  "updateAdInterestGroups()": {
-    "updateAdInterestGroups()": {
-      "args": [],
-      "for": [
-        "Navigator"
-      ],
-      "shortname": "turtledove"
     }
   },
   "updateCharacterBounds()": {
