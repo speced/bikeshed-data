@@ -1092,7 +1092,8 @@
     "<navigation-location-between-test>",
     "<navigation-location-keyword>",
     "<navigation-location-test>",
-    "<navigation-location>",
+    "<navigation-phase-keyword>",
+    "<navigation-phase-test>",
     "<navigation-relation>",
     "<navigation-test>",
     "<navigation-type-keyword>",
@@ -1196,6 +1197,7 @@
     "<reversed-counter-name>",
     "<right>",
     "<rounding-strategy>",
+    "<route-location>",
     "<route-name>",
     "<rule-list>",
     "<safe-printable-inset>",
@@ -1516,6 +1518,8 @@
     "Accessible Description",
     "Accessible Name",
     "Accessible object",
+    "AccessibleBytes",
+    "AccessibleSlots",
     "AcquireReadableStreamBYOBReader",
     "AcquireReadableStreamDefaultReader",
     "AcquireWritableStreamDefaultWriter",
@@ -8782,6 +8786,7 @@
     "ValidTextDirective",
     "Validate VideoFrameInit",
     "Validate encoder bind groups",
+    "Validate immediate data",
     "Validate swizzle string",
     "Validate texture format required features",
     "Validate the encoder state",
@@ -15461,6 +15466,7 @@
     "img",
     "img-src",
     "immediate",
+    "immediate data",
     "immediate pipeline creation",
     "immediate user selection",
     "immediately",
@@ -17542,7 +17548,6 @@
     "navigation can trigger a cross-document view-transition?",
     "navigation handler list",
     "navigation id",
-    "navigation location URL pattern",
     "navigation object",
     "navigation params",
     "navigation precommit handler list",
@@ -17565,6 +17570,7 @@
     "navy",
     "near",
     "nearest ancestor autofocus scoping root element",
+    "nearest ancestor select",
     "nearest block ancestor",
     "nearest clicked dialog",
     "nearest containing group name",
@@ -18082,7 +18088,6 @@
     "optimum point",
     "option",
     "option element inner content elements",
-    "option element nearest ancestor select",
     "option-expression",
     "optional API surface",
     "optional argument",
@@ -36523,10 +36528,15 @@
   "GPUBindingCommandsMixin": [
     "[[bind_groups]]",
     "[[dynamic_offsets]]",
+    "[[immediate_data]]",
+    "[[immediate_slots_set]]",
     "setBindGroup()",
     "setBindGroup(index, bindGroup)",
     "setBindGroup(index, bindGroup, dynamicOffsets)",
-    "setBindGroup(index, bindGroup, dynamicOffsetsData, dynamicOffsetsDataStart, dynamicOffsetsDataLength)"
+    "setBindGroup(index, bindGroup, dynamicOffsetsData, dynamicOffsetsDataStart, dynamicOffsetsDataLength)",
+    "setImmediates(rangeOffset, data)",
+    "setImmediates(rangeOffset, data, dataOffset)",
+    "setImmediates(rangeOffset, data, dataOffset, dataSize)"
   ],
   "GPUBindingCommandsMixin/setBindGroup(index, bindGroup, dynamicOffsets)": [
     "bindGroup",
@@ -36539,6 +36549,12 @@
     "dynamicOffsetsDataLength",
     "dynamicOffsetsDataStart",
     "index"
+  ],
+  "GPUBindingCommandsMixin/setImmediates(rangeOffset, data, dataOffset, dataSize)": [
+    "data",
+    "dataOffset",
+    "dataSize",
+    "rangeOffset"
   ],
   "GPUBlendComponent": [
     "dstFactor",
@@ -37131,10 +37147,12 @@
     "\"validation\""
   ],
   "GPUPipelineLayout": [
-    "[[bindGroupLayouts]]"
+    "[[bindGroupLayouts]]",
+    "[[immediateSize]]"
   ],
   "GPUPipelineLayoutDescriptor": [
-    "bindGroupLayouts"
+    "bindGroupLayouts",
+    "immediateSize"
   ],
   "GPUPowerPreference": [
     "\"high-performance\"",
@@ -37476,6 +37494,7 @@
     "maxComputeWorkgroupsPerDimension",
     "maxDynamicStorageBuffersPerPipelineLayout",
     "maxDynamicUniformBuffersPerPipelineLayout",
+    "maxImmediateSize",
     "maxInterStageShaderVariables",
     "maxSampledTexturesPerShaderStage",
     "maxSamplersPerShaderStage",
@@ -58318,6 +58337,7 @@
   "address spaces": [
     "function",
     "handle",
+    "immediate",
     "private",
     "storage",
     "uniform",
@@ -64808,6 +64828,7 @@
     "output languages"
   ],
   "language_extension": [
+    "immediate_data",
     "linear_indexing",
     "packed_4x8_integer_dot_product",
     "pointer_composite_access",
@@ -65732,9 +65753,6 @@
   "navigation style values": [
     "custom",
     "default"
-  ],
-  "navigation-location": [
-    "match"
   ],
   "nested configs": [
     "value",
@@ -67868,6 +67886,9 @@
     "x",
     "y",
     "z"
+  ],
+  "route-location": [
+    "match"
   ],
   "row-gap": [
     "normal"
@@ -70025,6 +70046,7 @@
     "maxComputeWorkgroupsPerDimension",
     "maxDynamicStorageBuffersPerPipelineLayout",
     "maxDynamicUniformBuffersPerPipelineLayout",
+    "maxImmediateSize",
     "maxInterStageShaderVariables",
     "maxSampledTexturesPerShaderStage",
     "maxSamplersPerShaderStage",
