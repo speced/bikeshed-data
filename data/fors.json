@@ -982,6 +982,7 @@
     "<init-descriptor-name>",
     "<init-descriptor>",
     "<init-descriptors>",
+    "<inset-value>",
     "<int/>",
     "<integer>",
     "<integers/>",
@@ -9001,6 +9002,7 @@
     "WebDriver configuration",
     "WebDriver new session algorithms",
     "WebDriver node id",
+    "WebDriver session",
     "WebExtensionCommand",
     "WebExtensionResult",
     "WebGL2RenderingContext",
@@ -9711,6 +9713,7 @@
     "active touch point",
     "active touch point id",
     "active touch point list",
+    "active virtual wallet behavior",
     "active window",
     "active writer",
     "active-after boundary time",
@@ -10678,6 +10681,7 @@
     "block start point",
     "block stretch size constraint",
     "block-axis",
+    "block-axis scroll container",
     "block-ellipsis",
     "block-end",
     "block-extend",
@@ -11657,6 +11661,8 @@
     "color re-rendering",
     "color renderable format",
     "color scheme",
+    "color scheme preference",
+    "color scheme support",
     "color scheme values",
     "color space",
     "color stop",
@@ -13268,6 +13274,10 @@
     "digital publications",
     "digital signature",
     "digital signatures",
+    "digitalCredentials.SetVirtualWalletBehavior",
+    "digitalCredentials.SetVirtualWalletBehaviorParameters",
+    "digitalCredentials.SetVirtualWalletBehaviorResult",
+    "digitalCredentials.VirtualWalletAction",
     "digitizer",
     "dimension",
     "dimension attribute source",
@@ -13517,6 +13527,7 @@
     "dt",
     "dtend",
     "dtstart",
+    "dual-axis scroll container",
     "dubbing",
     "dubbing script",
     "duplex stream",
@@ -13587,6 +13598,7 @@
     "elected groups",
     "element",
     "element click intercepted",
+    "element color scheme",
     "element contents",
     "element count",
     "element definition is running",
@@ -15168,6 +15180,7 @@
     "handle object map",
     "handle response end-of-body",
     "handle transition frame",
+    "handle virtual wallet behavior",
     "handleJavascriptNavigationUrls",
     "handleNewFrame",
     "handler",
@@ -15778,6 +15791,7 @@
     "inline start",
     "inline stretch size constraint",
     "inline-axis",
+    "inline-axis scroll container",
     "inline-base direction",
     "inline-block",
     "inline-end",
@@ -17588,6 +17602,7 @@
     "nearest inclusive target popover",
     "nearest neighbor",
     "nearest same-origin root",
+    "nearest scroll container",
     "nearest scrollport",
     "need new subpath",
     "need random access point flag",
@@ -18305,6 +18320,7 @@
     "page border",
     "page box",
     "page break",
+    "page color scheme",
     "page context",
     "page credentialless nonce",
     "page footer",
@@ -18324,6 +18340,7 @@
     "page type selector",
     "page visibility change steps",
     "page zoom",
+    "page's supported color scheme",
     "page's supported color schemes",
     "page-break-after",
     "page-break-before",
@@ -20775,6 +20792,7 @@
     "scroll-timeline",
     "scroll-timeline-axis",
     "scroll-timeline-name",
+    "scrollable axis",
     "scrollable containing block",
     "scrollable overflow",
     "scrollable overflow area",
@@ -21112,7 +21130,6 @@
     "session.UserPromptHandler",
     "session.UserPromptHandlerType",
     "session.new",
-    "sessions",
     "sessions by id map",
     "set",
     "set MouseEvent attributes from native",
@@ -21416,6 +21433,7 @@
     "single byte content-range",
     "single pointer",
     "single pointer input",
+    "single-axis scroll container",
     "single-byte decoder",
     "single-byte encoder",
     "single-byte encoding",
@@ -21473,7 +21491,9 @@
     "smooth scroll aborted",
     "smooth scroll completed",
     "snap a length as a border width",
+    "snap a length as a line width",
     "snap as a border width",
+    "snap as a line width",
     "snap target",
     "snapshot containing block",
     "snapshot containing block origin",
@@ -23704,6 +23724,7 @@
     "writing-mode",
     "x",
     "x-axis",
+    "x-axis scroll container",
     "x-height",
     "x-height baseline",
     "x-mac-cyrillic",
@@ -23717,6 +23738,7 @@
     "xor",
     "y",
     "y-axis",
+    "y-axis scroll container",
     "yearless date",
     "yellow",
     "yellowgreen",
@@ -24321,6 +24343,9 @@
     "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
     "auto",
     "span && [ <integer [1,∞]> || <custom-ident> ]"
+  ],
+  "<inset-value>": [
+    "overlap-join"
   ],
   "<layout-box>": [
     "border-box",
@@ -25112,6 +25137,7 @@
     "speech",
     "tty",
     "tv",
+    "ua-color-scheme",
     "update",
     "vertical-viewport-segments",
     "video-color-gamut",
@@ -25210,6 +25236,10 @@
   "@media/shape": [
     "rect",
     "round"
+  ],
+  "@media/ua-color-scheme": [
+    "dark",
+    "light"
   ],
   "@media/update": [
     "fast",
@@ -61002,6 +61032,10 @@
     "represented by the collection",
     "static collection"
   ],
+  "color scheme": [
+    "default",
+    "overriding preference"
+  ],
   "color serialization": [
     "HTML-compatible serialization is requested"
   ],
@@ -61872,6 +61906,24 @@
     "Protocol identifier",
     "issuance request data",
     "request data"
+  ],
+  "digitalCredentials.SetVirtualWalletBehavior": [
+    "\"digitalCredentials.setVirtualWalletBehavior\"",
+    "method",
+    "params"
+  ],
+  "digitalCredentials.SetVirtualWalletBehaviorParameters": [
+    "action",
+    "context",
+    "protocol",
+    "response",
+    "text"
+  ],
+  "digitalCredentials.VirtualWalletAction": [
+    "\"clear\"",
+    "\"decline\"",
+    "\"respond\"",
+    "\"wait\""
   ],
   "direction": [
     "ltr",
