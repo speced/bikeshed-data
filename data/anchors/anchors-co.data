@@ -7148,6 +7148,61 @@ https://www.w3.org/TR/wot-architecture11/#dfn-connected-device
 
 
 -
+connection allowlist
+Connection Allowlist
+dfn
+connection-allowlists
+connection-allowlists
+1
+current
+https://wicg.github.io/connection-allowlists/#connection-allowlist
+
+1
+-
+connection-allowlist
+Connection-Allowlist
+http-header
+connection-allowlists
+connection-allowlists
+1
+current
+https://wicg.github.io/connection-allowlists/#http-headerdef-connection-allowlist
+1
+1
+-
+connection-allowlist-report-only
+Connection-Allowlist-Report-Only
+http-header
+connection-allowlists
+connection-allowlists
+1
+current
+https://wicg.github.io/connection-allowlists/#http-headerdef-connection-allowlist-report-only
+1
+1
+-
+ConnectionAllowlistDisposition
+ConnectionAllowlistDisposition
+enum
+connection-allowlists
+connection-allowlists
+1
+current
+https://wicg.github.io/connection-allowlists/#enumdef-connectionallowlistdisposition
+1
+1
+-
+ConnectionAllowlistViolationReport
+ConnectionAllowlistViolationReport
+dictionary
+connection-allowlists
+connection-allowlists
+1
+current
+https://wicg.github.io/connection-allowlists/#dictdef-connectionallowlistviolationreport
+1
+1
+-
 ConnectionType
 ConnectionType
 enum
@@ -29483,6 +29538,18 @@ MIDIPort
 -
 connection
 connection
+dict-member
+connection-allowlists
+connection-allowlists
+1
+current
+https://wicg.github.io/connection-allowlists/#dom-connectionallowlistviolationreport-connection
+1
+1
+ConnectionAllowlistViolationReport
+-
+connection
+connection
 attribute
 netinfo
 netinfo
@@ -29596,6 +29663,18 @@ https://www.w3.org/TR/webmidi/#dom-midiport-connection
 1
 1
 MIDIPort
+-
+connection allowlists
+connection allowlists
+dfn
+connection-allowlists
+connection-allowlists
+1
+current
+https://wicg.github.io/connection-allowlists/#policy-container-connection-allowlists
+
+1
+policy container
 -
 connection end time
 connection end time
@@ -39899,10 +39978,10 @@ webrtc-encoded-transform
 webrtc-encoded-transform
 1
 current
-https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframereceivertransform-rtcsframereceivertransform
+https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframedecrypter-rtcrtpsframedecrypter
 1
 1
-RTCSFrameReceiverTransform
+RTCRtpSFrameDecrypter
 -
 constructor(options)
 constructor(options)
@@ -39911,10 +39990,10 @@ webrtc-encoded-transform
 webrtc-encoded-transform
 1
 current
-https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframesendertransform-rtcsframesendertransform
+https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypter-rtcrtpsframeencrypter
 1
 1
-RTCSFrameSenderTransform
+RTCRtpSFrameEncrypter
 -
 constructor(options)
 constructor(options)
