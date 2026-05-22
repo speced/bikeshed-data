@@ -11048,6 +11048,8 @@
     "browsingContext.LocateNodesParameters",
     "browsingContext.LocateNodesResult",
     "browsingContext.Locator",
+    "browsingContext.MediaStreamOptions",
+    "browsingContext.MediaTrackConstraints",
     "browsingContext.Navigate",
     "browsingContext.NavigateParameters",
     "browsingContext.NavigateResult",
@@ -11066,12 +11068,19 @@
     "browsingContext.Reload",
     "browsingContext.ReloadParameters",
     "browsingContext.ReloadResult",
+    "browsingContext.Screencast",
     "browsingContext.SetBypassCSP",
     "browsingContext.SetBypassCSPParameters",
     "browsingContext.SetBypassCSPResult",
     "browsingContext.SetViewport",
     "browsingContext.SetViewportParameters",
     "browsingContext.SetViewportResult",
+    "browsingContext.StartScreencast",
+    "browsingContext.StartScreencastParameters",
+    "browsingContext.StartScreencastResult",
+    "browsingContext.StopScreencast",
+    "browsingContext.StopScreencastParameters",
+    "browsingContext.StopScreencastResult",
     "browsingContext.TraverseHistory",
     "browsingContext.TraverseHistoryParameters",
     "browsingContext.TraverseHistoryResult",
@@ -20638,6 +20647,9 @@
     "screen wake lock",
     "screen wake lock task source",
     "screenPixelRatio",
+    "screencast recording",
+    "screencast recordings map",
+    "screencast stream",
     "screenshots object",
     "script",
     "script domain",
@@ -21849,6 +21861,7 @@
     "start a presentation from a default presentation request",
     "start a referrer-initiated navigational prefetch",
     "start a referrer-initiated navigational prerender",
+    "start a screencast recording",
     "start an idle period",
     "start closing a presentation connection",
     "start closing the presentation connection",
@@ -21943,6 +21956,7 @@
     "sticky-positioned",
     "sticky-positioned box",
     "stop",
+    "stop a screencast recording",
     "stop all sources",
     "stop haptic effects",
     "stop intersection-observing a lazy loading element",
@@ -35127,6 +35141,7 @@
     "\"no such network data\"",
     "\"no such node\"",
     "\"no such request\"",
+    "\"no such screencast\"",
     "\"no such script\"",
     "\"no such storage partition\"",
     "\"no such user context\"",
@@ -35156,6 +35171,7 @@
     "no such network data",
     "no such node",
     "no such request",
+    "no such screencast",
     "no such script",
     "no such storage partition",
     "no such user context",
@@ -60498,6 +60514,20 @@
     "\"nodes\"",
     "nodes"
   ],
+  "browsingContext.MediaStreamOptions": [
+    "\"audio\"",
+    "\"video\"",
+    "audio",
+    "video"
+  ],
+  "browsingContext.MediaTrackConstraints": [
+    "\"frameRate\"",
+    "\"height\"",
+    "\"width\"",
+    "frameRate",
+    "height",
+    "width"
+  ],
   "browsingContext.Navigate": [
     "\"method\"",
     "\"params\"",
@@ -60679,6 +60709,50 @@
     "devicePixelRatio",
     "userContexts",
     "viewport"
+  ],
+  "browsingContext.StartScreencast": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.StartScreencast/method": [
+    "\"browsingContext.startScreencast\"",
+    "browsingContext.startScreencast"
+  ],
+  "browsingContext.StartScreencastParameters": [
+    "\"context\"",
+    "\"mimeType\"",
+    "\"streamOptions\"",
+    "context",
+    "mimeType",
+    "streamOptions"
+  ],
+  "browsingContext.StartScreencastResult": [
+    "\"path\"",
+    "\"screencast\"",
+    "path",
+    "screencast"
+  ],
+  "browsingContext.StopScreencast": [
+    "\"method\"",
+    "\"params\"",
+    "method",
+    "params"
+  ],
+  "browsingContext.StopScreencast/method": [
+    "\"browsingContext.stopScreencast\"",
+    "browsingContext.stopScreencast"
+  ],
+  "browsingContext.StopScreencastParameters": [
+    "\"screencast\"",
+    "screencast"
+  ],
+  "browsingContext.StopScreencastResult": [
+    "\"error\"",
+    "\"path\"",
+    "error",
+    "path"
   ],
   "browsingContext.TraverseHistory": [
     "\"method\"",
@@ -61230,6 +61304,8 @@
     "browsingContext.reload",
     "browsingContext.setBypassCSP",
     "browsingContext.setViewport",
+    "browsingContext.startScreencast",
+    "browsingContext.stopScreencast",
     "browsingContext.traverseHistory",
     "emulation.setForcedColorsModeThemeOverride",
     "emulation.setGeolocationOverride",
@@ -62669,6 +62745,7 @@
     "no such network data",
     "no such node",
     "no such request",
+    "no such screencast",
     "no such script",
     "no such storage partition",
     "no such user context",
@@ -68244,6 +68321,16 @@
   "screen settings overrides": [
     "navigable screen settings",
     "user context screen settings"
+  ],
+  "screencast recording": [
+    "path",
+    "state",
+    "stream",
+    "writeError"
+  ],
+  "screencast stream": [
+    "audio track",
+    "video track"
   ],
   "script": [
     "Fetch options",
