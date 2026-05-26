@@ -11210,7 +11210,6 @@
     "can make payment algorithm",
     "can't be displayed",
     "canExcludeRoot",
-    "cancel",
     "cancel a hit test source",
     "cancel a hit test source for transient input",
     "cancel a readable stream",
@@ -13793,13 +13792,11 @@
     "encryption",
     "enctype",
     "end",
-    "end any settled transaction",
     "end delay",
     "end of iteration",
     "end page value",
     "end segment endpoint",
     "end the session",
-    "end the transaction",
     "end time",
     "end-tag-with-attributes",
     "end-tag-with-trailing-solidus",
@@ -18690,8 +18687,6 @@
     "pending top layer removals",
     "pending write tuple",
     "pending-substitution value",
-    "pendingDisposition",
-    "pendingException",
     "people",
     "per-site privacy budget",
     "per-type virtual sensor metadata",
@@ -19388,7 +19383,6 @@
     "proleptic Gregorian calendar",
     "proleptic-Gregorian date",
     "prolog",
-    "promise",
     "promise rejection delay",
     "promise type",
     "prompt handler configuration",
@@ -51793,10 +51787,10 @@
     "assignedSlot"
   ],
   "SmartCardAccessMode": [
-    "corresponding",
-    "direct",
-    "exclusive",
-    "shared"
+    "\"direct\"",
+    "\"exclusive\"",
+    "\"shared\"",
+    "corresponding"
   ],
   "SmartCardConnectOptions": [
     "preferredProtocols"
@@ -51811,32 +51805,63 @@
     "[[context]]",
     "[[readerName]]",
     "[[transactionState]]",
-    "control()",
+    "cancel",
     "control(controlCode, data)",
     "disconnect()",
     "disconnect(disposition)",
-    "getAttribute()",
+    "end any settled transaction",
+    "end the transaction",
     "getAttribute(tag)",
-    "setAttribute()",
     "setAttribute(tag, value)",
-    "startTransaction()",
     "startTransaction(transaction)",
     "startTransaction(transaction, options)",
     "status()",
-    "transmit()",
     "transmit(sendBuffer)",
     "transmit(sendBuffer, options)"
   ],
+  "SmartCardConnection/control(controlCode, data)": [
+    "controlCode",
+    "data"
+  ],
+  "SmartCardConnection/disconnect()": [
+    "disposition"
+  ],
+  "SmartCardConnection/disconnect(disposition)": [
+    "disposition"
+  ],
+  "SmartCardConnection/getAttribute(tag)": [
+    "tag"
+  ],
+  "SmartCardConnection/setAttribute(tag, value)": [
+    "tag",
+    "value"
+  ],
+  "SmartCardConnection/startTransaction(transaction)": [
+    "options",
+    "transaction"
+  ],
+  "SmartCardConnection/startTransaction(transaction, options)": [
+    "options",
+    "transaction"
+  ],
+  "SmartCardConnection/transmit(sendBuffer)": [
+    "options",
+    "sendBuffer"
+  ],
+  "SmartCardConnection/transmit(sendBuffer, options)": [
+    "options",
+    "sendBuffer"
+  ],
   "SmartCardConnectionState": [
-    "absent",
-    "corresponding",
-    "negotiable",
-    "powered",
-    "present",
-    "raw",
-    "swallowed",
-    "t0",
-    "t1"
+    "\"absent\"",
+    "\"negotiable\"",
+    "\"powered\"",
+    "\"present\"",
+    "\"raw\"",
+    "\"swallowed\"",
+    "\"t0\"",
+    "\"t1\"",
+    "corresponding"
   ],
   "SmartCardConnectionStatus": [
     "answerToReset",
@@ -51850,26 +51875,69 @@
     "[[resourceManager]]",
     "[[signal]]",
     "[[tracker]]",
-    "connect()",
     "connect(readerName, accessMode)",
     "connect(readerName, accessMode, options)",
-    "getStatusChange()",
     "getStatusChange(readerStates)",
     "getStatusChange(readerStates, options)",
     "listReaders()"
   ],
+  "SmartCardContext/connect(readerName, accessMode)": [
+    "accessMode",
+    "options",
+    "readerName"
+  ],
+  "SmartCardContext/connect(readerName, accessMode, options)": [
+    "accessMode",
+    "options",
+    "readerName"
+  ],
+  "SmartCardContext/getStatusChange(readerStates)": [
+    "options",
+    "readerStates"
+  ],
+  "SmartCardContext/getStatusChange(readerStates, options)": [
+    "options",
+    "readerStates"
+  ],
   "SmartCardDisposition": [
-    "eject",
-    "leave",
-    "reset",
-    "unpower"
+    "\"eject\"",
+    "\"leave\"",
+    "\"reset\"",
+    "\"unpower\""
   ],
   "SmartCardError": [
+    "SmartCardError()",
+    "SmartCardError(message)",
+    "SmartCardError(message, options)",
     "constructor()",
-    "constructor(options)",
-    "constructor(options, message)",
+    "constructor(message)",
+    "constructor(message, options)",
     "corresponding",
     "responseCode"
+  ],
+  "SmartCardError/SmartCardError()": [
+    "message",
+    "options"
+  ],
+  "SmartCardError/SmartCardError(message)": [
+    "message",
+    "options"
+  ],
+  "SmartCardError/SmartCardError(message, options)": [
+    "message",
+    "options"
+  ],
+  "SmartCardError/constructor()": [
+    "message",
+    "options"
+  ],
+  "SmartCardError/constructor(message)": [
+    "message",
+    "options"
+  ],
+  "SmartCardError/constructor(message, options)": [
+    "message",
+    "options"
   ],
   "SmartCardErrorOptions": [
     "responseCode"
@@ -51879,10 +51947,10 @@
     "timeout"
   ],
   "SmartCardProtocol": [
+    "\"raw\"",
+    "\"t0\"",
+    "\"t1\"",
     "corresponding flags",
-    "raw",
-    "t0",
-    "t1",
     "valid protocol value"
   ],
   "SmartCardReaderStateFlagsIn": [
@@ -51927,22 +51995,22 @@
     "establishContext()"
   ],
   "SmartCardResponseCode": [
-    "no-service",
-    "no-smartcard",
-    "not-ready",
-    "not-transacted",
-    "proto-mismatch",
-    "reader-unavailable",
-    "removed-card",
-    "reset-card",
-    "server-too-busy",
-    "sharing-violation",
-    "system-cancelled",
-    "unknown-reader",
-    "unpowered-card",
-    "unresponsive-card",
-    "unsupported-card",
-    "unsupported-feature"
+    "\"no-service\"",
+    "\"no-smartcard\"",
+    "\"not-ready\"",
+    "\"not-transacted\"",
+    "\"proto-mismatch\"",
+    "\"reader-unavailable\"",
+    "\"removed-card\"",
+    "\"reset-card\"",
+    "\"server-too-busy\"",
+    "\"sharing-violation\"",
+    "\"system-cancelled\"",
+    "\"unknown-reader\"",
+    "\"unpowered-card\"",
+    "\"unresponsive-card\"",
+    "\"unsupported-card\"",
+    "\"unsupported-feature\""
   ],
   "SmartCardTransactionOptions": [
     "signal"
@@ -71242,6 +71310,11 @@
     "start",
     "started",
     "state"
+  ],
+  "transaction state": [
+    "pendingDisposition",
+    "pendingException",
+    "promise"
   ],
   "transform": [
     "matrix()",
