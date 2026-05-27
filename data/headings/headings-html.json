@@ -461,6 +461,9 @@
   "#compositing": [
     "/canvas#compositing"
   ],
+  "#configuration-invariants": [
+    "/dynamic-markup-insertion#configuration-invariants"
+  ],
   "#configuring-a-form-to-communicate-with-a-server": [
     "/forms#configuring-a-form-to-communicate-with-a-server"
   ],
@@ -1129,6 +1132,12 @@
   "#html-element-constructors": [
     "/dom#html-element-constructors"
   ],
+  "#html-parsing-methods": [
+    "/dynamic-markup-insertion#html-parsing-methods"
+  ],
+  "#html-sanitization": [
+    "/dynamic-markup-insertion#html-sanitization"
+  ],
   "#html-serialization-methods": [
     "/dynamic-markup-insertion#html-serialization-methods"
   ],
@@ -1292,19 +1301,22 @@
     "/webappapis#introduction-11"
   ],
   "#introduction-12": [
-    "/web-messaging#introduction-12"
+    "/dynamic-markup-insertion#introduction-12"
   ],
   "#introduction-13": [
     "/web-messaging#introduction-13"
   ],
   "#introduction-14": [
-    "/workers#introduction-14"
+    "/web-messaging#introduction-14"
   ],
   "#introduction-15": [
-    "/webstorage#introduction-15"
+    "/workers#introduction-15"
   ],
   "#introduction-16": [
-    "/rendering#introduction-16"
+    "/webstorage#introduction-16"
+  ],
+  "#introduction-17": [
+    "/rendering#introduction-17"
   ],
   "#introduction-2": [
     "/links#introduction-2"
@@ -2131,6 +2143,9 @@
   "#runtime-script-errors-2": [
     "/workers#runtime-script-errors-2"
   ],
+  "#safe-and-unsafe": [
+    "/dynamic-markup-insertion#safe-and-unsafe"
+  ],
   "#safe-passing-of-structured-data": [
     "/structured-data#safe-passing-of-structured-data"
   ],
@@ -2139,6 +2154,30 @@
   ],
   "#sandboxing": [
     "/browsers#sandboxing"
+  ],
+  "#sanitization-algorithms": [
+    "/dynamic-markup-insertion#sanitization-algorithms"
+  ],
+  "#sanitization-constants": [
+    "/dynamic-markup-insertion#sanitization-constants"
+  ],
+  "#sanitizer-configuration": [
+    "/dynamic-markup-insertion#sanitizer-configuration"
+  ],
+  "#sanitizer-security-considerations": [
+    "/dynamic-markup-insertion#sanitizer-security-considerations"
+  ],
+  "#sanitizer-security-dom-clobbering": [
+    "/dynamic-markup-insertion#sanitizer-security-dom-clobbering"
+  ],
+  "#sanitizer-security-mxss": [
+    "/dynamic-markup-insertion#sanitizer-security-mxss"
+  ],
+  "#sanitizer-security-script-gadgets": [
+    "/dynamic-markup-insertion#sanitizer-security-script-gadgets"
+  ],
+  "#sanitizer-security-server-reflected": [
+    "/dynamic-markup-insertion#sanitizer-security-server-reflected"
   ],
   "#scope": [
     "/introduction#scope"
@@ -3180,6 +3219,9 @@
   "#the-samp-element": [
     "/text-level-semantics#the-samp-element"
   ],
+  "#the-sanitizer-interface": [
+    "/dynamic-markup-insertion#the-sanitizer-interface"
+  ],
   "#the-script-element": [
     "/scripting#the-script-element"
   ],
@@ -3422,9 +3464,6 @@
   ],
   "#unloading-documents": [
     "/document-lifecycle#unloading-documents"
-  ],
-  "#unsafe-html-parsing-methods": [
-    "/dynamic-markup-insertion#unsafe-html-parsing-methods"
   ],
   "#unstyled-xml-documents": [
     "/rendering#unstyled-xml-documents"
@@ -5464,6 +5503,14 @@
       "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#closing-the-input-stream"
     }
   },
+  "/dynamic-markup-insertion#configuration-invariants": {
+    "current": {
+      "number": "8.6.3.1",
+      "spec": "HTML",
+      "text": "Configuration invariants",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configuration-invariants"
+    }
+  },
   "/dynamic-markup-insertion#document.write()": {
     "current": {
       "number": "8.4.3",
@@ -5496,6 +5543,22 @@
       "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dynamic-markup-insertion"
     }
   },
+  "/dynamic-markup-insertion#html-parsing-methods": {
+    "current": {
+      "number": "8.5.2",
+      "spec": "HTML",
+      "text": "HTML parsing methods",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods"
+    }
+  },
+  "/dynamic-markup-insertion#html-sanitization": {
+    "current": {
+      "number": "8.6",
+      "spec": "HTML",
+      "text": "HTML sanitization",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
+    }
+  },
   "/dynamic-markup-insertion#html-serialization-methods": {
     "current": {
       "number": "8.5.3",
@@ -5504,12 +5567,92 @@
       "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods"
     }
   },
+  "/dynamic-markup-insertion#introduction-12": {
+    "current": {
+      "number": "8.6.1",
+      "spec": "HTML",
+      "text": "Introduction",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#introduction-12"
+    }
+  },
   "/dynamic-markup-insertion#opening-the-input-stream": {
     "current": {
       "number": "8.4.1",
       "spec": "HTML",
       "text": "Opening the input stream",
       "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#opening-the-input-stream"
+    }
+  },
+  "/dynamic-markup-insertion#safe-and-unsafe": {
+    "current": {
+      "number": "8.6.1.1",
+      "spec": "HTML",
+      "text": "Safe and unsafe",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#safe-and-unsafe"
+    }
+  },
+  "/dynamic-markup-insertion#sanitization-algorithms": {
+    "current": {
+      "number": "8.6.4",
+      "spec": "HTML",
+      "text": "Sanitization algorithms",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms"
+    }
+  },
+  "/dynamic-markup-insertion#sanitization-constants": {
+    "current": {
+      "number": "8.6.5",
+      "spec": "HTML",
+      "text": "Sanitization constants",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants"
+    }
+  },
+  "/dynamic-markup-insertion#sanitizer-configuration": {
+    "current": {
+      "number": "8.6.3",
+      "spec": "HTML",
+      "text": "Sanitizer configuration",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration"
+    }
+  },
+  "/dynamic-markup-insertion#sanitizer-security-considerations": {
+    "current": {
+      "number": "8.6.6",
+      "spec": "HTML",
+      "text": "Security considerations",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-security-considerations"
+    }
+  },
+  "/dynamic-markup-insertion#sanitizer-security-dom-clobbering": {
+    "current": {
+      "number": "8.6.6.2",
+      "spec": "HTML",
+      "text": "DOM clobbering",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-security-dom-clobbering"
+    }
+  },
+  "/dynamic-markup-insertion#sanitizer-security-mxss": {
+    "current": {
+      "number": "8.6.6.4",
+      "spec": "HTML",
+      "text": "Mutation XSS",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-security-mxss"
+    }
+  },
+  "/dynamic-markup-insertion#sanitizer-security-script-gadgets": {
+    "current": {
+      "number": "8.6.6.3",
+      "spec": "HTML",
+      "text": "XSS with script gadgets",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-security-script-gadgets"
+    }
+  },
+  "/dynamic-markup-insertion#sanitizer-security-server-reflected": {
+    "current": {
+      "number": "8.6.6.1",
+      "spec": "HTML",
+      "text": "Server-side reflected and stored XSS",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-security-server-reflected"
     }
   },
   "/dynamic-markup-insertion#the-createcontextualfragment()-method": {
@@ -5552,20 +5695,20 @@
       "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-outerhtml-property"
     }
   },
+  "/dynamic-markup-insertion#the-sanitizer-interface": {
+    "current": {
+      "number": "8.6.2",
+      "spec": "HTML",
+      "text": "The Sanitizer interface",
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface"
+    }
+  },
   "/dynamic-markup-insertion#the-xmlserializer-interface": {
     "current": {
       "number": "8.5.8",
       "spec": "HTML",
       "text": "The XMLSerializer interface",
       "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-xmlserializer-interface"
-    }
-  },
-  "/dynamic-markup-insertion#unsafe-html-parsing-methods": {
-    "current": {
-      "number": "8.5.2",
-      "spec": "HTML",
-      "text": "Unsafe HTML parsing methods",
-      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods"
     }
   },
   "/edits#attributes-common-to-ins-and-del-elements": {
@@ -6418,7 +6561,7 @@
   },
   "/imagebitmap-and-animations#animation-frames": {
     "current": {
-      "number": "8.11",
+      "number": "8.12",
       "spec": "HTML",
       "text": "Animation frames",
       "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames"
@@ -6426,7 +6569,7 @@
   },
   "/imagebitmap-and-animations#images-2": {
     "current": {
-      "number": "8.10",
+      "number": "8.11",
       "spec": "HTML",
       "text": "Images",
       "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#images-2"
@@ -6434,7 +6577,7 @@
   },
   "/imagebitmap-and-animations#the-imagebitmap-interface": {
     "current": {
-      "number": "8.10.2",
+      "number": "8.11.2",
       "spec": "HTML",
       "text": "The ImageBitmap interface",
       "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface"
@@ -6442,7 +6585,7 @@
   },
   "/imagebitmap-and-animations#the-imagedata-interface": {
     "current": {
-      "number": "8.10.1",
+      "number": "8.11.1",
       "spec": "HTML",
       "text": "The ImageData interface",
       "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface"
@@ -10464,12 +10607,12 @@
       "url": "https://html.spec.whatwg.org/multipage/rendering.html#interactive-media"
     }
   },
-  "/rendering#introduction-16": {
+  "/rendering#introduction-17": {
     "current": {
       "number": "15.1",
       "spec": "HTML",
       "text": "Introduction",
-      "url": "https://html.spec.whatwg.org/multipage/rendering.html#introduction-16"
+      "url": "https://html.spec.whatwg.org/multipage/rendering.html#introduction-17"
     }
   },
   "/rendering#links%2C-forms%2C-and-navigation": {
@@ -11666,7 +11809,7 @@
   },
   "/system-state#client-identification": {
     "current": {
-      "number": "8.9.1.1",
+      "number": "8.10.1.1",
       "spec": "HTML",
       "text": "Client identification",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification"
@@ -11674,7 +11817,7 @@
   },
   "/system-state#cookies": {
     "current": {
-      "number": "8.9.1.5",
+      "number": "8.10.1.5",
       "spec": "HTML",
       "text": "Cookies",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#cookies"
@@ -11682,7 +11825,7 @@
   },
   "/system-state#custom-handlers": {
     "current": {
-      "number": "8.9.1.4",
+      "number": "8.10.1.4",
       "spec": "HTML",
       "text": "Custom scheme handlers: the registerProtocolHandler() method",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers"
@@ -11690,7 +11833,7 @@
   },
   "/system-state#language-preferences": {
     "current": {
-      "number": "8.9.1.2",
+      "number": "8.10.1.2",
       "spec": "HTML",
       "text": "Language preferences",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences"
@@ -11698,7 +11841,7 @@
   },
   "/system-state#navigator.online": {
     "current": {
-      "number": "8.9.1.3",
+      "number": "8.10.1.3",
       "spec": "HTML",
       "text": "Browser state",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online"
@@ -11706,7 +11849,7 @@
   },
   "/system-state#pdf-viewing-support": {
     "current": {
-      "number": "8.9.1.6",
+      "number": "8.10.1.6",
       "spec": "HTML",
       "text": "PDF viewing support",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support"
@@ -11714,7 +11857,7 @@
   },
   "/system-state#security-and-privacy": {
     "current": {
-      "number": "8.9.1.4.1",
+      "number": "8.10.1.4.1",
       "spec": "HTML",
       "text": "Security and privacy",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#security-and-privacy"
@@ -11722,7 +11865,7 @@
   },
   "/system-state#system-state-and-capabilities": {
     "current": {
-      "number": "8.9",
+      "number": "8.10",
       "spec": "HTML",
       "text": "System state and capabilities",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#system-state-and-capabilities"
@@ -11730,7 +11873,7 @@
   },
   "/system-state#the-navigator-object": {
     "current": {
-      "number": "8.9.1",
+      "number": "8.10.1",
       "spec": "HTML",
       "text": "The Navigator object",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object"
@@ -11738,7 +11881,7 @@
   },
   "/system-state#user-agent-automation": {
     "current": {
-      "number": "8.9.1.4.2",
+      "number": "8.10.1.4.2",
       "spec": "HTML",
       "text": "User agent automation",
       "url": "https://html.spec.whatwg.org/multipage/system-state.html#user-agent-automation"
@@ -12130,7 +12273,7 @@
   },
   "/timers-and-user-prompts#microtask-queuing": {
     "current": {
-      "number": "8.7",
+      "number": "8.8",
       "spec": "HTML",
       "text": "Microtask queuing",
       "url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#microtask-queuing"
@@ -12138,7 +12281,7 @@
   },
   "/timers-and-user-prompts#printing": {
     "current": {
-      "number": "8.8.2",
+      "number": "8.9.2",
       "spec": "HTML",
       "text": "Printing",
       "url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing"
@@ -12146,7 +12289,7 @@
   },
   "/timers-and-user-prompts#simple-dialogs": {
     "current": {
-      "number": "8.8.1",
+      "number": "8.9.1",
       "spec": "HTML",
       "text": "Simple dialogs",
       "url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs"
@@ -12154,7 +12297,7 @@
   },
   "/timers-and-user-prompts#timers": {
     "current": {
-      "number": "8.6",
+      "number": "8.7",
       "spec": "HTML",
       "text": "Timers",
       "url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers"
@@ -12162,7 +12305,7 @@
   },
   "/timers-and-user-prompts#user-prompts": {
     "current": {
-      "number": "8.8",
+      "number": "8.9",
       "spec": "HTML",
       "text": "User prompts",
       "url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#user-prompts"
@@ -12312,20 +12455,20 @@
       "url": "https://html.spec.whatwg.org/multipage/web-messaging.html#examples-5"
     }
   },
-  "/web-messaging#introduction-12": {
+  "/web-messaging#introduction-13": {
     "current": {
       "number": "9.3.1",
       "spec": "HTML",
       "text": "Introduction",
-      "url": "https://html.spec.whatwg.org/multipage/web-messaging.html#introduction-12"
+      "url": "https://html.spec.whatwg.org/multipage/web-messaging.html#introduction-13"
     }
   },
-  "/web-messaging#introduction-13": {
+  "/web-messaging#introduction-14": {
     "current": {
       "number": "9.4.1",
       "spec": "HTML",
       "text": "Introduction",
-      "url": "https://html.spec.whatwg.org/multipage/web-messaging.html#introduction-13"
+      "url": "https://html.spec.whatwg.org/multipage/web-messaging.html#introduction-14"
     }
   },
   "/web-messaging#message-channels": {
@@ -12912,12 +13055,12 @@
       "url": "https://html.spec.whatwg.org/multipage/webstorage.html#implementation-risks"
     }
   },
-  "/webstorage#introduction-15": {
+  "/webstorage#introduction-16": {
     "current": {
       "number": "12.1",
       "spec": "HTML",
       "text": "Introduction",
-      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#introduction-15"
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#introduction-16"
     }
   },
   "/webstorage#privacy": {
@@ -13088,12 +13231,12 @@
       "url": "https://html.spec.whatwg.org/multipage/workers.html#infrastructure-2"
     }
   },
-  "/workers#introduction-14": {
+  "/workers#introduction-15": {
     "current": {
       "number": "10.1",
       "spec": "HTML",
       "text": "Introduction",
-      "url": "https://html.spec.whatwg.org/multipage/workers.html#introduction-14"
+      "url": "https://html.spec.whatwg.org/multipage/workers.html#introduction-15"
     }
   },
   "/workers#module-worker-example": {
