@@ -864,8 +864,8 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator
 1
 1
 -
-GeneratorFunction(...parameterArgs, bodyArg)
-GeneratorFunction(...parameterArgs, bodyArg)
+GeneratorFunction(...paramArgs, bodyArg)
+GeneratorFunction(...paramArgs, bodyArg)
 constructor
 ecmascript
 ecmascript
@@ -898,8 +898,8 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator
 1
 1
 -
-GeneratorResume(generator, value, generatorBrand)
-GeneratorResume(generator, value, generatorBrand)
+GeneratorResume(gen, value, genBrand)
+GeneratorResume(gen, value, genBrand)
 abstract-op
 ecmascript
 ecmascript
@@ -920,8 +920,8 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator
 1
 1
 -
-GeneratorResumeAbrupt(generator, abruptCompletion, generatorBrand)
-GeneratorResumeAbrupt(generator, abruptCompletion, generatorBrand)
+GeneratorResumeAbrupt(gen, abruptCompletion, genBrand)
+GeneratorResumeAbrupt(gen, abruptCompletion, genBrand)
 abstract-op
 ecmascript
 ecmascript
@@ -942,8 +942,8 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator
 1
 1
 -
-GeneratorStart(generator, generatorBody)
-GeneratorStart(generator, generatorBody)
+GeneratorStart(gen, genBody)
+GeneratorStart(gen, genBody)
 abstract-op
 ecmascript
 ecmascript
@@ -964,8 +964,8 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator
 1
 1
 -
-GeneratorValidate(generator, generatorBrand)
-GeneratorValidate(generator, generatorBrand)
+GeneratorValidate(gen, genBrand)
+GeneratorValidate(gen, genBrand)
 abstract-op
 ecmascript
 ecmascript
@@ -2305,8 +2305,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-GetIdentifierReference(env, name, strict)
-GetIdentifierReference(env, name, strict)
+GetIdentifierReference(envRecord, name, strict)
+GetIdentifierReference(envRecord, name, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -2437,8 +2437,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchindexpair
 1
 1
 -
-GetMatchIndexPair(str, match)
-GetMatchIndexPair(str, match)
+GetMatchIndexPair(string, match)
+GetMatchIndexPair(string, match)
 abstract-op
 ecmascript
 ecmascript
@@ -2459,8 +2459,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchstring
 1
 1
 -
-GetMatchString(str, match)
-GetMatchString(str, match)
+GetMatchString(string, match)
+GetMatchString(string, match)
 abstract-op
 ecmascript
 ecmascript
@@ -2680,8 +2680,8 @@ https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-getpromis
 1
 1
 -
-GetPromiseResolve(promiseConstructor)
-GetPromiseResolve(promiseConstructor)
+GetPromiseResolve(promiseCtor)
+GetPromiseResolve(promiseCtor)
 abstract-op
 ecmascript
 ecmascript
@@ -2702,8 +2702,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-GetPrototypeFromConstructor(constructor, intrinsicDefaultProto)
-GetPrototypeFromConstructor(constructor, intrinsicDefaultProto)
+GetPrototypeFromConstructor(ctor, intrinsicDefaultProto)
+GetPrototypeFromConstructor(ctor, intrinsicDefaultProto)
 abstract-op
 ecmascript
 ecmascript
@@ -2801,8 +2801,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-getstringindex
 1
 1
 -
-GetStringIndex(str, codePointIndex)
-GetStringIndex(str, codePointIndex)
+GetStringIndex(string, codePointIndex)
+GetStringIndex(string, codePointIndex)
 abstract-op
 ecmascript
 ecmascript
@@ -2823,8 +2823,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-getsubstitution
 1
 1
 -
-GetSubstitution(matched, str, position, captures, namedCaptures, replacementTemplate)
-GetSubstitution(matched, str, position, captures, namedCaptures, replacementTemplate)
+GetSubstitution(matched, string, position, captures, namedCaptures, replacementTemplate)
+GetSubstitution(matched, string, position, captures, namedCaptures, replacementTemplate)
 abstract-op
 ecmascript
 ecmascript
@@ -2845,8 +2845,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#se
 1
 1
 -
-GetSuperBase(envRec)
-GetSuperBase(envRec)
+GetSuperBase(envRecord)
+GetSuperBase(envRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -2993,8 +2993,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-gett
 1
 1
 -
-GetThisValue(referenceRecord)
-GetThisValue(referenceRecord)
+GetThisValue(refRecord)
+GetThisValue(refRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -3081,8 +3081,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getv
 1
 1
 -
-GetValue(referenceRecord)
-GetValue(referenceRecord)
+GetValue(refRecord)
+GetValue(refRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -8656,8 +8656,8 @@ https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-get
 1
 IDBObjectStore
 -
-get(target, propertyKey, receiver)
-get(target, propertyKey, receiver)
+get(target, key, receiver)
+get(target, key, receiver)
 method
 ecmascript
 ecmascript
@@ -13561,8 +13561,8 @@ https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-getoutputtimestamp
 1
 AudioContext
 -
-getOwnPropertyDescriptor(obj, propertyKey)
-getOwnPropertyDescriptor(obj, propertyKey)
+getOwnPropertyDescriptor(obj, key)
+getOwnPropertyDescriptor(obj, key)
 method
 ecmascript
 ecmascript
@@ -13573,8 +13573,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownprop
 1
 Object
 -
-getOwnPropertyDescriptor(target, propertyKey)
-getOwnPropertyDescriptor(target, propertyKey)
+getOwnPropertyDescriptor(target, key)
+getOwnPropertyDescriptor(target, key)
 method
 ecmascript
 ecmascript

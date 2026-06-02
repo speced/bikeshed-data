@@ -2744,8 +2744,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-DefineMethodProperty(homeObject, key, closure, enumerable)
-DefineMethodProperty(homeObject, key, closure, enumerable)
+DefineMethodProperty(homeObj, name, closure, enumerable)
+DefineMethodProperty(homeObj, name, closure, enumerable)
 abstract-op
 ecmascript
 ecmascript
@@ -2766,8 +2766,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-definepropertyort
 1
 1
 -
-DefinePropertyOrThrow(obj, propertyKey, desc)
-DefinePropertyOrThrow(obj, propertyKey, desc)
+DefinePropertyOrThrow(obj, propertyKey, propertyDesc)
+DefinePropertyOrThrow(obj, propertyKey, propertyDesc)
 abstract-op
 ecmascript
 ecmascript
@@ -11246,8 +11246,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineprop
 1
 Object
 -
-defineProperty(obj, propertyKey, attributes)
-defineProperty(obj, propertyKey, attributes)
+defineProperty(obj, key, attrs)
+defineProperty(obj, key, attrs)
 method
 ecmascript
 ecmascript
@@ -11258,8 +11258,8 @@ https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineprop
 1
 Object
 -
-defineProperty(target, propertyKey, attributes)
-defineProperty(target, propertyKey, attributes)
+defineProperty(target, key, attrs)
+defineProperty(target, key, attrs)
 method
 ecmascript
 ecmascript
@@ -13057,8 +13057,8 @@ https://immersive-web.github.io/anchors/#dom-xrsession-deletepersistentanchor
 1
 XRSession
 -
-deleteProperty(target, propertyKey)
-deleteProperty(target, propertyKey)
+deleteProperty(target, key)
+deleteProperty(target, key)
 method
 ecmascript
 ecmascript

@@ -301,9 +301,9 @@
     }
   },
   "AsyncFunction()": {
-    "AsyncFunction(...parameterArgs, bodyArg)": {
+    "AsyncFunction(...paramArgs, bodyArg)": {
       "args": [
-        "...parameterArgs",
+        "...paramArgs",
         "bodyArg"
       ],
       "for": [
@@ -313,9 +313,9 @@
     }
   },
   "AsyncGeneratorFunction()": {
-    "AsyncGeneratorFunction(...parameterArgs, bodyArg)": {
+    "AsyncGeneratorFunction(...paramArgs, bodyArg)": {
       "args": [
-        "...parameterArgs",
+        "...paramArgs",
         "bodyArg"
       ],
       "for": [
@@ -2684,9 +2684,9 @@
     }
   },
   "Function()": {
-    "Function(...parameterArgs, bodyArg)": {
+    "Function(...paramArgs, bodyArg)": {
       "args": [
-        "...parameterArgs",
+        "...paramArgs",
         "bodyArg"
       ],
       "for": [
@@ -2802,9 +2802,9 @@
     }
   },
   "GeneratorFunction()": {
-    "GeneratorFunction(...parameterArgs, bodyArg)": {
+    "GeneratorFunction(...paramArgs, bodyArg)": {
       "args": [
-        "...parameterArgs",
+        "...paramArgs",
         "bodyArg"
       ],
       "for": [
@@ -6203,6 +6203,17 @@
       ],
       "shortname": "service-workers"
     },
+    "add(ta, index, value)": {
+      "args": [
+        "ta",
+        "index",
+        "value"
+      ],
+      "for": [
+        "Atomics"
+      ],
+      "shortname": "ecmascript"
+    },
     "add(tokens)": {
       "args": [
         "tokens"
@@ -6220,17 +6231,6 @@
         "RdfGraph"
       ],
       "shortname": "json-ld-api"
-    },
-    "add(typedArray, index, value)": {
-      "args": [
-        "typedArray",
-        "index",
-        "value"
-      ],
-      "for": [
-        "Atomics"
-      ],
-      "shortname": "ecmascript"
     },
     "add(value)": {
       "args": [
@@ -6862,9 +6862,9 @@
     }
   },
   "and()": {
-    "and(typedArray, index, value)": {
+    "and(ta, index, value)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "value"
       ],
@@ -7088,11 +7088,11 @@
     }
   },
   "apply()": {
-    "apply(target, thisArgument, argumentsList)": {
+    "apply(target, thisArg, args)": {
       "args": [
         "target",
-        "thisArgument",
-        "argumentsList"
+        "thisArg",
+        "args"
       ],
       "for": [
         "Reflect"
@@ -8229,9 +8229,9 @@
     }
   },
   "charAt()": {
-    "charAt(pos)": {
+    "charAt(position)": {
       "args": [
-        "pos"
+        "position"
       ],
       "for": [
         "String"
@@ -8240,9 +8240,9 @@
     }
   },
   "charCodeAt()": {
-    "charCodeAt(pos)": {
+    "charCodeAt(position)": {
       "args": [
-        "pos"
+        "position"
       ],
       "for": [
         "String"
@@ -8808,9 +8808,9 @@
     }
   },
   "codePointAt()": {
-    "codePointAt(pos)": {
+    "codePointAt(position)": {
       "args": [
-        "pos"
+        "position"
       ],
       "for": [
         "String"
@@ -8956,9 +8956,9 @@
     }
   },
   "compareExchange()": {
-    "compareExchange(typedArray, index, expectedValue, replacementValue)": {
+    "compareExchange(ta, index, expectedValue, replacementValue)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "expectedValue",
         "replacementValue"
@@ -9302,10 +9302,10 @@
     }
   },
   "construct()": {
-    "construct(target, argumentsList, newTarget)": {
+    "construct(target, args, newTarget)": {
       "args": [
         "target",
-        "argumentsList",
+        "args",
         "newTarget"
       ],
       "for": [
@@ -14107,22 +14107,22 @@
     }
   },
   "defineProperty()": {
-    "defineProperty(obj, propertyKey, attributes)": {
+    "defineProperty(obj, key, attrs)": {
       "args": [
         "obj",
-        "propertyKey",
-        "attributes"
+        "key",
+        "attrs"
       ],
       "for": [
         "Object"
       ],
       "shortname": "ecmascript"
     },
-    "defineProperty(target, propertyKey, attributes)": {
+    "defineProperty(target, key, attrs)": {
       "args": [
         "target",
-        "propertyKey",
-        "attributes"
+        "key",
+        "attrs"
       ],
       "for": [
         "Reflect"
@@ -14375,10 +14375,10 @@
     }
   },
   "deleteProperty()": {
-    "deleteProperty(target, propertyKey)": {
+    "deleteProperty(target, key)": {
       "args": [
         "target",
-        "propertyKey"
+        "key"
       ],
       "for": [
         "Reflect"
@@ -15740,20 +15740,12 @@
       ],
       "shortname": "cssom"
     },
-    "escape(str)": {
-      "args": [
-        "str"
-      ],
-      "for": [
-        "RegExp"
-      ],
-      "shortname": "ecmascript"
-    },
     "escape(string)": {
       "args": [
         "string"
       ],
       "for": [
+        "RegExp",
         "globalThis"
       ],
       "shortname": "ecmascript"
@@ -15913,9 +15905,9 @@
     }
   },
   "exchange()": {
-    "exchange(typedArray, index, value)": {
+    "exchange(ta, index, value)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "value"
       ],
@@ -16645,9 +16637,9 @@
       ],
       "shortname": "ecmascript"
     },
-    "flatMap(mapperFunction, thisArg)": {
+    "flatMap(mapperFunc, thisArg)": {
       "args": [
-        "mapperFunction",
+        "mapperFunc",
         "thisArg"
       ],
       "for": [
@@ -17581,10 +17573,10 @@
       ],
       "shortname": "indexeddb"
     },
-    "get(target, propertyKey, receiver)": {
+    "get(target, key, receiver)": {
       "args": [
         "target",
-        "propertyKey",
+        "key",
         "receiver"
       ],
       "for": [
@@ -19457,20 +19449,20 @@
     }
   },
   "getOwnPropertyDescriptor()": {
-    "getOwnPropertyDescriptor(obj, propertyKey)": {
+    "getOwnPropertyDescriptor(obj, key)": {
       "args": [
         "obj",
-        "propertyKey"
+        "key"
       ],
       "for": [
         "Object"
       ],
       "shortname": "ecmascript"
     },
-    "getOwnPropertyDescriptor(target, propertyKey)": {
+    "getOwnPropertyDescriptor(target, key)": {
       "args": [
         "target",
-        "propertyKey"
+        "key"
       ],
       "for": [
         "Reflect"
@@ -21060,10 +21052,10 @@
       ],
       "shortname": "css-typed-om"
     },
-    "has(target, propertyKey)": {
+    "has(target, key)": {
       "args": [
         "target",
-        "propertyKey"
+        "key"
       ],
       "for": [
         "Reflect"
@@ -21161,10 +21153,10 @@
     }
   },
   "hasOwn()": {
-    "hasOwn(obj, propertyKey)": {
+    "hasOwn(obj, key)": {
       "args": [
         "obj",
-        "propertyKey"
+        "key"
       ],
       "for": [
         "Object"
@@ -22751,7 +22743,15 @@
         "number"
       ],
       "for": [
-        "Number",
+        "Number"
+      ],
+      "shortname": "ecmascript"
+    },
+    "isFinite(value)": {
+      "args": [
+        "value"
+      ],
+      "for": [
         "globalThis"
       ],
       "shortname": "ecmascript"
@@ -22865,7 +22865,15 @@
         "number"
       ],
       "for": [
-        "Number",
+        "Number"
+      ],
+      "shortname": "ecmascript"
+    },
+    "isNaN(value)": {
+      "args": [
+        "value"
+      ],
+      "for": [
         "globalThis"
       ],
       "shortname": "ecmascript"
@@ -23313,9 +23321,9 @@
     }
   },
   "keyFor()": {
-    "keyFor(sym)": {
+    "keyFor(symbol)": {
       "args": [
-        "sym"
+        "symbol"
       ],
       "for": [
         "Symbol"
@@ -23697,9 +23705,9 @@
       ],
       "shortname": "encrypted-media"
     },
-    "load(typedArray, index)": {
+    "load(ta, index)": {
       "args": [
-        "typedArray",
+        "ta",
         "index"
       ],
       "for": [
@@ -25037,9 +25045,9 @@
     }
   },
   "notify()": {
-    "notify(typedArray, index, count)": {
+    "notify(ta, index, count)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "count"
       ],
@@ -25415,9 +25423,9 @@
     }
   },
   "or()": {
-    "or(typedArray, index, value)": {
+    "or(ta, index, value)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "value"
       ],
@@ -30510,10 +30518,10 @@
       ],
       "shortname": "ecmascript"
     },
-    "set(target, propertyKey, value, receiver)": {
+    "set(target, key, value, receiver)": {
       "args": [
         "target",
-        "propertyKey",
+        "key",
         "value",
         "receiver"
       ],
@@ -33373,9 +33381,9 @@
       ],
       "shortname": "credential-management"
     },
-    "store(typedArray, index, value)": {
+    "store(ta, index, value)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "value"
       ],
@@ -33540,9 +33548,9 @@
       ],
       "shortname": "webnn"
     },
-    "sub(typedArray, index, value)": {
+    "sub(ta, index, value)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "value"
       ],
@@ -34149,9 +34157,9 @@
       ],
       "shortname": "urlpattern"
     },
-    "test(str)": {
+    "test(string)": {
       "args": [
-        "str"
+        "string"
       ],
       "for": [
         "RegExp"
@@ -36030,9 +36038,9 @@
     }
   },
   "wait()": {
-    "wait(typedArray, index, value, timeout)": {
+    "wait(ta, index, value, timeout)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "value",
         "timeout"
@@ -36044,9 +36052,9 @@
     }
   },
   "waitAsync()": {
-    "waitAsync(typedArray, index, value, timeout)": {
+    "waitAsync(ta, index, value, timeout)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "value",
         "timeout"
@@ -36517,9 +36525,9 @@
     }
   },
   "xor()": {
-    "xor(typedArray, index, value)": {
+    "xor(ta, index, value)": {
       "args": [
-        "typedArray",
+        "ta",
         "index",
         "value"
       ],

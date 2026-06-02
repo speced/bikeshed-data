@@ -186,8 +186,8 @@ https://tc39.es/ecma262/multipage/global-object.html#sec-evaldeclarationinstanti
 1
 1
 -
-EvalDeclarationInstantiation(body, varEnv, lexEnv, privateEnv, strict)
-EvalDeclarationInstantiation(body, varEnv, lexEnv, privateEnv, strict)
+EvalDeclarationInstantiation(body, variableEnv, lexicalEnv, privateEnv, strict)
+EvalDeclarationInstantiation(body, variableEnv, lexicalEnv, privateEnv, strict)
 abstract-op
 ecmascript
 ecmascript
@@ -254,8 +254,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evalu
 1
 1
 -
-EvaluateCall(func, ref, arguments, tailPosition)
-EvaluateCall(func, ref, arguments, tailPosition)
+EvaluateCall(func, thisValueRef, argumentListNode, tailPosition)
+EvaluateCall(func, thisValueRef, argumentListNode, tailPosition)
 abstract-op
 ecmascript
 ecmascript
@@ -276,8 +276,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evalu
 1
 1
 -
-EvaluateImportCall(specifierExpression, optionsExpression)
-EvaluateImportCall(specifierExpression, optionsExpression)
+EvaluateImportCall(specifierExpr, optionsExpr)
+EvaluateImportCall(specifierExpr, optionsExpr)
 abstract-op
 ecmascript
 ecmascript
@@ -320,8 +320,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evalu
 1
 1
 -
-EvaluateNew(constructExpr, arguments)
-EvaluateNew(constructExpr, arguments)
+EvaluateNew(constructExpr, argumentsNode)
+EvaluateNew(constructExpr, argumentsNode)
 abstract-op
 ecmascript
 ecmascript
@@ -342,8 +342,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evalu
 1
 1
 -
-EvaluatePropertyAccessWithExpressionKey(baseValue, expression, strict)
-EvaluatePropertyAccessWithExpressionKey(baseValue, expression, strict)
+EvaluatePropertyAccessWithExpressionKey(baseValue, expr, strict)
+EvaluatePropertyAccessWithExpressionKey(baseValue, expr, strict)
 abstract-op
 ecmascript
 ecmascript

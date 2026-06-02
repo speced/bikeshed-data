@@ -348,8 +348,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-OrdinaryCallBindThis(func, calleeContext, thisArgument)
-OrdinaryCallBindThis(func, calleeContext, thisArgument)
+OrdinaryCallBindThis(func, calleeContext, thisArg)
+OrdinaryCallBindThis(func, calleeContext, thisArg)
 abstract-op
 ecmascript
 ecmascript
@@ -370,8 +370,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-OrdinaryCallEvaluateBody(func, argumentsList)
-OrdinaryCallEvaluateBody(func, argumentsList)
+OrdinaryCallEvaluateBody(func, argList)
+OrdinaryCallEvaluateBody(func, argList)
 abstract-op
 ecmascript
 ecmascript
@@ -392,8 +392,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-OrdinaryCreateFromConstructor(constructor, intrinsicDefaultProto, internalSlotsList)
-OrdinaryCreateFromConstructor(constructor, intrinsicDefaultProto, internalSlotsList)
+OrdinaryCreateFromConstructor(ctor, intrinsicDefaultProto, internalSlotsList)
+OrdinaryCreateFromConstructor(ctor, intrinsicDefaultProto, internalSlotsList)
 abstract-op
 ecmascript
 ecmascript
@@ -414,8 +414,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-OrdinaryDefineOwnProperty(obj, propertyKey, desc)
-OrdinaryDefineOwnProperty(obj, propertyKey, desc)
+OrdinaryDefineOwnProperty(obj, propertyKey, propertyDesc)
+OrdinaryDefineOwnProperty(obj, propertyKey, propertyDesc)
 abstract-op
 ecmascript
 ecmascript
@@ -458,8 +458,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-OrdinaryFunctionCreate(functionPrototype, sourceText, parameterList, body, thisMode, env, privateEnv)
-OrdinaryFunctionCreate(functionPrototype, sourceText, parameterList, body, thisMode, env, privateEnv)
+OrdinaryFunctionCreate(proto, sourceText, paramList, body, thisMode, envRecord, privateEnv)
+OrdinaryFunctionCreate(proto, sourceText, paramList, body, thisMode, envRecord, privateEnv)
 abstract-op
 ecmascript
 ecmascript
@@ -546,8 +546,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinaryhasinstan
 1
 1
 -
-OrdinaryHasInstance(constructor, instance)
-OrdinaryHasInstance(constructor, instance)
+OrdinaryHasInstance(ctor, instance)
+OrdinaryHasInstance(ctor, instance)
 abstract-op
 ecmascript
 ecmascript
@@ -1108,8 +1108,8 @@ https://www.w3.org/TR/service-workers/#dom-routercondition-or
 1
 RouterCondition
 -
-or(typedArray, index, value)
-or(typedArray, index, value)
+or(ta, index, value)
+or(ta, index, value)
 method
 ecmascript
 ecmascript

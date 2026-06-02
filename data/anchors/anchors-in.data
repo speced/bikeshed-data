@@ -3077,8 +3077,8 @@ https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-inleapyear
 1
 1
 -
-InLeapYear(t)
-InLeapYear(t)
+InLeapYear(tv)
+InLeapYear(tv)
 abstract-op
 ecmascript
 ecmascript
@@ -4103,8 +4103,8 @@ https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-initialize
 1
 1
 -
-InitializeBoundName(name, value, environment)
-InitializeBoundName(name, value, environment)
+InitializeBoundName(name, value, envRecord)
+InitializeBoundName(name, value, envRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -4159,8 +4159,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-initializeinstanc
 1
 1
 -
-InitializeInstanceElements(obj, constructor)
-InitializeInstanceElements(obj, constructor)
+InitializeInstanceElements(obj, ctor)
+InitializeInstanceElements(obj, ctor)
 abstract-op
 ecmascript
 ecmascript
@@ -4192,8 +4192,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-init
 1
 1
 -
-InitializeReferencedBinding(referenceRecord, value)
-InitializeReferencedBinding(referenceRecord, value)
+InitializeReferencedBinding(refRecord, value)
+InitializeReferencedBinding(refRecord, value)
 abstract-op
 ecmascript
 ecmascript
@@ -4291,8 +4291,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedar
 1
 1
 -
-InitializeTypedArrayFromTypedArray(obj, srcArray)
-InitializeTypedArrayFromTypedArray(obj, srcArray)
+InitializeTypedArrayFromTypedArray(obj, sourceArray)
+InitializeTypedArrayFromTypedArray(obj, sourceArray)
 abstract-op
 ecmascript
 ecmascript
@@ -6626,8 +6626,8 @@ https://tc39.es/ecma262/multipage/abstract-operations.html#sec-invoke
 1
 1
 -
-Invoke(value, propertyKey, argumentsList)
-Invoke(value, propertyKey, argumentsList)
+Invoke(value, propertyKey, argList)
+Invoke(value, propertyKey, argList)
 abstract-op
 ecmascript
 ecmascript

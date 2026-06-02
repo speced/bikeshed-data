@@ -1354,8 +1354,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-MakeArgGetter(name, env)
-MakeArgGetter(name, env)
+MakeArgGetter(name, envRecord)
+MakeArgGetter(name, envRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -1376,8 +1376,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-MakeArgSetter(name, env)
-MakeArgSetter(name, env)
+MakeArgSetter(name, envRecord)
+MakeArgSetter(name, envRecord)
 abstract-op
 ecmascript
 ecmascript
@@ -1442,8 +1442,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-MakeConstructor(func, writablePrototype, prototype)
-MakeConstructor(func, writablePrototype, prototype)
+MakeConstructor(func, writableProto, proto)
+MakeConstructor(func, writableProto, proto)
 abstract-op
 ecmascript
 ecmascript
@@ -1552,8 +1552,8 @@ https://tc39.es/ecma262/multipage/text-processing.html#sec-makematchindicesindex
 1
 1
 -
-MakeMatchIndicesIndexPairArray(str, indices, groupNames, hasGroups)
-MakeMatchIndicesIndexPairArray(str, indices, groupNames, hasGroups)
+MakeMatchIndicesIndexPairArray(string, indices, groupNames, hasGroups)
+MakeMatchIndicesIndexPairArray(string, indices, groupNames, hasGroups)
 abstract-op
 ecmascript
 ecmascript
@@ -1574,8 +1574,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#se
 1
 1
 -
-MakeMethod(func, homeObject)
-MakeMethod(func, homeObject)
+MakeMethod(func, homeObj)
+MakeMethod(func, homeObj)
 abstract-op
 ecmascript
 ecmascript
