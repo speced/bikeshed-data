@@ -4738,6 +4738,8 @@
     "IfAbruptCloseAsyncIterator(value, iteratorRecord)",
     "IfAbruptCloseIterator",
     "IfAbruptCloseIterator(value, iteratorRecord)",
+    "IfAbruptCloseIterators",
+    "IfAbruptCloseIterators(value, iteratorRecords)",
     "IfAbruptRejectPromise",
     "IfAbruptRejectPromise(value, capability)",
     "IfStatement",
@@ -5057,6 +5059,8 @@
     "IteratorToList(iteratorRecord)",
     "IteratorValue",
     "IteratorValue(iteratorResult)",
+    "IteratorZip",
+    "IteratorZip(iters, mode, padding, finishResults)",
     "JSON",
     "JSON MIME type",
     "JSON Schema for a Binding",
@@ -6341,6 +6345,7 @@
     "PerformanceResourceTiming",
     "PerformanceScriptTiming",
     "PerformanceServerTiming",
+    "PerformanceSoftNavigation",
     "PerformanceTiming",
     "PerformanceTimingConfidence",
     "PerformanceTimingConfidenceValue",
@@ -7831,7 +7836,6 @@
     "Soft",
     "Soft Update",
     "Soft iron distortion",
-    "SoftNavigationEntry",
     "Solution compatible",
     "Solution merge",
     "Solution sequence",
@@ -13711,7 +13715,6 @@
     "emergency",
     "emit a script message",
     "emit an event",
-    "emit interaction contentful paint entry",
     "emit soft navigation entry",
     "empty",
     "empty ISD",
@@ -16005,8 +16008,6 @@
     "inter-segment white space",
     "interactable",
     "interactable element",
-    "interaction event processing start",
-    "interaction event timing processing end",
     "interaction.userIntent",
     "interactive element",
     "interactive-widget",
@@ -19223,6 +19224,7 @@
     "process a link header",
     "process a localized text object",
     "process a network event",
+    "process a new attributed contentful paint candidate",
     "process a null action",
     "process a pause action",
     "process a pointer action",
@@ -21218,6 +21220,7 @@
     "set and filter HTML",
     "set animator instance of worklet animation",
     "set bitmap dimensions",
+    "set current interaction context for event dispatch",
     "set device pixel ratio override",
     "set emulated forced colors theme data",
     "set emulated position data",
@@ -23007,6 +23010,7 @@
     "unscaled",
     "unsecured data document",
     "unset",
+    "unset current interaction context after event dispatch",
     "unshaped border edge",
     "unshaped content edge",
     "unshaped edge",
@@ -26171,6 +26175,7 @@
     "load(ta, index)",
     "notify(ta, index, count)",
     "or(ta, index, value)",
+    "pause()",
     "store(ta, index, value)",
     "sub(ta, index, value)",
     "wait(ta, index, value, timeout)",
@@ -40960,17 +40965,15 @@
     "data"
   ],
   "InteractionContentfulPaint": [
-    "element",
-    "id",
+    "context",
     "interactionId",
-    "loadTime",
-    "renderTime",
-    "size",
-    "toJSON()",
-    "url"
+    "largest contentful paint",
+    "largestContentfulPaint",
+    "toJSON()"
   ],
   "InteractionContext": [
     "InteractionContext",
+    "context document",
     "emitted",
     "first URL update timestamp",
     "first URL value",
@@ -40981,8 +40984,7 @@
     "largest contentful paint",
     "last URL value",
     "navigation type",
-    "start time",
-    "total painted area"
+    "start time"
   ],
   "InteractionUserIntentCommand": [
     "\"method\"",
@@ -41163,7 +41165,9 @@
     "reduce(reducer, initialValue)",
     "some(predicate)",
     "take(limit)",
-    "toArray()"
+    "toArray()",
+    "zip(iterables, options)",
+    "zipKeyed(iterables, options)"
   ],
   "Iterator.prototype [ %Symbol.iterator% ] ( )": [
     "Iterator.prototype %Symbol.iterator% ()"
@@ -46968,6 +46972,12 @@
     "toJSON",
     "toJSON()"
   ],
+  "PerformanceSoftNavigation": [
+    "context",
+    "getLargestInteractionContentfulPaint()",
+    "interactionId",
+    "navigationType"
+  ],
   "PerformanceTiming": [
     "PerformanceTiming",
     "The PerformanceTiming interface",
@@ -52084,11 +52094,6 @@
   "SocketDnsQueryType": [
     "ipv4",
     "ipv6"
-  ],
-  "SoftNavigationEntry": [
-    "interactionId",
-    "largestInteractionContentfulPaint",
-    "navigationType"
   ],
   "Source Text Module Records": [
     "GetExportedNames(exportStarSet)",
