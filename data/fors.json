@@ -11638,9 +11638,7 @@
     "closeAction",
     "closeWritable",
     "closed",
-    "closed dependency",
     "closed flag",
-    "closed rule dependency",
     "closed subpath",
     "closed-shadow-hidden",
     "closing procedure",
@@ -14944,6 +14942,7 @@
     "get the BluetoothDevice representing",
     "get the JavaScript exception tag",
     "get the active user prompt",
+    "get the attribution element",
     "get the builtins for a builtin set",
     "get the child navigables",
     "get the client window info",
@@ -14984,6 +14983,7 @@
     "get the notifications permission state",
     "get the object",
     "get the origin rectangle",
+    "get the paint attribution interaction context",
     "get the parent",
     "get the parent container root element",
     "get the platform version",
@@ -17433,6 +17433,7 @@
     "monotonic clock",
     "monotonically increasing timeline",
     "month",
+    "more recent than",
     "most recent navigation",
     "most-negative-single-float",
     "most-positive-single-float",
@@ -18142,9 +18143,7 @@
     "open a bucket",
     "open a database connection",
     "open an async sequence",
-    "open dependency",
     "open dialogs list",
-    "open rule dependency",
     "open screen network protocol agent",
     "open screen protocol agent",
     "open subpath",
@@ -19757,6 +19756,7 @@
     "reconsume the current input code point",
     "reconsume the current input token",
     "record",
+    "record a node as modified for interaction paint timing",
     "record a redemption record",
     "record a user activation",
     "record bounces for bounce tracking",
@@ -20102,6 +20102,7 @@
     "report an exception",
     "report element timing",
     "report image element timing",
+    "report interaction contentful paints and soft navigations",
     "report largest contentful paint",
     "report text element timing",
     "report the exception",
@@ -20199,6 +20200,7 @@
     "reset algorithm",
     "reset latency stats",
     "reset observation window",
+    "reset paint tracking",
     "reset the form owner",
     "reset the input state",
     "reset the insertion mode appropriately",
@@ -23086,6 +23088,8 @@
     "update the data max message size",
     "update the file selection",
     "update the image data",
+    "update the interaction context for a document and its descendants",
+    "update the interaction context for a node and its descendants",
     "update the interaction contexts for an event",
     "update the navigation API entries for a same-document navigation",
     "update the navigation API entries for reactivation",
@@ -40951,6 +40955,7 @@
   "InteractionContext": [
     "InteractionContext",
     "context document",
+    "current largest contentful paint candidate",
     "emitted",
     "first URL update timestamp",
     "first URL value",
@@ -40962,6 +40967,11 @@
     "last URL value",
     "navigation type",
     "start time"
+  ],
+  "InteractionPaintTimingNodeState": [
+    "InteractionPaintTimingNodeState",
+    "context",
+    "modification id"
   ],
   "InteractionUserIntentCommand": [
     "\"method\"",
@@ -53467,8 +53477,6 @@
     "updateRangeStart"
   ],
   "TextUpdateEventInit": [
-    "compositionEnd",
-    "compositionStart",
     "selectionEnd",
     "selectionStart",
     "text",
@@ -62193,10 +62201,15 @@
     "active soft navigation candidate",
     "active view transition",
     "can initiate outbound view transition",
+    "current modification generation id",
     "default document timeline",
     "dynamic view transition style sheet",
     "inbound view transition params",
     "interaction id to interaction context",
+    "is interaction paint timing dirty",
+    "last modification context",
+    "marked node state",
+    "propagated node state",
     "rendering suppression for view transitions",
     "scripting policy",
     "show view transition tree",
@@ -63017,8 +63030,10 @@
     "depth-sorted-layers",
     "dom-overlay",
     "hand-tracking",
+    "inline-stereo",
     "layers",
     "light-estimation",
+    "secondary-views",
     "space-warp",
     "tracked-sources"
   ],
@@ -66717,9 +66732,6 @@
   "no-composite": [
     "no-composite"
   ],
-  "node": [
-    "associated interaction context"
-  ],
   "non-fetch scheme navigation params": [
     "URL",
     "id",
@@ -69351,9 +69363,6 @@
     "auto",
     "none",
     "thin"
-  ],
-  "secondary view": [
-    "secondary-views"
   ],
   "select": [
     "autocomplete",
