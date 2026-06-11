@@ -5704,7 +5704,6 @@
     "MockCapturePromptResultConfiguration",
     "MockMicrophoneConfiguration",
     "ModelContext",
-    "ModelContextClient",
     "ModelContextRegisterToolOptions",
     "ModelContextTool",
     "Modifiers Population Algorithm",
@@ -6789,8 +6788,11 @@
     "RTCRtpReceiver",
     "RTCRtpReceiverTransform",
     "RTCRtpSFrameDecrypter",
+    "RTCRtpSFrameDecryptor",
     "RTCRtpSFrameEncrypter",
     "RTCRtpSFrameEncrypterOptions",
+    "RTCRtpSFrameEncryptor",
+    "RTCRtpSFrameEncryptorOptions",
     "RTCRtpScriptTransform",
     "RTCRtpScriptTransformType",
     "RTCRtpScriptTransformer",
@@ -7252,8 +7254,12 @@
     "SFrameCipherSuite",
     "SFrameDecrypterManager",
     "SFrameDecrypterStream",
+    "SFrameDecryptorManager",
+    "SFrameDecryptorStream",
     "SFrameEncrypterManager",
     "SFrameEncrypterStream",
+    "SFrameEncryptorManager",
+    "SFrameEncryptorStream",
     "SFrameTransformErrorEvent",
     "SFrameTransformErrorEventInit",
     "SFrameTransformErrorEventType",
@@ -8804,7 +8810,6 @@
     "UserAgentClientHintsCommand",
     "UserDataHandler",
     "UserIdleState",
-    "UserInteractionCallback",
     "UserVerificationRequirement",
     "Username",
     "Using the a element to define a command",
@@ -20241,6 +20246,7 @@
     "resolved",
     "resolved descendant node",
     "resolved module set",
+    "resolved text direction",
     "resolved type",
     "resolved value",
     "resolved value special case property",
@@ -44597,12 +44603,6 @@
     "options",
     "tool"
   ],
-  "ModelContextClient": [
-    "requestUserInteraction(callback)"
-  ],
-  "ModelContextClient/requestUserInteraction(callback)": [
-    "callback"
-  ],
   "ModelContextRegisterToolOptions": [
     "exposedTo",
     "signal"
@@ -48857,6 +48857,16 @@
   "RTCRtpSFrameDecrypter/constructor(options)": [
     "options"
   ],
+  "RTCRtpSFrameDecryptor": [
+    "RTCRtpSFrameDecryptor(options)",
+    "constructor(options)"
+  ],
+  "RTCRtpSFrameDecryptor/RTCRtpSFrameDecryptor(options)": [
+    "options"
+  ],
+  "RTCRtpSFrameDecryptor/constructor(options)": [
+    "options"
+  ],
   "RTCRtpSFrameEncrypter": [
     "RTCRtpSFrameEncrypter(options)",
     "constructor(options)"
@@ -48868,6 +48878,19 @@
     "options"
   ],
   "RTCRtpSFrameEncrypterOptions": [
+    "type"
+  ],
+  "RTCRtpSFrameEncryptor": [
+    "RTCRtpSFrameEncryptor(options)",
+    "constructor(options)"
+  ],
+  "RTCRtpSFrameEncryptor/RTCRtpSFrameEncryptor(options)": [
+    "options"
+  ],
+  "RTCRtpSFrameEncryptor/constructor(options)": [
+    "options"
+  ],
+  "RTCRtpSFrameEncryptorOptions": [
     "type"
   ],
   "RTCRtpScriptTransform": [
@@ -50274,6 +50297,28 @@
   "SFrameDecrypterStream/constructor(options)": [
     "options"
   ],
+  "SFrameDecryptorManager": [
+    "addDecryptionKey(key, keyId)",
+    "onerror",
+    "removeDecryptionKey(keyId)"
+  ],
+  "SFrameDecryptorManager/addDecryptionKey(key, keyId)": [
+    "key",
+    "keyId"
+  ],
+  "SFrameDecryptorManager/removeDecryptionKey(keyId)": [
+    "keyId"
+  ],
+  "SFrameDecryptorStream": [
+    "SFrameDecryptorStream(options)",
+    "constructor(options)"
+  ],
+  "SFrameDecryptorStream/SFrameDecryptorStream(options)": [
+    "options"
+  ],
+  "SFrameDecryptorStream/constructor(options)": [
+    "options"
+  ],
   "SFrameEncrypterManager": [
     "setEncryptionKey(key, keyId)"
   ],
@@ -50289,6 +50334,23 @@
     "options"
   ],
   "SFrameEncrypterStream/constructor(options)": [
+    "options"
+  ],
+  "SFrameEncryptorManager": [
+    "setEncryptionKey(key, keyId)"
+  ],
+  "SFrameEncryptorManager/setEncryptionKey(key, keyId)": [
+    "key",
+    "keyId"
+  ],
+  "SFrameEncryptorStream": [
+    "SFrameEncryptorStream(options)",
+    "constructor(options)"
+  ],
+  "SFrameEncryptorStream/SFrameEncryptorStream(options)": [
+    "options"
+  ],
+  "SFrameEncryptorStream/constructor(options)": [
     "options"
   ],
   "SFrameTransformErrorEvent": [
@@ -53523,7 +53585,6 @@
     "untrustedContentHint"
   ],
   "ToolExecuteCallback": [
-    "client",
     "input"
   ],
   "Touch": [

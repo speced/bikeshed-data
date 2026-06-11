@@ -4037,6 +4037,17 @@
       "shortname": "webrtc-encoded-transform"
     }
   },
+  "RTCRtpSFrameDecryptor()": {
+    "RTCRtpSFrameDecryptor(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "RTCRtpSFrameDecryptor"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    }
+  },
   "RTCRtpSFrameEncrypter()": {
     "RTCRtpSFrameEncrypter(options)": {
       "args": [
@@ -4044,6 +4055,17 @@
       ],
       "for": [
         "RTCRtpSFrameEncrypter"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    }
+  },
+  "RTCRtpSFrameEncryptor()": {
+    "RTCRtpSFrameEncryptor(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "RTCRtpSFrameEncryptor"
       ],
       "shortname": "webrtc-encoded-transform"
     }
@@ -4340,6 +4362,17 @@
       "shortname": "webrtc-encoded-transform"
     }
   },
+  "SFrameDecryptorStream()": {
+    "SFrameDecryptorStream(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "SFrameDecryptorStream"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    }
+  },
   "SFrameEncrypterStream()": {
     "SFrameEncrypterStream(options)": {
       "args": [
@@ -4347,6 +4380,17 @@
       ],
       "for": [
         "SFrameEncrypterStream"
+      ],
+      "shortname": "webrtc-encoded-transform"
+    }
+  },
+  "SFrameEncryptorStream()": {
+    "SFrameEncryptorStream(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "SFrameEncryptorStream"
       ],
       "shortname": "webrtc-encoded-transform"
     }
@@ -6277,7 +6321,8 @@
         "keyId"
       ],
       "for": [
-        "SFrameDecrypterManager"
+        "SFrameDecrypterManager",
+        "SFrameDecryptorManager"
       ],
       "shortname": "webrtc-encoded-transform"
     }
@@ -10637,9 +10682,13 @@
         "PointerTimeline",
         "Profiler",
         "RTCRtpSFrameDecrypter",
+        "RTCRtpSFrameDecryptor",
         "RTCRtpSFrameEncrypter",
+        "RTCRtpSFrameEncryptor",
         "SFrameDecrypterStream",
+        "SFrameDecryptorStream",
         "SFrameEncrypterStream",
+        "SFrameEncryptorStream",
         "ScrollTimeline",
         "TextFormat",
         "UDPSocket",
@@ -27704,7 +27753,8 @@
         "keyId"
       ],
       "for": [
-        "SFrameDecrypterManager"
+        "SFrameDecrypterManager",
+        "SFrameDecryptorManager"
       ],
       "shortname": "webrtc-encoded-transform"
     }
@@ -28697,17 +28747,6 @@
         "HTMLFormElement"
       ],
       "shortname": "html"
-    }
-  },
-  "requestUserInteraction()": {
-    "requestUserInteraction(callback)": {
-      "args": [
-        "callback"
-      ],
-      "for": [
-        "ModelContextClient"
-      ],
-      "shortname": "webmcp"
     }
   },
   "requestVideoFrameCallback()": {
@@ -30860,7 +30899,8 @@
         "keyId"
       ],
       "for": [
-        "SFrameEncrypterManager"
+        "SFrameEncrypterManager",
+        "SFrameEncryptorManager"
       ],
       "shortname": "webrtc-encoded-transform"
     }
