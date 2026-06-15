@@ -1,4 +1,4 @@
-sha: 2a43aafceed7cc5adc779641f44863228662f77f
+sha: 36d0c4f30be8f73d2669bb3fdd59e235133d5c9f
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -141,6 +141,7 @@ crashtest css/css-animations/crashtests/chrome-bug-415627003.html
 crashtest css/css-animations/crashtests/keyframe-easing-var-crash.html
 crashtest css/css-animations/crashtests/pseudo-element-animation-with-marker.html
 crashtest css/css-animations/crashtests/replace-keyframes-animating-filter-001.html
+crashtest css/css-animations/crashtests/servo-bug-45008.html
 crashtest css/css-animations/crashtests/transform-properties-from-none-to-none-crash.html
 crashtest css/css-animations/display-via-custom-prop-animation-crash.html
 crashtest css/css-animations/keyframes-remove-documentElement-crash.html
@@ -12966,11 +12967,14 @@ reftest css/css-borders/border-radius-currentcolor.html
 reftest css/css-borders/border-radius-greater-than-width.html
 reftest css/css-borders/border-shape-absolute-coords-shape.tentative.html
 reftest css/css-borders/border-shape/border-shape-background-origin-border-box.html
+reftest css/css-borders/border-shape/border-shape-circle-extent-keywords.html
 reftest css/css-borders/border-shape/border-shape-clips-background.html
 reftest css/css-borders/border-shape/border-shape-collapsed-shape-clips-background.html
 reftest css/css-borders/border-shape/border-shape-combined-shadow.html
 reftest css/css-borders/border-shape/border-shape-double-shape-default.html
 reftest css/css-borders/border-shape/border-shape-dynamic-color.html
+reftest css/css-borders/border-shape/border-shape-ellipse-corner-keywords.tentative.html
+reftest css/css-borders/border-shape/border-shape-ellipse-extent-keywords.html
 reftest css/css-borders/border-shape/border-shape-geometry-box.html
 reftest css/css-borders/border-shape/border-shape-half-border-box-default.html
 reftest css/css-borders/border-shape/border-shape-ignore-radius.html
@@ -13000,6 +13004,7 @@ reftest css/css-borders/border-shape/border-shape-overflow.html
 reftest css/css-borders/border-shape/border-shape-polygon-miter-limit.html
 reftest css/css-borders/border-shape/border-shape-shadow-blur.html
 reftest css/css-borders/border-shape/border-shape-shadow-circle.html
+reftest css/css-borders/border-shape/border-shape-shadow-ellipse.html
 reftest css/css-borders/border-shape/border-shape-shadow-inset-blur.html
 reftest css/css-borders/border-shape/border-shape-shadow-negative-spread.html
 reftest css/css-borders/border-shape/border-shape-shadow-semitransparent.html
@@ -20653,6 +20658,11 @@ reftest css/css-overflow/line-clamp/block-ellipsis-031.html
 reftest css/css-overflow/line-clamp/block-ellipsis-032.html
 reftest css/css-overflow/line-clamp/block-ellipsis-033.html
 reftest css/css-overflow/line-clamp/block-ellipsis-034.html
+reftest css/css-overflow/line-clamp/block-ellipsis-035.html
+reftest css/css-overflow/line-clamp/block-ellipsis-bidi-001.html
+reftest css/css-overflow/line-clamp/block-ellipsis-bidi-002.html
+reftest css/css-overflow/line-clamp/block-ellipsis-bidi-003.html
+reftest css/css-overflow/line-clamp/block-ellipsis-bidi-004.html
 reftest css/css-overflow/line-clamp/block-ellipsis-quirk-001.html
 reftest css/css-overflow/line-clamp/block-ellipsis-repaint-001.html
 reftest css/css-overflow/line-clamp/block-ellipsis-repaint-002.html
@@ -34836,6 +34846,7 @@ testharness css/css-anchor-position/anchor-center-offset-change.html
 testharness css/css-anchor-position/anchor-center-vrl-htb.html
 testharness css/css-anchor-position/anchor-center-vrl-vrl.html
 testharness css/css-anchor-position/anchor-fallback-invalidation.html
+testharness css/css-anchor-position/anchor-fallback-scroll-axis.html
 testharness css/css-anchor-position/anchor-function-chain.html
 testharness css/css-anchor-position/anchor-function-pseudo-element-basic.html
 testharness css/css-anchor-position/anchor-function-pseudo-element-implicit-anchor.html
@@ -34928,6 +34939,7 @@ testharness css/css-anchor-position/anchor-size-parse-invalid.html
 testharness css/css-anchor-position/anchor-size-parse-valid.html
 testharness css/css-anchor-position/anchor-size-replaced-001.html
 testharness css/css-anchor-position/anchor-size-writing-modes-001.html
+testharness css/css-anchor-position/anchor-sticky-fixed-drift.html
 testharness css/css-anchor-position/anchor-transition-001.html
 testharness css/css-anchor-position/anchor-transition-002.html
 testharness css/css-anchor-position/anchor-transition-003.html
@@ -37932,6 +37944,7 @@ testharness css/css-overflow/scroll-markers/scroll-marker-hover-remove.html
 testharness css/css-overflow/scroll-markers/scroll-marker-hover.html
 testharness css/css-overflow/scroll-markers/scroll-marker-inert-001.html
 testharness css/css-overflow/scroll-markers/scroll-marker-inert-002.html
+testharness css/css-overflow/scroll-markers/scroll-marker-inert-003.html
 testharness css/css-overflow/scroll-markers/scroll-marker-multiple-activation.html
 testharness css/css-overflow/scroll-markers/scroll-marker-navigation-cycles.html
 testharness css/css-overflow/scroll-markers/scroll-marker-next-focus.html
