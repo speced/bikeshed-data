@@ -5193,6 +5193,7 @@
     "LanguageModelParams",
     "LanguageModelPrompt",
     "LanguageModelPromptOptions",
+    "LanguageModelSamplingMode",
     "LanguageModelTool",
     "LanguageModelToolFunction",
     "LargeBlobSupport",
@@ -41770,6 +41771,7 @@
     "promptStreaming(input)",
     "promptStreaming(input, options)",
     "quotaoverflow",
+    "samplingMode",
     "temperature",
     "tools",
     "top K",
@@ -41842,6 +41844,7 @@
   "LanguageModelCreateCoreOptions": [
     "expectedInputs",
     "expectedOutputs",
+    "samplingMode",
     "temperature",
     "tools",
     "topK"
@@ -41886,6 +41889,13 @@
     "omitResponseConstraintInput",
     "responseConstraint",
     "signal"
+  ],
+  "LanguageModelSamplingMode": [
+    "\"balanced\"",
+    "\"creative\"",
+    "\"most-creative\"",
+    "\"most-predictable\"",
+    "\"predictable\""
   ],
   "LanguageModelTool": [
     "description",
@@ -56143,7 +56153,8 @@
     "deltaMode",
     "deltaX",
     "deltaY",
-    "deltaZ"
+    "deltaZ",
+    "momentum"
   ],
   "Window": [
     "[[TitleBarArea]]",
