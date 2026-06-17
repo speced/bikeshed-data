@@ -1,4 +1,4 @@
-sha: e130c537dbb488aca272c048ef0f6088c58592b2
+sha: 34a175bba7e2c59bd3aeeb4bcb19a78671d33769
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -28843,6 +28843,9 @@ reftest css/filter-effects/filter-scale-001.html
 reftest css/filter-effects/filter-scaling-001.html
 reftest css/filter-effects/filter-subregion-01.html
 reftest css/filter-effects/filter-svg-background-image-blur.html
+reftest css/filter-effects/filter-target-offscreen-below-viewport-001.html
+reftest css/filter-effects/filter-target-offscreen-below-viewport-002.html
+reftest css/filter-effects/filter-target-offscreen-below-viewport-003.html
 reftest css/filter-effects/filter-turbulence-invalid-001.html
 reftest css/filter-effects/filter-url-to-non-existent-filter-001.html
 reftest css/filter-effects/filter-with-mix-blend-mode.html
@@ -39716,6 +39719,7 @@ testharness css/css-transforms/animation/transform-interpolation-006.html
 testharness css/css-transforms/animation/transform-interpolation-007.html
 testharness css/css-transforms/animation/transform-interpolation-computed-value.html
 testharness css/css-transforms/animation/transform-interpolation-inline-value.html
+testharness css/css-transforms/animation/transform-interpolation-rotate3d-180deg-near-x-axis.html
 testharness css/css-transforms/animation/transform-interpolation-verify-reftests.html
 testharness css/css-transforms/animation/transform-matrix-composition.html
 testharness css/css-transforms/animation/transform-non-invertible-no-transition.html
@@ -59583,6 +59587,7 @@ testharness url/urlsearchparams-stringifier.any.js
 testharness urlpattern/urlpattern-compare.tentative.any.js
 testharness urlpattern/urlpattern-compare.tentative.https.any.js
 testharness urlpattern/urlpattern-constructor.any.js
+testharness urlpattern/urlpattern-empty-regexp-group.html
 testharness urlpattern/urlpattern-generate.tentative.any.js
 testharness urlpattern/urlpattern-hasregexpgroups.any.js
 testharness urlpattern/urlpattern.any.js
@@ -60571,6 +60576,7 @@ testharness webaudio/the-audio-api/the-gainnode-interface/no-dezippering.html
 testharness webaudio/the-audio-api/the-iirfilternode-interface/ctor-iirfilter.html
 testharness webaudio/the-audio-api/the-iirfilternode-interface/iirfilter-basic.html
 testharness webaudio/the-audio-api/the-iirfilternode-interface/iirfilter-getFrequencyResponse.html
+testharness webaudio/the-audio-api/the-iirfilternode-interface/iirfilter-normalization-precision.html
 testharness webaudio/the-audio-api/the-iirfilternode-interface/iirfilter.html
 testharness webaudio/the-audio-api/the-iirfilternode-interface/test-iirfilternode.html
 testharness webaudio/the-audio-api/the-mediaelementaudiosourcenode-interface/cors-check.https.html
@@ -65584,11 +65590,16 @@ wdspec webdriver/tests/bidi/browsing_context/create/invalid.py
 wdspec webdriver/tests/bidi/browsing_context/create/reference_context.py
 wdspec webdriver/tests/bidi/browsing_context/create/type.py
 wdspec webdriver/tests/bidi/browsing_context/create/user_context.py
+wdspec webdriver/tests/bidi/browsing_context/create/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/dom_content_loaded/dom_content_loaded.py
+wdspec webdriver/tests/bidi/browsing_context/dom_content_loaded/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/download_end/download_end.py
 wdspec webdriver/tests/bidi/browsing_context/download_end/status.py
+wdspec webdriver/tests/bidi/browsing_context/download_end/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/download_will_begin/download_will_begin.py
+wdspec webdriver/tests/bidi/browsing_context/download_will_begin/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/fragment_navigated/fragment_navigated.py
+wdspec webdriver/tests/bidi/browsing_context/fragment_navigated/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/get_tree/frames.py
 wdspec webdriver/tests/bidi/browsing_context/get_tree/invalid.py
 wdspec webdriver/tests/bidi/browsing_context/get_tree/max_depth.py
@@ -65597,7 +65608,9 @@ wdspec webdriver/tests/bidi/browsing_context/get_tree/root.py
 wdspec webdriver/tests/bidi/browsing_context/handle_user_prompt/handle_user_prompt.py
 wdspec webdriver/tests/bidi/browsing_context/handle_user_prompt/invalid.py
 wdspec webdriver/tests/bidi/browsing_context/history_updated/history_updated.py
+wdspec webdriver/tests/bidi/browsing_context/history_updated/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/load/load.py
+wdspec webdriver/tests/bidi/browsing_context/load/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/locate_nodes/context.py
 wdspec webdriver/tests/bidi/browsing_context/locate_nodes/invalid.py
 wdspec webdriver/tests/bidi/browsing_context/locate_nodes/locator.py
@@ -65616,9 +65629,12 @@ wdspec webdriver/tests/bidi/browsing_context/navigate/navigate_beforeunload.py
 wdspec webdriver/tests/bidi/browsing_context/navigate/wait.py
 wdspec webdriver/tests/bidi/browsing_context/navigation_committed/navigation_committed.py
 wdspec webdriver/tests/bidi/browsing_context/navigation_committed/navigation_interrupted.py
+wdspec webdriver/tests/bidi/browsing_context/navigation_committed/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/navigation_failed/navigation_failed.py
+wdspec webdriver/tests/bidi/browsing_context/navigation_failed/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/navigation_started/navigation_interrupted.py
 wdspec webdriver/tests/bidi/browsing_context/navigation_started/navigation_started.py
+wdspec webdriver/tests/bidi/browsing_context/navigation_started/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/print/background.py
 wdspec webdriver/tests/bidi/browsing_context/print/context.py
 wdspec webdriver/tests/bidi/browsing_context/print/frame_tentative.py
@@ -65642,9 +65658,11 @@ wdspec webdriver/tests/bidi/browsing_context/traverse_history/context.py
 wdspec webdriver/tests/bidi/browsing_context/traverse_history/delta.py
 wdspec webdriver/tests/bidi/browsing_context/traverse_history/invalid.py
 wdspec webdriver/tests/bidi/browsing_context/user_prompt_closed/beforeunload.py
+wdspec webdriver/tests/bidi/browsing_context/user_prompt_closed/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/user_prompt_closed/user_prompt_closed.py
 wdspec webdriver/tests/bidi/browsing_context/user_prompt_opened/beforeunload.py
 wdspec webdriver/tests/bidi/browsing_context/user_prompt_opened/handler.py
+wdspec webdriver/tests/bidi/browsing_context/user_prompt_opened/user_context_tentative.py
 wdspec webdriver/tests/bidi/browsing_context/user_prompt_opened/user_prompt_opened.py
 wdspec webdriver/tests/bidi/emulation/combined/multiple_emulations.py
 wdspec webdriver/tests/bidi/emulation/set_geolocation_override/contexts.py
@@ -65720,6 +65738,7 @@ wdspec webdriver/tests/bidi/external/user_agent_client_hints/set_client_hints_ov
 wdspec webdriver/tests/bidi/external/user_agent_client_hints/set_client_hints_override/user_contexts.py
 wdspec webdriver/tests/bidi/input/file_dialog_opened/file_dialog_opened.py
 wdspec webdriver/tests/bidi/input/file_dialog_opened/tentative/show_open_file_picker.py
+wdspec webdriver/tests/bidi/input/file_dialog_opened/user_context_tentative.py
 wdspec webdriver/tests/bidi/input/perform_actions/invalid.py
 wdspec webdriver/tests/bidi/input/perform_actions/key.py
 wdspec webdriver/tests/bidi/input/perform_actions/key_events.py
@@ -65761,6 +65780,7 @@ wdspec webdriver/tests/bidi/log/entry_added/realm.py
 wdspec webdriver/tests/bidi/log/entry_added/stacktrace.py
 wdspec webdriver/tests/bidi/log/entry_added/subscription.py
 wdspec webdriver/tests/bidi/log/entry_added/text_tentative.py
+wdspec webdriver/tests/bidi/log/entry_added/user_context_tentative.py
 wdspec webdriver/tests/bidi/network/add_data_collector/add_data_collector.py
 wdspec webdriver/tests/bidi/network/add_data_collector/contexts.py
 wdspec webdriver/tests/bidi/network/add_data_collector/data_types.py
@@ -65778,6 +65798,7 @@ wdspec webdriver/tests/bidi/network/auth_required/unsubscribe.py
 wdspec webdriver/tests/bidi/network/before_request_sent/before_request_sent.py
 wdspec webdriver/tests/bidi/network/before_request_sent/before_request_sent_cached.py
 wdspec webdriver/tests/bidi/network/before_request_sent/unique_request_ids.py
+wdspec webdriver/tests/bidi/network/before_request_sent/user_context_tentative.py
 wdspec webdriver/tests/bidi/network/combined/network_events.py
 wdspec webdriver/tests/bidi/network/continue_request/body.py
 wdspec webdriver/tests/bidi/network/continue_request/cookies.py
@@ -65884,8 +65905,11 @@ wdspec webdriver/tests/bidi/script/get_realms/get_realms.py
 wdspec webdriver/tests/bidi/script/get_realms/invalid.py
 wdspec webdriver/tests/bidi/script/get_realms/sandbox.py
 wdspec webdriver/tests/bidi/script/get_realms/type.py
+wdspec webdriver/tests/bidi/script/get_realms/user_context_tentative.py
 wdspec webdriver/tests/bidi/script/message/message.py
+wdspec webdriver/tests/bidi/script/message/user_context_tentative.py
 wdspec webdriver/tests/bidi/script/realm_created/realm_created.py
+wdspec webdriver/tests/bidi/script/realm_created/user_context_tentative.py
 wdspec webdriver/tests/bidi/script/realm_created/window_open.py
 wdspec webdriver/tests/bidi/script/realm_destroyed/realm_destroyed.py
 wdspec webdriver/tests/bidi/script/remove_preload_script/invalid.py
