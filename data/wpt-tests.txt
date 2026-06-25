@@ -1,4 +1,4 @@
-sha: 5c9acf8fe78c7681517b2e5f729e723fd53aebff
+sha: a0bf885041beb543ea84fc16ceaaba8a5c25f83d
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -363,6 +363,7 @@ crashtest css/css-contain/content-visibility/content-visibility-output-crash.htm
 crashtest css/css-contain/content-visibility/content-visibility-selection-crash.html
 crashtest css/css-contain/content-visibility/content-visibility-with-float-crash.html
 crashtest css/css-contain/content-visibility/contentvisibility-nestedslot-crash.html
+crashtest css/css-contain/content-visibility/crashtests/container-query-force-visible-for-accessibility.html
 crashtest css/css-contain/content-visibility/crashtests/content-visibility-transition-finished-001.html
 crashtest css/css-contain/content-visibility/crashtests/div-in-hidden.html
 crashtest css/css-contain/content-visibility/crashtests/fieldset.html
@@ -1108,9 +1109,13 @@ crashtest dom/nodes/crashtests/document-replaceChild-input-documentElement.html
 crashtest dom/nodes/crashtests/documentElement-remove-descendant-query.html
 crashtest dom/nodes/crashtests/multiple-append-mutated-in-unload-document.https.html
 crashtest dom/nodes/crashtests/multiple-append-mutated-in-unload.https.html
+crashtest dom/nodes/insertBefore-iframe-crash.html
 crashtest dom/nodes/moveBefore/chrome-338071841-crash.html
 crashtest dom/nodes/moveBefore/chrome-433696404-crash.html
 crashtest dom/nodes/moveBefore/input-moveBefore-crash.html
+crashtest dom/nodes/moveBefore/moveBefore-iframe-crash.html
+crashtest dom/nodes/moveBefore/moveBefore-legend-input-crash.html
+crashtest dom/nodes/moveBefore/moveBefore-range-iframe-crash.html
 crashtest dom/nodes/moveBefore/moveBefore-subframe-count-crash.html
 crashtest dom/nodes/node-appendchild-crash.html
 crashtest dom/nodes/replaceWith-document-element-crash.html
@@ -51313,6 +51318,7 @@ testharness html/semantics/popovers/popover-invoking-attribute.html
 testharness html/semantics/popovers/popover-light-dismiss-command-edge-cases.tentative.html
 testharness html/semantics/popovers/popover-light-dismiss-command.html
 testharness html/semantics/popovers/popover-light-dismiss-contextmenu.html
+testharness html/semantics/popovers/popover-light-dismiss-disabled-button.html
 testharness html/semantics/popovers/popover-light-dismiss-flat-tree-nested.html
 testharness html/semantics/popovers/popover-light-dismiss-flat-tree.html
 testharness html/semantics/popovers/popover-light-dismiss-hint.html
@@ -53407,6 +53413,8 @@ testharness mathml/relations/html5-tree/a-hreflang-setter.html
 testharness mathml/relations/html5-tree/a-type-getter-001.html
 testharness mathml/relations/html5-tree/a-type-getter-002.html
 testharness mathml/relations/html5-tree/a-type-setter.html
+testharness mathml/relations/html5-tree/anchor-hyperlinkutils-getter-setter.html
+testharness mathml/relations/html5-tree/anchor-hyperlinkutils-getter.html
 testharness mathml/relations/html5-tree/autofocus-001.html
 testharness mathml/relations/html5-tree/autofocus-002.html
 testharness mathml/relations/html5-tree/autofocus-003.html
@@ -53422,6 +53430,7 @@ testharness mathml/relations/html5-tree/dynamic-href-002.html
 testharness mathml/relations/html5-tree/focus-blur-001.html
 testharness mathml/relations/html5-tree/href-click-003.html
 testharness mathml/relations/html5-tree/href-click-004.html
+testharness mathml/relations/html5-tree/href-navigation.html
 testharness mathml/relations/html5-tree/html-or-svg-or-mathml-element-interfaces.html
 testharness mathml/relations/html5-tree/integration-point-4.html
 testharness mathml/relations/html5-tree/integration-point-5.html
@@ -59954,14 +59963,10 @@ testharness wai-aria/role/fallback-roles.html
 testharness wai-aria/role/form-roles.html
 testharness wai-aria/role/generic-roles.html
 testharness wai-aria/role/grid-roles.html
-testharness wai-aria/role/grid-roles.tentative.html
 testharness wai-aria/role/invalid-roles.html
 testharness wai-aria/role/list-roles.html
-testharness wai-aria/role/list-roles.tentative.html
 testharness wai-aria/role/listbox-roles.html
-testharness wai-aria/role/listbox-roles.tentative.html
 testharness wai-aria/role/menu-roles.html
-testharness wai-aria/role/menu-roles.tentative.html
 testharness wai-aria/role/region-roles.html
 testharness wai-aria/role/role/role_none_conflict_resolution.tentative.html
 testharness wai-aria/role/role_none_conflict_resolution.html
@@ -59970,10 +59975,8 @@ testharness wai-aria/role/roles.html
 testharness wai-aria/role/roles.tentative.html
 testharness wai-aria/role/synonym-roles.html
 testharness wai-aria/role/tab-roles.html
-testharness wai-aria/role/tab-roles.tentative.html
 testharness wai-aria/role/table-roles.html
 testharness wai-aria/role/tree-roles.html
-testharness wai-aria/role/tree-roles.tentative.html
 testharness wai-aria/subtree/tablist.tentative.html
 testharness wasm/core/address.wast.js.html
 testharness wasm/core/align.wast.js.html
