@@ -300,6 +300,24 @@
       "shortname": "ecmascript"
     }
   },
+  "AsyncDisposableStack()": {
+    "AsyncDisposableStack()": {
+      "args": [],
+      "for": [
+        "AsyncDisposableStack"
+      ],
+      "shortname": "ecmascript"
+    }
+  },
+  "AsyncDisposableStack.prototype %Symbol.asyncDispose% ()": {
+    "AsyncDisposableStack.prototype %Symbol.asyncDispose% ()": {
+      "args": [],
+      "for": [
+        "AsyncDisposableStack.prototype [ %Symbol.asyncDispose% ] ( )"
+      ],
+      "shortname": "ecmascript"
+    }
+  },
   "AsyncFunction()": {
     "AsyncFunction(...paramArgs, bodyArg)": {
       "args": [
@@ -2225,6 +2243,24 @@
       "shortname": "orientation-event"
     }
   },
+  "DisposableStack()": {
+    "DisposableStack()": {
+      "args": [],
+      "for": [
+        "DisposableStack"
+      ],
+      "shortname": "ecmascript"
+    }
+  },
+  "DisposableStack.prototype %Symbol.dispose% ()": {
+    "DisposableStack.prototype %Symbol.dispose% ()": {
+      "args": [],
+      "for": [
+        "DisposableStack.prototype [ %Symbol.dispose% ] ( )"
+      ],
+      "shortname": "ecmascript"
+    }
+  },
   "Document()": {
     "Document()": {
       "args": [],
@@ -3196,6 +3232,15 @@
       "args": [],
       "for": [
         "Iterator"
+      ],
+      "shortname": "ecmascript"
+    }
+  },
+  "Iterator.prototype %Symbol.dispose% ()": {
+    "Iterator.prototype %Symbol.dispose% ()": {
+      "args": [],
+      "for": [
+        "Iterator.prototype [ %Symbol.dispose% ] ( )"
       ],
       "shortname": "ecmascript"
     }
@@ -4736,6 +4781,19 @@
       "args": [],
       "for": [
         "String.prototype [ %Symbol.iterator% ] ( )"
+      ],
+      "shortname": "ecmascript"
+    }
+  },
+  "SuppressedError()": {
+    "SuppressedError(error, suppressed, message)": {
+      "args": [
+        "error",
+        "suppressed",
+        "message"
+      ],
+      "for": [
+        "SuppressedError"
       ],
       "shortname": "ecmascript"
     }
@@ -6649,6 +6707,28 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "adopt()": {
+    "adopt(value, onDispose)": {
+      "args": [
+        "value",
+        "onDispose"
+      ],
+      "for": [
+        "DisposableStack"
+      ],
+      "shortname": "ecmascript"
+    },
+    "adopt(value, onDisposeAsync)": {
+      "args": [
+        "value",
+        "onDisposeAsync"
+      ],
+      "for": [
+        "AsyncDisposableStack"
+      ],
+      "shortname": "ecmascript"
     }
   },
   "adoptNode()": {
@@ -14061,6 +14141,26 @@
       "shortname": "webcrypto"
     }
   },
+  "defer()": {
+    "defer(onDispose)": {
+      "args": [
+        "onDispose"
+      ],
+      "for": [
+        "DisposableStack"
+      ],
+      "shortname": "ecmascript"
+    },
+    "defer(onDisposeAsync)": {
+      "args": [
+        "onDisposeAsync"
+      ],
+      "for": [
+        "AsyncDisposableStack"
+      ],
+      "shortname": "ecmascript"
+    }
+  },
   "define()": {
     "define(name, constructor, options)": {
       "args": [
@@ -14850,6 +14950,24 @@
         "GPUComputePassEncoder"
       ],
       "shortname": "webgpu"
+    }
+  },
+  "dispose()": {
+    "dispose()": {
+      "args": [],
+      "for": [
+        "DisposableStack"
+      ],
+      "shortname": "ecmascript"
+    }
+  },
+  "disposeAsync()": {
+    "disposeAsync()": {
+      "args": [],
+      "for": [
+        "AsyncDisposableStack"
+      ],
+      "shortname": "ecmascript"
     }
   },
   "div()": {
@@ -24651,6 +24769,16 @@
         "Selection"
       ],
       "shortname": "selection-api"
+    }
+  },
+  "move()": {
+    "move()": {
+      "args": [],
+      "for": [
+        "AsyncDisposableStack",
+        "DisposableStack"
+      ],
+      "shortname": "ecmascript"
     }
   },
   "moveBefore()": {
@@ -35797,6 +35925,18 @@
         "IDBKeyRange"
       ],
       "shortname": "indexeddb"
+    }
+  },
+  "use()": {
+    "use(value)": {
+      "args": [
+        "value"
+      ],
+      "for": [
+        "AsyncDisposableStack",
+        "DisposableStack"
+      ],
+      "shortname": "ecmascript"
     }
   },
   "userAgentAllowsProtocol()": {
