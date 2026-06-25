@@ -1600,6 +1600,7 @@
     "After DOCTYPE system keyword state",
     "After attribute name state",
     "After attribute value (quoted) state",
+    "After processing instruction target state",
     "AgentCanSuspend",
     "AgentCanSuspend()",
     "AgentSignifier",
@@ -6548,6 +6549,11 @@
     "Process the digital signatures",
     "Processing Model",
     "Processing an input buffer",
+    "Processing instruction data state",
+    "Processing instruction open state",
+    "Processing instruction questionable state",
+    "Processing instruction target state",
+    "Processing instructions",
     "ProcessingInstruction",
     "Processor",
     "Processor Profile",
@@ -12303,6 +12309,7 @@
     "convert line endings to native",
     "convert nodes into a node",
     "convert request protocol",
+    "convert the temporary buffer to a comment",
     "convert to a list of name-value pairs",
     "convert to absolute URL",
     "converted to ECMAScript values",
@@ -13408,6 +13415,7 @@
     "disable remote playback",
     "disabled",
     "disabled fieldset",
+    "disallowed-processing-instruction-target",
     "disassociate animator instance of worklet animation",
     "disc",
     "discard",
@@ -13560,7 +13568,6 @@
     "domain-invalid-code-point",
     "domain-label",
     "domain-to-ASCII",
-    "domain-to-Unicode",
     "dominant baseline",
     "dominant-baseline",
     "dotted",
@@ -13906,6 +13913,7 @@
     "eof-in-cdata",
     "eof-in-comment",
     "eof-in-doctype",
+    "eof-in-processing-instruction",
     "eof-in-script-html-comment-like-text",
     "eof-in-tag",
     "epAtt",
@@ -14888,6 +14896,7 @@
     "get a permission store entry",
     "get a platform sensor's sampling bounds",
     "get a pointer id",
+    "get a processing instruction attribute",
     "get a promise to wait for all",
     "get a prompt",
     "get a realm",
@@ -15969,6 +15978,7 @@
     "insert a character",
     "insert a comment",
     "insert a foreign element",
+    "insert a processing instruction",
     "insert a token",
     "insert adjacent",
     "insert an HTML element",
@@ -16150,7 +16160,9 @@
     "invalid-URL-unit",
     "invalid-character-sequence-after-doctype-name",
     "invalid-credentials",
+    "invalid-first-character-of-processing-instruction-target",
     "invalid-first-character-of-tag-name",
+    "invalid-processing-instruction-target",
     "invalid-reverse-solidus",
     "invalidate",
     "invalidate layout functions",
@@ -22974,7 +22986,6 @@
     "unexpected-character-in-unquoted-attribute-value",
     "unexpected-equals-sign-before-attribute-name",
     "unexpected-null-character",
-    "unexpected-question-mark-instead-of-tag-name",
     "unexpected-solidus-in-tag",
     "unfocusing steps",
     "unforced break",
@@ -23095,10 +23106,12 @@
     "update an option's nearest ancestor select",
     "update anchors",
     "update animations and send events",
+    "update attributes from data",
     "update background fetch instances",
     "update capture state algorithm",
     "update content relevancy for a document",
     "update currently relevant to the user",
+    "update data from attributes",
     "update document for history step application",
     "update document frozenness steps",
     "update emulated forced colors theme",
@@ -47642,8 +47655,59 @@
     "version"
   ],
   "ProcessingInstruction": [
+    "ProcessingInstruction(target)",
+    "ProcessingInstruction(target, data)",
+    "attribute map",
+    "constructor(target)",
+    "constructor(target, data)",
+    "getAttribute(name)",
+    "getAttributeNames()",
+    "hasAttribute(name)",
+    "hasAttributes()",
+    "initialize",
+    "removeAttribute(name)",
+    "setAttribute(name, value)",
     "substring data",
+    "target",
+    "toggleAttribute(name)",
+    "toggleAttribute(name, force)"
+  ],
+  "ProcessingInstruction/ProcessingInstruction(target)": [
+    "data",
     "target"
+  ],
+  "ProcessingInstruction/ProcessingInstruction(target, data)": [
+    "data",
+    "target"
+  ],
+  "ProcessingInstruction/constructor(target)": [
+    "data",
+    "target"
+  ],
+  "ProcessingInstruction/constructor(target, data)": [
+    "data",
+    "target"
+  ],
+  "ProcessingInstruction/getAttribute(name)": [
+    "name"
+  ],
+  "ProcessingInstruction/hasAttribute(name)": [
+    "name"
+  ],
+  "ProcessingInstruction/removeAttribute(name)": [
+    "name"
+  ],
+  "ProcessingInstruction/setAttribute(name, value)": [
+    "name",
+    "value"
+  ],
+  "ProcessingInstruction/toggleAttribute(name)": [
+    "force",
+    "name"
+  ],
+  "ProcessingInstruction/toggleAttribute(name, force)": [
+    "force",
+    "name"
   ],
   "Profiler": [
     "constructor()",
