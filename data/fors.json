@@ -20204,6 +20204,7 @@
     "request URL",
     "request a lock",
     "request a position",
+    "request a window display state change",
     "request an element to be removed from the top layer",
     "request body",
     "request close return value",
@@ -25278,6 +25279,7 @@
     "device-height",
     "device-width",
     "display-mode",
+    "display-state",
     "dynamic-range",
     "embossed",
     "environment-blending",
@@ -25303,6 +25305,7 @@
     "prefers-reduced-transparency",
     "print",
     "projection",
+    "resizable",
     "resolution",
     "scan",
     "screen",
@@ -25329,6 +25332,12 @@
     "minimal-ui",
     "picture-in-picture",
     "standalone"
+  ],
+  "@media/display-state": [
+    "fullscreen",
+    "maximized",
+    "minimized",
+    "normal"
   ],
   "@media/dynamic-range": [
     "high",
@@ -25394,6 +25403,10 @@
   "@media/prefers-reduced-transparency": [
     "no-preference",
     "reduce"
+  ],
+  "@media/resizable": [
+    "false",
+    "true"
   ],
   "@media/resolution": [
     "infinite"
@@ -56381,9 +56394,11 @@
     "location",
     "locationbar",
     "matchMedia(query)",
+    "maximize()",
     "menubar",
     "message",
     "messageerror",
+    "minimize()",
     "moveBy(x, y)",
     "moveTo(x, y)",
     "name",
@@ -56510,6 +56525,7 @@
     "resize",
     "resizeBy(x, y)",
     "resizeTo(width, height)",
+    "restore()",
     "screen",
     "screenLeft",
     "screenTop",
@@ -56528,6 +56544,7 @@
     "scrollY",
     "scrollbars",
     "self",
+    "setResizable(resizable)",
     "showDirectoryPicker()",
     "showDirectoryPicker(options)",
     "showOpenFilePicker()",
@@ -56624,6 +56641,9 @@
   "Window/scrollTo(x, y)": [
     "x",
     "y"
+  ],
+  "Window/setResizable(resizable)": [
+    "resizable"
   ],
   "Window/showDirectoryPicker()": [
     "options"
@@ -62361,6 +62381,12 @@
     "tabbed",
     "unframed",
     "window-controls-overlay"
+  ],
+  "display state": [
+    "fullscreen",
+    "maximized",
+    "minimized",
+    "normal"
   ],
   "display surface": [
     "browser",
