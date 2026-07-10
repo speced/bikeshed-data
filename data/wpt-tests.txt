@@ -1,4 +1,4 @@
-sha: 8951bcc0d49357e9bb4e0170855ab7a252081f9f
+sha: 65b7589a57c8377c055d74ab81eeb74ef4364386
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -319,6 +319,7 @@ crashtest css/css-cascade/scope-has-crash.html
 crashtest css/css-cascade/scope-inner-pseudo-scope-crash.html
 crashtest css/css-cascade/tons-of-declarations-crash.html
 crashtest css/css-color-adjust/rendering/dark-color-scheme/color-scheme-link-crash.html
+crashtest css/css-color/crashtests/stop-color-invalid-rgb.html
 crashtest css/css-conditional/container-queries/crashtests/br-crash.html
 crashtest css/css-conditional/container-queries/crashtests/canvas-as-container-crash.html
 crashtest css/css-conditional/container-queries/crashtests/chrome-bug-1289718-000-crash.html
@@ -441,6 +442,7 @@ crashtest css/css-contain/crashtests/contain-nested-crash-004.html
 crashtest css/css-contain/crashtests/contain-nested-relayout-boundary.html
 crashtest css/css-contain/crashtests/flex-item-with-inline-block-with-contain.html
 crashtest css/css-contain/quote-scoping-shadow-dom-crash.html
+crashtest css/css-content/crashtests/content-disallowed-url.html
 crashtest css/css-content/crashtests/generated-counter.html
 crashtest css/css-content/crashtests/generated-quote.html
 crashtest css/css-content/crashtests/generated-text.html
@@ -602,6 +604,7 @@ crashtest css/css-multicol/crashtests/balance-break-inside-avoid-on-root.html
 crashtest css/css-multicol/crashtests/balance-with-forced-break.html
 crashtest css/css-multicol/crashtests/balancing-flex-item-trailing-margin-freeze.html
 crashtest css/css-multicol/crashtests/balancing-tall-borders-freeze.html
+crashtest css/css-multicol/crashtests/block-flow-split-with-fixed-child.html
 crashtest css/css-multicol/crashtests/block-in-inline-become-float.html
 crashtest css/css-multicol/crashtests/block-in-inline-with-abspos-after-spanner.html
 crashtest css/css-multicol/crashtests/block-in-inline-with-spanner-in-overflowed-parent-nested-multicol.html
@@ -613,6 +616,7 @@ crashtest css/css-multicol/crashtests/chrome-bug-1297118.html
 crashtest css/css-multicol/crashtests/chrome-bug-1301281.html
 crashtest css/css-multicol/crashtests/chrome-bug-1303256.html
 crashtest css/css-multicol/crashtests/chrome-bug-1314866.html
+crashtest css/css-multicol/crashtests/continuation-detach.html
 crashtest css/css-multicol/crashtests/dynamic-simplified-layout-break-propagation.html
 crashtest css/css-multicol/crashtests/first-letter-column-span-fieldset.html
 crashtest css/css-multicol/crashtests/fit-content-with-spanner-and-auto-scrollbar-sibling.html
@@ -1149,6 +1153,7 @@ crashtest css/motion/offset-path-huge-angle-turn-001-crash.html
 crashtest css/motion/offset-path-url-crash.html
 crashtest css/selectors/backdrop-input-crash.html
 crashtest css/selectors/chrome-40257746-crash.html
+crashtest css/selectors/crashtests/empty-pseudo-with-first-line.html
 crashtest css/selectors/eof-right-after-selector-crash.html
 crashtest css/selectors/eof-some-after-selector-crash.html
 crashtest css/selectors/has-nth-of-crash.html
@@ -1815,6 +1820,7 @@ crashtest svg/crashtests/firefox-bug-1883804.html
 crashtest svg/crashtests/firefox-bug-1966754.html
 crashtest svg/crashtests/firefox-bug-1980267.html
 crashtest svg/crashtests/firefox-bug-2018671.html
+crashtest svg/crashtests/image-dispatch-event-on-destruct.html
 crashtest svg/extensibility/foreignObject/foreign-object-circular-filter-reference-crash.html
 crashtest svg/extensibility/foreignObject/foreign-object-under-clip-path-crash.html
 crashtest svg/extensibility/foreignObject/foreign-object-under-defs-crash.html
@@ -41467,6 +41473,7 @@ testharness css/cssom-view/scrollIntoView-sideways-rl-writing-mode.html
 testharness css/cssom-view/scrollIntoView-smooth.html
 testharness css/cssom-view/scrollIntoView-stuck.tentative.html
 testharness css/cssom-view/scrollIntoView-svg-shape.html
+testharness css/cssom-view/scrollIntoView-then-scrollBy.html
 testharness css/cssom-view/scrollIntoView-vertical-lr-writing-mode-and-rtl-direction.html
 testharness css/cssom-view/scrollIntoView-vertical-lr-writing-mode.html
 testharness css/cssom-view/scrollIntoView-vertical-rl-writing-mode.html
@@ -44757,7 +44764,6 @@ testharness fledge/tentative/join-leave-ad-interest-group.https.window.js
 testharness fledge/tentative/kanon-status-below-threshold.https.window.js
 testharness fledge/tentative/network.https.window.js
 testharness fledge/tentative/no-winner.https.window.js
-testharness fledge/tentative/private-aggregation.https.window.js
 testharness fledge/tentative/real-time-reporting.https.window.js
 testharness fledge/tentative/register-ad-beacon.https.window.js
 testharness fledge/tentative/reporting-arguments.https.window.js
@@ -44765,7 +44771,6 @@ testharness fledge/tentative/round-a-value.https.window.js
 testharness fledge/tentative/score-ad-browser-signals.https.window.js
 testharness fledge/tentative/send-report-to.https.window.js
 testharness fledge/tentative/server-response-for-debugging-only.https.window.js
-testharness fledge/tentative/server-response-private-aggregation.https.window.js
 testharness fledge/tentative/server-response.https.window.js
 testharness fledge/tentative/service-worker-request-visibility.https.window.js
 testharness fledge/tentative/tie.https.window.js
@@ -55597,9 +55602,6 @@ testharness presentation-api/controlling-ua/startNewPresentation_error.https.htm
 testharness private-aggregation/private-aggregation-permissions-policy-default.https.sub.html
 testharness private-aggregation/private-aggregation-permissions-policy-none.https.sub.html
 testharness private-aggregation/private-aggregation-permissions-policy-self.https.sub.html
-testharness private-aggregation/protected-audience-auction-report-buyers-debug-mode-surface.https.html
-testharness private-aggregation/protected-audience-surface-failure.https.html
-testharness private-aggregation/protected-audience-surface-success.https.html
 testharness private-aggregation/shared-storage-surface-context-id.https.html
 testharness private-aggregation/shared-storage-surface-failure-2.https.html
 testharness private-aggregation/shared-storage-surface-failure.https.html
