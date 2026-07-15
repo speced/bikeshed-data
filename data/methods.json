@@ -5774,6 +5774,18 @@
       "shortname": "dom"
     }
   },
+  "XRGPUBinding()": {
+    "XRGPUBinding(session, device)": {
+      "args": [
+        "session",
+        "device"
+      ],
+      "for": [
+        "XRGPUBinding"
+      ],
+      "shortname": "webxr-webgpu-binding"
+    }
+  },
   "XRInputSourceEvent()": {
     "XRInputSourceEvent(type, eventInitDict)": {
       "args": [
@@ -7566,6 +7578,7 @@
       "for": [
         "LanguageDetector",
         "LanguageModel",
+        "Proofreader",
         "Rewriter",
         "Summarizer",
         "Writer"
@@ -7579,6 +7592,7 @@
       "for": [
         "LanguageDetector",
         "LanguageModel",
+        "Proofreader",
         "Rewriter",
         "Summarizer",
         "TextDetector",
@@ -11006,6 +11020,16 @@
       ],
       "shortname": "webxr"
     },
+    "constructor(session, device)": {
+      "args": [
+        "session",
+        "device"
+      ],
+      "for": [
+        "XRGPUBinding"
+      ],
+      "shortname": "webxr-webgpu-binding"
+    },
     "constructor(source)": {
       "args": [
         "source"
@@ -12375,6 +12399,7 @@
         "CredentialsContainer",
         "LanguageDetector",
         "LanguageModel",
+        "Proofreader",
         "Rewriter",
         "Summarizer",
         "TextDetector",
@@ -12390,6 +12415,7 @@
         "CredentialsContainer",
         "LanguageDetector",
         "LanguageModel",
+        "Proofreader",
         "Rewriter",
         "Summarizer",
         "TextDetector",
@@ -12769,36 +12795,40 @@
     "createCubeLayer()": {
       "args": [],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "createCubeLayer(init)": {
       "args": [
         "init"
       ],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     }
   },
   "createCylinderLayer()": {
     "createCylinderLayer()": {
       "args": [],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "createCylinderLayer(init)": {
       "args": [
         "init"
       ],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "createCylinderLayer(video)": {
       "args": [
@@ -12977,18 +13007,20 @@
     "createEquirectLayer()": {
       "args": [],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "createEquirectLayer(init)": {
       "args": [
         "init"
       ],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "createEquirectLayer(video)": {
       "args": [
@@ -13460,36 +13492,40 @@
     "createProjectionLayer()": {
       "args": [],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "createProjectionLayer(init)": {
       "args": [
         "init"
       ],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     }
   },
   "createQuadLayer()": {
     "createQuadLayer()": {
       "args": [],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "createQuadLayer(init)": {
       "args": [
         "init"
       ],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "createQuadLayer(video)": {
       "args": [
@@ -19797,6 +19833,15 @@
       "shortname": "webgpu"
     }
   },
+  "getPreferredColorFormat()": {
+    "getPreferredColorFormat()": {
+      "args": [],
+      "for": [
+        "XRGPUBinding"
+      ],
+      "shortname": "webxr-webgpu-binding"
+    }
+  },
   "getPrimaryService()": {
     "getPrimaryService(service)": {
       "args": [
@@ -20363,9 +20408,10 @@
         "frame"
       ],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     },
     "getSubImage(layer, frame, eye)": {
       "args": [
@@ -20374,9 +20420,10 @@
         "eye"
       ],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     }
   },
   "getSubscription()": {
@@ -20758,6 +20805,15 @@
       "shortname": "mediacapture-streams"
     }
   },
+  "getViewDescriptor()": {
+    "getViewDescriptor()": {
+      "args": [],
+      "for": [
+        "XRGPUSubImage"
+      ],
+      "shortname": "webxr-webgpu-binding"
+    }
+  },
   "getViewSubImage()": {
     "getViewSubImage(layer, view)": {
       "args": [
@@ -20765,9 +20821,10 @@
         "view"
       ],
       "for": [
+        "XRGPUBinding",
         "XRWebGLBinding"
       ],
-      "shortname": "webxrlayers"
+      "shortname": "webxr-webgpu-binding"
     }
   },
   "getViewerPose()": {
@@ -24695,6 +24752,7 @@
       "for": [
         "LanguageDetector",
         "LanguageModel",
+        "Proofreader",
         "Rewriter",
         "Summarizer",
         "Translator",
@@ -26519,6 +26577,27 @@
         "LanguageModel"
       ],
       "shortname": "prompt-api"
+    }
+  },
+  "proofread()": {
+    "proofread(input)": {
+      "args": [
+        "input"
+      ],
+      "for": [
+        "Proofreader"
+      ],
+      "shortname": "proofreader-api"
+    },
+    "proofread(input, options)": {
+      "args": [
+        "input",
+        "options"
+      ],
+      "for": [
+        "Proofreader"
+      ],
+      "shortname": "proofreader-api"
     }
   },
   "propertyIsEnumerable()": {
@@ -28550,6 +28629,27 @@
         "USB"
       ],
       "shortname": "web-bluetooth"
+    }
+  },
+  "requestFileHandle()": {
+    "requestFileHandle(hash)": {
+      "args": [
+        "hash"
+      ],
+      "for": [
+        "CrossOriginStorageManager"
+      ],
+      "shortname": "cross-origin-storage"
+    },
+    "requestFileHandle(hash, options)": {
+      "args": [
+        "hash",
+        "options"
+      ],
+      "for": [
+        "CrossOriginStorageManager"
+      ],
+      "shortname": "cross-origin-storage"
     }
   },
   "requestFrame()": {
