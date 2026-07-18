@@ -1,0 +1,230 @@
+{
+    "ref-for-dom-mediacapabilities-decodinginfo": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaCapabilities.json",
+            "name": "decodingInfo",
+            "slug": "API/MediaCapabilities/decodingInfo",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaCapabilities/decodingInfo",
+            "summary": "The MediaCapabilities.decodingInfo() method, part of the Media Capabilities API, returns a promise with the tested media configuration's capabilities info. This contains the three boolean properties supported, smooth, and powerefficient, which describe whether decoding the media described would be supported, smooth, and powerefficient.",
+            "support": {
+                "chrome": {
+                    "version_added": "66",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "63",
+                    "notes": [
+                        "The <code>webrtc</code> value of the <code>type</code> option is named <code>transmission</code>.",
+                        "Before Firefox 101, <code>decodingInfo()</code> ignored <code>codecs</code> parameter options for <code>av01</code> codecs (treating them as <code>av1</code>)."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": {
+                    "version_added": "48",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
+                },
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
+                }
+            },
+            "title": "MediaCapabilities: decodingInfo() method"
+        }
+    ],
+    "ref-for-dom-mediacapabilities-encodinginfo": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaCapabilities.json",
+            "name": "encodingInfo",
+            "slug": "API/MediaCapabilities/encodingInfo",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaCapabilities/encodingInfo",
+            "summary": "The MediaCapabilities.encodingInfo() method, part of the MediaCapabilities interface of the Media Capabilities API, returns a promise with the tested media configuration's capabilities information. This contains the three boolean properties supported, smooth, and powerefficient, which describe how compatible the device is with the type of media.",
+            "support": {
+                "chrome": {
+                    "version_added": "101"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "63",
+                    "notes": "The <code>webrtc</code> value of the <code>type</code> option is named <code>transmission</code>."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "101"
+                }
+            },
+            "title": "MediaCapabilities: encodingInfo() method"
+        }
+    ],
+    "media-capabilities-interface": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaCapabilities.json",
+            "name": "MediaCapabilities",
+            "slug": "API/MediaCapabilities",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaCapabilities",
+            "summary": "The MediaCapabilities interface of the Media Capabilities API provides information about the decoding abilities of the device, system and browser. The API can be used to query the browser about the decoding abilities of the device based on codecs, profile, resolution, and bitrates. The information can be used to serve optimal media streams to the user and determine if playback should be smooth and power efficient.",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "63"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaCapabilities"
+        }
+    ],
+    "dom-navigator-mediacapabilities": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "mediaCapabilities",
+            "slug": "API/Navigator/mediaCapabilities",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/mediaCapabilities",
+            "summary": "The Navigator.mediaCapabilities read-only property returns a MediaCapabilities object that can expose information about the decoding and encoding capabilities for a given format and output capabilities as defined by the Media Capabilities API.",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "63"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "55"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator: mediaCapabilities property"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WorkerNavigator.json",
+            "name": "mediaCapabilities",
+            "slug": "API/WorkerNavigator/mediaCapabilities",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/mediaCapabilities",
+            "summary": "The read-only WorkerNavigator.mediaCapabilities property returns a MediaCapabilities object that can expose information about the decoding and encoding capabilities for a given format and output capabilities as defined by the Media Capabilities API.",
+            "support": {
+                "chrome": {
+                    "version_added": "76"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "63"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerNavigator: mediaCapabilities property"
+        }
+    ]
+}
