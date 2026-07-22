@@ -1,4 +1,4 @@
-sha: 57e48fbf38927e10e86e049b9b03c0e7a1686878
+sha: 617c00423837d194e20b0273874a3572a96282a5
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1728,6 +1728,7 @@ crashtest selection/crashtests/find-whole-word-crash.html
 crashtest selection/crashtests/find-with-moving-iframe.html
 crashtest selection/crashtests/move-track-from-video-after-selection-setBaseAndExtent-from-outside-video-to-before-track.html
 crashtest selection/crashtests/selectall-and-find-svg-text-on-selectstart.html
+crashtest selection/crashtests/selection-add-range-collapsed-in-unassigned-node-and-shadow-has-no-content.html
 crashtest selection/crashtests/selection-clip-crash.html
 crashtest selection/crashtests/selection-delete-list-item-crash.html
 crashtest selection/crashtests/selection-deleteFromDocument-after-audio-control-visible-when-selecting-audio-children.html
@@ -1752,6 +1753,7 @@ crashtest selection/crashtests/selection-modify-per-word-in-table-header-group.h
 crashtest selection/crashtests/selection-modify-word-left-with-selecting-editable-select.html
 crashtest selection/crashtests/selection-setBaseAndExtent-from-end-of-video-to-child-of-video.html
 crashtest selection/crashtests/selection-setBaseAndExtent-from-label-to-end-of-audio-and-hide-audio-controls.html
+crashtest selection/crashtests/selection-setBaseAndExtent-unassigned-nodes-backward.html
 crashtest selection/crashtests/selection-setBaseAndExtent-video-in-shadow-and-another-shadowroot.html
 crashtest selection/crashtests/table.html
 crashtest selection/selection-select-all-move-input-crash.html
@@ -5415,6 +5417,7 @@ reftest animation-worklet/worklet-animation-with-scroll-timeline-root-scroller.h
 reftest animation-worklet/worklet-animation-with-scroll-timeline.https.html
 reftest apng/animated-png-timeout.html
 reftest avif/animated-avif-timeout.html
+reftest avif/lsel-layer-id-ffff.html
 reftest compat/webkit-background-origin-text.html
 reftest compat/webkit-box-align-001.html
 reftest compat/webkit-box-blockify.html
@@ -32943,6 +32946,7 @@ testharness IndexedDB/idbobjectstore-deleteIndex-exception-order.any.js
 testharness IndexedDB/idbobjectstore-getAll-enforcerange.any.js
 testharness IndexedDB/idbobjectstore-getAllKeys-enforcerange.any.js
 testharness IndexedDB/idbobjectstore-index-finished.any.js
+testharness IndexedDB/idbobjectstore-put-unique-index-constraint-is-atomic.any.js
 testharness IndexedDB/idbobjectstore-query-exception-order.any.js
 testharness IndexedDB/idbobjectstore-rename-abort.any.js
 testharness IndexedDB/idbobjectstore-rename-errors.any.js
@@ -34036,6 +34040,7 @@ testharness container-timing/tentative/nested-containertiming-and-ignore-on-img.
 testharness container-timing/tentative/nested-containertiming-and-ignore-on-text.html
 testharness container-timing/tentative/nested-containertiming-child-img-with-ignore.html
 testharness container-timing/tentative/nested-containertiming-child-img.html
+testharness container-timing/tentative/nested-containertiming-on-img-without-ignore.html
 testharness container-timing/tentative/nested-containertiming-with-ignore.html
 testharness container-timing/tentative/pseudo-background-image-before-in-container-timing.html
 testharness container-timing/tentative/pseudo-with-image-content-in-container-timing.html
@@ -39139,6 +39144,7 @@ testharness css/css-scroll-snap/snap-after-relayout/multiple-aligned-targets/com
 testharness css/css-scroll-snap/snap-after-relayout/multiple-aligned-targets/nested-supercedes-common-to-both-axes.html
 testharness css/css-scroll-snap/snap-after-relayout/multiple-aligned-targets/prefer-common-to-both-axes.html
 testharness css/css-scroll-snap/snap-after-relayout/multiple-aligned-targets/prefer-first-in-tree-order.html
+testharness css/css-scroll-snap/snap-after-relayout/multiple-aligned-targets/prefer-focused-element-scaled-ancestor.html
 testharness css/css-scroll-snap/snap-after-relayout/multiple-aligned-targets/prefer-focused-element.html
 testharness css/css-scroll-snap/snap-after-relayout/multiple-aligned-targets/prefer-focused-nested-containers.html
 testharness css/css-scroll-snap/snap-after-relayout/multiple-aligned-targets/prefer-inner-target.html
@@ -46574,6 +46580,7 @@ testharness html/canvas/element/manual/fill-and-stroke-styles/pattern-from-canva
 testharness html/canvas/element/manual/fill-and-stroke-styles/pattern-from-image-cross-origin-taint.https.sub.html
 testharness html/canvas/element/manual/fill-and-stroke-styles/pattern-from-img-cross-origin-taint.https.sub.html
 testharness html/canvas/element/manual/fill-and-stroke-styles/pattern-from-video-cross-origin-taint.https.sub.html
+testharness html/canvas/element/manual/filters/2d.filter.function-then-svg-reference.html
 testharness html/canvas/element/manual/filters/svg-diffuse-filter-visited-color-taints.html
 testharness html/canvas/element/manual/filters/svg-drop-shadow-filter-visited-color-taints.html
 testharness html/canvas/element/manual/filters/svg-filter-feImage-cross-origin-taint.https.sub.html
