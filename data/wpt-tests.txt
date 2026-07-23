@@ -1,4 +1,4 @@
-sha: 1cf8f33e7589520f3d754ed4fbe57dbcfcb82a52
+sha: f601e44bfea32f6d02575dda60e562ef8b8b16ea
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1368,6 +1368,7 @@ crashtest editing/crashtests/textarea-will-be-blurred-by-focus-event-listener.ht
 crashtest editing/crashtests/unloading-editor-in-subdocument-containing-misspelled-word.html
 crashtest editing/crashtests/update-dom-during-undoing-in-textarea.html
 crashtest editing/crashtests/white-space-nowrap-to-pre-line.html
+crashtest editing/edit-context/edit-context-detach-from-contenteditable-crash.html
 crashtest encoding/streams/stringification-crash.html
 crashtest fetch/api/crashtests/aborted-fetch-response.https.html
 crashtest fetch/api/crashtests/body-window-destroy.html
@@ -27721,6 +27722,7 @@ reftest css/css-view-transitions/scoped/paint-order.html
 reftest css/css-view-transitions/scoped/pause-rendering-resize.html
 reftest css/css-view-transitions/scoped/pause-rendering.html
 reftest css/css-view-transitions/scoped/rotation-on-scoped-element.html
+reftest css/css-view-transitions/scoped/scope-containment-pseudo-border.html
 reftest css/css-view-transitions/scoped/scope-during-transition-2.html
 reftest css/css-view-transitions/scoped/scrolled-target-position-rtl.html
 reftest css/css-view-transitions/scoped/scrolled-target-position.html
@@ -41395,6 +41397,8 @@ testharness css/css-view-transitions/scoped/hit-testing.html
 testharness css/css-view-transitions/scoped/missing-view-transition-name.html
 testharness css/css-view-transitions/scoped/negative-playback-rate.html
 testharness css/css-view-transitions/scoped/run_in_parallel.html
+testharness css/css-view-transitions/scoped/scope-containment-during-capture.html
+testharness css/css-view-transitions/scoped/scope-containment-sibling-offset.html
 testharness css/css-view-transitions/scoped/scope-during-transition-1.html
 testharness css/css-view-transitions/scoped/start-view-transition.html
 testharness css/css-view-transitions/scoped/view-transition-scope-added-during-callback.html
@@ -43558,6 +43562,7 @@ testharness editing/edit-context/edit-context-execCommand.tentative.https.html
 testharness editing/edit-context/edit-context-focus.tentative.html
 testharness editing/edit-context/edit-context-inheritability.tentative.html
 testharness editing/edit-context/edit-context-input.tentative.html
+testharness editing/edit-context/edit-context-paste-handler-changes-active.tentative.html
 testharness editing/edit-context/edit-context-paste-html.tentative.html
 testharness editing/edit-context/edit-context-property.tentative.html
 testharness editing/edit-context/edit-context-textformat.tentative.html
@@ -50275,7 +50280,8 @@ testharness html/semantics/document-metadata/the-link-element/document-without-b
 testharness html/semantics/document-metadata/the-link-element/link-error-fired-before-scripting-unblocked.html
 testharness html/semantics/document-metadata/the-link-element/link-load-error-events.html
 testharness html/semantics/document-metadata/the-link-element/link-load-error-events.https.html
-testharness html/semantics/document-metadata/the-link-element/link-load-event-alt.html
+testharness html/semantics/document-metadata/the-link-element/link-load-event-alt-001.html
+testharness html/semantics/document-metadata/the-link-element/link-load-event-alt-002.html
 testharness html/semantics/document-metadata/the-link-element/link-load-event.html
 testharness html/semantics/document-metadata/the-link-element/link-load-fired-before-scripting-unblocked.html
 testharness html/semantics/document-metadata/the-link-element/link-multiple-load-events.html
@@ -61129,7 +61135,6 @@ testharness webaudio/the-audio-api/the-audiocontext-interface/audiocontext-getou
 testharness webaudio/the-audio-api/the-audiocontext-interface/audiocontext-getoutputtimestamp.html
 testharness webaudio/the-audio-api/the-audiocontext-interface/audiocontext-not-fully-active.html
 testharness webaudio/the-audio-api/the-audiocontext-interface/audiocontext-playbackstats.html
-testharness webaudio/the-audio-api/the-audiocontext-interface/audiocontext-playoutstats.html
 testharness webaudio/the-audio-api/the-audiocontext-interface/audiocontext-rendersizehint.html
 testharness webaudio/the-audio-api/the-audiocontext-interface/audiocontext-sinkid-constructor.https.html
 testharness webaudio/the-audio-api/the-audiocontext-interface/audiocontext-sinkid-setsinkid.https.html
