@@ -237,9 +237,17 @@
       "url": "https://www.w3.org/TR/shacl12-profiling/#cls-datagraph"
     }
   },
-  "#cls-shape": {
+  "#cls-processorconfiguration": {
     "current": {
       "number": "5.4",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Class: Processor Configuration",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-processorconfiguration"
+    }
+  },
+  "#cls-shape": {
+    "current": {
+      "number": "5.5",
       "spec": "SHACL 1.2 Profiling",
       "text": "Class: Shape",
       "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-shape"
@@ -897,7 +905,7 @@
   },
   "#prop-conforms": {
     "current": {
-      "number": "5.3.2",
+      "number": "5.3.4",
       "spec": "SHACL 1.2 Profiling",
       "text": "Property: conforms",
       "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conforms"
@@ -910,12 +918,6 @@
     }
   },
   "#prop-conformsto": {
-    "current": {
-      "number": "5.2.1",
-      "spec": "SHACL 1.2 Profiling",
-      "text": "Property: conforms to",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conformsto"
-    },
     "snapshot": {
       "number": "5.2.1",
       "spec": "SHACL 1.2 Profiling",
@@ -923,13 +925,15 @@
       "url": "https://www.w3.org/TR/shacl12-profiling/#prop-conformsto"
     }
   },
-  "#prop-hasvalidationreport": {
+  "#prop-conformstoshapesgraph": {
     "current": {
-      "number": "5.2.2",
+      "number": "5.2.1",
       "spec": "SHACL 1.2 Profiling",
-      "text": "Property: validation report",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-hasvalidationreport"
-    },
+      "text": "Property: conforms to shapes graph",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conformstoshapesgraph"
+    }
+  },
+  "#prop-hasvalidationreport": {
     "snapshot": {
       "number": "5.2.2",
       "spec": "SHACL 1.2 Profiling",
@@ -953,7 +957,7 @@
   },
   "#prop-isdefinedby": {
     "current": {
-      "number": "5.4.1",
+      "number": "5.5.1",
       "spec": "SHACL 1.2 Profiling",
       "text": "Property: is defined by",
       "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-isdefinedby"
@@ -977,6 +981,22 @@
       "spec": "SHACL 1.2 Profiling",
       "text": "Property: member",
       "url": "https://www.w3.org/TR/shacl12-profiling/#prop-member"
+    }
+  },
+  "#prop-usedconfiguration": {
+    "current": {
+      "number": "5.3.3",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Property: used configuration",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-usedconfiguration"
+    }
+  },
+  "#prop-useddatagraph": {
+    "current": {
+      "number": "5.3.2",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Property: used data graph",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-useddatagraph"
     }
   },
   "#prop-usedshapesgraph": {
@@ -1064,17 +1084,27 @@
     }
   },
   "#rule-conformsto": {
-    "current": {
-      "number": "5.5",
-      "spec": "SHACL 1.2 Profiling",
-      "text": "Rule: conforms to",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#rule-conformsto"
-    },
     "snapshot": {
       "number": "5.5",
       "spec": "SHACL 1.2 Profiling",
       "text": "Rule: conforms to",
       "url": "https://www.w3.org/TR/shacl12-profiling/#rule-conformsto"
+    }
+  },
+  "#rule-conformstoshapesgraph": {
+    "current": {
+      "number": "5.6",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Rule: conforms to shapes graph",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#rule-conformstoshapesgraph"
+    }
+  },
+  "#rule-conformstospecification": {
+    "current": {
+      "number": "5.7",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Rule: conforms to specification",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#rule-conformstospecification"
     }
   },
   "#scope": {
@@ -1694,12 +1724,6 @@
     }
   },
   "#x5-2-1-property-conforms-to": {
-    "current": {
-      "number": "5.2.1",
-      "spec": "SHACL 1.2 Profiling",
-      "text": "Property: conforms to",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conformsto"
-    },
     "snapshot": {
       "number": "5.2.1",
       "spec": "SHACL 1.2 Profiling",
@@ -1707,13 +1731,15 @@
       "url": "https://www.w3.org/TR/shacl12-profiling/#prop-conformsto"
     }
   },
-  "#x5-2-2-property-validation-report": {
+  "#x5-2-1-property-conforms-to-shapes-graph": {
     "current": {
-      "number": "5.2.2",
+      "number": "5.2.1",
       "spec": "SHACL 1.2 Profiling",
-      "text": "Property: validation report",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-hasvalidationreport"
-    },
+      "text": "Property: conforms to shapes graph",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conformstoshapesgraph"
+    }
+  },
+  "#x5-2-2-property-validation-report": {
     "snapshot": {
       "number": "5.2.2",
       "spec": "SHACL 1.2 Profiling",
@@ -1750,17 +1776,35 @@
     }
   },
   "#x5-3-2-property-conforms": {
-    "current": {
-      "number": "5.3.2",
-      "spec": "SHACL 1.2 Profiling",
-      "text": "Property: conforms",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conforms"
-    },
     "snapshot": {
       "number": "5.3.2",
       "spec": "SHACL 1.2 Profiling",
       "text": "Property: conforms",
       "url": "https://www.w3.org/TR/shacl12-profiling/#prop-conforms"
+    }
+  },
+  "#x5-3-2-property-used-data-graph": {
+    "current": {
+      "number": "5.3.2",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Property: used data graph",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-useddatagraph"
+    }
+  },
+  "#x5-3-3-property-used-configuration": {
+    "current": {
+      "number": "5.3.3",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Property: used configuration",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-usedconfiguration"
+    }
+  },
+  "#x5-3-4-property-conforms": {
+    "current": {
+      "number": "5.3.4",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Property: conforms",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conforms"
     }
   },
   "#x5-3-class-validation-report": {
@@ -1778,12 +1822,6 @@
     }
   },
   "#x5-4-1-property-is-defined-by": {
-    "current": {
-      "number": "5.4.1",
-      "spec": "SHACL 1.2 Profiling",
-      "text": "Property: is defined by",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-isdefinedby"
-    },
     "snapshot": {
       "number": "5.4.1",
       "spec": "SHACL 1.2 Profiling",
@@ -1791,13 +1829,15 @@
       "url": "https://www.w3.org/TR/shacl12-profiling/#prop-isdefinedby"
     }
   },
-  "#x5-4-class-shape": {
+  "#x5-4-class-processor-configuration": {
     "current": {
       "number": "5.4",
       "spec": "SHACL 1.2 Profiling",
-      "text": "Class: Shape",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-shape"
-    },
+      "text": "Class: Processor Configuration",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-processorconfiguration"
+    }
+  },
+  "#x5-4-class-shape": {
     "snapshot": {
       "number": "5.4",
       "spec": "SHACL 1.2 Profiling",
@@ -1805,18 +1845,44 @@
       "url": "https://www.w3.org/TR/shacl12-profiling/#cls-shape"
     }
   },
-  "#x5-5-rule-conforms-to": {
+  "#x5-5-1-property-is-defined-by": {
+    "current": {
+      "number": "5.5.1",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Property: is defined by",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-isdefinedby"
+    }
+  },
+  "#x5-5-class-shape": {
     "current": {
       "number": "5.5",
       "spec": "SHACL 1.2 Profiling",
-      "text": "Rule: conforms to",
-      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#rule-conformsto"
-    },
+      "text": "Class: Shape",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-shape"
+    }
+  },
+  "#x5-5-rule-conforms-to": {
     "snapshot": {
       "number": "5.5",
       "spec": "SHACL 1.2 Profiling",
       "text": "Rule: conforms to",
       "url": "https://www.w3.org/TR/shacl12-profiling/#rule-conformsto"
+    }
+  },
+  "#x5-6-rule-conforms-to-shapes-graph": {
+    "current": {
+      "number": "5.6",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Rule: conforms to shapes graph",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#rule-conformstoshapesgraph"
+    }
+  },
+  "#x5-7-rule-conforms-to-specification": {
+    "current": {
+      "number": "5.7",
+      "spec": "SHACL 1.2 Profiling",
+      "text": "Rule: conforms to specification",
+      "url": "https://w3c.github.io/data-shapes/shacl12-profiling/#rule-conformstospecification"
     }
   },
   "#x5-shacl-profiling-vocabulary": {
