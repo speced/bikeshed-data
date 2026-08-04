@@ -1041,6 +1041,9 @@
     "<linear-stop>",
     "<list>",
     "<ln/>",
+    "<location-descriptor>",
+    "<location-name>",
+    "<location-rule>",
     "<log/>",
     "<logbase>",
     "<lowlimit>",
@@ -1100,6 +1103,7 @@
     "<navigation-in-parens>",
     "<navigation-location-between-test>",
     "<navigation-location-test>",
+    "<navigation-location>",
     "<navigation-phase-keyword>",
     "<navigation-phase-test>",
     "<navigation-relation>",
@@ -1204,10 +1208,6 @@
     "<reversed-counter-name>",
     "<right>",
     "<rounding-strategy>",
-    "<route-descriptor>",
-    "<route-location>",
-    "<route-name>",
-    "<route-rule>",
     "<rule-list>",
     "<safe-printable-inset>",
     "<scalarproduct/>",
@@ -1382,6 +1382,7 @@
     "@left-bottom",
     "@left-middle",
     "@left-top",
+    "@location",
     "@macro",
     "@media",
     "@mixin",
@@ -1394,7 +1395,6 @@
     "@right-bottom",
     "@right-middle",
     "@right-top",
-    "@route",
     "@scope",
     "@starting-style",
     "@supports",
@@ -4967,6 +4967,8 @@
     "Interpret Format 1 Patch Map",
     "Interpret Format 2 Patch Map",
     "Interpret Format 2 Patch Map Entry",
+    "Interpret Patch Map",
+    "Interpret Patch Map Entry",
     "Interrupt transfers",
     "Intersection Observer",
     "IntersectionObserver",
@@ -6316,6 +6318,7 @@
     "PasswordCredential",
     "PasswordCredentialData",
     "PasswordCredentialInit",
+    "Patch Map Table",
     "Patent Advisory Group",
     "Patent Review Draft",
     "Patent Review Drafts",
@@ -7106,6 +7109,7 @@
     "Remove Credential",
     "Remove Entries from Format 1 Patch Map",
     "Remove Entries from Format 2 Patch Map",
+    "Remove Entries from a Patch Map",
     "Remove Virtual Authenticator",
     "RemoveWaiter",
     "RemoveWaiter(waiterList, waiterRecord)",
@@ -21062,6 +21066,7 @@
     "scroll to the beginning of the document",
     "scroll to the fragment",
     "scroll()",
+    "scroll-axis-lock",
     "scroll-behavior",
     "scroll-driven animations",
     "scroll-driven timelines",
@@ -46769,6 +46774,18 @@
     "origin",
     "password"
   ],
+  "Patch Map Table": [
+    "cff2CharStringsOffset",
+    "cffCharStringsOffset",
+    "compatibilityId",
+    "defaultPatchFormat",
+    "entries",
+    "entryCount",
+    "entryIdStringData",
+    "flags",
+    "format",
+    "urlTemplate"
+  ],
   "Path2D": [
     "Path2D(path)",
     "addPath(path, transform)"
@@ -66816,6 +66833,9 @@
     "custom",
     "default"
   ],
+  "navigation-location": [
+    "match"
+  ],
   "nested configs": [
     "value",
     "visibility"
@@ -68959,9 +68979,6 @@
     "y",
     "z"
   ],
-  "route-location": [
-    "match"
-  ],
   "row-gap": [
     "normal"
   ],
@@ -70016,6 +70033,10 @@
   ],
   "scroll-anchoring": [
     "anchor node"
+  ],
+  "scroll-axis-lock": [
+    "auto",
+    "none"
   ],
   "scroll-behavior": [
     "auto",
