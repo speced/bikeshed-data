@@ -1,4 +1,4 @@
-sha: 9a781a6b1e382317d127c4244105f67866506163
+sha: 320db3b1a6cf19b4de520ad7a2f6a152faa77780
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -31515,7 +31515,6 @@ reftest html/semantics/permission-element/install/pseudo-elements.tentative.html
 reftest html/semantics/permission-element/install/quirks-mode-no-height-is-still-bounded.tentative.html
 reftest html/semantics/permission-element/install/text-decoration-tentative.html
 reftest html/semantics/permission-element/install/text-stroke-and-fill.tentative.html
-reftest html/semantics/permission-element/invalid-type-reftest.tentative.html
 reftest html/semantics/permission-element/large-min-size-reftest.tentative.html
 reftest html/semantics/permission-element/permission-icon/icon-css-property-fill-reftest.html
 reftest html/semantics/permission-element/permission-icon/icon-css-property-height-bounded-reftest.html
@@ -32331,6 +32330,8 @@ reftest svg/painting/reftests/non-scaling-stroke-005.html
 reftest svg/painting/reftests/non-scaling-stroke-006.html
 reftest svg/painting/reftests/non-scaling-stroke-007.html
 reftest svg/painting/reftests/non-scaling-stroke-008.html
+reftest svg/painting/reftests/non-scaling-stroke-009.html
+reftest svg/painting/reftests/non-scaling-stroke-010.html
 reftest svg/painting/reftests/non-scaling-stroke-non-uniform-scale.html
 reftest svg/painting/reftests/non-scaling-stroke-precision-loss.html
 reftest svg/painting/reftests/non-scaling-stroke-with-none-preserve-aspect-ratio.html
@@ -33248,6 +33249,7 @@ testharness WebCryptoAPI/generateKey/failures_RSA-PSS.https.any.js
 testharness WebCryptoAPI/generateKey/failures_RSASSA-PKCS1-v1_5.https.any.js
 testharness WebCryptoAPI/generateKey/failures_X25519.https.any.js
 testharness WebCryptoAPI/generateKey/failures_X448.tentative.https.any.js
+testharness WebCryptoAPI/generateKey/failures_bad_algorithm.https.any.js
 testharness WebCryptoAPI/generateKey/failures_chacha20_poly1305.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/failures_kmac.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/successes_AES-CBC.https.any.js
@@ -34191,6 +34193,7 @@ testharness contacts/contacts-select.https.window.js
 testharness container-timing/tentative/containertiming-and-ignore-on-img-itself.html
 testharness container-timing/tentative/containertiming-and-ignore-on-text-itself.html
 testharness container-timing/tentative/containertiming-body-with-child-img.html
+testharness container-timing/tentative/containertiming-img-already-loaded.html
 testharness container-timing/tentative/containertiming-img-itself.html
 testharness container-timing/tentative/containertiming-observe-after-paint-with-buffering.html
 testharness container-timing/tentative/containertiming-observe-after-paint-without-buffering.html
@@ -39777,7 +39780,7 @@ testharness css/css-sizing/replaced-fractional-height-from-aspect-ratio-2.html
 testharness css/css-sizing/replaced-fractional-height-from-aspect-ratio.html
 testharness css/css-sizing/responsive-iframe/parsing/frame-sizing-computed.html
 testharness css/css-sizing/responsive-iframe/parsing/frame-sizing-valid.html
-testharness css/css-sizing/responsive-iframe/responsive-iframe-allowed-origins.html
+testharness css/css-sizing/responsive-iframe/responsive-iframe-alloworigins.html
 testharness css/css-sizing/responsive-iframe/responsive-iframe-dom-content-loaded.html
 testharness css/css-sizing/responsive-iframe/responsive-iframe-icb.html
 testharness css/css-sizing/responsive-iframe/responsive-iframe-navigation-unsized.html
@@ -41721,12 +41724,19 @@ testharness css/cssom-view/client-props-inline-list-item.html
 testharness css/cssom-view/client-props-input.html
 testharness css/cssom-view/client-props-root.html
 testharness css/cssom-view/client-props-zoom.html
+testharness css/cssom-view/cssom-geometryutils-connected-callback.html
 testharness css/cssom-view/cssom-geometryutils-convertPointFromNode.html
 testharness css/cssom-view/cssom-geometryutils-convertQuadFromNode.html
 testharness css/cssom-view/cssom-geometryutils-convertRectFromNode.html
+testharness css/cssom-view/cssom-geometryutils-cross-origin-path.https.html
 testharness css/cssom-view/cssom-geometryutils-element-types.html
+testharness css/cssom-view/cssom-geometryutils-fragmentation.html
 testharness css/cssom-view/cssom-geometryutils-getBoxQuads-options.html
+testharness css/cssom-view/cssom-geometryutils-lifecycle.html
+testharness css/cssom-view/cssom-geometryutils-same-origin-iframe.html
+testharness css/cssom-view/cssom-geometryutils-shadow-dom.html
 testharness css/cssom-view/cssom-geometryutils-special-cases.html
+testharness css/cssom-view/cssom-geometryutils-text.html
 testharness css/cssom-view/cssom-geometryutils-transforms.html
 testharness css/cssom-view/cssom-getBoundingClientRect-001.html
 testharness css/cssom-view/cssom-getBoundingClientRect-002.html
@@ -50229,6 +50239,7 @@ testharness html/interaction/focus/focusgroup/tentative/sequential-navigation/ta
 testharness html/interaction/focus/focusgroup/tentative/sequential-navigation/tabindex-minus-one-tab-escape.html
 testharness html/interaction/focus/focusgroup/tentative/shadow/shadow-items-basic.html
 testharness html/interaction/focus/focusgroup/tentative/shadow/shadow-nested-scope.html
+testharness html/interaction/focus/focusgroup/tentative/shadow/shadow-reattach.html
 testharness html/interaction/focus/focusgroup/tentative/top-layer-dialog-excluded.html
 testharness html/interaction/focus/focusgroup/tentative/top-layer-dynamic-exclusion.html
 testharness html/interaction/focus/focusgroup/tentative/top-layer-inner-focusgroup.html
@@ -51950,24 +51961,20 @@ testharness html/semantics/permission-element/install/no-focus.tentative.html
 testharness html/semantics/permission-element/install/parent-image-mask.tentative.html
 testharness html/semantics/permission-element/install/parent-mask.tentative.html
 testharness html/semantics/permission-element/install/sandbox-not-allowed.tentative.html
-testharness html/semantics/permission-element/invalid-css-properties.tentative.html
-testharness html/semantics/permission-element/lang-attribute-update.html
 testharness html/semantics/permission-element/microphone/idlharness.tentative.window.js
 testharness html/semantics/permission-element/microphone/microphone-element-use-cases.tentative.https.html
 testharness html/semantics/permission-element/microphone/microphone-error-scenarios.tentative.https.html
 testharness html/semantics/permission-element/microphone/microphone-set-constraints.tentative.https.html
 testharness html/semantics/permission-element/microphone/microphone-track-attribute.tentative.https.html
 testharness html/semantics/permission-element/negative-offset.tentative.html
-testharness html/semantics/permission-element/no-children-rendered.tentative.html
-testharness html/semantics/permission-element/no-focus.tentative.html
 testharness html/semantics/permission-element/parent-image-mask.tentative.html
 testharness html/semantics/permission-element/parent-mask.tentative.html
 testharness html/semantics/permission-element/permission-icon/icon-color-defaults-to-text-color.html
 testharness html/semantics/permission-element/roles.tentative.html
-testharness html/semantics/permission-element/type-supported-feature-detect.tentative.html
 testharness html/semantics/permission-element/usermedia/idlharness.tentative.window.js
 testharness html/semantics/permission-element/usermedia/invalid-css-properties.tentative.html
 testharness html/semantics/permission-element/usermedia/lang-attribute-update.html
+testharness html/semantics/permission-element/usermedia/legacy-mode/legacy-mode.tentative.https.html
 testharness html/semantics/permission-element/usermedia/no-children-rendered.tentative.html
 testharness html/semantics/permission-element/usermedia/no-focus.tentative.html
 testharness html/semantics/permission-element/usermedia/oncancel-attribute.html
@@ -53555,6 +53562,7 @@ testharness intersection-observer/transformed-iframe-003-same-origin.html
 testharness intersection-observer/transformed-iframe-004-cross-origin.html
 testharness intersection-observer/transformed-iframe-004-same-origin.html
 testharness intersection-observer/unclipped-root.html
+testharness intersection-observer/v2/3d-transform-flattened-preserve-3d-occlusion.html
 testharness intersection-observer/v2/3d-transform-occlusion-2.html
 testharness intersection-observer/v2/3d-transform-occlusion.html
 testharness intersection-observer/v2/3d-transform-overflow-control-occlusion.html
@@ -59709,6 +59717,7 @@ testharness svg/geometry/parsing/y-computed.svg
 testharness svg/geometry/parsing/y-invalid.svg
 testharness svg/geometry/parsing/y-valid.svg
 testharness svg/geometry/svg-baseval-in-display-none.html
+testharness svg/geometry/svg-geometry-apis-in-non-rendered-elements.html
 testharness svg/geometry/svg-get-bounding-client-rect-in-non-rendered-elements.html
 testharness svg/geometry/svg-image-intrinsic-size-with-cssstyle-auto-dynamic-image-change.html
 testharness svg/geometry/svg-image-intrinsic-size-with-cssstyle-auto.html
