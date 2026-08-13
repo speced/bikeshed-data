@@ -17,7 +17,7 @@
   },
   "#conformance": {
     "current": {
-      "number": "7",
+      "number": "8",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "Conformance",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#conformance"
@@ -29,6 +29,14 @@
       "spec": "WebXR/WebGPU Binding 1",
       "text": "Table of Contents",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#toc"
+    }
+  },
+  "#gpu-layer-and-view-creation": {
+    "current": {
+      "number": "5",
+      "spec": "WebXR/WebGPU Binding 1",
+      "text": "GPU Layer and View Creation",
+      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#gpu-layer-and-view-creation"
     }
   },
   "#gpuadapter-integration": {
@@ -87,28 +95,12 @@
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#intro"
     }
   },
-  "#layer-creation": {
-    "current": {
-      "number": "4",
-      "spec": "WebXR/WebGPU Binding 1",
-      "text": "Layer Creation",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#layer-creation"
-    }
-  },
   "#normative": {
     "current": {
       "number": "",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "Normative References",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#normative"
-    }
-  },
-  "#recommended-texture-resolution": {
-    "current": {
-      "number": "2.3.3",
-      "spec": "WebXR/WebGPU Binding 1",
-      "text": "Recommended WebGPU Texture Resolution",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#recommended-texture-resolution"
     }
   },
   "#references": {
@@ -121,7 +113,7 @@
   },
   "#rendering": {
     "current": {
-      "number": "3",
+      "number": "4",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "Rendering",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#rendering"
@@ -129,7 +121,7 @@
   },
   "#security": {
     "current": {
-      "number": "6",
+      "number": "7",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "Security and Privacy Considerations",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#security"
@@ -145,7 +137,7 @@
   },
   "#spacewarp": {
     "current": {
-      "number": "5",
+      "number": "6",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "Space Warp",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#spacewarp"
@@ -153,7 +145,7 @@
   },
   "#supported-texture-formats": {
     "current": {
-      "number": "4.1",
+      "number": "5.2",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "Supported Texture Formats",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#supported-texture-formats"
@@ -215,65 +207,17 @@
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#webgpu-feature"
     }
   },
-  "#xrgpubinding-attributes": {
+  "#webgpu-texture-allocation": {
     "current": {
-      "number": "2.3.2",
+      "number": "5.1",
       "spec": "WebXR/WebGPU Binding 1",
-      "text": "Attributes",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-attributes"
-    }
-  },
-  "#xrgpubinding-constructor": {
-    "current": {
-      "number": "2.3.1",
-      "spec": "WebXR/WebGPU Binding 1",
-      "text": "Constructor",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-constructor"
-    }
-  },
-  "#xrgpubinding-createotherlayers": {
-    "current": {
-      "number": "2.3.6",
-      "spec": "WebXR/WebGPU Binding 1",
-      "text": "createQuadLayer / createCylinderLayer / createEquirectLayer / createCubeLayer",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-createotherlayers"
-    }
-  },
-  "#xrgpubinding-createprojectionlayer": {
-    "current": {
-      "number": "2.3.5",
-      "spec": "WebXR/WebGPU Binding 1",
-      "text": "createProjectionLayer",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-createprojectionlayer"
-    }
-  },
-  "#xrgpubinding-getpreferredcolorformat": {
-    "current": {
-      "number": "2.3.4",
-      "spec": "WebXR/WebGPU Binding 1",
-      "text": "getPreferredColorFormat",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-getpreferredcolorformat"
-    }
-  },
-  "#xrgpubinding-getsubimage": {
-    "current": {
-      "number": "2.3.7",
-      "spec": "WebXR/WebGPU Binding 1",
-      "text": "getSubImage",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-getsubimage"
-    }
-  },
-  "#xrgpubinding-getviewsubimage": {
-    "current": {
-      "number": "2.3.8",
-      "spec": "WebXR/WebGPU Binding 1",
-      "text": "getViewSubImage",
-      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-getviewsubimage"
+      "text": "Texture allocation",
+      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#webgpu-texture-allocation"
     }
   },
   "#xrgpubinding-interface": {
     "current": {
-      "number": "2.3",
+      "number": "5.9",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "XRGPUBinding",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-interface"
@@ -281,7 +225,7 @@
   },
   "#xrgpucubelayerinit": {
     "current": {
-      "number": "4.7",
+      "number": "5.8",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "XRGPUCubeLayerInit",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpucubelayerinit"
@@ -289,7 +233,7 @@
   },
   "#xrgpucylinderlayerinit": {
     "current": {
-      "number": "4.5",
+      "number": "5.6",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "XRGPUCylinderLayerInit",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpucylinderlayerinit"
@@ -297,7 +241,7 @@
   },
   "#xrgpuequirectlayerinit": {
     "current": {
-      "number": "4.6",
+      "number": "5.7",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "XRGPUEquirectLayerInit",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpuequirectlayerinit"
@@ -305,7 +249,7 @@
   },
   "#xrgpulayerinit": {
     "current": {
-      "number": "4.3",
+      "number": "5.4",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "XRGPULayerInit",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpulayerinit"
@@ -313,7 +257,7 @@
   },
   "#xrgpuprojectionlayerinit": {
     "current": {
-      "number": "4.2",
+      "number": "5.3",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "XRGPUProjectionLayerInit",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpuprojectionlayerinit"
@@ -321,7 +265,7 @@
   },
   "#xrgpuquadlayerinit": {
     "current": {
-      "number": "4.4",
+      "number": "5.5",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "XRGPUQuadLayerInit",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpuquadlayerinit"
@@ -329,7 +273,7 @@
   },
   "#xrgpusubimage-attributes": {
     "current": {
-      "number": "3.1.1",
+      "number": "4.1.1",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "Attributes",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpusubimage-attributes"
@@ -337,7 +281,7 @@
   },
   "#xrgpusubimage-getviewdescriptor": {
     "current": {
-      "number": "3.1.2",
+      "number": "4.1.2",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "getViewDescriptor",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpusubimage-getviewdescriptor"
@@ -345,10 +289,18 @@
   },
   "#xrgpusubimage-interface": {
     "current": {
-      "number": "3.1",
+      "number": "4.1",
       "spec": "WebXR/WebGPU Binding 1",
       "text": "XRGPUSubImage",
       "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpusubimage-interface"
+    }
+  },
+  "#xrlayertypes": {
+    "current": {
+      "number": "3",
+      "spec": "WebXR/WebGPU Binding 1",
+      "text": "Layer Types",
+      "url": "https://immersive-web.github.io/webxr-webgpu-binding/#xrlayertypes"
     }
   }
 }
