@@ -3705,6 +3705,7 @@
     "Extended Inquiry Response",
     "Extended grapheme cluster",
     "Extended language range",
+    "Extended script property",
     "Extensible",
     "Extension",
     "Extension origin",
@@ -5754,6 +5755,7 @@
     "MockCapturePromptResultConfiguration",
     "MockMicrophoneConfiguration",
     "ModelContext",
+    "ModelContextExecuteToolOptions",
     "ModelContextGetToolOptions",
     "ModelContextRegisterToolOptions",
     "ModelContextTool",
@@ -13106,6 +13108,7 @@
     "declaration",
     "declaration block",
     "declarative custom selector",
+    "declarative execute steps",
     "declarative push message",
     "declarative push message parser",
     "declarative push message parser result",
@@ -15755,6 +15758,7 @@
     "immutable property",
     "impact fraction",
     "impact region",
+    "imperative execute steps",
     "implementation",
     "implementation-check an object",
     "implementation-defined",
@@ -18949,6 +18953,7 @@
     "pending resource-timing start time",
     "pending table character tokens",
     "pending text track change notification flag",
+    "pending tool execution",
     "pending top layer removals",
     "pending write tuple",
     "pending-substitution value",
@@ -22954,6 +22959,7 @@
     "tomato",
     "tone map derived image item",
     "tool definition",
+    "tool execute steps",
     "tool is exposed to an origin",
     "tools",
     "top",
@@ -45018,6 +45024,8 @@
     "defaultSampleRate"
   ],
   "ModelContext": [
+    "executeTool(tool, inputArguments)",
+    "executeTool(tool, inputArguments, options)",
     "getTools()",
     "getTools(options)",
     "internal context",
@@ -45025,6 +45033,16 @@
     "registerTool(tool)",
     "registerTool(tool, options)",
     "toolchange"
+  ],
+  "ModelContext/executeTool(tool, inputArguments)": [
+    "inputArguments",
+    "options",
+    "tool"
+  ],
+  "ModelContext/executeTool(tool, inputArguments, options)": [
+    "inputArguments",
+    "options",
+    "tool"
   ],
   "ModelContext/getTools()": [
     "options"
@@ -45039,6 +45057,9 @@
   "ModelContext/registerTool(tool, options)": [
     "options",
     "tool"
+  ],
+  "ModelContextExecuteToolOptions": [
+    "signal"
   ],
   "ModelContextGetToolOptions": [
     "fromOrigins"
@@ -68133,6 +68154,12 @@
     "node reference",
     "transferred port"
   ],
+  "pending tool execution": [
+    "caller document",
+    "completion steps",
+    "target document",
+    "tool name"
+  ],
   "periodic sync registration": [
     "anchor time",
     "minimum interval",
@@ -72171,6 +72198,7 @@
   ],
   "traversable navigable": [
     "fenced frame config mapping",
+    "pending tool executions map",
     "storage shed",
     "unfenced parent"
   ],
