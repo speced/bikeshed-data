@@ -13910,7 +13910,6 @@
     "emulation.ForcedColorsModeTheme",
     "emulation.GeolocationCoordinates",
     "emulation.GeolocationPositionError",
-    "emulation.MediaFeature",
     "emulation.MediaFeatures",
     "emulation.NetworkConditions",
     "emulation.NetworkConditionsOffline",
@@ -45022,8 +45021,9 @@
     "defaultSampleRate"
   ],
   "ModelContext": [
-    "executeTool(tool, inputArguments)",
-    "executeTool(tool, inputArguments, options)",
+    "executeTool(tool)",
+    "executeTool(tool, inputObject)",
+    "executeTool(tool, inputObject, options)",
     "getTools()",
     "getTools(options)",
     "internal context",
@@ -45032,13 +45032,18 @@
     "registerTool(tool, options)",
     "toolchange"
   ],
-  "ModelContext/executeTool(tool, inputArguments)": [
-    "inputArguments",
+  "ModelContext/executeTool(tool)": [
+    "inputObject",
     "options",
     "tool"
   ],
-  "ModelContext/executeTool(tool, inputArguments, options)": [
-    "inputArguments",
+  "ModelContext/executeTool(tool, inputObject)": [
+    "inputObject",
+    "options",
+    "tool"
+  ],
+  "ModelContext/executeTool(tool, inputObject, options)": [
+    "inputObject",
     "options",
     "tool"
   ],
@@ -54139,7 +54144,7 @@
     "untrustedContentHint"
   ],
   "ToolExecuteCallback": [
-    "input"
+    "inputObject"
   ],
   "Touch": [
     "altitudeAngle",
@@ -63190,11 +63195,231 @@
     "\"positionUnavailable\"",
     "positionUnavailable"
   ],
-  "emulation.MediaFeature": [
-    "\"name\"",
-    "\"value\"",
-    "name",
-    "value"
+  "emulation.MediaFeatures": [
+    "\"any-hover\"",
+    "\"any-pointer\"",
+    "\"color\"",
+    "\"color-gamut\"",
+    "\"color-index\"",
+    "\"display-mode\"",
+    "\"dynamic-range\"",
+    "\"environment-blending\"",
+    "\"forced-colors\"",
+    "\"grid\"",
+    "\"horizontal-viewport-segments\"",
+    "\"hover\"",
+    "\"inverted-colors\"",
+    "\"monochrome\"",
+    "\"nav-controls\"",
+    "\"overflow-block\"",
+    "\"overflow-inline\"",
+    "\"pointer\"",
+    "\"prefers-color-scheme\"",
+    "\"prefers-contrast\"",
+    "\"prefers-reduced-data\"",
+    "\"prefers-reduced-motion\"",
+    "\"prefers-reduced-transparency\"",
+    "\"scan\"",
+    "\"scripting\"",
+    "\"update\"",
+    "\"vertical-viewport-segments\"",
+    "\"video-color-gamut\"",
+    "\"video-dynamic-range\"",
+    "any-hover",
+    "any-pointer",
+    "color",
+    "color-gamut",
+    "color-index",
+    "display-mode",
+    "dynamic-range",
+    "environment-blending",
+    "forced-colors",
+    "grid",
+    "horizontal-viewport-segments",
+    "hover",
+    "inverted-colors",
+    "monochrome",
+    "nav-controls",
+    "overflow-block",
+    "overflow-inline",
+    "pointer",
+    "prefers-color-scheme",
+    "prefers-contrast",
+    "prefers-reduced-data",
+    "prefers-reduced-motion",
+    "prefers-reduced-transparency",
+    "scan",
+    "scripting",
+    "update",
+    "vertical-viewport-segments",
+    "video-color-gamut",
+    "video-dynamic-range"
+  ],
+  "emulation.MediaFeatures/any-hover": [
+    "\"hover\"",
+    "\"none\"",
+    "hover",
+    "none"
+  ],
+  "emulation.MediaFeatures/any-pointer": [
+    "\"coarse\"",
+    "\"fine\"",
+    "\"none\"",
+    "coarse",
+    "fine",
+    "none"
+  ],
+  "emulation.MediaFeatures/color-gamut": [
+    "\"p3\"",
+    "\"rec2020\"",
+    "\"srgb\"",
+    "p3",
+    "rec2020",
+    "srgb"
+  ],
+  "emulation.MediaFeatures/display-mode": [
+    "\"browser\"",
+    "\"fullscreen\"",
+    "\"minimal-ui\"",
+    "\"picture-in-picture\"",
+    "\"standalone\"",
+    "browser",
+    "fullscreen",
+    "minimal-ui",
+    "picture-in-picture",
+    "standalone"
+  ],
+  "emulation.MediaFeatures/dynamic-range": [
+    "\"high\"",
+    "\"standard\"",
+    "high",
+    "standard"
+  ],
+  "emulation.MediaFeatures/environment-blending": [
+    "\"additive\"",
+    "\"opaque\"",
+    "\"subtractive\"",
+    "additive",
+    "opaque",
+    "subtractive"
+  ],
+  "emulation.MediaFeatures/forced-colors": [
+    "\"active\"",
+    "\"none\"",
+    "active",
+    "none"
+  ],
+  "emulation.MediaFeatures/hover": [
+    "\"hover\"",
+    "\"none\"",
+    "hover",
+    "none"
+  ],
+  "emulation.MediaFeatures/inverted-colors": [
+    "\"inverted\"",
+    "\"none\"",
+    "inverted",
+    "none"
+  ],
+  "emulation.MediaFeatures/nav-controls": [
+    "\"back\"",
+    "\"none\"",
+    "back",
+    "none"
+  ],
+  "emulation.MediaFeatures/overflow-block": [
+    "\"none\"",
+    "\"optional-paged\"",
+    "\"paged\"",
+    "\"scroll\"",
+    "none",
+    "optional-paged",
+    "paged",
+    "scroll"
+  ],
+  "emulation.MediaFeatures/overflow-inline": [
+    "\"none\"",
+    "\"scroll\"",
+    "none",
+    "scroll"
+  ],
+  "emulation.MediaFeatures/pointer": [
+    "\"coarse\"",
+    "\"fine\"",
+    "\"none\"",
+    "coarse",
+    "fine",
+    "none"
+  ],
+  "emulation.MediaFeatures/prefers-color-scheme": [
+    "\"dark\"",
+    "\"light\"",
+    "dark",
+    "light"
+  ],
+  "emulation.MediaFeatures/prefers-contrast": [
+    "\"custom\"",
+    "\"less\"",
+    "\"more\"",
+    "\"no-preference\"",
+    "custom",
+    "less",
+    "more",
+    "no-preference"
+  ],
+  "emulation.MediaFeatures/prefers-reduced-data": [
+    "\"no-preference\"",
+    "\"reduce\"",
+    "no-preference",
+    "reduce"
+  ],
+  "emulation.MediaFeatures/prefers-reduced-motion": [
+    "\"no-preference\"",
+    "\"reduce\"",
+    "no-preference",
+    "reduce"
+  ],
+  "emulation.MediaFeatures/prefers-reduced-transparency": [
+    "\"no-preference\"",
+    "\"reduce\"",
+    "no-preference",
+    "reduce"
+  ],
+  "emulation.MediaFeatures/scan": [
+    "\"interlace\"",
+    "\"progressive\"",
+    "interlace",
+    "progressive"
+  ],
+  "emulation.MediaFeatures/scripting": [
+    "\"enabled\"",
+    "\"initial-only\"",
+    "\"none\"",
+    "enabled",
+    "initial-only",
+    "none"
+  ],
+  "emulation.MediaFeatures/update": [
+    "\"fast\"",
+    "\"none\"",
+    "\"slow\"",
+    "fast",
+    "none",
+    "slow"
+  ],
+  "emulation.MediaFeatures/video-color-gamut": [
+    "\"p3\"",
+    "\"rec2020\"",
+    "\"srgb\"",
+    "p3",
+    "rec2020",
+    "srgb"
+  ],
+  "emulation.MediaFeatures/video-dynamic-range": [
+    "\"high\"",
+    "\"standard\"",
+    "high",
+    "standard"
   ],
   "emulation.NetworkConditionsOffline": [
     "\"type\"",
