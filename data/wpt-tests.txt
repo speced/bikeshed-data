@@ -1,4 +1,4 @@
-sha: 5df2337c6b23c4e841f066d0c5d8259c47a59d57
+sha: e76551e297725c137eb696a5f6258a59adee5999
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1559,6 +1559,7 @@ crashtest html/semantics/permission-element/geolocation-element/iframe-use-after
 crashtest html/semantics/popovers/chrome-392042073-crash.html
 crashtest html/semantics/popovers/invoker-show-crash.html
 crashtest html/semantics/popovers/popover-auto-reentrant-crash.html
+crashtest html/semantics/popovers/popover-beforetoggle-change-type-crash.html
 crashtest html/semantics/popovers/popover-focus-blur-crash.html
 crashtest html/semantics/popovers/popover-focus-previous-crash.html
 crashtest html/semantics/popovers/popover-hint-crash.html
@@ -18439,9 +18440,24 @@ reftest css/css-grid/grid-lanes/row-empty-grid-lanes-container-001.html
 reftest css/css-grid/grid-lanes/row-empty-grid-lanes-container-002.html
 reftest css/css-grid/grid-lanes/row-empty-grid-lanes-container-content-editable-001.html
 reftest css/css-grid/grid-lanes/row-min-max-content-container.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-001a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-002a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/independent-formatting-context.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-001a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-002a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/independent-formatting-context.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/track-sizing/grid-lanes-subgrid-flex.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/track-sizing/grid-lanes-subgrid-intrinsic-sizing.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/track-sizing/grid-lanes-subgrid.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/column/grid-lanes-subgrid-001a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/column/grid-lanes-subgrid-002a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/column/independent-formatting-context.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/row/grid-lanes-subgrid-001a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/row/grid-lanes-subgrid-002a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/row/independent-formatting-context.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/track-sizing/grid-lanes-subgrid-flex.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/track-sizing/grid-lanes-subgrid-intrinsic-sizing.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid/track-sizing/grid-lanes-subgrid.html
 reftest css/css-grid/grid-lanes/subgrid/grid-subgridded-to-grid-lanes/alignment/column-subgrid-alignment-in-subgridded-axis-001.html
 reftest css/css-grid/grid-lanes/subgrid/grid-subgridded-to-grid-lanes/alignment/column-subgrid-alignment-in-subgridded-axis-002.html
 reftest css/css-grid/grid-lanes/subgrid/grid-subgridded-to-grid-lanes/alignment/column-subgrid-stretch-001.html
@@ -24741,6 +24757,7 @@ reftest css/css-text/text-spacing-trim/text-spacing-trim-colon-001.html
 reftest css/css-text/text-spacing-trim/text-spacing-trim-dot-001.html
 reftest css/css-text/text-spacing-trim/text-spacing-trim-dynamic-001.html
 reftest css/css-text/text-spacing-trim/text-spacing-trim-end-001.html
+reftest css/css-text/text-spacing-trim/text-spacing-trim-end-span-001.html
 reftest css/css-text/text-spacing-trim/text-spacing-trim-fallback-001.html
 reftest css/css-text/text-spacing-trim/text-spacing-trim-fallback-002.html
 reftest css/css-text/text-spacing-trim/text-spacing-trim-feature-001.html
@@ -50301,6 +50318,8 @@ testharness html/interaction/focus/focusgroup/tentative/descendant-navigation/si
 testharness html/interaction/focus/focusgroup/tentative/descendant-navigation/various-element-types.html
 testharness html/interaction/focus/focusgroup/tentative/descendant-navigation/wrapping-with-descendants.html
 testharness html/interaction/focus/focusgroup/tentative/feed-navigation.html
+testharness html/interaction/focus/focusgroup/tentative/feed-role-inference-item.html
+testharness html/interaction/focus/focusgroup/tentative/feed-role-inference-owner.html
 testharness html/interaction/focus/focusgroup/tentative/focusgroupstart-basic.html
 testharness html/interaction/focus/focusgroup/tentative/focusgroupstart-scope-owners.html
 testharness html/interaction/focus/focusgroup/tentative/focusgroupstart-tree-pattern.html
@@ -51993,6 +52012,7 @@ testharness html/semantics/interactive-elements/the-dialog-element/submit-dialog
 testharness html/semantics/interactive-elements/the-dialog-element/synthetic-click-inert.html
 testharness html/semantics/interactive-elements/the-dialog-element/toggle-events.html
 testharness html/semantics/interactive-elements/the-dialog-element/top-layer-position.html
+testharness html/semantics/interactive-elements/the-dialog-element/top-layer-removal-invalidates-ua-styles.html
 testharness html/semantics/interactive-elements/the-summary-element/activation-behavior.html
 testharness html/semantics/interactive-elements/the-summary-element/anchor-with-inline-element.html
 testharness html/semantics/interactive-elements/the-summary-element/anchor-without-link.html
@@ -52171,6 +52191,7 @@ testharness html/semantics/popovers/popover-focus-slotted.html
 testharness html/semantics/popovers/popover-focus-tabindex.html
 testharness html/semantics/popovers/popover-focus.html
 testharness html/semantics/popovers/popover-hint-hierarchy.html
+testharness html/semantics/popovers/popover-hint-loseinterest-show-child.html
 testharness html/semantics/popovers/popover-invoker-reset.html
 testharness html/semantics/popovers/popover-invoking-attribute-hint.html
 testharness html/semantics/popovers/popover-invoking-attribute.html
