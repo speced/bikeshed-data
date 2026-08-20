@@ -7,6 +7,14 @@
       "url": "https://w3c.github.io/vc-data-integrity/#CryptosuiteCommonAlgorithms"
     }
   },
+  "#GeneralSelectiveDisclosure": {
+    "current": {
+      "number": "1.2",
+      "spec": "Verifiable Credential Data Integrity 1.1",
+      "text": "Selective Disclosure",
+      "url": "https://w3c.github.io/vc-data-integrity/#GeneralSelectiveDisclosure"
+    }
+  },
   "#HashingAlg": {
     "current": {
       "number": "4.2.4.1",
@@ -225,7 +233,7 @@
   },
   "#conformance": {
     "current": {
-      "number": "1.3",
+      "number": "1.4",
       "spec": "Verifiable Credential Data Integrity 1.1",
       "text": "Conformance",
       "url": "https://w3c.github.io/vc-data-integrity/#conformance"
@@ -429,7 +437,7 @@
   },
   "#design-goals-and-rationale": {
     "current": {
-      "number": "1.2",
+      "number": "1.3",
       "spec": "Verifiable Credential Data Integrity 1.1",
       "text": "Design Goals and Rationale",
       "url": "https://w3c.github.io/vc-data-integrity/#design-goals-and-rationale"
@@ -463,11 +471,19 @@
       "url": "https://www.w3.org/TR/vc-data-integrity-1.1/#fingerprinting-network-requests"
     }
   },
-  "#how-it-works": {
+  "#full-disclosure": {
     "current": {
       "number": "1.1",
       "spec": "Verifiable Credential Data Integrity 1.1",
-      "text": "How it Works",
+      "text": "Full Disclosure",
+      "url": "https://w3c.github.io/vc-data-integrity/#full-disclosure"
+    }
+  },
+  "#how-it-works": {
+    "current": {
+      "number": "1.1.1",
+      "spec": "Verifiable Credential Data Integrity 1.1",
+      "text": "How Full Disclosure Works",
       "url": "https://w3c.github.io/vc-data-integrity/#how-it-works"
     },
     "snapshot": {
@@ -475,6 +491,14 @@
       "spec": "Verifiable Credential Data Integrity 1.1",
       "text": "How it Works",
       "url": "https://www.w3.org/TR/vc-data-integrity-1.1/#how-it-works"
+    }
+  },
+  "#how-selective-disclosure-works": {
+    "current": {
+      "number": "1.2.1",
+      "spec": "Verifiable Credential Data Integrity 1.1",
+      "text": "How Selective Disclosure Works",
+      "url": "https://w3c.github.io/vc-data-integrity/#how-selective-disclosure-works"
     }
   },
   "#informative-references": {
@@ -907,7 +931,7 @@
   },
   "#terminology": {
     "current": {
-      "number": "1.4",
+      "number": "1.5",
       "spec": "Verifiable Credential Data Integrity 1.1",
       "text": "Terminology",
       "url": "https://w3c.github.io/vc-data-integrity/#terminology"
@@ -1095,13 +1119,23 @@
       "url": "https://www.w3.org/TR/vc-data-integrity-1.1/#versioning-cryptography-suites"
     }
   },
-  "#x1-1-how-it-works": {
+  "#x1-1-1-how-full-disclosure-works": {
+    "current": {
+      "number": "1.1.1",
+      "spec": "Verifiable Credential Data Integrity 1.1",
+      "text": "How Full Disclosure Works",
+      "url": "https://w3c.github.io/vc-data-integrity/#how-it-works"
+    }
+  },
+  "#x1-1-full-disclosure": {
     "current": {
       "number": "1.1",
       "spec": "Verifiable Credential Data Integrity 1.1",
-      "text": "How it Works",
-      "url": "https://w3c.github.io/vc-data-integrity/#how-it-works"
-    },
+      "text": "Full Disclosure",
+      "url": "https://w3c.github.io/vc-data-integrity/#full-disclosure"
+    }
+  },
+  "#x1-1-how-it-works": {
     "snapshot": {
       "number": "1.1",
       "spec": "Verifiable Credential Data Integrity 1.1",
@@ -1109,13 +1143,15 @@
       "url": "https://www.w3.org/TR/vc-data-integrity-1.1/#how-it-works"
     }
   },
-  "#x1-2-design-goals-and-rationale": {
+  "#x1-2-1-how-selective-disclosure-works": {
     "current": {
-      "number": "1.2",
+      "number": "1.2.1",
       "spec": "Verifiable Credential Data Integrity 1.1",
-      "text": "Design Goals and Rationale",
-      "url": "https://w3c.github.io/vc-data-integrity/#design-goals-and-rationale"
-    },
+      "text": "How Selective Disclosure Works",
+      "url": "https://w3c.github.io/vc-data-integrity/#how-selective-disclosure-works"
+    }
+  },
+  "#x1-2-design-goals-and-rationale": {
     "snapshot": {
       "number": "1.2",
       "spec": "Verifiable Credential Data Integrity 1.1",
@@ -1123,13 +1159,15 @@
       "url": "https://www.w3.org/TR/vc-data-integrity-1.1/#design-goals-and-rationale"
     }
   },
-  "#x1-3-conformance": {
+  "#x1-2-selective-disclosure": {
     "current": {
-      "number": "1.3",
+      "number": "1.2",
       "spec": "Verifiable Credential Data Integrity 1.1",
-      "text": "Conformance",
-      "url": "https://w3c.github.io/vc-data-integrity/#conformance"
-    },
+      "text": "Selective Disclosure",
+      "url": "https://w3c.github.io/vc-data-integrity/#GeneralSelectiveDisclosure"
+    }
+  },
+  "#x1-3-conformance": {
     "snapshot": {
       "number": "1.3",
       "spec": "Verifiable Credential Data Integrity 1.1",
@@ -1137,18 +1175,36 @@
       "url": "https://www.w3.org/TR/vc-data-integrity-1.1/#conformance"
     }
   },
-  "#x1-4-terminology": {
+  "#x1-3-design-goals-and-rationale": {
+    "current": {
+      "number": "1.3",
+      "spec": "Verifiable Credential Data Integrity 1.1",
+      "text": "Design Goals and Rationale",
+      "url": "https://w3c.github.io/vc-data-integrity/#design-goals-and-rationale"
+    }
+  },
+  "#x1-4-conformance": {
     "current": {
       "number": "1.4",
       "spec": "Verifiable Credential Data Integrity 1.1",
-      "text": "Terminology",
-      "url": "https://w3c.github.io/vc-data-integrity/#terminology"
-    },
+      "text": "Conformance",
+      "url": "https://w3c.github.io/vc-data-integrity/#conformance"
+    }
+  },
+  "#x1-4-terminology": {
     "snapshot": {
       "number": "1.4",
       "spec": "Verifiable Credential Data Integrity 1.1",
       "text": "Terminology",
       "url": "https://www.w3.org/TR/vc-data-integrity-1.1/#terminology"
+    }
+  },
+  "#x1-5-terminology": {
+    "current": {
+      "number": "1.5",
+      "spec": "Verifiable Credential Data Integrity 1.1",
+      "text": "Terminology",
+      "url": "https://w3c.github.io/vc-data-integrity/#terminology"
     }
   },
   "#x1-introduction": {
