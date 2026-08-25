@@ -9514,9 +9514,12 @@
         "Gyroscope",
         "HIDConnectionEvent",
         "HIDInputReportEvent",
+        "HTMLCameraElement",
         "HTMLFencedFrameElement",
         "HTMLGeolocationElement",
+        "HTMLMicrophoneElement",
         "HTMLPortalElement",
+        "HTMLUserMediaElement",
         "HandwritingStroke",
         "Headers",
         "Highlight",
@@ -29129,9 +29132,10 @@
       "args": [],
       "for": [
         "AudioPlaybackStats",
-        "AudioPlayoutStats"
+        "AudioPlayoutStats",
+        "MediaStreamTrackAudioStats"
       ],
-      "shortname": "audio-context-playout-stats"
+      "shortname": "mediacapture-extensions"
     }
   },
   "resetTransform()": {
@@ -31115,6 +31119,28 @@
         "RTCPeerConnection"
       ],
       "shortname": "webrtc"
+    }
+  },
+  "setConstraints()": {
+    "setConstraints()": {
+      "args": [],
+      "for": [
+        "HTMLCameraElement",
+        "HTMLMicrophoneElement",
+        "HTMLUserMediaElement"
+      ],
+      "shortname": "mediacapture-extensions"
+    },
+    "setConstraints(constraints)": {
+      "args": [
+        "constraints"
+      ],
+      "for": [
+        "HTMLCameraElement",
+        "HTMLMicrophoneElement",
+        "HTMLUserMediaElement"
+      ],
+      "shortname": "mediacapture-extensions"
     }
   },
   "setConsumer()": {
@@ -34872,6 +34898,8 @@
         "LargestContentfulPaint",
         "LayoutShift",
         "MediaDeviceInfo",
+        "MediaStreamTrackAudioStats",
+        "MediaStreamTrackVideoStats",
         "NavigatorUA",
         "NavigatorUAData",
         "Performance",
