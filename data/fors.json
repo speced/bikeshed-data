@@ -9507,6 +9507,7 @@
     "XRGPUBinding",
     "XRGPUCubeLayerInit",
     "XRGPUCylinderLayerInit",
+    "XRGPUDepthInformation",
     "XRGPUEquirectLayerInit",
     "XRGPULayerInit",
     "XRGPUProjectionLayerInit",
@@ -12554,6 +12555,7 @@
     "create a Uint8Array object",
     "create a WebAssembly module script",
     "create a WebGL depth information instance",
+    "create a WebGPU depth information instance",
     "create a brand-version list",
     "create a builtin function",
     "create a cancelable MouseEvent",
@@ -17793,6 +17795,8 @@
     "native WebGL framebuffer resolution",
     "native appearance",
     "native camera",
+    "native depth buffer",
+    "native depth information",
     "native depth sensing",
     "native entity type",
     "native hit test",
@@ -18243,6 +18247,7 @@
     "observer type",
     "obtain CPU depth information",
     "obtain WebGL depth information",
+    "obtain WebGPU depth information",
     "obtain a Scripting Policy from a Structured Header",
     "obtain a Scripting Policy pair from a response",
     "obtain a WebSocket connection",
@@ -58064,6 +58069,7 @@
     "getLightEstimate(lightProbe)",
     "getPose(space, baseSpace)",
     "getViewerPose(referenceSpace)",
+    "list of WebGPU depth textures",
     "map of hit test sources to hit test results",
     "map of hit test sources to hit test results for transient input",
     "predictedDisplayTime",
@@ -58126,6 +58132,7 @@
     "createQuadLayer()",
     "createQuadLayer(init)",
     "device",
+    "getDepthInformation(view)",
     "getPreferredColorFormat()",
     "getSubImage(layer, frame)",
     "getSubImage(layer, frame, eye)",
@@ -58172,6 +58179,9 @@
   "XRGPUBinding/createQuadLayer(init)": [
     "init"
   ],
+  "XRGPUBinding/getDepthInformation(view)": [
+    "view"
+  ],
   "XRGPUBinding/getSubImage(layer, frame)": [
     "eye",
     "frame",
@@ -58194,6 +58204,11 @@
     "centralAngle",
     "radius",
     "transform"
+  ],
+  "XRGPUDepthInformation": [
+    "array layer index",
+    "getViewDescriptor()",
+    "texture"
   ],
   "XRGPUEquirectLayerInit": [
     "centralHorizontalAngle",
