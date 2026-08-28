@@ -1,4 +1,4 @@
-sha: 5f8cfdc18b18b1619c9fe431eab72f2831823327
+sha: 238afecae8dd2b1203c74a240028aff6f5c58b9c
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -12267,6 +12267,9 @@ reftest css/css-anchor-position/position-anchor-auto-pseudo-element-implicit-001
 reftest css/css-anchor-position/position-anchor-auto-pseudo-element-implicit-002.html
 reftest css/css-anchor-position/position-anchor-dynamic-unset-raf-visibility-hidden.html
 reftest css/css-anchor-position/position-anchor-dynamic-unset-visibility-hidden.html
+reftest css/css-anchor-position/position-anchor-match-parent-dynamic.html
+reftest css/css-anchor-position/position-anchor-match-parent-rendering.html
+reftest css/css-anchor-position/position-anchor-match-parent-shadow.html
 reftest css/css-anchor-position/position-anchor-none-pseudo-element-implicit-001.html
 reftest css/css-anchor-position/position-anchor-none-pseudo-element-implicit-002.html
 reftest css/css-anchor-position/position-anchor-none-pseudo-element-named.html
@@ -21277,8 +21280,11 @@ reftest css/css-overflow/display-flex-svg-overflow-default.html
 reftest css/css-overflow/document-element-overflow-hidden-scroll.html
 reftest css/css-overflow/dynamic-visible-to-clip-001.html
 reftest css/css-overflow/dynamic-visible-to-clip-002.html
+reftest css/css-overflow/fit-content-textarea-with-scrollbar.html
+reftest css/css-overflow/flex-orthogonal-writing-mode-with-scrollable-descendant.html
 reftest css/css-overflow/float-with-relpos-and-transform.html
 reftest css/css-overflow/float-with-scrollable-descendant.html
+reftest css/css-overflow/grid-orthogonal-writing-mode-with-scrollable-descendant.html
 reftest css/css-overflow/incremental-scroll-002.html
 reftest css/css-overflow/incremental-scroll.html
 reftest css/css-overflow/inline-block-with-scrollable-descendant.html
@@ -21553,9 +21559,13 @@ reftest css/css-overflow/line-clamp/webkit-line-clamp-dynamic-001.html
 reftest css/css-overflow/line-clamp/webkit-line-clamp-with-line-height.html
 reftest css/css-overflow/line-clamp/webkit-line-clamp-with-max-height.html
 reftest css/css-overflow/margin-block-end-scroll-area-001.html
+reftest css/css-overflow/max-content-nested-textarea-with-scrollbar.html
+reftest css/css-overflow/max-content-textarea-with-scrollbar.html
 reftest css/css-overflow/max-content-with-float-scrollable-descendant.html
 reftest css/css-overflow/max-content-with-multiple-scrollable-descendants.html
+reftest css/css-overflow/max-width-container-with-scrollable-descendant-vertical-rl.html
 reftest css/css-overflow/max-width-container-with-scrollable-descendant.html
+reftest css/css-overflow/min-content-textarea-with-scrollbar.html
 reftest css/css-overflow/no-scrollable-overflow-vertical-rl-2.html
 reftest css/css-overflow/no-scrollable-overflow-vertical-rl.html
 reftest css/css-overflow/orthogonal-writing-mode-with-scrollable-descendant.html
@@ -27379,6 +27389,8 @@ reftest css/css-values/attr-namespace-non-existing.html
 reftest css/css-values/attr-namespace-valid.xhtml
 reftest css/css-values/attr-namespace-wildcard.html
 reftest css/css-values/attr-notype-fallback.html
+reftest css/css-values/attr-number-invalidation.html
+reftest css/css-values/attr-percent-invalidation.html
 reftest css/css-values/attr-pseudo-element-marker.html
 reftest css/css-values/attr-pseudo-element-placeholder.html
 reftest css/css-values/attr-style-sharing-1.html
@@ -31901,7 +31913,9 @@ reftest jpegxl/smallest-valid-reftest.html
 reftest jpegxl/vardct-large-blocks-reftest.html
 reftest jpegxl/vardct-small-blocks-reftest.html
 reftest jpegxl/wide-gamut-adobe-rgb.html
+reftest jpegxl/wide-gamut-display-p3.html
 reftest jpegxl/wide-gamut-prophoto-rgb.html
+reftest jpegxl/wide-gamut-rec2020.html
 reftest mathml/presentation-markup/direction/direction-006.html
 reftest mathml/presentation-markup/direction/direction-007.html
 reftest mathml/presentation-markup/direction/direction-008.html
@@ -33721,7 +33735,6 @@ testharness ai/summarizer/summarizer-summarize-streaming-post-abort.tentative.ht
 testharness ai/summarizer/summarizer-summarize-streaming.tentative.https.window.js
 testharness ai/summarizer/summarizer-summarize.tentative.https.window.js
 testharness ai/translator/translator-bad-input.https.window.js
-testharness ai/translator/translator-create-user-activation.optional.https.window.js
 testharness ai/translator/translator-locale.https.window.js
 testharness ai/translator/translator-translate-post-abort.tentative.https.window.js
 testharness ai/translator/translator-translate-streaming-post-abort.tentative.https.window.js
@@ -35976,6 +35989,7 @@ testharness css/css-anchor-position/popover-anchor-backdrop-transition.html
 testharness css/css-anchor-position/popover-implicit-anchor.html
 testharness css/css-anchor-position/position-anchor-003.html
 testharness css/css-anchor-position/position-anchor-basics.html
+testharness css/css-anchor-position/position-anchor-match-parent.html
 testharness css/css-anchor-position/position-area-align-justify-wm-dir.html
 testharness css/css-anchor-position/position-area-align-justify.html
 testharness css/css-anchor-position/position-area-ambiguous-self.html
@@ -36632,6 +36646,8 @@ testharness css/css-color/parsing/color-computed-hsl.html
 testharness css/css-color/parsing/color-computed-hwb.html
 testharness css/css-color/parsing/color-computed-lab.html
 testharness css/css-color/parsing/color-computed-named-color.html
+testharness css/css-color/parsing/color-computed-none.html
+testharness css/css-color/parsing/color-computed-powerless.html
 testharness css/css-color/parsing/color-computed-relative-color.html
 testharness css/css-color/parsing/color-computed-rgb.html
 testharness css/css-color/parsing/color-computed.html
@@ -38696,6 +38712,9 @@ testharness css/css-masking/parsing/mask-type-computed.html
 testharness css/css-masking/parsing/mask-type-invalid.html
 testharness css/css-masking/parsing/mask-type-valid.html
 testharness css/css-masking/parsing/mask-valid.sub.html
+testharness css/css-mixins/function-definition-scope.html
+testharness css/css-mixins/function-parameter-scoping.html
+testharness css/css-mixins/function-relative-units.html
 testharness css/css-mixins/functions/at-function-cssom.html
 testharness css/css-mixins/functions/at-function-parsing.html
 testharness css/css-mixins/functions/dashed-function-cycles.html
@@ -40908,6 +40927,7 @@ testharness css/css-transitions/transition-base-response-002.html
 testharness css/css-transitions/transition-base-response-003.html
 testharness css/css-transitions/transition-behavior-events.html
 testharness css/css-transitions/transition-behavior.html
+testharness css/css-transitions/transition-cancel-elapsed-time-on-removal.html
 testharness css/css-transitions/transition-delay-001.html
 testharness css/css-transitions/transition-duration-001.html
 testharness css/css-transitions/transition-duration-infinite-cancelation.html
@@ -45106,6 +45126,7 @@ testharness fetch/api/response/multi-globals/url-parsing.html
 testharness fetch/api/response/response-arraybuffer-realm.window.js
 testharness fetch/api/response/response-blob-realm.any.js
 testharness fetch/api/response/response-body-read-task-handling.html
+testharness fetch/api/response/response-body-stashed-chunk.html
 testharness fetch/api/response/response-cancel-stream.any.js
 testharness fetch/api/response/response-clone-iframe.window.js
 testharness fetch/api/response/response-clone.any.js
@@ -45591,8 +45612,13 @@ testharness fullscreen/api/element-request-fullscreen-twice.html
 testharness fullscreen/api/element-request-fullscreen-two-elements.html
 testharness fullscreen/api/element-request-fullscreen-without-user-activation.tentative.https.html
 testharness fullscreen/api/element-request-fullscreen.html
+testharness fullscreen/api/fullscreen-change-event-shape.html
 testharness fullscreen/api/fullscreen-display-contents.html
+testharness fullscreen/api/fullscreen-exit-errors-and-async.html
+testharness fullscreen/api/fullscreen-hides-popovers.html
+testharness fullscreen/api/fullscreen-idl-getters.html
 testharness fullscreen/api/fullscreen-reordering.html
+testharness fullscreen/api/fullscreen-request-preconditions.html
 testharness fullscreen/api/historical.html
 testharness fullscreen/api/keyboard-lock-cross-origin-iframe.sub.html
 testharness fullscreen/api/navigate-iframe.sub.html
@@ -45601,6 +45627,7 @@ testharness fullscreen/api/promises-reject.html
 testharness fullscreen/api/promises-resolve.html
 testharness fullscreen/api/shadowroot-fullscreen-element.html
 testharness fullscreen/idlharness.window.js
+testharness fullscreen/model/fullscreen-exit-edges.html
 testharness fullscreen/model/move-fullscreen-element.html
 testharness fullscreen/model/move-to-fullscreen-iframe.html
 testharness fullscreen/model/move-to-iframe.html
@@ -45618,6 +45645,7 @@ testharness fullscreen/rendering/fullscreen-pseudo-class-support.html
 testharness fullscreen/rendering/fullscreen-pseudo-class.html
 testharness fullscreen/rendering/fullscreen-root-block-scroll.html
 testharness fullscreen/rendering/fullscreen-root-block-size.html
+testharness fullscreen/rendering/fullscreen-ua-stylesheet.html
 testharness fullscreen/rendering/ua-style-iframe.html
 testharness gamepad/gamepad-default-permissions-policy.https.sub.html
 testharness gamepad/gamepad-permissions-policy-event-listener.html
@@ -54045,8 +54073,6 @@ testharness jpegxl/imagedecoder.https.html
 testharness jpegxl/lossless-jpeg-transcode.html
 testharness jpegxl/modular-lossy.html
 testharness jpegxl/svg-image-element.html
-testharness jpegxl/wide-gamut-display-p3.html
-testharness jpegxl/wide-gamut-rec2020.html
 testharness js-self-profiling/class-getter-names.https.html
 testharness js-self-profiling/class-names.https.html
 testharness js-self-profiling/class-setter-names.https.html
@@ -59906,6 +59932,8 @@ testharness svg/animations/animateMotion-keyPoints-002.html
 testharness svg/animations/animateMotion-line.html
 testharness svg/animations/animateMotion-mpath.html
 testharness svg/animations/animateMotion-multiple.html
+testharness svg/animations/animateMotion-path-moveto-only.html
+testharness svg/animations/animateMotion-path-zero-length-subpaths.html
 testharness svg/animations/animateMotion-rect.html
 testharness svg/animations/animateMotion-rotate-angle.html
 testharness svg/animations/animateMotion-spline-invalid-keyTimes.html
@@ -61636,6 +61664,7 @@ testharness web-animations/interfaces/Animatable/getAnimations-iframe.html
 testharness web-animations/interfaces/Animatable/getAnimations-pseudoElement-option-on-view-transition.html
 testharness web-animations/interfaces/Animatable/getAnimations.html
 testharness web-animations/interfaces/Animation/animation-range-invalid.html
+testharness web-animations/interfaces/Animation/cancel-event-on-element-removal.html
 testharness web-animations/interfaces/Animation/cancel.html
 testharness web-animations/interfaces/Animation/commitStyles.html
 testharness web-animations/interfaces/Animation/constructor.html
