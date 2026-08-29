@@ -1912,28 +1912,6 @@ https://html.spec.whatwg.org/multipage/speculative-loading.html#sec-speculation-
 1
 1
 -
-SecFromTime
-SecFromTime
-abstract-op
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secfromtime
-1
-1
--
-SecFromTime(tv)
-SecFromTime(tv)
-abstract-op
-ecmascript
-ecmascript
-1
-current
-https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secfromtime
-1
-1
--
 second-factor platform authenticator
 second-factor platform authenticator
 dfn
@@ -1976,6 +1954,28 @@ webauthn
 snapshot
 https://www.w3.org/TR/webauthn-3/#second-factor-roaming-authenticator
 
+1
+-
+SecondFromTime
+SecondFromTime
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secondfromtime
+1
+1
+-
+SecondFromTime(tv)
+SecondFromTime(tv)
+abstract-op
+ecmascript
+ecmascript
+1
+current
+https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secondfromtime
+1
 1
 -
 secondary
@@ -22942,8 +22942,8 @@ https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitiz
 1
 Sanitizer
 -
-setDate(date)
-setDate(date)
+setDate(day)
+setDate(day)
 method
 ecmascript
 ecmascript
@@ -23158,8 +23158,8 @@ https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.protot
 1
 Uint8Array
 -
-setFullYear(year, month, date)
-setFullYear(year, month, date)
+setFullYear(year, month, day)
+setFullYear(year, month, day)
 method
 ecmascript
 ecmascript
@@ -23242,8 +23242,8 @@ https://www.w3.org/TR/service-workers/#dom-navigationpreloadmanager-setheaderval
 1
 NavigationPreloadManager
 -
-setHours(hour, min, sec, ms)
-setHours(hour, min, sec, ms)
+setHours(hour, minute, second, millisecond)
+setHours(hour, minute, second, millisecond)
 method
 ecmascript
 ecmascript
@@ -23842,8 +23842,8 @@ https://www.w3.org/TR/mediasession/#dom-mediasession-setmicrophoneactive
 1
 MediaSession
 -
-setMilliseconds(ms)
-setMilliseconds(ms)
+setMilliseconds(millisecond)
+setMilliseconds(millisecond)
 method
 ecmascript
 ecmascript
@@ -23890,8 +23890,8 @@ https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticato
 1
 getInfo
 -
-setMinutes(min, sec, ms)
-setMinutes(min, sec, ms)
+setMinutes(minute, second, millisecond)
+setMinutes(minute, second, millisecond)
 method
 ecmascript
 ecmascript
@@ -23902,8 +23902,8 @@ https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setm
 1
 Date
 -
-setMonth(month, date)
-setMonth(month, date)
+setMonth(month, day)
+setMonth(month, day)
 method
 ecmascript
 ecmascript
@@ -25018,8 +25018,8 @@ https://www.w3.org/TR/mediasession/#dom-mediasession-setscreenshareactive
 1
 MediaSession
 -
-setSeconds(sec, ms)
-setSeconds(sec, ms)
+setSeconds(second, millisecond)
+setSeconds(second, millisecond)
 method
 ecmascript
 ecmascript
@@ -25631,8 +25631,8 @@ https://www.w3.org/TR/SVG2/coords.html#__svg__SVGTransform__setTranslate
 1
 SVGTransform
 -
-setUTCDate(date)
-setUTCDate(date)
+setUTCDate(day)
+setUTCDate(day)
 method
 ecmascript
 ecmascript
@@ -25643,8 +25643,8 @@ https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setu
 1
 Date
 -
-setUTCFullYear(year, month, date)
-setUTCFullYear(year, month, date)
+setUTCFullYear(year, month, day)
+setUTCFullYear(year, month, day)
 method
 ecmascript
 ecmascript
@@ -25655,8 +25655,8 @@ https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setu
 1
 Date
 -
-setUTCHours(hour, min, sec, ms)
-setUTCHours(hour, min, sec, ms)
+setUTCHours(hour, minute, second, millisecond)
+setUTCHours(hour, minute, second, millisecond)
 method
 ecmascript
 ecmascript
@@ -25667,8 +25667,8 @@ https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setu
 1
 Date
 -
-setUTCMilliseconds(ms)
-setUTCMilliseconds(ms)
+setUTCMilliseconds(millisecond)
+setUTCMilliseconds(millisecond)
 method
 ecmascript
 ecmascript
@@ -25679,8 +25679,8 @@ https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setu
 1
 Date
 -
-setUTCMinutes(min, sec, ms)
-setUTCMinutes(min, sec, ms)
+setUTCMinutes(minute, second, millisecond)
+setUTCMinutes(minute, second, millisecond)
 method
 ecmascript
 ecmascript
@@ -25691,8 +25691,8 @@ https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setu
 1
 Date
 -
-setUTCMonth(month, date)
-setUTCMonth(month, date)
+setUTCMonth(month, day)
+setUTCMonth(month, day)
 method
 ecmascript
 ecmascript
@@ -25703,8 +25703,8 @@ https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setu
 1
 Date
 -
-setUTCSeconds(sec, ms)
-setUTCSeconds(sec, ms)
+setUTCSeconds(second, millisecond)
+setUTCSeconds(second, millisecond)
 method
 ecmascript
 ecmascript
