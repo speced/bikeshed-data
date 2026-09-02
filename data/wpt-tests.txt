@@ -1,4 +1,4 @@
-sha: 09159dcb3b69bb76d63f9a16bc6b8a3a2ee0d3b6
+sha: 77f2ae0e7f6585595d3ad5c91665018c182247d0
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1107,6 +1107,7 @@ crashtest css/css-view-transitions/scoped/crashtests/display-change-after-captur
 crashtest css/css-view-transitions/scoped/crashtests/display-change-contents-after-capture.html
 crashtest css/css-view-transitions/scoped/crashtests/display-inline.html
 crashtest css/css-view-transitions/scoped/crashtests/display-none-animation-on-group.html
+crashtest css/css-view-transitions/scoped/crashtests/element-scoped-multicol-crash.html
 crashtest css/css-view-transitions/scoped/crashtests/first-letter-pseudo.html
 crashtest css/css-view-transitions/scoped/crashtests/implicit-stacking-context.html
 crashtest css/css-view-transitions/scoped/crashtests/mask-image.html
@@ -13826,10 +13827,23 @@ reftest css/css-break/grid/grid-item-oof-012.html
 reftest css/css-break/grid/grid-item-oof-013.html
 reftest css/css-break/grid/grid-item-oof-014.html
 reftest css/css-break/grid/grid-item-overflow-001.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-001.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-002.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-003.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-004.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-005.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-006.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-007.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-008.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-009.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-010.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-011.html
+reftest css/css-break/grid/grid-lanes/column-grid-lanes-oof-fragmentation-012.html
 reftest css/css-break/grid/grid-lanes/column-multi-lane-fragmentation-001.html
 reftest css/css-break/grid/grid-lanes/column-multi-lane-fragmentation-002.html
 reftest css/css-break/grid/grid-lanes/column-multi-lane-fragmentation-003.html
 reftest css/css-break/grid/grid-lanes/column-multi-lane-fragmentation-004.html
+reftest css/css-break/grid/grid-lanes/column-multi-lane-fragmentation-005.html
 reftest css/css-break/grid/grid-lanes/column-single-lane-fragmentation-001.html
 reftest css/css-break/grid/grid-lanes/column-single-lane-fragmentation-002.html
 reftest css/css-break/grid/grid-lanes/column-single-lane-fragmentation-003.html
@@ -13844,6 +13858,17 @@ reftest css/css-break/grid/grid-lanes/grid-lanes-container-fragmentation-007.ten
 reftest css/css-break/grid/grid-lanes/grid-lanes-fragmentation-001.html
 reftest css/css-break/grid/grid-lanes/grid-lanes-fragmentation-002.html
 reftest css/css-break/grid/grid-lanes/grid-lanes-fragmentation-003.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-001.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-002.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-003.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-004.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-005.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-006.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-007.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-008.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-009.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-010.html
+reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-011.html
 reftest css/css-break/grid/grid-lanes/row-multi-lane-fragmentation-001.html
 reftest css/css-break/grid/grid-lanes/row-multi-lane-fragmentation-002.html
 reftest css/css-break/grid/grid-lanes/row-multi-lane-fragmentation-003.html
@@ -17310,6 +17335,8 @@ reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-across-spanner.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-cap-vs-junction.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-negative-cap.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-negative-junction.html
+reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-non-overlapping-gutter-percentage.html
+reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-overlap-join.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-overlapping-gutters-percentage.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-percentage.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-inset-with-break-none.html
@@ -17349,6 +17376,8 @@ reftest css/css-gaps/grid-lanes/row-gap-decorations-023.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-024.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-break-normal.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-inset-cap-vs-junction.html
+reftest css/css-gaps/grid-lanes/row-gap-decorations-inset-overlap-join.html
+reftest css/css-gaps/grid-lanes/row-gap-decorations-inset-overlapping-gutters-percentage.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-inset-percentage.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-list-fill-reverse.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-list-fill-track-reverse.html
@@ -17389,6 +17418,10 @@ reftest css/css-gaps/grid/fragmentation/grid-gap-decorations-fragmentation-032.h
 reftest css/css-gaps/grid/fragmentation/grid-gap-decorations-fragmentation-033.html
 reftest css/css-gaps/grid/fragmentation/grid-gap-decorations-fragmentation-036.html
 reftest css/css-gaps/grid/fragmentation/grid-gap-decorations-fragmentation-037.html
+reftest css/css-gaps/grid/fragmentation/grid-gap-decorations-fragmentation-038.html
+reftest css/css-gaps/grid/fragmentation/grid-gap-decorations-fragmentation-039.html
+reftest css/css-gaps/grid/fragmentation/grid-gap-decorations-fragmentation-040.html
+reftest css/css-gaps/grid/fragmentation/grid-gap-decorations-fragmentation-041.html
 reftest css/css-gaps/grid/grid-gap-decorations-001.html
 reftest css/css-gaps/grid/grid-gap-decorations-002.html
 reftest css/css-gaps/grid/grid-gap-decorations-003.html
@@ -22323,6 +22356,7 @@ reftest css/css-pseudo/first-line-and-placeholder.html
 reftest css/css-pseudo/first-line-below-float.html
 reftest css/css-pseudo/first-line-change-inline-color-nested.html
 reftest css/css-pseudo/first-line-change-inline-color.html
+reftest css/css-pseudo/first-line-font-relative-units-001.html
 reftest css/css-pseudo/first-line-inherited-no-transition.html
 reftest css/css-pseudo/first-line-inherited-with-transition.html
 reftest css/css-pseudo/first-line-inherited.html
@@ -31491,6 +31525,7 @@ reftest html/semantics/forms/the-datalist-element/input-text-datalist-removal.ht
 reftest html/semantics/forms/the-input-element/auto-direction-dynamic.html
 reftest html/semantics/forms/the-input-element/date-time-with-trusted-types.html
 reftest html/semantics/forms/the-input-element/dynamic-value-update.html
+reftest html/semantics/forms/the-input-element/file-input-reset-shared-file-list.html
 reftest html/semantics/forms/the-input-element/image01.html
 reftest html/semantics/forms/the-input-element/input-text-overflow-ellipsis-scroll.html
 reftest html/semantics/forms/the-input-element/multiline-placeholder-cr.html
@@ -41911,6 +41946,7 @@ testharness css/css-view-transitions/scoped/display-inline-block.html
 testharness css/css-view-transitions/scoped/display-none-during-transition.html
 testharness css/css-view-transitions/scoped/document-element-start-view-transition.html
 testharness css/css-view-transitions/scoped/element-active-view-transition.html
+testharness css/css-view-transitions/scoped/element-scoped-containment-invalid-state.html
 testharness css/css-view-transitions/scoped/fill-forwards.html
 testharness css/css-view-transitions/scoped/hit-test-vt-overlay.html
 testharness css/css-view-transitions/scoped/hit-testing.html
@@ -42580,6 +42616,7 @@ testharness css/mediaqueries/prefers-reduced-transparency.html
 testharness css/mediaqueries/relative-units-005.html
 testharness css/mediaqueries/resizable.tentative.html
 testharness css/mediaqueries/scripting.html
+testharness css/mediaqueries/style-media-attribute-change-in-iframe.html
 testharness css/mediaqueries/test_media_queries.html
 testharness css/mediaqueries/update-media-feature.html
 testharness css/motion/animation/offset-anchor-composition.html
@@ -64182,6 +64219,7 @@ testharness xhr/response-method.htm
 testharness xhr/responseText-status.html
 testharness xhr/responseType-document-in-worker.html
 testharness xhr/responseXML-unavailable-in-worker.html
+testharness xhr/responseXML-xml-scripting-support-disabled.html
 testharness xhr/responsedocument-decoding.htm
 testharness xhr/responsetext-decoding.htm
 testharness xhr/responsetype.any.js
