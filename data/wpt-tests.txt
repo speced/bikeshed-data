@@ -1,4 +1,4 @@
-sha: 0588f3896e0caef44bc33ad6efb9522b0fe97a5b
+sha: 972e0e100fa754629cd00e549d6fa20a243af2bd
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -33572,6 +33572,7 @@ testharness WebCryptoAPI/generateKey/failures_ECDSA.https.any.js
 testharness WebCryptoAPI/generateKey/failures_Ed25519.https.any.js
 testharness WebCryptoAPI/generateKey/failures_Ed448.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/failures_HMAC.https.any.js
+testharness WebCryptoAPI/generateKey/failures_Hybrid-KEM.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/failures_ML-DSA.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/failures_ML-KEM.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/failures_RSA-OAEP.https.any.js
@@ -33592,6 +33593,7 @@ testharness WebCryptoAPI/generateKey/successes_ECDSA.https.any.js
 testharness WebCryptoAPI/generateKey/successes_Ed25519.https.any.js
 testharness WebCryptoAPI/generateKey/successes_Ed448.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/successes_HMAC.https.any.js
+testharness WebCryptoAPI/generateKey/successes_Hybrid-KEM.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/successes_ML-DSA.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/successes_ML-KEM.tentative.https.any.js
 testharness WebCryptoAPI/generateKey/successes_RSA-OAEP.https.any.js
@@ -33609,6 +33611,7 @@ testharness WebCryptoAPI/idlharness.tentative.https.any.js
 testharness WebCryptoAPI/import_export/AES-OCB_importKey.tentative.https.any.js
 testharness WebCryptoAPI/import_export/Argon2_importKey.tentative.https.any.js
 testharness WebCryptoAPI/import_export/ChaCha20-Poly1305_importKey.tentative.https.any.js
+testharness WebCryptoAPI/import_export/Hybrid-KEM_importKey.tentative.https.any.js
 testharness WebCryptoAPI/import_export/KMAC_importKey.tentative.https.any.js
 testharness WebCryptoAPI/import_export/ML-DSA_importKey.tentative.https.any.js
 testharness WebCryptoAPI/import_export/ML-KEM_importKey.tentative.https.any.js
@@ -33641,6 +33644,7 @@ testharness WebCryptoAPI/serialization/ecdsa.https.any.js
 testharness WebCryptoAPI/serialization/ed25519.https.any.js
 testharness WebCryptoAPI/serialization/ed448.tentative.https.any.js
 testharness WebCryptoAPI/serialization/hmac.https.any.js
+testharness WebCryptoAPI/serialization/hybridkem.tentative.https.window.js
 testharness WebCryptoAPI/serialization/kmac.tentative.https.any.js
 testharness WebCryptoAPI/serialization/mldsa.tentative.https.any.js
 testharness WebCryptoAPI/serialization/mlkem.tentative.https.any.js
@@ -36690,6 +36694,7 @@ testharness css/css-cascade/scope-evaluation.html
 testharness css/css-cascade/scope-focus.html
 testharness css/css-cascade/scope-hover.html
 testharness css/css-cascade/scope-implicit-external.html
+testharness css/css-cascade/scope-implicit-remove-sheet.html
 testharness css/css-cascade/scope-implicit.html
 testharness css/css-cascade/scope-import-implicit.html
 testharness css/css-cascade/scope-import-inner-scope.html
@@ -41546,6 +41551,8 @@ testharness css/css-values/attr-argument-grammar.html
 testharness css/css-values/attr-container-style-query.html
 testharness css/css-values/attr-css-wide-keywords.html
 testharness css/css-values/attr-cycle.html
+testharness css/css-values/attr-invalidation-after-stylesheet-change.html
+testharness css/css-values/attr-invalidation-after-view-transition.html
 testharness css/css-values/attr-invalidation.html
 testharness css/css-values/attr-length-specified.html
 testharness css/css-values/attr-null-namespace.xhtml
@@ -41744,6 +41751,7 @@ testharness css/css-values/tree-counting/calc-sibling-function.html
 testharness css/css-values/tree-counting/sibling-function-container-query-invalidation.html
 testharness css/css-values/tree-counting/sibling-function-container-query.html
 testharness css/css-values/tree-counting/sibling-function-descriptors.tentative.html
+testharness css/css-values/tree-counting/sibling-function-if-style-query.html
 testharness css/css-values/tree-counting/sibling-function-invalidation.html
 testharness css/css-values/tree-counting/sibling-function-media-query.tentative.html
 testharness css/css-values/tree-counting/sibling-index-keyframe-font-style-dynamic.html
@@ -43905,6 +43913,7 @@ testharness dom/nodes/insertion-removing-steps/Node-appendChild-text-in-script.h
 testharness dom/nodes/insertion-removing-steps/Node-appendChild-three-scripts-from-fragment.html
 testharness dom/nodes/insertion-removing-steps/Node-appendChild-three-scripts.html
 testharness dom/nodes/insertion-removing-steps/blur-event.window.js
+testharness dom/nodes/insertion-removing-steps/change-event.window.js
 testharness dom/nodes/insertion-removing-steps/insertion-removing-steps-iframe.window.js
 testharness dom/nodes/insertion-removing-steps/insertion-removing-steps-script.window.js
 testharness dom/nodes/insertion-removing-steps/later-script-removed-by-earlier-script.html
@@ -44146,7 +44155,9 @@ testharness domparsing/tentative/stream-html-sanitizer.html
 testharness domparsing/tentative/stream-html-script-safe.html
 testharness domparsing/tentative/stream-html-unsafe.html
 testharness domparsing/tentative/stream-html-with-declarative-shadow-root.html
+testharness domparsing/tentative/stream-html-with-trusted-types-adopt.html
 testharness domparsing/tentative/stream-html-with-trusted-types-error-in-policy.html
+testharness domparsing/tentative/stream-html-with-trusted-types-from-non-tt.html
 testharness domparsing/tentative/stream-html-with-trusted-types-no-createParserOptions.html
 testharness domparsing/tentative/stream-html-with-trusted-types-no-policy.html
 testharness domparsing/tentative/stream-html-with-trusted-types-pass-trusted.html
@@ -47214,6 +47225,8 @@ testharness html/canvas/element/manual/draw-element-image/draw-element-image-dif
 testharness html/canvas/element/manual/draw-element-image/draw-element-image-display-none.tentative.html
 testharness html/canvas/element/manual/draw-element-image/draw-element-image-empty.tentative.html
 testharness html/canvas/element/manual/draw-element-image/draw-element-image-get-image-data.tentative.html
+testharness html/canvas/element/manual/draw-element-image/drawElementImage-dest-rect.tentative.html
+testharness html/canvas/element/manual/draw-element-image/drawElementImage-src-rect.tentative.html
 testharness html/canvas/element/manual/draw-element-image/drawElementImage-zero-size.tentative.html
 testharness html/canvas/element/manual/draw-element-image/drawing-display-none-fails.tentative.html
 testharness html/canvas/element/manual/draw-element-image/element-image-fractional-size.tentative.html
@@ -50252,6 +50265,7 @@ testharness html/dom/documents/resource-metadata-management/document-cookie.html
 testharness html/dom/documents/resource-metadata-management/document-lastModified-01.html
 testharness html/dom/documents/resource-metadata-management/document-lastModified.html
 testharness html/dom/documents/resource-metadata-management/document-readyState.html
+testharness html/dom/documents/resource-metadata-management/load-event-after-readystatechange-starts-load.html
 testharness html/dom/elements/elements-in-the-dom/historical.html
 testharness html/dom/elements/global-attributes/cdata-dir_auto.html
 testharness html/dom/elements/global-attributes/classlist-nonstring.html
