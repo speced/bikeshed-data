@@ -1,4 +1,4 @@
-sha: e6d42a5ffcc6d6a4f66401ecaadd21f2c688ddbe
+sha: 8fa79675278b21028654626c94dd7220f0f817a6
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -891,6 +891,7 @@ crashtest css/css-ruby/crashtests/justification.html
 crashtest css/css-ruby/crashtests/oof-in-nested-ruby.html
 crashtest css/css-ruby/crashtests/overhang.html
 crashtest css/css-ruby/crashtests/rt-margin.html
+crashtest css/css-ruby/crashtests/whitespace-reframe.html
 crashtest css/css-ruby/crashtests/zero-width-base.html
 crashtest css/css-ruby/ruby-body-element-crash.html
 crashtest css/css-ruby/ruby-dynamic-removal-004-crash.html
@@ -29639,6 +29640,8 @@ reftest css/filter-effects/empty-element-with-filter-004.html
 reftest css/filter-effects/empty-element-with-filter.html
 reftest css/filter-effects/feComposite-intersection-feTile-input-svg.html
 reftest css/filter-effects/feComposite-intersection-feTile-input.html
+reftest css/filter-effects/feDropShadow-negative-deviation.svg
+reftest css/filter-effects/feGaussianBlur-negative-deviation.svg
 reftest css/filter-effects/feGaussianBlur-stdDeviation-axis-zero.html
 reftest css/filter-effects/feImage-orientation.tentative.html
 reftest css/filter-effects/feImage-with-hidden-container-defs.html
@@ -60449,6 +60452,7 @@ testharness svg/linking/scripted/a.hreflang-getter-01.svg
 testharness svg/linking/scripted/a.hreflang-setter-01.svg
 testharness svg/linking/scripted/a.hyperlink-getter-01.svg
 testharness svg/linking/scripted/a.ping-functionality.html
+testharness svg/linking/scripted/a.referrer-invalid-value.html
 testharness svg/linking/scripted/a.rel-getter-01.svg
 testharness svg/linking/scripted/a.rel-noopener-policy.html
 testharness svg/linking/scripted/a.rel-noreferrer-policy.html
@@ -61815,6 +61819,7 @@ testharness wasm/webapi/esm-integration/reuse-wasm-loaded-as-classic-script.tent
 testharness wasm/webapi/esm-integration/script-src-allows-source-phase-wasm.tentative.html
 testharness wasm/webapi/esm-integration/script-src-allows-wasm.tentative.html
 testharness wasm/webapi/esm-integration/script-src-blocks-wasm.tentative.sub.html
+testharness wasm/webapi/esm-integration/scripting-disabled.tentative.html
 testharness wasm/webapi/esm-integration/source-phase-blocked-by-csp.tentative.html
 testharness wasm/webapi/esm-integration/source-phase-import-non-UTF8.tentative.html
 testharness wasm/webapi/esm-integration/source-phase-js-string.tentative.html
@@ -62945,9 +62950,12 @@ testharness webnn/validation_tests/triangular.https.any.js
 testharness webnn/validation_tests/unprintableNames.https.any.js
 testharness webnn/validation_tests/where.https.any.js
 testharness webrtc-encoded-transform/RTCEncodedFrame-copy-construction.https.html
+testharness webrtc-encoded-transform/RTCEncodedFrame-shared-buffer.https.html
 testharness webrtc-encoded-transform/RTCRtpScriptTransform-bad-chunk.https.html
 testharness webrtc-encoded-transform/RTCRtpScriptTransform-encoded-transform.https.html
+testharness webrtc-encoded-transform/RTCRtpScriptTransform-padding.https.html
 testharness webrtc-encoded-transform/RTCRtpScriptTransform-sender-worker-single-frame.https.html
+testharness webrtc-encoded-transform/RTCRtpScriptTransform-write-rules.https.html
 testharness webrtc-encoded-transform/idlharness.https.window.js
 testharness webrtc-encoded-transform/script-audio-transform.https.html
 testharness webrtc-encoded-transform/script-change-transform.https.html
