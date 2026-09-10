@@ -9518,6 +9518,7 @@
         "HTMLCameraElement",
         "HTMLFencedFrameElement",
         "HTMLGeolocationElement",
+        "HTMLInstallElement",
         "HTMLMicrophoneElement",
         "HTMLPortalElement",
         "HTMLUserMediaElement",
@@ -9527,6 +9528,7 @@
         "IdentityCredentialError",
         "IdleDetector",
         "InputDeviceCapabilities",
+        "InstallResultEvent",
         "JsonLdProcessor",
         "LinearAccelerationSensor",
         "MIDIConnectionEvent",
@@ -11312,6 +11314,7 @@
         "IDBVersionChangeEvent",
         "InputEvent",
         "InstallEvent",
+        "InstallResultEvent",
         "KeyFrameRequestEvent",
         "KeyboardEvent",
         "MIDIConnectionEvent",
@@ -11402,6 +11405,7 @@
         "IDBVersionChangeEvent",
         "InputEvent",
         "InstallEvent",
+        "InstallResultEvent",
         "KeyboardEvent",
         "MIDIConnectionEvent",
         "MIDIMessageEvent",
@@ -13055,6 +13059,18 @@
         "Document"
       ],
       "shortname": "dom"
+    }
+  },
+  "createExportableTensor()": {
+    "createExportableTensor(descriptor, gpuDevice)": {
+      "args": [
+        "descriptor",
+        "gpuDevice"
+      ],
+      "for": [
+        "MLContext"
+      ],
+      "shortname": "webnn"
     }
   },
   "createExpression()": {
@@ -16382,6 +16398,17 @@
         "WebTransport"
       ],
       "shortname": "webtransport"
+    }
+  },
+  "exportToGPU()": {
+    "exportToGPU(tensor)": {
+      "args": [
+        "tensor"
+      ],
+      "for": [
+        "MLContext"
+      ],
+      "shortname": "webnn"
     }
   },
   "exports()": {
@@ -22696,7 +22723,32 @@
       "shortname": "observable"
     }
   },
+  "install!overload-1()": {
+    "install!overload-1()": {
+      "args": [],
+      "for": [
+        "Navigator"
+      ],
+      "shortname": "install-element"
+    },
+    "install!overload-1(options)": {
+      "args": [
+        "options"
+      ],
+      "for": [
+        "Navigator"
+      ],
+      "shortname": "install-element"
+    }
+  },
   "install()": {
+    "install()": {
+      "args": [],
+      "for": [
+        "Navigator"
+      ],
+      "shortname": "install-element"
+    },
     "install(options)": {
       "args": [
         "options"
