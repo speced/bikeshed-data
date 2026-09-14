@@ -1,4 +1,4 @@
-sha: 344f3c3b6508203343551f0694a7a07b1d58c1b5
+sha: ffe9e418072cbcf3d09ce6b6c828c332f8035b1f
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -12398,6 +12398,7 @@ reftest css/css-animations/animate-bg-color-with-change-during-delay.html
 reftest css/css-animations/animate-font-size-with-margin-override.html
 reftest css/css-animations/animate-with-background-color-hsla-to-legacy-rgb.html
 reftest css/css-animations/animate-with-background-color-oklch-001.html
+reftest css/css-animations/animation-append-stylesheet-reverse.html
 reftest css/css-animations/animation-delay-008.html
 reftest css/css-animations/animation-delay-009.html
 reftest css/css-animations/animation-delay-010.html
@@ -22988,6 +22989,7 @@ reftest css/css-shadow/slotted-has-004.html
 reftest css/css-shadow/slotted-placeholder.html
 reftest css/css-shadow/slotted-specificity-002.html
 reftest css/css-shadow/slotted-specificity.html
+reftest css/css-shadow/slotted-text-with-flex.html
 reftest css/css-shadow/slotted-with-pseudo-element.html
 reftest css/css-shadow/stylesheet-title-001.html
 reftest css/css-shadow/svg-id-ref-001.html
@@ -28147,6 +28149,10 @@ reftest css/css-view-transitions/paint-holding-in-iframe.html
 reftest css/css-view-transitions/pseudo-element-overflow-clip-with-border-radius.html
 reftest css/css-view-transitions/pseudo-element-overflow-hidden.html
 reftest css/css-view-transitions/pseudo-element-preserve-3d.html
+reftest css/css-view-transitions/pseudo-escaped-star-specificity.html
+reftest css/css-view-transitions/pseudo-escaped-star-view-transition-group.html
+reftest css/css-view-transitions/pseudo-match-escaped-star.html
+reftest css/css-view-transitions/pseudo-mismatch-escaped-star.html
 reftest css/css-view-transitions/pseudo-rendering-invalidation.html
 reftest css/css-view-transitions/pseudo-with-classes-entry.html
 reftest css/css-view-transitions/pseudo-with-classes-exit.html
@@ -31709,6 +31715,7 @@ reftest html/semantics/forms/the-select-element/customizable-select/select-appea
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-hover.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-mixing.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-optgroup-legend-and-label.html
+reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-optgroup-legend-not-first.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-optgroup-legend.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-optgroup-rendering.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-option-with-label.html
@@ -37142,6 +37149,7 @@ testharness css/css-conditional/container-queries/style-query-unset-on-root.html
 testharness css/css-conditional/container-queries/style-query-with-container-name-custom-change.html
 testharness css/css-conditional/container-queries/style-query-with-unknown-width.html
 testharness css/css-conditional/container-queries/style-range-dynamic.html
+testharness css/css-conditional/container-queries/style-range-var-in-function-change.html
 testharness css/css-conditional/container-queries/svg-foreignobject-child-container.html
 testharness css/css-conditional/container-queries/svg-root-size-container.html
 testharness css/css-conditional/container-queries/top-layer-dialog-container.html
@@ -38681,6 +38689,7 @@ testharness css/css-highlight-api/HighlightRegistry-iteration-with-modifications
 testharness css/css-highlight-api/HighlightRegistry-iteration.html
 testharness css/css-highlight-api/HighlightRegistry-maplike-tampered-Map-prototype.html
 testharness css/css-highlight-api/HighlightRegistry-maplike.html
+testharness css/css-highlight-api/custom-highlight-universal-escaped-star.tentative.html
 testharness css/css-highlight-api/custom-highlight-universal-parsing-and-computed-style.tentative.html
 testharness css/css-highlight-api/highlight-priority.html
 testharness css/css-highlight-api/highlight-pseudo-computed.html
@@ -40037,6 +40046,7 @@ testharness css/css-shadow/host-in-host-context-selector.html
 testharness css/css-shadow/host-in-host-selector.html
 testharness css/css-shadow/host-is-featureless.html
 testharness css/css-shadow/host-parsing.html
+testharness css/css-shadow/hover-invalidates-slotted-descendant.html
 testharness css/css-shadow/idlharness.html
 testharness css/css-shadow/keyframes-001.html
 testharness css/css-shadow/keyframes-002.html
@@ -42161,6 +42171,7 @@ testharness css/css-view-transitions/pseudo-computed-style-stays-in-sync-with-ne
 testharness css/css-view-transitions/pseudo-element-animations-rerun.html
 testharness css/css-view-transitions/pseudo-element-animations.html
 testharness css/css-view-transitions/pseudo-get-computed-style-clean-style.html
+testharness css/css-view-transitions/pseudo-get-computed-style-escaped-star.html
 testharness css/css-view-transitions/pseudo-get-computed-style.html
 testharness css/css-view-transitions/ready_resolves_after_dom_before_raf.html
 testharness css/css-view-transitions/scoped/auto-name-on-descendant.html
@@ -44553,6 +44564,7 @@ testharness domxpath/xpathevaluatorbase-creatensresolver.html
 testharness dpub-aam/role/roles.html
 testharness ecmascript/locale-compat.html
 testharness ecmascript/regexp-lookbehind.html
+testharness editing/edit-context/edit-context-attach-after-focus.tentative.html
 testharness editing/edit-context/edit-context-basics.tentative.html
 testharness editing/edit-context/edit-context-bidi-caret-association.tentative.html
 testharness editing/edit-context/edit-context-delete-whitespace.tentative.html
@@ -55096,6 +55108,7 @@ testharness mathml/relations/html5-tree/a-type-setter.html
 testharness mathml/relations/html5-tree/anchor-hyperlinkutils-getter-setter.html
 testharness mathml/relations/html5-tree/anchor-hyperlinkutils-getter.html
 testharness mathml/relations/html5-tree/anchor-visited-privacy.html
+testharness mathml/relations/html5-tree/attribute-overflow.html
 testharness mathml/relations/html5-tree/attributeStyleMap-getter-setter.html
 testharness mathml/relations/html5-tree/attributeStyleMap-getter.html
 testharness mathml/relations/html5-tree/autofocus-001.html
@@ -64807,6 +64820,7 @@ testharness xhr/xmlhttprequest-timeout-worker-twice.html
 testharness xhr/xmlhttprequest-unsent.htm
 testharness xml/attlist-defaults.html
 testharness xml/eol-normalization.html
+testharness xml/retain_undeclared_xmlns.html
 testharness xml/xml-prolog-accepted-versions.html
 testharness xml/xslt/document-element.window.js
 testharness xml/xslt/document-function.window.js
@@ -67412,7 +67426,6 @@ visual css/css-round-display/polar-origin-left-001.html
 visual css/css-round-display/polar-origin-left-bottom-001.html
 visual css/css-ruby/ruby-001.xht
 visual css/css-ruby/ruby-reflow-001-noruby.html
-visual css/css-shadow/slotted-text-with-flex.html
 visual css/css-text-decor/text-decoration-color-selection-002.html
 visual css/css-text-decor/text-decoration-visibility-001.xht
 visual css/css-text-decor/text-decoration-visibility-002.xht
