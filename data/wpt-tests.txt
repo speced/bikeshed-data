@@ -1,4 +1,4 @@
-sha: 3e62dcd8d2968379e0a77fd7b7763de2304883cc
+sha: 69ca0a13631612970c15766dd5c7f6f0f1518725
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -844,6 +844,8 @@ crashtest css/css-position/crashtests/position-absolute-crash-014.html
 crashtest css/css-position/crashtests/scroll-tree-parent-construction.html
 crashtest css/css-position/crashtests/sticky-in-activating-scroll-container.html
 crashtest css/css-position/crashtests/sticky-in-transform-in-activating-scroll-container.html
+crashtest css/css-position/crashtests/top-layer-slot-adopt-crash.html
+crashtest css/css-position/crashtests/top-layer-slot-remove-crash.html
 crashtest css/css-position/nested-positions-crash.html
 crashtest css/css-position/overlay/overlay-popover-backdrop-crash.html
 crashtest css/css-position/position-absolute-in-inline-crash.html
@@ -33993,6 +33995,7 @@ testharness ai/summarizer/summarizer-summarize-streaming-post-abort.tentative.ht
 testharness ai/summarizer/summarizer-summarize-streaming.tentative.https.window.js
 testharness ai/summarizer/summarizer-summarize.tentative.https.window.js
 testharness ai/translator/translator-bad-input.https.window.js
+testharness ai/translator/translator-create-user-activation.optional.https.window.js
 testharness ai/translator/translator-locale.https.window.js
 testharness ai/translator/translator-translate-post-abort.tentative.https.window.js
 testharness ai/translator/translator-translate-streaming-post-abort.tentative.https.window.js
@@ -40481,6 +40484,7 @@ testharness css/css-syntax/charset/page-utf16-css-bomless-utf16be.html
 testharness css/css-syntax/charset/page-utf16-css-no-decl-ascii-only.html
 testharness css/css-syntax/charset/page-utf16-css-no-decl.html
 testharness css/css-syntax/charset/page-windows-1251-charset-attribute-bogus.html
+testharness css/css-syntax/charset/page-windows-1251-charset-attribute-empty.html
 testharness css/css-syntax/charset/page-windows-1251-css-at-charset-1250-charset-attribute-windows-1253.html
 testharness css/css-syntax/charset/page-windows-1251-css-at-charset-bogus-charset-attribute-windows-1250.html
 testharness css/css-syntax/charset/page-windows-1251-css-at-charset-bogus.html
@@ -52225,6 +52229,7 @@ testharness html/semantics/forms/form-submission-0/request-submit-activation.htm
 testharness html/semantics/forms/form-submission-0/submission-checks.window.js
 testharness html/semantics/forms/form-submission-0/submit-button-clicked-in-data-document.html
 testharness html/semantics/forms/form-submission-0/submit-entity-body.html
+testharness html/semantics/forms/form-submission-0/submit-event-shadow-host.html
 testharness html/semantics/forms/form-submission-0/submit-event.html
 testharness html/semantics/forms/form-submission-0/submit-file.sub.html
 testharness html/semantics/forms/form-submission-0/text-plain.window.js
@@ -53581,6 +53586,7 @@ testharness html/semantics/the-button-element/command-and-commandfor/button-even
 testharness html/semantics/the-button-element/command-and-commandfor/button-type-behavior.html
 testharness html/semantics/the-button-element/command-and-commandfor/button-type-reflection.html
 testharness html/semantics/the-button-element/command-and-commandfor/command-reflection.html
+testharness html/semantics/the-button-element/command-and-commandfor/commandfor-shadow-host.html
 testharness html/semantics/the-button-element/command-and-commandfor/event-dispatch-shadow.html
 testharness html/semantics/the-button-element/command-and-commandfor/event-interface.html
 testharness html/semantics/the-button-element/command-and-commandfor/fullscreen-behavior.tentative.html
@@ -64852,6 +64858,7 @@ testharness xhr/xmlhttprequest-timeout-worker-twice.html
 testharness xhr/xmlhttprequest-unsent.htm
 testharness xml/attlist-defaults.html
 testharness xml/eol-normalization.html
+testharness xml/onreadystatechange-crash-on-stop.xhtml
 testharness xml/retain_undeclared_xmlns.html
 testharness xml/xml-prolog-accepted-versions.html
 testharness xml/xslt/document-element.window.js

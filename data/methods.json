@@ -626,18 +626,6 @@
       "shortname": "mediastream-recording"
     }
   },
-  "BluetoothAdvertisingEvent()": {
-    "BluetoothAdvertisingEvent(type, init)": {
-      "args": [
-        "type",
-        "init"
-      ],
-      "for": [
-        "BluetoothAdvertisingEvent"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "BluetoothDataFilter()": {
     "BluetoothDataFilter()": {
       "args": [],
@@ -5430,27 +5418,6 @@
       "shortname": "webvtt"
     }
   },
-  "ValueEvent()": {
-    "ValueEvent(type)": {
-      "args": [
-        "type"
-      ],
-      "for": [
-        "ValueEvent"
-      ],
-      "shortname": "web-bluetooth"
-    },
-    "ValueEvent(type, initDict)": {
-      "args": [
-        "type",
-        "initDict"
-      ],
-      "for": [
-        "ValueEvent"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "VideoColorSpace()": {
     "VideoColorSpace()": {
       "args": [],
@@ -8074,17 +8041,6 @@
       "shortname": "remote-playback"
     }
   },
-  "canonicalUUID()": {
-    "canonicalUUID(alias)": {
-      "args": [
-        "alias"
-      ],
-      "for": [
-        "BluetoothUUID"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "cap()": {
     "cap(value)": {
       "args": [
@@ -9290,13 +9246,6 @@
     }
   },
   "connect()": {
-    "connect()": {
-      "args": [],
-      "for": [
-        "BluetoothRemoteGATTServer"
-      ],
-      "shortname": "web-bluetooth"
-    },
     "connect(destinationNode)": {
       "args": [
         "destinationNode"
@@ -11341,7 +11290,6 @@
         "TouchEvent",
         "TransitionEvent",
         "UIEvent",
-        "ValueEvent",
         "WheelEvent"
       ],
       "shortname": "cookiestore"
@@ -11473,22 +11421,11 @@
       "for": [
         "BackgroundFetchEvent",
         "BackgroundFetchUpdateUIEvent",
-        "BluetoothAdvertisingEvent",
         "ContentIndexEvent",
         "PeriodicSyncEvent",
         "SyncEvent"
       ],
-      "shortname": "web-bluetooth"
-    },
-    "constructor(type, initDict)": {
-      "args": [
-        "type",
-        "initDict"
-      ],
-      "for": [
-        "ValueEvent"
-      ],
-      "shortname": "web-bluetooth"
+      "shortname": "background-fetch"
     },
     "constructor(type, options)": {
       "args": [
@@ -14891,7 +14828,6 @@
       "args": [],
       "for": [
         "AudioNode",
-        "BluetoothRemoteGATTServer",
         "IdentityCredential",
         "IntersectionObserver",
         "MutationObserver",
@@ -17094,12 +17030,11 @@
     "forget()": {
       "args": [],
       "for": [
-        "BluetoothDevice",
         "HIDDevice",
         "SerialPort",
         "USBDevice"
       ],
-      "shortname": "web-bluetooth"
+      "shortname": "serial"
     }
   },
   "formData()": {
@@ -18196,10 +18131,9 @@
     "getAvailability()": {
       "args": [],
       "for": [
-        "Bluetooth",
         "PresentationRequest"
       ],
-      "shortname": "web-bluetooth"
+      "shortname": "presentation-api"
     }
   },
   "getBattery()": {
@@ -18357,44 +18291,6 @@
         "AudioBuffer"
       ],
       "shortname": "webaudio"
-    }
-  },
-  "getCharacteristic()": {
-    "getCharacteristic(characteristic)": {
-      "args": [
-        "characteristic"
-      ],
-      "for": [
-        "BluetoothRemoteGATTService"
-      ],
-      "shortname": "web-bluetooth"
-    },
-    "getCharacteristic(name)": {
-      "args": [
-        "name"
-      ],
-      "for": [
-        "BluetoothUUID"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
-  "getCharacteristics()": {
-    "getCharacteristics()": {
-      "args": [],
-      "for": [
-        "BluetoothRemoteGATTService"
-      ],
-      "shortname": "web-bluetooth"
-    },
-    "getCharacteristics(characteristic)": {
-      "args": [
-        "characteristic"
-      ],
-      "for": [
-        "BluetoothRemoteGATTService"
-      ],
-      "shortname": "web-bluetooth"
     }
   },
   "getChildren()": {
@@ -18712,44 +18608,6 @@
       "shortname": "webxr-depth-sensing"
     }
   },
-  "getDescriptor()": {
-    "getDescriptor(descriptor)": {
-      "args": [
-        "descriptor"
-      ],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic"
-      ],
-      "shortname": "web-bluetooth"
-    },
-    "getDescriptor(name)": {
-      "args": [
-        "name"
-      ],
-      "for": [
-        "BluetoothUUID"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
-  "getDescriptors()": {
-    "getDescriptors()": {
-      "args": [],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic"
-      ],
-      "shortname": "web-bluetooth"
-    },
-    "getDescriptors(descriptor)": {
-      "args": [
-        "descriptor"
-      ],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "getDetails()": {
     "getDetails(itemIds)": {
       "args": [
@@ -18765,11 +18623,10 @@
     "getDevices()": {
       "args": [],
       "for": [
-        "Bluetooth",
         "HID",
         "USB"
       ],
-      "shortname": "web-bluetooth"
+      "shortname": "webhid"
     }
   },
   "getDigitalGoodsService()": {
@@ -19282,35 +19139,6 @@
         "CanvasImageData"
       ],
       "shortname": "html"
-    }
-  },
-  "getIncludedService()": {
-    "getIncludedService(service)": {
-      "args": [
-        "service"
-      ],
-      "for": [
-        "BluetoothRemoteGATTService"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
-  "getIncludedServices()": {
-    "getIncludedServices()": {
-      "args": [],
-      "for": [
-        "BluetoothRemoteGATTService"
-      ],
-      "shortname": "web-bluetooth"
-    },
-    "getIncludedServices(service)": {
-      "args": [
-        "service"
-      ],
-      "for": [
-        "BluetoothRemoteGATTService"
-      ],
-      "shortname": "web-bluetooth"
     }
   },
   "getInfo()": {
@@ -19906,35 +19734,6 @@
       "shortname": "webxr-webgpu-binding"
     }
   },
-  "getPrimaryService()": {
-    "getPrimaryService(service)": {
-      "args": [
-        "service"
-      ],
-      "for": [
-        "BluetoothRemoteGATTServer"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
-  "getPrimaryServices()": {
-    "getPrimaryServices()": {
-      "args": [],
-      "for": [
-        "BluetoothRemoteGATTServer"
-      ],
-      "shortname": "web-bluetooth"
-    },
-    "getPrimaryServices(service)": {
-      "args": [
-        "service"
-      ],
-      "for": [
-        "BluetoothRemoteGATTServer"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "getProperties()": {
     "getProperties()": {
       "args": [],
@@ -20314,17 +20113,6 @@
         "NavigatorManagedData"
       ],
       "shortname": "device-attributes"
-    }
-  },
-  "getService()": {
-    "getService(name)": {
-      "args": [
-        "name"
-      ],
-      "for": [
-        "BluetoothUUID"
-      ],
-      "shortname": "web-bluetooth"
     }
   },
   "getSetCookie()": {
@@ -27278,16 +27066,6 @@
       "shortname": "clipboard-apis"
     }
   },
-  "readValue()": {
-    "readValue()": {
-      "args": [],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic",
-        "BluetoothRemoteGATTDescriptor"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "receiveFeatureReport()": {
     "receiveFeatureReport()": {
       "args": [],
@@ -28712,11 +28490,10 @@
     "requestDevice()": {
       "args": [],
       "for": [
-        "Bluetooth",
         "GPUAdapter",
         "HID"
       ],
-      "shortname": "web-bluetooth"
+      "shortname": "webhid"
     },
     "requestDevice(descriptor)": {
       "args": [
@@ -28732,11 +28509,10 @@
         "options"
       ],
       "for": [
-        "Bluetooth",
         "HID",
         "USB"
       ],
-      "shortname": "web-bluetooth"
+      "shortname": "webhid"
     }
   },
   "requestFileHandle()": {
@@ -33600,15 +33376,6 @@
       "shortname": "service-workers"
     }
   },
-  "startNotifications()": {
-    "startNotifications()": {
-      "args": [],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "startRendering()": {
     "startRendering()": {
       "args": [],
@@ -33765,15 +33532,6 @@
         "Event"
       ],
       "shortname": "dom"
-    }
-  },
-  "stopNotifications()": {
-    "stopNotifications()": {
-      "args": [],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic"
-      ],
-      "shortname": "web-bluetooth"
     }
   },
   "stopPropagation()": {
@@ -36569,24 +36327,6 @@
       "shortname": "console"
     }
   },
-  "watchAdvertisements()": {
-    "watchAdvertisements()": {
-      "args": [],
-      "for": [
-        "BluetoothDevice"
-      ],
-      "shortname": "web-bluetooth"
-    },
-    "watchAdvertisements(options)": {
-      "args": [
-        "options"
-      ],
-      "for": [
-        "BluetoothDevice"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
   "watchAvailability()": {
     "watchAvailability()": {
       "args": [],
@@ -36954,40 +36694,6 @@
         "GPUQueue"
       ],
       "shortname": "webgpu"
-    }
-  },
-  "writeValue()": {
-    "writeValue(value)": {
-      "args": [
-        "value"
-      ],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic",
-        "BluetoothRemoteGATTDescriptor"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
-  "writeValueWithResponse()": {
-    "writeValueWithResponse(value)": {
-      "args": [
-        "value"
-      ],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic"
-      ],
-      "shortname": "web-bluetooth"
-    }
-  },
-  "writeValueWithoutResponse()": {
-    "writeValueWithoutResponse(value)": {
-      "args": [
-        "value"
-      ],
-      "for": [
-        "BluetoothRemoteGATTCharacteristic"
-      ],
-      "shortname": "web-bluetooth"
     }
   },
   "xor()": {
