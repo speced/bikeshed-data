@@ -6756,6 +6756,7 @@
     "RTCDataChannelState",
     "RTCDataChannelStats",
     "RTCDegradationPreference",
+    "RTCDiagnosticLoggingOptions",
     "RTCDtlsFingerprint",
     "RTCDtlsRole",
     "RTCDtlsTransport",
@@ -9636,6 +9637,7 @@
     "[[IsExtensible]] internal method of an Exported GC Object",
     "[[OwnPropertyKeys]] internal method of an Exported GC Object",
     "[[PreventExtensions]] internal method of an Exported GC Object",
+    "[[RTCDiagnosticLoggingSessionId]]",
     "[[SetPrototypeOf]] internal method of an Exported GC Object",
     "[[Set]] internal method of an Exported GC Object",
     "[[VideoKeyFrameIntervalCount]]",
@@ -48639,6 +48641,11 @@
     "quota",
     "requested"
   ],
+  "RTC": [
+    "discardDiagnosticLogging()",
+    "finishDiagnosticLogging(options)",
+    "startDiagnosticLogging(options)"
+  ],
   "RTCAudioPlayoutStats": [
     "kind",
     "synthesizedSamplesDuration",
@@ -48800,6 +48807,9 @@
     "maintain-framerate",
     "maintain-framerate-and-resolution",
     "maintain-resolution"
+  ],
+  "RTCDiagnosticLoggingOptions": [
+    "metadata"
   ],
   "RTCDtlsFingerprint": [
     "algorithm",
@@ -49335,6 +49345,9 @@
     "currentLocalDescription",
     "currentRemoteDescription",
     "datachannel",
+    "discardDiagnosticLogging()",
+    "finishDiagnosticLogging()",
+    "finishDiagnosticLogging(options)",
     "generateCertificate()",
     "generateCertificate(keygenAlgorithm)",
     "getConfiguration()",
@@ -49386,7 +49399,21 @@
     "setRemoteDescription(description)",
     "signalingState",
     "signalingstatechange",
+    "startDiagnosticLogging()",
+    "startDiagnosticLogging(options)",
     "track"
+  ],
+  "RTCPeerConnection/finishDiagnosticLogging()": [
+    "options"
+  ],
+  "RTCPeerConnection/finishDiagnosticLogging(options)": [
+    "options"
+  ],
+  "RTCPeerConnection/startDiagnosticLogging()": [
+    "options"
+  ],
+  "RTCPeerConnection/startDiagnosticLogging(options)": [
+    "options"
   ],
   "RTCPeerConnectionIceErrorEvent": [
     "address",
@@ -61696,10 +61723,12 @@
   "browsingContext.StartScreencastParameters": [
     "\"audio\"",
     "\"context\"",
+    "\"destinationFolder\"",
     "\"mimeType\"",
     "\"video\"",
     "audio",
     "context",
+    "destinationFolder",
     "mimeType",
     "video"
   ],
