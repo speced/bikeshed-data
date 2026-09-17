@@ -113,7 +113,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbtransferstatus-stall
+https://usb.spec.whatwg.org/#dom-usbtransferstatus-stall
 1
 1
 USBTransferStatus
@@ -156,6 +156,18 @@ GPUCanvasToneMappingMode
 -
 "standard"
 "standard"
+enum-value
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbrequesttype-standard
+1
+1
+USBRequestType
+-
+"standard"
+"standard"
 cddl-value
 webdriver-bidi
 webdriver-bidi
@@ -177,18 +189,6 @@ https://w3c.github.io/webdriver-bidi/#cddl-value-emulationmediafeatures-video-dy
 
 1
 emulation.MediaFeatures/video-dynamic-range
--
-"standard"
-"standard"
-enum-value
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbrequesttype-standard
-1
-1
-USBRequestType
 -
 "standard"
 "standard"
@@ -3373,7 +3373,7 @@ webhid
 webhid
 1
 current
-https://wicg.github.io/webhid/#dfn-string-index-tag
+https://hid.spec.whatwg.org/#dfn-string-index-tag
 
 
 -
@@ -3408,7 +3408,7 @@ webhid
 webhid
 1
 current
-https://wicg.github.io/webhid/#dfn-string-maximum-tag
+https://hid.spec.whatwg.org/#dfn-string-maximum-tag
 
 
 -
@@ -3419,7 +3419,7 @@ webhid
 webhid
 1
 current
-https://wicg.github.io/webhid/#dfn-string-minimum-tag
+https://hid.spec.whatwg.org/#dfn-string-minimum-tag
 
 
 -
@@ -4409,6 +4409,30 @@ GPUCommandsMixin
 -
 [[state]]
 [[state]]
+attribute
+webhid
+webhid
+1
+current
+https://hid.spec.whatwg.org/#dfn-state
+
+1
+HIDDevice
+-
+[[state]]
+[[state]]
+attribute
+serial
+serial
+1
+current
+https://serial.spec.whatwg.org/#dfn-state
+
+1
+SerialPort
+-
+[[state]]
+[[state]]
 dfn
 streams
 streams
@@ -4526,30 +4550,6 @@ https://wicg.github.io/idle-detection/#dom-idledetector-state-slot
 1
 1
 IdleDetector
--
-[[state]]
-[[state]]
-attribute
-serial
-serial
-1
-current
-https://wicg.github.io/serial/#dfn-state
-
-1
-SerialPort
--
-[[state]]
-[[state]]
-attribute
-webhid
-webhid
-1
-current
-https://wicg.github.io/webhid/#dfn-state
-
-1
-HIDDevice
 -
 [[state]]
 [[state]]
@@ -12143,6 +12143,114 @@ Window
 -
 status
 status
+attribute
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbintransferresult-status
+1
+1
+USBInTransferResult
+-
+status
+status
+argument
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbintransferresult-usbintransferresult-status-data-status
+1
+1
+USBInTransferResult/USBInTransferResult(status, data)
+USBInTransferResult/constructor(status, data)
+USBInTransferResult/USBInTransferResult(status)
+USBInTransferResult/constructor(status)
+-
+status
+status
+attribute
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbisochronousintransferpacket-status
+1
+1
+USBIsochronousInTransferPacket
+-
+status
+status
+argument
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket-status-data-status
+1
+1
+USBIsochronousInTransferPacket/USBIsochronousInTransferPacket(status, data)
+USBIsochronousInTransferPacket/constructor(status, data)
+USBIsochronousInTransferPacket/USBIsochronousInTransferPacket(status)
+USBIsochronousInTransferPacket/constructor(status)
+-
+status
+status
+attribute
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbisochronousouttransferpacket-status
+1
+1
+USBIsochronousOutTransferPacket
+-
+status
+status
+argument
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket-status-byteswritten-status
+1
+1
+USBIsochronousOutTransferPacket/USBIsochronousOutTransferPacket(status, bytesWritten)
+USBIsochronousOutTransferPacket/constructor(status, bytesWritten)
+USBIsochronousOutTransferPacket/USBIsochronousOutTransferPacket(status)
+USBIsochronousOutTransferPacket/constructor(status)
+-
+status
+status
+attribute
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbouttransferresult-status
+1
+1
+USBOutTransferResult
+-
+status
+status
+argument
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbouttransferresult-usbouttransferresult-status-byteswritten-status
+1
+1
+USBOutTransferResult/USBOutTransferResult(status, bytesWritten)
+USBOutTransferResult/constructor(status, bytesWritten)
+USBOutTransferResult/USBOutTransferResult(status)
+USBOutTransferResult/constructor(status)
+-
+status
+status
 argument
 login-status
 login-status
@@ -12247,114 +12355,6 @@ https://wicg.github.io/nav-speculation/prefetch.html#cddl-key-speculationprefetc
 
 1
 speculation.PrefetchStatusUpdatedParameters
--
-status
-status
-attribute
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbintransferresult-status
-1
-1
-USBInTransferResult
--
-status
-status
-argument
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbintransferresult-usbintransferresult-status-data-status
-1
-1
-USBInTransferResult/USBInTransferResult(status, data)
-USBInTransferResult/constructor(status, data)
-USBInTransferResult/USBInTransferResult(status)
-USBInTransferResult/constructor(status)
--
-status
-status
-attribute
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-status
-1
-1
-USBIsochronousInTransferPacket
--
-status
-status
-argument
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket-status-data-status
-1
-1
-USBIsochronousInTransferPacket/USBIsochronousInTransferPacket(status, data)
-USBIsochronousInTransferPacket/constructor(status, data)
-USBIsochronousInTransferPacket/USBIsochronousInTransferPacket(status)
-USBIsochronousInTransferPacket/constructor(status)
--
-status
-status
-attribute
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-status
-1
-1
-USBIsochronousOutTransferPacket
--
-status
-status
-argument
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket-status-byteswritten-status
-1
-1
-USBIsochronousOutTransferPacket/USBIsochronousOutTransferPacket(status, bytesWritten)
-USBIsochronousOutTransferPacket/constructor(status, bytesWritten)
-USBIsochronousOutTransferPacket/USBIsochronousOutTransferPacket(status)
-USBIsochronousOutTransferPacket/constructor(status)
--
-status
-status
-attribute
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbouttransferresult-status
-1
-1
-USBOutTransferResult
--
-status
-status
-argument
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbouttransferresult-usbouttransferresult-status-byteswritten-status
-1
-1
-USBOutTransferResult/USBOutTransferResult(status, bytesWritten)
-USBOutTransferResult/constructor(status, bytesWritten)
-USBOutTransferResult/USBOutTransferResult(status)
-USBOutTransferResult/constructor(status)
 -
 status
 status
@@ -12605,7 +12605,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#status-stage
+https://usb.spec.whatwg.org/#status-stage
 
 1
 -
@@ -14996,7 +14996,7 @@ serial
 serial
 1
 current
-https://wicg.github.io/serial/#dom-serialoptions-stopbits
+https://serial.spec.whatwg.org/#dom-serialoptions-stopbits
 1
 1
 SerialOptions
@@ -18817,7 +18817,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#string-descriptor
+https://usb.spec.whatwg.org/#string-descriptor
 
 1
 -
@@ -19406,7 +19406,7 @@ webhid
 webhid
 1
 current
-https://wicg.github.io/webhid/#dom-hidreportitem-strings
+https://hid.spec.whatwg.org/#dom-hidreportitem-strings
 1
 1
 HIDReportItem

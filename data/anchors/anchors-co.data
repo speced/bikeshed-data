@@ -2368,6 +2368,18 @@ webdriver-bidi
 webdriver-bidi
 1
 snapshot
+https://www.w3.org/TR/webdriver-bidi/#cddl-key-emulationsettextlayoutmodeoverrideparameters-contexts
+
+1
+emulation.SetTextLayoutModeOverrideParameters
+-
+"contexts"
+"contexts"
+cddl-key
+webdriver-bidi
+webdriver-bidi
+1
+snapshot
 https://www.w3.org/TR/webdriver-bidi/#cddl-key-emulationsettimezoneoverrideparameters-contexts
 
 1
@@ -5841,7 +5853,7 @@ webhid
 webhid
 1
 current
-https://wicg.github.io/webhid/#dfn-collection-tag
+https://hid.spec.whatwg.org/#dfn-collection-tag
 
 
 -
@@ -10945,7 +10957,7 @@ webhid
 webhid
 1
 current
-https://wicg.github.io/webhid/#dfn-collections
+https://hid.spec.whatwg.org/#dfn-collections
 
 1
 HIDDevice
@@ -11305,7 +11317,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbconfiguration-configurationvalue-slot
+https://usb.spec.whatwg.org/#dom-usbconfiguration-configurationvalue-slot
 1
 1
 USBConfiguration
@@ -11317,7 +11329,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbdevice-configurationvalue-slot
+https://usb.spec.whatwg.org/#dom-usbdevice-configurationvalue-slot
 1
 1
 USBDevice
@@ -11341,7 +11353,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbinterface-configuration-slot
+https://usb.spec.whatwg.org/#dom-usbinterface-configuration-slot
 1
 1
 USBInterface
@@ -11365,10 +11377,22 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbdevice-configurations-slot
+https://usb.spec.whatwg.org/#dom-usbdevice-configurations-slot
 1
 1
 USBDevice
+-
+[[connected]]
+[[connected]]
+attribute
+serial
+serial
+1
+current
+https://serial.spec.whatwg.org/#dfn-connected
+
+1
+SerialPort
 -
 [[connected]]
 [[connected]]
@@ -11381,18 +11405,6 @@ https://w3c.github.io/gamepad/#dfn-connected
 
 1
 Gamepad
--
-[[connected]]
-[[connected]]
-attribute
-serial
-serial
-1
-current
-https://wicg.github.io/serial/#dfn-connected
-
-1
-SerialPort
 -
 [[connected]]
 [[connected]]
@@ -14440,7 +14452,7 @@ webhid
 webhid
 1
 current
-https://wicg.github.io/webhid/#dfn-collection-type
+https://hid.spec.whatwg.org/#dfn-collection-type
 
 
 -
@@ -14451,7 +14463,7 @@ webhid
 webhid
 1
 current
-https://wicg.github.io/webhid/#dom-hiddevice-collections
+https://hid.spec.whatwg.org/#dom-hiddevice-collections
 1
 1
 HIDDevice
@@ -26454,6 +26466,31 @@ Sanitizer
 -
 configuration
 configuration
+attribute
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbdevice-configuration
+1
+1
+USBDevice
+-
+configuration
+configuration
+argument
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbinterface-usbinterface-configuration-interfacenumber-configuration
+1
+1
+USBInterface/USBInterface(configuration, interfaceNumber)
+USBInterface/constructor(configuration, interfaceNumber)
+-
+configuration
+configuration
 argument
 media-capabilities
 media-capabilities
@@ -26499,31 +26536,6 @@ https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesencodinginfo-conf
 1
 1
 MediaCapabilitiesEncodingInfo
--
-configuration
-configuration
-attribute
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbdevice-configuration
-1
-1
-USBDevice
--
-configuration
-configuration
-argument
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbinterface-usbinterface-configuration-interfacenumber-configuration
-1
-1
-USBInterface/USBInterface(configuration, interfaceNumber)
-USBInterface/constructor(configuration, interfaceNumber)
 -
 configuration
 configuration
@@ -26592,7 +26604,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#configuration-descriptor
+https://usb.spec.whatwg.org/#configuration-descriptor
 
 1
 -
@@ -26614,7 +26626,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbconfiguration-configurationname
+https://usb.spec.whatwg.org/#dom-usbconfiguration-configurationname
 1
 1
 USBConfiguration
@@ -26626,7 +26638,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbconfiguration-configurationvalue
+https://usb.spec.whatwg.org/#dom-usbconfiguration-configurationvalue
 1
 1
 USBConfiguration
@@ -26638,7 +26650,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbconfiguration-usbconfiguration-device-configurationvalue-configurationvalue
+https://usb.spec.whatwg.org/#dom-usbconfiguration-usbconfiguration-device-configurationvalue-configurationvalue
 1
 1
 USBConfiguration/USBConfiguration(device, configurationValue)
@@ -26651,7 +26663,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbdevice-selectconfiguration-configurationvalue-configurationvalue
+https://usb.spec.whatwg.org/#dom-usbdevice-selectconfiguration-configurationvalue-configurationvalue
 1
 1
 USBDevice/selectConfiguration(configurationValue)
@@ -26674,7 +26686,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbdevice-configurations
+https://usb.spec.whatwg.org/#dom-usbdevice-configurations
 1
 1
 USBDevice
@@ -28997,6 +29009,17 @@ https://www.w3.org/TR/css-images-4/#funcdef-conic-gradient
 -
 connect
 connect
+dfn
+webhid
+webhid
+1
+current
+https://hid.spec.whatwg.org/#dfn-connect
+
+1
+-
+connect
+connect
 event
 html
 html
@@ -29006,6 +29029,28 @@ https://html.spec.whatwg.org/multipage/indices.html#event-workerglobalscope-conn
 1
 1
 SharedWorkerGlobalScope
+-
+connect
+connect
+dfn
+serial
+serial
+1
+current
+https://serial.spec.whatwg.org/#dfn-connect
+
+1
+-
+connect
+connect
+dfn
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#connect
+
+1
 -
 connect
 connect
@@ -29027,39 +29072,6 @@ remote-playback
 current
 https://w3c.github.io/remote-playback/#dfn-connect
 1
-1
--
-connect
-connect
-dfn
-serial
-serial
-1
-current
-https://wicg.github.io/serial/#dfn-connect
-
-1
--
-connect
-connect
-dfn
-webhid
-webhid
-1
-current
-https://wicg.github.io/webhid/#dfn-connect
-
-1
--
-connect
-connect
-dfn
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#connect
-
 1
 -
 connect
@@ -29599,6 +29611,18 @@ https://dom.spec.whatwg.org/#connected
 -
 connected
 connected
+attribute
+serial
+serial
+1
+current
+https://serial.spec.whatwg.org/#dom-serialport-connected
+1
+1
+SerialPort
+-
+connected
+connected
 dfn
 fedcm-1
 fedcm
@@ -29738,18 +29762,6 @@ current
 https://wicg.github.io/direct-sockets/#dfn-connected
 
 1
--
-connected
-connected
-attribute
-serial
-serial
-1
-current
-https://wicg.github.io/serial/#dom-serialport-connected
-1
-1
-SerialPort
 -
 connected
 connected
@@ -32823,6 +32835,30 @@ GPUPipelineError
 constructor()
 constructor()
 constructor
+webhid
+webhid
+1
+current
+https://hid.spec.whatwg.org/#dom-hidconnectionevent-constructor
+1
+1
+HIDConnectionEvent
+-
+constructor()
+constructor()
+constructor
+webhid
+webhid
+1
+current
+https://hid.spec.whatwg.org/#dom-hidinputreportevent-constructor
+1
+1
+HIDInputReportEvent
+-
+constructor()
+constructor()
+constructor
 webxr-hit-test-1
 webxr-hit-test
 1
@@ -34323,30 +34359,6 @@ SmartCardError
 constructor()
 constructor()
 constructor
-webhid
-webhid
-1
-current
-https://wicg.github.io/webhid/#dom-hidconnectionevent-constructor
-1
-1
-HIDConnectionEvent
--
-constructor()
-constructor()
-constructor
-webhid
-webhid
-1
-current
-https://wicg.github.io/webhid/#dom-hidinputreportevent-constructor
-1
-1
-HIDInputReportEvent
--
-constructor()
-constructor()
-constructor
 window-controls-overlay
 window-controls-overlay
 1
@@ -35671,7 +35683,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbendpoint-usbendpoint
+https://usb.spec.whatwg.org/#dom-usbendpoint-usbendpoint
 1
 1
 USBEndpoint
@@ -36379,7 +36391,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbinterface-usbinterface
+https://usb.spec.whatwg.org/#dom-usbinterface-usbinterface
 1
 1
 USBInterface
@@ -38623,7 +38635,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbconfiguration-usbconfiguration
+https://usb.spec.whatwg.org/#dom-usbconfiguration-usbconfiguration
 1
 1
 USBConfiguration
@@ -38647,7 +38659,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbalternateinterface-usbalternateinterface
+https://usb.spec.whatwg.org/#dom-usbalternateinterface-usbalternateinterface
 1
 1
 USBAlternateInterface
@@ -41335,7 +41347,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-usbisochronousintransferresult
+https://usb.spec.whatwg.org/#dom-usbisochronousintransferresult-usbisochronousintransferresult
 1
 1
 USBIsochronousInTransferResult
@@ -41347,7 +41359,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousouttransferresult-usbisochronousouttransferresult
+https://usb.spec.whatwg.org/#dom-usbisochronousouttransferresult-usbisochronousouttransferresult
 1
 1
 USBIsochronousOutTransferResult
@@ -41359,7 +41371,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-usbisochronousintransferresult
+https://usb.spec.whatwg.org/#dom-usbisochronousintransferresult-usbisochronousintransferresult
 1
 1
 USBIsochronousInTransferResult
@@ -41899,7 +41911,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbintransferresult-usbintransferresult
+https://usb.spec.whatwg.org/#dom-usbintransferresult-usbintransferresult
 1
 1
 USBInTransferResult
@@ -41911,7 +41923,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket
+https://usb.spec.whatwg.org/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket
 1
 1
 USBIsochronousInTransferPacket
@@ -41923,7 +41935,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket
+https://usb.spec.whatwg.org/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket
 1
 1
 USBIsochronousOutTransferPacket
@@ -41935,7 +41947,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbouttransferresult-usbouttransferresult
+https://usb.spec.whatwg.org/#dom-usbouttransferresult-usbouttransferresult
 1
 1
 USBOutTransferResult
@@ -41947,7 +41959,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket
+https://usb.spec.whatwg.org/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket
 1
 1
 USBIsochronousOutTransferPacket
@@ -41959,7 +41971,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbouttransferresult-usbouttransferresult
+https://usb.spec.whatwg.org/#dom-usbouttransferresult-usbouttransferresult
 1
 1
 USBOutTransferResult
@@ -41971,7 +41983,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbintransferresult-usbintransferresult
+https://usb.spec.whatwg.org/#dom-usbintransferresult-usbintransferresult
 1
 1
 USBInTransferResult
@@ -41983,7 +41995,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket
+https://usb.spec.whatwg.org/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket
 1
 1
 USBIsochronousInTransferPacket
@@ -43779,6 +43791,30 @@ AnimationPlaybackEvent
 constructor(type, eventInitDict)
 constructor(type, eventInitDict)
 constructor
+webhid
+webhid
+1
+current
+https://hid.spec.whatwg.org/#dom-hidconnectionevent-constructor
+1
+1
+HIDConnectionEvent
+-
+constructor(type, eventInitDict)
+constructor(type, eventInitDict)
+constructor
+webhid
+webhid
+1
+current
+https://hid.spec.whatwg.org/#dom-hidinputreportevent-constructor
+1
+1
+HIDInputReportEvent
+-
+constructor(type, eventInitDict)
+constructor(type, eventInitDict)
+constructor
 webxrlayers-1
 webxrlayers
 1
@@ -43871,6 +43907,18 @@ https://screen-share.github.io/captured-mouse-events/#dom-capturedmouseevent-con
 1
 1
 CapturedMouseEvent
+-
+constructor(type, eventInitDict)
+constructor(type, eventInitDict)
+constructor
+webusb
+webusb
+1
+current
+https://usb.spec.whatwg.org/#dom-usbconnectionevent-usbconnectionevent
+1
+1
+USBConnectionEvent
 -
 constructor(type, eventInitDict)
 constructor(type, eventInitDict)
@@ -44591,42 +44639,6 @@ https://wicg.github.io/portals/#dom-portalactivateevent-portalactivateevent
 1
 1
 PortalActivateEvent
--
-constructor(type, eventInitDict)
-constructor(type, eventInitDict)
-constructor
-webhid
-webhid
-1
-current
-https://wicg.github.io/webhid/#dom-hidconnectionevent-constructor
-1
-1
-HIDConnectionEvent
--
-constructor(type, eventInitDict)
-constructor(type, eventInitDict)
-constructor
-webhid
-webhid
-1
-current
-https://wicg.github.io/webhid/#dom-hidinputreportevent-constructor
-1
-1
-HIDInputReportEvent
--
-constructor(type, eventInitDict)
-constructor(type, eventInitDict)
-constructor
-webusb
-webusb
-1
-current
-https://wicg.github.io/webusb/#dom-usbconnectionevent-usbconnectionevent
-1
-1
-USBConnectionEvent
 -
 constructor(type, eventInitDict)
 constructor(type, eventInitDict)
@@ -57190,6 +57202,18 @@ webdriver-bidi
 webdriver-bidi
 1
 snapshot
+https://www.w3.org/TR/webdriver-bidi/#cddl-key-emulationsettextlayoutmodeoverrideparameters-contexts
+
+1
+emulation.SetTextLayoutModeOverrideParameters
+-
+contexts
+contexts
+cddl-key
+webdriver-bidi
+webdriver-bidi
+1
+snapshot
 https://www.w3.org/TR/webdriver-bidi/#cddl-key-emulationsettimezoneoverrideparameters-contexts
 
 1
@@ -58517,7 +58541,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#control-transfer
+https://usb.spec.whatwg.org/#control-transfer
 
 1
 -
@@ -58607,7 +58631,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbdevice-controltransferin
+https://usb.spec.whatwg.org/#dom-usbdevice-controltransferin
 1
 1
 USBDevice
@@ -58619,7 +58643,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbdevice-controltransferout
+https://usb.spec.whatwg.org/#dom-usbdevice-controltransferout
 1
 1
 USBDevice
@@ -58631,7 +58655,7 @@ webusb
 webusb
 1
 current
-https://wicg.github.io/webusb/#dom-usbdevice-controltransferout
+https://usb.spec.whatwg.org/#dom-usbdevice-controltransferout
 1
 1
 USBDevice
