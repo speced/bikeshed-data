@@ -61,14 +61,12 @@ def updateDataFiles(path):
     mode = bikeshed.update.UpdateMode.MANUAL | bikeshed.update.UpdateMode.FORCE
     with bikeshed.messages.messagesSilent() as _:
         pass
-    # Temporarily turn off biblio updating, until SpecRef is fixed
-    # https://github.com/speced/bikeshed/issues/3320
     bikeshed.update.update(
         path=path, 
         updateMode=mode,
         anchors = True,
         backrefs = True,
-        biblio = False,
+        biblio = True,
         boilerplate = True,
         caniuse = True,
         linkDefaults = True,
