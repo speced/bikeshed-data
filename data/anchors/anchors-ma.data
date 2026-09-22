@@ -143,8 +143,8 @@ session.ManualProxyConfiguration/proxyType
 "manufacturerData"
 "manufacturerData"
 cddl-key
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#cddl-key-bluetoothscanrecord-manufacturerdata
@@ -155,8 +155,8 @@ bluetooth.ScanRecord
 "manufacturerData"
 "manufacturerData"
 cddl-key
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#cddl-key-bluetoothsimulatepreconnectedperipheralparameters-manufacturerdata
@@ -1339,8 +1339,8 @@ https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submit-m
 main items
 main items
 dfn
-webhid
-webhid
+hid
+hid
 1
 current
 https://hid.spec.whatwg.org/#dfn-main-items
@@ -1977,8 +1977,8 @@ https://html.spec.whatwg.org/multipage/scripting.html#attr-shadowrootslotassignm
 manufacturer data blocklist
 Manufacturer Data blocklist
 dfn
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#manufacturer-data-blocklist
@@ -1988,8 +1988,8 @@ https://bluetooth.spec.whatwg.org/#manufacturer-data-blocklist
 manufacturer specific data
 Manufacturer Specific Data
 dfn
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#manufacturer-specific-data
@@ -1999,11 +1999,11 @@ https://bluetooth.spec.whatwg.org/#manufacturer-specific-data
 manufacturer specific data
 Manufacturer Specific Data
 dfn
-web-bluetooth-scanning
-web-bluetooth-scanning
+bluetooth
+bluetooth
 1
 current
-https://webbluetoothcg.github.io/web-bluetooth/scanning.html#manufacturer-specific-data
+https://bluetooth.spec.whatwg.org/scanning.html#manufacturer-specific-data
 
 1
 -
@@ -5106,8 +5106,8 @@ MIDIPort
 manufacturerData
 manufacturerData
 cddl-key
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#cddl-key-bluetoothscanrecord-manufacturerdata
@@ -5118,8 +5118,8 @@ bluetooth.ScanRecord
 manufacturerData
 manufacturerData
 cddl-key
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#cddl-key-bluetoothsimulatepreconnectedperipheralparameters-manufacturerdata
@@ -5130,8 +5130,8 @@ bluetooth.SimulatePreconnectedPeripheralParameters
 manufacturerData
 manufacturerData
 attribute
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#dom-bluetoothadvertisingevent-manufacturerdata
@@ -5142,8 +5142,8 @@ BluetoothAdvertisingEvent
 manufacturerData
 manufacturerData
 dict-member
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#dom-bluetoothadvertisingeventinit-manufacturerdata
@@ -5154,8 +5154,8 @@ BluetoothAdvertisingEventInit
 manufacturerData
 manufacturerData
 dict-member
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#dom-bluetoothlescanfilterinit-manufacturerdata
@@ -5166,11 +5166,11 @@ BluetoothLEScanFilterInit
 manufacturerData
 manufacturerData
 attribute
-web-bluetooth-scanning
-web-bluetooth-scanning
+bluetooth
+bluetooth
 1
 current
-https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-manufacturerdata
+https://bluetooth.spec.whatwg.org/scanning.html#dom-bluetoothlescanfilter-manufacturerdata
 1
 1
 BluetoothLEScanFilter
@@ -5178,8 +5178,8 @@ BluetoothLEScanFilter
 manufacturerName
 manufacturerName
 attribute
-webusb
-webusb
+usb
+usb
 1
 current
 https://usb.spec.whatwg.org/#dom-usbdevice-manufacturername
@@ -5519,8 +5519,8 @@ XRFrame
 map of navigables to device prompts
 map of navigables to device prompts
 dfn
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#map-of-navigables-to-device-prompts
@@ -8671,14 +8671,26 @@ https://html.spec.whatwg.org/multipage/obsolete.html#marquee-scroll-interval
 mask
 mask
 dict-member
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#dom-bluetoothdatafilterinit-mask
 1
 1
 BluetoothDataFilterInit
+-
+mask
+mask
+attribute
+bluetooth
+bluetooth
+1
+current
+https://bluetooth.spec.whatwg.org/scanning.html#dom-bluetoothdatafilter-mask
+1
+1
+BluetoothDataFilter
 -
 mask
 mask
@@ -8713,18 +8725,6 @@ https://gpuweb.github.io/gpuweb/#dom-gpumultisamplestate-mask
 1
 1
 GPUMultisampleState
--
-mask
-mask
-attribute
-web-bluetooth-scanning
-web-bluetooth-scanning
-1
-current
-https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-mask
-1
-1
-BluetoothDataFilter
 -
 mask
 mask
@@ -9830,6 +9830,30 @@ https://www.w3.org/TR/WGSL/#mat4x4h
 match
 match
 dfn
+bluetooth
+bluetooth
+1
+current
+https://bluetooth.spec.whatwg.org/scanning.html#bluetoothlescan-match
+
+1
+BluetoothLEScan
+-
+match
+match
+dfn
+bluetooth
+bluetooth
+1
+current
+https://bluetooth.spec.whatwg.org/scanning.html#bluetoothlescanfilter-match
+
+1
+BluetoothLEScanFilter
+-
+match
+match
+dfn
 css-typed-om-1
 css-typed-om
 1
@@ -9896,30 +9920,6 @@ https://urlpattern.spec.whatwg.org/#url-pattern-match
 1
 1
 URL pattern
--
-match
-match
-dfn
-web-bluetooth-scanning
-web-bluetooth-scanning
-1
-current
-https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan-match
-
-1
-BluetoothLEScan
--
-match
-match
-dfn
-web-bluetooth-scanning
-web-bluetooth-scanning
-1
-current
-https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanfilter-match
-
-1
-BluetoothLEScanFilter
 -
 match
 match
@@ -10024,8 +10024,8 @@ https://www.w3.org/TR/selectors-4/#match-a-complex-selector-against-an-element
 match a device filter
 match a device filter
 dfn
-webusb
-webusb
+usb
+usb
 1
 current
 https://usb.spec.whatwg.org/#match-a-device-filter
@@ -10035,8 +10035,8 @@ https://usb.spec.whatwg.org/#match-a-device-filter
 match a device in prompt
 match a device in prompt
 dfn
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#match-a-device-in-prompt
@@ -10213,8 +10213,8 @@ https://mimesniff.spec.whatwg.org/#match-an-mp3-header
 match any filter
 match any filter
 dfn
-webhid
-webhid
+hid
+hid
 1
 current
 https://hid.spec.whatwg.org/#dfn-match-any-filter
@@ -11148,8 +11148,8 @@ https://www.w3.org/TR/webdriver2/#dfn-matched-capability-serialization-algorithm
 matches
 matches
 dfn
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#bluetoothdatafilterinit-matches
@@ -11380,8 +11380,8 @@ prefetch record
 matches a filter
 matches a filter
 dfn
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#matches-a-filter
@@ -11435,8 +11435,8 @@ https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-matches-an-
 matches any collection
 matches any collection
 dfn
-webhid
-webhid
+hid
+hid
 1
 current
 https://hid.spec.whatwg.org/#dfn-matches-any-collection
@@ -11446,8 +11446,8 @@ https://hid.spec.whatwg.org/#dfn-matches-any-collection
 matches any filter
 matches any filter
 dfn
-webhid
-webhid
+hid
+hid
 1
 current
 https://hid.spec.whatwg.org/#dfn-match-any-filter
@@ -11492,8 +11492,8 @@ MediaQueryList
 matches the collection
 matches the collection
 dfn
-webhid
-webhid
+hid
+hid
 1
 current
 https://hid.spec.whatwg.org/#dfn-matches-the-collection
@@ -11503,8 +11503,8 @@ https://hid.spec.whatwg.org/#dfn-matches-the-collection
 matches the device ids
 matches the device IDs
 dfn
-webhid
-webhid
+hid
+hid
 1
 current
 https://hid.spec.whatwg.org/#dfn-matches-the-device-ids
@@ -11536,8 +11536,8 @@ https://serial.spec.whatwg.org/#dfn-matches-the-filter
 matches the interface filter
 matches the interface filter
 dfn
-webusb
-webusb
+usb
+usb
 1
 current
 https://usb.spec.whatwg.org/#matches-the-interface-filter
@@ -19123,8 +19123,8 @@ https://www.w3.org/TR/compute-pressure/#dfn-may-receive-data
 mayUseGATT
 mayUseGATT
 dict-member
-web-bluetooth
-web-bluetooth
+bluetooth-scanning
+bluetooth-scanning
 1
 current
 https://bluetooth.spec.whatwg.org/#dom-allowedbluetoothdevice-mayusegatt
