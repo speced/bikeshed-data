@@ -1,4 +1,4 @@
-sha: 27f97e5079f050286ee1b4e3f6729963c7042979
+sha: 11ae8c1179be2dd38070846b01c2e9338ef81770
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -792,10 +792,12 @@ crashtest css/css-overflow/chrome-body-overflow-propagation-crash.html
 crashtest css/css-overflow/crashtests/text-overflow-ellipsis-multiline-crash.html
 crashtest css/css-overflow/ellipsis-with-image-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-040-crash.html
+crashtest css/css-overflow/line-clamp/line-clamp-043-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-auto-001-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-auto-002-crash.html
 crashtest css/css-overflow/line-clamp/webkit-line-clamp-041-crash.html
 crashtest css/css-overflow/line-clamp/webkit-line-clamp-042-crash.html
+crashtest css/css-overflow/line-clamp/webkit-line-clamp-054-crash.html
 crashtest css/css-overflow/line-clamp/webkit-line-clamp-bug-1926732-crash.html
 crashtest css/css-overflow/line-clamp/webkit-line-clamp-bug-2063759-crash.html
 crashtest css/css-overflow/multicol-in-orthogonal-writing-mode-crash.html
@@ -1438,6 +1440,7 @@ crashtest fullscreen/crashtests/frameset-crash.html
 crashtest html/browsers/browsing-the-web/navigating-across-documents/unknown-protocol-reload-crash.html
 crashtest html/browsers/history/the-location-interface/cross-origin-location-stringify-crash.sub.html
 crashtest html/browsers/origin/origin-keyed-agent-clusters/popups-crash.https.html
+crashtest html/browsers/sandboxing/sandbox-dynamic-change-on-navigation-crash.sub.html
 crashtest html/canvas/canvas-sibling-index-crash.html
 crashtest html/canvas/element/manual/draw-element-image/fullscreen-child-crash.tentative.html
 crashtest html/canvas/element/manual/draw-element-image/fullscreen-crash.tentative.html
@@ -1938,7 +1941,6 @@ crashtest svg/text/scripted/reattach-crash.html
 crashtest svg/types/scripted/svglength-value-access-when-in-detached-document-crash.html
 crashtest touch-events/touch-action-document-crash.html
 crashtest trusted-types/navigate-to-javascript-url-007-crash.html
-crashtest trusted-types/navigate-to-javascript-url-009-crash.html
 crashtest uievents/mouse/crashtests/retrieve_coords_after_moving_target_outside_subdoc_and_hide_the_subdoc.html
 crashtest web-animations/animation-model/keyframe-effects/effect-in-removed-iframe-crash.html
 crashtest web-animations/animation-model/keyframe-effects/effect-on-marquee-parent-crash.html
@@ -19367,6 +19369,9 @@ reftest css/css-grid/subgrid/repeat-auto-fill-005.html
 reftest css/css-grid/subgrid/repeat-auto-fill-006.html
 reftest css/css-grid/subgrid/repeat-auto-fill-007.html
 reftest css/css-grid/subgrid/repeat-auto-fill-008.html
+reftest css/css-grid/subgrid/row-subgrid-intrinsic-size-transfer-001.html
+reftest css/css-grid/subgrid/row-subgrid-intrinsic-size-transfer-002.html
+reftest css/css-grid/subgrid/row-subgrid-intrinsic-size-transfer-003.html
 reftest css/css-grid/subgrid/scrollbar-gutter-001.html
 reftest css/css-grid/subgrid/scrollbar-gutter-002.html
 reftest css/css-grid/subgrid/standalone-axis-size-001.html
@@ -31400,6 +31405,7 @@ reftest html/rendering/cdata-001.xhtml
 reftest html/rendering/cdata-002.xhtml
 reftest html/rendering/non-replaced-elements/flow-content-0/div-align.html
 reftest html/rendering/non-replaced-elements/flow-content-0/figure.html
+reftest html/rendering/non-replaced-elements/form-controls/align-content.tentative.html
 reftest html/rendering/non-replaced-elements/form-controls/datetime-dynamic-type-change.html
 reftest html/rendering/non-replaced-elements/form-controls/input-line-height.html
 reftest html/rendering/non-replaced-elements/form-controls/input-placeholder-line-height.html
@@ -49081,6 +49087,22 @@ testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.inva
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.name-4.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.name-5.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.name-5.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.em-1.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.em-1.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.em-2.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.em-2.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.em-3.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.em-3.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.em-4.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.em-4.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.random-1.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.random-1.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.random-2.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.random-2.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.random-3.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.random-3.worker.js
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.random-4.html
+testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.no-context.random-4.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.rgb-1.html
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.rgb-1.worker.js
 testharness html/canvas/offscreen/fill-and-stroke-styles/2d.fillStyle.parse.invalid.rgb-2.html
