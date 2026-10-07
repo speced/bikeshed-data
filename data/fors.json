@@ -2983,6 +2983,7 @@
     "CreateMonitorCallback",
     "CreateNonEnumerableDataPropertyOrThrow",
     "CreateNonEnumerableDataPropertyOrThrow(obj, propertyKey, value)",
+    "CreateParserOptionsCallback",
     "CreatePerIterationEnvironment",
     "CreatePerIterationEnvironment(perIterationBindings)",
     "CreateReadableByteStream",
@@ -3048,9 +3049,9 @@
     "CrossOriginProperties",
     "CrossOriginPropertyFallback",
     "CrossOriginSet",
+    "CrossOriginStorageGetFileHandleHash",
+    "CrossOriginStorageGetFileHandleOptions",
     "CrossOriginStorageManager",
-    "CrossOriginStorageRequestFileHandleHash",
-    "CrossOriginStorageRequestFileHandleOptions",
     "CrossRealmTransformSendError",
     "Crypto",
     "CryptoKey",
@@ -8587,6 +8588,7 @@
     "Trusted Type",
     "Trusted UI",
     "TrustedHTML",
+    "TrustedHTMLParserOptions",
     "TrustedScript",
     "TrustedScriptURL",
     "TrustedType",
@@ -12654,6 +12656,7 @@
     "create a notification",
     "create a notification with a settings object",
     "create a null input source",
+    "create a parser options callback argument",
     "create a pointer input source",
     "create a potential-CORS request",
     "create a preload key",
@@ -14863,6 +14866,7 @@
     "fragment directive delimiter",
     "fragment identifier",
     "fragment identifiers",
+    "fragment parser mode",
     "fragment parsing algorithm steps",
     "fragment percent-encode set",
     "fragment serializing algorithm steps",
@@ -15089,6 +15093,8 @@
     "get a response MIME type",
     "get a safe token",
     "get a sandbox name",
+    "get a sanitizer config copy from dictionary",
+    "get a sanitizer from dictionary",
     "get a sanitizer instance from options",
     "get a session ID for a WebSocket resource",
     "get a stack ID",
@@ -15225,6 +15231,8 @@
     "get time origin timestamp",
     "get top-level traversables",
     "get trusted type compliant attribute value",
+    "get trusted type compliant input",
+    "get trusted type compliant parser options",
     "get trusted type compliant string",
     "get trusted type policy value",
     "get unique URLs",
@@ -18869,6 +18877,7 @@
     "parser document",
     "parser inserted flag",
     "parser metadata",
+    "parser options need vetting",
     "parser pause flag",
     "parser scripting mode",
     "parser-aborted",
@@ -32111,6 +32120,10 @@
   "CreateMonitorCallback": [
     "monitor"
   ],
+  "CreateParserOptionsCallback": [
+    "arguments",
+    "options"
+  ],
   "CreateScriptCallback": [
     "arguments",
     "input"
@@ -32210,25 +32223,25 @@
     "fromElement()",
     "fromElement(element)"
   ],
-  "CrossOriginStorageManager": [
-    "requestFileHandle(hash)",
-    "requestFileHandle(hash, options)"
-  ],
-  "CrossOriginStorageManager/requestFileHandle(hash)": [
-    "hash",
-    "options"
-  ],
-  "CrossOriginStorageManager/requestFileHandle(hash, options)": [
-    "hash",
-    "options"
-  ],
-  "CrossOriginStorageRequestFileHandleHash": [
+  "CrossOriginStorageGetFileHandleHash": [
     "algorithm",
     "value"
   ],
-  "CrossOriginStorageRequestFileHandleOptions": [
+  "CrossOriginStorageGetFileHandleOptions": [
     "create",
     "origins"
+  ],
+  "CrossOriginStorageManager": [
+    "getFileHandle(hash)",
+    "getFileHandle(hash, options)"
+  ],
+  "CrossOriginStorageManager/getFileHandle(hash)": [
+    "hash",
+    "options"
+  ],
+  "CrossOriginStorageManager/getFileHandle(hash, options)": [
+    "hash",
+    "options"
   ],
   "Crypto": [
     "getRandomValues()",
@@ -54739,6 +54752,10 @@
     "stringificationbehavior",
     "toJSON()"
   ],
+  "TrustedHTMLParserOptions": [
+    "runScripts",
+    "sanitizer configuration"
+  ],
   "TrustedScript": [
     "data",
     "stringificationbehavior",
@@ -54752,6 +54769,9 @@
   "TrustedTypePolicy": [
     "createHTML(input)",
     "createHTML(input, ...arguments)",
+    "createParserOptions()",
+    "createParserOptions(options)",
+    "createParserOptions(options, ...arguments)",
     "createScript(input)",
     "createScript(input, ...arguments)",
     "createScriptURL(input)",
@@ -54766,6 +54786,18 @@
   "TrustedTypePolicy/createHTML(input, ...arguments)": [
     "arguments",
     "input"
+  ],
+  "TrustedTypePolicy/createParserOptions()": [
+    "arguments",
+    "options"
+  ],
+  "TrustedTypePolicy/createParserOptions(options)": [
+    "arguments",
+    "options"
+  ],
+  "TrustedTypePolicy/createParserOptions(options, ...arguments)": [
+    "arguments",
+    "options"
   ],
   "TrustedTypePolicy/createScript(input)": [
     "arguments",
@@ -54847,6 +54879,7 @@
   ],
   "TrustedTypePolicyOptions": [
     "createHTML",
+    "createParserOptions",
     "createScript",
     "createScriptURL"
   ],
@@ -60247,6 +60280,7 @@
   ],
   "block-ellipsis": [
     "auto",
+    "ellipsis",
     "no-ellipsis",
     "none"
   ],
@@ -65104,6 +65138,11 @@
     "prev",
     "search"
   ],
+  "fragment parser mode": [
+    "Legacy",
+    "Safe",
+    "Unsafe"
+  ],
   "frame timing info": [
     "current task start time",
     "end time",
@@ -66632,6 +66671,7 @@
     "-webkit-legacy",
     "<block-ellipsis>",
     "<integer [1,∞]> <block-ellipsis>?",
+    "auto",
     "none"
   ],
   "line-fit-edge": [
