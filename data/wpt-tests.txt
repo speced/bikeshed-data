@@ -1,4 +1,4 @@
-sha: 385f52fe54bdea1383e8621675ce6727be9d076b
+sha: e4a9e438d3542b0ca9e6e56f9fa838ed30ba72d7
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1534,6 +1534,7 @@ crashtest html/semantics/forms/constraints/reportValidity-crash.html
 crashtest html/semantics/forms/resetting-a-form/form-attribute-detach-crash.html
 crashtest html/semantics/forms/textfieldselection/textarea-setRangeText-utf16-code-unit-crash.html
 crashtest html/semantics/forms/the-button-element/button-form-refers-to-elements-with-duplicate-ids-crash.html
+crashtest html/semantics/forms/the-datalist-element/list-id-insertion-crash.html
 crashtest html/semantics/forms/the-datalist-element/remove-datalist-crash.html
 crashtest html/semantics/forms/the-form-element/form-action-in-inactive-document-crash.html
 crashtest html/semantics/forms/the-form-element/form-check-validity-crash.html
@@ -16031,6 +16032,7 @@ reftest css/css-flexbox/baseline-synthesis-003.html
 reftest css/css-flexbox/baseline-synthesis-004.html
 reftest css/css-flexbox/baseline-synthesis-vert-lr-line-under.html
 reftest css/css-flexbox/canvas-contain-size.html
+reftest css/css-flexbox/column-flex-child-center-with-indefinite-height.html
 reftest css/css-flexbox/column-flex-child-with-max-width.html
 reftest css/css-flexbox/content-height-with-scrollbars.html
 reftest css/css-flexbox/cross-axis-scrollbar.html
@@ -30931,7 +30933,6 @@ reftest html/canvas/element/manual/draw-element-image/canvas-in-custom-element.t
 reftest html/canvas/element/manual/draw-element-image/changes-in-paint-event.tentative.html
 reftest html/canvas/element/manual/draw-element-image/changing-size-in-paint-event.tentative.html
 reftest html/canvas/element/manual/draw-element-image/child-overflow.tentative.html
-reftest html/canvas/element/manual/draw-element-image/compositing-descendant-filter.tentative.html
 reftest html/canvas/element/manual/draw-element-image/compositing-op-basic.tentative.html
 reftest html/canvas/element/manual/draw-element-image/compositing-op-non-opaque-element.tentative.html
 reftest html/canvas/element/manual/draw-element-image/css-backdrop-filter-and-mask.tentative.html
@@ -30950,6 +30951,7 @@ reftest html/canvas/element/manual/draw-element-image/css-filter-reference-on-di
 reftest html/canvas/element/manual/draw-element-image/css-mask-on-div.tentative.html
 reftest html/canvas/element/manual/draw-element-image/css-opacity-on-div.tentative.html
 reftest html/canvas/element/manual/draw-element-image/css-transform-on-div.tentative.html
+reftest html/canvas/element/manual/draw-element-image/descendant-filter.tentative.html
 reftest html/canvas/element/manual/draw-element-image/dialog-paints-in-top-layer.tentative.html
 reftest html/canvas/element/manual/draw-element-image/draw-element-image-scale-variant.tentative.html
 reftest html/canvas/element/manual/draw-element-image/element-shadow.tentative.html
@@ -33922,6 +33924,7 @@ testharness IndexedDB/upgrade-transaction-deactivation-timing.any.js
 testharness IndexedDB/upgrade-transaction-lifecycle-backend-aborted.any.js
 testharness IndexedDB/upgrade-transaction-lifecycle-committed.any.js
 testharness IndexedDB/upgrade-transaction-lifecycle-user-aborted.any.js
+testharness IndexedDB/value-not-exposed-in-worker.tentative.html
 testharness IndexedDB/value.any.js
 testharness IndexedDB/value_recursive.any.js
 testharness IndexedDB/worker-termination-aborts-upgrade.window.js
@@ -37563,6 +37566,7 @@ testharness css/css-contain/content-visibility/content-visibility-auto-state-cha
 testharness css/css-contain/content-visibility/content-visibility-auto-state-changed-removed.html
 testharness css/css-contain/content-visibility/content-visibility-auto-state-changed.html
 testharness css/css-contain/content-visibility/content-visibility-auto-text-fragment.html
+testharness css/css-contain/content-visibility/content-visibility-auto-with-inline-size-containment.html
 testharness css/css-contain/content-visibility/content-visibility-forced-layout-client-rects.html
 testharness css/css-contain/content-visibility/content-visibility-hidden-boundingbox-query.html
 testharness css/css-contain/content-visibility/content-visibility-hidden-offsetTop-left-width-height.html
@@ -43269,6 +43273,7 @@ testharness css/cssom/setproperty-null-undefined.html
 testharness css/cssom/shadow-dom-style-sheet.html
 testharness css/cssom/shorthand-serialization.html
 testharness css/cssom/shorthand-values.html
+testharness css/cssom/style-attr-stray-braces.tentative.html
 testharness css/cssom/style-attr-update-across-documents.html
 testharness css/cssom/style-background-position-longhands.html
 testharness css/cssom/style-background-position.html
@@ -50801,6 +50806,7 @@ testharness html/capability-delegation/delegate-fullscreen-request-subframe-cros
 testharness html/capability-delegation/delegate-fullscreen-request-subframe-same-origin.https.tentative.html
 testharness html/capability-delegation/delegation-consumes-activation.https.tentative.html
 testharness html/capability-delegation/delegation-sender-checks.tentative.html
+testharness html/capability-delegation/frame-capability-delegation-popup-blocked.tentative.html
 testharness html/cross-origin-embedder-policy/about-blank-popup.https.html
 testharness html/cross-origin-embedder-policy/blob.https.html
 testharness html/cross-origin-embedder-policy/block-local-documents-inheriting-none.https.html
@@ -64087,6 +64093,7 @@ testharness webrtc-svc/RTCRtpParameters-scalability-h264.html
 testharness webrtc-svc/RTCRtpParameters-scalability-vp8.html
 testharness webrtc-svc/RTCRtpParameters-scalability-vp9.html
 testharness webrtc-svc/RTCRtpParameters-scalability.html
+testharness webrtc/RTCCertificate-postMessage-to-workers.https.html
 testharness webrtc/RTCCertificate-postMessage.html
 testharness webrtc/RTCCertificate.html
 testharness webrtc/RTCConfiguration-bundlePolicy.html
