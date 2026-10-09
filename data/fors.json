@@ -698,6 +698,7 @@
     "<abs/>",
     "<absolute-size>",
     "<alphavalue>",
+    "<alt-text>",
     "<anchor-name>",
     "<anchor-side>",
     "<anchor-size>",
@@ -838,6 +839,7 @@
     "<content-level>",
     "<content-list>",
     "<content-position>",
+    "<content-replacement>",
     "<contextual-alt-values>",
     "<control-point>",
     "<coord-box>",
@@ -1294,7 +1296,7 @@
     "<supports-selector-fn>",
     "<svg-paint>",
     "<symbol>",
-    "<symbolic-counter-style>",
+    "<symbolic-glyph>",
     "<symbols-type>",
     "<syntax-combinator>",
     "<syntax-component>",
@@ -14646,6 +14648,7 @@
     "fit-content block size",
     "fit-content inline size",
     "fit-content size",
+    "fit-tolerance",
     "fitness distance",
     "fix disallowed ancestors",
     "fixed containing block",
@@ -18164,7 +18167,7 @@
     "non-mandatory claims",
     "non-matching",
     "non-normative",
-    "non-overridable counter-style names",
+    "non-overridable counter-styles",
     "non-persistent notification",
     "non-printable code point",
     "non-rendered element",
@@ -60324,7 +60327,8 @@
   "block-size": [
     "calc-size()",
     "contain",
-    "fit-content()"
+    "fit-content()",
+    "stretch()"
   ],
   "block-step-align": [
     "auto",
@@ -62826,6 +62830,7 @@
   ],
   "content": [
     "/ [ <string> | <counter> | <attr()> ]+",
+    "<alt-text>",
     "<content-list>",
     "<content-replacement>",
     "<counter>",
@@ -64853,6 +64858,10 @@
   "firefox": [
     "deviceCompat"
   ],
+  "fit-tolerance": [
+    "infinite",
+    "normal"
+  ],
   "flex": [
     "-webkit-box",
     "-webkit-flex",
@@ -65462,7 +65471,8 @@
     "fit-content()",
     "max-content",
     "min-content",
-    "stretch"
+    "stretch",
+    "stretch()"
   ],
   "host": [
     "equal",
@@ -65874,7 +65884,8 @@
   "inline-size": [
     "calc-size()",
     "contain",
-    "fit-content()"
+    "fit-content()",
+    "stretch()"
   ],
   "inline-sizing": [
     "normal",
@@ -67237,7 +67248,8 @@
   "max-block-size": [
     "calc-size()",
     "contain",
-    "fit-content()"
+    "fit-content()",
+    "stretch()"
   ],
   "max-height": [
     "calc-size()",
@@ -67247,12 +67259,14 @@
     "max-content",
     "min-content",
     "none",
-    "stretch"
+    "stretch",
+    "stretch()"
   ],
   "max-inline-size": [
     "calc-size()",
     "contain",
-    "fit-content()"
+    "fit-content()",
+    "stretch()"
   ],
   "max-lines": [
     "auto",
@@ -67266,7 +67280,8 @@
     "max-content",
     "min-content",
     "none",
-    "stretch"
+    "stretch",
+    "stretch()"
   ],
   "measure-conversion": [
     "aggregation-service",
@@ -67363,7 +67378,8 @@
   "min-block-size": [
     "calc-size()",
     "contain",
-    "fit-content()"
+    "fit-content()",
+    "stretch()"
   ],
   "min-height": [
     "auto",
@@ -67373,12 +67389,14 @@
     "fit-content()",
     "max-content",
     "min-content",
-    "stretch"
+    "stretch",
+    "stretch()"
   ],
   "min-inline-size": [
     "calc-size()",
     "contain",
-    "fit-content()"
+    "fit-content()",
+    "stretch()"
   ],
   "min-intrinsic-sizing": [
     "legacy",
@@ -67393,7 +67411,8 @@
     "fit-content()",
     "max-content",
     "min-content",
-    "stretch"
+    "stretch",
+    "stretch()"
   ],
   "mo": [
     "fence",
@@ -69289,6 +69308,7 @@
   "quotes": [
     "[<string> <string>]+",
     "auto",
+    "bikeshed-this",
     "match-parent",
     "none"
   ],
@@ -73517,7 +73537,8 @@
     "fit-content()",
     "max-content",
     "min-content",
-    "stretch"
+    "stretch",
+    "stretch()"
   ],
   "will-change": [
     "auto",
