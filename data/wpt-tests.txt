@@ -1,4 +1,4 @@
-sha: e4a9e438d3542b0ca9e6e56f9fa838ed30ba72d7
+sha: 3b8aed1e7cd75850921d452b7d9a3e5c59cb5ac0
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -12644,6 +12644,7 @@ reftest css/css-backgrounds/background-image-first-line.html
 reftest css/css-backgrounds/background-image-gradient-currentcolor-conic-repaint.html
 reftest css/css-backgrounds/background-image-gradient-currentcolor-linear-repaint.html
 reftest css/css-backgrounds/background-image-gradient-currentcolor-radial-repaint.html
+reftest css/css-backgrounds/background-image-gradient-currentcolor-self-repaint.html
 reftest css/css-backgrounds/background-image-gradient-currentcolor-visited.html
 reftest css/css-backgrounds/background-image-gradient-interpolation-repaint.html
 reftest css/css-backgrounds/background-image-large-with-auto.html
@@ -43249,6 +43250,7 @@ testharness css/cssom/medialist-deletemedium-parse-and-remove-all.html
 testharness css/cssom/medialist-interfaces-001.html
 testharness css/cssom/medialist-interfaces-002.html
 testharness css/cssom/medialist-interfaces-004.html
+testharness css/cssom/medialist-mutation-after-owner-gc.html
 testharness css/cssom/mediaquery-sort-dedup.html
 testharness css/cssom/nested-import-namespace-invalid.html
 testharness css/cssom/overflow-serialization.html
@@ -44580,6 +44582,7 @@ testharness dom/nodes/Element-tagName.html
 testharness dom/nodes/Element-webkitMatchesSelector.html
 testharness dom/nodes/MutationObserver-attributes.html
 testharness dom/nodes/MutationObserver-callback-arguments.html
+testharness dom/nodes/MutationObserver-callback-order.window.js
 testharness dom/nodes/MutationObserver-callback-tricky.html
 testharness dom/nodes/MutationObserver-characterData.html
 testharness dom/nodes/MutationObserver-childList.html
@@ -44591,6 +44594,7 @@ testharness dom/nodes/MutationObserver-overlapping-registrations.html
 testharness dom/nodes/MutationObserver-sanity.html
 testharness dom/nodes/MutationObserver-takeRecords.html
 testharness dom/nodes/MutationObserver-textContent.html
+testharness dom/nodes/MutationObserver-transient-registered-observers.window.js
 testharness dom/nodes/MutationObserver-xml-parser.xhtml
 testharness dom/nodes/Node-appendChild-cereactions-vs-script.window.js
 testharness dom/nodes/Node-appendChild.html
@@ -44806,6 +44810,7 @@ testharness dom/nodes/moveBefore/moveBefore-shadow-host-id-map.html
 testharness dom/nodes/moveBefore/moveBefore-shadow-inside.html
 testharness dom/nodes/moveBefore/moveBefore-shadow-root.html
 testharness dom/nodes/moveBefore/moveBefore-size-query.html
+testharness dom/nodes/moveBefore/mutation-observer-moved-subtree.window.js
 testharness dom/nodes/moveBefore/mutation-observer.html
 testharness dom/nodes/moveBefore/nonce.html
 testharness dom/nodes/moveBefore/object-crash-regression.html
@@ -46432,6 +46437,7 @@ testharness fs/FileSystemBaseHandle-postMessage-MessagePort-frames.https.window.
 testharness fs/FileSystemBaseHandle-postMessage-MessagePort-windows.https.window.js
 testharness fs/FileSystemBaseHandle-postMessage-MessagePort-workers.https.window.js
 testharness fs/FileSystemBaseHandle-postMessage-frames.https.window.js
+testharness fs/FileSystemBaseHandle-postMessage-insecure-context.https.window.js
 testharness fs/FileSystemBaseHandle-postMessage-windows.https.window.js
 testharness fs/FileSystemBaseHandle-postMessage-workers.https.window.js
 testharness fs/FileSystemBaseHandle-remove.https.any.js
@@ -48014,7 +48020,6 @@ testharness html/canvas/element/manual/draw-element-image/drawElementImage-zero-
 testharness html/canvas/element/manual/draw-element-image/drawing-display-none-fails.tentative.html
 testharness html/canvas/element/manual/draw-element-image/element-image-fractional-size.tentative.html
 testharness html/canvas/element/manual/draw-element-image/error-conditions.tentative.html
-testharness html/canvas/element/manual/draw-element-image/get-element-transform.tentative.html
 testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-no-content-drawable.tentative.html
 testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-update-element-geometry-offscreen.tentative.html
 testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-update-element-geometry.tentative.html
@@ -49785,7 +49790,6 @@ testharness html/canvas/offscreen/manual/convert-to-blob/offscreencanvas.convert
 testharness html/canvas/offscreen/manual/convert-to-blob/offscreencanvas.convert.to.blob.w.html
 testharness html/canvas/offscreen/manual/draw-element-image/animated-gif-worker.tentative.html
 testharness html/canvas/offscreen/manual/draw-element-image/canvas-transform-update-worker.tentative.html
-testharness html/canvas/offscreen/manual/draw-element-image/getElementTransform-worker.tentative.html
 testharness html/canvas/offscreen/manual/draw-element-image/offscreenCanvas-drawElementImage-worker.tentative.html
 testharness html/canvas/offscreen/manual/draw-element-image/offscreenCanvas-drawElementImage.tentative.html
 testharness html/canvas/offscreen/manual/draw-element-image/video-worker.tentative.html
@@ -53733,6 +53737,7 @@ testharness html/semantics/scripting-1/the-script-element/execution-timing/150-n
 testharness html/semantics/scripting-1/the-script-element/execution-timing/150-noimport.html
 testharness html/semantics/scripting-1/the-script-element/execution-timing/non-external-no-import.html
 testharness html/semantics/scripting-1/the-script-element/fetch-src/alpha/base.html
+testharness html/semantics/scripting-1/the-script-element/fetch-src/empty-set-while-connected.html
 testharness html/semantics/scripting-1/the-script-element/fetch-src/empty-with-base.html
 testharness html/semantics/scripting-1/the-script-element/fetch-src/empty.html
 testharness html/semantics/scripting-1/the-script-element/fetch-src/failure.html
@@ -53993,6 +53998,7 @@ testharness html/semantics/scripting-1/the-script-element/script-type-and-langua
 testharness html/semantics/scripting-1/the-script-element/script-type-and-language-with-params.html
 testharness html/semantics/scripting-1/the-script-element/script-type-whitespace.html
 testharness html/semantics/scripting-1/the-script-element/scripting-enabled.html
+testharness html/semantics/scripting-1/the-script-element/src-empty-or-invalid-error-event-queued.html
 testharness html/semantics/scripting-1/the-script-element/svg-script-fragment-parsed-not-executed-on-clone.html
 testharness html/semantics/scripting-1/the-script-element/text-module/charset-2.html
 testharness html/semantics/scripting-1/the-script-element/text-module/charset-bom.any.js
@@ -54926,7 +54932,7 @@ testharness infrastructure/server/order-of-metas.any.js
 testharness infrastructure/server/order-of-metas.window.js
 testharness infrastructure/server/secure-context.https.any.js
 testharness infrastructure/server/subdomain-flag.www.sub.window.js
-testharness infrastructure/server/test-pac.html
+testharness infrastructure/server/test-pac.sub.html
 testharness infrastructure/server/title.any.js
 testharness infrastructure/server/webtransport-h3.https.sub.any.js
 testharness infrastructure/server/wpt-server-http.sub.html
@@ -54967,6 +54973,7 @@ testharness infrastructure/testdriver/bidi/emulation/set_geolocation_override.ht
 testharness infrastructure/testdriver/bidi/emulation/set_locale_override.https.html
 testharness infrastructure/testdriver/bidi/emulation/set_screen_orientation_override.https.html
 testharness infrastructure/testdriver/bidi/emulation/set_touch_override.https.html
+testharness infrastructure/testdriver/bidi/emulation/set_viewport_meta_override.https.html
 testharness infrastructure/testdriver/bidi/permissions/set_permission.https.html
 testharness infrastructure/testdriver/bidi/speculation/prefetch_status_updated.https.html
 testharness infrastructure/testdriver/bidi/subscription.html
@@ -57237,6 +57244,7 @@ testharness permissions-policy/experimental-features/focus-without-user-activati
 testharness permissions-policy/experimental-features/focus-without-user-activation-focused-frame-descendant-cross-origin.https.sub.html
 testharness permissions-policy/experimental-features/focus-without-user-activation-focused-frame-descendant-remote.https.sub.html
 testharness permissions-policy/experimental-features/focus-without-user-activation-focused-frame-descendant.html
+testharness permissions-policy/experimental-features/focus-without-user-activation-label-click.tentative.html
 testharness permissions-policy/experimental-features/focus-without-user-activation-setter-policy.html
 testharness permissions-policy/experimental-features/focus-without-user-activation-target-frame-state-ignored.html
 testharness permissions-policy/experimental-features/permissions-policy-header-host-wildcard.https.sub.html
@@ -62836,16 +62844,17 @@ testharness wasm/serialization/memory/window-sharedworker-failure.tentative.http
 testharness wasm/serialization/memory/window-success.tentative.https.html
 testharness wasm/serialization/module/broadcastchannel-success-and-failure.html
 testharness wasm/serialization/module/broadcastchannel-success.html
-testharness wasm/serialization/module/cross-origin-module-sharing-fails.html
 testharness wasm/serialization/module/identity-not-preserved.html
 testharness wasm/serialization/module/nested-worker-success.any.js
 testharness wasm/serialization/module/no-transferring.html
 testharness wasm/serialization/module/serialization-via-history.html
 testharness wasm/serialization/module/serialization-via-idb.any.js
 testharness wasm/serialization/module/serialization-via-notifications-api.any.js
-testharness wasm/serialization/module/share-module-cross-origin-fails.sub.html
+testharness wasm/serialization/module/window-cross-origin-isolated.https.sub.html
+testharness wasm/serialization/module/window-cross-site-failure.html
 testharness wasm/serialization/module/window-domain-success.sub.html
 testharness wasm/serialization/module/window-messagechannel-success.html
+testharness wasm/serialization/module/window-same-site-success.sub.html
 testharness wasm/serialization/module/window-serviceworker-failure.https.html
 testharness wasm/serialization/module/window-sharedworker-failure.html
 testharness wasm/serialization/module/window-similar-but-cross-origin-success.sub.html
