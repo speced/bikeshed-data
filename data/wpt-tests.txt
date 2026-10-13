@@ -1,4 +1,4 @@
-sha: 0622a8f533e946f9aeed8aa857b1eccf6606c0a5
+sha: 6dcecaab61b33a51e04f49be43941461808193cc
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -31983,6 +31983,8 @@ reftest html/semantics/forms/the-select-element/customizable-select/picker-and-s
 reftest html/semantics/forms/the-select-element/customizable-select/picker-icon-and-slotted.html
 reftest html/semantics/forms/the-select-element/customizable-select/picker-icon-animation-002.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-active.html
+reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-auto-button-mutation.html
+reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-auto-button.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-base-display.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-base-toggle-invalidation.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-appearance-button-after-option.html
@@ -46828,6 +46830,7 @@ testharness html/browsers/browsing-the-web/history-traversal/history-traversal-n
 testharness html/browsers/browsing-the-web/history-traversal/history-traversal-navigates-multiple-frames.html
 testharness html/browsers/browsing-the-web/history-traversal/iframe-history-restore-about-blank.tentative.html
 testharness html/browsers/browsing-the-web/history-traversal/iframe-history-restore-on-container-traversal.tentative.html
+testharness html/browsers/browsing-the-web/history-traversal/iframe-navigated-during-container-load.html
 testharness html/browsers/browsing-the-web/history-traversal/pagereveal/order-in-bfcache-restore-iframe.html
 testharness html/browsers/browsing-the-web/history-traversal/pagereveal/order-in-bfcache-restore.html
 testharness html/browsers/browsing-the-web/history-traversal/pagereveal/order-in-new-document-navigation-iframe.html
@@ -56052,6 +56055,7 @@ testharness mediacapture-image/takePhoto-reject.https.html
 testharness mediacapture-image/takePhoto-with-PhotoSettings.https.html
 testharness mediacapture-image/takePhoto-without-PhotoCapabilities.https.window.js
 testharness mediacapture-image/takePhoto.https.html
+testharness mediacapture-insertable-streams/MediaStreamTrackHandle-transfer-cross-agent-cluster.https.html
 testharness mediacapture-insertable-streams/MediaStreamTrackHandle-transfer-to-shared-and-service-workers.https.html
 testharness mediacapture-insertable-streams/MediaStreamTrackProcessor-backpressure.worker.js
 testharness mediacapture-insertable-streams/MediaStreamTrackProcessor-maxBufferSize.worker.js
@@ -56141,6 +56145,7 @@ testharness mediacapture-streams/MediaStreamTrack-id.https.html
 testharness mediacapture-streams/MediaStreamTrack-iframe-audio-transfer.https.html
 testharness mediacapture-streams/MediaStreamTrack-iframe-transfer.https.html
 testharness mediacapture-streams/MediaStreamTrack-init.https.html
+testharness mediacapture-streams/MediaStreamTrack-transfer-cross-agent-cluster.https.html
 testharness mediacapture-streams/MediaStreamTrack-transfer-to-shared-and-service-workers.https.html
 testharness mediacapture-streams/MediaStreamTrack-transfer-video.https.html
 testharness mediacapture-streams/MediaStreamTrack-transfer.https.html
@@ -63647,6 +63652,7 @@ testharness webcodecs/audio-decoder.https.any.js
 testharness webcodecs/audio-encoder-codec-specific.https.any.js
 testharness webcodecs/audio-encoder-config.https.any.js
 testharness webcodecs/audio-encoder.https.any.js
+testharness webcodecs/audio-serialization.crossAgentCluster.https.html
 testharness webcodecs/audioDecoder-codec-specific.https.any.js
 testharness webcodecs/chunk-serialization.any.js
 testharness webcodecs/encoded-audio-chunk.any.js
@@ -63695,6 +63701,7 @@ testharness webcodecs/videoFrame-construction.window.js
 testharness webcodecs/videoFrame-copyTo-canvas.window.js
 testharness webcodecs/videoFrame-copyTo-opaque-swizzle.https.any.js
 testharness webcodecs/videoFrame-copyTo-rgb.any.js
+testharness webcodecs/videoFrame-copyTo-rgbx.any.js
 testharness webcodecs/videoFrame-copyTo.any.js
 testharness webcodecs/videoFrame-copyTo.crossOriginIsolated.https.any.js
 testharness webcodecs/videoFrame-createImageBitmap.any.js
@@ -68580,6 +68587,11 @@ wdspec webdriver/tests/bidi/emulation/set_scripting_enabled/enabled.py
 wdspec webdriver/tests/bidi/emulation/set_scripting_enabled/enabled_tentative.py
 wdspec webdriver/tests/bidi/emulation/set_scripting_enabled/invalid.py
 wdspec webdriver/tests/bidi/emulation/set_scripting_enabled/user_contexts.py
+wdspec webdriver/tests/bidi/emulation/set_text_layout_mode_override/contexts.py
+wdspec webdriver/tests/bidi/emulation/set_text_layout_mode_override/global.py
+wdspec webdriver/tests/bidi/emulation/set_text_layout_mode_override/invalid.py
+wdspec webdriver/tests/bidi/emulation/set_text_layout_mode_override/text_layout_mode.py
+wdspec webdriver/tests/bidi/emulation/set_text_layout_mode_override/user_contexts.py
 wdspec webdriver/tests/bidi/emulation/set_timezone_override/contexts.py
 wdspec webdriver/tests/bidi/emulation/set_timezone_override/invalid.py
 wdspec webdriver/tests/bidi/emulation/set_timezone_override/timezone.py
