@@ -1,4 +1,4 @@
-sha: ca5384f99ee37dcabfe8078f5afaf419bd4784c0
+sha: 2f57f45d21482f94b36123dfcec77ae7ab859bc1
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -25642,6 +25642,7 @@ reftest css/css-text/white-space/hanging-whitespace-001.tentative.html
 reftest css/css-text/white-space/hanging-whitespace-002.tentative.html
 reftest css/css-text/white-space/hanging-whitespace-003.tentative.html
 reftest css/css-text/white-space/hanging-whitespace-004.html
+reftest css/css-text/white-space/hanging-whitespace-005.html
 reftest css/css-text/white-space/line-edge-white-space-collapse-001.html
 reftest css/css-text/white-space/line-edge-white-space-collapse-002.html
 reftest css/css-text/white-space/lone-cr-001.tentative.html
@@ -30990,6 +30991,8 @@ reftest html/canvas/element/manual/draw-element-image/compositing-op-non-opaque-
 reftest html/canvas/element/manual/draw-element-image/css-backdrop-filter-and-mask.tentative.html
 reftest html/canvas/element/manual/draw-element-image/css-backdrop-filter-image.tentative.html
 reftest html/canvas/element/manual/draw-element-image/css-backdrop-filter-on-div.tentative.html
+reftest html/canvas/element/manual/draw-element-image/css-backdrop-filter-with-mix-blend-mode-and-opacity.tentative.html
+reftest html/canvas/element/manual/draw-element-image/css-backdrop-filter-with-mix-blend-mode.tentative.html
 reftest html/canvas/element/manual/draw-element-image/css-backdrop-filter-with-sibling.tentative.html
 reftest html/canvas/element/manual/draw-element-image/css-backdrop-filter.tentative.html
 reftest html/canvas/element/manual/draw-element-image/css-blend-mode-over-both.tentative.html
@@ -42170,7 +42173,11 @@ testharness css/css-typed-om/the-stylepropertymap/properties/word-wrap.html
 testharness css/css-typed-om/the-stylepropertymap/properties/writing-mode.html
 testharness css/css-typed-om/the-stylepropertymap/properties/z-index.html
 testharness css/css-ui/accent-color-computed.html
+testharness css/css-ui/accent-color-keyword-animation.html
+testharness css/css-ui/accent-color-keyword-cyclic.html
+testharness css/css-ui/accent-color-keyword-resolution.html
 testharness css/css-ui/accent-color-parsing.html
+testharness css/css-ui/accent-color-text-keyword-resolution.html
 testharness css/css-ui/animation/accent-color-interpolation.html
 testharness css/css-ui/animation/appearance-no-interpolation.html
 testharness css/css-ui/animation/caret-animation-parsing.html
@@ -44978,6 +44985,7 @@ testharness dom/ranges/Range-deleteContents-around-shadow.tentative.html
 testharness dom/ranges/Range-deleteContents-in-ShadowRoot.html
 testharness dom/ranges/Range-deleteContents.html
 testharness dom/ranges/Range-detach.html
+testharness dom/ranges/Range-expand-shadow.tentative.html
 testharness dom/ranges/Range-extractContents-around-shadow.html
 testharness dom/ranges/Range-extractContents-around-shadow.tentative.html
 testharness dom/ranges/Range-extractContents-dynamic-end.html
@@ -46499,6 +46507,7 @@ testharness font-access/permissions-policy/local-fonts-allowed-by-permissions-po
 testharness font-access/permissions-policy/local-fonts-default-permissions-policy.https.sub.html
 testharness font-access/permissions-policy/local-fonts-disabled-by-permissions-policy.https.sub.html
 testharness font-access/permissions-policy/local-fonts-supported-by-permissions-policy.html
+testharness forced-colors-mode/accent-color-keyword-forced-colors.html
 testharness forced-colors-mode/forced-colors-mode-03.html
 testharness forced-colors-mode/forced-colors-mode-09.html
 testharness forced-colors-mode/forced-colors-mode-10.html
@@ -48150,6 +48159,7 @@ testharness html/canvas/element/manual/draw-element-image/privacy/border-svg-ima
 testharness html/canvas/element/manual/draw-element-image/privacy/box-mask-png-ignored.tentative.https.sub.html
 testharness html/canvas/element/manual/draw-element-image/privacy/box-mask-svg-ignored.tentative.https.sub.html
 testharness html/canvas/element/manual/draw-element-image/privacy/box-reflect-images-ignored.tentative.https.sub.html
+testharness html/canvas/element/manual/draw-element-image/privacy/box-reflect-images-in-iframe-moved-ignored.tentative.https.sub.html
 testharness html/canvas/element/manual/draw-element-image/privacy/canvas-in-custom-element-images-ignored.tentative.html
 testharness html/canvas/element/manual/draw-element-image/privacy/embed-image-ignored.tentative.https.sub.html
 testharness html/canvas/element/manual/draw-element-image/privacy/filtered-div-multi-filters-ignored.tentative.https.sub.html
@@ -51698,6 +51708,12 @@ testharness html/interaction/focus/focusgroup/tentative/top-layer-inner-focusgro
 testharness html/interaction/focus/focusgroup/tentative/top-layer-popover-excluded.html
 testharness html/interaction/focus/focusgroup/tentative/top-layer-popover-invoker.html
 testharness html/interaction/focus/focusgroup/tentative/untraversable-tabindex-minus-one.html
+testharness html/interaction/focus/focusreset/focusreset-basic.tentative.html
+testharness html/interaction/focus/focusreset/focusreset-cancelled-by-focus-update.tentative.html
+testharness html/interaction/focus/focusreset/focusreset-iframe.tentative.html
+testharness html/interaction/focus/focusreset/focusreset-moveBefore.tentative.html
+testharness html/interaction/focus/focusreset/focusreset-removal-variants.tentative.html
+testharness html/interaction/focus/focusreset/focusreset-timing.tentative.html
 testharness html/interaction/focus/processing-model/focus-fixup-rule-one-no-dialogs.html
 testharness html/interaction/focus/processing-model/focusVisible.html
 testharness html/interaction/focus/processing-model/legend-focusable.html
@@ -54187,6 +54203,7 @@ testharness html/semantics/selectors/case-sensitivity/values.window.js
 testharness html/semantics/selectors/pseudo-classes/active-disabled.html
 testharness html/semantics/selectors/pseudo-classes/autofill.html
 testharness html/semantics/selectors/pseudo-classes/checked-002.html
+testharness html/semantics/selectors/pseudo-classes/checked-after-clone.html
 testharness html/semantics/selectors/pseudo-classes/checked-indeterminate.window.js
 testharness html/semantics/selectors/pseudo-classes/checked-type-change.html
 testharness html/semantics/selectors/pseudo-classes/checked.html
@@ -63964,7 +63981,9 @@ testharness webnn/conformance_tests/averagePool2d.https.any.js
 testharness webnn/conformance_tests/batch_normalization.https.any.js
 testharness webnn/conformance_tests/batch_normalization_constant.https.any.js
 testharness webnn/conformance_tests/byob_readtensor.https.any.js
+testharness webnn/conformance_tests/cast-storage.https.any.js
 testharness webnn/conformance_tests/cast.https.any.js
+testharness webnn/conformance_tests/cast_rounding.https.any.js
 testharness webnn/conformance_tests/ceil.https.any.js
 testharness webnn/conformance_tests/clamp.https.any.js
 testharness webnn/conformance_tests/concat.https.any.js
@@ -63996,6 +64015,8 @@ testharness webnn/conformance_tests/hard_swish.https.any.js
 testharness webnn/conformance_tests/identity.https.any.js
 testharness webnn/conformance_tests/inputs-are-not-modified.https.any.js
 testharness webnn/conformance_tests/inputs-with-special-names.https.any.js
+testharness webnn/conformance_tests/instance-normalization-affine-layout.https.any.js
+testharness webnn/conformance_tests/instance-normalization-zero-epsilon.https.any.js
 testharness webnn/conformance_tests/instance_normalization.https.any.js
 testharness webnn/conformance_tests/is_infinite.https.any.js
 testharness webnn/conformance_tests/is_nan.https.any.js
@@ -64932,6 +64953,7 @@ testharness webxr/light-estimation/xrWebGLBinding_getReflectionCubeMap.https.htm
 testharness webxr/navigator_xr_sameObject.https.html
 testharness webxr/plane-detection/idlharness.https.window.js
 testharness webxr/plane-detection/xrFrame_detectedPlanes_inactive_frame.https.html
+testharness webxr/plane-detection/xrFrame_detectedPlanes_incomplete_update.https.html
 testharness webxr/plane-detection/xrFrame_detectedPlanes_plumbing.https.html
 testharness webxr/plane-detection/xrPlane_identity.https.html
 testharness webxr/plane-detection/xrPlane_lastChangedTime_no_change.https.html
@@ -65523,7 +65545,7 @@ testharness xhr/overridemimetype-open-state-force-xml.htm
 testharness xhr/overridemimetype-unsent-state-force-shiftjis.any.js
 testharness xhr/preserve-ua-header-on-redirect.htm
 testharness xhr/progress-events-response-data-gzip.htm
-testharness xhr/progressevent-constructor.html
+testharness xhr/progressevent-constructor.any.js
 testharness xhr/progressevent-interface.html
 testharness xhr/request-content-length.any.js
 testharness xhr/response-body-errors.any.js
