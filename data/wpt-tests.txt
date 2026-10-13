@@ -1,4 +1,4 @@
-sha: c7bbc237dc396576b7486224a40a2ae2fa6d1141
+sha: ca5384f99ee37dcabfe8078f5afaf419bd4784c0
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -610,6 +610,7 @@ crashtest css/css-lists/crashtests/chrome-legacy-propagation-remove-body-crash.h
 crashtest css/css-lists/crashtests/firefox-bug-1715631.html
 crashtest css/css-lists/crashtests/firefox-bug-1930225.html
 crashtest css/css-lists/crashtests/list-item-hidden-until-found-crash.html
+crashtest css/css-lists/crashtests/list-item-marker-list-style-type-change-crash.html
 crashtest css/css-lists/li-without-ul-counter-crash.html
 crashtest css/css-lists/list-item-counter-crash.html
 crashtest css/css-lists/list-marker-containing-control-char-crash.html
@@ -28441,6 +28442,7 @@ reftest css/css-view-transitions/pseudo-with-classes-new-with-class-old-without.
 reftest css/css-view-transitions/pseudo-with-classes-old-with-class-new-without.html
 reftest css/css-view-transitions/pseudo-with-classes-view-transition-group.html
 reftest css/css-view-transitions/pseudo-with-classes-view-transition-image-pair.html
+reftest css/css-view-transitions/render-pass-backing-logical-bounds.html
 reftest css/css-view-transitions/reset-state-after-scrolled-view-transition.html
 reftest css/css-view-transitions/root-captured-as-different-tag.html
 reftest css/css-view-transitions/root-style-change-during-animation.html
@@ -37641,6 +37643,7 @@ testharness css/css-contain/content-visibility/content-visibility-auto-text-frag
 testharness css/css-contain/content-visibility/content-visibility-auto-with-inline-size-containment.html
 testharness css/css-contain/content-visibility/content-visibility-forced-layout-client-rects.html
 testharness css/css-contain/content-visibility/content-visibility-hidden-boundingbox-query.html
+testharness css/css-contain/content-visibility/content-visibility-hidden-list-item-marker.html
 testharness css/css-contain/content-visibility/content-visibility-hidden-offsetTop-left-width-height.html
 testharness css/css-contain/content-visibility/content-visibility-hidden-scrollTop-left-width-height.html
 testharness css/css-contain/content-visibility/content-visibility-img.html
@@ -44042,6 +44045,7 @@ testharness custom-elements/cross-realm-callback-report-exception.html
 testharness custom-elements/custom-element-reaction-queue.html
 testharness custom-elements/customized-built-in-constructor-exceptions.html
 testharness custom-elements/disconnected-callbacks.html
+testharness custom-elements/element-internals-aria-element-reflection-shadow-including-root.tentative.html
 testharness custom-elements/element-internals-aria-element-reflection.html
 testharness custom-elements/element-internals-behaviors.tentative.html
 testharness custom-elements/element-internals-shadowroot.html
@@ -44321,6 +44325,7 @@ testharness dom/abort/timeout.any.js
 testharness dom/attributes-are-nodes.html
 testharness dom/collections/HTMLCollection-as-prototype.html
 testharness dom/collections/HTMLCollection-delete.html
+testharness dom/collections/HTMLCollection-detached-root-gc.html
 testharness dom/collections/HTMLCollection-empty-name.html
 testharness dom/collections/HTMLCollection-iterator.html
 testharness dom/collections/HTMLCollection-live-item-removal.html
@@ -51476,6 +51481,7 @@ testharness html/editing/the-hidden-attribute/hidden-until-found-002.html
 testharness html/editing/the-hidden-attribute/hidden-until-found-and-details.html
 testharness html/editing/the-hidden-attribute/hidden-until-found-idl.html
 testharness html/editing/the-hidden-attribute/hidden-until-found-text-fragment.html
+testharness html/infrastructure/common-dom-interfaces/collections/detached-root-gc.html
 testharness html/infrastructure/common-dom-interfaces/collections/domstringlist.html
 testharness html/infrastructure/common-dom-interfaces/collections/historical.html
 testharness html/infrastructure/common-dom-interfaces/collections/htmlallcollection.html
@@ -60488,6 +60494,7 @@ testharness shadow-dom/reference-target/tentative/gethtml-serialization.html
 testharness shadow-dom/reference-target/tentative/interestfor.tentative.html
 testharness shadow-dom/reference-target/tentative/label-descendant.html
 testharness shadow-dom/reference-target/tentative/label-for.html
+testharness shadow-dom/reference-target/tentative/label-lifetime.html
 testharness shadow-dom/reference-target/tentative/popovertarget.html
 testharness shadow-dom/reference-target/tentative/property-reflection-idl-setters.html
 testharness shadow-dom/reference-target/tentative/property-reflection-imperative-setup.html
@@ -63503,6 +63510,7 @@ testharness webaudio/the-audio-api/the-mediastreamaudiosourcenode-interface/medi
 testharness webaudio/the-audio-api/the-offlineaudiocontext-interface/ctor-offlineaudiocontext.html
 testharness webaudio/the-audio-api/the-offlineaudiocontext-interface/current-time-block-size.html
 testharness webaudio/the-audio-api/the-offlineaudiocontext-interface/decodeAudioData-oversized-resample.html
+testharness webaudio/the-audio-api/the-offlineaudiocontext-interface/offlineaudiocontext-close.html
 testharness webaudio/the-audio-api/the-offlineaudiocontext-interface/offlineaudiocontext-detached-execution-context.html
 testharness webaudio/the-audio-api/the-offlineaudiocontext-interface/offlineaudiocontext-incremental-rendering-data-integrity.html
 testharness webaudio/the-audio-api/the-offlineaudiocontext-interface/offlineaudiocontext-incremental-rendering.html
