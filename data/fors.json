@@ -9991,7 +9991,6 @@
     "agent-status-request",
     "agent-status-response",
     "aggregation service",
-    "alert steps",
     "algorithm for assigning header cells",
     "algorithm for determining the form of an embellished operator",
     "algorithm for determining the properties of an embellished operator",
@@ -12154,12 +12153,23 @@
     "conforming SD-JWT document",
     "conforming SD-JWT issuer implementation",
     "conforming SD-JWT verifier implementation",
+    "conforming SVG DOM subtree",
+    "conforming SVG authoring tool",
+    "conforming SVG generator",
+    "conforming SVG interpreter",
+    "conforming SVG markup fragment",
+    "conforming SVG server",
+    "conforming SVG stand-alone file",
+    "conforming SVG viewer",
+    "conforming XML-compatible SVG DOM subtree",
+    "conforming XML-compatible SVG markup fragment",
     "conforming alternate version",
     "conforming alternate versions",
     "conforming consumer",
     "conforming controlled identifier document",
     "conforming cryptographic suite specification",
     "conforming document",
+    "conforming high-quality SVG viewer",
     "conforming implementation",
     "conforming issuer implementation",
     "conforming network-based DID URL dereferencer",
@@ -12321,6 +12331,7 @@
     "content (of a box)",
     "content URL",
     "content area",
+    "content area (text 2)",
     "content attributes",
     "content author",
     "content author(s)",
@@ -14211,6 +14222,7 @@
     "ex (unit)",
     "exact matching",
     "example term",
+    "exampleattr",
     "exceeds the binding slot limits",
     "exception",
     "exceptionsEnabled",
@@ -22674,6 +22686,7 @@
     "sync requested flag",
     "syncbase",
     "synchronized",
+    "synchronized (TermSynchronizeList)",
     "synchronized media",
     "synchronous",
     "synchronous navigation steps",
@@ -23818,6 +23831,9 @@
     "validity",
     "validity states",
     "value",
+    "value (AngleValue)",
+    "value (LengthValue)",
+    "value (TransformValue)",
     "value accumulation",
     "value addition",
     "value asynchronously iterable declaration",
@@ -24220,6 +24236,7 @@
     "wrapper code",
     "wrapping",
     "wrapping area",
+    "wrapping area (text 2)",
     "writable side",
     "writable stream",
     "writable stream writer",
@@ -34175,6 +34192,7 @@
     "[[resizeObservers]]",
     "activation start time",
     "active sandboxing flag set",
+    "activeElement",
     "activeViewTransition",
     "adoptNode(node)",
     "alinkColor",
@@ -34416,6 +34434,7 @@
     "requestStorageAccess(types)",
     "resizeObservers",
     "responsive embedded sizing flag",
+    "rootElement",
     "run the resize steps",
     "run the scroll steps",
     "scripts",
@@ -38655,7 +38674,8 @@
     "composed"
   ],
   "GetSVGDocument": [
-    "getSVGDocument"
+    "getSVGDocument",
+    "getSVGDocument()"
   ],
   "GetUserMediaSemantics": [
     "browser-chooses",
@@ -46228,8 +46248,7 @@
     "silent",
     "tag",
     "timestamp",
-    "title",
-    "vibrate"
+    "title"
   ],
   "Notification/Notification(title)": [
     "options",
@@ -46296,8 +46315,7 @@
     "requireInteraction",
     "silent",
     "tag",
-    "timestamp",
-    "vibrate"
+    "timestamp"
   ],
   "NotificationPermission": [
     "\"default\"",
@@ -51166,7 +51184,14 @@
     "\"per-packet\""
   ],
   "SVGAElement": [
-    "referrerPolicy"
+    "download",
+    "hreflang",
+    "ping",
+    "referrerPolicy",
+    "rel",
+    "relList",
+    "target",
+    "type"
   ],
   "SVGAngle": [
     "SVG_ANGLETYPE_DEG",
@@ -51175,10 +51200,19 @@
     "SVG_ANGLETYPE_UNKNOWN",
     "SVG_ANGLETYPE_UNSPECIFIED",
     "convertToSpecifiedUnits",
+    "convertToSpecifiedUnits(unitType)",
     "newValueSpecifiedUnits",
+    "newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)",
     "unitType",
     "value",
     "valueAsString",
+    "valueInSpecifiedUnits"
+  ],
+  "SVGAngle/convertToSpecifiedUnits(unitType)": [
+    "unitType"
+  ],
+  "SVGAngle/newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)": [
+    "unitType",
     "valueInSpecifiedUnits"
   ],
   "SVGAnimatedAngle": [
@@ -51232,6 +51266,12 @@
   "SVGAnimatedTransformList": [
     "animVal",
     "baseVal"
+  ],
+  "SVGBoundingBoxOptions": [
+    "clipped",
+    "fill",
+    "markers",
+    "stroke"
   ],
   "SVGCircleElement": [
     "cx",
@@ -51475,10 +51515,31 @@
   ],
   "SVGGeometryElement": [
     "getPointAtLength",
+    "getPointAtLength(distance)",
     "getTotalLength",
+    "getTotalLength()",
     "isPointInFill",
+    "isPointInFill()",
+    "isPointInFill(point)",
     "isPointInStroke",
+    "isPointInStroke()",
+    "isPointInStroke(point)",
     "pathLength"
+  ],
+  "SVGGeometryElement/getPointAtLength(distance)": [
+    "distance"
+  ],
+  "SVGGeometryElement/isPointInFill()": [
+    "point"
+  ],
+  "SVGGeometryElement/isPointInFill(point)": [
+    "point"
+  ],
+  "SVGGeometryElement/isPointInStroke()": [
+    "point"
+  ],
+  "SVGGeometryElement/isPointInStroke(point)": [
+    "point"
   ],
   "SVGGradientElement": [
     "SVG_SPREADMETHOD_PAD",
@@ -51491,14 +51552,25 @@
   ],
   "SVGGraphicsElement": [
     "getBBox",
+    "getBBox()",
+    "getBBox(options)",
     "getCTM",
+    "getCTM()",
     "getScreenCTM",
+    "getScreenCTM()",
     "transform"
+  ],
+  "SVGGraphicsElement/getBBox()": [
+    "options"
+  ],
+  "SVGGraphicsElement/getBBox(options)": [
+    "options"
   ],
   "SVGImageElement": [
     "crossOrigin",
     "height",
     "preserveAspectRatio",
+    "referrerPolicy",
     "width",
     "x",
     "y"
@@ -51516,23 +51588,64 @@
     "SVG_LENGTHTYPE_PX",
     "SVG_LENGTHTYPE_UNKNOWN",
     "convertToSpecifiedUnits",
+    "convertToSpecifiedUnits(unitType)",
     "newValueSpecifiedUnits",
+    "newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)",
     "unitType",
     "value",
     "valueAsString",
     "valueInSpecifiedUnits"
   ],
+  "SVGLength/convertToSpecifiedUnits(unitType)": [
+    "unitType"
+  ],
+  "SVGLength/newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)": [
+    "unitType",
+    "valueInSpecifiedUnits"
+  ],
   "SVGLengthList": [
+    "__setter__(index, newItem)",
     "appendItem",
+    "appendItem(newItem)",
     "clear",
+    "clear()",
     "getItem",
+    "getItem(index)",
     "indexed property setter",
     "initialize",
+    "initialize(newItem)",
     "insertItemBefore",
+    "insertItemBefore(newItem, index)",
     "length",
     "numberOfItems",
     "removeItem",
-    "replaceItem"
+    "removeItem(index)",
+    "replaceItem",
+    "replaceItem(newItem, index)"
+  ],
+  "SVGLengthList/__setter__(index, newItem)": [
+    "index",
+    "newItem"
+  ],
+  "SVGLengthList/appendItem(newItem)": [
+    "newItem"
+  ],
+  "SVGLengthList/getItem(index)": [
+    "index"
+  ],
+  "SVGLengthList/initialize(newItem)": [
+    "newItem"
+  ],
+  "SVGLengthList/insertItemBefore(newItem, index)": [
+    "index",
+    "newItem"
+  ],
+  "SVGLengthList/removeItem(index)": [
+    "index"
+  ],
+  "SVGLengthList/replaceItem(newItem, index)": [
+    "index",
+    "newItem"
   ],
   "SVGLineElement": [
     "x1",
@@ -51563,7 +51676,12 @@
     "refX",
     "refY",
     "setOrientToAngle",
-    "setOrientToAuto"
+    "setOrientToAngle(angle)",
+    "setOrientToAuto",
+    "setOrientToAuto()"
+  ],
+  "SVGMarkerElement/setOrientToAngle(angle)": [
+    "angle"
   ],
   "SVGMaskElement": [
     "height",
@@ -51577,16 +51695,48 @@
     "value"
   ],
   "SVGNumberList": [
+    "__setter__(index, newItem)",
     "appendItem",
+    "appendItem(newItem)",
     "clear",
+    "clear()",
     "getItem",
+    "getItem(index)",
     "indexed property setter",
     "initialize",
+    "initialize(newItem)",
     "insertItemBefore",
+    "insertItemBefore(newItem, index)",
     "length",
     "numberOfItems",
     "removeItem",
-    "replaceItem"
+    "removeItem(index)",
+    "replaceItem",
+    "replaceItem(newItem, index)"
+  ],
+  "SVGNumberList/__setter__(index, newItem)": [
+    "index",
+    "newItem"
+  ],
+  "SVGNumberList/appendItem(newItem)": [
+    "newItem"
+  ],
+  "SVGNumberList/getItem(index)": [
+    "index"
+  ],
+  "SVGNumberList/initialize(newItem)": [
+    "newItem"
+  ],
+  "SVGNumberList/insertItemBefore(newItem, index)": [
+    "index",
+    "newItem"
+  ],
+  "SVGNumberList/removeItem(index)": [
+    "index"
+  ],
+  "SVGNumberList/replaceItem(newItem, index)": [
+    "index",
+    "newItem"
   ],
   "SVGPatternElement": [
     "height",
@@ -51598,16 +51748,48 @@
     "y"
   ],
   "SVGPointList": [
+    "__setter__(index, newItem)",
     "appendItem",
+    "appendItem(newItem)",
     "clear",
+    "clear()",
     "getItem",
+    "getItem(index)",
     "indexed property setter",
     "initialize",
+    "initialize(newItem)",
     "insertItemBefore",
+    "insertItemBefore(newItem, index)",
     "length",
     "numberOfItems",
     "removeItem",
-    "replaceItem"
+    "removeItem(index)",
+    "replaceItem",
+    "replaceItem(newItem, index)"
+  ],
+  "SVGPointList/__setter__(index, newItem)": [
+    "index",
+    "newItem"
+  ],
+  "SVGPointList/appendItem(newItem)": [
+    "newItem"
+  ],
+  "SVGPointList/getItem(index)": [
+    "index"
+  ],
+  "SVGPointList/initialize(newItem)": [
+    "newItem"
+  ],
+  "SVGPointList/insertItemBefore(newItem, index)": [
+    "index",
+    "newItem"
+  ],
+  "SVGPointList/removeItem(index)": [
+    "index"
+  ],
+  "SVGPointList/replaceItem(newItem, index)": [
+    "index",
+    "newItem"
   ],
   "SVGPreserveAspectRatio": [
     "SVG_MEETORSLICE_MEET",
@@ -51645,48 +51827,138 @@
   ],
   "SVGSVGElement": [
     "checkEnclosure",
+    "checkEnclosure(element, rect)",
     "checkIntersection",
+    "checkIntersection(element, rect)",
     "createSVGAngle",
+    "createSVGAngle()",
     "createSVGLength",
+    "createSVGLength()",
     "createSVGMatrix",
+    "createSVGMatrix()",
     "createSVGNumber",
+    "createSVGNumber()",
     "createSVGPoint",
+    "createSVGPoint()",
     "createSVGRect",
+    "createSVGRect()",
     "createSVGTransform",
+    "createSVGTransform()",
     "createSVGTransformFromMatrix",
+    "createSVGTransformFromMatrix()",
+    "createSVGTransformFromMatrix(matrix)",
     "currentScale",
     "currentTranslate",
     "deselectAll",
+    "deselectAll()",
     "forceRedraw",
+    "forceRedraw()",
     "getElementById",
+    "getElementById(elementId)",
     "getEnclosureList",
+    "getEnclosureList(rect, referenceElement)",
     "getIntersectionList",
+    "getIntersectionList(rect, referenceElement)",
     "height",
     "suspendRedraw",
+    "suspendRedraw(maxWaitMilliseconds)",
     "unsuspendRedraw",
+    "unsuspendRedraw(suspendHandleID)",
     "unsuspendRedrawAll",
+    "unsuspendRedrawAll()",
     "width",
     "x",
     "y"
   ],
+  "SVGSVGElement/checkEnclosure(element, rect)": [
+    "element",
+    "rect"
+  ],
+  "SVGSVGElement/checkIntersection(element, rect)": [
+    "element",
+    "rect"
+  ],
+  "SVGSVGElement/createSVGTransformFromMatrix()": [
+    "matrix"
+  ],
+  "SVGSVGElement/createSVGTransformFromMatrix(matrix)": [
+    "matrix"
+  ],
+  "SVGSVGElement/getElementById(elementId)": [
+    "elementId"
+  ],
+  "SVGSVGElement/getEnclosureList(rect, referenceElement)": [
+    "rect",
+    "referenceElement"
+  ],
+  "SVGSVGElement/getIntersectionList(rect, referenceElement)": [
+    "rect",
+    "referenceElement"
+  ],
+  "SVGSVGElement/suspendRedraw(maxWaitMilliseconds)": [
+    "maxWaitMilliseconds"
+  ],
+  "SVGSVGElement/unsuspendRedraw(suspendHandleID)": [
+    "suspendHandleID"
+  ],
   "SVGScriptElement": [
     "crossOrigin",
-    "script text"
+    "referrerPolicy",
+    "script text",
+    "type"
   ],
   "SVGStopElement": [
     "offset"
   ],
   "SVGStringList": [
+    "__setter__(index, newItem)",
     "appendItem",
+    "appendItem(newItem)",
     "clear",
+    "clear()",
     "getItem",
+    "getItem(index)",
     "indexed property setter",
     "initialize",
+    "initialize(newItem)",
     "insertItemBefore",
+    "insertItemBefore(newItem, index)",
     "length",
     "numberOfItems",
     "removeItem",
-    "replaceItem"
+    "removeItem(index)",
+    "replaceItem",
+    "replaceItem(newItem, index)"
+  ],
+  "SVGStringList/__setter__(index, newItem)": [
+    "index",
+    "newItem"
+  ],
+  "SVGStringList/appendItem(newItem)": [
+    "newItem"
+  ],
+  "SVGStringList/getItem(index)": [
+    "index"
+  ],
+  "SVGStringList/initialize(newItem)": [
+    "newItem"
+  ],
+  "SVGStringList/insertItemBefore(newItem, index)": [
+    "index",
+    "newItem"
+  ],
+  "SVGStringList/removeItem(index)": [
+    "index"
+  ],
+  "SVGStringList/replaceItem(newItem, index)": [
+    "index",
+    "newItem"
+  ],
+  "SVGStyleElement": [
+    "disabled",
+    "media",
+    "title",
+    "type"
   ],
   "SVGTests": [
     "requiredExtensions",
@@ -51697,16 +51969,52 @@
     "LENGTHADJUST_SPACINGANDGLYPHS",
     "LENGTHADJUST_UNKNOWN",
     "getCharNumAtPosition",
+    "getCharNumAtPosition()",
+    "getCharNumAtPosition(point)",
     "getComputedTextLength",
+    "getComputedTextLength()",
     "getEndPositionOfChar",
+    "getEndPositionOfChar(charnum)",
     "getExtentOfChar",
+    "getExtentOfChar(charnum)",
     "getNumberOfChars",
+    "getNumberOfChars()",
     "getRotationOfChar",
+    "getRotationOfChar(charnum)",
     "getStartPositionOfChar",
+    "getStartPositionOfChar(charnum)",
     "getSubStringLength",
+    "getSubStringLength(charnum, nchars)",
     "lengthAdjust",
     "selectSubString",
+    "selectSubString(charnum, nchars)",
     "textLength"
+  ],
+  "SVGTextContentElement/getCharNumAtPosition()": [
+    "point"
+  ],
+  "SVGTextContentElement/getCharNumAtPosition(point)": [
+    "point"
+  ],
+  "SVGTextContentElement/getEndPositionOfChar(charnum)": [
+    "charnum"
+  ],
+  "SVGTextContentElement/getExtentOfChar(charnum)": [
+    "charnum"
+  ],
+  "SVGTextContentElement/getRotationOfChar(charnum)": [
+    "charnum"
+  ],
+  "SVGTextContentElement/getStartPositionOfChar(charnum)": [
+    "charnum"
+  ],
+  "SVGTextContentElement/getSubStringLength(charnum, nchars)": [
+    "charnum",
+    "nchars"
+  ],
+  "SVGTextContentElement/selectSubString(charnum, nchars)": [
+    "charnum",
+    "nchars"
   ],
   "SVGTextPathElement": [
     "TEXTPATH_METHODTYPE_ALIGN",
@@ -51741,26 +52049,99 @@
     "angle",
     "matrix",
     "setMatrix",
+    "setMatrix()",
+    "setMatrix(matrix)",
     "setRotate",
+    "setRotate(angle, cx, cy)",
     "setScale",
+    "setScale(sx, sy)",
     "setSkewX",
+    "setSkewX(angle)",
     "setSkewY",
+    "setSkewY(angle)",
     "setTranslate",
+    "setTranslate(tx, ty)",
     "type"
   ],
+  "SVGTransform/setMatrix()": [
+    "matrix"
+  ],
+  "SVGTransform/setMatrix(matrix)": [
+    "matrix"
+  ],
+  "SVGTransform/setRotate(angle, cx, cy)": [
+    "angle",
+    "cx",
+    "cy"
+  ],
+  "SVGTransform/setScale(sx, sy)": [
+    "sx",
+    "sy"
+  ],
+  "SVGTransform/setSkewX(angle)": [
+    "angle"
+  ],
+  "SVGTransform/setSkewY(angle)": [
+    "angle"
+  ],
+  "SVGTransform/setTranslate(tx, ty)": [
+    "tx",
+    "ty"
+  ],
   "SVGTransformList": [
+    "__setter__(index, newItem)",
     "appendItem",
+    "appendItem(newItem)",
     "clear",
+    "clear()",
     "consolidate",
+    "consolidate()",
     "createSVGTransformFromMatrix",
+    "createSVGTransformFromMatrix()",
+    "createSVGTransformFromMatrix(matrix)",
     "getItem",
+    "getItem(index)",
     "indexed property setter",
     "initialize",
+    "initialize(newItem)",
     "insertItemBefore",
+    "insertItemBefore(newItem, index)",
     "length",
     "numberOfItems",
     "removeItem",
-    "replaceItem"
+    "removeItem(index)",
+    "replaceItem",
+    "replaceItem(newItem, index)"
+  ],
+  "SVGTransformList/__setter__(index, newItem)": [
+    "index",
+    "newItem"
+  ],
+  "SVGTransformList/appendItem(newItem)": [
+    "newItem"
+  ],
+  "SVGTransformList/createSVGTransformFromMatrix()": [
+    "matrix"
+  ],
+  "SVGTransformList/createSVGTransformFromMatrix(matrix)": [
+    "matrix"
+  ],
+  "SVGTransformList/getItem(index)": [
+    "index"
+  ],
+  "SVGTransformList/initialize(newItem)": [
+    "newItem"
+  ],
+  "SVGTransformList/insertItemBefore(newItem, index)": [
+    "index",
+    "newItem"
+  ],
+  "SVGTransformList/removeItem(index)": [
+    "index"
+  ],
+  "SVGTransformList/replaceItem(newItem, index)": [
+    "index",
+    "newItem"
   ],
   "SVGURIReference": [
     "href"
@@ -52576,7 +52957,17 @@
     "value"
   ],
   "ShadowAnimation": [
+    "ShadowAnimation(source, newTarget)",
+    "constructor(source, newTarget)",
     "sourceAnimation"
+  ],
+  "ShadowAnimation/ShadowAnimation(source, newTarget)": [
+    "newTarget",
+    "source"
+  ],
+  "ShadowAnimation/constructor(source, newTarget)": [
+    "newTarget",
+    "source"
   ],
   "ShadowRoot": [
     "appendHTML(html, options)",
@@ -60030,6 +60421,9 @@
     "polygon state",
     "rectangle state"
   ],
+  "aria": [
+    "role"
+  ],
   "ascent-override!!descriptor": [
     "normal"
   ],
@@ -62670,6 +63064,10 @@
     "sourceLeftBytes",
     "sourceTop",
     "sourceWidthBytes"
+  ],
+  "conditional processing": [
+    "requiredExtensions",
+    "systemLanguage"
   ],
   "configuration point": [
     "default value",
@@ -65857,6 +66255,7 @@
   "image": [
     "crossorigin",
     "href",
+    "referrerpolicy",
     "requiredExtensions",
     "systemLanguage",
     "xlink:href",
@@ -68390,8 +68789,7 @@
     "silent preference",
     "tag",
     "timestamp",
-    "title",
-    "vibration pattern"
+    "title"
   ],
   "notification action": [
     "icon URL",
@@ -68876,6 +69274,7 @@
     "segment-wildcard"
   ],
   "path": [
+    "pathLength",
     "requiredExtensions",
     "systemLanguage"
   ],
