@@ -1975,7 +1975,6 @@
     "AutoplayPolicy",
     "AutoplayPolicyMediaType",
     "Availability",
-    "AvailabilityStatus",
     "Available Locales List",
     "AvailableNamedTimeZoneIdentifiers",
     "AvailableNamedTimeZoneIdentifiers()",
@@ -7975,6 +7974,7 @@
     "SpeechGrammarList",
     "SpeechRecognition",
     "SpeechRecognitionAlternative",
+    "SpeechRecognitionAvailabilityStatus",
     "SpeechRecognitionErrorCode",
     "SpeechRecognitionErrorEvent",
     "SpeechRecognitionErrorEventInit",
@@ -9800,6 +9800,7 @@
     "accessor is opener",
     "accessor-accessed relationship",
     "accounts endpoint",
+    "accumulate style and layout time",
     "accumulated 3D transformation matrix",
     "accumulation for one-based values",
     "accumulation procedure",
@@ -10783,7 +10784,10 @@
     "beforeinput",
     "beforeinstallprompt",
     "beforexrselect",
+    "begin layout",
     "begin offline rendering",
+    "begin style or layout work",
+    "begin style recalculation",
     "beginning edges",
     "behave as auto",
     "behaves as auto",
@@ -14058,9 +14062,12 @@
     "enctype",
     "end",
     "end delay",
+    "end layout",
     "end of iteration",
     "end page value",
     "end segment endpoint",
+    "end style or layout work",
+    "end style recalculation",
     "end the session",
     "end time",
     "end-tag-with-attributes",
@@ -14640,6 +14647,7 @@
     "finish an animation",
     "finish event",
     "finish notification steps",
+    "finish the pending script",
     "finish()",
     "finished",
     "finished promise",
@@ -22512,6 +22520,7 @@
     "structure",
     "style",
     "style & layout interleave",
+    "style and layout period",
     "style attribute",
     "style change event",
     "style containment",
@@ -22803,6 +22812,7 @@
     "target peer identity",
     "target popover",
     "target property",
+    "target ranges",
     "target snapshot params",
     "target timeline",
     "target-counter()",
@@ -27788,12 +27798,6 @@
     "\"downloading\"",
     "\"unavailable\"",
     "minimum availability"
-  ],
-  "AvailabilityStatus": [
-    "\"available\"",
-    "\"downloadable\"",
-    "\"downloading\"",
-    "\"unavailable\""
   ],
   "AvcBitstreamFormat": [
     "\"annexb\"",
@@ -47459,11 +47463,13 @@
     "duration",
     "entryType",
     "firstUIEventTimestamp",
+    "layoutDuration",
     "name",
     "renderStart",
     "scripts",
     "startTime",
     "styleAndLayoutStart",
+    "styleDuration",
     "timing info",
     "toJSON()"
   ],
@@ -47672,7 +47678,9 @@
     "duration",
     "entryType",
     "executionStart",
+    "forcedLayoutDuration",
     "forcedStyleAndLayoutDuration",
+    "forcedStyleDuration",
     "invoker",
     "invokerType",
     "name",
@@ -53482,6 +53490,12 @@
   "SpeechRecognitionAlternative": [
     "confidence",
     "transcript"
+  ],
+  "SpeechRecognitionAvailabilityStatus": [
+    "\"available\"",
+    "\"downloadable\"",
+    "\"downloading\"",
+    "\"unavailable\""
   ],
   "SpeechRecognitionErrorCode": [
     "\"aborted\"",
@@ -65726,14 +65740,20 @@
     "Unsafe"
   ],
   "frame timing info": [
+    "cross-origin isolated capability",
     "current task start time",
     "end time",
     "first ui event timestamp",
+    "layout duration",
     "pending script",
     "script initiated",
     "scripts",
     "start time",
+    "style and layout periods",
+    "style and layout stack",
+    "style and layout stack change time",
     "style and layout start time",
+    "style duration",
     "task durations",
     "update the rendering start time"
   ],
@@ -70464,6 +70484,8 @@
     "event target element src attribute",
     "event type",
     "execution start time",
+    "forced layout duration",
+    "forced style duration",
     "invoker name",
     "invoker type",
     "pause duration",
@@ -72376,6 +72398,11 @@
     "blocking",
     "media",
     "title",
+    "type"
+  ],
+  "style and layout period": [
+    "end time",
+    "start time",
     "type"
   ],
   "subgroups": [
