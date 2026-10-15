@@ -1,4 +1,4 @@
-sha: 3a3a0228dfac64d20cdd5a4c9189ff810c153dad
+sha: abbcb4de39f6aaf2199969f62446e79a285fa831
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1279,8 +1279,10 @@ crashtest dom/nodes/moveBefore/chrome-573058979-crash.html
 crashtest dom/nodes/moveBefore/input-moveBefore-crash.html
 crashtest dom/nodes/moveBefore/moveBefore-iframe-crash.html
 crashtest dom/nodes/moveBefore/moveBefore-legend-input-crash.html
+crashtest dom/nodes/moveBefore/moveBefore-optgroup-crash.html
 crashtest dom/nodes/moveBefore/moveBefore-out-of-flow-sibling-crash.html
 crashtest dom/nodes/moveBefore/moveBefore-range-iframe-crash.html
+crashtest dom/nodes/moveBefore/moveBefore-select-hr-crash.html
 crashtest dom/nodes/moveBefore/moveBefore-subframe-count-crash.html
 crashtest dom/nodes/node-appendchild-crash.html
 crashtest dom/nodes/replaceWith-document-element-crash.html
@@ -21873,6 +21875,7 @@ reftest css/css-overflow/line-clamp/line-clamp-balance-009.html
 reftest css/css-overflow/line-clamp/line-clamp-balance-010.html
 reftest css/css-overflow/line-clamp/line-clamp-balance-011.html
 reftest css/css-overflow/line-clamp/line-clamp-balance-012.html
+reftest css/css-overflow/line-clamp/line-clamp-baseline-001.html
 reftest css/css-overflow/line-clamp/line-clamp-bfc.html
 reftest css/css-overflow/line-clamp/line-clamp-content-height-with-dynamic-change.html
 reftest css/css-overflow/line-clamp/line-clamp-fragmentation-001.html
@@ -39597,6 +39600,7 @@ testharness css/css-mixins/mixins/mixin-shared-across-documents.html
 testharness css/css-mixins/mixins/mixin-shared-sheet-no-mixins-in-scope.html
 testharness css/css-mixins/private/private-cssom-insert-rule.tentative.html
 testharness css/css-mixins/private/private-cssom-serialization.tentative.html
+testharness css/css-mixins/private/private-shared-stylesheet.tentative.html
 testharness css/css-multicol/animation/column-count-interpolation.html
 testharness css/css-multicol/animation/column-rule-color-interpolation.html
 testharness css/css-multicol/animation/column-rule-width-interpolation.html
@@ -44938,6 +44942,7 @@ testharness dom/nodes/moveBefore/moveBefore-into-display-none.html
 testharness dom/nodes/moveBefore/moveBefore-lang.html
 testharness dom/nodes/moveBefore/moveBefore-name-map.html
 testharness dom/nodes/moveBefore/moveBefore-nodeiterator.html
+testharness dom/nodes/moveBefore/moveBefore-optgroup.html
 testharness dom/nodes/moveBefore/moveBefore-option-recalc-style.html
 testharness dom/nodes/moveBefore/moveBefore-selector-matching.html
 testharness dom/nodes/moveBefore/moveBefore-shadow-boundary-id-change.html
@@ -51834,6 +51839,7 @@ testharness html/obsolete/requirements-for-implementations/the-marquee-element-0
 testharness html/obsolete/requirements-for-implementations/the-marquee-element-0/marquee-scrollamount.html
 testharness html/obsolete/requirements-for-implementations/the-marquee-element-0/marquee-scrolldelay.html
 testharness html/rendering/bidi-rendering/slot-direction.window.js
+testharness html/rendering/bidi-rendering/unicode-bidi-ua-rules-iso-8859-8.html
 testharness html/rendering/bidi-rendering/unicode-bidi-ua-rules.html
 testharness html/rendering/dimension-attributes.html
 testharness html/rendering/non-replaced-elements/flow-content-0/dialog-display.html
@@ -54607,6 +54613,8 @@ testharness html/user-activation/activation-trigger-mouse-right.html
 testharness html/user-activation/activation-trigger-pointerevent.html
 testharness html/user-activation/activation-trigger-touch.tentative.html
 testharness html/user-activation/chained-setTimeout.html
+testharness html/user-activation/consumption-crossorigin.sub.html
+testharness html/user-activation/consumption-sameorigin.html
 testharness html/user-activation/detached-iframe.html
 testharness html/user-activation/message-event-activation-api-iframe-cross-origin.sub.tentative.html
 testharness html/user-activation/message-event-init.tentative.html
@@ -55137,6 +55145,7 @@ testharness infrastructure/testdriver/bidi/bluetooth/simulate_preconnected_perip
 testharness infrastructure/testdriver/bidi/bluetooth/simulate_service.https.html
 testharness infrastructure/testdriver/bidi/emulation/set_geolocation_override.https.html
 testharness infrastructure/testdriver/bidi/emulation/set_locale_override.https.html
+testharness infrastructure/testdriver/bidi/emulation/set_media_features_override.https.html
 testharness infrastructure/testdriver/bidi/emulation/set_screen_orientation_override.https.html
 testharness infrastructure/testdriver/bidi/emulation/set_touch_override.https.html
 testharness infrastructure/testdriver/bidi/emulation/set_viewport_meta_override.https.html
@@ -57289,6 +57298,7 @@ testharness paint-timing/first-image-child.html
 testharness paint-timing/first-paint-only/child-painting-first-image.html
 testharness paint-timing/first-paint-only/first-paint-bg-color.html
 testharness paint-timing/first-paint-only/first-paint-only.html
+testharness paint-timing/first-paint-only/iframe-in-invisible-ancestor.html
 testharness paint-timing/first-paint-only/sibling-painting-first-image.html
 testharness paint-timing/idlharness.window.js
 testharness paint-timing/paint-visited.html
@@ -59516,6 +59526,7 @@ testharness sanitizer-api/sanitizer-default-config.html
 testharness sanitizer-api/sanitizer-duplicate-html-body.html
 testharness sanitizer-api/sanitizer-get.html
 testharness sanitizer-api/sanitizer-in-adoption-agency.html
+testharness sanitizer-api/sanitizer-in-noahs-ark.html
 testharness sanitizer-api/sanitizer-inert-document.html
 testharness sanitizer-api/sanitizer-javascript-url.html
 testharness sanitizer-api/sanitizer-modifiers.html
@@ -63743,6 +63754,8 @@ testharness webcodecs/videoDecoder-codec-specific-orientation.https.any.js
 testharness webcodecs/videoDecoder-codec-specific.https.any.js
 testharness webcodecs/videoDecoder-h264-sei.https.any.js
 testharness webcodecs/videoDecoder-interlaced-h264.https.any.js
+testharness webcodecs/videoFrame-alpha-discard.any.js
+testharness webcodecs/videoFrame-alpha-discard.window.js
 testharness webcodecs/videoFrame-alpha.any.js
 testharness webcodecs/videoFrame-canvasImageSource.html
 testharness webcodecs/videoFrame-construction.any.js
@@ -63758,10 +63771,13 @@ testharness webcodecs/videoFrame-copyTo.crossOriginIsolated.https.any.js
 testharness webcodecs/videoFrame-createImageBitmap.any.js
 testharness webcodecs/videoFrame-createImageBitmap.https.any.js
 testharness webcodecs/videoFrame-drawImage-hbd.any.js
+testharness webcodecs/videoFrame-drawImage-rgbx.any.js
 testharness webcodecs/videoFrame-drawImage.any.js
 testharness webcodecs/videoFrame-metadata-rtpTimestamp.https.html
 testharness webcodecs/videoFrame-odd-size.any.js
 testharness webcodecs/videoFrame-orientation.any.js
+testharness webcodecs/videoFrame-rgbx-imageBitmap.any.js
+testharness webcodecs/videoFrame-rgbx-webgl.window.js
 testharness webcodecs/videoFrame-serialization.crossAgentCluster.https.html
 testharness webcodecs/videoFrame-serialization.https.html
 testharness webcodecs/videoFrame-texImage.any.js
@@ -63781,6 +63797,7 @@ testharness webgl/texImage2D-source-ignores-unpack-alignment.html
 testharness webgl/texImage2D.html
 testharness webgl/texSubImage2D.html
 testharness webgl/uniformMatrixNfv.html
+testharness webgl/vertexAttrib-keeps-array-type.html
 testharness webgl/webgl2-drawing-buffer-bits.html
 testharness webhid/hid-allowed-by-permissions-policy-attribute-redirect-on-load.https.sub.html
 testharness webhid/hid-allowed-by-permissions-policy-attribute.https.sub.html
