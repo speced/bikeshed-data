@@ -1,4 +1,4 @@
-sha: ca4621ae41d6c113c449ca60cf1a64897b27e167
+sha: de86b2b3c3e5a18f441a3b9bd3697f922bb1216c
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -802,6 +802,7 @@ crashtest css/css-overflow/crashtests/text-overflow-ellipsis-multiline-crash.htm
 crashtest css/css-overflow/ellipsis-with-image-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-040-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-043-crash.html
+crashtest css/css-overflow/line-clamp/line-clamp-atomic-inline-after-clamp-point-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-auto-001-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-auto-002-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-with-text-overflow-string-010-crash.html
@@ -1197,6 +1198,7 @@ crashtest css/cssom/insert-dir-rule-in-iframe-crash.html
 crashtest css/cssom/insert-invalid-where-rule-crash.html
 crashtest css/cssom/insertRule-import-no-sheet-crash.html
 crashtest css/cssom/insertRule-import-trailing-garbage-crash.html
+crashtest css/cssom/insertRule-page-detached-grouping-rule-crash.html
 crashtest css/cssom/removerule-invalidation-crash.html
 crashtest css/cssom/set-selector-text-detached-rule-delete-crash.html
 crashtest css/cssom/set-selector-text-detached-rule-replace-crash.html
@@ -19434,6 +19436,8 @@ reftest css/css-grid/layout-algorithm/grid-as-flex-item-should-not-shrink-to-fit
 reftest css/css-grid/layout-algorithm/grid-auto-track-item-with-border-001.html
 reftest css/css-grid/layout-algorithm/grid-auto-tracks-items-with-borders-001.html
 reftest css/css-grid/layout-algorithm/grid-find-fr-size-restart-algorithm.html
+reftest css/css-grid/layout-algorithm/grid-fit-content-indefinite-percentage-not-stretched-001.html
+reftest css/css-grid/layout-algorithm/grid-fit-content-indefinite-percentage-not-stretched-002.html
 reftest css/css-grid/layout-algorithm/grid-fit-content-width-percent-height-aspect-ratio-001.html
 reftest css/css-grid/layout-algorithm/grid-flex-and-auto-columns-fill-available-width-001.html
 reftest css/css-grid/layout-algorithm/grid-float-intrinsic-width-percent-height-aspect-ratio-001.html
@@ -19453,6 +19457,8 @@ reftest css/css-grid/layout-algorithm/grid-percent-rows-spanned-shrinkwrap-001.h
 reftest css/css-grid/layout-algorithm/grid-spanning-item-with-paddings-auto-columns-001.html
 reftest css/css-grid/layout-algorithm/grid-spanning-item-with-paddings-auto-rows-001.html
 reftest css/css-grid/layout-algorithm/grid-stretch-respects-min-size-001.html
+reftest css/css-grid/layout-algorithm/grid-stretch-respects-min-size-002.html
+reftest css/css-grid/layout-algorithm/grid-stretch-respects-min-size-003.html
 reftest css/css-grid/layout-algorithm/grid-template-flexible-rerun-track-sizing.html
 reftest css/css-grid/layout-algorithm/grid-track-ignores-max-size-001.html
 reftest css/css-grid/layout-algorithm/grid-track-ignores-max-size-002.html
@@ -21895,6 +21901,9 @@ reftest css/css-overflow/line-clamp/line-clamp-balance-012.html
 reftest css/css-overflow/line-clamp/line-clamp-baseline-001.html
 reftest css/css-overflow/line-clamp/line-clamp-bfc.html
 reftest css/css-overflow/line-clamp/line-clamp-content-height-with-dynamic-change.html
+reftest css/css-overflow/line-clamp/line-clamp-dynamic-change-after-clean-content.html
+reftest css/css-overflow/line-clamp/line-clamp-dynamic-removal.html
+reftest css/css-overflow/line-clamp/line-clamp-dynamic-width-change.html
 reftest css/css-overflow/line-clamp/line-clamp-fragmentation-001.html
 reftest css/css-overflow/line-clamp/line-clamp-intrinsic-size-001.html
 reftest css/css-overflow/line-clamp/line-clamp-intrinsic-size-002.html
@@ -22197,6 +22206,8 @@ reftest css/css-overflow/scroll-markers/scroll-marker-group-position-change-002.
 reftest css/css-overflow/scroll-markers/scroll-marker-group-position-change-003.html
 reftest css/css-overflow/scroll-markers/scroll-marker-group-scroll-container-change-001.html
 reftest css/css-overflow/scroll-markers/scroll-marker-group-scroll-container-change-002.html
+reftest css/css-overflow/scroll-markers/scroll-marker-group-scroll-container-change-003.html
+reftest css/css-overflow/scroll-markers/scroll-marker-group-scroll-container-change-004.html
 reftest css/css-overflow/scroll-markers/scroll-marker-group-snap-aligns-to-active.tentative.html
 reftest css/css-overflow/scroll-markers/scroll-marker-group-style-remove.html
 reftest css/css-overflow/scroll-markers/scroll-marker-selection-in-2d.html
@@ -23634,6 +23645,7 @@ reftest css/css-sizing/aspect-ratio/block-aspect-ratio-055.html
 reftest css/css-sizing/aspect-ratio/block-aspect-ratio-056.html
 reftest css/css-sizing/aspect-ratio/block-aspect-ratio-057.tentative.html
 reftest css/css-sizing/aspect-ratio/block-aspect-ratio-058.html
+reftest css/css-sizing/aspect-ratio/block-aspect-ratio-shrink-to-fit-ancestor-relayout.html
 reftest css/css-sizing/aspect-ratio/block-aspect-ratio-with-margin-collapsing-001.html
 reftest css/css-sizing/aspect-ratio/block-aspect-ratio-with-margin-collapsing-002.html
 reftest css/css-sizing/aspect-ratio/fieldset-element-001.html
@@ -24047,6 +24059,7 @@ reftest css/css-sizing/replaced-max-width-with-height-max-content.html
 reftest css/css-sizing/replaced-max-width-with-height-min-content.html
 reftest css/css-sizing/replaced-min-height-min-content.html
 reftest css/css-sizing/replaced-min-width-min-content.html
+reftest css/css-sizing/replaced-percent-min-width-max-content.html
 reftest css/css-sizing/responsive-iframe/responsive-iframe-cross-origin-no-match-element.sub.html
 reftest css/css-sizing/responsive-iframe/responsive-iframe-cross-origin-not-embedded-sized.sub.html
 reftest css/css-sizing/responsive-iframe/responsive-iframe-cross-origin.sub.html
@@ -24173,6 +24186,7 @@ reftest css/css-tables/colspan-004.html
 reftest css/css-tables/display-contents-001.html
 reftest css/css-tables/display-contents-002.html
 reftest css/css-tables/display-contents-003.html
+reftest css/css-tables/dynamic-table-cell-block-size-vertical-rl.html
 reftest css/css-tables/dynamic-table-cell-height.html
 reftest css/css-tables/empty-table-height.html
 reftest css/css-tables/fixup-dynamic-anonymous-inline-table-001.html
@@ -29839,6 +29853,7 @@ reftest css/css-writing-modes/vertical-alignment-vlr-027.xht
 reftest css/css-writing-modes/vertical-alignment-vrl-022.xht
 reftest css/css-writing-modes/vertical-alignment-vrl-024.xht
 reftest css/css-writing-modes/vertical-alignment-vrl-026.xht
+reftest css/css-writing-modes/vertical-containing-block-width-changes.html
 reftest css/css-writing-modes/vlr-text-orientation-sideways-alongside-vlr-floats.html
 reftest css/css-writing-modes/vrl-inline-paint-invalidation.html
 reftest css/css-writing-modes/vrl-text-orientation-sideways-alongside-vrl-floats.html
@@ -33173,6 +33188,7 @@ reftest svg/painting/reftests/symbol-in-mask.html
 reftest svg/painting/reftests/text-shadow-01.html
 reftest svg/painting/reftests/text-shadow-02.html
 reftest svg/painting/reftests/text-shadow-03.html
+reftest svg/painting/reftests/visibility-collapse-001.html
 reftest svg/painting/reftests/zero-scale-svg-transform-inside-g-tag.html
 reftest svg/painting/scripted/marker-element-added.html
 reftest svg/painting/subpixel-clip-path-transform.html
@@ -34955,6 +34971,7 @@ testharness compat/webkit-box-item-shrink-001.html
 testharness compat/webkit-box-item-shrink-002.html
 testharness compat/webkit-box-removing-triggering-anonymous-merge.html
 testharness compat/webkit-box-vertically-centered.html
+testharness compat/webkit-device-pixel-ratio-serialization.html
 testharness compat/webkit-gradient-comma.html
 testharness compat/webkit-gradient-sign.html
 testharness compat/webkit-mask-box-enumeration.html
@@ -35662,6 +35679,7 @@ testharness content-security-policy/object-src/object-src-url-redirect-allowed.h
 testharness content-security-policy/object-src/object-src-url-redirect-blocked.sub.html
 testharness content-security-policy/parsing/invalid-bytes.html
 testharness content-security-policy/parsing/invalid-directive.html
+testharness content-security-policy/parsing/keyword-source-with-trailing-characters.html
 testharness content-security-policy/plugin-types/plugin-types-does-not-block-pdf-embed.html
 testharness content-security-policy/plugin-types/plugin-types-ignored.html
 testharness content-security-policy/report-hash/default-src.https.window.js
@@ -38530,6 +38548,7 @@ testharness css/css-grid/abspos/absolute-positioning-definite-sizes-001.html
 testharness css/css-grid/abspos/absolute-positioning-grid-container-containing-block-001.html
 testharness css/css-grid/abspos/absolute-positioning-grid-container-parent-001.html
 testharness css/css-grid/abspos/empty-grid-001.html
+testharness css/css-grid/abspos/grid-container-min-max-height-abspos-descendant-001.html
 testharness css/css-grid/abspos/grid-positioned-items-and-autofit-tracks-001.html
 testharness css/css-grid/abspos/grid-positioned-items-and-autofit-tracks-002.html
 testharness css/css-grid/abspos/grid-positioned-items-and-autofit-tracks-003.html
@@ -38919,6 +38938,8 @@ testharness css/css-grid/grid-definition/grid-inline-template-columns-rows-resol
 testharness css/css-grid/grid-definition/grid-inline-template-columns-rows-resolved-values-001.tentative.html
 testharness css/css-grid/grid-definition/grid-limits-001.html
 testharness css/css-grid/grid-definition/grid-minimum-contribution-with-percentages.html
+testharness css/css-grid/grid-definition/grid-percentage-max-size-flex-rows-001.html
+testharness css/css-grid/grid-definition/grid-percentage-max-size-flex-rows-002.html
 testharness css/css-grid/grid-definition/grid-percentage-rows-indefinite-height-001.html
 testharness css/css-grid/grid-definition/grid-percentage-rows-indefinite-height-002.html
 testharness css/css-grid/grid-definition/grid-shorthand-001.html
@@ -39123,6 +39144,7 @@ testharness css/css-grid/layout-algorithm/baseline-alignment-affects-intrinsic-s
 testharness css/css-grid/layout-algorithm/flex-and-intrinsic-sizes-001.html
 testharness css/css-grid/layout-algorithm/flex-sizing-columns-min-max-width-001.html
 testharness css/css-grid/layout-algorithm/flex-sizing-rows-min-max-height-001.html
+testharness css/css-grid/layout-algorithm/flex-sizing-rows-min-max-height-border-box-001.html
 testharness css/css-grid/layout-algorithm/grid-auto-columns-content-resolution-001.html
 testharness css/css-grid/layout-algorithm/grid-auto-rows-content-resolution-001.html
 testharness css/css-grid/layout-algorithm/grid-automatic-minimum-for-auto-columns-001.html
@@ -40928,10 +40950,14 @@ testharness css/css-sizing/aspect-ratio-affects-container-width-when-height-chan
 testharness css/css-sizing/aspect-ratio-automatic-minimum.html
 testharness css/css-sizing/aspect-ratio.html
 testharness css/css-sizing/aspect-ratio/abspos-aspect-ratio-border.html
+testharness css/css-sizing/aspect-ratio/abspos-intrinsic-block-size.html
 testharness css/css-sizing/aspect-ratio/aspect-ratio-minimum-size-single-axis-scroll-container.html
 testharness css/css-sizing/aspect-ratio/box-sizing-aspect-ratio-positioned.html
 testharness css/css-sizing/aspect-ratio/box-sizing-dimensions.html
 testharness css/css-sizing/aspect-ratio/box-sizing-squashed.html
+testharness css/css-sizing/aspect-ratio/flex-aspect-ratio-orthogonal-percentage-child.html
+testharness css/css-sizing/aspect-ratio/flex-aspect-ratio-row-percentage-height-child.html
+testharness css/css-sizing/aspect-ratio/flex-aspect-ratio-shrink-to-fit-ancestor-relayout.html
 testharness css/css-sizing/aspect-ratio/fractional-aspect-ratio.html
 testharness css/css-sizing/aspect-ratio/inheritance.html
 testharness css/css-sizing/aspect-ratio/parsing/aspect-ratio-computed.html
@@ -41921,6 +41947,7 @@ testharness css/css-transitions/ua-important.tentative.html
 testharness css/css-transitions/unregistered-custom-property-transition.html
 testharness css/css-transitions/zero-duration-multiple-transition.html
 testharness css/css-typed-om/CSSMatrixComponent-DOMMatrix-mutable.html
+testharness css/css-typed-om/container-length-units-type.html
 testharness css/css-typed-om/declared-styleMap-accepts-inherit.html
 testharness css/css-typed-om/factory-absolute-length.html
 testharness css/css-typed-om/factory-duration.html
@@ -41955,6 +41982,7 @@ testharness css/css-typed-om/stylevalue-subclasses/cssKeywordValue-value.any.js
 testharness css/css-typed-om/stylevalue-subclasses/cssKeywordValue.any.js
 testharness css/css-typed-om/stylevalue-subclasses/cssLCH.html
 testharness css/css-typed-om/stylevalue-subclasses/cssLab.html
+testharness css/css-typed-om/stylevalue-subclasses/cssMatrixComponent-toMatrix-returns-new-matrix.html
 testharness css/css-typed-om/stylevalue-subclasses/cssMatrixComponent.tentative.html
 testharness css/css-typed-om/stylevalue-subclasses/cssOKLCH.html
 testharness css/css-typed-om/stylevalue-subclasses/cssOKLab.html
@@ -43673,6 +43701,7 @@ testharness css/selectors/attribute-selectors/attribute-case/cssom.html
 testharness css/selectors/attribute-selectors/attribute-case/semantics.html
 testharness css/selectors/attribute-selectors/attribute-case/syntax.html
 testharness css/selectors/attribute-selectors/attribute-case/value-case-sensitivity-svg.html
+testharness css/selectors/attribute-selectors/attribute-case/xhtml-mixed-case-attribute-ancestor.xhtml
 testharness css/selectors/attribute-selectors/style-attribute-selector.html
 testharness css/selectors/child-indexed-during-parse.html
 testharness css/selectors/child-indexed-pseudo-class.html
@@ -61507,6 +61536,7 @@ testharness svg/animations/set-dynamic-attributeName-css-property-cleanup.html
 testharness svg/animations/short-simple-duration-and-fractional-repeatcount.html
 testharness svg/animations/single-values-animation.html
 testharness svg/animations/slider-switch.html
+testharness svg/animations/smil-clock-value-large-hours.html
 testharness svg/animations/smil-clock-value-parsing.html
 testharness svg/animations/smil-detach-releases-animated-presentation-attribute.html
 testharness svg/animations/smil-values-trailing-semicolon.html
@@ -63842,6 +63872,7 @@ testharness webcodecs/videoFrame-construction.crossOriginIsolated.https.any.js
 testharness webcodecs/videoFrame-construction.crossOriginSource.sub.html
 testharness webcodecs/videoFrame-construction.window.js
 testharness webcodecs/videoFrame-copyTo-canvas.window.js
+testharness webcodecs/videoFrame-copyTo-chroma-subsampling.any.js
 testharness webcodecs/videoFrame-copyTo-opaque-swizzle.https.any.js
 testharness webcodecs/videoFrame-copyTo-rgb.any.js
 testharness webcodecs/videoFrame-copyTo-rgbx.any.js
@@ -63860,6 +63891,7 @@ testharness webcodecs/videoFrame-rgbx-webgl.window.js
 testharness webcodecs/videoFrame-serialization.crossAgentCluster.https.html
 testharness webcodecs/videoFrame-serialization.https.html
 testharness webcodecs/videoFrame-texImage.any.js
+testharness webcodecs/vp9-codec-string-profile-constraints.https.any.js
 testharness webdriver/tests/classic/idlharness.window.js
 testharness webgl/bufferSubData.html
 testharness webgl/compressed-tex-sub-image-2d-without-base-image.html
