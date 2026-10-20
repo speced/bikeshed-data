@@ -1,4 +1,4 @@
-sha: cfddf189bbfee915fcc42e97592e4dfd5085e02d
+sha: 02f5da61b96a03debc12e3c6d37614ac504fd2d2
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -46885,6 +46885,7 @@ testharness geolocation/getCurrentPosition_permission_deny.https.html
 testharness geolocation/heading-stationary.https.html
 testharness geolocation/idlharness.https.window.js
 testharness geolocation/non-fully-active.https.html
+testharness geolocation/non-secure-context-https-iframe.http.sub.html
 testharness geolocation/non-secure-contexts.http.html
 testharness geolocation/permission.https.html
 testharness geolocation/tojson.https.window.js
@@ -47131,6 +47132,7 @@ testharness html/browsers/browsing-the-web/navigating-across-documents/multiple-
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigate-cross-origin-iframe-to-same-url-with-fragment-fire-load-event.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigate-cross-origin-iframe-to-same-url-with-fragment.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigate-cross-origin-iframe-to-same-url.html
+testharness html/browsers/browsing-the-web/navigating-across-documents/navigate-iframe-to-same-url-with-document-domain.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigate-to-unparseable-url.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigate_too_many_calls.optional.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigation-unload-cross-origin.sub.window.js
@@ -47417,6 +47419,7 @@ testharness html/browsers/history/the-location-interface/location-prototype-sett
 testharness html/browsers/history/the-location-interface/location-prototype-setting-goes-cross-origin-domain.sub.html
 testharness html/browsers/history/the-location-interface/location-prototype-setting-same-origin-domain.sub.html
 testharness html/browsers/history/the-location-interface/location-prototype-setting-same-origin.html
+testharness html/browsers/history/the-location-interface/location-replace-cross-site.html
 testharness html/browsers/history/the-location-interface/location-stringifier.html
 testharness html/browsers/history/the-location-interface/location-symbol-toprimitive.html
 testharness html/browsers/history/the-location-interface/location-tojson.html
@@ -51311,6 +51314,7 @@ testharness html/cross-origin-opener-policy/resource-popup.https.html
 testharness html/cross-origin-opener-policy/tentative/noopener/coop-noopener-allow-popups-restrict-properties.https.html
 testharness html/document-isolation-policy/agent-cluster.tentative.https.html
 testharness html/document-isolation-policy/blob-document-inherits-policy.tentative.https.html
+testharness html/document-isolation-policy/broadcast-channel.tentative.https.html
 testharness html/document-isolation-policy/credentialless-cache-storage-from-credentialless.https.tentative.window.js
 testharness html/document-isolation-policy/credentialless-cache-storage-from-none.https.tentative.window.js
 testharness html/document-isolation-policy/credentialless-cache-storage-from-require-corp.https.tentative.window.js
@@ -51325,19 +51329,24 @@ testharness html/document-isolation-policy/credentialless-service-worker.https.t
 testharness html/document-isolation-policy/credentialless-shared-worker.https.tentative.window.js
 testharness html/document-isolation-policy/credentialless-video.https.tentative.window.js
 testharness html/document-isolation-policy/credentialless-websocket.https.tentative.window.js
+testharness html/document-isolation-policy/cross-origin-frame.tentative.https.html
 testharness html/document-isolation-policy/cross-origin-isolated.tentative.https.html
 testharness html/document-isolation-policy/header-parsing.tentative.https.html
 testharness html/document-isolation-policy/isolate-and-require-corp-load-from-cache-storage.tentative.https.html
 testharness html/document-isolation-policy/isolate-and-require-corp.tentative.https.html
+testharness html/document-isolation-policy/message-channel.tentative.https.html
 testharness html/document-isolation-policy/navigate-across-policies.tentative.https.html
 testharness html/document-isolation-policy/no-secure-context-https-iframe.tentative.html
 testharness html/document-isolation-policy/no-secure-context.tentative.html
+testharness html/document-isolation-policy/origin-agent-cluster.tentative.https.html
+testharness html/document-isolation-policy/partial-deployment.tentative.https.html
 testharness html/document-isolation-policy/reporting-cache-storage-corp.tentative.https.html
 testharness html/document-isolation-policy/reporting-subresource-corp.tentative.https.html
 testharness html/document-isolation-policy/service-worker-coep-credentialless-proxy.https.tentative.window.js
 testharness html/document-isolation-policy/service-worker-coep-none-proxy.https.tentative.window.js
 testharness html/document-isolation-policy/shared-array-buffer.tentative.https.html
 testharness html/document-isolation-policy/shared-workers.tentative.https.html
+testharness html/document-isolation-policy/window-reuse.tentative.https.html
 testharness html/dom/access-key-label.html
 testharness html/dom/aria-attribute-reflection-enumerated.tentative.html
 testharness html/dom/aria-attribute-reflection.html
@@ -57031,6 +57040,7 @@ testharness navigation-api/navigation-methods/navigate-intercept-history-state.h
 testharness navigation-api/navigation-methods/navigate-relative-url-utf8.html
 testharness navigation-api/navigation-methods/navigate-relative-url.html
 testharness navigation-api/navigation-methods/navigate-replace-cross-document.html
+testharness navigation-api/navigation-methods/navigate-replace-cross-site.html
 testharness navigation-api/navigation-methods/navigate-replace-same-document.html
 testharness navigation-api/navigation-methods/navigate-same-document.html
 testharness navigation-api/navigation-methods/navigate-state-repeated-await.html
@@ -62033,6 +62043,7 @@ testharness svg/struct/scripted/svg-getIntersectionList-006.svg
 testharness svg/struct/scripted/switch_reentrant_removal.html
 testharness svg/struct/scripted/use-external-reload-in-iframe.html
 testharness svg/struct/scripted/use-iframe-onload.html
+testharness svg/struct/scripted/use-inline-event-handlers.html
 testharness svg/struct/scripted/use-load-error-events.tentative.html
 testharness svg/struct/systemLanguage-matching.html
 testharness svg/struct/systemLanguage-parsing.html
