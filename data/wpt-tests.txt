@@ -1,4 +1,4 @@
-sha: 63f929364c3e05e3432a45fb2ddf25e9eb7b43a0
+sha: e57eb6552eceba6f376f315c80ddcb47bfc1104c
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -45260,10 +45260,12 @@ testharness domparsing/DOMParser-parseFromString-xml-scripting-support-disabled.
 testharness domparsing/DOMParser-parseFromString-xml.html
 testharness domparsing/DOMParser-xml-character-entities.html
 testharness domparsing/XMLSerializer-serializeToString.html
+testharness domparsing/createContextualFragment-external-scripts-async.html
 testharness domparsing/createContextualFragment-xhtml.xhtml
 testharness domparsing/createContextualFragment.html
 testharness domparsing/domparser-spurious-attributes.html
 testharness domparsing/html-insertion-methods-html-element.html
+testharness domparsing/html-unsafe-external-scripts-async.html
 testharness domparsing/innerhtml-01.xhtml
 testharness domparsing/innerhtml-03.xhtml
 testharness domparsing/innerhtml-04.html
@@ -45326,6 +45328,7 @@ testharness domparsing/tentative/stream-sanitizer-img-ctor.html
 testharness domparsing/tentative/stream-sanitizer-resource-fetch.html
 testharness domparsing/tentative/stream-tokenizer-context.html
 testharness domparsing/tentative/unclosed-script-already-started.html
+testharness domparsing/unsafe-and-trusted-types-external-scripts-async.html
 testharness domparsing/xml-parse-serialize-roundtrip.html
 testharness domparsing/xml-serialization.xhtml
 testharness domparsing/xmldomparser.html
@@ -47388,6 +47391,7 @@ testharness html/browsers/history/the-location-interface/location-ancestor-origi
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-new-object.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-redirect-still-mask.sub.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-referrerpolicy-snapshot.html
+testharness html/browsers/history/the-location-interface/location-ancestor-origins-referrerpolicy-unsupported-elements.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins.sub.html
 testharness html/browsers/history/the-location-interface/location-encoding-parse.html
 testharness html/browsers/history/the-location-interface/location-getters-about-blank.html
@@ -59439,6 +59443,7 @@ testharness referrer-policy/generic/subresource-test/script-messaging.html
 testharness referrer-policy/generic/subresource-test/worker-messaging.html
 testharness referrer-policy/generic/subresource-test/xhr-messaging.html
 testharness referrer-policy/generic/unsupported-csp-referrer-directive.html
+testharness referrer-policy/generic/unsupported-elements.html
 testharness remote-playback/cancel-watch-availability.html
 testharness remote-playback/disable-remote-playback-cancel-watch-availability-throws.html
 testharness remote-playback/disable-remote-playback-prompt-throws.html
@@ -62165,6 +62170,7 @@ testharness svg/types/scripted/SVGLength-px-with-context.html
 testharness svg/types/scripted/SVGLength-px.html
 testharness svg/types/scripted/SVGLength-rem.html
 testharness svg/types/scripted/SVGLength-rlh.html
+testharness svg/types/scripted/SVGLength-value-setter-font-change.html
 testharness svg/types/scripted/SVGLength-viewport.html
 testharness svg/types/scripted/SVGLength-zoom.html
 testharness svg/types/scripted/SVGLength.html
