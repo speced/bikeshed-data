@@ -1,4 +1,4 @@
-sha: 514913ff14fde47147cc4fa84444d86dc8bc3112
+sha: d37354a9373f6636d3cb384392dccf59e36822ee
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -860,6 +860,7 @@ crashtest css/css-position/crashtests/dynamic-fixed-in-nested-absolutes-crash.ht
 crashtest css/css-position/crashtests/inline-containing-block-crash.html
 crashtest css/css-position/crashtests/inline-containing-block-delete-continuations-001.html
 crashtest css/css-position/crashtests/inline-containing-block-dynamic-change-2.html
+crashtest css/css-position/crashtests/inline-containing-block-dynamic-change-3.html
 crashtest css/css-position/crashtests/inline-containing-block-dynamic-change.html
 crashtest css/css-position/crashtests/inline-containing-block-multicol-balancing-001.html
 crashtest css/css-position/crashtests/inline-containing-block-multicol-balancing-002.html
@@ -19621,13 +19622,13 @@ reftest css/css-grid/table-grid-item-dynamic-003.html
 reftest css/css-grid/table-grid-item-dynamic-004.html
 reftest css/css-grid/whitespace-reattach.html
 reftest css/css-highlight-api/custom-highlight-escaped-star-001.html
-reftest css/css-highlight-api/custom-highlight-universal-deep-chain-001.tentative.html
-reftest css/css-highlight-api/custom-highlight-universal-inheritance-001.tentative.html
-reftest css/css-highlight-api/custom-highlight-universal-no-named-rule-001.tentative.html
-reftest css/css-highlight-api/custom-highlight-universal-no-named-rule-002.tentative.html
-reftest css/css-highlight-api/custom-highlight-universal-painting-001.tentative.html
-reftest css/css-highlight-api/custom-highlight-universal-painting-002.tentative.html
-reftest css/css-highlight-api/custom-highlight-universal-painting-003.tentative.html
+reftest css/css-highlight-api/custom-highlight-universal-deep-chain-001.html
+reftest css/css-highlight-api/custom-highlight-universal-inheritance-001.html
+reftest css/css-highlight-api/custom-highlight-universal-no-named-rule-001.html
+reftest css/css-highlight-api/custom-highlight-universal-no-named-rule-002.html
+reftest css/css-highlight-api/custom-highlight-universal-painting-001.html
+reftest css/css-highlight-api/custom-highlight-universal-painting-002.html
+reftest css/css-highlight-api/custom-highlight-universal-painting-003.html
 reftest css/css-highlight-api/highlight-fallback-not-tinted.html
 reftest css/css-highlight-api/highlight-image-currentcolor.html
 reftest css/css-highlight-api/highlight-image-stacked.html
@@ -22526,6 +22527,7 @@ reftest css/css-position/multicol/vrl-rtl-rtl-in-multicols.html
 reftest css/css-position/nested-inline-abspos-child-with-siblings.html
 reftest css/css-position/nested-inline-abspos-child.html
 reftest css/css-position/overlay/author-overlay-top-layer-removal.html
+reftest css/css-position/overlay/backdrop-outside-top-layer.html
 reftest css/css-position/overlay/overlay-button-appearance.html
 reftest css/css-position/overlay/overlay-transition-backdrop-entry.html
 reftest css/css-position/overlay/overlay-transition-backdrop.html
@@ -32046,6 +32048,8 @@ reftest html/semantics/embedded-content/the-video-element/video_dynamic_poster_a
 reftest html/semantics/embedded-content/the-video-element/video_dynamic_poster_relative.htm
 reftest html/semantics/embedded-content/the-video-element/video_initially_paused.html
 reftest html/semantics/forms/customizable-combobox/customizable-combobox-appearance.html
+reftest html/semantics/forms/textfieldselection/setRangeText-repaint-input.html
+reftest html/semantics/forms/textfieldselection/setRangeText-repaint-textarea.html
 reftest html/semantics/forms/the-datalist-element/input-text-datalist-appearance.html
 reftest html/semantics/forms/the-datalist-element/input-text-datalist-removal.html
 reftest html/semantics/forms/the-input-element/auto-direction-dynamic.html
@@ -32082,6 +32086,7 @@ reftest html/semantics/forms/the-meter-element/meter-appearance-none-suboptimum-
 reftest html/semantics/forms/the-meter-element/meter-min-rendering.html
 reftest html/semantics/forms/the-meter-element/meter-widget.html
 reftest html/semantics/forms/the-option-element/dynamic-content-change-rendering.html
+reftest html/semantics/forms/the-option-element/dynamic-img-alt-change-rendering.html
 reftest html/semantics/forms/the-progress-element/progress-widget.html
 reftest html/semantics/forms/the-select-element/combobox-selected-option-text-removal.html
 reftest html/semantics/forms/the-select-element/customizable-select-listbox/customizable-select-listbox-appearance-focused.html
@@ -32151,6 +32156,7 @@ reftest html/semantics/forms/the-select-element/customizable-select/select-icon-
 reftest html/semantics/forms/the-select-element/customizable-select/select-only-button-opt-in.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-only-picker-opt-in.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-open-invalidation.html
+reftest html/semantics/forms/the-select-element/customizable-select/select-optgroup-legend-label-mutation.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-optgroup-legend-label.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-option-images.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-picker-icon-content-none.html
@@ -39377,8 +39383,8 @@ testharness css/css-highlight-api/HighlightRegistry-iteration-with-modifications
 testharness css/css-highlight-api/HighlightRegistry-iteration.html
 testharness css/css-highlight-api/HighlightRegistry-maplike-tampered-Map-prototype.html
 testharness css/css-highlight-api/HighlightRegistry-maplike.html
-testharness css/css-highlight-api/custom-highlight-universal-escaped-star.tentative.html
-testharness css/css-highlight-api/custom-highlight-universal-parsing-and-computed-style.tentative.html
+testharness css/css-highlight-api/custom-highlight-universal-escaped-star.html
+testharness css/css-highlight-api/custom-highlight-universal-parsing-and-computed-style.html
 testharness css/css-highlight-api/highlight-priority.html
 testharness css/css-highlight-api/highlight-pseudo-computed.html
 testharness css/css-highlight-api/highlight-pseudo-from-font-computed.html
@@ -43609,7 +43615,7 @@ testharness css/cssom/ttwf-cssom-doc-ext-load-tree-order.html
 testharness css/cssom/ttwf-cssom-document-extension.html
 testharness css/cssom/variable-names.html
 testharness css/cssom/xml-stylesheet-pi-in-doctype.xhtml
-testharness css/fetching/fetch-resources.sub.html
+testharness css/fetching/fetch-resources.https.sub.html
 testharness css/fill-stroke/animation/fill-interpolation.html
 testharness css/fill-stroke/animation/stroke-color-interpolation.html
 testharness css/fill-stroke/inheritance.html
@@ -51381,6 +51387,7 @@ testharness html/document-isolation-policy/origin-agent-cluster.tentative.https.
 testharness html/document-isolation-policy/partial-deployment.tentative.https.html
 testharness html/document-isolation-policy/reporting-cache-storage-corp.tentative.https.html
 testharness html/document-isolation-policy/reporting-subresource-corp.tentative.https.html
+testharness html/document-isolation-policy/reporting.tentative.https.html
 testharness html/document-isolation-policy/service-worker-coep-credentialless-proxy.https.tentative.window.js
 testharness html/document-isolation-policy/service-worker-coep-none-proxy.https.tentative.window.js
 testharness html/document-isolation-policy/shared-array-buffer.tentative.https.html
@@ -64045,6 +64052,7 @@ testharness webgl/compressedTexImage2D.html
 testharness webgl/compressedTexSubImage2D.html
 testharness webgl/drawingBufferToneMapping.html
 testharness webgl/framebuffer-initial-state.html
+testharness webgl/framebuffer-without-color-attachment.html
 testharness webgl/getParameter-stencil-masks.html
 testharness webgl/getUniformLocation-uniform-block-member.html
 testharness webgl/idlharness.any.js
