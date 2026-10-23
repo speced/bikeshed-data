@@ -1,4 +1,4 @@
-sha: 30c8fa729a746472239a3ef1dc5728a96a0e4f38
+sha: 5af3c135c9c97381733866150a7ada27d1029c50
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1561,6 +1561,7 @@ crashtest html/semantics/embedded-content/the-object-element/object-remove-param
 crashtest html/semantics/embedded-content/the-video-element/video-import-to-inactive-document-crash.html
 crashtest html/semantics/forms/constraints/number-input-lang-validationMessage-crash.html
 crashtest html/semantics/forms/constraints/reportValidity-crash.html
+crashtest html/semantics/forms/form-submission-0/construct-entry-list-disassociate-crash.html
 crashtest html/semantics/forms/resetting-a-form/form-attribute-detach-crash.html
 crashtest html/semantics/forms/textfieldselection/textarea-setRangeText-utf16-code-unit-crash.html
 crashtest html/semantics/forms/the-button-element/button-form-refers-to-elements-with-duplicate-ids-crash.html
@@ -5607,6 +5608,12 @@ reftest content-dpr/image-with-content-dpr-and-explicit-dimensions.html
 reftest content-dpr/tiled-background-image-with-content-dpr.html
 reftest content-dpr/tiled-background-svg-image-with-content-dpr.html
 reftest content-security-policy/generic/image-document-ignores-csp-for-loading-main-image.tentative.html
+reftest content-security-policy/img-src/shared-stylesheet-image-cache-bypass-strict-first.html
+reftest content-security-policy/img-src/shared-stylesheet-image-cache-bypass.html
+reftest content-security-policy/img-src/shared-stylesheet-image-set-cache-bypass-strict-first.html
+reftest content-security-policy/img-src/shared-stylesheet-image-set-cache-bypass.html
+reftest content-security-policy/img-src/shared-stylesheet-mask-cache-bypass-strict-first.html
+reftest content-security-policy/img-src/shared-stylesheet-mask-cache-bypass.html
 reftest content-security-policy/svg/svg-inline-without-scripting.html
 reftest contenteditable/synthetic-height.html
 reftest css/CSS2/abspos/abspos-containing-block-initial-001.xht
@@ -12506,6 +12513,8 @@ reftest css/css-animations/cancel-animation-shadow-slot-invalidation.html
 reftest css/css-animations/display-none-to-display-block.html
 reftest css/css-animations/flip-running-animation-via-variable.html
 reftest css/css-animations/inheritance-pseudo-element.html
+reftest css/css-animations/inherited-animation-opacity.html
+reftest css/css-animations/inherited-animation-transform.html
 reftest css/css-animations/jump-start-animation-before-phase.html
 reftest css/css-animations/keyframes-tree-scoped-property-with-var.html
 reftest css/css-animations/nested-scale-animations.html
@@ -35350,6 +35359,8 @@ testharness content-security-policy/font-src/font-mismatch-blocked.sub.html
 testharness content-security-policy/font-src/font-none-blocked.sub.html
 testharness content-security-policy/font-src/font-self-allowed.html
 testharness content-security-policy/font-src/font-stylesheet-font-blocked.sub.html
+testharness content-security-policy/font-src/shared-stylesheet-font-cache-bypass-strict-first.html
+testharness content-security-policy/font-src/shared-stylesheet-font-cache-bypass.html
 testharness content-security-policy/form-action/form-action-self-allowed-target-blank.html
 testharness content-security-policy/form-action/form-action-src-allowed-target-blank.sub.html
 testharness content-security-policy/form-action/form-action-src-allowed-target-frame.sub.html
@@ -40010,8 +40021,10 @@ testharness css/css-overflow/resizer-transform.tentative.html
 testharness css/css-overflow/scroll-axis-lock-dynamic-change.html
 testharness css/css-overflow/scroll-axis-lock-inheritance.html
 testharness css/css-overflow/scroll-axis-lock-interpolation.html
+testharness css/css-overflow/scroll-axis-lock-none-touch-subframe.html
 testharness css/css-overflow/scroll-axis-lock-none-touch-viewport.html
 testharness css/css-overflow/scroll-axis-lock-none-touch.html
+testharness css/css-overflow/scroll-axis-lock-none-wheel-subframe.html
 testharness css/css-overflow/scroll-axis-lock-none-wheel-viewport.html
 testharness css/css-overflow/scroll-axis-lock-none-wheel.html
 testharness css/css-overflow/scroll-axis-lock-not-propagated-from-body-quirks.html
@@ -55957,14 +55970,14 @@ testharness loading/preloader-css-import-single-quote.html
 testharness loading/preloader-css-import.html
 testharness loading/preloader-link-media.html
 testharness loading/preloader-template.html
-testharness long-animation-frame/conditional-measure-time-resolve.html
-testharness long-animation-frame/conditional-user-timing-basic.html
-testharness long-animation-frame/conditional-user-timing-buffer-limit.html
+testharness long-animation-frame/conditional-measure-time-resolve.tentative.html
+testharness long-animation-frame/conditional-user-timing-basic.tentative.html
+testharness long-animation-frame/conditional-user-timing-buffer-limit.tentative.html
 testharness long-animation-frame/loaf-basic.html
 testharness long-animation-frame/loaf-blocking-duration.html
 testharness long-animation-frame/loaf-bound-function-opaque-sanitization.html
 testharness long-animation-frame/loaf-buffered.html
-testharness long-animation-frame/loaf-congested-moment-worker.html
+testharness long-animation-frame/loaf-congested-moment-worker.tentative.html
 testharness long-animation-frame/loaf-container-queries.html
 testharness long-animation-frame/loaf-duration-clamping.html
 testharness long-animation-frame/loaf-event-blocking-duration.html
@@ -55983,6 +55996,7 @@ testharness long-animation-frame/loaf-pause-duration.html
 testharness long-animation-frame/loaf-pointer-without-render-iframe.html
 testharness long-animation-frame/loaf-pointer-without-render.html
 testharness long-animation-frame/loaf-popup.html
+testharness long-animation-frame/loaf-promise-import.tentative.html
 testharness long-animation-frame/loaf-promise-scheduled-render.html
 testharness long-animation-frame/loaf-promise.html
 testharness long-animation-frame/loaf-script-block.html
@@ -55991,7 +56005,7 @@ testharness long-animation-frame/loaf-script-nested-callback.html
 testharness long-animation-frame/loaf-script-window-attribution.html
 testharness long-animation-frame/loaf-source-location-redirect.html
 testharness long-animation-frame/loaf-source-location.html
-testharness long-animation-frame/loaf-stream-source-location.html
+testharness long-animation-frame/loaf-stream-source-location.tentative.html
 testharness long-animation-frame/loaf-stream.html
 testharness long-animation-frame/loaf-style-and-layout-duration-bounds.html
 testharness long-animation-frame/loaf-style-duration.html
@@ -56001,7 +56015,7 @@ testharness long-animation-frame/loaf-toJSON.html
 testharness long-animation-frame/loaf-ui-event-render-start.html
 testharness long-animation-frame/loaf-user-callback.html
 testharness long-animation-frame/loaf-visibility.html
-testharness long-animation-frame/performance-bind.html
+testharness long-animation-frame/performance-bind.tentative.html
 testharness longtask-timing/buffered-flag.window.js
 testharness longtask-timing/containerNames.html
 testharness longtask-timing/containerTypes.html
@@ -56203,6 +56217,7 @@ testharness mathml/relations/html5-tree/a-hreflang-getter.html
 testharness mathml/relations/html5-tree/a-hreflang-setter.html
 testharness mathml/relations/html5-tree/a-keydown-enter.html
 testharness mathml/relations/html5-tree/a-ping.html
+testharness mathml/relations/html5-tree/a-referrerpolicy-getter-setter.html
 testharness mathml/relations/html5-tree/a-rel-getter-setter.html
 testharness mathml/relations/html5-tree/a-rel-policy.html
 testharness mathml/relations/html5-tree/a-type-getter-001.html
@@ -57066,7 +57081,9 @@ testharness navigation-api/navigate-event/navigate-window-open.html
 testharness navigation-api/navigate-event/navigatesuccess-cross-document.html
 testharness navigation-api/navigate-event/navigatesuccess-same-document.html
 testharness navigation-api/navigate-event/navigation-back-cross-document-preventDefault.html
+testharness navigation-api/navigate-event/navigation-back-same-document-preventDefault-then-traverseTo.html
 testharness navigation-api/navigate-event/navigation-back-same-document-preventDefault.html
+testharness navigation-api/navigate-event/navigation-traverseTo-in-cross-site-iframe-same-document-preventDefault.html
 testharness navigation-api/navigate-event/navigation-traverseTo-in-iframe-same-document-preventDefault.html
 testharness navigation-api/navigate-event/navigation-traverseTo-navigates-top-and-same-doc-child-and-cross-doc-child.html
 testharness navigation-api/navigate-event/navigation-traverseTo-same-document-preventDefault-multiple-windows.html
@@ -57246,11 +57263,13 @@ testharness navigation-api/navigation-methods/sandboxing-navigate-parent.html
 testharness navigation-api/navigation-methods/sandboxing-navigate-sibling.html
 testharness navigation-api/navigation-methods/traverseTo-after-adding-iframe.html
 testharness navigation-api/navigation-methods/traverseTo-after-data-url.html
+testharness navigation-api/navigation-methods/traverseTo-and-forward-in-cross-site-iframe.html
 testharness navigation-api/navigation-methods/traverseTo-cross-document.html
 testharness navigation-api/navigation-methods/traverseTo-detach-between-navigate-and-navigatesuccess.html
 testharness navigation-api/navigation-methods/traverseTo-multiple-steps.html
 testharness navigation-api/navigation-methods/traverseTo-navigates-multiple-iframes.html
 testharness navigation-api/navigation-methods/traverseTo-same-document.html
+testharness navigation-api/navigation-methods/traverseTo-target-made-current-by-earlier-traversal.html
 testharness navigation-api/navigation-methods/traverseTo-with-cross-origin-in-history.html
 testharness navigation-api/ordering-and-transition/anchor-download-aborts-previous-navigation.html
 testharness navigation-api/ordering-and-transition/anchor-download-intercept-reject.html
@@ -58545,6 +58564,7 @@ testharness referrer-policy/gen/iframe.http-rp/no-referrer-when-downgrade/a-tag.
 testharness referrer-policy/gen/iframe.http-rp/no-referrer-when-downgrade/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer-when-downgrade/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer-when-downgrade/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/no-referrer-when-downgrade/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer-when-downgrade/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer-when-downgrade/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer-when-downgrade/sharedworker-module.http.html
@@ -58556,6 +58576,7 @@ testharness referrer-policy/gen/iframe.http-rp/no-referrer/a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/no-referrer/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/no-referrer/sharedworker-module.http.html
@@ -58567,6 +58588,7 @@ testharness referrer-policy/gen/iframe.http-rp/origin-when-cross-origin/a-tag.ht
 testharness referrer-policy/gen/iframe.http-rp/origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin-when-cross-origin/sharedworker-module.http.html
@@ -58578,6 +58600,7 @@ testharness referrer-policy/gen/iframe.http-rp/origin/a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/origin/sharedworker-module.http.html
@@ -58589,6 +58612,7 @@ testharness referrer-policy/gen/iframe.http-rp/same-origin/a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/same-origin/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/same-origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/same-origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/same-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/same-origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/same-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/same-origin/sharedworker-module.http.html
@@ -58600,6 +58624,7 @@ testharness referrer-policy/gen/iframe.http-rp/strict-origin-when-cross-origin/a
 testharness referrer-policy/gen/iframe.http-rp/strict-origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/strict-origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin-when-cross-origin/sharedworker-module.http.html
@@ -58611,6 +58636,7 @@ testharness referrer-policy/gen/iframe.http-rp/strict-origin/a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/strict-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/strict-origin/sharedworker-module.http.html
@@ -58622,6 +58648,7 @@ testharness referrer-policy/gen/iframe.http-rp/unsafe-url/a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/unsafe-url/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/unsafe-url/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/unsafe-url/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/unsafe-url/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/unsafe-url/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/unsafe-url/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/unsafe-url/sharedworker-module.http.html
@@ -58633,6 +58660,7 @@ testharness referrer-policy/gen/iframe.http-rp/unset/a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/unset/fetch.http.html
 testharness referrer-policy/gen/iframe.http-rp/unset/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/unset/img-tag.http.html
+testharness referrer-policy/gen/iframe.http-rp/unset/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/unset/script-tag.http.html
 testharness referrer-policy/gen/iframe.http-rp/unset/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.http-rp/unset/sharedworker-module.http.html
@@ -58644,6 +58672,7 @@ testharness referrer-policy/gen/iframe.meta/always/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/always/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/always/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/always/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/always/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/always/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/always/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/always/sharedworker-module.http.html
@@ -58655,6 +58684,7 @@ testharness referrer-policy/gen/iframe.meta/default/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/default/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/default/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/default/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/default/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/default/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/default/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/default/sharedworker-module.http.html
@@ -58666,6 +58696,7 @@ testharness referrer-policy/gen/iframe.meta/never/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/never/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/never/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/never/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/never/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/never/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/never/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/never/sharedworker-module.http.html
@@ -58677,6 +58708,7 @@ testharness referrer-policy/gen/iframe.meta/no-referrer-when-downgrade/a-tag.htt
 testharness referrer-policy/gen/iframe.meta/no-referrer-when-downgrade/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer-when-downgrade/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer-when-downgrade/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/no-referrer-when-downgrade/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer-when-downgrade/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer-when-downgrade/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer-when-downgrade/sharedworker-module.http.html
@@ -58688,6 +58720,7 @@ testharness referrer-policy/gen/iframe.meta/no-referrer/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/no-referrer/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/no-referrer/sharedworker-module.http.html
@@ -58699,6 +58732,7 @@ testharness referrer-policy/gen/iframe.meta/origin-when-cross-origin/a-tag.http.
 testharness referrer-policy/gen/iframe.meta/origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-cross-origin/sharedworker-module.http.html
@@ -58710,6 +58744,7 @@ testharness referrer-policy/gen/iframe.meta/origin-when-crossorigin/a-tag.http.h
 testharness referrer-policy/gen/iframe.meta/origin-when-crossorigin/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-crossorigin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-crossorigin/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/origin-when-crossorigin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-crossorigin/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-crossorigin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/origin-when-crossorigin/sharedworker-module.http.html
@@ -58721,6 +58756,7 @@ testharness referrer-policy/gen/iframe.meta/origin/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/origin/sharedworker-module.http.html
@@ -58732,6 +58768,7 @@ testharness referrer-policy/gen/iframe.meta/same-origin/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/same-origin/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/same-origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/same-origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/same-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/same-origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/same-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/same-origin/sharedworker-module.http.html
@@ -58743,6 +58780,7 @@ testharness referrer-policy/gen/iframe.meta/strict-origin-when-cross-origin/a-ta
 testharness referrer-policy/gen/iframe.meta/strict-origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/strict-origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin-when-cross-origin/sharedworker-module.http.html
@@ -58754,6 +58792,7 @@ testharness referrer-policy/gen/iframe.meta/strict-origin/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/strict-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/strict-origin/sharedworker-module.http.html
@@ -58765,6 +58804,7 @@ testharness referrer-policy/gen/iframe.meta/unsafe-url/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/unsafe-url/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/unsafe-url/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/unsafe-url/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/unsafe-url/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/unsafe-url/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/unsafe-url/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/unsafe-url/sharedworker-module.http.html
@@ -58776,6 +58816,7 @@ testharness referrer-policy/gen/iframe.meta/unset/a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/unset/fetch.http.html
 testharness referrer-policy/gen/iframe.meta/unset/iframe-tag.http.html
 testharness referrer-policy/gen/iframe.meta/unset/img-tag.http.html
+testharness referrer-policy/gen/iframe.meta/unset/mathml-a-tag.http.html
 testharness referrer-policy/gen/iframe.meta/unset/script-tag.http.html
 testharness referrer-policy/gen/iframe.meta/unset/sharedworker-classic.http.html
 testharness referrer-policy/gen/iframe.meta/unset/sharedworker-module.http.html
@@ -58786,48 +58827,56 @@ testharness referrer-policy/gen/iframe.meta/unset/xhr.http.html
 testharness referrer-policy/gen/req.attr/no-referrer-when-downgrade/a-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer-when-downgrade/iframe-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer-when-downgrade/img-tag.http.html
+testharness referrer-policy/gen/req.attr/no-referrer-when-downgrade/mathml-a-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer-when-downgrade/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/req.attr/no-referrer-when-downgrade/script-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer-when-downgrade/svg-a-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer/a-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer/iframe-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer/img-tag.http.html
+testharness referrer-policy/gen/req.attr/no-referrer/mathml-a-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/req.attr/no-referrer/script-tag.http.html
 testharness referrer-policy/gen/req.attr/no-referrer/svg-a-tag.http.html
 testharness referrer-policy/gen/req.attr/origin-when-cross-origin/a-tag.http.html
 testharness referrer-policy/gen/req.attr/origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/req.attr/origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/req.attr/origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/req.attr/origin-when-cross-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/req.attr/origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/req.attr/origin-when-cross-origin/svg-a-tag.http.html
 testharness referrer-policy/gen/req.attr/origin/a-tag.http.html
 testharness referrer-policy/gen/req.attr/origin/iframe-tag.http.html
 testharness referrer-policy/gen/req.attr/origin/img-tag.http.html
+testharness referrer-policy/gen/req.attr/origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/req.attr/origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/req.attr/origin/script-tag.http.html
 testharness referrer-policy/gen/req.attr/origin/svg-a-tag.http.html
 testharness referrer-policy/gen/req.attr/same-origin/a-tag.http.html
 testharness referrer-policy/gen/req.attr/same-origin/iframe-tag.http.html
 testharness referrer-policy/gen/req.attr/same-origin/img-tag.http.html
+testharness referrer-policy/gen/req.attr/same-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/req.attr/same-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/req.attr/same-origin/script-tag.http.html
 testharness referrer-policy/gen/req.attr/same-origin/svg-a-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin-when-cross-origin/a-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/req.attr/strict-origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin-when-cross-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/req.attr/strict-origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin-when-cross-origin/svg-a-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin/a-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin/iframe-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin/img-tag.http.html
+testharness referrer-policy/gen/req.attr/strict-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/req.attr/strict-origin/script-tag.http.html
 testharness referrer-policy/gen/req.attr/strict-origin/svg-a-tag.http.html
 testharness referrer-policy/gen/req.attr/unsafe-url/a-tag.http.html
 testharness referrer-policy/gen/req.attr/unsafe-url/iframe-tag.http.html
 testharness referrer-policy/gen/req.attr/unsafe-url/img-tag.http.html
+testharness referrer-policy/gen/req.attr/unsafe-url/mathml-a-tag.http.html
 testharness referrer-policy/gen/req.attr/unsafe-url/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/req.attr/unsafe-url/script-tag.http.html
 testharness referrer-policy/gen/req.attr/unsafe-url/svg-a-tag.http.html
@@ -58836,6 +58885,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer-when-downgrad
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer-when-downgrade/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer-when-downgrade/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer-when-downgrade/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer-when-downgrade/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer-when-downgrade/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer-when-downgrade/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer-when-downgrade/sharedworker-module.http.html
@@ -58847,6 +58897,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer/a-tag.http.ht
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/no-referrer/sharedworker-module.http.html
@@ -58858,6 +58909,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin-when-cross-origin/
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin-when-cross-origin/sharedworker-module.http.html
@@ -58869,6 +58921,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/origin/sharedworker-module.http.html
@@ -58880,6 +58933,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/same-origin/a-tag.http.ht
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/same-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/same-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/same-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/same-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/same-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/same-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/same-origin/sharedworker-module.http.html
@@ -58891,6 +58945,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin-when-cross-
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin-when-cross-origin/sharedworker-module.http.html
@@ -58902,6 +58957,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin/a-tag.http.
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/strict-origin/sharedworker-module.http.html
@@ -58913,6 +58969,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/unsafe-url/a-tag.http.htm
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unsafe-url/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unsafe-url/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unsafe-url/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/unsafe-url/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unsafe-url/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unsafe-url/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unsafe-url/sharedworker-module.http.html
@@ -58924,6 +58981,7 @@ testharness referrer-policy/gen/srcdoc-inherit.http-rp/unset/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unset/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unset/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unset/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.http-rp/unset/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unset/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unset/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.http-rp/unset/sharedworker-module.http.html
@@ -58935,6 +58993,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/always/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/always/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/always/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/always/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/always/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/always/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/always/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/always/sharedworker-module.http.html
@@ -58946,6 +59005,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/default/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/default/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/default/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/default/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/default/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/default/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/default/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/default/sharedworker-module.http.html
@@ -58957,6 +59017,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/never/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/never/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/never/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/never/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/never/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/never/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/never/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/never/sharedworker-module.http.html
@@ -58968,6 +59029,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer-when-downgrade/a
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer-when-downgrade/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer-when-downgrade/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer-when-downgrade/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer-when-downgrade/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer-when-downgrade/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer-when-downgrade/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer-when-downgrade/sharedworker-module.http.html
@@ -58979,6 +59041,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/no-referrer/sharedworker-module.http.html
@@ -58990,6 +59053,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-cross-origin/a-t
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-cross-origin/sharedworker-module.http.html
@@ -59001,6 +59065,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-crossorigin/a-ta
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-crossorigin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-crossorigin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-crossorigin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-crossorigin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-crossorigin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-crossorigin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin-when-crossorigin/sharedworker-module.http.html
@@ -59012,6 +59077,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/origin/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/origin/sharedworker-module.http.html
@@ -59023,6 +59089,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/same-origin/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/same-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/same-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/same-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/same-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/same-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/same-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/same-origin/sharedworker-module.http.html
@@ -59034,6 +59101,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin-when-cross-ori
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin-when-cross-origin/sharedworker-module.http.html
@@ -59045,6 +59113,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin/a-tag.http.htm
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/strict-origin/sharedworker-module.http.html
@@ -59056,6 +59125,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/unsafe-url/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unsafe-url/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unsafe-url/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unsafe-url/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/unsafe-url/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unsafe-url/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unsafe-url/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unsafe-url/sharedworker-module.http.html
@@ -59067,6 +59137,7 @@ testharness referrer-policy/gen/srcdoc-inherit.meta/unset/a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unset/fetch.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unset/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unset/img-tag.http.html
+testharness referrer-policy/gen/srcdoc-inherit.meta/unset/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unset/script-tag.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unset/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc-inherit.meta/unset/sharedworker-module.http.html
@@ -59078,6 +59149,7 @@ testharness referrer-policy/gen/srcdoc.meta/always/a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/always/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/always/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/always/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/always/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/always/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/always/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/always/sharedworker-module.http.html
@@ -59089,6 +59161,7 @@ testharness referrer-policy/gen/srcdoc.meta/default/a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/default/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/default/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/default/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/default/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/default/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/default/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/default/sharedworker-module.http.html
@@ -59100,6 +59173,7 @@ testharness referrer-policy/gen/srcdoc.meta/never/a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/never/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/never/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/never/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/never/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/never/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/never/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/never/sharedworker-module.http.html
@@ -59111,6 +59185,7 @@ testharness referrer-policy/gen/srcdoc.meta/no-referrer-when-downgrade/a-tag.htt
 testharness referrer-policy/gen/srcdoc.meta/no-referrer-when-downgrade/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer-when-downgrade/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer-when-downgrade/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/no-referrer-when-downgrade/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer-when-downgrade/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer-when-downgrade/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer-when-downgrade/sharedworker-module.http.html
@@ -59122,6 +59197,7 @@ testharness referrer-policy/gen/srcdoc.meta/no-referrer/a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/no-referrer/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/no-referrer/sharedworker-module.http.html
@@ -59133,6 +59209,7 @@ testharness referrer-policy/gen/srcdoc.meta/origin-when-cross-origin/a-tag.http.
 testharness referrer-policy/gen/srcdoc.meta/origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-cross-origin/sharedworker-module.http.html
@@ -59144,6 +59221,7 @@ testharness referrer-policy/gen/srcdoc.meta/origin-when-crossorigin/a-tag.http.h
 testharness referrer-policy/gen/srcdoc.meta/origin-when-crossorigin/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-crossorigin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-crossorigin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/origin-when-crossorigin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-crossorigin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-crossorigin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin-when-crossorigin/sharedworker-module.http.html
@@ -59155,6 +59233,7 @@ testharness referrer-policy/gen/srcdoc.meta/origin/a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/origin/sharedworker-module.http.html
@@ -59166,6 +59245,7 @@ testharness referrer-policy/gen/srcdoc.meta/same-origin/a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/same-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/same-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/same-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/same-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/same-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/same-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/same-origin/sharedworker-module.http.html
@@ -59177,6 +59257,7 @@ testharness referrer-policy/gen/srcdoc.meta/strict-origin-when-cross-origin/a-ta
 testharness referrer-policy/gen/srcdoc.meta/strict-origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/strict-origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin-when-cross-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin-when-cross-origin/sharedworker-module.http.html
@@ -59188,6 +59269,7 @@ testharness referrer-policy/gen/srcdoc.meta/strict-origin/a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/strict-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/strict-origin/sharedworker-module.http.html
@@ -59199,6 +59281,7 @@ testharness referrer-policy/gen/srcdoc.meta/unsafe-url/a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/unsafe-url/fetch.http.html
 testharness referrer-policy/gen/srcdoc.meta/unsafe-url/iframe-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/unsafe-url/img-tag.http.html
+testharness referrer-policy/gen/srcdoc.meta/unsafe-url/mathml-a-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/unsafe-url/script-tag.http.html
 testharness referrer-policy/gen/srcdoc.meta/unsafe-url/sharedworker-classic.http.html
 testharness referrer-policy/gen/srcdoc.meta/unsafe-url/sharedworker-module.http.html
@@ -59210,6 +59293,7 @@ testharness referrer-policy/gen/top.http-rp/no-referrer-when-downgrade/a-tag.htt
 testharness referrer-policy/gen/top.http-rp/no-referrer-when-downgrade/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer-when-downgrade/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer-when-downgrade/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/no-referrer-when-downgrade/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer-when-downgrade/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer-when-downgrade/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer-when-downgrade/sharedworker-classic.http.html
@@ -59222,6 +59306,7 @@ testharness referrer-policy/gen/top.http-rp/no-referrer/a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/no-referrer/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/no-referrer/sharedworker-classic.http.html
@@ -59234,6 +59319,7 @@ testharness referrer-policy/gen/top.http-rp/origin-when-cross-origin/a-tag.http.
 testharness referrer-policy/gen/top.http-rp/origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/origin-when-cross-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/origin-when-cross-origin/sharedworker-classic.http.html
@@ -59246,6 +59332,7 @@ testharness referrer-policy/gen/top.http-rp/origin/a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/origin/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/origin/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/origin/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/origin/sharedworker-classic.http.html
@@ -59258,6 +59345,7 @@ testharness referrer-policy/gen/top.http-rp/same-origin/a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/same-origin/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/same-origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/same-origin/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/same-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/same-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/same-origin/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/same-origin/sharedworker-classic.http.html
@@ -59270,6 +59358,7 @@ testharness referrer-policy/gen/top.http-rp/strict-origin-when-cross-origin/a-ta
 testharness referrer-policy/gen/top.http-rp/strict-origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/strict-origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin-when-cross-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin-when-cross-origin/sharedworker-classic.http.html
@@ -59282,6 +59371,7 @@ testharness referrer-policy/gen/top.http-rp/strict-origin/a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/strict-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/strict-origin/sharedworker-classic.http.html
@@ -59294,6 +59384,7 @@ testharness referrer-policy/gen/top.http-rp/unsafe-url/a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/unsafe-url/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/unsafe-url/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/unsafe-url/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/unsafe-url/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/unsafe-url/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/unsafe-url/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/unsafe-url/sharedworker-classic.http.html
@@ -59306,6 +59397,7 @@ testharness referrer-policy/gen/top.http-rp/unset/a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/unset/fetch.http.html
 testharness referrer-policy/gen/top.http-rp/unset/iframe-tag.http.html
 testharness referrer-policy/gen/top.http-rp/unset/img-tag.http.html
+testharness referrer-policy/gen/top.http-rp/unset/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.http-rp/unset/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.http-rp/unset/script-tag.http.html
 testharness referrer-policy/gen/top.http-rp/unset/sharedworker-classic.http.html
@@ -59318,6 +59410,7 @@ testharness referrer-policy/gen/top.meta/always/a-tag.http.html
 testharness referrer-policy/gen/top.meta/always/fetch.http.html
 testharness referrer-policy/gen/top.meta/always/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/always/img-tag.http.html
+testharness referrer-policy/gen/top.meta/always/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/always/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/always/script-tag.http.html
 testharness referrer-policy/gen/top.meta/always/sharedworker-classic.http.html
@@ -59330,6 +59423,7 @@ testharness referrer-policy/gen/top.meta/default/a-tag.http.html
 testharness referrer-policy/gen/top.meta/default/fetch.http.html
 testharness referrer-policy/gen/top.meta/default/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/default/img-tag.http.html
+testharness referrer-policy/gen/top.meta/default/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/default/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/default/script-tag.http.html
 testharness referrer-policy/gen/top.meta/default/sharedworker-classic.http.html
@@ -59342,6 +59436,7 @@ testharness referrer-policy/gen/top.meta/never/a-tag.http.html
 testharness referrer-policy/gen/top.meta/never/fetch.http.html
 testharness referrer-policy/gen/top.meta/never/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/never/img-tag.http.html
+testharness referrer-policy/gen/top.meta/never/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/never/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/never/script-tag.http.html
 testharness referrer-policy/gen/top.meta/never/sharedworker-classic.http.html
@@ -59354,6 +59449,7 @@ testharness referrer-policy/gen/top.meta/no-referrer-when-downgrade/a-tag.http.h
 testharness referrer-policy/gen/top.meta/no-referrer-when-downgrade/fetch.http.html
 testharness referrer-policy/gen/top.meta/no-referrer-when-downgrade/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/no-referrer-when-downgrade/img-tag.http.html
+testharness referrer-policy/gen/top.meta/no-referrer-when-downgrade/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/no-referrer-when-downgrade/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/no-referrer-when-downgrade/script-tag.http.html
 testharness referrer-policy/gen/top.meta/no-referrer-when-downgrade/sharedworker-classic.http.html
@@ -59366,6 +59462,7 @@ testharness referrer-policy/gen/top.meta/no-referrer/a-tag.http.html
 testharness referrer-policy/gen/top.meta/no-referrer/fetch.http.html
 testharness referrer-policy/gen/top.meta/no-referrer/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/no-referrer/img-tag.http.html
+testharness referrer-policy/gen/top.meta/no-referrer/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/no-referrer/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/no-referrer/script-tag.http.html
 testharness referrer-policy/gen/top.meta/no-referrer/sharedworker-classic.http.html
@@ -59378,6 +59475,7 @@ testharness referrer-policy/gen/top.meta/origin-when-cross-origin/a-tag.http.htm
 testharness referrer-policy/gen/top.meta/origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/top.meta/origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/top.meta/origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/origin-when-cross-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/top.meta/origin-when-cross-origin/sharedworker-classic.http.html
@@ -59390,6 +59488,7 @@ testharness referrer-policy/gen/top.meta/origin-when-crossorigin/a-tag.http.html
 testharness referrer-policy/gen/top.meta/origin-when-crossorigin/fetch.http.html
 testharness referrer-policy/gen/top.meta/origin-when-crossorigin/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/origin-when-crossorigin/img-tag.http.html
+testharness referrer-policy/gen/top.meta/origin-when-crossorigin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/origin-when-crossorigin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/origin-when-crossorigin/script-tag.http.html
 testharness referrer-policy/gen/top.meta/origin-when-crossorigin/sharedworker-classic.http.html
@@ -59402,6 +59501,7 @@ testharness referrer-policy/gen/top.meta/origin/a-tag.http.html
 testharness referrer-policy/gen/top.meta/origin/fetch.http.html
 testharness referrer-policy/gen/top.meta/origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/origin/img-tag.http.html
+testharness referrer-policy/gen/top.meta/origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/origin/script-tag.http.html
 testharness referrer-policy/gen/top.meta/origin/sharedworker-classic.http.html
@@ -59414,6 +59514,7 @@ testharness referrer-policy/gen/top.meta/same-origin/a-tag.http.html
 testharness referrer-policy/gen/top.meta/same-origin/fetch.http.html
 testharness referrer-policy/gen/top.meta/same-origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/same-origin/img-tag.http.html
+testharness referrer-policy/gen/top.meta/same-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/same-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/same-origin/script-tag.http.html
 testharness referrer-policy/gen/top.meta/same-origin/sharedworker-classic.http.html
@@ -59426,6 +59527,7 @@ testharness referrer-policy/gen/top.meta/strict-origin-when-cross-origin/a-tag.h
 testharness referrer-policy/gen/top.meta/strict-origin-when-cross-origin/fetch.http.html
 testharness referrer-policy/gen/top.meta/strict-origin-when-cross-origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/strict-origin-when-cross-origin/img-tag.http.html
+testharness referrer-policy/gen/top.meta/strict-origin-when-cross-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/strict-origin-when-cross-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/strict-origin-when-cross-origin/script-tag.http.html
 testharness referrer-policy/gen/top.meta/strict-origin-when-cross-origin/sharedworker-classic.http.html
@@ -59438,6 +59540,7 @@ testharness referrer-policy/gen/top.meta/strict-origin/a-tag.http.html
 testharness referrer-policy/gen/top.meta/strict-origin/fetch.http.html
 testharness referrer-policy/gen/top.meta/strict-origin/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/strict-origin/img-tag.http.html
+testharness referrer-policy/gen/top.meta/strict-origin/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/strict-origin/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/strict-origin/script-tag.http.html
 testharness referrer-policy/gen/top.meta/strict-origin/sharedworker-classic.http.html
@@ -59450,6 +59553,7 @@ testharness referrer-policy/gen/top.meta/unsafe-url/a-tag.http.html
 testharness referrer-policy/gen/top.meta/unsafe-url/fetch.http.html
 testharness referrer-policy/gen/top.meta/unsafe-url/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/unsafe-url/img-tag.http.html
+testharness referrer-policy/gen/top.meta/unsafe-url/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/unsafe-url/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/unsafe-url/script-tag.http.html
 testharness referrer-policy/gen/top.meta/unsafe-url/sharedworker-classic.http.html
@@ -59462,6 +59566,7 @@ testharness referrer-policy/gen/top.meta/unset/a-tag.http.html
 testharness referrer-policy/gen/top.meta/unset/fetch.http.html
 testharness referrer-policy/gen/top.meta/unset/iframe-tag.http.html
 testharness referrer-policy/gen/top.meta/unset/img-tag.http.html
+testharness referrer-policy/gen/top.meta/unset/mathml-a-tag.http.html
 testharness referrer-policy/gen/top.meta/unset/script-tag-dynamic-import.http.html
 testharness referrer-policy/gen/top.meta/unset/script-tag.http.html
 testharness referrer-policy/gen/top.meta/unset/sharedworker-classic.http.html
@@ -61874,6 +61979,8 @@ testharness svg/coordinate-systems/SVGTransformList.list-01.html
 testharness svg/coordinate-systems/SVGTransformList.list-02.html
 testharness svg/coordinate-systems/outer-svg-intrinsic-size-001.html
 testharness svg/coordinate-systems/outer-svg-intrinsic-size-002.html
+testharness svg/coordinate-systems/outer-svg-resize-001e.html
+testharness svg/coordinate-systems/outer-svg-resize-001o.html
 testharness svg/coordinate-systems/svgtransformlist-replaceitem.html
 testharness svg/coordinate-systems/transform-translate-single-parameter.html
 testharness svg/coordinate-systems/viewBox-invalid-attribute-baseval.tentative.html
@@ -64653,6 +64760,7 @@ testharness webrtc-stats/hardware-capability-stats.https.html
 testharness webrtc-stats/idlharness.window.js
 testharness webrtc-stats/outbound-rtp.https.html
 testharness webrtc-stats/rtp-stats-creation.html
+testharness webrtc-stats/stats-creation.html
 testharness webrtc-stats/supported-stats.https.html
 testharness webrtc-stats/video-psnr.https.html
 testharness webrtc-svc/RTCRtpParameters-scalability-av1.html
@@ -65191,6 +65299,7 @@ testharness webtransport/receive-stream-stats.https.any.js
 testharness webtransport/reliability.https.any.js
 testharness webtransport/reliability.https.window.js
 testharness webtransport/response-headers.https.any.js
+testharness webtransport/send-stream-stats.https.any.js
 testharness webtransport/sendgroup.https.any.js
 testharness webtransport/sendorder.https.any.js
 testharness webtransport/sendstream-bad-chunk.https.any.js
