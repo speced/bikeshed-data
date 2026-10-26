@@ -117,8 +117,6 @@
     "\"digital-credentials-get\"",
     "\"display-capture\"",
     "\"empty\"",
-    "\"english-linear\"",
-    "\"english-rotation\"",
     "\"gamepad\"",
     "\"geolocation\"",
     "\"gyroscope\"",
@@ -134,15 +132,11 @@
     "\"music\"",
     "\"no-referrer\"",
     "\"no-referrer-when-downgrade\"",
-    "\"none\"",
     "\"origin\"",
     "\"origin-when-cross-origin\"",
     "\"payment\"",
     "\"push\"",
-    "\"reserved\"",
     "\"same-origin\"",
-    "\"si-linear\"",
-    "\"si-rotation\"",
     "\"smart-poster\"",
     "\"speaker-selection\"",
     "\"speech\"",
@@ -153,7 +147,6 @@
     "\"unknown\"",
     "\"unsafe-url\"",
     "\"url\"",
-    "\"vendor-defined\"",
     "\"video\"",
     "\"viewport-capture\"",
     "\"web-share\"",
@@ -13434,6 +13427,7 @@
     "determine COS disclosure",
     "determine a WebGPU layer texture layout",
     "determine a field's category",
+    "determine a model poster frame",
     "determine eligibility for an associated site",
     "determine gap decoration segments",
     "determine if DTMF can be sent",
@@ -16239,7 +16233,6 @@
     "input.WheelScrollAction",
     "input.WheelSourceAction",
     "input.WheelSourceActions",
-    "inputreport",
     "inputs",
     "ins",
     "insecure TLS Certificates",
@@ -17748,6 +17741,7 @@
     "modals",
     "mode",
     "model",
+    "model content is available",
     "model context",
     "model fit algorithm",
     "model resource loading is permitted",
@@ -39006,11 +39000,16 @@
   ],
   "HID": [
     "[[devices]]",
+    "connect",
+    "disconnect",
     "getDevices()",
     "onconnect",
     "ondisconnect",
     "requestDevice()",
     "requestDevice(options)"
+  ],
+  "HID/requestDevice(options)": [
+    "options"
   ],
   "HIDCollectionInfo": [
     "children",
@@ -39022,9 +39021,17 @@
     "usagePage"
   ],
   "HIDConnectionEvent": [
-    "constructor()",
+    "HIDConnectionEvent(type, eventInitDict)",
     "constructor(type, eventInitDict)",
     "device"
+  ],
+  "HIDConnectionEvent/HIDConnectionEvent(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "HIDConnectionEvent/constructor(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
   ],
   "HIDConnectionEventInit": [
     "device"
@@ -39041,6 +39048,7 @@
     "close()",
     "collections",
     "forget()",
+    "inputreport",
     "oninputreport",
     "open()",
     "opened",
@@ -39054,6 +39062,17 @@
     "sendReport(reportId, data)",
     "vendorId"
   ],
+  "HIDDevice/receiveFeatureReport(reportId)": [
+    "reportId"
+  ],
+  "HIDDevice/sendFeatureReport(reportId, data)": [
+    "data",
+    "reportId"
+  ],
+  "HIDDevice/sendReport(reportId, data)": [
+    "data",
+    "reportId"
+  ],
   "HIDDeviceFilter": [
     "productId",
     "usage",
@@ -39065,11 +39084,19 @@
     "filters"
   ],
   "HIDInputReportEvent": [
-    "constructor()",
+    "HIDInputReportEvent(type, eventInitDict)",
     "constructor(type, eventInitDict)",
     "data",
     "device",
     "reportId"
+  ],
+  "HIDInputReportEvent/HIDInputReportEvent(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
+  ],
+  "HIDInputReportEvent/constructor(type, eventInitDict)": [
+    "eventInitDict",
+    "type"
   ],
   "HIDInputReportEventInit": [
     "data",
@@ -39111,13 +39138,13 @@
     "wrap"
   ],
   "HIDUnitSystem": [
-    "english-linear",
-    "english-rotation",
-    "none",
-    "reserved",
-    "si-linear",
-    "si-rotation",
-    "vendor-defined"
+    "\"english-linear\"",
+    "\"english-rotation\"",
+    "\"none\"",
+    "\"reserved\"",
+    "\"si-linear\"",
+    "\"si-rotation\"",
+    "\"vendor-defined\""
   ],
   "HMACGetSecretInput": [
     "salt1",
@@ -39812,6 +39839,7 @@
     "entityTransform",
     "environmentMap",
     "environmentMapReady",
+    "poster",
     "ready",
     "stageMode"
   ],
@@ -67919,6 +67947,7 @@
     "loading",
     "loop",
     "poster",
+    "poster frame",
     "src",
     "stagemode",
     "width"
@@ -69500,6 +69529,7 @@
     "default allowlists",
     "direct-sockets",
     "direct-sockets-multicast",
+    "hid",
     "private-state-token-issuance",
     "private-state-token-redemption",
     "serial",
