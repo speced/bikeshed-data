@@ -1602,6 +1602,10 @@
     "AgentSignifier",
     "AgentSignifier()",
     "AggregateError",
+    "Alarm",
+    "AlarmCreateInfo",
+    "AlarmListener",
+    "Alarms",
     "Algorithm",
     "Algorithm Normalization",
     "AlgorithmIdentifier",
@@ -6097,6 +6101,7 @@
     "OffsetOfMember",
     "On",
     "On Screen",
+    "OnAlarmEvent",
     "OnBeforeUnloadEventHandler",
     "OnBeforeUnloadEventHandlerNonNull",
     "OnErrorEventHandler",
@@ -11840,6 +11845,7 @@
     "col",
     "colgroup",
     "collapse",
+    "collapse fullwidth punctuation",
     "collapse through",
     "collapsed",
     "collapsed block prop",
@@ -22015,10 +22021,14 @@
     "sosa:ObservingProcedure",
     "sosa:OperatingConditions",
     "sosa:Platform",
+    "sosa:PreparationProcedure",
+    "sosa:PreparationStep",
     "sosa:Procedure",
     "sosa:Property",
+    "sosa:RelationshipNature",
     "sosa:Sample",
     "sosa:SampleCollection",
+    "sosa:SampleRelationship",
     "sosa:Sampler",
     "sosa:Sampling",
     "sosa:SamplingCollection",
@@ -22032,6 +22042,7 @@
     "sosa:System",
     "sosa:actsOn",
     "sosa:actsOnProperty",
+    "sosa:classification",
     "sosa:deployedAsset",
     "sosa:deployedOnPlatform",
     "sosa:deployedSystem",
@@ -22047,16 +22058,19 @@
     "sosa:hasOperatingConditions",
     "sosa:hasOriginalSample",
     "sosa:hasOutput",
+    "sosa:hasPreparationStep",
     "sosa:hasProcedure",
     "sosa:hasProperty",
     "sosa:hasProxy",
     "sosa:hasResult",
     "sosa:hasSample",
+    "sosa:hasSampleRelationship",
     "sosa:hasSimpleResult",
     "sosa:hasSubSystem",
     "sosa:hasSystemCapability",
     "sosa:hasUltimateFeatureOfInterest",
     "sosa:hasValidityContext",
+    "sosa:horizontalPositionalAccuracy",
     "sosa:hosts",
     "sosa:implementedBy",
     "sosa:implements",
@@ -22087,25 +22101,44 @@
     "sosa:madeBySystem",
     "sosa:madeExecution",
     "sosa:madeObservation",
+    "sosa:madeOnPlatform",
     "sosa:madeSampling",
     "sosa:madeSamplingHasResult",
+    "sosa:makesObservationCollection",
+    "sosa:metadata",
+    "sosa:natureOfRelationship",
     "sosa:observationRelatedTo",
+    "sosa:observationType",
     "sosa:observedProperty",
     "sosa:observes",
     "sosa:originated",
     "sosa:outputFor",
+    "sosa:parameter",
     "sosa:phenomenonOccurred",
     "sosa:phenomenonTime",
+    "sosa:preparedSample",
+    "sosa:processingDetails",
     "sosa:propertyFor",
     "sosa:qualityOf",
     "sosa:relatedObservation",
+    "sosa:relatedSample",
+    "sosa:relatedSampling",
     "sosa:resultQuality",
     "sosa:resultTime",
+    "sosa:samplePreparationStep",
+    "sosa:samplingLocation",
+    "sosa:samplingTime",
+    "sosa:shape",
+    "sosa:size",
+    "sosa:sourceLocation",
     "sosa:startTime",
+    "sosa:storageLocation",
     "sosa:systemDeployment",
     "sosa:usedForExecution",
     "sosa:usedForExecutionHasResult",
     "sosa:usedProcedure",
+    "sosa:validTime",
+    "sosa:verticalPositionalAccuracy",
     "sosa:wasActedOnBy",
     "sosa:wasObservedBy",
     "sosa:wasOriginatedBy",
@@ -26201,6 +26234,61 @@
     "message",
     "name"
   ],
+  "Alarm": [
+    "name",
+    "periodInMinutes",
+    "persistAcrossSessions",
+    "scheduledTime"
+  ],
+  "AlarmCreateInfo": [
+    "delayInMinutes",
+    "name",
+    "periodInMinutes",
+    "persistAcrossSessions",
+    "when"
+  ],
+  "AlarmListener": [
+    "alarm"
+  ],
+  "Alarms": [
+    "clear()",
+    "clear(name)",
+    "clearAll()",
+    "create()",
+    "create(alarmInfo)",
+    "create(name)",
+    "create(name, alarmInfo)",
+    "get()",
+    "get(name)",
+    "getAll()",
+    "onAlarm"
+  ],
+  "Alarms/clear()": [
+    "name"
+  ],
+  "Alarms/clear(name)": [
+    "name"
+  ],
+  "Alarms/create()": [
+    "alarmInfo"
+  ],
+  "Alarms/create(alarmInfo)": [
+    "alarmInfo"
+  ],
+  "Alarms/create(name)": [
+    "alarmInfo",
+    "name"
+  ],
+  "Alarms/create(name, alarmInfo)": [
+    "alarmInfo",
+    "name"
+  ],
+  "Alarms/get()": [
+    "name"
+  ],
+  "Alarms/get(name)": [
+    "name"
+  ],
   "Algorithm": [
     "name"
   ],
@@ -28785,6 +28873,9 @@
     "onmessage",
     "onmessageerror",
     "postMessage(message)"
+  ],
+  "Browser": [
+    "alarms"
   ],
   "BrowserBoundSignature": [
     "signature"
@@ -46745,6 +46836,20 @@
     "oncontextrestored",
     "transferToImageBitmap()",
     "width"
+  ],
+  "OnAlarmEvent": [
+    "addListener(listener)",
+    "hasListener(listener)",
+    "removeListener(listener)"
+  ],
+  "OnAlarmEvent/addListener(listener)": [
+    "listener"
+  ],
+  "OnAlarmEvent/hasListener(listener)": [
+    "listener"
+  ],
+  "OnAlarmEvent/removeListener(listener)": [
+    "listener"
   ],
   "OpaqueProperty": [
     "\"opaque\""
@@ -72989,12 +73094,17 @@
     "none"
   ],
   "text-spacing-trim": [
+    "allow-end",
     "auto",
     "normal",
+    "space-adjacent",
     "space-all",
     "space-first",
+    "space-start",
+    "trim-adjacent",
     "trim-all",
     "trim-both",
+    "trim-end",
     "trim-start"
   ],
   "text-text-emphasis": [

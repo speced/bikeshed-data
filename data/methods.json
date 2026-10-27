@@ -6615,6 +6615,15 @@
         "MediaQueryList"
       ],
       "shortname": "cssom-view"
+    },
+    "addListener(listener)": {
+      "args": [
+        "listener"
+      ],
+      "for": [
+        "OnAlarmEvent"
+      ],
+      "shortname": "webextensions"
     }
   },
   "addModule()": {
@@ -8719,6 +8728,7 @@
     "clear()": {
       "args": [],
       "for": [
+        "Alarms",
         "DataTransferItemList",
         "Document",
         "FontFaceSet",
@@ -8738,6 +8748,24 @@
         "console"
       ],
       "shortname": "console"
+    },
+    "clear(name)": {
+      "args": [
+        "name"
+      ],
+      "for": [
+        "Alarms"
+      ],
+      "shortname": "webextensions"
+    }
+  },
+  "clearAll()": {
+    "clearAll()": {
+      "args": [],
+      "for": [
+        "Alarms"
+      ],
+      "shortname": "webextensions"
     }
   },
   "clearAppBadge()": {
@@ -12694,6 +12722,7 @@
     "create()": {
       "args": [],
       "for": [
+        "Alarms",
         "CredentialsContainer",
         "LanguageDetector",
         "LanguageModel",
@@ -12703,7 +12732,35 @@
         "TextDetector",
         "Writer"
       ],
-      "shortname": "prompt-api"
+      "shortname": "webextensions"
+    },
+    "create(alarmInfo)": {
+      "args": [
+        "alarmInfo"
+      ],
+      "for": [
+        "Alarms"
+      ],
+      "shortname": "webextensions"
+    },
+    "create(name)": {
+      "args": [
+        "name"
+      ],
+      "for": [
+        "Alarms"
+      ],
+      "shortname": "webextensions"
+    },
+    "create(name, alarmInfo)": {
+      "args": [
+        "name",
+        "alarmInfo"
+      ],
+      "for": [
+        "Alarms"
+      ],
+      "shortname": "webextensions"
     },
     "create(options)": {
       "args": [
@@ -18129,6 +18186,7 @@
     "get()": {
       "args": [],
       "for": [
+        "Alarms",
         "CookieStore",
         "CredentialsContainer",
         "MediaKeyStatusMap",
@@ -18192,6 +18250,7 @@
         "name"
       ],
       "for": [
+        "Alarms",
         "CookieStore",
         "CustomElementRegistry",
         "FormData",
@@ -18246,6 +18305,7 @@
     "getAll()": {
       "args": [],
       "for": [
+        "Alarms",
         "ContentIndex",
         "CookieStore",
         "IDBIndex",
@@ -22083,6 +22143,17 @@
         "Document"
       ],
       "shortname": "html"
+    }
+  },
+  "hasListener()": {
+    "hasListener(listener)": {
+      "args": [
+        "listener"
+      ],
+      "for": [
+        "OnAlarmEvent"
+      ],
+      "shortname": "webextensions"
     }
   },
   "hasOwn()": {
@@ -28917,6 +28988,15 @@
         "MediaQueryList"
       ],
       "shortname": "cssom-view"
+    },
+    "removeListener(listener)": {
+      "args": [
+        "listener"
+      ],
+      "for": [
+        "OnAlarmEvent"
+      ],
+      "shortname": "webextensions"
     }
   },
   "removeNamedItem()": {
