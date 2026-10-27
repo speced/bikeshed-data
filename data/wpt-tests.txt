@@ -1,4 +1,4 @@
-sha: c861cd3a610c3b7141e5c4543be8c3d89189b6ff
+sha: 572be6c6d603f8f612ebb7295920e3790895223d
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -998,6 +998,7 @@ crashtest css/css-tables/multicol-table-collapsed-border-crash.html
 crashtest css/css-tables/multicol-table-crash.html
 crashtest css/css-tables/table-caption-after-crash.html
 crashtest css/css-tables/table-collapsed-row-or-column-crash.html
+crashtest css/css-tables/visibility-collapse-colgroup-crash.html
 crashtest css/css-tables/visibility-collapse-colspan-crash.html
 crashtest css/css-tables/visibility-collapse-rowspan-crash.html
 crashtest css/css-text-decor/crashtests/pseudo-element-text-decoration-under-pseudo-first-line-crash.html
@@ -5589,6 +5590,7 @@ reftest compat/webkit-box-horizontal-reverse-variants.html
 reftest compat/webkit-box-horizontal-rtl-variants.html
 reftest compat/webkit-box-ignores-flex-wrap.tentative.html
 reftest compat/webkit-box-rtl-flex.html
+reftest compat/webkit-box-z-index-002.html
 reftest compat/webkit-box-z-index.html
 reftest compat/webkit-input-placeholder.html
 reftest compat/webkit-linear-gradient-diff-unprefixed.html
@@ -16323,6 +16325,8 @@ reftest css/css-flexbox/flex-item-transferred-sizes-padding-content-sizing.html
 reftest css/css-flexbox/flex-item-vertical-align.html
 reftest css/css-flexbox/flex-item-z-ordering-001.html
 reftest css/css-flexbox/flex-item-z-ordering-002.html
+reftest css/css-flexbox/flex-item-z-ordering-003.html
+reftest css/css-flexbox/flex-item-z-ordering-004.html
 reftest css/css-flexbox/flex-lines/multi-line-wrap-reverse-column-reverse.html
 reftest css/css-flexbox/flex-lines/multi-line-wrap-reverse-row-reverse.html
 reftest css/css-flexbox/flex-lines/multi-line-wrap-with-column-reverse.html
@@ -26306,8 +26310,10 @@ reftest css/css-transforms/backface-visibility-hidden-005.html
 reftest css/css-transforms/backface-visibility-hidden-006.html
 reftest css/css-transforms/backface-visibility-hidden-animated-001.html
 reftest css/css-transforms/backface-visibility-hidden-animated-002.html
+reftest css/css-transforms/backface-visibility-hidden-background-blend-mode.html
 reftest css/css-transforms/backface-visibility-hidden-child-translate.html
 reftest css/css-transforms/backface-visibility-hidden-child-will-change-transform.html
+reftest css/css-transforms/backface-visibility-hidden-filter.html
 reftest css/css-transforms/backface-visibility-with-sibling-001.html
 reftest css/css-transforms/change-perspective-property.html
 reftest css/css-transforms/change-scale-wide-range.html
@@ -44386,6 +44392,7 @@ testharness css/selectors/valid-invalid-form-fieldset.html
 testharness css/selectors/valid-invalid-pseudo.html
 testharness css/selectors/webkit-pseudo-element.html
 testharness css/selectors/x-pseudo-element.html
+testharness css/selectors/xml-class-selector-combinators.xml
 testharness custom-elements/CustomElementRegistry-constructor-and-callbacks-are-held-strongly.html
 testharness custom-elements/CustomElementRegistry-getName.html
 testharness custom-elements/CustomElementRegistry.html
@@ -51526,6 +51533,7 @@ testharness html/document-isolation-policy/dedicated-worker.tentative.https.html
 testharness html/document-isolation-policy/header-parsing.tentative.https.html
 testharness html/document-isolation-policy/isolate-and-require-corp-load-from-cache-storage.tentative.https.html
 testharness html/document-isolation-policy/isolate-and-require-corp.tentative.https.html
+testharness html/document-isolation-policy/location-replace-keeps-entry.tentative.https.html
 testharness html/document-isolation-policy/message-channel.tentative.https.html
 testharness html/document-isolation-policy/navigate-across-policies.tentative.https.html
 testharness html/document-isolation-policy/no-secure-context-https-iframe.tentative.html
@@ -51601,6 +51609,7 @@ testharness html/dom/documents/dom-tree-accessors/nameditem-img-name-removed.htm
 testharness html/dom/documents/dom-tree-accessors/nameditem-insertion-attr-mutation.html
 testharness html/dom/documents/dom-tree-accessors/nameditem-names.html
 testharness html/dom/documents/dom-tree-accessors/nameditem-no-shadowing.tentative.html
+testharness html/dom/documents/dom-tree-accessors/nameditem-setattribute-attr-mutation.html
 testharness html/dom/documents/dom-tree-accessors/nameditem-supported-property-names-order.html
 testharness html/dom/documents/dom-tree-accessors/nameditem-tree-order.html
 testharness html/dom/documents/dom-tree-accessors/nameditem-tree-transitions.html
@@ -51874,6 +51883,13 @@ testharness html/editing/dnd/platform/mousedown-move-inner-when-dragging-2.html
 testharness html/editing/dnd/platform/pointerdown-add-display-none.html
 testharness html/editing/dnd/platform/pointerdown-add-overflow-hidden.html
 testharness html/editing/dnd/remove/001.html
+testharness html/editing/dnd/remove/002.html
+testharness html/editing/dnd/remove/003.html
+testharness html/editing/dnd/remove/004.html
+testharness html/editing/dnd/remove/005.html
+testharness html/editing/dnd/remove/006.html
+testharness html/editing/dnd/remove/007.html
+testharness html/editing/dnd/remove/008.html
 testharness html/editing/dnd/synthetic/001.html
 testharness html/editing/dnd/target-origin/202.html
 testharness html/editing/dnd/the-draggable-attribute/draggable-enumerated-ascii-case-insensitive.html
@@ -53586,6 +53602,7 @@ testharness html/semantics/forms/the-select-element/common-HTMLOptionsCollection
 testharness html/semantics/forms/the-select-element/customizable-select-listbox/customizable-select-listbox-keyboard-behavior.optional.html
 testharness html/semantics/forms/the-select-element/customizable-select-listbox/customizable-select-listbox-mouse-behavior.html
 testharness html/semantics/forms/the-select-element/customizable-select-listbox/select-listbox-home-end-pagedown-pageup.optional.html
+testharness html/semantics/forms/the-select-element/customizable-select-listbox/select-listbox-option-optgroup-client-rects.html
 testharness html/semantics/forms/the-select-element/customizable-select-listbox/select-listbox-typeahead.optional.html
 testharness html/semantics/forms/the-select-element/customizable-select-listbox/selectedcontent-listbox.html
 testharness html/semantics/forms/the-select-element/customizable-select-multiple-popup/select-multiple-popup-keyboard-behavior.tentative.html
@@ -53644,6 +53661,7 @@ testharness html/semantics/forms/the-select-element/customizable-select/select-p
 testharness html/semantics/forms/the-select-element/customizable-select/select-picker-interactive-element-focus.optional.html
 testharness html/semantics/forms/the-select-element/customizable-select/select-picker-option-animation-reopens.html
 testharness html/semantics/forms/the-select-element/customizable-select/select-picker-option-hover-while-dragging.optional.html
+testharness html/semantics/forms/the-select-element/customizable-select/select-picker-option-optgroup-client-rects.html
 testharness html/semantics/forms/the-select-element/customizable-select/select-picker-popover-open-invalid.tentative.html
 testharness html/semantics/forms/the-select-element/customizable-select/select-picker-pseudo-box-type.html
 testharness html/semantics/forms/the-select-element/customizable-select/select-picker-starting-style.html
