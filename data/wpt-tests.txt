@@ -1,4 +1,4 @@
-sha: ca49a8372c4e4191d70eeff6bbfe7aff8350188f
+sha: 13f665b1e0a53ca6cbd552ff9507cd8217bbe9fa
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -156,6 +156,7 @@ crashtest css/css-animations/crashtests/checkbox-padding-animation.html
 crashtest css/css-animations/crashtests/chrome-bug-404743651.html
 crashtest css/css-animations/crashtests/chrome-bug-405795970.html
 crashtest css/css-animations/crashtests/chrome-bug-415627003.html
+crashtest css/css-animations/crashtests/chrome-bug-576322434.html
 crashtest css/css-animations/crashtests/composited-identity-animation-layer-squash.html
 crashtest css/css-animations/crashtests/css-animation-null-effect.html
 crashtest css/css-animations/crashtests/font-builder.html
@@ -822,6 +823,7 @@ crashtest css/css-overflow/scroll-markers/chrome-421199213-crash.html
 crashtest css/css-overflow/scroll-markers/chrome-555280390-crash.html
 crashtest css/css-overflow/scroll-markers/chrome-570167919-crash.html
 crashtest css/css-overflow/scroll-markers/column-scroll-marker-015-crash.html
+crashtest css/css-overflow/scroll-markers/column-scroll-marker-manual-slot-recalc-crash.html
 crashtest css/css-overflow/scroll-markers/column-scroll-marker-no-content-crash.html
 crashtest css/css-overflow/scroll-markers/inline-with-scroll-marker-group-crash.html
 crashtest css/css-overflow/scroll-markers/root-element-layout-parent-crash.html
@@ -14371,7 +14373,8 @@ reftest css/css-break/table/oof-in-cell-with-alignment-001.html
 reftest css/css-break/table/oof-in-cell-with-alignment-002.html
 reftest css/css-break/table/oof-in-cell-with-alignment-003.html
 reftest css/css-break/table/oof-in-cell-with-alignment-004.html
-reftest css/css-break/table/oof-static-pos-percentage-height.html
+reftest css/css-break/table/oof-static-pos-percentage-height-001.html
+reftest css/css-break/table/oof-static-pos-percentage-height-002.html
 reftest css/css-break/table/overflow-scroll-row.html
 reftest css/css-break/table/overflow-scroll-section.html
 reftest css/css-break/table/repeated-section/abspos-in-monolithic.tentative.html
@@ -17533,6 +17536,7 @@ reftest css/css-gaps/flex/flex-gap-decorations-066.html
 reftest css/css-gaps/flex/flex-gap-decorations-067.html
 reftest css/css-gaps/flex/flex-gap-decorations-068.html
 reftest css/css-gaps/flex/flex-gap-decorations-069.html
+reftest css/css-gaps/flex/flex-gap-decorations-070.html
 reftest css/css-gaps/flex/flex-gap-decorations-auto-repeat-flex-direction-reverse.html
 reftest css/css-gaps/flex/flex-gap-decorations-direction-inset.html
 reftest css/css-gaps/flex/flex-gap-decorations-integer-repeat-flex-direction-reverse.html
@@ -17681,6 +17685,7 @@ reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-bet
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-between-015.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-between-016.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-between-017.html
+reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-between-018.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-empty-all.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-empty-around.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-empty-between.html
@@ -22140,6 +22145,8 @@ reftest css/css-overflow/line-clamp/line-clamp-with-floats-012.html
 reftest css/css-overflow/line-clamp/line-clamp-with-floats-013.html
 reftest css/css-overflow/line-clamp/line-clamp-with-floats-014.html
 reftest css/css-overflow/line-clamp/line-clamp-with-floats-015.html
+reftest css/css-overflow/line-clamp/line-clamp-with-floats-016.html
+reftest css/css-overflow/line-clamp/line-clamp-with-floats-017.html
 reftest css/css-overflow/line-clamp/line-clamp-with-popover-001.html
 reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-string-001.html
 reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-string-002.html
@@ -29770,6 +29777,7 @@ reftest css/css-writing-modes/row-progression-vrl-004.xht
 reftest css/css-writing-modes/row-progression-vrl-006.xht
 reftest css/css-writing-modes/row-progression-vrl-008.xht
 reftest css/css-writing-modes/scrollbar-vertical-rl.html
+reftest css/css-writing-modes/sideways-inline-004.html
 reftest css/css-writing-modes/sideways-lr-main-axis.html
 reftest css/css-writing-modes/sizing-orthog-htb-in-vlr-001.xht
 reftest css/css-writing-modes/sizing-orthog-htb-in-vlr-003.xht
@@ -33159,6 +33167,7 @@ reftest shadow-dom/layout-slot-no-longer-fallback.html
 reftest shadow-dom/manual-slot-assignment-no-wrong-unassign.html
 reftest shadow-dom/nested-hover-pseudo-class-removal.html
 reftest shadow-dom/shadow-style-invalidation-vw-units.html
+reftest shadow-dom/slot-display-contents-display-toggle.html
 reftest shadow-dom/slot-fallback-content-001.html
 reftest shadow-dom/slot-fallback-content-002.html
 reftest shadow-dom/slot-fallback-content-003.html
@@ -39426,6 +39435,7 @@ testharness css/css-grid/layout-algorithm/flex-sizing-columns-min-max-width-001.
 testharness css/css-grid/layout-algorithm/flex-sizing-rows-min-max-height-001.html
 testharness css/css-grid/layout-algorithm/flex-sizing-rows-min-max-height-border-box-001.html
 testharness css/css-grid/layout-algorithm/grid-auto-columns-content-resolution-001.html
+testharness css/css-grid/layout-algorithm/grid-auto-row-regrows-after-container-height-shrinks-001.html
 testharness css/css-grid/layout-algorithm/grid-auto-rows-content-resolution-001.html
 testharness css/css-grid/layout-algorithm/grid-automatic-minimum-for-auto-columns-001.html
 testharness css/css-grid/layout-algorithm/grid-automatic-minimum-for-auto-rows-001.html
@@ -43202,12 +43212,14 @@ testharness css/css-view-transitions/scoped/element-moved-to-new-document.html
 testharness css/css-view-transitions/scoped/element-scoped-containment-invalid-state.html
 testharness css/css-view-transitions/scoped/fill-forwards.html
 testharness css/css-view-transitions/scoped/hit-test-captured-scope.html
+testharness css/css-view-transitions/scoped/hit-test-overflow-clipped-scope.html
 testharness css/css-view-transitions/scoped/hit-test-vt-overlay.html
 testharness css/css-view-transitions/scoped/hit-testing.html
 testharness css/css-view-transitions/scoped/missing-view-transition-name.html
 testharness css/css-view-transitions/scoped/negative-playback-rate.html
 testharness css/css-view-transitions/scoped/remove-child-in-callback.html
 testharness css/css-view-transitions/scoped/run_in_parallel.html
+testharness css/css-view-transitions/scoped/scope-becomes-document-element.html
 testharness css/css-view-transitions/scoped/scope-containment-during-capture.html
 testharness css/css-view-transitions/scoped/scope-containment-keeps-author-remembered-size.html
 testharness css/css-view-transitions/scoped/scope-containment-remembered-size.html
@@ -47296,6 +47308,7 @@ testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-con
 testharness html/browsers/browsing-the-web/back-forward-cache/service-worker-unregister.https.html
 testharness html/browsers/browsing-the-web/back-forward-cache/storage-events.html
 testharness html/browsers/browsing-the-web/back-forward-cache/timers.html
+testharness html/browsers/browsing-the-web/back-forward-cache/weblocks-worker.https.window.js
 testharness html/browsers/browsing-the-web/history-traversal/001.html
 testharness html/browsers/browsing-the-web/history-traversal/PopStateEvent.html
 testharness html/browsers/browsing-the-web/history-traversal/api-availability.html
@@ -48631,6 +48644,14 @@ testharness html/canvas/element/manual/draw-element-image/drawing-display-none-f
 testharness html/canvas/element/manual/draw-element-image/element-image-fractional-size.tentative.html
 testharness html/canvas/element/manual/draw-element-image/error-conditions.tentative.html
 testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-no-content-drawable.tentative.html
+testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-object-fit-contain-tall.tentative.html
+testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-object-fit-contain-wide.tentative.html
+testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-object-fit-cover-tall.tentative.html
+testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-object-fit-cover-wide.tentative.html
+testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-object-fit-fill-tall.tentative.html
+testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-object-fit-fill-wide.tentative.html
+testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-object-fit-none-tall.tentative.html
+testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-object-fit-none-wide.tentative.html
 testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-update-element-geometry-offscreen.tentative.html
 testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint-update-element-geometry.tentative.html
 testharness html/canvas/element/manual/draw-element-image/hit-test/elementsFromPoint.tentative.html
@@ -61250,6 +61271,7 @@ testharness shadow-dom/leaktests/get-elements.html
 testharness shadow-dom/leaktests/html-collection.html
 testharness shadow-dom/leaktests/selection.html
 testharness shadow-dom/leaktests/window-frames.html
+testharness shadow-dom/manual-slot-assignment-with-details.html
 testharness shadow-dom/offsetParent-across-shadow-boundaries.html
 testharness shadow-dom/offsetTop-offsetLeft-across-shadow-boundaries.html
 testharness shadow-dom/reference-target/tentative/aria-labelledby.html
@@ -61359,6 +61381,7 @@ testharness shape-detection/shapedetection-cross-origin.sub.https.html
 testharness shape-detection/single-barcode-detection.https.html
 testharness shape-detection/single-face-detection.https.html
 testharness shape-detection/single-text-detection.https.html
+testharness shape-detection/text-detector-create.https.html
 testharness signed-exchange/check-cert-request.tentative.html
 testharness signed-exchange/fallback-to-another-sxg.tentative.html
 testharness signed-exchange/nested-sxg.tentative.html
