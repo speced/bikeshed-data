@@ -4299,13 +4299,13 @@
     }
   },
   "RegExp.prototype %Symbol.split% ()": {
-    "RegExp.prototype %Symbol.split% (string, limit)": {
+    "RegExp.prototype %Symbol.split% (string, substringLimit)": {
       "args": [
         "string",
-        "limit"
+        "substringLimit"
       ],
       "for": [
-        "RegExp.prototype [ %Symbol.split% ] ( string, limit )"
+        "RegExp.prototype [ %Symbol.split% ] ( string, substringLimit )"
       ],
       "shortname": "ecmascript"
     }
@@ -22461,6 +22461,16 @@
       ],
       "shortname": "ecmascript"
     },
+    "includes(searchElement, skippedElements)": {
+      "args": [
+        "searchElement",
+        "skippedElements"
+      ],
+      "for": [
+        "Iterator"
+      ],
+      "shortname": "ecmascript"
+    },
     "includes(searchString, position)": {
       "args": [
         "searchString",
@@ -34384,10 +34394,10 @@
       ],
       "shortname": "webnn"
     },
-    "split(separator, limit)": {
+    "split(separator, substringLimit)": {
       "args": [
         "separator",
-        "limit"
+        "substringLimit"
       ],
       "for": [
         "String"
