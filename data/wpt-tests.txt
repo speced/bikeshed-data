@@ -1,4 +1,4 @@
-sha: 15b31607c5102637a3401608427e6a05aaaf3849
+sha: e9fb02faaa5f2cb4bacaed7f241ddeb963d00d58
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1038,6 +1038,7 @@ crashtest css/css-text/removing-collapsible-crash.html
 crashtest css/css-text/removing-collapsible-spaces-before-float-crash.html
 crashtest css/css-text/shaping/shaping-no-glyphs-crash.html
 crashtest css/css-text/text-align/text-align-inline-end-crash.html
+crashtest css/css-text/text-autospace/crashtests/text-autospace-ruby-crash.html
 crashtest css/css-text/text-autospace/crashtests/text-autospace-shape-cache-crash.html
 crashtest css/css-text/text-fit/columns-crash.html
 crashtest css/css-text/text-fit/shrink-consistent-crash.html
@@ -1990,6 +1991,7 @@ crashtest svg/extensibility/foreignObject/foreign-object-circular-filter-referen
 crashtest svg/extensibility/foreignObject/foreign-object-under-clip-path-crash.html
 crashtest svg/extensibility/foreignObject/foreign-object-under-defs-crash.html
 crashtest svg/linking/scripted/use-iframe-crash.html
+crashtest svg/painting/marker-with-clip-path-cycle-crash.html
 crashtest svg/painting/marker-with-mask-cycle-crash.html
 crashtest svg/struct/crashtests/chrome-bug-425405650.html
 crashtest svg/styling/cx-sibling-index-crash.html
@@ -7204,6 +7206,9 @@ reftest css/CSS2/floats-clear/table-among-floats-001.html
 reftest css/CSS2/floats/adjoining-floats-dynamic.html
 reftest css/CSS2/floats/block-in-inline-become-float.html
 reftest css/CSS2/floats/float-after-block-with-collapsed-margin-inside-inline.html
+reftest css/CSS2/floats/float-avoids-float-with-margin-004.html
+reftest css/CSS2/floats/float-avoids-float-with-margin-005.html
+reftest css/CSS2/floats/float-avoids-float-with-margin-012.html
 reftest css/CSS2/floats/float-in-block-in-inline-001.html
 reftest css/CSS2/floats/float-in-inline-001.html
 reftest css/CSS2/floats/float-in-inline-002.html
@@ -12743,6 +12748,7 @@ reftest css/css-backgrounds/background-image-gradient-currentcolor-self-repaint.
 reftest css/css-backgrounds/background-image-gradient-currentcolor-visited.html
 reftest css/css-backgrounds/background-image-gradient-interpolation-repaint.html
 reftest css/css-backgrounds/background-image-large-with-auto.html
+reftest css/css-backgrounds/background-image-no-repeat-does-not-wrap.html
 reftest css/css-backgrounds/background-image-none-gradient-repaint.html
 reftest css/css-backgrounds/background-image-shared-stylesheet.html
 reftest css/css-backgrounds/background-image-table-cells-straddling-no-repeat.html
@@ -13227,6 +13233,9 @@ reftest css/css-backgrounds/box-shadow-table-border-collapse-001.html
 reftest css/css-backgrounds/box-shadow-table-row-display.html
 reftest css/css-backgrounds/box-shadow/block-in-inline-fragmentation-001.html
 reftest css/css-backgrounds/box-shadow/box-shadow-table-row-display.html
+reftest css/css-backgrounds/box-shadow/inset-shadow-large-spread-clipped-to-padding-box.html
+reftest css/css-backgrounds/box-shadow/inset-shadow-large-spread-cloned-inline.html
+reftest css/css-backgrounds/box-shadow/inset-shadow-large-spread-fragmented-inline.html
 reftest css/css-backgrounds/box-shadow/slice-block-fragmentation-001.html
 reftest css/css-backgrounds/box-shadow/slice-block-fragmentation-002.html
 reftest css/css-backgrounds/box-shadow/slice-block-fragmentation-003.html
@@ -13351,9 +13360,20 @@ reftest css/css-borders/corner-shape/corner-shape-notch-squircle-outset.html
 reftest css/css-borders/corner-shape/corner-shape-notch.html
 reftest css/css-borders/corner-shape/corner-shape-offset-path-coord-box-001.html
 reftest css/css-borders/corner-shape/corner-shape-offset-path-coord-box-002.html
+reftest css/css-borders/corner-shape/corner-shape-opposite-scale-convex-inert.html
+reftest css/css-borders/corner-shape/corner-shape-opposite-scale-elliptical.html
+reftest css/css-borders/corner-shape/corner-shape-opposite-scale-mixed.html
+reftest css/css-borders/corner-shape/corner-shape-opposite-scale-notch.html
+reftest css/css-borders/corner-shape/corner-shape-opposite-scale-scoop.html
+reftest css/css-borders/corner-shape/corner-shape-opposite-scale-superellipse.html
 reftest css/css-borders/corner-shape/corner-shape-outline-auto-001.html
 reftest css/css-borders/corner-shape/corner-shape-outline-auto-002.html
 reftest css/css-borders/corner-shape/corner-shape-outline-auto-003.html
+reftest css/css-borders/corner-shape/corner-shape-outline-negative-offset-bevel.html
+reftest css/css-borders/corner-shape/corner-shape-outline-negative-offset-notch001.html
+reftest css/css-borders/corner-shape/corner-shape-outline-negative-offset-notch002.html
+reftest css/css-borders/corner-shape/corner-shape-outline-negative-offset-notch003.html
+reftest css/css-borders/corner-shape/corner-shape-outline-negative-offset-square.html
 reftest css/css-borders/corner-shape/corner-shape-outline-offset-bevel.html
 reftest css/css-borders/corner-shape/corner-shape-outline-offset-elliptical.html
 reftest css/css-borders/corner-shape/corner-shape-overflow-clip-margin.html
@@ -15598,6 +15618,7 @@ reftest css/css-counter-styles/cjk-earthly-branch/css3-counter-styles-203.html
 reftest css/css-counter-styles/cjk-heavenly-stem/css3-counter-styles-204.html
 reftest css/css-counter-styles/cjk-heavenly-stem/css3-counter-styles-205.html
 reftest css/css-counter-styles/cjk-heavenly-stem/css3-counter-styles-206.html
+reftest css/css-counter-styles/cjk-ideographic/counter-cjk-ideographic-extended-range.optional.html
 reftest css/css-counter-styles/counter-name-case-sensitive.html
 reftest css/css-counter-styles/counter-style-at-rule/access-from-shadow-dom.html
 reftest css/css-counter-styles/counter-style-at-rule/broken-symbols.html
@@ -15691,6 +15712,7 @@ reftest css/css-counter-styles/hiragana-iroha/css3-counter-styles-035.html
 reftest css/css-counter-styles/hiragana/css3-counter-styles-030.html
 reftest css/css-counter-styles/hiragana/css3-counter-styles-031.html
 reftest css/css-counter-styles/hiragana/css3-counter-styles-032.html
+reftest css/css-counter-styles/japanese-formal/counter-japanese-formal-extended-range.optional.html
 reftest css/css-counter-styles/japanese-formal/counter-japanese-formal-extended.html
 reftest css/css-counter-styles/japanese-formal/counter-japanese-formal.html
 reftest css/css-counter-styles/japanese-formal/css3-counter-styles-047.html
@@ -15698,6 +15720,7 @@ reftest css/css-counter-styles/japanese-formal/css3-counter-styles-048.html
 reftest css/css-counter-styles/japanese-formal/css3-counter-styles-049.html
 reftest css/css-counter-styles/japanese-formal/css3-counter-styles-050.html
 reftest css/css-counter-styles/japanese-formal/css3-counter-styles-051.html
+reftest css/css-counter-styles/japanese-informal/counter-japanese-informal-extended-range.optional.html
 reftest css/css-counter-styles/japanese-informal/counter-japanese-informal-extended.html
 reftest css/css-counter-styles/japanese-informal/counter-japanese-informal.html
 reftest css/css-counter-styles/japanese-informal/css3-counter-styles-042.html
@@ -15717,6 +15740,7 @@ reftest css/css-counter-styles/katakana/css3-counter-styles-038.html
 reftest css/css-counter-styles/khmer/css3-counter-styles-161.html
 reftest css/css-counter-styles/khmer/css3-counter-styles-162.html
 reftest css/css-counter-styles/khmer/css3-counter-styles-163.html
+reftest css/css-counter-styles/korean-hangul-formal/counter-korean-hangul-formal-extended-range.optional.html
 reftest css/css-counter-styles/korean-hangul-formal/counter-korean-hangul-formal-extended.html
 reftest css/css-counter-styles/korean-hangul-formal/counter-korean-hangul-formal.html
 reftest css/css-counter-styles/korean-hangul-formal/css3-counter-styles-052.html
@@ -15724,6 +15748,7 @@ reftest css/css-counter-styles/korean-hangul-formal/css3-counter-styles-053.html
 reftest css/css-counter-styles/korean-hangul-formal/css3-counter-styles-054.html
 reftest css/css-counter-styles/korean-hangul-formal/css3-counter-styles-055.html
 reftest css/css-counter-styles/korean-hangul-formal/css3-counter-styles-056.html
+reftest css/css-counter-styles/korean-hanja-formal/counter-korean-hanja-formal-extended-range.optional.html
 reftest css/css-counter-styles/korean-hanja-formal/counter-korean-hanja-formal-extended.html
 reftest css/css-counter-styles/korean-hanja-formal/counter-korean-hanja-formal.html
 reftest css/css-counter-styles/korean-hanja-formal/css3-counter-styles-062.html
@@ -15731,6 +15756,7 @@ reftest css/css-counter-styles/korean-hanja-formal/css3-counter-styles-063.html
 reftest css/css-counter-styles/korean-hanja-formal/css3-counter-styles-064.html
 reftest css/css-counter-styles/korean-hanja-formal/css3-counter-styles-065.html
 reftest css/css-counter-styles/korean-hanja-formal/css3-counter-styles-066.html
+reftest css/css-counter-styles/korean-hanja-informal/counter-korean-hanja-informal-extended-range.optional.html
 reftest css/css-counter-styles/korean-hanja-informal/counter-korean-hanja-informal-extended.html
 reftest css/css-counter-styles/korean-hanja-informal/counter-korean-hanja-informal.html
 reftest css/css-counter-styles/korean-hanja-informal/css3-counter-styles-057.html
@@ -15769,12 +15795,14 @@ reftest css/css-counter-styles/oriya/css3-counter-styles-145.html
 reftest css/css-counter-styles/persian/css3-counter-styles-104.html
 reftest css/css-counter-styles/persian/css3-counter-styles-105.html
 reftest css/css-counter-styles/persian/css3-counter-styles-106.html
+reftest css/css-counter-styles/simp-chinese-formal/counter-simp-chinese-formal-extended-range.optional.html
 reftest css/css-counter-styles/simp-chinese-formal/counter-simp-chinese-formal.html
 reftest css/css-counter-styles/simp-chinese-formal/css3-counter-styles-076.html
 reftest css/css-counter-styles/simp-chinese-formal/css3-counter-styles-077.html
 reftest css/css-counter-styles/simp-chinese-formal/css3-counter-styles-078.html
 reftest css/css-counter-styles/simp-chinese-formal/css3-counter-styles-079.html
 reftest css/css-counter-styles/simp-chinese-formal/css3-counter-styles-080.html
+reftest css/css-counter-styles/simp-chinese-informal/counter-simp-chinese-informal-extended-range.optional.html
 reftest css/css-counter-styles/simp-chinese-informal/counter-simp-chinese-informal.html
 reftest css/css-counter-styles/simp-chinese-informal/css3-counter-styles-071.html
 reftest css/css-counter-styles/simp-chinese-informal/css3-counter-styles-072.html
@@ -15803,12 +15831,14 @@ reftest css/css-counter-styles/thai/css3-counter-styles-154.html
 reftest css/css-counter-styles/tibetan/css3-counter-styles-155.html
 reftest css/css-counter-styles/tibetan/css3-counter-styles-156.html
 reftest css/css-counter-styles/tibetan/css3-counter-styles-157.html
+reftest css/css-counter-styles/trad-chinese-formal/counter-trad-chinese-formal-extended-range.optional.html
 reftest css/css-counter-styles/trad-chinese-formal/counter-trad-chinese-formal.html
 reftest css/css-counter-styles/trad-chinese-formal/css3-counter-styles-086.html
 reftest css/css-counter-styles/trad-chinese-formal/css3-counter-styles-087.html
 reftest css/css-counter-styles/trad-chinese-formal/css3-counter-styles-088.html
 reftest css/css-counter-styles/trad-chinese-formal/css3-counter-styles-089.html
 reftest css/css-counter-styles/trad-chinese-formal/css3-counter-styles-090.html
+reftest css/css-counter-styles/trad-chinese-informal/counter-trad-chinese-informal-extended-range.optional.html
 reftest css/css-counter-styles/trad-chinese-informal/counter-trad-chinese-informal.html
 reftest css/css-counter-styles/trad-chinese-informal/css3-counter-styles-081.html
 reftest css/css-counter-styles/trad-chinese-informal/css3-counter-styles-082.html
@@ -17075,6 +17105,9 @@ reftest css/css-font-loading/fontfaceset-clear-css-connected-2.html
 reftest css/css-font-loading/fontfaceset-delete-css-connected-2.html
 reftest css/css-fonts/alternates-order.html
 reftest css/css-fonts/ascent-descent-override.html
+reftest css/css-fonts/cluster-matching-canonical-equivalence-001.html
+reftest css/css-fonts/cluster-matching-canonical-equivalence-002.html
+reftest css/css-fonts/cluster-matching-canonical-equivalence-003.html
 reftest css/css-fonts/downloadable-font-scoped-to-document.html
 reftest css/css-fonts/first-available-font-001.html
 reftest css/css-fonts/first-available-font-002.html
@@ -18358,6 +18391,12 @@ reftest css/css-grid/grid-definition/flex-item-grid-container-auto-repeat-002.ht
 reftest css/css-grid/grid-definition/flex-item-grid-container-percentage-rows-001.html
 reftest css/css-grid/grid-definition/fr-unit-with-percentage.html
 reftest css/css-grid/grid-definition/fr-unit.html
+reftest css/css-grid/grid-definition/grid-auto-fit-collapsed-gutters-001.html
+reftest css/css-grid/grid-definition/grid-auto-fit-collapsed-rows-001.html
+reftest css/css-grid/grid-definition/grid-auto-fit-empty-repeat-range-001.html
+reftest css/css-grid/grid-definition/grid-auto-fit-fewer-items-than-tracks-001.html
+reftest css/css-grid/grid-definition/grid-auto-fit-implicit-and-spanning-001.html
+reftest css/css-grid/grid-definition/grid-auto-fit-intrinsic-collapsed-001.html
 reftest css/css-grid/grid-definition/grid-auto-fit-with-calc.html
 reftest css/css-grid/grid-definition/grid-auto-repeat-aspect-ratio-001.html
 reftest css/css-grid/grid-definition/grid-auto-repeat-aspect-ratio-002.html
@@ -20127,6 +20166,7 @@ reftest css/css-images/object-fit-contain-svg-006e.html
 reftest css/css-images/object-fit-contain-svg-006i.html
 reftest css/css-images/object-fit-contain-svg-006o.html
 reftest css/css-images/object-fit-contain-svg-006p.html
+reftest css/css-images/object-fit-contain-svg-zero-height.html
 reftest css/css-images/object-fit-containcontainintrinsicsize-png-001c.tentative.html
 reftest css/css-images/object-fit-containcontainintrinsicsize-png-001e.tentative.html
 reftest css/css-images/object-fit-containcontainintrinsicsize-png-001i.tentative.html
@@ -20171,6 +20211,10 @@ reftest css/css-images/object-fit-cover-svg-006o.html
 reftest css/css-images/object-fit-cover-svg-006p.html
 reftest css/css-images/object-fit-dyn-aspect-ratio-001.html
 reftest css/css-images/object-fit-dyn-aspect-ratio-002.html
+reftest css/css-images/object-fit-embedded-svg-dynamic-change.html
+reftest css/css-images/object-fit-embedded-svg-root-will-change-dynamic-change.html
+reftest css/css-images/object-fit-embedded-svg-root-will-change.html
+reftest css/css-images/object-fit-embedded-svg-will-change.html
 reftest css/css-images/object-fit-fill-png-001c.html
 reftest css/css-images/object-fit-fill-png-001e.html
 reftest css/css-images/object-fit-fill-png-001i.html
@@ -20297,6 +20341,7 @@ reftest css/css-images/object-position-svg-002o.html
 reftest css/css-images/object-position-svg-002p.html
 reftest css/css-images/object-view-box-auto-size-relayout.html
 reftest css/css-images/object-view-box-contain-intrinsic-size.html
+reftest css/css-images/object-view-box-embedded-svg-dynamic-change.html
 reftest css/css-images/object-view-box-empty-bounds.html
 reftest css/css-images/object-view-box-fit-contain-canvas.html
 reftest css/css-images/object-view-box-fit-contain-img.html
@@ -20442,6 +20487,8 @@ reftest css/css-inline/initial-letter/initial-letter-sunk-initial.html
 reftest css/css-inline/initial-letter/initial-letter-with-first-line.html
 reftest css/css-inline/initial-letter/initial-letter-with-tab-rtl.html
 reftest css/css-inline/initial-letter/initial-letter-with-tab.html
+reftest css/css-inline/inline-block-baseline-with-block-in-inline.html
+reftest css/css-inline/inline-block-last-baseline-skips-non-contributing-block-in-inline.html
 reftest css/css-inline/model/phantom-line-boxes-001.html
 reftest css/css-inline/model/phantom-line-boxes-002.html
 reftest css/css-inline/model/phantom-line-boxes-003.html
@@ -20756,6 +20803,7 @@ reftest css/css-lists/inline-block-list.html
 reftest css/css-lists/inline-list-marker.html
 reftest css/css-lists/inline-list-with-table-child.html
 reftest css/css-lists/inline-list.html
+reftest css/css-lists/inside-marker-with-block-in-inline.html
 reftest css/css-lists/li-insert-child.html
 reftest css/css-lists/li-list-item-counter-001.html
 reftest css/css-lists/li-list-item-counter-002.html
@@ -20846,7 +20894,10 @@ reftest css/css-lists/ol-change-display-type.html
 reftest css/css-lists/outside-marker-alignment-with-block-content.html
 reftest css/css-lists/outside-marker-covered-by-relpos-block-link.html
 reftest css/css-lists/outside-marker-in-multicol-relpos-content.html
+reftest css/css-lists/outside-marker-position-with-cached-line-content.html
+reftest css/css-lists/outside-marker-taller-than-content.html
 reftest css/css-lists/outside-marker-with-align-content.html
+reftest css/css-lists/outside-marker-with-block-in-nested-inline.html
 reftest css/css-lists/outside-marker-with-float-in-content.html
 reftest css/css-lists/outside-marker-with-relpos-block-content.html
 reftest css/css-lists/outside-marker-with-text-indent.html
@@ -22938,6 +22989,10 @@ reftest css/css-pseudo/first-letter-and-sibling-display-change.html
 reftest css/css-pseudo/first-letter-and-whitespace.html
 reftest css/css-pseudo/first-letter-background-image-dynamic.html
 reftest css/css-pseudo/first-letter-background-image.html
+reftest css/css-pseudo/first-letter-before-dynamic-multi.html
+reftest css/css-pseudo/first-letter-before-dynamic-on-block.html
+reftest css/css-pseudo/first-letter-before-dynamic-punctuation.html
+reftest css/css-pseudo/first-letter-before-dynamic.html
 reftest css/css-pseudo/first-letter-block-to-inline.html
 reftest css/css-pseudo/first-letter-c0.tentative.html
 reftest css/css-pseudo/first-letter-capitalize-supplementary-char.html
@@ -23532,6 +23587,10 @@ reftest css/css-shapes/shape-outside/shape-box/shape-outside-border-box-border-r
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-border-box-border-radius-010.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-border-box-border-radius-011.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-border-box-border-radius-012.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-border-box-shape-margin-with-margin.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-border-box-with-block-start-margin.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-border-box-with-margin-right-float.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-border-box-with-margin.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-box-002.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-box-003.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-box-004.html
@@ -23544,6 +23603,7 @@ reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-002.htm
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-003.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-border-radius-001.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-border-radius-002.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-with-margin.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-margin-box-001.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-margin-box-002.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-margin-box-border-radius-001.html
@@ -23559,6 +23619,7 @@ reftest css/css-shapes/shape-outside/shape-box/shape-outside-padding-box-002.htm
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-padding-box-003.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-padding-box-border-radius-001.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-padding-box-border-radius-002.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-padding-box-with-margin.html
 reftest css/css-shapes/shape-outside/shape-image/gradients/shape-outside-linear-gradient-001.html
 reftest css/css-shapes/shape-outside/shape-image/gradients/shape-outside-linear-gradient-002.html
 reftest css/css-shapes/shape-outside/shape-image/gradients/shape-outside-linear-gradient-003.html
@@ -24609,8 +24670,14 @@ reftest css/css-text-decor/text-decoration-thickness-length-rounding-001.html
 reftest css/css-text-decor/text-decoration-thickness-length-rounding-002.html
 reftest css/css-text-decor/text-decoration-thickness-length-rounding-min-val.html
 reftest css/css-text-decor/text-decoration-thickness-linethrough-001.html
+reftest css/css-text-decor/text-decoration-thickness-linethrough-block-001.html
+reftest css/css-text-decor/text-decoration-thickness-linethrough-descendant-001.html
+reftest css/css-text-decor/text-decoration-thickness-linethrough-descendant-002.html
+reftest css/css-text-decor/text-decoration-thickness-linethrough-descendant-003.html
+reftest css/css-text-decor/text-decoration-thickness-linethrough-descendant-004.html
 reftest css/css-text-decor/text-decoration-thickness-non-inherit.html
 reftest css/css-text-decor/text-decoration-thickness-overline-001.html
+reftest css/css-text-decor/text-decoration-thickness-overline-block-001.html
 reftest css/css-text-decor/text-decoration-thickness-percent-001.html
 reftest css/css-text-decor/text-decoration-thickness-scroll-001.html
 reftest css/css-text-decor/text-decoration-thickness-single.html
@@ -25446,6 +25513,7 @@ reftest css/css-text/text-align/text-align-justify-004.html
 reftest css/css-text/text-align/text-align-justify-005.html
 reftest css/css-text/text-align/text-align-justify-006.html
 reftest css/css-text/text-align/text-align-justify-bidi-control.html
+reftest css/css-text/text-align/text-align-justify-block-in-inline.html
 reftest css/css-text/text-align/text-align-justify-last-center.html
 reftest css/css-text/text-align/text-align-justify-last-default.html
 reftest css/css-text/text-align/text-align-justify-last-end.html
@@ -25467,6 +25535,7 @@ reftest css/css-text/text-align/text-align-last-011.html
 reftest css/css-text/text-align/text-align-last-015.html
 reftest css/css-text/text-align/text-align-last-center.html
 reftest css/css-text/text-align/text-align-last-end.html
+reftest css/css-text/text-align/text-align-last-justify-block-in-inline.html
 reftest css/css-text/text-align/text-align-last-justify-br.html
 reftest css/css-text/text-align/text-align-last-justify-rtl.html
 reftest css/css-text/text-align/text-align-last-justify.html
@@ -25585,6 +25654,7 @@ reftest css/css-text/text-indent/text-indent-dynamic-each-line-001.html
 reftest css/css-text/text-indent/text-indent-dynamic-each-line-002.html
 reftest css/css-text/text-indent/text-indent-dynamic-hanging-001.html
 reftest css/css-text/text-indent/text-indent-dynamic-hanging-002.html
+reftest css/css-text/text-indent/text-indent-each-line-after-block-level-box.html
 reftest css/css-text/text-indent/text-indent-each-line-hanging.html
 reftest css/css-text/text-indent/text-indent-length-001.html
 reftest css/css-text/text-indent/text-indent-length-002.html
@@ -29400,6 +29470,7 @@ reftest css/css-writing-modes/block-plaintext-002.html
 reftest css/css-writing-modes/block-plaintext-003.html
 reftest css/css-writing-modes/block-plaintext-004.html
 reftest css/css-writing-modes/block-plaintext-006.html
+reftest css/css-writing-modes/block-plaintext-paragraph-after-block-level-box.html
 reftest css/css-writing-modes/border-conflict-element-vlr-003.xht
 reftest css/css-writing-modes/border-conflict-element-vlr-005.xht
 reftest css/css-writing-modes/border-conflict-element-vlr-007.xht
@@ -29779,6 +29850,9 @@ reftest css/css-writing-modes/row-progression-vrl-004.xht
 reftest css/css-writing-modes/row-progression-vrl-006.xht
 reftest css/css-writing-modes/row-progression-vrl-008.xht
 reftest css/css-writing-modes/scrollbar-vertical-rl.html
+reftest css/css-writing-modes/sideways-inline-001.html
+reftest css/css-writing-modes/sideways-inline-002.html
+reftest css/css-writing-modes/sideways-inline-003.html
 reftest css/css-writing-modes/sideways-inline-004.html
 reftest css/css-writing-modes/sideways-lr-main-axis.html
 reftest css/css-writing-modes/sizing-orthog-htb-in-vlr-001.xht
@@ -30195,7 +30269,9 @@ reftest css/filter-effects/backdrop-filter-nested-border-radius-clip-2.html
 reftest css/filter-effects/backdrop-filter-nested-border-radius-clip-3.html
 reftest css/filter-effects/backdrop-filter-nested-border-radius-clip-4.html
 reftest css/filter-effects/backdrop-filter-nested-border-radius-clip.html
+reftest css/filter-effects/backdrop-filter-on-transformed-layer.html
 reftest css/filter-effects/backdrop-filter-opacity-rounded-clip.html
+reftest css/filter-effects/backdrop-filter-over-earlier-backdrop-filter.html
 reftest css/filter-effects/backdrop-filter-paint-order.html
 reftest css/filter-effects/backdrop-filter-plus-filter-2.html
 reftest css/filter-effects/backdrop-filter-plus-filter.html
@@ -30242,6 +30318,12 @@ reftest css/filter-effects/drop-shadow-clipped-001.html
 reftest css/filter-effects/drop-shadow-currentcolor-dynamic-001.html
 reftest css/filter-effects/drop-shadow-currentcolor-dynamic-002.html
 reftest css/filter-effects/drop-shadow-currentcolor-dynamic-003.html
+reftest css/filter-effects/drop-shadow-perspective-rotation.html
+reftest css/filter-effects/drop-shadow-perspective-scale.html
+reftest css/filter-effects/drop-shadow-perspective.html
+reftest css/filter-effects/drop-shadow-scale.html
+reftest css/filter-effects/drop-shadow-transform-in-opacity-overlap.html
+reftest css/filter-effects/drop-shadow-transform.html
 reftest css/filter-effects/drop-shadow-with-3d-transform.html
 reftest css/filter-effects/dynamic-filter-changes-001.html
 reftest css/filter-effects/effect-reference-add-hw-001.html
@@ -30293,6 +30375,16 @@ reftest css/filter-effects/feconvolvematrix-order-removal.html
 reftest css/filter-effects/fedisplacementmap-non-uniform-transform-001.html
 reftest css/filter-effects/feflood-with-filter-reference.html
 reftest css/filter-effects/feimage-element-ref-geometry.html
+reftest css/filter-effects/feimage-huge-subregion.html
+reftest css/filter-effects/feimage-subregion-beyond-filter-region.html
+reftest css/filter-effects/feimage-svg-fragment.html
+reftest css/filter-effects/feimage-svg-preserveaspectratio-slice.html
+reftest css/filter-effects/feimage-svg-resolution.html
+reftest css/filter-effects/feimage-svg-root-preserveaspectratio.html
+reftest css/filter-effects/filter-3d-child-behind-eye-plane.html
+reftest css/filter-effects/filter-3d-child-in-3d-filtered-layer.html
+reftest css/filter-effects/filter-3d-child-spanning-eye-plane.html
+reftest css/filter-effects/filter-3d-children-crossing-eye-plane.html
 reftest css/filter-effects/filter-cb-abspos-inline-001.html
 reftest css/filter-effects/filter-cb-abspos-inline-002.html
 reftest css/filter-effects/filter-cb-abspos-inline-003.html
@@ -30302,6 +30394,8 @@ reftest css/filter-effects/filter-chained-url-url-001.html
 reftest css/filter-effects/filter-contrast-001.html
 reftest css/filter-effects/filter-contrast-002.html
 reftest css/filter-effects/filter-contrast-003.html
+reftest css/filter-effects/filter-degenerate-layer-plane-backdrop.html
+reftest css/filter-effects/filter-degenerate-layer-plane.html
 reftest css/filter-effects/filter-effect-remove-unattached.html
 reftest css/filter-effects/filter-external-001-test.html
 reftest css/filter-effects/filter-external-002-test.html
@@ -30326,6 +30420,9 @@ reftest css/filter-effects/filter-grayscale-004.html
 reftest css/filter-effects/filter-grayscale-005.html
 reftest css/filter-effects/filter-hue_rotate-001-test.html
 reftest css/filter-effects/filter-hue_rotate-002-test.html
+reftest css/filter-effects/filter-in-3d-transformed-ancestor-child-crossing-eye-plane.html
+reftest css/filter-effects/filter-in-3d-transformed-ancestor-child-near-eye-plane.html
+reftest css/filter-effects/filter-in-3d-transformed-ancestor.html
 reftest css/filter-effects/filter-invalid.html
 reftest css/filter-effects/filter-invert-001-test.html
 reftest css/filter-effects/filter-invert-002-test.html
@@ -30345,6 +30442,7 @@ reftest css/filter-effects/filter-target-offscreen-below-viewport-001.html
 reftest css/filter-effects/filter-target-offscreen-below-viewport-002.html
 reftest css/filter-effects/filter-target-offscreen-below-viewport-003.html
 reftest css/filter-effects/filter-turbulence-invalid-001.html
+reftest css/filter-effects/filter-unbounded-child-in-layer-plane.html
 reftest css/filter-effects/filter-url-to-non-existent-filter-001.html
 reftest css/filter-effects/filter-with-mix-blend-mode.html
 reftest css/filter-effects/filtered-block-is-container.html
@@ -30366,6 +30464,7 @@ reftest css/filter-effects/fixed-pos-filter-clip-001.html
 reftest css/filter-effects/fixed-pos-filter-clip-002.html
 reftest css/filter-effects/hidpi-invert-filter-background.html
 reftest css/filter-effects/invalidation-css-dropshadow-002.html
+reftest css/filter-effects/invert-scale.html
 reftest css/filter-effects/kernel-unit-length-001.html
 reftest css/filter-effects/kernel-unit-length-002.html
 reftest css/filter-effects/lighting-region.html
@@ -33216,6 +33315,16 @@ reftest svg/coordinate-systems/out-of-flow-svg-root.html
 reftest svg/coordinate-systems/outer-svg-intrinsic-size-003.html
 reftest svg/coordinate-systems/outer-svg-intrinsic-size-004.html
 reftest svg/coordinate-systems/outer-svg-intrinsic-size-005.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-001.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-002.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-003.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-dynamic-001.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-dynamic-002.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-individual-transform-properties-001.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-stacking-context-001.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-svg-dom-001.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-zoom-001.html
+reftest svg/coordinate-systems/outer-svg-transform-attribute-zoom-002.html
 reftest svg/coordinate-systems/view-invalid-viewBox.html
 reftest svg/coordinate-systems/view-transform-viewBox.html
 reftest svg/coordinate-systems/viewBox-baseVal-change-invalid.html
@@ -33271,6 +33380,7 @@ reftest svg/extensibility/foreignObject/foreign-object-margin-collapsing.html
 reftest svg/extensibility/foreignObject/foreign-object-paints-before-rect.html
 reftest svg/extensibility/foreignObject/foreign-object-scale-scroll.html
 reftest svg/extensibility/foreignObject/foreign-object-size.html
+reftest svg/extensibility/foreignObject/foreign-object-visibility-hidden-visible-content.html
 reftest svg/extensibility/foreignObject/foreign-object-with-position-under-clip-path.html
 reftest svg/extensibility/foreignObject/isolation-with-html.html
 reftest svg/extensibility/foreignObject/isolation-with-svg.html
@@ -33352,8 +33462,10 @@ reftest svg/linking/reftests/svgview-spaces-around-semicolon.html
 reftest svg/linking/reftests/svgview-spaces.html
 reftest svg/linking/reftests/svgview-timesegment.html
 reftest svg/linking/reftests/svgview-transform.html
+reftest svg/linking/reftests/svgview-viewbox-invalid.html
 reftest svg/linking/reftests/svgview-viewbox-override-multiple.html
 reftest svg/linking/reftests/svgview-viewbox-then-transform.html
+reftest svg/linking/reftests/svgview-viewbox-zero.html
 reftest svg/linking/reftests/url-processing-fetch-properties-001.sub.svg
 reftest svg/linking/reftests/url-processing-fetch-properties-002.sub.svg
 reftest svg/linking/reftests/url-processing-whitespace-001.svg
@@ -33368,6 +33480,7 @@ reftest svg/linking/reftests/use-keyframes.html
 reftest svg/linking/reftests/use-nested-symbol-001.html
 reftest svg/linking/reftests/use-symbol-rendered-001.html
 reftest svg/linking/reftests/use-template.html
+reftest svg/linking/reftests/view-viewbox-invalid-fallback.html
 reftest svg/linking/reftests/view-viewbox-override.html
 reftest svg/painting/animated-dashoffset-odd-dasharray.html
 reftest svg/painting/color-interpolation-001.svg
@@ -33533,6 +33646,7 @@ reftest svg/render/reftests/nested-svg-overflow-clip.html
 reftest svg/render/reftests/overflow-clip.html
 reftest svg/render/reftests/render-sync-with-font-size.html
 reftest svg/render/reftests/svg-filter-unresolved-reference.html
+reftest svg/render/reftests/visibility-hidden-container-mask-clip.html
 reftest svg/scripted/script-style-attribute-csp.html
 reftest svg/shapes/circle-01.svg
 reftest svg/shapes/ellipse-01.svg
@@ -33633,6 +33747,10 @@ reftest svg/styling/css-linked-parameters/link-parameters-currentcolor-untyped.h
 reftest svg/styling/css-linked-parameters/link-parameters-duplicate-name.html
 reftest svg/styling/css-linked-parameters/link-parameters-dynamic.html
 reftest svg/styling/css-linked-parameters/link-parameters-fallback.html
+reftest svg/styling/css-linked-parameters/link-parameters-feimage-dynamic.html
+reftest svg/styling/css-linked-parameters/link-parameters-feimage-resolution.html
+reftest svg/styling/css-linked-parameters/link-parameters-feimage-subregion.html
+reftest svg/styling/css-linked-parameters/link-parameters-feimage.html
 reftest svg/styling/css-linked-parameters/link-parameters-fragment-shared-resource.html
 reftest svg/styling/css-linked-parameters/link-parameters-geometry.html
 reftest svg/styling/css-linked-parameters/link-parameters-invalid-typed-value.html
@@ -33745,6 +33863,7 @@ reftest svg/text/reftests/text-shape-inside-002.svg
 reftest svg/text/reftests/text-transform-001.html
 reftest svg/text/reftests/text-transform-002.html
 reftest svg/text/reftests/text-unknown-element-not-rendered.svg
+reftest svg/text/reftests/text-visibility-hidden-tspan-visible.html
 reftest svg/text/reftests/text-xml-space-001.svg
 reftest svg/text/reftests/textLength-list-x-spacingAndGlyphs.svg
 reftest svg/text/reftests/textLength-list-y-spacing.svg
@@ -36656,6 +36775,10 @@ testharness css/css-align/abspos/justify-self-htb-ltr-vrl.html
 testharness css/css-align/abspos/justify-self-htb-rtl-htb.html
 testharness css/css-align/abspos/justify-self-htb-rtl-vlr.html
 testharness css/css-align/abspos/justify-self-htb-rtl-vrl.html
+testharness css/css-align/abspos/justify-self-static-position-htb-ltr-htb.html
+testharness css/css-align/abspos/justify-self-static-position-htb-rtl-htb.html
+testharness css/css-align/abspos/justify-self-static-position-vlr-ltr-vlr.html
+testharness css/css-align/abspos/justify-self-static-position-vrl-ltr-vrl.html
 testharness css/css-align/abspos/justify-self-vlr-ltr-htb.html
 testharness css/css-align/abspos/justify-self-vlr-ltr-vlr.html
 testharness css/css-align/abspos/justify-self-vlr-ltr-vrl.html
@@ -37400,8 +37523,13 @@ testharness css/css-borders/corner-shape/corner-shape-computed.html
 testharness css/css-borders/corner-shape/corner-shape-hittest.html
 testharness css/css-borders/corner-shape/corner-shape-interpolation.html
 testharness css/css-borders/corner-shape/corner-shape-invalid.html
+testharness css/css-borders/corner-shape/corner-shape-outside-content-box.html
+testharness css/css-borders/corner-shape/corner-shape-outside-corners.html
 testharness css/css-borders/corner-shape/corner-shape-outside-left.html
+testharness css/css-borders/corner-shape/corner-shape-outside-margin-box.html
+testharness css/css-borders/corner-shape/corner-shape-outside-padding-box.html
 testharness css/css-borders/corner-shape/corner-shape-outside-right.html
+testharness css/css-borders/corner-shape/corner-shape-outside-shape-margin.html
 testharness css/css-borders/corner-shape/corner-shape-valid.html
 testharness css/css-borders/corner-shape/corner-top-computed.html
 testharness css/css-borders/corner-shape/corner-top-left-computed.html
@@ -38131,6 +38259,10 @@ testharness css/css-display/display-contents-parsing-001.html
 testharness css/css-display/display-contents-pseudo-click-target.html
 testharness css/css-display/display-contents-svg-anchor-child.html
 testharness css/css-display/display-contents-svg-switch-child.html
+testharness css/css-display/display-contents-svg-tspan-child-character-positions.html
+testharness css/css-display/display-contents-svg-tspan-child-display-changed.html
+testharness css/css-display/display-contents-svg-tspan-child-removed.html
+testharness css/css-display/display-contents-svg-tspan-child-text-inserted.html
 testharness css/css-display/display-first-letter-001.html
 testharness css/css-display/display-first-line-001.html
 testharness css/css-display/display-initial.html
@@ -41451,6 +41583,7 @@ testharness css/css-sizing/svg-intrinsic-size-008.html
 testharness css/css-sizing/svg-intrinsic-size-009.html
 testharness css/css-sizing/svg-intrinsic-size-010.html
 testharness css/css-sizing/svg-intrinsic-size-011.html
+testharness css/css-sizing/svg-intrinsic-size-zero-img-and-object.html
 testharness css/css-sizing/table-cell-definite-height-transferred-size.html
 testharness css/css-sizing/table-percentage-max-width-beside-float.html
 testharness css/css-sizing/table-percentage-min-width-below-float.html
@@ -41508,6 +41641,8 @@ testharness css/css-tables/absolute-tables-002.html
 testharness css/css-tables/absolute-tables-003.html
 testharness css/css-tables/absolute-tables-004.html
 testharness css/css-tables/absolute-tables-005.html
+testharness css/css-tables/absolute-tables-height-001.html
+testharness css/css-tables/absolute-tables-height-quirks-001.html
 testharness css/css-tables/animations/border-spacing-interpolation.html
 testharness css/css-tables/auto-layout-calc-width-001.html
 testharness css/css-tables/border-spacing-included-in-sizes-001.html
@@ -46284,6 +46419,8 @@ testharness event-timing/disconnect-target.html
 testharness event-timing/duration-with-target-low.html
 testharness event-timing/event-click-counts.html
 testharness event-timing/event-click-visibilitychange.html
+testharness event-timing/event-counts-maplike-iterators-always-updated.html
+testharness event-timing/event-counts-maplike-validate-iterators.html
 testharness event-timing/event-counts-zero.html
 testharness event-timing/event-retarget.html
 testharness event-timing/first-input-interactionid-click.html
@@ -47874,6 +48011,7 @@ testharness html/browsers/origin/origin-keyed-agent-clusters/insecure-http-opene
 testharness html/browsers/origin/origin-keyed-agent-clusters/insecure-http-parent-https-children.sub.html
 testharness html/browsers/origin/origin-keyed-agent-clusters/insecure-http.sub.html
 testharness html/browsers/origin/origin-keyed-agent-clusters/no-content-response.sub.https.html
+testharness html/browsers/origin/origin-keyed-agent-clusters/popups/noopener-opener-no-openee-yes-same.https.html
 testharness html/browsers/origin/origin-keyed-agent-clusters/popups/opener-no-openee-yes-port.sub.https.html
 testharness html/browsers/origin/origin-keyed-agent-clusters/popups/opener-no-openee-yes-same.sub.https.html
 testharness html/browsers/origin/origin-keyed-agent-clusters/popups/opener-no-openee-yes-subdomain.sub.https.html
@@ -52115,6 +52253,8 @@ testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buf
 testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buffers/window-iframe-messagechannel.https.html
 testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buffers/window-iframe-not-cross-origin-isolated.https.html
 testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buffers/window-messagechannel-success.https.html
+testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buffers/window-noopener-failure.https.html
+testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buffers/window-opener-success.https.html
 testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buffers/window-serviceworker-failure.https.html
 testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buffers/window-sharedworker-failure.https.html
 testharness html/infrastructure/safe-passing-of-structured-data/shared-array-buffers/window-simple-success.https.html
@@ -55836,6 +55976,8 @@ testharness intersection-observer/observer-attributes.html
 testharness intersection-observer/observer-callback-arguments.html
 testharness intersection-observer/observer-exceptions.html
 testharness intersection-observer/observer-without-js-reference.html
+testharness intersection-observer/offset-iframe-cross-origin.html
+testharness intersection-observer/offset-iframe-same-origin.html
 testharness intersection-observer/padding-clip.html
 testharness intersection-observer/reinsert-element.html
 testharness intersection-observer/remove-element.html
@@ -57298,12 +57440,14 @@ testharness navigation-api/navigate-event/intercept-history-replaceState.html
 testharness navigation-api/navigate-event/intercept-multiple-times-reject.html
 testharness navigation-api/navigate-event/intercept-multiple-times.html
 testharness navigation-api/navigate-event/intercept-navigation-back.html
+testharness navigation-api/navigate-event/intercept-no-beforeunload.html
 testharness navigation-api/navigate-event/intercept-on-synthetic-event.html
 testharness navigation-api/navigate-event/intercept-popstate-no-handler.html
 testharness navigation-api/navigate-event/intercept-popstate.html
 testharness navigation-api/navigate-event/intercept-reject.html
 testharness navigation-api/navigate-event/intercept-resolve.html
 testharness navigation-api/navigate-event/intercept-same-document-history-back.html
+testharness navigation-api/navigate-event/intercept-stops-ongoing-cross-document-navigation.html
 testharness navigation-api/navigate-event/intercepted-navigation-after-bfcache-restore.html
 testharness navigation-api/navigate-event/navigate-anchor-cross-origin-userInitiated.html
 testharness navigation-api/navigate-event/navigate-anchor-cross-origin.html
@@ -57352,6 +57496,7 @@ testharness navigation-api/navigate-event/navigate-multiple-nested-navigateerror
 testharness navigation-api/navigate-event/navigate-navigation-back-cross-document.html
 testharness navigation-api/navigate-event/navigate-navigation-back-same-document-in-iframe.html
 testharness navigation-api/navigate-event/navigate-navigation-back-same-document.html
+testharness navigation-api/navigate-event/navigate-navigation-navigate-cross-site-preventDefault.html
 testharness navigation-api/navigate-event/navigate-navigation-navigate.html
 testharness navigation-api/navigate-event/navigate-svg-anchor-fragment.html
 testharness navigation-api/navigate-event/navigate-to-javascript.html
@@ -61577,6 +61722,7 @@ testharness speculation-rules/prefetch/different-initiators-2.https.html
 testharness speculation-rules/prefetch/different-initiators.sub.https.html
 testharness speculation-rules/prefetch/document-rules-details-element.https.html
 testharness speculation-rules/prefetch/document-rules-pending-stylesheet.https.html
+testharness speculation-rules/prefetch/document-rules-visibility.https.html
 testharness speculation-rules/prefetch/document-rules.https.html
 testharness speculation-rules/prefetch/duplicate-urls.https.html
 testharness speculation-rules/prefetch/fragment.https.html
@@ -61594,11 +61740,14 @@ testharness speculation-rules/prefetch/mutate-rules.https.html
 testharness speculation-rules/prefetch/navigation-timing-delivery-type.https.html
 testharness speculation-rules/prefetch/navigation-timing-requestStart-responseStart.https.html
 testharness speculation-rules/prefetch/navigation-timing-sizes.https.html
+testharness speculation-rules/prefetch/no-http-cache-interference-inflight.https.html
+testharness speculation-rules/prefetch/no-http-cache-interference-slow-error.https.html
 testharness speculation-rules/prefetch/no-http-cache-interference.https.html
 testharness speculation-rules/prefetch/no-prefetch-for-post.https.html
 testharness speculation-rules/prefetch/no-vary-search/prefetch-single-with-hint.https.html
 testharness speculation-rules/prefetch/no-vary-search/prefetch-single.https.html
 testharness speculation-rules/prefetch/out-of-document-rule-set.https.html
+testharness speculation-rules/prefetch/prefetch-inflight-success.https.html
 testharness speculation-rules/prefetch/prefetch-single.https.html
 testharness speculation-rules/prefetch/prefetch-status.https.html
 testharness speculation-rules/prefetch/prefetch-traverse-reload.sub.html
@@ -62285,6 +62434,8 @@ testharness svg/coordinate-systems/outer-svg-intrinsic-size-001.html
 testharness svg/coordinate-systems/outer-svg-intrinsic-size-002.html
 testharness svg/coordinate-systems/outer-svg-resize-001e.html
 testharness svg/coordinate-systems/outer-svg-resize-001o.html
+testharness svg/coordinate-systems/outer-svg-transform-attribute-computed-style.html
+testharness svg/coordinate-systems/outer-svg-transform-attribute-scrollable-overflow.html
 testharness svg/coordinate-systems/svgtransformlist-replaceitem.html
 testharness svg/coordinate-systems/transform-translate-single-parameter.html
 testharness svg/coordinate-systems/viewBox-invalid-attribute-baseval.tentative.html
@@ -62385,6 +62536,7 @@ testharness svg/interact/scripted/focus-tabindex-default-value.svg
 testharness svg/interact/scripted/focus-tabindex-invalid-value.svg
 testharness svg/interact/scripted/module-01.svg
 testharness svg/interact/scripted/module-02.html
+testharness svg/interact/scripted/non-scaling-stroke-transform-change-hittest.html
 testharness svg/interact/scripted/pointer-events-fill-stroke-hittest.html
 testharness svg/interact/scripted/pointer-events-getBoundingClientRect.html
 testharness svg/interact/scripted/rect-hittest-001.html
@@ -62397,6 +62549,7 @@ testharness svg/interact/scripted/tabindex-focus-flag.svg
 testharness svg/interact/scripted/text-hittest-001.html
 testharness svg/interact/scripted/text-hittest-002.html
 testharness svg/interact/scripted/text-hittest-003.html
+testharness svg/interact/scripted/transformed-group-hittest.html
 testharness svg/linking/scripted/a-download-click.svg
 testharness svg/linking/scripted/a-hyperlinkutils-getter-setter.html
 testharness svg/linking/scripted/a-hyperlinkutils-getter.html
@@ -65061,6 +65214,7 @@ testharness webrtc-extensions/RTCRtpParameters-adaptivePtime.html
 testharness webrtc-extensions/RTCRtpSynchronizationSource-captureTimestamp.html
 testharness webrtc-extensions/RTCRtpSynchronizationSource-senderCaptureTimeOffset.html
 testharness webrtc-extensions/RTCRtpTransceiver-headerExtensionControl.html
+testharness webrtc-extensions/targetLatency.html
 testharness webrtc-extensions/transfer-datachannel-service-worker.https.html
 testharness webrtc-ice/RTCIceTransport-extension.https.html
 testharness webrtc-identity/RTCPeerConnection-constructor.html
@@ -65786,6 +65940,7 @@ testharness webxr/hand-input/idlharness.https.window.js
 testharness webxr/historical.html
 testharness webxr/hit-test/ar_hittest_source_cancel.https.html
 testharness webxr/hit-test/ar_hittest_subscription_inputSources.https.html
+testharness webxr/hit-test/ar_hittest_subscription_inputSources_gripSpace.https.html
 testharness webxr/hit-test/ar_hittest_subscription_optional_offsetRay.https.html
 testharness webxr/hit-test/ar_hittest_subscription_refSpaces.https.html
 testharness webxr/hit-test/ar_hittest_subscription_states_regular.https.html
