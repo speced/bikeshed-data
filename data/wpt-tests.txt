@@ -1,4 +1,4 @@
-sha: 4e3292cf4dbfd512ec6104a9d3644eecb886a010
+sha: dead33fe5059bbb8f63743538fffa6e0e17d7b15
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -13351,6 +13351,7 @@ reftest css/css-borders/border-shape/border-shape-stroke-from-border.html
 reftest css/css-borders/border-shape/border-shape-stroke-invalidation.html
 reftest css/css-borders/border-shape/border-shape-two-shapes-shadow.html
 reftest css/css-borders/borders-on-sub-unit-sized-elements.html
+reftest css/css-borders/corner-shape/corner-shape-ancestor-clip-dynamic.html
 reftest css/css-borders/corner-shape/corner-shape-backdrop-filter-overflow.html
 reftest css/css-borders/corner-shape/corner-shape-backdrop-filter-video-overflow.html
 reftest css/css-borders/corner-shape/corner-shape-backdrop-filter.html
@@ -20116,6 +20117,7 @@ reftest css/css-images/normalization-radial-3.html
 reftest css/css-images/normalization-radial-4.html
 reftest css/css-images/normalization-radial-degenerate.html
 reftest css/css-images/normalization-radial.html
+reftest css/css-images/object-fit-change-svg-001o.html
 reftest css/css-images/object-fit-contain-png-001c.html
 reftest css/css-images/object-fit-contain-png-001e.html
 reftest css/css-images/object-fit-contain-png-001i.html
@@ -20329,18 +20331,22 @@ reftest css/css-images/object-view-box-embedded-svg-dynamic-change.html
 reftest css/css-images/object-view-box-empty-bounds.html
 reftest css/css-images/object-view-box-fit-contain-canvas.html
 reftest css/css-images/object-view-box-fit-contain-img.html
+reftest css/css-images/object-view-box-fit-contain-svg-object.html
 reftest css/css-images/object-view-box-fit-contain-svg.html
 reftest css/css-images/object-view-box-fit-contain-video.html
 reftest css/css-images/object-view-box-fit-cover-canvas.html
 reftest css/css-images/object-view-box-fit-cover-img.html
+reftest css/css-images/object-view-box-fit-cover-svg-object.html
 reftest css/css-images/object-view-box-fit-cover-svg.html
 reftest css/css-images/object-view-box-fit-cover-video.html
 reftest css/css-images/object-view-box-fit-fill-canvas.html
 reftest css/css-images/object-view-box-fit-fill-img.html
+reftest css/css-images/object-view-box-fit-fill-svg-object.html
 reftest css/css-images/object-view-box-fit-fill-svg.html
 reftest css/css-images/object-view-box-fit-fill-video.html
 reftest css/css-images/object-view-box-fit-none-canvas.html
 reftest css/css-images/object-view-box-fit-none-img.html
+reftest css/css-images/object-view-box-fit-none-svg-object.html
 reftest css/css-images/object-view-box-fit-none-svg.html
 reftest css/css-images/object-view-box-fit-none-video.html
 reftest css/css-images/object-view-box-iframe.html
@@ -28906,6 +28912,8 @@ reftest css/css-view-transitions/web-animations-api.html
 reftest css/css-view-transitions/writing-mode-container-resize.html
 reftest css/css-viewport/zoom/abspos-static-position.html
 reftest css/css-viewport/zoom/animation-range.html
+reftest css/css-viewport/zoom/aspect-ratio-height-with-automatic-minimum-size-tall.html
+reftest css/css-viewport/zoom/aspect-ratio-height-with-automatic-minimum-size.html
 reftest css/css-viewport/zoom/background-image.html
 reftest css/css-viewport/zoom/background-size.html
 reftest css/css-viewport/zoom/basic.html
@@ -33167,6 +33175,7 @@ reftest mathml/relations/text-and-math/mi-automatic-italic-with-default-font.htm
 reftest mathml/relations/text-and-math/mo-glyph-height-with-default-font.html
 reftest mathml/relations/text-and-math/non-mathml-children-in-annotation.tentative.html
 reftest mathml/relations/text-and-math/use-typo-metrics-1.html
+reftest media-source/mediasource-video-is-visible.html
 reftest page-lifecycle/set-composited-layer-position.html
 reftest permissions-policy/experimental-features/vertical-scroll-disabled-scrollbar-tentative.html
 reftest png/apng/acTL-plays-one.html
@@ -36721,6 +36730,7 @@ testharness css/CSS2/floats/float-dynamic-formatting-context.html
 testharness css/CSS2/floats/float-in-block-in-inline-position-001.html
 testharness css/CSS2/floats/float-in-self-painting-inline.html
 testharness css/CSS2/floats/float-no-interpolation.html
+testharness css/CSS2/floats/floats-in-inline-content-intrinsic-size-001.html
 testharness css/CSS2/floats/hit-test-floats-001.html
 testharness css/CSS2/floats/hit-test-floats-002.html
 testharness css/CSS2/floats/hit-test-floats-003.html
@@ -38647,6 +38657,7 @@ testharness css/css-flexbox/intrinsic-size/col-wrap-018.html
 testharness css/css-flexbox/intrinsic-size/col-wrap-019.html
 testharness css/css-flexbox/intrinsic-size/col-wrap-baseline-001.html
 testharness css/css-flexbox/intrinsic-size/col-wrap-calc-size-001.html
+testharness css/css-flexbox/intrinsic-size/col-wrap-dynamic-002.html
 testharness css/css-flexbox/intrinsic-size/col-wrap-grid-item-001.html
 testharness css/css-flexbox/intrinsic-size/col-wrap-percentage-001.html
 testharness css/css-flexbox/intrinsic-size/percentage-gap-001.html
@@ -39825,6 +39836,9 @@ testharness css/css-images/image-orientation/image-orientation-none-computed-sty
 testharness css/css-images/image-set/image-set-computed.sub.html
 testharness css/css-images/image-set/image-set-parsing.html
 testharness css/css-images/inheritance.html
+testharness css/css-images/object-fit-svg-intersection-observer.sub.html
+testharness css/css-images/object-fit-svg-pointer-events.html
+testharness css/css-images/object-fit-svg-scroll-into-view.html
 testharness css/css-images/object-view-box-parsing.html
 testharness css/css-images/object-view-box-transition-mutation.html
 testharness css/css-images/parsing/conic-gradient-calc-angle-percentage-invalid.html
@@ -39856,6 +39870,7 @@ testharness css/css-inline/animation/alignment-baseline-no-interpolation.html
 testharness css/css-inline/animation/baseline-shift-composition.html
 testharness css/css-inline/animation/dominant-baseline-no-interpolation.html
 testharness css/css-inline/animation/initial-letter-no-interpolation.html
+testharness css/css-inline/atomic-inline-intrinsic-size-001.html
 testharness css/css-inline/baseline-shift/baseline-shift-sub-super-svg.html
 testharness css/css-inline/baseline-shift/baseline-shift-sub-super.html
 testharness css/css-inline/baseline-source/baseline-source-computed.html
@@ -40587,6 +40602,7 @@ testharness css/css-position/backdrop-tree-abiding-slotted.html
 testharness css/css-position/backdrop-ua-style.html
 testharness css/css-position/box-insets-top-right-bottom-left.html
 testharness css/css-position/inheritance.html
+testharness css/css-position/out-of-flow-in-inline-content-intrinsic-size-001.html
 testharness css/css-position/overlay/animation/overlay-interpolation.html
 testharness css/css-position/overlay/overlay-computed.html
 testharness css/css-position/overlay/overlay-invalid.html
@@ -41512,6 +41528,7 @@ testharness css/css-sizing/contain-intrinsic-size/parsing/contain-intrinsic-size
 testharness css/css-sizing/contain-intrinsic-size/parsing/contain-intrinsic-size-valid.html
 testharness css/css-sizing/fieldset-intrinsic-size-percent.html
 testharness css/css-sizing/fit-content-percentage-padding.html
+testharness css/css-sizing/form-control-in-inline-content-intrinsic-size-001.html
 testharness css/css-sizing/inheritance-001.html
 testharness css/css-sizing/inheritance-002.html
 testharness css/css-sizing/intrinsic-percent-non-replaced-006.html
@@ -51894,6 +51911,7 @@ testharness html/cross-origin-opener-policy/resource-popup.https.html
 testharness html/cross-origin-opener-policy/tentative/noopener/coop-noopener-allow-popups-restrict-properties.https.html
 testharness html/document-isolation-policy/agent-cluster.tentative.https.html
 testharness html/document-isolation-policy/back-forward-cache-frames.tentative.https.html
+testharness html/document-isolation-policy/back-forward-cache-same-origin-frames.tentative.https.html
 testharness html/document-isolation-policy/back-forward-cache.tentative.https.html
 testharness html/document-isolation-policy/blob-document-inherits-policy.tentative.https.html
 testharness html/document-isolation-policy/broadcast-channel.tentative.https.html
@@ -53065,6 +53083,7 @@ testharness html/semantics/embedded-content/media-elements/readyState_during_loa
 testharness html/semantics/embedded-content/media-elements/readyState_during_loadedmetadata.html
 testharness html/semantics/embedded-content/media-elements/readyState_during_playing.html
 testharness html/semantics/embedded-content/media-elements/readyState_initial.html
+testharness html/semantics/embedded-content/media-elements/replay.html
 testharness html/semantics/embedded-content/media-elements/seeking/seek-to-currentTime.html
 testharness html/semantics/embedded-content/media-elements/seeking/seek-to-max-value.htm
 testharness html/semantics/embedded-content/media-elements/seeking/seek-to-negative-time.htm
