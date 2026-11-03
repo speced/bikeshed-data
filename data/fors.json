@@ -24762,7 +24762,6 @@
     "khmer",
     "korean-hangul",
     "korean-hangul-formal",
-    "korean-hangul-format",
     "korean-hanja",
     "korean-hanja-formal",
     "korean-hanja-informal",
@@ -32572,13 +32571,6 @@
   "CustomEventInit": [
     "detail"
   ],
-  "Cyclic Module Records": [
-    "Evaluate()",
-    "ExecuteModule(capability)",
-    "InitializeEnvironment()",
-    "Link()",
-    "LoadRequestedModules(hostDefined)"
-  ],
   "DOMException": [
     "ABORT_ERR",
     "DATA_CLONE_ERR",
@@ -33984,19 +33976,6 @@
   "Date.prototype [ %Symbol.toPrimitive% ] ( hint )": [
     "Date.prototype %Symbol.toPrimitive% (hint)"
   ],
-  "Declarative Environment Records": [
-    "CreateImmutableBinding(name, strict)",
-    "CreateMutableBinding(name, deletable)",
-    "DeleteBinding(name)",
-    "GetBindingValue(name, strict)",
-    "GetThisBinding()",
-    "HasBinding(name)",
-    "HasSuperBinding()",
-    "HasThisBinding()",
-    "InitializeBinding(name, value)",
-    "SetMutableBinding(name, value, strict)",
-    "WithBaseObject()"
-  ],
   "DecodeErrorCallback": [
     "error"
   ],
@@ -34898,7 +34877,11 @@
     "AsyncDisposable",
     "AsyncGeneratorRequest",
     "AsyncGeneratorRequests",
+    "BigInt object",
+    "BigInt objects",
     "BigInt type",
+    "Boolean object",
+    "Boolean objects",
     "Boolean type",
     "CaptureRange",
     "CaptureRanges",
@@ -34993,6 +34976,8 @@
     "ModuleRequest Record",
     "ModuleRequest Records",
     "NativeError prototype object",
+    "Number object",
+    "Number objects",
     "Number type",
     "Number value for",
     "Object Environment Record",
@@ -35045,10 +35030,12 @@
     "String Iterator",
     "String Iterators,String Iterator object,String Iterator objects",
     "String exotic object",
-    "String exotic objects",
+    "String exotic objects,String object,String objects",
     "String type",
     "Super Reference Record",
     "Super Reference Records",
+    "Symbol object",
+    "Symbol objects",
     "Symbol type",
     "Synchronize events",
     "Synchronize,Synchronize event",
@@ -35091,6 +35078,8 @@
     "async iterable,async iterables,async iterable object,async iterable objects",
     "async iterator interface",
     "async iterator object,async iterator objects,async iterator,async iterators",
+    "attribute",
+    "attributes",
     "available named time zone",
     "available named time zone identifier",
     "available named time zone identifiers",
@@ -35099,6 +35088,14 @@
     "bound function exotic objects",
     "break completion",
     "break completions",
+    "built-in constructor",
+    "built-in constructors",
+    "built-in function",
+    "built-in functions",
+    "built-in method",
+    "built-in methods",
+    "built-in object",
+    "built-in objects",
     "byte value",
     "byte values",
     "candidate execution",
@@ -35149,7 +35146,7 @@
     "fixed-length SharedArrayBuffer",
     "fully populated Property Descriptor",
     "function object",
-    "function objects",
+    "function objects,function,functions",
     "global object",
     "global objects",
     "growable SharedArrayBuffer",
@@ -35169,6 +35166,8 @@
     "immutable prototype exotic objects",
     "implementation-approximated",
     "implementation-defined",
+    "inherited properties",
+    "inherited property",
     "integer index",
     "integer indices,integer-indexed",
     "is a BigInt,is not a BigInt",
@@ -35198,6 +35197,8 @@
     "memory model",
     "memory range",
     "memory ranges",
+    "method",
+    "methods",
     "module namespace exotic object",
     "module namespace exotic objects",
     "non-primary time zone identifier",
@@ -35215,14 +35216,20 @@
     "offset time zones",
     "ordinary object",
     "ordinary objects",
+    "own properties",
+    "own property",
     "possible read values",
     "prepared to evaluate ECMAScript code",
     "primary time zone identifier",
     "primary time zone identifiers",
+    "primitive value",
+    "primitive values",
     "property key",
     "property keys",
     "property name",
     "property names",
+    "prototype",
+    "prototypes",
     "read event",
     "read events",
     "read-modify-write modification function",
@@ -35240,6 +35247,8 @@
     "safe integer",
     "sort order",
     "standard base64 alphabet",
+    "standard object",
+    "standard objects",
     "strict function",
     "strict functions",
     "strict mode code",
@@ -37211,11 +37220,6 @@
     "call(thisArg, ...args)",
     "toString()"
   ],
-  "Function Environment Records": [
-    "GetThisBinding()",
-    "HasSuperBinding()",
-    "HasThisBinding()"
-  ],
   "Function.prototype [ %Symbol.hasInstance% ] ( value )": [
     "Function.prototype %Symbol.hasInstance% (value)"
   ],
@@ -38848,19 +38852,6 @@
     "constructor(descriptor, v)",
     "value",
     "valueOf()"
-  ],
-  "Global Environment Records": [
-    "CreateImmutableBinding(name, strict)",
-    "CreateMutableBinding(name, deletable)",
-    "DeleteBinding(name)",
-    "GetBindingValue(name, strict)",
-    "GetThisBinding()",
-    "HasBinding(name)",
-    "HasSuperBinding()",
-    "HasThisBinding()",
-    "InitializeBinding(name, value)",
-    "SetMutableBinding(name, value, strict)",
-    "WithBaseObject()"
   ],
   "Global/Global(descriptor)": [
     "descriptor",
@@ -41511,6 +41502,17 @@
   ],
   "ImageTrackList/__getter__(index)": [
     "index"
+  ],
+  "Implementation of Cyclic Module Record Abstract Methods": [
+    "ExecuteModule(capability)",
+    "InitializeEnvironment()"
+  ],
+  "Implementation of Module Record Abstract Methods": [
+    "Evaluate()",
+    "GetExportedNames(exportStarSet)",
+    "Link()",
+    "LoadRequestedModules(hostDefined)",
+    "ResolveExport(exportName, resolveSet)"
   ],
   "ImportExportKind": [
     "\"function\"",
@@ -45427,6 +45429,19 @@
     "none",
     "single-shot"
   ],
+  "Methods": [
+    "CreateImmutableBinding(name, strict)",
+    "CreateMutableBinding(name, deletable)",
+    "DeleteBinding(name)",
+    "GetBindingValue(name, strict)",
+    "GetThisBinding()",
+    "HasBinding(name)",
+    "HasSuperBinding()",
+    "HasThisBinding()",
+    "InitializeBinding(name, value)",
+    "SetMutableBinding(name, value, strict)",
+    "WithBaseObject()"
+  ],
   "MidiPermissionDescriptor": [
     "sysex"
   ],
@@ -45536,12 +45551,6 @@
     "customSections(moduleObject, sectionName)",
     "exports(moduleObject)",
     "imports(moduleObject)"
-  ],
-  "Module Environment Records": [
-    "DeleteBinding(name)",
-    "GetBindingValue(name, strict)",
-    "GetThisBinding()",
-    "HasThisBinding()"
   ],
   "Module/Module(bytes)": [
     "bytes",
@@ -46613,19 +46622,6 @@
     "toString()",
     "valueOf()",
     "values(obj)"
-  ],
-  "Object Environment Records": [
-    "CreateImmutableBinding(name, strict)",
-    "CreateMutableBinding(name, deletable)",
-    "DeleteBinding(name)",
-    "GetBindingValue(name, strict)",
-    "GetThisBinding()",
-    "HasBinding(name)",
-    "HasSuperBinding()",
-    "HasThisBinding()",
-    "InitializeBinding(name, value)",
-    "SetMutableBinding(name, value, strict)",
-    "WithBaseObject()"
   ],
   "Observable": [
     "Observable(callback)",
@@ -53485,10 +53481,6 @@
     "ipv4",
     "ipv6"
   ],
-  "Source Text Module Records": [
-    "GetExportedNames(exportStarSet)",
-    "ResolveExport(exportName, resolveSet)"
-  ],
   "SourceBuffer": [
     "[[append state]]",
     "[[audio track added flag]]",
@@ -54416,13 +54408,6 @@
   ],
   "SyncManager/register(tag)": [
     "tag"
-  ],
-  "Synthetic Module Records": [
-    "Evaluate()",
-    "GetExportedNames(exportStarSet)",
-    "Link()",
-    "LoadRequestedModules(hostDefined)",
-    "ResolveExport(exportName, resolveSet)"
   ],
   "SystemAudioPreferenceEnum": [
     "exclude",
