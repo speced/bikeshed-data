@@ -1,4 +1,4 @@
-sha: a421f2fea5eb7f91e0db399e44b0fb0779ee1603
+sha: 12bd9ce16509780b4bf34d1a42b64910b5609379
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -20102,7 +20102,11 @@ reftest css/css-images/image-orientation/image-orientation-iframe.html
 reftest css/css-images/image-orientation/image-orientation-img-object-fit.html
 reftest css/css-images/image-orientation/image-orientation-list-style-image.html
 reftest css/css-images/image-orientation/image-orientation-mask-image.html
+reftest css/css-images/image-orientation/image-orientation-none-background-repeat.html
+reftest css/css-images/image-orientation/image-orientation-none-border-image-repeat.html
 reftest css/css-images/image-orientation/image-orientation-none-content-images.html
+reftest css/css-images/image-orientation/image-orientation-none-cross-origin-background-repeat.sub.html
+reftest css/css-images/image-orientation/image-orientation-none-cross-origin-border-image-repeat.sub.html
 reftest css/css-images/image-orientation/image-orientation-none-cross-origin-border-image.sub.html
 reftest css/css-images/image-orientation/image-orientation-none-cross-origin-canvas-css-image-value.sub.html
 reftest css/css-images/image-orientation/image-orientation-none-cross-origin-canvas-pattern.html
@@ -22685,6 +22689,7 @@ reftest css/css-overflow/text-overflow-string-in-textarea-multiline.html
 reftest css/css-overflow/text-overflow-string-in-textarea-not-inherited.html
 reftest css/css-overflow/text-overflow-string-in-textarea-scrolled-back.html
 reftest css/css-overflow/text-overflow-string-in-textarea-scrolled.html
+reftest css/css-overflow/text-overflow-with-selection-first-line.html
 reftest css/css-overflow/text-overflow-with-selection.html
 reftest css/css-overflow/text-overflow.html
 reftest css/css-paint-api/background-image-alpha.https.html
@@ -28746,6 +28751,7 @@ reftest css/css-view-transitions/auto-name-from-id.html
 reftest css/css-view-transitions/auto-name.html
 reftest css/css-view-transitions/backdrop-filter-animated.html
 reftest css/css-view-transitions/backdrop-filter-captured.html
+reftest css/css-view-transitions/backdrop-filter-in-root-old-snapshot.html
 reftest css/css-view-transitions/backdrop-filter-while-promise-pending.html
 reftest css/css-view-transitions/block-with-overflowing-text.html
 reftest css/css-view-transitions/break-inside-avoid-child.html
@@ -33892,6 +33898,9 @@ reftest svg/render/reftests/blending-svg-root.html
 reftest svg/render/reftests/change-sync-for-nested-use.html
 reftest svg/render/reftests/filter-effects-on-pattern.html
 reftest svg/render/reftests/nested-svg-overflow-clip.html
+reftest svg/render/reftests/outer-svg-transform-box-shadow.html
+reftest svg/render/reftests/outer-svg-transform-outline.html
+reftest svg/render/reftests/outer-svg-transform-overflow-clip.html
 reftest svg/render/reftests/overflow-clip.html
 reftest svg/render/reftests/render-sync-with-font-size.html
 reftest svg/render/reftests/svg-filter-unresolved-reference.html
@@ -35848,6 +35857,7 @@ testharness content-security-policy/connect-src/connect-src-fetch-keepalive-bloc
 testharness content-security-policy/connect-src/connect-src-fetch-keepalive-redirect-to-blocked.sub.html
 testharness content-security-policy/connect-src/connect-src-json-import-allowed.sub.html
 testharness content-security-policy/connect-src/connect-src-json-import-blocked.sub.html
+testharness content-security-policy/connect-src/connect-src-json-import-in-worker-and-worklet-blocked.https.html
 testharness content-security-policy/connect-src/connect-src-syncxmlhttprequest-allowed.sub.html
 testharness content-security-policy/connect-src/connect-src-syncxmlhttprequest-blocked.sub.html
 testharness content-security-policy/connect-src/connect-src-syncxmlhttprequest-redirect-to-blocked.sub.html
@@ -38732,6 +38742,7 @@ testharness css/css-flexbox/flex-flow-013.html
 testharness css/css-flexbox/flex-item-compressible-001.html
 testharness css/css-flexbox/flex-item-compressible-002.html
 testharness css/css-flexbox/flex-item-contains-strict.html
+testharness css/css-flexbox/flex-item-min-max-width-intrinsic-contribution-001.html
 testharness css/css-flexbox/flex-item-percentage-height-img-001.html
 testharness css/css-flexbox/flex-minimum-height-flex-items-009.html
 testharness css/css-flexbox/flex-minimum-height-flex-items-010.html
@@ -39681,6 +39692,7 @@ testharness css/css-grid/grid-items/grid-item-min-block-size-dynamic-container-s
 testharness css/css-grid/grid-items/grid-item-min-contribution-behaves-as-auto-001.html
 testharness css/css-grid/grid-items/grid-item-min-contribution-fit-content-001.html
 testharness css/css-grid/grid-items/grid-item-min-height-border-box-001.html
+testharness css/css-grid/grid-items/grid-item-min-max-width-contribution-001.html
 testharness css/css-grid/grid-items/grid-item-min-width-height-auto-001.html
 testharness css/css-grid/grid-items/grid-item-min-width-margin-box-001.html
 testharness css/css-grid/grid-items/grid-item-minimum-size-single-axis-scroll-container.html
@@ -41718,6 +41730,7 @@ testharness css/css-sizing/aspect-ratio/replaced-element-036.html
 testharness css/css-sizing/aspect-ratio/replaced-element-042.html
 testharness css/css-sizing/aspect-ratio/replaced-element-043.html
 testharness css/css-sizing/aspect-ratio/replaced-element-044.html
+testharness css/css-sizing/aspect-ratio/replaced-element-intrinsic-contribution-transferred-min-width-001.html
 testharness css/css-sizing/aspect-ratio/sign-function-aspect-ratio.html
 testharness css/css-sizing/available-height-for-replaced-content-001.html
 testharness css/css-sizing/button-min-width.html
@@ -41763,6 +41776,7 @@ testharness css/css-sizing/intrinsic-percent-replaced-028.html
 testharness css/css-sizing/intrinsic-percent-replaced-033.html
 testharness css/css-sizing/intrinsic-size-fallback-replaced.html
 testharness css/css-sizing/intrinsic-size-fallback-video.html
+testharness css/css-sizing/keyword-min-max-width-with-fixed-width-contribution.html
 testharness css/css-sizing/keyword-sizes-for-intrinsic-contributions-002.html
 testharness css/css-sizing/keyword-sizes-for-intrinsic-contributions.html
 testharness css/css-sizing/keyword-sizes-on-abspos.html
@@ -41772,6 +41786,7 @@ testharness css/css-sizing/keyword-sizes-on-floated-element.html
 testharness css/css-sizing/keyword-sizes-on-inline-block.html
 testharness css/css-sizing/keyword-sizes-on-replaced-element.html
 testharness css/css-sizing/min-max-content-orthogonal-flow-crash-001.html
+testharness css/css-sizing/min-max-width-contribution-box-sizing.html
 testharness css/css-sizing/min-width-max-width-precedence.html
 testharness css/css-sizing/min-width-min-content-contribution.html
 testharness css/css-sizing/parsing/box-sizing-computed.html
@@ -41809,6 +41824,7 @@ testharness css/css-sizing/replaced-element-max-content-contribution-transferred
 testharness css/css-sizing/replaced-element-transferred-size-flex.html
 testharness css/css-sizing/replaced-fractional-height-from-aspect-ratio-2.html
 testharness css/css-sizing/replaced-fractional-height-from-aspect-ratio.html
+testharness css/css-sizing/replaced-keyword-max-width-contribution.html
 testharness css/css-sizing/replaced-min-width-greater-than-max-width.html
 testharness css/css-sizing/responsive-iframe/parsing/frame-sizing-computed.html
 testharness css/css-sizing/responsive-iframe/parsing/frame-sizing-valid.html
@@ -41999,6 +42015,7 @@ testharness css/css-tables/percent-width-ignored-003.tentative.html
 testharness css/css-tables/table-cell-scroll-height.html
 testharness css/css-tables/table-cell-writing-mode-computed.html
 testharness css/css-tables/table-height-distribution-proportional.html
+testharness css/css-tables/table-min-max-width-intrinsic-contribution.html
 testharness css/css-tables/table-model-fixup-2.html
 testharness css/css-tables/table-model-fixup.html
 testharness css/css-tables/table-position-sticky-computed.html
@@ -46748,6 +46765,7 @@ testharness event-timing/event-retarget.html
 testharness event-timing/first-input-interactionid-click.html
 testharness event-timing/first-input-interactionid-key.html
 testharness event-timing/first-input-interactionid-tap.html
+testharness event-timing/first-input-retrievable-from-timeline.html
 testharness event-timing/first-input-shadow-dom.html
 testharness event-timing/gap-keydown-keyup.html
 testharness event-timing/gap-pointerdown-pointerup.html
@@ -52384,12 +52402,6 @@ testharness html/dom/historical.html
 testharness html/dom/idlharness.any.js
 testharness html/dom/idlharness.https.html
 testharness html/dom/partial-updates/tentative/chained-streaming-templates-with-custom-element.html
-testharness html/dom/partial-updates/tentative/fragment/buffer-immutability.html
-testharness html/dom/partial-updates/tentative/fragment/buffer-in-place.html
-testharness html/dom/partial-updates/tentative/fragment/buffer-mutation-observer.html
-testharness html/dom/partial-updates/tentative/fragment/buffer-reflection.html
-testharness html/dom/partial-updates/tentative/fragment/buffer-streaming-reflection.html
-testharness html/dom/partial-updates/tentative/fragment/buffer-targeted.html
 testharness html/dom/partial-updates/tentative/fragment/empty-for-streaming.html
 testharness html/dom/partial-updates/tentative/fragment/sanitize-boolean.html
 testharness html/dom/partial-updates/tentative/fragment/sanitize-default.html
@@ -52397,7 +52409,6 @@ testharness html/dom/partial-updates/tentative/fragment/sanitize-nested.html
 testharness html/dom/partial-updates/tentative/fragment/sanitize-regular.html
 testharness html/dom/partial-updates/tentative/fragment/sanitize-template-element.html
 testharness html/dom/partial-updates/tentative/fragment/sanitize-unsafe.html
-testharness html/dom/partial-updates/tentative/fragment/src-buffered.sub.html
 testharness html/dom/partial-updates/tentative/fragment/src-cancel.html
 testharness html/dom/partial-updates/tentative/fragment/src-csp-cors.sub.html
 testharness html/dom/partial-updates/tentative/fragment/src-csp.sub.html
@@ -60554,6 +60565,7 @@ testharness remote-playback/watch-availability-callback-parameter.html
 testharness remote-playback/watch-availability-initial-callback.html
 testharness remote-playback/watch-availability-promise-return-callback-id.html
 testharness reporting/bufferSize.html
+testharness reporting/buffered-observe-again.html
 testharness reporting/callback-this.html
 testharness reporting/crashReport-test.html
 testharness reporting/cross-origin-report-no-credentials.https.sub.html
@@ -65118,6 +65130,8 @@ testharness webcodecs/videoFrame-createImageBitmap.https.any.js
 testharness webcodecs/videoFrame-drawImage-hbd.any.js
 testharness webcodecs/videoFrame-drawImage-rgbx.any.js
 testharness webcodecs/videoFrame-drawImage.any.js
+testharness webcodecs/videoFrame-encode-preserves-input.crossOrigin.https.html
+testharness webcodecs/videoFrame-encode-preserves-input.https.any.js
 testharness webcodecs/videoFrame-metadata-rtpTimestamp.https.html
 testharness webcodecs/videoFrame-odd-size.any.js
 testharness webcodecs/videoFrame-orientation-drawImage.any.js
@@ -66399,6 +66413,7 @@ testharness webxr/hit-test/xrRay_constructor.https.html
 testharness webxr/hit-test/xrRay_matrix.https.html
 testharness webxr/idlharness.https.window.js
 testharness webxr/layers/idlharness.https.window.js
+testharness webxr/layers/xrCompositionLayer_destroy.https.html
 testharness webxr/layers/xrCylinderLayer_paramValidation.https.html
 testharness webxr/layers/xrCylinderLayer_textureType.https.html
 testharness webxr/layers/xrEquirectLayer_paramValidation.https.html
