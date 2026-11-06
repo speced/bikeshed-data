@@ -1,4 +1,4 @@
-sha: 7a80c623afc4a4b94db6174d187bd94ab61e53ce
+sha: 381eb58767f39d40b38d04db3c38b80d226ce96e
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1524,6 +1524,7 @@ crashtest html/canvas/offscreen/set-proprietary-font-names-001-crash.html
 crashtest html/canvas/text-metrics-for-unpaintable-crash.html
 crashtest html/dom/documents/dom-tree-accessors/nameditem-empty-name-dynamic-crash.html
 crashtest html/dom/elements/the-innertext-and-outertext-properties/innertext-domnoderemoved-crash.html
+crashtest html/dom/elements/the-innertext-and-outertext-properties/innertext-optgroup-document-child-crash.html
 crashtest html/dom/render-blocking/render-blocking-during-update-the-rendering-crash.html
 crashtest html/editing/dnd/crashtests/DataTransfer-getData-RefCell-already-borrowed.html
 crashtest html/interaction/focus/focus-after-attach-shadow-crash.html
@@ -22119,6 +22120,7 @@ reftest css/css-overflow/line-clamp/block-ellipsis-repaint-001.html
 reftest css/css-overflow/line-clamp/block-ellipsis-repaint-002.html
 reftest css/css-overflow/line-clamp/block-ellipsis-repaint-003.html
 reftest css/css-overflow/line-clamp/block-ellipsis-repaint-004.html
+reftest css/css-overflow/line-clamp/block-ellipsis-vertical-001.html
 reftest css/css-overflow/line-clamp/continue-001.html
 reftest css/css-overflow/line-clamp/discard/discard-multicol-001.html
 reftest css/css-overflow/line-clamp/discard/discard-multicol-002.html
@@ -22351,6 +22353,11 @@ reftest css/css-overflow/line-clamp/line-clamp-with-floats-015.html
 reftest css/css-overflow/line-clamp/line-clamp-with-floats-016.html
 reftest css/css-overflow/line-clamp/line-clamp-with-floats-017.html
 reftest css/css-overflow/line-clamp/line-clamp-with-popover-001.html
+reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-bidi-001.html
+reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-first-character-001.html
+reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-first-line-001.html
+reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-grapheme-001.html
+reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-hanging-punctuation-001.html
 reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-string-001.html
 reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-string-002.html
 reftest css/css-overflow/line-clamp/line-clamp-with-text-overflow-string-003.html
@@ -22678,6 +22685,7 @@ reftest css/css-overflow/text-overflow-change-color.html
 reftest css/css-overflow/text-overflow-ellipsis-001.html
 reftest css/css-overflow/text-overflow-ellipsis-002.html
 reftest css/css-overflow/text-overflow-ellipsis-003.html
+reftest css/css-overflow/text-overflow-ellipsis-bidi-grapheme-001.html
 reftest css/css-overflow/text-overflow-ellipsis-changing-scroll.html
 reftest css/css-overflow/text-overflow-ellipsis-editable-div-with-caret.html
 reftest css/css-overflow/text-overflow-ellipsis-editing-input.html
@@ -32454,6 +32462,7 @@ reftest html/rendering/replaced-elements/embedded-content/video-controls-vertica
 reftest html/rendering/replaced-elements/images/abs-pos-transferred-max-width-from-percentage-max-height-in-auto-height-containing-block.html
 reftest html/rendering/replaced-elements/images/blocked-by-csp.html
 reftest html/rendering/replaced-elements/images/image-fallback-respect-max-width.html
+reftest html/rendering/replaced-elements/images/img-size-dynamic-while-disconnected.html
 reftest html/rendering/replaced-elements/images/input-image-content.html
 reftest html/rendering/replaced-elements/images/space.html
 reftest html/rendering/replaced-elements/the-input-element/input-update-while-disconnected.html
@@ -38416,8 +38425,10 @@ testharness css/css-conditional/container-queries/style-not-sharing-float.html
 testharness css/css-conditional/container-queries/style-query-attr-change-svg.html
 testharness css/css-conditional/container-queries/style-query-change-with-ancestor-zoom.html
 testharness css/css-conditional/container-queries/style-query-container-name-change.html
+testharness css/css-conditional/container-queries/style-query-custom-attr-braces-change.html
 testharness css/css-conditional/container-queries/style-query-custom-attr-change-named-container.html
 testharness css/css-conditional/container-queries/style-query-custom-attr-change.html
+testharness css/css-conditional/container-queries/style-query-custom-attr-nested-name-change.html
 testharness css/css-conditional/container-queries/style-query-document-element.html
 testharness css/css-conditional/container-queries/style-query-guaranteed-invalid.tentative.html
 testharness css/css-conditional/container-queries/style-query-no-cycle.html
@@ -38643,6 +38654,7 @@ testharness css/css-easing/timing-functions-syntax-computed.html
 testharness css/css-easing/timing-functions-syntax-invalid.html
 testharness css/css-easing/timing-functions-syntax-valid.html
 testharness css/css-env/at-supports.tentative.html
+testharness css/css-env/env-fallback-braces.html
 testharness css/css-env/env-fallback-substitution.html
 testharness css/css-env/env-in-custom-properties.tentative.html
 testharness css/css-env/env-parsing.html
@@ -43298,6 +43310,7 @@ testharness css/css-values/attr-argument-grammar.html
 testharness css/css-values/attr-container-style-query.html
 testharness css/css-values/attr-css-wide-keywords.html
 testharness css/css-values/attr-cycle.html
+testharness css/css-values/attr-fallback-braces.html
 testharness css/css-values/attr-invalidation-after-stylesheet-change.html
 testharness css/css-values/attr-invalidation-after-view-transition.html
 testharness css/css-values/attr-invalidation.html
@@ -43584,6 +43597,7 @@ testharness css/css-variables/revert-rule-to-var.html
 testharness css/css-variables/test_variable_legal_values.html
 testharness css/css-variables/transition-with-attribute-taint.html
 testharness css/css-variables/url-token-serialization.html
+testharness css/css-variables/var-fallback-braces.html
 testharness css/css-variables/var-ident-function.html
 testharness css/css-variables/var-parsing.html
 testharness css/css-variables/variable-animation-from-to.html
@@ -53048,6 +53062,7 @@ testharness html/rendering/non-replaced-elements/sections-and-headings/headings-
 testharness html/rendering/non-replaced-elements/tables/form-in-tables-xhtml.xhtml
 testharness html/rendering/non-replaced-elements/tables/form-in-tables.html
 testharness html/rendering/non-replaced-elements/tables/hidden-attr.html
+testharness html/rendering/non-replaced-elements/tables/table-attribute-cellspacing-dynamic-within-display-none.html
 testharness html/rendering/non-replaced-elements/tables/table-attribute.html
 testharness html/rendering/non-replaced-elements/tables/table-border-attributes-computed-style.html
 testharness html/rendering/non-replaced-elements/tables/table-border-color-not-inherited.html
@@ -65726,6 +65741,7 @@ testharness webrtc-encoded-transform/RTCEncodedFrame-copy-construction.https.htm
 testharness webrtc-encoded-transform/RTCEncodedFrame-shared-buffer.https.html
 testharness webrtc-encoded-transform/RTCRtpScriptTransform-bad-chunk.https.html
 testharness webrtc-encoded-transform/RTCRtpScriptTransform-encoded-transform.https.html
+testharness webrtc-encoded-transform/RTCRtpScriptTransform-late-transform.https.html
 testharness webrtc-encoded-transform/RTCRtpScriptTransform-padding.https.html
 testharness webrtc-encoded-transform/RTCRtpScriptTransform-sender-worker-single-frame.https.html
 testharness webrtc-encoded-transform/RTCRtpScriptTransform-write-rules.https.html
