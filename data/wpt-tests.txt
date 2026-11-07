@@ -1,4 +1,4 @@
-sha: 381eb58767f39d40b38d04db3c38b80d226ce96e
+sha: 3bdf9404ed770c074153b2115682a7d729b86023
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -2107,6 +2107,7 @@ crashtest xml/xslt/svg/crashtests/xslt-in-img-002.html
 crashtest xml/xslt/transformToFragment-on-node-from-inactive-document-crash.html
 crashtest xml/xslt/xslt-attribute-double-free-crash.html
 crashtest xml/xslt/xslt-mutation-crash.xhtml
+crashtest xml/xslt/xslt-number-pattern-cache-reentrancy-crash.html
 crashtest xml/xslt/xslt-type-confusion-crash.html
 manual FileAPI/BlobURL/test2-manual.html
 manual FileAPI/FileReader/test_errors-manual.html
@@ -17719,6 +17720,7 @@ reftest css/css-gaps/grid-lanes/column-gap-decorations-038.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-039.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-040.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-041.html
+reftest css/css-gaps/grid-lanes/column-gap-decorations-aligned-spanners.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-auto-fit-all-collapsed.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-auto-fit-collapsed-leading.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-auto-fit-collapsed-list.html
@@ -17781,12 +17783,14 @@ reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-bet
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-between-016.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-between-017.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-between-018.html
+reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-between-self-alignment.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-empty-all.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-empty-around.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-empty-between.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-repaint-all-to-around.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-rule-visibility-items-repaint-normal-to-between.html
 reftest css/css-gaps/grid-lanes/column-gap-decorations-spanner-after-empty-lanes.html
+reftest css/css-gaps/grid-lanes/column-gap-decorations-spanner-collision-insets.html
 reftest css/css-gaps/grid-lanes/column-subgrid-auto-placement-decorations.html
 reftest css/css-gaps/grid-lanes/column-subgrid-empty-decorations.html
 reftest css/css-gaps/grid-lanes/column-subgrid-gap-override-decorations.html
@@ -17822,6 +17826,7 @@ reftest css/css-gaps/grid-lanes/row-gap-decorations-021.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-022.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-023.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-024.html
+reftest css/css-gaps/grid-lanes/row-gap-decorations-aligned-spanners.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-auto-fit-collapsed-leading.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-auto-fit-collapsed-list.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-auto-fit-collapsed-middle.html
@@ -17862,6 +17867,7 @@ reftest css/css-gaps/grid-lanes/row-gap-decorations-rule-visibility-items-betwee
 reftest css/css-gaps/grid-lanes/row-gap-decorations-rule-visibility-items-between-010.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-rule-visibility-items-between-011.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-rule-visibility-items-between-012.html
+reftest css/css-gaps/grid-lanes/row-gap-decorations-rule-visibility-items-between-self-alignment.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-rule-visibility-items-empty-all.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-rule-visibility-items-empty-around.html
 reftest css/css-gaps/grid-lanes/row-gap-decorations-rule-visibility-items-empty-between.html
@@ -37640,6 +37646,7 @@ testharness css/css-animations/animation-css-variable-dependent-property.html
 testharness css/css-animations/animation-css-variable-in-keyframe-adjusted.html
 testharness css/css-animations/animation-important-001.html
 testharness css/css-animations/animation-important-with-transition.html
+testharness css/css-animations/animation-in-offscreen-iframe.html
 testharness css/css-animations/animation-iteration-count-009.html
 testharness css/css-animations/animation-iteration-count-010.html
 testharness css/css-animations/animation-iteration-count-calc.html
