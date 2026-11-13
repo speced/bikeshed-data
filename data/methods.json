@@ -8238,7 +8238,7 @@
       "for": [
         "RTCPeerConnection"
       ],
-      "shortname": "webrtc-diagnostic-logging"
+      "shortname": "webrtc-extensions"
     }
   },
   "cancelIdleCallback()": {
@@ -9862,6 +9862,7 @@
         "RTCError",
         "RTCErrorEvent",
         "RTCIceCandidate",
+        "RTCIceCandidatePairEvent",
         "RTCIceTransport",
         "RTCIdentityAssertion",
         "RTCPeerConnection",
@@ -11060,7 +11061,7 @@
         "UDPSocket",
         "ViewTimeline"
       ],
-      "shortname": "animation-triggers"
+      "shortname": "pointer-animations"
     },
     "constructor(origin)": {
       "args": [
@@ -11735,6 +11736,7 @@
         "RTCDTMFToneChangeEvent",
         "RTCDataChannelEvent",
         "RTCErrorEvent",
+        "RTCIceCandidatePairEvent",
         "RTCPeerConnectionIceErrorEvent",
         "RTCPeerConnectionIceEvent",
         "RTCTrackEvent",
@@ -15342,6 +15344,24 @@
         "NavigationPreloadManager"
       ],
       "shortname": "service-workers"
+    }
+  },
+  "disableHardwareDecoding()": {
+    "disableHardwareDecoding()": {
+      "args": [],
+      "for": [
+        "RTCRtpReceiver"
+      ],
+      "shortname": "webrtc-extensions"
+    }
+  },
+  "disableHardwareEncoding()": {
+    "disableHardwareEncoding()": {
+      "args": [],
+      "for": [
+        "RTCRtpSender"
+      ],
+      "shortname": "webrtc-extensions"
     }
   },
   "disableUntrustedNetwork()": {
@@ -19795,6 +19815,15 @@
       "shortname": "html"
     }
   },
+  "getHeaderExtensionsToNegotiate()": {
+    "getHeaderExtensionsToNegotiate()": {
+      "args": [],
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "shortname": "webrtc-extensions"
+    }
+  },
   "getHighEntropyValues()": {
     "getHighEntropyValues(hints)": {
       "args": [
@@ -20243,6 +20272,15 @@
         "XRWebGLLayer"
       ],
       "shortname": "webxr"
+    }
+  },
+  "getNegotiatedHeaderExtensions()": {
+    "getNegotiatedHeaderExtensions()": {
+      "args": [],
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "shortname": "webrtc-extensions"
     }
   },
   "getNestedConfigs()": {
@@ -27572,25 +27610,6 @@
       "shortname": "css-typed-om"
     }
   },
-  "pulse()": {
-    "pulse()": {
-      "args": [],
-      "for": [
-        "GamepadHapticActuator"
-      ],
-      "shortname": "gamepad-extensions"
-    },
-    "pulse(value, duration)": {
-      "args": [
-        "value",
-        "duration"
-      ],
-      "for": [
-        "GamepadHapticActuator"
-      ],
-      "shortname": "gamepad-extensions"
-    }
-  },
   "push()": {
     "push(...items)": {
       "args": [
@@ -28887,6 +28906,24 @@
         "Element"
       ],
       "shortname": "dom"
+    }
+  },
+  "removeCandidatePair()": {
+    "removeCandidatePair()": {
+      "args": [],
+      "for": [
+        "RTCIceTransport"
+      ],
+      "shortname": "webrtc-extensions"
+    },
+    "removeCandidatePair(candidatePair)": {
+      "args": [
+        "candidatePair"
+      ],
+      "for": [
+        "RTCIceTransport"
+      ],
+      "shortname": "webrtc-extensions"
     }
   },
   "removeChild()": {
@@ -31398,6 +31435,24 @@
       "shortname": "audio-output"
     }
   },
+  "selectCandidatePair()": {
+    "selectCandidatePair()": {
+      "args": [],
+      "for": [
+        "RTCIceTransport"
+      ],
+      "shortname": "webrtc-extensions"
+    },
+    "selectCandidatePair(candidatePair)": {
+      "args": [
+        "candidatePair"
+      ],
+      "for": [
+        "RTCIceTransport"
+      ],
+      "shortname": "webrtc-extensions"
+    }
+  },
   "selectConfiguration()": {
     "selectConfiguration(configurationValue)": {
       "args": [
@@ -32349,6 +32404,24 @@
         "ShadowRoot"
       ],
       "shortname": "html"
+    }
+  },
+  "setHeaderExtensionsToNegotiate()": {
+    "setHeaderExtensionsToNegotiate()": {
+      "args": [],
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "shortname": "webrtc-extensions"
+    },
+    "setHeaderExtensionsToNegotiate(extensions)": {
+      "args": [
+        "extensions"
+      ],
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "shortname": "webrtc-extensions"
     }
   },
   "setHeaderValue()": {
@@ -34557,7 +34630,7 @@
       "for": [
         "RTCPeerConnection"
       ],
-      "shortname": "webrtc-diagnostic-logging"
+      "shortname": "webrtc-extensions"
     },
     "startDiagnosticLogging(options)": {
       "args": [
@@ -34567,7 +34640,7 @@
         "RTC",
         "RTCPeerConnection"
       ],
-      "shortname": "webrtc-diagnostic-logging"
+      "shortname": "webrtc-extensions"
     }
   },
   "startDrawing()": {
@@ -34761,7 +34834,7 @@
         "RTC",
         "RTCPeerConnection"
       ],
-      "shortname": "webrtc-diagnostic-logging"
+      "shortname": "webrtc-extensions"
     }
   },
   "stopImmediatePropagation()": {
@@ -36138,6 +36211,7 @@
         "PerformanceEntry",
         "PerformanceEventTiming",
         "PerformanceLongAnimationFrameTiming",
+        "PerformanceLongTaskTiming",
         "PerformanceNavigation",
         "PerformanceNavigationTiming",
         "PerformancePaintTiming",
@@ -36154,6 +36228,7 @@
         "RTCIceCandidate",
         "RTCSessionDescription",
         "ScriptingPolicyReportBody",
+        "TaskAttributionTiming",
         "TrustedHTML",
         "TrustedScript",
         "TrustedScriptURL",

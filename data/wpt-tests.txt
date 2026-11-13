@@ -1,4 +1,4 @@
-sha: 67dc8e2afc8b689843b085edb81525e1c985b342
+sha: 42a198aaaf3fa15c17dc25bff625654bec3390c3
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -2117,6 +2117,8 @@ crashtest xml/xslt/transformToFragment-on-node-from-inactive-document-crash.html
 crashtest xml/xslt/xslt-attribute-double-free-crash.html
 crashtest xml/xslt/xslt-mutation-crash.xhtml
 crashtest xml/xslt/xslt-number-pattern-cache-reentrancy-crash.html
+crashtest xml/xslt/xslt-reparent-custom-element-crash.xml
+crashtest xml/xslt/xslt-reparent-root-crash.xml
 crashtest xml/xslt/xslt-type-confusion-crash.html
 manual FileAPI/BlobURL/test2-manual.html
 manual FileAPI/FileReader/test_errors-manual.html
@@ -30406,6 +30408,7 @@ reftest css/css-writing-modes/text-combine-upright-compression-006a.html
 reftest css/css-writing-modes/text-combine-upright-compression-007.html
 reftest css/css-writing-modes/text-combine-upright-decorations-001.html
 reftest css/css-writing-modes/text-combine-upright-gen-con-001.html
+reftest css/css-writing-modes/text-combine-upright-generated-content-001.html
 reftest css/css-writing-modes/text-combine-upright-inherit-all-001.html
 reftest css/css-writing-modes/text-combine-upright-inherit-all-002.html
 reftest css/css-writing-modes/text-combine-upright-layout-rules-001.html
@@ -32420,6 +32423,7 @@ reftest html/rendering/non-replaced-elements/tables/table-align-float.xhtml
 reftest html/rendering/non-replaced-elements/tables/table-attribute-bgcolor-dynamic.html
 reftest html/rendering/non-replaced-elements/tables/table-attribute-border-dynamic.html
 reftest html/rendering/non-replaced-elements/tables/table-attribute-cellspacing-dynamic.html
+reftest html/rendering/non-replaced-elements/tables/table-attribute-rules-dynamic.html
 reftest html/rendering/non-replaced-elements/tables/table-border-1.html
 reftest html/rendering/non-replaced-elements/tables/table-border-2.html
 reftest html/rendering/non-replaced-elements/tables/table-border-3q.html
@@ -32436,6 +32440,10 @@ reftest html/rendering/non-replaced-elements/tables/table-row-direction.html
 reftest html/rendering/non-replaced-elements/tables/table-row-group-direction.html
 reftest html/rendering/non-replaced-elements/tables/table-row-group-height.html
 reftest html/rendering/non-replaced-elements/tables/table-row-height.html
+reftest html/rendering/non-replaced-elements/tables/table-rules-none-rendering.html
+reftest html/rendering/non-replaced-elements/tables/table-rules-rendering.html
+reftest html/rendering/non-replaced-elements/tables/table-rules-rows-vertical.html
+reftest html/rendering/non-replaced-elements/tables/table-rules-separate.html
 reftest html/rendering/non-replaced-elements/tables/table-width-150percent.html
 reftest html/rendering/non-replaced-elements/tables/table-width-s.html
 reftest html/rendering/non-replaced-elements/tables/table-width.html
@@ -33683,6 +33691,7 @@ reftest selection/shadow-dom/cross-shadow-boundary-6.html
 reftest selection/shadow-dom/cross-shadow-boundary-img.html
 reftest selection/shadow-dom/cross-shadow-boundary-select-document.html
 reftest selection/shadow-dom/cross-shadow-boundary-select-root.html
+reftest selection/visible-selection-form-controls.html
 reftest service-workers/service-worker/svg-target-reftest.https.html
 reftest shadow-dom/directionality-001.tentative.html
 reftest shadow-dom/directionality-002.tentative.html
@@ -35581,6 +35590,9 @@ testharness bluetooth/bidi/server/getPrimaryServices/gen-get-same-object.https.w
 testharness bluetooth/bidi/server/getPrimaryServices/gen-invalid-service-name.https.window.js
 testharness bluetooth/bidi/server/getPrimaryServices/gen-service-not-found-with-uuid.https.window.js
 testharness bluetooth/bidi/server/getPrimaryServices/services-not-found.https.window.js
+testharness bluetooth/bidi/server/maxWriteWithoutResponseSize/default-att-mtu.https.window.js
+testharness bluetooth/bidi/server/maxWriteWithoutResponseSize/mtu-change.https.window.js
+testharness bluetooth/bidi/server/maxWriteWithoutResponseSize/reconnect.https.window.js
 testharness bluetooth/bidi/service/device-same-object.https.window.js
 testharness bluetooth/bidi/service/getCharacteristic/characteristic-found.https.window.js
 testharness bluetooth/bidi/service/getCharacteristic/gen-blocklisted-characteristic.https.window.js
@@ -38478,6 +38490,7 @@ testharness css/css-conditional/container-queries/container-units-shadow.html
 testharness css/css-conditional/container-queries/container-units-small-viewport-fallback.html
 testharness css/css-conditional/container-queries/container-units-svglength.html
 testharness css/css-conditional/container-queries/container-units-typed-om.html
+testharness css/css-conditional/container-queries/content-box-size-invalidation-border-box.html
 testharness css/css-conditional/container-queries/counters-flex-circular.html
 testharness css/css-conditional/container-queries/custom-property-style-queries.html
 testharness css/css-conditional/container-queries/custom-property-style-query-change.html
@@ -40654,6 +40667,7 @@ testharness css/css-mixins/functions/function-parameter-types.tentative.html
 testharness css/css-mixins/functions/function-shadow-animations.html
 testharness css/css-mixins/functions/function-shadow-cache.html
 testharness css/css-mixins/functions/function-shadow-container.html
+testharness css/css-mixins/functions/function-shadow-invalidation.html
 testharness css/css-mixins/functions/function-shadow.html
 testharness css/css-mixins/functions/local-attr-substitution.html
 testharness css/css-mixins/functions/local-if-substitution.html
@@ -45459,6 +45473,7 @@ testharness custom-elements/registries/ShadowRoot-init-customElementRegistry.htm
 testharness custom-elements/registries/ShadowRoot-init-declarative.html
 testharness custom-elements/registries/ShadowRoot-innerHTML.html
 testharness custom-elements/registries/adoption-before-upgrade.window.js
+testharness custom-elements/registries/adoption-null-registry-element.window.js
 testharness custom-elements/registries/adoption-null-registry-shadow-root.window.js
 testharness custom-elements/registries/adoption.window.js
 testharness custom-elements/registries/constructor-direct-call-fallback-registry.window.js
@@ -46231,6 +46246,7 @@ testharness dom/nodes/node-realm-preserved-across-adoption.html
 testharness dom/nodes/node-realm-preserved-across-frameless-adoption.html
 testharness dom/nodes/post-connection-steps-shadow-tree.html
 testharness dom/nodes/prepend-on-Document.html
+testharness dom/nodes/processing-instruction-attributes-clone-and-range.html
 testharness dom/nodes/processing-instruction-attributes.html
 testharness dom/nodes/query-target-in-load-event.html
 testharness dom/nodes/querySelector-empty-id.html
@@ -48733,6 +48749,7 @@ testharness html/browsers/sandboxing/sandbox-initial-empty-document-toward-same-
 testharness html/browsers/sandboxing/sandbox-javascript-window-open.html
 testharness html/browsers/sandboxing/sandbox-navigation-timing.tentative.html
 testharness html/browsers/sandboxing/sandbox-new-execution-context.html
+testharness html/browsers/sandboxing/sandbox-parent-event-listener-in-script-disabled-iframe.html
 testharness html/browsers/sandboxing/sandbox-popup-inherits-script-blocking.html
 testharness html/browsers/sandboxing/sandbox-window-open-srcdoc.html
 testharness html/browsers/sandboxing/window-open-blank-from-different-initiator.html
@@ -54394,6 +54411,7 @@ testharness html/semantics/forms/customizable-combobox/customizable-combobox-pop
 testharness html/semantics/forms/customizable-combobox/datalist-popover.tentative.html
 testharness html/semantics/forms/form-control-infrastructure/association.window.js
 testharness html/semantics/forms/form-control-infrastructure/form-attribute-tree-mutations.html
+testharness html/semantics/forms/form-control-infrastructure/form-named-items-non-descendant.html
 testharness html/semantics/forms/form-control-infrastructure/form.html
 testharness html/semantics/forms/form-control-infrastructure/form_attribute.html
 testharness html/semantics/forms/form-control-infrastructure/form_owner_and_table.html
@@ -54625,6 +54643,7 @@ testharness html/semantics/forms/the-input-element/radio-focus-navigation-disabl
 testharness html/semantics/forms/the-input-element/radio-focus-navigation-group-first-focus.html
 testharness html/semantics/forms/the-input-element/radio-focus-navigation-group-focusable-focus.html
 testharness html/semantics/forms/the-input-element/radio-focused-and-scrolled-into-view.html
+testharness html/semantics/forms/the-input-element/radio-form-owner-reset.html
 testharness html/semantics/forms/the-input-element/radio-form-owner.html
 testharness html/semantics/forms/the-input-element/radio-groupname-case.html
 testharness html/semantics/forms/the-input-element/radio-input-cancel.html
@@ -64329,6 +64348,7 @@ testharness url/url-constructor.any.js
 testharness url/url-origin.any.js
 testharness url/url-searchparams.any.js
 testharness url/url-setters-a-area.window.js
+testharness url/url-setters-lone-surrogates.any.js
 testharness url/url-setters-stripping.any.js
 testharness url/url-setters.any.js
 testharness url/url-statics-canparse.any.js
@@ -66121,6 +66141,7 @@ testharness webrtc-identity/idlharness.https.window.js
 testharness webrtc-priority/RTCPeerConnection-ondatachannel.html
 testharness webrtc-priority/RTCRtpParameters-encodings.html
 testharness webrtc-stats/RTCDataChannel-stats.html
+testharness webrtc-stats/getStats-RTCAudioSourceStats.https.html
 testharness webrtc-stats/getStats-remote-candidate-address.html
 testharness webrtc-stats/getStats-remote-candidate-ufrag.html
 testharness webrtc-stats/hardware-capability-stats.https.html
