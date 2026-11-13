@@ -1,4 +1,4 @@
-sha: 2358bd48357992d5f3f9d6aaa2040aa018aaa093
+sha: 67dc8e2afc8b689843b085edb81525e1c985b342
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -809,6 +809,7 @@ crashtest css/css-overflow/chrome-480554290-crash.html
 crashtest css/css-overflow/chrome-body-overflow-propagation-crash.html
 crashtest css/css-overflow/crashtests/text-overflow-ellipsis-multiline-crash.html
 crashtest css/css-overflow/ellipsis-with-image-crash.html
+crashtest css/css-overflow/line-clamp/crashtests/line-clamp-empty-line.html
 crashtest css/css-overflow/line-clamp/crashtests/line-clamp-form-input-auto-height.html
 crashtest css/css-overflow/line-clamp/line-clamp-040-crash.html
 crashtest css/css-overflow/line-clamp/line-clamp-043-crash.html
@@ -22316,6 +22317,7 @@ reftest css/css-overflow/line-clamp/line-clamp-content-height-with-dynamic-chang
 reftest css/css-overflow/line-clamp/line-clamp-dynamic-change-after-clean-content.html
 reftest css/css-overflow/line-clamp/line-clamp-dynamic-removal.html
 reftest css/css-overflow/line-clamp/line-clamp-dynamic-width-change.html
+reftest css/css-overflow/line-clamp/line-clamp-empty-line-001.tentative.html
 reftest css/css-overflow/line-clamp/line-clamp-form-button-001.tentative.html
 reftest css/css-overflow/line-clamp/line-clamp-form-button-002.tentative.html
 reftest css/css-overflow/line-clamp/line-clamp-form-button-003.tentative.html
@@ -25135,6 +25137,10 @@ reftest css/css-text-decor/text-underline-position-vertical-ja.html
 reftest css/css-text-decor/text-underline-position-vertical.html
 reftest css/css-text/bidi/bidi-lines-001.html
 reftest css/css-text/bidi/bidi-lines-002.html
+reftest css/css-text/bidi/bidi-plaintext-001.html
+reftest css/css-text/bidi/bidi-plaintext-002.html
+reftest css/css-text/bidi/bidi-plaintext-003.html
+reftest css/css-text/bidi/bidi-plaintext-004.html
 reftest css/css-text/bidi/bidi-tab-001.html
 reftest css/css-text/bidi/empty-span-001.html
 reftest css/css-text/boundary-shaping/boundary-shaping-001.html
@@ -26396,6 +26402,9 @@ reftest css/css-text/white-space/trailing-ideographic-space-022.html
 reftest css/css-text/white-space/trailing-ideographic-space-023.html
 reftest css/css-text/white-space/trailing-ideographic-space-024.html
 reftest css/css-text/white-space/trailing-ideographic-space-025.html
+reftest css/css-text/white-space/trailing-ideographic-space-026.html
+reftest css/css-text/white-space/trailing-ideographic-space-027.html
+reftest css/css-text/white-space/trailing-ideographic-space-028.html
 reftest css/css-text/white-space/trailing-ideographic-space-break-spaces-001.html
 reftest css/css-text/white-space/trailing-ideographic-space-break-spaces-002.html
 reftest css/css-text/white-space/trailing-ideographic-space-break-spaces-003.html
@@ -34154,6 +34163,9 @@ reftest svg/struct/reftests/inner-svg-rotate-transform.svg
 reftest svg/struct/reftests/inner-svg-transform-and-viewbox.svg
 reftest svg/struct/reftests/inner-svg-transform.svg
 reftest svg/struct/reftests/nested-svg-through-display-contents.svg
+reftest svg/struct/reftests/outer-svg-css-transform-in-html-scale.html
+reftest svg/struct/reftests/outer-svg-transform-in-html-scale.html
+reftest svg/struct/reftests/outer-svg-transform-in-html.html
 reftest svg/struct/reftests/outer-svg-transform.svg
 reftest svg/struct/reftests/requiredextensions-empty-string.svg
 reftest svg/struct/reftests/requiredextensions-xhtml.tentative.svg
@@ -48247,6 +48259,7 @@ testharness html/browsers/browsing-the-web/navigating-across-documents/javascrip
 testharness html/browsers/browsing-the-web/navigating-across-documents/javascript-url-no-beforeunload.window.js
 testharness html/browsers/browsing-the-web/navigating-across-documents/javascript-url-object-embed-history.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/javascript-url-query-fragment-components.html
+testharness html/browsers/browsing-the-web/navigating-across-documents/javascript-url-reentrant-navigation.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/javascript-url-referrer.window.js
 testharness html/browsers/browsing-the-web/navigating-across-documents/javascript-url-return-value-handling-dynamic.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/javascript-url-return-value-handling.html
@@ -49618,10 +49631,12 @@ testharness html/canvas/element/manual/draw-element-image/requestPaint.tentative
 testharness html/canvas/element/manual/draw-element-image/triple-nested-content-drawable-canvas.tentative.html
 testharness html/canvas/element/manual/draw-element-image/update-element-geometry-get-bounding-client-rect.tentative.html
 testharness html/canvas/element/manual/draw-element-image/video.tentative.html
+testharness html/canvas/element/manual/drawing-images-to-the-canvas/desynchronized-crossorigin-snapshot-isolation.html
 testharness html/canvas/element/manual/drawing-images-to-the-canvas/drawimage_canvas.html
 testharness html/canvas/element/manual/drawing-images-to-the-canvas/drawimage_crossorigin.sub.html
 testharness html/canvas/element/manual/drawing-images-to-the-canvas/drawimage_html_image.html
 testharness html/canvas/element/manual/drawing-images-to-the-canvas/drawimage_svg_image_1.html
+testharness html/canvas/element/manual/drawing-images-to-the-canvas/drawimage_svg_image_nonuniform_scale.html
 testharness html/canvas/element/manual/drawing-images-to-the-canvas/drawimage_svg_image_with_foreign_object_does_not_taint.html
 testharness html/canvas/element/manual/drawing-paths-to-the-canvas/canvas_complexshapes_ispointInpath_001.htm
 testharness html/canvas/element/manual/drawing-paths-to-the-canvas/drawFocusIfNeeded_001.html
@@ -59408,6 +59423,7 @@ testharness preload/preload-xhr.html
 testharness preload/reflected-as-value.html
 testharness preload/single-download-late-used-preload.html
 testharness preload/single-download-preload.html
+testharness preload/subresource-integrity-events.html
 testharness preload/subresource-integrity-font.html
 testharness preload/subresource-integrity-partial-image.html
 testharness preload/subresource-integrity.html
@@ -61647,6 +61663,7 @@ testharness selection/caret-position-should-be-correct-while-moveup-movedown.htm
 testharness selection/caret/empty-elements.html
 testharness selection/caret/move-around-contenteditable-false.html
 testharness selection/caret/move-around-generated-content.html
+testharness selection/caret/move-through-overflow-scroll.html
 testharness selection/collapse-00.html
 testharness selection/collapse-15.html
 testharness selection/collapse-30.html
@@ -62571,6 +62588,7 @@ testharness speculation-rules/prefetch/different-initiators-2.https.html
 testharness speculation-rules/prefetch/different-initiators.sub.https.html
 testharness speculation-rules/prefetch/document-rules-details-element.https.html
 testharness speculation-rules/prefetch/document-rules-pending-stylesheet.https.html
+testharness speculation-rules/prefetch/document-rules-scope.tentative.https.html
 testharness speculation-rules/prefetch/document-rules-visibility.https.html
 testharness speculation-rules/prefetch/document-rules.https.html
 testharness speculation-rules/prefetch/duplicate-urls.https.html
