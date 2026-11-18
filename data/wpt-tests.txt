@@ -1,4 +1,4 @@
-sha: ebeeab4b7718d3a8e59518268190e98160337d94
+sha: f71687ca39ec9f23ca0cca83a41f35b6b3af69e0
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -1064,6 +1064,7 @@ crashtest css/css-text/text-indent/text-indent-long-line-crash.html
 crashtest css/css-text/text-indent/text-indent-ruby-crash.html
 crashtest css/css-text/text-spacing-trim/crashtests/text-spacing-trim-end-crash.html
 crashtest css/css-text/text-transform/crashtests/first-line-text-transform-crash.html
+crashtest css/css-text/text-transform/crashtests/text-transform-full-width-capitalize-eszett-crash.html
 crashtest css/css-text/text-wrap-style/crashtests/text-wrap-style-pretty-block-in-inline-crash.html
 crashtest css/css-text/white-space/nowrap-wbr-and-space-crash.html
 crashtest css/css-text/white-space/pre-line-br-with-whitespace-child-crash.html
@@ -1345,6 +1346,7 @@ crashtest domparsing/insert_adjacent_html-001-crash.html
 crashtest domparsing/move-head-during-prepend-before-close-crash.html
 crashtest domxpath/variables-in-expression-crash.html
 crashtest domxpath/xpath-evaluate-crash.html
+crashtest editing/crashtests/backcolor-style-element-in-head.html
 crashtest editing/crashtests/blur-from-rtl-editing-host-containing-big-video.html
 crashtest editing/crashtests/bold-in-output.html
 crashtest editing/crashtests/caret-display-list-002.html
@@ -1875,6 +1877,8 @@ crashtest quirks/crashtests/list-item-whole-line-quirks-crash.html
 crashtest quirks/table-replaced-descendant-percentage-height-crash.html
 crashtest resize-observer/multiple-observers-with-mutation-crash.html
 crashtest scroll-animations/animation-trigger/crashtests/selection-pseudo-crash.html
+crashtest scroll-animations/animation-trigger/crashtests/starting-style-declares-timeline-trigger.html
+crashtest scroll-animations/animation-trigger/crashtests/starting-style-omits-timeline-trigger.html
 crashtest scroll-animations/crashtests/change-timeline-from-finite-to-monotonic-crash-002.html
 crashtest scroll-animations/crashtests/change-timeline-from-finite-to-monotonic-crash.html
 crashtest scroll-animations/crashtests/clip-path-with-view-timeline.html
@@ -1887,6 +1891,7 @@ crashtest scroll-animations/crashtests/scroll-timeline-becomes-scrollable-after-
 crashtest scroll-animations/crashtests/scroll-timeline-completion-crash.html
 crashtest scroll-animations/crashtests/scroll-timeline-resize.html
 crashtest scroll-animations/crashtests/scroll-timeline-with-long-duration.html
+crashtest scroll-animations/crashtests/view-timeline-on-view-transition-pseudo-element-crash.html
 crashtest scroll-animations/crashtests/viewport-100vh.html
 crashtest scroll-animations/scroll-timelines/animation-with-delay-crash.html
 crashtest scroll-animations/scroll-timelines/animation-with-offsets-crash.html
@@ -19229,11 +19234,17 @@ reftest css/css-grid/grid-lanes/row-empty-grid-lanes-container-content-editable-
 reftest css/css-grid/grid-lanes/row-min-max-content-container.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-001a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-002a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-002c.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-002d.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-002f.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-003a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-004a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/independent-formatting-context.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-001a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-002a.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-002c.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-002d.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-002f.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-003a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-004a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-005a.html
@@ -26427,6 +26438,7 @@ reftest css/css-text/white-space/text-wrap-balance-align-001.html
 reftest css/css-text/white-space/text-wrap-balance-before-after-001.html
 reftest css/css-text/white-space/text-wrap-balance-before-after-002.html
 reftest css/css-text/white-space/text-wrap-balance-bidi-001.html
+reftest css/css-text/white-space/text-wrap-balance-bidi-002.html
 reftest css/css-text/white-space/text-wrap-balance-dynamic-001.html
 reftest css/css-text/white-space/text-wrap-balance-float-001.html
 reftest css/css-text/white-space/text-wrap-balance-float-002.html
@@ -34627,6 +34639,7 @@ reftest webvtt/rendering/cues-with-video/processing-model/selectors/cue/text-dec
 reftest webvtt/rendering/cues-with-video/processing-model/selectors/cue/text-decoration_overline_underline_line-through.html
 reftest webvtt/rendering/cues-with-video/processing-model/selectors/cue/text-decoration_underline.html
 reftest webvtt/rendering/cues-with-video/processing-model/selectors/cue/text-shadow.html
+reftest webvtt/rendering/cues-with-video/processing-model/selectors/cue/text-wrap_not_allowed.html
 reftest webvtt/rendering/cues-with-video/processing-model/selectors/cue/vertical_ruby-position.html
 reftest webvtt/rendering/cues-with-video/processing-model/selectors/cue/vertical_text-combine-upright.html
 reftest webvtt/rendering/cues-with-video/processing-model/selectors/cue/white-space_normal_wrapped.html
@@ -35139,6 +35152,7 @@ testharness WebCryptoAPI/import_export/crashtests/importKey-unsettled-promise.ht
 testharness WebCryptoAPI/import_export/ec_importKey.https.any.js
 testharness WebCryptoAPI/import_export/ec_importKey_failures_ECDH.https.any.js
 testharness WebCryptoAPI/import_export/ec_importKey_failures_ECDSA.https.any.js
+testharness WebCryptoAPI/import_export/jwk_key_ops_duplicates.https.any.js
 testharness WebCryptoAPI/import_export/okp_fixed_length.https.any.js
 testharness WebCryptoAPI/import_export/okp_importKey_Ed25519.https.any.js
 testharness WebCryptoAPI/import_export/okp_importKey_X25519.https.any.js
@@ -38972,6 +38986,7 @@ testharness css/css-env/env-in-custom-properties.tentative.html
 testharness css/css-env/env-parsing.html
 testharness css/css-env/env-revert-rule.html
 testharness css/css-env/fallback-nested-var.tentative.html
+testharness css/css-env/indexed-env-fallback.tentative.html
 testharness css/css-env/indexed-env.tentative.html
 testharness css/css-env/seralization-round-tripping.tentative.html
 testharness css/css-env/supports-script.tentative.html
@@ -40454,6 +40469,7 @@ testharness css/css-highlight-api/HighlightRegistry-maplike-tampered-Map-prototy
 testharness css/css-highlight-api/HighlightRegistry-maplike.html
 testharness css/css-highlight-api/custom-highlight-animation-properties.tentative.html
 testharness css/css-highlight-api/custom-highlight-universal-escaped-star.html
+testharness css/css-highlight-api/custom-highlight-universal-inheritance-computed.html
 testharness css/css-highlight-api/custom-highlight-universal-parsing-and-computed-style.html
 testharness css/css-highlight-api/highlight-priority.html
 testharness css/css-highlight-api/highlight-pseudo-computed.html
@@ -44163,6 +44179,7 @@ testharness css/css-view-transitions/scoped/hit-test-vt-overlay.html
 testharness css/css-view-transitions/scoped/hit-testing.html
 testharness css/css-view-transitions/scoped/missing-view-transition-name.html
 testharness css/css-view-transitions/scoped/negative-playback-rate.html
+testharness css/css-view-transitions/scoped/occlusion-zero-opacity-scope.html
 testharness css/css-view-transitions/scoped/remove-child-in-callback.html
 testharness css/css-view-transitions/scoped/run_in_parallel.html
 testharness css/css-view-transitions/scoped/scope-becomes-document-element.html
@@ -48732,6 +48749,7 @@ testharness html/browsers/history/the-location-interface/document_location.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-csp-sandbox.sub.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-inactive-document.sub.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-new-object.html
+testharness html/browsers/history/the-location-interface/location-ancestor-origins-object.sub.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-redirect-still-mask.sub.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-referrerpolicy-snapshot.html
 testharness html/browsers/history/the-location-interface/location-ancestor-origins-referrerpolicy-unsupported-elements.html
@@ -52945,7 +52963,6 @@ testharness html/dom/elements/the-innertext-and-outertext-properties/outertext-s
 testharness html/dom/historical.html
 testharness html/dom/idlharness.any.js
 testharness html/dom/idlharness.https.html
-testharness html/dom/partial-updates/tentative/fragment/empty-for-streaming.html
 testharness html/dom/partial-updates/tentative/fragment/sanitize-default.html
 testharness html/dom/partial-updates/tentative/fragment/sanitize-nested.html
 testharness html/dom/partial-updates/tentative/fragment/sanitize-regular.html
@@ -57117,6 +57134,7 @@ testharness intersection-observer/v2/fragmented-occluder.html
 testharness intersection-observer/v2/gap-decorations-dynamic-occlusion.html
 testharness intersection-observer/v2/gap-decorations-negative-margin-occlusion.html
 testharness intersection-observer/v2/gap-decorations-overflow-occlusion.html
+testharness intersection-observer/v2/gap-decorations-overlap-inset-occlusion.html
 testharness intersection-observer/v2/iframe-target.html
 testharness intersection-observer/v2/inline-occlusion.html
 testharness intersection-observer/v2/nested-cross-origin.sub.html
@@ -57841,6 +57859,7 @@ testharness media-source/mediasource-iamf-playback.html
 testharness media-source/mediasource-invalid-codec.html
 testharness media-source/mediasource-is-type-supported.html
 testharness media-source/mediasource-liveseekable.html
+testharness media-source/mediasource-mpeg-audio-metadata.html
 testharness media-source/mediasource-multiple-attach.html
 testharness media-source/mediasource-play-then-seek-back.html
 testharness media-source/mediasource-play.html
@@ -61484,6 +61503,7 @@ testharness sanitizer-api/sethtml-context.tentative.html
 testharness sanitizer-api/sethtml-custom-element-reactions.html
 testharness sanitizer-api/sethtml-form-owner.html
 testharness sanitizer-api/sethtml-noscript.html
+testharness sanitizer-api/sethtml-quirks-mode.html
 testharness sanitizer-api/sethtml-replace-with-children.html
 testharness sanitizer-api/sethtml-safety.html
 testharness sanitizer-api/sethtml-scoped-custom-element-registry.html
@@ -67137,6 +67157,7 @@ testharness webxr/layers/xrQuadLayer_textureType.https.html
 testharness webxr/layers/xrSession_updateRenderState.https.html
 testharness webxr/layers/xrSession_updateRenderState_preservesLayers.https.html
 testharness webxr/layers/xrWebGLBinding_constructor.https.html
+testharness webxr/layers/xrWebGLBinding_context_loss.https.html
 testharness webxr/layers/xrWebGLBinding_createCubeLayer.https.html
 testharness webxr/layers/xrWebGLBinding_createCylinderLayer.https.html
 testharness webxr/layers/xrWebGLBinding_createEquirectLayer.https.html
