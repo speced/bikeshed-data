@@ -4404,6 +4404,7 @@
     "HTML character reference in data state",
     "HTML document",
     "HTML element",
+    "HTML element attribute change steps",
     "HTML element children parsed steps",
     "HTML element insertion steps",
     "HTML element moving steps",
@@ -5953,6 +5954,7 @@
     "Negative infinity",
     "Nemeth Braille",
     "NestedClass",
+    "Network Tampering",
     "NetworkCommand",
     "NetworkError",
     "NetworkEvent",
@@ -7085,7 +7087,6 @@
     "RegExpUnicodeEscapeSequence",
     "Region",
     "Register",
-    "RegisteredTool",
     "Registrable Origin Label",
     "Registrant",
     "Registration",
@@ -8540,6 +8541,7 @@
     "TokenVersion",
     "Tokenization",
     "TooManyReads",
+    "Tool",
     "ToolActivatedEvent",
     "ToolActivatedEventInit",
     "ToolAnnotations",
@@ -9710,7 +9712,6 @@
     "[[IsExtensible]] internal method of an Exported GC Object",
     "[[OwnPropertyKeys]] internal method of an Exported GC Object",
     "[[PreventExtensions]] internal method of an Exported GC Object",
-    "[[RTCDiagnosticLoggingSessionId]]",
     "[[SetPrototypeOf]] internal method of an Exported GC Object",
     "[[Set]] internal method of an Exported GC Object",
     "[[VideoKeyFrameIntervalCount]]",
@@ -13495,6 +13496,7 @@
     "determine a WebGPU layer texture layout",
     "determine a field's category",
     "determine a model poster frame",
+    "determine a video's poster frame",
     "determine eligibility for an associated site",
     "determine gap decoration segments",
     "determine gap segments",
@@ -17439,6 +17441,7 @@
     "match capabilities",
     "match collector for navigable",
     "match cookie",
+    "match integrity metadata",
     "match none",
     "match opener policy values",
     "match pattern",
@@ -22832,6 +22835,7 @@
     "sync registration",
     "sync requested flag",
     "syncbase",
+    "synchronize event handlers",
     "synchronized",
     "synchronized (TermSynchronizeList)",
     "synchronized media",
@@ -23600,6 +23604,7 @@
     "update all AudioSession states",
     "update an animation's finished state",
     "update an element",
+    "update an input element's type",
     "update an option's nearest ancestor select",
     "update anchors",
     "update animations and send events",
@@ -23630,6 +23635,7 @@
     "update speculation rules",
     "update style attribute for",
     "update text layout mode override",
+    "update the assigned access key",
     "update the battery status and notify",
     "update the canvas size",
     "update the client hints set from cache",
@@ -32490,6 +32496,7 @@
     "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)",
     "[[Store]](credential, sameOriginWithAncestors)",
     "[[discovery]]",
+    "[[implicitMediation]]",
     "[[origin]]",
     "[[type]]",
     "id",
@@ -45119,6 +45126,7 @@
     "Muted",
     "[[Enabled]]",
     "[[Id]]",
+    "[[IsDetached]]",
     "[[Kind]]",
     "[[Label]]",
     "[[Muted]]",
@@ -49142,11 +49150,6 @@
     "quota",
     "requested"
   ],
-  "RTC": [
-    "discardDiagnosticLogging()",
-    "startDiagnosticLogging(options)",
-    "stopDiagnosticLogging()"
-  ],
   "RTCAudioPlayoutStats": [
     "kind",
     "synthesizedSamplesDuration",
@@ -49933,12 +49936,6 @@
     "startDiagnosticLogging(options)",
     "stopDiagnosticLogging()",
     "track"
-  ],
-  "RTCPeerConnection/startDiagnosticLogging()": [
-    "options"
-  ],
-  "RTCPeerConnection/startDiagnosticLogging(options)": [
-    "options"
   ],
   "RTCPeerConnectionIceErrorEvent": [
     "address",
@@ -50948,16 +50945,6 @@
   "Region": [
     "getRegionFlowRanges()",
     "regionOverset"
-  ],
-  "RegisteredTool": [
-    "annotations",
-    "description",
-    "inputSchema",
-    "name",
-    "origin",
-    "outputSchema",
-    "title",
-    "window"
   ],
   "RegistrationOptions": [
     "scope",
@@ -55179,6 +55166,19 @@
   "TokenVersion": [
     "\"1\""
   ],
+  "Tool": [
+    "annotations",
+    "description",
+    "input schema",
+    "inputSchema",
+    "name",
+    "origin",
+    "output schema",
+    "outputSchema",
+    "source",
+    "title",
+    "tool id"
+  ],
   "ToolActivatedEvent": [
     "ToolActivatedEvent(type)",
     "ToolActivatedEvent(type, eventInitDict)",
@@ -55877,7 +55877,8 @@
     "username component"
   ],
   "URL serializer": [
-    "exclude fragment"
+    "exclude fragment",
+    "exclude scheme"
   ],
   "URL/URL(url)": [
     "base",
@@ -70552,6 +70553,7 @@
     "user-activation"
   ],
   "request context": [
+    "document origin",
     "requests",
     "top-level origin"
   ],
@@ -73654,7 +73656,8 @@
     "input schema",
     "name",
     "output schema",
-    "title"
+    "title",
+    "tool id"
   ],
   "tool execution error": [
     "corresponding exception name",

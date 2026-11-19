@@ -1,4 +1,4 @@
-sha: 54c847fc1e8997ecf338e329c18afedff6263fa7
+sha: 15568b6975c7ec4533a84fa42831410d529b6297
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -888,6 +888,7 @@ crashtest css/css-position/crashtests/inline-containing-block-dynamic-change-3.h
 crashtest css/css-position/crashtests/inline-containing-block-dynamic-change.html
 crashtest css/css-position/crashtests/inline-containing-block-multicol-balancing-001.html
 crashtest css/css-position/crashtests/inline-containing-block-multicol-balancing-002.html
+crashtest css/css-position/crashtests/inline-containing-block-multicol-balancing-003.html
 crashtest css/css-position/crashtests/nested-scroll-in-activating-scroll-container.html
 crashtest css/css-position/crashtests/position-absolute-crash-014.html
 crashtest css/css-position/crashtests/scroll-tree-parent-construction.html
@@ -15660,6 +15661,8 @@ reftest css/css-contain/counter-scoping-001.html
 reftest css/css-contain/counter-scoping-002.html
 reftest css/css-contain/counter-scoping-003.html
 reftest css/css-contain/counter-scoping-004.html
+reftest css/css-contain/counter-scoping-005.html
+reftest css/css-contain/counter-scoping-006.html
 reftest css/css-contain/quote-scoping-001.html
 reftest css/css-contain/quote-scoping-002.html
 reftest css/css-contain/quote-scoping-003.html
@@ -20983,6 +20986,7 @@ reftest css/css-lists/counter-reset-reversed-siblings-001a.html
 reftest css/css-lists/counter-reset-reversed-siblings-001b.html
 reftest css/css-lists/counter-reset-reversed-siblings-002.html
 reftest css/css-lists/counter-reset-reversed-siblings-003.html
+reftest css/css-lists/counter-reset-reversed-siblings-004.html
 reftest css/css-lists/counter-reset-reversed-with-regular.html
 reftest css/css-lists/counter-set-001.html
 reftest css/css-lists/counter-set-002.html
@@ -32826,7 +32830,6 @@ reftest html/rendering/widgets/the-select-element/select-label-appearance.html
 reftest html/rendering/widgets/the-select-element/select-optgroup-dir-invalidation.html
 reftest html/rendering/widgets/the-select-element/select-size-001.html
 reftest html/rendering/widgets/the-select-element/select-size-002.html
-reftest html/select/select-capitalize-sizing.html
 reftest html/semantics/document-metadata/the-link-element/link-rel-attribute-ascii-case-insensitive.html
 reftest html/semantics/document-metadata/the-link-element/link-type-attribute.html
 reftest html/semantics/document-metadata/the-link-element/stylesheet-change-href.html
@@ -33022,6 +33025,7 @@ reftest html/semantics/forms/the-select-element/customizable-select/uses-label-d
 reftest html/semantics/forms/the-select-element/filterable-select/filterable-select-appearance.tentative.html
 reftest html/semantics/forms/the-select-element/list-box-important-colors.html
 reftest html/semantics/forms/the-select-element/reset-algorithm-rendering.html
+reftest html/semantics/forms/the-select-element/select-capitalize-sizing.html
 reftest html/semantics/forms/the-select-element/select-dropdown-vs-listbox.html
 reftest html/semantics/forms/the-select-element/select-hr-listbox.html
 reftest html/semantics/forms/the-select-element/select-innerHTML-selected.html
@@ -34473,8 +34477,6 @@ reftest svg/text/reftests/rtl-text-path.html
 reftest svg/text/reftests/text-bidi-controls-anchors-1.svg
 reftest svg/text/reftests/text-bidi-controls-anchors-2.svg
 reftest svg/text/reftests/text-clipped-offscreen-move-onscreen.html
-reftest svg/text/reftests/text-complex-001.svg
-reftest svg/text/reftests/text-complex-002.svg
 reftest svg/text/reftests/text-context-fill.svg
 reftest svg/text/reftests/text-font-face-load-image.html
 reftest svg/text/reftests/text-inline-size-001.svg
@@ -34492,8 +34494,6 @@ reftest svg/text/reftests/text-path-transformed-002.html
 reftest svg/text/reftests/text-path-transformed.html
 reftest svg/text/reftests/text-positioning-list-combining-marks-indexing.html
 reftest svg/text/reftests/text-positioning-list-combining-marks.html
-reftest svg/text/reftests/text-shape-inside-001.svg
-reftest svg/text/reftests/text-shape-inside-002.svg
 reftest svg/text/reftests/text-transform-001.html
 reftest svg/text/reftests/text-transform-002.html
 reftest svg/text/reftests/text-unknown-element-not-rendered.svg
@@ -36687,6 +36687,7 @@ testharness content-security-policy/inheritance/blob-url-inherits-from-initiator
 testharness content-security-policy/inheritance/document-write-iframe.html
 testharness content-security-policy/inheritance/frame-src-javascript-url.html
 testharness content-security-policy/inheritance/history-iframe.sub.html
+testharness content-security-policy/inheritance/history-multi-frame-navigation.html
 testharness content-security-policy/inheritance/history.sub.html
 testharness content-security-policy/inheritance/iframe-all-local-schemes-inherit-self.sub.html
 testharness content-security-policy/inheritance/iframe-all-local-schemes.sub.html
@@ -37144,6 +37145,8 @@ testharness content-security-policy/worker-src/shared-worker-src-self-fallback.s
 testharness content-security-policy/xslt/document-function-blocked.html
 testharness content-security-policy/xslt/xslt-strict-dynamic-blocked.html
 testharness content-security-policy/xslt/xsltprocessor-include-blocked.html
+testharness contenteditable/anchor-active-contenteditable.html
+testharness contenteditable/anchor-contenteditable-navigate.html
 testharness contenteditable/designmode-iscontenteditable.html
 testharness contenteditable/plaintext-only.html
 testharness cookies/attributes/attributes-ctl.sub.html
@@ -40492,6 +40495,7 @@ testharness css/css-highlight-api/custom-highlight-animation-properties.tentativ
 testharness css/css-highlight-api/custom-highlight-universal-escaped-star.html
 testharness css/css-highlight-api/custom-highlight-universal-inheritance-computed.html
 testharness css/css-highlight-api/custom-highlight-universal-parsing-and-computed-style.html
+testharness css/css-highlight-api/highlight-opacity-computed.tentative.html
 testharness css/css-highlight-api/highlight-priority.html
 testharness css/css-highlight-api/highlight-pseudo-computed.html
 testharness css/css-highlight-api/highlight-pseudo-from-font-computed.html
@@ -53693,10 +53697,6 @@ testharness html/rendering/widgets/textarea-scroll-restoration.html
 testharness html/rendering/widgets/textarea-scrollbar-sizing-001.html
 testharness html/rendering/widgets/textarea-scrollbar-sizing-002.html
 testharness html/rendering/widgets/the-select-element/select-as-listbox-default-styles.tentative.html
-testharness html/scripting/the-script-element/attr-script-fetchpriority.html
-testharness html/scripting/the-script-element/classic-external-unknown-scheme.html
-testharness html/scripting/the-script-element/module-script-disabled-scripting.html
-testharness html/select/options-length-too-large.html
 testharness html/semantics/disabled-elements/disabled-checkbox-click.html
 testharness html/semantics/disabled-elements/disabled-event-dispatch-additional.tentative.html
 testharness html/semantics/disabled-elements/disabled-event-dispatch.tentative.html
@@ -54779,8 +54779,6 @@ testharness html/semantics/forms/the-form-element/form-indexed-property-names.ht
 testharness html/semantics/forms/the-form-element/form-length.html
 testharness html/semantics/forms/the-form-element/form-nameditem.html
 testharness html/semantics/forms/the-form-element/form-requestsubmit.html
-testharness html/semantics/forms/the-input-element/anchor-active-contenteditable.html
-testharness html/semantics/forms/the-input-element/anchor-contenteditable-navigate.html
 testharness html/semantics/forms/the-input-element/button.html
 testharness html/semantics/forms/the-input-element/change-set-value.html
 testharness html/semantics/forms/the-input-element/change-to-empty-value.html
@@ -55062,6 +55060,7 @@ testharness html/semantics/forms/the-select-element/filterable-select/filterable
 testharness html/semantics/forms/the-select-element/filterable-select/select-beforefilter.tentative.html
 testharness html/semantics/forms/the-select-element/inserted-or-removed.html
 testharness html/semantics/forms/the-select-element/option-selectedness-script-mutation.html
+testharness html/semantics/forms/the-select-element/options-length-too-large.html
 testharness html/semantics/forms/the-select-element/select-add-optgroup.html
 testharness html/semantics/forms/the-select-element/select-add.html
 testharness html/semantics/forms/the-select-element/select-ancestor-subtree-removal.html
@@ -55500,8 +55499,10 @@ testharness html/semantics/scripting-1/the-script-element/async_008.htm
 testharness html/semantics/scripting-1/the-script-element/async_009.htm
 testharness html/semantics/scripting-1/the-script-element/async_010.htm
 testharness html/semantics/scripting-1/the-script-element/async_011.htm
+testharness html/semantics/scripting-1/the-script-element/attr-script-fetchpriority.html
 testharness html/semantics/scripting-1/the-script-element/change-src-attr-prepare-a-script.html
 testharness html/semantics/scripting-1/the-script-element/changing-src.html
+testharness html/semantics/scripting-1/the-script-element/classic-external-unknown-scheme.html
 testharness html/semantics/scripting-1/the-script-element/css-module/charset-2.html
 testharness html/semantics/scripting-1/the-script-element/css-module/charset-bom.html
 testharness html/semantics/scripting-1/the-script-element/css-module/charset.html
@@ -55728,6 +55729,7 @@ testharness html/semantics/scripting-1/the-script-element/microtasks/evaluation-
 testharness html/semantics/scripting-1/the-script-element/microtasks/evaluation-order-3.any.js
 testharness html/semantics/scripting-1/the-script-element/microtasks/evaluation-order-3.html
 testharness html/semantics/scripting-1/the-script-element/microtasks/evaluation-order-4.html
+testharness html/semantics/scripting-1/the-script-element/module-script-disabled-scripting.html
 testharness html/semantics/scripting-1/the-script-element/module/charset-01.html
 testharness html/semantics/scripting-1/the-script-element/module/charset-02.html
 testharness html/semantics/scripting-1/the-script-element/module/charset-03.html
@@ -57240,11 +57242,13 @@ testharness js-self-profiling/js-profiling-mode/unknown.https.html
 testharness js-self-profiling/marker-vm-state.https.html
 testharness js-self-profiling/max-buffer-size.window.js
 testharness js-self-profiling/time-domain.window.js
+testharness js-self-profiling/with-document-policy/dedicated-module-worker.https.html
 testharness js-self-profiling/with-document-policy/dedicated-worker-blob.https.html
 testharness js-self-profiling/with-document-policy/dedicated-worker-data.https.html
 testharness js-self-profiling/with-document-policy/dedicated-worker-nested-blob.https.html
 testharness js-self-profiling/with-document-policy/dedicated-worker-no-policy.https.html
 testharness js-self-profiling/with-document-policy/dedicated-worker.https.html
+testharness js-self-profiling/without-document-policy/dedicated-module-worker.https.html
 testharness js-self-profiling/without-document-policy/disabled.https.html
 testharness js/behaviours/HostEnsureCanAddPrivateElement.window.js
 testharness js/behaviours/SetPrototypeOf-window.html
@@ -63974,12 +63978,8 @@ testharness svg/text/dominant-baseline.historical.html
 testharness svg/text/inheritance.svg
 testharness svg/text/parsing/inline-size-invalid.svg
 testharness svg/text/parsing/inline-size-valid.svg
-testharness svg/text/parsing/shape-inside-invalid.svg
-testharness svg/text/parsing/shape-inside-valid.svg
 testharness svg/text/parsing/shape-margin-invalid.svg
 testharness svg/text/parsing/shape-margin-valid.svg
-testharness svg/text/parsing/shape-subtract-invalid.svg
-testharness svg/text/parsing/shape-subtract-valid.svg
 testharness svg/text/parsing/text-anchor-computed.svg
 testharness svg/text/parsing/text-anchor-invalid.svg
 testharness svg/text/parsing/text-anchor-valid.svg
@@ -65885,6 +65885,7 @@ testharness webcodecs/videoFrame-drawImage-rgbx.any.js
 testharness webcodecs/videoFrame-drawImage.any.js
 testharness webcodecs/videoFrame-encode-preserves-input.crossOrigin.https.html
 testharness webcodecs/videoFrame-encode-preserves-input.https.any.js
+testharness webcodecs/videoFrame-imageBitmap-crop.any.js
 testharness webcodecs/videoFrame-metadata-rtpTimestamp.https.html
 testharness webcodecs/videoFrame-odd-size.any.js
 testharness webcodecs/videoFrame-orientation-drawImage.any.js
@@ -66598,6 +66599,7 @@ testharness webrtc/RTCRtpSender-encode-same-track-twice.https.html
 testharness webrtc/RTCRtpSender-getCapabilities.html
 testharness webrtc/RTCRtpSender-getParameters.html
 testharness webrtc/RTCRtpSender-getStats.https.html
+testharness webrtc/RTCRtpSender-maxFramerate.https.html
 testharness webrtc/RTCRtpSender-replaceTrack.https.html
 testharness webrtc/RTCRtpSender-setParameters.html
 testharness webrtc/RTCRtpSender-setStreams.https.html
@@ -66643,12 +66645,16 @@ testharness webrtc/protocol/dtls-certificates.html
 testharness webrtc/protocol/dtls-close.html
 testharness webrtc/protocol/dtls-fingerprint-validation.html
 testharness webrtc/protocol/dtls-setup.https.html
+testharness webrtc/protocol/fingerprint-change-requires-ice-restart.html
 testharness webrtc/protocol/h264-fmtp-modifies-level.https.html
 testharness webrtc/protocol/h264-profile-levels.https.html
 testharness webrtc/protocol/h264-unidirectional-codec-offer.https.html
 testharness webrtc/protocol/h265-level-id.https.html
 testharness webrtc/protocol/h265-loopback.https.html
 testharness webrtc/protocol/handover-datachannel.html
+testharness webrtc/protocol/handover-failure.html
+testharness webrtc/protocol/handover-media.html
+testharness webrtc/protocol/handover-torture.html
 testharness webrtc/protocol/handover.html
 testharness webrtc/protocol/ice-state.https.html
 testharness webrtc/protocol/ice-ufragpwd.html
