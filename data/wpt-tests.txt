@@ -1,4 +1,4 @@
-sha: f71687ca39ec9f23ca0cca83a41f35b6b3af69e0
+sha: 3d99311e802a15f63ba7240c8cf87dbf965d2a29
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -834,6 +834,9 @@ crashtest css/css-overflow/scroll-markers/chrome-555280390-crash.html
 crashtest css/css-overflow/scroll-markers/chrome-570167919-crash.html
 crashtest css/css-overflow/scroll-markers/column-scroll-marker-015-crash.html
 crashtest css/css-overflow/scroll-markers/column-scroll-marker-016-crash.html
+crashtest css/css-overflow/scroll-markers/column-scroll-marker-017-crash.html
+crashtest css/css-overflow/scroll-markers/column-scroll-marker-018-crash.html
+crashtest css/css-overflow/scroll-markers/column-scroll-marker-019-crash.html
 crashtest css/css-overflow/scroll-markers/column-scroll-marker-manual-slot-recalc-crash.html
 crashtest css/css-overflow/scroll-markers/column-scroll-marker-no-content-crash.html
 crashtest css/css-overflow/scroll-markers/inline-with-scroll-marker-group-crash.html
@@ -5226,6 +5229,7 @@ print-reftest css/CSS2/pagination/table-page-break-inside-avoid-8-print.html
 print-reftest css/css-anchor-position/anchor-position-005-print.html
 print-reftest css/css-break/abspos-001-print.html
 print-reftest css/css-break/abspos-002-print.html
+print-reftest css/css-break/abspos-003-print.html
 print-reftest css/css-break/abspos-in-clipped-overflow-print.html
 print-reftest css/css-break/abspos-overflow-hidden-001-print.html
 print-reftest css/css-break/block-001-wm-vlr-print.html
@@ -20136,6 +20140,7 @@ reftest css/css-images/gradient-refcrash.html
 reftest css/css-images/gradient/color-scheme-dependent-color-stops.html
 reftest css/css-images/gradient/conic-gradient-001.html
 reftest css/css-images/gradient/css-color-4-colors-default-to-oklab-gradient.html
+reftest css/css-images/gradient/css-color-4-colors-with-calc-default-to-oklab-gradient.html
 reftest css/css-images/gradient/display-p3-linear-gradient.html
 reftest css/css-images/gradient/gradient-analogous-missing-components-001.html
 reftest css/css-images/gradient/gradient-analogous-missing-components-002.html
@@ -20207,8 +20212,10 @@ reftest css/css-images/gradient/gradient-single-stop-longer-hue-oklch.html
 reftest css/css-images/gradient/gradient-single-stop-none-interpolation.html
 reftest css/css-images/gradient/gradient-to-transparent.html
 reftest css/css-images/gradient/legacy-color-gradient.html
+reftest css/css-images/gradient/legacy-color-with-calc-gradient.html
 reftest css/css-images/gradient/linear-gradient-relative-currentcolor-stop.html
 reftest css/css-images/gradient/oklab-gradient.html
+reftest css/css-images/gradient/relative-color-default-to-oklab-gradient.html
 reftest css/css-images/gradient/repeating-gradient-hsl-and-oklch.html
 reftest css/css-images/gradient/srgb-gradient.html
 reftest css/css-images/gradient/srgb-linear-gradient.html
@@ -24778,6 +24785,8 @@ reftest css/css-tables/display-contents-003.html
 reftest css/css-tables/dynamic-table-cell-block-size-vertical-rl.html
 reftest css/css-tables/dynamic-table-cell-height.html
 reftest css/css-tables/empty-table-height.html
+reftest css/css-tables/fixed-table-layout-collapsed-border-rtl-001.html
+reftest css/css-tables/fixed-table-layout-collapsed-border-rtl-002.html
 reftest css/css-tables/fixup-dynamic-anonymous-inline-table-001.html
 reftest css/css-tables/fixup-dynamic-anonymous-inline-table-002.html
 reftest css/css-tables/fixup-dynamic-anonymous-inline-table-003.html
@@ -26117,6 +26126,8 @@ reftest css/css-text/text-transform/text-transform-fullwidth-007.html
 reftest css/css-text/text-transform/text-transform-fullwidth-008.html
 reftest css/css-text/text-transform/text-transform-fullwidth-009.html
 reftest css/css-text/text-transform/text-transform-fullwidth-010.html
+reftest css/css-text/text-transform/text-transform-fullwidth-011.html
+reftest css/css-text/text-transform/text-transform-fullwidth-012.html
 reftest css/css-text/text-transform/text-transform-letter-spacing-001.html
 reftest css/css-text/text-transform/text-transform-letter-spacing-002.html
 reftest css/css-text/text-transform/text-transform-lowercase-101.xht
@@ -29263,6 +29274,8 @@ reftest css/css-view-transitions/scoped/scrolled-target-position-rtl.html
 reftest css/css-view-transitions/scoped/scrolled-target-position.html
 reftest css/css-view-transitions/scoped/scroller-with-child.html
 reftest css/css-view-transitions/scoped/shadow-dom.html
+reftest css/css-view-transitions/scoped/shadow-roots-cross-tree-morph.tentative.html
+reftest css/css-view-transitions/scoped/shadow-roots-nested-groups.tentative.html
 reftest css/css-view-transitions/scoped/target-in-scrolled-container.html
 reftest css/css-view-transitions/scoped/to-scale-zero.html
 reftest css/css-view-transitions/scoped/transform-clip.html
@@ -31100,6 +31113,7 @@ reftest css/motion/animation/reftests/offset-distance-interpolation-001.html
 reftest css/motion/animation/reftests/offset-path-path-interpolation-001.html
 reftest css/motion/animation/reftests/offset-path-with-transforms-001.html
 reftest css/motion/animation/reftests/offset-rotate-interpolation-001.html
+reftest css/motion/change-offset-path-ray-coord-box.html
 reftest css/motion/change-offset-path.html
 reftest css/motion/offset-anchor-transform-box-fill-box-001.html
 reftest css/motion/offset-anchor-transform-box-fill-box-002.html
@@ -31144,6 +31158,8 @@ reftest css/motion/offset-path-ray-contain-002.html
 reftest css/motion/offset-path-ray-contain-003.html
 reftest css/motion/offset-path-ray-contain-004.html
 reftest css/motion/offset-path-ray-contain-005.html
+reftest css/motion/offset-path-ray-coord-box-offset-position-normal-001.html
+reftest css/motion/offset-path-ray-coord-box-offset-position-normal-002.html
 reftest css/motion/offset-path-ray-sides-fourth-quadrant.html
 reftest css/motion/offset-path-shape-circle-001.html
 reftest css/motion/offset-path-shape-circle-002.html
@@ -34059,6 +34075,7 @@ reftest svg/painting/reftests/marker-context-fill-transform.html
 reftest svg/painting/reftests/marker-data-uri-reference.svg
 reftest svg/painting/reftests/marker-external-reference.svg
 reftest svg/painting/reftests/marker-implicit-subpaths.html
+reftest svg/painting/reftests/marker-orient-auto-closepath.svg
 reftest svg/painting/reftests/marker-path-001.svg
 reftest svg/painting/reftests/marker-path-002.svg
 reftest svg/painting/reftests/marker-path-003.svg
@@ -43709,6 +43726,7 @@ testharness css/css-values/attr-pseudo-element-originating.html
 testharness css/css-values/attr-revert-rule.html
 testharness css/css-values/attr-security-animation.html
 testharness css/css-values/attr-security-if.html
+testharness css/css-values/attr-security-image-set.html
 testharness css/css-values/attr-security-transition-2.html
 testharness css/css-values/attr-security-transition-interpolated.html
 testharness css/css-values/attr-security-transition-retarget-taint.html
@@ -44189,6 +44207,12 @@ testharness css/css-view-transitions/scoped/scope-containment-remembered-size.ht
 testharness css/css-view-transitions/scoped/scope-containment-sibling-offset.html
 testharness css/css-view-transitions/scoped/scope-display-none.html
 testharness css/css-view-transitions/scoped/scope-during-transition-1.html
+testharness css/css-view-transitions/scoped/shadow-roots-auto-and-match-element.tentative.html
+testharness css/css-view-transitions/scoped/shadow-roots-classes-groups-scopes.tentative.html
+testharness css/css-view-transitions/scoped/shadow-roots-discovery.tentative.html
+testharness css/css-view-transitions/scoped/shadow-roots-flat-tree-descendants.tentative.html
+testharness css/css-view-transitions/scoped/shadow-roots-options.tentative.html
+testharness css/css-view-transitions/scoped/shadow-roots-pairing-and-collisions.tentative.html
 testharness css/css-view-transitions/scoped/start-view-transition-on-disconnected-element.html
 testharness css/css-view-transitions/scoped/start-view-transition.html
 testharness css/css-view-transitions/scoped/view-transition-scope-added-during-callback.html
@@ -44240,6 +44264,7 @@ testharness css/css-viewport/zoom/relative-units.html
 testharness css/css-viewport/zoom/scroll-top-test-with-zoom.html
 testharness css/css-viewport/zoom/svg-computed-style.html
 testharness css/css-viewport/zoom/text-indent-computed.html
+testharness css/css-viewport/zoom/textarea-placeholder-overflow.html
 testharness css/css-viewport/zoom/translate-matrix-zoom-anim-accumulated-computed.html
 testharness css/css-viewport/zoom/translate-zoom-anim-computed.html
 testharness css/css-viewport/zoom/widget.html
@@ -44654,6 +44679,7 @@ testharness css/cssom/base-uri.html
 testharness css/cssom/border-shorthand-serialization.html
 testharness css/cssom/caretPositionFromPoint-audioVideo.html
 testharness css/cssom/caretPositionFromPoint-in-flex-container.html
+testharness css/cssom/caretPositionFromPoint-svg-text-scaled.html
 testharness css/cssom/caretPositionFromPoint-textarea.html
 testharness css/cssom/caretPositionFromPoint-with-transformation.html
 testharness css/cssom/caretPositionFromPoint.html
@@ -49730,6 +49756,7 @@ testharness html/canvas/element/manual/draw-element-image/onpaint-fires-post-res
 testharness html/canvas/element/manual/draw-element-image/onpaint-iframe-nested-invalidation.tentative.html
 testharness html/canvas/element/manual/draw-element-image/onpaint-iframe-post-tree-order.tentative.html
 testharness html/canvas/element/manual/draw-element-image/onpaint-iframe.tentative.html
+testharness html/canvas/element/manual/draw-element-image/onpaint-offscreen-canvas-invalidation.tentative.html
 testharness html/canvas/element/manual/draw-element-image/onpaint-post-tree-order-shadow-dom.tentative.html
 testharness html/canvas/element/manual/draw-element-image/onpaint-post-tree-order.tentative.html
 testharness html/canvas/element/manual/draw-element-image/onpaint-remove-drawable-element.tentative.html
@@ -57494,6 +57521,7 @@ testharness long-animation-frame/loaf-pause-duration.html
 testharness long-animation-frame/loaf-pointer-without-render-iframe.html
 testharness long-animation-frame/loaf-pointer-without-render.html
 testharness long-animation-frame/loaf-popup.html
+testharness long-animation-frame/loaf-promise-cross-origin-detach.html
 testharness long-animation-frame/loaf-promise-import.tentative.html
 testharness long-animation-frame/loaf-promise-scheduled-render.html
 testharness long-animation-frame/loaf-promise.html
@@ -61322,6 +61350,7 @@ testharness resize-observer/scrollbars.html
 testharness resize-observer/svg-with-css-box-001.html
 testharness resize-observer/svg-with-css-box-002.svg
 testharness resize-observer/svg.html
+testharness resize-observer/zoom-fractional.html
 testharness resize-observer/zoom.html
 testharness resource-timing/304-response-recorded.html
 testharness resource-timing/SO-XO-SO-redirect-chain-tao.https.html
@@ -66062,6 +66091,7 @@ testharness webmessaging/message-channels/historical.any.js
 testharness webmessaging/message-channels/implied-start.any.js
 testharness webmessaging/message-channels/messageerror-listener-gc.html
 testharness webmessaging/message-channels/no-start.any.js
+testharness webmessaging/message-channels/transfer-from-closed-port.any.js
 testharness webmessaging/message-channels/user-activation.tentative.any.js
 testharness webmessaging/message-channels/worker-post-after-close.any.js
 testharness webmessaging/message-channels/worker.any.js
