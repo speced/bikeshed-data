@@ -1,4 +1,4 @@
-sha: 15568b6975c7ec4533a84fa42831410d529b6297
+sha: 5a202e354226a96a5a193d6c5a92d91de5130531
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -11,6 +11,14 @@ crashtest accessibility/crashtests/aria-owned-with-role-change.html
 crashtest accessibility/crashtests/aria-owns-deferred-parent-cycle.html
 crashtest accessibility/crashtests/aria-owns-deferred-parent-restoration.html
 crashtest accessibility/crashtests/aria-owns-destroyed-by-content-replacement.html
+crashtest accessibility/crashtests/aria-owns-elements-deferred-parent-cycle.html
+crashtest accessibility/crashtests/aria-owns-elements-fieldset-legend.html
+crashtest accessibility/crashtests/aria-owns-elements-internals.html
+crashtest accessibility/crashtests/aria-owns-elements-new-cycle.html
+crashtest accessibility/crashtests/aria-owns-elements-overlapping.html
+crashtest accessibility/crashtests/aria-owns-elements-remove-subtree-cycle.html
+crashtest accessibility/crashtests/aria-owns-elements-reparent.html
+crashtest accessibility/crashtests/aria-owns-elements-shadow-move.html
 crashtest accessibility/crashtests/aria-owns-fallback-content.html
 crashtest accessibility/crashtests/aria-owns-from-aria-hidden-subtree.html
 crashtest accessibility/crashtests/aria-owns-inside-map.html
@@ -1167,6 +1175,7 @@ crashtest css/css-view-transitions/empty-render-target-crash.html
 crashtest css/css-view-transitions/first-line-reparent-crash.html
 crashtest css/css-view-transitions/get-computed-style-crash.html
 crashtest css/css-view-transitions/iframe-transition-destroyed-document-crash.html
+crashtest css/css-view-transitions/inline-fragmented-in-stacking-context-crash.html
 crashtest css/css-view-transitions/list-style-position-style-change-crash.html
 crashtest css/css-view-transitions/navigation/opt-in-without-frame-crash.html
 crashtest css/css-view-transitions/remove-document-element-crash.html
@@ -15800,6 +15809,7 @@ reftest css/css-counter-styles/counter-style-at-rule/system-additive.html
 reftest css/css-counter-styles/counter-style-at-rule/system-alphabetic-invalid.html
 reftest css/css-counter-styles/counter-style-at-rule/system-alphabetic.html
 reftest css/css-counter-styles/counter-style-at-rule/system-cyclic-invalid.html
+reftest css/css-counter-styles/counter-style-at-rule/system-cyclic-negative.html
 reftest css/css-counter-styles/counter-style-at-rule/system-cyclic.html
 reftest css/css-counter-styles/counter-style-at-rule/system-extends-fixed.html
 reftest css/css-counter-styles/counter-style-at-rule/system-extends-invalid.html
@@ -16083,6 +16093,7 @@ reftest css/css-display/display-inline-on-block-container.html
 reftest css/css-display/display-math-on-pseudo-elements-002.html
 reftest css/css-display/display-none-inline-img.html
 reftest css/css-display/display-on-svg-text-content-element.html
+reftest css/css-display/display-table-cell-dynamic-replaced.html
 reftest css/css-display/display-table-cell-on-button.html
 reftest css/css-display/invisibility/visibility-collapse-invalidation-001.html
 reftest css/css-display/order-dynamic.html
@@ -19251,6 +19262,18 @@ reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/colu
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-003a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/grid-lanes-subgrid-004a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/column/independent-formatting-context.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/column-line-names-001.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/column-line-names-002.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/column-line-names-003.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/column-line-names-004.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/column-line-names-005.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/column-line-names-006.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/row-line-names-001.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/row-line-names-002.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/row-line-names-003.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/row-line-names-004.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/row-line-names-005.html
+reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/line-names/row-line-names-006.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-001a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-002a.html
 reftest css/css-grid/grid-lanes/subgrid/grid-lanes-subgridded-to-grid-lanes/row/grid-lanes-subgrid-002c.html
@@ -23197,6 +23220,7 @@ reftest css/css-position/sticky/position-sticky-flex-item-002.html
 reftest css/css-position/sticky/position-sticky-flex-item-003.html
 reftest css/css-position/sticky/position-sticky-flex-item-004.html
 reftest css/css-position/sticky/position-sticky-flexbox.html
+reftest css/css-position/sticky/position-sticky-fractional-offset-snapping.html
 reftest css/css-position/sticky/position-sticky-fractional-offset.html
 reftest css/css-position/sticky/position-sticky-grid.html
 reftest css/css-position/sticky/position-sticky-hyperlink.html
@@ -32045,7 +32069,9 @@ reftest html/canvas/element/text/2d.text.shape.fillGlyphRun-baseline.tentative.h
 reftest html/canvas/element/text/2d.text.shape.fillGlyphRun-direction-change.tentative.html
 reftest html/canvas/element/text/2d.text.shape.fillGlyphRun-drawing-styles-change.tentative.html
 reftest html/canvas/element/text/2d.text.shape.fillGlyphRun-font-change.tentative.html
+reftest html/canvas/element/text/2d.text.shape.fillGlyphRun-leading-spaces.tentative.html
 reftest html/canvas/element/text/2d.text.shape.fillGlyphRuns-and-strokeGlyphRuns.tentative.html
+reftest html/canvas/element/text/2d.text.shape.fillGlyphRuns-shadow.tentative.html
 reftest html/canvas/element/text/2d.text.shape.strokeGlyphRun-align.tentative.html
 reftest html/canvas/element/text/2d.text.shape.strokeGlyphRun-baseline.tentative.html
 reftest html/canvas/element/text/2d.text.shape.strokeGlyphRun-direction-change.tentative.html
@@ -32315,8 +32341,12 @@ reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRun-drawing-styles-cha
 reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRun-drawing-styles-change.tentative.w.html
 reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRun-font-change.tentative.html
 reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRun-font-change.tentative.w.html
+reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRun-leading-spaces.tentative.html
+reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRun-leading-spaces.tentative.w.html
 reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRuns-and-strokeGlyphRuns.tentative.html
 reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRuns-and-strokeGlyphRuns.tentative.w.html
+reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRuns-shadow.tentative.html
+reftest html/canvas/offscreen/text/2d.text.shape.fillGlyphRuns-shadow.tentative.w.html
 reftest html/canvas/offscreen/text/2d.text.shape.strokeGlyphRun-align.tentative.html
 reftest html/canvas/offscreen/text/2d.text.shape.strokeGlyphRun-align.tentative.w.html
 reftest html/canvas/offscreen/text/2d.text.shape.strokeGlyphRun-baseline.tentative.html
@@ -35312,6 +35342,7 @@ testharness ai/language-model/language-model-from-detached-iframe.tentative.http
 testharness ai/language-model/language-model-iframe.tentative.https.html
 testharness ai/language-model/language-model-params.tentative.https.window.js
 testharness ai/language-model/language-model-quota-exceeded.tentative.https.window.js
+testharness ai/language-model/language-model-thinking-effort.tentative.https.window.js
 testharness ai/language-model/language-model-tool-use.tentative.https.window.js
 testharness ai/language-model/prompt/context/destroyed.tentative.https.window.js
 testharness ai/language-model/prompt/context/measure.tentative.https.window.js
@@ -46402,6 +46433,7 @@ testharness dom/nodes/moveBefore/css-transition-cross-shadow.html
 testharness dom/nodes/moveBefore/css-transition-to-disconnected-document.html
 testharness dom/nodes/moveBefore/css-transition-trigger.html
 testharness dom/nodes/moveBefore/custom-element-move-reactions.html
+testharness dom/nodes/moveBefore/dialog-moveBefore-shadow-root.html
 testharness dom/nodes/moveBefore/fieldset-child-blur-event.html
 testharness dom/nodes/moveBefore/fieldset-child-date-input-blur-event.html
 testharness dom/nodes/moveBefore/fire-focusin-focusout.html
@@ -48283,6 +48315,7 @@ testharness gyroscope/Gyroscope-supported-by-permissions-policy.html
 testharness gyroscope/Gyroscope.https.html
 testharness gyroscope/Gyroscope_insecure_context.html
 testharness gyroscope/idlharness.https.window.js
+testharness hr-time/audioworklet-cross-origin-isolated.https.html
 testharness hr-time/audioworklet.https.html
 testharness hr-time/basic.any.js
 testharness hr-time/clamped-time-origin-isolated.https.html
@@ -53756,6 +53789,7 @@ testharness html/semantics/document-metadata/the-link-element/tentative/module-s
 testharness html/semantics/document-metadata/the-link-element/tentative/module-stylesheet-classic-sharing.html
 testharness html/semantics/document-metadata/the-link-element/tentative/module-stylesheet-classification.html
 testharness html/semantics/document-metadata/the-link-element/tentative/module-stylesheet-constructed.html
+testharness html/semantics/document-metadata/the-link-element/tentative/module-stylesheet-disabled.html
 testharness html/semantics/document-metadata/the-link-element/tentative/module-stylesheet-document-context.html
 testharness html/semantics/document-metadata/the-link-element/tentative/module-stylesheet-encoding.html
 testharness html/semantics/document-metadata/the-link-element/tentative/module-stylesheet-failure-events.html
@@ -63428,6 +63462,8 @@ testharness svg/animations/attribute-value-unaffected-by-animation-001.html
 testharness svg/animations/attribute-value-unaffected-by-animation-002.html
 testharness svg/animations/attributeTypes.html
 testharness svg/animations/begin-attribute-mutation.html
+testharness svg/animations/begin-end-accesskey-keypress.tentative.html
+testharness svg/animations/begin-end-accesskey-not-event-name.html
 testharness svg/animations/begin-event.svg
 testharness svg/animations/beginelement-instance-time-1.html
 testharness svg/animations/beginevents-1.html
@@ -63752,6 +63788,7 @@ testharness svg/interact/scripted/transformed-group-hittest.html
 testharness svg/linking/scripted/a-download-click.svg
 testharness svg/linking/scripted/a-hyperlinkutils-getter-setter.html
 testharness svg/linking/scripted/a-hyperlinkutils-getter.html
+testharness svg/linking/scripted/a-hyperlinkutils-setter-href-xlink-href.html
 testharness svg/linking/scripted/a-referrerpolicy-navigation.html
 testharness svg/linking/scripted/a-referrerpolicy-reflection.html
 testharness svg/linking/scripted/a.hreflang-getter-01.svg
@@ -64001,6 +64038,9 @@ testharness svg/text/scripted/lengthadjust-char-positions.html
 testharness svg/text/scripted/lengthadjust.html
 testharness svg/text/scripted/range-getboundingclientrect-scaled.html
 testharness svg/text/scripted/textlength-inconsistent.svg
+testharness svg/text/scripted/textpath-href-basic-shape-direction.html
+testharness svg/text/scripted/textpath-href-basic-shape-targets.html
+testharness svg/text/scripted/textpath-href-basic-shape-transform.html
 testharness svg/text/scripted/textpath-href-path-mutated.html
 testharness svg/text/scripted/textpath-path-attr-dynamic.html
 testharness svg/text/scripted/textpath-path-attr-idl.html
@@ -65920,6 +65960,7 @@ testharness webgl/texImage2D-source-ignores-unpack-alignment.html
 testharness webgl/texImage2D.html
 testharness webgl/texImage3D-size-limits.html
 testharness webgl/texStorage-format-checks.html
+testharness webgl/texSubImage2D-region-size.html
 testharness webgl/texSubImage2D.html
 testharness webgl/uniformMatrixNfv.html
 testharness webgl/vertexAttrib-keeps-array-type.html
@@ -70850,6 +70891,7 @@ wdspec webdriver/tests/bidi/emulation/set_scripting_enabled/user_contexts.py
 wdspec webdriver/tests/bidi/emulation/set_scrollbar_type_override/contexts.py
 wdspec webdriver/tests/bidi/emulation/set_scrollbar_type_override/global.py
 wdspec webdriver/tests/bidi/emulation/set_scrollbar_type_override/invalid.py
+wdspec webdriver/tests/bidi/emulation/set_scrollbar_type_override/rendering.py
 wdspec webdriver/tests/bidi/emulation/set_scrollbar_type_override/scrollbar_type.py
 wdspec webdriver/tests/bidi/emulation/set_scrollbar_type_override/user_contexts.py
 wdspec webdriver/tests/bidi/emulation/set_text_layout_mode_override/contexts.py
@@ -71381,5 +71423,6 @@ wdspec webdriver/tests/classic/take_screenshot/user_prompts.py
 wdspec webdriver/tests/interop/beforeunload_prompt.py
 wdspec webdriver/tests/interop/bidi_upgrade.py
 wdspec webdriver/tests/interop/frames.py
+wdspec webdriver/tests/interop/set_scrollbar_type_override.py
 wdspec webdriver/tests/interop/shared_id_node.py
 wdspec webdriver/tests/interop/shared_id_window.py
