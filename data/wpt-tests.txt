@@ -1,4 +1,4 @@
-sha: edb50e8de0c92e47cb630db7844ea8e5da638f6f
+sha: 1022163c4905e8037cfe0d33997d6ebf392417d7
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -33221,6 +33221,8 @@ reftest html/semantics/permission-element/geolocation-element/quirks-mode-no-hei
 reftest html/semantics/permission-element/geolocation-element/text-decoration-tentative.html
 reftest html/semantics/permission-element/geolocation-element/text-stroke-and-fill.tentative.html
 reftest html/semantics/permission-element/geolocation-element/webkit-text-security-on-parent.tentative.html
+reftest html/semantics/permission-element/icon-only/icon-only-hides-text-mismatch-reftest.tentative.html
+reftest html/semantics/permission-element/icon-only/icon-only-precise-location-icon-differs-reftest.tentative.html
 reftest html/semantics/permission-element/inherited-css.tentative.html
 reftest html/semantics/permission-element/install/border-radius-different.tentative.html
 reftest html/semantics/permission-element/install/border-radius-identical.tentative.html
@@ -34390,6 +34392,7 @@ reftest svg/struct/reftests/use-external-resource-target-pseudo-001.html
 reftest svg/struct/reftests/use-external-resource-target-pseudo-002.html
 reftest svg/struct/reftests/use-external-resource-with-revalidation.tentative.html
 reftest svg/struct/reftests/use-external-svg-resource-no-fragment-id.html
+reftest svg/struct/reftests/use-external-then-data-url-href.html
 reftest svg/struct/reftests/use-external-use.svg
 reftest svg/struct/reftests/use-foreignObject.html
 reftest svg/struct/reftests/use-image-href-mutating.svg
@@ -42514,6 +42517,8 @@ testharness css/css-tables/caption-side-1.html
 testharness css/css-tables/caption-writing-mode-001.html
 testharness css/css-tables/caption-writing-mode-002.html
 testharness css/css-tables/chrome-rowspan-bug.html
+testharness css/css-tables/col-offsetwidth-span-starting-inside-spanning-cell.html
+testharness css/css-tables/col-offsetwidth-spanning-cell.html
 testharness css/css-tables/col_removal.html
 testharness css/css-tables/collapsed-border-writing-mode-color.html
 testharness css/css-tables/collapsed-scroll-overflow.html
@@ -55427,6 +55432,9 @@ testharness html/semantics/permission-element/geolocation-element/no-children-re
 testharness html/semantics/permission-element/geolocation-element/parent-image-mask.tentative.html
 testharness html/semantics/permission-element/geolocation-element/parent-mask.tentative.html
 testharness html/semantics/permission-element/granted-selector.https.html
+testharness html/semantics/permission-element/icon-only/bounded-sizes-and-icon-css.tentative.html
+testharness html/semantics/permission-element/icon-only/displayhint-unsupported-elements.tentative.html
+testharness html/semantics/permission-element/icon-only/security-validation-gates.tentative.html
 testharness html/semantics/permission-element/install/bounded-css-properties.tentative.html
 testharness html/semantics/permission-element/install/bounded-sizes.tentative.html
 testharness html/semantics/permission-element/install/display-values.tentative.html
@@ -63445,6 +63453,7 @@ testharness svg/animations/animate-path-animation-cC-sS-inverse.tentative.html
 testharness svg/animations/animate-path-animation-lL-vV-hH-inverse.tentative.html
 testharness svg/animations/animate-path-animation-mM-aA-Z-inverse.tentative.html
 testharness svg/animations/animate-path-animation-qQ-tT-inverse.tentative.html
+testharness svg/animations/animate-path-arc-zero-radius.html
 testharness svg/animations/animate-path-by-animation-accumulate-mismatch.tentative.html
 testharness svg/animations/animate-path-by-animation-accumulate.tentative.html
 testharness svg/animations/animate-path-by-animation-additive-mismatch.tentative.html
@@ -63803,6 +63812,7 @@ testharness svg/interact/scripted/composed.window.svg
 testharness svg/interact/scripted/defer-01.svg
 testharness svg/interact/scripted/defer-02.html
 testharness svg/interact/scripted/ellipse-hittest.html
+testharness svg/interact/scripted/embedded-document-root-focus.html
 testharness svg/interact/scripted/focus-events.svg
 testharness svg/interact/scripted/focus-tabindex-default-value.svg
 testharness svg/interact/scripted/focus-tabindex-invalid-value.svg
@@ -63963,6 +63973,7 @@ testharness svg/path/parsing/path-length-invalid.tentative.svg
 testharness svg/path/parsing/path-length-valid.tentative.svg
 testharness svg/path/parsing/quadratic-bezier-commands.html
 testharness svg/path/parsing/whitespace-basic.html
+testharness svg/path/property/d-interpolation-arc-zero-radius.svg
 testharness svg/path/property/d-interpolation-discrete.svg
 testharness svg/path/property/d-interpolation-relative-absolute.svg
 testharness svg/path/property/d-interpolation-single.svg
@@ -64102,6 +64113,8 @@ testharness svg/text/scripted/textpath-path-attr-smil.tentative.html
 testharness svg/text/scripted/textpath-path-attr-startoffset.html
 testharness svg/text/scripted/textpath-pathlength-zero-startoffset.html
 testharness svg/text/scripted/textpath-textlength-text-anchor-001.tentative.svg
+testharness svg/text/scripted/textpath-textlength-text-anchor-002.tentative.svg
+testharness svg/text/scripted/textpath-textlength-text-anchor-003.tentative.svg
 testharness svg/text/scripted/transform-dynamic-update.html
 testharness svg/text/scripted/tspan-xml-space-preserve-position.html
 testharness svg/text/scripted/typographic-character-position-methods.html
