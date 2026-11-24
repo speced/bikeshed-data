@@ -23670,6 +23670,7 @@
     "update the selected audio session",
     "update the source set",
     "update the timing properties of an animation effect",
+    "update the tools ready state",
     "update the type",
     "update the user prompt handler",
     "update the viewports",
@@ -34719,6 +34720,7 @@
     "strictErrorChecking",
     "timeline",
     "title",
+    "tools ready",
     "top layer",
     "type",
     "unique ID",
@@ -45614,7 +45616,8 @@
     "registerTool(tool, options)",
     "toolactivated",
     "toolcancel",
-    "toolchange"
+    "toolchange",
+    "waitForToolsUntil(promise)"
   ],
   "ModelContext/executeTool(tool)": [
     "inputObject",
@@ -45644,6 +45647,9 @@
   "ModelContext/registerTool(tool, options)": [
     "options",
     "tool"
+  ],
+  "ModelContext/waitForToolsUntil(promise)": [
+    "promise"
   ],
   "ModelContextExecuteToolOptions": [
     "signal"
@@ -68357,6 +68363,7 @@
   ],
   "model context": [
     "local pending tool executions map",
+    "pending tool readiness promises",
     "tool map",
     "unregister a tool"
   ],
@@ -69322,7 +69329,8 @@
   ],
   "observed tool collection": [
     "origin",
-    "tools"
+    "tools",
+    "tools ready"
   ],
   "obtain a connection": [
     "requireUnreliable",

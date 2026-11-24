@@ -1,4 +1,4 @@
-sha: f4c43ab9577a867726ac24d30e7e668a348ed6d7
+sha: 7b53a11edac5afe6f7bf83c15c08524350d797ee
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -418,6 +418,7 @@ crashtest css/css-contain/content-visibility/crashtests/area-focus-in-hidden.htm
 crashtest css/css-contain/content-visibility/crashtests/container-query-force-visible-for-accessibility.html
 crashtest css/css-contain/content-visibility/crashtests/content-visibility-transition-finished-001.html
 crashtest css/css-contain/content-visibility/crashtests/div-in-hidden.html
+crashtest css/css-contain/content-visibility/crashtests/fieldset-with-shadowroot.html
 crashtest css/css-contain/content-visibility/crashtests/fieldset.html
 crashtest css/css-contain/content-visibility/crashtests/first-line-and-inline-block.html
 crashtest css/css-contain/content-visibility/crashtests/grid-dynamic.html
@@ -12588,6 +12589,7 @@ reftest css/css-anchor-position/position-visibility-anchor-visible-non-interveni
 reftest css/css-anchor-position/position-visibility-anchor-visible-position-fixed.html
 reftest css/css-anchor-position/position-visibility-anchor-visible-stacked-child.html
 reftest css/css-anchor-position/position-visibility-anchor-visible-stacked-child.tentative.html
+reftest css/css-anchor-position/position-visibility-anchor-visible-transform.html
 reftest css/css-anchor-position/position-visibility-anchor-visible-with-position.html
 reftest css/css-anchor-position/position-visibility-anchor-visible.html
 reftest css/css-anchor-position/position-visibility-initial.html
@@ -14229,6 +14231,7 @@ reftest css/css-break/grid/grid-lanes/row-expansion-005.html
 reftest css/css-break/grid/grid-lanes/row-expansion-006.html
 reftest css/css-break/grid/grid-lanes/row-expansion-007.html
 reftest css/css-break/grid/grid-lanes/row-expansion-008.html
+reftest css/css-break/grid/grid-lanes/row-fragmented-baselines-001.html
 reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-001.html
 reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-002.html
 reftest css/css-break/grid/grid-lanes/row-grid-lanes-oof-fragmentation-003.html
@@ -19850,6 +19853,8 @@ reftest css/css-grid/implicit-grids/grid-support-grid-auto-columns-rows-003.html
 reftest css/css-grid/layout-algorithm/auto-margins-ignored-during-track-sizing-001.html
 reftest css/css-grid/layout-algorithm/flex-and-intrinsic-sizes-002.html
 reftest css/css-grid/layout-algorithm/flex-sizing-rows-indefinite-height-002.html
+reftest css/css-grid/layout-algorithm/flex-sizing-rows-indefinite-height-explicit-columns.html
+reftest css/css-grid/layout-algorithm/flex-sizing-rows-indefinite-height-row-gap.html
 reftest css/css-grid/layout-algorithm/flex-sizing-rows-indefinite-height.html
 reftest css/css-grid/layout-algorithm/flex-tracks-with-fractional-size.html
 reftest css/css-grid/layout-algorithm/grid-as-flex-item-should-not-shrink-to-fit-001.html
@@ -19889,6 +19894,7 @@ reftest css/css-grid/layout-algorithm/grid-stretch-respects-min-size-003.html
 reftest css/css-grid/layout-algorithm/grid-template-flexible-rerun-track-sizing.html
 reftest css/css-grid/layout-algorithm/grid-track-ignores-max-size-001.html
 reftest css/css-grid/layout-algorithm/grid-track-ignores-max-size-002.html
+reftest css/css-grid/layout-algorithm/grid-track-ignores-max-size-explicit-columns.html
 reftest css/css-grid/min-size-auto-overflow-clip.html
 reftest css/css-grid/nested-grid-item-block-size-001.html
 reftest css/css-grid/placement/grid-layout-grid-span.html
@@ -20650,6 +20656,10 @@ reftest css/css-inline/alignment-baseline/alignment-baseline-flex-item-export-00
 reftest css/css-inline/alignment-baseline/alignment-baseline-horizontal-001.html
 reftest css/css-inline/alignment-baseline/alignment-baseline-horizontal-002.html
 reftest css/css-inline/alignment-baseline/alignment-baseline-horizontal-003.html
+reftest css/css-inline/alignment-baseline/alignment-baseline-inline-box-001.html
+reftest css/css-inline/alignment-baseline/alignment-baseline-inline-box-002.html
+reftest css/css-inline/alignment-baseline/alignment-baseline-inline-box-003.html
+reftest css/css-inline/alignment-baseline/alignment-baseline-inline-box-dynamic-001.html
 reftest css/css-inline/alignment-baseline/alignment-baseline-nested-001.html
 reftest css/css-inline/alignment-baseline/alignment-baseline-nested-002.html
 reftest css/css-inline/alignment-baseline/alignment-baseline-vertical-rl-001.html
@@ -21159,6 +21169,7 @@ reftest css/css-lists/nested-marker-dynamic.html
 reftest css/css-lists/nested-marker-styling.html
 reftest css/css-lists/nested-marker.html
 reftest css/css-lists/ol-change-display-type.html
+reftest css/css-lists/outside-marker-added-to-multicol-list-item.html
 reftest css/css-lists/outside-marker-after-empty-writing-mode-root.html
 reftest css/css-lists/outside-marker-alignment-with-block-content.html
 reftest css/css-lists/outside-marker-container-becomes-boundary.html
@@ -21174,6 +21185,7 @@ reftest css/css-lists/outside-marker-from-inside-position.html
 reftest css/css-lists/outside-marker-in-multicol-relpos-content.html
 reftest css/css-lists/outside-marker-list-item-becomes-multicol.html
 reftest css/css-lists/outside-marker-multicol-destroyed.html
+reftest css/css-lists/outside-marker-nested-align-content.html
 reftest css/css-lists/outside-marker-nested-shared-container.html
 reftest css/css-lists/outside-marker-position-with-cached-line-content.html
 reftest css/css-lists/outside-marker-rtl.html
@@ -21423,6 +21435,12 @@ reftest css/css-masking/clip-path/clip-path-fixed-nested.html
 reftest css/css-masking/clip-path/clip-path-fixed-scroll.html
 reftest css/css-masking/clip-path/clip-path-foreignobject-non-zero-xy.html
 reftest css/css-masking/clip-path/clip-path-geometryBox-2.html
+reftest css/css-masking/clip-path/clip-path-halfBorderBox-1a.html
+reftest css/css-masking/clip-path/clip-path-halfBorderBox-1b.html
+reftest css/css-masking/clip-path/clip-path-halfBorderBox-1c.html
+reftest css/css-masking/clip-path/clip-path-halfBorderBox-1d.html
+reftest css/css-masking/clip-path/clip-path-halfBorderBox-2a.html
+reftest css/css-masking/clip-path/clip-path-halfBorderBox-radii-001.tentative.html
 reftest css/css-masking/clip-path/clip-path-inline-001.html
 reftest css/css-masking/clip-path/clip-path-inline-002.html
 reftest css/css-masking/clip-path/clip-path-inline-003.html
@@ -21616,6 +21634,7 @@ reftest css/css-masking/mask-image/mask-image-ib-split-2.html
 reftest css/css-masking/mask-image/mask-image-ib-split.html
 reftest css/css-masking/mask-image/mask-image-inline-sliced-1.html
 reftest css/css-masking/mask-image/mask-image-multi-layer-while-loading.tentative.html
+reftest css/css-masking/mask-image/mask-image-on-themed-element.html
 reftest css/css-masking/mask-image/mask-image-svg-child-will-change.html
 reftest css/css-masking/mask-image/mask-image-svg-foreignobject-zoomed.html
 reftest css/css-masking/mask-image/mask-image-svg-gradient-zoomed.html
@@ -23973,6 +23992,10 @@ reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-003.htm
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-border-radius-001.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-border-radius-002.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-content-box-with-margin.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-half-border-box-001.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-half-border-box-002.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-half-border-box-radii-001.tentative.html
+reftest css/css-shapes/shape-outside/shape-box/shape-outside-half-border-box-radii-002.tentative.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-margin-box-001.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-margin-box-002.html
 reftest css/css-shapes/shape-outside/shape-box/shape-outside-margin-box-border-radius-001.html
@@ -28814,8 +28837,11 @@ reftest css/css-values/rlh-unit-001.html
 reftest css/css-values/svg-attr-case-sensitivity.html
 reftest css/css-values/urls/cross-origin/url-font-cross-origin-anonymous-credentials.sub.html
 reftest css/css-values/urls/cross-origin/url-font-cross-origin-use-credentials-credentials.sub.html
+reftest css/css-values/urls/cross-origin/url-image-cross-origin-anonymous-credentials-redirect.sub.html
+reftest css/css-values/urls/cross-origin/url-image-cross-origin-anonymous-credentials.sub.html
 reftest css/css-values/urls/cross-origin/url-image-cross-origin-anonymous-negative.sub.html
 reftest css/css-values/urls/cross-origin/url-image-cross-origin-anonymous.sub.html
+reftest css/css-values/urls/cross-origin/url-image-cross-origin-use-credentials-credentials.sub.html
 reftest css/css-values/urls/cross-origin/url-image-cross-origin-use-credentials-negative.sub.html
 reftest css/css-values/urls/cross-origin/url-image-cross-origin-use-credentials.sub.html
 reftest css/css-values/urls/cross-origin/url-image-set-cross-origin-anonymous-negative.sub.html
@@ -28836,6 +28862,7 @@ reftest css/css-values/urls/integrity/url-image-integrity-negative.sub.html
 reftest css/css-values/urls/integrity/url-image-integrity.sub.html
 reftest css/css-values/urls/integrity/url-import-integrity-negative.sub.html
 reftest css/css-values/urls/integrity/url-import-integrity.sub.html
+reftest css/css-values/urls/integrity/url-svg-filter-integrity-after-load-without-integrity-negative.sub.html
 reftest css/css-values/urls/integrity/url-svg-filter-integrity-negative.sub.html
 reftest css/css-values/urls/integrity/url-svg-filter-integrity.sub.html
 reftest css/css-values/urls/referrer-policy/no-referrer-when-downgrade/url-image-referrer-policy-cross-origin.html
@@ -33071,6 +33098,7 @@ reftest html/semantics/forms/the-select-element/customizable-select/select-butto
 reftest html/semantics/forms/the-select-element/customizable-select/select-clipping.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-display-block.tentative.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-explicit-size.html
+reftest html/semantics/forms/the-select-element/customizable-select/select-first-child-button-change-after-rendering.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-font-size.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-grid-before-after.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-icon-color.html
@@ -33154,6 +33182,7 @@ reftest html/semantics/grouping-content/the-ol-element/reversed-2.html
 reftest html/semantics/grouping-content/the-pre-element/grouping-pre-reftest-001.html
 reftest html/semantics/grouping-content/the-pre-element/pre-newline-bidi.html
 reftest html/semantics/interactive-elements/the-details-element/details-add-summary.html
+reftest html/semantics/interactive-elements/the-details-element/details-summary-change-after-rendering.html
 reftest html/semantics/interactive-elements/the-dialog-element/backdrop-descendant-selector.html
 reftest html/semantics/interactive-elements/the-dialog-element/backdrop-dynamic-display-none.html
 reftest html/semantics/interactive-elements/the-dialog-element/backdrop-dynamic-style-change.html
@@ -33929,6 +33958,8 @@ reftest shadow-dom/slot-fallback-content-005.html
 reftest shadow-dom/slot-fallback-content-006.html
 reftest shadow-dom/slot-fallback-content-007.html
 reftest shadow-dom/slot-fallback-content-008.html
+reftest shadow-dom/slot-fallback-content-009.html
+reftest shadow-dom/slot-reassignment-with-pending-style-change.html
 reftest shadow-dom/untriaged/shadow-trees/nested-shadow-trees/nested_tree_reftest.html
 reftest shadow-dom/untriaged/shadow-trees/reprojection/reprojection-001.html
 reftest shadow-dom/untriaged/shadow-trees/shadow-root-001.html
@@ -36730,6 +36761,7 @@ testharness content-security-policy/generic/304-response-should-update-csp.sub.h
 testharness content-security-policy/generic/case-insensitive-scheme.sub.html
 testharness content-security-policy/generic/cspro-not-enforced-in-worker.html
 testharness content-security-policy/generic/directive-name-case-insensitive.sub.html
+testharness content-security-policy/generic/domparser-document-report-only-inline-style.html
 testharness content-security-policy/generic/domparser-document-suppresses-csp-warning-for-inline-style.tentative.html
 testharness content-security-policy/generic/duplicate-directive.sub.html
 testharness content-security-policy/generic/eval-typecheck-callout-order.html
@@ -40199,6 +40231,7 @@ testharness css/css-grid/grid-definition/grid-inline-template-columns-rows-resol
 testharness css/css-grid/grid-definition/grid-inline-template-columns-rows-resolved-values-001.tentative.html
 testharness css/css-grid/grid-definition/grid-limits-001.html
 testharness css/css-grid/grid-definition/grid-minimum-contribution-with-percentages.html
+testharness css/css-grid/grid-definition/grid-percentage-auto-rows-indefinite-height-003.html
 testharness css/css-grid/grid-definition/grid-percentage-max-size-flex-rows-001.html
 testharness css/css-grid/grid-definition/grid-percentage-max-size-flex-rows-002.html
 testharness css/css-grid/grid-definition/grid-percentage-rows-indefinite-height-001.html
@@ -40219,6 +40252,7 @@ testharness css/css-grid/grid-extrinsically-sized-mutations.html
 testharness css/css-grid/grid-important.html
 testharness css/css-grid/grid-items/grid-automatic-minimum-intrinsic-aspect-ratio-001.html
 testharness css/css-grid/grid-items/grid-item-auto-repeat-large-gap.html
+testharness css/css-grid/grid-items/grid-item-border-box-sizing-001.html
 testharness css/css-grid/grid-items/grid-item-children-percentage-resolution-001.html
 testharness css/css-grid/grid-items/grid-item-dynamic-min-contribution-001.html
 testharness css/css-grid/grid-items/grid-item-fixed-margin-001.html
@@ -40887,6 +40921,7 @@ testharness css/css-masking/mask-shorthand-subproperties-reset.html
 testharness css/css-masking/parsing/clip-computed.html
 testharness css/css-masking/parsing/clip-invalid.html
 testharness css/css-masking/parsing/clip-path-computed.html
+testharness css/css-masking/parsing/clip-path-half-border-box-valid.html
 testharness css/css-masking/parsing/clip-path-invalid.html
 testharness css/css-masking/parsing/clip-path-shape-parsing.html
 testharness css/css-masking/parsing/clip-path-valid.html
@@ -42131,6 +42166,7 @@ testharness css/css-shapes/parsing/shape-margin-computed.html
 testharness css/css-shapes/parsing/shape-margin-invalid.html
 testharness css/css-shapes/parsing/shape-margin-valid.html
 testharness css/css-shapes/parsing/shape-outside-computed.html
+testharness css/css-shapes/parsing/shape-outside-half-border-box-valid.html
 testharness css/css-shapes/parsing/shape-outside-invalid-position.html
 testharness css/css-shapes/parsing/shape-outside-path-invalid.html
 testharness css/css-shapes/parsing/shape-outside-path-valid.html
@@ -42297,6 +42333,7 @@ testharness css/css-sizing/aspect-ratio/aspect-ratio-minimum-size-single-axis-sc
 testharness css/css-sizing/aspect-ratio/box-sizing-aspect-ratio-positioned.html
 testharness css/css-sizing/aspect-ratio/box-sizing-dimensions.html
 testharness css/css-sizing/aspect-ratio/box-sizing-squashed.html
+testharness css/css-sizing/aspect-ratio/button-display-table-cell.html
 testharness css/css-sizing/aspect-ratio/flex-aspect-ratio-orthogonal-percentage-child.html
 testharness css/css-sizing/aspect-ratio/flex-aspect-ratio-row-percentage-height-child.html
 testharness css/css-sizing/aspect-ratio/flex-aspect-ratio-shrink-to-fit-ancestor-relayout.html
@@ -43154,6 +43191,7 @@ testharness css/css-transforms/hittest-preserve-3d-2.html
 testharness css/css-transforms/hittest-preserve-3d.html
 testharness css/css-transforms/inheritance.html
 testharness css/css-transforms/inline-with-filter-and-hidden-backface.html
+testharness css/css-transforms/overflow-perspective-sticky-001.html
 testharness css/css-transforms/parsing/backface-visibility-computed.html
 testharness css/css-transforms/parsing/backface-visibility-invalid.html
 testharness css/css-transforms/parsing/backface-visibility-valid.html
@@ -47730,6 +47768,7 @@ testharness fetch/api/credentials/authentication-basic.any.js
 testharness fetch/api/credentials/authentication-redirection-stored-credentials.window.js
 testharness fetch/api/credentials/authentication-redirection.any.js
 testharness fetch/api/credentials/cookies.any.js
+testharness fetch/api/headers/header-forbidden-compression-dictionary.tentative.any.js
 testharness fetch/api/headers/header-setcookie.any.js
 testharness fetch/api/headers/header-values-last-event-id.any.js
 testharness fetch/api/headers/header-values-normalize.any.js
@@ -53740,6 +53779,7 @@ testharness html/rendering/non-replaced-elements/the-frameset-and-frame-elements
 testharness html/rendering/non-replaced-elements/the-frameset-and-frame-elements/large-rows-relsize.html
 testharness html/rendering/non-replaced-elements/the-hr-element-0/hr.html
 testharness html/rendering/non-replaced-elements/the-hr-element-0/setting-overflow-visible.html
+testharness html/rendering/non-replaced-elements/the-page/body-link-attributes-system-colors.html
 testharness html/rendering/non-replaced-elements/the-page/body-margin-3a.html
 testharness html/rendering/non-replaced-elements/the-page/body-margin-3b.html
 testharness html/rendering/non-replaced-elements/the-page/iframe-body-margin-attributes.html
@@ -66036,6 +66076,7 @@ testharness webcodecs/videoFrame-alpha-discard.any.js
 testharness webcodecs/videoFrame-alpha-discard.window.js
 testharness webcodecs/videoFrame-alpha.any.js
 testharness webcodecs/videoFrame-canvasImageSource.html
+testharness webcodecs/videoFrame-construction-layout.any.js
 testharness webcodecs/videoFrame-construction.any.js
 testharness webcodecs/videoFrame-construction.crossOriginIsolated.https.any.js
 testharness webcodecs/videoFrame-construction.crossOriginSource.sub.html
@@ -66720,6 +66761,7 @@ testharness webrtc/RTCPeerConnection-relay-canvas.https.html
 testharness webrtc/RTCPeerConnection-remote-track-currentTime.https.html
 testharness webrtc/RTCPeerConnection-remote-track-mute.https.html
 testharness webrtc/RTCPeerConnection-remote-track-properties.https.html
+testharness webrtc/RTCPeerConnection-remote-track-unmute-after-rollback.https.html
 testharness webrtc/RTCPeerConnection-removeTrack.https.html
 testharness webrtc/RTCPeerConnection-restartIce-onnegotiationneeded.https.html
 testharness webrtc/RTCPeerConnection-restartIce.https.html
@@ -71147,6 +71189,7 @@ wdspec webdriver/tests/bidi/network/before_request_sent/before_request_sent_cach
 wdspec webdriver/tests/bidi/network/before_request_sent/unique_request_ids.py
 wdspec webdriver/tests/bidi/network/before_request_sent/user_context_tentative.py
 wdspec webdriver/tests/bidi/network/combined/network_events.py
+wdspec webdriver/tests/bidi/network/combined/network_events_tentative.py
 wdspec webdriver/tests/bidi/network/continue_request/body.py
 wdspec webdriver/tests/bidi/network/continue_request/cookies.py
 wdspec webdriver/tests/bidi/network/continue_request/headers.py
