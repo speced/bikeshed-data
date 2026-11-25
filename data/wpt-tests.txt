@@ -1,4 +1,4 @@
-sha: 7b53a11edac5afe6f7bf83c15c08524350d797ee
+sha: 151c0bfaf4b12e8aa5ea51e762dc15e36b1c38b0
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -508,6 +508,7 @@ crashtest css/css-flexbox/zero-content-size-with-scrollbar-crash.html
 crashtest css/css-font-loading/fontface-from-arraybuffer-crash.html
 crashtest css/css-font-loading/fontfaceset-loading-worker-crash.html
 crashtest css/css-font-loading/fontfaceset-worker-fontface-crash.html
+crashtest css/css-fonts/crashtests/font-face-weight-calc-ch-crash.html
 crashtest css/css-fonts/font-face-array-buffer-parsing-failure-crash.html
 crashtest css/css-fonts/font-face-local-css-wide-keyword-crash.html
 crashtest css/css-fonts/font-features-two-stylesheets-crash.html
@@ -950,6 +951,7 @@ crashtest css/css-ruby/break-within-bases/break-spaces-crash.html
 crashtest css/css-ruby/crashtests/bidi.html
 crashtest css/css-ruby/crashtests/huge-base.html
 crashtest css/css-ruby/crashtests/justification.html
+crashtest css/css-ruby/crashtests/leading-float-in-ruby-crash.html
 crashtest css/css-ruby/crashtests/oof-display-contents.html
 crashtest css/css-ruby/crashtests/oof-in-nested-ruby.html
 crashtest css/css-ruby/crashtests/overhang.html
@@ -2122,6 +2124,7 @@ crashtest web-locks/crashtests/settle-after-steal.https.html
 crashtest web-locks/crashtests/worker-termination.https.html
 crashtest webaudio/the-audio-api/the-audiobuffer-interface/crashtests/copyFromChannel-bufferOffset-1.html
 crashtest webaudio/the-audio-api/the-audiobuffer-interface/crashtests/copyToChannel-bufferOffset-1.html
+crashtest webaudio/the-audio-api/the-audiobuffersourcenode-interface/audiobuffersource-loop-out-of-bounds-crash.html
 crashtest webaudio/the-audio-api/the-audiocontext-interface/crashtests/currentTime-after-discard.html
 crashtest webaudio/the-audio-api/the-iirfilternode-interface/iir-filter-silent-block-crash.html
 crashtest webaudio/the-audio-api/the-mediaelementaudiosourcenode-interface/mediaElementAudioSource-mediaStreamAudioDestination-stream-crash.html
@@ -14737,6 +14740,7 @@ reftest css/css-cascade/revert-val-001.html
 reftest css/css-cascade/revert-val-002.html
 reftest css/css-cascade/scope-featureless.html
 reftest css/css-cascade/scope-part.html
+reftest css/css-cascade/scope-placeholder.html
 reftest css/css-cascade/scope-pseudo-element.html
 reftest css/css-cascade/scope-shadow-sharing.html
 reftest css/css-cascade/scope-slotted.html
@@ -22435,6 +22439,7 @@ reftest css/css-overflow/line-clamp/line-clamp-auto-066.html
 reftest css/css-overflow/line-clamp/line-clamp-auto-067.html
 reftest css/css-overflow/line-clamp/line-clamp-auto-068.html
 reftest css/css-overflow/line-clamp/line-clamp-auto-069.html
+reftest css/css-overflow/line-clamp/line-clamp-auto-070.html
 reftest css/css-overflow/line-clamp/line-clamp-auto-with-ruby-001.html
 reftest css/css-overflow/line-clamp/line-clamp-auto-with-ruby-002.html
 reftest css/css-overflow/line-clamp/line-clamp-auto-with-ruby-003.html
@@ -32926,6 +32931,8 @@ reftest html/rendering/widgets/the-select-element/option-add-label.html
 reftest html/rendering/widgets/the-select-element/option-checked-styling.html
 reftest html/rendering/widgets/the-select-element/option-empty-label-to-empty-string.html
 reftest html/rendering/widgets/the-select-element/option-empty-label.html
+reftest html/rendering/widgets/the-select-element/option-image-alt.html
+reftest html/rendering/widgets/the-select-element/option-image-descendants.html
 reftest html/rendering/widgets/the-select-element/option-label-and-text.html
 reftest html/rendering/widgets/the-select-element/option-only-label.html
 reftest html/rendering/widgets/the-select-element/option-rm-label.html
@@ -33105,6 +33112,7 @@ reftest html/semantics/forms/the-select-element/customizable-select/select-icon-
 reftest html/semantics/forms/the-select-element/customizable-select/select-only-button-opt-in.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-only-picker-opt-in.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-open-invalidation.html
+reftest html/semantics/forms/the-select-element/customizable-select/select-optgroup-legend-label-dynamic.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-optgroup-legend-label-mutation.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-optgroup-legend-label.html
 reftest html/semantics/forms/the-select-element/customizable-select/select-option-images.html
@@ -39594,6 +39602,7 @@ testharness css/css-fonts/font-display/font-display-optional-stylesheet-change.h
 testharness css/css-fonts/font-face-range-order.html
 testharness css/css-fonts/font-face-style-normal.html
 testharness css/css-fonts/font-face-unicode-range-no-match-no-download.html
+testharness css/css-fonts/font-face-weight-calc-fallback.html
 testharness css/css-fonts/font-family-comma.html
 testharness css/css-fonts/font-family-src-quoted.html
 testharness css/css-fonts/font-feature-settings-serialization-001.html
@@ -40743,6 +40752,7 @@ testharness css/css-inline/text-box-trim/text-box-trim-scroll-container-004.html
 testharness css/css-layout-api/at-supports-rule.https.html
 testharness css/css-layout-api/computed-style-layout-function.https.html
 testharness css/css-layout-api/crash-multicol.https.html
+testharness css/css-layout-api/fallback-synchronous-errors.https.html
 testharness css/css-layout-api/inline-style-layout-function.https.html
 testharness css/css-layout-api/layout-child/inlines-dynamic.https.html
 testharness css/css-layout-api/supports.https.html
@@ -41424,6 +41434,7 @@ testharness css/css-page/parsing/page-rules-001.html
 testharness css/css-page/parsing/page-valid.html
 testharness css/css-page/parsing/size-invalid.html
 testharness css/css-page/parsing/size-valid.html
+testharness css/css-paint-api/constructor-error-synchronous.https.html
 testharness css/css-paint-api/idlharness.html
 testharness css/css-paint-api/parsing/paint-function-valid.https.html
 testharness css/css-parser-api/idlharness.html
@@ -43191,6 +43202,7 @@ testharness css/css-transforms/hittest-preserve-3d-2.html
 testharness css/css-transforms/hittest-preserve-3d.html
 testharness css/css-transforms/inheritance.html
 testharness css/css-transforms/inline-with-filter-and-hidden-backface.html
+testharness css/css-transforms/overflow-perspective-negative-rate-001.html
 testharness css/css-transforms/overflow-perspective-sticky-001.html
 testharness css/css-transforms/parsing/backface-visibility-computed.html
 testharness css/css-transforms/parsing/backface-visibility-invalid.html
@@ -45850,7 +45862,12 @@ testharness custom-elements/registries/initial-about-blank.window.js
 testharness custom-elements/registries/per-document.html
 testharness custom-elements/registries/pseudo-class-defined.window.js
 testharness custom-elements/registries/scoped-custom-element-registry-customelementregistry-attribute-in-xhtml.xhtml
+testharness custom-elements/registries/scoped-custom-element-registry-customelementregistry-attribute-keep-null-in-xhtml.xhtml
+testharness custom-elements/registries/scoped-custom-element-registry-customelementregistry-attribute-keep-null.html
 testharness custom-elements/registries/scoped-custom-element-registry-customelementregistry-attribute.html
+testharness custom-elements/registries/scoped-custom-element-registry-serialization.html
+testharness custom-elements/registries/scoped-custom-element-registry-xml-serialization-in-xhtml.xhtml
+testharness custom-elements/registries/scoped-custom-element-registry-xml-serialization.html
 testharness custom-elements/registries/scoped-registry-append.html
 testharness custom-elements/registries/scoped-registry-define-upgrade-criteria.html
 testharness custom-elements/registries/scoped-registry-define-upgrade-order.html
@@ -46881,6 +46898,7 @@ testharness editing/edit-context/edit-context-execCommand.tentative.https.html
 testharness editing/edit-context/edit-context-focus.tentative.html
 testharness editing/edit-context/edit-context-inheritability.tentative.html
 testharness editing/edit-context/edit-context-input.tentative.html
+testharness editing/edit-context/edit-context-on-demand.tentative.html
 testharness editing/edit-context/edit-context-paste-handler-changes-active.tentative.html
 testharness editing/edit-context/edit-context-paste-html.tentative.html
 testharness editing/edit-context/edit-context-property.tentative.html
@@ -48473,6 +48491,7 @@ testharness html-aam/heading/invalid-nesting.html
 testharness html-aam/hidden-names.html
 testharness html-aam/img-src-srcset-roles.tentative.html
 testharness html-aam/names.html
+testharness html-aam/optgroup-name.tentative.html
 testharness html-aam/optgroup-role.tentative.html
 testharness html-aam/roles-contextual.html
 testharness html-aam/roles-contextual.tentative.html
@@ -48630,6 +48649,7 @@ testharness html/browsers/browsing-the-web/navigating-across-documents/initial-e
 testharness html/browsers/browsing-the-web/navigating-across-documents/initial-empty-document/iframe-src-aboutblank-navigate-immediately.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/initial-empty-document/iframe-src-aboutblank-wait-for-load.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/initial-empty-document/initial-content-replacement.html
+testharness html/browsers/browsing-the-web/navigating-across-documents/initial-empty-document/initial-empty-document-pushState.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/initial-empty-document/load-event-iframe-element.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/initial-empty-document/load-pageshow-events-iframe-contentWindow.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/initial-empty-document/load-pageshow-events-window-open.html
@@ -48673,6 +48693,7 @@ testharness html/browsers/browsing-the-web/navigating-across-documents/navigatio
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigation-unload-javascript-url.window.js
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigation-unload-same-origin-fragment.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/navigation-unload-same-origin.window.js
+testharness html/browsers/browsing-the-web/navigating-across-documents/pending-navigation-pushState-replaceState.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/plugin-document.historical.html
 testharness html/browsers/browsing-the-web/navigating-across-documents/redirect-to-about.window.js
 testharness html/browsers/browsing-the-web/navigating-across-documents/redirect-to-data.html
@@ -53176,6 +53197,7 @@ testharness html/dom/partial-updates/tentative/fragment/src-streaming.html
 testharness html/dom/partial-updates/tentative/fragment/streaming-target-marker-removed.html
 testharness html/dom/partial-updates/tentative/template-for-case-sensitive-dom-inserted.html
 testharness html/dom/partial-updates/tentative/template-for-case-sensitive.html
+testharness html/dom/partial-updates/tentative/template-for-mutation-observer.html
 testharness html/dom/reflection-embedded.html
 testharness html/dom/reflection-forms-weekmonth.html
 testharness html/dom/reflection-forms.html
@@ -54688,6 +54710,7 @@ testharness html/semantics/embedded-content/the-img-element/sizes/parse-a-sizes-
 testharness html/semantics/embedded-content/the-img-element/sizes/sizes-2d.tentative.html
 testharness html/semantics/embedded-content/the-img-element/sizes/sizes-auto-2d.tentative.html
 testharness html/semantics/embedded-content/the-img-element/sizes/sizes-auto-dynamic-attributes.html
+testharness html/semantics/embedded-content/the-img-element/sizes/sizes-auto-parsing.html
 testharness html/semantics/embedded-content/the-img-element/sizes/sizes-auto-resize-observer-removes-auto.html
 testharness html/semantics/embedded-content/the-img-element/sizes/sizes-auto-unrendered.html
 testharness html/semantics/embedded-content/the-img-element/sizes/sizes-auto.html
@@ -55091,6 +55114,7 @@ testharness html/semantics/forms/the-legend-element/HTMLLegendElement.html
 testharness html/semantics/forms/the-legend-element/legend-form.html
 testharness html/semantics/forms/the-meter-element/meter-leading-plus-sign.html
 testharness html/semantics/forms/the-meter-element/meter.html
+testharness html/semantics/forms/the-optgroup-element/optgroup-label-legend.html
 testharness html/semantics/forms/the-optgroup-element/optgroup-removal.window.js
 testharness html/semantics/forms/the-option-element/option-element-constructor.html
 testharness html/semantics/forms/the-option-element/option-form.html
@@ -55098,6 +55122,7 @@ testharness html/semantics/forms/the-option-element/option-index.html
 testharness html/semantics/forms/the-option-element/option-label.html
 testharness html/semantics/forms/the-option-element/option-selected.html
 testharness html/semantics/forms/the-option-element/option-text-backslash.html
+testharness html/semantics/forms/the-option-element/option-text-image.html
 testharness html/semantics/forms/the-option-element/option-text-label.html
 testharness html/semantics/forms/the-option-element/option-text-recurse.html
 testharness html/semantics/forms/the-option-element/option-text-setter.html
@@ -56807,6 +56832,7 @@ testharness html/webappapis/scripting/event-loops/opaque-origin-same-agent.windo
 testharness html/webappapis/scripting/event-loops/raf-from-animation-event-serviced-in-same-rendering-update.html
 testharness html/webappapis/scripting/event-loops/task_microtask_ordering.html
 testharness html/webappapis/scripting/event-loops/update-the-rendering-resize-autofocus.html
+testharness html/webappapis/scripting/event-loops/worker_microtask_after_raf.html
 testharness html/webappapis/scripting/events/body-onload.html
 testharness html/webappapis/scripting/events/compile-event-handler-lexical-scopes-form-owner.html
 testharness html/webappapis/scripting/events/compile-event-handler-lexical-scopes.html
@@ -58710,6 +58736,13 @@ testharness navigation-api/navigate-event/cross-window/open-samedocument-crossor
 testharness navigation-api/navigate-event/cross-window/open-samedocument-crossorigin.html
 testharness navigation-api/navigate-event/cross-window/open-samedocument-crosssite.html
 testharness navigation-api/navigate-event/cross-window/open-samedocument-sameorigin.html
+testharness navigation-api/navigate-event/cross-window/sourceElement-click-crossdocument-crossorigin-sameorigindomain.sub.html
+testharness navigation-api/navigate-event/cross-window/sourceElement-click-samedocument-crossorigin-sameorigindomain.sub.html
+testharness navigation-api/navigate-event/cross-window/sourceElement-click-samedocument-crossorigin.html
+testharness navigation-api/navigate-event/cross-window/sourceElement-click-samedocument-sameorigin-crossorigindomain.html
+testharness navigation-api/navigate-event/cross-window/sourceElement-submit-crossdocument-crossorigin-sameorigindomain.sub.html
+testharness navigation-api/navigate-event/cross-window/sourceElement-submit-samedocument-crossorigin-sameorigindomain.sub.html
+testharness navigation-api/navigate-event/cross-window/sourceElement-submit-samedocument-crossorigin.html
 testharness navigation-api/navigate-event/cross-window/submit-crossdocument-crossorigin-sameorigindomain.sub.html
 testharness navigation-api/navigate-event/cross-window/submit-crossdocument-crossorigin.html
 testharness navigation-api/navigate-event/cross-window/submit-crossdocument-sameorigin.html
@@ -58835,6 +58868,7 @@ testharness navigation-api/navigate-event/signal-abort-window-stop-after-interce
 testharness navigation-api/navigate-event/signal-abort-window-stop-in-onnavigate.html
 testharness navigation-api/navigate-event/signal-abort-window-stop.html
 testharness navigation-api/navigate-event/sourceElement-cross-origin.sub.html
+testharness navigation-api/navigate-event/sourceElement-opaque-origin.html
 testharness navigation-api/navigate-event/sourceElement-shadow-tree.html
 testharness navigation-api/navigate-event/traverseTo-detach.html
 testharness navigation-api/navigation-activation/activation-after-bfcache-coop-coep.https.html
@@ -64091,7 +64125,6 @@ testharness svg/pservers/scripted/svg-fill-currentcolor-visited-getcomputedstyle
 testharness svg/render/foreignObject-in-non-rendered-getComputedStyle.html
 testharness svg/render/never-rendered-element-computed-display.html
 testharness svg/render/never-rendered-element-descendants.html
-testharness svg/scripted/attr-script-fetchpriority.optional.html
 testharness svg/scripted/script-ancestor-disconnected-before-end-tag.html
 testharness svg/scripted/script-invalid-script-type.html
 testharness svg/scripted/script-moved-to-another-document-before-end-tag.html
@@ -65336,6 +65369,7 @@ testharness wasm/jsapi/table/length.any.js
 testharness wasm/jsapi/table/toString.any.js
 testharness wasm/jsapi/table/type.tentative.any.js
 testharness wasm/jsapi/tag/constructor.tentative.any.js
+testharness wasm/jsapi/tag/identity.tentative.any.js
 testharness wasm/jsapi/tag/toString.tentative.any.js
 testharness wasm/jsapi/tag/type.tentative.any.js
 testharness wasm/proposals/wide-arithmetic/core/wide-arithmetic.wast.js.tentative.html
