@@ -1,4 +1,4 @@
-sha: d87507ffafa869fbe27e62bb48e8c3d9be85a36a
+sha: fb385fbf9c54c6799a48a62365eca3f56436a48a
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -559,6 +559,7 @@ crashtest css/css-grid/grid-lanes/subgrid/grid-subgridded-to-grid-lanes/subgrid-
 crashtest css/css-grid/grid-lanes/tentative/grid-lanes-direction-style-map-crash.html
 crashtest css/css-grid/grid-lanes/tentative/parsing/grid-lanes-shorthand-crash.html
 crashtest css/css-grid/grid-lanes/track-sizing/auto-repeat/auto-repeat-no-children-crash.html
+crashtest css/css-grid/grid-lanes/track-sizing/auto-repeat/column-auto-fit-no-items-crash.html
 crashtest css/css-grid/grid-lanes/track-sizing/auto-repeat/intrinsic-auto-repeat/column-auto-repeat-auto-no-items-crash.html
 crashtest css/css-grid/grid-lanes/track-sizing/auto-repeat/intrinsic-auto-repeat/repeat-auto-fit-auto-crash.html
 crashtest css/css-grid/grid-lanes/track-sizing/auto-repeat/intrinsic-auto-repeat/row-auto-repeat-auto-no-items-crash.html
@@ -5512,6 +5513,8 @@ print-reftest css/css-page/page-name-inline-block-002-print.html
 print-reftest css/css-page/page-name-inline-block-003-print.html
 print-reftest css/css-page/page-name-margin-001-print.html
 print-reftest css/css-page/page-name-margin-002-print.html
+print-reftest css/css-page/page-name-multicol-001-print.html
+print-reftest css/css-page/page-name-multicol-002-print.html
 print-reftest css/css-page/page-name-orthogonal-writing-001-print.html
 print-reftest css/css-page/page-name-orthogonal-writing-002-print.html
 print-reftest css/css-page/page-name-orthogonal-writing-003-print.html
@@ -12587,6 +12590,7 @@ reftest css/css-anchor-position/position-visibility-anchor-visible-chained-004.h
 reftest css/css-anchor-position/position-visibility-anchor-visible-change-anchor.html
 reftest css/css-anchor-position/position-visibility-anchor-visible-change-css-visibility.html
 reftest css/css-anchor-position/position-visibility-anchor-visible-clip.html
+reftest css/css-anchor-position/position-visibility-anchor-visible-cross-document-implicit.html
 reftest css/css-anchor-position/position-visibility-anchor-visible-css-visibility.html
 reftest css/css-anchor-position/position-visibility-anchor-visible-dynamic-anchor-toggle.html
 reftest css/css-anchor-position/position-visibility-anchor-visible-in-overflow.html
@@ -18494,6 +18498,8 @@ reftest css/css-grid/alignment/grid-item-aspect-ratio-stretch-3.html
 reftest css/css-grid/alignment/grid-item-aspect-ratio-stretch-4.html
 reftest css/css-grid/alignment/grid-item-auto-margins-001.html
 reftest css/css-grid/alignment/grid-item-auto-margins-002.html
+reftest css/css-grid/alignment/grid-item-auto-margins-overflow-001.html
+reftest css/css-grid/alignment/grid-item-auto-margins-overflow-002.html
 reftest css/css-grid/alignment/grid-item-content-baseline-001.html
 reftest css/css-grid/alignment/grid-item-content-baseline-002.html
 reftest css/css-grid/alignment/grid-item-content-baseline-003.html
@@ -18939,6 +18945,7 @@ reftest css/css-grid/grid-lanes/alignment/grid-lanes-align-content-001.html
 reftest css/css-grid/grid-lanes/alignment/grid-lanes-align-content-002.html
 reftest css/css-grid/grid-lanes/alignment/grid-lanes-align-content-003.html
 reftest css/css-grid/grid-lanes/alignment/grid-lanes-align-content-004.html
+reftest css/css-grid/grid-lanes/alignment/grid-lanes-align-content-contain-size-001.html
 reftest css/css-grid/grid-lanes/alignment/grid-lanes-align-content-refinalize-row-geometry-001.html
 reftest css/css-grid/grid-lanes/alignment/grid-lanes-align-content-refinalize-row-geometry-002.html
 reftest css/css-grid/grid-lanes/alignment/grid-lanes-content-distribution-001.html
@@ -19099,6 +19106,7 @@ reftest css/css-grid/grid-lanes/intrinsic-sizing/grid-lanes-contain-intrinsic-si
 reftest css/css-grid/grid-lanes/intrinsic-sizing/grid-lanes-contain-intrinsic-size-row-003.html
 reftest css/css-grid/grid-lanes/intrinsic-sizing/grid-lanes-contain-intrinsic-size-row-004.html
 reftest css/css-grid/grid-lanes/intrinsic-sizing/grid-lanes-contain-intrinsic-size-row-005.html
+reftest css/css-grid/grid-lanes/intrinsic-sizing/grid-lanes-contain-intrinsic-size-row-006.html
 reftest css/css-grid/grid-lanes/intrinsic-sizing/grid-lanes-intrinsic-size-dynamic-block-size-column.html
 reftest css/css-grid/grid-lanes/intrinsic-sizing/grid-lanes-intrinsic-size-dynamic-block-size-row.html
 reftest css/css-grid/grid-lanes/intrinsic-sizing/grid-lanes-intrinsic-sizing-cols-001-auto.html
@@ -19206,7 +19214,9 @@ reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-dynam
 reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-percentage-column-001.html
 reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-percentage-intrinsic-column-001.html
 reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-percentage-intrinsic-row-001.html
+reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-percentage-intrinsic-row-002.html
 reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-percentage-row-001.html
+reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-percentage-row-002.html
 reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-row-001.html
 reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-row-002.html
 reftest css/css-grid/grid-lanes/item-placement/fit-tolerance/fit-tolerance-row-003.html
@@ -21193,7 +21203,9 @@ reftest css/css-lists/outside-marker-in-multicol-relpos-content.html
 reftest css/css-lists/outside-marker-list-item-becomes-multicol.html
 reftest css/css-lists/outside-marker-multicol-destroyed.html
 reftest css/css-lists/outside-marker-nested-align-content.html
+reftest css/css-lists/outside-marker-nested-line-root-padding.html
 reftest css/css-lists/outside-marker-nested-shared-container.html
+reftest css/css-lists/outside-marker-on-line-in-other-direction.html
 reftest css/css-lists/outside-marker-position-with-cached-line-content.html
 reftest css/css-lists/outside-marker-rtl.html
 reftest css/css-lists/outside-marker-skips-out-of-flow-first-child.html
@@ -21529,10 +21541,13 @@ reftest css/css-masking/clip-path/clip-path-stacking-context-001.html
 reftest css/css-masking/clip-path/clip-path-strokeBox-1a.html
 reftest css/css-masking/clip-path/clip-path-strokeBox-1b.html
 reftest css/css-masking/clip-path/clip-path-strokeBox-1c.html
+reftest css/css-masking/clip-path/clip-path-svg-child-transform-origin-fill-box.html
+reftest css/css-masking/clip-path/clip-path-svg-child-transform-origin.html
 reftest css/css-masking/clip-path/clip-path-svg-invalidate.html
 reftest css/css-masking/clip-path/clip-path-svg-text-backdrop-filter.html
 reftest css/css-masking/clip-path/clip-path-svg-text-css.html
 reftest css/css-masking/clip-path/clip-path-svg-text-font-loading.html
+reftest css/css-masking/clip-path/clip-path-svg-use-child-transform-origin.html
 reftest css/css-masking/clip-path/clip-path-transform-mutated-001.html
 reftest css/css-masking/clip-path/clip-path-transform-mutated-002.html
 reftest css/css-masking/clip-path/clip-path-union-trailing-moveto.html
@@ -34160,6 +34175,9 @@ reftest svg/linking/reftests/svgview-spaces-around-semicolon.html
 reftest svg/linking/reftests/svgview-spaces.html
 reftest svg/linking/reftests/svgview-timesegment.html
 reftest svg/linking/reftests/svgview-transform.html
+reftest svg/linking/reftests/svgview-unspecified-preserveaspectratio.html
+reftest svg/linking/reftests/svgview-unspecified-synthesized-viewbox.html
+reftest svg/linking/reftests/svgview-unspecified-viewbox.html
 reftest svg/linking/reftests/svgview-viewbox-invalid.html
 reftest svg/linking/reftests/svgview-viewbox-override-multiple.html
 reftest svg/linking/reftests/svgview-viewbox-then-transform.html
@@ -34627,6 +34645,9 @@ reftest svg/text/reftests/text-multiline-001.svg
 reftest svg/text/reftests/text-multiline-002.svg
 reftest svg/text/reftests/text-multiline-003.svg
 reftest svg/text/reftests/text-path-transformed-002.html
+reftest svg/text/reftests/text-path-transformed-fill-box-path-after-text.html
+reftest svg/text/reftests/text-path-transformed-fill-box-path-change.html
+reftest svg/text/reftests/text-path-transformed-fill-box.html
 reftest svg/text/reftests/text-path-transformed.html
 reftest svg/text/reftests/text-positioning-list-combining-marks-indexing.html
 reftest svg/text/reftests/text-positioning-list-combining-marks.html
@@ -39580,6 +39601,8 @@ testharness css/css-font-loading/fontfaceset-has.html
 testharness css/css-font-loading/fontfaceset-load-css-connected.html
 testharness css/css-font-loading/fontfaceset-load-css-wide-keywords.html
 testharness css/css-font-loading/fontfaceset-load-var.html
+testharness css/css-font-loading/fontfaceset-loadingdone-event.html
+testharness css/css-font-loading/fontfaceset-loadingerror-event.html
 testharness css/css-font-loading/fontfaceset-ready-unused-face-failed-local-source.html
 testharness css/css-font-loading/fontfaceset-update-after-stylesheet-change.html
 testharness css/css-font-loading/fontfacesetloadevent-constructor.html
@@ -40392,6 +40415,7 @@ testharness css/css-grid/grid-lanes/tentative/parsing/grid-lanes-shorthand-seria
 testharness css/css-grid/grid-lanes/tentative/parsing/grid-lanes-shorthand-valid.html
 testharness css/css-grid/grid-lanes/tentative/parsing/grid-subgridded-to-grid-lanes/grid-lanes-column-subgrid-computed.html
 testharness css/css-grid/grid-lanes/tentative/parsing/grid-subgridded-to-grid-lanes/grid-lanes-row-subgrid-computed.html
+testharness css/css-grid/grid-lanes/track-sizing/auto-repeat/auto-fit-spanning-item-track-sizing-001.html
 testharness css/css-grid/grid-lanes/track-sizing/auto-repeat/column-auto-repeat-008.html
 testharness css/css-grid/grid-lanes/track-sizing/auto-repeat/column-auto-repeat-009.html
 testharness css/css-grid/grid-lanes/track-sizing/auto-repeat/column-auto-repeat-010.html
@@ -45982,6 +46006,7 @@ testharness digital-credentials/get-openid4vp-request-validation.https.html
 testharness digital-credentials/get.disabled-by-permissions-policy.https.sub.html
 testharness digital-credentials/get.https.html
 testharness digital-credentials/historical.any.js
+testharness digital-credentials/late-chooser-response.https.html
 testharness digital-credentials/non-secure-contexts.http.html
 testharness digital-credentials/protocol-filtering-mdoc.https.html
 testharness digital-credentials/protocol-filtering-openid4vp.https.html
@@ -56206,6 +56231,8 @@ testharness html/semantics/scripting-1/the-template-element/template-for/templat
 testharness html/semantics/scripting-1/the-template-element/template-for/template-for-append-to-head.html
 testharness html/semantics/scripting-1/the-template-element/template-for/template-for-case-sensitive-dom-inserted.html
 testharness html/semantics/scripting-1/the-template-element/template-for/template-for-case-sensitive.html
+testharness html/semantics/scripting-1/the-template-element/template-for/template-for-complexity.html
+testharness html/semantics/scripting-1/the-template-element/template-for/template-for-duplicate-scope-and-mutations.html
 testharness html/semantics/scripting-1/the-template-element/template-for/template-for-empty-hash.html
 testharness html/semantics/scripting-1/the-template-element/template-for/template-for-empty.html
 testharness html/semantics/scripting-1/the-template-element/template-for/template-for-foster-parenting.html
@@ -57374,6 +57401,7 @@ testharness intersection-observer/v2/animated-opacity.html
 testharness intersection-observer/v2/blur-filter.html
 testharness intersection-observer/v2/border-radius-shadow-occlusion-replaced.html
 testharness intersection-observer/v2/border-radius-shadow-occlusion.html
+testharness intersection-observer/v2/border-shape-dynamic-relevant-side-occlusion.html
 testharness intersection-observer/v2/border-shape-occlusion.html
 testharness intersection-observer/v2/border-shape-overflow-occlusion.html
 testharness intersection-observer/v2/box-reflect.html
@@ -57923,6 +57951,7 @@ testharness mathml/presentation-markup/tables/table-003.html
 testharness mathml/presentation-markup/tables/table-axis-height.html
 testharness mathml/presentation-markup/tables/table-cell-mrow-layout.html
 testharness mathml/presentation-markup/tables/table-default-styles-001.html
+testharness mathml/presentation-markup/tokens/mtext-non-text-child-ink-overflow.html
 testharness mathml/presentation-markup/tokens/tokens-rendering-from-in-flow.html
 testharness mathml/relations/css-styling/attribute-mapping-001.html
 testharness mathml/relations/css-styling/attribute-mapping-002.html
@@ -61673,6 +61702,7 @@ testharness resource-timing/nested-nav-fallback-timing.html
 testharness resource-timing/nextHopProtocol-is-tao-protected.https.html
 testharness resource-timing/no-entries-for-cached-import-of-cross-origin-css.html
 testharness resource-timing/no-entries-for-cross-origin-css-fetched-memory-cache.sub.html
+testharness resource-timing/no-entries-for-cross-origin-css-fetched-svg.sub.html
 testharness resource-timing/no-entries-for-cross-origin-css-fetched.sub.html
 testharness resource-timing/object-not-found-adds-entry.html
 testharness resource-timing/object-not-found-after-TAO-cross-origin-redirect.html
@@ -67726,6 +67756,7 @@ testharness workers/interfaces/DedicatedWorkerGlobalScope/EventTarget.worker.js
 testharness workers/interfaces/DedicatedWorkerGlobalScope/onmessage.worker.js
 testharness workers/interfaces/DedicatedWorkerGlobalScope/postMessage/event-ports-dedicated.html
 testharness workers/interfaces/DedicatedWorkerGlobalScope/postMessage/imagedata-cloned-canvas-in-array.html
+testharness workers/interfaces/DedicatedWorkerGlobalScope/postMessage/message-event-in-worker.html
 testharness workers/interfaces/DedicatedWorkerGlobalScope/postMessage/message-event.html
 testharness workers/interfaces/DedicatedWorkerGlobalScope/postMessage/return-value.worker.js
 testharness workers/interfaces/DedicatedWorkerGlobalScope/postMessage/second-argument-dictionary.html
