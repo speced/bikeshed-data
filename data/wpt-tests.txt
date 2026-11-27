@@ -1,4 +1,4 @@
-sha: d29e99bec8fbf722fda01122834433e967427c6d
+sha: 9b7a0c053ee44a9dac18000b6872596e5ff024ca
 crashtest FileAPI/blob/Blob-stream-byob-crash.html
 crashtest FileAPI/blob/Blob-stream-sync-xhr-crash.html
 crashtest accessibility/crashtests/activedescendant-crash.html
@@ -12570,7 +12570,7 @@ reftest css/css-anchor-position/position-try-fallbacks-002.html
 reftest css/css-anchor-position/position-try-fallbacks-004.html
 reftest css/css-anchor-position/position-try-fallbacks-multicol-001.html
 reftest css/css-anchor-position/position-try-fallbacks-multicol-002.html
-reftest css/css-anchor-position/position-try-order-include-base.html
+reftest css/css-anchor-position/position-try-order-include-base-001.html
 reftest css/css-anchor-position/position-try-order-logical.html
 reftest css/css-anchor-position/position-try-switch-from-fixed-anchor.html
 reftest css/css-anchor-position/position-try-switch-to-fixed-anchor.html
@@ -28881,7 +28881,12 @@ reftest css/css-values/urls/integrity/url-font-integrity-after-load-without-inte
 reftest css/css-values/urls/integrity/url-font-integrity-no-cors-negative.sub.html
 reftest css/css-values/urls/integrity/url-font-integrity-same-origin-negative.html
 reftest css/css-values/urls/integrity/url-font-integrity-same-origin.html
+reftest css/css-values/urls/integrity/url-image-integrity-after-load-without-integrity-negative.html
+reftest css/css-values/urls/integrity/url-image-integrity-after-load-without-integrity.html
 reftest css/css-values/urls/integrity/url-image-integrity-negative.sub.html
+reftest css/css-values/urls/integrity/url-image-integrity-no-cors-negative.sub.html
+reftest css/css-values/urls/integrity/url-image-integrity-same-origin-negative.html
+reftest css/css-values/urls/integrity/url-image-integrity-same-origin.html
 reftest css/css-values/urls/integrity/url-image-integrity.sub.html
 reftest css/css-values/urls/integrity/url-import-integrity-negative.sub.html
 reftest css/css-values/urls/integrity/url-import-integrity.sub.html
@@ -33312,8 +33317,8 @@ reftest html/semantics/permission-element/geolocation-element/quirks-mode-no-hei
 reftest html/semantics/permission-element/geolocation-element/text-decoration-tentative.html
 reftest html/semantics/permission-element/geolocation-element/text-stroke-and-fill.tentative.html
 reftest html/semantics/permission-element/geolocation-element/webkit-text-security-on-parent.tentative.html
-reftest html/semantics/permission-element/icon-only/icon-only-hides-text-mismatch-reftest.tentative.html
-reftest html/semantics/permission-element/icon-only/icon-only-precise-location-icon-differs-reftest.tentative.html
+reftest html/semantics/permission-element/icon-only/icon-only-hides-text-mismatch-reftest.html
+reftest html/semantics/permission-element/icon-only/icon-only-precise-location-icon-differs-reftest.html
 reftest html/semantics/permission-element/inherited-css.tentative.html
 reftest html/semantics/permission-element/install/border-radius-different.tentative.html
 reftest html/semantics/permission-element/install/border-radius-identical.tentative.html
@@ -34146,12 +34151,19 @@ reftest svg/linking/reftests/href-pattern-element.html
 reftest svg/linking/reftests/href-textPath-element.html
 reftest svg/linking/reftests/href-use-element.html
 reftest svg/linking/reftests/media-fragment-override-multiple.html
+reftest svg/linking/reftests/media-fragment-spatial-bare-name.html
 reftest svg/linking/reftests/media-fragment-spatial-decimal-values.html
+reftest svg/linking/reftests/media-fragment-spatial-iframe.html
 reftest svg/linking/reftests/media-fragment-spatial-img-element.html
 reftest svg/linking/reftests/media-fragment-spatial-invalid-negative-width.html
+reftest svg/linking/reftests/media-fragment-spatial-invalid-number-count.html
+reftest svg/linking/reftests/media-fragment-spatial-invalid-number-syntax.html
+reftest svg/linking/reftests/media-fragment-spatial-invalid-percent-overflow.html
+reftest svg/linking/reftests/media-fragment-spatial-invalid-unit.html
 reftest svg/linking/reftests/media-fragment-spatial-invalid-zero-height.html
 reftest svg/linking/reftests/media-fragment-spatial-invalid-zero-width.html
 reftest svg/linking/reftests/media-fragment-spatial-last-wins.html
+reftest svg/linking/reftests/media-fragment-spatial-outside-image.html
 reftest svg/linking/reftests/media-fragment-spatial-overflow-clamped-nonzero-origin.html
 reftest svg/linking/reftests/media-fragment-spatial-overflow-clamped.html
 reftest svg/linking/reftests/media-fragment-spatial-percent-full.html
@@ -34163,6 +34175,9 @@ reftest svg/linking/reftests/media-fragment-spatial-percent-zero-size.html
 reftest svg/linking/reftests/media-fragment-spatial-percent.html
 reftest svg/linking/reftests/media-fragment-spatial-pixel-explicit.html
 reftest svg/linking/reftests/media-fragment-spatial-pixel-implicit.html
+reftest svg/linking/reftests/media-fragment-spatial-preserveaspectratio.html
+reftest svg/linking/reftests/media-fragment-spatial-svg-image-element.html
+reftest svg/linking/reftests/media-fragment-spatial-time-segment.html
 reftest svg/linking/reftests/media-fragment-spatial-viewbox-only.html
 reftest svg/linking/reftests/media-fragment-spatial-viewbox-width.html
 reftest svg/linking/reftests/svgview-and-xywh.html
@@ -38062,6 +38077,7 @@ testharness css/css-anchor-position/position-try-grid-001.html
 testharness css/css-anchor-position/position-try-ident-function.html
 testharness css/css-anchor-position/position-try-initial-transition.html
 testharness css/css-anchor-position/position-try-order-basic.html
+testharness css/css-anchor-position/position-try-order-include-base-002.html
 testharness css/css-anchor-position/position-try-order-inset-modified-containing-block.html
 testharness css/css-anchor-position/position-try-order-position-area.html
 testharness css/css-anchor-position/position-try-position-anchor.html
@@ -38934,6 +38950,8 @@ testharness css/css-conditional/container-queries/size-query-with-var.html
 testharness css/css-conditional/container-queries/style-change-in-container.html
 testharness css/css-conditional/container-queries/style-container-for-shadow-dom.html
 testharness css/css-conditional/container-queries/style-container-invalidation-inheritance.html
+testharness css/css-conditional/container-queries/style-container-size-unit-invalidation.html
+testharness css/css-conditional/container-queries/style-container-viewport-unit-invalidation.html
 testharness css/css-conditional/container-queries/style-not-sharing-float.html
 testharness css/css-conditional/container-queries/style-query-attr-change-svg.html
 testharness css/css-conditional/container-queries/style-query-change-with-ancestor-zoom.html
@@ -44097,10 +44115,12 @@ testharness css/css-values/random-in-descriptors.tentative.html
 testharness css/css-values/random-in-if.tentative.html
 testharness css/css-values/random-in-keyframe.html
 testharness css/css-values/random-in-media.tentative.html
+testharness css/css-values/random-in-shorthand.html
 testharness css/css-values/random-invalid.tentative.html
 testharness css/css-values/random-item-computed.html
 testharness css/css-values/random-item-in-container-query.tentative.html
 testharness css/css-values/random-item-in-keyframe.html
+testharness css/css-values/random-item-in-shorthand.html
 testharness css/css-values/random-item-invalid.html
 testharness css/css-values/random-item-nested.html
 testharness css/css-values/random-item-serialize.html
@@ -45222,6 +45242,7 @@ testharness css/motion/animation/ray-angle-interpolation-math-functions.html
 testharness css/motion/inheritance.html
 testharness css/motion/offset-path-bounding-client-rect.html
 testharness css/motion/offset-path-coord-box-corner-shape.html
+testharness css/motion/offset-path-url-change.html
 testharness css/motion/offset-supports-calc.html
 testharness css/motion/parsing/offset-anchor-computed.html
 testharness css/motion/parsing/offset-anchor-parsing-invalid.html
@@ -45986,6 +46007,7 @@ testharness device-posture/device-posture-clear.https.html
 testharness device-posture/device-posture-event-listener.https.html
 testharness device-posture/device-posture-media-queries.https.html
 testharness device-posture/idlharness.https.window.js
+testharness digital-credentials/abort-during-validation.https.html
 testharness digital-credentials/allow-attribute-with-create.https.html
 testharness digital-credentials/allow-attribute-with-get.https.html
 testharness digital-credentials/concurrent-requests.https.html
@@ -55506,6 +55528,9 @@ testharness html/semantics/interestfor/interestfor-suppress-focus-interest-reset
 testharness html/semantics/interestfor/interestfor-svg-a-event-dispatch.tentative.html
 testharness html/semantics/interestfor/interestfor-user-select.tentative.html
 testharness html/semantics/interfaces.html
+testharness html/semantics/links/downloading-resources/download-referrerpolicy-navigate-event.html
+testharness html/semantics/links/downloading-resources/download-referrerpolicy-overrides-document-policy.html
+testharness html/semantics/links/downloading-resources/download-referrerpolicy.html
 testharness html/semantics/links/downloading-resources/header-origin-no-referrer-when-downgrade.html
 testharness html/semantics/links/downloading-resources/header-origin-no-referrer.html
 testharness html/semantics/links/downloading-resources/header-origin-origin-when-cross-origin.html
@@ -55589,9 +55614,9 @@ testharness html/semantics/permission-element/geolocation-element/no-children-re
 testharness html/semantics/permission-element/geolocation-element/parent-image-mask.tentative.html
 testharness html/semantics/permission-element/geolocation-element/parent-mask.tentative.html
 testharness html/semantics/permission-element/granted-selector.https.html
-testharness html/semantics/permission-element/icon-only/bounded-sizes-and-icon-css.tentative.html
-testharness html/semantics/permission-element/icon-only/displayhint-unsupported-elements.tentative.html
-testharness html/semantics/permission-element/icon-only/security-validation-gates.tentative.html
+testharness html/semantics/permission-element/icon-only/bounded-sizes-and-icon-css.html
+testharness html/semantics/permission-element/icon-only/displayhint-unsupported-elements.html
+testharness html/semantics/permission-element/icon-only/security-validation-gates.html
 testharness html/semantics/permission-element/install/bounded-css-properties.tentative.html
 testharness html/semantics/permission-element/install/bounded-sizes.tentative.html
 testharness html/semantics/permission-element/install/display-values.tentative.html
@@ -55618,6 +55643,7 @@ testharness html/semantics/permission-element/parent-image-mask.tentative.html
 testharness html/semantics/permission-element/parent-mask.tentative.html
 testharness html/semantics/permission-element/permission-icon/icon-color-defaults-to-text-color.html
 testharness html/semantics/permission-element/roles.tentative.html
+testharness html/semantics/permission-element/scroll-button-pseudo-element.tentative.html
 testharness html/semantics/permission-element/usermedia/idlharness.window.js
 testharness html/semantics/permission-element/usermedia/invalid-css-properties.html
 testharness html/semantics/permission-element/usermedia/lang-attribute-update.html
@@ -59247,6 +59273,7 @@ testharness navigation-timing/nav2-test-redirect-xserver.html
 testharness navigation-timing/nav2-test-response-end-and-duration-before-during-and-after-load-event.html
 testharness navigation-timing/nav2-test-timing-persistent.html
 testharness navigation-timing/nav2-test-unique-nav-instances.html
+testharness navigation-timing/navigation-entry-live.html
 testharness navigation-timing/navigation-type-post-backforward.html
 testharness navigation-timing/nested-document-timing-after-cross-origin-redirect.https.html
 testharness navigation-timing/nested-unload-timing.html
@@ -61678,6 +61705,8 @@ testharness resource-timing/initiator-type/dynamic-insertion.html
 testharness resource-timing/initiator-type/embed.html
 testharness resource-timing/initiator-type/frameset.html
 testharness resource-timing/initiator-type/iframe.html
+testharness resource-timing/initiator-type/img-environment-change.html
+testharness resource-timing/initiator-type/img-lazy.html
 testharness resource-timing/initiator-type/img-srcset.html
 testharness resource-timing/initiator-type/img.html
 testharness resource-timing/initiator-type/input.html
@@ -63575,6 +63604,7 @@ testharness subresource-integrity/signatures/tentative/script.window.js
 testharness subresource-integrity/signatures/tentative/server-initiated.window.js
 testharness subresource-integrity/signatures/tentative/status.window.js
 testharness subresource-integrity/signatures/tentative/unknown-parameter.window.js
+testharness subresource-integrity/subresource-integrity-after-load-without-integrity.html
 testharness subresource-integrity/subresource-integrity.html
 testharness subresource-integrity/unencoded-digest/tentative/fetch.any.js
 testharness subresource-integrity/unencoded-digest/tentative/script.window.js
@@ -63756,6 +63786,7 @@ testharness svg/animations/scripted/paced-value-animation-overwrites-keyTimes.ht
 testharness svg/animations/scripted/smil-values-empty-segments.html
 testharness svg/animations/scripted/syncbase-after-removal.html
 testharness svg/animations/seek-repeat-event-condition.html
+testharness svg/animations/seek-to-zero-clears-stale-instance-times.html
 testharness svg/animations/seeking-events-1.html
 testharness svg/animations/seeking-events-2.html
 testharness svg/animations/seeking-events-3.html
